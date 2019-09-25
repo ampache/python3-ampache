@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-"""    Copyright (C)2019
+""" Copyright (C)2019
 Lachlan de Waard <lachlan.00@gmail.com>
---------------------------------------
-Ampache XML-Api for python
---------------------------------------
+---------------------------------------
+Ampache XML-Api v400001 for python3
+---------------------------------------
 
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
