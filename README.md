@@ -1,4 +1,4 @@
-# AMPACHE LIBRARIES FOR PYTHON3
+# AMPACHE LIBRARY FOR PYTHON3
 
 ## INFO
 
@@ -11,7 +11,7 @@ Right now this is just a library for scrobbling to an ampache server but this wo
     import time
     import threading
 
-    import Scrobble
+    import ampache
 
     def encrypt_string(hash_string, user):
         key = hashlib.sha256(hash_string.encode()).hexdigest()
@@ -25,10 +25,10 @@ Right now this is just a library for scrobbling to an ampache server but this wo
     def ampache_auth(ampache_url, key):
         """ ping ampache for auth key """
         if ampache_url[:8] == 'https://' or ampache_url[:7] == 'http://':
-                ping = Scrobble.ping(ampache_url, key)
+                ping = ampache.ping(ampache_url, key)
                 if not ping == False:
                     return ping
-                auth = Scrobble.auth(self.ampache_url, self.encrypt_string(self.conf.get(C, 'ampache_api')))
+                auth = ampache.handshake(self.ampache_url, self.encrypt_string(self.conf.get(C, 'ampache_api')))
                 if not auth == False:
                     return auth
         return False
@@ -36,9 +36,9 @@ Right now this is just a library for scrobbling to an ampache server but this wo
 hash_string = encrypt_string('123749hfd208u' 'user')
 auth = ampache_auth('https://ampache/server', hash_string)
 if auth:
-    Process(target=Scrobble.run,
-            args=(int(time.time()), 'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed',
-            '', '', '', 'https://ampache/server', hash_string)).start()
+    Process(target=ampache.scrobble,
+            args=(int('https://ampache/server', hash_string, 'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed',
+            '', '', ''time.time()))).start()
 ```
 
 ## HOMEPAGE
