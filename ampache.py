@@ -495,7 +495,7 @@ def album_songs(ampache_url, ampache_api, filter, offset, limit):
     * offset
     * limit
 """
-def tags(ampache_url, exact, filter, offset, limit):
+def tags(ampache_url, ampache_api, exact, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
