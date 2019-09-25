@@ -39,19 +39,19 @@ from xml.etree import ElementTree as ET
 def ping(ampache_url, ampache_api):
     """ Request Ampache ping auth """
     if not ampache_url or not ampache_api:
-return False
+        return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'ping',
-'auth': ampache_api})
+                                   'auth': ampache_api})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
     result.close()
     tree = ET.fromstring(ampache_response)
     try:
-token = tree.find('auth').text
+        token = tree.find('auth').text
     except AttributeError:
-token = False
+        token = False
     return token
 
 """ handshake
@@ -69,9 +69,9 @@ token = False
 """
 def handshake(ampache_url, ampache_api, user, timestamp=0, version='400001'):
     if not ampache_url or not ampache_api or not user:
-return False
+        return False
     if timestamp == 0:
-timestamp = int(time.time())
+        timestamp = int(time.time())
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'handshake',
                                    'user': user,
@@ -84,9 +84,10 @@ timestamp = int(time.time())
     result.close()
     tree = ET.fromstring(ampache_response)
     try:
-token = tree.find('auth').text
+        token = tree.find('auth').text
     except AttributeError:
-token = False
+        token = False
+    return token
 
 """ goodbye
     MINIMUM_API_VERSION=400001
@@ -100,7 +101,7 @@ token = False
 def goodbye(ampache_url, ampache_api):
     """ Request Ampache destroy an api session """
     if not ampache_url and not ampache_api:
-return False
+        return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'goodbye',
                                    'auth': ampache_api})
@@ -110,15 +111,15 @@ return False
     result.close()
     tree = ET.fromstring(ampache_response)
     try:
-token = tree.find('success').text
+        token = tree.find('success').text
     except AttributeError:
-token = False
+        token = False
     if token:
-return token
+        return token
     try:
-token = tree.find('error').text
+        token = tree.find('error').text
     except AttributeError:
-token = False
+        token = False
     return token
 
 """ scrobble
@@ -141,7 +142,7 @@ token = False
 """
 def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartist='', MBalbum='', time='', client = 'AmpacheAPI'):
     if not ampache_url and not ampache_api:
-return False
+        return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'scrobble',
                                    'auth': ampache_api,
@@ -158,13 +159,13 @@ return False
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-token = tree.find('success').text
+        token = tree.find('success').text
     except AttributeError:
-token = False
+        token = False
     if token:
-return token
+        return token
     try:
-token = tree.find('error').text
+        token = tree.find('error').text
     except AttributeError:
-token = False
+        token = False
     return token
