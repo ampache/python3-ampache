@@ -126,7 +126,7 @@ def goodbye(ampache_url, ampache_api):
     MINIMUM_API_VERSION=400001
 
     Search for a song using text info and then record a play if found.
-    This allows other sources to record play history to ampache parameters
+    This allows other sources to record play history to ampache
 
     INPUTS
     * ampache_url = (string)
@@ -147,6 +147,1804 @@ def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartis
     data = urllib.parse.urlencode({'action': 'scrobble',
                                    'auth': ampache_api,
                                    'client': client,
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" get_indexes
+
+    MINIMUM_API_VERSION=400001
+
+    This takes a collection of inputs and returns ID + name for the object type
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * type = (string) 'song'|'album'|'artist'|'playlist'
+    * filter = (string) //optional
+    * add
+    * update
+    * offset = (integer) //optional
+    * limit = (integer) //optional
+"""
+def get_indexes(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'get_indexes',
+                                   'auth': ampache_api,
+                                   'type': 'AmpacheFM Rhythmbox',
+                                   'filter': str(time),
+                                   'add': title,
+                                   'update': album,
+                                   'offset': artist,
+                                   'limit': MBtitle})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" artists
+
+    MINIMUM_API_VERSION=380001
+
+    This takes a collection of inputs and returns artist objects. This function is deprecated!
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+    * add
+    * update
+    * offset
+    * limit
+    * include
+"""
+def artists(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'artists',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" artist
+
+    MINIMUM_API_VERSION=380001
+
+    This returns a single artist based on the UID of said artist
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+    * include
+"""
+def artist(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'artist',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" artist_albums
+
+    MINIMUM_API_VERSION=380001
+
+    This returns the albums of an artist
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+    * offset
+    * limit
+"""
+def artist_albums(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'artist_albums',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" artist_songs
+
+    MINIMUM_API_VERSION=380001
+
+    This returns the songs of the specified artist
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+    * offset
+    * limit
+"""
+def artist_songs(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'artist_songs',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" albums
+    MINIMUM_API_VERSION=380001
+
+    This returns albums based on the provided search filters
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * exact
+    * add
+    * update
+    * filter
+    * offset
+    * limit
+    * include
+"""
+def albums(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'albums',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" album
+
+    MINIMUM_API_VERSION=380001
+
+    This returns a single album based on the UID provided
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+    * include
+"""
+def album(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'album',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" album_songs
+
+    MINIMUM_API_VERSION=380001
+
+    This returns the songs of a specified album
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+    * offset
+    * limit
+"""
+def album_songs(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'album_songs',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" tags
+
+    MINIMUM_API_VERSION=380001
+
+    This returns the tags (Genres) based on the specified filter
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * exact
+    * filter
+    * offset
+    * limit
+"""
+def tags(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'tags',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" tag
+
+    MINIMUM_API_VERSION=380001
+
+    This returns a single tag based on UID
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+"""
+def tag(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'tag',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" tag_artists
+
+    MINIMUM_API_VERSION=380001
+
+    This returns the artists associated with the tag in question as defined by the UID
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+    * offset
+    * limit
+"""
+def tag_artists(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'tag_artists',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+""" tag_albums
+
+
+    MINIMUM_API_VERSION=380001
+
+    This returns the albums associated with the tag in question
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+    * offset
+    * limit
+"""
+def tag_albums(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'tag_albums',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" tag_songs
+
+    MINIMUM_API_VERSION=380001
+
+    returns the songs for this tag
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+    * offset
+    * limit
+"""
+def tag_songs(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'tag_songs',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" songs
+
+    MINIMUM_API_VERSION=380001
+
+    Returns songs based on the specified filter
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * exact
+    * add
+    * update
+    * filter
+    * offset
+    * limit
+"""
+def songs(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'songs',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" song
+
+    MINIMUM_API_VERSION=380001
+
+    returns a single song
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+"""
+def song(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'song',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" url_to_song
+
+    MINIMUM_API_VERSION=380001
+
+    This takes a url and returns the song object in question
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * url
+"""
+def url_to_song(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'url_to_song',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" playlists
+
+    MINIMUM_API_VERSION=380001
+
+    This returns playlists based on the specified filter
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * exact
+    * add
+    * update
+    * filter
+    * offset
+    * limit
+"""
+def playlists(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'playlists',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" playlist
+
+    MINIMUM_API_VERSION=380001
+
+    This returns a single playlist
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+"""
+def playlist(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'playlist',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" playlist_songs
+
+    MINIMUM_API_VERSION=380001
+
+    This returns the songs for a playlist
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+    * offset
+    * limit
+"""
+def playlist_songs(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'playlist_songs',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" playlist_create
+
+    MINIMUM_API_VERSION=380001
+
+    This create a new playlist and return it
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * name
+    * type
+"""
+def playlist_create(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'playlist_create',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" playlist_edit
+
+    MINIMUM_API_VERSION=400001
+
+    This modifies name and type of a playlist
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * name
+    * type
+    * filter
+"""
+def playlist_edit(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'playlist_edit',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" playlist_delete
+
+    MINIMUM_API_VERSION=380001
+
+    This deletes a playlist
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+"""
+def playlist_delete(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'playlist_delete',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" playlist_add_song
+
+    MINIMUM_API_VERSION=380001
+
+    This adds a song to a playlist
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * song
+    * filter
+"""
+def playlist_add_song(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'playlist_add_song',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" playlist_remove_song
+
+    MINIMUM_API_VERSION=380001
+    CHANGED_IN_API_VERSION=400001
+
+    This remove a song from a playlist. Previous versions required 'track' instead of 'song'.
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * song
+    * filter
+"""
+def playlist_remove_song(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'playlist_remove_song',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" search_songs
+
+    MINIMUM_API_VERSION=380001
+
+    This searches the songs and returns... songs
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+    * offset
+    * limit
+"""
+def search_songs(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'search_songs',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" advanced_search
+
+    MINIMUM_API_VERSION=380001
+
+    Perform an advanced search given passed rules
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * 
+"""
+def advanced_search(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'advanced_search',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" videos
+
+    MINIMUM_API_VERSION=380001
+
+    This returns video objects!
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * exact
+    * filter
+    * offset
+    * limit
+
+"""
+def videos(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'videos',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" video
+
+    MINIMUM_API_VERSION=380001
+
+    This returns a single video
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * filter
+"""
+def video(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'video',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" localplay
+
+    MINIMUM_API_VERSION=380001
+
+    This is for controlling localplay
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * command
+"""
+def localplay(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'localplay',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" democratic
+
+    MINIMUM_API_VERSION=380001
+
+    This is for controlling democratic play
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * method
+    * action
+    * oid
+"""
+def democratic(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'democratic',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" stats
+
+    MINIMUM_API_VERSION=380001
+    CHANGED_IN_API_VERSION=400001
+
+    This gets library stats for different object types. When filter is null get some random items instead
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * type = (string) 'song'|'album'|'artist'
+    * filter = (string) 'newest'|'highest'|'frequent'|'recent'|'flagged'|null
+    * offset = (integer) //optional
+    * limit = (integer) //optional
+    * user_id = (integer) //optional
+    * username = (string) //optional
+"""
+def stats(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'stats',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" user
+
+    MINIMUM_API_VERSION=380001
+
+    This get an user public information
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * username
+"""
+def user(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'user',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" followers
+
+    MINIMUM_API_VERSION=380001
+
+    This get an user followers
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * username
+"""
+def followers(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'followers',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" following
+
+    MINIMUM_API_VERSION=380001
+
+    This get the user list followed by an user
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * username
+"""
+def following(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'following',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" toggle_follow
+
+    MINIMUM_API_VERSION=380001
+
+    This follow/unfollow an user
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * username
+"""
+def toggle_follow(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'toggle_follow',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" last_shouts
+
+    MINIMUM_API_VERSION=380001
+
+    This get the latest posted shouts
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * username
+    * limit
+"""
+def last_shouts(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'last_shouts',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" rate
+
+    MINIMUM_API_VERSION=380001
+
+    This rates a library item
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * type        = (string) 'song'|'album'|'artist'
+    * id          = (int) $object_id
+    * rating      = (int) 0|1|2|3|4|5
+"""
+def rate(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'rate',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" flag
+
+    MINIMUM_API_VERSION=400001
+
+    This flags a library item as a favorite
+
+    Setting flag to true (1) will set the flag
+    Setting flag to false (0) will remove the flag
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * type        = (string) 'song'|'album'|'artist'
+    * id          = (int) $object_id
+    * flag        = (bool) 0|1
+"""
+def flag(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'flag',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" record_play
+
+    MINIMUM_API_VERSION=400001
+
+    Take a song_id and update the object_count and user_activity table with a play. This allows other sources to record play history to ampache
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * id = (int) $object_id
+    * user = (int) $user_id
+    * client = (string) $agent (optional)
+"""
+def record_play(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'record_play',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" timeline
+
+    MINIMUM_API_VERSION=380001
+
+    This get an user timeline
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * username = (string)
+    * limit = (int)
+    * since = (int) UNIXTIME()
+"""
+def timeline(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'timeline',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" friends_timeline
+
+    MINIMUM_API_VERSION=380001
+
+    This get current user friends timeline
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * limit = (int)
+    * since = (int) UNIXTIME()
+"""
+def friends_timeline(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'friends_timeline',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" catalog_action
+
+    MINIMUM_API_VERSION=400001
+
+    Kick off a catalog update or clean for the selected catalog
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * task = (string) 'add_to_catalog'|'clean_catalog'
+    * catalog = (int) $catalog_id
+"""
+def catalog_action(ampache_url, ampache_api):
+    if not ampache_url and not ampache_api:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'catalog_action',
+                                   'auth': ampache_api,
+                                   'client': 'AmpacheFM Rhythmbox',
                                    'date': str(time),
                                    'song': title,
                                    'album': album,
