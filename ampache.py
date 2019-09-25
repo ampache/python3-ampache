@@ -64,7 +64,7 @@ def ping(ampache_url, ampache_api):
     * ampache_url = (string)
     * ampache_api = (string)
     * user        = (string)
-    * timestamp   = (int) UNIXTIME() //optional
+    * timestamp   = (integer) UNIXTIME() //optional
     * version     = (string) //optional)
 """
 def handshake(ampache_url, ampache_api, user, timestamp=0, version='400001'):
@@ -76,7 +76,7 @@ def handshake(ampache_url, ampache_api, user, timestamp=0, version='400001'):
     data = urllib.parse.urlencode({'action': 'handshake',
                                    'user': user,
                                    'auth': ampache_api,
-                                   'timestamp': timestamp,
+                                   'timestamp': str(timestamp),
                                    'version': version})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
@@ -100,7 +100,7 @@ def handshake(ampache_url, ampache_api, user, timestamp=0, version='400001'):
 """
 def goodbye(ampache_url, ampache_api):
     """ Request Ampache destroy an api session """
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'goodbye',
@@ -137,11 +137,11 @@ def goodbye(ampache_url, ampache_api):
     * MBtitle     = (string) //optional
     * MBartist    = (string) //optional
     * MBalbum     = (string) //optional
-    * time        = (int) UNIXTIME() //optional
+    * time        = (integer) UNIXTIME() //optional
     * client      = (string) //optional)
 """
 def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartist='', MBalbum='', time='', client = 'AmpacheAPI'):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api or not title or not artist or not album:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'scrobble',
@@ -171,7 +171,6 @@ def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartis
     return token
 
 """ get_indexes
-
     MINIMUM_API_VERSION=400001
 
     This takes a collection of inputs and returns ID + name for the object type
@@ -179,15 +178,15 @@ def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartis
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * type = (string) 'song'|'album'|'artist'|'playlist'
-    * filter = (string) //optional
+    * type        = (string) 'song'|'album'|'artist'|'playlist'
+    * filter      = (string) //optional
     * add
     * update
-    * offset = (integer) //optional
-    * limit = (integer) //optional
+    * offset      = (integer) //optional
+    * limit       = (integer) //optional
 """
 def get_indexes(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'get_indexes',
@@ -215,7 +214,6 @@ def get_indexes(ampache_url, ampache_api):
     return token
 
 """ artists
-
     MINIMUM_API_VERSION=380001
 
     This takes a collection of inputs and returns artist objects. This function is deprecated!
@@ -231,19 +229,15 @@ def get_indexes(ampache_url, ampache_api):
     * include
 """
 def artists(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'artists',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -261,7 +255,6 @@ def artists(ampache_url, ampache_api):
     return token
 
 """ artist
-
     MINIMUM_API_VERSION=380001
 
     This returns a single artist based on the UID of said artist
@@ -273,19 +266,15 @@ def artists(ampache_url, ampache_api):
     * include
 """
 def artist(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'artist',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -303,7 +292,6 @@ def artist(ampache_url, ampache_api):
     return token
 
 """ artist_albums
-
     MINIMUM_API_VERSION=380001
 
     This returns the albums of an artist
@@ -316,19 +304,15 @@ def artist(ampache_url, ampache_api):
     * limit
 """
 def artist_albums(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'artist_albums',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -346,7 +330,6 @@ def artist_albums(ampache_url, ampache_api):
     return token
 
 """ artist_songs
-
     MINIMUM_API_VERSION=380001
 
     This returns the songs of the specified artist
@@ -359,19 +342,15 @@ def artist_albums(ampache_url, ampache_api):
     * limit
 """
 def artist_songs(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'artist_songs',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -405,19 +384,15 @@ def artist_songs(ampache_url, ampache_api):
     * include
 """
 def albums(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'albums',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -435,7 +410,6 @@ def albums(ampache_url, ampache_api):
     return token
 
 """ album
-
     MINIMUM_API_VERSION=380001
 
     This returns a single album based on the UID provided
@@ -447,19 +421,15 @@ def albums(ampache_url, ampache_api):
     * include
 """
 def album(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'album',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -477,7 +447,6 @@ def album(ampache_url, ampache_api):
     return token
 
 """ album_songs
-
     MINIMUM_API_VERSION=380001
 
     This returns the songs of a specified album
@@ -490,19 +459,15 @@ def album(ampache_url, ampache_api):
     * limit
 """
 def album_songs(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'album_songs',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -520,7 +485,6 @@ def album_songs(ampache_url, ampache_api):
     return token
 
 """ tags
-
     MINIMUM_API_VERSION=380001
 
     This returns the tags (Genres) based on the specified filter
@@ -534,19 +498,15 @@ def album_songs(ampache_url, ampache_api):
     * limit
 """
 def tags(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'tags',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -564,7 +524,6 @@ def tags(ampache_url, ampache_api):
     return token
 
 """ tag
-
     MINIMUM_API_VERSION=380001
 
     This returns a single tag based on UID
@@ -575,19 +534,15 @@ def tags(ampache_url, ampache_api):
     * filter
 """
 def tag(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'tag',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -605,7 +560,6 @@ def tag(ampache_url, ampache_api):
     return token
 
 """ tag_artists
-
     MINIMUM_API_VERSION=380001
 
     This returns the artists associated with the tag in question as defined by the UID
@@ -618,19 +572,15 @@ def tag(ampache_url, ampache_api):
     * limit
 """
 def tag_artists(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'tag_artists',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -648,7 +598,6 @@ def tag_artists(ampache_url, ampache_api):
     return token
 """ tag_albums
 
-
     MINIMUM_API_VERSION=380001
 
     This returns the albums associated with the tag in question
@@ -661,19 +610,15 @@ def tag_artists(ampache_url, ampache_api):
     * limit
 """
 def tag_albums(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'tag_albums',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -691,7 +636,6 @@ def tag_albums(ampache_url, ampache_api):
     return token
 
 """ tag_songs
-
     MINIMUM_API_VERSION=380001
 
     returns the songs for this tag
@@ -704,19 +648,15 @@ def tag_albums(ampache_url, ampache_api):
     * limit
 """
 def tag_songs(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'tag_songs',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -734,7 +674,6 @@ def tag_songs(ampache_url, ampache_api):
     return token
 
 """ songs
-
     MINIMUM_API_VERSION=380001
 
     Returns songs based on the specified filter
@@ -750,19 +689,15 @@ def tag_songs(ampache_url, ampache_api):
     * limit
 """
 def songs(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'songs',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -780,7 +715,6 @@ def songs(ampache_url, ampache_api):
     return token
 
 """ song
-
     MINIMUM_API_VERSION=380001
 
     returns a single song
@@ -791,19 +725,15 @@ def songs(ampache_url, ampache_api):
     * filter
 """
 def song(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'song',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -821,7 +751,6 @@ def song(ampache_url, ampache_api):
     return token
 
 """ url_to_song
-
     MINIMUM_API_VERSION=380001
 
     This takes a url and returns the song object in question
@@ -832,19 +761,15 @@ def song(ampache_url, ampache_api):
     * url
 """
 def url_to_song(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'url_to_song',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -862,7 +787,6 @@ def url_to_song(ampache_url, ampache_api):
     return token
 
 """ playlists
-
     MINIMUM_API_VERSION=380001
 
     This returns playlists based on the specified filter
@@ -878,19 +802,15 @@ def url_to_song(ampache_url, ampache_api):
     * limit
 """
 def playlists(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlists',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -908,7 +828,6 @@ def playlists(ampache_url, ampache_api):
     return token
 
 """ playlist
-
     MINIMUM_API_VERSION=380001
 
     This returns a single playlist
@@ -919,19 +838,15 @@ def playlists(ampache_url, ampache_api):
     * filter
 """
 def playlist(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -949,7 +864,6 @@ def playlist(ampache_url, ampache_api):
     return token
 
 """ playlist_songs
-
     MINIMUM_API_VERSION=380001
 
     This returns the songs for a playlist
@@ -962,19 +876,15 @@ def playlist(ampache_url, ampache_api):
     * limit
 """
 def playlist_songs(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_songs',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -992,7 +902,6 @@ def playlist_songs(ampache_url, ampache_api):
     return token
 
 """ playlist_create
-
     MINIMUM_API_VERSION=380001
 
     This create a new playlist and return it
@@ -1004,19 +913,15 @@ def playlist_songs(ampache_url, ampache_api):
     * type
 """
 def playlist_create(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_create',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1034,7 +939,6 @@ def playlist_create(ampache_url, ampache_api):
     return token
 
 """ playlist_edit
-
     MINIMUM_API_VERSION=400001
 
     This modifies name and type of a playlist
@@ -1047,19 +951,15 @@ def playlist_create(ampache_url, ampache_api):
     * filter
 """
 def playlist_edit(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_edit',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1077,7 +977,6 @@ def playlist_edit(ampache_url, ampache_api):
     return token
 
 """ playlist_delete
-
     MINIMUM_API_VERSION=380001
 
     This deletes a playlist
@@ -1088,19 +987,15 @@ def playlist_edit(ampache_url, ampache_api):
     * filter
 """
 def playlist_delete(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_delete',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1118,7 +1013,6 @@ def playlist_delete(ampache_url, ampache_api):
     return token
 
 """ playlist_add_song
-
     MINIMUM_API_VERSION=380001
 
     This adds a song to a playlist
@@ -1130,19 +1024,15 @@ def playlist_delete(ampache_url, ampache_api):
     * filter
 """
 def playlist_add_song(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_add_song',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1160,7 +1050,6 @@ def playlist_add_song(ampache_url, ampache_api):
     return token
 
 """ playlist_remove_song
-
     MINIMUM_API_VERSION=380001
     CHANGED_IN_API_VERSION=400001
 
@@ -1173,19 +1062,15 @@ def playlist_add_song(ampache_url, ampache_api):
     * filter
 """
 def playlist_remove_song(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_remove_song',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1203,7 +1088,6 @@ def playlist_remove_song(ampache_url, ampache_api):
     return token
 
 """ search_songs
-
     MINIMUM_API_VERSION=380001
 
     This searches the songs and returns... songs
@@ -1216,19 +1100,15 @@ def playlist_remove_song(ampache_url, ampache_api):
     * limit
 """
 def search_songs(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'search_songs',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1246,7 +1126,6 @@ def search_songs(ampache_url, ampache_api):
     return token
 
 """ advanced_search
-
     MINIMUM_API_VERSION=380001
 
     Perform an advanced search given passed rules
@@ -1257,19 +1136,15 @@ def search_songs(ampache_url, ampache_api):
     * 
 """
 def advanced_search(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'advanced_search',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1287,7 +1162,6 @@ def advanced_search(ampache_url, ampache_api):
     return token
 
 """ videos
-
     MINIMUM_API_VERSION=380001
 
     This returns video objects!
@@ -1302,19 +1176,15 @@ def advanced_search(ampache_url, ampache_api):
 
 """
 def videos(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'videos',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1332,7 +1202,6 @@ def videos(ampache_url, ampache_api):
     return token
 
 """ video
-
     MINIMUM_API_VERSION=380001
 
     This returns a single video
@@ -1343,19 +1212,15 @@ def videos(ampache_url, ampache_api):
     * filter
 """
 def video(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'video',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1373,7 +1238,6 @@ def video(ampache_url, ampache_api):
     return token
 
 """ localplay
-
     MINIMUM_API_VERSION=380001
 
     This is for controlling localplay
@@ -1384,19 +1248,15 @@ def video(ampache_url, ampache_api):
     * command
 """
 def localplay(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'localplay',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1414,7 +1274,6 @@ def localplay(ampache_url, ampache_api):
     return token
 
 """ democratic
-
     MINIMUM_API_VERSION=380001
 
     This is for controlling democratic play
@@ -1427,19 +1286,15 @@ def localplay(ampache_url, ampache_api):
     * oid
 """
 def democratic(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'democratic',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1457,7 +1312,6 @@ def democratic(ampache_url, ampache_api):
     return token
 
 """ stats
-
     MINIMUM_API_VERSION=380001
     CHANGED_IN_API_VERSION=400001
 
@@ -1474,19 +1328,15 @@ def democratic(ampache_url, ampache_api):
     * username = (string) //optional
 """
 def stats(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'stats',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   '': ,
+                                   '': ,
+                                   '': ,
+                                   '': })
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1504,7 +1354,6 @@ def stats(ampache_url, ampache_api):
     return token
 
 """ user
-
     MINIMUM_API_VERSION=380001
 
     This get an user public information
@@ -1514,20 +1363,13 @@ def stats(ampache_url, ampache_api):
     * ampache_api = (string)
     * username
 """
-def user(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+def user(ampache_url, ampache_api, username):
+    if not ampache_url or not ampache_api or not username:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'user',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   'username': username})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1545,7 +1387,6 @@ def user(ampache_url, ampache_api):
     return token
 
 """ followers
-
     MINIMUM_API_VERSION=380001
 
     This get an user followers
@@ -1555,20 +1396,13 @@ def user(ampache_url, ampache_api):
     * ampache_api = (string)
     * username
 """
-def followers(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+def followers(ampache_url, ampache_api, username):
+    if not ampache_url or not ampache_api or not username:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'followers',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   'username': username})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1586,7 +1420,6 @@ def followers(ampache_url, ampache_api):
     return token
 
 """ following
-
     MINIMUM_API_VERSION=380001
 
     This get the user list followed by an user
@@ -1596,20 +1429,13 @@ def followers(ampache_url, ampache_api):
     * ampache_api = (string)
     * username
 """
-def following(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+def following(ampache_url, ampache_api, username):
+    if not ampache_url or not ampache_api or not username:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'following',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   'username': username})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1627,7 +1453,6 @@ def following(ampache_url, ampache_api):
     return token
 
 """ toggle_follow
-
     MINIMUM_API_VERSION=380001
 
     This follow/unfollow an user
@@ -1637,20 +1462,13 @@ def following(ampache_url, ampache_api):
     * ampache_api = (string)
     * username
 """
-def toggle_follow(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+def toggle_follow(ampache_url, ampache_api, username):
+    if not ampache_url or not ampache_api or not username:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'toggle_follow',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   'username': username})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1668,7 +1486,6 @@ def toggle_follow(ampache_url, ampache_api):
     return token
 
 """ last_shouts
-
     MINIMUM_API_VERSION=380001
 
     This get the latest posted shouts
@@ -1679,20 +1496,14 @@ def toggle_follow(ampache_url, ampache_api):
     * username
     * limit
 """
-def last_shouts(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+def last_shouts(ampache_url, ampache_api, username, limit = ''):
+    if not ampache_url or not ampache_api or not username:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'last_shouts',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   'username': username,
+                                   'limit': limit})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1710,7 +1521,6 @@ def last_shouts(ampache_url, ampache_api):
     return token
 
 """ rate
-
     MINIMUM_API_VERSION=380001
 
     This rates a library item
@@ -1719,23 +1529,18 @@ def last_shouts(ampache_url, ampache_api):
     * ampache_url = (string)
     * ampache_api = (string)
     * type        = (string) 'song'|'album'|'artist'
-    * id          = (int) $object_id
-    * rating      = (int) 0|1|2|3|4|5
+    * id          = (integer) $object_id
+    * rating      = (integer) 0|1|2|3|4|5
 """
-def rate(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+def rate(ampache_url, ampache_api, type, id, rating):
+    if not ampache_url or not ampache_api or not type or not id or not rating:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'rate',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   'type': type,
+                                   'id': id,
+                                   'rating': rating})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1753,7 +1558,6 @@ def rate(ampache_url, ampache_api):
     return token
 
 """ flag
-
     MINIMUM_API_VERSION=400001
 
     This flags a library item as a favorite
@@ -1765,23 +1569,18 @@ def rate(ampache_url, ampache_api):
     * ampache_url = (string)
     * ampache_api = (string)
     * type        = (string) 'song'|'album'|'artist'
-    * id          = (int) $object_id
+    * id          = (integer) $object_id
     * flag        = (bool) 0|1
 """
-def flag(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+def flag(ampache_url, ampache_api, type, id, flag):
+    if not ampache_url or not ampache_api or not type or not id or not flag:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'flag',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   'type': type,
+                                   'id': id,
+                                   'flag': flag})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1799,7 +1598,6 @@ def flag(ampache_url, ampache_api):
     return token
 
 """ record_play
-
     MINIMUM_API_VERSION=400001
 
     Take a song_id and update the object_count and user_activity table with a play. This allows other sources to record play history to ampache
@@ -1807,24 +1605,19 @@ def flag(ampache_url, ampache_api):
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * id = (int) $object_id
-    * user = (int) $user_id
+    * id = (integer) $object_id
+    * user = (integer) $user_id
     * client = (string) $agent (optional)
 """
-def record_play(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI'):
+    if not ampache_url or not ampache_api or not id or not user:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'record_play',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   'id': id,
+                                   'user': user,
+                                   'client': client})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1842,32 +1635,26 @@ def record_play(ampache_url, ampache_api):
     return token
 
 """ timeline
-
     MINIMUM_API_VERSION=380001
 
-    This get an user timeline
+    This get a user timeline
 
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
     * username = (string)
-    * limit = (int)
-    * since = (int) UNIXTIME()
+    * limit = (integer) // optional
+    * since = (integer) UNIXTIME() //optional
 """
-def timeline(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+def timeline(ampache_url, ampache_api, username, limit = '', since = ''):
+    if not ampache_url or not ampache_api or not user:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'timeline',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   'username': username,
+                                   'limit': limit,
+                                   'since': since})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1885,7 +1672,6 @@ def timeline(ampache_url, ampache_api):
     return token
 
 """ friends_timeline
-
     MINIMUM_API_VERSION=380001
 
     This get current user friends timeline
@@ -1893,23 +1679,17 @@ def timeline(ampache_url, ampache_api):
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * limit = (int)
-    * since = (int) UNIXTIME()
+    * limit = (integer)
+    * since = (integer) UNIXTIME()
 """
-def friends_timeline(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+def friends_timeline(ampache_url, ampache_api, limit = '', since = ''):
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'friends_timeline',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   'limit': limit,
+                                   'since': since})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1927,7 +1707,6 @@ def friends_timeline(ampache_url, ampache_api):
     return token
 
 """ catalog_action
-
     MINIMUM_API_VERSION=400001
 
     Kick off a catalog update or clean for the selected catalog
@@ -1936,22 +1715,16 @@ def friends_timeline(ampache_url, ampache_api):
     * ampache_url = (string)
     * ampache_api = (string)
     * task = (string) 'add_to_catalog'|'clean_catalog'
-    * catalog = (int) $catalog_id
+    * catalog = (integer) $catalog_id
 """
-def catalog_action(ampache_url, ampache_api):
-    if not ampache_url and not ampache_api:
+def catalog_action(ampache_url, ampache_api, task, catalog):
+    if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'catalog_action',
                                    'auth': ampache_api,
-                                   'client': 'AmpacheFM Rhythmbox',
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+                                   'task': task,
+                                   'catalog': catalog})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
