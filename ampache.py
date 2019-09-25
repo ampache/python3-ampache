@@ -680,7 +680,7 @@ def tag_songs(ampache_url, ampache_api, filter, offset, limit):
     * offset
     * limit
 """
-def songs(ampache_url, ampache_api, filter, offset, limit):
+def songs(ampache_url, ampache_api, exact, add, update, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -789,7 +789,7 @@ def url_to_song(ampache_url, ampache_api, url):
     * offset
     * limit
 """
-def playlists(ampache_url, ampache_api, add, update, filter, offset, limit):
+def playlists(ampache_url, ampache_api, exact, add, update, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -1256,14 +1256,13 @@ def localplay(ampache_url, ampache_api, command):
     * action
     * oid
 """
-def democratic(ampache_url, ampache_api, method, action, oid):
+def democratic(ampache_url, ampache_api, method, oid):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'democratic',
                                    'auth': ampache_api,
                                    'methon': method,
-                                   'action': action,
                                    'oid': oid})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
