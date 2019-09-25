@@ -185,18 +185,18 @@ def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartis
     * offset      = (integer) //optional
     * limit       = (integer) //optional
 """
-def get_indexes(ampache_url, ampache_api):
-    if not ampache_url or not ampache_api:
+def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = '', offset = '', limit = ''):
+    if not ampache_url or not ampache_api or not type:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'get_indexes',
                                    'auth': ampache_api,
-                                   'type': 'AmpacheFM Rhythmbox',
-                                   'filter': str(time),
-                                   'add': title,
-                                   'update': album,
-                                   'offset': artist,
-                                   'limit': MBtitle})
+                                   'type': type,
+                                   'filter': filter,
+                                   'add': add,
+                                   'update': update,
+                                   'offset': str(offset),
+                                   'limit': str(limit)})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -228,16 +228,18 @@ def get_indexes(ampache_url, ampache_api):
     * limit
     * include
 """
-def artists(ampache_url, ampache_api):
+def artists(ampache_url, ampache_api, filter, add, update, offset, limit, include):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'artists',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter,
+                                   'add': add,
+                                   'update': update,
+                                   'offset': str(offset),
+                                   'limit': str(limit),
+                                   'include': include})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -265,16 +267,14 @@ def artists(ampache_url, ampache_api):
     * filter
     * include
 """
-def artist(ampache_url, ampache_api):
+def artist(ampache_url, ampache_api, filter, include):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'artist',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter,
+                                   'include': include})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -303,16 +303,15 @@ def artist(ampache_url, ampache_api):
     * offset
     * limit
 """
-def artist_albums(ampache_url, ampache_api):
+def artist_albums(ampache_url, ampache_api, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'artist_albums',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter,
+                                   'offset': str(offset),
+                                   'limit': str(limit)})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -341,16 +340,15 @@ def artist_albums(ampache_url, ampache_api):
     * offset
     * limit
 """
-def artist_songs(ampache_url, ampache_api):
+def artist_songs(ampache_url, ampache_api, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'artist_songs',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter,
+                                   'offset': str(offset),
+                                   'limit': str(limit)})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -383,16 +381,19 @@ def artist_songs(ampache_url, ampache_api):
     * limit
     * include
 """
-def albums(ampache_url, ampache_api):
+def albums(ampache_url, ampache_api, exact, add, update, filter, offset, limit, include):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'albums',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'exact': exact,
+                                   'add': add,
+                                   'update': update,
+                                   'filter': filter,
+                                   'offset': str(offset),
+                                   'limit': str(limit),
+                                   'include': include})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -420,16 +421,14 @@ def albums(ampache_url, ampache_api):
     * filter
     * include
 """
-def album(ampache_url, ampache_api):
+def album(ampache_url, ampache_api, filter, include):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'album',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter,
+                                   'include': include})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -458,16 +457,15 @@ def album(ampache_url, ampache_api):
     * offset
     * limit
 """
-def album_songs(ampache_url, ampache_api):
+def album_songs(ampache_url, ampache_api, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'album_songs',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter,
+                                   'offset': str(offset),
+                                   'limit': str(limit)})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -497,17 +495,16 @@ def album_songs(ampache_url, ampache_api):
     * offset
     * limit
 """
-def tags(ampache_url, ampache_api):
+def tags(ampache_url, , exact, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'tags',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
-    full_url = ampache_url + '?' + data
+                                   'exact': exact,
+                                   'filter': filter,
+                                   'offset': str(offset),
+                                   'limit': str(limit)})
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
@@ -533,16 +530,13 @@ def tags(ampache_url, ampache_api):
     * ampache_api = (string)
     * filter
 """
-def tag(ampache_url, ampache_api):
+def tag(ampache_url, ampache_api, filter):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'tag',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -571,16 +565,15 @@ def tag(ampache_url, ampache_api):
     * offset
     * limit
 """
-def tag_artists(ampache_url, ampache_api):
+def tag_artists(ampache_url, ampache_api, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'tag_artists',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter,
+                                   'offset': str(offset),
+                                   'limit': str(limit)})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -609,16 +602,15 @@ def tag_artists(ampache_url, ampache_api):
     * offset
     * limit
 """
-def tag_albums(ampache_url, ampache_api):
+def tag_albums(ampache_url, ampache_api, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'tag_albums',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter,
+                                   'offset': str(offset),
+                                   'limit': str(limit)})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -647,16 +639,15 @@ def tag_albums(ampache_url, ampache_api):
     * offset
     * limit
 """
-def tag_songs(ampache_url, ampache_api):
+def tag_songs(ampache_url, ampache_api, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'tag_songs',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter,
+                                   'offset': str(offset),
+                                   'limit': str(limit)})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -688,16 +679,18 @@ def tag_songs(ampache_url, ampache_api):
     * offset
     * limit
 """
-def songs(ampache_url, ampache_api):
+def songs(ampache_url, ampache_api, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'songs',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'exact': exact,
+                                   'add': add,
+                                   'update': update,
+                                   'filter': filter,
+                                   'offset': str(offset),
+                                   'limit': str(limit)})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -724,16 +717,13 @@ def songs(ampache_url, ampache_api):
     * ampache_api = (string)
     * filter
 """
-def song(ampache_url, ampache_api):
+def song(ampache_url, ampache_api, filter):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'song',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -760,16 +750,13 @@ def song(ampache_url, ampache_api):
     * ampache_api = (string)
     * url
 """
-def url_to_song(ampache_url, ampache_api):
+def url_to_song(ampache_url, ampache_api, url):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'url_to_song',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'url': url})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -801,16 +788,18 @@ def url_to_song(ampache_url, ampache_api):
     * offset
     * limit
 """
-def playlists(ampache_url, ampache_api):
+def playlists(ampache_url, ampache_api, add, update, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlists',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'exact': exact,
+                                   'add': add,
+                                   'update': update,
+                                   'filter': filter,
+                                   'offset': str(offset),
+                                   'limit': str(limit)})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -837,16 +826,13 @@ def playlists(ampache_url, ampache_api):
     * ampache_api = (string)
     * filter
 """
-def playlist(ampache_url, ampache_api):
+def playlist(ampache_url, ampache_api, filter):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -875,16 +861,15 @@ def playlist(ampache_url, ampache_api):
     * offset
     * limit
 """
-def playlist_songs(ampache_url, ampache_api):
+def playlist_songs(ampache_url, ampache_api, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_songs',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter,
+                                   'offset': str(offset),
+                                   'limit': str(limit)})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -912,16 +897,14 @@ def playlist_songs(ampache_url, ampache_api):
     * name
     * type
 """
-def playlist_create(ampache_url, ampache_api):
+def playlist_create(ampache_url, ampache_api, name, type):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_create',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'name': name,
+                                   'type': type})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -950,16 +933,15 @@ def playlist_create(ampache_url, ampache_api):
     * type
     * filter
 """
-def playlist_edit(ampache_url, ampache_api):
+def playlist_edit(ampache_url, ampache_api, name, type, filter):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_edit',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'name': name,
+                                   'type': type,
+                                   'filter': filter})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -986,16 +968,13 @@ def playlist_edit(ampache_url, ampache_api):
     * ampache_api = (string)
     * filter
 """
-def playlist_delete(ampache_url, ampache_api):
+def playlist_delete(ampache_url, ampache_api, filter):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_delete',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1023,16 +1002,14 @@ def playlist_delete(ampache_url, ampache_api):
     * song
     * filter
 """
-def playlist_add_song(ampache_url, ampache_api):
+def playlist_add_song(ampache_url, ampache_api, song, filter):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_add_song',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'song': song,
+                                   'filter': filter})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1061,16 +1038,14 @@ def playlist_add_song(ampache_url, ampache_api):
     * song
     * filter
 """
-def playlist_remove_song(ampache_url, ampache_api):
+def playlist_remove_song(ampache_url, ampache_api, song, filter):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_remove_song',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'song': song,
+                                   'filter': filter})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1099,16 +1074,15 @@ def playlist_remove_song(ampache_url, ampache_api):
     * offset
     * limit
 """
-def search_songs(ampache_url, ampache_api):
+def search_songs(ampache_url, ampache_api, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'search_songs',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter,
+                                   'offset': str(offset),
+                                   'limit': str(limit)})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1133,18 +1107,20 @@ def search_songs(ampache_url, ampache_api):
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * 
+    //FIXME what are the rules on this?
+    * type
+    * offset
+    * limit'
 """
-def advanced_search(ampache_url, ampache_api):
+def advanced_search(ampache_url, ampache_api, type, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'advanced_search',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'type': type,
+                                   'offset': offset,
+                                   'limit': limit})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1175,16 +1151,16 @@ def advanced_search(ampache_url, ampache_api):
     * limit
 
 """
-def videos(ampache_url, ampache_api):
+def videos(ampache_url, ampache_api, exact, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'videos',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'exact': exact,
+                                   'filter': filter,
+                                   'offset': str(offset),
+                                   'limit': str(limit)})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1211,16 +1187,13 @@ def videos(ampache_url, ampache_api):
     * ampache_api = (string)
     * filter
 """
-def video(ampache_url, ampache_api):
+def video(ampache_url, ampache_api, filter):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'video',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'filter': filter})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1247,16 +1220,13 @@ def video(ampache_url, ampache_api):
     * ampache_api = (string)
     * command
 """
-def localplay(ampache_url, ampache_api):
+def localplay(ampache_url, ampache_api, command):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'localplay',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'command': command})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1285,16 +1255,15 @@ def localplay(ampache_url, ampache_api):
     * action
     * oid
 """
-def democratic(ampache_url, ampache_api):
+def democratic(ampache_url, ampache_api, method, action, oid):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'democratic',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'methon': method,
+                                   'action': action,
+                                   'oid': oid})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -1327,16 +1296,18 @@ def democratic(ampache_url, ampache_api):
     * user_id = (integer) //optional
     * username = (string) //optional
 """
-def stats(ampache_url, ampache_api):
+def stats(ampache_url, ampache_api, type, filter, offset, limit, user_id, username):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'stats',
                                    'auth': ampache_api,
-                                   '': ,
-                                   '': ,
-                                   '': ,
-                                   '': })
+                                   'type': type,
+                                   'filter': filter,
+                                   'offset': offset,
+                                   'limit': limit,
+                                   'user_id': user_id,
+                                   'username': username})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
