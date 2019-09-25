@@ -495,7 +495,7 @@ def album_songs(ampache_url, ampache_api, filter, offset, limit):
     * offset
     * limit
 """
-def tags(ampache_url, , exact, filter, offset, limit):
+def tags(ampache_url, exact, filter, offset, limit):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -505,6 +505,7 @@ def tags(ampache_url, , exact, filter, offset, limit):
                                    'filter': filter,
                                    'offset': str(offset),
                                    'limit': str(limit)})
+    full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
