@@ -1711,3 +1711,38 @@ def catalog_action(ampache_url, ampache_api, task, catalog):
     except AttributeError:
         token = False
     return token
+
+""" update_from_tags
+    MINIMUM_API_VERSION=380001
+
+    updates a single album,artist,song from the tag data
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * type = (string) 'artist'|'album'|'song'
+    * id = (integer) $artist_id, $album_id, $song_id)
+"""
+def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id):
+    if not ampache_url or not ampache_api or not user:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'timeline',
+                                   'auth': ampache_api,
+                                   'type': ampache_type,
+                                   'id': ampache_id})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    tree = ET.fromstring(ampache_response)
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
