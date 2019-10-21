@@ -228,11 +228,11 @@ def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = 
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -271,11 +271,11 @@ def artists(ampache_url, ampache_api, filter, add, update, offset, limit, includ
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -306,11 +306,11 @@ def artist(ampache_url, ampache_api, filter, include):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -343,11 +343,11 @@ def artist_albums(ampache_url, ampache_api, filter, offset, limit):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -380,11 +380,11 @@ def artist_songs(ampache_url, ampache_api, filter, offset, limit):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -425,11 +425,11 @@ def albums(ampache_url, ampache_api, exact, add, update, filter, offset, limit, 
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -460,11 +460,11 @@ def album(ampache_url, ampache_api, filter, include):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -483,7 +483,7 @@ def album(ampache_url, ampache_api, filter, include):
     * offset
     * limit
 """
-def album_songs(ampache_url, ampache_api, filter, offset, limit):
+def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -497,11 +497,11 @@ def album_songs(ampache_url, ampache_api, filter, offset, limit):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -536,11 +536,11 @@ def tags(ampache_url, ampache_api, exact, filter, offset, limit):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -569,11 +569,11 @@ def tag(ampache_url, ampache_api, filter):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -606,11 +606,11 @@ def tag_artists(ampache_url, ampache_api, filter, offset, limit):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -643,11 +643,11 @@ def tag_albums(ampache_url, ampache_api, filter, offset, limit):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -680,11 +680,11 @@ def tag_songs(ampache_url, ampache_api, filter, offset, limit):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -723,11 +723,11 @@ def songs(ampache_url, ampache_api, exact, add, update, filter, offset, limit):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -756,11 +756,11 @@ def song(ampache_url, ampache_api, filter):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -789,11 +789,11 @@ def url_to_song(ampache_url, ampache_api, url):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -832,11 +832,11 @@ def playlists(ampache_url, ampache_api, exact, add, update, filter, offset, limi
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -865,11 +865,11 @@ def playlist(ampache_url, ampache_api, filter):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -902,11 +902,11 @@ def playlist_songs(ampache_url, ampache_api, filter, offset, limit):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -1115,11 +1115,11 @@ def search_songs(ampache_url, ampache_api, filter, offset, limit):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -1153,11 +1153,11 @@ def advanced_search(ampache_url, ampache_api, type, offset, limit):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -1193,11 +1193,11 @@ def videos(ampache_url, ampache_api, exact, filter, offset, limit):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -1226,11 +1226,11 @@ def video(ampache_url, ampache_api, filter):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -1339,11 +1339,11 @@ def stats(ampache_url, ampache_api, type, filter, offset, limit, user_id, userna
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -1372,11 +1372,11 @@ def user(ampache_url, ampache_api, username):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -1405,11 +1405,11 @@ def followers(ampache_url, ampache_api, username):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -1438,11 +1438,11 @@ def following(ampache_url, ampache_api, username):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -1506,11 +1506,11 @@ def last_shouts(ampache_url, ampache_api, username, limit = ''):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -1657,11 +1657,11 @@ def timeline(ampache_url, ampache_api, username, limit = '', since = ''):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -1692,11 +1692,11 @@ def friends_timeline(ampache_url, ampache_api, limit = '', since = ''):
     ampache_response = result.read().decode('utf-8')
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('success').text
+        token = tree.tag
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
