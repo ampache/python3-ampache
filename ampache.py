@@ -20,11 +20,38 @@ Ampache XML-Api v400001 for python3
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
+import hashlib
 import time
 import urllib.parse
 import urllib.request
 
 from xml.etree import ElementTree as ET
+
+"""
+----------------
+HELPER FUNCTIONS
+----------------
+"""
+
+""" encrypt_string
+
+    This function can be used to encrype your apikey into the accepted format.
+
+    INPUTS
+    * ampache_api  = (string) apikey
+    * user = (string) username
+"""
+def encrypt_string(ampache_api, user):
+    key = hashlib.sha256(ampache_api.encode()).hexdigest()
+    passphrase = user + key
+    sha_signature = hashlib.sha256(passphrase.encode()).hexdigest()
+    return sha_signature
+
+"""
+-------------
+API FUNCTIONS
+-------------
+"""
 
 """ ping
     MINIMUM_API_VERSION=380001
@@ -45,14 +72,14 @@ def ping(ampache_url, ampache_api):
                                    'auth': ampache_api})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
-    ampache_response = result.read().decode('utf-8')
+    ampache_response = result.read()
     result.close()
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('auth').text
+        token = tree.find('session_expire').text
     except AttributeError:
         token = False
-    return token
+    return ampache_api
 
 """ handshake
     MINIMUM_API_VERSION=380001
@@ -67,14 +94,13 @@ def ping(ampache_url, ampache_api):
     * timestamp   = (integer) UNIXTIME() //optional
     * version     = (string) //optional)
 """
-def handshake(ampache_url, ampache_api, user, timestamp=0, version='400001'):
-    if not ampache_url or not ampache_api or not user:
+def handshake(ampache_url, ampache_api, timestamp=0, version='400001'):
+    if not ampache_url or not ampache_api:
         return False
     if timestamp == 0:
         timestamp = int(time.time())
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'handshake',
-                                   'user': user,
                                    'auth': ampache_api,
                                    'timestamp': str(timestamp),
                                    'version': version})
@@ -1746,3 +1772,4 @@ def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id):
     except AttributeError:
         token = False
     return token
+
