@@ -254,7 +254,7 @@ def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = 
     * limit
     * include
 """
-def artists(ampache_url, ampache_api, filter, add, update, offset, limit, include):
+def artists(ampache_url, ampache_api, filter = '', add = '', update = '', offset = '', limit = '', include = ''):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -1711,7 +1711,7 @@ def friends_timeline(ampache_url, ampache_api, limit = '', since = ''):
     * catalog = (integer) $catalog_id
 """
 def catalog_action(ampache_url, ampache_api, task, catalog):
-    if not ampache_url or not ampache_api:
+    if not ampache_url or not ampache_api or not (task == 'add_to_catalog' or task == 'clean_catalog'):
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'catalog_action',
