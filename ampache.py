@@ -809,21 +809,17 @@ def url_to_song(ampache_url, ampache_api, url):
     * ampache_url = (string)
     * ampache_api = (string)
     * exact
-    * add
-    * update
     * filter
     * offset
     * limit
 """
-def playlists(ampache_url, ampache_api, exact, add, update, filter, offset, limit):
+def playlists(ampache_url, ampache_api, exact = '', filter = '', offset = 0, limit = 0):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlists',
                                    'auth': ampache_api,
                                    'exact': exact,
-                                   'add': add,
-                                   'update': update,
                                    'filter': filter,
                                    'offset': str(offset),
                                    'limit': str(limit)})
@@ -888,7 +884,7 @@ def playlist(ampache_url, ampache_api, filter):
     * offset
     * limit
 """
-def playlist_songs(ampache_url, ampache_api, filter, offset, limit):
+def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -1773,3 +1769,32 @@ def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id):
         token = False
     return token
 
+
+""" download
+    MINIMUM_API_VERSION=400001
+
+    download a song or podcast episode
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * id          = (string) $song_id / $podcast_episode_id
+    * type        = (string) 'song'|'podcast'
+    * destination = (string) full file path)
+"""
+def download(ampache_url, ampache_api, id, type, destination):
+    if not ampache_url or not ampache_api or not user:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'download',
+                                   'id': id,
+                                   'type': type})
+    full_url = ampache_url + '?' + data
+    try:
+        result = requests.get(fullurl, allow_redirects=True)
+        open(destination, 'wb').write(result.content)
+    except:
+        return False
+    return True
+    
+    
