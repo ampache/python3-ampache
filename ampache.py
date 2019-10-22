@@ -77,9 +77,9 @@ def ping(ampache_url, ampache_api):
     result.close()
     tree = ET.fromstring(ampache_response)
     try:
-        token = tree.find('session_expire').text
+        tree.find('session_expire').text
     except AttributeError:
-        token = False
+        return False
     return ampache_api
 
 """ handshake
@@ -91,7 +91,6 @@ def ping(ampache_url, ampache_api):
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * user        = (string)
     * timestamp   = (integer) UNIXTIME() //optional
     * version     = (string) //optional)
 """
