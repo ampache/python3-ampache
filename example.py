@@ -109,11 +109,12 @@ print('\nsearching for songs that are in this album', single_album)
 for child in ampache.album_songs(ampache_url, ampache_api, single_album, '', 0):
     if child.tag == 'song':
         print(child.tag, child.attrib)
+
 """
 albums
 """
 print('\nSearching for albums called', album_title)
-albums = ampache.albums(ampache_url, ampache_api, 1, 0, 0, album_title, 0, 0, '')
+albums = ampache.albums(ampache_url, ampache_api, 1, 0, 0, album_title, '', 0, 0)
 for child in albums:
     if child.tag == 'total_count':
         continue
@@ -121,11 +122,10 @@ for child in albums:
     print('Album title ', child.find('name').text)
     print('Album artist', child.find('artist').text)
 
-
 """
 stats
 """
-for child in ampache.stats(ampache_url, ampache_api, 'artist', '', 0, 1, 0, 0):
+for child in ampache.stats(ampache_url, ampache_api, 'artist', '', ampache_user, None, 0, 1):
     if child.tag == 'artist':
         print('\ngetting a random artist using the stats method and found', child.find('name').text)
         single_artist = child.attrib['id']
@@ -137,6 +137,7 @@ for child in ampache.artist(ampache_url, ampache_api, single_artist, ''):
     if child.tag == 'artist':
         print('\nsearching for an artist with this id', single_artist)
         print(child.tag, child.attrib)
+
 """
 artist_albums
 """
@@ -144,6 +145,7 @@ print('\nsearching for albums that are in this artist', single_artist)
 for child in ampache.artist_albums(ampache_url, ampache_api, single_artist, '', 0):
     if child.tag == 'album':
         print(child.tag, child.attrib)
+
 """
 artist_songs
 """
@@ -151,6 +153,7 @@ print('\nsearching for songs that are in this artist', single_artist)
 for child in ampache.artist_songs(ampache_url, ampache_api, single_artist, '', 0):
     if child.tag == 'song':
         print(child.tag, child.attrib)
+
 """
 artists
 """
@@ -276,12 +279,12 @@ print(ampache.tag(ampache_url, ampache_api, ''))
 """
 tag_albums
 """
-print(ampache.tag_albums(ampache_url, ampache_api))
+print(ampache.tag_albums(ampache_url, ampache_api, 'Rock'))
 
 """
 tag_artists
 """
-print(ampache.tag_artists(ampache_url, ampache_api))
+print(ampache.tag_artists(ampache_url, ampache_api, 'Rock'))
 
 """
 tag_songs
@@ -291,12 +294,12 @@ tag_songs
 """
 tags
 """
-print(ampache.tags(ampache_url, ampache_api))
+print(ampache.tags(ampache_url, ampache_api, ''))
 
 """
 timeline
 """
-print(ampache.timeline(ampache_url, ampache_api))
+print(ampache.timeline(ampache_url, ampache_api, ampache_user))
 
 """
 toggle_follow
@@ -329,3 +332,4 @@ goodbye
 # Close your session when you're done
 print('\nWhen you are finished it\'s a good idea to kill your session')
 print('    ', ampache.goodbye(ampache_url, ampache_api))
+
