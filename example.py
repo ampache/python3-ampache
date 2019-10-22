@@ -59,6 +59,21 @@ for child in playlists:
         single_playlist = child.attrib['id']
 
 """
+user
+"""
+myuser = ampache.user(ampache_url, ampache_api, ampache_user)
+print('\ndata for my user account details:')
+for child in myuser:
+    print(child.tag, child.attrib)
+    print('\nusername    ', child.find('username').text)
+    print('create_date ', child.find('create_date').text)
+    print('last_seen   ', child.find('last_seen').text)
+    print('website     ', child.find('website').text)
+    print('state       ', child.find('state').text)
+    print('city        ', child.find('city').text)
+    print('fullname    ', child.find('fullname').text)
+
+"""
 advanced_search
 
 THERE ARE ADDITIONAL THINGS THAT I NEED TO WORK OUT ON THIS
@@ -144,6 +159,7 @@ catalog_action
 """
 print("\nampache.catalog_action was sent an intentionally bad task. 'clean' does not exist so return False")
 print(ampache.catalog_action(ampache_url, ampache_api, 'clean', 2))
+print()
 
 """
 democratic
@@ -181,9 +197,19 @@ localplay
 #print(ampache.localplay(ampache_url, ampache_api))
 
 """
+playlists
+"""
+print(ampache.playlists(ampache_url, ampache_api))
+
+"""
 playlist
 """
-#print(ampache.playlist(ampache_url, ampache_api))
+print(ampache.playlist(ampache_url, ampache_api))
+
+"""
+playlist_songs
+"""
+print(ampache.playlist_songs(ampache_url, ampache_api))
 
 """
 playlist_create
@@ -206,19 +232,9 @@ playlist_remove_song
 #print(ampache.playlist_remove_song(ampache_url, ampache_api))
 
 """
-playlist_songs
-"""
-#print(ampache.playlist_songs(ampache_url, ampache_api))
-
-"""
 playlist_delete
 """
 #print(ampache.playlist_delete(ampache_url, ampache_api))
-
-"""
-playlists
-"""
-#print(ampache.playlists(ampache_url, ampache_api))
 
 """
 rate
@@ -238,32 +254,32 @@ scrobble
 """
 search_songs
 """
-#print(ampache.search_songs(ampache_url, ampache_api))
+print(ampache.search_songs(ampache_url, ampache_api))
 
 """
 song
 """
-#print(ampache.song(ampache_url, ampache_api))
+print(ampache.song(ampache_url, ampache_api))
 
 """
 songs
 """
-#print(ampache.songs(ampache_url, ampache_api))
+print(ampache.songs(ampache_url, ampache_api))
 
 """
 tag
 """
-#print(ampache.tag(ampache_url, ampache_api))
+print(ampache.tag(ampache_url, ampache_api))
 
 """
 tag_albums
 """
-#print(ampache.tag_albums(ampache_url, ampache_api))
+print(ampache.tag_albums(ampache_url, ampache_api))
 
 """
 tag_artists
 """
-#print(ampache.tag_artists(ampache_url, ampache_api))
+print(ampache.tag_artists(ampache_url, ampache_api))
 
 """
 tag_songs
@@ -273,12 +289,12 @@ tag_songs
 """
 tags
 """
-#print(ampache.tags(ampache_url, ampache_api))
+print(ampache.tags(ampache_url, ampache_api))
 
 """
 timeline
 """
-#print(ampache.timeline(ampache_url, ampache_api))
+print(ampache.timeline(ampache_url, ampache_api))
 
 """
 toggle_follow
@@ -296,11 +312,6 @@ url_to_song
 #print(ampache.url_to_song(ampache_url, ampache_api))
 
 """
-user
-"""
-#print(ampache.user(ampache_url, ampache_api))
-
-"""
 video
 """
 #print(ampache.video(ampache_url, ampache_api))
@@ -316,5 +327,3 @@ goodbye
 # Close your session when you're done
 print('\nWhen you are finished it\'s a good idea to kill your session')
 print('    ', ampache.goodbye(ampache_url, ampache_api))
-
-
