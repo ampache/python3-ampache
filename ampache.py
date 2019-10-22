@@ -21,6 +21,7 @@ Ampache XML-Api v400001 for python3
 """
 
 import hashlib
+import requests
 import time
 import urllib.parse
 import urllib.request
@@ -1787,14 +1788,12 @@ def download(ampache_url, ampache_api, id, type, destination):
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'download',
+                                   'auth': ampache_api,
                                    'id': id,
                                    'type': type})
     full_url = ampache_url + '?' + data
-    try:
-        result = requests.get(fullurl, allow_redirects=True)
-        open(destination, 'wb').write(result.content)
-    except:
-        return False
+    result = requests.get(full_url, allow_redirects=True)
+    open(destination, 'wb').write(result.content)
     return True
     
     
