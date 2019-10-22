@@ -30,4 +30,4 @@ Further testing is required but it works pretty well so far.
 
 ## HOMEPAGE
 
-[https://github.com/lachlan-00/python3-ampache]
+[<https://github.com/lachlan-00/python3-ampache>]
