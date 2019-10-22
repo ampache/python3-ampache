@@ -211,7 +211,7 @@ def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartis
     * offset      = (integer) //optional
     * limit       = (integer) //optional
 """
-def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = '', offset = '', limit = ''):
+def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = '', offset = 0, limit = 0):
     if not ampache_url or not ampache_api or not type:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -254,7 +254,7 @@ def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = 
     * limit
     * include
 """
-def artists(ampache_url, ampache_api, filter = '', add = '', update = '', offset = '', limit = '', include = ''):
+def artists(ampache_url, ampache_api, filter = '', add = '', update = '', offset = 0, limit = 0, include = ''):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -1489,7 +1489,7 @@ def toggle_follow(ampache_url, ampache_api, username):
     * username
     * limit
 """
-def last_shouts(ampache_url, ampache_api, username, limit = ''):
+def last_shouts(ampache_url, ampache_api, username, limit = 0):
     if not ampache_url or not ampache_api or not username:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -1639,7 +1639,7 @@ def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI'):
     * limit = (integer) // optional
     * since = (integer) UNIXTIME() //optional
 """
-def timeline(ampache_url, ampache_api, username, limit = '', since = ''):
+def timeline(ampache_url, ampache_api, username, limit = 0, since = 0):
     if not ampache_url or not ampache_api or not user:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -1675,7 +1675,7 @@ def timeline(ampache_url, ampache_api, username, limit = '', since = ''):
     * limit = (integer)
     * since = (integer) UNIXTIME()
 """
-def friends_timeline(ampache_url, ampache_api, limit = '', since = ''):
+def friends_timeline(ampache_url, ampache_api, limit = 0, since = 0):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'

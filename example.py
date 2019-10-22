@@ -271,7 +271,7 @@ print(ampache.songs(ampache_url, ampache_api))
 """
 tag
 """
-print(ampache.tag(ampache_url, ampache_api))
+print(ampache.tag(ampache_url, ampache_api, ''))
 
 """
 tag_albums
