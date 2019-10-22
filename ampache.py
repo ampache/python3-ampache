@@ -1770,6 +1770,30 @@ def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id):
         token = False
     return token
 
+""" stream
+    MINIMUM_API_VERSION=400001
+
+    stream a song or podcast episode
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * id          = (string) $song_id / $podcast_episode_id
+    * type        = (string) 'song'|'podcast'
+    * destination = (string) full file path)
+"""
+def stream(ampache_url, ampache_api, id, type, destination):
+    if not ampache_url or not ampache_api or not user:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'stream',
+                                   'auth': ampache_api,
+                                   'id': id,
+                                   'type': type})
+    full_url = ampache_url + '?' + data
+    result = requests.get(full_url, allow_redirects=True)
+    open(destination, 'wb').write(result.content)
+    return True
 
 """ download
     MINIMUM_API_VERSION=400001
@@ -1795,5 +1819,3 @@ def download(ampache_url, ampache_api, id, type, destination):
     result = requests.get(full_url, allow_redirects=True)
     open(destination, 'wb').write(result.content)
     return True
-    
-    
