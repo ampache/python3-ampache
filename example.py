@@ -89,6 +89,7 @@ for child in search_song:
     print(child.find('title').text)
     print(child.find('track').text)
     print(child.find('artist').text)
+    song_title = child.find('title').text
 search_album = ampache.advanced_search(ampache_url, ampache_api, 'album', 0, 1)
 search_artist = ampache.advanced_search(ampache_url, ampache_api, 'artist', 0, 1)
 
@@ -99,6 +100,7 @@ for child in ampache.album(ampache_url, ampache_api, single_album, ''):
     if child.tag == 'album':
         print('\nsearching for an album with this id', single_album)
         print(child.tag, child.attrib)
+        album_title = child.find('name').text
 
 """
 album_songs
@@ -110,8 +112,8 @@ for child in ampache.album_songs(ampache_url, ampache_api, single_album, '', 0):
 """
 albums
 """
-print('\nSearching for albums called \'Ignition\'')
-albums = ampache.albums(ampache_url, ampache_api, 1, 0, 0, 'Ignition', 0, 0, '')
+print('\nSearching for albums called', album_title)
+albums = ampache.albums(ampache_url, ampache_api, 1, 0, 0, album_title, 0, 0, '')
 for child in albums:
     if child.tag == 'total_count':
         continue
@@ -204,12 +206,12 @@ print(ampache.playlists(ampache_url, ampache_api))
 """
 playlist
 """
-print(ampache.playlist(ampache_url, ampache_api))
+print(ampache.playlist(ampache_url, ampache_api, single_playlist))
 
 """
 playlist_songs
 """
-print(ampache.playlist_songs(ampache_url, ampache_api))
+print(ampache.playlist_songs(ampache_url, ampache_api, single_playlist))
 
 """
 playlist_create
@@ -254,12 +256,12 @@ scrobble
 """
 search_songs
 """
-print(ampache.search_songs(ampache_url, ampache_api))
+print(ampache.search_songs(ampache_url, ampache_api, song_title))
 
 """
 song
 """
-print(ampache.song(ampache_url, ampache_api))
+print(ampache.song(ampache_url, ampache_api, song_title))
 
 """
 songs

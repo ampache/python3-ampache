@@ -407,7 +407,7 @@ def artist_songs(ampache_url, ampache_api, filter, offset, limit):
     * limit
     * include
 """
-def albums(ampache_url, ampache_api, exact, add, update, filter, offset, limit, include):
+def albums(ampache_url, ampache_api, exact = '', add = '', update = '', filter = '', offset = 0, limit = 0, include = ''):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -521,7 +521,7 @@ def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     * offset
     * limit
 """
-def tags(ampache_url, ampache_api, exact, filter, offset, limit):
+def tags(ampache_url, ampache_api, exact = '', filter = '', offset = 0, limit = 0):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -706,7 +706,7 @@ def tag_songs(ampache_url, ampache_api, filter, offset, limit):
     * offset
     * limit
 """
-def songs(ampache_url, ampache_api, exact, add, update, filter, offset, limit):
+def songs(ampache_url, ampache_api, exact = '', add = '', update = '', filter = '', offset = 0, limit = 0):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -1097,7 +1097,7 @@ def playlist_remove_song(ampache_url, ampache_api, song, filter):
     * offset
     * limit
 """
-def search_songs(ampache_url, ampache_api, filter, offset, limit):
+def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -1174,7 +1174,7 @@ def advanced_search(ampache_url, ampache_api, type, offset, limit):
     * limit
 
 """
-def videos(ampache_url, ampache_api, exact, filter, offset, limit):
+def videos(ampache_url, ampache_api, exact = '', filter = '', offset = 0, limit = 0):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
