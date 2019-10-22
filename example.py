@@ -85,13 +85,26 @@ for child in search_song:
     if child.tag == 'total_count':
         continue
     print('\nadvanced search found a song')
-    print(child.find('filename').text)
-    print(child.find('title').text)
-    print(child.find('track').text)
-    print(child.find('artist').text)
+    print('filename ', child.find('filename').text)
+    print('title    ', child.find('title').text)
+    print('track    ', child.find('track').text)
+    print('artist   ', child.find('artist').text)
     song_title = child.find('title').text
 search_album = ampache.advanced_search(ampache_url, ampache_api, 'album', 0, 1)
+for child in search_album:
+    if child.tag == 'total_count':
+        continue
+    print('\nadvanced search found an artist')
+    print('name ', child.find('name').text)
+    song_title = child.find('title').text
 search_artist = ampache.advanced_search(ampache_url, ampache_api, 'artist', 0, 1)
+for child in search_artist:
+    if child.tag == 'total_count':
+        continue
+    print('\nadvanced search found an album')
+    print('name ', child.find('name').text)
+    print('artist   ', child.find('artist').text)
+    song_title = child.find('title').text
 
 """
 album
