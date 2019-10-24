@@ -1769,7 +1769,7 @@ def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI'):
     * since = (integer) UNIXTIME() //optional
 """
 def timeline(ampache_url, ampache_api, username, limit = 0, since = 0):
-    if not ampache_url or not ampache_api or not user:
+    if not ampache_url or not ampache_api or not username:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'timeline',
