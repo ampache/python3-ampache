@@ -60,18 +60,22 @@ for child in playlists:
 
 """
 user
+>>> print(dir(xml.etree.ElementTree.Element))
+['__class__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'attrib', 'clear', 'extend', 'find', 'findall', 'findtext', 'get', 'getchildren', 'getiterator', 'insert', 'items', 'iter', 'iterfind', 'itertext', 'keys', 'makeelement', 'remove', 'set', 'tag', 'tail', 'text']
 """
 myuser = ampache.user(ampache_url, ampache_api, ampache_user)
 print('\ndata for my user account details:')
 for child in myuser:
     print(child.tag, child.attrib)
-    print('\nusername    ', child.find('username').text)
-    print('create_date ', child.find('create_date').text)
-    print('last_seen   ', child.find('last_seen').text)
-    print('website     ', child.find('website').text)
-    print('state       ', child.find('state').text)
-    print('city        ', child.find('city').text)
-    print('fullname    ', child.find('fullname').text)
+    #print('\nusername    ', child.find('username').text)
+    #print('create_date ', child.find('create_date').text)
+    #print('last_seen   ', child.find('last_seen').text)
+    #print('website     ', child.find('website').text)
+    #print('state       ', child.find('state').text)
+    #print('city        ', child.find('city').text)
+    #print('fullname    ', child.find('fullname').text)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 advanced_search
@@ -84,36 +88,56 @@ search_song = ampache.advanced_search(ampache_url, ampache_api, 'song', 0, 1)
 for child in search_song:
     if child.tag == 'total_count':
         continue
-    print('\nadvanced search found a song')
-    print('filename ', child.find('filename').text)
-    print('title    ', child.find('title').text)
-    print('track    ', child.find('track').text)
-    print('artist   ', child.find('artist').text)
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
     song_title = child.find('title').text
+
 search_album = ampache.advanced_search(ampache_url, ampache_api, 'album', 0, 1)
 for child in search_album:
     if child.tag == 'total_count':
         continue
-    print('\nadvanced search found an artist')
-    print('name ', child.find('name').text)
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
     album_title = child.find('name').text
+
 search_artist = ampache.advanced_search(ampache_url, ampache_api, 'artist', 0, 1)
 for child in search_artist:
     if child.tag == 'total_count':
+        print('total_count', search_artist.find('total_count').text)
         continue
-    print('\nadvanced search found an album')
-    print('name ', child.find('name').text)
-    #print('artist   ', child.find('artist').text)
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
     artist_title = child.find('name').text
+
+genre = ''
+tag = ampache.tag(ampache_url, ampache_api, 'Rock')
+print('\nLooking for the tag Rock')
+for child in tag:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
+
+"""
+tag_albums
+"""
+#myalbums = ampache.tag_albums(ampache_url, ampache_api, genre)
+#for child in myalbums:
+#    print(child.tag, child.attrib)
+#    for subchildren in child:
+#        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 album
 """
 for child in ampache.album(ampache_url, ampache_api, single_album, ''):
     if child.tag == 'album':
-        print('\nsearching for an album with this id', single_album)
         print(child.tag, child.attrib)
         album_title = child.find('name').text
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 album_songs
@@ -122,6 +146,8 @@ print('\nsearching for songs that are in this album', single_album)
 for child in ampache.album_songs(ampache_url, ampache_api, single_album, '', 0):
     if child.tag == 'song':
         print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 albums
@@ -131,9 +157,9 @@ albums = ampache.albums(ampache_url, ampache_api, 1, 0, 0, album_title, '', 0, 0
 for child in albums:
     if child.tag == 'total_count':
         continue
-    print('\nadvanced search found an album')
-    print('Album title ', child.find('name').text)
-    print('Album artist', child.find('artist').text)
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 stats
@@ -142,6 +168,9 @@ for child in ampache.stats(ampache_url, ampache_api, 'artist', '', ampache_user,
     if child.tag == 'artist':
         print('\ngetting a random artist using the stats method and found', child.find('name').text)
         single_artist = child.attrib['id']
+        print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 artist
@@ -150,6 +179,8 @@ for child in ampache.artist(ampache_url, ampache_api, single_artist, ''):
     if child.tag == 'artist':
         print('\nsearching for an artist with this id', single_artist)
         print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 artist_albums
@@ -158,6 +189,8 @@ print('\nsearching for albums that are in this artist', single_artist)
 for child in ampache.artist_albums(ampache_url, ampache_api, single_artist, '', 0):
     if child.tag == 'album':
         print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 artist_songs
@@ -166,11 +199,17 @@ print('\nsearching for songs that are in this artist', single_artist)
 for child in ampache.artist_songs(ampache_url, ampache_api, single_artist, '', 0):
     if child.tag == 'song':
         print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 artists
 """
-print(ampache.artists(ampache_url, ampache_api))
+myartists = ampache.artists(ampache_url, ampache_api)
+for child in myartists:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 catalog_action
@@ -192,23 +231,39 @@ flag
 """
 followers
 """
-print(ampache.followers(ampache_url, ampache_api, ampache_user))
+followers = ampache.followers(ampache_url, ampache_api, ampache_user)
 
+for child in followers:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 following
 """
-print(ampache.following(ampache_url, ampache_api, ampache_user))
+following = ampache.following(ampache_url, ampache_api, ampache_user)
 
+for child in following:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 friends_timeline
 """
-print(ampache.friends_timeline(ampache_url, ampache_api))
+friends_timeline = ampache.friends_timeline(ampache_url, ampache_api)
 
+for child in friends_timeline:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 last_shouts
 """
-print(ampache.last_shouts(ampache_url, ampache_api, ampache_user))
+last_shouts = ampache.last_shouts(ampache_url, ampache_api, ampache_user)
 
+for child in last_shouts:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 localplay
 """
@@ -217,18 +272,30 @@ localplay
 """
 playlists
 """
-print(ampache.playlists(ampache_url, ampache_api))
+playlists = ampache.playlists(ampache_url, ampache_api)
 
+for child in playlists:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 playlist
 """
-print(ampache.playlist(ampache_url, ampache_api, single_playlist))
+playlist = ampache.playlist(ampache_url, ampache_api, single_playlist)
 
+for child in playlist:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 playlist_songs
 """
-print(ampache.playlist_songs(ampache_url, ampache_api, single_playlist))
+playlist_songs = ampache.playlist_songs(ampache_url, ampache_api, single_playlist)
 
+for child in playlist_songs:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 playlist_create
 """
@@ -272,37 +339,58 @@ scrobble
 """
 search_songs
 """
-print(ampache.search_songs(ampache_url, ampache_api, song_title))
+search_songs = ampache.search_songs(ampache_url, ampache_api, song_title)
 
+for child in search_songs:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 song
 """
-print(ampache.song(ampache_url, ampache_api, song_title))
+song = ampache.song(ampache_url, ampache_api, song_title)
 
+for child in song:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 songs
 """
-print(ampache.songs(ampache_url, ampache_api))
+songs = ampache.songs(ampache_url, ampache_api)
 
+for child in songs:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 tag
 """
+genre = ''
 tag = ampache.tag(ampache_url, ampache_api, 'Rock')
 for child in tag:
-    if child.tag == 'tag':
-        genre = child.attrib['id']
-        print('Tag name ', child.find('name').text)
-
+    if child.tag == 'total_count':
+        continue
+    print(child.tag, child.attrib)
+    genre = child.attrib['id']
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 tag_albums
 """
-print(ampache.tag_albums(ampache_url, ampache_api, genre))
-
+#tag_albums = ampache.tag_albums(ampache_url, ampache_api, genre)
+#for child in tag_albums:
+#    print(child.tag, child.attrib)
+#    for subchildren in child:
+#        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 tag_artists
 """
-print(ampache.tag_artists(ampache_url, ampache_api, genre))
-
+#tag_artists = ampache.tag_artists(ampache_url, ampache_api, genre)
+#for child in tag_artists:
+#    print(child.tag, child.attrib)
+#    for subchildren in child:
+#        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 tag_songs
 """
@@ -311,13 +399,22 @@ tag_songs
 """
 tags
 """
-print(ampache.tags(ampache_url, ampache_api, ''))
+tags = ampache.tags(ampache_url, ampache_api, genre)
+for child in tags:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 timeline
 """
-print(ampache.timeline(ampache_url, ampache_api, ampache_user))
+print("\nampache.timeline for username:", ampache_user)
+timeline = ampache.timeline(ampache_url, ampache_api, ampache_user, 10, 10)
 
+for child in timeline:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 """
 toggle_follow
 """
@@ -350,4 +447,3 @@ goodbye
 # Close your session when you're done
 print('\nWhen you are finished it\'s a good idea to kill your session')
 print('    ', ampache.goodbye(ampache_url, ampache_api))
-
