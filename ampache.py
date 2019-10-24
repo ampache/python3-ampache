@@ -1887,7 +1887,7 @@ def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id):
     if not ampache_url or not ampache_api or not user:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
-    data = urllib.parse.urlencode({'action': 'timeline',
+    data = urllib.parse.urlencode({'action': 'update_from_tags',
                                    'auth': ampache_api,
                                    'type': ampache_type,
                                    'id': ampache_id})
