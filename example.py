@@ -96,15 +96,15 @@ for child in search_album:
         continue
     print('\nadvanced search found an artist')
     print('name ', child.find('name').text)
-    song_title = child.find('title').text
+    album_title = child.find('name').text
 search_artist = ampache.advanced_search(ampache_url, ampache_api, 'artist', 0, 1)
 for child in search_artist:
     if child.tag == 'total_count':
         continue
     print('\nadvanced search found an album')
     print('name ', child.find('name').text)
-    print('artist   ', child.find('artist').text)
-    song_title = child.find('title').text
+    #print('artist   ', child.find('artist').text)
+    artist_title = child.find('name').text
 
 """
 album
@@ -287,17 +287,21 @@ print(ampache.songs(ampache_url, ampache_api))
 """
 tag
 """
-print(ampache.tag(ampache_url, ampache_api, ''))
+tag = ampache.tag(ampache_url, ampache_api, 'Rock')
+for child in tag:
+    if child.tag == 'tag':
+        genre = child.attrib['id']
+        print('Tag name ', child.find('name').text)
 
 """
 tag_albums
 """
-print(ampache.tag_albums(ampache_url, ampache_api, 'Rock'))
+print(ampache.tag_albums(ampache_url, ampache_api, genre))
 
 """
 tag_artists
 """
-print(ampache.tag_artists(ampache_url, ampache_api, 'Rock'))
+print(ampache.tag_artists(ampache_url, ampache_api, genre))
 
 """
 tag_songs
@@ -322,7 +326,8 @@ toggle_follow
 """
 update_from_tags
 """
-#print(ampache.update_from_tags(ampache_url, ampache_api))
+print("\nampache.update from tags is verifying the album", album_title)
+print(ampache.update_from_tags(ampache_url, ampache_api, 'album', single_album))
 
 """
 url_to_song
