@@ -269,18 +269,25 @@ def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = 
     * limit
     * include
 """
-def artists(ampache_url, ampache_api, filter = '', add = '', update = '', offset = 0, limit = 0, include = ''):
+def artists(ampache_url, ampache_api, filter = '', add = None, update = None, offset = 0, limit = 0, include = None):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
-    data = urllib.parse.urlencode({'action': 'artists',
-                                   'auth': ampache_api,
-                                   'filter': filter,
-                                   'add': add,
-                                   'update': update,
-                                   'offset': str(offset),
-                                   'limit': str(limit),
-                                   'include': include})
+    data = {'action': 'artists',
+            'auth': ampache_api,
+            'filter': filter,
+            'add': add,
+            'update': update,
+            'offset': str(offset),
+            'limit': str(limit),
+            'include': include}
+    if not add:
+        data.pop('add')
+    if not update:
+        data.pop('update')
+    if not include:
+        data.pop('include')
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -311,14 +318,17 @@ def artists(ampache_url, ampache_api, filter = '', add = '', update = '', offset
     * filter
     * include
 """
-def artist(ampache_url, ampache_api, filter, include):
+def artist(ampache_url, ampache_api, filter, include = None):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
-    data = urllib.parse.urlencode({'action': 'artist',
-                                   'auth': ampache_api,
-                                   'filter': filter,
-                                   'include': include})
+    data = {'action': 'artist',
+            'auth': ampache_api,
+            'filter': filter,
+            'include': include}
+    if not include:
+        data.pop('include')
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -434,19 +444,26 @@ def artist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     * limit
     * include
 """
-def albums(ampache_url, ampache_api, exact = '', add = '', update = '', filter = '', offset = 0, limit = 0, include = ''):
+def albums(ampache_url, ampache_api, exact = '', add = None, update = None, filter = '', offset = 0, limit = 0, include = None):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
-    data = urllib.parse.urlencode({'action': 'albums',
-                                   'auth': ampache_api,
-                                   'exact': exact,
-                                   'add': add,
-                                   'update': update,
-                                   'filter': filter,
-                                   'offset': str(offset),
-                                   'limit': str(limit),
-                                   'include': include})
+    data = {'action': 'albums',
+            'auth': ampache_api,
+            'exact': exact,
+            'add': add,
+            'update': update,
+            'filter': filter,
+            'offset': str(offset),
+            'limit': str(limit),
+            'include': include}
+    if not add:
+        data.pop('add')
+    if not update:
+        data.pop('update')
+    if not include:
+        data.pop('include')
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
@@ -477,14 +494,17 @@ def albums(ampache_url, ampache_api, exact = '', add = '', update = '', filter =
     * filter
     * include
 """
-def album(ampache_url, ampache_api, filter, include):
+def album(ampache_url, ampache_api, filter, include = None):
     if not ampache_url or not ampache_api:
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
-    data = urllib.parse.urlencode({'action': 'album',
-                                   'auth': ampache_api,
-                                   'filter': filter,
-                                   'include': include})
+    data = {'action': 'album',
+            'auth': ampache_api,
+            'filter': filter,
+            'include': include}
+    if not include:
+        data.pop('include')
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')

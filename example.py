@@ -175,7 +175,7 @@ for child in ampache.stats(ampache_url, ampache_api, 'artist', '', ampache_user,
 """
 artist
 """
-for child in ampache.artist(ampache_url, ampache_api, single_artist, ''):
+for child in ampache.artist(ampache_url, ampache_api, single_artist):
     if child.tag == 'artist':
         print('\nsearching for an artist with this id', single_artist)
         print(child.tag, child.attrib)
@@ -186,7 +186,7 @@ for child in ampache.artist(ampache_url, ampache_api, single_artist, ''):
 artist_albums
 """
 print('\nsearching for albums that are in this artist', single_artist)
-for child in ampache.artist_albums(ampache_url, ampache_api, single_artist, '', 0):
+for child in ampache.artist_albums(ampache_url, ampache_api, single_artist, None, 0):
     if child.tag == 'album':
         print(child.tag, child.attrib)
         for subchildren in child:
