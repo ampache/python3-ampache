@@ -9,7 +9,6 @@ ampache_user = 'myusername'
 
 print('\n#######################\nTesting the ampache API\n#######################\n')
 
-
 """
 encrypt_string
 """
@@ -93,6 +92,7 @@ for child in search_song:
         print(str(subchildren.tag) + ': ' + str(subchildren.text))
     song_title = child.find('title').text
 
+print()
 search_album = ampache.advanced_search(ampache_url, ampache_api, 'album', 0, 1)
 for child in search_album:
     if child.tag == 'total_count':
@@ -102,6 +102,7 @@ for child in search_album:
         print(str(subchildren.tag) + ': ' + str(subchildren.text))
     album_title = child.find('name').text
 
+print()
 search_artist = ampache.advanced_search(ampache_url, ampache_api, 'artist', 0, 1)
 for child in search_artist:
     if child.tag == 'total_count':
@@ -111,23 +112,6 @@ for child in search_artist:
     for subchildren in child:
         print(str(subchildren.tag) + ': ' + str(subchildren.text))
     artist_title = child.find('name').text
-
-genre = ''
-tag = ampache.tag(ampache_url, ampache_api, 'Rock')
-print('\nLooking for the tag Rock')
-for child in tag:
-    print(child.tag, child.attrib)
-    for subchildren in child:
-        print(str(subchildren.tag) + ': ' + str(subchildren.text))
-
-"""
-tag_albums
-"""
-#myalbums = ampache.tag_albums(ampache_url, ampache_api, genre)
-#for child in myalbums:
-#    print(child.tag, child.attrib)
-#    for subchildren in child:
-#        print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 album
@@ -168,6 +152,14 @@ for child in ampache.stats(ampache_url, ampache_api, 'artist', '', ampache_user,
     if child.tag == 'artist':
         print('\ngetting a random artist using the stats method and found', child.find('name').text)
         single_artist = child.attrib['id']
+        print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
+for child in ampache.stats(ampache_url, ampache_api, 'album', '', ampache_user, None, 0, 1):
+    if child.tag == 'artist':
+        print('\ngetting a random album using the stats method and found', child.find('name').text)
+        single_album = child.attrib['id']
+        album_title = child.find('name').text
         print(child.tag, child.attrib)
         for subchildren in child:
             print(str(subchildren.tag) + ': ' + str(subchildren.text))
@@ -363,47 +355,45 @@ for child in songs:
     print(child.tag, child.attrib)
     for subchildren in child:
         print(str(subchildren.tag) + ': ' + str(subchildren.text))
+
 """
-tag
+tags
 """
 genre = ''
-tag = ampache.tag(ampache_url, ampache_api, 'Rock')
-for child in tag:
+tags = ampache.tags(ampache_url, ampache_api, 'Brutal Death Metal', 'exact', 0, 1)
+print('\nLooking for the tag Brutal Death Metal')
+
+for child in tags:
     if child.tag == 'total_count':
+        print('total_count', search_artist.find('total_count').text)
         continue
     print(child.tag, child.attrib)
     genre = child.attrib['id']
     for subchildren in child:
         print(str(subchildren.tag) + ': ' + str(subchildren.text))
+
 """
 tag_albums
 """
-#tag_albums = ampache.tag_albums(ampache_url, ampache_api, genre)
-#for child in tag_albums:
-#    print(child.tag, child.attrib)
-#    for subchildren in child:
-#        print(str(subchildren.tag) + ': ' + str(subchildren.text))
-"""
-tag_artists
-"""
-#tag_artists = ampache.tag_artists(ampache_url, ampache_api, genre)
-#for child in tag_artists:
-#    print(child.tag, child.attrib)
-#    for subchildren in child:
-#        print(str(subchildren.tag) + ': ' + str(subchildren.text))
-"""
-tag_songs
-"""
-#print(ampache.tag_songs(ampache_url, ampache_api))
-
-"""
-tags
-"""
-tags = ampache.tags(ampache_url, ampache_api, genre)
-for child in tags:
+tag_albums = ampache.tag_albums(ampache_url, ampache_api, genre, 0, 1)
+for child in tag_albums:
     print(child.tag, child.attrib)
     for subchildren in child:
         print(str(subchildren.tag) + ': ' + str(subchildren.text))
+
+"""
+tag_artists
+"""
+tag_artists = ampache.tag_artists(ampache_url, ampache_api, genre, 0, 1)
+for child in tag_artists:
+    print(child.tag, child.attrib)
+    for subchildren in child:
+        print(str(subchildren.tag) + ': ' + str(subchildren.text))
+
+"""
+tag_songs
+"""
+print(ampache.tag_songs(ampache_url, ampache_api, genre, 0, 1))
 
 """
 timeline
@@ -447,3 +437,4 @@ goodbye
 # Close your session when you're done
 print('\nWhen you are finished it\'s a good idea to kill your session')
 print('    ', ampache.goodbye(ampache_url, ampache_api))
+

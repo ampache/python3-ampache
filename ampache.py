@@ -553,12 +553,12 @@ def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * exact
     * filter
+    * exact
     * offset
     * limit
 """
-def tags(ampache_url, ampache_api, exact = '', filter = '', offset = 0, limit = 0):
+def tags(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 0):
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'tags',
                                    'auth': ampache_api,
