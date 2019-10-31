@@ -1718,7 +1718,7 @@ def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI'):
     * ampache_url = (string)
     * ampache_api = (string)
     * username = (string)
-    * limit = (integer) // optional
+    * limit = (integer) //optional
     * since = (integer) UNIXTIME() //optional
 """
 def timeline(ampache_url, ampache_api, username, limit = 0, since = 0):
@@ -1822,7 +1822,7 @@ def catalog_action(ampache_url, ampache_api, task, catalog):
     return token
 
 """ update_from_tags
-    MINIMUM_API_VERSION=380001
+    MINIMUM_API_VERSION=400001
 
     updates a single album,artist,song from the tag data
 
@@ -1837,6 +1837,83 @@ def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id):
     data = urllib.parse.urlencode({'action': 'update_from_tags',
                                    'auth': ampache_api,
                                    'type': ampache_type,
+                                   'id': ampache_id})
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    try:
+        tree = ET.fromstring(ampache_response)
+    except ET.ParseError:
+        return False
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" update_art
+    MINIMUM_API_VERSION=400001
+
+    updates a single album, artist, song looking for art files
+    Doesn't overwrite existing art by default.
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * type = (string) 'artist'|'album'|'song'
+    * id = (integer) $artist_id, $album_id, $song_id
+    * overwrite = (boolean) 0|1 //optional)
+"""
+def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = False):
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = {'action': 'update_art',
+            'auth': ampache_api,
+            'type': ampache_type,
+            'id': ampache_id,
+            'overwrite': overwrite}
+    if not overwrite:
+        data.pop('overwrite')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    result = urllib.request.urlopen(full_url)
+    ampache_response = result.read().decode('utf-8')
+    try:
+        tree = ET.fromstring(ampache_response)
+    except ET.ParseError:
+        return False
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" update_artist_info
+    MINIMUM_API_VERSION=400001
+
+    Update artist information and fetch similar artists from last.fm
+    Make sure lastfm_api_key is set in your configuration file
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * id = (integer) $artist_id)
+"""
+def update_artist_info(ampache_url, ampache_api ampache_id):
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'update_artist_info',
+                                   'auth': ampache_api,
                                    'id': ampache_id})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
