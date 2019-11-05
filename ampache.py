@@ -1242,16 +1242,17 @@ def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * operator = (string) 'and'|'or' (whether to match one rule or all)
     * rules = (array) = [[rule_1,rule_1_operator,rule_1_input], [rule_2,rule_2_operator,rule_2_input], [etc]]
+    * operator = (string) 'and'|'or' (whether to match one rule or all)
     * type = (string)
     * offset = (integer)
     * limit' = (integer)
 """
-def advanced_search(ampache_url, ampache_api, rules, type = 'song', offset = 0, limit = 0):
+def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 'song', offset = 0, limit = 0):
     ampache_url = ampache_url + '/server/xml.server.php'
     data = {'action': 'advanced_search',
             'auth': ampache_api,
+            'operator': operator,
             'type': type,
             'offset': offset,
             'limit': limit}
@@ -1978,11 +1979,11 @@ def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = F
     * ampache_api = (string)
     * id = (integer) $artist_id)
 """
-def update_artist_info(ampache_url, ampache_api ampache_id):
+def update_artist_info(ampache_url, ampache_api, id):
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'update_artist_info',
                                    'auth': ampache_api,
-                                   'id': ampache_id})
+                                   'id': id})
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
