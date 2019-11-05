@@ -1180,22 +1180,90 @@ def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     MINIMUM_API_VERSION=380001
 
     Perform an advanced search given passed rules
+    the rules can occur multiple times and are joined by the operator item.
+    
+    Refer to the wiki for firther information
+    https://github.com/ampache/ampache/wiki/XML-methods
+
+    rule_1
+      * anywhere
+      * title
+      * favorite
+      * name
+      * playlist_name
+      * album
+      * artist
+      * composer
+      * comment
+      * label
+      * tag
+      * album_tag
+      * filename
+      * placeformed
+      * username
+      * year
+      * time
+      * rating
+      * myrating
+      * artistrating
+      * albumrating
+      * played_times
+      * bitrate
+      * image height
+      * image width
+      * yearformed
+      * played
+      * myplayed
+      * myplayedartist
+      * myplayedalbum
+      * last_play
+      * added
+      * updated
+      * catalog
+      * playlist
+      * licensing
+      * smartplaylist
+      * metadata
+
+    rule_1_operator
+      * 0 contains / is greater than or equal to / before / is true / is / before (x) days ago
+      * 1 does not contain / is less than or equal to / after / is false / is not / after (x) days ago
+      * 2 starts with / is 					
+      * 3 ends with / is not 					
+      * 4 is / is greater than 					
+      * 5 sounds like / is less than 					
+      * 6 does not sound like
+
+    rule_1_input
+      * text
+      * integer
+      * etc
 
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    //FIXME what are the rules on this?
-    * type
-    * offset
-    * limit'
+    * operator = (string) 'and'|'or' (whether to match one rule or all)
+    * rules = (array) = [[rule_1,rule_1_operator,rule_1_input], [rule_2,rule_2_operator,rule_2_input], [etc]]
+    * type = (string)
+    * offset = (integer)
+    * limit' = (integer)
 """
-def advanced_search(ampache_url, ampache_api, type, offset = 0, limit = 0):
+def advanced_search(ampache_url, ampache_api, rules, type = 'song', offset = 0, limit = 0):
     ampache_url = ampache_url + '/server/xml.server.php'
-    data = urllib.parse.urlencode({'action': 'advanced_search',
-                                   'auth': ampache_api,
-                                   'type': type,
-                                   'offset': offset,
-                                   'limit': limit})
+    data = {'action': 'advanced_search',
+            'auth': ampache_api,
+            'type': type,
+            'offset': offset,
+            'limit': limit}
+    count = 0
+    # inputs  [rule_1, rule_1_operator, rule_1_input]
+    # example ['year', 2, 1999]
+    for item in rules:
+        count = count + 1
+        data['rule_' + str(count)] = item[0]
+        data['rule_' + str(count) + '_operator'] = item[1]
+        data['rule_' + str(count) + '_input'] = item[2]
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     result = urllib.request.urlopen(full_url)
     ampache_response = result.read().decode('utf-8')
