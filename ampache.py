@@ -2038,16 +2038,18 @@ def stream(ampache_url, ampache_api, id, type, destination):
     * ampache_api = (string)
     * id          = (string) $song_id / $podcast_episode_id
     * type        = (string) 'song'|'podcast'
-    * destination = (string) full file path)
+    * destination = (string) full file path
+    * format      = (string) 'mp3', 'ogg', etc. ('raw' / original by default))
 """
-def download(ampache_url, ampache_api, id, type, destination):
+def download(ampache_url, ampache_api, id, type, destination, format = 'raw'):
     if not os.path.isdir(os.path.dirname(destination)):
         return False
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'download',
                                    'auth': ampache_api,
                                    'id': id,
-                                   'type': type})
+                                   'type': type,
+                                   'format': format})
     full_url = ampache_url + '?' + data
     result = requests.get(full_url, allow_redirects=True)
     open(destination, 'wb').write(result.content)
