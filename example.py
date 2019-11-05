@@ -79,11 +79,18 @@ for child in myuser:
 """
 advanced_search
 
-THERE ARE ADDITIONAL THINGS THAT I NEED TO WORK OUT ON THIS
+    MINIMUM_API_VERSION=380001
 
-THIS IS THE FULL SEARCH QUERY FUNCTION WITH MANY RULES AVAILABLE
+    Perform an advanced search given passed rules
+    the rules can occur multiple times and are joined by the operator item.
+    
+    Refer to the wiki for firther information
+    https://github.com/ampache/ampache/wiki/XML-methods
+
 """
-search_song = ampache.advanced_search(ampache_url, ampache_api, 'song', 0, 1)
+print()
+search_rules = [['favorite', 0, '%'], ['artist', 3, 'Prodigy']]
+search_song = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'and', 'song', 0, 0)
 for child in search_song:
     if child.tag == 'total_count':
         continue
@@ -93,7 +100,8 @@ for child in search_song:
     song_title = child.find('title').text
 
 print()
-search_album = ampache.advanced_search(ampache_url, ampache_api, 'album', 0, 1)
+search_rules = [['favorite', 0, '%'], ['artist', 0, 'Men']]
+search_album = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'and', 'album', 0, 1)
 for child in search_album:
     if child.tag == 'total_count':
         continue
@@ -103,7 +111,8 @@ for child in search_album:
     album_title = child.find('name').text
 
 print()
-search_artist = ampache.advanced_search(ampache_url, ampache_api, 'artist', 0, 1)
+search_rules = [['favorite', 0, '%'], ['artist', 4, 'Prodigy']]
+search_artist = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'and', 'artist', 0, 1)
 for child in search_artist:
     if child.tag == 'total_count':
         print('total_count', search_artist.find('total_count').text)
