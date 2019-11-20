@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import sys
+
 import ampache
 
 # user variables
@@ -18,17 +20,24 @@ encrypted_key = ampache.encrypt_string(ampache_api, ampache_user)
 handshake
 """
 # processed details
-print('Connecting to', ampache_url)
+print('Connecting to:\n    ', ampache_url)
+src_api = ampache_api
 ampache_api = ampache.handshake(ampache_url, encrypted_key)
-print('\nThe ampache handshake for:\n    ', ampache_api, '\n\nReturned the following session key:\n    ', ampache_api)
+print('\nThe ampache handshake for:\n    ', src_api, '\n\nReturned the following session key:\n    ', ampache_api)
+if not ampache_api:
+     print()
+     sys.exit('ERROR: Failed to connect to ' + ampache_url)
 
 """
 ping
 """
 # did all this work?
+my_ping = ampache.ping(ampache_url, ampache_api)
 print('\nif your handshake was correct, ping will return your session key and extend the session.')
-print('\nPing returned:\n    ', ampache.ping(ampache_url, ampache_api))
-
+print('\nPing returned:\n    ', my_ping)
+if not my_ping:
+     print()
+     sys.exit('ERROR: Failed to ping ' + ampache_url)
 """
 get_indexes
 'song'|'album'|'artist'|'playlist'

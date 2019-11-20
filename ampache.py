@@ -71,7 +71,10 @@ def ping(ampache_url, ampache_api):
     data = urllib.parse.urlencode({'action': 'ping',
                                    'auth': ampache_api})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read()
     result.close()
     try:
@@ -105,7 +108,10 @@ def handshake(ampache_url, ampache_api, timestamp=0, version='400001'):
                                    'timestamp': str(timestamp),
                                    'version': version})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     result.close()
     try:
@@ -133,7 +139,10 @@ def goodbye(ampache_url, ampache_api):
     data = urllib.parse.urlencode({'action': 'goodbye',
                                    'auth': ampache_api})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     result.close()
     try:
@@ -185,7 +194,10 @@ def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartis
                                    'albummbid': MBalbum,
                                    'artistmdib': MBartist})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -231,7 +243,10 @@ def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = 
                                    'offset': str(offset),
                                    'limit': str(limit)})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -282,7 +297,10 @@ def artists(ampache_url, ampache_api, filter = '', add = None, update = None, of
         data.pop('include')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -321,7 +339,10 @@ def artist(ampache_url, ampache_api, filter, include = None):
         data.pop('include')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -359,7 +380,10 @@ def artist_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0):
                                    'offset': str(offset),
                                    'limit': str(limit)})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -397,7 +421,10 @@ def artist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
                                    'offset': str(offset),
                                    'limit': str(limit)})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -450,7 +477,10 @@ def albums(ampache_url, ampache_api, exact = '', add = None, update = None, filt
         data.pop('include')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -489,7 +519,10 @@ def album(ampache_url, ampache_api, filter, include = None):
         data.pop('include')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -527,7 +560,10 @@ def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
                                    'offset': str(offset),
                                    'limit': str(limit)})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -567,7 +603,10 @@ def tags(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 
                                    'offset': str(offset),
                                    'limit': str(limit)})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -601,7 +640,10 @@ def tag(ampache_url, ampache_api, filter):
                                    'auth': ampache_api,
                                    'filter': filter})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -639,7 +681,10 @@ def tag_artists(ampache_url, ampache_api, filter, offset = 0, limit = 0):
                                    'offset': str(offset),
                                    'limit': str(limit)})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -677,7 +722,10 @@ def tag_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0):
                                    'offset': str(offset),
                                    'limit': str(limit)})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -715,7 +763,10 @@ def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
                                    'offset': str(offset),
                                    'limit': str(limit)})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -759,7 +810,10 @@ def songs(ampache_url, ampache_api, exact = '', add = '', update = '', filter = 
                                    'offset': str(offset),
                                    'limit': str(limit)})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -793,7 +847,10 @@ def song(ampache_url, ampache_api, filter):
                                    'auth': ampache_api,
                                    'filter': filter})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -827,7 +884,10 @@ def url_to_song(ampache_url, ampache_api, url):
                                    'auth': ampache_api,
                                    'url': url})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -867,7 +927,10 @@ def playlists(ampache_url, ampache_api, exact = '', filter = '', offset = 0, lim
                                    'offset': str(offset),
                                    'limit': str(limit)})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -901,7 +964,10 @@ def playlist(ampache_url, ampache_api, filter):
                                    'auth': ampache_api,
                                    'filter': filter})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -939,7 +1005,10 @@ def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
                                    'offset': str(offset),
                                    'limit': str(limit)})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -975,7 +1044,10 @@ def playlist_create(ampache_url, ampache_api, name, type):
                                    'name': name,
                                    'type': type})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1013,7 +1085,10 @@ def playlist_edit(ampache_url, ampache_api, name, type, filter):
                                    'type': type,
                                    'filter': filter})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1047,7 +1122,10 @@ def playlist_delete(ampache_url, ampache_api, filter):
                                    'auth': ampache_api,
                                    'filter': filter})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1083,7 +1161,10 @@ def playlist_add_song(ampache_url, ampache_api, song, filter):
                                    'song': song,
                                    'filter': filter})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1120,7 +1201,10 @@ def playlist_remove_song(ampache_url, ampache_api, song, filter):
                                    'song': song,
                                    'filter': filter})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1158,7 +1242,10 @@ def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
                                    'offset': str(offset),
                                    'limit': str(limit)})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1266,7 +1353,10 @@ def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 's
         data['rule_' + str(count) + '_input'] = item[2]
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1307,7 +1397,10 @@ def videos(ampache_url, ampache_api, exact = '', filter = '', offset = 0, limit 
                                    'offset': str(offset),
                                    'limit': str(limit)})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1341,7 +1434,10 @@ def video(ampache_url, ampache_api, filter):
                                    'auth': ampache_api,
                                    'filter': filter})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1375,7 +1471,10 @@ def localplay(ampache_url, ampache_api, command):
                                    'auth': ampache_api,
                                    'command': command})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1413,7 +1512,10 @@ def democratic(ampache_url, ampache_api, method, action, oid):
                                    'action': action,
                                    'oid': oid})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1463,7 +1565,10 @@ def stats(ampache_url, ampache_api, type, filter, username = None, user_id = Non
         data.pop('user_id')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1497,7 +1602,10 @@ def user(ampache_url, ampache_api, username):
                                    'auth': ampache_api,
                                    'username': username})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1531,7 +1639,10 @@ def followers(ampache_url, ampache_api, username):
                                    'auth': ampache_api,
                                    'username': username})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1565,7 +1676,10 @@ def following(ampache_url, ampache_api, username):
                                    'auth': ampache_api,
                                    'username': username})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1599,7 +1713,10 @@ def toggle_follow(ampache_url, ampache_api, username):
                                    'auth': ampache_api,
                                    'username': username})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1635,7 +1752,10 @@ def last_shouts(ampache_url, ampache_api, username, limit = 0):
                                    'username': username,
                                    'limit': limit})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1675,7 +1795,10 @@ def rate(ampache_url, ampache_api, type, id, rating):
                                    'id': id,
                                    'rating': rating})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1722,7 +1845,10 @@ def flag(ampache_url, ampache_api, type, id, flag):
                                    'id': id,
                                    'flag': flag})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1760,7 +1886,10 @@ def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI'):
                                    'user': user,
                                    'client': client})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1798,7 +1927,10 @@ def timeline(ampache_url, ampache_api, username, limit = 0, since = 0):
                                    'limit': limit,
                                    'since': since})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1834,7 +1966,10 @@ def friends_timeline(ampache_url, ampache_api, limit = 0, since = 0):
                                    'limit': limit,
                                    'since': since})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1872,7 +2007,10 @@ def catalog_action(ampache_url, ampache_api, task, catalog):
                                    'task': task,
                                    'catalog': catalog})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1908,7 +2046,10 @@ def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id):
                                    'type': ampache_type,
                                    'id': ampache_id})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1950,7 +2091,10 @@ def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = F
         data.pop('overwrite')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
@@ -1985,7 +2129,10 @@ def update_artist_info(ampache_url, ampache_api, id):
                                    'auth': ampache_api,
                                    'id': id})
     full_url = ampache_url + '?' + data
-    result = urllib.request.urlopen(full_url)
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
     ampache_response = result.read().decode('utf-8')
     try:
         tree = ET.fromstring(ampache_response)
