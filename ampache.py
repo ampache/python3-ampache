@@ -1278,6 +1278,72 @@ def playlist_remove_song(ampache_url, ampache_api, song, filter):
         token = False
     return token
 
+""" playlist_generate
+    MINIMUM_API_VERSION=400001
+    CHANGED_IN_API_VERSION=400002
+
+    Get a list of song XML, indexes or id's based on some simple search criteria =
+    'recent' will search for tracks played after 'Popular Threshold' days
+    'forgotten' will search for tracks played before 'Popular Threshold' days
+    'unplayed' added in 400002 for searching unplayed tracks
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * mode   = (string) 'recent', 'forgotten', 'random' (default = 'random')  //optional
+    * filter = (string) string LIKE matched to song title  //optional
+    * album  = (integer) $album_i d  //optional
+    * artist = (integer) $artist_id  //optional
+    * flag   = (integer) get flagged songs only 0, 1 (default = 0)  //optional
+    * format = (string) 'song', 'index','id' (default = 'song')  //optional
+    * offset = (integer)  //optional
+    * limit  = (integer)  //optional
+"""
+def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False, album = False, artist = False, flag = False, format = 'song', offset = 0, limit = 0):
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = {'action': 'playlist_generate',
+            'auth': ampache_api,
+            'mode': mode,
+            'filter': filter,
+            'album': album,
+            'artist': artist,
+            'flag': flag,
+            'format': format,
+            'offset': offset,
+            'limit': limit}
+    if not filter:
+        data.pop('filter')
+    if not album:
+        data.pop('album')
+    if not artist:
+        data.pop('artist')
+    if not flag:
+        data.pop('flag')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
+    except urllib.error.HTTPError:
+        return False
+    ampache_response = result.read().decode('utf-8')
+    try:
+        tree = ET.fromstring(ampache_response)
+    except ET.ParseError:
+        return False
+    try:
+        token = tree.tag
+    except AttributeError:
+        token = False
+    if token:
+        return tree
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
 """ search_songs
     MINIMUM_API_VERSION=380001
 
@@ -1373,10 +1439,10 @@ def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     rule_1_operator
       * 0 contains / is greater than or equal to / before / is true / is / before (x) days ago
       * 1 does not contain / is less than or equal to / after / is false / is not / after (x) days ago
-      * 2 starts with / is 					
-      * 3 ends with / is not 					
-      * 4 is / is greater than 					
-      * 5 sounds like / is less than 					
+      * 2 starts with / is 
+      * 3 ends with / is not 
+      * 4 is / is greater than 
+      * 5 sounds like / is less than 
       * 6 does not sound like
 
     rule_1_input
