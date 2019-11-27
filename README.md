@@ -1,16 +1,13 @@
-###############################
-AMPACHE API LIBRARY FOR PYTHON3
-###############################
+# AMPACHE LIBRARY FOR PYTHON3
 
-INFO
-----
+## INFO
 
 This library is starting to take shape and is able to connect to Ampache and return the
 xml or binary data received from the queries.
 
-**EXAMPLES**:
+## EXAMPLES
 
-.. code-block:: python
+```python3
     import time
 
     import ampache
@@ -29,8 +26,8 @@ xml or binary data received from the queries.
         Process(target=ampache.scrobble,
                 args=(int(ampache_url, ampache_api, 'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed',
                 '', '', ''time.time()))).start()
+```
 
+## HOMEPAGE
 
-HOMEPAGE
---------
 [<https://github.com/lachlan-00/python3-ampache>]
