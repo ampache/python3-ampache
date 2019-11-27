@@ -1,7 +1,7 @@
-# Copyright 2017, 2018, 2019 Alexander L. Hayes
+# Copyright 2019 Lachlan de Waard
 
 """
-srlearn metadata
+ampache metadata
 
 - Versioning should follow SemVer (https://semver.org)
 - DEBUG flag is a global setting for debug information that should be False at

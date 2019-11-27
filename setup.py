@@ -25,8 +25,7 @@ setup(
     version=__version__,
     description="Python library for Amapche XML-API",
     long_description=LONG_DESCRIPTION,
-    include_package_data=True,
-    package_data={"ampache": ["*.py"]},
+    include_package_data=False,
     url="https://github.com/lachlan-00/python3-ampache",
     download_url="https://github.com/lachlan-00/python3-ampache",
     license="GPL-3.0",
@@ -42,5 +41,5 @@ setup(
         "Topic :: Software Development :: Libraries :: PHP Classes",
     ],
     keywords="",
-    install_requires=["hashlib", "os", "requests", "time", "urllib.parse", "urllib.request", "xml.etree"],
+    install_requires=[""],
 )
