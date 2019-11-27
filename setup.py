@@ -18,8 +18,7 @@ with open(path.join(_here, "README.md"), encoding="utf-8") as f:
 
 setup(
     name="ampache",
-	packages=find_packages('src'),
-    namespace_packages=['ampache'],
+	packages=find_packages(where='src'),
     package_dir={'': 'src'},
     author="Lachlan de Waard (lachlan-00)",
     author_email="lachlan.00@gmail.com",
