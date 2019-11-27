@@ -9,7 +9,7 @@ from codecs import open
 from os import path
 
 # Get __version__ from _meta.py
-with open(path.join("ampache", "_meta.py")) as f:
+with open(path.join("src", "_meta.py")) as f:
     exec(f.read())
 
 _here = path.abspath(path.dirname(__file__))
