@@ -35,6 +35,8 @@ You can now install from pip directly!
                 '', '', ''time.time()))).start()
 ```
 
-## HOMEPAGE
+## LINKS
 
-[<https://github.com/lachlan-00/python3-ampache>]
+<https://github.com/lachlan-00/python3-ampache>
+
+<https://pypi.org/project/ampache/>
