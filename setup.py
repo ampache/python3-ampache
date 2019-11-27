@@ -13,7 +13,7 @@ with open(path.join("src", "_meta.py")) as f:
     exec(f.read())
 
 _here = path.abspath(path.dirname(__file__))
-with open(path.join(_here, "README.md"), encoding="utf-8") as f:
+with open(path.join(_here, "README.rst"), encoding="utf-8") as f:
     LONG_DESCRIPTION = f.read()
 
 setup(
