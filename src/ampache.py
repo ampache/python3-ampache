@@ -1452,7 +1452,7 @@ def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
       * 3 ends with / is not 
       * 4 is / is greater than 
       * 5 is not / is less than 
-	  * 6 sounds like
+      * 6 sounds like
       * 7 does not sound like
 
     rule_1_input
@@ -2399,3 +2399,169 @@ def get_art(ampache_url, ampache_api, id, type):
     result = requests.get(full_url, allow_redirects=True)
     open(destination, 'wb').write(result.content)
     return True
+
+""" user_create
+    MINIMUM_API_VERSION=400001
+
+    Create a new user. (Requires the username, password and email.) @param array $input
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * username    = (string) $username
+    * password    = (string) hash('sha256', $password))
+    * email       = (string) 'user@gmail.com'
+    * fullname    = (string) //optional
+    * disable     = (boolean) 0|1 //optional
+"""
+def user_create(ampache_url, ampache_api, username, password, email, fullname = False, disable = False):
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = {'action': 'user_create',
+            'auth': ampache_api,
+            'username': username,
+            'password': password,
+            'email': email,
+            'fullname': fullname,
+            'disable': disable}
+    if not fullname:
+        data.pop('fullname')
+    if not disable:
+        data.pop('disable')
+    if not maxbitrate:
+        data.pop('maxbitrate')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
+    except urllib.error.HTTPError:
+        return False
+    ampache_response = result.read().decode('utf-8')
+    try:
+        tree = ET.fromstring(ampache_response)
+    except ET.ParseError:
+        return False
+    try:
+        token = tree.tag
+    except AttributeError:
+        token = False
+    if token:
+        return tree
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" user_update
+    MINIMUM_API_VERSION=400001
+
+    Update an existing user. @param array $input
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * username    = (string) $username
+    * password    = (string) hash('sha256', $password)) //optional
+    * fullname    = (string) //optional
+    * email       = (string) 'user@gmail.com' //optional
+    * website     = (string) //optional
+    * state       = (string) //optional
+    * city        = (string) //optional
+    * disable     = (boolean) 0|1 //optional
+    * maxbitrate  = (string) //optional
+"""
+def user_update(ampache_url, ampache_api, username, password = False, fullname = False, email = False, website = False, state = False, city = False, disable = False, maxbitrate = False):
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = {'action': 'stats',
+            'auth': ampache_api,
+            'username': username,
+            'password': password,
+            'fullname': fullname,
+            'email': email,
+            'website': website,
+            'state': state,
+            'city': city,
+            'disable': disable,
+            'maxbitrate': maxbitrate}
+    if not password:
+        data.pop('password')
+    if not fullname:
+        data.pop('fullname')
+    if not email:
+        data.pop('email')
+    if not website:
+        data.pop('website')
+    if not state:
+        data.pop('state')
+    if not city:
+        data.pop('city')
+    if not disable:
+        data.pop('disable')
+    if not maxbitrate:
+        data.pop('maxbitrate')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
+    except urllib.error.HTTPError:
+        return False
+    ampache_response = result.read().decode('utf-8')
+    try:
+        tree = ET.fromstring(ampache_response)
+    except ET.ParseError:
+        return False
+    try:
+        token = tree.tag
+    except AttributeError:
+        token = False
+    if token:
+        return tree
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" user_delete
+    MINIMUM_API_VERSION=400001
+
+    Delete an existing user. @param array $input
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * username    = (string) $username
+"""
+def user_delete(ampache_url, ampache_api, username):
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = {'action': 'stats',
+            'auth': ampache_api,
+            'username': username}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
+    except urllib.error.HTTPError:
+        return False
+    ampache_response = result.read().decode('utf-8')
+    try:
+        tree = ET.fromstring(ampache_response)
+    except ET.ParseError:
+        return False
+    try:
+        token = tree.tag
+    except AttributeError:
+        token = False
+    if token:
+        return tree
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token

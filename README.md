@@ -2,8 +2,8 @@
 
 ## INFO
 
-This library is starting to take shape and is apble to connect oto ampache and return the xml data received from the queries.
-Further testing is required but it works pretty well so far.
+This library is starting to take shape and is able to connect to Ampache and return the
+xml or binary data received from the queries.
 
 ## EXAMPLES
 
