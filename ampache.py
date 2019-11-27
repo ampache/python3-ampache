@@ -3,7 +3,7 @@
 """ Copyright (C)2019
 Lachlan de Waard <lachlan.00@gmail.com>
 ---------------------------------------
-Ampache XML-Api v400001 for python3
+Ampache XML-Api 400002 for python3
 ---------------------------------------
 
  This program is free software: you can redistribute it and/or modify
@@ -1245,15 +1245,24 @@ def playlist_add_song(ampache_url, ampache_api, song, filter):
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * song
     * filter
+    * song
+    * track
 """
-def playlist_remove_song(ampache_url, ampache_api, song, filter):
+def playlist_remove_song(ampache_url, ampache_api, filter, song, track):
     ampache_url = ampache_url + '/server/xml.server.php'
-    data = urllib.parse.urlencode({'action': 'playlist_remove_song',
-                                   'auth': ampache_api,
-                                   'song': song,
-                                   'filter': filter})
+
+    data = {'action': 'playlist_generate',
+            'auth': ampache_api,
+            'mode': mode,
+            'filter': filter,
+            'song': song,
+            'track': track}
+    if not song:
+        data.pop('song')
+    if not track:
+        data.pop('track')
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     try:
         result = urllib.request.urlopen(full_url)
@@ -1290,7 +1299,7 @@ def playlist_remove_song(ampache_url, ampache_api, song, filter):
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * mode   = (string) 'recent', 'forgotten', 'random' (default = 'random')  //optional
+    * mode   = (string) 'recent', 'forgotten', 'unplayed', 'random' (default = 'random')  //optional
     * filter = (string) string LIKE matched to song title  //optional
     * album  = (integer) $album_i d  //optional
     * artist = (integer) $artist_id  //optional
@@ -1393,7 +1402,7 @@ def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     Perform an advanced search given passed rules
     the rules can occur multiple times and are joined by the operator item.
     
-    Refer to the wiki for firther information
+    Refer to the wiki for further information
     https://github.com/ampache/ampache/wiki/XML-methods
 
     rule_1
@@ -1442,8 +1451,9 @@ def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
       * 2 starts with / is 
       * 3 ends with / is not 
       * 4 is / is greater than 
-      * 5 sounds like / is less than 
-      * 6 does not sound like
+      * 5 is not / is less than 
+	  * 6 sounds like
+      * 7 does not sound like
 
     rule_1_input
       * text
@@ -2361,6 +2371,30 @@ def download(ampache_url, ampache_api, id, type, destination, format = 'raw'):
                                    'id': id,
                                    'type': type,
                                    'format': format})
+    full_url = ampache_url + '?' + data
+    result = requests.get(full_url, allow_redirects=True)
+    open(destination, 'wb').write(result.content)
+    return True
+
+""" get_art
+    MINIMUM_API_VERSION=400001
+
+    get the binary art for an item
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * id          = (string) $song_id / $podcast_episode_id
+    * type        = (string) 'song', 'artist', 'album', 'playlist', 'search', 'podcast'
+"""
+def get_art(ampache_url, ampache_api, id, type):
+    if not os.path.isdir(os.path.dirname(destination)):
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'get_art',
+                                   'auth': ampache_api,
+                                   'id': id,
+                                   'type': type})
     full_url = ampache_url + '?' + data
     result = requests.get(full_url, allow_redirects=True)
     open(destination, 'wb').write(result.content)
