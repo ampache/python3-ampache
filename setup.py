@@ -5,16 +5,13 @@ Refer to https://github.com/lachlan-00/python3-ampache
 
 from setuptools import setup
 from setuptools import find_packages
+from setuptools import Extension
 from codecs import open
 from os import path
 
 # Get __version__ from _meta.py
 with open(path.join("src", "_meta.py")) as f:
     exec(f.read())
-
-_here = path.abspath(path.dirname(__file__))
-with open(path.join(_here, "README.rst"), encoding="utf-8") as f:
-    LONG_DESCRIPTION = f.read()
 
 setup(
     name="ampache",
@@ -24,7 +21,7 @@ setup(
     author_email="lachlan.00@gmail.com",
     version=__version__,
     description="Python library for Amapche XML-API",
-    long_description=LONG_DESCRIPTION,
+    long_description="This library is able to connect to Ampache and return the xml or binary data received from the queries.",
     include_package_data=False,
     url="https://github.com/lachlan-00/python3-ampache",
     download_url="https://github.com/lachlan-00/python3-ampache",
