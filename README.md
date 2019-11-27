@@ -5,11 +5,18 @@
 This library is starting to take shape and is able to connect to Ampache and return the
 xml or binary data received from the queries.
 
+## INSTALL
+
+You can now install from pip directly!
+
+```python3
+    pip3 install -U ampache
+```
+
 ## EXAMPLES
 
 ```python3
     import time
-
     import ampache
 
     # user variables
