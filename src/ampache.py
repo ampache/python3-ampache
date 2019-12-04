@@ -2478,7 +2478,7 @@ def user_create(ampache_url, ampache_api, username, password, email, fullname = 
 """
 def user_update(ampache_url, ampache_api, username, password = False, fullname = False, email = False, website = False, state = False, city = False, disable = False, maxbitrate = False):
     ampache_url = ampache_url + '/server/xml.server.php'
-    data = {'action': 'stats',
+    data = {'action': 'user_update',
             'auth': ampache_api,
             'username': username,
             'password': password,
@@ -2542,7 +2542,7 @@ def user_update(ampache_url, ampache_api, username, password = False, fullname =
 """
 def user_delete(ampache_url, ampache_api, username):
     ampache_url = ampache_url + '/server/xml.server.php'
-    data = {'action': 'stats',
+    data = {'action': 'user_delete',
             'auth': ampache_api,
             'username': username}
     data = urllib.parse.urlencode(data)
