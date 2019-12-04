@@ -1080,8 +1080,8 @@ def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * name        = 
-    * type        = 
+    * name        = (string)
+    * type        = (string)
 """
 def playlist_create(ampache_url, ampache_api, name, type):
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -1102,11 +1102,11 @@ def playlist_create(ampache_url, ampache_api, name, type):
     except ET.ParseError:
         return False
     try:
-        token = tree.find('success').text
+        token = tree.find('playlist').text
     except AttributeError:
         token = False
     if token:
-        return token
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -1254,7 +1254,6 @@ def playlist_remove_song(ampache_url, ampache_api, filter, song = False, track =
 
     data = {'action': 'playlist_remove_song',
             'auth': ampache_api,
-            'mode': mode,
             'filter': filter,
             'song': song,
             'track': track}
