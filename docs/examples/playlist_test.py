@@ -5,9 +5,9 @@ import sys
 import ampache
 
 # user variables
-#ampache_url  = 'https://music.server'
-#ampache_api  = 'mysuperapikey'
-#ampache_user = 'myusername'
+ampache_url  = 'https://music.server'
+ampache_api  = 'mysuperapikey'
+ampache_user = 'myusername'
 
 print('\n#######################\nTesting the ampache API\n#######################\n')
 
@@ -90,7 +90,8 @@ for child in playlist_songs:
 """
 playlist_edit
 """
-#print(ampache.playlist_edit(ampache_url, ampache_api))
+print(ampache.playlist_edit(ampache_url, ampache_api, single_playlist, 'generic', 'public'))
+
 
 """
 playlist_delete

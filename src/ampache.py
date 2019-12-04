@@ -1121,17 +1121,22 @@ def playlist_create(ampache_url, ampache_api, name, type):
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
+    * filter      = (integer)
     * name        = 
     * type        = 
-    * filter      = 
 """
-def playlist_edit(ampache_url, ampache_api, name, type, filter):
+def playlist_edit(ampache_url, ampache_api, filter, name = False, type = False):
     ampache_url = ampache_url + '/server/xml.server.php'
-    data = urllib.parse.urlencode({'action': 'playlist_edit',
-                                   'auth': ampache_api,
-                                   'name': name,
-                                   'type': type,
-                                   'filter': filter})
+    data = {'action': 'playlist_edit',
+            'auth': ampache_api,
+            'filter': filter,
+            'name': name,
+            'type': type}
+    if not name:
+        data.pop('name')
+    if not type:
+        data.pop('type')
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     try:
         result = urllib.request.urlopen(full_url)
