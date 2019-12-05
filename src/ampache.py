@@ -55,40 +55,6 @@ API FUNCTIONS
 -------------
 """
 
-""" ping
-    MINIMUM_API_VERSION=380001
-
-    This can be called without being authenticated, it is useful for determining if what the status
-    of the server is, and what version it is running/compatible with
-
-    INPUTS
-    * ampache_url = (string)
-    * ampache_api = (string)
-"""
-def ping(ampache_url, ampache_api):
-    """ Request Ampache ping auth """
-    ampache_url = ampache_url + '/server/xml.server.php'
-    data = urllib.parse.urlencode({'action': 'ping',
-                                   'auth': ampache_api})
-    full_url = ampache_url + '?' + data
-    try:
-        result = urllib.request.urlopen(full_url)
-    except urllib.error.URLError:
-        return False
-    except urllib.error.HTTPError:
-        return False
-    ampache_response = result.read().decode('utf-8')
-    result.close()
-    try:
-        tree = ET.fromstring(ampache_response)
-    except ET.ParseError:
-        return False
-    try:
-        tree.find('session_expire').text
-    except AttributeError:
-        return False
-    return ampache_api
-
 """ handshake
     MINIMUM_API_VERSION=380001
 
@@ -98,17 +64,26 @@ def ping(ampache_url, ampache_api):
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
+    * user        = (string) //optional
     * timestamp   = (integer) UNIXTIME() //optional
     * version     = (string) //optional
 """
-def handshake(ampache_url, ampache_api, timestamp=0, version='400001'):
+def handshake(ampache_url, ampache_api, user=False, timestamp=False, version='400003'):
     if timestamp == 0:
         timestamp = int(time.time())
     ampache_url = ampache_url + '/server/xml.server.php'
-    data = urllib.parse.urlencode({'action': 'handshake',
-                                   'auth': ampache_api,
-                                   'timestamp': str(timestamp),
-                                   'version': version})
+    data = {'action': 'handshake',
+            'auth': ampache_api,
+            'user': user,
+            'timestamp': str(timestamp),
+            'version': version}
+    if not user:
+        data.pop('user')
+    if not timestamp:
+        data.pop('timestamp')
+    if not version:
+        data.pop('version')
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     try:
         result = urllib.request.urlopen(full_url)
@@ -127,6 +102,43 @@ def handshake(ampache_url, ampache_api, timestamp=0, version='400001'):
     except AttributeError:
         token = False
     return token
+
+""" ping
+    MINIMUM_API_VERSION=380001
+
+    This can be called without being authenticated, it is useful for determining if what the status
+    of the server is, and what version it is running/compatible with
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string) session auth key //optional
+"""
+def ping(ampache_url, ampache_api):
+    """ Request Ampache ping auth """
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = {'action': 'ping',
+            'auth': ampache_api}
+    if not ampache_api:
+        data.pop('auth')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
+    except urllib.error.HTTPError:
+        return False
+    ampache_response = result.read().decode('utf-8')
+    result.close()
+    try:
+        tree = ET.fromstring(ampache_response)
+    except ET.ParseError:
+        return False
+    try:
+        tree.find('session_expire').text
+    except AttributeError:
+        return False
+    return ampache_api
 
 """ goodbye
     MINIMUM_API_VERSION=400001
@@ -161,6 +173,45 @@ def goodbye(ampache_url, ampache_api):
         token = False
     if token:
         return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
+""" url_to_song
+    MINIMUM_API_VERSION=380001
+
+    This takes a url and returns the song object in question
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * url         = (string) Full Ampache URL from server, translates back into a song XML
+"""
+def url_to_song(ampache_url, ampache_api, url):
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'url_to_song',
+                                   'auth': ampache_api,
+                                   'url': url})
+    full_url = ampache_url + '?' + data
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
+    except urllib.error.HTTPError:
+        return False
+    ampache_response = result.read().decode('utf-8')
+    try:
+        tree = ET.fromstring(ampache_response)
+    except ET.ParseError:
+        return False
+    try:
+        token = tree.tag
+    except AttributeError:
+        token = False
+    if token:
+        return tree
     try:
         token = tree.find('error').text
     except AttributeError:
@@ -829,11 +880,11 @@ def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     * exact       = //optional
     * add         = //optional
     * update      = //optional
-    * filter      = //optional
+    * filter      = 
     * offset      = (integer) //optional
     * limit       = (integer) //optional
 """
-def songs(ampache_url, ampache_api, exact = '', add = '', update = '', filter = '', offset = 0, limit = 0):
+def songs(ampache_url, ampache_api, filter, exact = '', add = '', update = '', offset = 0, limit = 0):
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'songs',
                                    'auth': ampache_api,
@@ -882,45 +933,6 @@ def song(ampache_url, ampache_api, filter):
     data = urllib.parse.urlencode({'action': 'song',
                                    'auth': ampache_api,
                                    'filter': filter})
-    full_url = ampache_url + '?' + data
-    try:
-        result = urllib.request.urlopen(full_url)
-    except urllib.error.URLError:
-        return False
-    except urllib.error.HTTPError:
-        return False
-    ampache_response = result.read().decode('utf-8')
-    try:
-        tree = ET.fromstring(ampache_response)
-    except ET.ParseError:
-        return False
-    try:
-        token = tree.tag
-    except AttributeError:
-        token = False
-    if token:
-        return tree
-    try:
-        token = tree.find('error').text
-    except AttributeError:
-        token = False
-    return token
-
-""" url_to_song
-    MINIMUM_API_VERSION=380001
-
-    This takes a url and returns the song object in question
-
-    INPUTS
-    * ampache_url = (string)
-    * ampache_api = (string)
-    * url         = 
-"""
-def url_to_song(ampache_url, ampache_api, url):
-    ampache_url = ampache_url + '/server/xml.server.php'
-    data = urllib.parse.urlencode({'action': 'url_to_song',
-                                   'auth': ampache_api,
-                                   'url': url})
     full_url = ampache_url + '?' + data
     try:
         result = urllib.request.urlopen(full_url)
