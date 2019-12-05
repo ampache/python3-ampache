@@ -3,7 +3,7 @@
 """ Copyright (C)2019
 Lachlan de Waard <lachlan.00@gmail.com>
 ---------------------------------------
-Ampache XML-Api 400002 for python3
+Ampache XML-Api 400003 for python3
 ---------------------------------------
 
  This program is free software: you can redistribute it and/or modify
@@ -77,7 +77,7 @@ def ping(ampache_url, ampache_api):
         return False
     except urllib.error.HTTPError:
         return False
-    ampache_response = result.read()
+    ampache_response = result.read().decode('utf-8')
     result.close()
     try:
         tree = ET.fromstring(ampache_response)
