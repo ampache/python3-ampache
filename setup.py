@@ -13,6 +13,10 @@ from os import path
 with open(path.join("src", "_meta.py")) as f:
     exec(f.read())
 
+_here = path.abspath(path.dirname(__file__))
+with open(path.join(_here, "README.rst"), encoding="utf-8") as f:
+    LONG_DESCRIPTION = f.read()
+
 setup(
     name="ampache",
 	py_modules=["ampache"],
@@ -21,7 +25,7 @@ setup(
     author_email="lachlan.00@gmail.com",
     version=__version__,
     description="Python library for Amapche XML-API",
-    long_description="This library is able to connect to Ampache and return the xml or binary data received from the queries.",
+    long_description=LONG_DESCRIPTION,
     include_package_data=False,
     url="https://github.com/lachlan-00/python3-ampache",
     download_url="https://github.com/lachlan-00/python3-ampache",
