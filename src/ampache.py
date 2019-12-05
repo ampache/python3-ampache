@@ -218,62 +218,6 @@ def url_to_song(ampache_url, ampache_api, url):
         token = False
     return token
 
-""" scrobble
-    MINIMUM_API_VERSION=400001
-
-    Search for a song using text info and then record a play if found.
-    This allows other sources to record play history to ampache
-
-    INPUTS
-    * ampache_url = (string)
-    * ampache_api = (string)
-    * title       = (string)
-    * artist      = (string)
-    * album       = (string)
-    * MBtitle     = (string) //optional
-    * MBartist    = (string) //optional
-    * MBalbum     = (string) //optional
-    * time        = (integer) UNIXTIME() //optional
-    * client      = (string) //optional
-"""
-def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartist='', MBalbum='', time='', client = 'AmpacheAPI'):
-    if not ampache_url or not ampache_api or not title or not artist or not album:
-        return False
-    ampache_url = ampache_url + '/server/xml.server.php'
-    data = urllib.parse.urlencode({'action': 'scrobble',
-                                   'auth': ampache_api,
-                                   'client': client,
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
-    full_url = ampache_url + '?' + data
-    try:
-        result = urllib.request.urlopen(full_url)
-    except urllib.error.URLError:
-        return False
-    except urllib.error.HTTPError:
-        return False
-    ampache_response = result.read().decode('utf-8')
-    try:
-        tree = ET.fromstring(ampache_response)
-    except ET.ParseError:
-        return False
-    try:
-        token = tree.find('success').text
-    except AttributeError:
-        token = False
-    if token:
-        return token
-    try:
-        token = tree.find('error').text
-    except AttributeError:
-        token = False
-    return token
-
 """ get_indexes
     MINIMUM_API_VERSION=400001
 
@@ -2085,6 +2029,62 @@ def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI'):
         token = False
     return token
 
+""" scrobble
+    MINIMUM_API_VERSION=400001
+
+    Search for a song using text info and then record a play if found.
+    This allows other sources to record play history to ampache
+
+    INPUTS
+    * ampache_url = (string)
+    * ampache_api = (string)
+    * title       = (string)
+    * artist      = (string)
+    * album       = (string)
+    * MBtitle     = (string) //optional
+    * MBartist    = (string) //optional
+    * MBalbum     = (string) //optional
+    * time        = (integer) UNIXTIME() //optional
+    * client      = (string) //optional
+"""
+def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartist='', MBalbum='', time='', client = 'AmpacheAPI'):
+    if not ampache_url or not ampache_api or not title or not artist or not album:
+        return False
+    ampache_url = ampache_url + '/server/xml.server.php'
+    data = urllib.parse.urlencode({'action': 'scrobble',
+                                   'auth': ampache_api,
+                                   'client': client,
+                                   'date': str(time),
+                                   'song': title,
+                                   'album': album,
+                                   'artist': artist,
+                                   'songmbid': MBtitle,
+                                   'albummbid': MBalbum,
+                                   'artistmdib': MBartist})
+    full_url = ampache_url + '?' + data
+    try:
+        result = urllib.request.urlopen(full_url)
+    except urllib.error.URLError:
+        return False
+    except urllib.error.HTTPError:
+        return False
+    ampache_response = result.read().decode('utf-8')
+    try:
+        tree = ET.fromstring(ampache_response)
+    except ET.ParseError:
+        return False
+    try:
+        token = tree.find('success').text
+    except AttributeError:
+        token = False
+    if token:
+        return token
+    try:
+        token = tree.find('error').text
+    except AttributeError:
+        token = False
+    return token
+
 """ timeline
     MINIMUM_API_VERSION=380001
 
@@ -2376,7 +2376,7 @@ def stream(ampache_url, ampache_api, id, type, destination):
     * id          = (string) $song_id / $podcast_episode_id
     * type        = (string) 'song'|'podcast'
     * destination = (string) full file path
-    * format      = (string) 'mp3', 'ogg', etc. ('raw' / original by default)
+    * format      = (string) 'mp3', 'ogg', etc. ('raw' / original by default) //optional
 """
 def download(ampache_url, ampache_api, id, type, destination, format = 'raw'):
     if not os.path.isdir(os.path.dirname(destination)):
@@ -2581,3 +2581,19 @@ def user_delete(ampache_url, ampache_api, username):
     except AttributeError:
         token = False
     return token
+
+""" localplay
+    MINIMUM_API_VERSION=380001
+
+    NOT IMPLEMENTED
+"""
+def localplay(ampache_url, ampache_api, username):
+    return False
+
+""" democratic
+    MINIMUM_API_VERSION=380001
+
+    NOT IMPLEMENTED
+"""
+def democratic(ampache_url, ampache_api, username):
+    return False
