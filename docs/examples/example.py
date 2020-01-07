@@ -68,8 +68,6 @@ for child in playlists:
 
 """
 user
->>> print(dir(xml.etree.ElementTree.Element))
-['__class__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'attrib', 'clear', 'extend', 'find', 'findall', 'findtext', 'get', 'getchildren', 'getiterator', 'insert', 'items', 'iter', 'iterfind', 'itertext', 'keys', 'makeelement', 'remove', 'set', 'tag', 'tail', 'text']
 """
 myuser = ampache.user(ampache_url, ampache_api, ampache_user)
 print('\ndata for my user account details:')
@@ -87,15 +85,6 @@ for child in myuser:
 
 """
 advanced_search
-
-    MINIMUM_API_VERSION=380001
-
-    Perform an advanced search given passed rules
-    the rules can occur multiple times and are joined by the operator item.
-    
-    Refer to the wiki for firther information
-    https://github.com/ampache/ampache/wiki/XML-methods
-
 """
 print()
 search_rules = [['favorite', 0, '%'], ['artist', 3, 'Prodigy']]
