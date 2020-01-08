@@ -144,7 +144,7 @@ for child in ampache.album_songs(ampache_url, ampache_api, single_album, '', 0):
 albums
 """
 print('\nSearching for albums called', album_title)
-albums = ampache.albums(ampache_url, ampache_api, 1, 0, 0, album_title, '', 0, 0)
+albums = ampache.albums(ampache_url, ampache_api, album_title, 1, 0, 0, '', 0, 0)
 for child in albums:
     if child.tag == 'total_count':
         continue

@@ -57,7 +57,7 @@ print('\nplaylist_create created the following id:\n    ', single_playlist)
 """
 playlist
 """
-#playlist = ampache.playlists(ampache_url, ampache_api, 'private', 'python-test')
+#playlist = ampache.playlists(ampache_url, ampache_api, 'python-test', 'private')
 #if playlist:
     #for child in playlist:
         #print(child.tag, child.attrib)
@@ -72,8 +72,8 @@ playlist_add_song
 songs = ampache.get_indexes(ampache_url, ampache_api, 'song', '', '', '', '', 10)
 for child in songs:
     if child.tag == 'song':
-        print(ampache.playlist_add_song(ampache_url, ampache_api, child.attrib['id'], single_playlist, 1))
-        print(ampache.playlist_add_song(ampache_url, ampache_api, child.attrib['id'], single_playlist, 1))
+        print(ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, child.attrib['id'], 1))
+        print(ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, child.attrib['id'], 1))
 
 """
 playlist_songs
