@@ -1158,21 +1158,25 @@ def playlist_delete(ampache_url, ampache_api, filter):
 
 """ playlist_add_song
     MINIMUM_API_VERSION=380001
+    CHANGED_IN_API_VERSION=400003
 
-    This adds a song to a playlist
+    This adds a song to a playlist.
+    Added duplicate checks in 400003
 
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
     * filter      = (integer) $playlist_id
     * song        = (integer) $song_id
+    * check       = (integer) 0|1 Check for duplicates (default = 0) //optional
 """
-def playlist_add_song(ampache_url, ampache_api, filter, song):
+def playlist_add_song(ampache_url, ampache_api, filter, song, check = 0):
     ampache_url = ampache_url + '/server/xml.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_add_song',
                                    'auth': ampache_api,
                                    'song': song,
-                                   'filter': filter})
+                                   'filter': filter,
+                                   'check': check})
     full_url = ampache_url + '?' + data
     try:
         result = urllib.request.urlopen(full_url)
