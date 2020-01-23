@@ -29,6 +29,10 @@ import urllib.request
 
 from xml.etree import ElementTree as ET
 
+# used for printing results
+#AMPACHE_DEBUG = True
+AMPACHE_DEBUG = False
+
 """
 ----------------
 HELPER FUNCTIONS
@@ -93,6 +97,8 @@ def handshake(ampache_url, ampache_api, user=False, timestamp=False, version='40
         return False
     ampache_response = result.read().decode('utf-8')
     result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -130,6 +136,9 @@ def ping(ampache_url, ampache_api):
         return False
     ampache_response = result.read().decode('utf-8')
     result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
+    result.close()
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -162,6 +171,9 @@ def goodbye(ampache_url, ampache_api):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     result.close()
     try:
         tree = ET.fromstring(ampache_response)
@@ -202,6 +214,9 @@ def url_to_song(ampache_url, ampache_api, url):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -253,6 +268,9 @@ def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = 
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -309,6 +327,9 @@ def artists(ampache_url, ampache_api, filter = '', add = None, update = None, of
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -333,7 +354,7 @@ def artists(ampache_url, ampache_api, filter = '', add = None, update = None, of
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * filter      = 
+    * filter      = (integer) $artist_id
     * include     = //optional
 """
 def artist(ampache_url, ampache_api, filter, include = None):
@@ -353,6 +374,9 @@ def artist(ampache_url, ampache_api, filter, include = None):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -396,6 +420,9 @@ def artist_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -439,6 +466,9 @@ def artist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -497,6 +527,9 @@ def albums(ampache_url, ampache_api, filter = '', exact = '', add = None, update
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -521,7 +554,7 @@ def albums(ampache_url, ampache_api, filter = '', exact = '', add = None, update
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * filter      = 
+    * filter      = (integer) $album_id
     * include     = //optional
 """
 def album(ampache_url, ampache_api, filter, include = None):
@@ -541,6 +574,9 @@ def album(ampache_url, ampache_api, filter, include = None):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -584,6 +620,9 @@ def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -629,6 +668,9 @@ def tags(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -653,7 +695,7 @@ def tags(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * filter      = 
+    * filter      = (integer) $genre_id
 """
 def tag(ampache_url, ampache_api, filter):
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -668,6 +710,9 @@ def tag(ampache_url, ampache_api, filter):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -711,6 +756,9 @@ def tag_artists(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -754,6 +802,9 @@ def tag_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -797,6 +848,9 @@ def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -846,6 +900,9 @@ def songs(ampache_url, ampache_api, filter = '', exact = '', add = '', update = 
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -885,6 +942,9 @@ def song(ampache_url, ampache_api, filter):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -930,6 +990,9 @@ def playlists(ampache_url, ampache_api, filter = '', exact = '', offset = 0, lim
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -969,6 +1032,9 @@ def playlist(ampache_url, ampache_api, filter):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1012,6 +1078,9 @@ def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1053,6 +1122,9 @@ def playlist_create(ampache_url, ampache_api, name, type):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1101,6 +1173,9 @@ def playlist_edit(ampache_url, ampache_api, filter, name = False, type = False):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1140,6 +1215,9 @@ def playlist_delete(ampache_url, ampache_api, filter):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1185,6 +1263,9 @@ def playlist_add_song(ampache_url, ampache_api, filter, song, check = 0):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1235,6 +1316,9 @@ def playlist_remove_song(ampache_url, ampache_api, filter, song = False, track =
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1301,6 +1385,9 @@ def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False,
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1344,6 +1431,9 @@ def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1458,6 +1548,9 @@ def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 's
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1504,6 +1597,9 @@ def videos(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit 
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1528,7 +1624,7 @@ def videos(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit 
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
-    * filter      = 
+    * filter      = (integer) $video_id
 """
 def video(ampache_url, ampache_api, filter):
     ampache_url = ampache_url + '/server/xml.server.php'
@@ -1543,6 +1639,9 @@ def video(ampache_url, ampache_api, filter):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1582,6 +1681,9 @@ def localplay(ampache_url, ampache_api, command):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1625,6 +1727,9 @@ def democratic(ampache_url, ampache_api, method, action, oid):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1680,6 +1785,9 @@ def stats(ampache_url, ampache_api, type, filter, username = None, user_id = Non
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1719,6 +1827,9 @@ def user(ampache_url, ampache_api, username):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1758,6 +1869,9 @@ def followers(ampache_url, ampache_api, username):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1797,6 +1911,9 @@ def following(ampache_url, ampache_api, username):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1836,6 +1953,9 @@ def toggle_follow(ampache_url, ampache_api, username):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1877,6 +1997,9 @@ def last_shouts(ampache_url, ampache_api, username, limit = 0):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1922,6 +2045,9 @@ def rate(ampache_url, ampache_api, type, id, rating):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -1974,6 +2100,9 @@ def flag(ampache_url, ampache_api, type, id, flag):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -2017,6 +2146,9 @@ def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI'):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -2073,6 +2205,9 @@ def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartis
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -2116,6 +2251,9 @@ def timeline(ampache_url, ampache_api, username, limit = 0, since = 0):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -2157,6 +2295,9 @@ def friends_timeline(ampache_url, ampache_api, limit = 0, since = 0):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -2200,6 +2341,9 @@ def catalog_action(ampache_url, ampache_api, task, catalog):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -2241,6 +2385,9 @@ def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -2288,6 +2435,9 @@ def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = F
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -2328,6 +2478,9 @@ def update_artist_info(ampache_url, ampache_api, id):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -2458,6 +2611,9 @@ def user_create(ampache_url, ampache_api, username, password, email, fullname = 
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -2530,6 +2686,9 @@ def user_update(ampache_url, ampache_api, username, password = False, fullname =
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -2570,6 +2729,9 @@ def user_delete(ampache_url, ampache_api, username):
     except urllib.error.HTTPError:
         return False
     ampache_response = result.read().decode('utf-8')
+    result.close()
+    if AMPACHE_DEBUG:
+        print(ampache_response)
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:

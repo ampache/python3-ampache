@@ -4,7 +4,8 @@ AMPACHE LIBRARY FOR PYTHON3
 INFO
 ====
 
-This library is starting to take shape and is able to connect to Ampache and return the xml or binary data received from the queries.
+A python3 library for interaction with your Ampache server using the XML API
+https://github.com/ampache/ampache/wiki/API 
 
 INSTALL
 =======
