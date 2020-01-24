@@ -34,8 +34,8 @@ Practical example::
     if ampache_api:
         # Scrobble a music track to your ampache server
         Process(target=ampache.scrobble,
-                args=(int(ampache_url, ampache_api, 'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed',
-                '', '', ''time.time()))).start()
+                args=(ampache_url, ampache_session, 'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed',
+                              '', '', '', self.nowtime)).start()
 
 LINKS
 =====
