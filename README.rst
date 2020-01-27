@@ -40,6 +40,6 @@ Practical example::
 LINKS
 =====
 
-`<https://github.com/lachlan-00/python3-ampache/>`_
+`<https://github.com/ampache/python3-ampache/>`_
 
 `<https://pypi.org/project/ampache/>`_

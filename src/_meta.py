@@ -1,4 +1,4 @@
-# Copyright 2019 Lachlan de Waard
+# Copyright 2020 Ampache.org
 
 """
 ampache metadata

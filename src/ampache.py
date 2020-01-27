@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-""" Copyright (C)2019
-Lachlan de Waard <lachlan.00@gmail.com>
+"""
+Copyright 2020 Ampache.org
 ---------------------------------------
 Ampache XML-Api 400003 for python3
 ---------------------------------------

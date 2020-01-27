@@ -1,6 +1,6 @@
 """
 Setup file for srlearn
-Refer to https://github.com/lachlan-00/python3-ampache
+Refer to https://github.com/ampache/python3-ampache
 """
 
 from setuptools import setup
@@ -27,8 +27,8 @@ setup(
     description="Python library for Amapche XML-API",
     long_description=LONG_DESCRIPTION,
     include_package_data=False,
-    url="https://github.com/lachlan-00/python3-ampache",
-    download_url="https://github.com/lachlan-00/python3-ampache",
+    url="https://github.com/ampache/python3-ampache",
+    download_url="https://github.com/ampache/python3-ampache",
     license="GPL-3.0",
     zip_safe=False,
     classifiers=[
