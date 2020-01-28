@@ -74,7 +74,7 @@ API FUNCTIONS
     * version     = (string) //optional
     * api_format  = (string) xml|json //optional
 """
-def handshake(ampache_url, ampache_api, user=False, timestamp=False, version='400003', api_format = 'xml'):
+def handshake(ampache_url, ampache_api, user=False, timestamp=False, version='400004', api_format = 'xml'):
     if timestamp == 0:
         timestamp = int(time.time())
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
