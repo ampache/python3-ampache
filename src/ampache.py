@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-"""
-Copyright 2020 Ampache.org
+""" Copyright (C)2019
+Lachlan de Waard <lachlan.00@gmail.com>
 ---------------------------------------
 Ampache XML-Api 400003 for python3
 ---------------------------------------
@@ -21,6 +21,7 @@ Ampache XML-Api 400003 for python3
 """
 
 import hashlib
+import json
 import os
 import requests
 import time
@@ -30,8 +31,8 @@ import urllib.request
 from xml.etree import ElementTree as ET
 
 # used for printing results
-#AMPACHE_DEBUG = True
-AMPACHE_DEBUG = False
+AMPACHE_DEBUG = True
+#AMPACHE_DEBUG = False
 
 """
 ----------------
@@ -71,11 +72,12 @@ API FUNCTIONS
     * user        = (string) //optional
     * timestamp   = (integer) UNIXTIME() //optional
     * version     = (string) //optional
+    * server_format = (string) xml|json //optional
 """
-def handshake(ampache_url, ampache_api, user=False, timestamp=False, version='400003'):
+def handshake(ampache_url, ampache_api, user=False, timestamp=False, version='400003', server_format='xml'):
     if timestamp == 0:
         timestamp = int(time.time())
-    ampache_url = ampache_url + '/server/xml.server.php'
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'handshake',
             'auth': ampache_api,
             'user': user,
@@ -95,19 +97,29 @@ def handshake(ampache_url, ampache_api, user=False, timestamp=False, version='40
         return False
     except urllib.error.HTTPError:
         return False
-    ampache_response = result.read().decode('utf-8')
+    ampache_response = result.read()
     result.close()
     if AMPACHE_DEBUG:
         print(ampache_response)
-    try:
-        tree = ET.fromstring(ampache_response)
-    except ET.ParseError:
-        return False
-    try:
-        token = tree.find('auth').text
-    except AttributeError:
-        token = False
-    return token
+    # json format
+    if server_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        if 'auth' in json_data:
+            print(json_data['auth'])
+            return json_data['auth']
+        else:
+            return False
+    # xml format
+    else:
+        try:
+            tree = ET.fromstring(ampache_response.decode('utf-8'))
+        except ET.ParseError:
+            return False
+        try:
+            token = tree.find('auth').text
+        except AttributeError:
+            token = False
+        return token
 
 """ ping
     MINIMUM_API_VERSION=380001
@@ -118,10 +130,11 @@ def handshake(ampache_url, ampache_api, user=False, timestamp=False, version='40
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string) session auth key //optional
+    * server_format = (string) xml|json //optional
 """
-def ping(ampache_url, ampache_api):
+def ping(ampache_url, ampache_api, server_format='xml'):
     """ Request Ampache ping auth """
-    ampache_url = ampache_url + '/server/xml.server.php'
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'ping',
             'auth': ampache_api}
     if not ampache_api:
@@ -138,7 +151,6 @@ def ping(ampache_url, ampache_api):
     result.close()
     if AMPACHE_DEBUG:
         print(ampache_response)
-    result.close()
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -157,10 +169,11 @@ def ping(ampache_url, ampache_api):
     INPUTS
     * ampache_url = (string)
     * ampache_api = (string)
+    * server_format = (string) xml|json //optional
 """
-def goodbye(ampache_url, ampache_api):
+def goodbye(ampache_url, ampache_api, server_format='xml'):
     """ Request Ampache destroy an api session """
-    ampache_url = ampache_url + '/server/xml.server.php'
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'goodbye',
                                    'auth': ampache_api})
     full_url = ampache_url + '?' + data
@@ -174,7 +187,6 @@ def goodbye(ampache_url, ampache_api):
     result.close()
     if AMPACHE_DEBUG:
         print(ampache_response)
-    result.close()
     try:
         tree = ET.fromstring(ampache_response)
     except ET.ParseError:
@@ -200,9 +212,10 @@ def goodbye(ampache_url, ampache_api):
     * ampache_url = (string)
     * ampache_api = (string)
     * url         = (string) Full Ampache URL from server, translates back into a song XML
+    * server_format = (string) xml|json //optional
 """
-def url_to_song(ampache_url, ampache_api, url):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def url_to_song(ampache_url, ampache_api, url, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'url_to_song',
                                    'auth': ampache_api,
                                    'url': url})
@@ -247,11 +260,12 @@ def url_to_song(ampache_url, ampache_api, url):
     * update      = //optional
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = '', offset = 0, limit = 0):
+def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = '', offset = 0, limit = 0, server_format='xml'):
     if not ampache_url or not ampache_api or not type:
         return False
-    ampache_url = ampache_url + '/server/xml.server.php'
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'get_indexes',
                                    'auth': ampache_api,
                                    'type': type,
@@ -301,9 +315,10 @@ def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = 
     * offset      = (integer) //optional
     * limit       = (integer) //optional
     * include     = //optional
+    * server_format = (string) xml|json //optional
 """
-def artists(ampache_url, ampache_api, filter = '', add = None, update = None, offset = 0, limit = 0, include = None):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def artists(ampache_url, ampache_api, filter = '', add = None, update = None, offset = 0, limit = 0, include = None, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'artists',
             'auth': ampache_api,
             'filter': filter,
@@ -356,9 +371,10 @@ def artists(ampache_url, ampache_api, filter = '', add = None, update = None, of
     * ampache_api = (string)
     * filter      = (integer) $artist_id
     * include     = //optional
+    * server_format = (string) xml|json //optional
 """
-def artist(ampache_url, ampache_api, filter, include = None):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def artist(ampache_url, ampache_api, filter, include = None, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'artist',
             'auth': ampache_api,
             'filter': filter,
@@ -404,9 +420,10 @@ def artist(ampache_url, ampache_api, filter, include = None):
     * filter      =
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def artist_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def artist_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'artist_albums',
                                    'auth': ampache_api,
                                    'filter': filter,
@@ -450,9 +467,10 @@ def artist_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     * filter      = 
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def artist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def artist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'artist_songs',
                                    'auth': ampache_api,
                                    'filter': filter,
@@ -500,9 +518,10 @@ def artist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     * offset      = (integer) //optional
     * limit       = (integer) //optional
     * include     = //optional
+    * server_format = (string) xml|json //optional
 """
-def albums(ampache_url, ampache_api, filter = '', exact = '', add = None, update = None, offset = 0, limit = 0, include = None):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def albums(ampache_url, ampache_api, filter = '', exact = '', add = None, update = None, offset = 0, limit = 0, include = None, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'albums',
             'auth': ampache_api,
             'filter': filter,
@@ -556,9 +575,10 @@ def albums(ampache_url, ampache_api, filter = '', exact = '', add = None, update
     * ampache_api = (string)
     * filter      = (integer) $album_id
     * include     = //optional
+    * server_format = (string) xml|json //optional
 """
-def album(ampache_url, ampache_api, filter, include = None):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def album(ampache_url, ampache_api, filter, include = None, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'album',
             'auth': ampache_api,
             'filter': filter,
@@ -604,9 +624,10 @@ def album(ampache_url, ampache_api, filter, include = None):
     * filter      = (string)
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'album_songs',
                                    'auth': ampache_api,
                                    'filter': filter,
@@ -651,9 +672,10 @@ def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     * exact       = //optional
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def tags(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def tags(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'tags',
                                    'auth': ampache_api,
                                    'exact': exact,
@@ -696,9 +718,10 @@ def tags(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 
     * ampache_url = (string)
     * ampache_api = (string)
     * filter      = (integer) $genre_id
+    * server_format = (string) xml|json //optional
 """
-def tag(ampache_url, ampache_api, filter):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def tag(ampache_url, ampache_api, filter, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'tag',
                                    'auth': ampache_api,
                                    'filter': filter})
@@ -740,9 +763,10 @@ def tag(ampache_url, ampache_api, filter):
     * filter      = 
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def tag_artists(ampache_url, ampache_api, filter, offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def tag_artists(ampache_url, ampache_api, filter, offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'tag_artists',
                                    'auth': ampache_api,
                                    'filter': filter,
@@ -786,9 +810,10 @@ def tag_artists(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     * filter      = 
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def tag_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def tag_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'tag_albums',
                                    'auth': ampache_api,
                                    'filter': filter,
@@ -832,9 +857,10 @@ def tag_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     * filter      = 
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'tag_songs',
                                    'auth': ampache_api,
                                    'filter': filter,
@@ -881,9 +907,10 @@ def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     * update      = //optional
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def songs(ampache_url, ampache_api, filter = '', exact = '', add = '', update = '', offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def songs(ampache_url, ampache_api, filter = '', exact = '', add = '', update = '', offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'songs',
                                    'auth': ampache_api,
                                    'exact': exact,
@@ -928,9 +955,10 @@ def songs(ampache_url, ampache_api, filter = '', exact = '', add = '', update = 
     * ampache_url = (string)
     * ampache_api = (string)
     * filter      = 
+    * server_format = (string) xml|json //optional
 """
-def song(ampache_url, ampache_api, filter):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def song(ampache_url, ampache_api, filter, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'song',
                                    'auth': ampache_api,
                                    'filter': filter})
@@ -973,9 +1001,10 @@ def song(ampache_url, ampache_api, filter):
     * exact       = //optional
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def playlists(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def playlists(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'playlists',
                                    'auth': ampache_api,
                                    'exact': exact,
@@ -1018,9 +1047,10 @@ def playlists(ampache_url, ampache_api, filter = '', exact = '', offset = 0, lim
     * ampache_url = (string)
     * ampache_api = (string)
     * filter      = 
+    * server_format = (string) xml|json //optional
 """
-def playlist(ampache_url, ampache_api, filter):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def playlist(ampache_url, ampache_api, filter, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'playlist',
                                    'auth': ampache_api,
                                    'filter': filter})
@@ -1062,9 +1092,10 @@ def playlist(ampache_url, ampache_api, filter):
     * filter      = 
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_songs',
                                    'auth': ampache_api,
                                    'filter': filter,
@@ -1107,9 +1138,10 @@ def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     * ampache_api = (string)
     * name        = (string)
     * type        = (string)
+    * server_format = (string) xml|json //optional
 """
-def playlist_create(ampache_url, ampache_api, name, type):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def playlist_create(ampache_url, ampache_api, name, type, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_create',
                                    'auth': ampache_api,
                                    'name': name,
@@ -1152,9 +1184,10 @@ def playlist_create(ampache_url, ampache_api, name, type):
     * filter      = (integer)
     * name        = 
     * type        = 
+    * server_format = (string) xml|json //optional
 """
-def playlist_edit(ampache_url, ampache_api, filter, name = False, type = False):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def playlist_edit(ampache_url, ampache_api, filter, name = False, type = False, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'playlist_edit',
             'auth': ampache_api,
             'filter': filter,
@@ -1201,9 +1234,10 @@ def playlist_edit(ampache_url, ampache_api, filter, name = False, type = False):
     * ampache_url = (string)
     * ampache_api = (string)
     * filter      = (integer) $playlist_id
+    * server_format = (string) xml|json //optional
 """
-def playlist_delete(ampache_url, ampache_api, filter):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def playlist_delete(ampache_url, ampache_api, filter, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_delete',
                                    'auth': ampache_api,
                                    'filter': filter})
@@ -1247,9 +1281,10 @@ def playlist_delete(ampache_url, ampache_api, filter):
     * filter      = (integer) $playlist_id
     * song        = (integer) $song_id
     * check       = (integer) 0|1 Check for duplicates (default = 0) //optional
+    * server_format = (string) xml|json //optional
 """
-def playlist_add_song(ampache_url, ampache_api, filter, song, check = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def playlist_add_song(ampache_url, ampache_api, filter, song, check = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'playlist_add_song',
                                    'auth': ampache_api,
                                    'song': song,
@@ -1294,9 +1329,10 @@ def playlist_add_song(ampache_url, ampache_api, filter, song, check = 0):
     * filter      = (integer) $playlist_id
     * song        = (integer) $song_id //optional
     * track       = (integer) $playlist_track number //optional
+    * server_format = (string) xml|json //optional
 """
-def playlist_remove_song(ampache_url, ampache_api, filter, song = False, track = False):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def playlist_remove_song(ampache_url, ampache_api, filter, song = False, track = False, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
 
     data = {'action': 'playlist_remove_song',
             'auth': ampache_api,
@@ -1355,9 +1391,10 @@ def playlist_remove_song(ampache_url, ampache_api, filter, song = False, track =
     * format      = (string) 'song', 'index','id' (default = 'song') //optional
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False, album = False, artist = False, flag = False, format = 'song', offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False, album = False, artist = False, flag = False, format = 'song', offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'playlist_generate',
             'auth': ampache_api,
             'mode': mode,
@@ -1415,9 +1452,10 @@ def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False,
     * filter      = 
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'search_songs',
                                    'auth': ampache_api,
                                    'filter': filter,
@@ -1522,9 +1560,10 @@ def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0):
     * type        = (string)  //optional
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 'song', offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 'song', offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'advanced_search',
             'auth': ampache_api,
             'operator': operator,
@@ -1579,10 +1618,11 @@ def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 's
     * exact       = //optional
     * offset      = (integer) //optional
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 
 """
-def videos(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def videos(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'videos',
                                    'auth': ampache_api,
                                    'exact': exact,
@@ -1625,9 +1665,10 @@ def videos(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit 
     * ampache_url = (string)
     * ampache_api = (string)
     * filter      = (integer) $video_id
+    * server_format = (string) xml|json //optional
 """
-def video(ampache_url, ampache_api, filter):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def video(ampache_url, ampache_api, filter, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'video',
                                    'auth': ampache_api,
                                    'filter': filter})
@@ -1667,9 +1708,10 @@ def video(ampache_url, ampache_api, filter):
     * ampache_url = (string)
     * ampache_api = (string)
     * command     = 
+    * server_format = (string) xml|json //optional
 """
-def localplay(ampache_url, ampache_api, command):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def localplay(ampache_url, ampache_api, command, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'localplay',
                                    'auth': ampache_api,
                                    'command': command})
@@ -1711,9 +1753,10 @@ def localplay(ampache_url, ampache_api, command):
     * method      = 
     * action      = 
     * oid         = 
+    * server_format = (string) xml|json //optional
 """
-def democratic(ampache_url, ampache_api, method, action, oid):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def democratic(ampache_url, ampache_api, method, action, oid, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'democratic',
                                    'auth': ampache_api,
                                    'method': method,
@@ -1761,9 +1804,10 @@ def democratic(ampache_url, ampache_api, method, action, oid):
     * limit       = (integer) //optional
     * user_id     = (integer) //optional
     * username    = (string) //optional
+    * server_format = (string) xml|json //optional
 """
-def stats(ampache_url, ampache_api, type, filter, username = None, user_id = None, offset = 0, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def stats(ampache_url, ampache_api, type, filter, username = None, user_id = None, offset = 0, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'stats',
             'auth': ampache_api,
             'type': type,
@@ -1813,9 +1857,10 @@ def stats(ampache_url, ampache_api, type, filter, username = None, user_id = Non
     * ampache_url = (string)
     * ampache_api = (string)
     * username    = 
+    * server_format = (string) xml|json //optional
 """
-def user(ampache_url, ampache_api, username):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def user(ampache_url, ampache_api, username, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'user',
                                    'auth': ampache_api,
                                    'username': username})
@@ -1855,9 +1900,10 @@ def user(ampache_url, ampache_api, username):
     * ampache_url = (string)
     * ampache_api = (string)
     * username    = 
+    * server_format = (string) xml|json //optional
 """
-def followers(ampache_url, ampache_api, username):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def followers(ampache_url, ampache_api, username, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'followers',
                                    'auth': ampache_api,
                                    'username': username})
@@ -1897,9 +1943,10 @@ def followers(ampache_url, ampache_api, username):
     * ampache_url = (string)
     * ampache_api = (string)
     * username    = 
+    * server_format = (string) xml|json //optional
 """
-def following(ampache_url, ampache_api, username):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def following(ampache_url, ampache_api, username, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'following',
                                    'auth': ampache_api,
                                    'username': username})
@@ -1939,9 +1986,10 @@ def following(ampache_url, ampache_api, username):
     * ampache_url = (string)
     * ampache_api = (string)
     * username    = 
+    * server_format = (string) xml|json //optional
 """
-def toggle_follow(ampache_url, ampache_api, username):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def toggle_follow(ampache_url, ampache_api, username, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'toggle_follow',
                                    'auth': ampache_api,
                                    'username': username})
@@ -1982,9 +2030,10 @@ def toggle_follow(ampache_url, ampache_api, username):
     * ampache_api = (string)
     * username    = 
     * limit       = (integer) //optional
+    * server_format = (string) xml|json //optional
 """
-def last_shouts(ampache_url, ampache_api, username, limit = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def last_shouts(ampache_url, ampache_api, username, limit = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'last_shouts',
                                    'auth': ampache_api,
                                    'username': username,
@@ -2027,11 +2076,12 @@ def last_shouts(ampache_url, ampache_api, username, limit = 0):
     * type        = (string) 'song'|'album'|'artist'
     * id          = (integer) $object_id
     * rating      = (integer) 0|1|2|3|4|5
+    * server_format = (string) xml|json //optional
 """
-def rate(ampache_url, ampache_api, type, id, rating):
+def rate(ampache_url, ampache_api, type, id, rating, server_format='xml'):
     if (rating < 0 or rating > 5) or not (type == 'song' or type == 'album' or type == 'artist'):
         return False
-    ampache_url = ampache_url + '/server/xml.server.php'
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'rate',
                                    'auth': ampache_api,
                                    'type': type,
@@ -2078,15 +2128,16 @@ def rate(ampache_url, ampache_api, type, id, rating):
     * type        = (string) 'song'|'album'|'artist'
     * id          = (integer) $object_id
     * flag        = (bool) 0|1
+    * server_format = (string) xml|json //optional
 """
-def flag(ampache_url, ampache_api, type, id, flag):
+def flag(ampache_url, ampache_api, type, id, flag, server_format='xml'):
     if not (type == 'song' or type == 'album' or type == 'artist'):
         return False
     if bool(flag):
         flag = 1
     else:
         flag = 0
-    ampache_url = ampache_url + '/server/xml.server.php'
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'flag',
                                    'auth': ampache_api,
                                    'type': type,
@@ -2130,9 +2181,10 @@ def flag(ampache_url, ampache_api, type, id, flag):
     * id          = (integer) $object_id
     * user        = (integer) $user_id
     * client      = (string) $agent //optional
+    * server_format = (string) xml|json //optional
 """
-def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI'):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI', server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'record_play',
                                    'auth': ampache_api,
                                    'id': id,
@@ -2182,11 +2234,12 @@ def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI'):
     * MBalbum     = (string) //optional
     * time        = (integer) UNIXTIME() //optional
     * client      = (string) //optional
+    * server_format = (string) xml|json //optional
 """
-def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartist='', MBalbum='', time='', client = 'AmpacheAPI'):
+def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartist='', MBalbum='', time='', client = 'AmpacheAPI', server_format='xml'):
     if not ampache_url or not ampache_api or not title or not artist or not album:
         return False
-    ampache_url = ampache_url + '/server/xml.server.php'
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'scrobble',
                                    'auth': ampache_api,
                                    'client': client,
@@ -2235,9 +2288,10 @@ def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartis
     * username    = (string)
     * limit       = (integer) //optional
     * since       = (integer) UNIXTIME() //optional
+    * server_format = (string) xml|json //optional
 """
-def timeline(ampache_url, ampache_api, username, limit = 0, since = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'timeline',
                                    'auth': ampache_api,
                                    'username': username,
@@ -2280,9 +2334,10 @@ def timeline(ampache_url, ampache_api, username, limit = 0, since = 0):
     * ampache_api = (string)
     * limit       = (integer) //optional
     * since       = (integer) UNIXTIME() //optional
+    * server_format = (string) xml|json //optional
 """
-def friends_timeline(ampache_url, ampache_api, limit = 0, since = 0):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def friends_timeline(ampache_url, ampache_api, limit = 0, since = 0, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'friends_timeline',
                                    'auth': ampache_api,
                                    'limit': limit,
@@ -2324,11 +2379,12 @@ def friends_timeline(ampache_url, ampache_api, limit = 0, since = 0):
     * ampache_api = (string)
     * task        = (string) 'add_to_catalog'|'clean_catalog'
     * catalog     = (integer) $catalog_id
+    * server_format = (string) xml|json //optional
 """
-def catalog_action(ampache_url, ampache_api, task, catalog):
+def catalog_action(ampache_url, ampache_api, task, catalog, server_format='xml'):
     if not (task == 'add_to_catalog' or task == 'clean_catalog') or not catalog > 0:
         return False
-    ampache_url = ampache_url + '/server/xml.server.php'
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'catalog_action',
                                    'auth': ampache_api,
                                    'task': task,
@@ -2370,9 +2426,10 @@ def catalog_action(ampache_url, ampache_api, task, catalog):
     * ampache_api = (string)
     * type        = (string) 'artist'|'album'|'song'
     * id          = (integer) $artist_id, $album_id, $song_id
+    * server_format = (string) xml|json //optional
 """
-def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'update_from_tags',
                                    'auth': ampache_api,
                                    'type': ampache_type,
@@ -2416,9 +2473,10 @@ def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id):
     * type        = (string) 'artist'|'album'|'song'
     * id          = (integer) $artist_id, $album_id, $song_id
     * overwrite   = (boolean) 0|1 //optional
+    * server_format = (string) xml|json //optional
 """
-def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = False):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = False, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'update_art',
             'auth': ampache_api,
             'type': ampache_type,
@@ -2464,9 +2522,10 @@ def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = F
     * ampache_url = (string)
     * ampache_api = (string)
     * id          = (integer) $artist_id
+    * server_format = (string) xml|json //optional
 """
-def update_artist_info(ampache_url, ampache_api, id):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def update_artist_info(ampache_url, ampache_api, id, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'update_artist_info',
                                    'auth': ampache_api,
                                    'id': id})
@@ -2508,11 +2567,12 @@ def update_artist_info(ampache_url, ampache_api, id):
     * id          = (string) $song_id / $podcast_episode_id
     * type        = (string) 'song'|'podcast'
     * destination = (string) full file path
+    * server_format = (string) xml|json //optional
 """
-def stream(ampache_url, ampache_api, id, type, destination):
+def stream(ampache_url, ampache_api, id, type, destination, server_format='xml'):
     if not os.path.isdir(os.path.dirname(destination)):
         return False
-    ampache_url = ampache_url + '/server/xml.server.php'
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'stream',
                                    'auth': ampache_api,
                                    'id': id,
@@ -2534,11 +2594,12 @@ def stream(ampache_url, ampache_api, id, type, destination):
     * type        = (string) 'song'|'podcast'
     * destination = (string) full file path
     * format      = (string) 'mp3', 'ogg', etc. ('raw' / original by default) //optional
+    * server_format = (string) xml|json //optional
 """
-def download(ampache_url, ampache_api, id, type, destination, format = 'raw'):
+def download(ampache_url, ampache_api, id, type, destination, format = 'raw', server_format='xml'):
     if not os.path.isdir(os.path.dirname(destination)):
         return False
-    ampache_url = ampache_url + '/server/xml.server.php'
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'download',
                                    'auth': ampache_api,
                                    'id': id,
@@ -2559,11 +2620,12 @@ def download(ampache_url, ampache_api, id, type, destination, format = 'raw'):
     * ampache_api = (string)
     * id          = (string) $song_id / $podcast_episode_id
     * type        = (string) 'song', 'artist', 'album', 'playlist', 'search', 'podcast'
+    * server_format = (string) xml|json //optional
 """
-def get_art(ampache_url, ampache_api, id, type):
+def get_art(ampache_url, ampache_api, id, type, server_format='xml'):
     if not os.path.isdir(os.path.dirname(destination)):
         return False
-    ampache_url = ampache_url + '/server/xml.server.php'
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = urllib.parse.urlencode({'action': 'get_art',
                                    'auth': ampache_api,
                                    'id': id,
@@ -2586,9 +2648,10 @@ def get_art(ampache_url, ampache_api, id, type):
     * email       = (string) 'user@gmail.com'
     * fullname    = (string) //optional
     * disable     = (boolean) 0|1 //optional
+    * server_format = (string) xml|json //optional
 """
-def user_create(ampache_url, ampache_api, username, password, email, fullname = False, disable = False):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def user_create(ampache_url, ampache_api, username, password, email, fullname = False, disable = False, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'user_create',
             'auth': ampache_api,
             'username': username,
@@ -2647,9 +2710,10 @@ def user_create(ampache_url, ampache_api, username, password, email, fullname = 
     * city        = (string) //optional
     * disable     = (boolean) 0|1 //optional
     * maxbitrate  = (string) //optional
+    * server_format = (string) xml|json //optional
 """
-def user_update(ampache_url, ampache_api, username, password = False, fullname = False, email = False, website = False, state = False, city = False, disable = False, maxbitrate = False):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def user_update(ampache_url, ampache_api, username, password = False, fullname = False, email = False, website = False, state = False, city = False, disable = False, maxbitrate = False, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'user_update',
             'auth': ampache_api,
             'username': username,
@@ -2714,9 +2778,10 @@ def user_update(ampache_url, ampache_api, username, password = False, fullname =
     * ampache_url = (string)
     * ampache_api = (string)
     * username    = (string) $username
+    * server_format = (string) xml|json //optional
 """
-def user_delete(ampache_url, ampache_api, username):
-    ampache_url = ampache_url + '/server/xml.server.php'
+def user_delete(ampache_url, ampache_api, username, server_format='xml'):
+    ampache_url = ampache_url + '/server/' + server_format + '.server.php'
     data = {'action': 'user_delete',
             'auth': ampache_api,
             'username': username}
@@ -2753,7 +2818,7 @@ def user_delete(ampache_url, ampache_api, username):
 
     NOT IMPLEMENTED
 """
-def localplay(ampache_url, ampache_api, username):
+def localplay(ampache_url, ampache_api, username, server_format='xml'):
     return False
 
 """ democratic
@@ -2761,5 +2826,5 @@ def localplay(ampache_url, ampache_api, username):
 
     NOT IMPLEMENTED
 """
-def democratic(ampache_url, ampache_api, username):
+def democratic(ampache_url, ampache_api, username, server_format='xml'):
     return False
