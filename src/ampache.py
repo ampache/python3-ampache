@@ -1564,6 +1564,10 @@ def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_fo
       * text
       * integer
       * etc
+    
+    rule_1_subtype
+      * integer code of metadata search items
+      * NEEDS EXTENSION IN PYTHON + API
 
     INPUTS
     * ampache_url = (string)
@@ -1591,6 +1595,8 @@ def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 's
         data['rule_' + str(count)] = item[0]
         data['rule_' + str(count) + '_operator'] = item[1]
         data['rule_' + str(count) + '_input'] = item[2]
+        if item[0] == 'metadata':
+            data['rule_' + str(count) + '_subtype'] = item[3]
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url)
