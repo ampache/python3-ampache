@@ -71,7 +71,8 @@ def fetch_url(full_url):
     ampache_response = result.read()
     result.close()
     if AMPACHE_DEBUG:
-        print(ampache_response)
+        print(ampache_response.decode('utf-8'))
+        print(full_url)
     return ampache_response
 
 """
@@ -333,7 +334,7 @@ def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = 
     * include     = //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
-def artists(ampache_url, ampache_api, filter = '', add = None, update = None, offset = 0, limit = 0, include = None, api_format = 'xml'):
+def artists(ampache_url, ampache_api, filter = '%', add = None, update = None, offset = 0, limit = 0, include = None, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'artists',
             'auth': ampache_api,
