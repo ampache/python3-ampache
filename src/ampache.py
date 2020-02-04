@@ -51,6 +51,20 @@ def set_debug(bool):
     global AMPACHE_DEBUG
     AMPACHE_DEBUG = bool
 
+""" write_xml
+
+    This function can be used to write your xml responses to a file.
+
+    INPUTS
+    * xmlstr   = (xml) xml to write to file
+    * filename = (string) path and filename (e.g. './ampache.xml')
+"""
+def write_xml(xmlstr, filename):
+    if xmlstr:
+        text_file = open(filename, "w")
+        text_file.write(ET.tostring(xmlstr).decode())
+        text_file.close()
+
 """ encrypt_string
 
     This function can be used to encrypt your apikey into the accepted format.
