@@ -31,7 +31,6 @@ import urllib.request
 from xml.etree import ElementTree as ET
 
 # used for printing results
-#AMPACHE_DEBUG = True
 AMPACHE_DEBUG = False
 
 """
@@ -47,9 +46,9 @@ HELPER FUNCTIONS
     INPUTS
     * bool = (bool) Enable/disable debug messages
 """
-def set_debug(bool):
+def set_debug(mybool):
     global AMPACHE_DEBUG
-    AMPACHE_DEBUG = bool
+    AMPACHE_DEBUG = mybool
 
 """ write_xml
 
@@ -100,7 +99,7 @@ def encrypt_string(ampache_api, user):
     INPUTS
     * full_url = (string) url to fetch
 """
-def fetch_url(full_url):
+def fetch_url(full_url, api_format, method):
     try:
         result = urllib.request.urlopen(full_url)
     except urllib.error.URLError:
@@ -110,8 +109,12 @@ def fetch_url(full_url):
     ampache_response = result.read()
     result.close()
     if AMPACHE_DEBUG:
-        print(ampache_response.decode('utf-8'))
+        url_response = ampache_response.decode('utf-8')
+        print(url_response)
         print(full_url)
+        text_file = open("../docs/" + api_format + "-responses/" + method + "." + api_format, "w")
+        text_file.write(url_response)
+        text_file.close()
     return ampache_response
 
 """
@@ -134,7 +137,7 @@ API FUNCTIONS
     * version     = (string) //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
-def handshake(ampache_url, ampache_api, user=False, timestamp=False, version='400004', api_format = 'xml'):
+def handshake(ampache_url, ampache_api, user = False, timestamp = False, version = '400004', api_format = 'xml'):
     if timestamp == 0:
         timestamp = int(time.time())
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
@@ -151,7 +154,7 @@ def handshake(ampache_url, ampache_api, user=False, timestamp=False, version='40
         data.pop('version')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'handshake')
     if not ampache_response:
         return False
     # json format
@@ -193,7 +196,7 @@ def ping(ampache_url, ampache_api, api_format = 'xml'):
         data.pop('auth')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'ping')
     if not ampache_response:
         return False
     # json format
@@ -228,38 +231,24 @@ def ping(ampache_url, ampache_api, api_format = 'xml'):
 def goodbye(ampache_url, ampache_api, api_format = 'xml'):
     """ Request Ampache destroy an api session """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'goodbye',
-                                   'auth': ampache_api})
+    data = {'action': 'goodbye',
+            'auth': ampache_api}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'goodbye')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ url_to_song
     MINIMUM_API_VERSION=380001
@@ -274,11 +263,12 @@ def goodbye(ampache_url, ampache_api, api_format = 'xml'):
 """
 def url_to_song(ampache_url, ampache_api, url, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'url_to_song',
-                                   'auth': ampache_api,
-                                   'url': url})
+    data = {'action': 'url_to_song',
+            'auth': ampache_api,
+            'url': url}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'url_to_song')
     if not ampache_response:
         return False
     # json format
@@ -291,17 +281,7 @@ def url_to_song(ampache_url, ampache_api, url, api_format = 'xml'):
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ get_indexes
     MINIMUM_API_VERSION=400001
@@ -319,20 +299,25 @@ def url_to_song(ampache_url, ampache_api, url, api_format = 'xml'):
     * limit       = (integer) //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
-def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = '', offset = 0, limit = 0, api_format = 'xml'):
-    if not ampache_url or not ampache_api or not type:
-        return False
+def get_indexes(ampache_url, ampache_api, type, filter = False, add = False, update = False, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'get_indexes',
-                                   'auth': ampache_api,
-                                   'type': type,
-                                   'filter': filter,
-                                   'add': add,
-                                   'update': update,
-                                   'offset': str(offset),
-                                   'limit': str(limit)})
+    data = {'action': 'get_indexes',
+            'auth': ampache_api,
+            'type': type,
+            'filter': filter,
+            'add': add,
+            'update': update,
+            'offset': str(offset),
+            'limit': str(limit)}
+    if not filter:
+        data.pop('filter')
+    if not add:
+        data.pop('add')
+    if not update:
+        data.pop('update')
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'get_indexes')
     if not ampache_response:
         return False
     # json format
@@ -345,17 +330,7 @@ def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = 
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ artists
     MINIMUM_API_VERSION=380001
@@ -373,7 +348,7 @@ def get_indexes(ampache_url, ampache_api, type, filter = '', add = '', update = 
     * include     = //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
-def artists(ampache_url, ampache_api, filter = '%', add = None, update = None, offset = 0, limit = 0, include = None, api_format = 'xml'):
+def artists(ampache_url, ampache_api, filter = False, add = False, update = False, offset = 0, limit = 0, include = False, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'artists',
             'auth': ampache_api,
@@ -383,6 +358,8 @@ def artists(ampache_url, ampache_api, filter = '%', add = None, update = None, o
             'offset': str(offset),
             'limit': str(limit),
             'include': include}
+    if not filter:
+        data.pop('filter')
     if not add:
         data.pop('add')
     if not update:
@@ -391,7 +368,7 @@ def artists(ampache_url, ampache_api, filter = '%', add = None, update = None, o
         data.pop('include')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'artists')
     if not ampache_response:
         return False
     # json format
@@ -404,17 +381,7 @@ def artists(ampache_url, ampache_api, filter = '%', add = None, update = None, o
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ artist
     MINIMUM_API_VERSION=380001
@@ -428,7 +395,7 @@ def artists(ampache_url, ampache_api, filter = '%', add = None, update = None, o
     * include     = //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
-def artist(ampache_url, ampache_api, filter, include = None, api_format = 'xml'):
+def artist(ampache_url, ampache_api, filter, include = False, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'artist',
             'auth': ampache_api,
@@ -438,7 +405,7 @@ def artist(ampache_url, ampache_api, filter, include = None, api_format = 'xml')
         data.pop('include')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'artist')
     if not ampache_response:
         return False
     # json format
@@ -451,17 +418,7 @@ def artist(ampache_url, ampache_api, filter, include = None, api_format = 'xml')
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ artist_albums
     MINIMUM_API_VERSION=380001
@@ -478,13 +435,14 @@ def artist(ampache_url, ampache_api, filter, include = None, api_format = 'xml')
 """
 def artist_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'artist_albums',
-                                   'auth': ampache_api,
-                                   'filter': filter,
-                                   'offset': str(offset),
-                                   'limit': str(limit)})
+    data = {'action': 'artist_albums',
+            'auth': ampache_api,
+            'filter': filter,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'artist_albums')
     if not ampache_response:
         return False
     # json format
@@ -497,17 +455,7 @@ def artist_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_f
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ artist_songs
     MINIMUM_API_VERSION=380001
@@ -524,13 +472,14 @@ def artist_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_f
 """
 def artist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'artist_songs',
-                                   'auth': ampache_api,
-                                   'filter': filter,
-                                   'offset': str(offset),
-                                   'limit': str(limit)})
+    data = {'action': 'artist_songs',
+            'auth': ampache_api,
+            'filter': filter,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'artist_songs')
     if not ampache_response:
         return False
     # json format
@@ -543,17 +492,7 @@ def artist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_fo
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ albums
     MINIMUM_API_VERSION=380001
@@ -572,7 +511,7 @@ def artist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_fo
     * include     = //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
-def albums(ampache_url, ampache_api, filter = '', exact = '', add = None, update = None, offset = 0, limit = 0, include = None, api_format = 'xml'):
+def albums(ampache_url, ampache_api, filter = False, exact = False, add = False, update = False, offset = 0, limit = 0, include = False, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'albums',
             'auth': ampache_api,
@@ -583,6 +522,8 @@ def albums(ampache_url, ampache_api, filter = '', exact = '', add = None, update
             'offset': str(offset),
             'limit': str(limit),
             'include': include}
+    if not filter:
+        data.pop('filter')
     if not add:
         data.pop('add')
     if not update:
@@ -591,7 +532,7 @@ def albums(ampache_url, ampache_api, filter = '', exact = '', add = None, update
         data.pop('include')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'albums')
     if not ampache_response:
         return False
     # json format
@@ -604,17 +545,7 @@ def albums(ampache_url, ampache_api, filter = '', exact = '', add = None, update
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ album
     MINIMUM_API_VERSION=380001
@@ -628,7 +559,7 @@ def albums(ampache_url, ampache_api, filter = '', exact = '', add = None, update
     * include     = //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
-def album(ampache_url, ampache_api, filter, include = None, api_format = 'xml'):
+def album(ampache_url, ampache_api, filter, include = False, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'album',
             'auth': ampache_api,
@@ -638,7 +569,7 @@ def album(ampache_url, ampache_api, filter, include = None, api_format = 'xml'):
         data.pop('include')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'album')
     if not ampache_response:
         return False
     # json format
@@ -651,17 +582,7 @@ def album(ampache_url, ampache_api, filter, include = None, api_format = 'xml'):
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ album_songs
     MINIMUM_API_VERSION=380001
@@ -678,13 +599,14 @@ def album(ampache_url, ampache_api, filter, include = None, api_format = 'xml'):
 """
 def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'album_songs',
-                                   'auth': ampache_api,
-                                   'filter': filter,
-                                   'offset': str(offset),
-                                   'limit': str(limit)})
+    data = {'action': 'album_songs',
+            'auth': ampache_api,
+            'filter': filter,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'album_songs')
     if not ampache_response:
         return False
     # json format
@@ -697,17 +619,7 @@ def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_for
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ tags
     MINIMUM_API_VERSION=380001
@@ -723,16 +635,21 @@ def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_for
     * limit       = (integer) //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
-def tags(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 0, api_format = 'xml'):
+def tags(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'tags',
-                                   'auth': ampache_api,
-                                   'exact': exact,
-                                   'filter': filter,
-                                   'offset': str(offset),
-                                   'limit': str(limit)})
+    data = {'action': 'tags',
+            'auth': ampache_api,
+            'exact': exact,
+            'filter': filter,
+            'offset': str(offset),
+            'limit': str(limit)}
+    if not filter:
+        data.pop('filter')
+    if not exact:
+        data.pop('exact')
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'tags')
     if not ampache_response:
         return False
     # json format
@@ -745,17 +662,7 @@ def tags(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ tag
     MINIMUM_API_VERSION=380001
@@ -770,11 +677,12 @@ def tags(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 
 """
 def tag(ampache_url, ampache_api, filter, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'tag',
-                                   'auth': ampache_api,
-                                   'filter': filter})
+    data = {'action': 'tag',
+            'auth': ampache_api,
+            'filter': filter}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'tag')
     if not ampache_response:
         return False
     # json format
@@ -787,17 +695,7 @@ def tag(ampache_url, ampache_api, filter, api_format = 'xml'):
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ tag_artists
     MINIMUM_API_VERSION=380001
@@ -814,13 +712,14 @@ def tag(ampache_url, ampache_api, filter, api_format = 'xml'):
 """
 def tag_artists(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'tag_artists',
-                                   'auth': ampache_api,
-                                   'filter': filter,
-                                   'offset': str(offset),
-                                   'limit': str(limit)})
+    data = {'action': 'tag_artists',
+            'auth': ampache_api,
+            'filter': filter,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'tag_artists')
     if not ampache_response:
         return False
     # json format
@@ -833,17 +732,7 @@ def tag_artists(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_for
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ tag_albums
 
@@ -861,13 +750,14 @@ def tag_artists(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_for
 """
 def tag_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'tag_albums',
-                                   'auth': ampache_api,
-                                   'filter': filter,
-                                   'offset': str(offset),
-                                   'limit': str(limit)})
+    data = {'action': 'tag_albums',
+            'auth': ampache_api,
+            'filter': filter,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'tag_albums')
     if not ampache_response:
         return False
     # json format
@@ -880,17 +770,7 @@ def tag_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_form
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ tag_songs
     MINIMUM_API_VERSION=380001
@@ -907,13 +787,14 @@ def tag_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_form
 """
 def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'tag_songs',
-                                   'auth': ampache_api,
-                                   'filter': filter,
-                                   'offset': str(offset),
-                                   'limit': str(limit)})
+    data = {'action': 'tag_songs',
+            'auth': ampache_api,
+            'filter': filter,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'tag_songs')
     if not ampache_response:
         return False
     # json format
@@ -926,17 +807,7 @@ def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_forma
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ songs
     MINIMUM_API_VERSION=380001
@@ -954,18 +825,27 @@ def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_forma
     * limit       = (integer) //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
-def songs(ampache_url, ampache_api, filter = '', exact = '', add = '', update = '', offset = 0, limit = 0, api_format = 'xml'):
+def songs(ampache_url, ampache_api, filter = False, exact = False, add = False, update = False, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'songs',
-                                   'auth': ampache_api,
-                                   'exact': exact,
-                                   'add': add,
-                                   'update': update,
-                                   'filter': filter,
-                                   'offset': str(offset),
-                                   'limit': str(limit)})
+    data = {'action': 'songs',
+            'auth': ampache_api,
+            'exact': exact,
+            'add': add,
+            'update': update,
+            'filter': filter,
+            'offset': str(offset),
+            'limit': str(limit)}
+    if not filter:
+        data.pop('filter')
+    if not exact:
+        data.pop('exact')
+    if not add:
+        data.pop('add')
+    if not update:
+        data.pop('update')
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'songs')
     if not ampache_response:
         return False
     # json format
@@ -978,17 +858,7 @@ def songs(ampache_url, ampache_api, filter = '', exact = '', add = '', update = 
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ song
     MINIMUM_API_VERSION=380001
@@ -1003,11 +873,12 @@ def songs(ampache_url, ampache_api, filter = '', exact = '', add = '', update = 
 """
 def song(ampache_url, ampache_api, filter, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'song',
-                                   'auth': ampache_api,
-                                   'filter': filter})
+    data = {'action': 'song',
+            'auth': ampache_api,
+            'filter': filter}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'song')
     if not ampache_response:
         return False
     # json format
@@ -1020,17 +891,7 @@ def song(ampache_url, ampache_api, filter, api_format = 'xml'):
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ playlists
     MINIMUM_API_VERSION=380001
@@ -1046,16 +907,21 @@ def song(ampache_url, ampache_api, filter, api_format = 'xml'):
     * limit       = (integer) //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
-def playlists(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 0, api_format = 'xml'):
+def playlists(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'playlists',
-                                   'auth': ampache_api,
-                                   'exact': exact,
-                                   'filter': filter,
-                                   'offset': str(offset),
-                                   'limit': str(limit)})
+    data = {'action': 'playlists',
+            'auth': ampache_api,
+            'exact': exact,
+            'filter': filter,
+            'offset': str(offset),
+            'limit': str(limit)}
+    if not filter:
+        data.pop('filter')
+    if not exact:
+        data.pop('exact')
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'playlists')
     if not ampache_response:
         return False
     # json format
@@ -1068,17 +934,7 @@ def playlists(ampache_url, ampache_api, filter = '', exact = '', offset = 0, lim
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ playlist
     MINIMUM_API_VERSION=380001
@@ -1093,11 +949,12 @@ def playlists(ampache_url, ampache_api, filter = '', exact = '', offset = 0, lim
 """
 def playlist(ampache_url, ampache_api, filter, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'playlist',
-                                   'auth': ampache_api,
-                                   'filter': filter})
+    data = {'action': 'playlist',
+            'auth': ampache_api,
+            'filter': filter}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'playlist')
     if not ampache_response:
         return False
     # json format
@@ -1110,17 +967,7 @@ def playlist(ampache_url, ampache_api, filter, api_format = 'xml'):
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ playlist_songs
     MINIMUM_API_VERSION=380001
@@ -1137,13 +984,14 @@ def playlist(ampache_url, ampache_api, filter, api_format = 'xml'):
 """
 def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'playlist_songs',
-                                   'auth': ampache_api,
-                                   'filter': filter,
-                                   'offset': str(offset),
-                                   'limit': str(limit)})
+    data = {'action': 'playlist_songs',
+            'auth': ampache_api,
+            'filter': filter,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'playlist_songs')
     if not ampache_response:
         return False
     # json format
@@ -1156,17 +1004,7 @@ def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ playlist_create
     MINIMUM_API_VERSION=380001
@@ -1182,12 +1020,13 @@ def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_
 """
 def playlist_create(ampache_url, ampache_api, name, type, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'playlist_create',
-                                   'auth': ampache_api,
-                                   'name': name,
-                                   'type': type})
+    data = {'action': 'playlist_create',
+            'auth': ampache_api,
+            'name': name,
+            'type': type}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'playlist_create')
     if not ampache_response:
         return False
     # json format
@@ -1238,35 +1077,20 @@ def playlist_edit(ampache_url, ampache_api, filter, name = False, type = False, 
         data.pop('type')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'playlist_edit')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ playlist_delete
     MINIMUM_API_VERSION=380001
@@ -1281,39 +1105,25 @@ def playlist_edit(ampache_url, ampache_api, filter, name = False, type = False, 
 """
 def playlist_delete(ampache_url, ampache_api, filter, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'playlist_delete',
-                                   'auth': ampache_api,
-                                   'filter': filter})
+    data = {'action': 'playlist_delete',
+            'auth': ampache_api,
+            'filter': filter}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'playlist_delete')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ playlist_add_song
     MINIMUM_API_VERSION=380001
@@ -1332,41 +1142,27 @@ def playlist_delete(ampache_url, ampache_api, filter, api_format = 'xml'):
 """
 def playlist_add_song(ampache_url, ampache_api, filter, song, check = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'playlist_add_song',
-                                   'auth': ampache_api,
-                                   'song': song,
-                                   'filter': filter,
-                                   'check': check})
+    data = {'action': 'playlist_add_song',
+            'auth': ampache_api,
+            'song': song,
+            'filter': filter,
+            'check': check}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'playlist_add_song')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ playlist_remove_song
     MINIMUM_API_VERSION=380001
@@ -1396,35 +1192,20 @@ def playlist_remove_song(ampache_url, ampache_api, filter, song = False, track =
         data.pop('track')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'playlist_remove_song')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ playlist_generate
     MINIMUM_API_VERSION=400001
@@ -1470,7 +1251,7 @@ def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False,
         data.pop('flag')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'playlist_generate')
     if not ampache_response:
         return False
     # json format
@@ -1483,17 +1264,7 @@ def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False,
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ search_songs
     MINIMUM_API_VERSION=380001
@@ -1510,13 +1281,14 @@ def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False,
 """
 def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'search_songs',
-                                   'auth': ampache_api,
-                                   'filter': filter,
-                                   'offset': str(offset),
-                                   'limit': str(limit)})
+    data = {'action': 'search_songs',
+            'auth': ampache_api,
+            'filter': filter,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'search_songs')
     if not ampache_response:
         return False
     # json format
@@ -1529,17 +1301,7 @@ def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_fo
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ advanced_search
     MINIMUM_API_VERSION=380001
@@ -1639,7 +1401,7 @@ def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 's
             data['rule_' + str(count) + '_subtype'] = item[3]
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'advanced_search')
     if not ampache_response:
         return False
     # json format
@@ -1652,17 +1414,7 @@ def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 's
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ videos
     MINIMUM_API_VERSION=380001
@@ -1679,16 +1431,21 @@ def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 's
     * api_format  = (string) 'xml'|'json' //optional
 
 """
-def videos(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit = 0, api_format = 'xml'):
+def videos(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'videos',
-                                   'auth': ampache_api,
-                                   'exact': exact,
-                                   'filter': filter,
-                                   'offset': str(offset),
-                                   'limit': str(limit)})
+    data = {'action': 'videos',
+            'auth': ampache_api,
+            'exact': exact,
+            'filter': filter,
+            'offset': str(offset),
+            'limit': str(limit)}
+    if not filter:
+        data.pop('filter')
+    if not exact:
+        data.pop('exact')
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'videos')
     if not ampache_response:
         return False
     # json format
@@ -1701,17 +1458,7 @@ def videos(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit 
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ video
     MINIMUM_API_VERSION=380001
@@ -1726,11 +1473,12 @@ def videos(ampache_url, ampache_api, filter = '', exact = '', offset = 0, limit 
 """
 def video(ampache_url, ampache_api, filter, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'video',
-                                   'auth': ampache_api,
-                                   'filter': filter})
+    data = {'action': 'video',
+            'auth': ampache_api,
+            'filter': filter}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'video')
     if not ampache_response:
         return False
     # json format
@@ -1743,17 +1491,7 @@ def video(ampache_url, ampache_api, filter, api_format = 'xml'):
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ localplay
     MINIMUM_API_VERSION=380001
@@ -1768,39 +1506,25 @@ def video(ampache_url, ampache_api, filter, api_format = 'xml'):
 """
 def localplay(ampache_url, ampache_api, command, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'localplay',
-                                   'auth': ampache_api,
-                                   'command': command})
+    data = {'action': 'localplay',
+            'auth': ampache_api,
+            'command': command}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'localplay')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ democratic
     MINIMUM_API_VERSION=380001
@@ -1817,41 +1541,27 @@ def localplay(ampache_url, ampache_api, command, api_format = 'xml'):
 """
 def democratic(ampache_url, ampache_api, method, action, oid, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'democratic',
-                                   'auth': ampache_api,
-                                   'method': method,
-                                   'action': action,
-                                   'oid': oid})
+    data = {'action': 'democratic',
+            'auth': ampache_api,
+            'method': method,
+            'action': action,
+            'oid': oid}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'democratic')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ stats
     MINIMUM_API_VERSION=380001
@@ -1863,14 +1573,14 @@ def democratic(ampache_url, ampache_api, method, action, oid, api_format = 'xml'
     * ampache_url = (string)
     * ampache_api = (string)
     * type        = (string) 'song'|'album'|'artist'
-    * filter      = (string) 'newest'|'highest'|'frequent'|'recent'|'flagged'|null
+    * filter      = (string) 'newest'|'highest'|'frequent'|'recent'|'flagged'|'random'
     * offset      = (integer) //optional
     * limit       = (integer) //optional
     * user_id     = (integer) //optional
     * username    = (string) //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
-def stats(ampache_url, ampache_api, type, filter, username = None, user_id = None, offset = 0, limit = 0, api_format = 'xml'):
+def stats(ampache_url, ampache_api, type, filter = 'random', username = False, user_id = False, offset = 0, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'stats',
             'auth': ampache_api,
@@ -1886,7 +1596,7 @@ def stats(ampache_url, ampache_api, type, filter, username = None, user_id = Non
         data.pop('user_id')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'stats')
     if not ampache_response:
         return False
     # json format
@@ -1899,17 +1609,7 @@ def stats(ampache_url, ampache_api, type, filter, username = None, user_id = Non
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ user
     MINIMUM_API_VERSION=380001
@@ -1924,11 +1624,12 @@ def stats(ampache_url, ampache_api, type, filter, username = None, user_id = Non
 """
 def user(ampache_url, ampache_api, username, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'user',
-                                   'auth': ampache_api,
-                                   'username': username})
+    data = {'action': 'user',
+            'auth': ampache_api,
+            'username': username}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'user')
     if not ampache_response:
         return False
     # json format
@@ -1941,17 +1642,7 @@ def user(ampache_url, ampache_api, username, api_format = 'xml'):
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ followers
     MINIMUM_API_VERSION=380001
@@ -1966,11 +1657,12 @@ def user(ampache_url, ampache_api, username, api_format = 'xml'):
 """
 def followers(ampache_url, ampache_api, username, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'followers',
-                                   'auth': ampache_api,
-                                   'username': username})
+    data = {'action': 'followers',
+            'auth': ampache_api,
+            'username': username}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'followers')
     if not ampache_response:
         return False
     # json format
@@ -1983,17 +1675,7 @@ def followers(ampache_url, ampache_api, username, api_format = 'xml'):
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ following
     MINIMUM_API_VERSION=380001
@@ -2008,11 +1690,12 @@ def followers(ampache_url, ampache_api, username, api_format = 'xml'):
 """
 def following(ampache_url, ampache_api, username, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'following',
-                                   'auth': ampache_api,
-                                   'username': username})
+    data = {'action': 'following',
+            'auth': ampache_api,
+            'username': username}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'following')
     if not ampache_response:
         return False
     # json format
@@ -2025,17 +1708,7 @@ def following(ampache_url, ampache_api, username, api_format = 'xml'):
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ toggle_follow
     MINIMUM_API_VERSION=380001
@@ -2050,39 +1723,25 @@ def following(ampache_url, ampache_api, username, api_format = 'xml'):
 """
 def toggle_follow(ampache_url, ampache_api, username, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'toggle_follow',
-                                   'auth': ampache_api,
-                                   'username': username})
+    data = {'action': 'toggle_follow',
+            'auth': ampache_api,
+            'username': username}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'toggle_follow')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ last_shouts
     MINIMUM_API_VERSION=380001
@@ -2098,12 +1757,13 @@ def toggle_follow(ampache_url, ampache_api, username, api_format = 'xml'):
 """
 def last_shouts(ampache_url, ampache_api, username, limit = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'last_shouts',
-                                   'auth': ampache_api,
-                                   'username': username,
-                                   'limit': limit})
+    data = {'action': 'last_shouts',
+            'auth': ampache_api,
+            'username': username,
+            'limit': limit}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'last_shouts')
     if not ampache_response:
         return False
     # json format
@@ -2116,17 +1776,7 @@ def last_shouts(ampache_url, ampache_api, username, limit = 0, api_format = 'xml
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ rate
     MINIMUM_API_VERSION=380001
@@ -2145,41 +1795,27 @@ def rate(ampache_url, ampache_api, type, id, rating, api_format = 'xml'):
     if (rating < 0 or rating > 5) or not (type == 'song' or type == 'album' or type == 'artist'):
         return False
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'rate',
-                                   'auth': ampache_api,
-                                   'type': type,
-                                   'id': id,
-                                   'rating': rating})
+    data = {'action': 'rate',
+            'auth': ampache_api,
+            'type': type,
+            'id': id,
+            'rating': rating}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'rate')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ flag
     MINIMUM_API_VERSION=400001
@@ -2205,41 +1841,27 @@ def flag(ampache_url, ampache_api, type, id, flag, api_format = 'xml'):
     else:
         flag = 0
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'flag',
-                                   'auth': ampache_api,
-                                   'type': type,
-                                   'id': id,
-                                   'flag': flag})
+    data = {'action': 'flag',
+            'auth': ampache_api,
+            'type': type,
+            'id': id,
+            'flag': flag}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'flag')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ record_play
     MINIMUM_API_VERSION=400001
@@ -2256,41 +1878,27 @@ def flag(ampache_url, ampache_api, type, id, flag, api_format = 'xml'):
 """
 def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI', api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'record_play',
-                                   'auth': ampache_api,
-                                   'id': id,
-                                   'user': user,
-                                   'client': client})
+    data = {'action': 'record_play',
+            'auth': ampache_api,
+            'id': id,
+            'user': user,
+            'client': client}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'record_play')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ scrobble
     MINIMUM_API_VERSION=400001
@@ -2311,50 +1919,34 @@ def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI', api_f
     * client      = (string) //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
-def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartist='', MBalbum='', time='', client = 'AmpacheAPI', api_format = 'xml'):
-    if not ampache_url or not ampache_api or not title or not artist or not album:
-        return False
+def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle = False, MBartist = False, MBalbum = False, time = False, client = 'AmpacheAPI', api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'scrobble',
-                                   'auth': ampache_api,
-                                   'client': client,
-                                   'date': str(time),
-                                   'song': title,
-                                   'album': album,
-                                   'artist': artist,
-                                   'songmbid': MBtitle,
-                                   'albummbid': MBalbum,
-                                   'artistmdib': MBartist})
+    data = {'action': 'scrobble',
+            'auth': ampache_api,
+            'client': client,
+            'date': str(time),
+            'song': title,
+            'album': album,
+            'artist': artist,
+            'songmbid': MBtitle,
+            'albummbid': MBalbum,
+            'artistmdib': MBartist}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'scrobble')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ timeline
     MINIMUM_API_VERSION=380001
@@ -2371,13 +1963,14 @@ def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle='', MBartis
 """
 def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'timeline',
-                                   'auth': ampache_api,
-                                   'username': username,
-                                   'limit': limit,
-                                   'since': since})
+    data = {'action': 'timeline',
+            'auth': ampache_api,
+            'username': username,
+            'limit': limit,
+            'since': since}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'timeline')
     if not ampache_response:
         return False
     # json format
@@ -2390,17 +1983,7 @@ def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, api_forma
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ friends_timeline
     MINIMUM_API_VERSION=380001
@@ -2416,12 +1999,13 @@ def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, api_forma
 """
 def friends_timeline(ampache_url, ampache_api, limit = 0, since = 0, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'friends_timeline',
-                                   'auth': ampache_api,
-                                   'limit': limit,
-                                   'since': since})
+    data = {'action': 'friends_timeline',
+            'auth': ampache_api,
+            'limit': limit,
+            'since': since}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'friends_timeline')
     if not ampache_response:
         return False
     # json format
@@ -2434,17 +2018,7 @@ def friends_timeline(ampache_url, ampache_api, limit = 0, since = 0, api_format 
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ catalog_action
     MINIMUM_API_VERSION=400001
@@ -2462,40 +2036,26 @@ def catalog_action(ampache_url, ampache_api, task, catalog, api_format = 'xml'):
     if not (task == 'add_to_catalog' or task == 'clean_catalog') or not catalog > 0:
         return False
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'catalog_action',
-                                   'auth': ampache_api,
-                                   'task': task,
-                                   'catalog': catalog})
+    data = {'action': 'catalog_action',
+            'auth': ampache_api,
+            'task': task,
+            'catalog': catalog}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'catalog_action')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ update_from_tags
     MINIMUM_API_VERSION=400001
@@ -2511,40 +2071,26 @@ def catalog_action(ampache_url, ampache_api, task, catalog, api_format = 'xml'):
 """
 def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'update_from_tags',
-                                   'auth': ampache_api,
-                                   'type': ampache_type,
-                                   'id': ampache_id})
+    data = {'action': 'update_from_tags',
+            'auth': ampache_api,
+            'type': ampache_type,
+            'id': ampache_id}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'update_from_tags')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ update_art
     MINIMUM_API_VERSION=400001
@@ -2571,35 +2117,20 @@ def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = F
         data.pop('overwrite')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'update_art')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ update_artist_info
     MINIMUM_API_VERSION=400001
@@ -2615,39 +2146,25 @@ def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = F
 """
 def update_artist_info(ampache_url, ampache_api, id, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'update_artist_info',
-                                   'auth': ampache_api,
-                                   'id': id})
+    data = {'action': 'update_artist_info',
+            'auth': ampache_api,
+            'id': id}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'update_artist_info')
     if not ampache_response:
         return False
     # json format
     if api_format  == 'json':
         json_data = json.loads(ampache_response.decode('utf-8'))
-        if 'success' in json_data:
-            return json_data['success']['message']
-        elif 'error' in json_data:
-            return json_data['error']['message']
-        else:
-            return False
+        return json_data
     # xml format
     else:
         try:
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.find('success').text
-        except AttributeError:
-            token = False
-        if token:
-            return token
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ stream
     MINIMUM_API_VERSION=400001
@@ -2666,10 +2183,11 @@ def stream(ampache_url, ampache_api, id, type, destination, api_format = 'xml'):
     if not os.path.isdir(os.path.dirname(destination)):
         return False
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'stream',
-                                   'auth': ampache_api,
-                                   'id': id,
-                                   'type': type})
+    data = {'action': 'stream',
+            'auth': ampache_api,
+            'id': id,
+            'type': type}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     result = requests.get(full_url, allow_redirects=True)
     open(destination, 'wb').write(result.content)
@@ -2693,11 +2211,12 @@ def download(ampache_url, ampache_api, id, type, destination, format = 'raw', ap
     if not os.path.isdir(os.path.dirname(destination)):
         return False
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'download',
-                                   'auth': ampache_api,
-                                   'id': id,
-                                   'type': type,
-                                   'format': format})
+    data = {'action': 'download',
+            'auth': ampache_api,
+            'id': id,
+            'type': type,
+            'format': format}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     result = requests.get(full_url, allow_redirects=True)
     open(destination, 'wb').write(result.content)
@@ -2719,10 +2238,11 @@ def get_art(ampache_url, ampache_api, id, type, api_format = 'xml'):
     if not os.path.isdir(os.path.dirname(destination)):
         return False
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = urllib.parse.urlencode({'action': 'get_art',
-                                   'auth': ampache_api,
-                                   'id': id,
-                                   'type': type})
+    data = {'action': 'get_art',
+            'auth': ampache_api,
+            'id': id,
+            'type': type}
+    data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     result = requests.get(full_url, allow_redirects=True)
     open(destination, 'wb').write(result.content)
@@ -2760,7 +2280,7 @@ def user_create(ampache_url, ampache_api, username, password, email, fullname = 
         data.pop('maxbitrate')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'user_create')
     if not ampache_response:
         return False
     # json format
@@ -2773,17 +2293,7 @@ def user_create(ampache_url, ampache_api, username, password, email, fullname = 
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ user_update
     MINIMUM_API_VERSION=400001
@@ -2835,7 +2345,7 @@ def user_update(ampache_url, ampache_api, username, password = False, fullname =
         data.pop('maxbitrate')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'user_update')
     if not ampache_response:
         return False
     # json format
@@ -2848,17 +2358,7 @@ def user_update(ampache_url, ampache_api, username, password = False, fullname =
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ user_delete
     MINIMUM_API_VERSION=400001
@@ -2878,7 +2378,7 @@ def user_delete(ampache_url, ampache_api, username, api_format = 'xml'):
             'username': username}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url)
+    ampache_response = fetch_url(full_url, api_format, 'user_delete')
     if not ampache_response:
         return False
     # json format
@@ -2891,17 +2391,7 @@ def user_delete(ampache_url, ampache_api, username, api_format = 'xml'):
             tree = ET.fromstring(ampache_response.decode('utf-8'))
         except ET.ParseError:
             return False
-        try:
-            token = tree.tag
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+        return tree
 
 """ localplay
     MINIMUM_API_VERSION=380001
