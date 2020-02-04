@@ -40,9 +40,20 @@ HELPER FUNCTIONS
 ----------------
 """
 
+""" set_debug
+
+    This function can be used to enable/disable debugging messages
+
+    INPUTS
+    * bool = (bool) Enable/disable debug messages
+"""
+def set_debug(bool):
+    global AMPACHE_DEBUG
+    AMPACHE_DEBUG = bool
+
 """ encrypt_string
 
-    This function can be used to encrype your apikey into the accepted format.
+    This function can be used to encrypt your apikey into the accepted format.
 
     INPUTS
     * ampache_api = (string) apikey
