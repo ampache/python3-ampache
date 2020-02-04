@@ -65,6 +65,20 @@ def write_xml(xmlstr, filename):
         text_file.write(ET.tostring(xmlstr).decode())
         text_file.close()
 
+""" write_json
+
+    This function can be used to write your json responses to a file.
+
+    INPUTS
+    * json_data = (json) json to write to file
+    * filename  = (string) path and filename (e.g. './ampache.json')
+"""
+def write_json(json_data, filename):
+    if json_data:
+        text_file = open(filename, "w")
+        text_file.write(json.dumps(json_data))
+        text_file.close()
+
 """ encrypt_string
 
     This function can be used to encrypt your apikey into the accepted format.
