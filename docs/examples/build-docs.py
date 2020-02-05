@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
+import shutil
 import sys
+import time
 
 import ampache
 
@@ -8,6 +10,7 @@ import ampache
 ampache_url  = 'https://music.server'
 ampache_api  = 'mysuperapikey'
 ampache_user = 'myusername'
+api_format   = 'xml'
 
 print('\n#######################\nTesting the ampache API\n#######################\n')
 
@@ -24,15 +27,8 @@ def user_create(ampache_url, ampache_api, username, password, email, fullname = 
 def user_update(ampache_url, ampache_api, username, password = False, fullname = False, email = False, website = False, state = False, city = False, disable = False, maxbitrate = False, api_format = 'xml'):
 def user_delete(ampache_url, ampache_api, username, api_format = 'xml'):
 def localplay(ampache_url, ampache_api, username, api_format = 'xml'):
-def democratic(ampache_url, ampache_api, username, api_format = 'xml'):W
+def democratic(ampache_url, ampache_api, username, api_format = 'xml'):
 """
-
-""" set_debug
-def set_debug(mybool):
-"""
-ampache.set_debug(True)
-
-#print('\n#######################\nTesting the ampache API\n#######################\n')
 
 """ encrypt_string
 def encrypt_string(ampache_api, user):
@@ -43,7 +39,7 @@ encrypted_key = ampache.encrypt_string(ampache_api, ampache_user)
 def handshake(ampache_url, ampache_api, user = False, timestamp = False, version = '400004', api_format = 'xml'):
 """
 # processed details
-ampache_api = ampache.handshake(ampache_url, encrypted_key, False, False, '400004', 'xml')
+ampache_api = ampache.handshake(ampache_url, encrypted_key, False, False, '400004', api_format)
 if not ampache_api:
     print()
     sys.exit('ERROR: Failed to connect to ' + ampache_url)
@@ -52,10 +48,15 @@ if not ampache_api:
 def ping(ampache_url, ampache_api, api_format = 'xml'):
 """
 # did all this work?
-my_ping = ampache.ping(ampache_url, ampache_api, 'xml')
+my_ping = ampache.ping(ampache_url, ampache_api, api_format)
 if not my_ping:
     print()
     sys.exit('ERROR: Failed to ping ' + ampache_url)
+
+""" set_debug
+def set_debug(mybool):
+"""
+ampache.set_debug(True)
 
 """ url_to_song
 def url_to_song(ampache_url, ampache_api, url, api_format = 'xml'):
@@ -67,155 +68,205 @@ def get_indexes(ampache_url, ampache_api, type, filter = False, add = False, upd
 
 'song'|'album'|'artist'|'playlist'
 """
-songs     = ampache.get_indexes(ampache_url, ampache_api, 'song', '', '', '', '', 4, 'xml')
-albums    = ampache.get_indexes(ampache_url, ampache_api, 'album', '', '', '', '', 4, 'xml')
-artists   = ampache.get_indexes(ampache_url, ampache_api, 'artist', '', '', '', '', 4, 'xml')
-playlists = ampache.get_indexes(ampache_url, ampache_api, 'playlist', '', '', '', '', 4, 'xml')
+songs     = ampache.get_indexes(ampache_url, ampache_api, 'song', '', '', '', '', 4, api_format)
+shutil.move("../docs/" + api_format + "-responses/get_indexes." + api_format,
+            "../docs/" + api_format + "-responses/get_indexes-songs." + api_format)
 
-for child in songs:
-    if child.tag == 'song':
-        single_song = child.attrib['id']
-for child in albums:
-    if child.tag == 'album':
-        single_album = child.attrib['id']
-for child in artists:
-    if child.tag == 'artist':
-        single_artist = child.attrib['id']
-for child in playlists:
-    if child.tag == 'playlist':
-        single_playlist = child.attrib['id']
+albums    = ampache.get_indexes(ampache_url, ampache_api, 'album', '', '', '', '', 4, api_format)
+shutil.move("../docs/" + api_format + "-responses/get_indexes." + api_format,
+            "../docs/" + api_format + "-responses/get_indexes-albums." + api_format)
+
+artists   = ampache.get_indexes(ampache_url, ampache_api, 'artist', '', '', '', '', 4, api_format)
+shutil.move("../docs/" + api_format + "-responses/get_indexes." + api_format,
+            "../docs/" + api_format + "-responses/get_indexes-artists." + api_format)
+
+playlists = ampache.get_indexes(ampache_url, ampache_api, 'playlist', '', '', '', '', 4, api_format)
+shutil.move("../docs/" + api_format + "-responses/get_indexes." + api_format,
+            "../docs/" + api_format + "-responses/get_indexes-playlists." + api_format)
+
+if api_format == 'xml':
+    for child in songs:
+        if child.tag == 'song':
+            single_song = child.attrib['id']
+    for child in albums:
+        if child.tag == 'album':
+            single_album = child.attrib['id']
+    for child in artists:
+        if child.tag == 'artist':
+            single_artist = child.attrib['id']
+    for child in playlists:
+        if child.tag == 'playlist':
+            single_playlist = child.attrib['id']
+else:
+    single_song     = songs[0]['id']
+    single_album    = albums[0]['id']
+    single_artist   = artists[0]['id']
+    single_playlist = playlists[0]['id']
 
 """ user
 def user(ampache_url, ampache_api, username, api_format = 'xml'):
 """
-myuser = ampache.user(ampache_url, ampache_api, ampache_user)
+myuser = ampache.user(ampache_url, ampache_api, ampache_user, api_format)
 
 """ advanced_search
 def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 'song', offset = 0, limit = 0, api_format = 'xml'):
 """
 search_rules = [['favorite', 0, '%'], ['artist', 3, 'Prodigy']]
-search_song = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'and', 'song', 0, 0)
+search_song = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'song', 0, 4, api_format)
+shutil.move("../docs/" + api_format + "-responses/advanced_search." + api_format,
+            "../docs/" + api_format + "-responses/advanced_search-song." + api_format)
 
-for child in search_song:
-    if child.tag == 'total_count':
-        continue
-    print(child.tag, child.attrib)
-    for subchildren in child:
-        print(str(subchildren.tag) + ': ' + str(subchildren.text))
-    song_title = child.find('title').text
+if api_format == 'xml':
+    for child in search_song:
+        if child.tag == 'total_count':
+            continue
+        print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
+        song_title = child.find('title').text
+else:
+    song_title = search_song[0]['title']
 
 search_rules = [['favorite', 0, '%'], ['artist', 0, 'Men']]
-search_album = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'and', 'album', 0, 1)
+search_album = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'album', 0, 4, api_format)
+shutil.move("../docs/" + api_format + "-responses/advanced_search." + api_format,
+            "../docs/" + api_format + "-responses/advanced_search-album." + api_format)
 
-for child in search_album:
-    if child.tag == 'total_count':
-        continue
-    print(child.tag, child.attrib)
-    for subchildren in child:
-        print(str(subchildren.tag) + ': ' + str(subchildren.text))
-    album_title = child.find('name').text
+if api_format == 'xml':
+    for child in search_album:
+        if child.tag == 'total_count':
+            continue
+        print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
+        album_title = child.find('name').text
+else:
+    album_title = search_album[0]['name']
 
 search_rules = [['favorite', 0, '%'], ['artist', 4, 'Prodigy']]
-search_artist = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'and', 'artist', 0, 1)
+search_artist = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'artist', 0, 4, api_format)
+shutil.move("../docs/" + api_format + "-responses/advanced_search." + api_format,
+            "../docs/" + api_format + "-responses/advanced_search-artist." + api_format)
 
-for child in search_artist:
-    if child.tag == 'total_count':
-        print('total_count', search_artist.find('total_count').text)
-        continue
-    print(child.tag, child.attrib)
-    for subchildren in child:
-        print(str(subchildren.tag) + ': ' + str(subchildren.text))
-    artist_title = child.find('name').text
+if api_format == 'xml':
+    for child in search_artist:
+        if child.tag == 'total_count':
+            print('total_count', search_artist.find('total_count').text)
+            continue
+        print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
+        artist_title = child.find('name').text
+else:
+    artist_title = search_artist[0]['name']
 
 """ album
 def album(ampache_url, ampache_api, filter, include = False, api_format = 'xml'):
 """
-album = ampache.album(ampache_url, ampache_api, single_album, '')
+album = ampache.album(ampache_url, ampache_api, single_album, False, api_format)
 
-for child in album:
-    if child.tag == 'album':
-        print(child.tag, child.attrib)
-        album_title = child.find('name').text
-        for subchildren in child:
-            print(str(subchildren.tag) + ': ' + str(subchildren.text))
+if api_format == 'xml':
+    for child in album:
+        if child.tag == 'album':
+            print(child.tag, child.attrib)
+            album_title = child.find('name').text
+            for subchildren in child:
+                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+else:
+    album_title = search_album[0]['name']
 
 """ album_songs
 def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
 """
-album_songs = ampache.album_songs(ampache_url, ampache_api, single_album, '', 0)
-for child in album_songs:
-    if child.tag == 'song':
-        print(child.tag, child.attrib)
-        for subchildren in child:
-            print(str(subchildren.tag) + ': ' + str(subchildren.text))
+album_songs = ampache.album_songs(ampache_url, ampache_api, single_album, 0, 0, api_format)
+if api_format == 'xml':
+    for child in album_songs:
+        if child.tag == 'song':
+            print(child.tag, child.attrib)
+            for subchildren in child:
+                print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """ albums
 def albums(ampache_url, ampache_api, filter = False, exact = False, add = False, update = False, offset = 0, limit = 0, include = False, api_format = 'xml'):
 """
-albums = ampache.albums(ampache_url, ampache_api, album_title, 1, 0, 0, '', 0, 0)
-
-for child in albums:
-    if child.tag == 'total_count':
-        continue
-    print(child.tag, child.attrib)
-    for subchildren in child:
-        print(str(subchildren.tag) + ': ' + str(subchildren.text))
+albums = ampache.albums(ampache_url, ampache_api, album_title, 1, False, False, 0, 10, False, api_format)
+if api_format == 'xml':
+    for child in albums:
+        if child.tag == 'total_count':
+            continue
+        print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """ stats
 def stats(ampache_url, ampache_api, type, filter = 'random', username = False, user_id = False, offset = 0, limit = 0, api_format = 'xml'):
 """
-stats = ampache.stats(ampache_url, ampache_api, 'artist', '', ampache_user, None, 0, 1)
+stats = ampache.stats(ampache_url, ampache_api, 'artist', 'random', ampache_user, False, 0, 2, api_format)
+shutil.move("../docs/" + api_format + "-responses/stats." + api_format,
+            "../docs/" + api_format + "-responses/stats-artist." + api_format)
 
-for child in stats:
-    if child.tag == 'artist':
-        print('\ngetting a random artist using the stats method and found', child.find('name').text)
-        single_artist = child.attrib['id']
-        print(child.tag, child.attrib)
-        for subchildren in child:
-            print(str(subchildren.tag) + ': ' + str(subchildren.text))
-stats = ampache.stats(ampache_url, ampache_api, 'album', '', ampache_user, None, 0, 1)
+if api_format == 'xml':
+    for child in stats:
+        if child.tag == 'artist':
+            print('\ngetting a random artist using the stats method and found', child.find('name').text)
+            single_artist = child.attrib['id']
+            print(child.tag, child.attrib)
+            for subchildren in child:
+                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+stats = ampache.stats(ampache_url, ampache_api, 'album', 'random', ampache_user, None, 0, 2, api_format)
+shutil.move("../docs/" + api_format + "-responses/stats." + api_format,
+            "../docs/" + api_format + "-responses/stats-album." + api_format)
 
-for child in stats:
-    if child.tag == 'album':
-        print('\ngetting a random album using the stats method and found', child.find('name').text)
-        single_album = child.attrib['id']
-        album_title = child.find('name').text
-        print(child.tag, child.attrib)
-        for subchildren in child:
-            print(str(subchildren.tag) + ': ' + str(subchildren.text))
+if api_format == 'xml':
+    for child in stats:
+        if child.tag == 'album':
+            print('\ngetting a random album using the stats method and found', child.find('name').text)
+            single_album = child.attrib['id']
+            album_title = child.find('name').text
+            print(child.tag, child.attrib)
+            for subchildren in child:
+                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+else:
+    album_title = search_album[0]['name']
 
 """ artist
 def artist(ampache_url, ampache_api, filter, include = False, api_format = 'xml'):
 """
-artist = ampache.artist(ampache_url, ampache_api, single_artist)
+artist = ampache.artist(ampache_url, ampache_api, single_artist, False, api_format)
 
-for child in artist:
-    if child.tag == 'artist':
-        print('\nsearching for an artist with this id', single_artist)
-        print(child.tag, child.attrib)
-        for subchildren in child:
-            print(str(subchildren.tag) + ': ' + str(subchildren.text))
+if api_format == 'xml':
+    for child in artist:
+        if child.tag == 'artist':
+            print('\nsearching for an artist with this id', single_artist)
+            print(child.tag, child.attrib)
+            for subchildren in child:
+                print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """ artist_albums
 def artist_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
 """
-artist_albums = ampache.artist_albums(ampache_url, ampache_api, single_artist, None, 0)
+artist_albums = ampache.artist_albums(ampache_url, ampache_api, single_artist, 0, 0, api_format)
 
 """ artist_songs
 def artist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
 """
-artist_songs = ampache.artist_songs(ampache_url, ampache_api, single_artist, '', 0)
+artist_songs = ampache.artist_songs(ampache_url, ampache_api, single_artist, 0, 0, api_format)
 
 """ artists
 def artists(ampache_url, ampache_api, filter = False, add = False, update = False, offset = 0, limit = 0, include = False, api_format = 'xml'):
 """
-myartists = ampache.artists(ampache_url, ampache_api)
+myartists = ampache.artists(ampache_url, ampache_api, False, False, False, 0, 0, False, api_format)
 
 """ catalog_action
 def catalog_action(ampache_url, ampache_api, task, catalog, api_format = 'xml'):
 """
-#print("\nampache.catalog_action was sent an intentionally bad task. 'clean' does not exist so return False")
-catalog_action = ampache.catalog_action(ampache_url, ampache_api, 'clean', 2)
+catalog_action = ampache.catalog_action(ampache_url, ampache_api, 'clean', 2, api_format)
+shutil.move("../docs/" + api_format + "-responses/catalog_action." + api_format,
+            "../docs/" + api_format + "-responses/catalog_action-error." + api_format)
+
+catalog_action = ampache.catalog_action(ampache_url, ampache_api, 'clean_catalog', 2, api_format)
+shutil.move("../docs/" + api_format + "-responses/catalog_action." + api_format,
+            "../docs/" + api_format + "-responses/catalog_action-clean_catalog." + api_format)
 
 """ flag
 def flag(ampache_url, ampache_api, type, id, flag, api_format = 'xml'):
@@ -225,37 +276,37 @@ def flag(ampache_url, ampache_api, type, id, flag, api_format = 'xml'):
 """ followers
 def followers(ampache_url, ampache_api, username, api_format = 'xml'):
 """
-followers = ampache.followers(ampache_url, ampache_api, ampache_user)
+followers = ampache.followers(ampache_url, ampache_api, ampache_user, api_format)
 
 """ following
 def following(ampache_url, ampache_api, username, api_format = 'xml'):
 """
-following = ampache.following(ampache_url, ampache_api, ampache_user)
+following = ampache.following(ampache_url, ampache_api, ampache_user, api_format)
 
 """ friends_timeline
 def friends_timeline(ampache_url, ampache_api, limit = 0, since = 0, api_format = 'xml'):
 """
-friends_timeline = ampache.friends_timeline(ampache_url, ampache_api)
+friends_timeline = ampache.friends_timeline(ampache_url, ampache_api, 0, 0, api_format)
 
 """ last_shouts
 def last_shouts(ampache_url, ampache_api, username, limit = 0, api_format = 'xml'):
 """
-last_shouts = ampache.last_shouts(ampache_url, ampache_api, ampache_user)
+last_shouts = ampache.last_shouts(ampache_url, ampache_api, ampache_user, 0, api_format)
 
 """ playlists
 def playlists(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
 """
-playlists = ampache.playlists(ampache_url, ampache_api)
+playlists = ampache.playlists(ampache_url, ampache_api, False, False, 0, 0, api_format)
 
 """ playlist
 def playlist(ampache_url, ampache_api, filter, api_format = 'xml'):
 """
-playlist = ampache.playlist(ampache_url, ampache_api, single_playlist)
+playlist = ampache.playlist(ampache_url, ampache_api, single_playlist, api_format)
 
 """ playlist_songs
 def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
 """
-playlist_songs = ampache.playlist_songs(ampache_url, ampache_api, single_playlist)
+playlist_songs = ampache.playlist_songs(ampache_url, ampache_api, single_playlist, 0, 0, api_format)
 
 """ playlist_create
 def playlist_create(ampache_url, ampache_api, name, type, api_format = 'xml'):
@@ -295,82 +346,94 @@ def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI', api_f
 """ scrobble
 def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle = False, MBartist = False, MBalbum = False, time = False, client = 'AmpacheAPI', api_format = 'xml'):
 """
-scrobble = ampache.scrobble(ampache_url, ampache_api, 'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed', '', '', '', int(time.time()))
+scrobble = ampache.scrobble(ampache_url, ampache_api, 'Hear.Life.Spoken', 'Sub Atari Knives', 'Sub Atari Knives', False, False, False, int(time.time()), 'AmpaceApi', api_format)
+shutil.move("../docs/" + api_format + "-responses/scrobble." + api_format,
+            "../docs/" + api_format + "-responses/scrobble-error." + api_format)
+
+scrobble = ampache.scrobble(ampache_url, ampache_api, 'Welcome to Planet Sexor', 'Tiga', 'Sexor', False, False, False, int(time.time()), 'test.py', api_format)
 
 """ search_songs
 def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
 """
-search_songs = ampache.search_songs(ampache_url, ampache_api, song_title)
+search_songs = ampache.search_songs(ampache_url, ampache_api, song_title, 0, 0, api_format)
 
-for child in search_songs:
-    print(child.tag, child.attrib)
-    for subchildren in child:
-        print(str(subchildren.tag) + ': ' + str(subchildren.text))
+if api_format == 'xml':
+    for child in search_songs:
+        print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """ song
 def song(ampache_url, ampache_api, filter, api_format = 'xml'):
 """
-song = ampache.song(ampache_url, ampache_api, song_title)
+song = ampache.song(ampache_url, ampache_api, single_song, api_format)
 
-for child in song:
-    print(child.tag, child.attrib)
-    for subchildren in child:
-        print(str(subchildren.tag) + ': ' + str(subchildren.text))
+if api_format == 'xml':
+    for child in song:
+        print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """ songs
-def songs(ampache_url, ampache_api, filter = '', exact = '', add = '', update = '', offset = 0, limit = 0, api_format = 'xml'):
+def songs(ampache_url, ampache_api, filter = False, exact = False, add = False, update = False, offset = 0, limit = 0, api_format = 'xml'):
 """
-songs = ampache.songs(ampache_url, ampache_api)
-for child in songs:
-    print(child.tag, child.attrib)
-    for subchildren in child:
-        print(str(subchildren.tag) + ': ' + str(subchildren.text))
+songs = ampache.songs(ampache_url, ampache_api, False, False, False, False, 0, 0, api_format)
+if api_format == 'xml':
+    for child in songs:
+        print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
+
 """ tags
 def tags(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
 """
 genre = ''
-tags = ampache.tags(ampache_url, ampache_api, 'Brutal Death Metal', 'exact', 0, 1)
-for child in tags:
-    if child.tag == 'total_count':
-        print('total_count', search_artist.find('total_count').text)
-        continue
-    print(child.tag, child.attrib)
-    genre = child.attrib['id']
-    for subchildren in child:
-        print(str(subchildren.tag) + ': ' + str(subchildren.text))
+tags = ampache.tags(ampache_url, ampache_api, 'Brutal Death Metal', '1', 0, 4, api_format)
+if api_format == 'xml':
+    for child in tags:
+        if child.tag == 'total_count':
+            print('total_count', search_artist.find('total_count').text)
+            continue
+        print(child.tag, child.attrib)
+        genre = child.attrib['id']
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """ tag_albums
 def tag_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
 """
-tag_albums = ampache.tag_albums(ampache_url, ampache_api, genre, 0, 1)
-for child in tag_albums:
-    print(child.tag, child.attrib)
-    for subchildren in child:
-        print(str(subchildren.tag) + ': ' + str(subchildren.text))
+tag_albums = ampache.tag_albums(ampache_url, ampache_api, genre, 0, 2, api_format)
+if api_format == 'xml':
+    for child in tag_albums:
+        print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """ tag_artists
 def tag_artists(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
 """
-tag_artists = ampache.tag_artists(ampache_url, ampache_api, genre, 0, 1)
-for child in tag_artists:
-    print(child.tag, child.attrib)
-    for subchildren in child:
-        print(str(subchildren.tag) + ': ' + str(subchildren.text))
+tag_artists = ampache.tag_artists(ampache_url, ampache_api, genre, 0, 1, api_format)
+if api_format == 'xml':
+    for child in tag_artists:
+        print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """ tag_songs
 def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
 """
-tag_songs = ampache.tag_songs(ampache_url, ampache_api, genre, 0, 1)
+tag_songs = ampache.tag_songs(ampache_url, ampache_api, genre, 0, 1, api_format)
 
 """ timeline
 def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, api_format = 'xml'):
 """
-timeline = ampache.timeline(ampache_url, ampache_api, ampache_user, 10, 10)
+timeline = ampache.timeline(ampache_url, ampache_api, ampache_user, 10, 0, api_format)
 
-for child in timeline:
-    print(child.tag, child.attrib)
-    for subchildren in child:
-        print(str(subchildren.tag) + ': ' + str(subchildren.text))
+if api_format == 'xml':
+    for child in timeline:
+        print(child.tag, child.attrib)
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """ toggle_follow
 def toggle_follow(ampache_url, ampache_api, username, api_format = 'xml'):
@@ -380,7 +443,7 @@ def toggle_follow(ampache_url, ampache_api, username, api_format = 'xml'):
 """ update_from_tags
 def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id, api_format = 'xml'):
 """
-update_from_tags = ampache.update_from_tags(ampache_url, ampache_api, 'album', single_album)
+update_from_tags = ampache.update_from_tags(ampache_url, ampache_api, 'album', single_album, api_format)
 
 """ video
 def video(ampache_url, ampache_api, filter, api_format = 'xml'):
@@ -406,6 +469,6 @@ def democratic(ampache_url, ampache_api, method, action, oid, api_format = 'xml'
 def goodbye(ampache_url, ampache_api, api_format = 'xml'):
 """
 # Close your session when you're done
-goodbye = ampache.goodbye(ampache_url, ampache_api, 'xml')
+goodbye = ampache.goodbye(ampache_url, ampache_api, api_format)
 
 
