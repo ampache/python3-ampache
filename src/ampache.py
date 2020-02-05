@@ -1834,8 +1834,6 @@ def rate(ampache_url, ampache_api, type, id, rating, api_format = 'xml'):
     * api_format  = (string) 'xml'|'json' //optional
 """
 def flag(ampache_url, ampache_api, type, id, flag, api_format = 'xml'):
-    if not (type == 'song' or type == 'album' or type == 'artist'):
-        return False
     if bool(flag):
         flag = 1
     else:
@@ -2033,8 +2031,6 @@ def friends_timeline(ampache_url, ampache_api, limit = 0, since = 0, api_format 
     * api_format  = (string) 'xml'|'json' //optional
 """
 def catalog_action(ampache_url, ampache_api, task, catalog, api_format = 'xml'):
-    if not (task == 'add_to_catalog' or task == 'clean_catalog') or not catalog > 0:
-        return False
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'catalog_action',
             'auth': ampache_api,
