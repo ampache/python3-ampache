@@ -2272,8 +2272,6 @@ def user_create(ampache_url, ampache_api, username, password, email, fullname = 
         data.pop('fullname')
     if not disable:
         data.pop('disable')
-    if not maxbitrate:
-        data.pop('maxbitrate')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'user_create')
