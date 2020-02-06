@@ -7,11 +7,12 @@ import time
 import ampache
 
 # user variables
-if sys.argv[1] and sys.argv[2] and sys.argv[2]:
-    ampache_url  = sys.argv[1]
-    ampache_api  = sys.argv[2]
-    ampache_user = sys.argv[3]
-else:
+try:
+    if sys.argv[1] and sys.argv[2] and sys.argv[2]:
+        ampache_url  = sys.argv[1]
+        ampache_api  = sys.argv[2]
+        ampache_user = sys.argv[3]
+except IndexError:
     ampache_url  = 'https://music.server'
     ampache_api  = 'mysuperapikey'
     ampache_user = 'myusername'
@@ -19,18 +20,12 @@ else:
 def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """TODO
     def tag(ampache_url, ampache_api, filter, api_format = 'xml'):
-    def songs(ampache_url, ampache_api, filter = False, exact = False, add = False, update = False, offset = 0, limit = 0, api_format = 'xml'):
     def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False, album = False, artist = False, flag = False, format = 'song', offset = 0, limit = 0, api_format = 'xml'):
     def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = False, api_format = 'xml'):
     def update_artist_info(ampache_url, ampache_api, id, api_format = 'xml'):
     def stream(ampache_url, ampache_api, id, type, destination, api_format = 'xml'):
     def download(ampache_url, ampache_api, id, type, destination, format = 'raw', api_format = 'xml'):
     def get_art(ampache_url, ampache_api, id, type, api_format = 'xml'):
-    def user_create(ampache_url, ampache_api, username, password, email, fullname = False, disable = False, api_format = 'xml'):
-    def user_update(ampache_url, ampache_api, username, password = False, fullname = False, email = False, website = False, state = False, city = False, disable = False, maxbitrate = False, api_format = 'xml'):
-    def user_delete(ampache_url, ampache_api, username, api_format = 'xml'):
-    def localplay(ampache_url, ampache_api, username, api_format = 'xml'):
-    def democratic(ampache_url, ampache_api, username, api_format = 'xml'):
     """
 
     """ encrypt_string
@@ -65,6 +60,35 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def url_to_song(ampache_url, ampache_api, url, api_format = 'xml'):
     """
     #print(ampache.url_to_song(ampache_url, ampache_api))
+
+    """ user_create
+        def user_create(ampache_url, ampache_api, username, password, email, fullname = False, disable = False, api_format = 'xml'):
+    """
+    tempusername = 'temp_user'
+    createuser   = ampache.user_create(ampache_url, ampache_api, tempusername, 'supoersecretpassword', 'email@gmail.com', False, False, api_format)
+    tmpuser = ampache.user(ampache_url, ampache_api, tempusername, api_format)
+
+    """ user_edit
+        def user_update(ampache_url, ampache_api, username, password = False, fullname = False, email = False, website = False, state = False, city = False, disable = False, maxbitrate = False, api_format = 'xml'):
+    """
+    edituser = ampache.user_update(ampache_url, ampache_api, tempusername, False, False, False, False, False, False, True, False, api_format)
+    tmpuser = ampache.user(ampache_url, ampache_api, tempusername, api_format)
+    shutil.move("../docs/" + api_format + "-responses/user." + api_format,
+                "../docs/" + api_format + "-responses/user-disabled." + api_format)
+
+    """ user_delete
+        def user_delete(ampache_url, ampache_api, username, api_format = 'xml'):
+    """
+    deleteuser = ampache.user_delete(ampache_url, ampache_api, tempusername, api_format)
+
+    """ user
+    def user(ampache_url, ampache_api, username, api_format = 'xml'):
+    """
+    myuser = ampache.user(ampache_url, ampache_api, 'missing_user', api_format)
+    shutil.move("../docs/" + api_format + "-responses/user." + api_format,
+                "../docs/" + api_format + "-responses/user-error." + api_format)
+
+    myuser = ampache.user(ampache_url, ampache_api, ampache_user, api_format)
 
     """ get_indexes
     def get_indexes(ampache_url, ampache_api, type, filter = False, add = False, update = False, offset = 0, limit = 0, api_format = 'xml'):
@@ -105,11 +129,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         single_album    = albums[0]['id']
         single_artist   = artists[0]['id']
         single_playlist = playlists[0]['id']
-
-    """ user
-    def user(ampache_url, ampache_api, username, api_format = 'xml'):
-    """
-    myuser = ampache.user(ampache_url, ampache_api, ampache_user, api_format)
 
     """ advanced_search
     def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 'song', offset = 0, limit = 0, api_format = 'xml'):
