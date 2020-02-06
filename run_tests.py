@@ -17,11 +17,11 @@ except IndexError:
     ampache_api  = 'mysuperapikey'
     ampache_user = 'myusername'
 
-limit = 4
+limit    = 4
+song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=164215&uid=2&player=api&name=Hellyeah%20-%20-.mp3'
 
 def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     """TODO
-    def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False, album = False, artist = False, flag = False, format = 'song', offset = 0, limit = 0, api_format = 'xml'):
     def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = False, api_format = 'xml'):
     def update_artist_info(ampache_url, ampache_api, id, api_format = 'xml'):
     def stream(ampache_url, ampache_api, id, type, destination, api_format = 'xml'):
@@ -60,7 +60,7 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     """ url_to_song
     def url_to_song(ampache_url, ampache_api, url, api_format = 'xml'):
     """
-    #print(ampache.url_to_song(ampache_url, ampache_api))
+    url_to_song = ampache.url_to_song(ampache_url, ampache_api, song_url, api_format)
 
     """ user_create
     def user_create(ampache_url, ampache_api, username, password, email, fullname = False, disable = False, api_format = 'xml'):
@@ -92,9 +92,49 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     'song'|'album'|'artist'|'playlist'
     """
     songs     = ampache.get_indexes(ampache_url, ampache_api, 'song', '', '', '', '', 4, api_format)
+    if api_format == 'xml':
+        for child in songs:
+            if child.tag == 'total_count':
+                print('total_count', child.text)
+                if int(child.text) > int(limit):
+                    print()
+                    sys.exit('ERROR: songs ' + child.text + ' found more items than the limit ' + str(limit))
+                else:
+                    continue
+
     albums    = ampache.get_indexes(ampache_url, ampache_api, 'album', '', '', '', '', 4, api_format)
+    if api_format == 'xml':
+        for child in albums:
+            if child.tag == 'total_count':
+                print('total_count', child.text)
+                if int(child.text) > int(limit):
+                    print()
+                    sys.exit('ERROR: albums ' + child.text + ' found more items than the limit ' + str(limit))
+                else:
+                    continue
+
     artists   = ampache.get_indexes(ampache_url, ampache_api, 'artist', '', '', '', '', 4, api_format)
+    if api_format == 'xml':
+        for child in artists:
+            if child.tag == 'total_count':
+                print('total_count', child.text)
+                if int(child.text) > int(limit):
+                    print()
+                    sys.exit('ERROR: artists ' + child.text + ' found more items than the limit ' + str(limit))
+                else:
+                    continue
+
     playlists = ampache.get_indexes(ampache_url, ampache_api, 'playlist', '', '', '', '', 4, api_format)
+    if api_format == 'xml':
+        for child in playlists:
+            if child.tag == 'total_count':
+                print('total_count', child.text)
+                if int(child.text) > int(limit):
+                    print()
+                    sys.exit('ERROR: playlists ' + child.text + ' found more items than the limit ' + str(limit))
+                else:
+                    continue
+
 
     if api_format == 'xml':
         for child in songs:
@@ -344,6 +384,15 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     """
     #print(ampache.playlist_delete(ampache_url, ampache_api))
 
+    """ playlist_generate
+    def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False, album = False, artist = False, flag = False, format = 'song', offset = 0, limit = 0, api_format = 'xml'):
+    """
+    ampache.playlist_generate(ampache_url, ampache_api, 'random', False, False, False, False, 'song', 0, limit, api_format)
+
+    ampache.playlist_generate(ampache_url, ampache_api, 'random', False, False, False, False, 'index', 0, limit, api_format)
+
+    ampache.playlist_generate(ampache_url, ampache_api, 'random', False, False, False, False, 'id', 0, limit, api_format)
+
     """ rate
     def rate(ampache_url, ampache_api, type, id, rating, api_format = 'xml'):
     """
@@ -411,7 +460,7 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
             for subchildren in child:
                 print(str(subchildren.tag) + ': ' + str(subchildren.text))
     else:
-        genre = tags[0]['id']
+        genre = tags[0]['tag']['id']
         
     """ tag
     def tag(ampache_url, ampache_api, filter, api_format = 'xml'):

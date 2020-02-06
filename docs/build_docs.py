@@ -17,11 +17,11 @@ except IndexError:
     ampache_api  = 'mysuperapikey'
     ampache_user = 'myusername'
 
-limit = 4
+limit    = 4
+song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=164215&uid=2&player=api&name=Hellyeah%20-%20-.mp3'
 
 def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """TODO
-    def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False, album = False, artist = False, flag = False, format = 'song', offset = 0, limit = 0, api_format = 'xml'):
     def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = False, api_format = 'xml'):
     def update_artist_info(ampache_url, ampache_api, id, api_format = 'xml'):
     def stream(ampache_url, ampache_api, id, type, destination, api_format = 'xml'):
@@ -60,7 +60,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ url_to_song
     def url_to_song(ampache_url, ampache_api, url, api_format = 'xml'):
     """
-    #print(ampache.url_to_song(ampache_url, ampache_api))
+    url_to_song = ampache.url_to_song(ampache_url, ampache_api, song_url, api_format)
 
     """ user_create
         def user_create(ampache_url, ampache_api, username, password, email, fullname = False, disable = False, api_format = 'xml'):
@@ -414,6 +414,22 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     #print(ampache.playlist_delete(ampache_url, ampache_api))
 
+    """ playlist_generate
+    def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False, album = False, artist = False, flag = False, format = 'song', offset = 0, limit = 0, api_format = 'xml'):
+    'song'|'index'|'id'
+    """
+    ampache.playlist_generate(ampache_url, ampache_api, 'random', False, False, False, False, 'song', 0, limit, api_format)
+    shutil.move(api_format + "-responses/playlist_generate." + api_format,
+                api_format + "-responses/playlist_generate (song)." + api_format)
+
+    ampache.playlist_generate(ampache_url, ampache_api, 'random', False, False, False, False, 'index', 0, limit, api_format)
+    shutil.move(api_format + "-responses/playlist_generate." + api_format,
+                api_format + "-responses/playlist_generate (index)." + api_format)
+
+    ampache.playlist_generate(ampache_url, ampache_api, 'random', False, False, False, False, 'id', 0, limit, api_format)
+    shutil.move(api_format + "-responses/playlist_generate." + api_format,
+                api_format + "-responses/playlist_generate (id)." + api_format)
+
     """ rate
     def rate(ampache_url, ampache_api, type, id, rating, api_format = 'xml'):
     """
@@ -484,7 +500,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
             for subchildren in child:
                 print(str(subchildren.tag) + ': ' + str(subchildren.text))
     else:
-        genre = tags[0]['id']
+        genre = tags[0]['tag']['id']
         
     """ tag
     def tag(ampache_url, ampache_api, filter, api_format = 'xml'):
