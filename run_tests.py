@@ -687,8 +687,7 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     """ toggle_follow
     def toggle_follow(ampache_url, ampache_api, username, api_format = 'xml'):
     """
-    if ampache_user == 'user':
-        toggle = 'generic'
+    toggle = 'generic'
     if ampache_user == 'generic':
         toggle = 'user'
     #togglefollow = ampache.toggle_follow(ampache_url, ampache_api, toggle, api_format))
@@ -727,3 +726,4 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
 
 run_tests(ampache_url, ampache_api,ampache_user, 'xml')
 run_tests(ampache_url, ampache_api,ampache_user, 'json')
+
