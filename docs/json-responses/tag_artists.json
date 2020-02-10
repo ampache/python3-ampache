@@ -1,6 +1,18 @@
-{
-    "error": {
-        "code": "401",
-        "message": "Missing mandatory parameter 'filter'"
+[
+    {
+        "id": "9070",
+        "name": "Carnal Decay",
+        "tags": "{\n    \"id\": 1143,\n    \"count\": 1,\n    \"name\": \"Brutal Death Metal\"\n}",
+        "albums": "3",
+        "songs": "28",
+        "art": "https:\/\/ampache.lachlandewaard.org\/image.php?object_id=9070&object_type=artist&auth=9437970b8baa8d40a09e5298264b3f6a",
+        "flag": 0,
+        "preciserating": 0,
+        "rating": 0,
+        "averagerating": 0,
+        "mbid": "9ddf93f7-f0c4-4270-a099-e09509822c54",
+        "summary": null,
+        "yearformed": null,
+        "placeformed": null
     }
-}
+]

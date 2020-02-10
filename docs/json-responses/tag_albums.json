@@ -1,6 +1,20 @@
-{
-    "error": {
-        "code": "401",
-        "message": "Missing mandatory parameter 'filter'"
+[
+    {
+        "id": "65298",
+        "name": "Legacy of the Ancients",
+        "artist": {
+            "id": "11725",
+            "name": "Pathology"
+        },
+        "year": "2010",
+        "tracks": "11",
+        "disk": "1",
+        "tags": "{\n    \"id\": 6,\n    \"count\": 1,\n    \"name\": \"Rock\"\n}",
+        "art": "https:\/\/ampache.lachlandewaard.org\/image.php?object_id=65298&object_type=album&auth=9437970b8baa8d40a09e5298264b3f6a",
+        "flag": 0,
+        "preciserating": 0,
+        "rating": 0,
+        "averagerating": 0,
+        "mbid": "4fb343d2-ec5b-4d2b-9cc2-64c764749ec7"
     }
-}
+]
