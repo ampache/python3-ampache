@@ -44,7 +44,7 @@ HELPER FUNCTIONS
     This function can be used to enable/disable debugging messages
 
     INPUTS
-    * bool = (bool) Enable/disable debug messages
+    * bool = (boolean) Enable/disable debug messages
 """
 def set_debug(mybool):
     global AMPACHE_DEBUG
@@ -1137,11 +1137,15 @@ def playlist_delete(ampache_url, ampache_api, filter, api_format = 'xml'):
     * ampache_api = (string)
     * filter      = (integer) $playlist_id
     * song        = (integer) $song_id
-    * check       = (integer) 0|1 Check for duplicates (default = 0) //optional
+    * check       = (boolean|integer) (True,False | 0|1) Check for duplicates //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
-def playlist_add_song(ampache_url, ampache_api, filter, song, check = 0, api_format = 'xml'):
+def playlist_add_song(ampache_url, ampache_api, filter, song, check = False, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    if bool(check):
+        check = 1
+    else:
+        check = 0
     data = {'action': 'playlist_add_song',
             'auth': ampache_api,
             'song': song,
@@ -1830,7 +1834,7 @@ def rate(ampache_url, ampache_api, type, id, rating, api_format = 'xml'):
     * ampache_api = (string)
     * type        = (string) 'song'|'album'|'artist'
     * id          = (integer) $object_id
-    * flag        = (bool) 0|1
+    * flag        = (boolean|integer) (True,False | 0|1)
     * api_format  = (string) 'xml'|'json' //optional
 """
 def flag(ampache_url, ampache_api, type, id, flag, api_format = 'xml'):
@@ -2099,18 +2103,20 @@ def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id, api_for
     * ampache_api = (string)
     * type        = (string) 'artist'|'album'|'song'
     * id          = (integer) $artist_id, $album_id, $song_id
-    * overwrite   = (boolean) 0|1 //optional
+    * overwrite   = (boolean|integer) (True,False | 0|1) //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
 def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = False, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    if bool(overwrite):
+        overwrite = 1
+    else:
+        overwrite = 0
     data = {'action': 'update_art',
             'auth': ampache_api,
             'type': ampache_type,
             'id': ampache_id,
             'overwrite': overwrite}
-    if not overwrite:
-        data.pop('overwrite')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'update_art')
@@ -2256,11 +2262,15 @@ def get_art(ampache_url, ampache_api, id, type, api_format = 'xml'):
     * password    = (string) hash('sha256', $password))
     * email       = (string) 'user@gmail.com'
     * fullname    = (string) //optional
-    * disable     = (boolean) 0|1 //optional
+    * disable     = (boolean|integer) (True,False | 0|1) //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
 def user_create(ampache_url, ampache_api, username, password, email, fullname = False, disable = False, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    if bool(disable):
+        disable = 1
+    else:
+        disable = 0
     data = {'action': 'user_create',
             'auth': ampache_api,
             'username': username,
@@ -2270,8 +2280,6 @@ def user_create(ampache_url, ampache_api, username, password, email, fullname = 
             'disable': disable}
     if not fullname:
         data.pop('fullname')
-    if not disable:
-        data.pop('disable')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'user_create')
@@ -2304,12 +2312,16 @@ def user_create(ampache_url, ampache_api, username, password, email, fullname = 
     * website     = (string) //optional
     * state       = (string) //optional
     * city        = (string) //optional
-    * disable     = (boolean) 0|1 //optional
+    * disable     = (boolean|integer) (True,False | 0|1) //optional
     * maxbitrate  = (string) //optional
     * api_format  = (string) 'xml'|'json' //optional
 """
 def user_update(ampache_url, ampache_api, username, password = False, fullname = False, email = False, website = False, state = False, city = False, disable = False, maxbitrate = False, api_format = 'xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    if bool(disable):
+        disable = 1
+    else:
+        disable = 0
     data = {'action': 'user_update',
             'auth': ampache_api,
             'username': username,
@@ -2333,8 +2345,6 @@ def user_update(ampache_url, ampache_api, username, password = False, fullname =
         data.pop('state')
     if not city:
         data.pop('city')
-    if not disable:
-        data.pop('disable')
     if not maxbitrate:
         data.pop('maxbitrate')
     data = urllib.parse.urlencode(data)
