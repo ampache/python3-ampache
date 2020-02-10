@@ -6,6 +6,18 @@ import time
 
 import ampache
 
+from xml.etree import ElementTree as ET
+
+# Test colors for printing
+HEADER = '\033[95m'
+OKBLUE = '\033[94m'
+OKGREEN = '\033[92m'
+WARNING = '\033[93m'
+FAIL = '\033[91m'
+ENDC = '\033[0m'
+BOLD = '\033[1m'
+UNDERLINE = '\033[4m'
+
 # user variables
 try:
     if sys.argv[1] and sys.argv[2] and sys.argv[2]:
@@ -18,9 +30,12 @@ except IndexError:
     ampache_user = 'myusername'
 
 limit    = 4
-song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=164215&uid=2&player=api&name=Hellyeah%20-%20-.mp3'
 
 def run_tests(ampache_url, ampache_api, ampache_user, api_format):
+
+    print(f"{HEADER}\n################\nRUN PYTHON TESTS\n################\n{ENDC}")
+    print("Testing: " + api_format)
+
     """TODO
     def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = False, api_format = 'xml'):
     def update_artist_info(ampache_url, ampache_api, id, api_format = 'xml'):
@@ -33,58 +48,174 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     def encrypt_string(ampache_api, user):
     """
     encrypted_key = ampache.encrypt_string(ampache_api, ampache_user)
+    if encrypted_key:
+        print(f"ampache.encrypted_key: {OKGREEN}PASS{ENDC}")
+        #print("\nreturned:\n" + encrypted_key)
+    else:
+        sys.exit(f"\nampache.encrypted_key:     {FAIL}FAIL{ENDC}")
 
     """ handshake
     def handshake(ampache_url, ampache_api, user = False, timestamp = False, version = '400004', api_format = 'xml'):
     """
     # processed details
     ampache_api = ampache.handshake(ampache_url, encrypted_key, False, False, '400004', api_format)
-    if not ampache_api:
-        print()
-        sys.exit('ERROR: Failed to connect to ' + ampache_url)
+    if ampache_api:
+        print(f"ampache.handshake: {OKGREEN}PASS{ENDC}")
+        #print("\nreturned:\n" + ampache_api)
+    else:
+        print(f"ampache.handshake: {FAIL}FAIL{ENDC}")
+        sys.exit(f"\n{FAIL}ERROR:{ENDC} Failed to connect to " + ampache_url)
 
     """ ping
     def ping(ampache_url, ampache_api, api_format = 'xml'):
     """
     # did all this work?
     my_ping = ampache.ping(ampache_url, ampache_api, api_format)
-    if not my_ping:
-        print()
-        sys.exit('ERROR: Failed to ping ' + ampache_url)
+    if my_ping:
+        print(f"ampache.ping: {OKGREEN}PASS{ENDC}")
+        #print("\nreturned:\n" + my_ping)
+    else:
+        print(f"ampache.ping: {FAIL}FAIL{ENDC}")
+        sys.exit(f"\n{FAIL}ERROR:{ENDC} Failed to ping " + ampache_url)
 
     """ set_debug
     def set_debug(mybool):
     """
-    ampache.set_debug(False)
+    set_debug = ampache.set_debug(False)
 
     """ url_to_song
     def url_to_song(ampache_url, ampache_api, url, api_format = 'xml'):
     """
+    song_url    = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=164215&uid=2&player=api&name=Hellyeah%20-%20-.mp3'
+    song_id     = False
     url_to_song = ampache.url_to_song(ampache_url, ampache_api, song_url, api_format)
+
+    if api_format == 'xml':
+        song_id = ET.tostring(url_to_song).decode()
+    else:
+        song_id = url_to_song
+
+    if url_to_song and song_id:
+        print(f"ampache.url_to_song: {OKGREEN}PASS{ENDC}")
+        #print("\nreturned:")
+        #print(song_id)
+    else:
+        print(f"ampache.url_to_song: {FAIL}FAIL{ENDC}")
 
     """ user_create
     def user_create(ampache_url, ampache_api, username, password, email, fullname = False, disable = False, api_format = 'xml'):
     """
-    #tempusername = 'temp_user'
-    #createuser   = ampache.user_create(ampache_url, ampache_api, tempusername, 'supoersecretpassword', 'email@gmail.com', False, False, api_format)
-    #tmpuser = ampache.user(ampache_url, ampache_api, tempusername, api_format)
+    failed  = False
+    message = ''
+    tempusername = 'temp_user'
+    createuser   = ampache.user_create(ampache_url, ampache_api, tempusername, 'supoersecretpassword', 'email@gmail.com', False, False, api_format)
+    if api_format == 'xml':
+        for child in createuser:
+            if child.tag == 'error':
+                failed = True
+                message = child.text
+            if child.tag == 'success':
+                message = child.text
+    else:
+        if 'error' in createuser:
+            failed = True
+            message = createuser['error']['message']
+        if 'success' in createuser:
+            message = createuser['success']['message']
+
+    if createuser and not failed:
+        print(f"ampache.user_create: {OKGREEN}PASS{ENDC}")
+        #print("\nreturned:")
+        #print(message)
+    else:
+        if message == 'User does not have access to this function':
+            print(f"ampache.user_create: {WARNING}WARNING{ENDC}")
+        else:
+            print(f"ampache.user_create: {FAIL}FAIL{ENDC}")
+        print("returned:")
+        print(message + "\n")
 
     """ user_edit
     def user_update(ampache_url, ampache_api, username, password = False, fullname = False, email = False, website = False, state = False, city = False, disable = False, maxbitrate = False, api_format = 'xml'):
     """
-    #edituser = ampache.user_update(ampache_url, ampache_api, tempusername, False, False, False, False, False, False, True, False, api_format)
-    #tmpuser  = ampache.user(ampache_url, ampache_api, tempusername, api_format)
+    failed = False
+    message = ''
+    edituser = ampache.user_update(ampache_url, ampache_api, tempusername, False, False, False, False, False, False, True, False, api_format)
+    if api_format == 'xml':
+        for child in edituser:
+            if child.tag == 'error':
+                failed = True
+                message = child.text
+            if child.tag == 'success':
+                message = child.text
+    else:
+        if 'error' in edituser:
+            failed = True
+            message = edituser['error']['message']
+        if 'success' in edituser:
+            message = edituser['success']['message']
+
+    if edituser and not failed:
+        print(f"ampache.user_update: {OKGREEN}PASS{ENDC}")
+        #print("\nreturned:")
+        #print(message)
+    else:
+        if message == 'User does not have access to this function':
+            print(f"ampache.user_create: {WARNING}WARNING{ENDC}")
+        else:
+            print(f"ampache.user_create: {FAIL}FAIL{ENDC}")
+        print("returned:")
+        print(message + "\n")
 
     """ user_delete
     def user_delete(ampache_url, ampache_api, username, api_format = 'xml'):
     """
-    #deleteuser = ampache.user_delete(ampache_url, ampache_api, tempusername, api_format)
+    failed = False
+    message = ''
+    deleteuser = ampache.user_delete(ampache_url, ampache_api, tempusername, api_format)
+    if api_format == 'xml':
+        for child in deleteuser:
+            if child.tag == 'error':
+                failed = True
+                message = child.text
+            if child.tag == 'success':
+                message = child.text
+    else:
+        if 'error' in deleteuser:
+            failed = True
+            message = deleteuser['error']['message']
+        if 'success' in deleteuser:
+            message = deleteuser['success']['message']
+
+    if deleteuser and not failed:
+        print(f"ampache.user_delete: {OKGREEN}PASS{ENDC}")
+        #print("\nreturned:")
+        #print(message)
+    else:
+        if message == 'User does not have access to this function':
+            print(f"ampache.user_create: {WARNING}WARNING{ENDC}")
+        else:
+            print(f"ampache.user_create: {FAIL}FAIL{ENDC}")
+        print("returned:")
+        print(message + "\n")
 
     """ user
     def user(ampache_url, ampache_api, username, api_format = 'xml'):
     """
-    #myuser = ampache.user(ampache_url, ampache_api, 'missing_user', api_format)
-    #myuser = ampache.user(ampache_url, ampache_api, ampache_user, api_format)
+    myuser = ampache.user(ampache_url, ampache_api, 'missing_user', api_format)
+    myuser = ampache.user(ampache_url, ampache_api, ampache_user, api_format)
+
+    if api_format == 'xml':
+        user_id = ET.tostring(myuser).decode()
+    else:
+        user_id = myuser
+
+    if myuser:
+        print(f"ampache.user: {OKGREEN}PASS{ENDC}")
+        #print("\nreturned:")
+        #print(user_id)
+    else:
+        sys.exit(f"\nampache.user: {FAIL}FAIL{ENDC}")
 
     """ get_indexes
     def get_indexes(ampache_url, ampache_api, type, filter = False, add = False, update = False, offset = 0, limit = 0, api_format = 'xml'):
@@ -95,10 +226,9 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in songs:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
-                    print()
-                    sys.exit('ERROR: songs ' + child.text + ' found more items than the limit ' + str(limit))
+                    print(f"ampache.get_indexes: {FAIL}FAIL{ENDC}")
+                    sys.exit(f"\n{FAIL}ERROR:{ENDC} songs " + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
 
@@ -106,10 +236,9 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in albums:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
-                    print()
-                    sys.exit('ERROR: albums ' + child.text + ' found more items than the limit ' + str(limit))
+                    print(f"ampache.get_indexes: {FAIL}FAIL{ENDC}")
+                    sys.exit(f"\n{FAIL}ERROR:{ENDC} albums " + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
 
@@ -117,10 +246,9 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in artists:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
-                    print()
-                    sys.exit('ERROR: artists ' + child.text + ' found more items than the limit ' + str(limit))
+                    print(f"ampache.get_indexes: {FAIL}FAIL{ENDC}")
+                    sys.exit(f"\n{FAIL}ERROR:{ENDC} artists " + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
 
@@ -128,10 +256,9 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in playlists:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
-                    print()
-                    sys.exit('ERROR: playlists ' + child.text + ' found more items than the limit ' + str(limit))
+                    print(f"ampache.get_indexes: {FAIL}FAIL{ENDC}")
+                    sys.exit(f"\n{FAIL}ERROR:{ENDC} playlists " + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
 
@@ -155,6 +282,11 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
         single_artist   = artists[0]['id']
         single_playlist = playlists[0]['id']
 
+    if single_song and single_album and single_artist and single_playlist:
+        print(f"ampache.get_indexes: {OKGREEN}PASS{ENDC}")
+    else:
+        sys.exit(f"\nampache.get_indexes: {FAIL}FAIL{ENDC}")
+
     """ advanced_search
     def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 'song', offset = 0, limit = 0, api_format = 'xml'):
     """
@@ -164,15 +296,14 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in search_song:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
-                    print()
-                    sys.exit('ERROR: advanced_search (song) ' + child.text + ' found more items than the limit ' + str(limit))
+                    print(f"ampache.advanced_search: {FAIL}FAIL{ENDC}")
+                    sys.exit(f"\n{FAIL}ERROR:{ENDC} advanced_search (song) " + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+            #print(child.tag, child.attrib)
+            #for subchildren in child:
+            #    #print(str(subchildren.tag) + ': ' + str(subchildren.text))
             song_title = child.find('title').text
     else:
         song_title = search_song[0]['title']
@@ -183,15 +314,14 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in search_album:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
-                    print()
-                    sys.exit('ERROR: advanced_search (album) ' + child.text + ' found more items than the limit ' + str(limit))
+                    print(f"ampache.advanced_search: {FAIL}FAIL{ENDC}")
+                    sys.exit(f"\n{FAIL}ERROR:{ENDC} advanced_search (album) " + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+            #print(child.tag, child.attrib)
+            #for subchildren in child:
+            #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
             album_title = child.find('name').text
     else:
         album_title = search_album[0]['name']
@@ -202,18 +332,22 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in search_artist:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
-                    print()
-                    sys.exit('ERROR: advanced_search (artist) ' + child.text + ' found more items than the limit ' + str(limit))
+                    print(f"ampache.advanced_search: {FAIL}FAIL{ENDC}")
+                    sys.exit(f"{FAIL}ERROR:{ENDC} advanced_search (artist) " + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+            #print(child.tag, child.attrib)
+            #for subchildren in child:
+            #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
             artist_title = child.find('name').text
     else:
         artist_title = search_artist[0]['name']
+
+    if search_song and search_album and search_artist and song_title and album_title and artist_title:
+        print(f"ampache.get_indexes: {OKGREEN}PASS{ENDC}")
+    else:
+        sys.exit(f"\nampache.get_indexes: {FAIL}FAIL{ENDC}")
 
     """ album
     def album(ampache_url, ampache_api, filter, include = False, api_format = 'xml'):
@@ -223,23 +357,33 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in album:
             if child.tag == 'album':
-                print(child.tag, child.attrib)
+                #print(child.tag, child.attrib)
                 album_title = child.find('name').text
-                for subchildren in child:
-                    print(str(subchildren.tag) + ': ' + str(subchildren.text))
+                #for subchildren in child:
+                #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
     else:
         album_title = search_album[0]['name']
+
+    if album_title:
+        print(f"ampache.album: {OKGREEN}PASS{ENDC}")
+    else:
+        sys.exit(f"\nampache.album: {FAIL}FAIL{ENDC}")
 
     """ album_songs
     def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
     album_songs = ampache.album_songs(ampache_url, ampache_api, single_album, 0, 0, api_format)
-    if api_format == 'xml':
-        for child in album_songs:
-            if child.tag == 'song':
-                print(child.tag, child.attrib)
-                for subchildren in child:
-                    print(str(subchildren.tag) + ': ' + str(subchildren.text))
+    #if api_format == 'xml':
+    #    #for child in album_songs:
+    #    #    #if child.tag == 'song':
+    #    #    #    #print(child.tag, child.attrib)
+    #    #    #    #for subchildren in child:
+    #    #    #    #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
+
+    if album_songs:
+        print(f"ampache.album_songs: {OKGREEN}PASS{ENDC}")
+    else:
+        sys.exit(f"\nampache.album_songs: {FAIL}FAIL{ENDC}")
 
     """ albums
     def albums(ampache_url, ampache_api, filter = False, exact = False, add = False, update = False, offset = 0, limit = 0, include = False, api_format = 'xml'):
@@ -248,15 +392,19 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in albums:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
-                    print()
-                    sys.exit('ERROR: albums ' + child.text + ' found more items than the limit ' + str(limit))
+                    print(f"ampache.albums: {FAIL}FAIL{ENDC}")
+                    sys.exit(f"{FAIL}ERROR:{ENDC} albums " + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+            #print(child.tag, child.attrib)
+            #for subchildren in child:
+            #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
+
+    if albums:
+        print(f"ampache.albums: {OKGREEN}PASS{ENDC}")
+    else:
+        sys.exit(f"\nampache.albums: {FAIL}FAIL{ENDC}")
 
     """ stats
     def stats(ampache_url, ampache_api, type, filter = 'random', username = False, user_id = False, offset = 0, limit = 0, api_format = 'xml'):
@@ -266,58 +414,91 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in stats:
             if child.tag == 'artist':
-                print('\ngetting a random artist using the stats method and found', child.find('name').text)
+                #print('\ngetting a random artist using the stats method and found', child.find('name').text)
                 single_artist = child.attrib['id']
-                print(child.tag, child.attrib)
-                for subchildren in child:
-                    print(str(subchildren.tag) + ': ' + str(subchildren.text))
+                #print(child.tag, child.attrib)
+                #for subchildren in child:
+                #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
+    else:
+        single_artist = stats[0]['id']
     stats = ampache.stats(ampache_url, ampache_api, 'album', 'random', ampache_user, None, 0, 2, api_format)
 
     if api_format == 'xml':
         for child in stats:
             if child.tag == 'album':
-                print('\ngetting a random album using the stats method and found', child.find('name').text)
+                #print('\ngetting a random album using the stats method and found', child.find('name').text)
                 single_album = child.attrib['id']
                 album_title = child.find('name').text
-                print(child.tag, child.attrib)
-                for subchildren in child:
-                    print(str(subchildren.tag) + ': ' + str(subchildren.text))
+                #print(child.tag, child.attrib)
+                #for subchildren in child:
+                #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
     else:
-        album_title = search_album[0]['name']
+        single_album = stats[0]['id']
+        album_title  = stats[0]['name']
+
+    if single_artist and single_album and album_title:
+        print(f"ampache.stats: {OKGREEN}PASS{ENDC}")
+    else:
+        sys.exit(f"\nampache.stats: {FAIL}FAIL{ENDC}")
 
     """ artist
     def artist(ampache_url, ampache_api, filter, include = False, api_format = 'xml'):
     """
     artist = ampache.artist(ampache_url, ampache_api, single_artist, False, api_format)
 
-    if api_format == 'xml':
-        for child in artist:
-            if child.tag == 'artist':
-                print('\nsearching for an artist with this id', single_artist)
-                print(child.tag, child.attrib)
-                for subchildren in child:
-                    print(str(subchildren.tag) + ': ' + str(subchildren.text))
+    #if api_format == 'xml':
+    #    for child in artist:
+    #        if child.tag == 'artist':
+    #            #print('\nsearching for an artist with this id', single_artist)
+    #            #print(child.tag, child.attrib)
+    #            #for subchildren in child:
+    #            #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
+
+    if artist:
+        print(f"ampache.artist: {OKGREEN}PASS{ENDC}")
+    else:
+        sys.exit(f"\nampache.artist: {FAIL}FAIL{ENDC}")
 
     """ artist_albums
     def artist_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
     artist_albums = ampache.artist_albums(ampache_url, ampache_api, single_artist, 0, 0, api_format)
 
+    if artist_albums:
+        print(f"ampache.artist_albums: {OKGREEN}PASS{ENDC}")
+    else:
+        sys.exit(f"\nampache.artist_albums: {FAIL}FAIL{ENDC}")
+
     """ artist_songs
     def artist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
     artist_songs = ampache.artist_songs(ampache_url, ampache_api, single_artist, 0, 0, api_format)
+
+    if artist_songs:
+        print(f"ampache.artist_songs: {OKGREEN}PASS{ENDC}")
+    else:
+        sys.exit(f"\nampache.artist_songs: {FAIL}FAIL{ENDC}")
 
     """ artists
     def artists(ampache_url, ampache_api, filter = False, add = False, update = False, offset = 0, limit = 0, include = False, api_format = 'xml'):
     """
     myartists = ampache.artists(ampache_url, ampache_api, False, False, False, 0, 0, False, api_format)
 
+    if myartists:
+        print(f"ampache.artists: {OKGREEN}PASS{ENDC}")
+    else:
+        sys.exit(f"\nampache.artists: {FAIL}FAIL{ENDC}")
+
     """ catalog_action
     def catalog_action(ampache_url, ampache_api, task, catalog, api_format = 'xml'):
     """
     catalog_action = ampache.catalog_action(ampache_url, ampache_api, 'clean', 2, api_format)
     catalog_action = ampache.catalog_action(ampache_url, ampache_api, 'clean_catalog', 2, api_format)
+
+    if catalog_action:
+        print(f"ampache.catalog_action: {OKGREEN}PASS{ENDC}")
+    else:
+        sys.exit(f"\nampache.catalog_action: {FAIL}FAIL{ENDC}")
 
     """ flag
     def flag(ampache_url, ampache_api, type, id, flag, api_format = 'xml'):
@@ -414,32 +595,32 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     """
     search_songs = ampache.search_songs(ampache_url, ampache_api, song_title, 0, 0, api_format)
 
-    if api_format == 'xml':
-        for child in search_songs:
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+    #if api_format == 'xml':
+    #    for child in search_songs:
+    #        print(child.tag, child.attrib)
+    #        for subchildren in child:
+    #            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
     """ song
     def song(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
     song = ampache.song(ampache_url, ampache_api, single_song, api_format)
 
-    if api_format == 'xml':
-        for child in song:
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+    #if api_format == 'xml':
+    #    for child in song:
+    #        #print(child.tag, child.attrib)
+    #        #for subchildren in child:
+    #        #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
     """ songs
     def songs(ampache_url, ampache_api, filter = False, exact = False, add = False, update = False, offset = 0, limit = 0, api_format = 'xml'):
     """
     songs = ampache.songs(ampache_url, ampache_api, False, False, False, False, 0, 0, api_format)
-    if api_format == 'xml':
-        for child in songs:
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+    #if api_format == 'xml':
+    #    for child in songs:
+    #        #print(child.tag, child.attrib)
+    #        #for subchildren in child:
+    #        #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
     """ tags
     def tags(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
@@ -449,16 +630,15 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in tags:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
-                    print()
-                    sys.exit('ERROR: tags ' + child.text + ' found more items than the limit ' + str(limit))
+                    print(f"ampache.tags: {FAIL}FAIL{ENDC}")
+                    sys.exit(f"\n{FAIL}ERROR:{ENDC} tags " + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
-            print(child.tag, child.attrib)
+            #print(child.tag, child.attrib)
             genre = child.attrib['id']
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+            #for subchildren in child:
+            #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
     else:
         genre = tags[0]['tag']['id']
         
@@ -472,21 +652,21 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     def tag_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
     tag_albums = ampache.tag_albums(ampache_url, ampache_api, genre, 0, 2, api_format)
-    if api_format == 'xml':
-        for child in tag_albums:
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+    #if api_format == 'xml':
+    #    for child in tag_albums:
+    #        #print(child.tag, child.attrib)
+    #        #for subchildren in child:
+    #        #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
     """ tag_artists
     def tag_artists(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
     tag_artists = ampache.tag_artists(ampache_url, ampache_api, genre, 0, 1, api_format)
-    if api_format == 'xml':
-        for child in tag_artists:
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+    #if api_format == 'xml':
+    #    for child in tag_artists:
+    #        #print(child.tag, child.attrib)
+    #        #for subchildren in child:
+    #        #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
     """ tag_songs
     def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
@@ -498,16 +678,20 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     """
     timeline = ampache.timeline(ampache_url, ampache_api, ampache_user, 10, 0, api_format)
 
-    if api_format == 'xml':
-        for child in timeline:
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+    #if api_format == 'xml':
+    #    for child in timeline:
+    #        #print(child.tag, child.attrib)
+    #        #for subchildren in child:
+    #        #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
     """ toggle_follow
     def toggle_follow(ampache_url, ampache_api, username, api_format = 'xml'):
     """
-    #print(ampache.toggle_follow(ampache_url, ampache_api))
+    if ampache_user == 'user':
+        toggle = 'generic'
+    if ampache_user == 'generic':
+        toggle = 'user'
+    #togglefollow = ampache.toggle_follow(ampache_url, ampache_api, toggle, api_format))
 
     """ update_from_tags
     def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id, api_format = 'xml'):

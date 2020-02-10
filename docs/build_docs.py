@@ -546,7 +546,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ toggle_follow
     def toggle_follow(ampache_url, ampache_api, username, api_format = 'xml'):
     """
-    #print(ampache.toggle_follow(ampache_url, ampache_api))
+    if ampache_user == 'user':
+        toggle = 'generic'
+    if ampache_user == 'generic':
+        toggle = 'user'
+    togglefollow = ampache.toggle_follow(ampache_url, ampache_api, toggle, api_format))
 
     """ update_from_tags
     def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id, api_format = 'xml'):
