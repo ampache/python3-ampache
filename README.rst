@@ -3,7 +3,7 @@ AMPACHE LIBRARY FOR PYTHON3
 
 Upload to PyPI
     .. image:: https://github.com/ampache/python3-ampache/workflows/Upload%20Python%20Package/badge.svg
-       :target: https://github.com/ampache/python3-ampache
+       :target: https://pypi.org/project/ampache/
 
 INFO
 ====
