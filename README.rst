@@ -5,7 +5,11 @@ INFO
 ====
 
 A python3 library for interaction with your Ampache server using the XML API
-https://github.com/ampache/ampache/wiki/API 
+https://github.com/ampache/ampache/wiki/API
+
+If you run a develop server you now have access to JSON as well!
+
+Code examples and scripts are available from github
 
 INSTALL
 =======
