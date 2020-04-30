@@ -1467,8 +1467,86 @@ def podcast(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format=
         except ElementTree.ParseError:
             return False
         return tree
-
  
+
+def podcast_episodes(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+    """ podcast_episodes
+        MINIMUM_API_VERSION=400005
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = //optional
+        * exact       = (integer) 0|1 //optional
+        * offset      = (integer) //optional
+        * limit       = (integer) //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'podcast_episodes',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'exact': exact,
+            'offset': str(offset),
+            'limit': str(limit)}
+    if not filter_str:
+        data.pop('filter')
+    if not exact:
+        data.pop('exact')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'podcast_episodes')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def podcast_episode(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+    """ podcast_episode
+        MINIMUM_API_VERSION=400005
+
+        Return podcast_episodes by UID
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = (integer) UID of Podcast
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'podcast_episode',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'podcast_episode')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
 def get_similar(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ get_similar
         MINIMUM_API_VERSION=400005
