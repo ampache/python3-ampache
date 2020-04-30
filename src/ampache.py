@@ -3,9 +3,9 @@
 
 """
 Copyright (C)2020 Ampache.org
----------------------------------------
-Ampache XML-Api 400004 for python3
----------------------------------------
+-------------------------------------------
+Ampache XML and JSON Api 400005 for python3
+-------------------------------------------
 
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -525,7 +525,7 @@ def albums(ampache_url, ampache_api, filter_str=False,
         * ampache_url = (string)
         * ampache_api = (string)
         * filter_str  = //optional
-        * exact       = //optional
+        * exact       = (integer) 0|1 //optional
         * add         = //optional
         * update      = //optional
         * offset      = (integer) //optional
@@ -655,7 +655,7 @@ def tags(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limi
         * ampache_url = (string)
         * ampache_api = (string)
         * filter_str  = //optional
-        * exact       = //optional
+        * exact       = (integer) 0|1 //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -849,7 +849,7 @@ def songs(ampache_url, ampache_api, filter_str=False, exact=False,
         * ampache_url = (string)
         * ampache_api = (string)
         * filter_str  = //optional
-        * exact       = //optional
+        * exact       = (integer) 0|1 //optional
         * add         = //optional
         * update      = //optional
         * offset      = (integer) //optional
@@ -935,7 +935,7 @@ def playlists(ampache_url, ampache_api, filter_str=False, exact=False, offset=0,
         * ampache_url = (string)
         * ampache_api = (string)
         * filter_str  = //optional
-        * exact       = //optional
+        * exact       = (integer) 0|1 //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -1212,7 +1212,7 @@ def playlist_remove_song(ampache_url, ampache_api, filter_str, song=False, track
         MINIMUM_API_VERSION=380001
         CHANGED_IN_API_VERSION=400001
 
-        This remove a song from a playlist. Previous versions required 'track' instead of 'song'.
+        This removes a song from a playlist. Previous versions required 'track' instead of 'song'.
 
         INPUTS
         * ampache_url = (string)
@@ -1298,6 +1298,201 @@ def playlist_generate(ampache_url, ampache_api, mode='random',
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'playlist_generate')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def shares(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+    """ shares
+        MINIMUM_API_VERSION=400005
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = //optional
+        * exact       = (integer) 0|1 //optional
+        * offset      = (integer) //optional
+        * limit       = (integer) //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'shares',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'exact': exact,
+            'offset': str(offset),
+            'limit': str(limit)}
+    if not filter_str:
+        data.pop('filter')
+    if not exact:
+        data.pop('exact')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'shares')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def share(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+    """ share
+        MINIMUM_API_VERSION=400005
+
+        Return shares by UID
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = (integer) UID of Share
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'share',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'share')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+    """ podcasts
+        MINIMUM_API_VERSION=400005
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = //optional
+        * exact       = (integer) 0|1 //optional
+        * offset      = (integer) //optional
+        * limit       = (integer) //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'podcasts',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'exact': exact,
+            'offset': str(offset),
+            'limit': str(limit)}
+    if not filter_str:
+        data.pop('filter')
+    if not exact:
+        data.pop('exact')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'podcasts')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def podcast(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+    """ podcast
+        MINIMUM_API_VERSION=400005
+
+        Return podcasts by UID
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = (integer) UID of Podcast
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'podcast',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'podcast')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+ 
+def get_similar(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+    """ get_similar
+        MINIMUM_API_VERSION=400005
+
+        Return similar artist id's or similar song ids compared to the input filter
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * type        = (string) 'song' or 'artist'
+        * filter      = (integer) artist id or song id
+        * offset      = (integer) //optional
+        * limit       = (integer) //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'get_similar',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'get_similar')
     if not ampache_response:
         return False
     # json format
@@ -1476,7 +1671,7 @@ def videos(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, li
         * ampache_url = (string)
         * ampache_api = (string)
         * filter_str  = //optional
-        * exact       = //optional
+        * exact       = (integer) 0|1 //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
