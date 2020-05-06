@@ -1432,6 +1432,149 @@ def share(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='x
         return tree
 
 
+def share_create(ampache_url, ampache_api, filter_str, object_type,
+                 description=False, expires=False, api_format='xml'):
+    """ share_create
+        MINIMUM_API_VERSION=410001
+
+        Create a public url that can be used by anyone to stream media.
+        Takes the file id with optional description and expires parameters.
+
+       INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = (string) object_id
+        * object_type = (string) object_type
+        * description = (string) description (will be filled for you if empty) //optional
+        * expires     = (integer) days to keep active //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'share_create',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'type': object_type,
+            'description': description,
+            'expires': expires}
+    if not description:
+        data.pop('description')
+    if not expires:
+        data.pop('expires')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'share_create')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        try:
+            token = tree.find('share').text
+        except AttributeError:
+            token = False
+        if token:
+            return tree
+        try:
+            token = tree.find('error').text
+        except AttributeError:
+            token = False
+        return token
+
+
+def share_edit(ampache_url, ampache_api, filter_str, stream=False, download=False,
+               expires=False, description=False, api_format='xml'):
+    """ share_edit
+        MINIMUM_API_VERSION=410001
+
+        Update the description and/or expiration date for an existing share.
+        Takes the share id to update with optional description and expires parameters.
+
+        INPUT
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = (integer) UID of Share
+        * stream      = (boolean) 0,1 // optional
+        * download    = (boolean) 0,1 // optional
+        * expires     = (integer) number of whole days before expiry // optional
+        * description = (string) update description // optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'share_edit',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'stream': stream,
+            'download': download,
+            'expires': expires,
+            'description': description}
+    if not stream:
+        data.pop('name')
+    if not download:
+        data.pop('download')
+    if not expires:
+        data.pop('expires')
+    if not description:
+        data.pop('description')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'share_edit')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def share_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
+    """ share_delete
+
+        MINIMUM_API_VERSION=410001
+
+        Delete an existing share.
+
+        INPUT
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = (integer) UID of Share to delete
+        * api_format  = (string) 'xml'|'json' //optional
+     """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'share_delete',
+            'auth': ampache_api,
+            'filter': filter_str}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'share_delete')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
 def catalogs(ampache_url, ampache_api, filter_str=False, api_format='xml'):
     """ catalogs
         MINIMUM_API_VERSION=410001
