@@ -4,7 +4,7 @@
 """
 Copyright (C)2020 Ampache.org
 -------------------------------------------
-Ampache XML and JSON Api 400005 for python3
+Ampache XML and JSON Api 410001 for python3
 -------------------------------------------
 
  This program is free software: you can redistribute it and/or modify
@@ -1315,7 +1315,7 @@ def playlist_generate(ampache_url, ampache_api, mode='random',
 
 def shares(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
     """ shares
-        MINIMUM_API_VERSION=400005
+        MINIMUM_API_VERSION=410001
 
         INPUTS
         * ampache_url = (string)
@@ -1357,7 +1357,7 @@ def shares(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, li
 
 def share(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ share
-        MINIMUM_API_VERSION=400005
+        MINIMUM_API_VERSION=410001
 
         Return shares by UID
 
@@ -1391,9 +1391,82 @@ def share(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='x
         return tree
 
 
+def catalogs(ampache_url, ampache_api, filter_str=False, api_format='xml'):
+    """ catalogs
+        MINIMUM_API_VERSION=410001
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'catalogs',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'exact': exact,
+            'offset': str(offset),
+            'limit': str(limit)}
+    if not filter_str:
+        data.pop('filter')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'catalogs')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def catalog(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+    """ catalog
+        MINIMUM_API_VERSION=410001
+
+        Return catalogs by UID
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = (integer) UID of catalog
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'catalog',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'catalog')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
 def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
     """ podcasts
-        MINIMUM_API_VERSION=400005
+        MINIMUM_API_VERSION=410001
 
         INPUTS
         * ampache_url = (string)
@@ -1435,7 +1508,7 @@ def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, 
 
 def podcast(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ podcast
-        MINIMUM_API_VERSION=400005
+        MINIMUM_API_VERSION=410001
 
         Return podcasts by UID
 
@@ -1471,7 +1544,7 @@ def podcast(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format=
 
 def podcast_episodes(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
     """ podcast_episodes
-        MINIMUM_API_VERSION=400005
+        MINIMUM_API_VERSION=410001
 
         INPUTS
         * ampache_url = (string)
@@ -1513,7 +1586,7 @@ def podcast_episodes(ampache_url, ampache_api, filter_str=False, exact=False, of
 
 def podcast_episode(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ podcast_episode
-        MINIMUM_API_VERSION=400005
+        MINIMUM_API_VERSION=410001
 
         Return podcast_episodes by UID
 
@@ -1549,7 +1622,7 @@ def podcast_episode(ampache_url, ampache_api, filter_str, offset=0, limit=0, api
 
 def get_similar(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ get_similar
-        MINIMUM_API_VERSION=400005
+        MINIMUM_API_VERSION=410001
 
         Return similar artist id's or similar song ids compared to the input filter
 
