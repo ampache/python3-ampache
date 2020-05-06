@@ -1505,6 +1505,42 @@ def catalog(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format=
         return tree
 
 
+def catalog_action(ampache_url, ampache_api, task, catalog, api_format='xml'):
+    """ catalog_action
+        MINIMUM_API_VERSION=400001
+
+        Kick off a catalog update or clean for the selected catalog
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * task        = (string) 'add_to_catalog'|'clean_catalog'|'verify_catalog'|'gather_art'
+        * catalog     = (integer) $catalog_id
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'catalog_action',
+            'auth': ampache_api,
+            'task': task,
+            'catalog': catalog}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'catalog_action')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
 def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
     """ podcasts
         MINIMUM_API_VERSION=410001
@@ -2459,42 +2495,6 @@ def friends_timeline(ampache_url, ampache_api, limit=0, since=0, api_format='xml
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'friends_timeline')
-    if not ampache_response:
-        return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
-
-
-def catalog_action(ampache_url, ampache_api, task, catalog, api_format='xml'):
-    """ catalog_action
-        MINIMUM_API_VERSION=400001
-
-        Kick off a catalog update or clean for the selected catalog
-
-        INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * task        = (string) 'add_to_catalog'|'clean_catalog'
-        * catalog     = (integer) $catalog_id
-        * api_format  = (string) 'xml'|'json' //optional
-    """
-    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = {'action': 'catalog_action',
-            'auth': ampache_api,
-            'task': task,
-            'catalog': catalog}
-    data = urllib.parse.urlencode(data)
-    full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url, api_format, 'catalog_action')
     if not ampache_response:
         return False
     # json format
