@@ -294,6 +294,47 @@ def url_to_song(ampache_url, ampache_api, url, api_format='xml'):
         return tree
 
 
+def get_similar(ampache_url, ampache_api, object_type, filter_str,
+                offset=0, limit=0, api_format='xml'):
+    """ get_similar
+        MINIMUM_API_VERSION=410001
+
+        Return similar artist id's or similar song ids compared to the input filter
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * object_type = (string) 'song'|'album'|'artist'|'playlist'
+        * filter_str  = (string) artist id or song id
+        * offset      = (integer) //optional
+        * limit       = (integer) //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'get_similar',
+            'auth': ampache_api,
+            'type': object_type,
+            'filter': filter_str,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'get_similar')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
 def get_indexes(ampache_url, ampache_api, object_type,
                 filter_str=False, add=False, update=False,
                 offset=0, limit=0, api_format='xml'):
