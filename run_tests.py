@@ -4,7 +4,7 @@ import shutil
 import sys
 import time
 
-import ampache
+from src import ampache
 
 from xml.etree import ElementTree as ET
 
