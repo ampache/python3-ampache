@@ -171,7 +171,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 'song', offset = 0, limit = 0, api_format = 'xml'):
     """
     search_rules = [['favorite', 0, '%'], ['artist', 3, 'Prodigy']]
-    search_song = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'song', 0, 1, api_format)
+    search_song = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'song', 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/advanced_search." + api_format,
                 "docs/" + api_format + "-responses/advanced_search (song)." + api_format)
 
@@ -192,7 +192,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         song_title = search_song[0]['title']
 
     search_rules = [['favorite', 0, '%'], ['artist', 0, 'Men']]
-    search_album = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'album', 0, 1, api_format)
+    search_album = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'album', 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/advanced_search." + api_format,
                 "docs/" + api_format + "-responses/advanced_search (album)." + api_format)
 
@@ -213,7 +213,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         album_title = search_album[0]['name']
 
     search_rules = [['favorite', 0, '%'], ['artist', limit, 'Prodigy']]
-    search_artist = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'artist', 0, 1, api_format)
+    search_artist = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'artist', 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/advanced_search." + api_format,
                 "docs/" + api_format + "-responses/advanced_search (artist)." + api_format)
 
@@ -336,7 +336,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ artists
     def artists(ampache_url, ampache_api, filter = False, add = False, update = False, offset = 0, limit = 0, include = False, api_format = 'xml'):
     """
-    myartists = ampache.artists(ampache_url, ampache_api, False, False, False, 0, 0, False, api_format)
+    myartists = ampache.artists(ampache_url, ampache_api, False, False, False, 0, limit, False, api_format)
 
     """ catalog_action
     def catalog_action(ampache_url, ampache_api, task, catalog, api_format = 'xml'):
