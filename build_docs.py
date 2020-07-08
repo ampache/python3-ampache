@@ -171,7 +171,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 'song', offset = 0, limit = 0, api_format = 'xml'):
     """
     search_rules = [['favorite', 0, '%'], ['artist', 3, 'Prodigy']]
-    search_song = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'song', 0, limit, api_format)
+    search_song = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'song', 0, 1, api_format)
     shutil.move("docs/" + api_format + "-responses/advanced_search." + api_format,
                 "docs/" + api_format + "-responses/advanced_search (song)." + api_format)
 
@@ -179,9 +179,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         for child in search_song:
             if child.tag == 'total_count':
                 print('total_count', child.text)
-                if int(child.text) > int(limit):
+                if int(child.text) > int(1):
                     print()
-                    sys.exit('ERROR: advanced_search (song) ' + child.text + ' found more items than the limit ' + str(limit))
+                    sys.exit('ERROR: advanced_search (song) ' + child.text + ' found more items than the limit ' + str(1))
                 else:
                     continue
             print(child.tag, child.attrib)
@@ -192,7 +192,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         song_title = search_song[0]['title']
 
     search_rules = [['favorite', 0, '%'], ['artist', 0, 'Men']]
-    search_album = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'album', 0, limit, api_format)
+    search_album = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'album', 0, 1, api_format)
     shutil.move("docs/" + api_format + "-responses/advanced_search." + api_format,
                 "docs/" + api_format + "-responses/advanced_search (album)." + api_format)
 
@@ -200,9 +200,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         for child in search_album:
             if child.tag == 'total_count':
                 print('total_count', child.text)
-                if int(child.text) > int(limit):
+                if int(child.text) > int(1):
                     print()
-                    sys.exit('ERROR: advanced_search (album) ' + child.text + ' found more items than the limit ' + str(limit))
+                    sys.exit('ERROR: advanced_search (album) ' + child.text + ' found more items than the limit ' + str(1))
                 else:
                     continue
             print(child.tag, child.attrib)
@@ -213,7 +213,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         album_title = search_album[0]['name']
 
     search_rules = [['favorite', 0, '%'], ['artist', limit, 'Prodigy']]
-    search_artist = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'artist', 0, limit, api_format)
+    search_artist = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'artist', 0, 1, api_format)
     shutil.move("docs/" + api_format + "-responses/advanced_search." + api_format,
                 "docs/" + api_format + "-responses/advanced_search (artist)." + api_format)
 
@@ -221,9 +221,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         for child in search_artist:
             if child.tag == 'total_count':
                 print('total_count', child.text)
-                if int(child.text) > int(limit):
+                if int(child.text) > int(1):
                     print()
-                    sys.exit('ERROR: advanced_search (artist) ' + child.text + ' found more items than the limit ' + str(limit))
+                    sys.exit('ERROR: advanced_search (artist) ' + child.text + ' found more items than the limit ' + str(1))
                 else:
                     continue
             print(child.tag, child.attrib)
@@ -251,7 +251,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ album_songs
     def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
-    album_songs = ampache.album_songs(ampache_url, ampache_api, single_album, 0, 0, api_format)
+    album_songs = ampache.album_songs(ampache_url, ampache_api, single_album, 0, limit, api_format)
     if api_format == 'xml':
         for child in album_songs:
             if child.tag == 'song':
@@ -326,12 +326,12 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ artist_albums
     def artist_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
-    artist_albums = ampache.artist_albums(ampache_url, ampache_api, single_artist, 0, 0, api_format)
+    artist_albums = ampache.artist_albums(ampache_url, ampache_api, single_artist, 0, limit, api_format)
 
     """ artist_songs
     def artist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
-    artist_songs = ampache.artist_songs(ampache_url, ampache_api, single_artist, 0, 0, api_format)
+    artist_songs = ampache.artist_songs(ampache_url, ampache_api, single_artist, 0, limit, api_format)
 
     """ artists
     def artists(ampache_url, ampache_api, filter = False, add = False, update = False, offset = 0, limit = 0, include = False, api_format = 'xml'):
@@ -367,17 +367,17 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ friends_timeline
     def friends_timeline(ampache_url, ampache_api, limit = 0, since = 0, api_format = 'xml'):
     """
-    friends_timeline = ampache.friends_timeline(ampache_url, ampache_api, 0, 0, api_format)
+    friends_timeline = ampache.friends_timeline(ampache_url, ampache_api, 0, limit, api_format)
 
     """ last_shouts
     def last_shouts(ampache_url, ampache_api, username, limit = 0, api_format = 'xml'):
     """
-    last_shouts = ampache.last_shouts(ampache_url, ampache_api, ampache_user, 0, api_format)
+    last_shouts = ampache.last_shouts(ampache_url, ampache_api, ampache_user, limit, api_format)
 
     """ playlists
     def playlists(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
-    playlists = ampache.playlists(ampache_url, ampache_api, False, False, 0, 0, api_format)
+    playlists = ampache.playlists(ampache_url, ampache_api, False, False, 0, limit, api_format)
 
     """ playlist
     def playlist(ampache_url, ampache_api, filter, api_format = 'xml'):
@@ -387,7 +387,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ playlist_songs
     def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
-    playlist_songs = ampache.playlist_songs(ampache_url, ampache_api, single_playlist, 0, 0, api_format)
+    playlist_songs = ampache.playlist_songs(ampache_url, ampache_api, single_playlist, 0, limit, api_format)
 
     """ playlist_create
     def playlist_create(ampache_url, ampache_api, name, type, api_format = 'xml'):
@@ -452,7 +452,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ search_songs
     def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
-    search_songs = ampache.search_songs(ampache_url, ampache_api, song_title, 0, 0, api_format)
+    search_songs = ampache.search_songs(ampache_url, ampache_api, song_title, 0, limit, api_format)
 
     if api_format == 'xml':
         for child in search_songs:
@@ -474,7 +474,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ songs
     def songs(ampache_url, ampache_api, filter = False, exact = False, add = False, update = False, offset = 0, limit = 0, api_format = 'xml'):
     """
-    songs = ampache.songs(ampache_url, ampache_api, False, False, False, False, 0, 0, api_format)
+    songs = ampache.songs(ampache_url, ampache_api, False, False, False, False, 0, limit, api_format)
     if api_format == 'xml':
         for child in songs:
             print(child.tag, child.attrib)
@@ -500,7 +500,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
             for subchildren in child:
                 print(str(subchildren.tag) + ': ' + str(subchildren.text))
     else:
-        genre = tags[0]['tag']['id']
+        genre = tags[0]['id']
         
     """ tag
     def tag(ampache_url, ampache_api, filter, api_format = 'xml'):
@@ -535,7 +535,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ timeline
     def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, api_format = 'xml'):
     """
-    timeline = ampache.timeline(ampache_url, ampache_api, ampache_user, 10, 0, api_format)
+    timeline = ampache.timeline(ampache_url, ampache_api, ampache_user, 10, limit, api_format)
 
     if api_format == 'xml':
         for child in timeline:
