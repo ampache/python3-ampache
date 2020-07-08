@@ -27,6 +27,24 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def stream(ampache_url, ampache_api, id, type, destination, api_format = 'xml'):
     def download(ampache_url, ampache_api, id, type, destination, format = 'raw', api_format = 'xml'):
     def get_art(ampache_url, ampache_api, id, type, api_format = 'xml'):
+    get_similar: send artist or song id to get related objects from last.fm
+    shares: get a list of shares you can access
+    share: get a share by id
+    share_create: create a share
+    share_edit: edit an existing share
+    share_delete: delete an existing share
+    podcasts: get a list of podcasts you can access
+    podcast: get a podcast by id
+    podcast_episodes: get a list of podcast_episodes you can access
+    podcast_episode: get a podcast_episode by id
+    podcast_episode_delete: delete an existing podcast_episode
+    podcast_create: create a podcast
+    podcast_edit: edit an existing podcast
+    podcast_delete: delete an existing podcast
+    update_podcast: sync and download new episodes
+    catalogs: get all the catalogs
+    catalog: get a catalog by id
+    catalog_file: clean, add, verify using the file path (good for scripting)
     """
 
     """ encrypt_string
@@ -531,6 +549,21 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
     tag_songs = ampache.tag_songs(ampache_url, ampache_api, genre, 0, 1, api_format)
+    
+    """ licenses
+    def licenses(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
+    """
+    licenses = ampache.licenses(ampache_url, ampache_api, False, False, 0, limit, api_format)
+
+    """ license
+    def license(ampache_url, ampache_api, filter, api_format = 'xml'):
+    """
+    license = ampache.license(ampache_url, ampache_api, 2, api_format)
+
+    """ license_songs
+    def license_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
+    """
+    license_songs = ampache.license_songs(ampache_url, ampache_api, 2, 0, limit, api_format)
 
     """ timeline
     def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, api_format = 'xml'):
