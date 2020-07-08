@@ -503,7 +503,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def tags(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
     genre = ''
-    tags = ampache.tags(ampache_url, ampache_api, 'Brutal Death Metal', '1', 0, limit, api_format)
+    tags = ampache.tags(ampache_url, ampache_api, 'Brutal Death Metal', False, 0, limit, api_format)
     if api_format == 'xml':
         for child in tags:
             if child.tag == 'total_count':
@@ -518,7 +518,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
             for subchildren in child:
                 print(str(subchildren.tag) + ': ' + str(subchildren.text))
     else:
-        genre = tags[0]['id']
+        genre = tags[0]['tag']
+        for tag in genre:
+            print(tag)
+            tmp_genre = tag['id']
+        genre = tmp_genre
         
     """ tag
     def tag(ampache_url, ampache_api, filter, api_format = 'xml'):
@@ -561,9 +565,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     license = ampache.license(ampache_url, ampache_api, 2, api_format)
 
     """ license_songs
-    def license_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
+    def license_songs(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
-    license_songs = ampache.license_songs(ampache_url, ampache_api, 2, 0, limit, api_format)
+    license_songs = ampache.license_songs(ampache_url, ampache_api, 2, api_format)
 
     """ timeline
     def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, api_format = 'xml'):
