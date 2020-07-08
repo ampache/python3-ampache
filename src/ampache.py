@@ -297,8 +297,7 @@ def url_to_song(ampache_url, ampache_api, url, api_format='xml'):
         return tree
 
 
-def get_similar(ampache_url, ampache_api, object_type, filter_str,
-                offset=0, limit=0, api_format='xml'):
+def get_similar(ampache_url, ampache_api, object_type, filter_str, offset=0, limit=0, api_format='xml'):
     """ get_similar
         MINIMUM_API_VERSION=410001
 
@@ -1843,45 +1842,6 @@ def podcast_episode(ampache_url, ampache_api, filter_str, offset=0, limit=0, api
         return tree
 
 
-def get_similar(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
-    """ get_similar
-        MINIMUM_API_VERSION=410001
-
-        Return similar artist id's or similar song ids compared to the input filter
-
-        INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * type        = (string) 'song' or 'artist'
-        * filter      = (integer) artist id or song id
-        * offset      = (integer) //optional
-        * limit       = (integer) //optional
-        * api_format  = (string) 'xml'|'json' //optional
-    """
-    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = {'action': 'get_similar',
-            'auth': ampache_api,
-            'filter': filter_str,
-            'offset': str(offset),
-            'limit': str(limit)}
-    data = urllib.parse.urlencode(data)
-    full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url, api_format, 'get_similar')
-    if not ampache_response:
-        return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
-
-
 def search_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ search_songs
         MINIMUM_API_VERSION=380001
@@ -2993,6 +2953,127 @@ def user_delete(ampache_url, ampache_api, username, api_format='xml'):
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'user_delete')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def licenses(ampache_url, ampache_api, filter_str=False, exact=False,
+             add=False, update=False, offset=0, limit=0, api_format='xml'):
+    """ licenses
+        MINIMUM_API_VERSION=410001
+
+        Returns licenses based on the specified filter_str
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = //optional
+        * exact       = (integer) 0|1 //optional
+        * add         = //optional
+        * update      = //optional
+        * offset      = (integer) //optional
+        * limit       = (integer) //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'licenses',
+            'auth': ampache_api,
+            'exact': exact,
+            'add': add,
+            'update': update,
+            'filter': filter_str,
+            'offset': str(offset),
+            'limit': str(limit)}
+    if not filter_str:
+        data.pop('filter')
+    if not exact:
+        data.pop('exact')
+    if not add:
+        data.pop('add')
+    if not update:
+        data.pop('update')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'licenses')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def license(ampache_url, ampache_api, filter_str, api_format='xml'):
+    """ license
+        MINIMUM_API_VERSION=410001
+
+        returns a single license
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  =
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'license',
+            'auth': ampache_api,
+            'filter': filter_str}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'license')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def license_songs(ampache_url, ampache_api, filter_str, api_format='xml'):
+    """ license_songs
+        MINIMUM_API_VERSION=410001
+
+        returns a songs for a single license ID
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  =
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'license_songs',
+            'auth': ampache_api,
+            'filter': filter_str}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'license_songs')
     if not ampache_response:
         return False
     # json format
