@@ -197,7 +197,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         for child in search_song:
             if child.tag == 'total_count':
                 print('total_count', child.text)
-                if int(child.text) > int(1):
+                if int(child.text) > int(limit):
                     print()
                     sys.exit('ERROR: advanced_search (song) ' + child.text + ' found more items than the limit ' + str(limit))
                 else:
@@ -218,7 +218,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         for child in search_album:
             if child.tag == 'total_count':
                 print('total_count', child.text)
-                if int(child.text) > int(1):
+                if int(child.text) > int(limit):
                     print()
                     sys.exit('ERROR: advanced_search (album) ' + child.text + ' found more items than the limit ' + str(limit))
                 else:
@@ -239,7 +239,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         for child in search_artist:
             if child.tag == 'total_count':
                 print('total_count', child.text)
-                if int(child.text) > int(1):
+                if int(child.text) > int(limit):
                     print()
                     sys.exit('ERROR: advanced_search (artist) ' + child.text + ' found more items than the limit ' + str(limit))
                 else:
