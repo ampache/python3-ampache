@@ -119,9 +119,12 @@ def fetch_url(full_url, api_format, method):
         url_response = ampache_response.decode('utf-8')
         print(url_response)
         print(full_url)
-        text_file = open(api_format + "-responses/" + method + "." + api_format, "w")
-        text_file.write(url_response)
-        text_file.close()
+        try:
+            text_file = open("docs/" + api_format + "-responses/" + method + "." + api_format, "w")
+            text_file.write(url_response)
+            text_file.close()
+        except FileNotFoundError:
+            pass
     return ampache_response
 
 
