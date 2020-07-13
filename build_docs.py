@@ -619,6 +619,18 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     # Close your session when you're done
     goodbye = ampache.goodbye(ampache_url, ampache_api, api_format)
 
+    for files in os.listdir("docs/" + api_format + "-responses/"):
+        f = open(files,'r')
+        filedata = f.read()
+        f.close()
+
+        newdata = filedata.replace(ampache_url, "https://music.com.au")
+        newdata = filedata.replace(ampache_api, "eeb9f1b6056246a7d563f479f518bb34")
+
+        f = open(files,'w')
+        f.write(newdata)
+        f.close()
+
 
 build_docs(ampache_url, ampache_api,ampache_user, 'xml')
 build_docs(ampache_url, ampache_api,ampache_user, 'json')
