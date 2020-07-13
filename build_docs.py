@@ -298,6 +298,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ stats
     def stats(ampache_url, ampache_api, type, filter = 'random', username = False, user_id = False, offset = 0, limit = 0, api_format = 'xml'):
     """
+
+    stats = ampache.stats(ampache_url, ampache_api, 'song', 'random', ampache_user, None, 0, 2, api_format)
+    shutil.move("docs/" + api_format + "-responses/stats." + api_format,
+                "docs/" + api_format + "-responses/stats (song)." + api_format)
+
     stats = ampache.stats(ampache_url, ampache_api, 'artist', 'random', ampache_user, False, 0, 2, api_format)
     shutil.move("docs/" + api_format + "-responses/stats." + api_format,
                 "docs/" + api_format + "-responses/stats (artist)." + api_format)
@@ -365,13 +370,21 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 "docs/" + api_format + "-responses/catalog_action (error)." + api_format)
 
     catalog_action = ampache.catalog_action(ampache_url, ampache_api, 'clean_catalog', 2, api_format)
-    shutil.move("docs/" + api_format + "-responses/catalog_action." + api_format,
-                "docs/" + api_format + "-responses/catalog_action (clean_catalog)." + api_format)
 
     """ flag
     def flag(ampache_url, ampache_api, type, id, flag, api_format = 'xml'):
     """
-    #print(ampache.flag(ampache_url, ampache_api))
+    ampache.flag(ampache_url, ampache_api, 'playlist', 2069, True, api_format))
+
+    """ rate
+    def rate(ampache_url, ampache_api, type, id, rating, api_format = 'xml'):
+    """
+    ampache.rate(ampache_url, ampache_api, 'playlist', 2, api_format)
+
+    """ record_play
+    def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI', api_format = 'xml'):
+    """
+    ampache.record_play(ampache_url, ampache_api, 77371, 4, 'AmpacheAPI', api_format)
 
     """ followers
     def followers(ampache_url, ampache_api, username, api_format = 'xml'):
@@ -449,16 +462,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     shutil.move("docs/" + api_format + "-responses/playlist_generate." + api_format,
                 "docs/" + api_format + "-responses/playlist_generate (id)." + api_format)
 
-    """ rate
-    def rate(ampache_url, ampache_api, type, id, rating, api_format = 'xml'):
-    """
-    #print(ampache.rate(ampache_url, ampache_api))
-
-    """ record_play
-    def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI', api_format = 'xml'):
-    """
-    #print(ampache.record_play(ampache_url, ampache_api))
-
     """ scrobble
     def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle = False, MBartist = False, MBalbum = False, time = False, client = 'AmpacheAPI', api_format = 'xml'):
     """
@@ -524,7 +527,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
             print(tag)
             tmp_genre = tag['id']
         genre = tmp_genre
-        
+
     """ tag
     def tag(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
