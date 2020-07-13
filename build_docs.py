@@ -51,6 +51,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ encrypt_string
     def encrypt_string(ampache_api, user):
     """
+    original_api = ampache_api
     encrypted_key = ampache.encrypt_string(ampache_api, ampache_user)
 
     """ handshake
@@ -115,7 +116,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     'song'|'album'|'artist'|'playlist'
     """
-    songs     = ampache.get_indexes(ampache_url, ampache_api, 'song', '', '', '', '', limit, api_format)
+    songs     = ampache.get_indexes(ampache_url, ampache_api, 'song', False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (songs)." + api_format)
     if api_format == 'xml':
@@ -128,7 +129,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 else:
                     continue
 
-    albums    = ampache.get_indexes(ampache_url, ampache_api, 'album', '', '', '', '', limit, api_format)
+    albums    = ampache.get_indexes(ampache_url, ampache_api, 'album', False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (albums)." + api_format)
     if api_format == 'xml':
@@ -141,7 +142,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 else:
                     continue
 
-    artists   = ampache.get_indexes(ampache_url, ampache_api, 'artist', '', '', '', '', limit, api_format)
+    artists   = ampache.get_indexes(ampache_url, ampache_api, 'artist', False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (artist)." + api_format)
     if api_format == 'xml':
@@ -154,7 +155,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 else:
                     continue
 
-    playlists = ampache.get_indexes(ampache_url, ampache_api, 'playlist', '', '', '', '', limit, api_format)
+    playlists = ampache.get_indexes(ampache_url, ampache_api, 'playlist', False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (playlists)." + api_format)
     if api_format == 'xml':
@@ -399,7 +400,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ friends_timeline
     def friends_timeline(ampache_url, ampache_api, limit = 0, since = 0, api_format = 'xml'):
     """
-    friends_timeline = ampache.friends_timeline(ampache_url, ampache_api, 0, limit, api_format)
+    friends_timeline = ampache.friends_timeline(ampache_url, ampache_api, limit, 0, api_format)
 
     """ last_shouts
     def last_shouts(ampache_url, ampache_api, username, limit = 0, api_format = 'xml'):
@@ -625,6 +626,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     # Close your session when you're done
     goodbye = ampache.goodbye(ampache_url, ampache_api, api_format)
 
+    print("Checking files in " + api_format + " for private strings")
     for files in os.listdir("./docs/" + api_format + "-responses/"):
         f = open("./docs/" + api_format + "-responses/" + files,'r')
         filedata = f.read()
@@ -633,6 +635,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         url_text = ampache_url.replace("https://", "")
         newdata = filedata.replace(url_text, "music.com.au")
         newdata = newdata.replace(ampache_api, "eeb9f1b6056246a7d563f479f518bb34")
+        newdata = newdata.replace(original_api, "cfj3f237d563f479f5223k23189dbb34")
 
         f = open("./docs/" + api_format + "-responses/" + files,'w')
         f.write(newdata)
