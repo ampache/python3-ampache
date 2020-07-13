@@ -590,6 +590,8 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     toggle = 'generic'
     if ampache_user == 'generic':
         toggle = 'user'
+    # unfollow and refollow for timeline stuff
+    ampache.toggle_follow(ampache_url, ampache_api, toggle, api_format)
     togglefollow = ampache.toggle_follow(ampache_url, ampache_api, toggle, api_format)
 
     """ update_from_tags
