@@ -806,7 +806,6 @@ def tag_artists(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_for
 
 def tag_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ tag_albums
-
         MINIMUM_API_VERSION=380001
 
         This returns the albums associated with the tag in question
@@ -1544,7 +1543,6 @@ def share_edit(ampache_url, ampache_api, filter_str, stream=False, download=Fals
 
 def share_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
     """ share_delete
-
         MINIMUM_API_VERSION=410001
 
         Delete an existing share.
@@ -1577,7 +1575,7 @@ def share_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def catalogs(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+def catalogs(ampache_url, ampache_api, filter_str=False, offset=0, limit=0, api_format='xml'):
     """ catalogs
         MINIMUM_API_VERSION=410001
 
@@ -1585,13 +1583,14 @@ def catalogs(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, 
         * ampache_url = (string)
         * ampache_api = (string)
         * filter_str  = //optional
+        * offset      = (integer) //optional
+        * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'catalogs',
             'auth': ampache_api,
-            'filter': filter_str,
-            'exact': exact,
+            'filter': filter_str
             'offset': str(offset),
             'limit': str(limit)}
     if not filter_str:
