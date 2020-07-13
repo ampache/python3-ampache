@@ -374,12 +374,12 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ flag
     def flag(ampache_url, ampache_api, type, id, flag, api_format = 'xml'):
     """
-    ampache.flag(ampache_url, ampache_api, 'playlist', 2069, True, api_format))
+    ampache.flag(ampache_url, ampache_api, 'playlist', 2069, True, api_format)
 
     """ rate
     def rate(ampache_url, ampache_api, type, id, rating, api_format = 'xml'):
     """
-    ampache.rate(ampache_url, ampache_api, 'playlist', 2, api_format)
+    ampache.rate(ampache_url, ampache_api, 'playlist', 2069, 2, api_format)
 
     """ record_play
     def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI', api_format = 'xml'):
