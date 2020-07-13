@@ -579,11 +579,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     timeline = ampache.timeline(ampache_url, ampache_api, ampache_user, 10, 0, api_format)
 
-    if api_format == 'xml':
-        for child in timeline:
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
+    #if api_format == 'xml':
+    #    for child in timeline:
+    #        print(child.tag, child.attrib)
+    #        for subchildren in child:
+    #            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
     """ toggle_follow
     def toggle_follow(ampache_url, ampache_api, username, api_format = 'xml'):

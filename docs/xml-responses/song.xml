@@ -1,57 +1,93 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
 <total_count>1</total_count>
-<song id="77371">
-	<title><![CDATA[Welcome to Planet Sexor]]></title>
-	<name><![CDATA[Welcome to Planet Sexor]]></name>
-	<artist id="4144"><![CDATA[Tiga]]></artist>
-	<album id="51457"><![CDATA[Sexor]]></album>
-	<tag id="4" count="1" ><![CDATA[Electronic]]></tag>
-	<filename><![CDATA[/mnt/music/Tiga/(2005) Sexor/101 - Welcome to Planet Sexor.mp3]]></filename>
-	<track>1</track>
-	<time>50</time>
-	<year>2006</year>
-	<bitrate>192000</bitrate>
+<song id="958">
+	<title><![CDATA[Dead Boy's Poem]]></title>
+	<name><![CDATA[Dead Boy's Poem]]></name>
+	<artist id="55"><![CDATA[Nightwish]]></artist>
+	<album id="48753"><![CDATA[Wishmaster]]></album>
+	<tag id="6" count="1" ><![CDATA[Rock]]></tag>
+	<tag id="20" count="1" ><![CDATA[Metal]]></tag>
+	<tag id="51" count="1" ><![CDATA[Gothic Metal]]></tag>
+	<filename><![CDATA[/mnt/music/Nightwish/(2000) Wishmaster/110 - Dead Boy's Poem.mp3]]></filename>
+	<track>10</track>
+	<playlisttrack>1</playlisttrack>
+	<time>407</time>
+	<year>2000</year>
+	<bitrate>252769</bitrate>
 	<rate>44100</rate>
-	<mode>cbr</mode>
-	<mime>audio/mpeg</mime>
-	<url><![CDATA[https://music.com.au/play/index.php?ssid=e07b04026bb95d2cc47190afa7feab6e&type=song&oid=77371&uid=2&player=api&name=Tiga%20-%20Welcome%20to%20Planet%20Sexor.mp3]]></url>
-	<size>1209827</size>
-	<mbid>936650f9-00e4-4476-accd-ccb5cf2c1d5b</mbid>
-	<album_mbid></album_mbid>
-	<artist_mbid></artist_mbid>
-	<albumartist_mbid></albumartist_mbid>
-	<art><![CDATA[https://music.com.au/image.php?object_id=51457&object_type=album&auth=e07b04026bb95d2cc47190afa7feab6e&name=art.jpg]]></art>
+	<mode><![CDATA[vbr]]></mode>
+	<mime><![CDATA[audio/mpeg]]></mime>
+	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=958&uid=8&player=api&name=Nightwish%20-%20Dead%20Boy-s%20Poem.mp3]]></url>
+	<size>12954214</size>
+	<mbid><![CDATA[c7b867bc-887d-4370-b230-68379c5347db]]></mbid>
+	<album_mbid><![CDATA[]]></album_mbid>
+	<artist_mbid><![CDATA[]]></artist_mbid>
+	<albumartist_mbid><![CDATA[]]></albumartist_mbid>
+	<art><![CDATA[https://music.com.au/image.php?object_id=48753&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
 	<flag>0</flag>
-	<preciserating>1</preciserating>
-	<rating>1</rating>
-	<averagerating>0</averagerating>
-	<composer><![CDATA[]]></composer>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<playcount>1</playcount>
+	<catalog>2</catalog>
+	<composer><![CDATA[Tuomas Holopainen]]></composer>
 	<channels></channels>
 	<comment><![CDATA[]]></comment>
-	<publisher><![CDATA[Play It Again Sam; Different Recordings]]></publisher>
+	<license><![CDATA[]]></license>
+	<publisher><![CDATA[Drakkar Records]]></publisher>
 	<language></language>
 	<replaygain_album_gain>0.000000</replaygain_album_gain>
 	<replaygain_album_peak>0.000000</replaygain_album_peak>
-	<replaygain_track_gain>-5.270000</replaygain_track_gain>
+	<replaygain_track_gain>-9.660000</replaygain_track_gain>
 	<replaygain_track_peak>1.000000</replaygain_track_peak>
 	<encoding><![CDATA[UTF-8]]></encoding>
 	<disk><![CDATA[1]]></disk>
 	<totaldisks><![CDATA[1]]></totaldisks>
-	<band><![CDATA[Tiga]]></band>
+	<band><![CDATA[Nightwish]]></band>
 	<release_type><![CDATA[album]]></release_type>
-	<barcode><![CDATA[5413356594027]]></barcode>
+	<barcode><![CDATA[743217581923]]></barcode>
 	<audio_codec><![CDATA[mp3]]></audio_codec>
-	<recording_time><![CDATA[2006-02-06]]></recording_time>
-	<bpm><![CDATA[114]]></bpm>
-	<album_artist_sort_order><![CDATA[Tiga]]></album_artist_sort_order>
-	<performer_sort_order><![CDATA[Tiga]]></performer_sort_order>
+	<recording_time><![CDATA[2000-05-29]]></recording_time>
+	<bpm><![CDATA[93]]></bpm>
+	<album_artist_sort_order><![CDATA[Nightwish]]></album_artist_sort_order>
+	<performer_sort_order><![CDATA[Nightwish]]></performer_sort_order>
 	<media_type><![CDATA[CD]]></media_type>
-	<original_release_time><![CDATA[2005-12]]></original_release_time>
-	<totaltracks><![CDATA[14]]></totaltracks>
-	<track_number><![CDATA[1]]></track_number>
-	<isrc><![CDATA[BEP010500070]]></isrc>
-	<tagging_time><![CDATA[2013-07-24T07:48:29]]></tagging_time>
-	<genre><![CDATA[Electronic]]></genre>
+	<original_release_time><![CDATA[2000-05-02]]></original_release_time>
+	<involved_people_list><![CDATA[arranger]]></involved_people_list>
+	<musician_credits_list><![CDATA[guest flute]]></musician_credits_list>
+	<totaltracks><![CDATA[11]]></totaltracks>
+	<isrc><![CDATA[DEC680000391]]></isrc>
+	<lyricist><![CDATA[Tuomas Holopainen]]></lyricist>
+	<composer_sort_order><![CDATA[Holopainen, Tuomas]]></composer_sort_order>
+	<asin><![CDATA[B00004TB13]]></asin>
+	<artists><![CDATA[Nightwish]]></artists>
+	<tool_name><![CDATA[Media Center]]></tool_name>
+	<peak_level__sample_><![CDATA[+0.0 dB; +0.0 Left; +0.0 Right]]></peak_level__sample_>
+	<volume_level__r128_><![CDATA[-14.6646699905395508]]></volume_level__r128_>
+	<script><![CDATA[Latn]]></script>
+	<dynamic_range__dr_><![CDATA[6]]></dynamic_range__dr_>
+	<album_artist><![CDATA[Nightwish]]></album_artist>
+	<peak_level__r128_><![CDATA[+1.1 dBTP; +1.1 Left; +0.7 Right]]></peak_level__r128_>
+	<dynamic_range__r128_><![CDATA[17.780080795288086]]></dynamic_range__r128_>
+	<work><![CDATA[Dead Boy's Poem]]></work>
+	<volume_level__replaygain_><![CDATA[-9.6646699905395508]]></volume_level__replaygain_>
+	<musicbrainz_release_track_id><![CDATA[37a1fa52-d0cc-376c-b779-2dfdffb0aaca]]></musicbrainz_release_track_id>
+	<musicbrainz_album_status><![CDATA[official]]></musicbrainz_album_status>
+	<musicbrainz_album_release_country><![CDATA[DE]]></musicbrainz_album_release_country>
+	<accurateripdiscid><![CDATA[011-00144bfd-00b0e53e-880c910b-10]]></accurateripdiscid>
+	<tool_version><![CDATA[23.0.84]]></tool_version>
+	<upc><![CDATA[727701800127]]></upc>
+	<acoustid_id><![CDATA[43b63274-ce0a-4707-857f-e34f1fda677d]]></acoustid_id>
+	<originalyear><![CDATA[2000]]></originalyear>
+	<style><![CDATA[Symphonic Black Metal
+Goth Metal
+Progressive Metal
+Heavy Metal]]></style>
+	<musicbrainz_work_id><![CDATA[867397d0-945e-3cfe-a9a4-c78a62b9ca30]]></musicbrainz_work_id>
+	<accurateripresult><![CDATA[AccurateRip: Accurate (confidence 12)   [FBC3C9BD]]]></accurateripresult>
+	<genre><![CDATA[Rock]]></genre>
+	<genre><![CDATA[Metal]]></genre>
+	<genre><![CDATA[Gothic Metal]]></genre>
 </song>
 </root>

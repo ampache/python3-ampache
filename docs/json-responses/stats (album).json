@@ -1,38 +1,56 @@
 [
     {
-        "id": "64848",
-        "name": "Foley Room Recorded Live in Brussels",
+        "id": "59834",
+        "name": "Sanni",
         "artist": {
-            "id": "12548",
-            "name": "Amon Tobin"
+            "id": "9984",
+            "name": "Sanni"
         },
-        "year": "2008",
-        "tracks": "1",
-        "disk": "1",
-        "tags": "[]",
-        "art": "https:\/\/music.com.au\/image.php?object_id=64848&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "year": 2016,
+        "tracks": 12,
+        "disk": 1,
+        "tag": [
+            {
+                "id": "4",
+                "name": "Electronic"
+            },
+            {
+                "id": "22",
+                "name": "Pop"
+            },
+            {
+                "id": "473",
+                "name": "Vocal"
+            }
+        ],
+        "art": "https:\/\/music.com.au\/image.php?object_id=59834&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
-        "mbid": "2c7be6b7-bc1d-40fb-8430-a6f26e2defc2"
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "mbid": "14ab5774-4699-4ed7-babb-3392c913ed94"
     },
     {
-        "id": "67162",
-        "name": "King of the Dudes",
+        "id": "75386",
+        "name": "Third Pole",
         "artist": {
-            "id": "13446",
-            "name": "Sunflower Bean"
+            "id": "5843",
+            "name": "Project Arctic"
         },
-        "year": "2019",
-        "tracks": "4",
-        "disk": "1",
-        "tags": "{\n    \"id\": 36,\n    \"count\": 1,\n    \"name\": \"Indie Rock\"\n}",
-        "art": "https:\/\/music.com.au\/image.php?object_id=67162&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "year": 2004,
+        "tracks": 6,
+        "disk": 1,
+        "tag": [
+            {
+                "id": "143",
+                "name": "Minimal"
+            }
+        ],
+        "art": "https:\/\/music.com.au\/image.php?object_id=75386&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
-        "mbid": "12e4f0b5-9d09-40a5-bdd6-07f80bc67bd6"
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "mbid": "fbf37cf6-6131-4d59-a1a3-83110305aa0d"
     }
 ]

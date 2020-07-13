@@ -1,178 +1,341 @@
 [
     {
-        "id": "91413",
-        "title": "The Core (Instrumental)",
+        "id": "172258",
+        "title": "Only a Day",
+        "name": "Only a Day",
         "artist": {
-            "id": "5744",
-            "name": "Avery Watts"
+            "id": "8834",
+            "name": "Goldfinger"
         },
         "album": {
-            "id": "52339",
-            "name": "Voiceless: Vol. 1"
+            "id": "56574",
+            "name": "Goldfinger"
         },
-        "filename": "\/mnt\/music\/Avery Watts\/(2011) Voiceless: Vol. 1 [PR007-DG]\/106 - The Core (Instrumental).mp3",
-        "track": "6",
-        "playlisttrack": "",
-        "time": 282,
-        "year": "2011",
-        "bitrate": "256000",
-        "rate": "44100",
+        "tag": [
+            {
+                "id": "3",
+                "name": "Punk"
+            },
+            {
+                "id": "6",
+                "name": "Rock"
+            },
+            {
+                "id": "47",
+                "name": "Pop Rock"
+            },
+            {
+                "id": "346",
+                "name": "Ska"
+            }
+        ],
+        "filename": "\/mnt\/music\/Goldfinger\/(1996) Goldfinger [UD-53007]\/104 - Only a Day.mp3",
+        "track": 4,
+        "playlisttrack": 1,
+        "time": 135,
+        "year": 1996,
+        "bitrate": 320000,
+        "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=91413&uid=3&player=api&name=Avery%20Watts%20-%20The%20Core%20-Instrumental-.mp3",
-        "size": "9191924",
-        "mbid": "914f5408-80d4-4106-86f0-2b58367ac2bf",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=172258&uid=8&player=api&name=Goldfinger%20-%20Only%20a%20Day.mp3",
+        "size": 5414747,
+        "mbid": "7417d564-82fb-4375-992a-64a9347c6eb2",
         "album_mbid": null,
         "artist_mbid": null,
         "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=52339&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "art": "https:\/\/music.com.au\/image.php?object_id=56574&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Pulse Records",
+        "publisher": "Mojo Records",
         "language": "",
         "replaygain_album_gain": "0.000000",
         "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-10.420000",
+        "replaygain_track_gain": "-7.590000",
+        "replaygain_track_peak": "0.989000",
+        "genre": [
+            {
+                "name": "Punk"
+            },
+            {
+                "name": "Rock"
+            },
+            {
+                "name": "Pop Rock"
+            },
+            {
+                "name": "Ska"
+            }
+        ],
+        "encoding": "UTF-8",
+        "disk": "1",
+        "totaldisks": "1",
+        "band": "Goldfinger",
+        "release_type": "album",
+        "barcode": "601215300727",
+        "audio_codec": "mp3",
+        "recording_time": "1996-02-27",
+        "bpm": "85",
+        "album_artist_sort_order": "Goldfinger",
+        "performer_sort_order": "Goldfinger",
+        "media_type": "CD",
+        "original_release_time": "1996-02-27",
+        "totaltracks": "16",
+        "length": "135314"
+    },
+    {
+        "id": "831806",
+        "title": "Versivo",
+        "name": "Versivo",
+        "artist": {
+            "id": "1290",
+            "name": "Bola"
+        },
+        "album": {
+            "id": "64945",
+            "name": "Soup"
+        },
+        "tag": [
+            {
+                "id": "163",
+                "name": "Downtempo"
+            }
+        ],
+        "filename": "\/mnt\/music\/Bola\/(1998) Soup [SKALD002]\/102 - Versivo.mp3",
+        "track": 2,
+        "playlisttrack": 2,
+        "time": 470,
+        "year": 2003,
+        "bitrate": 228350,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=831806&uid=8&player=api&name=Bola%20-%20Versivo.mp3",
+        "size": 13534752,
+        "mbid": "801c4a89-2bd9-4a09-9ea0-2ac361da2f63",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=64945&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
+        "composer": "Darrell Fitton",
+        "channels": null,
+        "comment": "SKALD002",
+        "publisher": "Skam",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-7.540000",
         "replaygain_track_peak": "1.000000",
-        "tags": [
-            "Instrumental"
-        ]
+        "genre": [
+            {
+                "name": "Downtempo"
+            }
+        ],
+        "encoding": "UTF-8",
+        "disk": "1",
+        "totaldisks": "1",
+        "band": "Bola",
+        "release_type": "album",
+        "barcode": "0666017058528",
+        "audio_codec": "mp3",
+        "recording_time": "2003-06-30",
+        "bpm": "127",
+        "album_artist_sort_order": "Bola",
+        "performer_sort_order": "Bola",
+        "media_type": "CD",
+        "original_release_time": "1998-11-23",
+        "involved_people_list": "producer",
+        "totaltracks": "10",
+        "composer_sort_order": "Fitton, Darrell",
+        "url_user": "http:\/\/www.bleep.com\/skam",
+        "encoded_by": "LAME 3.90.3 --alt-preset standard",
+        "copyright_message": "1998 SKAM"
     },
     {
-        "id": "180473",
-        "title": "Mommy, Can I Go Out and Kill Tonight?",
+        "id": "147081",
+        "title": "This Is the End",
+        "name": "This Is the End",
         "artist": {
-            "id": "9048",
-            "name": "Misfits"
+            "id": "1278",
+            "name": "Lycia"
         },
         "album": {
-            "id": "57206",
-            "name": "Earth A.D."
+            "id": "50168",
+            "name": "Empty Space"
         },
-        "filename": "\/mnt\/music\/Misfits\/(1983) Earth A.D. [PL9-CD 02_3]\/106 - Mommy, Can I Go Out and Kill Tonight?.mp3",
-        "track": "6",
-        "playlisttrack": "",
-        "time": 123,
-        "year": "1996",
-        "bitrate": "320000",
-        "rate": "44100",
+        "tag": [
+            {
+                "id": "52",
+                "name": "Darkwave"
+            }
+        ],
+        "filename": "\/mnt\/music\/Lycia\/(2003) Empty Space\/109 - This Is the End.mp3",
+        "track": 9,
+        "playlisttrack": 3,
+        "time": 238,
+        "year": 2003,
+        "bitrate": 256000,
+        "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=180473&uid=3&player=api&name=Misfits%20-%20Mommy-%20Can%20I%20Go%20Out%20and%20Kill%20Tonight-.mp3",
-        "size": "5094407",
-        "mbid": "d9b68757-273c-494a-a215-f5556e903174",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=147081&uid=8&player=api&name=Lycia%20-%20This%20Is%20the%20End.mp3",
+        "size": 7630848,
+        "mbid": "485bd494-d5de-47e6-9347-017dcf7ee82d",
         "album_mbid": null,
         "artist_mbid": null,
         "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=57206&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "art": "https:\/\/music.com.au\/image.php?object_id=50168&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Caroline Records",
+        "publisher": "Silber Records",
         "language": "",
         "replaygain_album_gain": "0.000000",
         "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-0.840000",
-        "replaygain_track_peak": "0.759000",
-        "tags": [
-            "Horror Punk"
-        ]
+        "replaygain_track_gain": "-1.770000",
+        "replaygain_track_peak": "0.944000",
+        "genre": [
+            {
+                "name": "Darkwave"
+            }
+        ],
+        "encoding": "UTF-8",
+        "disk": "1",
+        "totaldisks": "1",
+        "band": "Lycia",
+        "release_type": "album",
+        "barcode": "656605949123",
+        "audio_codec": "mp3",
+        "recording_time": "2003",
+        "bpm": "120",
+        "album_artist_sort_order": "Lycia",
+        "performer_sort_order": "Lycia",
+        "media_type": "CD",
+        "original_release_time": "2003",
+        "totaltracks": "9",
+        "asin": "B0007UC3K8",
+        "tool_name": "Media Center",
+        "peak_level__sample_": "-0.5 dB; -0.6 Left; -0.5 Right",
+        "volume_level__r128_": "-6.7692499160766602",
+        "script": "Latn",
+        "dynamic_range__dr_": "13",
+        "album_artist": "Lycia",
+        "peak_level__r128_": "-0.5 dBTP; -0.5 Left; -0.5 Right",
+        "dynamic_range__r128_": "5.917719841003418",
+        "volume_level__replaygain_": "-1.7692500352859497",
+        "musicbrainz_album_status": "official",
+        "musicbrainz_album_release_country": "US",
+        "tool_version": "23.0.84",
+        "acoustid_id": "56091d10-13fe-4039-8175-ad31cb3efe3e"
     },
     {
-        "id": "869803",
-        "title": "Coming Down",
+        "id": "880201",
+        "title": "Spider and I",
+        "name": "Spider and I",
         "artist": {
-            "id": "13130",
-            "name": "Five Finger Death Punch"
+            "id": "9699",
+            "name": "Brian Eno"
         },
         "album": {
-            "id": "68231",
-            "name": "American Capitalist"
+            "id": "69824",
+            "name": "Before and After Science"
         },
-        "filename": "\/mnt\/music\/Five Finger Death Punch\/(2011) American Capitalist [PPK 014]\/104 - Coming Down.flac",
-        "track": "4",
-        "playlisttrack": "",
-        "time": 241,
-        "year": "2011",
-        "bitrate": "1061073",
-        "rate": "44100",
-        "mode": null,
-        "mime": "audio\/x-flac",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=869803&uid=3&player=api&name=Five%20Finger%20Death%20Punch%20-%20Coming%20Down.mp3",
-        "size": "31994894",
-        "mbid": "16a19baa-f8c3-4a69-807c-bd99e0fe02fc",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=68231&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
-        "composer": "Ivan Moody",
-        "channels": null,
-        "comment": "Track 4",
-        "publisher": "",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "0.000000",
-        "replaygain_track_peak": "0.000000",
-        "tags": [
-            "Nu Metal"
-        ]
-    },
-    {
-        "id": "91830",
-        "title": "Lament",
-        "artist": {
-            "id": "5747",
-            "name": "King Crimson"
-        },
-        "album": {
-            "id": "16267",
-            "name": "The Road to Red"
-        },
-        "filename": "\/mnt\/music\/King Crimson\/(1974) The Road to Red [KCCBX7]\/702 - Lament.mp3",
-        "track": "2",
-        "playlisttrack": "",
-        "time": 265,
-        "year": "2013",
-        "bitrate": "320000",
-        "rate": "44100",
+        "tag": [
+            {
+                "id": "122",
+                "name": "Art Rock"
+            }
+        ],
+        "filename": "\/mnt\/music\/Brian Eno\/(1977) Before and After Science [ENOC-4]\/110 - Spider and I.mp3",
+        "track": 10,
+        "playlisttrack": 4,
+        "time": 250,
+        "year": 1977,
+        "bitrate": 320000,
+        "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=91830&uid=3&player=api&name=King%20Crimson%20-%20Lament.mp3",
-        "size": "10619257",
-        "mbid": "8231ac0f-1587-4b6f-b5e4-024f8def1cc9",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=880201&uid=8&player=api&name=Brian%20Eno%20-%20Spider%20and%20I.mp3",
+        "size": 10079350,
+        "mbid": "b54da0fe-f8fb-433c-833c-427eed7d38bc",
         "album_mbid": null,
         "artist_mbid": null,
         "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=16267&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "art": "https:\/\/music.com.au\/image.php?object_id=69824&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
-        "composer": "",
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "Brian Eno",
         "channels": null,
-        "comment": "ExactAudioCopy v1.0b3",
-        "publisher": "Discipline Global Mobile",
+        "comment": "",
+        "publisher": "Editions EG",
         "language": "",
         "replaygain_album_gain": "0.000000",
         "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-6.340000",
-        "replaygain_track_peak": "0.923000",
-        "tags": [
-            "Progressive Rock"
-        ]
+        "replaygain_track_gain": "-4.400000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Art Rock"
+            }
+        ],
+        "encoding": "UTF-8",
+        "disk": "1",
+        "totaldisks": "1",
+        "band": "Brian Eno",
+        "release_type": "album",
+        "audio_codec": "mp3",
+        "recording_time": "1977",
+        "bpm": "94",
+        "lyricist": "Brian Eno",
+        "performer_sort_order": "Eno, Brian",
+        "album_artist_sort_order": "Eno, Brian",
+        "composer_sort_order": "Eno, Brian",
+        "original_release_time": "1977-12",
+        "musician_credits_list": "bass",
+        "media_type": "Cassette",
+        "isrc": "GBAAA0400097",
+        "involved_people_list": "producer",
+        "totaltracks": "10",
+        "genreid": "149",
+        "track_number": "10",
+        "album_artist": "Brian Eno",
+        "artists": "Brian Eno",
+        "dynamic_range__dr_": "10",
+        "dynamic_range__r128_": "11.7174100875854492",
+        "musicbrainz_album_release_country": "US",
+        "musicbrainz_album_status": "official",
+        "musicbrainz_release_track_id": "86301f2f-0862-3862-9b1a-446065f04afc",
+        "musicbrainz_work_id": "3bb94ceb-7d2e-33b8-87fc-e14eee3fc1bc",
+        "originalyear": "1977",
+        "peak_level__r128_": "+0.1 dBTP; +0.1 Left; +0.0 Right",
+        "peak_level__sample_": "+0.0 dB; +0.0 Left; +0.0 Right",
+        "script": "Latn",
+        "tool_name": "Media Center",
+        "volume_level__r128_": "-9.398249626159668",
+        "volume_level__replaygain_": "-4.3982501029968262",
+        "work": "Spider and I"
     }
 ]

@@ -1,46 +1,84 @@
 [
     {
-        "id": "181321",
-        "title": "See You in Hell",
+        "id": "836449",
+        "title": "Opposing Globalization",
+        "name": "Opposing Globalization",
         "artist": {
-            "id": "9070",
-            "name": "Carnal Decay"
+            "id": "11725",
+            "name": "Pathology"
         },
         "album": {
-            "id": "57278",
-            "name": "On Top of the Food Chain"
+            "id": "65293",
+            "name": "Awaken to the Suffering"
         },
-        "filename": "\/mnt\/music\/Carnal Decay\/(2011) On Top of the Food Chain [SR-156]\/105 - See You in Hell.mp3",
-        "track": "5",
-        "playlisttrack": "",
-        "time": 216,
-        "year": "2011",
-        "bitrate": "320000",
-        "rate": "44100",
+        "tag": [
+            {
+                "id": "2750",
+                "name": "Slamming Brutal Death Metal"
+            }
+        ],
+        "filename": "\/mnt\/music\/Pathology\/(2011) Awaken to the Suffering\/110 - Opposing Globalization.mp3",
+        "track": 10,
+        "playlisttrack": 1,
+        "time": 185,
+        "year": 2011,
+        "bitrate": 320000,
+        "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=181321&uid=3&player=api&name=Carnal%20Decay%20-%20See%20You%20in%20Hell.mp3",
-        "size": "10310218",
-        "mbid": "ee11951f-94b0-4dda-8ac6-d0ac5de716b4",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=836449&uid=8&player=api&name=Pathology%20-%20Opposing%20Globalization.mp3",
+        "size": 7476664,
+        "mbid": "39ec1463-8f59-4c21-86b6-6fb250fb093a",
         "album_mbid": null,
         "artist_mbid": null,
         "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=57278&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "art": "https:\/\/music.com.au\/image.php?object_id=65293&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Sevared Records",
+        "publisher": "Victory Records",
         "language": "",
         "replaygain_album_gain": "0.000000",
         "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-13.150000",
+        "replaygain_track_gain": "-12.100000",
         "replaygain_track_peak": "1.000000",
-        "tags": [
-            "Brutal Death Metal"
-        ]
+        "genre": [
+            {
+                "name": "Slamming Brutal Death Metal"
+            }
+        ],
+        "encoding": "UTF-8",
+        "disk": "1",
+        "totaldisks": "1",
+        "band": "Pathology",
+        "release_type": "album",
+        "audio_codec": "mp3",
+        "recording_time": "2011-09-13",
+        "bpm": "125",
+        "album_artist_sort_order": "Pathology",
+        "performer_sort_order": "Pathology",
+        "media_type": "CD",
+        "original_release_time": "2011-09-13",
+        "totaltracks": "12",
+        "album_artist": "Pathology",
+        "artists": "Pathology",
+        "dynamic_range__dr_": "5",
+        "dynamic_range__r128_": "1.0148099660873413",
+        "musicbrainz_album_release_country": "US",
+        "musicbrainz_album_status": "official",
+        "musicbrainz_release_track_id": "eb6d0a5e-d66a-3160-b958-12d32742c1ed",
+        "originalyear": "2011",
+        "peak_level__r128_": "+1.1 dBTP; +1.1 Left; +0.6 Right",
+        "peak_level__sample_": "+0.0 dB; +0.0 Left; +0.0 Right",
+        "script": "Latn",
+        "tool_name": "Media Center",
+        "volume_level__r128_": "-17.1049594879150391",
+        "volume_level__replaygain_": "-12.1049604415893555"
     }
 ]

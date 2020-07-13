@@ -2,6 +2,7 @@
     {
         "id": "164215",
         "title": "!",
+        "name": "!",
         "artist": {
             "id": "8526",
             "name": "Hellyeah"
@@ -10,26 +11,38 @@
             "id": "56038",
             "name": "Unden!able"
         },
+        "tag": [
+            {
+                "id": "20",
+                "name": "Metal"
+            },
+            {
+                "id": "37",
+                "name": "Hard Rock"
+            }
+        ],
         "filename": "\/mnt\/music\/Hellyeah\/(2016) Unden!able [ESM 171-2]\/101 - !.mp3",
-        "track": "1",
-        "playlisttrack": "",
+        "track": 1,
+        "playlisttrack": 1,
         "time": 79,
-        "year": "2016",
-        "bitrate": "320000",
-        "rate": "44100",
+        "year": 2016,
+        "bitrate": 320000,
+        "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=164215&uid=3&player=api&name=Hellyeah%20-%20-.mp3",
-        "size": "3184944",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=164215&uid=8&player=api&name=Hellyeah%20-%20-.mp3",
+        "size": 3184944,
         "mbid": "42bb2b7a-bf67-4cc4-8610-25399d56474b",
         "album_mbid": null,
         "artist_mbid": null,
         "albumartist_mbid": null,
         "art": "https:\/\/music.com.au\/image.php?object_id=56038&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
         "composer": "",
         "channels": null,
         "comment": "",
@@ -39,9 +52,41 @@
         "replaygain_album_peak": "0.000000",
         "replaygain_track_gain": "-6.920000",
         "replaygain_track_peak": "1.000000",
-        "tags": [
-            "Metal",
-            "Hard Rock"
-        ]
+        "genre": [
+            {
+                "name": "Metal"
+            },
+            {
+                "name": "Hard Rock"
+            }
+        ],
+        "encoding": "UTF-8",
+        "disk": "1",
+        "totaldisks": "1",
+        "band": "Hellyeah",
+        "release_type": "album",
+        "barcode": "849320017127",
+        "audio_codec": "mp3",
+        "recording_time": "2016-06-03",
+        "bpm": "99",
+        "album_artist_sort_order": "Hellyeah",
+        "performer_sort_order": "Hellyeah",
+        "media_type": "CD",
+        "original_release_time": "2016-06-03",
+        "totaltracks": "13",
+        "asin": "B01DZEFSEK",
+        "tool_name": "Media Center",
+        "peak_level__sample_": "+0.0 dB; +0.0 Left; +0.0 Right",
+        "volume_level__r128_": "-11.9224700927734376",
+        "script": "Latn",
+        "dynamic_range__dr_": "7",
+        "album_artist": "Hellyeah",
+        "peak_level__r128_": "+0.1 dBTP; +0.1 Left; +0.1 Right",
+        "dynamic_range__r128_": "18.5237598419189453",
+        "volume_level__replaygain_": "-6.9224700927734376",
+        "musicbrainz_album_status": "official",
+        "musicbrainz_album_release_country": "US",
+        "tool_version": "23.0.84",
+        "acoustid_id": "9de35918-bddb-4f05-a9d1-81e1774aa4e4"
     }
 ]

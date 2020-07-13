@@ -1,148 +1,242 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
 <total_count>4</total_count>
-<song id="16808">
-        <title><![CDATA[We Gonna Rock]]></title>
-        <name><![CDATA[We Gonna Rock]]></name>
-        <artist id="605"><![CDATA[The Prodigy]]></artist>
-        <album id="49372"><![CDATA[What Evil Lurks]]></album>
-        <tag id="4" count="1" ><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/music/The Prodigy/(1991) What Evil Lurks/102 - We Gonna Rock.mp3]]></filename>
-        <track>2</track>
-        <time>274</time>
-        <year>2004</year>
-        <bitrate>192000</bitrate>
-        <rate>44100</rate>
-        <mode>cbr</mode>
-        <mime>audio/mpeg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=16808&uid=2&player=api&name=The%20Prodigy%20-%20We%20Gonna%20Rock.mp3]]></url>
-        <size>6584750</size>
-        <mbid>bee03726-ce83-47cf-81a5-27ae395276f3</mbid>
-        <album_mbid></album_mbid>
-        <artist_mbid></artist_mbid>
-        <albumartist_mbid></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=49372&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-        <flag>0</flag>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels></channels>
-        <comment><![CDATA[single]]></comment>
-        <publisher><![CDATA[]]></publisher>
-        <language></language>
-        <replaygain_album_gain>0.000000</replaygain_album_gain>
-        <replaygain_album_peak>0.000000</replaygain_album_peak>
-        <replaygain_track_gain>-9.560000</replaygain_track_gain>
-        <replaygain_track_peak>1.000000</replaygain_track_peak>
-        <genre><![CDATA[Electronic]]></genre>
+<song id="2649">
+	<title><![CDATA[Pandemonium]]></title>
+	<name><![CDATA[Pandemonium]]></name>
+	<artist id="102"><![CDATA[Apocalyptica]]></artist>
+	<album id="48825"><![CDATA[Reflections]]></album>
+	<tag id="6" count="1" ><![CDATA[Rock]]></tag>
+	<tag id="27" count="1" ><![CDATA[Symphonic Metal]]></tag>
+	<tag id="532" count="1" ><![CDATA[Symphonic Rock]]></tag>
+	<filename><![CDATA[/mnt/music/Apocalyptica/(2003) Reflections/111 - Pandemonium.mp3]]></filename>
+	<track>11</track>
+	<playlisttrack>1</playlisttrack>
+	<time>124</time>
+	<year>2003</year>
+	<bitrate>192000</bitrate>
+	<rate>44100</rate>
+	<mode><![CDATA[cbr]]></mode>
+	<mime><![CDATA[audio/mpeg]]></mime>
+	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=2649&uid=8&player=api&name=Apocalyptica%20-%20Pandemonium.mp3]]></url>
+	<size>2982810</size>
+	<mbid><![CDATA[43799a4f-06cd-4d00-9c63-20ee0ccd6ca0]]></mbid>
+	<album_mbid><![CDATA[]]></album_mbid>
+	<artist_mbid><![CDATA[]]></artist_mbid>
+	<albumartist_mbid><![CDATA[]]></albumartist_mbid>
+	<art><![CDATA[https://music.com.au/image.php?object_id=48825&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+	<flag>0</flag>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<playcount>0</playcount>
+	<catalog>2</catalog>
+	<composer><![CDATA[]]></composer>
+	<channels></channels>
+	<comment><![CDATA[]]></comment>
+	<license><![CDATA[]]></license>
+	<publisher><![CDATA[Island; Mercury Records]]></publisher>
+	<language></language>
+	<replaygain_album_gain>0.000000</replaygain_album_gain>
+	<replaygain_album_peak>0.000000</replaygain_album_peak>
+	<replaygain_track_gain>-9.230000</replaygain_track_gain>
+	<replaygain_track_peak>1.000000</replaygain_track_peak>
+	<encoding><![CDATA[UTF-8]]></encoding>
+	<disk><![CDATA[1]]></disk>
+	<totaldisks><![CDATA[1]]></totaldisks>
+	<band><![CDATA[Apocalyptica]]></band>
+	<release_type><![CDATA[album]]></release_type>
+	<barcode><![CDATA[044007701522]]></barcode>
+	<audio_codec><![CDATA[mp3]]></audio_codec>
+	<recording_time><![CDATA[2003-02-10]]></recording_time>
+	<bpm><![CDATA[100]]></bpm>
+	<album_artist_sort_order><![CDATA[Apocalyptica]]></album_artist_sort_order>
+	<performer_sort_order><![CDATA[Apocalyptica]]></performer_sort_order>
+	<media_type><![CDATA[CD]]></media_type>
+	<original_release_time><![CDATA[2003-02-04]]></original_release_time>
+	<involved_people_list><![CDATA[engineer]]></involved_people_list>
+	<totaltracks><![CDATA[13]]></totaltracks>
+	<isrc><![CDATA[DEN120208270]]></isrc>
+	<genre><![CDATA[Rock]]></genre>
+	<genre><![CDATA[Symphonic Metal]]></genre>
+	<genre><![CDATA[Symphonic Rock]]></genre>
 </song>
-<song id="16810">
-        <title><![CDATA[Android]]></title>
-        <name><![CDATA[Android]]></name>
-        <artist id="605"><![CDATA[The Prodigy]]></artist>
-        <album id="49372"><![CDATA[What Evil Lurks]]></album>
-        <tag id="4" count="1" ><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/music/The Prodigy/(1991) What Evil Lurks/103 - Android.mp3]]></filename>
-        <track>3</track>
-        <time>321</time>
-        <year>2004</year>
-        <bitrate>192000</bitrate>
-        <rate>44100</rate>
-        <mode>cbr</mode>
-        <mime>audio/mpeg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=16810&uid=2&player=api&name=The%20Prodigy%20-%20Android.mp3]]></url>
-        <size>7715121</size>
-        <mbid>62f5da9d-e3f9-4357-9225-68a08c0d72f4</mbid>
-        <album_mbid></album_mbid>
-        <artist_mbid></artist_mbid>
-        <albumartist_mbid></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=49372&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-        <flag>0</flag>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels></channels>
-        <comment><![CDATA[single]]></comment>
-        <publisher><![CDATA[]]></publisher>
-        <language></language>
-        <replaygain_album_gain>0.000000</replaygain_album_gain>
-        <replaygain_album_peak>0.000000</replaygain_album_peak>
-        <replaygain_track_gain>-5.480000</replaygain_track_gain>
-        <replaygain_track_peak>1.000000</replaygain_track_peak>
-        <genre><![CDATA[Electronic]]></genre>
+<song id="8314">
+	<title><![CDATA[Passage to Pandemonium]]></title>
+	<name><![CDATA[Passage to Pandemonium]]></name>
+	<artist id="278"><![CDATA[Old Man's Child]]></artist>
+	<album id="49061"><![CDATA[Revelation 666: The Curse of Damnation]]></album>
+	<tag id="88" count="1" ><![CDATA[Black Metal]]></tag>
+	<filename><![CDATA[/mnt/music/Old Man's Child/(2000) Revelation 666: The Curse of Damnation/105 - Passage to Pandemonium.mp3]]></filename>
+	<track>5</track>
+	<playlisttrack>2</playlisttrack>
+	<time>253</time>
+	<year>2000</year>
+	<bitrate>160000</bitrate>
+	<rate>44100</rate>
+	<mode><![CDATA[cbr]]></mode>
+	<mime><![CDATA[audio/mpeg]]></mime>
+	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=8314&uid=8&player=api&name=Old%20Man-s%20Child%20-%20Passage%20to%20Pandemonium.mp3]]></url>
+	<size>5073024</size>
+	<mbid><![CDATA[19ec09ea-1495-464a-a566-c1ad26a6428d]]></mbid>
+	<album_mbid><![CDATA[]]></album_mbid>
+	<artist_mbid><![CDATA[]]></artist_mbid>
+	<albumartist_mbid><![CDATA[]]></albumartist_mbid>
+	<art><![CDATA[https://music.com.au/image.php?object_id=49061&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+	<flag>0</flag>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<playcount>0</playcount>
+	<catalog>2</catalog>
+	<composer><![CDATA[]]></composer>
+	<channels></channels>
+	<comment><![CDATA[]]></comment>
+	<license><![CDATA[]]></license>
+	<publisher><![CDATA[Century Media]]></publisher>
+	<language></language>
+	<replaygain_album_gain>0.000000</replaygain_album_gain>
+	<replaygain_album_peak>0.000000</replaygain_album_peak>
+	<replaygain_track_gain>-10.930000</replaygain_track_gain>
+	<replaygain_track_peak>1.000000</replaygain_track_peak>
+	<encoding><![CDATA[UTF-8]]></encoding>
+	<disk><![CDATA[1]]></disk>
+	<totaldisks><![CDATA[1]]></totaldisks>
+	<band><![CDATA[Old Man's Child]]></band>
+	<release_type><![CDATA[album]]></release_type>
+	<audio_codec><![CDATA[mp3]]></audio_codec>
+	<recording_time><![CDATA[2000-03-13]]></recording_time>
+	<bpm><![CDATA[103]]></bpm>
+	<album_artist_sort_order><![CDATA[Old Man's Child]]></album_artist_sort_order>
+	<performer_sort_order><![CDATA[Old Man's Child]]></performer_sort_order>
+	<media_type><![CDATA[CD]]></media_type>
+	<original_release_time><![CDATA[2000-03-08]]></original_release_time>
+	<involved_people_list><![CDATA[producer]]></involved_people_list>
+	<totaltracks><![CDATA[8]]></totaltracks>
+	<tagging_time><![CDATA[2013-07-24T03:43:59]]></tagging_time>
+	<genre><![CDATA[Black Metal]]></genre>
 </song>
-<song id="16811">
-        <title><![CDATA[What Evil Lurks]]></title>
-        <name><![CDATA[What Evil Lurks]]></name>
-        <artist id="605"><![CDATA[The Prodigy]]></artist>
-        <album id="49372"><![CDATA[What Evil Lurks]]></album>
-        <tag id="4" count="1" ><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/music/The Prodigy/(1991) What Evil Lurks/101 - What Evil Lurks.mp3]]></filename>
-        <track>1</track>
-        <time>264</time>
-        <year>2004</year>
-        <bitrate>192000</bitrate>
-        <rate>44100</rate>
-        <mode>cbr</mode>
-        <mime>audio/mpeg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=16811&uid=2&player=api&name=The%20Prodigy%20-%20What%20Evil%20Lurks.mp3]]></url>
-        <size>6360306</size>
-        <mbid>5b585811-07e7-4757-b405-01b5b89b0e2c</mbid>
-        <album_mbid></album_mbid>
-        <artist_mbid></artist_mbid>
-        <albumartist_mbid></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=49372&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-        <flag>1</flag>
-        <preciserating>5</preciserating>
-        <rating>5</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels></channels>
-        <comment><![CDATA[single]]></comment>
-        <publisher><![CDATA[]]></publisher>
-        <language></language>
-        <replaygain_album_gain>0.000000</replaygain_album_gain>
-        <replaygain_album_peak>0.000000</replaygain_album_peak>
-        <replaygain_track_gain>-9.450000</replaygain_track_gain>
-        <replaygain_track_peak>1.000000</replaygain_track_peak>
-        <genre><![CDATA[Electronic]]></genre>
+<song id="57049">
+	<title><![CDATA[Donald Trump (Black version)]]></title>
+	<name><![CDATA[Donald Trump (Black version)]]></name>
+	<artist id="1035"><![CDATA[The Time]]></artist>
+	<album id="49216"><![CDATA[Pandemonium]]></album>
+	<tag id="18" count="1" ><![CDATA[Funk]]></tag>
+	<filename><![CDATA[/mnt/music/The Time/(1990) Pandemonium/107 - Donald Trump (Black version).mp3]]></filename>
+	<track>7</track>
+	<playlisttrack>3</playlisttrack>
+	<time>273</time>
+	<year>1990</year>
+	<bitrate>192000</bitrate>
+	<rate>44100</rate>
+	<mode><![CDATA[cbr]]></mode>
+	<mime><![CDATA[audio/mpeg]]></mime>
+	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=57049&uid=8&player=api&name=The%20Time%20-%20Donald%20Trump%20-Black%20version-.mp3]]></url>
+	<size>6557456</size>
+	<mbid><![CDATA[2c251b7e-4af4-4955-a7a3-a805ac925dc3]]></mbid>
+	<album_mbid><![CDATA[]]></album_mbid>
+	<artist_mbid><![CDATA[]]></artist_mbid>
+	<albumartist_mbid><![CDATA[]]></albumartist_mbid>
+	<art><![CDATA[https://music.com.au/image.php?object_id=49216&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+	<flag>0</flag>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<playcount>1</playcount>
+	<catalog>2</catalog>
+	<composer><![CDATA[]]></composer>
+	<channels></channels>
+	<comment><![CDATA[]]></comment>
+	<license><![CDATA[]]></license>
+	<publisher><![CDATA[Paisley Park]]></publisher>
+	<language></language>
+	<replaygain_album_gain>0.000000</replaygain_album_gain>
+	<replaygain_album_peak>0.000000</replaygain_album_peak>
+	<replaygain_track_gain>-3.830000</replaygain_track_gain>
+	<replaygain_track_peak>0.944000</replaygain_track_peak>
+	<encoding><![CDATA[UTF-8]]></encoding>
+	<disk><![CDATA[1]]></disk>
+	<totaldisks><![CDATA[1]]></totaldisks>
+	<band><![CDATA[The Time]]></band>
+	<release_type><![CDATA[album]]></release_type>
+	<barcode><![CDATA[075992749022]]></barcode>
+	<audio_codec><![CDATA[mp3]]></audio_codec>
+	<recording_time><![CDATA[1990]]></recording_time>
+	<bpm><![CDATA[62]]></bpm>
+	<album_artist_sort_order><![CDATA[Time, The]]></album_artist_sort_order>
+	<performer_sort_order><![CDATA[Time, The]]></performer_sort_order>
+	<media_type><![CDATA[CD]]></media_type>
+	<original_release_time><![CDATA[1990]]></original_release_time>
+	<totaltracks><![CDATA[15]]></totaltracks>
+	<asin><![CDATA[B000008LLI]]></asin>
+	<tool_name><![CDATA[Media Center]]></tool_name>
+	<peak_level__sample_><![CDATA[-0.5 dB; -1.2 Left; -0.5 Right]]></peak_level__sample_>
+	<volume_level__r128_><![CDATA[-8.8278398513793945]]></volume_level__r128_>
+	<script><![CDATA[Latn]]></script>
+	<dynamic_range__dr_><![CDATA[11]]></dynamic_range__dr_>
+	<album_artist><![CDATA[The Time]]></album_artist>
+	<peak_level__r128_><![CDATA[-0.5 dBTP; -1.1 Left; -0.5 Right]]></peak_level__r128_>
+	<dynamic_range__r128_><![CDATA[8.0705604553222656]]></dynamic_range__r128_>
+	<volume_level__replaygain_><![CDATA[-3.8278400897979736]]></volume_level__replaygain_>
+	<musicbrainz_album_status><![CDATA[official]]></musicbrainz_album_status>
+	<musicbrainz_album_release_country><![CDATA[XE]]></musicbrainz_album_release_country>
+	<acoustid_id><![CDATA[ca94b500-cf63-421a-975a-36c4ef157eb7]]></acoustid_id>
+	<genre><![CDATA[Funk]]></genre>
 </song>
-<song id="54608">
-        <title><![CDATA[Everybody in the Place]]></title>
-        <name><![CDATA[Everybody in the Place]]></name>
-        <artist id="605"><![CDATA[The Prodigy]]></artist>
-        <album id="49372"><![CDATA[What Evil Lurks]]></album>
-        <tag id="4" count="1" ><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/music/The Prodigy/(1991) What Evil Lurks/104 - Everybody in the Place.mp3]]></filename>
-        <track>4</track>
-        <time>206</time>
-        <year>2004</year>
-        <bitrate>220121</bitrate>
-        <rate>44100</rate>
-        <mode>vbr</mode>
-        <mime>audio/mpeg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=54608&uid=2&player=api&name=The%20Prodigy%20-%20Everybody%20in%20the%20Place.mp3]]></url>
-        <size>5691891</size>
-        <mbid>c9b8cc06-6205-4ed4-a7d2-a0f113d8b96d</mbid>
-        <album_mbid></album_mbid>
-        <artist_mbid></artist_mbid>
-        <albumartist_mbid></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=49372&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-        <flag>0</flag>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[The Prodigy]]></composer>
-        <channels></channels>
-        <comment><![CDATA[single]]></comment>
-        <publisher><![CDATA[XL Recordings]]></publisher>
-        <language></language>
-        <replaygain_album_gain>0.000000</replaygain_album_gain>
-        <replaygain_album_peak>0.000000</replaygain_album_peak>
-        <replaygain_track_gain>-2.030000</replaygain_track_gain>
-        <replaygain_track_peak>0.912000</replaygain_track_peak>
-        <genre><![CDATA[Electronic]]></genre>
+<song id="12420">
+	<title><![CDATA[Pandemonium]]></title>
+	<name><![CDATA[Pandemonium]]></name>
+	<artist id="451"><![CDATA[Hocico]]></artist>
+	<album id="49218"><![CDATA[Signos de aberración]]></album>
+	<tag id="9" count="1" ><![CDATA[Industrial]]></tag>
+	<filename><![CDATA[/mnt/music/Hocico/(2002) Signos De Aberracion/101 - Pandemonium.mp3]]></filename>
+	<track>1</track>
+	<playlisttrack>4</playlisttrack>
+	<time>306</time>
+	<year>2004</year>
+	<bitrate>192000</bitrate>
+	<rate>44100</rate>
+	<mode><![CDATA[cbr]]></mode>
+	<mime><![CDATA[audio/mpeg]]></mime>
+	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=12420&uid=8&player=api&name=Hocico%20-%20Pandemonium.mp3]]></url>
+	<size>7356335</size>
+	<mbid><![CDATA[7d0abdc4-b0cc-4fa6-b521-336b3dcc54fe]]></mbid>
+	<album_mbid><![CDATA[]]></album_mbid>
+	<artist_mbid><![CDATA[]]></artist_mbid>
+	<albumartist_mbid><![CDATA[]]></albumartist_mbid>
+	<art><![CDATA[https://music.com.au/image.php?object_id=49218&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+	<flag>0</flag>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<playcount>0</playcount>
+	<catalog>2</catalog>
+	<composer><![CDATA[Erk Aicrag]]></composer>
+	<channels></channels>
+	<comment><![CDATA[]]></comment>
+	<license><![CDATA[]]></license>
+	<publisher><![CDATA[Irond]]></publisher>
+	<language></language>
+	<replaygain_album_gain>0.000000</replaygain_album_gain>
+	<replaygain_album_peak>0.000000</replaygain_album_peak>
+	<replaygain_track_gain>-6.770000</replaygain_track_gain>
+	<replaygain_track_peak>0.955000</replaygain_track_peak>
+	<encoding><![CDATA[UTF-8]]></encoding>
+	<disk><![CDATA[1]]></disk>
+	<totaldisks><![CDATA[1]]></totaldisks>
+	<band><![CDATA[Hocico]]></band>
+	<release_type><![CDATA[album]]></release_type>
+	<audio_codec><![CDATA[mp3]]></audio_codec>
+	<recording_time><![CDATA[2004]]></recording_time>
+	<bpm><![CDATA[125]]></bpm>
+	<album_artist_sort_order><![CDATA[Hocico]]></album_artist_sort_order>
+	<performer_sort_order><![CDATA[Hocico]]></performer_sort_order>
+	<media_type><![CDATA[CD]]></media_type>
+	<original_release_time><![CDATA[2002-02-06]]></original_release_time>
+	<involved_people_list><![CDATA[producer]]></involved_people_list>
+	<musician_credits_list><![CDATA[Erk Aicrag]]></musician_credits_list>
+	<totaltracks><![CDATA[11]]></totaltracks>
+	<tagging_time><![CDATA[2012-12-12T04:05:39]]></tagging_time>
+	<genre><![CDATA[Industrial]]></genre>
 </song>
 </root>

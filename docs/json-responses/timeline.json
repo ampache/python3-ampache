@@ -1,44 +1,134 @@
 {
     "timeline": [
         {
-            "id": "162048",
-            "data": "1578981580",
+            "id": "166449",
+            "data": "1594617363",
             "object_type": "song",
-            "object_id": "85870",
+            "object_id": "77371",
             "action": "play",
-            "username": "glen"
+            "user": [
+                {
+                    "id": "8",
+                    "username": "admin"
+                }
+            ]
         },
         {
-            "id": "162047",
-            "data": "1578981353",
-            "object_type": "song",
-            "object_id": "85876",
-            "action": "play",
-            "username": "glen"
+            "id": "166447",
+            "data": "1594617304",
+            "object_type": "playlist",
+            "object_id": "2069",
+            "action": "userflag",
+            "user": [
+                {
+                    "id": "8",
+                    "username": "admin"
+                }
+            ]
         },
         {
-            "id": "162046",
-            "data": "1578981066",
-            "object_type": "song",
-            "object_id": "85871",
-            "action": "play",
-            "username": "glen"
+            "id": "166446",
+            "data": "1594616823",
+            "object_type": "user",
+            "object_id": "4",
+            "action": "follow",
+            "user": [
+                {
+                    "id": "8",
+                    "username": "admin"
+                }
+            ]
         },
         {
-            "id": "162045",
-            "data": "1578972224",
+            "id": "166445",
+            "data": "1594616808",
             "object_type": "song",
-            "object_id": "85879",
+            "object_id": "77371",
             "action": "play",
-            "username": "glen"
+            "user": [
+                {
+                    "id": "8",
+                    "username": "admin"
+                }
+            ]
         },
         {
-            "id": "162044",
-            "data": "1578967637",
+            "id": "166443",
+            "data": "1594616792",
+            "object_type": "playlist",
+            "object_id": "2069",
+            "action": "userflag",
+            "user": [
+                {
+                    "id": "8",
+                    "username": "admin"
+                }
+            ]
+        },
+        {
+            "id": "166442",
+            "data": "1594616690",
+            "object_type": "user",
+            "object_id": "4",
+            "action": "follow",
+            "user": [
+                {
+                    "id": "8",
+                    "username": "admin"
+                }
+            ]
+        },
+        {
+            "id": "166441",
+            "data": "1594616676",
             "object_type": "song",
-            "object_id": "85880",
+            "object_id": "77371",
             "action": "play",
-            "username": "glen"
+            "user": [
+                {
+                    "id": "8",
+                    "username": "admin"
+                }
+            ]
+        },
+        {
+            "id": "166439",
+            "data": "1594616660",
+            "object_type": "playlist",
+            "object_id": "2069",
+            "action": "userflag",
+            "user": [
+                {
+                    "id": "8",
+                    "username": "admin"
+                }
+            ]
+        },
+        {
+            "id": "166438",
+            "data": "1594616469",
+            "object_type": "user",
+            "object_id": "4",
+            "action": "follow",
+            "user": [
+                {
+                    "id": "8",
+                    "username": "admin"
+                }
+            ]
+        },
+        {
+            "id": "166437",
+            "data": "1594616447",
+            "object_type": "song",
+            "object_id": "77371",
+            "action": "play",
+            "user": [
+                {
+                    "id": "8",
+                    "username": "admin"
+                }
+            ]
         }
     ]
 }

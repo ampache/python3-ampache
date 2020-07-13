@@ -1,179 +1,386 @@
 [
     {
-        "id": "823699",
-        "title": "I Robot",
+        "id": "899198",
+        "title": "Potential",
+        "name": "Potential",
         "artist": {
-            "id": "9581",
-            "name": "Alan Parsons Project"
+            "id": "16314",
+            "name": "Kirra"
         },
         "album": {
-            "id": "64373",
-            "name": "Master Hits"
+            "id": "72232",
+            "name": "Redefine"
         },
-        "filename": "\/mnt\/music\/The Alan Parsons Project\/(1999) Master Hits\/101 - I Robot.mp3",
-        "track": "1",
-        "playlisttrack": "",
-        "time": 362,
-        "year": "1999",
-        "bitrate": "320000",
-        "rate": "44100",
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=823699&uid=3&player=api&name=Alan%20Parsons%20Project%20-%20I%20Robot.mp3",
-        "size": "14544103",
-        "mbid": "d574946b-b1b0-4f27-a90e-1273bb3b3075",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=64373&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
-        "composer": "Alan Parsons",
-        "channels": null,
-        "comment": "",
-        "publisher": "",
-        "language": "zxx",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-5.000000",
-        "replaygain_track_peak": "1.000000",
-        "tags": [
-            "Rock"
-        ]
-    },
-    {
-        "id": "775247",
-        "title": "Daybreaker",
-        "artist": {
-            "id": "10421",
-            "name": "Electric Light Orchestra"
-        },
-        "album": {
-            "id": "58107",
-            "name": "On the Third Day"
-        },
-        "filename": "\/mnt\/music\/Electric Light Orchestra\/(1973) On the Third Day [JETLP 202]\/106 - Daybreaker.mp3",
-        "track": "6",
-        "playlisttrack": "",
-        "time": 230,
-        "year": "1973",
-        "bitrate": "320036",
-        "rate": "44100",
+        "tag": [
+            {
+                "id": "156",
+                "name": "Alternative Metal"
+            },
+            {
+                "id": "2764",
+                "name": "Modern Rock"
+            }
+        ],
+        "filename": "\/mnt\/music\/Kirra\/(2020) Redefine [ECLP 93002]\/117 - Potential.mp3",
+        "track": 17,
+        "playlisttrack": 1,
+        "time": 231,
+        "year": 2020,
+        "bitrate": 320036,
+        "rate": 44100,
         "mode": "vbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=775247&uid=3&player=api&name=Electric%20Light%20Orchestra%20-%20Daybreaker.mp3",
-        "size": "9231717",
-        "mbid": "a827c29f-9b7f-43a3-88f3-91759077e0b2",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=899198&uid=8&player=api&name=Kirra%20-%20Potential.mp3",
+        "size": 9333939,
+        "mbid": "8d684a03-b034-4538-90a0-adedfdb7a34a",
         "album_mbid": null,
         "artist_mbid": null,
         "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=58107&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "art": "https:\/\/music.com.au\/image.php?object_id=72232&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
-        "composer": "Jeff Lynne",
-        "channels": null,
-        "comment": "",
-        "publisher": "",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-4.220000",
-        "replaygain_track_peak": "0.944000",
-        "tags": [
-            "Rock",
-            "Pop",
-            "Prog Rock",
-            "Symphonic Rock"
-        ]
-    },
-    {
-        "id": "181734",
-        "title": "Cascade Leviathan",
-        "artist": {
-            "id": "9087",
-            "name": "Lock Up"
-        },
-        "album": {
-            "id": "57312",
-            "name": "Violent Reprisal"
-        },
-        "filename": "\/mnt\/music\/Lock Up\/(2007) Violent Reprisal\/114 - Cascade Leviathan.mp3",
-        "track": "14",
-        "playlisttrack": "",
-        "time": 162,
-        "year": "2007",
-        "bitrate": "320000",
-        "rate": "44100",
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=181734&uid=3&player=api&name=Lock%20Up%20-%20Cascade%20Leviathan.mp3",
-        "size": "6534820",
-        "mbid": "2909448b-ccb2-48ec-a36a-b0adb6d5dff2",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=57312&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Feto Records",
+        "publisher": "Eclipse Records",
         "language": "",
         "replaygain_album_gain": "0.000000",
         "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-9.060000",
+        "replaygain_track_gain": "-9.020000",
         "replaygain_track_peak": "1.000000",
-        "tags": [
-            "Death Metal"
-        ]
+        "genre": [
+            {
+                "name": "Alternative Metal"
+            },
+            {
+                "name": "Modern Rock"
+            }
+        ],
+        "encoding": "UTF-8",
+        "disk": "1",
+        "totaldisks": "1",
+        "band": "Kirra",
+        "release_type": "album",
+        "barcode": "638647930024",
+        "audio_codec": "mp3",
+        "recording_time": "2020-01-31",
+        "bpm": "60",
+        "album_artist_sort_order": "Kirra",
+        "performer_sort_order": "Kirra",
+        "media_type": "Digital Media",
+        "original_release_time": "2020-01-31",
+        "totaltracks": "17",
+        "album_artist": "Kirra",
+        "artists": "Kirra",
+        "dynamic_range__dr_": "7",
+        "dynamic_range__r128_": "5.010350227355957",
+        "musicbrainz_album_release_country": "XW",
+        "musicbrainz_album_status": "official",
+        "musicbrainz_release_track_id": "a1da1513-0725-4aa4-8e47-da8947661cd9",
+        "originalyear": "2020",
+        "peak_level__r128_": "+1.0 dBTP; +1.0 Left; +0.4 Right",
+        "peak_level__sample_": "+0.0 dB; +0.0 Left; -0.0 Right",
+        "tool_name": "Media Center",
+        "volume_level__r128_": "-14.0187702178955078",
+        "volume_level__replaygain_": "-9.0187702178955078",
+        "Waveform": "0.2382;0.231;0.0727;0.0529;0.2465;0.228;0.2332;0.2427;0.2429;0.2342;0.0755;0.1075;0.2399;0.2314;0.2349;0.1991;0.2215;0.2175;0.2077;0.2183;0.2344;0.2367;0.2348;0.2144;0.2286;0.2357;0.0775;0.0553;0.2391;0.2393;0.25;0.2297;0.2375;0.2259;0.0892;0.2045;0.2364;0.2414;0.2584;0.2415;0.2347;0.2195;0.1838;0.1865;0.2379;0.248;0.2404;0.2249;0.1238;0.0562;0.0533;0.0343;0.0482;0.0421;0.0516;0.0497;0.0408;0.0377;0.0454;0.0365;0.0382;0.0503;0.053;0.1067;0.2031;0.2167;0.2474;0.2338;0.2248;0.2392;0.2378;0.2224;0.2212;0.2348;0.223;0.2214;0.23;0.2427;0.2242;0.2219;0.2386;0.2455;0.2395;0.2464;0.2311;0.2258;0.1971;0.2161;0.2385;0.2442;0.2302;0.2163;0.2515;0.2412;0.2414;0.2465;0.2556;0.2389;0.1279;0.0702;0.2388;0.2282;0.2482;0.2595;0.2321;0.2321;0.19;0.1446;0.245;0.2341;0.2635;0.2114;0.2509;0.2357;0.241;0.2078;0.267;0.2528;0.2536;0.236;0.2259;0.2555;0.0917;0.1384;0.2453;0.2427;0.226;0.2499;0.2551;0.2437;0.1791;0.2095;0.2389;0.2467;0.259;0.2255;0.2591;0.2229;0.2281;0.2107;0.2537;0.2444;0.2492;0.2374;0.2058;0.1648;0.1288;0.0937;0.1222;0.1561;0.1408;0.1531;0.2333;0.2557;0.2349;0.2127;0.2351;0.216;0.2446;0.2477;0.2342;0.2165;0.2394;0.2204;0.2305;0.2308;0.2235;0.2302;0.2286;0.2226;0.2486;0.2539;0.2115;0.2201;0.2483;0.2311;0.2565;0.2561;0.1205;0.0748;0.2619;0.2569;0.2542;0.2702;0.2451;0.2413;0.1624;0.1456;0.2488;0.2569;0.2666;0.2335;0.261;0.2278;0.2145;0.1948;0.2556;0.2436;0.2575;0.2566;0.2624;0.2546;0.089;0.1278;0.2522;0.2449;0.2546;0.2645;0.244;0.2349;0.1665;0.2093;0.2434;0.2556;0.2601;0.2259;0.2476;0.2279;0.238;0.2179;0.2493;0.2164;0.1884;0.1648;0.0711;0.0612;0.0468;0.0416;0.0728;0.0677;0.0488;0.0718;0.2357;0.1959;0.1667;0.1445;0.2213;0.1788;0.2278;0.1951;0.2316;0.1969;0.178;0.1631;0.2424;0.1975;0.164;0.2413;0.2322;0.2139;0.1648;0.1484;0.2326;0.2015;0.2393;0.2426;0.2229;0.2296;0.208;0.2085;0.2197;0.2409;0.2017;0.2407;0.2253;0.2385;0.2229;0.2201;0.2156;0.2285;0.2186;0.255;0.2426;0.2229;0.27;0.2645;0.2607;0.258;0.2453;0.2666;0.2492;0.2565;0.2543;0.2535;0.2562;0.2394;0.2705;0.2487;0.2515;0.2454;0.262;0.2515;0.2092;0.2565;0.2703;0.2596;0.249;0.2524;0.249;0.2657;0.2744;0.132;0.0871;0.0953;0.0908;0.0762;0.0766;0.0602;0.0715;0.0865;0.0849;0.099;0.0722;0.0618;0.08;0.0784;0.0833;0.1527;0.105;0.1447;0.1173;0.129;0.1327;0.1179;0.171;0.1643;0.1565;0.1414;0.0935;0.1888;0.1544;0.1766;0.1105;0.1603;0.1887;0.1777;0.1659;0.2267;0.1985;0.2051;0.2154;0.2016;0.1866;0.1635;0.18;0.2128;0.2153;0.213;0.2036;0.2036;0.2064;0.1546;0.1416;0.2335;0.2107;0.1947;0.2142;0.2144;0.2237;0.1832;0.1872;0.2036;0.224;0.2234;0.2115;0.1921;0.1954;0.1812;0.1744;0.235;0.2304;0.2046;0.2345;0.2204;0.2144;0.1854;0.1977;0.2092;0.2154;0.2286;0.2279;0.2055;0.2242;0.1677;0.1621;0.1941;0.2083;0.2136;0.2389;0.2194;0.2122;0.2057;0.2191;0.2022;0.2024;0.2397;0.2346;0.205;0.197;0.1728;0.1814;0.2449;0.2141;0.2092;0.2463;0.2376;0.2389;0.2415;0.2566;0.2314;0.2398;0.2208;0.2111;0.2397;0.2328;0.1832;0.1795;0.2303;0.2112;0.2187;0.231;0.2356;0.2359;0.2458;0.2199;0.2;0.2179;0.2387;0.2499;0.2586;0.2564;0.2635;0.2521;0.2383;0.2189;0.0715;0.0607;0.2514;0.2393;0.2464;0.2589;0.2425;0.2259;0.1087;0.1996;0.2506;0.2254;0.2478;0.2372;0.2294;0.215;0.1811;0.2036;0.2484;0.1939;0.2227;0.2657;0.2453;0.22;0.1361;0.0114;0.0013;0.0001"
     },
     {
-        "id": "857352",
-        "title": "\u30ea\u30dc\u30f3\u306e\u9a0e\u58eb",
+        "id": "752613",
+        "title": "No Water",
+        "name": "No Water",
         "artist": {
-            "id": "9272",
-            "name": "Jun Togawa with Vampillia"
+            "id": "9609",
+            "name": "Bob Marley & The Wailers"
         },
         "album": {
-            "id": "67132",
-            "name": "\u662d\u548c\u4eab\u5e74"
+            "id": "58935",
+            "name": "Thank You Lord"
         },
-        "filename": "\/mnt\/music\/Jun Togawa\/(2012) \u662d\u548c\u4eab\u5e74 [TECH-20317]\/105 - \u30ea\u30dc\u30f3\u306e\u9a0e\u58eb.mp3",
-        "track": "5",
-        "playlisttrack": "",
-        "time": 135,
-        "year": "2012",
-        "bitrate": "320000",
-        "rate": "44100",
+        "tag": [
+            {
+                "id": "786",
+                "name": "Reggae"
+            }
+        ],
+        "filename": "\/mnt\/music\/Bob Marley & The Wailers\/(2003) Thank You Lord [1PAZZ016-1]\/106 - No Water.mp3",
+        "track": 6,
+        "playlisttrack": 2,
+        "time": 132,
+        "year": 2005,
+        "bitrate": 192000,
+        "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=857352&uid=3&player=api&name=Jun%20Togawa%20with%20Vampillia%20-%20-.mp3",
-        "size": "5460095",
-        "mbid": "1e2d1466-137c-4631-ab3d-085e5e9ddf81",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=752613&uid=8&player=api&name=Bob%20Marley%20-%20The%20Wailers%20-%20No%20Water.mp3",
+        "size": 3225542,
+        "mbid": "6c689a65-d93a-4fd4-99e2-267bb98df1a3",
         "album_mbid": null,
         "artist_mbid": null,
         "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=67132&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "art": "https:\/\/music.com.au\/image.php?object_id=58935&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Teichiku Records",
+        "publisher": "Pazzazz",
+        "language": "eng",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-1.390000",
+        "replaygain_track_peak": "0.861000",
+        "genre": [
+            {
+                "name": "Reggae"
+            }
+        ],
+        "encoding": "UTF-8",
+        "disk": "1",
+        "totaldisks": "1",
+        "band": "Bob Marley & The Wailers",
+        "release_type": "album\u0000\ufeffcompilation",
+        "barcode": "883717006127",
+        "audio_codec": "mp3",
+        "recording_time": "2005-05-31",
+        "bpm": "113",
+        "album_artist_sort_order": "Marley, Bob & The Wailers",
+        "performer_sort_order": "Marley, Bob & The Wailers",
+        "media_type": "CD",
+        "original_release_time": "2003",
+        "totaltracks": "17"
+    },
+    {
+        "id": "50817",
+        "title": "You Stick It in Me",
+        "name": "You Stick It in Me",
+        "artist": {
+            "id": "2562",
+            "name": "IAMX"
+        },
+        "album": {
+            "id": "34091",
+            "name": "Kiss + Swallow"
+        },
+        "tag": [
+            {
+                "id": "4",
+                "name": "Electronic"
+            },
+            {
+                "id": "6",
+                "name": "Rock"
+            },
+            {
+                "id": "47",
+                "name": "Pop Rock"
+            },
+            {
+                "id": "48",
+                "name": "New Wave"
+            },
+            {
+                "id": "55",
+                "name": "Electro"
+            }
+        ],
+        "filename": "\/mnt\/music\/IAMX\/(2004) Kiss + Swallow\/109 - You Stick It in Me.mp3",
+        "track": 8,
+        "playlisttrack": 3,
+        "time": 259,
+        "year": 2008,
+        "bitrate": 320000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=50817&uid=8&player=api&name=IAMX%20-%20You%20Stick%20It%20in%20Me.mp3",
+        "size": 10388420,
+        "mbid": "8c973181-7324-4f7d-80ef-16e962e938f1",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=34091&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
+        "composer": "Chris Corner",
+        "channels": null,
+        "comment": "",
+        "publisher": "Metropolis Records",
+        "language": "eng",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-5.700000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Electronic"
+            },
+            {
+                "name": "Rock"
+            },
+            {
+                "name": "Pop Rock"
+            },
+            {
+                "name": "New Wave"
+            },
+            {
+                "name": "Electro"
+            }
+        ],
+        "encoding": "UTF-8",
+        "disk": "1",
+        "totaldisks": "1",
+        "band": "IAMX",
+        "release_type": "album",
+        "barcode": "782388054621",
+        "audio_codec": "mp3",
+        "recording_time": "2008-06-17",
+        "bpm": "101",
+        "album_artist_sort_order": "IAMX",
+        "performer_sort_order": "IAMX",
+        "media_type": "CD",
+        "original_release_time": "2004-06-14",
+        "totaltracks": "14",
+        "tagging_time": "2013-07-23T11:42:19",
+        "lyricist": "Sue Denim",
+        "music_cd_identifier": "D\u0000+\u00009\u00006\u0000+\u00004\u0000E\u00008\u0000+\u00006\u00001\u00006\u00002\u0000+\u0000B\u0000D\u00001\u00000\u0000+\u00001\u00001\u0000B\u0000C\u00000\u0000+\u00001\u00006\u0000E\u00005\u0000F\u0000+\u00001\u0000D\u00008\u00006\u00007\u0000+\u00002\u00003\u00005\u00007\u00009\u0000+\u00002\u00009\u00002\u00000\u0000D\u0000+\u00002\u0000D\u0000E\u00001\u0000F\u0000+\u00003\u00003\u00009\u00006\u0000D\u0000+\u00003\u00007\u00008\u0000B\u0000C\u0000+\u00003\u0000D\u00002\u00006\u00004\u0000+\u00004\u00002\u0000C\u0000D\u00001"
+    },
+    {
+        "id": "773497",
+        "title": "King of Nowhere (Phonecall From Nowhere mix)",
+        "name": "King of Nowhere (Phonecall From Nowhere mix)",
+        "artist": {
+            "id": "556",
+            "name": "Diary of Dreams"
+        },
+        "album": {
+            "id": "60889",
+            "name": "King of Nowhere"
+        },
+        "tag": [
+            {
+                "id": "7",
+                "name": "Synthpop"
+            },
+            {
+                "id": "50",
+                "name": "EBM"
+            },
+            {
+                "id": "51",
+                "name": "Gothic Metal"
+            },
+            {
+                "id": "52",
+                "name": "Darkwave"
+            },
+            {
+                "id": "73",
+                "name": "Post-Punk"
+            },
+            {
+                "id": "77",
+                "name": "Experimental"
+            },
+            {
+                "id": "1318",
+                "name": "Neo Romantic"
+            },
+            {
+                "id": "1403",
+                "name": "Goth Rock"
+            },
+            {
+                "id": "1612",
+                "name": "Neo-Classical"
+            }
+        ],
+        "filename": "\/mnt\/music\/Diary of Dreams\/(2009) King of Nowhere [A116]\/104 - King of Nowhere (Phonecall From Nowhere mix).mp3",
+        "track": 4,
+        "playlisttrack": 4,
+        "time": 214,
+        "year": 2009,
+        "bitrate": 320000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=773497&uid=8&player=api&name=Diary%20of%20Dreams%20-%20King%20of%20Nowhere%20-Phonecall%20From%20Nowhere%20mix-.mp3",
+        "size": 8649958,
+        "mbid": "3e3a657f-d286-454c-af6f-492c75fddc03",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=60889&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "Accession Records",
         "language": "",
         "replaygain_album_gain": "0.000000",
         "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-8.030000",
+        "replaygain_track_gain": "-8.290000",
         "replaygain_track_peak": "1.000000",
-        "tags": []
+        "genre": [
+            {
+                "name": "Synthpop"
+            },
+            {
+                "name": "EBM"
+            },
+            {
+                "name": "Gothic Metal"
+            },
+            {
+                "name": "Darkwave"
+            },
+            {
+                "name": "Post-Punk"
+            },
+            {
+                "name": "Experimental"
+            },
+            {
+                "name": "Neo Romantic"
+            },
+            {
+                "name": "Goth Rock"
+            },
+            {
+                "name": "Neo-Classical"
+            }
+        ],
+        "encoding": "UTF-8",
+        "disk": "1",
+        "totaldisks": "1",
+        "band": "Diary of Dreams",
+        "release_type": "single",
+        "barcode": "4047179372428",
+        "audio_codec": "mp3",
+        "recording_time": "2009-10-09",
+        "bpm": "114",
+        "album_artist_sort_order": "Diary of Dreams",
+        "performer_sort_order": "Diary of Dreams",
+        "media_type": "CD",
+        "original_release_time": "2009-10-09",
+        "totaltracks": "5"
     }
 ]

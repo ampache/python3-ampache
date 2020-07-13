@@ -6,15 +6,24 @@
             "id": "9205",
             "name": "90 Day Men \/ GoGoGoAirheart"
         },
-        "year": "2000",
-        "tracks": "8",
-        "disk": "1",
-        "tags": "{\n    \"id\": 1415,\n    \"count\": 1,\n    \"name\": \"Post Rock\"\n}",
+        "year": 2000,
+        "tracks": 8,
+        "disk": 1,
+        "tag": [
+            {
+                "id": "674",
+                "name": "Math Rock"
+            },
+            {
+                "id": "1415",
+                "name": "Post Rock"
+            }
+        ],
         "art": "https:\/\/music.com.au\/image.php?object_id=57887&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
         "mbid": "d6fc36cc-9351-4b53-b7db-7f5b30804800"
     },
     {
@@ -24,15 +33,15 @@
             "id": "1229",
             "name": "Flock of Seagulls"
         },
-        "year": "1983",
-        "tracks": "4",
-        "disk": "1",
-        "tags": "[]",
+        "year": 1983,
+        "tracks": 4,
+        "disk": 1,
+        "tag": [],
         "art": "https:\/\/music.com.au\/image.php?object_id=43867&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
         "mbid": null
     },
     {
@@ -42,33 +51,50 @@
             "id": "456",
             "name": "Joy Division"
         },
-        "year": "2010",
-        "tracks": "19",
+        "year": 2010,
+        "tracks": 19,
         "disk": 9,
-        "tags": "{\n    \"id\": 48,\n    \"count\": 1,\n    \"name\": \"New Wave\"\n}",
+        "tag": [
+            {
+                "id": "6",
+                "name": "Rock"
+            },
+            {
+                "id": "36",
+                "name": "Indie Rock"
+            },
+            {
+                "id": "48",
+                "name": "New Wave"
+            },
+            {
+                "id": "73",
+                "name": "Post-Punk"
+            }
+        ],
         "art": "https:\/\/music.com.au\/image.php?object_id=33429&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
         "mbid": "85bd4a0e-d28a-442c-922e-394b939e7af9"
     },
     {
-        "id": "52825",
-        "name": "...and Justice for All",
+        "id": "73836",
+        "name": "... De Los Valles y Las Monta\u00f1as",
         "artist": {
-            "id": "563",
-            "name": "Metallica"
+            "id": "16949",
+            "name": "Bosques de mi Mente"
         },
-        "year": "1988",
-        "tracks": "9",
-        "disk": "1",
-        "tags": "{\n    \"id\": 86,\n    \"count\": 1,\n    \"name\": \"Thrash Metal\"\n}",
-        "art": "https:\/\/music.com.au\/image.php?object_id=52825&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "year": 2016,
+        "tracks": 10,
+        "disk": 1,
+        "tag": [],
+        "art": "https:\/\/music.com.au\/image.php?object_id=73836&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
-        "preciserating": 0,
-        "rating": 0,
-        "averagerating": 0,
-        "mbid": "cb2704e5-b7a3-343e-918f-aa9cd3489170"
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "mbid": "3e775784-6e32-4433-9023-8711cff98df3"
     }
 ]
