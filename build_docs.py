@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import shutil
 import sys
 import time
@@ -553,7 +554,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
     tag_songs = ampache.tag_songs(ampache_url, ampache_api, genre, 0, 1, api_format)
-    
+
     """ licenses
     def licenses(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
@@ -572,7 +573,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ timeline
     def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, api_format = 'xml'):
     """
-    timeline = ampache.timeline(ampache_url, ampache_api, ampache_user, 10, limit, api_format)
+    timeline = ampache.timeline(ampache_url, ampache_api, ampache_user, 10, 0, api_format)
 
     if api_format == 'xml':
         for child in timeline:
@@ -619,15 +620,16 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     # Close your session when you're done
     goodbye = ampache.goodbye(ampache_url, ampache_api, api_format)
 
-    for files in os.listdir("docs/" + api_format + "-responses/"):
-        f = open(files,'r')
+    for files in os.listdir("./docs/" + api_format + "-responses/"):
+        f = open("./docs/" + api_format + "-responses/" + files,'r')
         filedata = f.read()
         f.close()
 
-        newdata = filedata.replace(ampache_url, "https://music.com.au")
-        newdata = filedata.replace(ampache_api, "eeb9f1b6056246a7d563f479f518bb34")
+        url_text = ampache_url.replace("https://", "")
+        newdata = filedata.replace(url_text, "music.com.au")
+        newdata = newdata.replace(ampache_api, "eeb9f1b6056246a7d563f479f518bb34")
 
-        f = open(files,'w')
+        f = open("./docs/" + api_format + "-responses/" + files,'w')
         f.write(newdata)
         f.close()
 
