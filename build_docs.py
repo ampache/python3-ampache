@@ -600,6 +600,21 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     update_from_tags = ampache.update_from_tags(ampache_url, ampache_api, 'album', single_album, api_format)
 
+    """ update_artist_info
+
+    """
+    ampache.update_artist_info(ampache_url, ampache_api, single_artist, api_format)
+
+    """ update_art
+
+    """
+    ampache.update_art(ampache_url, ampache_api, 'artist', single_artist, False, api_format)
+   
+    """ update_podcast
+
+    """
+    ampache.update_podcast(ampache_url, ampache_api, 10, api_format)
+    
     """ video
     def video(ampache_url, ampache_api, filter, api_format = 'xml'):
     """

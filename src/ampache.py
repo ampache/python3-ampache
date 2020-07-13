@@ -1842,6 +1842,40 @@ def podcast_episode(ampache_url, ampache_api, filter_str, offset=0, limit=0, api
         return tree
 
 
+def update_podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
+    """ update_podcast
+        MINIMUM_API_VERSION=410001
+
+        Sync and download new podcast episodes
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = (integer) UID of Podcast
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'update_podcast',
+            'auth': ampache_api,
+            'filter': filter_str}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'update_podcast')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
 def search_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ search_songs
         MINIMUM_API_VERSION=380001
