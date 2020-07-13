@@ -1577,7 +1577,7 @@ def share_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def catalogs(ampache_url, ampache_api, filter_str=False, api_format='xml'):
+def catalogs(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
     """ catalogs
         MINIMUM_API_VERSION=410001
 
