@@ -608,7 +608,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ update_art
 
     """
-    ampache.update_art(ampache_url, ampache_api, 'artist', single_artist, False, api_format)
+    ampache.update_art(ampache_url, ampache_api, 'artist', single_artist, True, api_format)
    
     """ update_podcast
 
