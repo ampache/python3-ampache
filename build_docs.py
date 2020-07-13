@@ -412,11 +412,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     playlists = ampache.playlists(ampache_url, ampache_api, False, False, 0, limit, api_format)
 
-    """ playlist
-    def playlist(ampache_url, ampache_api, filter, api_format = 'xml'):
-    """
-    playlist = ampache.playlist(ampache_url, ampache_api, single_playlist, api_format)
-
     """ playlist_songs
     def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
@@ -425,27 +420,40 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ playlist_create
     def playlist_create(ampache_url, ampache_api, name, type, api_format = 'xml'):
     """
-    #print(ampache.playlist_create(ampache_url, ampache_api))
+    playlist_create = ampache.playlist_create(ampache_url, ampache_api, 'rename', 'private', api_format)
+    
+    if api_format == 'xml':
+        tmp_playlist = playlist_create[1].attrib
+        single_playlist = tmp_playlist['id']
+    else:
+        single_playlist = playlist_create[0]['id']
 
     """ playlist_edit
     def playlist_edit(ampache_url, ampache_api, filter, name = False, type = False, api_format = 'xml'):
     """
-    #print(ampache.playlist_edit(ampache_url, ampache_api))
+    ampache.playlist_edit(ampache_url, ampache_api, single_playlist, 'documentation', 'public', api_format)
 
     """ playlist_add_song
     def playlist_add_song(ampache_url, ampache_api, filter, song, check = 0, api_format = 'xml'):
     """
-    #print(ampache.playlist_add_song(ampache_url, ampache_api))
+    ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, 77371, 0, api_format)
+    ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, 77371, 1, api_format)
+    ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, 77371, 0, api_format)
 
     """ playlist_remove_song
     def playlist_remove_song(ampache_url, ampache_api, filter, song = False, track = False, api_format = 'xml'):
     """
-    #print(ampache.playlist_remove_song(ampache_url, ampache_api))
+    ampache.playlist_remove_song(ampache_url, ampache_api, single_playlist, False, 1, api_format)
+
+    """ playlist
+    def playlist(ampache_url, ampache_api, filter, api_format = 'xml'):
+    """
+    playlist = ampache.playlist(ampache_url, ampache_api, single_playlist, api_format)
 
     """ playlist_delete
     def playlist_delete(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
-    #print(ampache.playlist_delete(ampache_url, ampache_api))
+    ampache.playlist_delete(ampache_url, ampache_api, single_playlist, api_format)
 
     """ playlist_generate
     def playlist_generate(ampache_url, ampache_api, mode = 'random', filter = False, album = False, artist = False, flag = False, format = 'song', offset = 0, limit = 0, api_format = 'xml'):
