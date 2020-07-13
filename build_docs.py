@@ -118,7 +118,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     songs     = ampache.get_indexes(ampache_url, ampache_api, 'song', False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                "docs/" + api_format + "-responses/get_indexes (songs)." + api_format)
+                "docs/" + api_format + "-responses/get_indexes (song)." + api_format)
     if api_format == 'xml':
         for child in songs:
             if child.tag == 'total_count':
@@ -131,7 +131,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     albums    = ampache.get_indexes(ampache_url, ampache_api, 'album', False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                "docs/" + api_format + "-responses/get_indexes (albums)." + api_format)
+                "docs/" + api_format + "-responses/get_indexes (album)." + api_format)
     if api_format == 'xml':
         for child in albums:
             if child.tag == 'total_count':
@@ -157,7 +157,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     playlists = ampache.get_indexes(ampache_url, ampache_api, 'playlist', False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                "docs/" + api_format + "-responses/get_indexes (playlists)." + api_format)
+                "docs/" + api_format + "-responses/get_indexes (playlist)." + api_format)
     if api_format == 'xml':
         for child in playlists:
             if child.tag == 'total_count':
