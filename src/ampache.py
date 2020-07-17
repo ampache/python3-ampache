@@ -4,7 +4,7 @@
 """
 Copyright (C)2020 Ampache.org
 -------------------------------------------
-Ampache XML and JSON Api 410001 for python3
+Ampache XML and JSON Api 420000 for python3
 -------------------------------------------
 
  This program is free software: you can redistribute it and/or modify
@@ -299,7 +299,7 @@ def url_to_song(ampache_url, ampache_api, url, api_format='xml'):
 
 def get_similar(ampache_url, ampache_api, object_type, filter_str, offset=0, limit=0, api_format='xml'):
     """ get_similar
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         Return similar artist id's or similar song ids compared to the input filter
 
@@ -1357,7 +1357,7 @@ def playlist_generate(ampache_url, ampache_api, mode='random',
 
 def shares(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
     """ shares
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         INPUTS
         * ampache_url = (string)
@@ -1399,7 +1399,7 @@ def shares(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, li
 
 def share(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ share
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         Return shares by UID
 
@@ -1436,7 +1436,7 @@ def share(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='x
 def share_create(ampache_url, ampache_api, filter_str, object_type,
                  description=False, expires=False, api_format='xml'):
     """ share_create
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         Create a public url that can be used by anyone to stream media.
         Takes the file id with optional description and expires parameters.
@@ -1492,7 +1492,7 @@ def share_create(ampache_url, ampache_api, filter_str, object_type,
 def share_edit(ampache_url, ampache_api, filter_str, stream=False, download=False,
                expires=False, description=False, api_format='xml'):
     """ share_edit
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         Update the description and/or expiration date for an existing share.
         Takes the share id to update with optional description and expires parameters.
@@ -1543,7 +1543,7 @@ def share_edit(ampache_url, ampache_api, filter_str, stream=False, download=Fals
 
 def share_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
     """ share_delete
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         Delete an existing share.
 
@@ -1577,7 +1577,7 @@ def share_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
 
 def catalogs(ampache_url, ampache_api, filter_str=False, offset=0, limit=0, api_format='xml'):
     """ catalogs
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         INPUTS
         * ampache_url = (string)
@@ -1590,7 +1590,7 @@ def catalogs(ampache_url, ampache_api, filter_str=False, offset=0, limit=0, api_
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'catalogs',
             'auth': ampache_api,
-            'filter': filter_str
+            'filter': filter_str,
             'offset': str(offset),
             'limit': str(limit)}
     if not filter_str:
@@ -1615,7 +1615,7 @@ def catalogs(ampache_url, ampache_api, filter_str=False, offset=0, limit=0, api_
 
 def catalog(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ catalog
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         Return catalogs by UID
 
@@ -1685,9 +1685,49 @@ def catalog_action(ampache_url, ampache_api, task, catalog, api_format='xml'):
         return tree
 
 
+def catalog_file(ampache_url, ampache_api, file, task, catalog, api_format='xml'):
+    """ catalog_file
+        MINIMUM_API_VERSION=420000
+
+        Perform actions on local catalog files.
+        Single file versions of catalog add, clean and verify.
+        Make sure you remember to urlencode those file names!
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * file        = (string) urlencode(FULL path to local file)
+        * task        = (string) 'add'|'clean'|'verify'|'remove'
+        * catalog     = (integer) $catalog_id
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'catalog_file',
+            'auth': ampache_api,
+            'file': file,
+            'task': task,
+            'catalog': catalog}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'catalog_action')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
 def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
     """ podcasts
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         INPUTS
         * ampache_url = (string)
@@ -1729,7 +1769,7 @@ def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, 
 
 def podcast(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ podcast
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         Return podcasts by UID
 
@@ -1761,11 +1801,126 @@ def podcast(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format=
         except ElementTree.ParseError:
             return False
         return tree
- 
+
+
+def podcast_create(ampache_url, ampache_api, url, catalog, api_format='xml'):
+    """ podcast_create
+        MINIMUM_API_VERSION=420000
+
+        Return podcasts by UID
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * url         = (string) rss url for podcast
+        * catalog     = (string) podcast catalog
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'podcast_create',
+            'auth': ampache_api,
+            'url': url,
+            'catalog': catalog}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'podcast')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def podcast_edit(ampache_url, ampache_api, filter_str, stream, download, expires, description, api_format='xml'):
+    """ podcast_edit
+        MINIMUM_API_VERSION=420000
+
+        Update the description and/or expiration date for an existing podcast.
+        Takes the podcast id to update with optional description and expires parameters.
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = (string) Alpha-numeric search term //optional
+        * stream      = (boolean) 0,1 // optional
+        * download    = (boolean) 0,1 // optional
+        * expires     = (integer) number of whole days before expiry // optional
+        * description = (string) update description // optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'podcast_edit',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'stream': stream,
+            'download': download,
+            'expires': expires,
+            'description': description}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'podcast')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def podcast_delete(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+    """ podcast_delete
+        MINIMUM_API_VERSION=420000
+
+        Delete an existing podcast.
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = (integer) UID of podcast to delete
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'podcast_delete',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'offset': str(offset),
+            'limit': str(limit)}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'podcast')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
 
 def podcast_episodes(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
     """ podcast_episodes
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         INPUTS
         * ampache_url = (string)
@@ -1807,7 +1962,7 @@ def podcast_episodes(ampache_url, ampache_api, filter_str=False, exact=False, of
 
 def podcast_episode(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ podcast_episode
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         Return podcast_episodes by UID
 
@@ -1841,9 +1996,43 @@ def podcast_episode(ampache_url, ampache_api, filter_str, offset=0, limit=0, api
         return tree
 
 
+def podcast_episode_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
+    """ podcast_episode_delete
+        MINIMUM_API_VERSION=420000
+
+        Delete an existing podcast_episode.
+
+        INPUTS
+        * ampache_url = (string)
+        * ampache_api = (string)
+        * filter_str  = (integer) UID of podcast_episode to delete
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'podcast_episode_delete',
+            'auth': ampache_api,
+            'filter': filter_str}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'podcast_episode')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
 def update_podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
     """ update_podcast
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         Sync and download new podcast episodes
 
@@ -2115,7 +2304,7 @@ def localplay(ampache_url, ampache_api, command, api_format='xml'):
         INPUTS
         * ampache_url = (string)
         * ampache_api = (string)
-        * command     =
+        * command     = (string) 'next', 'prev', 'stop', 'play'
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
@@ -2149,17 +2338,15 @@ def democratic(ampache_url, ampache_api, method, action, oid, api_format='xml'):
         INPUTS
         * ampache_url = (string)
         * ampache_api = (string)
-        * method      =
-        * action      =
-        * oid         =
+        * oid         = (integer) object_id (song_id|playlist_id)
+        * method      = (string) 'vote'|'devote'|'playlist'|'play'
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'democratic',
             'auth': ampache_api,
-            'method': method,
-            'action': action,
-            'oid': oid}
+            'oid': oid,
+            'method': method}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'democratic')
@@ -3004,7 +3191,7 @@ def user_delete(ampache_url, ampache_api, username, api_format='xml'):
 def licenses(ampache_url, ampache_api, filter_str=False, exact=False,
              add=False, update=False, offset=0, limit=0, api_format='xml'):
     """ licenses
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         Returns licenses based on the specified filter_str
 
@@ -3056,7 +3243,7 @@ def licenses(ampache_url, ampache_api, filter_str=False, exact=False,
 
 def license(ampache_url, ampache_api, filter_str, api_format='xml'):
     """ license
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         returns a single license
 
@@ -3090,7 +3277,7 @@ def license(ampache_url, ampache_api, filter_str, api_format='xml'):
 
 def license_songs(ampache_url, ampache_api, filter_str, api_format='xml'):
     """ license_songs
-        MINIMUM_API_VERSION=410001
+        MINIMUM_API_VERSION=420000
 
         returns a songs for a single license ID
 
