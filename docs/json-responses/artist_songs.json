@@ -1,72 +1,250 @@
 [
     {
-        "id": "749168",
-        "title": "(Feels Like) Heaven",
-        "name": "(Feels Like) Heaven",
+        "id": "95577",
+        "title": "Out of the Fridge \/ Into the Fire",
+        "name": "Out of the Fridge \/ Into the Fire",
         "artist": {
-            "id": "9572",
-            "name": "Fiction Factory"
+            "id": "2298",
+            "name": "The Cops"
         },
         "album": {
-            "id": "38534",
-            "name": "Back to the 80's: De Hits uit de Jaren '80: The Long Versions"
+            "id": "52480",
+            "name": "Drop It in Their Laps"
         },
         "tag": [
             {
-                "id": "22",
-                "name": "Pop"
+                "id": "6",
+                "name": "Rock"
+            },
+            {
+                "id": "47",
+                "name": "Pop Rock"
             }
         ],
-        "filename": "\/mnt\/music\/Various Artists\/(2002) Back to the 80's: De Hits uit de Jaren '80: The Long Versions [504361 2]\/309 - Fiction Factory - (Feels Like) Heaven.mp3",
-        "track": 9,
+        "filename": "\/mnt\/music\/The Cops\/(2007) Drop It in Their Laps [IR5225CD]\/101 - Out of the Fridge _ Into the Fire.mp3",
+        "track": 1,
         "playlisttrack": 1,
-        "time": 351,
-        "year": 2002,
-        "bitrate": 320000,
+        "time": 261,
+        "year": 2007,
+        "bitrate": 320031,
         "rate": 44100,
-        "mode": "cbr",
+        "mode": "vbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=749168&uid=8&player=api&name=Fiction%20Factory%20-%20-Feels%20Like-%20Heaven.mp3",
-        "size": 14276735,
-        "mbid": "392410ec-ea30-4f94-a43f-8e312149fa7b",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=95577&uid=2&player=api&name=The%20Cops%20-%20Out%20of%20the%20Fridge%20-%20Into%20the%20Fire.mp3",
+        "size": 10454247,
+        "mbid": "b3d81e9c-0a7a-48dc-9888-f48f2325dfe5",
         "album_mbid": null,
         "artist_mbid": null,
         "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=38534&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 1,
+        "preciserating": 5,
+        "rating": 5,
         "averagerating": null,
-        "playcount": 0,
+        "playcount": 1,
         "catalog": 2,
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Sony Music Media",
+        "publisher": "Inertia Recordings",
         "language": "",
         "replaygain_album_gain": "0.000000",
         "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-2.800000",
+        "replaygain_track_gain": "-10.870000",
         "replaygain_track_peak": "1.000000",
         "genre": [
             {
-                "name": "Pop"
+                "name": "Rock"
+            },
+            {
+                "name": "Pop Rock"
+            }
+        ]
+    },
+    {
+        "id": "95571",
+        "title": "Cop Pop",
+        "name": "Cop Pop",
+        "artist": {
+            "id": "2298",
+            "name": "The Cops"
+        },
+        "album": {
+            "id": "52480",
+            "name": "Drop It in Their Laps"
+        },
+        "tag": [
+            {
+                "id": "6",
+                "name": "Rock"
+            },
+            {
+                "id": "47",
+                "name": "Pop Rock"
             }
         ],
-        "encoding": "UTF-8",
-        "disk": "3",
-        "totaldisks": "4",
-        "band": "Various Artists",
-        "release_type": "album\u0000\ufeffcompilation",
-        "barcode": "5099750436127",
-        "audio_codec": "mp3",
-        "recording_time": "2002",
-        "bpm": "115",
-        "performer_sort_order": "Fiction Factory",
-        "part_of_a_compilation": "1",
-        "original_release_time": "2002",
-        "album_artist_sort_order": "Various Artists",
-        "media_type": "CD",
-        "totaltracks": "10"
+        "filename": "\/mnt\/music\/The Cops\/(2007) Drop It in Their Laps [IR5225CD]\/102 - Cop Pop.mp3",
+        "track": 2,
+        "playlisttrack": 2,
+        "time": 168,
+        "year": 2007,
+        "bitrate": 320049,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=95571&uid=2&player=api&name=The%20Cops%20-%20Cop%20Pop.mp3",
+        "size": 6767074,
+        "mbid": "85932e71-c812-46ec-8765-1beb98665888",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "Inertia Recordings",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-10.390000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Rock"
+            },
+            {
+                "name": "Pop Rock"
+            }
+        ]
+    },
+    {
+        "id": "95575",
+        "title": "Call Me Anytime",
+        "name": "Call Me Anytime",
+        "artist": {
+            "id": "2298",
+            "name": "The Cops"
+        },
+        "album": {
+            "id": "52480",
+            "name": "Drop It in Their Laps"
+        },
+        "tag": [
+            {
+                "id": "6",
+                "name": "Rock"
+            },
+            {
+                "id": "47",
+                "name": "Pop Rock"
+            }
+        ],
+        "filename": "\/mnt\/music\/The Cops\/(2007) Drop It in Their Laps [IR5225CD]\/103 - Call Me Anytime.mp3",
+        "track": 3,
+        "playlisttrack": 3,
+        "time": 229,
+        "year": 2007,
+        "bitrate": 320036,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=95575&uid=2&player=api&name=The%20Cops%20-%20Call%20Me%20Anytime.mp3",
+        "size": 9178427,
+        "mbid": "eba800a2-cc6a-4f35-926b-553ae6a7302b",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 1,
+        "preciserating": 5,
+        "rating": 5,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "Inertia Recordings",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-10.030000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Rock"
+            },
+            {
+                "name": "Pop Rock"
+            }
+        ]
+    },
+    {
+        "id": "95582",
+        "title": "The Message",
+        "name": "The Message",
+        "artist": {
+            "id": "2298",
+            "name": "The Cops"
+        },
+        "album": {
+            "id": "52480",
+            "name": "Drop It in Their Laps"
+        },
+        "tag": [
+            {
+                "id": "6",
+                "name": "Rock"
+            },
+            {
+                "id": "47",
+                "name": "Pop Rock"
+            }
+        ],
+        "filename": "\/mnt\/music\/The Cops\/(2007) Drop It in Their Laps [IR5225CD]\/104 - The Message.mp3",
+        "track": 4,
+        "playlisttrack": 4,
+        "time": 253,
+        "year": 2007,
+        "bitrate": 320032,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=95582&uid=2&player=api&name=The%20Cops%20-%20The%20Message.mp3",
+        "size": 10133464,
+        "mbid": "588a5193-cc90-4392-ace2-a16db728d3f7",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "Inertia Recordings",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-10.500000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Rock"
+            },
+            {
+                "name": "Pop Rock"
+            }
+        ]
     }
 ]

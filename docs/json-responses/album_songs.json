@@ -30,7 +30,7 @@
         "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130769&uid=8&player=api&name=Supertramp%20-%20Crazy.mp3",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130769&uid=2&player=api&name=Supertramp%20-%20Crazy.mp3",
         "size": 11401970,
         "mbid": "1f54f7f0-f63b-47d0-abcc-e06db26ba9f0",
         "album_mbid": null,
@@ -59,38 +59,7 @@
             {
                 "name": "Pop Rock"
             }
-        ],
-        "encoding": "UTF-8",
-        "disk": "1",
-        "totaldisks": "1",
-        "band": "Supertramp",
-        "release_type": "album",
-        "barcode": "606949335328",
-        "audio_codec": "mp3",
-        "recording_time": "2002",
-        "bpm": "103",
-        "album_artist_sort_order": "Supertramp",
-        "performer_sort_order": "Supertramp",
-        "media_type": "CD",
-        "original_release_time": "1982",
-        "musician_credits_list": "bass",
-        "totaltracks": "9",
-        "isrc": "USAM18204331",
-        "lyricist": "Roger Hodgson",
-        "tool_name": "Media Center",
-        "peak_level__sample_": "+0.0 dB; +0.0 Left; +0.0 Right",
-        "volume_level__r128_": "-12.6618404388427734",
-        "script": "Latn",
-        "dynamic_range__dr_": "8",
-        "album_artist": "Supertramp",
-        "peak_level__r128_": "+0.5 dBTP; +0.5 Left; +0.5 Right",
-        "dynamic_range__r128_": "6.8774700164794922",
-        "volume_level__replaygain_": "-7.6618399620056152",
-        "musicbrainz_album_status": "official",
-        "musicbrainz_album_release_country": "XE",
-        "tool_version": "23.0.84",
-        "acoustid_id": "9073279a-75fd-419e-a056-3a4c28499951",
-        "musicbrainz_work_id": "7b8dcf22-cae9-3cb0-b1fd-25c933dc7718"
+        ]
     },
     {
         "id": "130773",
@@ -106,12 +75,12 @@
         },
         "tag": [
             {
-                "id": "6",
-                "name": "Rock"
-            },
-            {
                 "id": "47",
                 "name": "Pop Rock"
+            },
+            {
+                "id": "6",
+                "name": "Rock"
             }
         ],
         "filename": "\/mnt\/music\/Supertramp\/(1982) \"...Famous Last Words...\" [493 353-2]\/102 - Put on Your Old Brown Shoes.mp3",
@@ -123,7 +92,7 @@
         "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130773&uid=8&player=api&name=Supertramp%20-%20Put%20on%20Your%20Old%20Brown%20Shoes.mp3",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130773&uid=2&player=api&name=Supertramp%20-%20Put%20on%20Your%20Old%20Brown%20Shoes.mp3",
         "size": 10400957,
         "mbid": "d837f15b-e74d-4463-8bdb-25c36eb9c7a5",
         "album_mbid": null,
@@ -147,43 +116,12 @@
         "replaygain_track_peak": "1.000000",
         "genre": [
             {
-                "name": "Rock"
+                "name": "Pop Rock"
             },
             {
-                "name": "Pop Rock"
+                "name": "Rock"
             }
-        ],
-        "encoding": "UTF-8",
-        "disk": "1",
-        "totaldisks": "1",
-        "band": "Supertramp",
-        "release_type": "album",
-        "barcode": "606949335328",
-        "audio_codec": "mp3",
-        "recording_time": "2002",
-        "bpm": "89",
-        "album_artist_sort_order": "Supertramp",
-        "performer_sort_order": "Supertramp",
-        "media_type": "CD",
-        "original_release_time": "1982",
-        "musician_credits_list": "bass",
-        "totaltracks": "9",
-        "isrc": "USAM18204332",
-        "lyricist": "Rick Davies",
-        "tool_name": "Media Center",
-        "peak_level__sample_": "+0.0 dB; +0.0 Left; +0.0 Right",
-        "volume_level__r128_": "-10.6308097839355469",
-        "script": "Latn",
-        "dynamic_range__dr_": "10",
-        "album_artist": "Supertramp",
-        "peak_level__r128_": "+0.5 dBTP; +0.5 Left; +0.5 Right",
-        "dynamic_range__r128_": "6.4088201522827149",
-        "volume_level__replaygain_": "-5.6308097839355469",
-        "musicbrainz_album_status": "official",
-        "musicbrainz_album_release_country": "XE",
-        "tool_version": "23.0.84",
-        "acoustid_id": "4882a4cc-d3d1-44b9-9a70-0067bfdbf79b",
-        "musicbrainz_work_id": "1f6ab084-d82f-3d43-8cfd-5d8211d3ac87"
+        ]
     },
     {
         "id": "130770",
@@ -199,12 +137,12 @@
         },
         "tag": [
             {
-                "id": "47",
-                "name": "Pop Rock"
-            },
-            {
                 "id": "6",
                 "name": "Rock"
+            },
+            {
+                "id": "47",
+                "name": "Pop Rock"
             }
         ],
         "filename": "\/mnt\/music\/Supertramp\/(1982) \"...Famous Last Words...\" [493 353-2]\/103 - It's Raining Again.mp3",
@@ -216,7 +154,7 @@
         "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130770&uid=8&player=api&name=Supertramp%20-%20It-s%20Raining%20Again.mp3",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130770&uid=2&player=api&name=Supertramp%20-%20It-s%20Raining%20Again.mp3",
         "size": 10583815,
         "mbid": "45b93719-bc48-4ee9-bb7a-b5f8b8a2e5f5",
         "album_mbid": null,
@@ -240,43 +178,12 @@
         "replaygain_track_peak": "1.000000",
         "genre": [
             {
-                "name": "Pop Rock"
+                "name": "Rock"
             },
             {
-                "name": "Rock"
+                "name": "Pop Rock"
             }
-        ],
-        "encoding": "UTF-8",
-        "disk": "1",
-        "totaldisks": "1",
-        "band": "Supertramp",
-        "release_type": "album",
-        "barcode": "606949335328",
-        "audio_codec": "mp3",
-        "recording_time": "2002",
-        "bpm": "120",
-        "album_artist_sort_order": "Supertramp",
-        "performer_sort_order": "Supertramp",
-        "media_type": "CD",
-        "original_release_time": "1982",
-        "musician_credits_list": "bass",
-        "totaltracks": "9",
-        "isrc": "USAM18204333",
-        "lyricist": "Roger Hodgson",
-        "tool_name": "Media Center",
-        "peak_level__sample_": "+0.0 dB; +0.0 Left; +0.0 Right",
-        "volume_level__r128_": "-12.8378095626831055",
-        "script": "Latn",
-        "dynamic_range__dr_": "9",
-        "album_artist": "Supertramp",
-        "peak_level__r128_": "+0.3 dBTP; +0.3 Left; +0.3 Right",
-        "dynamic_range__r128_": "6.865880012512207",
-        "volume_level__replaygain_": "-7.8378100395202637",
-        "musicbrainz_album_status": "official",
-        "musicbrainz_album_release_country": "XE",
-        "tool_version": "23.0.84",
-        "acoustid_id": "fe3bde37-93f0-40c7-8d83-a5d32761c7b6",
-        "musicbrainz_work_id": "0271c2e6-3350-3205-98ed-acae307e7f61"
+        ]
     },
     {
         "id": "130776",
@@ -309,7 +216,7 @@
         "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130776&uid=8&player=api&name=Supertramp%20-%20Bonnie.mp3",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130776&uid=2&player=api&name=Supertramp%20-%20Bonnie.mp3",
         "size": 13441610,
         "mbid": "849a2238-5854-4f02-8b6b-4800281775be",
         "album_mbid": null,
@@ -338,37 +245,6 @@
             {
                 "name": "Pop Rock"
             }
-        ],
-        "encoding": "UTF-8",
-        "disk": "1",
-        "totaldisks": "1",
-        "band": "Supertramp",
-        "release_type": "album",
-        "barcode": "606949335328",
-        "audio_codec": "mp3",
-        "recording_time": "2002",
-        "bpm": "120",
-        "album_artist_sort_order": "Supertramp",
-        "performer_sort_order": "Supertramp",
-        "media_type": "CD",
-        "original_release_time": "1982",
-        "musician_credits_list": "bass",
-        "totaltracks": "9",
-        "isrc": "USAM18204334",
-        "lyricist": "Rick Davies",
-        "tool_name": "Media Center",
-        "peak_level__sample_": "+0.0 dB; +0.0 Left; +0.0 Right",
-        "volume_level__r128_": "-11.759770393371582",
-        "script": "Latn",
-        "dynamic_range__dr_": "8",
-        "album_artist": "Supertramp",
-        "peak_level__r128_": "+0.5 dBTP; +0.3 Left; +0.5 Right",
-        "dynamic_range__r128_": "7.1330699920654297",
-        "volume_level__replaygain_": "-6.7597699165344238",
-        "musicbrainz_album_status": "official",
-        "musicbrainz_album_release_country": "XE",
-        "tool_version": "23.0.84",
-        "acoustid_id": "b9d90113-f827-406d-91bd-dac362e018b8",
-        "musicbrainz_work_id": "38f5fe46-10f6-3f0a-b5bf-1126dd24fadf"
+        ]
     }
 ]

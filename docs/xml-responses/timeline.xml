@@ -1,105 +1,95 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
 <timeline>
-	<activity id="166453">
-		<date>1594617527</date>
+	<activity id="167383">
+		<date>1595916161</date>
 		<object_type><![CDATA[song]]></object_type>
 		<object_id>77371</object_id>
 		<action><![CDATA[play]]></action>
-		<user id="8">
-			<username><![CDATA[admin]]></username>
+		<user id="2">
+			<username><![CDATA[user]]></username>
 		</user>
-
 	</activity>
-	<activity id="166451">
-		<date>1594617506</date>
+	<activity id="167381">
+		<date>1595916087</date>
 		<object_type><![CDATA[playlist]]></object_type>
 		<object_id>2069</object_id>
 		<action><![CDATA[userflag]]></action>
-		<user id="8">
-			<username><![CDATA[admin]]></username>
+		<user id="2">
+			<username><![CDATA[user]]></username>
 		</user>
-
 	</activity>
-	<activity id="166450">
-		<date>1594617391</date>
-		<object_type><![CDATA[user]]></object_type>
-		<object_id>4</object_id>
-		<action><![CDATA[follow]]></action>
-		<user id="8">
-			<username><![CDATA[admin]]></username>
-		</user>
-
-	</activity>
-	<activity id="166449">
-		<date>1594617363</date>
+	<activity id="167372">
+		<date>1595914553</date>
 		<object_type><![CDATA[song]]></object_type>
-		<object_id>77371</object_id>
+		<object_id>94770</object_id>
 		<action><![CDATA[play]]></action>
-		<user id="8">
-			<username><![CDATA[admin]]></username>
+		<user id="2">
+			<username><![CDATA[user]]></username>
 		</user>
-
 	</activity>
-	<activity id="166447">
-		<date>1594617304</date>
-		<object_type><![CDATA[playlist]]></object_type>
-		<object_id>2069</object_id>
-		<action><![CDATA[userflag]]></action>
-		<user id="8">
-			<username><![CDATA[admin]]></username>
-		</user>
-
-	</activity>
-	<activity id="166446">
-		<date>1594616823</date>
-		<object_type><![CDATA[user]]></object_type>
-		<object_id>4</object_id>
-		<action><![CDATA[follow]]></action>
-		<user id="8">
-			<username><![CDATA[admin]]></username>
-		</user>
-
-	</activity>
-	<activity id="166445">
-		<date>1594616808</date>
+	<activity id="167371">
+		<date>1595914371</date>
 		<object_type><![CDATA[song]]></object_type>
-		<object_id>77371</object_id>
+		<object_id>67568</object_id>
 		<action><![CDATA[play]]></action>
-		<user id="8">
-			<username><![CDATA[admin]]></username>
+		<user id="2">
+			<username><![CDATA[user]]></username>
 		</user>
-
 	</activity>
-	<activity id="166443">
-		<date>1594616792</date>
-		<object_type><![CDATA[playlist]]></object_type>
-		<object_id>2069</object_id>
-		<action><![CDATA[userflag]]></action>
-		<user id="8">
-			<username><![CDATA[admin]]></username>
-		</user>
-
-	</activity>
-	<activity id="166442">
-		<date>1594616690</date>
-		<object_type><![CDATA[user]]></object_type>
-		<object_id>4</object_id>
-		<action><![CDATA[follow]]></action>
-		<user id="8">
-			<username><![CDATA[admin]]></username>
-		</user>
-
-	</activity>
-	<activity id="166441">
-		<date>1594616676</date>
+	<activity id="167370">
+		<date>1595914100</date>
 		<object_type><![CDATA[song]]></object_type>
-		<object_id>77371</object_id>
+		<object_id>19851</object_id>
 		<action><![CDATA[play]]></action>
-		<user id="8">
-			<username><![CDATA[admin]]></username>
+		<user id="2">
+			<username><![CDATA[user]]></username>
 		</user>
-
+	</activity>
+	<activity id="167369">
+		<date>1595913831</date>
+		<object_type><![CDATA[song]]></object_type>
+		<object_id>864164</object_id>
+		<action><![CDATA[play]]></action>
+		<user id="2">
+			<username><![CDATA[user]]></username>
+		</user>
+	</activity>
+	<activity id="167368">
+		<date>1595913486</date>
+		<object_type><![CDATA[song]]></object_type>
+		<object_id>13373</object_id>
+		<action><![CDATA[play]]></action>
+		<user id="2">
+			<username><![CDATA[user]]></username>
+		</user>
+	</activity>
+	<activity id="167367">
+		<date>1595913244</date>
+		<object_type><![CDATA[song]]></object_type>
+		<object_id>68840</object_id>
+		<action><![CDATA[play]]></action>
+		<user id="2">
+			<username><![CDATA[user]]></username>
+		</user>
+	</activity>
+	<activity id="167366">
+		<date>1595913013</date>
+		<object_type><![CDATA[song]]></object_type>
+		<object_id>107346</object_id>
+		<action><![CDATA[play]]></action>
+		<user id="2">
+			<username><![CDATA[user]]></username>
+		</user>
+	</activity>
+	<activity id="167365">
+		<date>1595912775</date>
+		<object_type><![CDATA[song]]></object_type>
+		<object_id>787588</object_id>
+		<action><![CDATA[play]]></action>
+		<user id="2">
+			<username><![CDATA[user]]></username>
+		</user>
 	</activity>
 </timeline>
 </root>

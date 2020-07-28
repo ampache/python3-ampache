@@ -1,71 +1,126 @@
 [
     {
-        "id": "16775",
-        "title": "Who U Foolin",
-        "name": "Who U Foolin",
+        "id": "802560",
+        "title": "Baker Street",
+        "name": "Baker Street",
         "artist": {
-            "id": "605",
-            "name": "The Prodigy"
+            "id": "254",
+            "name": "Foo Fighters"
         },
         "album": {
-            "id": "49370",
-            "name": "Hotride"
+            "id": "71644",
+            "name": "My Hero"
         },
         "tag": [
             {
-                "id": "4",
-                "name": "Electronic"
+                "id": "6",
+                "name": "Rock"
+            },
+            {
+                "id": "22",
+                "name": "Pop"
+            },
+            {
+                "id": "33",
+                "name": "Alternative Rock"
             }
         ],
-        "filename": "\/mnt\/music\/The Prodigy\/(2004) Hotride\/102 - Who U Foolin.mp3",
+        "filename": "\/mnt\/music\/Foo Fighters\/(1998) My Hero (single) [CDCL 796]\/102 - Baker Street.mp3",
         "track": 2,
         "playlisttrack": 1,
-        "time": 220,
-        "year": 2004,
-        "bitrate": 202932,
+        "time": 339,
+        "year": 1998,
+        "bitrate": 320000,
         "rate": 44100,
-        "mode": "vbr",
+        "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=16775&uid=8&player=api&name=The%20Prodigy%20-%20Who%20U%20Foolin.mp3",
-        "size": 5594186,
-        "mbid": "37131e8a-8e45-4980-8f8f-04ae9658aaa6",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=802560&uid=2&player=api&name=Foo%20Fighters%20-%20Baker%20Street.mp3",
+        "size": 13650833,
+        "mbid": "57497521-16ac-4870-8fe0-4f486652d8ef",
         "album_mbid": null,
         "artist_mbid": null,
         "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=49370&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "art": "https:\/\/music.com.au\/image.php?object_id=71644&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 1,
+        "preciserating": 5,
+        "rating": 5,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
+        "composer": "Gerry Rafferty",
+        "channels": null,
+        "comment": "",
+        "publisher": "Capitol Records",
+        "language": "eng",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-7.200000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Rock"
+            },
+            {
+                "name": "Pop"
+            },
+            {
+                "name": "Alternative Rock"
+            }
+        ]
+    },
+    {
+        "id": "862539",
+        "title": "Baker Street",
+        "name": "Baker Street",
+        "artist": {
+            "id": "9919",
+            "name": "Jonathan Coulton"
+        },
+        "album": {
+            "id": "71541",
+            "name": "Some Guys"
+        },
+        "tag": [
+            {
+                "id": "35",
+                "name": "Indie"
+            }
+        ],
+        "filename": "\/mnt\/music\/Jonathan Coulton\/(2019) Some Guys\/107 - Baker Street.flac",
+        "track": 7,
+        "playlisttrack": 2,
+        "time": 365,
+        "year": 2019,
+        "bitrate": 967923,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/x-flac",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=862539&uid=2&player=api&name=Jonathan%20Coulton%20-%20Baker%20Street.opus",
+        "size": 44226050,
+        "mbid": "81e4816b-8132-41ff-b753-12fa7e067f16",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=71541&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "playcount": 1,
+        "playcount": 0,
         "catalog": 2,
-        "composer": "The Prodigy",
+        "composer": "Gerry Rafferty",
         "channels": null,
-        "comment": "single",
-        "publisher": "XL Recordings",
-        "language": "",
+        "comment": "",
+        "publisher": "",
+        "language": "eng",
         "replaygain_album_gain": "0.000000",
         "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-8.660000",
-        "replaygain_track_peak": "1.000000",
+        "replaygain_track_gain": "0.000000",
+        "replaygain_track_peak": "0.000000",
         "genre": [
             {
-                "name": "Electronic"
+                "name": "Indie"
             }
-        ],
-        "encoding": "UTF-8",
-        "disk": "1",
-        "totaldisks": "1",
-        "band": "The Prodigy",
-        "release_type": "single",
-        "barcode": "634904120221",
-        "audio_codec": "mp3",
-        "recording_time": "2004-11-01",
-        "bpm": "126",
-        "album_artist_sort_order": "Prodigy, The",
-        "performer_sort_order": "Prodigy, The",
-        "media_type": "CD",
-        "original_release_time": "2004-11-01",
-        "totaltracks": "4"
+        ]
     }
 ]

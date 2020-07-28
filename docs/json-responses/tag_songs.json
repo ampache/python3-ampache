@@ -26,7 +26,7 @@
         "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=836449&uid=8&player=api&name=Pathology%20-%20Opposing%20Globalization.mp3",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=836449&uid=2&player=api&name=Pathology%20-%20Opposing%20Globalization.mp3",
         "size": 7476664,
         "mbid": "39ec1463-8f59-4c21-86b6-6fb250fb093a",
         "album_mbid": null,
@@ -52,33 +52,6 @@
             {
                 "name": "Slamming Brutal Death Metal"
             }
-        ],
-        "encoding": "UTF-8",
-        "disk": "1",
-        "totaldisks": "1",
-        "band": "Pathology",
-        "release_type": "album",
-        "audio_codec": "mp3",
-        "recording_time": "2011-09-13",
-        "bpm": "125",
-        "album_artist_sort_order": "Pathology",
-        "performer_sort_order": "Pathology",
-        "media_type": "CD",
-        "original_release_time": "2011-09-13",
-        "totaltracks": "12",
-        "album_artist": "Pathology",
-        "artists": "Pathology",
-        "dynamic_range__dr_": "5",
-        "dynamic_range__r128_": "1.0148099660873413",
-        "musicbrainz_album_release_country": "US",
-        "musicbrainz_album_status": "official",
-        "musicbrainz_release_track_id": "eb6d0a5e-d66a-3160-b958-12d32742c1ed",
-        "originalyear": "2011",
-        "peak_level__r128_": "+1.1 dBTP; +1.1 Left; +0.6 Right",
-        "peak_level__sample_": "+0.0 dB; +0.0 Left; +0.0 Right",
-        "script": "Latn",
-        "tool_name": "Media Center",
-        "volume_level__r128_": "-17.1049594879150391",
-        "volume_level__replaygain_": "-12.1049604415893555"
+        ]
     }
 ]
