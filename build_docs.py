@@ -412,11 +412,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     playlists = ampache.playlists(ampache_url, ampache_api, False, False, 0, limit, api_format)
 
-    """ playlist_songs
-    def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
-    """
-    playlist_songs = ampache.playlist_songs(ampache_url, ampache_api, single_playlist, 0, limit, api_format)
-
     """ playlist_create
     def playlist_create(ampache_url, ampache_api, name, type, api_format = 'xml'):
     """
@@ -438,6 +433,8 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, 77371, 0, api_format)
     ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, 77371, 1, api_format)
+    shutil.move("docs/" + api_format + "-responses/playlist_add_song." + api_format,
+                "docs/" + api_format + "-responses/playlist_add_song (error)." + api_format)
     ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, 77371, 0, api_format)
 
     """ playlist_remove_song
@@ -449,6 +446,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def playlist(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
     playlist = ampache.playlist(ampache_url, ampache_api, single_playlist, api_format)
+
+    """ playlist_songs
+    def playlist_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
+    """
+    playlist_songs = ampache.playlist_songs(ampache_url, ampache_api, single_playlist, 0, limit, api_format)
 
     """ playlist_delete
     def playlist_delete(ampache_url, ampache_api, filter, api_format = 'xml'):
@@ -474,7 +476,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ scrobble
     def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle = False, MBartist = False, MBalbum = False, time = False, client = 'AmpacheAPI', api_format = 'xml'):
     """
-    scrobble = ampache.scrobble(ampache_url, ampache_api, 'Hear.Life.Spoken', 'Sub Atari Knives', 'Sub Atari Knives', False, False, False, int(time.time()), 'AmpaceApi', api_format)
+    scrobble = ampache.scrobble(ampache_url, ampache_api, 'Hear. Life. Spoken', 'Sub Atari Knives', 'Sub Atari Knives', False, False, False, int(time.time()), 'AmpaceApi', api_format)
     shutil.move("docs/" + api_format + "-responses/scrobble." + api_format,
                 "docs/" + api_format + "-responses/scrobble (error)." + api_format)
 
@@ -586,12 +588,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, api_format = 'xml'):
     """
     timeline = ampache.timeline(ampache_url, ampache_api, ampache_user, 10, 0, api_format)
-
-    #if api_format == 'xml':
-    #    for child in timeline:
-    #        print(child.tag, child.attrib)
-    #        for subchildren in child:
-    #            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
     """ toggle_follow
     def toggle_follow(ampache_url, ampache_api, username, api_format = 'xml'):
