@@ -120,7 +120,7 @@ def fetch_url(full_url, api_format, method):
         print(url_response)
         print(full_url)
         try:
-            text_file = open("docs/" + api_format + "-responses/" + method + "." + api_format, "w")
+            text_file = open("docs/" + api_format + "-responses/" + method + "." + api_format, "w", encoding="utf-8")
             text_file.write(url_response)
             text_file.close()
         except FileNotFoundError:

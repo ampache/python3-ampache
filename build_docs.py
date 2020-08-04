@@ -122,7 +122,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in songs:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
                     print()
                     sys.exit('ERROR: songs ' + child.text + ' found more items than the limit ' + str(limit))
@@ -135,7 +134,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in albums:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
                     print()
                     sys.exit('ERROR: albums ' + child.text + ' found more items than the limit ' + str(limit))
@@ -148,7 +146,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in artists:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
                     print()
                     sys.exit('ERROR: artists ' + child.text + ' found more items than the limit ' + str(limit))
@@ -161,12 +158,16 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in playlists:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
                     print()
                     sys.exit('ERROR: playlists ' + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
+
+    """ videos
+    def videos(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
+    """
+    videos = ampache.videos(ampache_url, ampache_api, False, False, 0, 0, api_format)
 
     if api_format == 'xml':
         for child in songs:
@@ -181,11 +182,20 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         for child in playlists:
             if child.tag == 'playlist':
                 single_playlist = child.attrib['id']
+        for child in videos:
+            if child.tag == 'video':
+                single_video = child.attrib['id']
     else:
         single_song     = songs[0]['id']
         single_album    = albums[0]['id']
         single_artist   = artists[0]['id']
         single_playlist = playlists[0]['id']
+        single_video    = videos[0]['id']
+
+    """ video
+    def video(ampache_url, ampache_api, filter, api_format = 'xml'):
+    """
+    ampache.video(ampache_url, ampache_api, single_video, api_format)
 
     """ advanced_search
     def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 'song', offset = 0, limit = 0, api_format = 'xml'):
@@ -198,15 +208,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in search_song:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
                     print()
                     sys.exit('ERROR: advanced_search (song) ' + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
             song_title = child.find('title').text
     else:
         song_title = search_song[0]['title']
@@ -219,15 +225,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in search_album:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
                     print()
                     sys.exit('ERROR: advanced_search (album) ' + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
             album_title = child.find('name').text
     else:
         album_title = search_album[0]['name']
@@ -240,15 +242,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in search_artist:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
                     print()
                     sys.exit('ERROR: advanced_search (artist) ' + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
             artist_title = child.find('name').text
     else:
         artist_title = search_artist[0]['name']
@@ -261,10 +259,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in album:
             if child.tag == 'album':
-                print(child.tag, child.attrib)
                 album_title = child.find('name').text
-                for subchildren in child:
-                    print(str(subchildren.tag) + ': ' + str(subchildren.text))
     else:
         album_title = search_album[0]['name']
 
@@ -272,12 +267,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def album_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
     album_songs = ampache.album_songs(ampache_url, ampache_api, single_album, 0, limit, api_format)
-    if api_format == 'xml':
-        for child in album_songs:
-            if child.tag == 'song':
-                print(child.tag, child.attrib)
-                for subchildren in child:
-                    print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
     """ albums
     def albums(ampache_url, ampache_api, filter = False, exact = False, add = False, update = False, offset = 0, limit = 0, include = False, api_format = 'xml'):
@@ -286,15 +275,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     if api_format == 'xml':
         for child in albums:
             if child.tag == 'total_count':
-                print('total_count', child.text)
                 if int(child.text) > int(limit):
                     print()
                     sys.exit('ERROR: albums ' + child.text + ' found more items than the limit ' + str(limit))
                 else:
                     continue
-            print(child.tag, child.attrib)
-            for subchildren in child:
-                print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
     """ stats
     def stats(ampache_url, ampache_api, type, filter = 'random', username = False, user_id = False, offset = 0, limit = 0, api_format = 'xml'):
@@ -314,8 +299,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 print('\ngetting a random artist using the stats method and found', child.find('name').text)
                 single_artist = child.attrib['id']
                 print(child.tag, child.attrib)
-                for subchildren in child:
-                    print(str(subchildren.tag) + ': ' + str(subchildren.text))
     else:
         single_artist = stats[0]['id']
 
@@ -329,9 +312,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 print('\ngetting a random album using the stats method and found', child.find('name').text)
                 single_album = child.attrib['id']
                 album_title = child.find('name').text
-                print(child.tag, child.attrib)
-                for subchildren in child:
-                    print(str(subchildren.tag) + ': ' + str(subchildren.text))
     else:
         album_title = stats[0]['name']
 
@@ -344,9 +324,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         for child in artist:
             if child.tag == 'artist':
                 print('\nsearching for an artist with this id', single_artist)
-                print(child.tag, child.attrib)
-                for subchildren in child:
-                    print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
     """ artist_albums
     def artist_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
@@ -618,16 +595,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """
     ampache.update_podcast(ampache_url, ampache_api, 10, api_format)
-    
-    """ video
-    def video(ampache_url, ampache_api, filter, api_format = 'xml'):
-    """
-    #print(ampache.video(ampache_url, ampache_api))
-
-    """ videos
-    def videos(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
-    """
-    #print(ampache.videos(ampache_url, ampache_api))
 
     """ localplay
     def localplay(ampache_url, ampache_api, command, api_format = 'xml'):
