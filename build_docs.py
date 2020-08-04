@@ -87,7 +87,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     tempusername = 'temp_user'
     createuser   = ampache.user_create(ampache_url, ampache_api, tempusername, 'supoersecretpassword', 'email@gmail.com', False, False, api_format)
-    tmpuser = ampache.user(ampache_url, ampache_api, tempusername, api_format)
+    tmpuser      = ampache.user(ampache_url, ampache_api, tempusername, api_format)
 
     """ user_edit
         def user_update(ampache_url, ampache_api, username, password = False, fullname = False, email = False, website = False, state = False, city = False, disable = False, maxbitrate = False, api_format = 'xml'):
@@ -110,6 +110,12 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 "docs/" + api_format + "-responses/user (error)." + api_format)
 
     myuser = ampache.user(ampache_url, ampache_api, ampache_user, api_format)
+    if api_format == 'xml':
+        for child in myuser:
+            if child.tag == 'user':
+                user_id = child.attrib['id']
+    else:
+        user_id = myuser[0]['id']
 
     """ get_indexes
     def get_indexes(ampache_url, ampache_api, type, filter = False, add = False, update = False, offset = 0, limit = 0, api_format = 'xml'):
@@ -362,7 +368,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ record_play
     def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI', api_format = 'xml'):
     """
-    ampache.record_play(ampache_url, ampache_api, 77371, 4, 'AmpacheAPI', api_format)
+    ampache.record_play(ampache_url, ampache_api, 77371, user_id, 'AmpacheAPI', api_format)
 
     """ followers
     def followers(ampache_url, ampache_api, username, api_format = 'xml'):
@@ -479,7 +485,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ get_art
     def get_art(ampache_url, ampache_api, object_id, object_type, destination, api_format='xml'):
     """
-    ampache.get_art(ampache_url, ampache_api, 164527, 'song', 'get_art.jpg', api_format)
+    ampache.get_art(ampache_url, ampache_api, 164527, 'song', (os.path.join(os.getcwd(), 'get_art.jpg')), api_format)
     
     """ search_songs
     def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
