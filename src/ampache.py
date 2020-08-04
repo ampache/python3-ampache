@@ -3019,7 +3019,7 @@ def get_art(ampache_url, ampache_api, object_id, object_type, destination, api_f
         * ampache_api = (string)
         * object_id   = (string) $song_id / $podcast_episode_id
         * object_type = (string) 'song', 'artist', 'album', 'playlist', 'search', 'podcast'
-        * destination = (string) utput file path
+        * destination = (string) output file path
         * api_format  = (string) 'xml'|'json' //optional
     """
     if not os.path.isdir(os.path.dirname(destination)):

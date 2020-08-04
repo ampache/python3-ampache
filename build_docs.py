@@ -459,6 +459,28 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     scrobble = ampache.scrobble(ampache_url, ampache_api, 'Welcome to Planet Sexor', 'Tiga', 'Sexor', False, False, False, int(time.time()), 'test.py', api_format)
 
+    """ record_play
+    def record_play(ampache_url, ampache_api, object_id, user, client='AmpacheAPI', api_format='xml'):
+    """
+    record_play = ampache.record_play(ampache_url, ampache_api, 164527, ampache_user, 'AmpaceApi', api_format)
+
+    """ rate
+    def rate(ampache_url, ampache_api, object_type, object_id, rating, api_format='xml'):
+    """
+    ampache.rate(ampache_url, ampache_api, 'song', 164527, 5, api_format)
+    ampache.rate(ampache_url, ampache_api, 'song', 164527, 0, api_format)
+
+    """ flag
+    def flag(ampache_url, ampache_api, object_type, object_id, flag, api_format='xml'):
+    """
+    ampache.flag(ampache_url, ampache_api, 'song', 164527, True, api_format)
+    ampache.flag(ampache_url, ampache_api, 'song', 164527, False, api_format)
+
+    """ get_art
+    def get_art(ampache_url, ampache_api, object_id, object_type, destination, api_format='xml'):
+    """
+    ampache.get_art(ampache_url, ampache_api, 164527, 'song', 'get_art.jpg', api_format)
+    
     """ search_songs
     def search_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
@@ -554,7 +576,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ license
     def license(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
-    license = ampache.license(ampache_url, ampache_api, 2, api_format)
+    my_license = ampache.license(ampache_url, ampache_api, 2, api_format)
 
     """ license_songs
     def license_songs(ampache_url, ampache_api, filter, api_format = 'xml'):
@@ -614,7 +636,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     print("Checking files in " + api_format + " for private strings")
     for files in os.listdir("./docs/" + api_format + "-responses/"):
-        f = open("./docs/" + api_format + "-responses/" + files,'r')
+        f = open("./docs/" + api_format + "-responses/" + files,'r', encoding="utf-8")
         filedata = f.read()
         f.close()
 
@@ -623,7 +645,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         newdata = newdata.replace(ampache_api, "eeb9f1b6056246a7d563f479f518bb34")
         newdata = newdata.replace(original_api, "cfj3f237d563f479f5223k23189dbb34")
 
-        f = open("./docs/" + api_format + "-responses/" + files,'w')
+        f = open("./docs/" + api_format + "-responses/" + files,'w', encoding="utf-8")
         f.write(newdata)
         f.close()
 
