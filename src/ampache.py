@@ -2103,7 +2103,7 @@ def search_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_fo
 
 
 def advanced_search(ampache_url, ampache_api, rules,
-                    operator='and', object_type='song', offset=0, limit=0, api_format='xml'):
+                    operator='and', object_type='song', offset=0, limit=0, random=0, api_format='xml'):
     """ advanced_search
         MINIMUM_API_VERSION=380001
 
@@ -2180,6 +2180,7 @@ def advanced_search(ampache_url, ampache_api, rules,
         * object_type = (string)  //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
+        * random      = (integer) 0|1' //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
@@ -2188,7 +2189,8 @@ def advanced_search(ampache_url, ampache_api, rules,
             'operator': operator,
             'type': object_type,
             'offset': offset,
-            'limit': limit}
+            'limit': limit,
+            'random': random}
     count = 0
     # inputs  [rule_1, rule_1_operator, rule_1_input]
     # example ['year', 2, 1999]
