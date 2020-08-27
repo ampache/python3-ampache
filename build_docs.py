@@ -9,7 +9,7 @@ from src import ampache
 
 # user variables
 try:
-    if sys.argv[1] and sys.argv[2] and sys.argv[2]:
+    if sys.argv[1] and sys.argv[2] and sys.argv[3]:
         ampache_url  = sys.argv[1]
         ampache_api  = sys.argv[2]
         ampache_user = sys.argv[3]

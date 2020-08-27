@@ -2978,7 +2978,7 @@ def stream(ampache_url, ampache_api, object_id, object_type, destination, api_fo
     return True
 
 
-def download(ampache_url, ampache_api, object_id, object_type, destination, file_format='raw', api_format='xml'):
+def download(ampache_url, ampache_api, object_id, object_type, destination, transcode='raw', api_format='xml'):
     """ download
         MINIMUM_API_VERSION=400001
 
@@ -2990,17 +2990,16 @@ def download(ampache_url, ampache_api, object_id, object_type, destination, file
         * object_id   = (string) $song_id / $podcast_episode_id
         * object_type = (string) 'song'|'podcast'
         * destination = (string) full file path
-        * file_format = (string) 'mp3', 'ogg', etc. ('raw' / original by default) //optional
+        * transcode   = (string) 'mp3', 'ogg', etc. ('raw' / original by default) //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
-    if not os.path.isdir(os.path.dirname(destination)):
-        return False
+    os.makedirs(os.path.dirname(destination), exist_ok=True)
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'download',
             'auth': ampache_api,
             'id': object_id,
             'type': object_type,
-            'format': file_format}
+            'transcode': transcode}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     result = requests.get(full_url, allow_redirects=True)
