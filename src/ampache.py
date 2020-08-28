@@ -3001,7 +3001,7 @@ def download(ampache_url, ampache_api, object_id, object_type, destination, tran
             'auth': ampache_api,
             'id': object_id,
             'type': object_type,
-            'transcode': transcode}
+            'format': transcode}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     result = requests.get(full_url, allow_redirects=True)
