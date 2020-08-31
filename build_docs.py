@@ -115,7 +115,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
             if child.tag == 'user':
                 user_id = child.attrib['id']
     else:
-        user_id = myuser[0]['id']
+        user_id = myuser['user']['id']
 
     """ get_indexes
     def get_indexes(ampache_url, ampache_api, type, filter = False, add = False, update = False, offset = 0, limit = 0, api_format = 'xml'):
@@ -618,7 +618,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """
     ampache.update_art(ampache_url, ampache_api, 'artist', single_artist, True, api_format)
-   
+
     """ update_podcast
 
     """

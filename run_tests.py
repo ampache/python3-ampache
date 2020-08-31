@@ -641,7 +641,7 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
             #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
     else:
         genre = tags[0]['tag']['id']
-        
+
     """ tag
     def tag(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
