@@ -3256,6 +3256,7 @@ BACKCOMPAT FUNCTIONS
 --------------------
 """
 tag = genre
+tags = genres
 tag_artists = genre_artists
 tag_albums = genre_albums
 tag_songs = genre_songs
