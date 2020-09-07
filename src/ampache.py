@@ -41,7 +41,6 @@ HELPER FUNCTIONS
 ----------------
 """
 
-
 def set_debug(mybool):
     """ set_debug
 
@@ -688,11 +687,11 @@ def album_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_for
         return tree
 
 
-def tags(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
-    """ tags
+def genres(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+    """ genres
         MINIMUM_API_VERSION=380001
 
-        This returns the tags (Genres) based on the specified filter
+        This returns the genres (Tags) based on the specified filter
 
         INPUTS
         * ampache_url = (string)
@@ -704,7 +703,7 @@ def tags(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limi
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = {'action': 'tags',
+    data = {'action': 'genres',
             'auth': ampache_api,
             'exact': exact,
             'filter': filter_str,
@@ -716,7 +715,7 @@ def tags(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limi
         data.pop('exact')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url, api_format, 'tags')
+    ampache_response = fetch_url(full_url, api_format, 'genres')
     if not ampache_response:
         return False
     # json format
@@ -732,11 +731,11 @@ def tags(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limi
         return tree
 
 
-def tag(ampache_url, ampache_api, filter_str, api_format='xml'):
-    """ tag
+def genre(ampache_url, ampache_api, filter_str, api_format='xml'):
+    """ genre
         MINIMUM_API_VERSION=380001
 
-        This returns a single tag based on UID
+        This returns a single genre based on UID
 
         INPUTS
         * ampache_url = (string)
@@ -745,12 +744,12 @@ def tag(ampache_url, ampache_api, filter_str, api_format='xml'):
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = {'action': 'tag',
+    data = {'action': 'genre',
             'auth': ampache_api,
             'filter': filter_str}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url, api_format, 'tag')
+    ampache_response = fetch_url(full_url, api_format, 'genre')
     if not ampache_response:
         return False
     # json format
@@ -766,11 +765,11 @@ def tag(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def tag_artists(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
-    """ tag_artists
+def genre_artists(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+    """ genre_artists
         MINIMUM_API_VERSION=380001
 
-        This returns the artists associated with the tag in question as defined by the UID
+        This returns the artists associated with the genre in question as defined by the UID
 
         INPUTS
         * ampache_url = (string)
@@ -781,14 +780,14 @@ def tag_artists(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_for
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = {'action': 'tag_artists',
+    data = {'action': 'genre_artists',
             'auth': ampache_api,
             'filter': filter_str,
             'offset': str(offset),
             'limit': str(limit)}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url, api_format, 'tag_artists')
+    ampache_response = fetch_url(full_url, api_format, 'genre_artists')
     if not ampache_response:
         return False
     # json format
@@ -804,11 +803,11 @@ def tag_artists(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_for
         return tree
 
 
-def tag_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
-    """ tag_albums
+def genre_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+    """ genre_albums
         MINIMUM_API_VERSION=380001
 
-        This returns the albums associated with the tag in question
+        This returns the albums associated with the genre in question
 
         INPUTS
         * ampache_url = (string)
@@ -819,14 +818,14 @@ def tag_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_form
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = {'action': 'tag_albums',
+    data = {'action': 'genre_albums',
             'auth': ampache_api,
             'filter': filter_str,
             'offset': str(offset),
             'limit': str(limit)}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url, api_format, 'tag_albums')
+    ampache_response = fetch_url(full_url, api_format, 'genre_albums')
     if not ampache_response:
         return False
     # json format
@@ -842,11 +841,11 @@ def tag_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_form
         return tree
 
 
-def tag_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
-    """ tag_songs
+def genre_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+    """ genre_songs
         MINIMUM_API_VERSION=380001
 
-        returns the songs for this tag
+        returns the songs for this genre
 
         INPUTS
         * ampache_url = (string)
@@ -857,14 +856,14 @@ def tag_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_forma
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = {'action': 'tag_songs',
+    data = {'action': 'genre_songs',
             'auth': ampache_api,
             'filter': filter_str,
             'offset': str(offset),
             'limit': str(limit)}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url, api_format, 'tag_songs')
+    ampache_response = fetch_url(full_url, api_format, 'genre_songs')
     if not ampache_response:
         return False
     # json format
@@ -2111,66 +2110,7 @@ def advanced_search(ampache_url, ampache_api, rules,
         the rules can occur multiple times and are joined by the operator item.
 
         Refer to the wiki for further information
-        https://github.com/ampache/ampache/wiki/XML-methods
-
-        rule_1
-          * anywhere
-          * title
-          * favorite
-          * name
-          * playlist_name
-          * album
-          * artist
-          * composer
-          * comment
-          * label
-          * tag
-          * album_tag
-          * filename
-          * placeformed
-          * username
-          * year
-          * time
-          * rating
-          * myrating
-          * artistrating
-          * albumrating
-          * played_times
-          * bitrate
-          * image height
-          * image width
-          * yearformed
-          * played
-          * myplayed
-          * myplayedartist
-          * myplayedalbum
-          * last_play
-          * added
-          * updated
-          * catalog
-          * playlist
-          * licensing
-          * smartplaylist
-          * metadata
-
-        rule_1_operator
-          * 0 contains / is greater than or equal to / before / is true / is / before (x) days ago
-          * 1 does not contain / is less than or equal to / after / is false / is not / after (x) days ago
-          * 2 starts with / is
-          * 3 ends with / is not
-          * 4 is / is greater than
-          * 5 is not / is less than
-          * 6 sounds like
-          * 7 does not sound like
-
-        rule_1_input
-          * text
-          * integer
-          * etc
-
-        rule_1_subtype
-          * integer code of metadata search items
-          * NEEDS EXTENSION IN PYTHON + API
+        http://ampache.org/api/api-advanced-search
 
         INPUTS
         * ampache_url = (string)
@@ -3308,3 +3248,14 @@ def license_songs(ampache_url, ampache_api, filter_str, api_format='xml'):
         except ElementTree.ParseError:
             return False
         return tree
+
+
+"""
+--------------------
+BACKCOMPAT FUNCTIONS
+--------------------
+"""
+tag = genre
+tag_artists = genre_artists
+tag_albums = genre_albums
+tag_songs = genre_songs
