@@ -182,7 +182,7 @@ class AMPYCHE(object):
                         if self.api_format == 'xml':
                             print(lines[0] + ": " + lines[1])
                         else:
-                            print(lines + ": " + lines)
+                            print(str(lines) + ": " + str(result[lines]))
         elif ACTION == 'download':
             if not os.path.isdir(DESTIN):
                 os.makedirs(DESTIN)
@@ -306,7 +306,6 @@ class AMPYCHE(object):
         else:
             # If you've requested the status, lets return all the details you asked for
             if action == 'status':
-                print(type(statuslist))
                 return statuslist
             # otherwise it's a failed action
             elif object_id:

@@ -5,11 +5,9 @@ import sys
 import ampache
 
 # user variables
-ampache_url  = 'https://music.server'
-ampache_api  = 'mysuperapikey'
+ampache_url = 'https://music.server'
+ampache_api = 'mysuperapikey'
 ampache_user = 'myusername'
-
-print('\n#######################\nTesting the ampache API\n#######################\n')
 
 """
 encrypt_string
@@ -25,8 +23,8 @@ src_api = ampache_api
 ampache_api = ampache.handshake(ampache_url, encrypted_key)
 print('\nThe ampache handshake for:\n    ', src_api, '\n\nReturned the following session key:\n    ', ampache_api)
 if not ampache_api:
-     print()
-     sys.exit('ERROR: Failed to connect to ' + ampache_url)
+    print()
+    sys.exit('ERROR: Failed to connect to ' + ampache_url)
 
 """
 ping
@@ -36,13 +34,13 @@ my_ping = ampache.ping(ampache_url, ampache_api)
 print('\nif your handshake was correct, ping will return your session key and extend the session.')
 print('\nPing returned:\n    ', my_ping)
 if not my_ping:
-     print()
-     sys.exit('ERROR: Failed to ping ' + ampache_url)
+    print()
+    sys.exit('ERROR: Failed to ping ' + ampache_url)
 
 """
 playlists
 """
-#playlists = ampache.playlists(ampache_url, ampache_api)
+playlists = ampache.playlists(ampache_url, ampache_api)
 
 """
 playlist_create
@@ -57,14 +55,14 @@ print('\nplaylist_create created the following id:\n    ', single_playlist)
 """
 playlist
 """
-#playlist = ampache.playlists(ampache_url, ampache_api, 'python-test', 'private')
-#if playlist:
-    #for child in playlist:
-        #print(child.tag, child.attrib)
-        #if child.tag == 'playlist':
-        #    single_playlist = child.attrib['id']
-        #for subchildren in child:
-        #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
+playlist = ampache.playlists(ampache_url, ampache_api, 'python-test', 'private')
+if playlist:
+    for child in playlist:
+        print(child.tag, child.attrib)
+        if child.tag == 'playlist':
+            single_playlist = child.attrib['id']
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 playlist_add_song
@@ -104,4 +102,3 @@ goodbye
 # Close your session when you're done
 print('\nWhen you are finished it\'s a good idea to kill your session')
 print('    ', ampache.goodbye(ampache_url, ampache_api))
-

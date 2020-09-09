@@ -49,6 +49,8 @@ Practical example::
     import time
     import ampache
 
+    from multiprocessing import Process
+
     # user variables
     ampache_url = 'https://music.server'
     my_api_key = 'mysuperapikey'
