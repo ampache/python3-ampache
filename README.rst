@@ -8,10 +8,8 @@ Upload to PyPI
 INFO
 ====
 
-A python3 library for interaction with your Ampache server using the XML API
-https://github.com/ampache/ampache/wiki/API
-
-If you run a develop server you now have access to JSON as well!
+A python3 library for interaction with your Ampache server using the XML & JSON API
+`<http://ampache.org/API/>`_
 
 Code examples and scripts are available from github
 
@@ -25,6 +23,27 @@ You can now install from pip directly::
 EXAMPLES
 ========
 
+There is a fairly simple cli example for windows/linux to perform a few functions.
+It's a good example for testing and might make things a bit easier to follow.
+
+`<https://raw.githubusercontent.com/ampache/python3-ampache/master/docs/examples/ampyche.py>`_
+
+ampyche example help::
+  Possible Actions:
+
+    /u:%CUSTOM_USER%    (Custom username for the current action)
+    /k:%CUSTOM_APIKEY%  (Custom apikey for the current action)
+    /a:%ACTION%         (ping, playlists, localplay, download, configure, logout, showconfig)
+    /l:%LIMIT%          (integer)
+    /o:%OBJECT_ID%      (string)
+    /t:%OBJECT_TYPE%    (song, playlist)
+    /p:%PATH%           (folder for downloads)
+    /f:%FORMAT%         (raw, mp3, ogg, flac)
+    /usb                (split files into numeric 0-9 folders for car USBs)
+    /c:%COMMAND%        (localplay command)
+       (next, prev, stop, play, pause, add, volume_up,
+        volume_down, volume_mute, delete_all, skip, status)
+
 Practical example::
 
     import time
@@ -32,17 +51,17 @@ Practical example::
 
     # user variables
     ampache_url = 'https://music.server'
-    my_api_key  = 'mysuperapikey'
-    user        = 'myusername'
+    my_api_key = 'mysuperapikey'
+    user = 'myusername'
 
     # processed details
     encrypted_key = ampache.encrypt_string(my_api_key, user)
-    ampache_api   = ampache.handshake(ampache_url, encrypted_key)
+    ampache_session = ampache.handshake(ampache_url, encrypted_key)
 
-    if ampache_api:
+    if ampache_session:
         # Scrobble a music track to your ampache server
         Process(target=ampache.scrobble,
-                args=(ampache_url, ampache_api, 'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed',
+                args=(ampache_url, ampache_session, 'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed',
                 '', '', int(time.time()))).start()
 
 LINKS
