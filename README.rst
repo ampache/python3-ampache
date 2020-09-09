@@ -29,7 +29,8 @@ It's a good example for testing and might make things a bit easier to follow.
 
 `<https://raw.githubusercontent.com/ampache/python3-ampache/master/docs/examples/ampyche.py>`_
 
-ampyche example help:
+ampyche.py help:
+
 .. example-code::
     .. code-block:: bash
     Possible Actions:
@@ -66,8 +67,9 @@ Here is a short code sample for python to scrobble a track to your server
         if ampache_session:
             # Scrobble a music track to your ampache server
             Process(target=ampache.scrobble,
-                    args=(ampache_url, ampache_session, 'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed',
-                    '', '', int(time.time()))).start()
+                    args=(ampache_url, ampache_session,
+                          'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed',
+                          '', '', int(time.time()))).start()
 
 LINKS
 =====
