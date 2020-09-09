@@ -21,10 +21,10 @@ def cache_playlist(ampache_url, ampache_api, ampache_user, api_format, smartlist
     encrypted_key = ampache.encrypt_string(ampache_api, ampache_user)
 
     """ handshake
-    def handshake(ampache_url, ampache_api, user = False, timestamp = False, version = '400004', api_format = 'xml'):
+    def handshake(ampache_url, ampache_api, user = False, timestamp = False, version = '420000', api_format = 'xml'):
     # processed details
     """
-    ampache_session = ampache.handshake(ampache_url, encrypted_key, False, False, '400004', api_format)
+    ampache_session = ampache.handshake(ampache_url, encrypted_key, False, False, '420000', api_format)
     if not ampache_session:
         print()
         sys.exit('ERROR: Failed to connect to ' + ampache_url)

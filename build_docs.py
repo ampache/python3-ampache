@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import configparser
 import os
 import shutil
 import sys
@@ -8,15 +9,22 @@ import time
 from src import ampache
 
 # user variables
-try:
-    if sys.argv[1] and sys.argv[2] and sys.argv[3]:
-        url = sys.argv[1]
-        api = sys.argv[2]
-        user = sys.argv[3]
-except IndexError:
-    url = 'https://music.server'
-    api = 'mysuperapikey'
-    user = 'myusername'
+if os.path.isfile('docs/examples/ampyche.conf'):
+    conf = configparser.RawConfigParser()
+    conf.read('docs/examples/ampyche.conf')
+    url = conf.get('conf', 'ampache_url')
+    user = conf.get('conf', 'ampache_user')
+    api = conf.get('conf', 'ampache_apikey')
+else:
+    try:
+        if sys.argv[1] and sys.argv[2] and sys.argv[3]:
+            url = sys.argv[1]
+            api = sys.argv[2]
+            user = sys.argv[3]
+    except IndexError:
+        url = 'https://music.server'
+        api = 'mysuperapikey'
+        user = 'myusername'
 
 limit = 4
 song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=164215&uid=2&player=api&name=Hellyeah%20-%20-.mp3'
@@ -32,14 +40,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     share_create: create a share
     share_edit: edit an existing share
     share_delete: delete an existing share
-    podcasts: get a list of podcasts you can access
-    podcast: get a podcast by id
-    podcast_episodes: get a list of podcast_episodes you can access
-    podcast_episode: get a podcast_episode by id
     podcast_episode_delete: delete an existing podcast_episode
-    podcast_create: create a podcast
-    podcast_edit: edit an existing podcast
-    podcast_delete: delete an existing podcast
     catalogs: get all the catalogs
     catalog: get a catalog by id
     catalog_file: clean, add, verify using the file path (good for scripting)
@@ -50,11 +51,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     encrypted_key = ampache.encrypt_string(ampache_api, ampache_user)
 
-    """ def handshake(ampache_url, ampache_api, user = False, timestamp = False, version = '400004', api_format = 'xml'):
+    """ def handshake(ampache_url, ampache_api, user = False, timestamp = False, version = '420000', api_format = 'xml'):
         This is the function that handles verifying a new handshake
         Takes a timestamp, auth key, and username.
     """
-    ampache_session = ampache.handshake(ampache_url, encrypted_key, False, False, '400004', api_format)
+    ampache_session = ampache.handshake(ampache_url, encrypted_key, False, False, '420000', api_format)
     if not ampache_session:
         print()
         sys.exit('ERROR: Failed to connect to ' + ampache_url)
@@ -72,6 +73,39 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         This function can be used to enable/disable debugging messages
     """
     ampache.set_debug(True)
+
+
+    """ def podcasts
+    """
+    ampache.podcasts(ampache_url, ampache_session, False, False, 0, 4, api_format)
+
+    """ def podcast
+    """
+    ampache.podcast(ampache_url, ampache_session, '10', api_format)
+
+    """ def podcast_episodes
+    """
+    ampache.podcast_episodes(ampache_url, ampache_session, False, 0, 0, limit, api_format)
+
+    """ def podcast_episode
+    """
+    ampache.podcast_episode(ampache_url, ampache_session, 6394, api_format)
+
+    """ def podcast_create
+    """
+    ampache.podcast_create(ampache_url, ampache_session, 'https://www.abc.net.au/radio/programs/trace/feed/8597522/podcast.xml', 7, api_format)
+
+    """ def podcast_edit(ampache_url, ampache_api, filter_str, stream, download, expires, description, api_format)
+    """
+    ampache.podcast_edit(ampache_url, ampache_session, 10, 1, 1, False, False, api_format)
+
+    """ def podcast_delete
+    """
+    # ampache.podcast_delete(ampache_url, ampache_session, 1000, api_format)
+
+    """ def update_podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
+    """
+    ampache.update_podcast(ampache_url, ampache_session, 10, api_format)
 
     """ def url_to_song(ampache_url, ampache_api, url, api_format = 'xml'):
     """
@@ -559,10 +593,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = False, api_format = 'xml'):
     """
     ampache.update_art(ampache_url, ampache_session, 'artist', single_artist, True, api_format)
-
-    """ update_podcast
-    """
-    ampache.update_podcast(ampache_url, ampache_session, 10, api_format)
 
     """ def localplay(ampache_url, ampache_api, command, api_format = 'xml'):
     """

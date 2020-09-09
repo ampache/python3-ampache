@@ -135,7 +135,7 @@ API FUNCTIONS
 """
 
 
-def handshake(ampache_url, ampache_api, ampache_user=False, timestamp=False, version='400004', api_format='xml'):
+def handshake(ampache_url, ampache_api, ampache_user=False, timestamp=False, version='420000', api_format='xml'):
     """ handshake
         MINIMUM_API_VERSION=380001
 
@@ -1501,10 +1501,10 @@ def share_edit(ampache_url, ampache_api, filter_str, stream=False, download=Fals
         * ampache_url = (string)
         * ampache_api = (string)
         * filter_str  = (integer) UID of Share
-        * stream      = (boolean) 0,1 // optional
-        * download    = (boolean) 0,1 // optional
-        * expires     = (integer) number of whole days before expiry // optional
-        * description = (string) update description // optional
+        * stream      = (boolean) 0,1 //optional
+        * download    = (boolean) 0,1 //optional
+        * expires     = (integer) number of whole days before expiry //optional
+        * description = (string) update description //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
@@ -1850,10 +1850,10 @@ def podcast_edit(ampache_url, ampache_api, filter_str, stream, download, expires
         * ampache_url = (string)
         * ampache_api = (string)
         * filter_str  = (string) Alpha-numeric search term //optional
-        * stream      = (boolean) 0,1 // optional
-        * download    = (boolean) 0,1 // optional
-        * expires     = (integer) number of whole days before expiry // optional
-        * description = (string) update description // optional
+        * stream      = (boolean) 0,1 allow_stream //optional
+        * download    = (boolean) 0,1 allow_download //optional
+        * expires     = (integer) number of whole days before expiry //optional
+        * description = (string) update description //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
@@ -1864,6 +1864,14 @@ def podcast_edit(ampache_url, ampache_api, filter_str, stream, download, expires
             'download': download,
             'expires': expires,
             'description': description}
+    if not stream:
+        data.pop('stream')
+    if not download:
+        data.pop('download')
+    if not expires:
+        data.pop('expires')
+    if not description:
+        data.pop('description')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'podcast')
@@ -1882,7 +1890,7 @@ def podcast_edit(ampache_url, ampache_api, filter_str, stream, download, expires
         return tree
 
 
-def podcast_delete(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def podcast_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
     """ podcast_delete
         MINIMUM_API_VERSION=420000
 
@@ -1918,7 +1926,7 @@ def podcast_delete(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_
         return tree
 
 
-def podcast_episodes(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+def podcast_episodes(ampache_url, ampache_api, filter_str='', exact=False, offset=0, limit=0, api_format='xml'):
     """ podcast_episodes
         MINIMUM_API_VERSION=420000
 
@@ -1938,8 +1946,6 @@ def podcast_episodes(ampache_url, ampache_api, filter_str=False, exact=False, of
             'exact': exact,
             'offset': str(offset),
             'limit': str(limit)}
-    if not filter_str:
-        data.pop('filter')
     if not exact:
         data.pop('exact')
     data = urllib.parse.urlencode(data)
@@ -1960,7 +1966,7 @@ def podcast_episodes(ampache_url, ampache_api, filter_str=False, exact=False, of
         return tree
 
 
-def podcast_episode(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def podcast_episode(ampache_url, ampache_api, filter_str, api_format='xml'):
     """ podcast_episode
         MINIMUM_API_VERSION=420000
 
@@ -1975,9 +1981,7 @@ def podcast_episode(ampache_url, ampache_api, filter_str, offset=0, limit=0, api
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'podcast_episode',
             'auth': ampache_api,
-            'filter': filter_str,
-            'offset': str(offset),
-            'limit': str(limit)}
+            'filter': filter_str}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'podcast_episode')

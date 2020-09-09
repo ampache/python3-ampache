@@ -22,7 +22,7 @@ handshake
 """
 print('Connecting to:\n    ', ampache_url)
 src_api = ampache_api
-ampache_api = ampache.handshake(ampache_url, encrypted_key, False, False, '400004', api_format)
+ampache_api = ampache.handshake(ampache_url, encrypted_key, False, False, '420000', api_format)
 
 print('\nThe ampache handshake for:\n    ', src_api, '\n\nReturned the following session key:\n    ', ampache_api)
 if not ampache_api:
