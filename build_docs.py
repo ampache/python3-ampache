@@ -10,13 +10,13 @@ from src import ampache
 # user variables
 try:
     if sys.argv[1] and sys.argv[2] and sys.argv[3]:
-        ampache_url  = sys.argv[1]
-        ampache_api  = sys.argv[2]
-        ampache_user = sys.argv[3]
+        url = sys.argv[1]
+        api = sys.argv[2]
+        user = sys.argv[3]
 except IndexError:
-    ampache_url  = 'https://music.server'
-    ampache_api  = 'mysuperapikey'
-    ampache_user = 'myusername'
+    url = 'https://music.server'
+    api = 'mysuperapikey'
+    user = 'myusername'
 
 limit = 4
 song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=164215&uid=2&player=api&name=Hellyeah%20-%20-.mp3'
@@ -574,7 +574,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def democratic(ampache_url, ampache_api, method, action, oid, api_format = 'xml'):
     """
-    #print(ampache.democratic(ampache_url, ampache_session))
+    # ampache.democratic(ampache_url, ampache_session)
 
     """ def goodbye(ampache_url, ampache_api, api_format = 'xml'):
     Close your session when you're done
