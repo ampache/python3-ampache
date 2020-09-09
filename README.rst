@@ -31,7 +31,6 @@ It's a good example for testing and might make things a bit easier to follow.
 
 ampyche example help:
 .. example-code::
-
     .. code-block:: bash
     Possible Actions:
 
@@ -48,6 +47,9 @@ ampyche example help:
         (next, prev, stop, play, pause, add, volume_up,
             volume_down, volume_mute, delete_all, skip, status)
 
+Here is a short code sample for python to scrobble a track to your server
+
+.. example-code::
     .. code-block:: python3
         import time
         import ampache
