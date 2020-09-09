@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
+<localplay>
+<command>
+<status>
 	<state><![CDATA[stop]]></state>
 	<volume><![CDATA[28]]></volume>
 	<repeat><![CDATA[0]]></repeat>
@@ -8,4 +11,10 @@
 	<track_title><![CDATA[Heavy Metal Machine]]></track_title>
 	<track_artist><![CDATA[The Smashing Pumpkins]]></track_artist>
 	<track_album><![CDATA[MACHINA/the machines of God]]></track_album>
+
+</status>
+
+</command>
+
+</localplay>
 </root>
