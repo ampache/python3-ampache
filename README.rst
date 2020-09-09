@@ -31,8 +31,8 @@ It's a good example for testing and might make things a bit easier to follow.
 
 ampyche.py help:
 
-.. example-code::
-    .. code-block:: bash
+.. code-block:: bash
+
     Possible Actions:
 
         /u:%CUSTOM_USER%    (Custom username for the current action)
@@ -50,26 +50,26 @@ ampyche.py help:
 
 Here is a short code sample for python to scrobble a track to your server
 
-.. example-code::
-    .. code-block:: python3
-        import time
-        import ampache
+.. code-block:: python3
 
-        # user variables
-        ampache_url = 'https://music.server'
-        my_api_key = 'mysuperapikey'
-        user = 'myusername'
+    import time
+    import ampache
 
-        # processed details
-        encrypted_key = ampache.encrypt_string(my_api_key, user)
-        ampache_session = ampache.handshake(ampache_url, encrypted_key)
+    # user variables
+    ampache_url = 'https://music.server'
+    my_api_key = 'mysuperapikey'
+    user = 'myusername'
 
-        if ampache_session:
-            # Scrobble a music track to your ampache server
-            Process(target=ampache.scrobble,
-                    args=(ampache_url, ampache_session,
-                          'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed',
-                          '', '', int(time.time()))).start()
+    # processed details
+    encrypted_key = ampache.encrypt_string(my_api_key, user)
+    ampache_session = ampache.handshake(ampache_url, encrypted_key)
+
+    if ampache_session:
+        # Scrobble a music track to your ampache server
+        Process(target=ampache.scrobble,
+                args=(ampache_url, ampache_session,
+                      'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed',
+                      '', '', int(time.time()))).start()
 
 LINKS
 =====
