@@ -453,7 +453,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
             for subchildren in child:
                 print(str(subchildren.tag) + ': ' + str(subchildren.text))
     else:
-        genre = tags[0]['tag']
+        genre = tags[0]['genre']
         for tag in genre:
             print(tag)
             tmp_genre = tag['id']

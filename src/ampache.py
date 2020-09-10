@@ -70,8 +70,12 @@ def get_id_list(data, attribute, format = 'xml'):
             if child.tag == attribute:
                 idlist.append(child.attrib['id'])
     else:
-        for object in data:
-            idlist.append(object['id'])
+        try:
+            for object in data[attribute]:
+                idlist.append(object[0])
+        except TypeError:
+            for object in data:
+                idlist.append(object['id'])
     return idlist
 
 
