@@ -2273,22 +2273,34 @@ def video(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def localplay(ampache_url, ampache_api, command, api_format='xml'):
+def localplay(ampache_url, ampache_api, command, oid=False, type=False, clear=0, api_format='xml'):
     """ localplay
         MINIMUM_API_VERSION=380001
+        CHANGED_IN_API_VERSION=430000
 
         This is for controlling localplay
 
         INPUTS
         * ampache_url = (string)
         * ampache_api = (string)
-        * command     = (string) 'next', 'prev', 'stop', 'play'
+        * command     = (string) 'next', 'prev', 'stop', 'play', 'pause', 'add', 'volume_up', 'volume_down', 'volume_mute', 'delete_all', 'skip', 'status'
+        * oid         = (integer) object_id //optional
+        * type        = (string) 'Song', 'Video', 'Podcast_Episode', 'Channel', 'Broadcast', 'Democratic', 'Live_Stream' //optional
+        * clear       = (integer) 0,1 Clear the current playlist before adding //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'localplay',
             'auth': ampache_api,
-            'command': command}
+            'oid': oid,
+            'type': type,
+            'clear': clear}
+    if not oid:
+        data.pop('oid')
+    if not type:
+        data.pop('type')
+    if not clear:
+        data.pop('clear')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'localplay')
