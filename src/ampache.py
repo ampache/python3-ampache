@@ -1767,7 +1767,7 @@ def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, 
         return tree
 
 
-def podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
+def podcast(ampache_url, ampache_api, filter_str, include=False, api_format='xml'):
     """ podcast
         MINIMUM_API_VERSION=420000
 
@@ -1777,12 +1777,16 @@ def podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
         * ampache_url = (string)
         * ampache_api = (string)
         * filter_str  = (integer) UID of Podcast
+        * include     = (string) 'episodes' Include episodes with the response //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'podcast',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_str,
+            'include': include}
+    if not include:
+        data.pop('include')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'podcast')
@@ -1821,7 +1825,7 @@ def podcast_create(ampache_url, ampache_api, url, catalog, api_format='xml'):
             'catalog': catalog}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url, api_format, 'podcast')
+    ampache_response = fetch_url(full_url, api_format, 'podcast_create')
     if not ampache_response:
         return False
     # json format
@@ -1872,7 +1876,7 @@ def podcast_edit(ampache_url, ampache_api, filter_str, stream, download, expires
         data.pop('description')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url, api_format, 'podcast')
+    ampache_response = fetch_url(full_url, api_format, 'podcast_edit')
     if not ampache_response:
         return False
     # json format
@@ -1903,12 +1907,10 @@ def podcast_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'podcast_delete',
             'auth': ampache_api,
-            'filter': filter_str,
-            'offset': str(offset),
-            'limit': str(limit)}
+            'filter': filter_str}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    ampache_response = fetch_url(full_url, api_format, 'podcast')
+    ampache_response = fetch_url(full_url, api_format, 'podcast_delete')
     if not ampache_response:
         return False
     # json format
@@ -1931,7 +1933,7 @@ def podcast_episodes(ampache_url, ampache_api, filter_str='', exact=False, offse
         INPUTS
         * ampache_url = (string)
         * ampache_api = (string)
-        * filter_str  = //optional
+        * filter_str  = (string) UID of podcast
         * exact       = (integer) 0|1 //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
