@@ -120,24 +120,24 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     'song'|'album'|'artist'|'playlist'
     """
-    songs = ampache.get_indexes(ampache_url, ampache_session, 'song', False, False, False, 0, limit, api_format)
+    songs = ampache.get_indexes(ampache_url, ampache_session, 'song', False, False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (song)." + api_format)
     single_song = ampache.get_id_list(songs, 'song', api_format)[0]
     # TODO check limits
 
-    albums = ampache.get_indexes(ampache_url, ampache_session, 'album', False, False, False, 0, limit, api_format)
+    albums = ampache.get_indexes(ampache_url, ampache_session, 'album', False, False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (album)." + api_format)
     single_album = ampache.get_id_list(albums, 'album', api_format)[0]
     
-    artists = ampache.get_indexes(ampache_url, ampache_session, 'artist', False, False, False, 0, limit, api_format)
+    artists = ampache.get_indexes(ampache_url, ampache_session, 'artist', False, False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (artist)." + api_format)
     single_artist = ampache.get_id_list(artists, 'artist', api_format)[0]
     # TODO check limits
 
-    playlists = ampache.get_indexes(ampache_url, ampache_session, 'playlist', False, False, False, 0, limit, api_format)
+    playlists = ampache.get_indexes(ampache_url, ampache_session, 'playlist', False, False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (playlist)." + api_format)
     # single_playlist = ampache.get_id_list(playlists, 'playlist', api_format)[0]
@@ -511,7 +511,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def podcast_episodes
     """
-    ampache.podcast_episodes(ampache_url, ampache_session, 10, 0, 0, limit, api_format)
+    ampache.podcast_episodes(ampache_url, ampache_session, 10, 0, limit, api_format)
     """ def podcast_episode
     """
     ampache.podcast_episode(ampache_url, ampache_session, 6394, api_format)

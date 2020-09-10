@@ -67,7 +67,7 @@ if playlist:
 """
 playlist_add_song
 """
-songs = ampache.get_indexes(ampache_url, ampache_api, 'song', '', '', '', '', 10)
+songs = ampache.get_indexes(ampache_url, ampache_api, 'song', False, False, False, False, 0, 10)
 for child in songs:
     if child.tag == 'song':
         print(ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, child.attrib['id'], 1))

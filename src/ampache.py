@@ -54,29 +54,29 @@ def set_debug(mybool):
     AMPACHE_DEBUG = mybool
 
 
-def get_id_list(data, attribute, format = 'xml'):
+def get_id_list(data, attribute, data_format='xml'):
     """ get_id_list
 
         return a list of id's from the data you've got from the api
 
         INPUTS
-        * filename  = (mixed) XML or JSON from the API
-        * attribute = (string) attribute you are searching for
-        * format    = (string) 'xml','json'
+        * filename    = (mixed) XML or JSON from the API
+        * attribute   = (string) attribute you are searching for
+        * data_format = (string) 'xml','json'
     """
-    idlist = list()
-    if format == 'xml':
+    id_list = list()
+    if data_format == 'xml':
         for child in data:
             if child.tag == attribute:
-                idlist.append(child.attrib['id'])
+                id_list.append(child.attrib['id'])
     else:
         try:
-            for object in data[attribute]:
-                idlist.append(object[0])
+            for data_object in data[attribute]:
+                id_list.append(data_object[0])
         except TypeError:
-            for object in data:
-                idlist.append(object['id'])
-    return idlist
+            for data_object in data:
+                id_list.append(data_object['id'])
+    return id_list
 
 
 def write_xml(xmlstr, filename):
@@ -115,7 +115,7 @@ def encrypt_string(ampache_api, username):
         This function can be used to encrypt your apikey into the accepted format.
 
         INPUTS
-        * ampache_api = (string) apikey
+        * ampache_api = (string) unencrypted apikey
         * user        = (string) username
     """
     key = hashlib.sha256(ampache_api.encode()).hexdigest()
@@ -168,9 +168,9 @@ def handshake(ampache_url, ampache_api, ampache_user=False, timestamp=False, ver
         Takes a timestamp, auth key, and username.
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * user        = (string) //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) encrypted apikey
+        * user        = (string) username //optional
         * timestamp   = (integer) UNIXTIME() //optional
         * version     = (string) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -222,8 +222,8 @@ def ping(ampache_url, ampache_api, api_format='xml'):
         of the server is, and what version it is running/compatible with
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string) session auth key //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
@@ -263,8 +263,8 @@ def goodbye(ampache_url, ampache_api, api_format='xml'):
         Destroy session for ampache_api auth key.
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
@@ -295,8 +295,8 @@ def url_to_song(ampache_url, ampache_api, url, api_format='xml'):
         This takes a url and returns the song object in question
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * url         = (string) Full Ampache URL from server, translates back into a song XML
         * api_format  = (string) 'xml'|'json' //optional
     """
@@ -322,17 +322,17 @@ def url_to_song(ampache_url, ampache_api, url, api_format='xml'):
         return tree
 
 
-def get_similar(ampache_url, ampache_api, object_type, filter_str, offset=0, limit=0, api_format='xml'):
+def get_similar(ampache_url, ampache_api, object_type, filter_id, offset=0, limit=0, api_format='xml'):
     """ get_similar
         MINIMUM_API_VERSION=420000
 
         Return similar artist id's or similar song ids compared to the input filter
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * object_type = (string) 'song'|'album'|'artist'|'playlist'
-        * filter_str  = (string) artist id or song id
+        * filter_id   = (integer) $artist_id or song_id
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -341,7 +341,7 @@ def get_similar(ampache_url, ampache_api, object_type, filter_str, offset=0, lim
     data = {'action': 'get_similar',
             'auth': ampache_api,
             'type': object_type,
-            'filter': filter_str,
+            'filter': filter_id,
             'offset': str(offset),
             'limit': str(limit)}
     data = urllib.parse.urlencode(data)
@@ -363,7 +363,7 @@ def get_similar(ampache_url, ampache_api, object_type, filter_str, offset=0, lim
 
 
 def get_indexes(ampache_url, ampache_api, object_type,
-                filter_str=False, add=False, update=False,
+                filter_str=False, exact=False, add=False, update=False,
                 offset=0, limit=0, api_format='xml'):
     """ get_indexes
         MINIMUM_API_VERSION=400001
@@ -371,10 +371,11 @@ def get_indexes(ampache_url, ampache_api, object_type,
         This takes a collection of inputs and returns ID + name for the object type
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * object_type = (string) 'song'|'album'|'artist'|'playlist'
-        * filter_str  = (string) //optional
+        * filter_str  = (string) search the name of the object_type //optional
+        * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
         * add         = //optional
         * update      = //optional
         * offset      = (integer) //optional
@@ -386,6 +387,7 @@ def get_indexes(ampache_url, ampache_api, object_type,
             'auth': ampache_api,
             'type': object_type,
             'filter': filter_str,
+            'exact': exact,
             'add': add,
             'update': update,
             'offset': str(offset),
@@ -422,9 +424,9 @@ def artists(ampache_url, ampache_api, filter_str=False,
         This takes a collection of inputs and returns artist objects.
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of an artist //optional
         * add         = //optional
         * update      = //optional
         * offset      = (integer) //optional
@@ -467,23 +469,23 @@ def artists(ampache_url, ampache_api, filter_str=False,
         return tree
 
 
-def artist(ampache_url, ampache_api, filter_str, include=False, api_format='xml'):
+def artist(ampache_url, ampache_api, filter_id, include=False, api_format='xml'):
     """ artist
         MINIMUM_API_VERSION=380001
 
         This returns a single artist based on the UID of said artist
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) $artist_id
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $artist_id
         * include     = //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'artist',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'include': include}
     if not include:
         data.pop('include')
@@ -505,16 +507,16 @@ def artist(ampache_url, ampache_api, filter_str, include=False, api_format='xml'
         return tree
 
 
-def artist_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def artist_albums(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
     """ artist_albums
         MINIMUM_API_VERSION=380001
 
         This returns the albums of an artist
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  =
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $artist_id
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -522,7 +524,7 @@ def artist_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_f
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'artist_albums',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'offset': str(offset),
             'limit': str(limit)}
     data = urllib.parse.urlencode(data)
@@ -543,16 +545,16 @@ def artist_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_f
         return tree
 
 
-def artist_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def artist_songs(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
     """ artist_songs
         MINIMUM_API_VERSION=380001
 
         This returns the songs of the specified artist
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  =
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $artist_id
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -560,7 +562,7 @@ def artist_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_fo
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'artist_songs',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'offset': str(offset),
             'limit': str(limit)}
     data = urllib.parse.urlencode(data)
@@ -590,10 +592,10 @@ def albums(ampache_url, ampache_api, filter_str=False,
         This returns albums based on the provided search filters
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = //optional
-        * exact       = (integer) 0|1 //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of an album //optional
+        * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
         * add         = //optional
         * update      = //optional
         * offset      = (integer) //optional
@@ -637,23 +639,23 @@ def albums(ampache_url, ampache_api, filter_str=False,
         return tree
 
 
-def album(ampache_url, ampache_api, filter_str, include=False, api_format='xml'):
+def album(ampache_url, ampache_api, filter_id, include=False, api_format='xml'):
     """ album
         MINIMUM_API_VERSION=380001
 
         This returns a single album based on the UID provided
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) $album_id
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $album_id
         * include     = //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'album',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'include': include}
     if not include:
         data.pop('include')
@@ -675,16 +677,16 @@ def album(ampache_url, ampache_api, filter_str, include=False, api_format='xml')
         return tree
 
 
-def album_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def album_songs(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
     """ album_songs
         MINIMUM_API_VERSION=380001
 
         This returns the songs of a specified album
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $album_id
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -692,7 +694,7 @@ def album_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_for
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'album_songs',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'offset': str(offset),
             'limit': str(limit)}
     data = urllib.parse.urlencode(data)
@@ -720,10 +722,10 @@ def genres(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, li
         This returns the genres (Tags) based on the specified filter
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = //optional
-        * exact       = (integer) 0|1 //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a genre //optional
+        * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -757,22 +759,22 @@ def genres(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, li
         return tree
 
 
-def genre(ampache_url, ampache_api, filter_str, api_format='xml'):
+def genre(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ genre
         MINIMUM_API_VERSION=380001
 
         This returns a single genre based on UID
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) $genre_id
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $genre_id
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'genre',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'genre')
@@ -791,16 +793,16 @@ def genre(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def genre_artists(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def genre_artists(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
     """ genre_artists
         MINIMUM_API_VERSION=380001
 
         This returns the artists associated with the genre in question as defined by the UID
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  =
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $genre_id
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -808,7 +810,7 @@ def genre_artists(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_f
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'genre_artists',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'offset': str(offset),
             'limit': str(limit)}
     data = urllib.parse.urlencode(data)
@@ -829,16 +831,16 @@ def genre_artists(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_f
         return tree
 
 
-def genre_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def genre_albums(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
     """ genre_albums
         MINIMUM_API_VERSION=380001
 
         This returns the albums associated with the genre in question
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  =
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $genre_id
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -846,7 +848,7 @@ def genre_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_fo
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'genre_albums',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'offset': str(offset),
             'limit': str(limit)}
     data = urllib.parse.urlencode(data)
@@ -867,16 +869,16 @@ def genre_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_fo
         return tree
 
 
-def genre_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def genre_songs(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
     """ genre_songs
         MINIMUM_API_VERSION=380001
 
         returns the songs for this genre
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  =
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $genre_id
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -884,7 +886,7 @@ def genre_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_for
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'genre_songs',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'offset': str(offset),
             'limit': str(limit)}
     data = urllib.parse.urlencode(data)
@@ -913,10 +915,10 @@ def songs(ampache_url, ampache_api, filter_str=False, exact=False,
         Returns songs based on the specified filter_str
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = //optional
-        * exact       = (integer) 0|1 //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a song //optional
+        * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
         * add         = //optional
         * update      = //optional
         * offset      = (integer) //optional
@@ -958,22 +960,22 @@ def songs(ampache_url, ampache_api, filter_str=False, exact=False,
         return tree
 
 
-def song(ampache_url, ampache_api, filter_str, api_format='xml'):
+def song(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ song
         MINIMUM_API_VERSION=380001
 
         returns a single song
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  =
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $song_id
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'song',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'song')
@@ -999,10 +1001,10 @@ def playlists(ampache_url, ampache_api, filter_str=False, exact=False, offset=0,
         This returns playlists based on the specified filter
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = //optional
-        * exact       = (integer) 0|1 //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a playlist //optional
+        * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -1036,22 +1038,22 @@ def playlists(ampache_url, ampache_api, filter_str=False, exact=False, offset=0,
         return tree
 
 
-def playlist(ampache_url, ampache_api, filter_str, api_format='xml'):
+def playlist(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ playlist
         MINIMUM_API_VERSION=380001
 
         This returns a single playlist
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  =
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id  = (integer) $playlist_id
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'playlist',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'playlist')
@@ -1070,16 +1072,16 @@ def playlist(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def playlist_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def playlist_songs(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
     """ playlist_songs
         MINIMUM_API_VERSION=380001
 
         This returns the songs for a playlist
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  =
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $playlist_id
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -1087,7 +1089,7 @@ def playlist_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'playlist_songs',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'offset': str(offset),
             'limit': str(limit)}
     data = urllib.parse.urlencode(data)
@@ -1115,8 +1117,8 @@ def playlist_create(ampache_url, ampache_api, name, object_type, api_format='xml
         This create a new playlist and return it
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * name        = (string)
         * object_type = (string)
         * api_format  = (string) 'xml'|'json' //optional
@@ -1154,24 +1156,24 @@ def playlist_create(ampache_url, ampache_api, name, object_type, api_format='xml
         return token
 
 
-def playlist_edit(ampache_url, ampache_api, filter_str, name=False, object_type=False, api_format='xml'):
+def playlist_edit(ampache_url, ampache_api, filter_id, name=False, object_type=False, api_format='xml'):
     """ playlist_edit
         MINIMUM_API_VERSION=400001
 
         This modifies name and type of a playlist
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer)
-        * name        =
-        * object_type =
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer)
+        * name        = (string) playlist name //optional
+        * object_type = (string) 'public'|'private'
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'playlist_edit',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'name': name,
             'type': object_type}
     if not name:
@@ -1196,22 +1198,22 @@ def playlist_edit(ampache_url, ampache_api, filter_str, name=False, object_type=
         return tree
 
 
-def playlist_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
+def playlist_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ playlist_delete
         MINIMUM_API_VERSION=380001
 
         This deletes a playlist
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) $playlist_id
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $playlist_id
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'playlist_delete',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'playlist_delete')
@@ -1230,7 +1232,7 @@ def playlist_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def playlist_add_song(ampache_url, ampache_api, filter_str, song, check=False, api_format='xml'):
+def playlist_add_song(ampache_url, ampache_api, filter_id, song_id, check=False, api_format='xml'):
     """ playlist_add_song
         MINIMUM_API_VERSION=380001
         CHANGED_IN_API_VERSION=400003
@@ -1239,10 +1241,10 @@ def playlist_add_song(ampache_url, ampache_api, filter_str, song, check=False, a
         Added duplicate checks in 400003
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) $playlist_id
-        * song        = (integer) $song_id
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $playlist_id
+        * song_id     = (integer) $song_id
         * check       = (boolean|integer) (True,False | 0|1) Check for duplicates //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
@@ -1253,8 +1255,8 @@ def playlist_add_song(ampache_url, ampache_api, filter_str, song, check=False, a
         check = 0
     data = {'action': 'playlist_add_song',
             'auth': ampache_api,
-            'song': song,
-            'filter': filter_str,
+            'song': song_id,
+            'filter': filter_id,
             'check': check}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
@@ -1274,7 +1276,7 @@ def playlist_add_song(ampache_url, ampache_api, filter_str, song, check=False, a
         return tree
 
 
-def playlist_remove_song(ampache_url, ampache_api, filter_str, song=False, track=False, api_format='xml'):
+def playlist_remove_song(ampache_url, ampache_api, filter_id, song_id=False, track=False, api_format='xml'):
     """ playlist_remove_song
         MINIMUM_API_VERSION=380001
         CHANGED_IN_API_VERSION=400001
@@ -1282,10 +1284,10 @@ def playlist_remove_song(ampache_url, ampache_api, filter_str, song=False, track
         This removes a song from a playlist. Previous versions required 'track' instead of 'song'.
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) $playlist_id
-        * song        = (integer) $song_id //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $playlist_id
+        * song_id     = (integer) $song_id //optional
         * track       = (integer) $playlist_track number //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
@@ -1293,10 +1295,10 @@ def playlist_remove_song(ampache_url, ampache_api, filter_str, song=False, track
 
     data = {'action': 'playlist_remove_song',
             'auth': ampache_api,
-            'filter': filter_str,
-            'song': song,
+            'filter': filter_id,
+            'song': song_id,
             'track': track}
-    if not song:
+    if not song_id:
         data.pop('song')
     if not track:
         data.pop('track')
@@ -1319,7 +1321,7 @@ def playlist_remove_song(ampache_url, ampache_api, filter_str, song=False, track
 
 
 def playlist_generate(ampache_url, ampache_api, mode='random',
-                      filter_str=False, album=False, artist=False, flag=False,
+                      filter_str=False, album_id=False, artist_id=False, flagged=False,
                       list_format='song', offset=0, limit=0, api_format='xml'):
     """ playlist_generate
         MINIMUM_API_VERSION=400001
@@ -1331,13 +1333,13 @@ def playlist_generate(ampache_url, ampache_api, mode='random',
         'unplayed' added in 400002 for searching unplayed tracks
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * mode        = (string) 'recent', 'forgotten', 'unplayed', 'random' (default = 'random') //optional
         * filter_str  = (string) string LIKE matched to song title //optional
-        * album       = (integer) $album_id //optional
-        * artist      = (integer) $artist_id //optional
-        * flag        = (integer) get flagged songs only 0, 1 (default=0) //optional
+        * album_id    = (integer) $album_id //optional
+        * artist_id   = (integer) $artist_id //optional
+        * flagged     = (integer) get flagged songs only 0, 1 (default=0) //optional
         * list_format = (string) 'song', 'index','id' (default = 'song') //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
@@ -1348,19 +1350,19 @@ def playlist_generate(ampache_url, ampache_api, mode='random',
             'auth': ampache_api,
             'mode': mode,
             'filter': filter_str,
-            'album': album,
-            'artist': artist,
-            'flag': flag,
+            'album': album_id,
+            'artist': artist_id,
+            'flag': flagged,
             'format': list_format,
             'offset': offset,
             'limit': limit}
     if not filter_str:
         data.pop('filter')
-    if not album:
+    if not album_id:
         data.pop('album')
-    if not artist:
+    if not artist_id:
         data.pop('artist')
-    if not flag:
+    if not flagged:
         data.pop('flag')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
@@ -1385,10 +1387,10 @@ def shares(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, li
         MINIMUM_API_VERSION=420000
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = //optional
-        * exact       = (integer) 0|1 //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a share //optional
+        * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -1422,22 +1424,22 @@ def shares(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, li
         return tree
 
 
-def share(ampache_url, ampache_api, filter_str, api_format='xml'):
+def share(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ share
         MINIMUM_API_VERSION=420000
 
         Return shares by UID
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) UID of Share
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) UID of Share
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'share',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'share')
@@ -1456,7 +1458,7 @@ def share(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def share_create(ampache_url, ampache_api, filter_str, object_type,
+def share_create(ampache_url, ampache_api, filter_id, object_type,
                  description=False, expires=False, api_format='xml'):
     """ share_create
         MINIMUM_API_VERSION=420000
@@ -1465,9 +1467,9 @@ def share_create(ampache_url, ampache_api, filter_str, object_type,
         Takes the file id with optional description and expires parameters.
 
        INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (string) object_id
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $object_id
         * object_type = (string) object_type ('song', 'album', 'artist')
         * description = (string) description (will be filled for you if empty) //optional
         * expires     = (integer) days to keep active //optional
@@ -1476,7 +1478,7 @@ def share_create(ampache_url, ampache_api, filter_str, object_type,
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'share_create',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'type': object_type,
             'description': description,
             'expires': expires}
@@ -1512,7 +1514,7 @@ def share_create(ampache_url, ampache_api, filter_str, object_type,
         return token
 
 
-def share_edit(ampache_url, ampache_api, filter_str, stream=False, download=False,
+def share_edit(ampache_url, ampache_api, filter_id, can_stream=False, can_download=False,
                expires=False, description=False, api_format='xml'):
     """ share_edit
         MINIMUM_API_VERSION=420000
@@ -1521,26 +1523,26 @@ def share_edit(ampache_url, ampache_api, filter_str, stream=False, download=Fals
         Takes the share id to update with optional description and expires parameters.
 
         INPUT
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) UID of Share
-        * stream      = (boolean) 0,1 //optional
-        * download    = (boolean) 0,1 //optional
-        * expires     = (integer) number of whole days before expiry //optional
-        * description = (string) update description //optional
-        * api_format  = (string) 'xml'|'json' //optional
+        * ampache_url  = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api  = (string) session 'auth' key
+        * filter_id    = (integer) UID of Share
+        * can_stream   = (boolean) 0,1 //optional
+        * can_download = (boolean) 0,1 //optional
+        * expires      = (integer) number of whole days before expiry //optional
+        * description  = (string) update description //optional
+        * api_format   = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'share_edit',
             'auth': ampache_api,
-            'filter': filter_str,
-            'stream': stream,
-            'download': download,
+            'filter': filter_id,
+            'stream': can_stream,
+            'download': can_download,
             'expires': expires,
             'description': description}
-    if not stream:
+    if not can_stream:
         data.pop('stream')
-    if not download:
+    if not can_download:
         data.pop('download')
     if not expires:
         data.pop('expires')
@@ -1564,22 +1566,22 @@ def share_edit(ampache_url, ampache_api, filter_str, stream=False, download=Fals
         return tree
 
 
-def share_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
+def share_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ share_delete
         MINIMUM_API_VERSION=420000
 
         Delete an existing share.
 
         INPUT
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) UID of Share to delete
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) UID of Share to delete
         * api_format  = (string) 'xml'|'json' //optional
      """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'share_delete',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'share_delete')
@@ -1603,9 +1605,9 @@ def catalogs(ampache_url, ampache_api, filter_str=False, offset=0, limit=0, api_
         MINIMUM_API_VERSION=420000
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a catalog //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -1636,22 +1638,22 @@ def catalogs(ampache_url, ampache_api, filter_str=False, offset=0, limit=0, api_
         return tree
 
 
-def catalog(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def catalog(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
     """ catalog
         MINIMUM_API_VERSION=420000
 
         Return catalogs by UID
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) UID of catalog
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) UID of catalog
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'catalog',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'offset': str(offset),
             'limit': str(limit)}
     data = urllib.parse.urlencode(data)
@@ -1672,24 +1674,24 @@ def catalog(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format=
         return tree
 
 
-def catalog_action(ampache_url, ampache_api, task, catalog, api_format='xml'):
+def catalog_action(ampache_url, ampache_api, task, catalog_id, api_format='xml'):
     """ catalog_action
         MINIMUM_API_VERSION=400001
 
         Kick off a catalog update or clean for the selected catalog
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * task        = (string) 'add_to_catalog'|'clean_catalog'|'verify_catalog'|'gather_art'
-        * catalog     = (integer) $catalog_id
+        * catalog_id  = (integer) $catalog_id
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'catalog_action',
             'auth': ampache_api,
             'task': task,
-            'catalog': catalog}
+            'catalog': catalog_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'catalog_action')
@@ -1708,7 +1710,7 @@ def catalog_action(ampache_url, ampache_api, task, catalog, api_format='xml'):
         return tree
 
 
-def catalog_file(ampache_url, ampache_api, file, task, catalog, api_format='xml'):
+def catalog_file(ampache_url, ampache_api, file, task, catalog_id, api_format='xml'):
     """ catalog_file
         MINIMUM_API_VERSION=420000
 
@@ -1717,11 +1719,11 @@ def catalog_file(ampache_url, ampache_api, file, task, catalog, api_format='xml'
         Make sure you remember to urlencode those file names!
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * file        = (string) urlencode(FULL path to local file)
         * task        = (string) 'add'|'clean'|'verify'|'remove'
-        * catalog     = (integer) $catalog_id
+        * catalog_id  = (integer) $catalog_id
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
@@ -1729,7 +1731,7 @@ def catalog_file(ampache_url, ampache_api, file, task, catalog, api_format='xml'
             'auth': ampache_api,
             'file': file,
             'task': task,
-            'catalog': catalog}
+            'catalog': catalog_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'catalog_action')
@@ -1753,10 +1755,10 @@ def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, 
         MINIMUM_API_VERSION=420000
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = //optional
-        * exact       = (integer) 0|1 //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a podcast //optional
+        * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -1790,23 +1792,23 @@ def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, 
         return tree
 
 
-def podcast(ampache_url, ampache_api, filter_str, include=False, api_format='xml'):
+def podcast(ampache_url, ampache_api, filter_id, include=False, api_format='xml'):
     """ podcast
         MINIMUM_API_VERSION=420000
 
         Return podcasts by UID
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) UID of Podcast
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) UID of Podcast
         * include     = (string) 'episodes' Include episodes with the response //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'podcast',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'include': include}
     if not include:
         data.pop('include')
@@ -1828,24 +1830,24 @@ def podcast(ampache_url, ampache_api, filter_str, include=False, api_format='xml
         return tree
 
 
-def podcast_create(ampache_url, ampache_api, url, catalog, api_format='xml'):
+def podcast_create(ampache_url, ampache_api, url, catalog_id, api_format='xml'):
     """ podcast_create
         MINIMUM_API_VERSION=420000
 
         Return podcasts by UID
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * url         = (string) rss url for podcast
-        * catalog     = (string) podcast catalog
+        * catalog_id  = (string) podcast catalog
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'podcast_create',
             'auth': ampache_api,
             'url': url,
-            'catalog': catalog}
+            'catalog': catalog_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'podcast_create')
@@ -1864,7 +1866,9 @@ def podcast_create(ampache_url, ampache_api, url, catalog, api_format='xml'):
         return tree
 
 
-def podcast_edit(ampache_url, ampache_api, filter_str, feed=False, title=False, website=False, description=False, generator=False, copyright=False, api_format='xml'):
+def podcast_edit(ampache_url, ampache_api, filter_id,
+                 feed=False, title=False, website=False,
+                 description=False, generator=False, copyright_str=False, api_format='xml'):
     """ podcast_edit
         MINIMUM_API_VERSION=420000
 
@@ -1872,27 +1876,27 @@ def podcast_edit(ampache_url, ampache_api, filter_str, feed=False, title=False, 
         Takes the podcast id to update with optional description and expires parameters.
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (string) Alpha-numeric search term
-        * feed        = (string) feed url (xml!) //optional
-        * title       = (string) title string //optional
-        * website     = (string) source website url //optional
-        * description = (string) //optional
-        * generator   = (string) //optional
-        * copyright   = (string) //optional
-        * api_format  = (string) 'xml'|'json' //optional
+        * ampache_url   = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api   = (string) session 'auth' key
+        * filter_id     = (integer) $podcast_id
+        * feed          = (string) feed url (xml!) //optional
+        * title         = (string) title string //optional
+        * website       = (string) source website url //optional
+        * description   = (string) //optional
+        * generator     = (string) //optional
+        * copyright_str = (string) //optional
+        * api_format    = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'podcast_edit',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'feed': feed,
             'title': title,
             'website': website,
             'description': description,
             'generator': generator,
-            'copyright': copyright}
+            'copyright': copyright_str}
     if not feed:
         data.pop('feed')
     if not title:
@@ -1923,22 +1927,22 @@ def podcast_edit(ampache_url, ampache_api, filter_str, feed=False, title=False, 
         return tree
 
 
-def podcast_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
+def podcast_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ podcast_delete
         MINIMUM_API_VERSION=420000
 
         Delete an existing podcast.
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) UID of podcast to delete
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) UID of podcast to delete
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'podcast_delete',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'podcast_delete')
@@ -1957,15 +1961,14 @@ def podcast_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def podcast_episodes(ampache_url, ampache_api, filter_str='', exact=False, offset=0, limit=0, api_format='xml'):
+def podcast_episodes(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
     """ podcast_episodes
         MINIMUM_API_VERSION=420000
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (string) UID of podcast
-        * exact       = (integer) 0|1 //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (string) UID of podcast
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -1973,12 +1976,9 @@ def podcast_episodes(ampache_url, ampache_api, filter_str='', exact=False, offse
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'podcast_episodes',
             'auth': ampache_api,
-            'filter': filter_str,
-            'exact': exact,
+            'filter': filter_id,
             'offset': str(offset),
             'limit': str(limit)}
-    if not exact:
-        data.pop('exact')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'podcast_episodes')
@@ -1997,22 +1997,22 @@ def podcast_episodes(ampache_url, ampache_api, filter_str='', exact=False, offse
         return tree
 
 
-def podcast_episode(ampache_url, ampache_api, filter_str, api_format='xml'):
+def podcast_episode(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ podcast_episode
         MINIMUM_API_VERSION=420000
 
         Return podcast_episodes by UID
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) UID of Podcast
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) UID of Podcast
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'podcast_episode',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'podcast_episode')
@@ -2031,22 +2031,22 @@ def podcast_episode(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def podcast_episode_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
+def podcast_episode_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ podcast_episode_delete
         MINIMUM_API_VERSION=420000
 
         Delete an existing podcast_episode.
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) UID of podcast_episode to delete
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) UID of podcast_episode to delete
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'podcast_episode_delete',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'podcast_episode')
@@ -2065,22 +2065,22 @@ def podcast_episode_delete(ampache_url, ampache_api, filter_str, api_format='xml
         return tree
 
 
-def update_podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
+def update_podcast(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ update_podcast
         MINIMUM_API_VERSION=420000
 
         Sync and download new podcast episodes
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) UID of Podcast
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) UID of Podcast
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'update_podcast',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'update_podcast')
@@ -2106,9 +2106,9 @@ def search_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_fo
         This searches the songs and returns... songs
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  =
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a song
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -2149,8 +2149,8 @@ def advanced_search(ampache_url, ampache_api, rules,
         http://ampache.org/api/api-advanced-search
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input], [rule_2,rule_2_operator,rule_2_input], [etc]]
         * operator    = (string) 'and'|'or' (whether to match one rule or all) //optional
         * object_type = (string)  //optional
@@ -2202,10 +2202,10 @@ def videos(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, li
         This returns video objects!
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = //optional
-        * exact       = (integer) 0|1 //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a video //optional
+        * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -2239,22 +2239,22 @@ def videos(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, li
         return tree
 
 
-def video(ampache_url, ampache_api, filter_str, api_format='xml'):
+def video(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ video
         MINIMUM_API_VERSION=380001
 
         This returns a single video
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer) $video_id
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $video_id
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'video',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'video')
@@ -2273,7 +2273,7 @@ def video(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def localplay(ampache_url, ampache_api, command, oid=False, type=False, clear=0, api_format='xml'):
+def localplay(ampache_url, ampache_api, command, oid=False, otype=False, clear=0, api_format='xml'):
     """ localplay
         MINIMUM_API_VERSION=380001
         CHANGED_IN_API_VERSION=430000
@@ -2281,19 +2281,22 @@ def localplay(ampache_url, ampache_api, command, oid=False, type=False, clear=0,
         This is for controlling localplay
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * command     = (string) 'next', 'prev', 'stop', 'play', 'pause', 'add', 'volume_up', 'volume_down', 'volume_mute', 'delete_all', 'skip', 'status'
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * command     = (string) 'next', 'prev', 'stop', 'play', 'pause', 'add', 'volume_up',
+                                 'volume_down', 'volume_mute', 'delete_all', 'skip', 'status'
         * oid         = (integer) object_id //optional
-        * type        = (string) 'Song', 'Video', 'Podcast_Episode', 'Channel', 'Broadcast', 'Democratic', 'Live_Stream' //optional
+        * otype       = (string) 'Song', 'Video', 'Podcast_Episode', 'Channel',
+                                 'Broadcast', 'Democratic', 'Live_Stream' //optional
         * clear       = (integer) 0,1 Clear the current playlist before adding //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'localplay',
             'auth': ampache_api,
+            'command': command,
             'oid': oid,
-            'type': type,
+            'type': otype,
             'clear': clear}
     if not oid:
         data.pop('oid')
@@ -2319,15 +2322,15 @@ def localplay(ampache_url, ampache_api, command, oid=False, type=False, clear=0,
         return tree
 
 
-def democratic(ampache_url, ampache_api, method, action, oid, api_format='xml'):
+def democratic(ampache_url, ampache_api, method, oid, api_format='xml'):
     """ democratic
         MINIMUM_API_VERSION=380001
 
         This is for controlling democratic play
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * oid         = (integer) object_id (song_id|playlist_id)
         * method      = (string) 'vote'|'devote'|'playlist'|'play'
         * api_format  = (string) 'xml'|'json' //optional
@@ -2364,8 +2367,8 @@ def stats(ampache_url, ampache_api, object_type, filter_str='random',
         This gets library stats for different object types. When filter is null get some random items instead
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * object_type = (string) 'song'|'album'|'artist'
         * filter_str  = (string) 'newest'|'highest'|'frequent'|'recent'|'flagged'|'random'
         * offset      = (integer) //optional
@@ -2412,8 +2415,8 @@ def user(ampache_url, ampache_api, username, api_format='xml'):
         This get an user public information
     
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * username    = 
         * api_format  = (string) 'xml'|'json' //optional
     """
@@ -2446,8 +2449,8 @@ def followers(ampache_url, ampache_api, username, api_format='xml'):
         This get an user followers
     
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * username    = 
         * api_format  = (string) 'xml'|'json' //optional
     """
@@ -2480,8 +2483,8 @@ def following(ampache_url, ampache_api, username, api_format='xml'):
         This get the user list followed by an user
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * username    =
         * api_format  = (string) 'xml'|'json' //optional
     """
@@ -2514,8 +2517,8 @@ def toggle_follow(ampache_url, ampache_api, username, api_format='xml'):
         This follow/unfollow an user
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * username    =
         * api_format  = (string) 'xml'|'json' //optional
     """
@@ -2548,8 +2551,8 @@ def last_shouts(ampache_url, ampache_api, username, limit=0, api_format='xml'):
         This get the latest posted shouts
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * username    =
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -2584,8 +2587,8 @@ def rate(ampache_url, ampache_api, object_type, object_id, rating, api_format='x
         This rates a library item
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * object_type = (string) 'song'|'album'|'artist'
         * object_id   = (integer) $object_id
         * rating      = (integer) 0|1|2|3|4|5
@@ -2617,33 +2620,33 @@ def rate(ampache_url, ampache_api, object_type, object_id, rating, api_format='x
         return tree
 
 
-def flag(ampache_url, ampache_api, object_type, object_id, flag, api_format='xml'):
+def flag(ampache_url, ampache_api, object_type, object_id, flagbool, api_format='xml'):
     """ flag
         MINIMUM_API_VERSION=400001
 
         This flags a library item as a favorite
 
-        Setting flag to true (1) will set the flag
-        Setting flag to false (0) will remove the flag
+        Setting flagbool to true (1) will set the flag
+        Setting flagbool to false (0) will remove the flag
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * object_type = (string) 'song'|'album'|'artist'
         * object_id   = (integer) $object_id
-        * flag        = (boolean|integer) (True,False | 0|1)
+        * flagbool    = (boolean|integer) (True,False | 0|1)
         * api_format  = (string) 'xml'|'json' //optional
     """
-    if bool(flag):
-        flag = 1
+    if bool(flagbool):
+        flag_state = 1
     else:
-        flag = 0
+        flag_state = 0
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'flag',
             'auth': ampache_api,
             'type': object_type,
             'id': object_id,
-            'flag': flag}
+            'flag': flag_state}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'flag')
@@ -2662,7 +2665,7 @@ def flag(ampache_url, ampache_api, object_type, object_id, flag, api_format='xml
         return tree
 
 
-def record_play(ampache_url, ampache_api, object_id, user, client='AmpacheAPI', api_format='xml'):
+def record_play(ampache_url, ampache_api, object_id, user_id, client='AmpacheAPI', api_format='xml'):
     """ record_play
         MINIMUM_API_VERSION=400001
 
@@ -2670,10 +2673,10 @@ def record_play(ampache_url, ampache_api, object_id, user, client='AmpacheAPI', 
         This allows other sources to record play history to ampache
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * object_id   = (integer) $object_id
-        * user        = (integer) $user_id
+        * user_id     = (integer) $user_id
         * client      = (string) $agent //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
@@ -2681,7 +2684,7 @@ def record_play(ampache_url, ampache_api, object_id, user, client='AmpacheAPI', 
     data = {'action': 'record_play',
             'auth': ampache_api,
             'id': object_id,
-            'user': user,
+            'user': user_id,
             'client': client}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
@@ -2701,8 +2704,8 @@ def record_play(ampache_url, ampache_api, object_id, user, client='AmpacheAPI', 
         return tree
 
 
-def scrobble(ampache_url, ampache_api, title, artist, album,
-             mbtitle=False, mbartist=False, mbalbum=False, time=False,
+def scrobble(ampache_url, ampache_api, title, artist_name, album_name,
+             mbtitle=False, mbartist=False, mbalbum=False, stime=False,
              client='AmpacheAPI', api_format='xml'):
     """ scrobble
         MINIMUM_API_VERSION=400001
@@ -2711,15 +2714,15 @@ def scrobble(ampache_url, ampache_api, title, artist, album,
         This allows other sources to record play history to ampache
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * title       = (string)
-        * artist      = (string)
-        * album       = (string)
-        * mbtitle     = (string) //optional
-        * mbartist    = (string) //optional
-        * mbalbum     = (string) //optional
-        * time        = (integer) UNIXTIME() //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * title       = (string) song title
+        * artist_name = (string) artist name
+        * album_name  = (string) album name
+        * mbtitle     = (string) song mbid //optional
+        * mbartist    = (string) artist mbid //optional
+        * mbalbum     = (string) album mbid //optional
+        * stime       = (integer) UNIXTIME() //optional
         * client      = (string) //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
@@ -2727,10 +2730,10 @@ def scrobble(ampache_url, ampache_api, title, artist, album,
     data = {'action': 'scrobble',
             'auth': ampache_api,
             'client': client,
-            'date': str(time),
+            'date': str(stime),
             'song': title,
-            'album': album,
-            'artist': artist,
+            'artist': artist_name,
+            'album': album_name,
             'songmbid': mbtitle,
             'albummbid': mbalbum,
             'artistmdib': mbartist}
@@ -2759,8 +2762,8 @@ def timeline(ampache_url, ampache_api, username, limit=0, since=0, api_format='x
         This get a user timeline
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * username    = (string)
         * limit       = (integer) //optional
         * since       = (integer) UNIXTIME() //optional
@@ -2797,8 +2800,8 @@ def friends_timeline(ampache_url, ampache_api, limit=0, since=0, api_format='xml
         This get current user friends timeline
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * limit       = (integer) //optional
         * since       = (integer) UNIXTIME() //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -2833,8 +2836,8 @@ def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id, api_for
         updates a single album,artist,song from the tag data
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * object_type = (string) 'artist'|'album'|'song'
         * object_id   = (integer) $artist_id, $album_id, $song_id
         * api_format  = (string) 'xml'|'json' //optional
@@ -2870,8 +2873,8 @@ def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite=Fal
         Doesn't overwrite existing art by default.
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * object_type = (string) 'artist'|'album'|'song'
         * object_id   = (integer) $artist_id, $album_id, $song_id
         * overwrite   = (boolean|integer) (True,False | 0|1) //optional
@@ -2913,8 +2916,8 @@ def update_artist_info(ampache_url, ampache_api, object_id, api_format='xml'):
         Make sure lastfm_api_key is set in your configuration file
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * object_id   = (integer) $artist_id
         * api_format  = (string) 'xml'|'json' //optional
     """
@@ -2947,8 +2950,8 @@ def stream(ampache_url, ampache_api, object_id, object_type, destination, api_fo
         stream a song or podcast episode
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * object_id   = (string) $song_id / $podcast_episode_id
         * object_type = (string) 'song'|'podcast'
         * destination = (string) full file path
@@ -2975,8 +2978,8 @@ def download(ampache_url, ampache_api, object_id, object_type, destination, tran
         download a song or podcast episode
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * object_id   = (string) $song_id / $podcast_episode_id
         * object_type = (string) 'song'|'podcast'
         * destination = (string) full file path
@@ -3004,8 +3007,8 @@ def get_art(ampache_url, ampache_api, object_id, object_type, destination, api_f
         get the binary art for an item
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * object_id   = (string) $song_id / $podcast_episode_id
         * object_type = (string) 'song', 'artist', 'album', 'playlist', 'search', 'podcast'
         * destination = (string) output file path
@@ -3033,8 +3036,8 @@ def user_create(ampache_url, ampache_api, username, password, email,
         Create a new user. (Requires the username, password and email.) @param array $input
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * username    = (string) $username
         * password    = (string) hash('sha256', $password))
         * email       = (string) 'user@gmail.com'
@@ -3082,8 +3085,8 @@ def user_update(ampache_url, ampache_api, username, password=False, fullname=Fal
         Update an existing user. @param array $input
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * username    = (string) $username
         * password    = (string) hash('sha256', $password)) //optional
         * fullname    = (string) //optional
@@ -3150,8 +3153,8 @@ def user_delete(ampache_url, ampache_api, username, api_format='xml'):
         Delete an existing user. @param array $input
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
         * username    = (string) $username
         * api_format  = (string) 'xml'|'json' //optional
     """
@@ -3185,10 +3188,10 @@ def licenses(ampache_url, ampache_api, filter_str=False, exact=False,
         Returns licenses based on the specified filter_str
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = //optional
-        * exact       = (integer) 0|1 //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a license //optional
+        * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
         * add         = //optional
         * update      = //optional
         * offset      = (integer) //optional
@@ -3230,22 +3233,22 @@ def licenses(ampache_url, ampache_api, filter_str=False, exact=False,
         return tree
 
 
-def license(ampache_url, ampache_api, filter_str, api_format='xml'):
+def license(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ license
         MINIMUM_API_VERSION=420000
 
         returns a single license
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  =
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $license_id
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'license',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'license')
@@ -3264,22 +3267,22 @@ def license(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def license_songs(ampache_url, ampache_api, filter_str, api_format='xml'):
+def license_songs(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ license_songs
         MINIMUM_API_VERSION=420000
 
         returns a songs for a single license ID
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  =
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id  = (integer) $license_id
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'license_songs',
             'auth': ampache_api,
-            'filter': filter_str}
+            'filter': filter_id}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'license_songs')
