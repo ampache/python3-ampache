@@ -30,6 +30,17 @@ limit = 4
 song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=164215&uid=2&player=api&name=Hellyeah%20-%20-.mp3'
 
 
+def check_limit(format, data, set_limit):
+    if format == 'xml':
+        for child in data:
+            if child.tag == 'total_count':
+                if int(child.text) > int(set_limit):
+                    print()
+                    sys.exit('ERROR: albums ' + child.text + ' found more items than the limit ' + str(limit))
+                else:
+                    continue
+
+
 def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """TODO
     def stream(ampache_url, ampache_api, id, type, destination, api_format = 'xml'):
@@ -102,12 +113,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 "docs/" + api_format + "-responses/user (error)." + api_format)
 
     myuser = ampache.user(ampache_url, ampache_session, ampache_user, api_format)
-    if api_format == 'xml':
-        for child in myuser:
-            if child.tag == 'user':
-                user_id = child.attrib['id']
-    else:
-        user_id = myuser['user']['id']
+    user_id = ampache.get_id_list(myuser, 'user', api_format)[0]
 
     """ def get_indexes(ampache_url, ampache_api, type, filter = False, add = False, update = False, offset = 0, limit = 0, api_format = 'xml'):
 
@@ -116,77 +122,32 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     songs = ampache.get_indexes(ampache_url, ampache_session, 'song', False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (song)." + api_format)
-    if api_format == 'xml':
-        for child in songs:
-            if child.tag == 'total_count':
-                if int(child.text) > int(limit):
-                    print()
-                    sys.exit('ERROR: songs ' + child.text + ' found more items than the limit ' + str(limit))
-                else:
-                    continue
+    single_song = ampache.get_id_list(songs, 'song', api_format)[0]
+    # TODO check limits
 
     albums = ampache.get_indexes(ampache_url, ampache_session, 'album', False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (album)." + api_format)
-    if api_format == 'xml':
-        for child in albums:
-            if child.tag == 'total_count':
-                if int(child.text) > int(limit):
-                    print()
-                    sys.exit('ERROR: albums ' + child.text + ' found more items than the limit ' + str(limit))
-                else:
-                    continue
+    single_album = ampache.get_id_list(albums, 'album', api_format)[0]
+    
 
     artists = ampache.get_indexes(ampache_url, ampache_session, 'artist', False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (artist)." + api_format)
-    if api_format == 'xml':
-        for child in artists:
-            if child.tag == 'total_count':
-                if int(child.text) > int(limit):
-                    print()
-                    sys.exit('ERROR: artists ' + child.text + ' found more items than the limit ' + str(limit))
-                else:
-                    continue
+    single_artist = ampache.get_id_list(artists, 'artist', api_format)[0]
+    # TODO check limits
 
     playlists = ampache.get_indexes(ampache_url, ampache_session, 'playlist', False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (playlist)." + api_format)
-    if api_format == 'xml':
-        for child in playlists:
-            if child.tag == 'total_count':
-                if int(child.text) > int(limit):
-                    print()
-                    sys.exit('ERROR: playlists ' + child.text + ' found more items than the limit ' + str(limit))
-                else:
-                    continue
+    # single_playlist = ampache.get_id_list(playlists, 'playlist', api_format)[0]
+    # TODO check limits
 
     """ def videos(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
     videos = ampache.videos(ampache_url, ampache_session, False, False, 0, 0, api_format)
+    single_video = ampache.get_id_list(videos, 'video', api_format)[0]
 
-    if api_format == 'xml':
-        for child in songs:
-            if child.tag == 'song':
-                single_song = child.attrib['id']
-        for child in albums:
-            if child.tag == 'album':
-                single_album = child.attrib['id']
-        for child in artists:
-            if child.tag == 'artist':
-                single_artist = child.attrib['id']
-        # for child in playlists:
-        #     if child.tag == 'playlist':
-        #         single_playlist = child.attrib['id']
-        for child in videos:
-            if child.tag == 'video':
-                single_video = child.attrib['id']
-    else:
-        single_song = songs[0]['id']
-        single_album = albums[0]['id']
-        single_artist = artists[0]['id']
-        # single_playlist = playlists[0]['id']
-        single_video = videos[0]['id']
 
     """ def video(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
@@ -571,6 +532,28 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     ampache.update_podcast(ampache_url, ampache_session, 10, api_format)
 
+    """ shares
+    """
+    shares = ampache.shares(ampache_url, ampache_session, False, False, 0, limit, api_format)
+    share_id = ampache.get_id_list(shares, 'share', api_format)[0]
+
+    """ share
+    """
+    ampache.share(ampache_url, ampache_session, share_id, api_format)
+
+    """ share_create
+    """
+    share_create = ampache.share_create(ampache_url, ampache_session, single_song, 'song', False, False, api_format)
+    share_new = ampache.get_id_list(share_create, 'share', api_format)[0]
+
+    """ share_edit
+    """
+    ampache.share_edit(ampache_url, ampache_session, share_new, 0, 0, False, False, api_format)
+
+    """ share_delete
+    """
+    ampache.share_delete(ampache_url, ampache_session, share_new, api_format)
+
     """ def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, api_format = 'xml'):
     """
     ampache.timeline(ampache_url, ampache_session, ampache_user, 10, 0, api_format)
@@ -629,5 +612,5 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         f.close()
 
 
-build_docs(url, api, user, 'xml')
 build_docs(url, api, user, 'json')
+build_docs(url, api, user, 'xml')

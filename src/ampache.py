@@ -54,6 +54,27 @@ def set_debug(mybool):
     AMPACHE_DEBUG = mybool
 
 
+def get_id_list(data, attribute, format = 'xml'):
+    """ get_id_list
+
+        return a list of id's from the data you've got from the api
+
+        INPUTS
+        * filename  = (mixed) XML or JSON from the API
+        * attribute = (string) attribute you are searching for
+        * format    = (string) 'xml','json'
+    """
+    idlist = list()
+    if format == 'xml':
+        for child in data:
+            if child.tag == attribute:
+                idlist.append(child.attrib['id'])
+    else:
+        for object in data:
+            idlist.append(object['id'])
+    return idlist
+
+
 def write_xml(xmlstr, filename):
     """ write_xml
 
@@ -1397,7 +1418,7 @@ def shares(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, li
         return tree
 
 
-def share(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def share(ampache_url, ampache_api, filter_str, api_format='xml'):
     """ share
         MINIMUM_API_VERSION=420000
 
@@ -1412,9 +1433,7 @@ def share(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='x
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'share',
             'auth': ampache_api,
-            'filter': filter_str,
-            'offset': str(offset),
-            'limit': str(limit)}
+            'filter': filter_str}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'share')
@@ -1445,7 +1464,7 @@ def share_create(ampache_url, ampache_api, filter_str, object_type,
         * ampache_url = (string)
         * ampache_api = (string)
         * filter_str  = (string) object_id
-        * object_type = (string) object_type
+        * object_type = (string) object_type ('song', 'album', 'artist')
         * description = (string) description (will be filled for you if empty) //optional
         * expires     = (integer) days to keep active //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -1516,7 +1535,7 @@ def share_edit(ampache_url, ampache_api, filter_str, stream=False, download=Fals
             'expires': expires,
             'description': description}
     if not stream:
-        data.pop('name')
+        data.pop('stream')
     if not download:
         data.pop('download')
     if not expires:
