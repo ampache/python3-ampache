@@ -1841,7 +1841,7 @@ def podcast_create(ampache_url, ampache_api, url, catalog, api_format='xml'):
         return tree
 
 
-def podcast_edit(ampache_url, ampache_api, filter_str, stream, download, expires, description, api_format='xml'):
+def podcast_edit(ampache_url, ampache_api, filter_str, feed=False, title=False, website=False, description=False, generator=False, copyright=False, api_format='xml'):
     """ podcast_edit
         MINIMUM_API_VERSION=420000
 
@@ -1851,29 +1851,37 @@ def podcast_edit(ampache_url, ampache_api, filter_str, stream, download, expires
         INPUTS
         * ampache_url = (string)
         * ampache_api = (string)
-        * filter_str  = (string) Alpha-numeric search term //optional
-        * stream      = (boolean) 0,1 allow_stream //optional
-        * download    = (boolean) 0,1 allow_download //optional
-        * expires     = (integer) number of whole days before expiry //optional
-        * description = (string) update description //optional
+        * filter_str  = (string) Alpha-numeric search term
+        * feed        = (string) feed url (xml!) //optional
+        * title       = (string) title string //optional
+        * website     = (string) source website url //optional
+        * description = (string) //optional
+        * generator   = (string) //optional
+        * copyright   = (string) //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'podcast_edit',
             'auth': ampache_api,
             'filter': filter_str,
-            'stream': stream,
-            'download': download,
-            'expires': expires,
-            'description': description}
-    if not stream:
-        data.pop('stream')
-    if not download:
-        data.pop('download')
-    if not expires:
-        data.pop('expires')
+            'feed': feed,
+            'title': title,
+            'website': website,
+            'description': description,
+            'generator': generator,
+            'copyright': copyright}
+    if not feed:
+        data.pop('feed')
+    if not title:
+        data.pop('title')
+    if not website:
+        data.pop('website')
     if not description:
         data.pop('description')
+    if not generator:
+        data.pop('generator')
+    if not copyright:
+        data.pop('copyright')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'podcast_edit')

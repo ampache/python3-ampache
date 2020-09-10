@@ -74,40 +74,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     ampache.set_debug(True)
 
-
-    """ def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
-    """
-    ampache.podcasts(ampache_url, ampache_session, False, False, 0, 4, api_format)
-
-    """ def podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
-    """
-    ampache.podcast(ampache_url, ampache_session, '10', api_format)
-
-    """ def podcast_episodes
-    """
-    ampache.podcast_episodes(ampache_url, ampache_session, False, 0, 0, limit, api_format)
-
-    """ def podcast_episode
-    """
-    ampache.podcast_episode(ampache_url, ampache_session, 6394, api_format)
-
-    """ def podcast_create
-    """
-    ampache.podcast_create(ampache_url, ampache_session, 'https://www.abc.net.au/radio/programs/trace/feed/8597522/podcast.xml', 7, api_format)
-
-    """ def podcast_edit(ampache_url, ampache_api, filter_str, stream, download, expires, description, api_format)
-    """
-    ampache.podcast_edit(ampache_url, ampache_session, 10, 1, 1, False, False, api_format)
-
-    """ def podcast_delete
-    """
-    # ampache.podcast_delete(ampache_url, ampache_session, 1000, api_format)
-    sys.exit("ERROR")
-
-    """ def update_podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
-    """
-    ampache.update_podcast(ampache_url, ampache_session, 10, api_format)
-
     """ def url_to_song(ampache_url, ampache_api, url, api_format = 'xml'):
     """
     ampache.url_to_song(ampache_url, ampache_session, song_url, api_format)
@@ -569,6 +535,41 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ def license_songs(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
     ampache.license_songs(ampache_url, ampache_session, 2, api_format)
+
+    """ def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+    """
+    ampache.podcasts(ampache_url, ampache_session, False, False, 0, 4, api_format)
+
+    """ def podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
+    """
+    ampache.podcast(ampache_url, ampache_session, 10, 'episodes', api_format)
+    shutil.move("docs/" + api_format + "-responses/podcast." + api_format,
+                "docs/" + api_format + "-responses/podcast (episodes)." + api_format)
+
+    ampache.podcast(ampache_url, ampache_session, 10, False, api_format)
+
+    """ def podcast_episodes
+    """
+    ampache.podcast_episodes(ampache_url, ampache_session, 10, 0, 0, limit, api_format)
+    """ def podcast_episode
+    """
+    ampache.podcast_episode(ampache_url, ampache_session, 6394, api_format)
+
+    """ def podcast_create
+    """
+    ampache.podcast_create(ampache_url, ampache_session, 'https://www.abc.net.au/radio/programs/trace/feed/8597522/podcast.xml', 7, api_format)
+
+    """ def podcast_edit(ampache_url, ampache_api, filter_str, stream, download, expires, description, api_format)
+    """
+    ampache.podcast_edit(ampache_url, ampache_session, 10, 1, 1, False, False, api_format)
+
+    """ def podcast_delete
+    """
+    #ampache.podcast_delete(ampache_url, ampache_session, 56, api_format)
+
+    """ def update_podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
+    """
+    ampache.update_podcast(ampache_url, ampache_session, 10, api_format)
 
     """ def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, api_format = 'xml'):
     """
