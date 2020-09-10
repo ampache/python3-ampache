@@ -1767,7 +1767,7 @@ def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, 
         return tree
 
 
-def podcast(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
     """ podcast
         MINIMUM_API_VERSION=420000
 
@@ -1782,9 +1782,7 @@ def podcast(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format=
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'podcast',
             'auth': ampache_api,
-            'filter': filter_str,
-            'offset': str(offset),
-            'limit': str(limit)}
+            'filter': filter_str}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'podcast')

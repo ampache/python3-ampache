@@ -75,11 +75,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     ampache.set_debug(True)
 
 
-    """ def podcasts
+    """ def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
     """
     ampache.podcasts(ampache_url, ampache_session, False, False, 0, 4, api_format)
 
-    """ def podcast
+    """ def podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
     """
     ampache.podcast(ampache_url, ampache_session, '10', api_format)
 
@@ -102,6 +102,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ def podcast_delete
     """
     # ampache.podcast_delete(ampache_url, ampache_session, 1000, api_format)
+    sys.exit("ERROR")
 
     """ def update_podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
     """
