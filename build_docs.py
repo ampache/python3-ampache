@@ -140,14 +140,13 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     playlists = ampache.get_indexes(ampache_url, ampache_session, 'playlist', False, False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (playlist)." + api_format)
-    # single_playlist = ampache.get_id_list(playlists, 'playlist', api_format)[0]
+    single_playlist = ampache.get_id_list(playlists, 'playlist', api_format)[0]
     # TODO check limits
 
     """ def videos(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
     videos = ampache.videos(ampache_url, ampache_session, False, False, 0, 0, api_format)
     single_video = ampache.get_id_list(videos, 'video', api_format)[0]
-
 
     """ def video(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
@@ -463,27 +462,27 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     ampache.tag(ampache_url, ampache_session, genre, api_format)
 
-    """ def tag_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
+    """ def genre_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
-    tag_albums = ampache.tag_albums(ampache_url, ampache_session, genre, 0, 2, api_format)
+    genre_albums = ampache.genre_albums(ampache_url, ampache_session, genre, 0, 2, api_format)
     if api_format == 'xml':
-        for child in tag_albums:
+        for child in genre_albums:
             print(child.tag, child.attrib)
             for subchildren in child:
                 print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
-    """ def tag_artists(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
+    """ def genre_artists(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
-    tag_artists = ampache.tag_artists(ampache_url, ampache_session, genre, 0, 1, api_format)
+    genre_artists = ampache.genre_artists(ampache_url, ampache_session, genre, 0, 1, api_format)
     if api_format == 'xml':
-        for child in tag_artists:
+        for child in genre_artists:
             print(child.tag, child.attrib)
             for subchildren in child:
                 print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
-    """ def tag_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
+    """ def genre_songs(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
-    ampache.tag_songs(ampache_url, ampache_session, genre, 0, 1, api_format)
+    ampache.genre_songs(ampache_url, ampache_session, genre, 0, 1, api_format)
 
     """ def licenses(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
@@ -526,7 +525,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def podcast_delete
     """
-    #ampache.podcast_delete(ampache_url, ampache_session, 56, api_format)
+    # ampache.podcast_delete(ampache_url, ampache_session, 56, api_format)
 
     """ def update_podcast(ampache_url, ampache_api, filter_str, api_format='xml'):
     """
