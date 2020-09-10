@@ -151,6 +151,20 @@ class AMPYCHE(object):
         if not my_ping:
             self.handshake()
 
+        # get your lists
+        self.list_songs = list()
+        if TYPE == 'playlist':
+            self.playlist_songs(OID)
+        if TYPE == 'song':
+            song = ampache.song(self.ampache_url, self.ampache_session, OID, self.api_format)
+            if self.api_format == 'xml':
+                for child in song:
+                    if child.tag == 'song':
+                        self.list_songs.append(child.attrib['id'])
+            else:
+                for child in song:
+                    self.list_songs.append(child['id'])
+
         # run your action
         if ACTION == 'ping':
             print("\nSESSION: " + ampache.ping(self.ampache_url, self.ampache_session, self.api_format))
@@ -167,14 +181,9 @@ class AMPYCHE(object):
         elif ACTION == 'playlists':
             self.playlists()
         elif ACTION == 'localplay':
-            self.list_songs = list()
-            if TYPE == 'playlist':
-                self.playlist_songs(OID)
-            if TYPE == 'song':
-                self.list_songs.append(OID)
-            for object_id in self.list_songs:
-                if object_id:
-                    self.localplay('add', object_id, 'song', 0)
+            for object in self.list_songs:
+                if object:
+                    self.localplay('add', object, 'song', 0)
             if COMMAND != 'add':
                 result = self.localplay(COMMAND)
                 if result:
@@ -186,14 +195,9 @@ class AMPYCHE(object):
         elif ACTION == 'download':
             if not os.path.isdir(DESTIN):
                 os.makedirs(DESTIN)
-            self.list_songs = list()
-            if TYPE == 'playlist':
-                self.playlist_songs(OID)
-            if TYPE == 'song':
-                self.list_songs.append(OID)
-            for object_id in self.list_songs:
-                if object_id and os.path.isdir(os.path.dirname(DESTIN)):
-                    self.download(object_id, DESTIN, TRANSCODE)
+            for object in self.list_songs:
+                if object and os.path.isdir(os.path.dirname(DESTIN)):
+                    self.download(object, DESTIN, TRANSCODE)
         return
 
     def saveconf(self):
@@ -261,7 +265,7 @@ class AMPYCHE(object):
                 print("\t" + child['id'] + ":\t" + child['name'])
 
     def playlist_songs(self, playlist_id):
-        """ collect all the songs in choosen playlist into self.list_songs """
+        """ collect all the songs in chosen playlist into self.list_songs """
         playlist = ampache.playlist_songs(self.ampache_url, self.ampache_session, playlist_id, 0, LIMIT, self.api_format)
         print("\nChecking for songs in playlist " + str(playlist_id) + " with a limit of " + str(LIMIT) + "\n")
         if self.api_format == 'xml':
@@ -313,10 +317,11 @@ class AMPYCHE(object):
             else:
                 print("Failed localplay action " + action)
 
-    def download(self, object_id, destination, transcode='raw'):
+    def download(self, object, destination, transcode='raw'):
         """ Download the requested track This could be extended or changed to support lists"""
+        # look for various Artists
+        object_id = object
         search_song = ampache.song(self.ampache_url, self.ampache_session, object_id, self.api_format)
-
         list_songs = list()
         # get your song details into a list
         for child in search_song:
@@ -325,25 +330,25 @@ class AMPYCHE(object):
                     if transcode != 'raw':
                         # transcoded files have a different extension to the original
                         list_songs.append([child.attrib['id'],
-                                           process(child.find('artist').text),
+                                           process(child.find('albumartist').text),
                                            process(child.find('album').text),
                                            process(os.path.basename(os.path.splitext(child.find('filename').text)[0] + '.' + transcode))])
                     else:
                         list_songs.append([child.attrib['id'],
-                                           process(child.find('artist').text),
+                                           process(child.find('albumartist').text),
                                            process(child.find('album').text),
                                            process(os.path.basename(child.find('filename').text))])
             else:
                 if transcode != 'raw':
                     # transcoded files have a different extension to the original
                     list_songs.append([child['id'],
-                                       process(child['artist']),
-                                       process(child['album']),
+                                       process(child['albumartist']['name']),
+                                       process(child['album']['name']),
                                        process(os.path.basename(os.path.splitext(child['filename'])[0] + '.' + transcode))])
                 else:
                     list_songs.append([child['id'],
-                                       process(child['artist']),
-                                       process(child['album']),
+                                       process(child['albumartist']['name']),
+                                       process(child['album']['name']),
                                        process(os.path.basename(child['filename']))])
         # now you have the details you can construct a file destination
         for object_id in list_songs:

@@ -9,6 +9,9 @@ import time
 from src import ampache
 
 # user variables
+url = 'https://music.server'
+api = 'mysuperapikey'
+user = 'myusername'
 if os.path.isfile('docs/examples/ampyche.conf'):
     conf = configparser.RawConfigParser()
     conf.read('docs/examples/ampyche.conf')
@@ -22,16 +25,14 @@ else:
             api = sys.argv[2]
             user = sys.argv[3]
     except IndexError:
-        url = 'https://music.server'
-        api = 'mysuperapikey'
-        user = 'myusername'
+        sys.exit('ERROR: get your arguments correct')
 
 limit = 4
 song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=164215&uid=2&player=api&name=Hellyeah%20-%20-.mp3'
 
 
-def check_limit(format, data, set_limit):
-    if format == 'xml':
+def check_limit(data_format, data, set_limit):
+    if data_format == 'xml':
         for child in data:
             if child.tag == 'total_count':
                 if int(child.text) > int(set_limit):
@@ -130,7 +131,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 "docs/" + api_format + "-responses/get_indexes (album)." + api_format)
     single_album = ampache.get_id_list(albums, 'album', api_format)[0]
     
-
     artists = ampache.get_indexes(ampache_url, ampache_session, 'artist', False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (artist)." + api_format)
@@ -505,7 +505,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     ampache.podcast(ampache_url, ampache_session, 10, 'episodes', api_format)
     shutil.move("docs/" + api_format + "-responses/podcast." + api_format,
-                "docs/" + api_format + "-responses/podcast (episodes)." + api_format)
+                "docs/" + api_format + "-responses/podcast (include episodes)." + api_format)
 
     ampache.podcast(ampache_url, ampache_session, 10, False, api_format)
 
