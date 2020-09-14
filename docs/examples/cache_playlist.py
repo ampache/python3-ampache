@@ -44,16 +44,19 @@ def cache_playlist(ampache_url, ampache_api, ampache_user, api_format, smartlist
     ampache.set_debug(False)
 
     """ advanced_search
-    def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 'song', offset = 0, limit = 0, random = 0, api_format = 'xml'):
+    def advanced_search(ampache_url, ampache_api, rules, operator = 'and',
+                        type = 'song', offset = 0, limit = 0, random = 0, api_format = 'xml'):
     """
     list_songs = list()
     search_rules = [['smartplaylist', 0, smartlist]]
-    search_song = ampache.advanced_search(ampache_url, ampache_session, search_rules, 'or', 'song', 0, limit, 1, api_format)
+    search_song = ampache.advanced_search(ampache_url, ampache_session,
+                                          search_rules, 'or', 'song', 0, limit, 1, api_format)
 
     for child in search_song:
         if api_format == 'xml':
             if child.tag == 'song':
-                list_songs.append([child.attrib['id'], os.path.basename(os.path.splitext(child.find('filename').text)[0] + '.' + transcode)])
+                list_songs.append([child.attrib['id'],
+                                   os.path.basename(os.path.splitext(child.find('filename').text)[0] + '.' + transcode)])
         else:
             list_songs.append([child['id'], os.path.basename(os.path.splitext(child['filename'])[0] + '.' + transcode)])
 
@@ -64,7 +67,8 @@ def cache_playlist(ampache_url, ampache_api, ampache_user, api_format, smartlist
     """
     for object_id in list_songs:
         if not os.path.isfile(os.path.join(destination, object_id[1])):
-            ampache.download(ampache_url, ampache_session, object_id[0], 'song', os.path.join(destination, object_id[1]), transcode, api_format)
+            ampache.download(ampache_url, ampache_session, object_id[0],
+                             'song', os.path.join(destination, object_id[1]), transcode, api_format)
         else:
             print('File exists')
 

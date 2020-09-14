@@ -21,7 +21,9 @@ handshake
 """
 print('Connecting to:\n    ', ampache_url)
 ampache_session = ampache.handshake(ampache_url, encrypted_key)
-print('\nThe ampache handshake for:\n    ', ampache_api, '\n\nReturned the following session key:\n    ', ampache_session)
+print('\nThe ampache handshake for:\n    ',
+      ampache_api, '\n\nReturned the following session key:\n    ',
+      ampache_session)
 
 """
 if you didn't connect you can't do anything

@@ -181,9 +181,9 @@ class AMPYCHE(object):
         elif ACTION == 'playlists':
             self.playlists()
         elif ACTION == 'localplay':
-            for object in self.list_songs:
-                if object:
-                    self.localplay('add', object, 'song', 0)
+            for song_id in self.list_songs:
+                if song_id:
+                    self.localplay('add', song_id, 'song', 0)
             if COMMAND != 'add':
                 result = self.localplay(COMMAND)
                 if result:
@@ -195,9 +195,9 @@ class AMPYCHE(object):
         elif ACTION == 'download':
             if not os.path.isdir(DESTIN):
                 os.makedirs(DESTIN)
-            for object in self.list_songs:
-                if object and os.path.isdir(os.path.dirname(DESTIN)):
-                    self.download(object, DESTIN, TRANSCODE)
+            for song_id in self.list_songs:
+                if song_id and os.path.isdir(os.path.dirname(DESTIN)):
+                    self.download(song_id, DESTIN, TRANSCODE)
         return
 
     def saveconf(self):
@@ -317,10 +317,10 @@ class AMPYCHE(object):
             else:
                 print("Failed localplay action " + action)
 
-    def download(self, object, destination, transcode='raw'):
+    def download(self, song_id, destination, transcode='raw'):
         """ Download the requested track This could be extended or changed to support lists"""
         # look for various Artists
-        object_id = object
+        object_id = song_id
         search_song = ampache.song(self.ampache_url, self.ampache_session, object_id, self.api_format)
         list_songs = list()
         # get your song details into a list
