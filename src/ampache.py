@@ -2408,16 +2408,48 @@ def stats(ampache_url, ampache_api, object_type, filter_str='random',
         return tree
 
 
-def user(ampache_url, ampache_api, username, api_format='xml'):
+def users(ampache_url, ampache_api, api_format='xml'):
     """ user
-        MINIMUM_API_VERSION=380001
+        MINIMUM_API_VERSION=430000
     
-        This get an user public information
+        Get ids and usernames for your site users
     
         INPUTS
         * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
         * ampache_api = (string) session 'auth' key
-        * username    = 
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'user',
+            'auth': ampache_api}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'user')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def user(ampache_url, ampache_api, username, api_format='xml'):
+    """ user
+        MINIMUM_API_VERSION=380001
+
+        This get an user public information
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * username    =
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
