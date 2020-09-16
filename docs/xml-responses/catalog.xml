@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<total_count>1</total_count>
+<catalog id="2">
+	<name><![CDATA[music]]></name>
+	<type><![CDATA[local]]></type>
+	<gather_types><![CDATA[music]]></gather_types>
+	<enabled>1</enabled>
+	<last_add><![CDATA[2020/08/31 09:41pm]]></last_add>
+	<last_clean><![CDATA[2020/08/31 09:40pm]]></last_clean>
+	<last_update><![CDATA[2020/08/22 09:41pm]]></last_update>
+	<path><![CDATA[/mnt/music]]></path>
+	<rename_pattern><![CDATA[%d%T - %t]]></rename_pattern>
+	<sort_pattern><![CDATA[%a/(%y) %A [%C]]]></sort_pattern>
+</catalog>
+</root>
