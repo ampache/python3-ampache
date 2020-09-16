@@ -1,0 +1,80 @@
+[
+    {
+        "id": "6",
+        "name": "boots",
+        "type": "local",
+        "gather_types": "music",
+        "last_add": "1",
+        "allow_download": "2020\/08\/06 10:43am",
+        "last_clean": "2020\/08\/06 10:42am",
+        "last_update": "2020\/08\/14 09:34pm",
+        "path": "\/mnt\/files-music\/boots",
+        "rename_pattern": "%d%T - %t",
+        "sort_pattern": "%a\/%A"
+    },
+    {
+        "id": "2",
+        "name": "music",
+        "type": "local",
+        "gather_types": "music",
+        "last_add": "1",
+        "allow_download": "2020\/08\/31 09:41pm",
+        "last_clean": "2020\/08\/31 09:40pm",
+        "last_update": "2020\/08\/22 09:41pm",
+        "path": "\/mnt\/music",
+        "rename_pattern": "%d%T - %t",
+        "sort_pattern": "%a\/(%y) %A [%C]"
+    },
+    {
+        "id": "7",
+        "name": "podcast",
+        "type": "local",
+        "gather_types": "podcast",
+        "last_add": "1",
+        "allow_download": "2020\/08\/13 05:45pm",
+        "last_clean": "2020\/08\/13 00:32pm",
+        "last_update": "2020\/08\/14 09:34pm",
+        "path": "\/mnt\/files-music\/Podcast",
+        "rename_pattern": "%T - %t",
+        "sort_pattern": "%a"
+    },
+    {
+        "id": "19",
+        "name": "television",
+        "type": "local",
+        "gather_types": "tvshow",
+        "last_add": "1",
+        "allow_download": "2020\/07\/16 00:10pm",
+        "last_clean": "Never",
+        "last_update": "2020\/08\/14 09:34pm",
+        "path": "\/var\/www\/television",
+        "rename_pattern": "%M - %nxe% - %t",
+        "sort_pattern": "%S\/"
+    },
+    {
+        "id": "21",
+        "name": "upload",
+        "type": "local",
+        "gather_types": "music",
+        "last_add": "1",
+        "allow_download": "2020\/08\/12 06:32pm",
+        "last_clean": "Never",
+        "last_update": "2020\/08\/14 09:34pm",
+        "path": "\/mnt\/files-music\/upload",
+        "rename_pattern": "%d%t - %t",
+        "sort_pattern": "%a\/(%y) %A"
+    },
+    {
+        "id": "18",
+        "name": "video",
+        "type": "local",
+        "gather_types": "clip",
+        "last_add": "1",
+        "allow_download": "2020\/07\/16 00:16pm",
+        "last_clean": "Never",
+        "last_update": "2020\/08\/14 09:34pm",
+        "path": "\/var\/www\/video",
+        "rename_pattern": "%a - %t-%b",
+        "sort_pattern": ""
+    }
+]
