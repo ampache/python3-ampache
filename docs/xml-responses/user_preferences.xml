@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+<preferences>
+<0>
+	<id><![CDATA[123]]></id>
+	<name><![CDATA[ajax_load]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Ajax page load]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[]]></subcategory>
+
+</0>
+<1>
+	<id><![CDATA[140]]></id>
+	<name><![CDATA[notify_email]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Allow E-mail notifications]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[options]]></category>
+	<subcategory><![CDATA[]]></subcategory>
+
+</1>
+<2>
+	<id><![CDATA[220]]></id>
+	<name><![CDATA[user_start_page]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Default logon page]]></description>
+	<value><![CDATA[default]]></value>
+	<type><![CDATA[special]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[]]></subcategory>
+
+</2>
+<3>
+	<id><![CDATA[110]]></id>
+	<name><![CDATA[demo_clear_sessions]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Democratic - Clear votes for expired user sessions]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[playlist]]></category>
+	<subcategory><![CDATA[]]></subcategory>
+
+</3>
+<4>
+	<id><![CDATA[101]]></id>
+	<name><![CDATA[stream_beautiful_url]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Enable URL Rewriting]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[streaming]]></category>
+	<subcategory><![CDATA[]]></subcategory>
+
+</4>
+<5>
+	<id><![CDATA[31]]></id>
+	<name><![CDATA[lang]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Language]]></description>
+	<value><![CDATA[en_GB]]></value>
+	<type><![CDATA[special]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[]]></subcategory>
+
+</5>
+<6>
+	<id><![CDATA[218]]></id>
+	<name><![CDATA[unique_playlist]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Only add unique items to playlists]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[playlist]]></category>
+	<subcategory><![CDATA[]]></subcategory>
+
+</6>
+<7>
+	<id><![CDATA[29]]></id>
+	<name><![CDATA[play_type]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Playback Type]]></description>
+	<value><![CDATA[web_player]]></value>
+	<type><![CDATA[special]]></type>
+	<category><![CDATA[streaming]]></category>
+	<subcategory><![CDATA[]]></subcategory>
+
+</7>
+<8>
+	<id><![CDATA[53]]></id>
+	<name><![CDATA[playlist_method]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Playlist Method]]></description>
+	<value><![CDATA[default]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[playlist]]></category>
+	<subcategory><![CDATA[]]></subcategory>
+
+</8>
+<9>
+	<id><![CDATA[32]]></id>
+	<name><![CDATA[playlist_type]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Playlist Type]]></description>
+	<value><![CDATA[m3u]]></value>
+	<type><![CDATA[special]]></type>
+	<category><![CDATA[playlist]]></category>
+	<subcategory><![CDATA[]]></subcategory>
+
+</9>
+<10>
+	<id><![CDATA[111]]></id>
+	<name><![CDATA[show_donate]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Show donate button in footer]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[]]></subcategory>
+
+</10>
+<11>
+	<id><![CDATA[231]]></id>
+	<name><![CDATA[bitly_api_key]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Bit.ly API key]]></description>
+	<value><![CDATA[5430c807f6037bd958c6ddee9fde3acc66bce098]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[plugins]]></category>
+	<subcategory><![CDATA[bit.ly]]></subcategory>
+
+</11>
+<12>
+	<id><![CDATA[230]]></id>
+	<name><![CDATA[bitly_username]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Bit.ly Username]]></description>
+	<value><![CDATA[ampadmin]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[plugins]]></category>
+	<subcategory><![CDATA[bit.ly]]></subcategory>
+
+</12>
+<13>
+	<id><![CDATA[213]]></id>
+	<name><![CDATA[custom_datetime]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Custom datetime]]></description>
+	<value><![CDATA[y/MM/dd KK:mma]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[custom]]></subcategory>
+
+</13>
+<14>
+	<id><![CDATA[138]]></id>
+	<name><![CDATA[custom_text_footer]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Custom text footer]]></description>
+	<value><![CDATA[]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[custom]]></subcategory>
+
+</14>
+<15>
+	<id><![CDATA[137]]></id>
+	<name><![CDATA[custom_favicon]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Custom URL - Favicon]]></description>
+	<value><![CDATA[]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[custom]]></subcategory>
+
+</15>
+<16>
+	<id><![CDATA[136]]></id>
+	<name><![CDATA[custom_login_logo]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Custom URL - Login page logo]]></description>
+	<value><![CDATA[]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[custom]]></subcategory>
+
+</16>
+<17>
+	<id><![CDATA[129]]></id>
+	<name><![CDATA[custom_logo]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Custom URL - Logo]]></description>
+	<value><![CDATA[]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[custom]]></subcategory>
+
+</17>
+<18>
+	<id><![CDATA[22]]></id>
+	<name><![CDATA[site_title]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Website Title]]></description>
+	<value><![CDATA[Ampache :: develop]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[custom]]></subcategory>
+
+</18>
+<19>
+	<id><![CDATA[176]]></id>
+	<name><![CDATA[discogs_api_key]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Discogs consumer key]]></description>
+	<value><![CDATA[RBChwcdBYOGUrQYOZSCg]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[plugins]]></category>
+	<subcategory><![CDATA[discogs]]></subcategory>
+
+</19>
+<20>
+	<id><![CDATA[177]]></id>
+	<name><![CDATA[discogs_secret_api_key]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Discogs secret]]></description>
+	<value><![CDATA[WjIrSiYFIYtgDXcSQhXHhbaBoTFBJGWp]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[plugins]]></category>
+	<subcategory><![CDATA[discogs]]></subcategory>
+
+</20>
+<21>
+	<id><![CDATA[45]]></id>
+	<name><![CDATA[allow_democratic_playback]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Allow Democratic Play]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[options]]></category>
+	<subcategory><![CDATA[feature]]></subcategory>
+
+</21>
+<22>
+	<id><![CDATA[1]]></id>
+	<name><![CDATA[download]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Allow Downloads]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[options]]></category>
+	<subcategory><![CDATA[feature]]></subcategory>
+
+</22>
+<23>
+	<id><![CDATA[133]]></id>
+	<name><![CDATA[geolocation]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Allow Geolocation]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[options]]></category>
+	<subcategory><![CDATA[feature]]></subcategory>
+
+</23>
+<24>
+	<id><![CDATA[102]]></id>
+	<name><![CDATA[share]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Allow Share]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[options]]></category>
+	<subcategory><![CDATA[feature]]></subcategory>
+
+</24>
+<25>
+	<id><![CDATA[44]]></id>
+	<name><![CDATA[allow_stream_playback]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Allow Streaming]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[options]]></category>
+	<subcategory><![CDATA[feature]]></subcategory>
+
+</25>
+<26>
+	<id><![CDATA[121]]></id>
+	<name><![CDATA[allow_video]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Allow Video Features]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[options]]></category>
+	<subcategory><![CDATA[feature]]></subcategory>
+
+</26>
+<27>
+	<id><![CDATA[82]]></id>
+	<name><![CDATA[now_playing_per_user]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Now Playing filtered per user]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[home]]></subcategory>
+
+</27>
+<28>
+	<id><![CDATA[125]]></id>
+	<name><![CDATA[home_moment_albums]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Show Albums of the Moment]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[home]]></subcategory>
+
+</28>
+<29>
+	<id><![CDATA[128]]></id>
+	<name><![CDATA[home_now_playing]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Show Now Playing]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[home]]></subcategory>
+
+</29>
+<30>
+	<id><![CDATA[127]]></id>
+	<name><![CDATA[home_recently_played]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Show Recently Played]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[home]]></subcategory>
+
+</30>
+<31>
+	<id><![CDATA[126]]></id>
+	<name><![CDATA[home_moment_videos]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Show Videos of the Moment]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[home]]></subcategory>
+
+</31>
+<32>
+	<id><![CDATA[83]]></id>
+	<name><![CDATA[album_sort]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Album - Default sort]]></description>
+	<value><![CDATA[year_desc]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[library]]></subcategory>
+
+</32>
+<33>
+	<id><![CDATA[108]]></id>
+	<name><![CDATA[album_group]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Album - Group multiple disks]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[library]]></subcategory>
+
+</33>
+<34>
+	<id><![CDATA[122]]></id>
+	<name><![CDATA[album_release_type]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Album - Group per release type]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[library]]></subcategory>
+
+</34>
+<35>
+	<id><![CDATA[130]]></id>
+	<name><![CDATA[album_release_type_sort]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Album - Group per release type Sort]]></description>
+	<value><![CDATA[album,ep,live,single,compilation]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[library]]></subcategory>
+
+</35>
+<36>
+	<id><![CDATA[146]]></id>
+	<name><![CDATA[libitem_contextmenu]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Library item context menu]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[library]]></subcategory>
+
+</36>
+<37>
+	<id><![CDATA[84]]></id>
+	<name><![CDATA[show_played_times]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Show # played]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[library]]></subcategory>
+
+</37>
+<38>
+	<id><![CDATA[212]]></id>
+	<name><![CDATA[show_skipped_times]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Show # skipped]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[library]]></subcategory>
+
+</38>
+<39>
+	<id><![CDATA[149]]></id>
+	<name><![CDATA[browse_filter]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Show filter box on browse]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[library]]></subcategory>
+
+</39>
+<40>
+	<id><![CDATA[46]]></id>
+	<name><![CDATA[allow_localplay_playback]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Allow Localplay Play]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[options]]></category>
+	<subcategory><![CDATA[localplay]]></subcategory>
+
+</40>
+<41>
+	<id><![CDATA[40]]></id>
+	<name><![CDATA[localplay_level]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Localplay Access]]></description>
+	<value><![CDATA[100]]></value>
+	<type><![CDATA[special]]></type>
+	<category><![CDATA[options]]></category>
+	<subcategory><![CDATA[localplay]]></subcategory>
+
+</41>
+<42>
+	<id><![CDATA[41]]></id>
+	<name><![CDATA[localplay_controller]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Localplay Type]]></description>
+	<value><![CDATA[mpd]]></value>
+	<type><![CDATA[special]]></type>
+	<category><![CDATA[options]]></category>
+	<subcategory><![CDATA[localplay]]></subcategory>
+
+</42>
+<43>
+	<id><![CDATA[131]]></id>
+	<name><![CDATA[browser_notify]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Web Player browser notifications]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[notification]]></subcategory>
+
+</43>
+<44>
+	<id><![CDATA[132]]></id>
+	<name><![CDATA[browser_notify_timeout]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Web Player browser notifications timeout (seconds)]]></description>
+	<value><![CDATA[10]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[notification]]></subcategory>
+
+</44>
+<45>
+	<id><![CDATA[235]]></id>
+	<name><![CDATA[personalfav_playlist]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Favorite Playlist ID]]></description>
+	<value><![CDATA[2069]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[plugins]]></category>
+	<subcategory><![CDATA[personal favorites]]></subcategory>
+
+</45>
+<46>
+	<id><![CDATA[236]]></id>
+	<name><![CDATA[personalfav_smartlist]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Favorite Smartlist ID]]></description>
+	<value><![CDATA[165,134]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[plugins]]></category>
+	<subcategory><![CDATA[personal favorites]]></subcategory>
+
+</46>
+<47>
+	<id><![CDATA[234]]></id>
+	<name><![CDATA[personalfav_display]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Personal favorites on the homepage]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[plugins]]></category>
+	<subcategory><![CDATA[personal favorites]]></subcategory>
+
+</47>
+<48>
+	<id><![CDATA[104]]></id>
+	<name><![CDATA[slideshow_time]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Artist slideshow inactivity time]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[player]]></subcategory>
+
+</48>
+<49>
+	<id><![CDATA[88]]></id>
+	<name><![CDATA[webplayer_flash]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Authorize Flash Web Player]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[streaming]]></category>
+	<subcategory><![CDATA[player]]></subcategory>
+
+</49>
+<50>
+	<id><![CDATA[89]]></id>
+	<name><![CDATA[webplayer_html5]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Authorize HTML5 Web Player]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[streaming]]></category>
+	<subcategory><![CDATA[player]]></subcategory>
+
+</50>
+<51>
+	<id><![CDATA[134]]></id>
+	<name><![CDATA[webplayer_aurora]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Authorize JavaScript decoder (Aurora.js) in Web Player]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[streaming]]></category>
+	<subcategory><![CDATA[player]]></subcategory>
+
+</51>
+<52>
+	<id><![CDATA[100]]></id>
+	<name><![CDATA[webplayer_pausetabs]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Auto-pause betweens tabs]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[player]]></subcategory>
+
+</52>
+<53>
+	<id><![CDATA[105]]></id>
+	<name><![CDATA[broadcast_by_default]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Broadcast web player by default]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[streaming]]></category>
+	<subcategory><![CDATA[player]]></subcategory>
+
+</53>
+<54>
+	<id><![CDATA[99]]></id>
+	<name><![CDATA[webplayer_confirmclose]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Confirmation when closing current playing window]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[player]]></subcategory>
+
+</54>
+<55>
+	<id><![CDATA[124]]></id>
+	<name><![CDATA[direct_play_limit]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Limit direct play to maximum media count]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[player]]></subcategory>
+
+</55>
+<56>
+	<id><![CDATA[85]]></id>
+	<name><![CDATA[song_page_title]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Show current song in Web player page title]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[player]]></subcategory>
+
+</56>
+<57>
+	<id><![CDATA[69]]></id>
+	<name><![CDATA[show_lyrics]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Show Lyrics]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[player]]></subcategory>
+
+</57>
+<58>
+	<id><![CDATA[90]]></id>
+	<name><![CDATA[allow_personal_info_now]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Share Now Playing information]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[privacy]]></subcategory>
+
+</58>
+<59>
+	<id><![CDATA[91]]></id>
+	<name><![CDATA[allow_personal_info_recent]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Share Recently Played information]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[privacy]]></subcategory>
+
+</59>
+<60>
+	<id><![CDATA[93]]></id>
+	<name><![CDATA[allow_personal_info_agent]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Share Recently Played information - Allow access to streaming agent]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[privacy]]></subcategory>
+
+</60>
+<61>
+	<id><![CDATA[92]]></id>
+	<name><![CDATA[allow_personal_info_time]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Share Recently Played information - Allow access to streaming date/time]]></description>
+	<value><![CDATA[1]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[privacy]]></subcategory>
+
+</61>
+<62>
+	<id><![CDATA[106]]></id>
+	<name><![CDATA[concerts_limit_future]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Limit number of future events]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[query]]></subcategory>
+
+</62>
+<63>
+	<id><![CDATA[107]]></id>
+	<name><![CDATA[concerts_limit_past]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Limit number of past events]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[query]]></subcategory>
+
+</63>
+<64>
+	<id><![CDATA[51]]></id>
+	<name><![CDATA[offset_limit]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Offset Limit]]></description>
+	<value><![CDATA[50]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[query]]></subcategory>
+
+</64>
+<65>
+	<id><![CDATA[4]]></id>
+	<name><![CDATA[popular_threshold]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Popular Threshold]]></description>
+	<value><![CDATA[12]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[query]]></subcategory>
+
+</65>
+<66>
+	<id><![CDATA[47]]></id>
+	<name><![CDATA[stats_threshold]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Statistics Day Threshold]]></description>
+	<value><![CDATA[20]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[query]]></subcategory>
+
+</66>
+<67>
+	<id><![CDATA[94]]></id>
+	<name><![CDATA[ui_fixed]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Fix header position on compatible themes]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[theme]]></subcategory>
+
+</67>
+<68>
+	<id><![CDATA[33]]></id>
+	<name><![CDATA[theme_name]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Theme]]></description>
+	<value><![CDATA[reborn]]></value>
+	<type><![CDATA[special]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[theme]]></subcategory>
+
+</68>
+<69>
+	<id><![CDATA[141]]></id>
+	<name><![CDATA[theme_color]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Theme color]]></description>
+	<value><![CDATA[dark]]></value>
+	<type><![CDATA[special]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[theme]]></subcategory>
+
+</69>
+<70>
+	<id><![CDATA[109]]></id>
+	<name><![CDATA[topmenu]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Top menu]]></description>
+	<value><![CDATA[0]]></value>
+	<type><![CDATA[boolean]]></type>
+	<category><![CDATA[interface]]></category>
+	<subcategory><![CDATA[theme]]></subcategory>
+
+</70>
+<71>
+	<id><![CDATA[223]]></id>
+	<name><![CDATA[tmdb_api_key]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[TMDb API key]]></description>
+	<value><![CDATA[982b22f546ee0b9ba525efc7e31305c1]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[plugins]]></category>
+	<subcategory><![CDATA[tmdb]]></subcategory>
+
+</71>
+<72>
+	<id><![CDATA[55]]></id>
+	<name><![CDATA[transcode]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Allow Transcoding]]></description>
+	<value><![CDATA[default]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[streaming]]></category>
+	<subcategory><![CDATA[transcoding]]></subcategory>
+
+</72>
+<73>
+	<id><![CDATA[52]]></id>
+	<name><![CDATA[rate_limit]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Rate Limit]]></description>
+	<value><![CDATA[8192]]></value>
+	<type><![CDATA[integer]]></type>
+	<category><![CDATA[streaming]]></category>
+	<subcategory><![CDATA[transcoding]]></subcategory>
+
+</73>
+<74>
+	<id><![CDATA[19]]></id>
+	<name><![CDATA[transcode_bitrate]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[Transcode Bitrate]]></description>
+	<value><![CDATA[192]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[streaming]]></category>
+	<subcategory><![CDATA[transcoding]]></subcategory>
+
+</74>
+<75>
+	<id><![CDATA[222]]></id>
+	<name><![CDATA[tvdb_api_key]]></name>
+	<level><![CDATA[]]></level>
+	<description><![CDATA[TVDb API key]]></description>
+	<value><![CDATA[ecd0f0e981813c7fe7495239d77d6004]]></value>
+	<type><![CDATA[string]]></type>
+	<category><![CDATA[plugins]]></category>
+	<subcategory><![CDATA[tvdb]]></subcategory>
+
+</75>
+
+</preferences>
+</root>
