@@ -3250,7 +3250,7 @@ def user_preferences(ampache_url, ampache_api, api_format='xml'):
     """ user_preferences
         MINIMUM_API_VERSION=430000
 
-        Returns user_preferences based on the specified filter_str
+        Returns user_preferences
 
         INPUTS
         * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
@@ -3263,6 +3263,136 @@ def user_preferences(ampache_url, ampache_api, api_format='xml'):
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'user_preferences')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def user_preference(ampache_url, ampache_api, filter_str, api_format='xml'):
+    """ user_preference
+        MINIMUM_API_VERSION=430000
+
+        Returns preference based on the specified filter_str
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a preference //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'user_preferences',
+            'auth': ampache_api}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'user_preferences')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def system_preferences(ampache_url, ampache_api, api_format='xml'):
+    """ system_preferences
+        MINIMUM_API_VERSION=430000
+
+        Returns system_preferences
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'system_preferences',
+            'auth': ampache_api}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'system_preferences')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def system_preference(ampache_url, ampache_api, filter_str, api_format='xml'):
+    """ system_preference
+        MINIMUM_API_VERSION=430000
+
+        Returns preference based on the specified filter_str
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a preference //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'system_preferences',
+            'auth': ampache_api}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'system_preferences')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def system_update(ampache_url, ampache_api, api_format='xml'):
+    """ system_update
+        MINIMUM_API_VERSION=430000
+
+        update ampache
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'system_update',
+            'auth': ampache_api}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'system_update')
     if not ampache_response:
         return False
     # json format
