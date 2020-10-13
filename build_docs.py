@@ -434,10 +434,10 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
             for subchildren in child:
                 print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
-    """ def tags(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
+    """ def genres(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
     genre = ''
-    tags = ampache.tags(ampache_url, ampache_session, 'Brutal Death Metal', False, 0, limit, api_format)
+    tags = ampache.genres(ampache_url, ampache_session, 'Brutal Death Metal', False, 0, limit, api_format)
     if api_format == 'xml':
         for child in tags:
             if child.tag == 'total_count':
@@ -458,9 +458,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
             tmp_genre = tag['id']
         genre = tmp_genre
 
-    """ def tag(ampache_url, ampache_api, filter, api_format = 'xml'):
+    """ def genre(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
-    ampache.tag(ampache_url, ampache_session, genre, api_format)
+    ampache.genre(ampache_url, ampache_session, genre, api_format)
 
     """ def genre_albums(ampache_url, ampache_api, filter, offset = 0, limit = 0, api_format = 'xml'):
     """
