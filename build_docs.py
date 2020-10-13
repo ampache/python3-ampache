@@ -331,7 +331,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     playlist_create = ampache.playlist_create(ampache_url, ampache_session, 'rename', 'private', api_format)
     
     if api_format == 'xml':
-        tmp_playlist = playlist_create[1].attrib
+        tmp_playlist = playlist_create[0].attrib
         single_playlist = tmp_playlist['id']
     else:
         single_playlist = playlist_create[0]['id']
@@ -611,5 +611,5 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         f.close()
 
 
-build_docs(url, api, user, 'json')
 build_docs(url, api, user, 'xml')
+build_docs(url, api, user, 'json')
