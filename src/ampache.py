@@ -996,7 +996,7 @@ def song(ampache_url, ampache_api, filter_id, api_format='xml'):
 
 def song_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
     """ song_delete
-        MINIMUM_API_VERSION=430000
+        MINIMUM_API_VERSION=5.0.0
 
         Delete an existing song.
 
@@ -2310,7 +2310,7 @@ def video(ampache_url, ampache_api, filter_id, api_format='xml'):
 def localplay(ampache_url, ampache_api, command, oid=False, otype=False, clear=0, api_format='xml'):
     """ localplay
         MINIMUM_API_VERSION=380001
-        CHANGED_IN_API_VERSION=430000
+        CHANGED_IN_API_VERSION=5.0.0
 
         This is for controlling localplay
 
@@ -2444,7 +2444,7 @@ def stats(ampache_url, ampache_api, object_type, filter_str='random',
 
 def users(ampache_url, ampache_api, api_format='xml'):
     """ user
-        MINIMUM_API_VERSION=430000
+        MINIMUM_API_VERSION=5.0.0
     
         Get ids and usernames for your site users
     
@@ -3248,7 +3248,7 @@ def user_delete(ampache_url, ampache_api, username, api_format='xml'):
 
 def user_preferences(ampache_url, ampache_api, api_format='xml'):
     """ user_preferences
-        MINIMUM_API_VERSION=430000
+        MINIMUM_API_VERSION=5.0.0
 
         Returns user_preferences
 
@@ -3280,7 +3280,7 @@ def user_preferences(ampache_url, ampache_api, api_format='xml'):
 
 def user_preference(ampache_url, ampache_api, filter_str, api_format='xml'):
     """ user_preference
-        MINIMUM_API_VERSION=430000
+        MINIMUM_API_VERSION=5.0.0
 
         Returns preference based on the specified filter_str
 
@@ -3292,7 +3292,8 @@ def user_preference(ampache_url, ampache_api, filter_str, api_format='xml'):
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'user_preferences',
-            'auth': ampache_api}
+            'auth': ampache_api,
+            'filter': filter_str}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'user_preferences')
@@ -3313,7 +3314,7 @@ def user_preference(ampache_url, ampache_api, filter_str, api_format='xml'):
 
 def system_preferences(ampache_url, ampache_api, api_format='xml'):
     """ system_preferences
-        MINIMUM_API_VERSION=430000
+        MINIMUM_API_VERSION=5.0.0
 
         Returns system_preferences
 
@@ -3345,7 +3346,7 @@ def system_preferences(ampache_url, ampache_api, api_format='xml'):
 
 def system_preference(ampache_url, ampache_api, filter_str, api_format='xml'):
     """ system_preference
-        MINIMUM_API_VERSION=430000
+        MINIMUM_API_VERSION=5.0.0
 
         Returns preference based on the specified filter_str
 
@@ -3357,7 +3358,8 @@ def system_preference(ampache_url, ampache_api, filter_str, api_format='xml'):
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'system_preferences',
-            'auth': ampache_api}
+            'auth': ampache_api,
+            'filter': filter_str}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'system_preferences')
@@ -3378,7 +3380,7 @@ def system_preference(ampache_url, ampache_api, filter_str, api_format='xml'):
 
 def system_update(ampache_url, ampache_api, api_format='xml'):
     """ system_update
-        MINIMUM_API_VERSION=430000
+        MINIMUM_API_VERSION=5.0.0
 
         update ampache
 
@@ -3393,6 +3395,129 @@ def system_update(ampache_url, ampache_api, api_format='xml'):
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'system_update')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def preference_create(ampache_url, ampache_api, filter_str, type_str, default, category,
+                      description=False, subcategory=False, level=100, api_format='xml'):
+    """ preference_create
+        MINIMUM_API_VERSION=5.0.0
+
+        Returns preference based on the specified filter_str
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a preference
+        * type_str    = (string) 'boolean', 'integer', 'string', 'special'
+        * default     = (string|integer) default value
+        * category    = (string) 'interface', 'internal', 'options', 'playlist', 'plugins', 'streaming', 'system'
+        * description = (string) description of preference //optional
+        * subcategory = (string) $subcategory //optional
+        * level       = (integer) access level required to change the value (default 100) //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'preference_create',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'type': type_str,
+            'default': default,
+            'category': category,
+            'description': description,
+            'subcategory': subcategory,
+            'level': level}
+    if not description:
+        data.pop('description')
+    if not subcategory:
+        data.pop('subcategory')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'preference_create')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def preference_edit(ampache_url, ampache_api, filter_str, value, apply_all=0, api_format='xml'):
+    """ preference_edit
+        MINIMUM_API_VERSION=5.0.0
+
+        Returns preference based on the specified filter_str
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a preference
+        * value       = (string|integer) Preference value
+        * apply_all   = (boolean) apply to all users //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'preference_edit',
+            'auth': ampache_api,
+            'filter': filter_str,
+            'value': value,
+            'all': apply_all}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'preference_edit')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def preference_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
+    """ preference_delete
+        MINIMUM_API_VERSION=5.0.0
+
+        Returns preference based on the specified filter_str
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a preference
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'preference_delete',
+            'auth': ampache_api,
+            'filter': filter_str}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'preference_delete')
     if not ampache_response:
         return False
     # json format
