@@ -364,7 +364,7 @@ def get_similar(ampache_url, ampache_api, object_type, filter_id, offset=0, limi
 
 def get_indexes(ampache_url, ampache_api, object_type,
                 filter_str=False, exact=False, add=False, update=False,
-                offset=0, limit=0, api_format='xml'):
+                include=False, offset=0, limit=0, api_format='xml'):
     """ get_indexes
         MINIMUM_API_VERSION=400001
 
@@ -378,11 +378,16 @@ def get_indexes(ampache_url, ampache_api, object_type,
         * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
         * add         = //optional
         * update      = //optional
+        * include     = (integer) 0,1 include songs if available for that object //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    if bool(include):
+        include = 1
+    else:
+        include = 0
     data = {'action': 'get_indexes',
             'auth': ampache_api,
             'type': object_type,
@@ -390,6 +395,7 @@ def get_indexes(ampache_url, ampache_api, object_type,
             'exact': exact,
             'add': add,
             'update': update,
+            'include': include,
             'offset': str(offset),
             'limit': str(limit)}
     if not filter_str:
@@ -398,6 +404,8 @@ def get_indexes(ampache_url, ampache_api, object_type,
         data.pop('add')
     if not update:
         data.pop('update')
+    if not include:
+        data.pop('include')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'get_indexes')

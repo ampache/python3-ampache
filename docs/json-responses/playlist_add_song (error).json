@@ -1,6 +1,8 @@
 {
     "error": {
-        "code": "400",
-        "message": "Can't add a duplicate item when check is enabled"
+        "errorCode": "4710",
+        "errorAction": "playlist_add_song",
+        "errorType": "duplicate",
+        "errorMessage": "Bad Request: 77371"
     }
 }

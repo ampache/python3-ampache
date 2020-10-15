@@ -1,17 +1,8 @@
 {
-    "user": {
-        "id": "",
-        "username": null,
-        "auth": null,
-        "email": null,
-        "access": "",
-        "fullname_public": "",
-        "validation": null,
-        "disabled": "",
-        "create_date": null,
-        "last_seen": null,
-        "website": null,
-        "state": null,
-        "city": null
+    "error": {
+        "errorCode": "4704",
+        "errorAction": "user",
+        "errorType": "user",
+        "errorMessage": "Not Found: missing_user"
     }
 }
