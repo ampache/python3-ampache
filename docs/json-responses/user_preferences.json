@@ -3,7 +3,7 @@
         {
             "id": "123",
             "name": "ajax_load",
-            "level": null,
+            "level": "25",
             "description": "Ajax page load",
             "value": "1",
             "type": "boolean",
@@ -13,7 +13,7 @@
         {
             "id": "140",
             "name": "notify_email",
-            "level": null,
+            "level": "25",
             "description": "Allow E-mail notifications",
             "value": "1",
             "type": "boolean",
@@ -23,7 +23,7 @@
         {
             "id": "220",
             "name": "user_start_page",
-            "level": null,
+            "level": "25",
             "description": "Default logon page",
             "value": "default",
             "type": "special",
@@ -33,7 +33,7 @@
         {
             "id": "110",
             "name": "demo_clear_sessions",
-            "level": null,
+            "level": "25",
             "description": "Democratic - Clear votes for expired user sessions",
             "value": "0",
             "type": "boolean",
@@ -43,7 +43,7 @@
         {
             "id": "101",
             "name": "stream_beautiful_url",
-            "level": null,
+            "level": "100",
             "description": "Enable URL Rewriting",
             "value": "1",
             "type": "boolean",
@@ -53,7 +53,7 @@
         {
             "id": "31",
             "name": "lang",
-            "level": null,
+            "level": "100",
             "description": "Language",
             "value": "en_GB",
             "type": "special",
@@ -63,7 +63,7 @@
         {
             "id": "218",
             "name": "unique_playlist",
-            "level": null,
+            "level": "25",
             "description": "Only add unique items to playlists",
             "value": "1",
             "type": "boolean",
@@ -73,7 +73,7 @@
         {
             "id": "29",
             "name": "play_type",
-            "level": null,
+            "level": "25",
             "description": "Playback Type",
             "value": "web_player",
             "type": "special",
@@ -83,7 +83,7 @@
         {
             "id": "53",
             "name": "playlist_method",
-            "level": null,
+            "level": "5",
             "description": "Playlist Method",
             "value": "default",
             "type": "string",
@@ -93,7 +93,7 @@
         {
             "id": "32",
             "name": "playlist_type",
-            "level": null,
+            "level": "100",
             "description": "Playlist Type",
             "value": "m3u",
             "type": "special",
@@ -103,7 +103,7 @@
         {
             "id": "111",
             "name": "show_donate",
-            "level": null,
+            "level": "25",
             "description": "Show donate button in footer",
             "value": "0",
             "type": "boolean",
@@ -113,9 +113,9 @@
         {
             "id": "231",
             "name": "bitly_api_key",
-            "level": null,
+            "level": "75",
             "description": "Bit.ly API key",
-            "value": "5430c807f6037bd958c6ddee9fde3acc66bce098",
+            "value": "geswrg0f0edfghdgthsrgsg4342454",
             "type": "string",
             "category": "plugins",
             "subcategory": "bit.ly"
@@ -123,7 +123,7 @@
         {
             "id": "230",
             "name": "bitly_username",
-            "level": null,
+            "level": "75",
             "description": "Bit.ly Username",
             "value": "ampadmin",
             "type": "string",
@@ -133,7 +133,7 @@
         {
             "id": "213",
             "name": "custom_datetime",
-            "level": null,
+            "level": "25",
             "description": "Custom datetime",
             "value": "y\/MM\/dd KK:mma",
             "type": "string",
@@ -143,7 +143,7 @@
         {
             "id": "138",
             "name": "custom_text_footer",
-            "level": null,
+            "level": "75",
             "description": "Custom text footer",
             "value": "",
             "type": "string",
@@ -153,7 +153,7 @@
         {
             "id": "137",
             "name": "custom_favicon",
-            "level": null,
+            "level": "75",
             "description": "Custom URL - Favicon",
             "value": "",
             "type": "string",
@@ -163,7 +163,7 @@
         {
             "id": "136",
             "name": "custom_login_logo",
-            "level": null,
+            "level": "75",
             "description": "Custom URL - Login page logo",
             "value": "",
             "type": "string",
@@ -173,7 +173,7 @@
         {
             "id": "129",
             "name": "custom_logo",
-            "level": null,
+            "level": "25",
             "description": "Custom URL - Logo",
             "value": "",
             "type": "string",
@@ -183,7 +183,7 @@
         {
             "id": "22",
             "name": "site_title",
-            "level": null,
+            "level": "100",
             "description": "Website Title",
             "value": "Ampache :: develop",
             "type": "string",
@@ -193,9 +193,9 @@
         {
             "id": "176",
             "name": "discogs_api_key",
-            "level": null,
+            "level": "75",
             "description": "Discogs consumer key",
-            "value": "RBChwcdBYOGUrQYOZSCg",
+            "value": "geswrg0f0edfghdgthsrgsg4342454",
             "type": "string",
             "category": "plugins",
             "subcategory": "discogs"
@@ -203,9 +203,9 @@
         {
             "id": "177",
             "name": "discogs_secret_api_key",
-            "level": null,
+            "level": "75",
             "description": "Discogs secret",
-            "value": "WjIrSiYFIYtgDXcSQhXHhbaBoTFBJGWp",
+            "value": "geswrg0f0edfghdgthsrgsg4342454",
             "type": "string",
             "category": "plugins",
             "subcategory": "discogs"
@@ -213,7 +213,7 @@
         {
             "id": "45",
             "name": "allow_democratic_playback",
-            "level": null,
+            "level": "100",
             "description": "Allow Democratic Play",
             "value": "1",
             "type": "boolean",
@@ -223,7 +223,7 @@
         {
             "id": "1",
             "name": "download",
-            "level": null,
+            "level": "100",
             "description": "Allow Downloads",
             "value": "1",
             "type": "boolean",
@@ -233,9 +233,9 @@
         {
             "id": "133",
             "name": "geolocation",
-            "level": null,
+            "level": "25",
             "description": "Allow Geolocation",
-            "value": "1",
+            "value": "0",
             "type": "integer",
             "category": "options",
             "subcategory": "feature"
@@ -243,7 +243,7 @@
         {
             "id": "102",
             "name": "share",
-            "level": null,
+            "level": "100",
             "description": "Allow Share",
             "value": "1",
             "type": "boolean",
@@ -253,7 +253,7 @@
         {
             "id": "44",
             "name": "allow_stream_playback",
-            "level": null,
+            "level": "100",
             "description": "Allow Streaming",
             "value": "1",
             "type": "boolean",
@@ -263,7 +263,7 @@
         {
             "id": "121",
             "name": "allow_video",
-            "level": null,
+            "level": "75",
             "description": "Allow Video Features",
             "value": "0",
             "type": "integer",
@@ -273,7 +273,7 @@
         {
             "id": "82",
             "name": "now_playing_per_user",
-            "level": null,
+            "level": "50",
             "description": "Now Playing filtered per user",
             "value": "1",
             "type": "boolean",
@@ -283,7 +283,7 @@
         {
             "id": "125",
             "name": "home_moment_albums",
-            "level": null,
+            "level": "25",
             "description": "Show Albums of the Moment",
             "value": "1",
             "type": "integer",
@@ -293,7 +293,7 @@
         {
             "id": "128",
             "name": "home_now_playing",
-            "level": null,
+            "level": "25",
             "description": "Show Now Playing",
             "value": "1",
             "type": "integer",
@@ -303,7 +303,7 @@
         {
             "id": "127",
             "name": "home_recently_played",
-            "level": null,
+            "level": "25",
             "description": "Show Recently Played",
             "value": "1",
             "type": "integer",
@@ -313,7 +313,7 @@
         {
             "id": "126",
             "name": "home_moment_videos",
-            "level": null,
+            "level": "25",
             "description": "Show Videos of the Moment",
             "value": "0",
             "type": "integer",
@@ -323,7 +323,7 @@
         {
             "id": "83",
             "name": "album_sort",
-            "level": null,
+            "level": "25",
             "description": "Album - Default sort",
             "value": "year_desc",
             "type": "string",
@@ -333,7 +333,7 @@
         {
             "id": "108",
             "name": "album_group",
-            "level": null,
+            "level": "25",
             "description": "Album - Group multiple disks",
             "value": "1",
             "type": "boolean",
@@ -343,7 +343,7 @@
         {
             "id": "122",
             "name": "album_release_type",
-            "level": null,
+            "level": "25",
             "description": "Album - Group per release type",
             "value": "1",
             "type": "boolean",
@@ -353,7 +353,7 @@
         {
             "id": "130",
             "name": "album_release_type_sort",
-            "level": null,
+            "level": "25",
             "description": "Album - Group per release type Sort",
             "value": "album,ep,live,single,compilation",
             "type": "string",
@@ -363,7 +363,7 @@
         {
             "id": "146",
             "name": "libitem_contextmenu",
-            "level": null,
+            "level": "5",
             "description": "Library item context menu",
             "value": "0",
             "type": "boolean",
@@ -373,7 +373,7 @@
         {
             "id": "84",
             "name": "show_played_times",
-            "level": null,
+            "level": "25",
             "description": "Show # played",
             "value": "1",
             "type": "string",
@@ -383,7 +383,7 @@
         {
             "id": "212",
             "name": "show_skipped_times",
-            "level": null,
+            "level": "25",
             "description": "Show # skipped",
             "value": "0",
             "type": "boolean",
@@ -393,7 +393,7 @@
         {
             "id": "149",
             "name": "browse_filter",
-            "level": null,
+            "level": "25",
             "description": "Show filter box on browse",
             "value": "0",
             "type": "boolean",
@@ -403,7 +403,7 @@
         {
             "id": "46",
             "name": "allow_localplay_playback",
-            "level": null,
+            "level": "100",
             "description": "Allow Localplay Play",
             "value": "1",
             "type": "boolean",
@@ -413,7 +413,7 @@
         {
             "id": "40",
             "name": "localplay_level",
-            "level": null,
+            "level": "100",
             "description": "Localplay Access",
             "value": "100",
             "type": "special",
@@ -423,7 +423,7 @@
         {
             "id": "41",
             "name": "localplay_controller",
-            "level": null,
+            "level": "100",
             "description": "Localplay Type",
             "value": "mpd",
             "type": "special",
@@ -433,7 +433,7 @@
         {
             "id": "131",
             "name": "browser_notify",
-            "level": null,
+            "level": "25",
             "description": "Web Player browser notifications",
             "value": "1",
             "type": "integer",
@@ -443,7 +443,7 @@
         {
             "id": "132",
             "name": "browser_notify_timeout",
-            "level": null,
+            "level": "25",
             "description": "Web Player browser notifications timeout (seconds)",
             "value": "10",
             "type": "integer",
@@ -453,9 +453,9 @@
         {
             "id": "235",
             "name": "personalfav_playlist",
-            "level": null,
+            "level": "25",
             "description": "Favorite Playlist ID",
-            "value": "2069",
+            "value": "",
             "type": "integer",
             "category": "plugins",
             "subcategory": "personal favorites"
@@ -463,9 +463,9 @@
         {
             "id": "236",
             "name": "personalfav_smartlist",
-            "level": null,
+            "level": "25",
             "description": "Favorite Smartlist ID",
-            "value": "165,134",
+            "value": "",
             "type": "integer",
             "category": "plugins",
             "subcategory": "personal favorites"
@@ -473,9 +473,9 @@
         {
             "id": "234",
             "name": "personalfav_display",
-            "level": null,
+            "level": "25",
             "description": "Personal favorites on the homepage",
-            "value": "1",
+            "value": "0",
             "type": "boolean",
             "category": "plugins",
             "subcategory": "personal favorites"
@@ -483,7 +483,7 @@
         {
             "id": "104",
             "name": "slideshow_time",
-            "level": null,
+            "level": "25",
             "description": "Artist slideshow inactivity time",
             "value": "0",
             "type": "integer",
@@ -493,7 +493,7 @@
         {
             "id": "88",
             "name": "webplayer_flash",
-            "level": null,
+            "level": "25",
             "description": "Authorize Flash Web Player",
             "value": "1",
             "type": "boolean",
@@ -503,7 +503,7 @@
         {
             "id": "89",
             "name": "webplayer_html5",
-            "level": null,
+            "level": "25",
             "description": "Authorize HTML5 Web Player",
             "value": "1",
             "type": "boolean",
@@ -513,7 +513,7 @@
         {
             "id": "134",
             "name": "webplayer_aurora",
-            "level": null,
+            "level": "25",
             "description": "Authorize JavaScript decoder (Aurora.js) in Web Player",
             "value": "0",
             "type": "boolean",
@@ -523,7 +523,7 @@
         {
             "id": "100",
             "name": "webplayer_pausetabs",
-            "level": null,
+            "level": "25",
             "description": "Auto-pause betweens tabs",
             "value": "1",
             "type": "boolean",
@@ -533,7 +533,7 @@
         {
             "id": "105",
             "name": "broadcast_by_default",
-            "level": null,
+            "level": "25",
             "description": "Broadcast web player by default",
             "value": "0",
             "type": "boolean",
@@ -543,7 +543,7 @@
         {
             "id": "99",
             "name": "webplayer_confirmclose",
-            "level": null,
+            "level": "25",
             "description": "Confirmation when closing current playing window",
             "value": "1",
             "type": "boolean",
@@ -553,7 +553,7 @@
         {
             "id": "124",
             "name": "direct_play_limit",
-            "level": null,
+            "level": "25",
             "description": "Limit direct play to maximum media count",
             "value": "0",
             "type": "integer",
@@ -563,7 +563,7 @@
         {
             "id": "85",
             "name": "song_page_title",
-            "level": null,
+            "level": "25",
             "description": "Show current song in Web player page title",
             "value": "1",
             "type": "boolean",
@@ -573,7 +573,7 @@
         {
             "id": "69",
             "name": "show_lyrics",
-            "level": null,
+            "level": "5",
             "description": "Show Lyrics",
             "value": "0",
             "type": "boolean",
@@ -583,7 +583,7 @@
         {
             "id": "90",
             "name": "allow_personal_info_now",
-            "level": null,
+            "level": "25",
             "description": "Share Now Playing information",
             "value": "1",
             "type": "boolean",
@@ -593,7 +593,7 @@
         {
             "id": "91",
             "name": "allow_personal_info_recent",
-            "level": null,
+            "level": "25",
             "description": "Share Recently Played information",
             "value": "1",
             "type": "boolean",
@@ -603,7 +603,7 @@
         {
             "id": "93",
             "name": "allow_personal_info_agent",
-            "level": null,
+            "level": "25",
             "description": "Share Recently Played information - Allow access to streaming agent",
             "value": "1",
             "type": "boolean",
@@ -613,7 +613,7 @@
         {
             "id": "92",
             "name": "allow_personal_info_time",
-            "level": null,
+            "level": "25",
             "description": "Share Recently Played information - Allow access to streaming date\/time",
             "value": "1",
             "type": "boolean",
@@ -623,7 +623,7 @@
         {
             "id": "106",
             "name": "concerts_limit_future",
-            "level": null,
+            "level": "25",
             "description": "Limit number of future events",
             "value": "0",
             "type": "integer",
@@ -633,7 +633,7 @@
         {
             "id": "107",
             "name": "concerts_limit_past",
-            "level": null,
+            "level": "25",
             "description": "Limit number of past events",
             "value": "0",
             "type": "integer",
@@ -643,7 +643,7 @@
         {
             "id": "51",
             "name": "offset_limit",
-            "level": null,
+            "level": "5",
             "description": "Offset Limit",
             "value": "50",
             "type": "integer",
@@ -653,7 +653,7 @@
         {
             "id": "4",
             "name": "popular_threshold",
-            "level": null,
+            "level": "25",
             "description": "Popular Threshold",
             "value": "12",
             "type": "integer",
@@ -663,7 +663,7 @@
         {
             "id": "47",
             "name": "stats_threshold",
-            "level": null,
+            "level": "75",
             "description": "Statistics Day Threshold",
             "value": "20",
             "type": "integer",
@@ -673,7 +673,7 @@
         {
             "id": "94",
             "name": "ui_fixed",
-            "level": null,
+            "level": "25",
             "description": "Fix header position on compatible themes",
             "value": "0",
             "type": "boolean",
@@ -683,7 +683,7 @@
         {
             "id": "33",
             "name": "theme_name",
-            "level": null,
+            "level": "5",
             "description": "Theme",
             "value": "reborn",
             "type": "special",
@@ -693,7 +693,7 @@
         {
             "id": "141",
             "name": "theme_color",
-            "level": null,
+            "level": "5",
             "description": "Theme color",
             "value": "dark",
             "type": "special",
@@ -703,7 +703,7 @@
         {
             "id": "109",
             "name": "topmenu",
-            "level": null,
+            "level": "25",
             "description": "Top menu",
             "value": "0",
             "type": "boolean",
@@ -713,9 +713,9 @@
         {
             "id": "223",
             "name": "tmdb_api_key",
-            "level": null,
+            "level": "75",
             "description": "TMDb API key",
-            "value": "982b22f546ee0b9ba525efc7e31305c1",
+            "value": "geswrg0f0edfghdgthsrgsg4342454",
             "type": "string",
             "category": "plugins",
             "subcategory": "tmdb"
@@ -723,7 +723,7 @@
         {
             "id": "55",
             "name": "transcode",
-            "level": null,
+            "level": "25",
             "description": "Allow Transcoding",
             "value": "default",
             "type": "string",
@@ -733,9 +733,9 @@
         {
             "id": "52",
             "name": "rate_limit",
-            "level": null,
+            "level": "100",
             "description": "Rate Limit",
-            "value": "8192",
+            "value": "16384",
             "type": "integer",
             "category": "streaming",
             "subcategory": "transcoding"
@@ -743,7 +743,7 @@
         {
             "id": "19",
             "name": "transcode_bitrate",
-            "level": null,
+            "level": "25",
             "description": "Transcode Bitrate",
             "value": "192",
             "type": "string",
@@ -753,9 +753,9 @@
         {
             "id": "222",
             "name": "tvdb_api_key",
-            "level": null,
+            "level": "75",
             "description": "TVDb API key",
-            "value": "ecd0f0e981813c7fe7495239d77d6004",
+            "value": "geswrg0f0edfghdgthsrgsg4342454",
             "type": "string",
             "category": "plugins",
             "subcategory": "tvdb"
