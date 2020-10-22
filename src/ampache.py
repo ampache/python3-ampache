@@ -42,7 +42,7 @@ HELPER FUNCTIONS
 """
 
 
-def set_debug(mybool):
+def set_debug(mybool: bool):
     """ set_debug
 
         This function can be used to enable/disable debugging messages
@@ -79,7 +79,7 @@ def get_id_list(data, attribute, data_format='xml'):
     return id_list
 
 
-def write_xml(xmlstr, filename):
+def write_xml(xmlstr, filename: str):
     """ write_xml
 
         This function can be used to write your xml responses to a file.
@@ -94,7 +94,7 @@ def write_xml(xmlstr, filename):
         text_file.close()
 
 
-def write_json(json_data, filename):
+def write_json(json_data: str, filename: str):
     """ write_json
 
         This function can be used to write your json responses to a file.
@@ -109,28 +109,30 @@ def write_json(json_data, filename):
         text_file.close()
 
 
-def encrypt_string(ampache_api, username):
+def encrypt_string(api_key: str, username: str):
     """ encrypt_string
 
         This function can be used to encrypt your apikey into the accepted format.
 
         INPUTS
-        * ampache_api = (string) unencrypted apikey
-        * user        = (string) username
+        * api_key = (string) unencrypted apikey
+        * user    = (string) username
     """
-    key = hashlib.sha256(ampache_api.encode()).hexdigest()
+    key = hashlib.sha256(api_key.encode()).hexdigest()
     passphrase = username + key
     sha_signature = hashlib.sha256(passphrase.encode()).hexdigest()
     return sha_signature
 
 
-def fetch_url(full_url, api_format, method):
+def fetch_url(full_url: str, api_format: str, method: str):
     """ fetch_url
 
         This function is used to fetch the string results using urllib
 
         INPUTS
-        * full_url = (string) url to fetch
+        * full_url   = (string) url to fetch
+        * api_format = (string) 'xml'|'json'
+        * method     = (string)
     """
     try:
         result = urllib.request.urlopen(full_url)
@@ -160,7 +162,7 @@ API FUNCTIONS
 """
 
 
-def handshake(ampache_url, ampache_api, ampache_user=False, timestamp=False, version='420000', api_format='xml'):
+def handshake(ampache_url: str, ampache_api: str, ampache_user: str = False, timestamp: int = 0, version: str = '5.0.0', api_format: str = 'xml'):
     """ handshake
         MINIMUM_API_VERSION=380001
 
@@ -185,7 +187,7 @@ def handshake(ampache_url, ampache_api, ampache_user=False, timestamp=False, ver
             'version': version}
     if not ampache_user:
         data.pop('user')
-    if not timestamp:
+    if not timestamp or not ampache_user:
         data.pop('timestamp')
     if not version:
         data.pop('version')
@@ -214,7 +216,7 @@ def handshake(ampache_url, ampache_api, ampache_user=False, timestamp=False, ver
         return token
 
 
-def ping(ampache_url, ampache_api, api_format='xml'):
+def ping(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
     """ ping
         MINIMUM_API_VERSION=380001
 
@@ -256,7 +258,7 @@ def ping(ampache_url, ampache_api, api_format='xml'):
         return ampache_api
 
 
-def goodbye(ampache_url, ampache_api, api_format='xml'):
+def goodbye(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
     """ goodbye
         MINIMUM_API_VERSION=400001
 
@@ -288,7 +290,7 @@ def goodbye(ampache_url, ampache_api, api_format='xml'):
         return tree
 
 
-def url_to_song(ampache_url, ampache_api, url, api_format='xml'):
+def url_to_song(ampache_url: str, ampache_api: str, url, api_format: str = 'xml'):
     """ url_to_song
         MINIMUM_API_VERSION=380001
 
@@ -322,7 +324,7 @@ def url_to_song(ampache_url, ampache_api, url, api_format='xml'):
         return tree
 
 
-def get_similar(ampache_url, ampache_api, object_type, filter_id, offset=0, limit=0, api_format='xml'):
+def get_similar(ampache_url: str, ampache_api: str, object_type, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
     """ get_similar
         MINIMUM_API_VERSION=420000
 
@@ -362,9 +364,9 @@ def get_similar(ampache_url, ampache_api, object_type, filter_id, offset=0, limi
         return tree
 
 
-def get_indexes(ampache_url, ampache_api, object_type,
-                filter_str=False, exact=False, add=False, update=False,
-                include=False, offset=0, limit=0, api_format='xml'):
+def get_indexes(ampache_url: str, ampache_api: str, object_type,
+                filter_str: str = False, exact: int = False, add: int = False, update: int = False,
+                include=False, offset=0, limit=0, api_format: str = 'xml'):
     """ get_indexes
         MINIMUM_API_VERSION=400001
 
@@ -376,8 +378,8 @@ def get_indexes(ampache_url, ampache_api, object_type,
         * object_type = (string) 'song'|'album'|'artist'|'playlist'
         * filter_str  = (string) search the name of the object_type //optional
         * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
-        * add         = //optional
-        * update      = //optional
+        * add         = (integer) UNIXTIME() //optional
+        * update      = (integer) UNIXTIME() //optional
         * include     = (integer) 0,1 include songs if available for that object //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
@@ -424,8 +426,8 @@ def get_indexes(ampache_url, ampache_api, object_type,
         return tree
 
 
-def artists(ampache_url, ampache_api, filter_str=False,
-            add=False, update=False, offset=0, limit=0, include=False, api_format='xml'):
+def artists(ampache_url: str, ampache_api: str, filter_str: str = False,
+            add: int = False, update: int = False, offset=0, limit=0, include=False, api_format: str = 'xml'):
     """ artists
         MINIMUM_API_VERSION=380001
 
@@ -435,11 +437,11 @@ def artists(ampache_url, ampache_api, filter_str=False,
         * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
         * ampache_api = (string) session 'auth' key
         * filter_str  = (string) search the name of an artist //optional
-        * add         = //optional
-        * update      = //optional
+        * add         = (integer) UNIXTIME() //optional
+        * update      = (integer) UNIXTIME() //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
-        * include     = //optional
+        * include     = (string) 'albums', 'songs' //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
@@ -477,7 +479,7 @@ def artists(ampache_url, ampache_api, filter_str=False,
         return tree
 
 
-def artist(ampache_url, ampache_api, filter_id, include=False, api_format='xml'):
+def artist(ampache_url: str, ampache_api: str, filter_id: int, include=False, api_format: str = 'xml'):
     """ artist
         MINIMUM_API_VERSION=380001
 
@@ -487,7 +489,7 @@ def artist(ampache_url, ampache_api, filter_id, include=False, api_format='xml')
         * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
         * ampache_api = (string) session 'auth' key
         * filter_id   = (integer) $artist_id
-        * include     = //optional
+        * include     = (string) 'albums', 'songs' //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
@@ -515,7 +517,7 @@ def artist(ampache_url, ampache_api, filter_id, include=False, api_format='xml')
         return tree
 
 
-def artist_albums(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
+def artist_albums(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
     """ artist_albums
         MINIMUM_API_VERSION=380001
 
@@ -553,7 +555,7 @@ def artist_albums(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_fo
         return tree
 
 
-def artist_songs(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
+def artist_songs(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
     """ artist_songs
         MINIMUM_API_VERSION=380001
 
@@ -591,9 +593,9 @@ def artist_songs(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_for
         return tree
 
 
-def albums(ampache_url, ampache_api, filter_str=False,
-           exact=False, add=False, update=False, offset=0, limit=0,
-           include=False, api_format='xml'):
+def albums(ampache_url: str, ampache_api: str, filter_str: str = False,
+           exact=False, add: int = False, update: int = False, offset=0, limit=0,
+           include=False, api_format: str = 'xml'):
     """ albums
         MINIMUM_API_VERSION=380001
 
@@ -604,11 +606,11 @@ def albums(ampache_url, ampache_api, filter_str=False,
         * ampache_api = (string) session 'auth' key
         * filter_str  = (string) search the name of an album //optional
         * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
-        * add         = //optional
-        * update      = //optional
+        * add         = (integer) UNIXTIME() //optional
+        * update      = (integer) UNIXTIME() //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
-        * include     = //optional
+        * include     = (string) 'songs' //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
@@ -647,7 +649,7 @@ def albums(ampache_url, ampache_api, filter_str=False,
         return tree
 
 
-def album(ampache_url, ampache_api, filter_id, include=False, api_format='xml'):
+def album(ampache_url: str, ampache_api: str, filter_id: int, include=False, api_format: str = 'xml'):
     """ album
         MINIMUM_API_VERSION=380001
 
@@ -657,7 +659,7 @@ def album(ampache_url, ampache_api, filter_id, include=False, api_format='xml'):
         * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
         * ampache_api = (string) session 'auth' key
         * filter_id   = (integer) $album_id
-        * include     = //optional
+        * include     = (string) 'songs' //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
@@ -685,7 +687,7 @@ def album(ampache_url, ampache_api, filter_id, include=False, api_format='xml'):
         return tree
 
 
-def album_songs(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
+def album_songs(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
     """ album_songs
         MINIMUM_API_VERSION=380001
 
@@ -723,7 +725,7 @@ def album_songs(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_form
         return tree
 
 
-def genres(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+def genres(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
     """ genres
         MINIMUM_API_VERSION=380001
 
@@ -767,7 +769,7 @@ def genres(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, li
         return tree
 
 
-def genre(ampache_url, ampache_api, filter_id, api_format='xml'):
+def genre(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ genre
         MINIMUM_API_VERSION=380001
 
@@ -801,7 +803,7 @@ def genre(ampache_url, ampache_api, filter_id, api_format='xml'):
         return tree
 
 
-def genre_artists(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
+def genre_artists(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
     """ genre_artists
         MINIMUM_API_VERSION=380001
 
@@ -839,7 +841,7 @@ def genre_artists(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_fo
         return tree
 
 
-def genre_albums(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
+def genre_albums(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
     """ genre_albums
         MINIMUM_API_VERSION=380001
 
@@ -877,7 +879,7 @@ def genre_albums(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_for
         return tree
 
 
-def genre_songs(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
+def genre_songs(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
     """ genre_songs
         MINIMUM_API_VERSION=380001
 
@@ -915,8 +917,8 @@ def genre_songs(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_form
         return tree
 
 
-def songs(ampache_url, ampache_api, filter_str=False, exact=False,
-          add=False, update=False, offset=0, limit=0, api_format='xml'):
+def songs(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False,
+          add: int = False, update: int = False, offset=0, limit=0, api_format: str = 'xml'):
     """ songs
         MINIMUM_API_VERSION=380001
 
@@ -927,8 +929,8 @@ def songs(ampache_url, ampache_api, filter_str=False, exact=False,
         * ampache_api = (string) session 'auth' key
         * filter_str  = (string) search the name of a song //optional
         * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
-        * add         = //optional
-        * update      = //optional
+        * add         = (integer) UNIXTIME() //optional
+        * update      = (integer) UNIXTIME() //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -968,7 +970,7 @@ def songs(ampache_url, ampache_api, filter_str=False, exact=False,
         return tree
 
 
-def song(ampache_url, ampache_api, filter_id, api_format='xml'):
+def song(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ song
         MINIMUM_API_VERSION=380001
 
@@ -1002,7 +1004,7 @@ def song(ampache_url, ampache_api, filter_id, api_format='xml'):
         return tree
 
 
-def song_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
+def song_delete(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ song_delete
         MINIMUM_API_VERSION=5.0.0
 
@@ -1036,7 +1038,7 @@ def song_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
         return tree
 
 
-def playlists(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+def playlists(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
     """ playlists
         MINIMUM_API_VERSION=380001
 
@@ -1080,7 +1082,7 @@ def playlists(ampache_url, ampache_api, filter_str=False, exact=False, offset=0,
         return tree
 
 
-def playlist(ampache_url, ampache_api, filter_id, api_format='xml'):
+def playlist(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ playlist
         MINIMUM_API_VERSION=380001
 
@@ -1114,7 +1116,7 @@ def playlist(ampache_url, ampache_api, filter_id, api_format='xml'):
         return tree
 
 
-def playlist_songs(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
+def playlist_songs(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
     """ playlist_songs
         MINIMUM_API_VERSION=380001
 
@@ -1152,7 +1154,7 @@ def playlist_songs(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_f
         return tree
 
 
-def playlist_create(ampache_url, ampache_api, name, object_type, api_format='xml'):
+def playlist_create(ampache_url: str, ampache_api: str, name, object_type, api_format: str = 'xml'):
     """ playlist_create
         MINIMUM_API_VERSION=380001
 
@@ -1198,7 +1200,7 @@ def playlist_create(ampache_url, ampache_api, name, object_type, api_format='xml
         return token
 
 
-def playlist_edit(ampache_url, ampache_api, filter_id, name=False, object_type=False, api_format='xml'):
+def playlist_edit(ampache_url: str, ampache_api: str, filter_id: int, name=False, object_type=False, api_format: str = 'xml'):
     """ playlist_edit
         MINIMUM_API_VERSION=400001
 
@@ -1240,7 +1242,7 @@ def playlist_edit(ampache_url, ampache_api, filter_id, name=False, object_type=F
         return tree
 
 
-def playlist_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
+def playlist_delete(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ playlist_delete
         MINIMUM_API_VERSION=380001
 
@@ -1274,7 +1276,7 @@ def playlist_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
         return tree
 
 
-def playlist_add_song(ampache_url, ampache_api, filter_id, song_id, check=False, api_format='xml'):
+def playlist_add_song(ampache_url: str, ampache_api: str, filter_id: int, song_id, check=False, api_format: str = 'xml'):
     """ playlist_add_song
         MINIMUM_API_VERSION=380001
         CHANGED_IN_API_VERSION=400003
@@ -1318,7 +1320,7 @@ def playlist_add_song(ampache_url, ampache_api, filter_id, song_id, check=False,
         return tree
 
 
-def playlist_remove_song(ampache_url, ampache_api, filter_id, song_id=False, track=False, api_format='xml'):
+def playlist_remove_song(ampache_url: str, ampache_api: str, filter_id: int, song_id=False, track=False, api_format: str = 'xml'):
     """ playlist_remove_song
         MINIMUM_API_VERSION=380001
         CHANGED_IN_API_VERSION=400001
@@ -1362,9 +1364,9 @@ def playlist_remove_song(ampache_url, ampache_api, filter_id, song_id=False, tra
         return tree
 
 
-def playlist_generate(ampache_url, ampache_api, mode='random',
-                      filter_str=False, album_id=False, artist_id=False, flagged=False,
-                      list_format='song', offset=0, limit=0, api_format='xml'):
+def playlist_generate(ampache_url: str, ampache_api: str, mode='random',
+                      filter_str: str = False, album_id=False, artist_id=False, flagged=False,
+                      list_format='song', offset=0, limit=0, api_format: str = 'xml'):
     """ playlist_generate
         MINIMUM_API_VERSION=400001
         CHANGED_IN_API_VERSION=400002
@@ -1424,7 +1426,7 @@ def playlist_generate(ampache_url, ampache_api, mode='random',
         return tree
 
 
-def shares(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+def shares(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
     """ shares
         MINIMUM_API_VERSION=420000
 
@@ -1466,7 +1468,7 @@ def shares(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, li
         return tree
 
 
-def share(ampache_url, ampache_api, filter_id, api_format='xml'):
+def share(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ share
         MINIMUM_API_VERSION=420000
 
@@ -1500,8 +1502,8 @@ def share(ampache_url, ampache_api, filter_id, api_format='xml'):
         return tree
 
 
-def share_create(ampache_url, ampache_api, filter_id, object_type,
-                 description=False, expires=False, api_format='xml'):
+def share_create(ampache_url: str, ampache_api: str, filter_id: int, object_type,
+                 description=False, expires=False, api_format: str = 'xml'):
     """ share_create
         MINIMUM_API_VERSION=420000
 
@@ -1556,8 +1558,8 @@ def share_create(ampache_url, ampache_api, filter_id, object_type,
         return token
 
 
-def share_edit(ampache_url, ampache_api, filter_id, can_stream=False, can_download=False,
-               expires=False, description=False, api_format='xml'):
+def share_edit(ampache_url: str, ampache_api: str, filter_id: int, can_stream=False, can_download=False,
+               expires=False, description=False, api_format: str = 'xml'):
     """ share_edit
         MINIMUM_API_VERSION=420000
 
@@ -1608,7 +1610,7 @@ def share_edit(ampache_url, ampache_api, filter_id, can_stream=False, can_downlo
         return tree
 
 
-def share_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
+def share_delete(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ share_delete
         MINIMUM_API_VERSION=420000
 
@@ -1642,7 +1644,7 @@ def share_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
         return tree
 
 
-def catalogs(ampache_url, ampache_api, filter_str=False, offset=0, limit=0, api_format='xml'):
+def catalogs(ampache_url: str, ampache_api: str, filter_str: str = False, offset=0, limit=0, api_format: str = 'xml'):
     """ catalogs
         MINIMUM_API_VERSION=420000
 
@@ -1680,7 +1682,7 @@ def catalogs(ampache_url, ampache_api, filter_str=False, offset=0, limit=0, api_
         return tree
 
 
-def catalog(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
+def catalog(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
     """ catalog
         MINIMUM_API_VERSION=420000
 
@@ -1716,7 +1718,7 @@ def catalog(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='
         return tree
 
 
-def catalog_action(ampache_url, ampache_api, task, catalog_id, api_format='xml'):
+def catalog_action(ampache_url: str, ampache_api: str, task, catalog_id, api_format: str = 'xml'):
     """ catalog_action
         MINIMUM_API_VERSION=400001
 
@@ -1752,7 +1754,7 @@ def catalog_action(ampache_url, ampache_api, task, catalog_id, api_format='xml')
         return tree
 
 
-def catalog_file(ampache_url, ampache_api, file, task, catalog_id, api_format='xml'):
+def catalog_file(ampache_url: str, ampache_api: str, file, task, catalog_id, api_format: str = 'xml'):
     """ catalog_file
         MINIMUM_API_VERSION=420000
 
@@ -1792,7 +1794,7 @@ def catalog_file(ampache_url, ampache_api, file, task, catalog_id, api_format='x
         return tree
 
 
-def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+def podcasts(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
     """ podcasts
         MINIMUM_API_VERSION=420000
 
@@ -1834,7 +1836,7 @@ def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, 
         return tree
 
 
-def podcast(ampache_url, ampache_api, filter_id, include=False, api_format='xml'):
+def podcast(ampache_url: str, ampache_api: str, filter_id: int, include=False, api_format: str = 'xml'):
     """ podcast
         MINIMUM_API_VERSION=420000
 
@@ -1872,7 +1874,7 @@ def podcast(ampache_url, ampache_api, filter_id, include=False, api_format='xml'
         return tree
 
 
-def podcast_create(ampache_url, ampache_api, url, catalog_id, api_format='xml'):
+def podcast_create(ampache_url: str, ampache_api: str, url, catalog_id, api_format: str = 'xml'):
     """ podcast_create
         MINIMUM_API_VERSION=420000
 
@@ -1908,9 +1910,9 @@ def podcast_create(ampache_url, ampache_api, url, catalog_id, api_format='xml'):
         return tree
 
 
-def podcast_edit(ampache_url, ampache_api, filter_id,
+def podcast_edit(ampache_url: str, ampache_api: str, filter_id: int,
                  feed=False, title=False, website=False,
-                 description=False, generator=False, copyright_str=False, api_format='xml'):
+                 description=False, generator=False, copyright_str=False, api_format: str = 'xml'):
     """ podcast_edit
         MINIMUM_API_VERSION=420000
 
@@ -1969,7 +1971,7 @@ def podcast_edit(ampache_url, ampache_api, filter_id,
         return tree
 
 
-def podcast_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
+def podcast_delete(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ podcast_delete
         MINIMUM_API_VERSION=420000
 
@@ -2003,7 +2005,7 @@ def podcast_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
         return tree
 
 
-def podcast_episodes(ampache_url, ampache_api, filter_id, offset=0, limit=0, api_format='xml'):
+def podcast_episodes(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
     """ podcast_episodes
         MINIMUM_API_VERSION=420000
 
@@ -2039,7 +2041,7 @@ def podcast_episodes(ampache_url, ampache_api, filter_id, offset=0, limit=0, api
         return tree
 
 
-def podcast_episode(ampache_url, ampache_api, filter_id, api_format='xml'):
+def podcast_episode(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ podcast_episode
         MINIMUM_API_VERSION=420000
 
@@ -2073,7 +2075,7 @@ def podcast_episode(ampache_url, ampache_api, filter_id, api_format='xml'):
         return tree
 
 
-def podcast_episode_delete(ampache_url, ampache_api, filter_id, api_format='xml'):
+def podcast_episode_delete(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ podcast_episode_delete
         MINIMUM_API_VERSION=420000
 
@@ -2107,7 +2109,7 @@ def podcast_episode_delete(ampache_url, ampache_api, filter_id, api_format='xml'
         return tree
 
 
-def update_podcast(ampache_url, ampache_api, filter_id, api_format='xml'):
+def update_podcast(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ update_podcast
         MINIMUM_API_VERSION=420000
 
@@ -2141,7 +2143,7 @@ def update_podcast(ampache_url, ampache_api, filter_id, api_format='xml'):
         return tree
 
 
-def search_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def search_songs(ampache_url: str, ampache_api: str, filter_str, offset=0, limit=0, api_format: str = 'xml'):
     """ search_songs
         MINIMUM_API_VERSION=380001
 
@@ -2179,8 +2181,8 @@ def search_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_fo
         return tree
 
 
-def advanced_search(ampache_url, ampache_api, rules,
-                    operator='and', object_type='song', offset=0, limit=0, random=0, api_format='xml'):
+def advanced_search(ampache_url: str, ampache_api: str, rules,
+                    operator='and', object_type='song', offset=0, limit=0, random=0, api_format: str = 'xml'):
     """ advanced_search
         MINIMUM_API_VERSION=380001
 
@@ -2237,7 +2239,7 @@ def advanced_search(ampache_url, ampache_api, rules,
         return tree
 
 
-def videos(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+def videos(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
     """ videos
         MINIMUM_API_VERSION=380001
 
@@ -2281,7 +2283,7 @@ def videos(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, li
         return tree
 
 
-def video(ampache_url, ampache_api, filter_id, api_format='xml'):
+def video(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ video
         MINIMUM_API_VERSION=380001
 
@@ -2315,7 +2317,7 @@ def video(ampache_url, ampache_api, filter_id, api_format='xml'):
         return tree
 
 
-def localplay(ampache_url, ampache_api, command, oid=False, otype=False, clear=0, api_format='xml'):
+def localplay(ampache_url: str, ampache_api: str, command, oid=False, otype=False, clear=0, api_format: str = 'xml'):
     """ localplay
         MINIMUM_API_VERSION=380001
         CHANGED_IN_API_VERSION=5.0.0
@@ -2364,7 +2366,7 @@ def localplay(ampache_url, ampache_api, command, oid=False, otype=False, clear=0
         return tree
 
 
-def democratic(ampache_url, ampache_api, method, oid, api_format='xml'):
+def democratic(ampache_url: str, ampache_api: str, method, oid, api_format: str = 'xml'):
     """ democratic
         MINIMUM_API_VERSION=380001
 
@@ -2400,8 +2402,8 @@ def democratic(ampache_url, ampache_api, method, oid, api_format='xml'):
         return tree
 
 
-def stats(ampache_url, ampache_api, object_type, filter_str='random',
-          username=False, user_id=False, offset=0, limit=0, api_format='xml'):
+def stats(ampache_url: str, ampache_api: str, object_type, filter_str='random',
+          username=False, user_id=False, offset=0, limit=0, api_format: str = 'xml'):
     """ stats
         MINIMUM_API_VERSION=380001
         CHANGED_IN_API_VERSION=400001
@@ -2450,7 +2452,7 @@ def stats(ampache_url, ampache_api, object_type, filter_str='random',
         return tree
 
 
-def users(ampache_url, ampache_api, api_format='xml'):
+def users(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
     """ user
         MINIMUM_API_VERSION=5.0.0
     
@@ -2482,7 +2484,7 @@ def users(ampache_url, ampache_api, api_format='xml'):
         return tree
 
 
-def user(ampache_url, ampache_api, username, api_format='xml'):
+def user(ampache_url: str, ampache_api: str, username, api_format: str = 'xml'):
     """ user
         MINIMUM_API_VERSION=380001
 
@@ -2516,7 +2518,7 @@ def user(ampache_url, ampache_api, username, api_format='xml'):
         return tree
 
 
-def followers(ampache_url, ampache_api, username, api_format='xml'):
+def followers(ampache_url: str, ampache_api: str, username, api_format: str = 'xml'):
     """ followers
         MINIMUM_API_VERSION=380001
     
@@ -2550,7 +2552,7 @@ def followers(ampache_url, ampache_api, username, api_format='xml'):
         return tree
 
 
-def following(ampache_url, ampache_api, username, api_format='xml'):
+def following(ampache_url: str, ampache_api: str, username, api_format: str = 'xml'):
     """ following
         MINIMUM_API_VERSION=380001
 
@@ -2584,7 +2586,7 @@ def following(ampache_url, ampache_api, username, api_format='xml'):
         return tree
 
 
-def toggle_follow(ampache_url, ampache_api, username, api_format='xml'):
+def toggle_follow(ampache_url: str, ampache_api: str, username, api_format: str = 'xml'):
     """ toggle_follow
         MINIMUM_API_VERSION=380001
 
@@ -2618,7 +2620,7 @@ def toggle_follow(ampache_url, ampache_api, username, api_format='xml'):
         return tree
 
 
-def last_shouts(ampache_url, ampache_api, username, limit=0, api_format='xml'):
+def last_shouts(ampache_url: str, ampache_api: str, username, limit=0, api_format: str = 'xml'):
     """ last_shouts
         MINIMUM_API_VERSION=380001
 
@@ -2654,7 +2656,7 @@ def last_shouts(ampache_url, ampache_api, username, limit=0, api_format='xml'):
         return tree
 
 
-def rate(ampache_url, ampache_api, object_type, object_id, rating, api_format='xml'):
+def rate(ampache_url: str, ampache_api: str, object_type, object_id, rating, api_format: str = 'xml'):
     """ rate
         MINIMUM_API_VERSION=380001
 
@@ -2694,7 +2696,7 @@ def rate(ampache_url, ampache_api, object_type, object_id, rating, api_format='x
         return tree
 
 
-def flag(ampache_url, ampache_api, object_type, object_id, flagbool, api_format='xml'):
+def flag(ampache_url: str, ampache_api: str, object_type, object_id, flagbool, api_format: str = 'xml'):
     """ flag
         MINIMUM_API_VERSION=400001
 
@@ -2739,7 +2741,7 @@ def flag(ampache_url, ampache_api, object_type, object_id, flagbool, api_format=
         return tree
 
 
-def record_play(ampache_url, ampache_api, object_id, user_id, client='AmpacheAPI', api_format='xml'):
+def record_play(ampache_url: str, ampache_api: str, object_id, user_id, client='AmpacheAPI', api_format: str = 'xml'):
     """ record_play
         MINIMUM_API_VERSION=400001
 
@@ -2778,9 +2780,9 @@ def record_play(ampache_url, ampache_api, object_id, user_id, client='AmpacheAPI
         return tree
 
 
-def scrobble(ampache_url, ampache_api, title, artist_name, album_name,
+def scrobble(ampache_url: str, ampache_api: str, title, artist_name, album_name,
              mbtitle=False, mbartist=False, mbalbum=False, stime=False,
-             client='AmpacheAPI', api_format='xml'):
+             client='AmpacheAPI', api_format: str = 'xml'):
     """ scrobble
         MINIMUM_API_VERSION=400001
 
@@ -2829,7 +2831,7 @@ def scrobble(ampache_url, ampache_api, title, artist_name, album_name,
         return tree
 
 
-def timeline(ampache_url, ampache_api, username, limit=0, since=0, api_format='xml'):
+def timeline(ampache_url: str, ampache_api: str, username, limit=0, since=0, api_format: str = 'xml'):
     """ timeline
         MINIMUM_API_VERSION=380001
 
@@ -2867,7 +2869,7 @@ def timeline(ampache_url, ampache_api, username, limit=0, since=0, api_format='x
         return tree
 
 
-def friends_timeline(ampache_url, ampache_api, limit=0, since=0, api_format='xml'):
+def friends_timeline(ampache_url: str, ampache_api: str, limit=0, since=0, api_format: str = 'xml'):
     """ friends_timeline
         MINIMUM_API_VERSION=380001
 
@@ -2903,7 +2905,7 @@ def friends_timeline(ampache_url, ampache_api, limit=0, since=0, api_format='xml
         return tree
 
 
-def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id, api_format='xml'):
+def update_from_tags(ampache_url: str, ampache_api: str, ampache_type, ampache_id, api_format: str = 'xml'):
     """ update_from_tags
         MINIMUM_API_VERSION=400001
 
@@ -2939,7 +2941,7 @@ def update_from_tags(ampache_url, ampache_api, ampache_type, ampache_id, api_for
         return tree
 
 
-def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite=False, api_format='xml'):
+def update_art(ampache_url: str, ampache_api: str, ampache_type, ampache_id, overwrite=False, api_format: str = 'xml'):
     """ update_art
         MINIMUM_API_VERSION=400001
 
@@ -2982,7 +2984,7 @@ def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite=Fal
         return tree
 
 
-def update_artist_info(ampache_url, ampache_api, object_id, api_format='xml'):
+def update_artist_info(ampache_url: str, ampache_api: str, object_id, api_format: str = 'xml'):
     """ update_artist_info
         MINIMUM_API_VERSION=400001
 
@@ -3017,7 +3019,7 @@ def update_artist_info(ampache_url, ampache_api, object_id, api_format='xml'):
         return tree
 
 
-def stream(ampache_url, ampache_api, object_id, object_type, destination, api_format='xml'):
+def stream(ampache_url: str, ampache_api: str, object_id, object_type, destination, api_format: str = 'xml'):
     """ stream
         MINIMUM_API_VERSION=400001
 
@@ -3045,7 +3047,7 @@ def stream(ampache_url, ampache_api, object_id, object_type, destination, api_fo
     return True
 
 
-def download(ampache_url, ampache_api, object_id, object_type, destination, transcode='raw', api_format='xml'):
+def download(ampache_url: str, ampache_api: str, object_id, object_type, destination, transcode='raw', api_format: str = 'xml'):
     """ download
         MINIMUM_API_VERSION=400001
 
@@ -3074,7 +3076,7 @@ def download(ampache_url, ampache_api, object_id, object_type, destination, tran
     return True
 
 
-def get_art(ampache_url, ampache_api, object_id, object_type, destination, api_format='xml'):
+def get_art(ampache_url: str, ampache_api: str, object_id, object_type, destination, api_format: str = 'xml'):
     """ get_art
         MINIMUM_API_VERSION=400001
 
@@ -3102,8 +3104,8 @@ def get_art(ampache_url, ampache_api, object_id, object_type, destination, api_f
     return True
 
 
-def user_create(ampache_url, ampache_api, username, password, email,
-                fullname=False, disable=False, api_format='xml'):
+def user_create(ampache_url: str, ampache_api: str, username: str, password: str, email: str,
+                fullname: str = False, disable=False, api_format: str = 'xml'):
     """ user_create
         MINIMUM_API_VERSION=400001
 
@@ -3124,6 +3126,8 @@ def user_create(ampache_url, ampache_api, username, password, email,
         disable = 1
     else:
         disable = 0
+    if hashlib.sha256(password.encode()).hexdigest() != password:
+        password = hashlib.sha256(password.encode()).hexdigest()
     data = {'action': 'user_create',
             'auth': ampache_api,
             'username': username,
@@ -3151,8 +3155,8 @@ def user_create(ampache_url, ampache_api, username, password, email,
         return tree
 
 
-def user_update(ampache_url, ampache_api, username, password=False, fullname=False, email=False, website=False,
-                state=False, city=False, disable=False, maxbitrate=False, api_format='xml'):
+def user_update(ampache_url: str, ampache_api: str, username, password=False, fullname=False, email=False, website=False,
+                state=False, city=False, disable=False, maxbitrate=False, api_format: str = 'xml'):
     """ user_update
         MINIMUM_API_VERSION=400001
 
@@ -3220,7 +3224,7 @@ def user_update(ampache_url, ampache_api, username, password=False, fullname=Fal
         return tree
 
 
-def user_delete(ampache_url, ampache_api, username, api_format='xml'):
+def user_delete(ampache_url: str, ampache_api: str, username, api_format: str = 'xml'):
     """ user_delete
         MINIMUM_API_VERSION=400001
 
@@ -3254,7 +3258,7 @@ def user_delete(ampache_url, ampache_api, username, api_format='xml'):
         return tree
 
 
-def user_preferences(ampache_url, ampache_api, api_format='xml'):
+def user_preferences(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
     """ user_preferences
         MINIMUM_API_VERSION=5.0.0
 
@@ -3286,7 +3290,7 @@ def user_preferences(ampache_url, ampache_api, api_format='xml'):
         return tree
 
 
-def user_preference(ampache_url, ampache_api, filter_str, api_format='xml'):
+def user_preference(ampache_url: str, ampache_api: str, filter_str, api_format: str = 'xml'):
     """ user_preference
         MINIMUM_API_VERSION=5.0.0
 
@@ -3320,7 +3324,7 @@ def user_preference(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def system_preferences(ampache_url, ampache_api, api_format='xml'):
+def system_preferences(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
     """ system_preferences
         MINIMUM_API_VERSION=5.0.0
 
@@ -3352,7 +3356,7 @@ def system_preferences(ampache_url, ampache_api, api_format='xml'):
         return tree
 
 
-def system_preference(ampache_url, ampache_api, filter_str, api_format='xml'):
+def system_preference(ampache_url: str, ampache_api: str, filter_str, api_format: str = 'xml'):
     """ system_preference
         MINIMUM_API_VERSION=5.0.0
 
@@ -3386,7 +3390,7 @@ def system_preference(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def system_update(ampache_url, ampache_api, api_format='xml'):
+def system_update(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
     """ system_update
         MINIMUM_API_VERSION=5.0.0
 
@@ -3418,8 +3422,8 @@ def system_update(ampache_url, ampache_api, api_format='xml'):
         return tree
 
 
-def preference_create(ampache_url, ampache_api, filter_str, type_str, default, category,
-                      description=False, subcategory=False, level=100, api_format='xml'):
+def preference_create(ampache_url: str, ampache_api: str, filter_str, type_str, default, category,
+                      description=False, subcategory=False, level=100, api_format: str = 'xml'):
     """ preference_create
         MINIMUM_API_VERSION=5.0.0
 
@@ -3469,7 +3473,7 @@ def preference_create(ampache_url, ampache_api, filter_str, type_str, default, c
         return tree
 
 
-def preference_edit(ampache_url, ampache_api, filter_str, value, apply_all=0, api_format='xml'):
+def preference_edit(ampache_url: str, ampache_api: str, filter_str, value, apply_all=0, api_format: str = 'xml'):
     """ preference_edit
         MINIMUM_API_VERSION=5.0.0
 
@@ -3507,7 +3511,7 @@ def preference_edit(ampache_url, ampache_api, filter_str, value, apply_all=0, ap
         return tree
 
 
-def preference_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
+def preference_delete(ampache_url: str, ampache_api: str, filter_str, api_format: str = 'xml'):
     """ preference_delete
         MINIMUM_API_VERSION=5.0.0
 
@@ -3541,8 +3545,8 @@ def preference_delete(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def licenses(ampache_url, ampache_api, filter_str=False, exact=False,
-             add=False, update=False, offset=0, limit=0, api_format='xml'):
+def licenses(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False,
+             add: int = False, update: int = False, offset=0, limit=0, api_format: str = 'xml'):
     """ licenses
         MINIMUM_API_VERSION=420000
 
@@ -3553,8 +3557,8 @@ def licenses(ampache_url, ampache_api, filter_str=False, exact=False,
         * ampache_api = (string) session 'auth' key
         * filter_str  = (string) search the name of a license //optional
         * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
-        * add         = //optional
-        * update      = //optional
+        * add         = (integer) UNIXTIME() //optional
+        * update      = (integer) UNIXTIME() //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
@@ -3594,7 +3598,7 @@ def licenses(ampache_url, ampache_api, filter_str=False, exact=False,
         return tree
 
 
-def license(ampache_url, ampache_api, filter_id, api_format='xml'):
+def license(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ license
         MINIMUM_API_VERSION=420000
 
@@ -3628,7 +3632,7 @@ def license(ampache_url, ampache_api, filter_id, api_format='xml'):
         return tree
 
 
-def license_songs(ampache_url, ampache_api, filter_id, api_format='xml'):
+def license_songs(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
     """ license_songs
         MINIMUM_API_VERSION=420000
 
