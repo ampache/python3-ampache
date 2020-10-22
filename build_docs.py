@@ -77,6 +77,18 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     ampache.set_debug(True)
 
+    """ def labels(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
+    """
+    ampache.labels(ampache_url, ampache_session, False, False, offset, limit, api_format)
+
+    """ def label(ampache_url, ampache_api, filter, api_format = 'xml'):
+    """
+    ampache.label(ampache_url, ampache_session, 1677, api_format)
+
+    """ def label_songs(ampache_url, ampache_api, filter, api_format = 'xml'):
+    """
+    ampache.label_artists(ampache_url, ampache_session, 1677, api_format)
+
     """ def url_to_song(ampache_url, ampache_api, url, api_format = 'xml'):
     """
     ampache.url_to_song(ampache_url, ampache_session, song_url, api_format)
@@ -468,6 +480,18 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ def license_songs(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
     ampache.license_songs(ampache_url, ampache_session, 2, api_format)
+
+    """ def labels(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
+    """
+    ampache.labels(ampache_url, ampache_session, False, False, offset, limit, api_format)
+
+    """ def label(ampache_url, ampache_api, filter, api_format = 'xml'):
+    """
+    ampache.label(ampache_url, ampache_session, 1677, api_format)
+
+    """ def label_songs(ampache_url, ampache_api, filter, api_format = 'xml'):
+    """
+    ampache.label_artists(ampache_url, ampache_session, 1677, api_format)
 
     """ def podcasts(ampache_url, ampache_api, filter_str = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """

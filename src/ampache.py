@@ -54,7 +54,7 @@ def set_debug(mybool: bool):
     AMPACHE_DEBUG = mybool
 
 
-def get_id_list(data, attribute: str, data_format:str = 'xml'):
+def get_id_list(data, attribute: str, data_format: str = 'xml'):
     """ get_id_list
 
         return a list of id's from the data you've got from the api
@@ -3652,6 +3652,119 @@ def license_songs(ampache_url: str, ampache_api: str, filter_id: int, api_format
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'license_songs')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def labels(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False,
+           offset=0, limit=0, api_format: str = 'xml'):
+    """ labels
+        MINIMUM_API_VERSION=420000
+
+        Returns labels based on the specified filter_str
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_str  = (string) search the name of a label //optional
+        * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+        * offset      = (integer) //optional
+        * limit       = (integer) //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'labels',
+            'auth': ampache_api,
+            'exact': exact,
+            'filter': filter_str,
+            'offset': str(offset),
+            'limit': str(limit)}
+    if not filter_str:
+        data.pop('filter')
+    if not exact:
+        data.pop('exact')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'labels')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def label(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
+    """ label
+        MINIMUM_API_VERSION=420000
+
+        returns a single label
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) $label_id
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'label',
+            'auth': ampache_api,
+            'filter': filter_id}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'label')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def label_artists(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
+    """ label_artists
+        MINIMUM_API_VERSION=420000
+
+        returns a artists for a single label ID
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id  = (integer) $label_id
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'label_artists',
+            'auth': ampache_api,
+            'filter': filter_id}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'label_artists')
     if not ampache_response:
         return False
     # json format
