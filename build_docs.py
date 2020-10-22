@@ -284,7 +284,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def record_play(ampache_url, ampache_api, id, user, client = 'AmpacheAPI', api_format = 'xml'):
     """
-    ampache.record_play(ampache_url, ampache_session, song_id, user_id, 'debug', api_format)
+    ampache.record_play(ampache_url, ampache_session, song_id, 4, 'debug', api_format)
 
     """ def followers(ampache_url, ampache_api, username, api_format = 'xml'):
     """
