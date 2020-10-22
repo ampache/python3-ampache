@@ -54,13 +54,13 @@ def set_debug(mybool: bool):
     AMPACHE_DEBUG = mybool
 
 
-def get_id_list(data, attribute, data_format='xml'):
+def get_id_list(data, attribute: str, data_format:str = 'xml'):
     """ get_id_list
 
         return a list of id's from the data you've got from the api
 
         INPUTS
-        * filename    = (mixed) XML or JSON from the API
+        * data        = (mixed) XML or JSON from the API
         * attribute   = (string) attribute you are searching for
         * data_format = (string) 'xml','json'
     """
@@ -72,10 +72,10 @@ def get_id_list(data, attribute, data_format='xml'):
     else:
         try:
             for data_object in data[attribute]:
-                id_list.append(data_object[0])
+                id_list.append(data_object['id'])
         except TypeError:
             for data_object in data:
-                id_list.append(data_object['id'])
+                id_list.append(data_object[0])
     return id_list
 
 
@@ -671,6 +671,7 @@ def album(ampache_url: str, ampache_api: str, filter_id: int, include=False, api
         data.pop('include')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
+    print(full_url)
     ampache_response = fetch_url(full_url, api_format, 'album')
     if not ampache_response:
         return False
