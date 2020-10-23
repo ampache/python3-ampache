@@ -1,56 +1,31 @@
-[
-    {
-        "id": "52480",
-        "name": "Drop It in Their Laps",
-        "artist": {
-            "id": "2298",
-            "name": "Cops"
-        },
-        "year": 2007,
-        "tracks": 13,
-        "disk": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "mbid": "562ad680-4423-456c-9d5b-224c5ad4e019"
-    },
-    {
-        "id": "52482",
-        "name": "80 in the Shade",
-        "artist": {
-            "id": "2298",
-            "name": "Cops"
-        },
-        "year": 2006,
-        "tracks": 4,
-        "disk": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=52482&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "0000d81a-136a-48c3-9c08-2cd45df6467b"
-    },
-    {
-        "id": "52481",
-        "name": "Stomp on Tripwires",
-        "artist": {
-            "id": "2298",
-            "name": "Cops"
-        },
-        "year": 2004,
-        "tracks": 15,
-        "disk": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=52481&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": 3,
-        "rating": 3,
-        "averagerating": null,
-        "mbid": "839643bb-3304-4ae0-bd3d-94246523a995"
-    }
-]
+{
+    "album": [
+        {
+            "id": "97131",
+            "name": "Palm Grease",
+            "artist": {
+                "id": "10171",
+                "name": "SilverHawk"
+            },
+            "year": 2017,
+            "tracks": "17",
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "273",
+                    "name": "Synthwave"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=97131&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "7c239082-24e1-46f7-b06a-5415033f5c5b"
+        }
+    ]
+}

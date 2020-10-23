@@ -1,55 +1,43 @@
 {
-    "timeline": [
+    "activity": [
         {
-            "id": "167387",
-            "data": "1595916266",
+            "id": "170003",
+            "data": "1600670773",
             "object_type": "song",
-            "object_id": "77371",
+            "object_id": "29620",
             "action": "play",
             "user": [
-                {
-                    "id": "4",
-                    "username": "generic"
-                }
+                null
             ]
         },
         {
-            "id": "167382",
-            "data": "1595916087",
+            "id": "170004",
+            "data": "1600670773",
             "object_type": "song",
-            "object_id": "77371",
+            "object_id": "149915",
             "action": "play",
             "user": [
-                {
-                    "id": "4",
-                    "username": "generic"
-                }
+                null
             ]
         },
         {
-            "id": "166906",
-            "data": "1595373969",
+            "id": "170001",
+            "data": "1600670651",
             "object_type": "song",
-            "object_id": "886242",
+            "object_id": "57278",
             "action": "play",
             "user": [
-                {
-                    "id": "4",
-                    "username": "generic"
-                }
+                null
             ]
         },
         {
-            "id": "166904",
-            "data": "1595373920",
+            "id": "170002",
+            "data": "1600670651",
             "object_type": "song",
-            "object_id": "886249",
+            "object_id": "149915",
             "action": "play",
             "user": [
-                {
-                    "id": "4",
-                    "username": "generic"
-                }
+                null
             ]
         }
     ]

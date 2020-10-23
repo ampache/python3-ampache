@@ -1,102 +1,111 @@
-[
-    {
-        "id": "54130",
-        "name": "\"...Famous Last Words...\"",
-        "artist": {
-            "id": "6778",
-            "name": "Supertramp"
-        },
-        "year": 2002,
-        "tracks": 9,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+{
+    "album": [
+        {
+            "id": "81350",
+            "name": "-2-",
+            "artist": {
+                "id": "292",
+                "name": "Vinterriket"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=54130&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "dc0bdca9-ae06-426b-9a43-f23334d0e939"
-    },
-    {
-        "id": "72713",
-        "name": "\"Awaken, My Love!\"",
-        "artist": {
-            "id": "13600",
-            "name": "Childish Gambino"
+            "year": 2005,
+            "tracks": "8",
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "46",
+                    "name": "Ambient"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=81350&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "8844cfdc-4957-467b-ad70-d46e640d473e"
         },
-        "year": 2016,
-        "tracks": 11,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "360",
-                "name": "R&B"
+        {
+            "id": "90265",
+            "name": "-273\u00b0C",
+            "artist": {
+                "id": "5696",
+                "name": "Newt"
             },
-            {
-                "id": "2701",
-                "name": "HipHop"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=72713&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "c716704d-b2a1-44f9-8cec-66b10361c4ed"
-    },
-    {
-        "id": "63679",
-        "name": "\"Bettin' on a Longshot\" The Singles Collection",
-        "artist": {
-            "id": "9303",
-            "name": "Harrington Saints"
+            "year": 1997,
+            "tracks": "10",
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "11",
+                    "name": "Techno"
+                },
+                {
+                    "id": "77",
+                    "name": "Experimental"
+                },
+                {
+                    "id": "84",
+                    "name": "IDM"
+                },
+                {
+                    "id": "1461",
+                    "name": "Drum N Bass"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=90265&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "c6133aab-0f1b-415f-b3eb-c10a1e6f0765"
         },
-        "year": 2013,
-        "tracks": 15,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "60",
-                "name": "Punk Rock"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=63679&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "71baccde-5011-43b6-b175-30b08c726b06"
-    },
-    {
-        "id": "75376",
-        "name": "\"C\" Is for (Please Insert Sophomoric Genitalia Reference HERE)",
-        "artist": {
-            "id": "474",
-            "name": "Puscifer"
+        {
+            "id": "67900",
+            "name": ": Licht! :",
+            "artist": {
+                "id": "13647",
+                "name": "Leger des Heils"
+            },
+            "year": 2012,
+            "tracks": "9",
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "241",
+                    "name": "Neofolk"
+                },
+                {
+                    "id": "702",
+                    "name": "Modern Classical"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=67900&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "773c657a-1046-4407-a655-5035de33bc92"
         },
-        "year": 2010,
-        "tracks": 8,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "4",
-                "name": "Electronic"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=75376&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "46e02dda-058d-4226-a356-76b6bfdd5790"
-    }
-]
+        {
+            "id": "95235",
+            "name": ":Resum\u00e9",
+            "artist": {
+                "id": "15229",
+                "name": "John Taylor"
+            },
+            "year": 1999,
+            "tracks": "9",
+            "disk": 1,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=95235&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "0d813f5c-62af-4a98-8432-b28edd51cce8"
+        }
+    ]
+}

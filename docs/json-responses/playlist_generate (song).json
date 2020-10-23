@@ -1,236 +1,224 @@
-[
-    {
-        "id": "873260",
-        "title": "... Absorb\u00e9 ...",
-        "name": "... Absorb\u00e9 ...",
-        "artist": {
-            "id": "7424",
-            "name": "Moan"
-        },
-        "album": {
-            "id": "68648",
-            "name": "Works 2002-2006"
-        },
-        "tag": [
-            {
-                "id": "9",
-                "name": "Industrial"
+{
+    "song": [
+        {
+            "id": "808187",
+            "title": "Vara snabb",
+            "name": "Vara snabb",
+            "artist": {
+                "id": "11526",
+                "name": "Dungen"
             },
-            {
-                "id": "46",
-                "name": "Ambient"
-            }
-        ],
-        "filename": "\/mnt\/music\/Various Artists\/(2007) Works 2002-2006\/105 - Moan - ... Absorb\u00e9 ....mp3",
-        "track": 5,
-        "playlisttrack": 1,
-        "time": 359,
-        "year": 2007,
-        "bitrate": 256000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=873260&uid=2&player=api&name=Moan%20-%20...%20Absorb-%20....mp3",
-        "size": 11496429,
-        "mbid": "e54bba7c-beef-42e1-81f9-fb1cbd389c15",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=68648&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "www.moan.pl                                      \r\nenoughrecords.scene.org",
-        "publisher": "[no label]",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-2.740000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Industrial"
+            "album": {
+                "id": "94581",
+                "name": "Skit i allt"
             },
-            {
-                "name": "Ambient"
-            }
-        ]
-    },
-    {
-        "id": "94301",
-        "title": "Kai",
-        "name": "Kai",
-        "artist": {
-            "id": "5828",
-            "name": "FSOL"
-        },
-        "album": {
-            "id": "48935",
-            "name": "ISDN"
-        },
-        "tag": [
-            {
-                "id": "4",
-                "name": "Electronic"
-            }
-        ],
-        "filename": "\/mnt\/music\/FSOL\/(1994) ISDN [ASW 6144-2]\/112 - Kai.mp3",
-        "track": 12,
-        "playlisttrack": 2,
-        "time": 264,
-        "year": 1995,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=94301&uid=2&player=api&name=FSOL%20-%20Kai.mp3",
-        "size": 10605694,
-        "mbid": "53eab8ac-6385-41e3-a881-cfa9b723080b",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=48935&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "The Future Sound of London",
-        "channels": null,
-        "comment": "",
-        "publisher": "Astralwerks",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-4.020000",
-        "replaygain_track_peak": "0.966000",
-        "genre": [
-            {
-                "name": "Electronic"
-            }
-        ]
-    },
-    {
-        "id": "76896",
-        "title": "Close Your Eyes",
-        "name": "Close Your Eyes",
-        "artist": {
-            "id": "4102",
-            "name": "Unwritten Law"
-        },
-        "album": {
-            "id": "14897",
-            "name": "Unwritten Law"
-        },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+            "genre": [
+                {
+                    "id": "381",
+                    "name": "Psychedelic Rock"
+                }
+            ],
+            "albumartist": {
+                "id": "11526",
+                "name": "Dungen"
             },
-            {
-                "id": "22",
-                "name": "Pop"
-            }
-        ],
-        "filename": "\/mnt\/music\/Unwritten Law\/(1998) Unwritten Law\/110 - Close Your Eyes.mp3",
-        "track": 10,
-        "playlisttrack": 3,
-        "time": 161,
-        "year": 2000,
-        "bitrate": 128000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=76896&uid=2&player=api&name=Unwritten%20Law%20-%20Close%20Your%20Eyes.mp3",
-        "size": 2583074,
-        "mbid": "5fa6ebfc-e2bb-4ff3-9ea3-d3c0a015a87f",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=14897&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": 1,
-        "rating": 1,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-9.950000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
+            "filename": "\/mnt\/music\/Dungen\/(2010) Skit i allt [MEX060]\/101 - Vara snabb.mp3",
+            "track": 1,
+            "playlisttrack": 1,
+            "time": 189,
+            "year": 2010,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=808187&uid=2&player=api&name=Dungen%20-%20Vara%20snabb.mp3",
+            "size": 7642552,
+            "mbid": "c3c60bf6-9db8-4f5b-875e-309f55421739",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=94581&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "ExactAudioCopy v1.0b2",
+            "publisher": "Mexican Summer",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-8.740000",
+            "replaygain_track_peak": "1.000000"
+        },
+        {
+            "id": "91347",
+            "title": "Wild",
+            "name": "Wild",
+            "artist": {
+                "id": "5743",
+                "name": "Icehouse"
             },
-            {
-                "name": "Pop"
-            }
-        ]
-    },
-    {
-        "id": "846095",
-        "title": "Houdini",
-        "name": "Houdini",
-        "artist": {
-            "id": "12995",
-            "name": "Half Past Dark"
+            "album": {
+                "id": "16217",
+                "name": "Full Circle"
+            },
+            "genre": [
+                {
+                    "id": "16",
+                    "name": "Alternative"
+                }
+            ],
+            "albumartist": {
+                "id": "5743",
+                "name": "Icehouse"
+            },
+            "filename": "\/mnt\/music\/Icehouse\/(1994) Full Circle\/108 - Wild.mp3",
+            "track": 8,
+            "playlisttrack": 2,
+            "time": 411,
+            "year": 1994,
+            "bitrate": 192000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91347&uid=2&player=api&name=Icehouse%20-%20Wild.mp3",
+            "size": 9989286,
+            "mbid": "ac3a2e5c-e05c-49a4-ad55-0b4a841ae5a4",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=16217&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": 2,
+            "composer": "Bob Kretschmer\/Iva Davies",
+            "channels": null,
+            "comment": "0000081B 000006EE 00002195",
+            "publisher": "Massive",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-8.300000",
+            "replaygain_track_peak": "1.000000"
         },
-        "album": {
-            "id": "66108",
-            "name": "Dimensions"
+        {
+            "id": "184216",
+            "title": "Love Left Town",
+            "name": "Love Left Town",
+            "artist": {
+                "id": "9156",
+                "name": "Darden Smith"
+            },
+            "album": {
+                "id": "78207",
+                "name": "Little Victories"
+            },
+            "genre": [
+                {
+                    "id": "6",
+                    "name": "Rock"
+                }
+            ],
+            "albumartist": {
+                "id": "9156",
+                "name": "Darden Smith"
+            },
+            "filename": "\/mnt\/music\/Darden Smith\/(1993) Little Victories\/104 - Love Left Town.mp3",
+            "track": 4,
+            "playlisttrack": 3,
+            "time": 270,
+            "year": 1993,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=184216&uid=2&player=api&name=Darden%20Smith%20-%20Love%20Left%20Town.mp3",
+            "size": 10931248,
+            "mbid": "0c6a8140-eb8c-4721-9453-f365da1369b6",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=78207&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-4.700000",
+            "replaygain_track_peak": "0.955000"
         },
-        "tag": [
-            {
-                "id": "51",
-                "name": "Gothic Metal"
-            }
-        ],
-        "filename": "\/mnt\/music\/Half Past Dark\/(2018) Dimensions\/09 - Houdini.mp3",
-        "track": 9,
-        "playlisttrack": 4,
-        "time": 86,
-        "year": 2018,
-        "bitrate": 320096,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=846095&uid=2&player=api&name=Half%20Past%20Dark%20-%20Houdini.mp3",
-        "size": 3605484,
-        "mbid": "",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=66108&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "~ N ~",
-        "publisher": "",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-6.560000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Gothic Metal"
-            }
-        ]
-    }
-]
+        {
+            "id": "167356",
+            "title": "Drop the Bomb",
+            "name": "Drop the Bomb",
+            "artist": {
+                "id": "3937",
+                "name": "Genetic"
+            },
+            "album": {
+                "id": "92405",
+                "name": "We Are... Genetic"
+            },
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "65",
+                    "name": "Dance"
+                }
+            ],
+            "albumartist": {
+                "id": "3937",
+                "name": "Genetic"
+            },
+            "filename": "\/mnt\/music\/Genetic\/(1998) We Are... Genetic [bflcd 30]\/106 - Drop the Bomb.mp3",
+            "track": 6,
+            "playlisttrack": 4,
+            "time": 328,
+            "year": 1998,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=167356&uid=2&player=api&name=Genetic%20-%20Drop%20the%20Bomb.mp3",
+            "size": 13126051,
+            "mbid": "7aea3faa-ffd6-4f86-a457-3832178a325a",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=92405&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "Dragonfly Records",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-6.170000",
+            "replaygain_track_peak": "1.000000"
+        }
+    ]
+}

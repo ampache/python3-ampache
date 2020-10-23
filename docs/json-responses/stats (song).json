@@ -1,119 +1,116 @@
-[
-    {
-        "id": "89603",
-        "title": "Run Over by a Truck",
-        "name": "Run Over by a Truck",
-        "artist": {
-            "id": "5385",
-            "name": "Weezer"
-        },
-        "album": {
-            "id": "16046",
-            "name": "Raditude"
-        },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+{
+    "song": [
+        {
+            "id": "783306",
+            "title": "How Many Tears",
+            "name": "How Many Tears",
+            "artist": {
+                "id": "10583",
+                "name": "Graveworm"
             },
-            {
-                "id": "33",
-                "name": "Alternative Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/Weezer\/(2009) Raditude [B0013511-72; B0013511-72]\/202 - Weezer - Run Over by a Truck.mp3",
-        "track": 2,
-        "playlisttrack": 1,
-        "time": 213,
-        "year": 2009,
-        "bitrate": 271154,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=89603&uid=2&player=api&name=Weezer%20-%20Run%20Over%20by%20a%20Truck.mp3",
-        "size": 7878367,
-        "mbid": "654b7f2c-144a-457e-9369-a7a512da5355",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=16046&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "album Latn Interscope Record",
-        "publisher": "DGC Records; Interscope Records",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-9.690000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
+            "album": {
+                "id": "88376",
+                "name": "Underneath the Crescent Moon"
             },
-            {
-                "name": "Alternative Rock"
-            }
-        ]
-    },
-    {
-        "id": "781760",
-        "title": "The Forest Whispers My Name",
-        "name": "The Forest Whispers My Name",
-        "artist": {
-            "id": "10542",
-            "name": "Willow Wisp"
+            "genre": [
+                {
+                    "id": "51",
+                    "name": "Gothic Metal"
+                },
+                {
+                    "id": "88",
+                    "name": "Black Metal"
+                }
+            ],
+            "albumartist": {
+                "id": "10583",
+                "name": "Graveworm"
+            },
+            "filename": "\/mnt\/music\/Graveworm\/(1998) Underneath the Crescent Moon\/104 - How Many Tears.mp3",
+            "track": 4,
+            "playlisttrack": 1,
+            "time": 365,
+            "year": 1998,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=783306&uid=2&player=api&name=Graveworm%20-%20How%20Many%20Tears.mp3",
+            "size": 14658875,
+            "mbid": "1c8200cb-cbcf-4000-90a1-00308a1f7a8a",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=88376&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "Michael Weikath",
+            "channels": null,
+            "comment": "",
+            "publisher": "Serenades Records",
+            "language": "eng",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-11.700000",
+            "replaygain_track_peak": "1.000000"
         },
-        "album": {
-            "id": "57687",
-            "name": "Covered in Filth: A Tribute to Cradle of Filth"
-        },
-        "tag": [
-            {
-                "id": "20",
-                "name": "Metal"
-            }
-        ],
-        "filename": "\/mnt\/music\/Various Artists\/(2003) Covered in Filth: A Tribute to Cradle of Filth [CDM ZEB 29]\/112 - Willow Wisp - The Forest Whispers My Name.mp3",
-        "track": 12,
-        "playlisttrack": 2,
-        "time": 266,
-        "year": 2003,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=781760&uid=2&player=api&name=Willow%20Wisp%20-%20The%20Forest%20Whispers%20My%20Name.mp3",
-        "size": 10798479,
-        "mbid": "9e87a893-bb45-4cc4-9e14-da6a4d2027a1",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=57687&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "Robin Eaglestone",
-        "channels": null,
-        "comment": "",
-        "publisher": "Zebra",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-11.160000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Metal"
-            }
-        ]
-    }
-]
+        {
+            "id": "71121",
+            "title": "Heretics",
+            "name": "Heretics",
+            "artist": {
+                "id": "3863",
+                "name": "Akeum Son"
+            },
+            "album": {
+                "id": "78706",
+                "name": "Expiration"
+            },
+            "genre": [
+                {
+                    "id": "9",
+                    "name": "Industrial"
+                }
+            ],
+            "albumartist": {
+                "id": "3863",
+                "name": "Akeum Son"
+            },
+            "filename": "\/mnt\/music\/Akeum Son\/(2007) Expiration [ekleipsi21_583]\/104 - Heretics.mp3",
+            "track": 4,
+            "playlisttrack": 2,
+            "time": 298,
+            "year": 2007,
+            "bitrate": 192000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=71121&uid=2&player=api&name=Akeum%20Son%20-%20Heretics.mp3",
+            "size": 7163351,
+            "mbid": "ac89ff65-8b2a-48d1-8692-5a1728e3da75",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=78706&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "000005D9 0000058F 000016DF 00001112 0003A997 0003A997 00007468 00007FE3 00033467 00033450",
+            "publisher": "Ekleipsi",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-7.400000",
+            "replaygain_track_peak": "1.000000"
+        }
+    ]
+}

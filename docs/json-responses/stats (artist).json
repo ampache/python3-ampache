@@ -1,47 +1,73 @@
-[
-    {
-        "id": "2298",
-        "name": "The Cops",
-        "albums": 3,
-        "songs": 32,
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
-            },
-            {
-                "id": "16",
-                "name": "Alternative"
-            },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=2298&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "mbid": "4035f854-00f1-43c7-b90b-41b0b541f8ee",
-        "summary": "There are at least two artists with this name.\n\n1. The Cops are a post-punk band from Seattle, Washington that formed in late 2003 with Michael Jaworski on lead vocals and guitar, John Randolph on guitar and David Weeks on drums. Seattle label Mt. Fuji Records released their debut EP Why Kids Go Wrong in March of 2005, and followed up to release the critically acclaimed full-length Get Good or Stay Bad in November of 2005. Former Supersuckers and Hater bassist ",
-        "yearformed": "0",
-        "placeformed": ""
-    },
-    {
-        "id": "10297",
-        "name": "Sinneth soul",
-        "albums": 5,
-        "songs": 34,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=10297&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "6746a0f3-f20c-44ef-8f74-b52727199887",
-        "summary": " ",
-        "yearformed": "0",
-        "placeformed": ""
-    }
-]
+{
+    "artist": [
+        {
+            "id": "10171",
+            "name": "SilverHawk",
+            "albums": "1",
+            "songs": "17",
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=10171&object_type=artist&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "6777f91f-70aa-496b-9000-d2b60fabb062",
+            "summary": "This is a dual artist listing.\n\n1) Silverhawk was a Jamaican sound system owned by the esteemed \"Steely\" Johnson of the legendary dancehall production duo Steely & Clevie.\nThe sound was most active from 1987-1994, and along with Stone Love, led the transition from live artists to recorded dubplates being the dominant medium for live reggae sound system performances.\nShortly before his death in late 2009, Steely had been working behind the scenes to bring the sound back on the road ",
+            "yearformed": "0",
+            "placeformed": ""
+        },
+        {
+            "id": "9119",
+            "name": "The Maine",
+            "albums": "13",
+            "songs": "106",
+            "genre": [
+                {
+                    "id": "3",
+                    "name": "Punk"
+                },
+                {
+                    "id": "6",
+                    "name": "Rock"
+                },
+                {
+                    "id": "16",
+                    "name": "Alternative"
+                },
+                {
+                    "id": "33",
+                    "name": "Alternative Rock"
+                },
+                {
+                    "id": "35",
+                    "name": "Indie"
+                },
+                {
+                    "id": "47",
+                    "name": "Pop Rock"
+                },
+                {
+                    "id": "48",
+                    "name": "New Wave"
+                },
+                {
+                    "id": "74",
+                    "name": "Classic Rock"
+                },
+                {
+                    "id": "898",
+                    "name": "Post-Hardcore"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=9119&object_type=artist&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "7bd47e67-ecd5-49d5-837f-c692df38da4e",
+            "summary": "The Maine is an American rock band from Tempe, Arizona, USA that formed on January 21, 2007. The band's first release, the EP Stay Up, Get Down was released in late 2007, followed by a five song EP entitled The Way We Talk released on December 11, 2007. The band's first full-length album, Can't Stop, Won't Stop was released July 8, 2008. Their holiday release ...And a Happy New Year was dropped on December 2008. The Maine released its second full-length album, Black & White, on July 13, 2010 selling 22,634 copies in its first week. ",
+            "yearformed": "0",
+            "placeformed": ""
+        }
+    ]
+}

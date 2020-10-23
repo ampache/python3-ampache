@@ -1,133 +1,103 @@
 {
-    "timeline": [
+    "activity": [
         {
-            "id": "167388",
-            "data": "1595916340",
+            "id": "170900",
+            "data": "1603410280",
             "object_type": "song",
-            "object_id": "77371",
-            "action": "play",
+            "object_id": "164527",
+            "action": "userflag",
             "user": [
-                {
-                    "id": "2",
-                    "username": "user"
-                }
+                null
             ]
         },
         {
-            "id": "167385",
-            "data": "1595916253",
-            "object_type": "song",
-            "object_id": "44648",
-            "action": "play",
+            "id": "170899",
+            "data": "1603410206",
+            "object_type": "playlist",
+            "object_id": "2069",
+            "action": "userflag",
             "user": [
-                {
-                    "id": "2",
-                    "username": "user"
-                }
+                null
             ]
         },
         {
-            "id": "167372",
-            "data": "1595914553",
-            "object_type": "song",
-            "object_id": "94770",
-            "action": "play",
+            "id": "170898",
+            "data": "1603410159",
+            "object_type": "user",
+            "object_id": "4",
+            "action": "follow",
             "user": [
-                {
-                    "id": "2",
-                    "username": "user"
-                }
+                null
             ]
         },
         {
-            "id": "167371",
-            "data": "1595914371",
+            "id": "170897",
+            "data": "1603410139",
             "object_type": "song",
-            "object_id": "67568",
-            "action": "play",
+            "object_id": "164527",
+            "action": "userflag",
             "user": [
-                {
-                    "id": "2",
-                    "username": "user"
-                }
+                null
             ]
         },
         {
-            "id": "167370",
-            "data": "1595914100",
-            "object_type": "song",
-            "object_id": "19851",
-            "action": "play",
+            "id": "170896",
+            "data": "1603410063",
+            "object_type": "playlist",
+            "object_id": "2069",
+            "action": "userflag",
             "user": [
-                {
-                    "id": "2",
-                    "username": "user"
-                }
+                null
             ]
         },
         {
-            "id": "167369",
-            "data": "1595913831",
+            "id": "170895",
+            "data": "1603410002",
             "object_type": "song",
-            "object_id": "864164",
+            "object_id": "919678",
             "action": "play",
             "user": [
-                {
-                    "id": "2",
-                    "username": "user"
-                }
+                null
             ]
         },
         {
-            "id": "167368",
-            "data": "1595913486",
+            "id": "170894",
+            "data": "1603409610",
             "object_type": "song",
-            "object_id": "13373",
+            "object_id": "105299",
             "action": "play",
             "user": [
-                {
-                    "id": "2",
-                    "username": "user"
-                }
+                null
             ]
         },
         {
-            "id": "167367",
-            "data": "1595913244",
+            "id": "170893",
+            "data": "1603407866",
             "object_type": "song",
-            "object_id": "68840",
+            "object_id": "930145",
             "action": "play",
             "user": [
-                {
-                    "id": "2",
-                    "username": "user"
-                }
+                null
             ]
         },
         {
-            "id": "167366",
-            "data": "1595913013",
+            "id": "170865",
+            "data": "1603339604",
             "object_type": "song",
-            "object_id": "107346",
+            "object_id": "883362",
             "action": "play",
             "user": [
-                {
-                    "id": "2",
-                    "username": "user"
-                }
+                null
             ]
         },
         {
-            "id": "167365",
-            "data": "1595912775",
+            "id": "170864",
+            "data": "1603338886",
             "object_type": "song",
-            "object_id": "787588",
+            "object_id": "906436",
             "action": "play",
             "user": [
-                {
-                    "id": "2",
-                    "username": "user"
-                }
+                null
             ]
         }
     ]

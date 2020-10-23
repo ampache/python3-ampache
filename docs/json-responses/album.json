@@ -1,29 +1,27 @@
-[
-    {
-        "id": "54130",
-        "name": "\"...Famous Last Words...\"",
-        "artist": {
-            "id": "6778",
-            "name": "Supertramp"
-        },
-        "year": 2002,
-        "tracks": 9,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+{
+    "album": [
+        {
+            "id": "81350",
+            "name": "-2-",
+            "artist": {
+                "id": "292",
+                "name": "Vinterriket"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=54130&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "dc0bdca9-ae06-426b-9a43-f23334d0e939"
-    }
-]
+            "year": 2005,
+            "tracks": "8",
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "46",
+                    "name": "Ambient"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=81350&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "8844cfdc-4957-467b-ad70-d46e640d473e"
+        }
+    ]
+}

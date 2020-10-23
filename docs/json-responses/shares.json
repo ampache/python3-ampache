@@ -1,36 +1,21 @@
-[
-    {
-        "id": "105",
-        "name": "Exitus ...Bis Ganz Europa F\u00e4llt",
-        "owner": "user",
-        "allow_stream": "1",
-        "allow_download": "1",
-        "creation_date": "2020\/04\/28 11:13AM",
-        "lastvisit_date": "2020\/04\/28 11:13AM",
-        "object_type": "album",
-        "object_id": "73208",
-        "expire_days": "7",
-        "max_counter": "0",
-        "counter": "1",
-        "secret": "QDe4QnG6",
-        "public_url": "https:\/\/music.com.au\/share.php?id=105&secret=QDe4QnG6",
-        "description": "Exitus ...Bis Ganz Europa F\u00e4llt (Sleipnir & Nemesis)"
-    },
-    {
-        "id": "106",
-        "name": "Greatest Hits",
-        "owner": "user",
-        "allow_stream": "1",
-        "allow_download": "1",
-        "creation_date": "2020\/04\/28 11:14AM",
-        "lastvisit_date": "",
-        "object_type": "album",
-        "object_id": "16604",
-        "expire_days": "7",
-        "max_counter": "0",
-        "counter": "0",
-        "secret": "84NuNX50",
-        "public_url": "https:\/\/music.com.au\/share.php?id=106&secret=84NuNX50",
-        "description": "Greatest Hits (The Cure)"
-    }
-]
+{
+    "share": [
+        {
+            "id": "129",
+            "name": "hudson",
+            "owner": "user",
+            "allow_stream": "1",
+            "allow_download": "1",
+            "creation_date": "2020\/08\/24 09:06am",
+            "lastvisit_date": "2020\/08\/24 09:06am",
+            "object_type": "playlist",
+            "object_id": "2069",
+            "expire_days": "0",
+            "max_counter": "0",
+            "counter": "2",
+            "secret": "ur9N4IUl",
+            "public_url": "https:\/\/music.com.au\/share.php?id=129&secret=ur9N4IUl",
+            "description": "Playlist - hudson"
+        }
+    ]
+}

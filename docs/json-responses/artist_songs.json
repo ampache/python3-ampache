@@ -1,250 +1,236 @@
-[
-    {
-        "id": "95577",
-        "title": "Out of the Fridge \/ Into the Fire",
-        "name": "Out of the Fridge \/ Into the Fire",
-        "artist": {
-            "id": "2298",
-            "name": "The Cops"
-        },
-        "album": {
-            "id": "52480",
-            "name": "Drop It in Their Laps"
-        },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+{
+    "song": [
+        {
+            "id": "766995",
+            "title": "Palm Grease (Summer Opening)",
+            "name": "Palm Grease (Summer Opening)",
+            "artist": {
+                "id": "10171",
+                "name": "SilverHawk"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/The Cops\/(2007) Drop It in Their Laps [IR5225CD]\/101 - Out of the Fridge _ Into the Fire.mp3",
-        "track": 1,
-        "playlisttrack": 1,
-        "time": 261,
-        "year": 2007,
-        "bitrate": 320031,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=95577&uid=2&player=api&name=The%20Cops%20-%20Out%20of%20the%20Fridge%20-%20Into%20the%20Fire.mp3",
-        "size": 10454247,
-        "mbid": "b3d81e9c-0a7a-48dc-9888-f48f2325dfe5",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Inertia Recordings",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-10.870000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
+            "album": {
+                "id": "97131",
+                "name": "Palm Grease"
             },
-            {
-                "name": "Pop Rock"
-            }
-        ]
-    },
-    {
-        "id": "95571",
-        "title": "Cop Pop",
-        "name": "Cop Pop",
-        "artist": {
-            "id": "2298",
-            "name": "The Cops"
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "273",
+                    "name": "Synthwave"
+                }
+            ],
+            "albumartist": {
+                "id": "10171",
+                "name": "SilverHawk"
+            },
+            "filename": "\/mnt\/music\/SilverHawk\/(2017) Palm Grease\/101 - Palm Grease (Summer Opening).mp3",
+            "track": 1,
+            "playlisttrack": 1,
+            "time": 91,
+            "year": 2017,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=766995&uid=2&player=api&name=SilverHawk%20-%20Palm%20Grease%20-Summer%20Opening-.mp3",
+            "size": 4011032,
+            "mbid": "90f10e3e-5be9-4f1b-96c5-0b014719d80e",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=97131&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "Visit http:\/\/silverhawk.bandcamp.com",
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-8.800000",
+            "replaygain_track_peak": "1.000000"
         },
-        "album": {
-            "id": "52480",
-            "name": "Drop It in Their Laps"
+        {
+            "id": "766999",
+            "title": "Heartbeat",
+            "name": "Heartbeat",
+            "artist": {
+                "id": "10171",
+                "name": "SilverHawk"
+            },
+            "album": {
+                "id": "97131",
+                "name": "Palm Grease"
+            },
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "273",
+                    "name": "Synthwave"
+                }
+            ],
+            "albumartist": {
+                "id": "10171",
+                "name": "SilverHawk"
+            },
+            "filename": "\/mnt\/music\/SilverHawk\/(2017) Palm Grease\/102 - Heartbeat.mp3",
+            "track": 2,
+            "playlisttrack": 2,
+            "time": 291,
+            "year": 2017,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=766999&uid=2&player=api&name=SilverHawk%20-%20Heartbeat.mp3",
+            "size": 12003640,
+            "mbid": "fec1c1ff-5aca-4bae-8242-a525cdadac3a",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=97131&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "Visit http:\/\/silverhawk.bandcamp.com",
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-10.020000",
+            "replaygain_track_peak": "1.000000"
         },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+        {
+            "id": "767003",
+            "title": "The Last Street Of Frisco",
+            "name": "The Last Street Of Frisco",
+            "artist": {
+                "id": "10171",
+                "name": "SilverHawk"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/The Cops\/(2007) Drop It in Their Laps [IR5225CD]\/102 - Cop Pop.mp3",
-        "track": 2,
-        "playlisttrack": 2,
-        "time": 168,
-        "year": 2007,
-        "bitrate": 320049,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=95571&uid=2&player=api&name=The%20Cops%20-%20Cop%20Pop.mp3",
-        "size": 6767074,
-        "mbid": "85932e71-c812-46ec-8765-1beb98665888",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Inertia Recordings",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-10.390000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
+            "album": {
+                "id": "97131",
+                "name": "Palm Grease"
             },
-            {
-                "name": "Pop Rock"
-            }
-        ]
-    },
-    {
-        "id": "95575",
-        "title": "Call Me Anytime",
-        "name": "Call Me Anytime",
-        "artist": {
-            "id": "2298",
-            "name": "The Cops"
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "273",
+                    "name": "Synthwave"
+                }
+            ],
+            "albumartist": {
+                "id": "10171",
+                "name": "SilverHawk"
+            },
+            "filename": "\/mnt\/music\/SilverHawk\/(2017) Palm Grease\/103 - The Last Street Of Frisco.mp3",
+            "track": 3,
+            "playlisttrack": 3,
+            "time": 301,
+            "year": 2017,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=767003&uid=2&player=api&name=SilverHawk%20-%20The%20Last%20Street%20Of%20Frisco.mp3",
+            "size": 12405940,
+            "mbid": "6e48f3cf-edc6-4651-b3e5-19646292fc38",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=97131&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "Visit http:\/\/silverhawk.bandcamp.com",
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-10.250000",
+            "replaygain_track_peak": "1.000000"
         },
-        "album": {
-            "id": "52480",
-            "name": "Drop It in Their Laps"
-        },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+        {
+            "id": "766996",
+            "title": "HeartBreak",
+            "name": "HeartBreak",
+            "artist": {
+                "id": "10171",
+                "name": "SilverHawk"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/The Cops\/(2007) Drop It in Their Laps [IR5225CD]\/103 - Call Me Anytime.mp3",
-        "track": 3,
-        "playlisttrack": 3,
-        "time": 229,
-        "year": 2007,
-        "bitrate": 320036,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=95575&uid=2&player=api&name=The%20Cops%20-%20Call%20Me%20Anytime.mp3",
-        "size": 9178427,
-        "mbid": "eba800a2-cc6a-4f35-926b-553ae6a7302b",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Inertia Recordings",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-10.030000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
+            "album": {
+                "id": "97131",
+                "name": "Palm Grease"
             },
-            {
-                "name": "Pop Rock"
-            }
-        ]
-    },
-    {
-        "id": "95582",
-        "title": "The Message",
-        "name": "The Message",
-        "artist": {
-            "id": "2298",
-            "name": "The Cops"
-        },
-        "album": {
-            "id": "52480",
-            "name": "Drop It in Their Laps"
-        },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "273",
+                    "name": "Synthwave"
+                }
+            ],
+            "albumartist": {
+                "id": "10171",
+                "name": "SilverHawk"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/The Cops\/(2007) Drop It in Their Laps [IR5225CD]\/104 - The Message.mp3",
-        "track": 4,
-        "playlisttrack": 4,
-        "time": 253,
-        "year": 2007,
-        "bitrate": 320032,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=95582&uid=2&player=api&name=The%20Cops%20-%20The%20Message.mp3",
-        "size": 10133464,
-        "mbid": "588a5193-cc90-4392-ace2-a16db728d3f7",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Inertia Recordings",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-10.500000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
-            },
-            {
-                "name": "Pop Rock"
-            }
-        ]
-    }
-]
+            "filename": "\/mnt\/music\/SilverHawk\/(2017) Palm Grease\/104 - HeartBreak.mp3",
+            "track": 4,
+            "playlisttrack": 4,
+            "time": 384,
+            "year": 2017,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=766996&uid=2&player=api&name=SilverHawk%20-%20HeartBreak.mp3",
+            "size": 15708849,
+            "mbid": "cd8866f3-bcfc-4fcd-bba0-1c34baa26804",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=97131&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "Visit http:\/\/silverhawk.bandcamp.com",
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-10.400000",
+            "replaygain_track_peak": "1.000000"
+        }
+    ]
+}

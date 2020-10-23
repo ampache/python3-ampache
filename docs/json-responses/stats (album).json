@@ -1,59 +1,40 @@
-[
-    {
-        "id": "49748",
-        "name": "Chapter One",
-        "artist": {
-            "id": "932",
-            "name": "Black Heaven"
+{
+    "album": [
+        {
+            "id": "96351",
+            "name": "Covers the Classics",
+            "artist": {
+                "id": "8980",
+                "name": "Creedence Clearwater Revival"
+            },
+            "year": 2009,
+            "tracks": "12",
+            "disk": 1,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=96351&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "d823ef2f-0d91-4c65-a0ee-4377847d720d"
         },
-        "year": 2001,
-        "tracks": 12,
-        "disk": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=49748&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "c62a2624-c2ad-46fa-8bd7-b8b7bf9a015b"
-    },
-    {
-        "id": "72877",
-        "name": "Apple Venus, Volume 1",
-        "artist": {
-            "id": "5710",
-            "name": "XTC"
-        },
-        "year": 1999,
-        "tracks": 11,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+        {
+            "id": "89206",
+            "name": "'74 Jailbreak",
+            "artist": {
+                "id": "869",
+                "name": "AC\/DC"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            },
-            {
-                "id": "122",
-                "name": "Art Rock"
-            },
-            {
-                "id": "1875",
-                "name": "Chamber Pop"
-            },
-            {
-                "id": "1897",
-                "name": "Art Pop"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=72877&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "ea9190fe-d7d9-4b82-a200-5e9874b61090"
-    }
-]
+            "year": 2003,
+            "tracks": "5",
+            "disk": 1,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=89206&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "a2b73eb8-fe55-3bb6-a61e-b89f36d4b045"
+        }
+    ]
+}

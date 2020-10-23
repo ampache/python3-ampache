@@ -1,19 +1,21 @@
-[
-    {
-        "id": "108",
-        "name": "Greatest Hits",
-        "owner": "user",
-        "allow_stream": "1",
-        "allow_download": "1",
-        "creation_date": "2020\/04\/30 02:25PM",
-        "lastvisit_date": "",
-        "object_type": "album",
-        "object_id": "16604",
-        "expire_days": "7",
-        "max_counter": "0",
-        "counter": "0",
-        "secret": "GSZlncWC",
-        "public_url": "https:\/\/music.com.au\/share.php?id=108&secret=GSZlncWC",
-        "description": "Greatest Hits (The Cure)"
-    }
-]
+{
+    "share": [
+        {
+            "id": "181",
+            "name": "Wanderlust",
+            "owner": "user",
+            "allow_stream": "1",
+            "allow_download": "1",
+            "creation_date": "2020\/10\/23 09:44am",
+            "lastvisit_date": "",
+            "object_type": "song",
+            "object_id": "955",
+            "expire_days": "7",
+            "max_counter": "0",
+            "counter": "0",
+            "secret": "7oVhBhN7",
+            "public_url": "https:\/\/music.com.au\/share.php?id=181&secret=7oVhBhN7",
+            "description": "Wanderlust"
+        }
+    ]
+}

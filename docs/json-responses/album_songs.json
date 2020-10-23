@@ -1,250 +1,220 @@
-[
-    {
-        "id": "130769",
-        "title": "Crazy",
-        "name": "Crazy",
-        "artist": {
-            "id": "6778",
-            "name": "Supertramp"
-        },
-        "album": {
-            "id": "54130",
-            "name": "\"...Famous Last Words...\""
-        },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+{
+    "song": [
+        {
+            "id": "117828",
+            "title": "Am brennenden n\u00f6rdlichen Firmament",
+            "name": "Am brennenden n\u00f6rdlichen Firmament",
+            "artist": {
+                "id": "292",
+                "name": "Vinterriket"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/Supertramp\/(1982) \"...Famous Last Words...\" [493 353-2]\/101 - Crazy.mp3",
-        "track": 1,
-        "playlisttrack": 1,
-        "time": 284,
-        "year": 2002,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130769&uid=2&player=api&name=Supertramp%20-%20Crazy.mp3",
-        "size": 11401970,
-        "mbid": "1f54f7f0-f63b-47d0-abcc-e06db26ba9f0",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=54130&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "Roger Hodgson",
-        "channels": null,
-        "comment": "",
-        "publisher": "A&M Records",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-7.660000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
+            "album": {
+                "id": "81350",
+                "name": "-2-"
             },
-            {
-                "name": "Pop Rock"
-            }
-        ]
-    },
-    {
-        "id": "130773",
-        "title": "Put on Your Old Brown Shoes",
-        "name": "Put on Your Old Brown Shoes",
-        "artist": {
-            "id": "6778",
-            "name": "Supertramp"
+            "genre": [
+                {
+                    "id": "46",
+                    "name": "Ambient"
+                }
+            ],
+            "albumartist": {
+                "id": "292",
+                "name": "Vinterriket"
+            },
+            "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/101 - Vinterriket - Am brennenden n\u00f6rdlichen Firmament.mp3",
+            "track": 1,
+            "playlisttrack": 1,
+            "time": 416,
+            "year": 2005,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=117828&uid=2&player=api&name=Vinterriket%20-%20Am%20brennenden%20n-rdlichen%20Firmament.mp3",
+            "size": 16685174,
+            "mbid": "bbd5cb67-45da-4aeb-a0ce-cb609e494870",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=81350&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "Drama Company",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-5.130000",
+            "replaygain_track_peak": "1.000000"
         },
-        "album": {
-            "id": "54130",
-            "name": "\"...Famous Last Words...\""
+        {
+            "id": "117835",
+            "title": "Stumme Winternacht",
+            "name": "Stumme Winternacht",
+            "artist": {
+                "id": "292",
+                "name": "Vinterriket"
+            },
+            "album": {
+                "id": "81350",
+                "name": "-2-"
+            },
+            "genre": [
+                {
+                    "id": "46",
+                    "name": "Ambient"
+                }
+            ],
+            "albumartist": {
+                "id": "292",
+                "name": "Vinterriket"
+            },
+            "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/102 - Vinterriket - Stumme Winternacht.mp3",
+            "track": 2,
+            "playlisttrack": 2,
+            "time": 390,
+            "year": 2005,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=117835&uid=2&player=api&name=Vinterriket%20-%20Stumme%20Winternacht.mp3",
+            "size": 15614137,
+            "mbid": "4cfbc903-9c13-47b1-b307-a382052d54f0",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=81350&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "Drama Company",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-2.980000",
+            "replaygain_track_peak": "1.000000"
         },
-        "tag": [
-            {
-                "id": "47",
-                "name": "Pop Rock"
+        {
+            "id": "117832",
+            "title": "Monde ewiger Verdammnis",
+            "name": "Monde ewiger Verdammnis",
+            "artist": {
+                "id": "292",
+                "name": "Vinterriket"
             },
-            {
-                "id": "6",
-                "name": "Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/Supertramp\/(1982) \"...Famous Last Words...\" [493 353-2]\/102 - Put on Your Old Brown Shoes.mp3",
-        "track": 2,
-        "playlisttrack": 2,
-        "time": 259,
-        "year": 2002,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130773&uid=2&player=api&name=Supertramp%20-%20Put%20on%20Your%20Old%20Brown%20Shoes.mp3",
-        "size": 10400957,
-        "mbid": "d837f15b-e74d-4463-8bdb-25c36eb9c7a5",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=54130&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "Rick Davies",
-        "channels": null,
-        "comment": "",
-        "publisher": "A&M Records",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-5.630000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Pop Rock"
+            "album": {
+                "id": "81350",
+                "name": "-2-"
             },
-            {
-                "name": "Rock"
-            }
-        ]
-    },
-    {
-        "id": "130770",
-        "title": "It's Raining Again",
-        "name": "It's Raining Again",
-        "artist": {
-            "id": "6778",
-            "name": "Supertramp"
+            "genre": [
+                {
+                    "id": "46",
+                    "name": "Ambient"
+                }
+            ],
+            "albumartist": {
+                "id": "292",
+                "name": "Vinterriket"
+            },
+            "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/103 - Vinterriket - Monde ewiger Verdammnis.mp3",
+            "track": 3,
+            "playlisttrack": 3,
+            "time": 422,
+            "year": 2005,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=117832&uid=2&player=api&name=Vinterriket%20-%20Monde%20ewiger%20Verdammnis.mp3",
+            "size": 16910861,
+            "mbid": "e8a6b633-5d43-430b-9c45-7c135d7490ac",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=81350&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "Drama Company",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-1.990000",
+            "replaygain_track_peak": "1.000000"
         },
-        "album": {
-            "id": "54130",
-            "name": "\"...Famous Last Words...\""
-        },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+        {
+            "id": "117829",
+            "title": "Vom Echo der Melancholie",
+            "name": "Vom Echo der Melancholie",
+            "artist": {
+                "id": "292",
+                "name": "Vinterriket"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/Supertramp\/(1982) \"...Famous Last Words...\" [493 353-2]\/103 - It's Raining Again.mp3",
-        "track": 3,
-        "playlisttrack": 3,
-        "time": 264,
-        "year": 2002,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130770&uid=2&player=api&name=Supertramp%20-%20It-s%20Raining%20Again.mp3",
-        "size": 10583815,
-        "mbid": "45b93719-bc48-4ee9-bb7a-b5f8b8a2e5f5",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=54130&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "Roger Hodgson",
-        "channels": null,
-        "comment": "",
-        "publisher": "A&M Records",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-7.840000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
+            "album": {
+                "id": "81350",
+                "name": "-2-"
             },
-            {
-                "name": "Pop Rock"
-            }
-        ]
-    },
-    {
-        "id": "130776",
-        "title": "Bonnie",
-        "name": "Bonnie",
-        "artist": {
-            "id": "6778",
-            "name": "Supertramp"
-        },
-        "album": {
-            "id": "54130",
-            "name": "\"...Famous Last Words...\""
-        },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+            "genre": [
+                {
+                    "id": "46",
+                    "name": "Ambient"
+                }
+            ],
+            "albumartist": {
+                "id": "292",
+                "name": "Vinterriket"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/Supertramp\/(1982) \"...Famous Last Words...\" [493 353-2]\/104 - Bonnie.mp3",
-        "track": 4,
-        "playlisttrack": 4,
-        "time": 335,
-        "year": 2002,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130776&uid=2&player=api&name=Supertramp%20-%20Bonnie.mp3",
-        "size": 13441610,
-        "mbid": "849a2238-5854-4f02-8b6b-4800281775be",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=54130&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "Rick Davies",
-        "channels": null,
-        "comment": "",
-        "publisher": "A&M Records",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-6.760000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
-            },
-            {
-                "name": "Pop Rock"
-            }
-        ]
-    }
-]
+            "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/104 - Vinterriket - Vom Echo der Melancholie.mp3",
+            "track": 4,
+            "playlisttrack": 4,
+            "time": 411,
+            "year": 2005,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=117829&uid=2&player=api&name=Vinterriket%20-%20Vom%20Echo%20der%20Melancholie.mp3",
+            "size": 16464690,
+            "mbid": "2d81225a-20fb-43c3-854b-dbfdddeb3a39",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=81350&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "Drama Company",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "2.410000",
+            "replaygain_track_peak": "1.000000"
+        }
+    ]
+}

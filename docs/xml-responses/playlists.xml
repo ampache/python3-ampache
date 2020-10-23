@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-<total_count>4</total_count>
+<total_count>39</total_count>
 <playlist id="2002">
 	<name><![CDATA[dewaardradio]]></name>
 	<owner><![CDATA[System]]></owner>
-	<items>12694</items>
+	<items>15412</items>
+	<type>private</type>
+</playlist>
+<playlist id="2170">
+	<name><![CDATA[documentation]]></name>
+	<owner><![CDATA[user]]></owner>
+	<items>1</items>
+	<type>public</type>
+</playlist>
+<playlist id="2113">
+	<name><![CDATA[follow up artists]]></name>
+	<owner><![CDATA[user]]></owner>
+	<items>10</items>
 	<type>private</type>
 </playlist>
 <playlist id="2069">
-	<name><![CDATA[Hudson]]></name>
+	<name><![CDATA[hudson]]></name>
 	<owner><![CDATA[user]]></owner>
-	<items>23</items>
+	<items>27</items>
 	<type>public</type>
-</playlist>
-<playlist id="1994">
-	<name><![CDATA[nyssa mixed]]></name>
-	<owner><![CDATA[nyssa]]></owner>
-	<items>3112</items>
-	<type>private</type>
-</playlist>
-<playlist id="19">
-	<name><![CDATA[nyssaRadio]]></name>
-	<owner><![CDATA[nyssa]]></owner>
-	<items>4456</items>
-	<type>private</type>
 </playlist>
 </root>

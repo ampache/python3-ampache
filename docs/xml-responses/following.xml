@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-<users>
 <user id="7">
 	<username><![CDATA[tom]]></username>
 </user>
@@ -19,11 +18,10 @@
 <user id="22">
 	<username><![CDATA[jake]]></username>
 </user>
+<user id="8">
+	<username><![CDATA[demo]]></username>
+</user>
 <user id="4">
 	<username><![CDATA[generic]]></username>
 </user>
-<user id="8">
-	<username><![CDATA[admin]]></username>
-</user>
-</users>
 </root>

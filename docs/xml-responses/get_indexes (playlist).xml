@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
+<total_count>39</total_count>
 <playlist id="2002">
 	<name><![CDATA[dewaardradio]]></name>
-	<items><![CDATA[10]]></items>
+	<items><![CDATA[15412]]></items>
 	<owner><![CDATA[System]]></owner>
 	<type><![CDATA[private]]></type>
-		<playlisttrack id="84518">1</playlisttrack>
-		<playlisttrack id="170549">2</playlisttrack>
-		<playlisttrack id="170575">3</playlisttrack>
-		<playlisttrack id="170625">4</playlisttrack>
-		<playlisttrack id="170682">5</playlisttrack>
-		<playlisttrack id="170723">6</playlisttrack>
-		<playlisttrack id="867324">7</playlisttrack>
-		<playlisttrack id="867325">8</playlisttrack>
-		<playlisttrack id="867326">9</playlisttrack>
-		<playlisttrack id="867327">10</playlisttrack>
+</playlist>
+<playlist id="2170">
+	<name><![CDATA[documentation]]></name>
+	<items><![CDATA[1]]></items>
+	<owner><![CDATA[user]]></owner>
+	<type><![CDATA[public]]></type>
+</playlist>
+<playlist id="2113">
+	<name><![CDATA[follow up artists]]></name>
+	<items><![CDATA[10]]></items>
+	<owner><![CDATA[user]]></owner>
+	<type><![CDATA[private]]></type>
+</playlist>
+<playlist id="2069">
+	<name><![CDATA[hudson]]></name>
+	<items><![CDATA[27]]></items>
+	<owner><![CDATA[user]]></owner>
+	<type><![CDATA[public]]></type>
 </playlist>
 </root>

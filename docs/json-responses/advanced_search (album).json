@@ -1,100 +1,118 @@
-[
-    {
-        "id": "57887",
-        "name": "(It (Is) It) Critical Band",
-        "artist": {
-            "id": "9205",
-            "name": "90 Day Men \/ GoGoGoAirheart"
-        },
-        "year": 2000,
-        "tracks": 8,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "674",
-                "name": "Math Rock"
+{
+    "album": [
+        {
+            "id": "73836",
+            "name": "... De Los Valles y Las Monta\u00f1as",
+            "artist": {
+                "id": "16949",
+                "name": "Bosques de mi Mente"
             },
-            {
-                "id": "1415",
-                "name": "Post Rock"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=57887&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "d6fc36cc-9351-4b53-b7db-7f5b30804800"
-    },
-    {
-        "id": "43867",
-        "name": "(It's Not Me) Talking",
-        "artist": {
-            "id": "1229",
-            "name": "Flock of Seagulls"
+            "year": 2016,
+            "tracks": "10",
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "46",
+                    "name": "Ambient"
+                },
+                {
+                    "id": "150",
+                    "name": "Classical"
+                },
+                {
+                    "id": "1263",
+                    "name": "Contemporary"
+                },
+                {
+                    "id": "1584",
+                    "name": "modern"
+                },
+                {
+                    "id": "1612",
+                    "name": "Neo-Classical"
+                },
+                {
+                    "id": "3179",
+                    "name": "Post-Modern"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=73836&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "3e775784-6e32-4433-9023-8711cff98df3"
         },
-        "year": 1983,
-        "tracks": 4,
-        "disk": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=43867&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "mbid": null
-    },
-    {
-        "id": "33429",
-        "name": "+-",
-        "artist": {
-            "id": "456",
-            "name": "Joy Division"
+        {
+            "id": "87821",
+            "name": "...and Justice for All",
+            "artist": {
+                "id": "563",
+                "name": "Metallica"
+            },
+            "year": 1988,
+            "tracks": "9",
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "20",
+                    "name": "Metal"
+                },
+                {
+                    "id": "64",
+                    "name": "Heavy Metal"
+                },
+                {
+                    "id": "86",
+                    "name": "Thrash Metal"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=87821&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": null,
+            "mbid": "cb2704e5-b7a3-343e-918f-aa9cd3489170"
         },
-        "year": 2010,
-        "tracks": 19,
-        "disk": 9,
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+        {
+            "id": "92916",
+            "name": "...magni blandinn ok megintiri...",
+            "artist": {
+                "id": "340",
+                "name": "Falkenbach"
             },
-            {
-                "id": "36",
-                "name": "Indie Rock"
-            },
-            {
-                "id": "48",
-                "name": "New Wave"
-            },
-            {
-                "id": "73",
-                "name": "Post-Punk"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=33429&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "mbid": "85bd4a0e-d28a-442c-922e-394b939e7af9"
-    },
-    {
-        "id": "73836",
-        "name": "... De Los Valles y Las Monta\u00f1as",
-        "artist": {
-            "id": "16949",
-            "name": "Bosques de mi Mente"
+            "year": 1998,
+            "tracks": "6",
+            "disk": 1,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=92916&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": null,
+            "mbid": "45b29982-94d8-4629-8537-fd635f6464b8"
         },
-        "year": 2016,
-        "tracks": 10,
-        "disk": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=73836&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "3e775784-6e32-4433-9023-8711cff98df3"
-    }
-]
+        {
+            "id": "88969",
+            "name": "...The Dandy Warhols Come Down",
+            "artist": {
+                "id": "1187",
+                "name": "Dandy Warhols"
+            },
+            "year": 1997,
+            "tracks": "14",
+            "disk": 1,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=88969&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": null,
+            "mbid": "674023e2-07cd-407a-9b92-878e4e32210a"
+        }
+    ]
+}

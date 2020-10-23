@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-<total_count>4</total_count>
+<total_count>18</total_count>
 <podcast id="10">
-	<name><![CDATA[AI: The "C" Team]]></name>
-	<description><![CDATA[Acquisitions Incorporated serves up locally-sourced adventure from convenient franchise locations across Faerûn. Their adventures began in 2007 with a podcast of three friends playing D&D, and inexplicably progressed to live games on-stage before thousands of audience members at PAX.]]></description>
+	<name><![CDATA[1]]></name>
+	<description><![CDATA[Acquisitions Incorporated serves up locally-sourced adventure from convenient franchise locations across Faerûn. Their adventures began in 2007 with a podcast of three friends playing D&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;D, and inexplicably progressed to live games on-stage before thousands of audience members at PAX.]]></description>
 	<language><![CDATA[en-us]]></language>
-	<copyright><![CDATA[Copyright (c) 1998-2018 Penny Arcade, Inc.]]></copyright>
-	<generator><![CDATA[]]></generator>
+	<copyright><![CDATA[False]]></copyright>
+	<feed_url><![CDATA[http://www.acq-inc.com/feed/cteam_podcast]]></feed_url>
+	<generator><![CDATA[json]]></generator>
 	<website><![CDATA[http://www.acq-inc.com/]]></website>
-	<build_date><![CDATA[2018/03/22 01:10PM]]></build_date>
-	<sync_date><![CDATA[2020/04/15 05:12PM]]></sync_date>
+	<build_date><![CDATA[2018/03/22 01:10pm]]></build_date>
+	<sync_date><![CDATA[2020/10/23 07:59am]]></sync_date>
 	<public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=10]]></public_url>
 	</podcast>
 <podcast id="15">
@@ -17,32 +18,35 @@
 	<description><![CDATA[Brute Force is a real-play comedic RPG podcast blended with in-character narration. We play a campaign of FATE Core (we started with World of Darkness) set in the high fantasy world of Eorith. The adventurers are a party of monsters tasked with saving a world that barely tolerates their existence.]]></description>
 	<language><![CDATA[en-US]]></language>
 	<copyright><![CDATA[&copy; 2016 All rights reserved]]></copyright>
+	<feed_url><![CDATA[https://feeds.feedburner.com/BruteForcePodcast]]></feed_url>
 	<generator><![CDATA[https://wordpress.org/?v=4.9.3]]></generator>
 	<website><![CDATA[https://geeklyinc.com/category/brute-force/]]></website>
-	<build_date><![CDATA[2018/03/27 07:15PM]]></build_date>
-	<sync_date><![CDATA[2020/03/24 04:38AM]]></sync_date>
+	<build_date><![CDATA[2018/03/27 07:15pm]]></build_date>
+	<sync_date><![CDATA[2020/10/21 09:57pm]]></sync_date>
 	<public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=15]]></public_url>
 	</podcast>
 <podcast id="16">
 	<name><![CDATA[Cthulhu &amp; Friends]]></name>
 	<description><![CDATA[]]></description>
 	<language><![CDATA[en-US]]></language>
-	<copyright><![CDATA[Cthulhu & Friends Podcast]]></copyright>
+	<copyright><![CDATA[Cthulhu &amp; Friends Podcast]]></copyright>
+	<feed_url><![CDATA[http://feeds.feedburner.com/CaFPodcast]]></feed_url>
 	<generator><![CDATA[https://wordpress.org/?v=4.9.3]]></generator>
 	<website><![CDATA[https://geeklyinc.com/category/caf-podcast/]]></website>
-	<build_date><![CDATA[2018/03/29 06:15PM]]></build_date>
-	<sync_date><![CDATA[2020/03/24 04:38AM]]></sync_date>
+	<build_date><![CDATA[2018/03/29 06:15pm]]></build_date>
+	<sync_date><![CDATA[2020/10/21 10:02pm]]></sync_date>
 	<public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=16]]></public_url>
 	</podcast>
-<podcast id="25">
-	<name><![CDATA[Devin Townsend Podcast]]></name>
-	<description><![CDATA[A podcast in which musician Devin Townsend rambles on about a bunch of things with a tendency to repeat certain words and say 'uhhh' a lot.]]></description>
+<podcast id="45">
+	<name><![CDATA[D&amp;D is For Nerds]]></name>
+	<description><![CDATA[<p>An actual play podcast set in Ogg Nott, a world full of mystery and intrigue - if only the players knew it was ending. Listen as our heroes delve deep into adventure, with each season bringing a new story, new characters, and new threats to face. New listeners can start at any season, but veteran listeners will find themselves following a greater story, set over centuries. New episodes every Sunday!</p>]]></description>
 	<language><![CDATA[en]]></language>
-	<copyright><![CDATA[Devin Townsend]]></copyright>
-	<generator><![CDATA[Anchor Podcasts]]></generator>
-	<website><![CDATA[https://www.hevydevy.com/]]></website>
-	<build_date><![CDATA[2020/04/12 12:07PM]]></build_date>
-	<sync_date><![CDATA[2020/04/12 12:09PM]]></sync_date>
-	<public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=25]]></public_url>
+	<copyright><![CDATA[Sanspants Radio]]></copyright>
+	<feed_url><![CDATA[http://rss.acast.com/danddisfornerds]]></feed_url>
+	<generator><![CDATA[]]></generator>
+	<website><![CDATA[http://www.sanspantsradio.com/dnd-is-for-nerds/]]></website>
+	<build_date><![CDATA[2020/05/24 00:07am]]></build_date>
+	<sync_date><![CDATA[2020/10/21 10:29pm]]></sync_date>
+	<public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=45]]></public_url>
 	</podcast>
 </root>

@@ -1,6 +1,8 @@
 {
     "error": {
-        "code": "401",
-        "message": "Failed to scrobble: No item found!"
+        "errorCode": "4704",
+        "errorAction": "scrobble",
+        "errorType": "song",
+        "errorMessage": "Not Found"
     }
 }

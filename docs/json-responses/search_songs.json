@@ -1,126 +1,58 @@
-[
-    {
-        "id": "802560",
-        "title": "Baker Street",
-        "name": "Baker Street",
-        "artist": {
-            "id": "254",
-            "name": "Foo Fighters"
-        },
-        "album": {
-            "id": "71644",
-            "name": "My Hero"
-        },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+{
+    "song": [
+        {
+            "id": "1084",
+            "title": "Fasten Your Seatbelt",
+            "name": "Fasten Your Seatbelt",
+            "artist": {
+                "id": "57",
+                "name": "Pendulum"
             },
-            {
-                "id": "22",
-                "name": "Pop"
+            "album": {
+                "id": "97597",
+                "name": "Hold Your Colour"
             },
-            {
-                "id": "33",
-                "name": "Alternative Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/Foo Fighters\/(1998) My Hero (single) [CDCL 796]\/102 - Baker Street.mp3",
-        "track": 2,
-        "playlisttrack": 1,
-        "time": 339,
-        "year": 1998,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=802560&uid=2&player=api&name=Foo%20Fighters%20-%20Baker%20Street.mp3",
-        "size": 13650833,
-        "mbid": "57497521-16ac-4870-8fe0-4f486652d8ef",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=71644&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "Gerry Rafferty",
-        "channels": null,
-        "comment": "",
-        "publisher": "Capitol Records",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-7.200000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
+            "genre": [
+                {
+                    "id": "1461",
+                    "name": "Drum N Bass"
+                }
+            ],
+            "albumartist": {
+                "id": "57",
+                "name": "Pendulum"
             },
-            {
-                "name": "Pop"
-            },
-            {
-                "name": "Alternative Rock"
-            }
-        ]
-    },
-    {
-        "id": "862539",
-        "title": "Baker Street",
-        "name": "Baker Street",
-        "artist": {
-            "id": "9919",
-            "name": "Jonathan Coulton"
-        },
-        "album": {
-            "id": "71541",
-            "name": "Some Guys"
-        },
-        "tag": [
-            {
-                "id": "35",
-                "name": "Indie"
-            }
-        ],
-        "filename": "\/mnt\/music\/Jonathan Coulton\/(2019) Some Guys\/107 - Baker Street.flac",
-        "track": 7,
-        "playlisttrack": 2,
-        "time": 365,
-        "year": 2019,
-        "bitrate": 967923,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/x-flac",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=862539&uid=2&player=api&name=Jonathan%20Coulton%20-%20Baker%20Street.opus",
-        "size": 44226050,
-        "mbid": "81e4816b-8132-41ff-b753-12fa7e067f16",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=71541&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "Gerry Rafferty",
-        "channels": null,
-        "comment": "",
-        "publisher": "",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "0.000000",
-        "replaygain_track_peak": "0.000000",
-        "genre": [
-            {
-                "name": "Indie"
-            }
-        ]
-    }
-]
+            "filename": "\/mnt\/music\/Pendulum\/(2005) Hold Your Colour\/104 - Fasten Your Seatbelt.mp3",
+            "track": 4,
+            "playlisttrack": 1,
+            "time": 398,
+            "year": 2007,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=1084&uid=2&player=api&name=Pendulum%20-%20Fasten%20Your%20Seatbelt.mp3",
+            "size": 15937872,
+            "mbid": "7f151e01-0e89-4c37-9c6d-85311eea23bf",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=97597&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": 2,
+            "composer": "Matt Cantor",
+            "channels": null,
+            "comment": "",
+            "publisher": "Breakbeat Kaos",
+            "language": "eng",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-9.080000",
+            "replaygain_track_peak": "1.000000"
+        }
+    ]
+}

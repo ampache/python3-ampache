@@ -1,306 +1,228 @@
-[
-    {
-        "id": "164215",
-        "title": "!",
-        "name": "!",
-        "artist": {
-            "id": "8526",
-            "name": "Hellyeah"
+{
+    "song": [
+        {
+            "id": "818816",
+            "title": "_",
+            "name": "_",
+            "artist": {
+                "id": "11932",
+                "name": "Lebanon Hanover \/ La Fete Triste"
+            },
+            "album": {
+                "id": "80234",
+                "name": "The World Is Getting Colder"
+            },
+            "genre": [
+                {
+                    "id": "73",
+                    "name": "Post-Punk"
+                }
+            ],
+            "albumartist": {
+                "id": "11932",
+                "name": "Lebanon Hanover \/ La Fete Triste"
+            },
+            "filename": "\/mnt\/music\/Lebanon Hanover\/(2012) The World Is Getting Colder [[none]]\/108 - _.mp3",
+            "track": 8,
+            "playlisttrack": 1,
+            "time": 198,
+            "year": 2012,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=818816&uid=2&player=api&name=Lebanon%20Hanover%20-%20La%20Fete%20Triste%20-%20-.mp3",
+            "size": 7933954,
+            "mbid": "90e4a6f6-ef6e-4399-b416-ba09cc42afa1",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=80234&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "[no label]",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-7.240000",
+            "replaygain_track_peak": "0.944000"
         },
-        "album": {
-            "id": "56038",
-            "name": "Unden!able"
+        {
+            "id": "813353",
+            "title": "_____",
+            "name": "_____",
+            "artist": {
+                "id": "9392",
+                "name": "Sadness"
+            },
+            "album": {
+                "id": "97007",
+                "name": "Leave"
+            },
+            "genre": [
+                {
+                    "id": "6",
+                    "name": "Rock"
+                },
+                {
+                    "id": "422",
+                    "name": "Shoegaze"
+                },
+                {
+                    "id": "2243",
+                    "name": "Depressive Black Metal"
+                }
+            ],
+            "albumartist": {
+                "id": "9392",
+                "name": "Sadness"
+            },
+            "filename": "\/mnt\/music\/Sadness\/(2017) Leave\/102 - _____.mp3",
+            "track": 2,
+            "playlisttrack": 2,
+            "time": 327,
+            "year": 2017,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=813353&uid=2&player=api&name=Sadness%20-%20-.mp3",
+            "size": 13133575,
+            "mbid": "041ba790-049c-4f79-9721-1adc614b15db",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=97007&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "Not On Label",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-6.670000",
+            "replaygain_track_peak": "0.989000"
         },
-        "tag": [
-            {
-                "id": "20",
-                "name": "Metal"
+        {
+            "id": "795306",
+            "title": "_________________",
+            "name": "_________________",
+            "artist": {
+                "id": "10926",
+                "name": "Dillon"
             },
-            {
-                "id": "37",
-                "name": "Hard Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/Hellyeah\/(2016) Unden!able [ESM 171-2]\/101 - !.mp3",
-        "track": 1,
-        "playlisttrack": 1,
-        "time": 79,
-        "year": 2016,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=164215&uid=2&player=api&name=Hellyeah%20-%20-.mp3",
-        "size": 3184944,
-        "mbid": "42bb2b7a-bf67-4cc4-8610-25399d56474b",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=56038&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Eleven Seven Music",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-6.920000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Metal"
+            "album": {
+                "id": "86343",
+                "name": "This Silence Kills"
             },
-            {
-                "name": "Hard Rock"
-            }
-        ]
-    },
-    {
-        "id": "41252",
-        "title": "! (The Song Formerly Known As)",
-        "name": "! (The Song Formerly Known As)",
-        "artist": {
-            "id": "1464",
-            "name": "Regurgitator"
+            "genre": [
+                {
+                    "id": "702",
+                    "name": "Modern Classical"
+                }
+            ],
+            "albumartist": {
+                "id": "10926",
+                "name": "Dillon"
+            },
+            "filename": "\/mnt\/music\/Dillon\/(2011) This Silence Kills [BPC240]\/107 - _________________.mp3",
+            "track": 7,
+            "playlisttrack": 3,
+            "time": 293,
+            "year": 2011,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=795306&uid=2&player=api&name=Dillon%20-%20-.mp3",
+            "size": 12990047,
+            "mbid": "04b80f07-8a99-41c3-bd9a-74032ea6a15b",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=86343&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.png",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "Tamer Fahri \u00d6zg\u00f6nenc",
+            "channels": null,
+            "comment": "",
+            "publisher": "BPitch Control",
+            "language": "eng",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-4.130000",
+            "replaygain_track_peak": "0.944000"
         },
-        "album": {
-            "id": "50272",
-            "name": "Unit"
-        },
-        "tag": [
-            {
-                "id": "16",
-                "name": "Alternative"
-            }
-        ],
-        "filename": "\/mnt\/music\/Regurgitator\/(1997) Unit\/103 - ! (The Song Formerly Known As).mp3",
-        "track": 3,
-        "playlisttrack": 2,
-        "time": 208,
-        "year": 1997,
-        "bitrate": 160000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=41252&uid=2&player=api&name=Regurgitator%20-%20-%20-The%20Song%20Formerly%20Known%20As-.mp3",
-        "size": 4198110,
-        "mbid": "5e14ee48-6337-4a70-8992-1ed74dddb945",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=50272&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": 3,
-        "rating": 3,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Warner Music Australia",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-10.460000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Alternative"
-            }
-        ]
-    },
-    {
-        "id": "84148",
-        "title": "! (The Song Formerly Known As)",
-        "name": "! (The Song Formerly Known As)",
-        "artist": {
-            "id": "1464",
-            "name": "Regurgitator"
-        },
-        "album": {
-            "id": "32856",
-            "name": "Triple J: Hottest 100, Volume 6"
-        },
-        "tag": [
-            {
-                "id": "3",
-                "name": "Punk"
+        {
+            "id": "833254",
+            "title": "_1",
+            "name": "_1",
+            "artist": {
+                "id": "12639",
+                "name": "NHK"
             },
-            {
-                "id": "4",
-                "name": "Electronic"
+            "album": {
+                "id": "82495",
+                "name": "Unununium"
             },
-            {
-                "id": "6",
-                "name": "Rock"
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                }
+            ],
+            "albumartist": {
+                "id": "12639",
+                "name": "NHK"
             },
-            {
-                "id": "7",
-                "name": "Synthpop"
-            },
-            {
-                "id": "22",
-                "name": "Pop"
-            },
-            {
-                "id": "37",
-                "name": "Hard Rock"
-            },
-            {
-                "id": "184",
-                "name": "Parody"
-            },
-            {
-                "id": "615",
-                "name": "Big Beat"
-            },
-            {
-                "id": "1409",
-                "name": "Hip Hop"
-            }
-        ],
-        "filename": "\/mnt\/music\/Various Artists\/(1999) Triple J: Hottest 100, Volume 6\/212 - ! (The Song Formerly Known As).mp3",
-        "track": 12,
-        "playlisttrack": 3,
-        "time": 207,
-        "year": 1999,
-        "bitrate": 160000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=84148&uid=2&player=api&name=Regurgitator%20-%20-%20-The%20Song%20Formerly%20Known%20As-.mp3",
-        "size": 4149473,
-        "mbid": "5e14ee48-6337-4a70-8992-1ed74dddb945",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=32856&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "EMI Music Australia; Triple J",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-8.090000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Punk"
-            },
-            {
-                "name": "Electronic"
-            },
-            {
-                "name": "Rock"
-            },
-            {
-                "name": "Synthpop"
-            },
-            {
-                "name": "Pop"
-            },
-            {
-                "name": "Hard Rock"
-            },
-            {
-                "name": "Parody"
-            },
-            {
-                "name": "Big Beat"
-            },
-            {
-                "name": "Hip Hop"
-            }
-        ]
-    },
-    {
-        "id": "776781",
-        "title": "! (The Song Formerly Known As)",
-        "name": "! (The Song Formerly Known As)",
-        "artist": {
-            "id": "1464",
-            "name": "Regurgitator"
-        },
-        "album": {
-            "id": "41794",
-            "name": "Recovery"
-        },
-        "tag": [
-            {
-                "id": "4",
-                "name": "Electronic"
-            },
-            {
-                "id": "6",
-                "name": "Rock"
-            },
-            {
-                "id": "33",
-                "name": "Alternative Rock"
-            },
-            {
-                "id": "36",
-                "name": "Indie Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/Various Artists\/(2016) Recovery [5715567]\/101 - Regurgitator - ! (The Song Formerly Known As).mp3",
-        "track": 1,
-        "playlisttrack": 4,
-        "time": 204,
-        "year": 2016,
-        "bitrate": 320040,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=776781&uid=2&player=api&name=Regurgitator%20-%20-%20-The%20Song%20Formerly%20Known%20As-.mp3",
-        "size": 8186819,
-        "mbid": "5e14ee48-6337-4a70-8992-1ed74dddb945",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=41794&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "ABC Music",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-7.290000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Electronic"
-            },
-            {
-                "name": "Rock"
-            },
-            {
-                "name": "Alternative Rock"
-            },
-            {
-                "name": "Indie Rock"
-            }
-        ]
-    }
-]
+            "filename": "\/mnt\/music\/NHK\/(2008) Unununium [R-N 111]\/103 - _1.mp3",
+            "track": 3,
+            "playlisttrack": 4,
+            "time": 167,
+            "year": 2008,
+            "bitrate": 209676,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=833254&uid=2&player=api&name=NHK%20-%20-1.mp3",
+            "size": 4395626,
+            "mbid": "47ec1da9-3849-44ae-9a6c-80c882519755",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=82495&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "Raster-Noton",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-4.780000",
+            "replaygain_track_peak": "0.624000"
+        }
+    ]
+}

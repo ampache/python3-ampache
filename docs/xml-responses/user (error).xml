@@ -2,7 +2,7 @@
 <root>
 	<error errorCode="4704">
 		<errorAction><![CDATA[user]]></errorAction>
-		<errorType><![CDATA[user]]></errorType>
+		<errorType><![CDATA[username]]></errorType>
 		<errorMessage><![CDATA[Not Found: missing_user]]></errorMessage>
 	</error>
 </root>
