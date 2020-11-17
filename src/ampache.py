@@ -162,7 +162,8 @@ API FUNCTIONS
 """
 
 
-def handshake(ampache_url: str, ampache_api: str, ampache_user: str = False, timestamp: int = 0, version: str = '5.0.0', api_format: str = 'xml'):
+def handshake(ampache_url: str, ampache_api: str, ampache_user: str = False,
+              timestamp: int = 0, version: str = '5.0.0', api_format: str = 'xml'):
     """ handshake
         MINIMUM_API_VERSION=380001
 
@@ -324,7 +325,8 @@ def url_to_song(ampache_url: str, ampache_api: str, url, api_format: str = 'xml'
         return tree
 
 
-def get_similar(ampache_url: str, ampache_api: str, object_type, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
+def get_similar(ampache_url: str, ampache_api: str, object_type, filter_id: int,
+                offset=0, limit=0, api_format: str = 'xml'):
     """ get_similar
         MINIMUM_API_VERSION=420000
 
@@ -375,7 +377,7 @@ def get_indexes(ampache_url: str, ampache_api: str, object_type,
         INPUTS
         * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
         * ampache_api = (string) session 'auth' key
-        * object_type = (string) 'song'|'album'|'artist'|'playlist'
+        * object_type = (string) 'song'|'album'|'artist'|'album_artist'|'playlist'
         * filter_str  = (string) search the name of the object_type //optional
         * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
         * add         = (integer) UNIXTIME() //optional
@@ -434,15 +436,16 @@ def artists(ampache_url: str, ampache_api: str, filter_str: str = False,
         This takes a collection of inputs and returns artist objects.
 
         INPUTS
-        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
-        * ampache_api = (string) session 'auth' key
-        * filter_str  = (string) search the name of an artist //optional
-        * add         = (integer) UNIXTIME() //optional
-        * update      = (integer) UNIXTIME() //optional
-        * offset      = (integer) //optional
-        * limit       = (integer) //optional
-        * include     = (string) 'albums', 'songs' //optional
-        * api_format  = (string) 'xml'|'json' //optional
+        * ampache_url  = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api  = (string) session 'auth' key
+        * filter_str   = (string) search the name of an artist //optional
+        * add          = (integer) UNIXTIME() //optional
+        * update       = (integer) UNIXTIME() //optional
+        * offset       = (integer) //optional
+        * limit        = (integer) //optional
+        * include      = (string) 'albums', 'songs' //optional
+        * album_artist = (boolean) 0,1 if true filter for album artists only //optional
+        * api_format   = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'artists',
@@ -726,7 +729,8 @@ def album_songs(ampache_url: str, ampache_api: str, filter_id: int, offset=0, li
         return tree
 
 
-def genres(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
+def genres(ampache_url: str, ampache_api: str, filter_str: str = False,
+           exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
     """ genres
         MINIMUM_API_VERSION=380001
 
@@ -1039,7 +1043,8 @@ def song_delete(ampache_url: str, ampache_api: str, filter_id: int, api_format: 
         return tree
 
 
-def playlists(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
+def playlists(ampache_url: str, ampache_api: str, filter_str: str = False,
+              exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
     """ playlists
         MINIMUM_API_VERSION=380001
 
@@ -1201,7 +1206,8 @@ def playlist_create(ampache_url: str, ampache_api: str, name, object_type, api_f
         return token
 
 
-def playlist_edit(ampache_url: str, ampache_api: str, filter_id: int, name=False, object_type=False, api_format: str = 'xml'):
+def playlist_edit(ampache_url: str, ampache_api: str, filter_id: int, name=False,
+                  object_type=False, api_format: str = 'xml'):
     """ playlist_edit
         MINIMUM_API_VERSION=400001
 
@@ -1277,7 +1283,8 @@ def playlist_delete(ampache_url: str, ampache_api: str, filter_id: int, api_form
         return tree
 
 
-def playlist_add_song(ampache_url: str, ampache_api: str, filter_id: int, song_id, check=False, api_format: str = 'xml'):
+def playlist_add_song(ampache_url: str, ampache_api: str, filter_id: int, song_id, check=False,
+                      api_format: str = 'xml'):
     """ playlist_add_song
         MINIMUM_API_VERSION=380001
         CHANGED_IN_API_VERSION=400003
@@ -1321,7 +1328,8 @@ def playlist_add_song(ampache_url: str, ampache_api: str, filter_id: int, song_i
         return tree
 
 
-def playlist_remove_song(ampache_url: str, ampache_api: str, filter_id: int, song_id=False, track=False, api_format: str = 'xml'):
+def playlist_remove_song(ampache_url: str, ampache_api: str, filter_id: int,
+                         song_id=False, track=False, api_format: str = 'xml'):
     """ playlist_remove_song
         MINIMUM_API_VERSION=380001
         CHANGED_IN_API_VERSION=400001
@@ -1427,7 +1435,8 @@ def playlist_generate(ampache_url: str, ampache_api: str, mode='random',
         return tree
 
 
-def shares(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
+def shares(ampache_url: str, ampache_api: str, filter_str: str = False,
+           exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
     """ shares
         MINIMUM_API_VERSION=420000
 
@@ -1795,7 +1804,8 @@ def catalog_file(ampache_url: str, ampache_api: str, file, task, catalog_id, api
         return tree
 
 
-def podcasts(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
+def podcasts(ampache_url: str, ampache_api: str, filter_str: str = False,
+             exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
     """ podcasts
         MINIMUM_API_VERSION=420000
 
@@ -2240,7 +2250,8 @@ def advanced_search(ampache_url: str, ampache_api: str, rules,
         return tree
 
 
-def videos(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
+def videos(ampache_url: str, ampache_api: str, filter_str: str = False,
+           exact: int = False, offset=0, limit=0, api_format: str = 'xml'):
     """ videos
         MINIMUM_API_VERSION=380001
 
@@ -3048,7 +3059,8 @@ def stream(ampache_url: str, ampache_api: str, object_id, object_type, destinati
     return True
 
 
-def download(ampache_url: str, ampache_api: str, object_id, object_type, destination, transcode='raw', api_format: str = 'xml'):
+def download(ampache_url: str, ampache_api: str, object_id, object_type, destination,
+             transcode='raw', api_format: str = 'xml'):
     """ download
         MINIMUM_API_VERSION=400001
 
@@ -3156,8 +3168,8 @@ def user_create(ampache_url: str, ampache_api: str, username: str, password: str
         return tree
 
 
-def user_update(ampache_url: str, ampache_api: str, username, password=False, fullname=False, email=False, website=False,
-                state=False, city=False, disable=False, maxbitrate=False, api_format: str = 'xml'):
+def user_update(ampache_url: str, ampache_api: str, username, password=False, fullname=False, email=False,
+                website=False, state=False, city=False, disable=False, maxbitrate=False, api_format: str = 'xml'):
     """ user_update
         MINIMUM_API_VERSION=400001
 
@@ -3765,6 +3777,224 @@ def label_artists(ampache_url: str, ampache_api: str, filter_id: int, api_format
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'label_artists')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def get_bookmark(ampache_url: str, ampache_api: str, filter_id: str, object_type: str, api_format: str = 'xml'):
+    """ get_bookmark
+        MINIMUM_API_VERSION=5.0.0
+
+        Get the bookmark from it's object_id and object_type.
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) object_id
+        * object_type = (string) object_type ('song', 'video', 'podcast_episode')
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'get_bookmark',
+            'auth': ampache_api,
+            'filter': filter_id,
+            'type': object_type}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'get_bookmark')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def bookmarks(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
+    """ bookmarks
+        MINIMUM_API_VERSION=5.0.0
+
+        Get information about bookmarked media this user is allowed to manage.
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'bookmarks',
+            'auth': ampache_api}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'bookmarks')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def bookmark_create(ampache_url: str, ampache_api: str, filter_id, object_type,
+                    position: int = 0, client: str = 'AmpacheAPI', date=False, api_format: str = 'xml'):
+    """ bookmark_create
+        MINIMUM_API_VERSION=5.0.0
+
+        Create a placeholder for the current media that you can return to later.
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) object_id
+        * object_type = (string) object_type ('song', 'video', 'podcast_episode')
+        * position    = (integer) current track time in seconds
+        * client      = (string) Agent string. (Default: 'AmpacheAPI') //optional
+        * date        = (integer) update time (Default: UNIXTIME()) //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'bookmark_create',
+            'auth': ampache_api,
+            'filter': filter_id,
+            'type': object_type,
+            'position': position,
+            'client': client,
+            'date': date}
+    if not client:
+        data.pop('client')
+    if not date:
+        data.pop('date')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'bookmark_create')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        try:
+            token = tree.find('playlist').text
+        except AttributeError:
+            token = False
+        if token:
+            return tree
+        try:
+            token = tree.find('error').text
+        except AttributeError:
+            token = False
+        return token
+
+
+def bookmark_edit(ampache_url: str, ampache_api: str, filter_id, object_type,
+                  position: int = 0, client: str = 'AmpacheAPI', date=False, api_format: str = 'xml'):
+    """ bookmark_edit
+        MINIMUM_API_VERSION=5.0.0
+
+        Edit a placeholder for the current media that you can return to later.
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) object_id
+        * object_type = (string) object_type ('song', 'video', 'podcast_episode')
+        * position    = (integer) current track time in seconds
+        * client      = (string) Agent string. (Default: 'AmpacheAPI') //optional
+        * date        = (integer) update time (Default: UNIXTIME()) //optional
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'bookmark_edit',
+            'auth': ampache_api,
+            'filter': filter_id,
+            'type': object_type,
+            'position': position,
+            'client': client,
+            'date': date}
+    if not client:
+        data.pop('client')
+    if not date:
+        data.pop('date')
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'bookmark_edit')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        try:
+            token = tree.find('playlist').text
+        except AttributeError:
+            token = False
+        if token:
+            return tree
+        try:
+            token = tree.find('error').text
+        except AttributeError:
+            token = False
+        return token
+
+
+def bookmark_delete(ampache_url: str, ampache_api: str, filter_id: int, object_type=False, api_format: str = 'xml'):
+    """ bookmark_delete
+        MINIMUM_API_VERSION=5.0.0
+
+        Delete an existing bookmark. (if it exists)
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer) object_id
+        * object_type = (string) object_type ('song', 'video', 'podcast_episode')
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'bookmark_delete',
+            'auth': ampache_api,
+            'filter': filter_id,
+            'type': object_type}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'bookmark_delete')
     if not ampache_response:
         return False
     # json format
