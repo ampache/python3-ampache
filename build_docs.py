@@ -2,6 +2,7 @@
 
 import configparser
 import os
+import re
 import shutil
 import sys
 import time
@@ -12,20 +13,19 @@ from src import ampache
 url = 'https://music.server'
 api = 'mysuperapikey'
 user = 'myusername'
-if os.path.isfile('docs/examples/ampyche.conf'):
-    conf = configparser.RawConfigParser()
-    conf.read('docs/examples/ampyche.conf')
-    url = conf.get('conf', 'ampache_url')
-    user = conf.get('conf', 'ampache_user')
-    api = conf.get('conf', 'ampache_apikey')
-else:
-    try:
-        if sys.argv[1] and sys.argv[2] and sys.argv[3]:
-            url = sys.argv[1]
-            api = sys.argv[2]
-            user = sys.argv[3]
-    except IndexError:
-        sys.exit('ERROR: get your arguments correct')
+try:
+    if sys.argv[1] and sys.argv[2] and sys.argv[3]:
+        url = sys.argv[1]
+        api = sys.argv[2]
+        user = sys.argv[3]
+except IndexError:
+    if os.path.isfile('docs/examples/ampyche.conf'):
+        conf = configparser.RawConfigParser()
+        conf.read('docs/examples/ampyche.conf')
+        url = conf.get('conf', 'ampache_url')
+        user = conf.get('conf', 'ampache_user')
+        api = conf.get('conf', 'ampache_apikey')
+    
 
 limit = 4
 offset = 0
@@ -54,13 +54,18 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     encrypted_key = ampache.encrypt_string(ampache_api, ampache_user)
 
+    """ def set_debug(boolean):
+        This function can be used to enable/disable debugging messages
+    """
+    ampache.set_debug(True)
+
     """ def handshake(ampache_url, ampache_api, user = False, timestamp = False, version = '5.0.0', api_format = 'xml'):
         This is the function that handles verifying a new handshake
         Takes a timestamp, auth key, and username.
     """
     ampache_session = ampache.handshake(ampache_url, encrypted_key, False, False, api_version, api_format)
     if not ampache_session:
-        print()
+        print(encrypted_key)
         sys.exit('ERROR: Failed to connect to ' + ampache_url)
 
     """ def ping(ampache_url, ampache_api, api_format = 'xml'):
@@ -71,11 +76,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     if not my_ping:
         print()
         sys.exit('ERROR: Failed to ping ' + ampache_url)
-
-    """ def set_debug(boolean):
-        This function can be used to enable/disable debugging messages
-    """
-    ampache.set_debug(True)
 
     """ def labels(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
@@ -592,6 +592,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     # ampache.goodbye(ampache_url, ampache_session, api_format)
 
+    # Clean the files
+    self_check(api_format, ampache_url, ampache_api, ampache_session)
+
+
+def self_check(api_format, ampache_url, ampache_api, ampache_session):
     print("Checking files in " + api_format + " for private strings")
     for files in os.listdir("./docs/" + api_format + "-responses/"):
         f = open("./docs/" + api_format + "-responses/" + files, 'r', encoding="utf-8")
@@ -599,9 +604,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         f.close()
 
         url_text = ampache_url.replace("https://", "")
-        newdata = filedata.replace(url_text, "music.com.au")
-        newdata = newdata.replace(ampache_api, "eeb9f1b6056246a7d563f479f518bb34")
-        newdata = newdata.replace(ampache_session, "cfj3f237d563f479f5223k23189dbb34")
+        newdata = re.sub(url_text, "music.com.au", filedata)
+        newdata = re.sub(ampache_api, "eeb9f1b6056246a7d563f479f518bb34", newdata)
+        newdata = re.sub('auth=[a-z0-9]*', "auth=eeb9f1b6056246a7d563f479f518bb34", newdata)
+        newdata = re.sub('ssid=[a-z0-9]*', "ssid=cfj3f237d563f479f5223k23189dbb34", newdata)
+        newdata = re.sub(ampache_session, "cfj3f237d563f479f5223k23189dbb34", newdata)
 
         f = open("./docs/" + api_format + "-responses/" + files, 'w', encoding="utf-8")
         f.write(newdata)
