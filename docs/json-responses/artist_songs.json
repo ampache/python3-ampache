@@ -1,235 +1,57 @@
 {
     "song": [
         {
-            "id": "766995",
-            "title": "Palm Grease (Summer Opening)",
-            "name": "Palm Grease (Summer Opening)",
+            "id": "123290",
+            "title": "Shadow of you",
+            "name": "Shadow of you",
             "artist": {
-                "id": "10171",
-                "name": "SilverHawk"
+                "id": "7053",
+                "name": "Matt Bowdidge"
             },
             "album": {
-                "id": "97131",
-                "name": "Palm Grease"
+                "id": "32953",
+                "name": "Monster Tunes Best of 2014 (Mixed by Allen Watts)"
             },
             "genre": [
                 {
-                    "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "273",
-                    "name": "Synthwave"
+                    "id": "80",
+                    "name": "Trance"
                 }
             ],
             "albumartist": {
-                "id": "10171",
-                "name": "SilverHawk"
+                "id": "15962",
+                "name": "Various Artists"
             },
-            "filename": "\/mnt\/music\/SilverHawk\/(2017) Palm Grease\/101 - Palm Grease (Summer Opening).mp3",
-            "track": 1,
+            "filename": "\/mnt\/music\/Various Artists\/(2014) Monster Tunes Best of 2014 (Mixed by Allen Watts)\/106 - Shadow of you.mp3",
+            "track": 6,
             "playlisttrack": 1,
-            "time": 91,
-            "year": 2017,
+            "time": 465,
+            "year": 2014,
             "bitrate": 320000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=766995&uid=2&player=api&name=SilverHawk%20-%20Palm%20Grease%20-Summer%20Opening-.mp3",
-            "size": 4011032,
-            "mbid": "90f10e3e-5be9-4f1b-96c5-0b014719d80e",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=123290&uid=2&player=api&name=Matt%20Bowdidge%20-%20Shadow%20of%20you.mp3",
+            "size": 18704882,
+            "mbid": "",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=97131&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=32953&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "playcount": 0,
+            "playcount": 1,
             "catalog": 2,
             "composer": "",
             "channels": null,
-            "comment": "Visit http:\/\/silverhawk.bandcamp.com",
-            "publisher": "",
+            "comment": "",
+            "publisher": "Monster Tunes",
             "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-8.800000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "766999",
-            "title": "Heartbeat",
-            "name": "Heartbeat",
-            "artist": {
-                "id": "10171",
-                "name": "SilverHawk"
-            },
-            "album": {
-                "id": "97131",
-                "name": "Palm Grease"
-            },
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "273",
-                    "name": "Synthwave"
-                }
-            ],
-            "albumartist": {
-                "id": "10171",
-                "name": "SilverHawk"
-            },
-            "filename": "\/mnt\/music\/SilverHawk\/(2017) Palm Grease\/102 - Heartbeat.mp3",
-            "track": 2,
-            "playlisttrack": 2,
-            "time": 291,
-            "year": 2017,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=766999&uid=2&player=api&name=SilverHawk%20-%20Heartbeat.mp3",
-            "size": 12003640,
-            "mbid": "fec1c1ff-5aca-4bae-8242-a525cdadac3a",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=97131&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "Visit http:\/\/silverhawk.bandcamp.com",
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-10.020000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "767003",
-            "title": "The Last Street Of Frisco",
-            "name": "The Last Street Of Frisco",
-            "artist": {
-                "id": "10171",
-                "name": "SilverHawk"
-            },
-            "album": {
-                "id": "97131",
-                "name": "Palm Grease"
-            },
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "273",
-                    "name": "Synthwave"
-                }
-            ],
-            "albumartist": {
-                "id": "10171",
-                "name": "SilverHawk"
-            },
-            "filename": "\/mnt\/music\/SilverHawk\/(2017) Palm Grease\/103 - The Last Street Of Frisco.mp3",
-            "track": 3,
-            "playlisttrack": 3,
-            "time": 301,
-            "year": 2017,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=767003&uid=2&player=api&name=SilverHawk%20-%20The%20Last%20Street%20Of%20Frisco.mp3",
-            "size": 12405940,
-            "mbid": "6e48f3cf-edc6-4651-b3e5-19646292fc38",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=97131&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "Visit http:\/\/silverhawk.bandcamp.com",
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-10.250000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "766996",
-            "title": "HeartBreak",
-            "name": "HeartBreak",
-            "artist": {
-                "id": "10171",
-                "name": "SilverHawk"
-            },
-            "album": {
-                "id": "97131",
-                "name": "Palm Grease"
-            },
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "273",
-                    "name": "Synthwave"
-                }
-            ],
-            "albumartist": {
-                "id": "10171",
-                "name": "SilverHawk"
-            },
-            "filename": "\/mnt\/music\/SilverHawk\/(2017) Palm Grease\/104 - HeartBreak.mp3",
-            "track": 4,
-            "playlisttrack": 4,
-            "time": 384,
-            "year": 2017,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=766996&uid=2&player=api&name=SilverHawk%20-%20HeartBreak.mp3",
-            "size": 15708849,
-            "mbid": "cd8866f3-bcfc-4fcd-bba0-1c34baa26804",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=97131&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "Visit http:\/\/silverhawk.bandcamp.com",
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-10.400000",
+            "replaygain_track_gain": "-10.610000",
             "replaygain_track_peak": "1.000000"
         }
     ]

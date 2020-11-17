@@ -1,205 +1,38 @@
 {
     "song": [
         {
-            "id": "117828",
-            "title": "Am brennenden n\u00f6rdlichen Firmament",
-            "name": "Am brennenden n\u00f6rdlichen Firmament",
+            "id": "955505",
+            "title": "Hurt",
+            "name": "Hurt",
             "artist": {
-                "id": "292",
-                "name": "Vinterriket"
+                "id": "1081",
+                "name": "Mr.Kitty"
             },
             "album": {
-                "id": "81350",
-                "name": "-2-"
+                "id": "98156",
+                "name": "-+"
             },
-            "genre": [
-                {
-                    "id": "46",
-                    "name": "Ambient"
-                }
-            ],
+            "genre": [],
             "albumartist": {
-                "id": "292",
-                "name": "Vinterriket"
+                "id": "1081",
+                "name": "Mr.Kitty"
             },
-            "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/101 - Vinterriket - Am brennenden n\u00f6rdlichen Firmament.mp3",
+            "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/101 - Hurt.flac",
             "track": 1,
             "playlisttrack": 1,
-            "time": 416,
-            "year": 2005,
-            "bitrate": 320000,
+            "time": 273,
+            "year": 2020,
+            "bitrate": 930105,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=117828&uid=2&player=api&name=Vinterriket%20-%20Am%20brennenden%20n-rdlichen%20Firmament.mp3",
-            "size": 16685174,
-            "mbid": "bbd5cb67-45da-4aeb-a0ce-cb609e494870",
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=955505&uid=2&player=api&name=Mr.Kitty%20-%20Hurt.mp3",
+            "size": 31767236,
+            "mbid": "21aecbf4-594a-4168-b298-7a831569e756",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=81350&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "Drama Company",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-5.130000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "117835",
-            "title": "Stumme Winternacht",
-            "name": "Stumme Winternacht",
-            "artist": {
-                "id": "292",
-                "name": "Vinterriket"
-            },
-            "album": {
-                "id": "81350",
-                "name": "-2-"
-            },
-            "genre": [
-                {
-                    "id": "46",
-                    "name": "Ambient"
-                }
-            ],
-            "albumartist": {
-                "id": "292",
-                "name": "Vinterriket"
-            },
-            "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/102 - Vinterriket - Stumme Winternacht.mp3",
-            "track": 2,
-            "playlisttrack": 2,
-            "time": 390,
-            "year": 2005,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=117835&uid=2&player=api&name=Vinterriket%20-%20Stumme%20Winternacht.mp3",
-            "size": 15614137,
-            "mbid": "4cfbc903-9c13-47b1-b307-a382052d54f0",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=81350&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "Drama Company",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-2.980000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "117832",
-            "title": "Monde ewiger Verdammnis",
-            "name": "Monde ewiger Verdammnis",
-            "artist": {
-                "id": "292",
-                "name": "Vinterriket"
-            },
-            "album": {
-                "id": "81350",
-                "name": "-2-"
-            },
-            "genre": [
-                {
-                    "id": "46",
-                    "name": "Ambient"
-                }
-            ],
-            "albumartist": {
-                "id": "292",
-                "name": "Vinterriket"
-            },
-            "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/103 - Vinterriket - Monde ewiger Verdammnis.mp3",
-            "track": 3,
-            "playlisttrack": 3,
-            "time": 422,
-            "year": 2005,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=117832&uid=2&player=api&name=Vinterriket%20-%20Monde%20ewiger%20Verdammnis.mp3",
-            "size": 16910861,
-            "mbid": "e8a6b633-5d43-430b-9c45-7c135d7490ac",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=81350&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "Drama Company",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-1.990000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "117829",
-            "title": "Vom Echo der Melancholie",
-            "name": "Vom Echo der Melancholie",
-            "artist": {
-                "id": "292",
-                "name": "Vinterriket"
-            },
-            "album": {
-                "id": "81350",
-                "name": "-2-"
-            },
-            "genre": [
-                {
-                    "id": "46",
-                    "name": "Ambient"
-                }
-            ],
-            "albumartist": {
-                "id": "292",
-                "name": "Vinterriket"
-            },
-            "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/104 - Vinterriket - Vom Echo der Melancholie.mp3",
-            "track": 4,
-            "playlisttrack": 4,
-            "time": 411,
-            "year": 2005,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=117829&uid=2&player=api&name=Vinterriket%20-%20Vom%20Echo%20der%20Melancholie.mp3",
-            "size": 16464690,
-            "mbid": "2d81225a-20fb-43c3-854b-dbfdddeb3a39",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=81350&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=98156&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -208,13 +41,160 @@
             "catalog": 2,
             "composer": "",
             "channels": null,
-            "comment": "",
-            "publisher": "Drama Company",
+            "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
+            "publisher": "[no label]",
             "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "2.410000",
-            "replaygain_track_peak": "1.000000"
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000"
+        },
+        {
+            "id": "955506",
+            "title": "Let Go",
+            "name": "Let Go",
+            "artist": {
+                "id": "1081",
+                "name": "Mr.Kitty"
+            },
+            "album": {
+                "id": "98156",
+                "name": "-+"
+            },
+            "genre": [],
+            "albumartist": {
+                "id": "1081",
+                "name": "Mr.Kitty"
+            },
+            "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/102 - Let Go.flac",
+            "track": 2,
+            "playlisttrack": 2,
+            "time": 244,
+            "year": 2020,
+            "bitrate": 980624,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=955506&uid=2&player=api&name=Mr.Kitty%20-%20Let%20Go.mp3",
+            "size": 29970961,
+            "mbid": "d28d089b-2c3e-41ac-b0f8-519aa938b2d1",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=98156&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
+            "publisher": "[no label]",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000"
+        },
+        {
+            "id": "955507",
+            "title": "In Loving Memory",
+            "name": "In Loving Memory",
+            "artist": {
+                "id": "1081",
+                "name": "Mr.Kitty"
+            },
+            "album": {
+                "id": "98156",
+                "name": "-+"
+            },
+            "genre": [],
+            "albumartist": {
+                "id": "1081",
+                "name": "Mr.Kitty"
+            },
+            "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/103 - In Loving Memory.flac",
+            "track": 3,
+            "playlisttrack": 3,
+            "time": 234,
+            "year": 2020,
+            "bitrate": 1031864,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=955507&uid=2&player=api&name=Mr.Kitty%20-%20In%20Loving%20Memory.mp3",
+            "size": 30268614,
+            "mbid": "08294ca5-5341-4d18-9928-97b510d616a6",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=98156&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
+            "publisher": "[no label]",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000"
+        },
+        {
+            "id": "955508",
+            "title": "Everything Will Be Okay",
+            "name": "Everything Will Be Okay",
+            "artist": {
+                "id": "1081",
+                "name": "Mr.Kitty"
+            },
+            "album": {
+                "id": "98156",
+                "name": "-+"
+            },
+            "genre": [],
+            "albumartist": {
+                "id": "1081",
+                "name": "Mr.Kitty"
+            },
+            "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/104 - Everything Will Be Okay.flac",
+            "track": 4,
+            "playlisttrack": 4,
+            "time": 294,
+            "year": 2020,
+            "bitrate": 928342,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=955508&uid=2&player=api&name=Mr.Kitty%20-%20Everything%20Will%20Be%20Okay.mp3",
+            "size": 34117022,
+            "mbid": "48c6d7f2-503a-4877-8e95-225ab55ebd20",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=98156&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
+            "publisher": "[no label]",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000"
         }
     ]
 }

@@ -1,49 +1,49 @@
 {
     "song": [
         {
-            "id": "1008",
-            "title": "Coma (original version)",
-            "name": "Coma (original version)",
+            "id": "154139",
+            "title": "Blue Monday",
+            "name": "Blue Monday",
             "artist": {
-                "id": "8990",
-                "name": "Pendulum"
+                "id": "8279",
+                "name": "New Order with Billy Corgan"
             },
             "album": {
-                "id": "82929",
-                "name": "Coma"
+                "id": "97958",
+                "name": "Blockbuster Pavillion, Los Angeles, CA, US (13)"
             },
             "genre": [
                 {
-                    "id": "28",
-                    "name": "House"
+                    "id": "666",
+                    "name": "Bootleg"
                 }
             ],
             "albumartist": {
-                "id": "8990",
-                "name": "Pendulum"
+                "id": "8279",
+                "name": "New Order with Billy Corgan"
             },
-            "filename": "\/mnt\/music\/Pendulum\/(1998) Coma\/104 - Coma (Original Version).mp3",
-            "track": 4,
+            "filename": "\/mnt\/files-music\/boots\/New Order\/2001-08-05 - Blockbuster Pavillion, Los Angeles, CA, US (13)\/12 - Blue Monday.flac",
+            "track": 12,
             "playlisttrack": 1,
-            "time": 406,
-            "year": 1998,
-            "bitrate": 250659,
+            "time": 646,
+            "year": 2001,
+            "bitrate": 907480,
             "rate": 44100,
             "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=1008&uid=2&player=api&name=Pendulum%20-%20Coma%20-original%20version-.mp3",
-            "size": 12778055,
-            "mbid": "1dc5a9ce-0867-4a41-a0bc-71e015e3c8ad",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=154139&uid=2&player=api&name=New%20Order%20with%20Billy%20Corgan%20-%20Blue%20Monday.mp3",
+            "size": 73357707,
+            "mbid": "",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=82929&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=97958&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
             "flag": 1,
             "preciserating": 5,
             "rating": 5,
             "averagerating": null,
             "playcount": 1,
-            "catalog": 2,
+            "catalog": 6,
             "composer": "",
             "channels": null,
             "comment": "",
@@ -51,161 +51,53 @@
             "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-5.670000",
-            "replaygain_track_peak": "0.977000"
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000"
         },
         {
-            "id": "1026",
-            "title": "Crush",
-            "name": "Crush",
+            "id": "155058",
+            "title": "Go with the Flow (rough version, shaker added)",
+            "name": "Go with the Flow (rough version, shaker added)",
             "artist": {
-                "id": "57",
-                "name": "Pendulum"
+                "id": "475",
+                "name": "Queens of the Stone Age"
             },
             "album": {
-                "id": "97596",
-                "name": "Immersion"
+                "id": "97832",
+                "name": "Songs for the Deaf Demos (13)"
             },
             "genre": [
                 {
-                    "id": "1461",
-                    "name": "Drum N Bass"
+                    "id": "666",
+                    "name": "Bootleg"
                 }
             ],
             "albumartist": {
-                "id": "57",
-                "name": "Pendulum"
+                "id": "475",
+                "name": "Queens of the Stone Age"
             },
-            "filename": "\/mnt\/music\/Pendulum\/(2010) Immersion\/105 - Crush.mp3",
-            "track": 5,
-            "playlisttrack": 2,
-            "time": 253,
-            "year": 2010,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=1026&uid=2&player=api&name=Pendulum%20-%20Crush.mp3",
-            "size": 10357155,
-            "mbid": "55375fb8-162b-4539-bb1f-88524eadb442",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=97596&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
-            "flag": 1,
-            "preciserating": 5,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 1,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "",
-            "language": "eng",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-11.120000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "1084",
-            "title": "Fasten Your Seatbelt",
-            "name": "Fasten Your Seatbelt",
-            "artist": {
-                "id": "57",
-                "name": "Pendulum"
-            },
-            "album": {
-                "id": "97597",
-                "name": "Hold Your Colour"
-            },
-            "genre": [
-                {
-                    "id": "1461",
-                    "name": "Drum N Bass"
-                }
-            ],
-            "albumartist": {
-                "id": "57",
-                "name": "Pendulum"
-            },
-            "filename": "\/mnt\/music\/Pendulum\/(2005) Hold Your Colour\/104 - Fasten Your Seatbelt.mp3",
+            "filename": "\/mnt\/files-music\/boots\/Queens of the Stone Age\/(2001) Songs for the Deaf Demos (13)\/04 - Go with the Flow.flac",
             "track": 4,
-            "playlisttrack": 3,
-            "time": 398,
-            "year": 2007,
-            "bitrate": 320000,
+            "playlisttrack": 2,
+            "time": 184,
+            "year": 2001,
+            "bitrate": 1110074,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=1084&uid=2&player=api&name=Pendulum%20-%20Fasten%20Your%20Seatbelt.mp3",
-            "size": 15937872,
-            "mbid": "7f151e01-0e89-4c37-9c6d-85311eea23bf",
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=155058&uid=2&player=api&name=Queens%20of%20the%20Stone%20Age%20-%20Go%20with%20the%20Flow%20-rough%20version-%20shaker%20added-.mp3",
+            "size": 25559454,
+            "mbid": "",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=97597&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=97832&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
             "flag": 1,
             "preciserating": 5,
             "rating": 5,
             "averagerating": null,
             "playcount": 1,
-            "catalog": 2,
-            "composer": "Matt Cantor",
-            "channels": null,
-            "comment": "",
-            "publisher": "Breakbeat Kaos",
-            "language": "eng",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-9.080000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "1738",
-            "title": "Surf City Limits",
-            "name": "Surf City Limits",
-            "artist": {
-                "id": "70",
-                "name": "The Fauves"
-            },
-            "album": {
-                "id": "88234",
-                "name": "Lazy Highways"
-            },
-            "genre": [
-                {
-                    "id": "22",
-                    "name": "Pop"
-                }
-            ],
-            "albumartist": {
-                "id": "70",
-                "name": "The Fauves"
-            },
-            "filename": "\/mnt\/music\/The Fauves\/(1998) Lazy Highways\/101 - Surf City Limits.mp3",
-            "track": 1,
-            "playlisttrack": 4,
-            "time": 211,
-            "year": 2002,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=1738&uid=2&player=api&name=The%20Fauves%20-%20Surf%20City%20Limits.mp3",
-            "size": 8474217,
-            "mbid": "f580677c-6855-4f47-a30e-f90e3c0ea060",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=88234&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
-            "flag": 1,
-            "preciserating": 5,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 1,
-            "catalog": 2,
+            "catalog": 6,
             "composer": "",
             "channels": null,
             "comment": "",
@@ -213,8 +105,116 @@
             "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-10.230000",
-            "replaygain_track_peak": "1.000000"
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000"
+        },
+        {
+            "id": "150881",
+            "title": "Stained Glass Window",
+            "name": "Stained Glass Window",
+            "artist": {
+                "id": "8273",
+                "name": "The Marked"
+            },
+            "album": {
+                "id": "97952",
+                "name": "The Marked 85-87 Demos"
+            },
+            "genre": [
+                {
+                    "id": "666",
+                    "name": "Bootleg"
+                }
+            ],
+            "albumartist": {
+                "id": "8273",
+                "name": "The Marked"
+            },
+            "filename": "\/mnt\/files-music\/boots\/The Marked\/The Marked 85-87 Demos\/07 - Stained Glass Window.flac",
+            "track": 7,
+            "playlisttrack": 3,
+            "time": 30,
+            "year": 1987,
+            "bitrate": 915558,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=150881&uid=2&player=api&name=The%20Marked%20-%20Stained%20Glass%20Window.mp3",
+            "size": 3454706,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=97952&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": 6,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000"
+        },
+        {
+            "id": "152252",
+            "title": "Stars Fall In",
+            "name": "Stars Fall In",
+            "artist": {
+                "id": "1240",
+                "name": "The Smashing Pumpkins"
+            },
+            "album": {
+                "id": "79491",
+                "name": "Moon Demo Tape"
+            },
+            "genre": [
+                {
+                    "id": "666",
+                    "name": "Bootleg"
+                }
+            ],
+            "albumartist": {
+                "id": "1240",
+                "name": "The Smashing Pumpkins"
+            },
+            "filename": "\/mnt\/files-music\/boots\/The Smashing Pumpkins\/(1989) Moon Demo Tape\/06 - Stars Fall In.flac",
+            "track": 6,
+            "playlisttrack": 4,
+            "time": 178,
+            "year": 1989,
+            "bitrate": 988594,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=152252&uid=2&player=api&name=The%20Smashing%20Pumpkins%20-%20Stars%20Fall%20In.mp3",
+            "size": 22091794,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=79491&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.png",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": 6,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000"
         }
     ]
 }
