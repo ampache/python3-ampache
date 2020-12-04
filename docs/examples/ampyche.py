@@ -3,10 +3,11 @@
 import ampache
 import configparser
 import os
+import playsound
 import sys
 
 
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 
 # Get OS type
 OS = os.name
@@ -75,7 +76,7 @@ def show_help():
               "\n  Possible Actions:\n"
               "\n    /u:%CUSTOM_USER%\t(Custom username for the current action)"
               "\n    /k:%CUSTOM_APIKEY%\t(Custom apikey for the current action)"
-              "\n    /a:%ACTION% \t(ping, playlists, localplay, download, configure, logout, showconfig)"
+              "\n    /a:%ACTION% \t(ping, playlists, localplay, stream, download, configure, logout, showconfig)"
               "\n    /l:%LIMIT%  \t(integer)"
               "\n    /o:%OBJECT_ID%  \t(string)"
               "\n    /t:%OBJECT_TYPE%  \t(song, playlist)"
@@ -198,6 +199,10 @@ class AMPYCHE(object):
             for song_id in self.list_songs:
                 if song_id and os.path.isdir(os.path.dirname(DESTIN)):
                     self.download(song_id, DESTIN, TRANSCODE)
+        elif ACTION == 'stream':
+            for song_id in self.list_songs:
+                if song_id:
+                    self.stream(song_id, TRANSCODE)
         return
 
     def saveconf(self):
@@ -366,6 +371,34 @@ class AMPYCHE(object):
             else:
                 # skip existing files
                 print('**EXISTS**: ' + output)
+
+    def stream(self, song_id, transcode='raw'):
+        """ Download the requested track This could be extended or changed to support lists"""
+        # look for various Artists
+        object_id = song_id
+        search_song = ampache.song(self.ampache_url, self.ampache_session, object_id, self.api_format)
+        list_songs = list()
+        # get your song details into a list
+        for child in search_song:
+            if self.api_format == 'xml':
+                if child.tag == 'song':
+                    if transcode != 'raw':
+                        # transcoded files have a different extension to the original
+                        list_songs.append([child.attrib['id'], child.find('url').text])
+                    else:
+                        list_songs.append([child.attrib['id'], child.find('url').text])
+            else:
+                if transcode != 'raw':
+                    # transcoded files have a different extension to the original
+                    list_songs.append([child['id'], child['url']['name']])
+                else:
+                    list_songs.append([child['id'], child['url']['name']])
+        # now you have the details you can construct a file destination
+        for song_object in list_songs:
+            print("Playing " + song_object[0])
+            print("URL     " + song_object[1])
+
+            playsound.playsound(song_object[1])
 
 
 if __name__ == "__main__":
