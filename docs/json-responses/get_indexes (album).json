@@ -1,14 +1,49 @@
 {
     "album": [
         {
+            "id": "98156",
+            "name": "-+",
+            "artist": {
+                "id": "1081",
+                "name": "Mr.Kitty"
+            },
+            "time": 1552,
+            "year": 2020,
+            "tracks": [],
+            "songcount": "6",
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "7",
+                    "name": "Synthpop"
+                },
+                {
+                    "id": "48",
+                    "name": "New Wave"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=98156&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "984aeded-cb31-495f-8a19-b38db868d4d6"
+        },
+        {
             "id": "81350",
             "name": "-2-",
             "artist": {
                 "id": "292",
                 "name": "Vinterriket"
             },
+            "time": 4067,
             "year": 2005,
-            "tracks": "8",
+            "tracks": [],
+            "songcount": "8",
             "disk": 1,
             "genre": [
                 {
@@ -16,7 +51,7 @@
                     "name": "Ambient"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=81350&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=81350&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -30,8 +65,10 @@
                 "id": "5696",
                 "name": "Newt"
             },
+            "time": 3822,
             "year": 1997,
-            "tracks": "10",
+            "tracks": [],
+            "songcount": "10",
             "disk": 1,
             "genre": [
                 {
@@ -51,7 +88,7 @@
                     "name": "Drum N Bass"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=90265&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=90265&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -65,8 +102,10 @@
                 "id": "13647",
                 "name": "Leger des Heils"
             },
+            "time": 2637,
             "year": 2012,
-            "tracks": "9",
+            "tracks": [],
+            "songcount": "9",
             "disk": 1,
             "genre": [
                 {
@@ -82,30 +121,12 @@
                     "name": "Modern Classical"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=67900&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=67900&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "mbid": "773c657a-1046-4407-a655-5035de33bc92"
-        },
-        {
-            "id": "95235",
-            "name": ":Resum\u00e9",
-            "artist": {
-                "id": "15229",
-                "name": "John Taylor"
-            },
-            "year": 1999,
-            "tracks": "9",
-            "disk": 1,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=95235&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "0d813f5c-62af-4a98-8432-b28edd51cce8"
         }
     ]
 }

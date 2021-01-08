@@ -1,47 +1,101 @@
 {
     "song": [
         {
-            "id": "906491",
-            "title": "Bear Hug",
-            "name": "Bear Hug",
+            "id": "899118",
+            "title": "Daughter of Corinth",
+            "name": "Daughter of Corinth",
             "artist": {
-                "id": "5379",
-                "name": "Fun Lovin' Criminals"
+                "id": "16305",
+                "name": "Ex Libris"
             },
             "album": {
-                "id": "72923",
-                "name": "Come Find Yourself"
+                "id": "72224",
+                "name": "Medea"
+            },
+            "genre": [
+                {
+                    "id": "51",
+                    "name": "Gothic Metal"
+                },
+                {
+                    "id": "520",
+                    "name": "Symphonic"
+                }
+            ],
+            "albumartist": {
+                "id": "16305",
+                "name": "Ex Libris"
+            },
+            "filename": "\/mnt\/music\/Ex Libris\/(2014) Medea\/107 - Daughter of Corinth.mp3",
+            "track": 7,
+            "playlisttrack": 1,
+            "time": 472,
+            "year": 2014,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=899118&uid=2&player=api&name=Ex%20Libris%20-%20Daughter%20of%20Corinth.mp3",
+            "size": 19040383,
+            "mbid": "f61c8804-6b09-426f-aabd-a0568926deff",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=72224&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "[no label]",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-10.290000",
+            "replaygain_track_peak": "1.000000"
+        },
+        {
+            "id": "161825",
+            "title": "Madder Red",
+            "name": "Madder Red",
+            "artist": {
+                "id": "8416",
+                "name": "Yeasayer"
+            },
+            "album": {
+                "id": "89877",
+                "name": "Odd Blood"
             },
             "genre": [
                 {
                     "id": "33",
                     "name": "Alternative Rock"
-                },
-                {
-                    "id": "2014",
-                    "name": "Alternative Pop"
                 }
             ],
             "albumartist": {
-                "id": "5379",
-                "name": "Fun Lovin' Criminals"
+                "id": "8416",
+                "name": "Yeasayer"
             },
-            "filename": "\/mnt\/music\/Fun Lovin' Criminals\/(1996) Come Find Yourself [D 115778; E2-35703]\/110 - Bear Hug.mp3",
-            "track": 10,
-            "playlisttrack": 1,
-            "time": 209,
-            "year": 1996,
+            "filename": "\/mnt\/music\/Yeasayer\/(2010) Odd Blood [SC210]\/103 - Madder Red.mp3",
+            "track": 3,
+            "playlisttrack": 2,
+            "time": 243,
+            "year": 2010,
             "bitrate": 320000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=906491&uid=2&player=api&name=Fun%20Lovin-%20Criminals%20-%20Bear%20Hug.mp3",
-            "size": 8460226,
-            "mbid": "20af7aa3-b612-48af-9d92-5686b5bd4c71",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=161825&uid=2&player=api&name=Yeasayer%20-%20Madder%20Red.mp3",
+            "size": 9751031,
+            "mbid": "c724149f-8b79-4072-a7a3-97d0181bb262",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=72923&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=89877&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -51,171 +105,55 @@
             "composer": "",
             "channels": null,
             "comment": "",
-            "publisher": "BMG Direct Marketing, Inc.; EMI",
-            "language": "eng",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-7.310000",
-            "replaygain_track_peak": "0.891000"
-        },
-        {
-            "id": "795093",
-            "title": "Hyderomastgroningem",
-            "name": "Hyderomastgroningem",
-            "artist": {
-                "id": "11053",
-                "name": "Ruins"
-            },
-            "album": {
-                "id": "86334",
-                "name": "Hyderomastgroningem"
-            },
-            "genre": [
-                {
-                    "id": "6",
-                    "name": "Rock"
-                },
-                {
-                    "id": "77",
-                    "name": "Experimental"
-                }
-            ],
-            "albumartist": {
-                "id": "11053",
-                "name": "Ruins"
-            },
-            "filename": "\/mnt\/music\/Ruins\/(1995) Hyderomastgroningem [TZ 7202]\/101 - Hyderomastgroningem.mp3",
-            "track": 1,
-            "playlisttrack": 2,
-            "time": 87,
-            "year": 1995,
-            "bitrate": 256000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=795093&uid=2&player=api&name=Ruins%20-%20Hyderomastgroningem.mp3",
-            "size": 3835209,
-            "mbid": "3621cfe3-0321-402f-b0f9-d19ccbf47eda",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=86334&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "Tzadik",
+            "publisher": "Secretly Canadian",
             "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-3.460000",
-            "replaygain_track_peak": "0.902000"
+            "replaygain_track_gain": "-8.180000",
+            "replaygain_track_peak": "0.989000"
         },
         {
-            "id": "145268",
-            "title": "Body Crumbles",
-            "name": "Body Crumbles",
+            "id": "54997",
+            "title": "Pw\/Om",
+            "name": "Pw\/Om",
             "artist": {
-                "id": "8167",
-                "name": "Dry Cell"
+                "id": "3075",
+                "name": "mc chris"
             },
             "album": {
-                "id": "87432",
-                "name": "Queen of the Damned"
+                "id": "88940",
+                "name": "Dungeon Master of Ceremonies"
             },
             "genre": [
                 {
-                    "id": "6",
-                    "name": "Rock"
+                    "id": "115",
+                    "name": "Rap"
                 },
                 {
-                    "id": "77",
-                    "name": "Experimental"
-                },
-                {
-                    "id": "155",
-                    "name": "Nu Metal"
+                    "id": "1409",
+                    "name": "Hip Hop"
                 }
             ],
             "albumartist": {
-                "id": "15962",
-                "name": "Various Artists"
+                "id": "3075",
+                "name": "mc chris"
             },
-            "filename": "\/mnt\/music\/Various Artists\/(2002) Queen of the Damned [9362-48288-2; 9362-48288-2; 9362-48288-2]\/112 - Dry Cell - Body Crumbles.mp3",
-            "track": 12,
+            "filename": "\/mnt\/music\/mc chris\/(2006) Dungeon Master of Ceremonies\/109 - PW_OM.mp3",
+            "track": 9,
             "playlisttrack": 3,
-            "time": 187,
-            "year": 2002,
+            "time": 221,
+            "year": 2006,
             "bitrate": 192000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=145268&uid=2&player=api&name=Dry%20Cell%20-%20Body%20Crumbles.mp3",
-            "size": 4559573,
-            "mbid": "ee4f1dac-5413-4845-a197-d43c78c72862",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54997&uid=2&player=api&name=mc%20chris%20-%20Pw-Om.mp3",
+            "size": 5370829,
+            "mbid": "892870d9-4727-412d-86da-0afa18340711",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=87432&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 1,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "Reprise Records; Warner Bros. Records; Warner Sunset Records",
-            "language": "eng",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-9.970000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "119537",
-            "title": "Taival",
-            "name": "Taival",
-            "artist": {
-                "id": "6786",
-                "name": "Tenhi"
-            },
-            "album": {
-                "id": "81443",
-                "name": "Kauan"
-            },
-            "genre": [
-                {
-                    "id": "241",
-                    "name": "Neofolk"
-                }
-            ],
-            "albumartist": {
-                "id": "6786",
-                "name": "Tenhi"
-            },
-            "filename": "\/mnt\/music\/Tenhi\/(1999) Kauan [PRO 017]\/107 - Taival.mp3",
-            "track": 7,
-            "playlisttrack": 4,
-            "time": 404,
-            "year": 2002,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=119537&uid=2&player=api&name=Tenhi%20-%20Taival.mp3",
-            "size": 16212106,
-            "mbid": "13cf714d-ad0b-401a-b6cf-621499859567",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=81443&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=88940&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -225,12 +163,66 @@
             "composer": "",
             "channels": null,
             "comment": "",
-            "publisher": "Prophecy Productions",
+            "publisher": "",
             "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-3.180000",
+            "replaygain_track_gain": "-10.240000",
             "replaygain_track_peak": "1.000000"
+        },
+        {
+            "id": "87394",
+            "title": "Fall (falls apart)",
+            "name": "Fall (falls apart)",
+            "artist": {
+                "id": "5562",
+                "name": "Swarf"
+            },
+            "album": {
+                "id": "80525",
+                "name": "Fall"
+            },
+            "genre": [
+                {
+                    "id": "7",
+                    "name": "Synthpop"
+                }
+            ],
+            "albumartist": {
+                "id": "5562",
+                "name": "Swarf"
+            },
+            "filename": "\/mnt\/music\/Swarf\/(2001) Fall\/105 - Fall (falls apart).mp3",
+            "track": 5,
+            "playlisttrack": 4,
+            "time": 363,
+            "year": 2001,
+            "bitrate": 256000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=87394&uid=2&player=api&name=Swarf%20-%20Fall%20-falls%20apart-.mp3",
+            "size": 11693504,
+            "mbid": "efd86104-6fd1-4781-af9a-830b07df4b8b",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=80525&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-5.640000",
+            "replaygain_track_peak": "0.861000"
         }
     ]
 }

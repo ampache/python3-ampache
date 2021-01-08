@@ -1,10 +1,24 @@
 {
     "playlist": [
         {
+            "id": "2197",
+            "name": "17102-2",
+            "owner": "user",
+            "items": "5",
+            "type": "private"
+        },
+        {
+            "id": "2184",
+            "name": "bangers",
+            "owner": "nyssa",
+            "items": "92",
+            "type": "public"
+        },
+        {
             "id": "2002",
             "name": "dewaardradio",
             "owner": "System",
-            "items": "15412",
+            "items": "15296",
             "type": "private"
         },
         {
@@ -13,20 +27,6 @@
             "owner": "user",
             "items": "1",
             "type": "public"
-        },
-        {
-            "id": "2180",
-            "name": "documentation",
-            "owner": "user",
-            "items": 0,
-            "type": "public"
-        },
-        {
-            "id": "2113",
-            "name": "follow up artists",
-            "owner": "user",
-            "items": "10",
-            "type": "private"
         }
     ]
 }

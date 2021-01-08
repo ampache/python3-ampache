@@ -1,3 +1,8 @@
 {
-    "success": "song added to playlist"
+    "error": {
+        "errorCode": "4710",
+        "errorAction": "playlist_add_song",
+        "errorType": "duplicate",
+        "errorMessage": "Bad Request: 955"
+    }
 }

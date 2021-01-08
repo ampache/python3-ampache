@@ -1,58 +1,54 @@
 {
-    "song": [
+    "id": "955",
+    "title": "Wanderlust",
+    "name": "Wanderlust",
+    "artist": {
+        "id": "55",
+        "name": "Nightwish"
+    },
+    "album": {
+        "id": "94918",
+        "name": "Wishmaster"
+    },
+    "genre": [
         {
-            "id": "955",
-            "title": "Wanderlust",
-            "name": "Wanderlust",
-            "artist": {
-                "id": "55",
-                "name": "Nightwish"
-            },
-            "album": {
-                "id": "94918",
-                "name": "Wishmaster"
-            },
-            "genre": [
-                {
-                    "id": "20",
-                    "name": "Metal"
-                }
-            ],
-            "albumartist": {
-                "id": "55",
-                "name": "Nightwish"
-            },
-            "filename": "\/mnt\/music\/Nightwish\/(2000) Wishmaster\/104 - Wanderlust.mp3",
-            "track": 4,
-            "playlisttrack": 1,
-            "time": 290,
-            "year": 2000,
-            "bitrate": 265841,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=955&uid=2&player=api&name=Nightwish%20-%20Wanderlust.mp3",
-            "size": 9731039,
-            "mbid": "0584e353-a06f-4c97-a6fb-3ee521e65625",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=94918&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "Tuomas Holopainen",
-            "channels": null,
-            "comment": "",
-            "publisher": "Drakkar Records",
-            "language": "eng",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-9.490000",
-            "replaygain_track_peak": "1.000000"
+            "id": "20",
+            "name": "Metal"
         }
-    ]
+    ],
+    "albumartist": {
+        "id": "55",
+        "name": "Nightwish"
+    },
+    "filename": "\/mnt\/music\/Nightwish\/(2000) Wishmaster\/104 - Wanderlust.mp3",
+    "track": 4,
+    "playlisttrack": 1,
+    "time": 290,
+    "year": 2000,
+    "bitrate": 265841,
+    "rate": 44100,
+    "mode": "vbr",
+    "mime": "audio\/mpeg",
+    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=955&uid=2&player=api&name=Nightwish%20-%20Wanderlust.mp3",
+    "size": 9731039,
+    "mbid": "0584e353-a06f-4c97-a6fb-3ee521e65625",
+    "album_mbid": null,
+    "artist_mbid": null,
+    "albumartist_mbid": null,
+    "art": "https:\/\/music.com.au\/image.php?object_id=94918&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+    "flag": 0,
+    "preciserating": null,
+    "rating": null,
+    "averagerating": null,
+    "playcount": 0,
+    "catalog": 2,
+    "composer": "Tuomas Holopainen",
+    "channels": null,
+    "comment": "",
+    "publisher": "Drakkar Records",
+    "language": "eng",
+    "replaygain_album_gain": "0.000000",
+    "replaygain_album_peak": "0.000000",
+    "replaygain_track_gain": "-9.490000",
+    "replaygain_track_peak": "1.000000"
 }

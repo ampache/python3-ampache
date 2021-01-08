@@ -1,3 +1,8 @@
 {
-    "success": "successfully recorded play: 77371"
+    "error": {
+        "errorCode": "4704",
+        "errorAction": "record_play",
+        "errorType": "user",
+        "errorMessage": "Not Found: 0"
+    }
 }

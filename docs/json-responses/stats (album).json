@@ -1,40 +1,53 @@
 {
     "album": [
         {
-            "id": "96351",
-            "name": "Covers the Classics",
+            "id": "78004",
+            "name": "Electric Mountain",
             "artist": {
-                "id": "8980",
-                "name": "Creedence Clearwater Revival"
+                "id": "9086",
+                "name": "Electric Mountain"
             },
-            "year": 2009,
-            "tracks": "12",
+            "time": 1855,
+            "year": 2017,
+            "tracks": [],
+            "songcount": "8",
             "disk": 1,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=96351&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "genre": [
+                {
+                    "id": "37",
+                    "name": "Hard Rock"
+                },
+                {
+                    "id": "1148",
+                    "name": "Stoner"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=78004&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": "d823ef2f-0d91-4c65-a0ee-4377847d720d"
+            "mbid": "581cab2c-369a-4922-8733-7c8d64d3f64d"
         },
         {
-            "id": "89206",
-            "name": "'74 Jailbreak",
+            "id": "94269",
+            "name": "Red Tandy",
             "artist": {
-                "id": "869",
-                "name": "AC\/DC"
+                "id": "6530",
+                "name": "Mother Hips"
             },
-            "year": 2003,
-            "tracks": "5",
+            "time": 894,
+            "year": 2005,
+            "tracks": [],
+            "songcount": "4",
             "disk": 1,
             "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=89206&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=94269&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": "a2b73eb8-fe55-3bb6-a61e-b89f36d4b045"
+            "mbid": "ae3c39b2-c804-448d-b20f-837357398dd4"
         }
     ]
 }

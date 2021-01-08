@@ -1,23 +1,33 @@
 {
-    "album": [
+    "id": "98156",
+    "name": "-+",
+    "artist": {
+        "id": "1081",
+        "name": "Mr.Kitty"
+    },
+    "time": 1552,
+    "year": 2020,
+    "tracks": [],
+    "songcount": "6",
+    "disk": 1,
+    "genre": [
         {
-            "id": "98156",
-            "name": "-+",
-            "artist": {
-                "id": "1081",
-                "name": "Mr.Kitty"
-            },
-            "time": 1552,
-            "year": 2020,
-            "tracks": "6",
-            "disk": 1,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=98156&object_type=album&auth=cfj3f237d563f479f5223k23189dbb34",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "984aeded-cb31-495f-8a19-b38db868d4d6"
+            "id": "4",
+            "name": "Electronic"
+        },
+        {
+            "id": "7",
+            "name": "Synthpop"
+        },
+        {
+            "id": "48",
+            "name": "New Wave"
         }
-    ]
+    ],
+    "art": "https:\/\/music.com.au\/image.php?object_id=98156&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+    "flag": 0,
+    "preciserating": null,
+    "rating": null,
+    "averagerating": null,
+    "mbid": "984aeded-cb31-495f-8a19-b38db868d4d6"
 }
