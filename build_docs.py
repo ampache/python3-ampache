@@ -117,7 +117,12 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 "docs/" + api_format + "-responses/user (error)." + api_format)
 
     myuser = ampache.user(ampache_url, ampache_session, 'demo', api_format)
-    user_id = ampache.get_id_list(myuser, 'user', api_format)[0]
+    if api_format == 'xml':
+        for child in myuser:
+            if child.tag == 'user':
+                myuser = child.attrib['id']
+    else:
+        user_id = myuser['id']
 
     """ def get_indexes(ampache_url, ampache_api, object_type, filter_str, exact, add, update, include, offset, limit, api_format)):
 
@@ -133,7 +138,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (album)." + api_format)
     single_album = ampache.get_id_list(albums, 'album', api_format)[0]
-    
+
     artists = ampache.get_indexes(ampache_url, ampache_session, 'artist', False, False, False, False, False, offset, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (artist)." + api_format)
@@ -172,10 +177,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 "docs/" + api_format + "-responses/advanced_search (song)." + api_format)
 
     if api_format == 'xml':
-        for child in search_song:
-            if child.tag == 'song':
-                print(child.find('title').text)
-                song_id = child.attrib['id']
+        song_id = search_song[1].attrib['id']
     else:
         print(search_song['song'][0]['title'])
         song_id = search_song['song'][0]['id']
@@ -321,14 +323,14 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ def playlist_create(ampache_url, ampache_api, name, type, api_format = 'xml'):
     """
     playlist_create = ampache.playlist_create(ampache_url, ampache_session, 'rename', 'private', api_format)
-    
+
     if api_format == 'xml':
         for child in playlist_create:
             if child.tag == 'playlist':
                 tmp_playlist = child.attrib['id']
         single_playlist = tmp_playlist
     else:
-        single_playlist = playlist_create['playlist'][0]['id']
+        single_playlist = playlist_create['id']
 
     """ def playlist_edit(ampache_url, ampache_api, filter, name = False, type = False, api_format = 'xml'):
     """
@@ -540,7 +542,10 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ share_create
     """
     share_create = ampache.share_create(ampache_url, ampache_session, single_song, 'song', False, False, api_format)
-    share_new = ampache.get_id_list(share_create, 'share', api_format)[0]
+    if api_format == 'xml':
+        share_new = share_create[1].attrib['id']
+    else:
+        share_new = share_create['id']
 
     """ share_edit
     """
@@ -617,3 +622,4 @@ def self_check(api_format, ampache_url, ampache_api, ampache_session):
 
 build_docs(url, api, user, 'xml')
 build_docs(url, api, user, 'json')
+
