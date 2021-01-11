@@ -1,43 +1,97 @@
 {
     "song": [
         {
-            "id": "919667",
-            "title": "Manifest (Rara Avis remix)",
-            "name": "Manifest (Rara Avis remix)",
+            "id": "850302",
+            "title": "Terroir 1",
+            "name": "Terroir 1",
             "artist": {
-                "id": "17270",
-                "name": "Karsh Kale"
+                "id": "13179",
+                "name": "Handful of Snowdrops"
             },
             "album": {
-                "id": "96932",
-                "name": "Tantra Lounge, Volume 5"
+                "id": "66517",
+                "name": "Land of the Damned"
             },
             "genre": [
                 {
-                    "id": "4",
-                    "name": "Electronic"
+                    "id": "52",
+                    "name": "Darkwave"
                 }
             ],
             "albumartist": {
-                "id": "15962",
-                "name": "Various Artists"
+                "id": "13179",
+                "name": "Handful of Snowdrops"
             },
-            "filename": "\/mnt\/music\/Various Artists\/(2007) Tantra Lounge, Volume 5 [302 060 714-2]\/103 - Karsh Kale - Manifest (Rara Avis remix).mp3",
-            "track": 3,
+            "filename": "\/mnt\/music\/Handful of Snowdrops\/(1990) Land of the Damned [CLM-CD 028]\/101 - Terroir 1.mp3",
+            "track": 1,
             "playlisttrack": 1,
-            "time": 314,
-            "year": 2007,
-            "bitrate": 220112,
+            "time": 161,
+            "year": 1990,
+            "bitrate": 320000,
             "rate": 44100,
-            "mode": "vbr",
+            "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=919667&uid=2&player=api&name=Karsh%20Kale%20-%20Manifest%20-Rara%20Avis%20remix-.mp3",
-            "size": 8719202,
-            "mbid": "d4310719-ad34-4d1c-be1a-b6dd794b25d9",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=850302&uid=2&player=api&name=Handful%20of%20Snowdrops%20-%20Terroir%201.mp3",
+            "size": 6462570,
+            "mbid": "9e3c88ec-227d-4951-a8d6-9070345f6131",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=96932&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=66517&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "C'est la Mort",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-6.550000",
+            "replaygain_track_peak": "0.989000"
+        },
+        {
+            "id": "850295",
+            "title": "When Comes Daylight",
+            "name": "When Comes Daylight",
+            "artist": {
+                "id": "13179",
+                "name": "Handful of Snowdrops"
+            },
+            "album": {
+                "id": "66517",
+                "name": "Land of the Damned"
+            },
+            "genre": [
+                {
+                    "id": "52",
+                    "name": "Darkwave"
+                }
+            ],
+            "albumartist": {
+                "id": "13179",
+                "name": "Handful of Snowdrops"
+            },
+            "filename": "\/mnt\/music\/Handful of Snowdrops\/(1990) Land of the Damned [CLM-CD 028]\/102 - When Comes Daylight.mp3",
+            "track": 2,
+            "playlisttrack": 2,
+            "time": 299,
+            "year": 1990,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=850295&uid=2&player=api&name=Handful%20of%20Snowdrops%20-%20When%20Comes%20Daylight.mp3",
+            "size": 11983811,
+            "mbid": "7d1a0166-4d92-4900-89fa-0d2ab2534973",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=66517&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -46,12 +100,120 @@
             "catalog": 2,
             "composer": "",
             "channels": null,
-            "comment": "-> C4 2 Ya DooR <-",
-            "publisher": "Water Music Records",
-            "language": "English",
+            "comment": "",
+            "publisher": "C'est la Mort",
+            "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-6.650000",
+            "replaygain_track_gain": "-9.630000",
+            "replaygain_track_peak": "1.000000"
+        },
+        {
+            "id": "850296",
+            "title": "Gabrielle",
+            "name": "Gabrielle",
+            "artist": {
+                "id": "13179",
+                "name": "Handful of Snowdrops"
+            },
+            "album": {
+                "id": "66517",
+                "name": "Land of the Damned"
+            },
+            "genre": [
+                {
+                    "id": "52",
+                    "name": "Darkwave"
+                }
+            ],
+            "albumartist": {
+                "id": "13179",
+                "name": "Handful of Snowdrops"
+            },
+            "filename": "\/mnt\/music\/Handful of Snowdrops\/(1990) Land of the Damned [CLM-CD 028]\/103 - Gabrielle.mp3",
+            "track": 3,
+            "playlisttrack": 3,
+            "time": 393,
+            "year": 1990,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=850296&uid=2&player=api&name=Handful%20of%20Snowdrops%20-%20Gabrielle.mp3",
+            "size": 15746488,
+            "mbid": "bf4c76aa-eeff-4486-af3c-e11be4a69909",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=66517&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "C'est la Mort",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-9.030000",
+            "replaygain_track_peak": "1.000000"
+        },
+        {
+            "id": "850299",
+            "title": "A Miracle",
+            "name": "A Miracle",
+            "artist": {
+                "id": "13179",
+                "name": "Handful of Snowdrops"
+            },
+            "album": {
+                "id": "66517",
+                "name": "Land of the Damned"
+            },
+            "genre": [
+                {
+                    "id": "52",
+                    "name": "Darkwave"
+                }
+            ],
+            "albumartist": {
+                "id": "13179",
+                "name": "Handful of Snowdrops"
+            },
+            "filename": "\/mnt\/music\/Handful of Snowdrops\/(1990) Land of the Damned [CLM-CD 028]\/104 - A Miracle.mp3",
+            "track": 4,
+            "playlisttrack": 4,
+            "time": 297,
+            "year": 1990,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=850299&uid=2&player=api&name=Handful%20of%20Snowdrops%20-%20A%20Miracle.mp3",
+            "size": 11906488,
+            "mbid": "09c5dd31-c9de-44fe-a0f2-bce11bb6f622",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=66517&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "publisher": "C'est la Mort",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-8.030000",
             "replaygain_track_peak": "1.000000"
         }
     ]

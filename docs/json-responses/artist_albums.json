@@ -1,29 +1,104 @@
 {
     "album": [
         {
-            "id": "96932",
-            "name": "Tantra Lounge, Volume 5",
+            "id": "75692",
+            "name": "Noir",
             "artist": {
-                "id": "15962",
-                "name": "Various Artists"
+                "id": "13179",
+                "name": "Handful of Snowdrops"
             },
-            "time": 4759,
-            "year": 2007,
+            "time": 2465,
+            "year": 2018,
             "tracks": [],
-            "songcount": "15",
+            "songcount": 8,
             "disk": 1,
             "genre": [
                 {
-                    "id": "4",
-                    "name": "Electronic"
+                    "id": "52",
+                    "name": "Darkwave"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=96932&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=75692&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": "15b8fe47-0d4c-4e02-bcdd-366e61e2a8c7"
+            "mbid": "d527d7da-5796-4886-a453-e3c2a9123888"
+        },
+        {
+            "id": "75693",
+            "name": "III",
+            "artist": {
+                "id": "13179",
+                "name": "Handful of Snowdrops"
+            },
+            "time": 3246,
+            "year": 2015,
+            "tracks": [],
+            "songcount": 10,
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "52",
+                    "name": "Darkwave"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=75693&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "9ab01d8a-9052-4f2a-b58f-9ab621d33e03"
+        },
+        {
+            "id": "97076",
+            "name": "Mort En Direct",
+            "artist": {
+                "id": "13179",
+                "name": "Handful of Snowdrops"
+            },
+            "time": 4149,
+            "year": 1993,
+            "tracks": [],
+            "songcount": 11,
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "52",
+                    "name": "Darkwave"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=97076&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "32157090-5a02-4c7c-835e-dccc50f68d29"
+        },
+        {
+            "id": "74633",
+            "name": "Dans L'Oeil de la Temp\u00eate",
+            "artist": {
+                "id": "13179",
+                "name": "Handful of Snowdrops"
+            },
+            "time": 3150,
+            "year": 1991,
+            "tracks": [],
+            "songcount": 9,
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "52",
+                    "name": "Darkwave"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=74633&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "f56240c5-c2fa-43ca-9d71-ba2c58bf1e68"
         }
     ]
 }

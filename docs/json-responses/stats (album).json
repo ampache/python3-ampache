@@ -1,53 +1,53 @@
 {
     "album": [
         {
-            "id": "78004",
-            "name": "Electric Mountain",
+            "id": "93912",
+            "name": "Wastelands",
             "artist": {
-                "id": "9086",
-                "name": "Electric Mountain"
+                "id": "2055",
+                "name": "Eskimo Joe"
             },
-            "time": 1855,
-            "year": 2017,
+            "time": 2539,
+            "year": 2013,
             "tracks": [],
-            "songcount": "8",
+            "songcount": 10,
+            "disk": 1,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=93912&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "9df4ac1a-83b0-442e-a1db-e847784c0745"
+        },
+        {
+            "id": "69758",
+            "name": "Today",
+            "artist": {
+                "id": "9530",
+                "name": "Babe Rainbow"
+            },
+            "time": 2826,
+            "year": 2019,
+            "tracks": [],
+            "songcount": 11,
             "disk": 1,
             "genre": [
                 {
-                    "id": "37",
-                    "name": "Hard Rock"
+                    "id": "35",
+                    "name": "Indie"
                 },
                 {
-                    "id": "1148",
-                    "name": "Stoner"
+                    "id": "2556",
+                    "name": "Neo Psychedelic"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=78004&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=69758&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": "581cab2c-369a-4922-8733-7c8d64d3f64d"
-        },
-        {
-            "id": "94269",
-            "name": "Red Tandy",
-            "artist": {
-                "id": "6530",
-                "name": "Mother Hips"
-            },
-            "time": 894,
-            "year": 2005,
-            "tracks": [],
-            "songcount": "4",
-            "disk": 1,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=94269&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "ae3c39b2-c804-448d-b20f-837357398dd4"
+            "mbid": "3300e00f-3137-4213-832e-3e3f8c220e76"
         }
     ]
 }
