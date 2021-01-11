@@ -1,15 +1,13 @@
-[
-    {
-        "id": "2",
-        "name": "music",
-        "type": "local",
-        "gather_types": "music",
-        "last_add": "1",
-        "allow_download": "2020\/08\/31 09:41pm",
-        "last_clean": "2020\/08\/31 09:40pm",
-        "last_update": "2020\/08\/22 09:41pm",
-        "path": "\/mnt\/music",
-        "rename_pattern": "%d%T - %t",
-        "sort_pattern": "%a\/(%y) %A [%C]"
-    }
-]
+{
+    "id": "2",
+    "name": "music",
+    "type": "local",
+    "gather_types": "music",
+    "last_add": "1",
+    "allow_download": "2020\/08\/31 09:41pm",
+    "last_clean": "2020\/08\/31 09:40pm",
+    "last_update": "2020\/08\/22 09:41pm",
+    "path": "\/mnt\/music",
+    "rename_pattern": "%d%T - %t",
+    "sort_pattern": "%a\/(%y) %A [%C]"
+}
