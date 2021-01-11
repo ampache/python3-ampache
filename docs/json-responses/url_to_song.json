@@ -1,62 +1,58 @@
 {
-    "song": [
+    "id": "164215",
+    "title": "!",
+    "name": "!",
+    "artist": {
+        "id": "8526",
+        "name": "Hellyeah"
+    },
+    "album": {
+        "id": "77816",
+        "name": "Unden!able"
+    },
+    "genre": [
         {
-            "id": "164215",
-            "title": "!",
-            "name": "!",
-            "artist": {
-                "id": "8526",
-                "name": "Hellyeah"
-            },
-            "album": {
-                "id": "77816",
-                "name": "Unden!able"
-            },
-            "genre": [
-                {
-                    "id": "20",
-                    "name": "Metal"
-                },
-                {
-                    "id": "37",
-                    "name": "Hard Rock"
-                }
-            ],
-            "albumartist": {
-                "id": "8526",
-                "name": "Hellyeah"
-            },
-            "filename": "\/mnt\/music\/Hellyeah\/(2016) Unden!able [ESM 171-2]\/101 - !.mp3",
-            "track": 1,
-            "playlisttrack": 1,
-            "time": 79,
-            "year": 2016,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=164215&uid=2&player=api&name=Hellyeah%20-%20-.mp3",
-            "size": 3184944,
-            "mbid": "42bb2b7a-bf67-4cc4-8610-25399d56474b",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=77816&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "Eleven Seven Music",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-6.920000",
-            "replaygain_track_peak": "1.000000"
+            "id": "20",
+            "name": "Metal"
+        },
+        {
+            "id": "37",
+            "name": "Hard Rock"
         }
-    ]
+    ],
+    "albumartist": {
+        "id": "8526",
+        "name": "Hellyeah"
+    },
+    "filename": "\/mnt\/music\/Hellyeah\/(2016) Unden!able [ESM 171-2]\/101 - !.mp3",
+    "track": 1,
+    "playlisttrack": 1,
+    "time": 79,
+    "year": 2016,
+    "bitrate": 320000,
+    "rate": 44100,
+    "mode": "cbr",
+    "mime": "audio\/mpeg",
+    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=164215&uid=2&player=api&name=Hellyeah%20-%20-.mp3",
+    "size": 3184944,
+    "mbid": "42bb2b7a-bf67-4cc4-8610-25399d56474b",
+    "album_mbid": null,
+    "artist_mbid": null,
+    "albumartist_mbid": null,
+    "art": "https:\/\/music.com.au\/image.php?object_id=77816&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+    "flag": 0,
+    "preciserating": null,
+    "rating": null,
+    "averagerating": null,
+    "playcount": 0,
+    "catalog": 2,
+    "composer": "",
+    "channels": null,
+    "comment": "",
+    "publisher": "Eleven Seven Music",
+    "language": "",
+    "replaygain_album_gain": "0.000000",
+    "replaygain_album_peak": "0.000000",
+    "replaygain_track_gain": "-6.920000",
+    "replaygain_track_peak": "1.000000"
 }

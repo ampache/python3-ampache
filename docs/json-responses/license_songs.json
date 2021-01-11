@@ -1,8 +1,352 @@
 {
-    "error": {
-        "errorCode": "4703",
-        "errorAction": "license_songs",
-        "errorType": "system",
-        "errorMessage": "Enable: licensing"
-    }
+    "song": [
+        {
+            "id": "925850",
+            "title": "You Are Worthless Alec Baldwin (Bonus Track)",
+            "name": "You Are Worthless Alec Baldwin (Bonus Track)",
+            "artist": {
+                "id": "17616",
+                "name": "DVDA"
+            },
+            "album": {
+                "id": "74903",
+                "name": "DVDA - The Album"
+            },
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Comedy"
+                },
+                {
+                    "id": "6",
+                    "name": "Rock"
+                },
+                {
+                    "id": "22",
+                    "name": "Pop"
+                },
+                {
+                    "id": "33",
+                    "name": "Alternative Rock"
+                },
+                {
+                    "id": "43",
+                    "name": "Soundtrack"
+                },
+                {
+                    "id": "184",
+                    "name": "Parody"
+                },
+                {
+                    "id": "544",
+                    "name": "Thug Rap"
+                },
+                {
+                    "id": "826",
+                    "name": "Stage & Screen"
+                },
+                {
+                    "id": "1409",
+                    "name": "Hip Hop"
+                }
+            ],
+            "albumartist": {
+                "id": "17616",
+                "name": "DVDA"
+            },
+            "filename": "\/mnt\/music\/DVDA\/(2014) DVDA - The Album\/171 - You Are Worthless Alec Baldwin (Bonus Track).flac",
+            "track": 71,
+            "playlisttrack": 1,
+            "time": 80,
+            "year": 2014,
+            "bitrate": 716191,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=925850&uid=2&player=api&name=DVDA%20-%20You%20Are%20Worthless%20Alec%20Baldwin%20-Bonus%20Track-.flac",
+            "size": 7233238,
+            "mbid": "2ced591e-4902-4cba-a107-30c5b7d5c8bf",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=74903&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "Visit http:\/\/kennytweek.bandcamp.com",
+            "license": "<a href=\"https:\/\/creativecommons.org\/licenses\/by\/3.0\/\">CC BY 3.0<\/a>",
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000"
+        },
+        {
+            "id": "925851",
+            "title": "Freedom Isn't Free",
+            "name": "Freedom Isn't Free",
+            "artist": {
+                "id": "17616",
+                "name": "DVDA"
+            },
+            "album": {
+                "id": "74903",
+                "name": "DVDA - The Album"
+            },
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Comedy"
+                },
+                {
+                    "id": "6",
+                    "name": "Rock"
+                },
+                {
+                    "id": "22",
+                    "name": "Pop"
+                },
+                {
+                    "id": "33",
+                    "name": "Alternative Rock"
+                },
+                {
+                    "id": "43",
+                    "name": "Soundtrack"
+                },
+                {
+                    "id": "184",
+                    "name": "Parody"
+                },
+                {
+                    "id": "544",
+                    "name": "Thug Rap"
+                },
+                {
+                    "id": "826",
+                    "name": "Stage & Screen"
+                },
+                {
+                    "id": "1409",
+                    "name": "Hip Hop"
+                }
+            ],
+            "albumartist": {
+                "id": "17616",
+                "name": "DVDA"
+            },
+            "filename": "\/mnt\/music\/DVDA\/(2014) DVDA - The Album\/102 - Freedom Isn't Free.flac",
+            "track": 2,
+            "playlisttrack": 2,
+            "time": 158,
+            "year": 2014,
+            "bitrate": 832013,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=925851&uid=2&player=api&name=DVDA%20-%20Freedom%20Isn-t%20Free.flac",
+            "size": 16507142,
+            "mbid": "d1b1f835-1d2d-4709-812b-427ec1d493ed",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=74903&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "Visit http:\/\/kennytweek.bandcamp.com",
+            "license": "<a href=\"https:\/\/creativecommons.org\/licenses\/by\/3.0\/\">CC BY 3.0<\/a>",
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000"
+        },
+        {
+            "id": "925852",
+            "title": "Hot Lava",
+            "name": "Hot Lava",
+            "artist": {
+                "id": "17616",
+                "name": "DVDA"
+            },
+            "album": {
+                "id": "74903",
+                "name": "DVDA - The Album"
+            },
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Comedy"
+                },
+                {
+                    "id": "6",
+                    "name": "Rock"
+                },
+                {
+                    "id": "22",
+                    "name": "Pop"
+                },
+                {
+                    "id": "33",
+                    "name": "Alternative Rock"
+                },
+                {
+                    "id": "43",
+                    "name": "Soundtrack"
+                },
+                {
+                    "id": "184",
+                    "name": "Parody"
+                },
+                {
+                    "id": "544",
+                    "name": "Thug Rap"
+                },
+                {
+                    "id": "826",
+                    "name": "Stage & Screen"
+                },
+                {
+                    "id": "1409",
+                    "name": "Hip Hop"
+                }
+            ],
+            "albumartist": {
+                "id": "17616",
+                "name": "DVDA"
+            },
+            "filename": "\/mnt\/music\/DVDA\/(2014) DVDA - The Album\/109 - Hot Lava.flac",
+            "track": 9,
+            "playlisttrack": 3,
+            "time": 230,
+            "year": 2014,
+            "bitrate": 1019970,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=925852&uid=2&player=api&name=DVDA%20-%20Hot%20Lava.flac",
+            "size": 29438436,
+            "mbid": "e9d78a27-c69a-46d2-b18d-bdfaafd45aad",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=74903&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "Visit http:\/\/kennytweek.bandcamp.com",
+            "license": "<a href=\"https:\/\/creativecommons.org\/licenses\/by\/3.0\/\">CC BY 3.0<\/a>",
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000"
+        },
+        {
+            "id": "925853",
+            "title": "I'm In Love With Myself",
+            "name": "I'm In Love With Myself",
+            "artist": {
+                "id": "17616",
+                "name": "DVDA"
+            },
+            "album": {
+                "id": "74903",
+                "name": "DVDA - The Album"
+            },
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Comedy"
+                },
+                {
+                    "id": "6",
+                    "name": "Rock"
+                },
+                {
+                    "id": "22",
+                    "name": "Pop"
+                },
+                {
+                    "id": "33",
+                    "name": "Alternative Rock"
+                },
+                {
+                    "id": "43",
+                    "name": "Soundtrack"
+                },
+                {
+                    "id": "184",
+                    "name": "Parody"
+                },
+                {
+                    "id": "544",
+                    "name": "Thug Rap"
+                },
+                {
+                    "id": "826",
+                    "name": "Stage & Screen"
+                },
+                {
+                    "id": "1409",
+                    "name": "Hip Hop"
+                }
+            ],
+            "albumartist": {
+                "id": "17616",
+                "name": "DVDA"
+            },
+            "filename": "\/mnt\/music\/DVDA\/(2014) DVDA - The Album\/146 - I'm In Love With Myself.flac",
+            "track": 46,
+            "playlisttrack": 4,
+            "time": 163,
+            "year": 2014,
+            "bitrate": 1200920,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=925853&uid=2&player=api&name=DVDA%20-%20I-m%20In%20Love%20With%20Myself.flac",
+            "size": 24549065,
+            "mbid": "a6d77dfd-3ac6-4ec4-a298-9b62e11c624b",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=74903&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "Visit http:\/\/kennytweek.bandcamp.com",
+            "license": "<a href=\"https:\/\/creativecommons.org\/licenses\/by\/3.0\/\">CC BY 3.0<\/a>",
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000"
+        }
+    ]
 }
