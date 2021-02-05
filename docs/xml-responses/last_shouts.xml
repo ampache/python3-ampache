@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
 <shouts>
+	<shout id="1">
+		<date>1612489434</date>
+		<text><![CDATA[shouts here]]></text>
+		<user id="2">
+			<username><![CDATA[user]]></username>
+		</user>
+	</shout>
 </shouts>
 </root>
