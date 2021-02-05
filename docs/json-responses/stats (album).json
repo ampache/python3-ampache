@@ -1,59 +1,48 @@
 [
     {
-        "id": "49748",
-        "name": "Chapter One",
+        "id": "3062",
+        "name": "Everything Resembles You",
         "artist": {
-            "id": "932",
-            "name": "Black Heaven"
+            "id": "1026",
+            "name": "Eternal Twilight"
         },
-        "year": 2001,
-        "tracks": 12,
-        "disk": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=49748&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "c62a2624-c2ad-46fa-8bd7-b8b7bf9a015b"
-    },
-    {
-        "id": "72877",
-        "name": "Apple Venus, Volume 1",
-        "artist": {
-            "id": "5710",
-            "name": "XTC"
-        },
-        "year": 1999,
-        "tracks": 11,
+        "year": 2011,
+        "tracks": 10,
         "disk": 1,
         "tag": [
             {
-                "id": "6",
-                "name": "Rock"
-            },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            },
-            {
-                "id": "122",
-                "name": "Art Rock"
-            },
-            {
-                "id": "1875",
-                "name": "Chamber Pop"
-            },
-            {
-                "id": "1897",
-                "name": "Art Pop"
+                "id": "12",
+                "name": "Ambient"
             }
         ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=72877&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=3062&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "mbid": "ea9190fe-d7d9-4b82-a200-5e9874b61090"
+        "mbid": "20e795c0-ce18-4941-a368-19347528fde3"
+    },
+    {
+        "id": "20",
+        "name": "H.N.I.C. 3",
+        "artist": {
+            "id": "14",
+            "name": "Prodigy of Mobb Deep"
+        },
+        "year": 2012,
+        "tracks": 20,
+        "disk": 2,
+        "tag": [
+            {
+                "id": "17",
+                "name": "Hip Hop"
+            }
+        ],
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=20&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "mbid": "e92f42f5-0162-460e-bbec-035b74db3b8b"
     }
 ]

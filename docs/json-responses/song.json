@@ -1,56 +1,74 @@
 [
     {
-        "id": "953",
-        "title": "Wishmaster",
-        "name": "Wishmaster",
+        "id": "1",
+        "title": "I Don't Know How the Young Men Living",
+        "name": "I Don't Know How the Young Men Living",
         "artist": {
-            "id": "55",
-            "name": "Nightwish"
+            "id": "1",
+            "name": "Kreuzberg Museum"
         },
         "album": {
-            "id": "48753",
-            "name": "Wishmaster"
+            "id": "1",
+            "name": "Calypso"
         },
         "tag": [
             {
-                "id": "20",
-                "name": "Metal"
+                "id": "1",
+                "name": "Contemporary Folk"
+            },
+            {
+                "id": "2",
+                "name": "Indie Folk"
+            },
+            {
+                "id": "3",
+                "name": "Singer-Songwriter"
             }
         ],
-        "filename": "\/mnt\/music\/Nightwish\/(2000) Wishmaster\/106 - Wishmaster.mp3",
-        "track": 6,
+        "albumartist": {
+            "id": "1",
+            "name": "Kreuzberg Museum"
+        },
+        "filename": "\/mnt\/music\/Kreuzberg Museum\/(2007) Calypso\/103 - I Don't Know How the Young Men Living.mp3",
+        "track": 3,
         "playlisttrack": 1,
-        "time": 264,
-        "year": 2000,
-        "bitrate": 281749,
+        "time": 146,
+        "year": 2007,
+        "bitrate": 320000,
         "rate": 44100,
-        "mode": "vbr",
+        "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=953&uid=2&player=api&name=Nightwish%20-%20Wishmaster.mp3",
-        "size": 9379030,
-        "mbid": "d5332837-05a6-475c-8e7a-4a00bc621acc",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=48753&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=1&uid=3&player=api&name=Kreuzberg%20Museum%20-%20I%20Don-t%20Know%20How%20the%20Young%20Men%20Living.mp3",
+        "size": 5986557,
+        "mbid": "e46fdc3f-4e73-499a-84b7-2fa7294f1493",
+        "album_mbid": "ceadbfeb-ae5b-4dbc-81a9-95de3e496a7f",
+        "artist_mbid": "aca13b05-626f-4d5a-91a7-ef86ebdd8384",
+        "albumartist_mbid": "aca13b05-626f-4d5a-91a7-ef86ebdd8384",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
-        "preciserating": 3,
-        "rating": 3,
+        "preciserating": null,
+        "rating": null,
         "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "Tuomas Holopainen",
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Drakkar Records",
+        "publisher": "",
         "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-10.440000",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-4.320000",
         "replaygain_track_peak": "1.000000",
         "genre": [
             {
-                "name": "Metal"
+                "name": "Contemporary Folk"
+            },
+            {
+                "name": "Indie Folk"
+            },
+            {
+                "name": "Singer-Songwriter"
             }
         ]
     }

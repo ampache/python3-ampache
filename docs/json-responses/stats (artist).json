@@ -1,47 +1,64 @@
 [
     {
-        "id": "2298",
-        "name": "The Cops",
-        "albums": 3,
-        "songs": 32,
+        "id": "633",
+        "name": "Xmal Deutschland",
+        "albums": 4,
+        "songs": 39,
         "tag": [
             {
-                "id": "6",
+                "id": "4",
                 "name": "Rock"
             },
             {
-                "id": "16",
-                "name": "Alternative"
+                "id": "15",
+                "name": "Synthpop"
             },
             {
-                "id": "47",
-                "name": "Pop Rock"
+                "id": "36",
+                "name": "Goth Rock"
+            },
+            {
+                "id": "80",
+                "name": "Minimal"
+            },
+            {
+                "id": "104",
+                "name": "Post-Punk"
+            },
+            {
+                "id": "248",
+                "name": "Goth"
             }
         ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=2298&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "mbid": "4035f854-00f1-43c7-b90b-41b0b541f8ee",
-        "summary": "There are at least two artists with this name.\n\n1. The Cops are a post-punk band from Seattle, Washington that formed in late 2003 with Michael Jaworski on lead vocals and guitar, John Randolph on guitar and David Weeks on drums. Seattle label Mt. Fuji Records released their debut EP Why Kids Go Wrong in March of 2005, and followed up to release the critically acclaimed full-length Get Good or Stay Bad in November of 2005. Former Supersuckers and Hater bassist ",
-        "yearformed": "0",
-        "placeformed": ""
-    },
-    {
-        "id": "10297",
-        "name": "Sinneth soul",
-        "albums": 5,
-        "songs": 34,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=10297&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=633&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "mbid": "6746a0f3-f20c-44ef-8f74-b52727199887",
-        "summary": " ",
-        "yearformed": "0",
-        "placeformed": ""
+        "mbid": "4d94cf89-7757-4385-9049-52b7c3509e5f",
+        "summary": null,
+        "yearformed": null,
+        "placeformed": null
+    },
+    {
+        "id": "565",
+        "name": "Mott the Hoople",
+        "albums": 1,
+        "songs": 9,
+        "tag": [
+            {
+                "id": "232",
+                "name": "Glam Rock"
+            }
+        ],
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=565&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "mbid": "435f1441-0f43-479d-92db-a506449a686b",
+        "summary": null,
+        "yearformed": null,
+        "placeformed": null
     }
 ]

@@ -1,63 +1,60 @@
 [
     {
-        "id": "164215",
-        "title": "!",
-        "name": "!",
+        "id": "30720",
+        "title": "Revolt Tonight!",
+        "name": "Revolt Tonight!",
         "artist": {
-            "id": "8526",
-            "name": "Hellyeah"
+            "id": "1028",
+            "name": "Sin7sinS"
         },
         "album": {
-            "id": "56038",
-            "name": "Unden!able"
+            "id": "3065",
+            "name": "Carnival of No Tomorrow"
         },
         "tag": [
             {
-                "id": "20",
-                "name": "Metal"
-            },
-            {
-                "id": "37",
-                "name": "Hard Rock"
+                "id": "114",
+                "name": "Gothic Metal"
             }
         ],
-        "filename": "\/mnt\/music\/Hellyeah\/(2016) Unden!able [ESM 171-2]\/101 - !.mp3",
-        "track": 1,
+        "albumartist": {
+            "id": "1028",
+            "name": "Sin7sinS"
+        },
+        "filename": "\/mnt\/music\/Sin7sinS\/(2012) Carnival of No Tomorrow\/109 - Revolt Tonight!.mp3",
+        "track": 9,
         "playlisttrack": 1,
-        "time": 79,
-        "year": 2016,
+        "time": 249,
+        "year": 2012,
         "bitrate": 320000,
         "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=164215&uid=2&player=api&name=Hellyeah%20-%20-.mp3",
-        "size": 3184944,
-        "mbid": "42bb2b7a-bf67-4cc4-8610-25399d56474b",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=56038&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=30720&uid=3&player=api&name=Sin7sinS%20-%20Revolt%20Tonight-.mp3",
+        "size": 10006578,
+        "mbid": "60fae925-0707-452d-82ae-38fc16526fa0",
+        "album_mbid": "e49670e7-90ab-476e-8e60-61ec962ed7bd",
+        "artist_mbid": "81ee0f00-e894-4450-ac2b-ffb607d41c96",
+        "albumartist_mbid": "81ee0f00-e894-4450-ac2b-ffb607d41c96",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=3065&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
+        "playcount": 1,
+        "catalog": 1,
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Eleven Seven Music",
+        "publisher": "S7S Records",
         "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-6.920000",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-11.210000",
         "replaygain_track_peak": "1.000000",
         "genre": [
             {
-                "name": "Metal"
-            },
-            {
-                "name": "Hard Rock"
+                "name": "Gothic Metal"
             }
         ]
     }

@@ -1,56 +1,106 @@
 [
     {
-        "id": "52480",
-        "name": "Drop It in Their Laps",
+        "id": "1861",
+        "name": "Fetisch",
         "artist": {
-            "id": "2298",
-            "name": "Cops"
+            "id": "633",
+            "name": "Xmal Deutschland"
         },
-        "year": 2007,
+        "year": 1986,
         "tracks": 13,
         "disk": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "mbid": "562ad680-4423-456c-9d5b-224c5ad4e019"
-    },
-    {
-        "id": "52482",
-        "name": "80 in the Shade",
-        "artist": {
-            "id": "2298",
-            "name": "Cops"
-        },
-        "year": 2006,
-        "tracks": 4,
-        "disk": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=52482&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "tag": [
+            {
+                "id": "4",
+                "name": "Rock"
+            },
+            {
+                "id": "15",
+                "name": "Synthpop"
+            },
+            {
+                "id": "36",
+                "name": "Goth Rock"
+            },
+            {
+                "id": "80",
+                "name": "Minimal"
+            }
+        ],
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1861&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "mbid": "0000d81a-136a-48c3-9c08-2cd45df6467b"
+        "mbid": "1660ebcc-3105-4eb3-b3a4-333fa68f1ae7"
     },
     {
-        "id": "52481",
-        "name": "Stomp on Tripwires",
+        "id": "1860",
+        "name": "Schwarze Welt",
         "artist": {
-            "id": "2298",
-            "name": "Cops"
+            "id": "633",
+            "name": "Xmal Deutschland"
         },
-        "year": 2004,
-        "tracks": 15,
+        "year": 1981,
+        "tracks": 3,
         "disk": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=52481&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "tag": [
+            {
+                "id": "104",
+                "name": "Post-Punk"
+            }
+        ],
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1860&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
-        "preciserating": 3,
-        "rating": 3,
+        "preciserating": null,
+        "rating": null,
         "averagerating": null,
-        "mbid": "839643bb-3304-4ae0-bd3d-94246523a995"
+        "mbid": "f9043688-948d-4587-a4f4-65119b81c434"
+    },
+    {
+        "id": "1859",
+        "name": "Tocsin",
+        "artist": {
+            "id": "633",
+            "name": "Xmal Deutschland"
+        },
+        "year": 1986,
+        "tracks": 11,
+        "disk": 1,
+        "tag": [
+            {
+                "id": "248",
+                "name": "Goth"
+            }
+        ],
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1859&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "mbid": "9c567f7a-fb43-4b41-a7c9-616ef88788e2"
+    },
+    {
+        "id": "1862",
+        "name": "Viva",
+        "artist": {
+            "id": "633",
+            "name": "Xmal Deutschland"
+        },
+        "year": 1987,
+        "tracks": 12,
+        "disk": 1,
+        "tag": [
+            {
+                "id": "4",
+                "name": "Rock"
+            }
+        ],
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1862&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "mbid": "7be33591-2fea-4819-b476-333041f22ebb"
     }
 ]

@@ -1,60 +1,273 @@
 [
     {
-        "id": "802560",
-        "title": "Baker Street",
-        "name": "Baker Street",
+        "id": "3913",
+        "title": "Here and Now",
+        "name": "Here and Now",
         "artist": {
-            "id": "254",
-            "name": "Foo Fighters"
+            "id": "104",
+            "name": "Hypernova"
         },
         "album": {
-            "id": "71644",
-            "name": "My Hero"
+            "id": "395",
+            "name": "Through the Chaos"
         },
         "tag": [
             {
-                "id": "6",
-                "name": "Rock"
+                "id": "8",
+                "name": "Indie"
+            }
+        ],
+        "albumartist": {
+            "id": "104",
+            "name": "Hypernova"
+        },
+        "filename": "\/mnt\/files-music\/upload\/user\/106 - Here and Now (1).mp3",
+        "track": 6,
+        "playlisttrack": 1,
+        "time": 228,
+        "year": 2010,
+        "bitrate": 183869,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=3913&uid=3&player=api&name=Hypernova%20-%20Here%20and%20Now.mp3",
+        "size": 5405276,
+        "mbid": "b281066f-6bcf-426c-8329-935e0cc1617a",
+        "album_mbid": "b3e1059e-ecdc-49d0-a058-d3e0f0c866f1",
+        "artist_mbid": "2bf5998f-1f66-4036-bb07-ae49665d4f08",
+        "albumartist_mbid": "2bf5998f-1f66-4036-bb07-ae49665d4f08",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=395&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "Narnack Records",
+        "language": "eng",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-4.380000",
+        "replaygain_track_peak": "0.513000",
+        "genre": [
+            {
+                "name": "Indie"
+            }
+        ]
+    },
+    {
+        "id": "23596",
+        "title": "Here And Now",
+        "name": "Here And Now",
+        "artist": {
+            "id": "809",
+            "name": "Don Peyote"
+        },
+        "album": {
+            "id": "2356",
+            "name": "Eternal Now"
+        },
+        "tag": [
+            {
+                "id": "12",
+                "name": "Ambient"
+            }
+        ],
+        "albumartist": {
+            "id": "809",
+            "name": "Don Peyote"
+        },
+        "filename": "\/mnt\/music\/Don Peyote\/(2009) Eternal Now\/107 - Here And Now.mp3",
+        "track": 7,
+        "playlisttrack": 2,
+        "time": 406,
+        "year": 2009,
+        "bitrate": 187645,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=23596&uid=3&player=api&name=Don%20Peyote%20-%20Here%20And%20Now.mp3",
+        "size": 9642823,
+        "mbid": "7902df2a-8820-4ce4-9142-c0d28f1969dd",
+        "album_mbid": "8fa3f83c-632c-4a67-9f7c-9c01764d1589",
+        "artist_mbid": "1c6aec61-f460-44eb-9119-cadbb86f4419",
+        "albumartist_mbid": "1c6aec61-f460-44eb-9119-cadbb86f4419",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=2356&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "UPE",
+        "publisher": "Monroe Products",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "4.860000",
+        "replaygain_track_peak": "0.638000",
+        "genre": [
+            {
+                "name": "Ambient"
+            }
+        ]
+    },
+    {
+        "id": "8073",
+        "title": "Here and Now",
+        "name": "Here and Now",
+        "artist": {
+            "id": "254",
+            "name": "Jupiter Makes Me Scream"
+        },
+        "album": {
+            "id": "800",
+            "name": "Converge"
+        },
+        "tag": [
+            {
+                "id": "12",
+                "name": "Ambient"
             },
             {
-                "id": "22",
+                "id": "14",
+                "name": "Electronic"
+            },
+            {
+                "id": "20",
+                "name": "Pop Rock"
+            },
+            {
+                "id": "21",
                 "name": "Pop"
             },
             {
-                "id": "33",
-                "name": "Alternative Rock"
+                "id": "102",
+                "name": "Downtempo"
             }
         ],
-        "filename": "\/mnt\/music\/Foo Fighters\/(1998) My Hero (single) [CDCL 796]\/102 - Baker Street.mp3",
-        "track": 2,
-        "playlisttrack": 1,
-        "time": 339,
-        "year": 1998,
+        "albumartist": {
+            "id": "254",
+            "name": "Jupiter Makes Me Scream"
+        },
+        "filename": "\/mnt\/music\/Jupiter Makes Me Scream\/(2008) Converge [17948]\/103 - Here and Now.mp3",
+        "track": 3,
+        "playlisttrack": 3,
+        "time": 249,
+        "year": 2008,
         "bitrate": 320000,
         "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=802560&uid=2&player=api&name=Foo%20Fighters%20-%20Baker%20Street.mp3",
-        "size": 13650833,
-        "mbid": "57497521-16ac-4870-8fe0-4f486652d8ef",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=71644&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=8073&uid=3&player=api&name=Jupiter%20Makes%20Me%20Scream%20-%20Here%20and%20Now.mp3",
+        "size": 10011337,
+        "mbid": "15ff46f4-6d50-465c-a66b-c61da9377c4a",
+        "album_mbid": "1f285e49-d453-495d-9083-cc71ea99c21d",
+        "artist_mbid": "74684175-a841-4a6d-8851-fb54820aae31",
+        "albumartist_mbid": "74684175-a841-4a6d-8851-fb54820aae31",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=800&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
         "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "Gerry Rafferty",
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "http:\/\/enoughrecords.scene.org",
+        "publisher": "Jamendo",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-4.090000",
+        "replaygain_track_peak": "0.944000",
+        "genre": [
+            {
+                "name": "Ambient"
+            },
+            {
+                "name": "Electronic"
+            },
+            {
+                "name": "Pop Rock"
+            },
+            {
+                "name": "Pop"
+            },
+            {
+                "name": "Downtempo"
+            }
+        ]
+    },
+    {
+        "id": "3867",
+        "title": "Here and Now",
+        "name": "Here and Now",
+        "artist": {
+            "id": "99",
+            "name": "Rebecca's Empire"
+        },
+        "album": {
+            "id": "387",
+            "name": "Way of All Things"
+        },
+        "tag": [
+            {
+                "id": "4",
+                "name": "Rock"
+            },
+            {
+                "id": "21",
+                "name": "Pop"
+            },
+            {
+                "id": "28",
+                "name": "Acoustic"
+            },
+            {
+                "id": "107",
+                "name": "Power Pop"
+            }
+        ],
+        "albumartist": {
+            "id": "99",
+            "name": "Rebecca's Empire"
+        },
+        "filename": "\/mnt\/music\/Rebecca's Empire\/(1996) Way of All Things [5279802]\/110 - Here and Now.mp3",
+        "track": 10,
+        "playlisttrack": 4,
+        "time": 295,
+        "year": 1996,
+        "bitrate": 320028,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=3867&uid=3&player=api&name=Rebecca-s%20Empire%20-%20Here%20and%20Now.mp3",
+        "size": 11866364,
+        "mbid": "945801a5-4881-4327-ab40-55cb3c8bc12c",
+        "album_mbid": "8d843e74-50b3-4493-9dac-8c6422cada42",
+        "artist_mbid": "2de5eee3-6c51-41f1-a2e1-7634636d7c0e",
+        "albumartist_mbid": "2de5eee3-6c51-41f1-a2e1-7634636d7c0e",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=387&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Capitol Records",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-7.200000",
+        "publisher": "Eternity Recordings",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-8.380000",
         "replaygain_track_peak": "1.000000",
         "genre": [
             {
@@ -64,62 +277,10 @@
                 "name": "Pop"
             },
             {
-                "name": "Alternative Rock"
-            }
-        ]
-    },
-    {
-        "id": "862539",
-        "title": "Baker Street",
-        "name": "Baker Street",
-        "artist": {
-            "id": "9919",
-            "name": "Jonathan Coulton"
-        },
-        "album": {
-            "id": "71541",
-            "name": "Some Guys"
-        },
-        "tag": [
+                "name": "Acoustic"
+            },
             {
-                "id": "35",
-                "name": "Indie"
-            }
-        ],
-        "filename": "\/mnt\/music\/Jonathan Coulton\/(2019) Some Guys\/107 - Baker Street.flac",
-        "track": 7,
-        "playlisttrack": 2,
-        "time": 365,
-        "year": 2019,
-        "bitrate": 967923,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/x-flac",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=862539&uid=2&player=api&name=Jonathan%20Coulton%20-%20Baker%20Street.opus",
-        "size": 44226050,
-        "mbid": "81e4816b-8132-41ff-b753-12fa7e067f16",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=71541&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "Gerry Rafferty",
-        "channels": null,
-        "comment": "",
-        "publisher": "",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "0.000000",
-        "replaygain_track_peak": "0.000000",
-        "genre": [
-            {
-                "name": "Indie"
+                "name": "Power Pop"
             }
         ]
     }

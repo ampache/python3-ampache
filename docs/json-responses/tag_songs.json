@@ -1,56 +1,60 @@
 [
     {
-        "id": "836449",
-        "title": "Opposing Globalization",
-        "name": "Opposing Globalization",
+        "id": "27710",
+        "title": "Christ Consumed",
+        "name": "Christ Consumed",
         "artist": {
-            "id": "11725",
-            "name": "Pathology"
+            "id": "938",
+            "name": "Broken Hope"
         },
         "album": {
-            "id": "65293",
-            "name": "Awaken to the Suffering"
+            "id": "2773",
+            "name": "Grotesque Blessings"
         },
         "tag": [
             {
-                "id": "2750",
-                "name": "Slamming Brutal Death Metal"
+                "id": "285",
+                "name": "Brutal Death Metal"
             }
         ],
-        "filename": "\/mnt\/music\/Pathology\/(2011) Awaken to the Suffering\/110 - Opposing Globalization.mp3",
-        "track": 10,
+        "albumartist": {
+            "id": "938",
+            "name": "Broken Hope"
+        },
+        "filename": "\/mnt\/music\/Broken Hope\/(1999) Grotesque Blessings\/104 - Christ Consumed.mp3",
+        "track": 4,
         "playlisttrack": 1,
-        "time": 185,
-        "year": 2011,
+        "time": 346,
+        "year": 1999,
         "bitrate": 320000,
         "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=836449&uid=2&player=api&name=Pathology%20-%20Opposing%20Globalization.mp3",
-        "size": 7476664,
-        "mbid": "39ec1463-8f59-4c21-86b6-6fb250fb093a",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=65293&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=27710&uid=3&player=api&name=Broken%20Hope%20-%20Christ%20Consumed.mp3",
+        "size": 13864117,
+        "mbid": "420c77eb-581c-438c-9b88-c86070cdf00c",
+        "album_mbid": "38bd4f42-f18a-4209-b414-6d3c16d24ef2",
+        "artist_mbid": "35542ce4-a774-4116-804d-b307ce89d12e",
+        "albumartist_mbid": "35542ce4-a774-4116-804d-b307ce89d12e",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=2773&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
         "playcount": 0,
-        "catalog": 2,
+        "catalog": 1,
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Victory Records",
+        "publisher": "",
         "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-12.100000",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-8.320000",
         "replaygain_track_peak": "1.000000",
         "genre": [
             {
-                "name": "Slamming Brutal Death Metal"
+                "name": "Brutal Death Metal"
             }
         ]
     }

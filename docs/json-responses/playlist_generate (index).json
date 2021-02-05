@@ -1,242 +1,258 @@
 [
     {
-        "id": "775280",
-        "title": "The Whale",
-        "name": "The Whale",
+        "id": "20872",
+        "title": "One Step Closer (Humble Brothers remix) (FM radio)",
+        "name": "One Step Closer (Humble Brothers remix) (FM radio)",
         "artist": {
-            "id": "10421",
-            "name": "Electric Light Orchestra"
+            "id": "713",
+            "name": "Linkin Park"
         },
         "album": {
-            "id": "51239",
-            "name": "Out of the Blue"
+            "id": "2058",
+            "name": "Greatest Hits"
         },
         "tag": [
             {
-                "id": "6",
+                "id": "4",
                 "name": "Rock"
             },
             {
-                "id": "22",
-                "name": "Pop"
+                "id": "50",
+                "name": "Nu Metal"
             }
         ],
-        "filename": "\/mnt\/music\/Electric Light Orchestra\/(1977) Out of the Blue [EPC 471940 2]\/115 - The Whale.mp3",
-        "track": 15,
+        "albumartist": {
+            "id": "713",
+            "name": "Linkin Park"
+        },
+        "filename": "\/mnt\/music\/Linkin Park\/(2013) Greatest Hits\/108 - One Step Closer (Humble Brothers remix) (FM radio).mp3",
+        "track": 8,
         "playlisttrack": 1,
-        "time": 302,
-        "year": 1992,
-        "bitrate": 320027,
+        "time": 189,
+        "year": 2013,
+        "bitrate": 320000,
         "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=20872&uid=3&player=api&name=Linkin%20Park%20-%20One%20Step%20Closer%20-Humble%20Brothers%20remix-%20-FM%20radio-.mp3",
+        "size": 7640822,
+        "mbid": "7b5dbab9-0da6-48ce-8a76-388e40da21cb",
+        "album_mbid": null,
+        "artist_mbid": "f59c5520-5f46-4d2c-b2c4-822eabf53419",
+        "albumartist_mbid": "f59c5520-5f46-4d2c-b2c4-822eabf53419",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=2058&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "",
+        "language": "eng",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-7.570000",
+        "replaygain_track_peak": "0.832000",
+        "genre": [
+            {
+                "name": "Rock"
+            },
+            {
+                "name": "Nu Metal"
+            }
+        ]
+    },
+    {
+        "id": "29646",
+        "title": "You Might (Live At Hammersmith Odeon December 1984)",
+        "name": "You Might (Live At Hammersmith Odeon December 1984)",
+        "artist": {
+            "id": "997",
+            "name": "Nik Kershaw"
+        },
+        "album": {
+            "id": "2957",
+            "name": "The Riddle"
+        },
+        "tag": [
+            {
+                "id": "48",
+                "name": "New Wave"
+            }
+        ],
+        "albumartist": {
+            "id": "997",
+            "name": "Nik Kershaw"
+        },
+        "filename": "\/mnt\/music\/Nik Kershaw\/(1984) The Riddle\/209 - You Might (Live At Hammersmith Odeon December 1984).mp3",
+        "track": 9,
+        "playlisttrack": 2,
+        "time": 210,
+        "year": 2013,
+        "bitrate": 320000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=29646&uid=3&player=api&name=Nik%20Kershaw%20-%20You%20Might%20-Live%20At%20Hammersmith%20Odeon%20December%201984-.mp3",
+        "size": 8425056,
+        "mbid": "3263bea7-3c27-48c2-84a4-7ac00e89e8f4",
+        "album_mbid": "317f4785-a1dc-4542-b6f1-3b0e1b669c48",
+        "artist_mbid": "6286e04b-7bc1-4f22-bca5-fdd34d1b0d93",
+        "albumartist_mbid": "6286e04b-7bc1-4f22-bca5-fdd34d1b0d93",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=2957&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "Bonus",
+        "publisher": "Universal UMC",
+        "language": "",
+        "replaygain_album_gain": "-6.150000",
+        "replaygain_album_peak": "1.000000",
+        "replaygain_track_gain": "-7.170000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "New Wave"
+            }
+        ]
+    },
+    {
+        "id": "9053",
+        "title": "Hulk Smash",
+        "name": "Hulk Smash",
+        "artist": {
+            "id": "295",
+            "name": "NerdOut"
+        },
+        "album": {
+            "id": "899",
+            "name": "Hulk Smash"
+        },
+        "tag": [
+            {
+                "id": "17",
+                "name": "Hip Hop"
+            }
+        ],
+        "albumartist": {
+            "id": "295",
+            "name": "NerdOut"
+        },
+        "filename": "\/mnt\/music\/NerdOut\/(2020) Hulk Smash\/01 - Hulk Smash.mp3",
+        "track": 1,
+        "playlisttrack": 3,
+        "time": 220,
+        "year": 2020,
+        "bitrate": 175504,
+        "rate": 48000,
         "mode": "vbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=775280&uid=2&player=api&name=Electric%20Light%20Orchestra%20-%20The%20Whale.mp3",
-        "size": 12213605,
-        "mbid": "63b8d5d6-5d7c-4337-b021-b427655aafed",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=9053&uid=3&player=api&name=NerdOut%20-%20Hulk%20Smash.mp3",
+        "size": 4853755,
+        "mbid": null,
         "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=51239&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=899&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
         "playcount": 0,
-        "catalog": 2,
-        "composer": "Jeff Lynne",
-        "channels": null,
-        "comment": "",
-        "publisher": "Epic",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-2.350000",
-        "replaygain_track_peak": "0.955000",
-        "genre": [
-            {
-                "name": "Rock"
-            },
-            {
-                "name": "Pop"
-            }
-        ]
-    },
-    {
-        "id": "769837",
-        "title": "Bogus Soul",
-        "name": "Bogus Soul",
-        "artist": {
-            "id": "331",
-            "name": "Beck"
-        },
-        "album": {
-            "id": "60578",
-            "name": "Golden Feelings"
-        },
-        "tag": [
-            {
-                "id": "91",
-                "name": "Blues"
-            }
-        ],
-        "filename": "\/mnt\/music\/Beck\/(1993) Golden Feelings [se 002]\/114 - Bogus Soul.mp3",
-        "track": 14,
-        "playlisttrack": 2,
-        "time": 75,
-        "year": 1999,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=769837&uid=2&player=api&name=Beck%20-%20Bogus%20Soul.mp3",
-        "size": 3444252,
-        "mbid": "42cc3e48-1515-4b0f-8725-295f9d95dd08",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=60578&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
+        "catalog": 1,
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Sonic Enemy",
+        "publisher": "",
         "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-0.270000",
-        "replaygain_track_peak": "0.495000",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-8.980000",
+        "replaygain_track_peak": "1.000000",
         "genre": [
             {
-                "name": "Blues"
+                "name": "Hip Hop"
             }
         ]
     },
     {
-        "id": "791112",
-        "title": "Frida",
-        "name": "Frida",
+        "id": "8333",
+        "title": "(Can't You) Trip Like I Do (instrumental)",
+        "name": "(Can't You) Trip Like I Do (instrumental)",
         "artist": {
-            "id": "10901",
-            "name": "Bad Dreams"
+            "id": "265",
+            "name": "Filter & The Crystal Method"
         },
         "album": {
-            "id": "83230",
-            "name": "D\u00e9j\u00e0 vu"
+            "id": "831",
+            "name": "(Can't You) Trip Like I Do"
         },
         "tag": [
             {
-                "id": "6",
-                "name": "Rock"
+                "id": "14",
+                "name": "Electronic"
             },
             {
-                "id": "505",
-                "name": "Prog Rock"
+                "id": "51",
+                "name": "Experimental"
+            },
+            {
+                "id": "167",
+                "name": "Breakbeat"
             }
         ],
-        "filename": "\/mnt\/music\/Bad Dreams\/(2017) D\u00e9j\u00e0 vu\/107 - Frida.mp3",
-        "track": 7,
-        "playlisttrack": 3,
-        "time": 311,
-        "year": 2017,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=791112&uid=2&player=api&name=Bad%20Dreams%20-%20Frida.mp3",
-        "size": 12754820,
-        "mbid": "e19543c4-bc45-4450-8853-a01066a9a9c5",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=83230&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "Visit http:\/\/baddreamsband.bandcamp.com",
-        "publisher": "[no label]",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-5.880000",
-        "replaygain_track_peak": "0.881000",
-        "genre": [
-            {
-                "name": "Rock"
-            },
-            {
-                "name": "Prog Rock"
-            }
-        ]
-    },
-    {
-        "id": "819678",
-        "title": "More Human Than Human",
-        "name": "More Human Than Human",
-        "artist": {
-            "id": "152",
-            "name": "Rob Zombie"
+        "albumartist": {
+            "id": "265",
+            "name": "Filter & The Crystal Method"
         },
-        "album": {
-            "id": "64172",
-            "name": "Astro-Creep: 2000 Live"
-        },
-        "tag": [
-            {
-                "id": "37",
-                "name": "Hard Rock"
-            },
-            {
-                "id": "69",
-                "name": "Industrial Metal"
-            }
-        ],
-        "filename": "\/mnt\/music\/Rob Zombie\/(2018) Astro-Creep: 2000 Live [B0027087-02]\/108 - More Human Than Human.mp3",
-        "track": 8,
+        "filename": "\/mnt\/music\/Filter & The Crystal Method\/(1997) (Can't You) Trip Like I Do [665086 2]\/103 - (Can't You) Trip Like I Do (instrumental).mp3",
+        "track": 3,
         "playlisttrack": 4,
-        "time": 262,
-        "year": 2018,
-        "bitrate": 320000,
-        "rate": 48000,
+        "time": 269,
+        "year": 1997,
+        "bitrate": 256000,
+        "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=819678&uid=2&player=api&name=Rob%20Zombie%20-%20More%20Human%20Than%20Human.mp3",
-        "size": 10590464,
-        "mbid": "d883a269-ca5d-43e1-94ff-e4b4e148cd0b",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=64172&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=8333&uid=3&player=api&name=Filter%20-%20The%20Crystal%20Method%20-%20-Can-t%20You-%20Trip%20Like%20I%20Do%20-instrumental-.mp3",
+        "size": 8682561,
+        "mbid": "dfdca13d-cdcb-49a7-89fa-18e749171adb",
+        "album_mbid": "a7f1ce97-a5fc-412d-b0eb-3e156cee8a78",
+        "artist_mbid": "6ae51665-8261-4ae5-883f-1899651ad31b",
+        "albumartist_mbid": "6ae51665-8261-4ae5-883f-1899651ad31b",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=831&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
         "playcount": 0,
-        "catalog": 2,
-        "composer": "",
+        "catalog": 1,
+        "composer": "Filter\/The Crystal Method",
         "channels": null,
         "comment": "",
-        "publisher": "UMe",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-3.570000",
-        "replaygain_track_peak": "0.582000",
+        "publisher": "EpicImmortal Records",
+        "language": "mul",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-10.040000",
+        "replaygain_track_peak": "1.000000",
         "genre": [
             {
-                "name": "Hard Rock"
+                "name": "Electronic"
             },
             {
-                "name": "Industrial Metal"
+                "name": "Experimental"
+            },
+            {
+                "name": "Breakbeat"
             }
         ]
     }

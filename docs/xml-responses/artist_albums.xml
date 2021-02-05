@@ -1,17 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-<total_count>1</total_count>
-<album id="65807">
-	<name><![CDATA[Hallo Leben]]></name>
-	<artist id="12902"><![CDATA[Sotiria]]></artist>
-	<year>2018</year>
-	<tracks>18</tracks>
+<total_count>4</total_count>
+<album id="794">
+	<name><![CDATA[Best Of]]></name>
+	<artist id="252"><![CDATA[Shino]]></artist>
+	<year>2008</year>
+	<tracks>9</tracks>
 	<disk>1</disk>
-	<art><![CDATA[https://music.com.au/image.php?object_id=65807&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+	<tag id="79" count="1" ><![CDATA[Gothic]]></tag>
+	<art><![CDATA[https://music.com.au/image.php?object_id=794&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
 	<flag>0</flag>
 	<preciserating></preciserating>
 	<rating></rating>
 	<averagerating></averagerating>
-	<mbid><![CDATA[93fe495f-7ea4-47e4-8b23-de7bf73ff8e1]]></mbid>
+	<mbid><![CDATA[e16e3b70-1698-4b69-bd9d-bfe8bdca1582]]></mbid>
+</album>
+<album id="793">
+	<name><![CDATA[Bloody Salvation]]></name>
+	<artist id="252"><![CDATA[Shino]]></artist>
+	<year>2007</year>
+	<tracks>13</tracks>
+	<disk>1</disk>
+	<tag id="28" count="1" ><![CDATA[Acoustic]]></tag>
+	<art><![CDATA[https://music.com.au/image.php?object_id=793&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+	<flag>0</flag>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<mbid><![CDATA[3d8f7bdb-db3a-4aa6-b0eb-5a580e9a1f57]]></mbid>
+</album>
+<album id="797">
+	<name><![CDATA[My Mistress]]></name>
+	<artist id="252"><![CDATA[Shino]]></artist>
+	<year>2010</year>
+	<tracks>5</tracks>
+	<disk>1</disk>
+	<tag id="4" count="1" ><![CDATA[Rock]]></tag>
+	<tag id="9" count="1" ><![CDATA[Folk]]></tag>
+	<tag id="28" count="1" ><![CDATA[Acoustic]]></tag>
+	<tag id="134" count="1" ><![CDATA[Folk World & Country]]></tag>
+	<art><![CDATA[https://music.com.au/image.php?object_id=797&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+	<flag>0</flag>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<mbid><![CDATA[de62bdbb-e503-43a1-86f6-8d958b1234ba]]></mbid>
+</album>
+<album id="791">
+	<name><![CDATA[Phoenix]]></name>
+	<artist id="252"><![CDATA[Shino]]></artist>
+	<year>2009</year>
+	<tracks>9</tracks>
+	<disk>1</disk>
+	<tag id="79" count="1" ><![CDATA[Gothic]]></tag>
+	<art><![CDATA[https://music.com.au/image.php?object_id=791&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+	<flag>0</flag>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<mbid><![CDATA[bb92cda8-17a0-35f8-b8fa-28123bdc4b8e]]></mbid>
 </album>
 </root>

@@ -1,118 +1,119 @@
 [
     {
-        "id": "89603",
-        "title": "Run Over by a Truck",
-        "name": "Run Over by a Truck",
+        "id": "15609",
+        "title": "Right Turn",
+        "name": "Right Turn",
         "artist": {
-            "id": "5385",
-            "name": "Weezer"
+            "id": "538",
+            "name": "Alice Mudgarden"
         },
         "album": {
-            "id": "16046",
-            "name": "Raditude"
+            "id": "1538",
+            "name": "Sap"
         },
         "tag": [
             {
-                "id": "6",
-                "name": "Rock"
-            },
-            {
-                "id": "33",
+                "id": "19",
                 "name": "Alternative Rock"
             }
         ],
-        "filename": "\/mnt\/music\/Weezer\/(2009) Raditude [B0013511-72; B0013511-72]\/202 - Weezer - Run Over by a Truck.mp3",
-        "track": 2,
+        "albumartist": {
+            "id": "537",
+            "name": "Alice in Chains"
+        },
+        "filename": "\/mnt\/music\/Alice in Chains\/(1992) Sap [44K 74182]\/103 - Alice Mudgarden - Right Turn.mp3",
+        "track": 3,
         "playlisttrack": 1,
-        "time": 213,
-        "year": 2009,
-        "bitrate": 271154,
+        "time": 199,
+        "year": 1992,
+        "bitrate": 192000,
         "rate": 44100,
-        "mode": "vbr",
+        "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=89603&uid=2&player=api&name=Weezer%20-%20Run%20Over%20by%20a%20Truck.mp3",
-        "size": 7878367,
-        "mbid": "654b7f2c-144a-457e-9369-a7a512da5355",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=16046&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=15609&uid=3&player=api&name=Alice%20Mudgarden%20-%20Right%20Turn.mp3",
+        "size": 4946800,
+        "mbid": "7bb159c6-5fa3-4f6d-a639-89a2944c5ec2",
+        "album_mbid": "e3b64649-e018-3e20-9b50-ca95ebed28ec",
+        "artist_mbid": "06932306-df61-4d21-8f47-916d55e417ee",
+        "albumartist_mbid": "4bd95eea-b9f6-4d70-a36c-cfea77431553",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1538&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
+        "playcount": 0,
+        "catalog": 1,
         "composer": "",
         "channels": null,
-        "comment": "album Latn Interscope Record",
-        "publisher": "DGC Records; Interscope Records",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-9.690000",
-        "replaygain_track_peak": "1.000000",
+        "comment": "",
+        "publisher": "Columbia",
+        "language": "eng",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-4.850000",
+        "replaygain_track_peak": "0.955000",
         "genre": [
-            {
-                "name": "Rock"
-            },
             {
                 "name": "Alternative Rock"
             }
         ]
     },
     {
-        "id": "781760",
-        "title": "The Forest Whispers My Name",
-        "name": "The Forest Whispers My Name",
+        "id": "29202",
+        "title": "Fairytales",
+        "name": "Fairytales",
         "artist": {
-            "id": "10542",
-            "name": "Willow Wisp"
+            "id": "974",
+            "name": "Vampires on Tomato Juice"
         },
         "album": {
-            "id": "57687",
-            "name": "Covered in Filth: A Tribute to Cradle of Filth"
+            "id": "2913",
+            "name": "Fairytales"
         },
         "tag": [
             {
-                "id": "20",
-                "name": "Metal"
+                "id": "49",
+                "name": "Alternative Metal"
             }
         ],
-        "filename": "\/mnt\/music\/Various Artists\/(2003) Covered in Filth: A Tribute to Cradle of Filth [CDM ZEB 29]\/112 - Willow Wisp - The Forest Whispers My Name.mp3",
-        "track": 12,
+        "albumartist": {
+            "id": "974",
+            "name": "Vampires on Tomato Juice"
+        },
+        "filename": "\/mnt\/music\/Vampires on Tomato Juice\/(2013) Fairytales\/111 - Fairytales.mp3",
+        "track": 11,
         "playlisttrack": 2,
-        "time": 266,
-        "year": 2003,
+        "time": 206,
+        "year": 2013,
         "bitrate": 320000,
         "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=781760&uid=2&player=api&name=Willow%20Wisp%20-%20The%20Forest%20Whispers%20My%20Name.mp3",
-        "size": 10798479,
-        "mbid": "9e87a893-bb45-4cc4-9e14-da6a4d2027a1",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=57687&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=29202&uid=3&player=api&name=Vampires%20on%20Tomato%20Juice%20-%20Fairytales.mp3",
+        "size": 8317268,
+        "mbid": "356fe953-b260-48aa-9988-8a4c8998a0b4",
+        "album_mbid": "2d41e42d-d2d0-4d2f-a330-41ae0fde870b",
+        "artist_mbid": "48ffb9a8-e588-4897-aaf1-1308d208a4c7",
+        "albumartist_mbid": "48ffb9a8-e588-4897-aaf1-1308d208a4c7",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=2913&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "Robin Eaglestone",
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Zebra",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-11.160000",
+        "publisher": "",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-10.530000",
         "replaygain_track_peak": "1.000000",
         "genre": [
             {
-                "name": "Metal"
+                "name": "Alternative Metal"
             }
         ]
     }

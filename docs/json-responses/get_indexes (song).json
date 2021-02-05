@@ -1,235 +1,293 @@
 [
     {
-        "id": "953",
-        "title": "Wishmaster",
-        "name": "Wishmaster",
+        "id": "1",
+        "title": "I Don't Know How the Young Men Living",
+        "name": "I Don't Know How the Young Men Living",
         "artist": {
-            "id": "55",
-            "name": "Nightwish"
+            "id": "1",
+            "name": "Kreuzberg Museum"
         },
         "album": {
-            "id": "48753",
-            "name": "Wishmaster"
+            "id": "1",
+            "name": "Calypso"
         },
         "tag": [
             {
-                "id": "20",
-                "name": "Metal"
+                "id": "1",
+                "name": "Contemporary Folk"
+            },
+            {
+                "id": "2",
+                "name": "Indie Folk"
+            },
+            {
+                "id": "3",
+                "name": "Singer-Songwriter"
             }
         ],
-        "filename": "\/mnt\/music\/Nightwish\/(2000) Wishmaster\/106 - Wishmaster.mp3",
-        "track": 6,
-        "playlisttrack": 1,
-        "time": 264,
-        "year": 2000,
-        "bitrate": 281749,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=953&uid=2&player=api&name=Nightwish%20-%20Wishmaster.mp3",
-        "size": 9379030,
-        "mbid": "d5332837-05a6-475c-8e7a-4a00bc621acc",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=48753&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": 3,
-        "rating": 3,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "Tuomas Holopainen",
-        "channels": null,
-        "comment": "",
-        "publisher": "Drakkar Records",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-10.440000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Metal"
-            }
-        ]
-    },
-    {
-        "id": "955",
-        "title": "Wanderlust",
-        "name": "Wanderlust",
-        "artist": {
-            "id": "55",
-            "name": "Nightwish"
+        "albumartist": {
+            "id": "1",
+            "name": "Kreuzberg Museum"
         },
-        "album": {
-            "id": "48753",
-            "name": "Wishmaster"
-        },
-        "tag": [
-            {
-                "id": "20",
-                "name": "Metal"
-            }
-        ],
-        "filename": "\/mnt\/music\/Nightwish\/(2000) Wishmaster\/104 - Wanderlust.mp3",
-        "track": 4,
-        "playlisttrack": 2,
-        "time": 290,
-        "year": 2000,
-        "bitrate": 265841,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=955&uid=2&player=api&name=Nightwish%20-%20Wanderlust.mp3",
-        "size": 9731039,
-        "mbid": "0584e353-a06f-4c97-a6fb-3ee521e65625",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=48753&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "Tuomas Holopainen",
-        "channels": null,
-        "comment": "",
-        "publisher": "Drakkar Records",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-9.490000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Metal"
-            }
-        ]
-    },
-    {
-        "id": "956",
-        "title": "Come Cover Me",
-        "name": "Come Cover Me",
-        "artist": {
-            "id": "55",
-            "name": "Nightwish"
-        },
-        "album": {
-            "id": "48753",
-            "name": "Wishmaster"
-        },
-        "tag": [
-            {
-                "id": "20",
-                "name": "Metal"
-            }
-        ],
-        "filename": "\/mnt\/music\/Nightwish\/(2000) Wishmaster\/103 - Come Cover Me.mp3",
+        "filename": "\/mnt\/music\/Kreuzberg Museum\/(2007) Calypso\/103 - I Don't Know How the Young Men Living.mp3",
         "track": 3,
-        "playlisttrack": 3,
-        "time": 274,
-        "year": 2000,
-        "bitrate": 260129,
+        "playlisttrack": 1,
+        "time": 146,
+        "year": 2007,
+        "bitrate": 320000,
         "rate": 44100,
-        "mode": "vbr",
+        "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=956&uid=2&player=api&name=Nightwish%20-%20Come%20Cover%20Me.mp3",
-        "size": 9003198,
-        "mbid": "39aaa2f7-383b-443e-8c31-534df2b55845",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=48753&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=1&uid=3&player=api&name=Kreuzberg%20Museum%20-%20I%20Don-t%20Know%20How%20the%20Young%20Men%20Living.mp3",
+        "size": 5986557,
+        "mbid": "e46fdc3f-4e73-499a-84b7-2fa7294f1493",
+        "album_mbid": "ceadbfeb-ae5b-4dbc-81a9-95de3e496a7f",
+        "artist_mbid": "aca13b05-626f-4d5a-91a7-ef86ebdd8384",
+        "albumartist_mbid": "aca13b05-626f-4d5a-91a7-ef86ebdd8384",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
         "playcount": 0,
-        "catalog": 2,
-        "composer": "Tuomas Holopainen",
+        "catalog": 1,
+        "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Drakkar Records",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-9.740000",
+        "publisher": "",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-4.320000",
         "replaygain_track_peak": "1.000000",
         "genre": [
             {
-                "name": "Metal"
+                "name": "Contemporary Folk"
+            },
+            {
+                "name": "Indie Folk"
+            },
+            {
+                "name": "Singer-Songwriter"
             }
         ]
     },
     {
-        "id": "958",
-        "title": "Dead Boy's Poem",
-        "name": "Dead Boy's Poem",
+        "id": "2",
+        "title": "Seven Skeletons Found in the Yard",
+        "name": "Seven Skeletons Found in the Yard",
         "artist": {
-            "id": "55",
-            "name": "Nightwish"
+            "id": "1",
+            "name": "Kreuzberg Museum"
         },
         "album": {
-            "id": "48753",
-            "name": "Wishmaster"
+            "id": "1",
+            "name": "Calypso"
         },
         "tag": [
             {
-                "id": "6",
-                "name": "Rock"
+                "id": "1",
+                "name": "Contemporary Folk"
             },
             {
-                "id": "20",
-                "name": "Metal"
+                "id": "2",
+                "name": "Indie Folk"
             },
             {
-                "id": "51",
-                "name": "Gothic Metal"
+                "id": "3",
+                "name": "Singer-Songwriter"
             }
         ],
-        "filename": "\/mnt\/music\/Nightwish\/(2000) Wishmaster\/110 - Dead Boy's Poem.mp3",
-        "track": 10,
-        "playlisttrack": 4,
-        "time": 407,
-        "year": 2000,
-        "bitrate": 252769,
+        "albumartist": {
+            "id": "1",
+            "name": "Kreuzberg Museum"
+        },
+        "filename": "\/mnt\/music\/Kreuzberg Museum\/(2007) Calypso\/101 - Seven Skeletons Found in the Yard.mp3",
+        "track": 1,
+        "playlisttrack": 2,
+        "time": 161,
+        "year": 2007,
+        "bitrate": 320000,
         "rate": 44100,
-        "mode": "vbr",
+        "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=958&uid=2&player=api&name=Nightwish%20-%20Dead%20Boy-s%20Poem.mp3",
-        "size": 12954214,
-        "mbid": "c7b867bc-887d-4370-b230-68379c5347db",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=48753&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=2&uid=3&player=api&name=Kreuzberg%20Museum%20-%20Seven%20Skeletons%20Found%20in%20the%20Yard.mp3",
+        "size": 6562288,
+        "mbid": "8ba002fc-b258-47cd-9161-7ad5fbaa9788",
+        "album_mbid": "ceadbfeb-ae5b-4dbc-81a9-95de3e496a7f",
+        "artist_mbid": "aca13b05-626f-4d5a-91a7-ef86ebdd8384",
+        "albumartist_mbid": "aca13b05-626f-4d5a-91a7-ef86ebdd8384",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "Tuomas Holopainen",
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Drakkar Records",
+        "publisher": "",
         "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-9.660000",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-6.650000",
+        "replaygain_track_peak": "0.989000",
+        "genre": [
+            {
+                "name": "Contemporary Folk"
+            },
+            {
+                "name": "Indie Folk"
+            },
+            {
+                "name": "Singer-Songwriter"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Theresa",
+        "name": "Theresa",
+        "artist": {
+            "id": "1",
+            "name": "Kreuzberg Museum"
+        },
+        "album": {
+            "id": "1",
+            "name": "Calypso"
+        },
+        "tag": [
+            {
+                "id": "1",
+                "name": "Contemporary Folk"
+            },
+            {
+                "id": "2",
+                "name": "Indie Folk"
+            },
+            {
+                "id": "3",
+                "name": "Singer-Songwriter"
+            }
+        ],
+        "albumartist": {
+            "id": "1",
+            "name": "Kreuzberg Museum"
+        },
+        "filename": "\/mnt\/music\/Kreuzberg Museum\/(2007) Calypso\/106 - Theresa.mp3",
+        "track": 6,
+        "playlisttrack": 3,
+        "time": 175,
+        "year": 2007,
+        "bitrate": 320000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=3&uid=3&player=api&name=Kreuzberg%20Museum%20-%20Theresa.mp3",
+        "size": 7137975,
+        "mbid": "453c1dca-4c53-4663-b955-fcbf7219fcf4",
+        "album_mbid": "ceadbfeb-ae5b-4dbc-81a9-95de3e496a7f",
+        "artist_mbid": "aca13b05-626f-4d5a-91a7-ef86ebdd8384",
+        "albumartist_mbid": "aca13b05-626f-4d5a-91a7-ef86ebdd8384",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-3.030000",
         "replaygain_track_peak": "1.000000",
         "genre": [
             {
-                "name": "Rock"
+                "name": "Contemporary Folk"
             },
             {
-                "name": "Metal"
+                "name": "Indie Folk"
             },
             {
-                "name": "Gothic Metal"
+                "name": "Singer-Songwriter"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "title": "The Parrot",
+        "name": "The Parrot",
+        "artist": {
+            "id": "1",
+            "name": "Kreuzberg Museum"
+        },
+        "album": {
+            "id": "1",
+            "name": "Calypso"
+        },
+        "tag": [
+            {
+                "id": "1",
+                "name": "Contemporary Folk"
+            },
+            {
+                "id": "2",
+                "name": "Indie Folk"
+            },
+            {
+                "id": "3",
+                "name": "Singer-Songwriter"
+            }
+        ],
+        "albumartist": {
+            "id": "1",
+            "name": "Kreuzberg Museum"
+        },
+        "filename": "\/mnt\/music\/Kreuzberg Museum\/(2007) Calypso\/105 - The Parrot.mp3",
+        "track": 5,
+        "playlisttrack": 4,
+        "time": 158,
+        "year": 2007,
+        "bitrate": 320000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=4&uid=3&player=api&name=Kreuzberg%20Museum%20-%20The%20Parrot.mp3",
+        "size": 6472381,
+        "mbid": "8b02f592-5c41-4a3e-86ff-a56c4dce30e5",
+        "album_mbid": "ceadbfeb-ae5b-4dbc-81a9-95de3e496a7f",
+        "artist_mbid": "aca13b05-626f-4d5a-91a7-ef86ebdd8384",
+        "albumartist_mbid": "aca13b05-626f-4d5a-91a7-ef86ebdd8384",
+        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-4.110000",
+        "replaygain_track_peak": "0.989000",
+        "genre": [
+            {
+                "name": "Contemporary Folk"
+            },
+            {
+                "name": "Indie Folk"
+            },
+            {
+                "name": "Singer-Songwriter"
             }
         ]
     }
