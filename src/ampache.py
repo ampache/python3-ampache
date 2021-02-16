@@ -2297,22 +2297,38 @@ def video(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def localplay(ampache_url, ampache_api, command, api_format='xml'):
+
+def localplay(ampache_url: str, ampache_api: str, command, oid=False, otype=False, clear=0, api_format: str = 'xml'):
     """ localplay
         MINIMUM_API_VERSION=380001
+        CHANGED_IN_API_VERSION=5.0.0
 
         This is for controlling localplay
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * command     = (string) 'next', 'prev', 'stop', 'play'
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * command     = (string) 'next', 'prev', 'stop', 'play', 'pause', 'add', 'volume_up',
+                                 'volume_down', 'volume_mute', 'delete_all', 'skip', 'status'
+        * oid         = (integer) object_id //optional
+        * otype       = (string) 'Song', 'Video', 'Podcast_Episode', 'Channel',
+                                 'Broadcast', 'Democratic', 'Live_Stream' //optional
+        * clear       = (integer) 0,1 Clear the current playlist before adding //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'localplay',
             'auth': ampache_api,
-            'command': command}
+            'command': command,
+            'oid': oid,
+            'type': otype,
+            'clear': clear}
+    if not oid:
+        data.pop('oid')
+    if not type:
+        data.pop('type')
+    if not clear:
+        data.pop('clear')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'localplay')
@@ -2402,6 +2418,38 @@ def stats(ampache_url, ampache_api, object_type, filter_str='random',
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'stats')
+    if not ampache_response:
+        return False
+    # json format
+    if api_format == 'json':
+        json_data = json.loads(ampache_response.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
+def users(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
+    """ users
+        MINIMUM_API_VERSION=4.4.0
+
+        Get ids and usernames for your site users
+
+        INPUTS
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * api_format  = (string) 'xml'|'json' //optional
+    """
+    ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    data = {'action': 'users',
+            'auth': ampache_api}
+    data = urllib.parse.urlencode(data)
+    full_url = ampache_url + '?' + data
+    ampache_response = fetch_url(full_url, api_format, 'user')
     if not ampache_response:
         return False
     # json format
