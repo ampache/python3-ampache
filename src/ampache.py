@@ -2465,7 +2465,7 @@ def stats(ampache_url: str, ampache_api: str, object_type, filter_str='random',
 
 
 def users(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
-    """ user
+    """ users
         MINIMUM_API_VERSION=5.0.0
     
         Get ids and usernames for your site users
@@ -2476,7 +2476,7 @@ def users(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = {'action': 'user',
+    data = {'action': 'users',
             'auth': ampache_api}
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
