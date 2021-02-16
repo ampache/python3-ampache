@@ -1143,7 +1143,7 @@ def playlist_create(ampache_url, ampache_api, name, object_type, api_format='xml
         return token
 
 
-def playlist_edit(ampache_url, ampache_api, filter_id, name=False, object_type=False, api_format='xml'):
+def playlist_edit(ampache_url, ampache_api, filter_id, name=False, object_type=False, sort=False, api_format='xml'):
     """ playlist_edit
         MINIMUM_API_VERSION=400001
 
@@ -1155,14 +1155,20 @@ def playlist_edit(ampache_url, ampache_api, filter_id, name=False, object_type=F
         * filter_id   = (integer)
         * name        = (string) playlist name //optional
         * object_type = (string) 'public'|'private'
+        * sort        = (integer) 0,1 sort the playlist by 'Artist, Album, Song' //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    if bool(sort):
+        sort = 1
+    else:
+        sort = 0
     data = {'action': 'playlist_edit',
             'auth': ampache_api,
             'filter': filter_id,
             'name': name,
-            'type': object_type}
+            'type': object_type,
+            'sort': sort}
     if not name:
         data.pop('name')
     if not object_type:

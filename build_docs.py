@@ -122,7 +122,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     'song'|'album'|'artist'|'playlist'
     """
-    songs     = ampache.get_indexes(ampache_url, ampache_api, 'song', False, False, False, 0, limit, api_format)
+    songs     = ampache.get_indexes(ampache_url, ampache_api, 'song', False, False, False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (song)." + api_format)
     if api_format == 'xml':
@@ -134,7 +134,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 else:
                     continue
 
-    albums    = ampache.get_indexes(ampache_url, ampache_api, 'album', False, False, False, 0, limit, api_format)
+    albums    = ampache.get_indexes(ampache_url, ampache_api, 'album', False, False, False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (album)." + api_format)
     if api_format == 'xml':
@@ -146,7 +146,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 else:
                     continue
 
-    artists   = ampache.get_indexes(ampache_url, ampache_api, 'artist', False, False, False, 0, limit, api_format)
+    artists   = ampache.get_indexes(ampache_url, ampache_api, 'artist', False, False, False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (artist)." + api_format)
     if api_format == 'xml':
@@ -158,7 +158,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 else:
                     continue
 
-    playlists = ampache.get_indexes(ampache_url, ampache_api, 'playlist', False, False, False, 0, limit, api_format)
+    playlists = ampache.get_indexes(ampache_url, ampache_api, 'playlist', False, False, False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (playlist)." + api_format)
     if api_format == 'xml':
@@ -170,19 +170,19 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 else:
                     continue
 
-    ampache.get_indexes(ampache_url, ampache_api, 'share', False, False, False, 0, limit, api_format)
+    ampache.get_indexes(ampache_url, ampache_api, 'share', False, False, False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (share)." + api_format)
 
-    ampache.get_indexes(ampache_url, ampache_api, 'podcast', False, False, False, 0, limit, api_format)
+    ampache.get_indexes(ampache_url, ampache_api, 'podcast', False, False, False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (podcast)." + api_format)
 
-    ampache.get_indexes(ampache_url, ampache_api, 'podcast_episode', False, False, False, 0, limit, api_format)
+    ampache.get_indexes(ampache_url, ampache_api, 'podcast_episode', False, False, False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (podcast_episode)." + api_format)
 
-    ampache.get_indexes(ampache_url, ampache_api, 'video', False, False, False, 0, limit, api_format)
+    ampache.get_indexes(ampache_url, ampache_api, 'video', False, False, False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (video)." + api_format)
 
@@ -539,7 +539,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def tags(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
     genre = ''
-    tags = ampache.tags(ampache_url, ampache_api, 'Brutal Death Metal', False, 0, limit, api_format)
+    tags = ampache.tags(ampache_url, ampache_api, 'al', False, 0, limit, api_format)
     if api_format == 'xml':
         for child in tags:
             if child.tag == 'total_count':
