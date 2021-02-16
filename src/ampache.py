@@ -338,7 +338,7 @@ def get_similar(ampache_url, ampache_api, object_type, filter_str, offset=0, lim
 
 
 def get_indexes(ampache_url, ampache_api, object_type,
-                filter_str=False, add=False, update=False,
+                filter_str=False, exact=False, add=False, update=False, include=False,
                 offset=0, limit=0, api_format='xml'):
     """ get_indexes
         MINIMUM_API_VERSION=400001
@@ -346,23 +346,31 @@ def get_indexes(ampache_url, ampache_api, object_type,
         This takes a collection of inputs and returns ID + name for the object type
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * object_type = (string) 'song'|'album'|'artist'|'playlist'
-        * filter_str  = (string) //optional
-        * add         = //optional
-        * update      = //optional
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * object_type = (string) 'song'|'album'|'artist'|'album_artist'|'playlist'
+        * filter_str  = (string) search the name of the object_type //optional
+        * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+        * add         = (integer) UNIXTIME() //optional
+        * update      = (integer) UNIXTIME() //optional
+        * include     = (integer) 0,1 include songs if available for that object //optional
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    if bool(include):
+        include = 1
+    else:
+        include = 0
     data = {'action': 'get_indexes',
             'auth': ampache_api,
             'type': object_type,
             'filter': filter_str,
+            'exact': exact,
             'add': add,
             'update': update,
+            'include': include,
             'offset': str(offset),
             'limit': str(limit)}
     if not filter_str:
@@ -371,6 +379,8 @@ def get_indexes(ampache_url, ampache_api, object_type,
         data.pop('add')
     if not update:
         data.pop('update')
+    if not include:
+        data.pop('include')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'get_indexes')
@@ -1129,24 +1139,24 @@ def playlist_create(ampache_url, ampache_api, name, object_type, api_format='xml
         return token
 
 
-def playlist_edit(ampache_url, ampache_api, filter_str, name=False, object_type=False, api_format='xml'):
+def playlist_edit(ampache_url, ampache_api, filter_id, name=False, object_type=False, api_format='xml'):
     """ playlist_edit
         MINIMUM_API_VERSION=400001
 
         This modifies name and type of a playlist
 
         INPUTS
-        * ampache_url = (string)
-        * ampache_api = (string)
-        * filter_str  = (integer)
-        * name        =
-        * object_type =
+        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+        * ampache_api = (string) session 'auth' key
+        * filter_id   = (integer)
+        * name        = (string) playlist name //optional
+        * object_type = (string) 'public'|'private'
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'playlist_edit',
             'auth': ampache_api,
-            'filter': filter_str,
+            'filter': filter_id,
             'name': name,
             'type': object_type}
     if not name:
@@ -2297,11 +2307,10 @@ def video(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-
-def localplay(ampache_url: str, ampache_api: str, command, oid=False, otype=False, clear=0, api_format: str = 'xml'):
+def localplay(ampache_url, ampache_api, command, oid=False, otype=False, clear=0, api_format='xml'):
     """ localplay
         MINIMUM_API_VERSION=380001
-        CHANGED_IN_API_VERSION=5.0.0
+        CHANGED_IN_API_VERSION=440000
 
         This is for controlling localplay
 
