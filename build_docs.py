@@ -184,7 +184,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     ampache.get_indexes(ampache_url, ampache_api, 'video', False, False, False, 0, limit, api_format)
     shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                "docs/" + api_format + "-responses/get_indexes (podcast_episode)." + api_format)
+                "docs/" + api_format + "-responses/get_indexes (video)." + api_format)
 
     """ videos
     def videos(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
