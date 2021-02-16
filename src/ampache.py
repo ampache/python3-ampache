@@ -363,6 +363,10 @@ def get_indexes(ampache_url, ampache_api, object_type,
         include = 1
     else:
         include = 0
+    if bool(exact):
+        exact = 1
+    else:
+        exact = 0
     data = {'action': 'get_indexes',
             'auth': ampache_api,
             'type': object_type,
