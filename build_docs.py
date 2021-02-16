@@ -643,7 +643,12 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ localplay
     def localplay(ampache_url, ampache_api, command, api_format = 'xml'):
     """
-    #print(ampache.localplay(ampache_url, ampache_api))
+    ampache.localplay(ampache_url, ampache_api, 'status', False, False, 0, api_format)
+    if os.path.isfile("docs/" + api_format + "-responses/localplay." + api_format):
+        shutil.move("docs/" + api_format + "-responses/localplay." + api_format,
+                    "docs/" + api_format + "-responses/localplay (status)." + api_format)
+
+    ampache.localplay(ampache_url, ampache_api, 'stop', False, False, 0, api_format)
 
     """ democratic
     def democratic(ampache_url, ampache_api, method, action, oid, api_format = 'xml'):
