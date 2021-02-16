@@ -170,6 +170,22 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 else:
                     continue
 
+    ampache.get_indexes(ampache_url, ampache_api, 'share', False, False, False, 0, limit, api_format)
+    shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
+                "docs/" + api_format + "-responses/get_indexes (share)." + api_format)
+
+    ampache.get_indexes(ampache_url, ampache_api, 'podcast', False, False, False, 0, limit, api_format)
+    shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
+                "docs/" + api_format + "-responses/get_indexes (podcast)." + api_format)
+
+    ampache.get_indexes(ampache_url, ampache_api, 'podcast_episode', False, False, False, 0, limit, api_format)
+    shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
+                "docs/" + api_format + "-responses/get_indexes (podcast_episode)." + api_format)
+
+    ampache.get_indexes(ampache_url, ampache_api, 'video', False, False, False, 0, limit, api_format)
+    shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
+                "docs/" + api_format + "-responses/get_indexes (podcast_episode)." + api_format)
+
     """ videos
     def videos(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
