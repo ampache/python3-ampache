@@ -65,6 +65,8 @@ def get_id_list(data, attribute: str, data_format: str = 'xml'):
         * data_format = (string) 'xml','json'
     """
     id_list = list()
+    if not data:
+        return id_list
     if data_format == 'xml':
         for child in data:
             if child.tag == attribute:

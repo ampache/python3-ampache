@@ -66,8 +66,8 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     # bad handshake
     ampache.handshake(ampache_url, 'badkey', False, False, api_version, api_format)
     if os.path.isfile("docs/" + api_format + "-responses/handshake." + api_format):
-      shutil.move(      "docs/" + api_format + "-responses/handshake." + api_format,
-                    "docs/" + api_format + "-responses/handshake (Error)." + api_format)
+        shutil.move("docs/" + api_format + "-responses/handshake." + api_format,
+                    "docs/" + api_format + "-responses/handshake (error)." + api_format)
     # use correct details
     ampache_session = ampache.handshake(ampache_url, encrypted_key, False, False, api_version, api_format)
     if not ampache_session:
