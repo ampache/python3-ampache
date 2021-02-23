@@ -19,16 +19,15 @@ except IndexError:
     ampache_user = 'myusername'
 
 limit = 4
-song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=30720&uid=2&player=api&name=Hellyeah%20-%20-.mp3'
+offset = 0
+api_version = '440000'
+song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=17&uid=2&player=api&name=Arrest%20Me.mp3'
 
 
 def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """TODO
-    def update_art(ampache_url, ampache_api, ampache_type, ampache_id, overwrite = False, api_format = 'xml'):
-    def update_artist_info(ampache_url, ampache_api, id, api_format = 'xml'):
     def stream(ampache_url, ampache_api, id, type, destination, api_format = 'xml'):
     def download(ampache_url, ampache_api, id, type, destination, format = 'raw', api_format = 'xml'):
-    def get_art(ampache_url, ampache_api, id, type, api_format = 'xml'):
     get_similar: send artist or song id to get related objects from last.fm
     shares: get a list of shares you can access
     share: get a share by id
@@ -43,11 +42,15 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     podcast_create: create a podcast
     podcast_edit: edit an existing podcast
     podcast_delete: delete an existing podcast
-    update_podcast: sync and download new episodes
     catalogs: get all the catalogs
     catalog: get a catalog by id
     catalog_file: clean, add, verify using the file path (good for scripting)
     """
+
+    """ set_debug
+    def set_debug(mybool):
+    """
+    ampache.set_debug(True)
 
     """ encrypt_string
     def encrypt_string(ampache_api, user):
@@ -56,10 +59,15 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     encrypted_key = ampache.encrypt_string(ampache_api, ampache_user)
 
     """ handshake
-    def handshake(ampache_url, ampache_api, user = False, timestamp = False, version = '400004', api_format = 'xml'):
+    def handshake(ampache_url, ampache_api, user = False, timestamp = False, version = api_version, api_format = 'xml'):
     """
-    # processed details
-    ampache_api = ampache.handshake(ampache_url, encrypted_key, False, False, '400004', api_format)
+    # bad handshake
+    ampache.handshake(ampache_url, 'badkey', False, False, api_version, api_format)
+    if os.path.isfile("docs/" + api_format + "-responses/handshake." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/handshake." + api_format,
+                    "docs/" + api_format + "-responses/handshake (Error)." + api_format)
+    # use correct details
+    ampache_api = ampache.handshake(ampache_url, encrypted_key, False, False, api_version, api_format)
     if not ampache_api:
         print()
         # sys.exit('ERROR: Failed to connect to ' + ampache_url)
@@ -67,16 +75,16 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ ping
     def ping(ampache_url, ampache_api, api_format = 'xml'):
     """
+    ampache.ping(ampache_url, False, api_format)
+    if os.path.isfile("docs/" + api_format + "-responses/ping." + api_format):
+        shutil.move("docs/" + api_format + "-responses/ping." + api_format,
+                    "docs/" + api_format + "-responses/ping (No Auth)." + api_format)
     # did all this work?
     my_ping = ampache.ping(ampache_url, ampache_api, api_format)
     if not my_ping:
         print()
         # sys.exit('ERROR: Failed to ping ' + ampache_url)
 
-    """ set_debug
-    def set_debug(mybool):
-    """
-    ampache.set_debug(True)
 
     """ url_to_song
     def url_to_song(ampache_url, ampache_api, url, api_format = 'xml'):
@@ -95,7 +103,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     edituser = ampache.user_update(ampache_url, ampache_api, tempusername, False, False, False, False, False, False, True, False, api_format)
     tmpuser = ampache.user(ampache_url, ampache_api, tempusername, api_format)
-    shutil.move("docs/" + api_format + "-responses/user." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/user." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/user." + api_format,
                 "docs/" + api_format + "-responses/user (disabled)." + api_format)
 
     """ user_delete
@@ -107,7 +117,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def user(ampache_url, ampache_api, username, api_format = 'xml'):
     """
     myuser = ampache.user(ampache_url, ampache_api, 'missing_user', api_format)
-    shutil.move("docs/" + api_format + "-responses/user." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/user." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/user." + api_format,
                 "docs/" + api_format + "-responses/user (error)." + api_format)
 
     myuser = ampache.user(ampache_url, ampache_api, ampache_user, api_format)
@@ -124,7 +136,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     'song'|'album'|'artist'|'playlist'
     """
     songs = ampache.get_indexes(ampache_url, ampache_api, 'song', False, False, False, False, False, 0, limit, api_format)
-    shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (song)." + api_format)
     if api_format == 'xml':
         for child in songs:
@@ -136,7 +150,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                     continue
 
     albums = ampache.get_indexes(ampache_url, ampache_api, 'album', False, False, False, False, False, 0, limit, api_format)
-    shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (album)." + api_format)
     if api_format == 'xml':
         for child in albums:
@@ -148,7 +164,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                     continue
 
     artists = ampache.get_indexes(ampache_url, ampache_api, 'artist', False, False, False, False, False, 0, limit, api_format)
-    shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (artist)." + api_format)
     if api_format == 'xml':
         for child in artists:
@@ -160,7 +178,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                     continue
 
     playlists = ampache.get_indexes(ampache_url, ampache_api, 'playlist', False, False, False, False, False, 0, limit, api_format)
-    shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (playlist)." + api_format)
     if api_format == 'xml':
         for child in playlists:
@@ -172,19 +192,27 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                     continue
 
     ampache.get_indexes(ampache_url, ampache_api, 'share', False, False, False, False, False, 0, limit, api_format)
-    shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (share)." + api_format)
 
     ampache.get_indexes(ampache_url, ampache_api, 'podcast', False, False, False, False, False, 0, limit, api_format)
-    shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (podcast)." + api_format)
 
     ampache.get_indexes(ampache_url, ampache_api, 'podcast_episode', False, False, False, False, False, 0, limit, api_format)
-    shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (podcast_episode)." + api_format)
 
     ampache.get_indexes(ampache_url, ampache_api, 'video', False, False, False, False, False, 0, limit, api_format)
-    shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/get_indexes." + api_format,
                 "docs/" + api_format + "-responses/get_indexes (video)." + api_format)
 
     """ videos
@@ -225,7 +253,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     search_rules = [['favorite', 0, '%'], ['artist', 0, 'R']]
     search_song = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'song', 0, limit, 0, api_format)
-    shutil.move("docs/" + api_format + "-responses/advanced_search." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/advanced_search." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/advanced_search." + api_format,
                 "docs/" + api_format + "-responses/advanced_search (song)." + api_format)
 
     if api_format == 'xml':
@@ -242,7 +272,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     search_rules = [['favorite', 0, '%'], ['artist', 0, 'Men']]
     search_album = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'album', 0, limit, 0, api_format)
-    shutil.move("docs/" + api_format + "-responses/advanced_search." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/advanced_search." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/advanced_search." + api_format,
                 "docs/" + api_format + "-responses/advanced_search (album)." + api_format)
 
     if api_format == 'xml':
@@ -259,7 +291,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     search_rules = [['favorite', 0, '%'], ['artist', limit, 'Prodigy']]
     search_artist = ampache.advanced_search(ampache_url, ampache_api, search_rules, 'or', 'artist', 0, limit, 0, api_format)
-    shutil.move("docs/" + api_format + "-responses/advanced_search." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/advanced_search." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/advanced_search." + api_format,
                 "docs/" + api_format + "-responses/advanced_search (artist)." + api_format)
 
     if api_format == 'xml':
@@ -309,11 +343,15 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
 
     stats = ampache.stats(ampache_url, ampache_api, 'song', 'random', ampache_user, None, 0, 2, api_format)
-    shutil.move("docs/" + api_format + "-responses/stats." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/stats." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/stats." + api_format,
                 "docs/" + api_format + "-responses/stats (song)." + api_format)
 
     stats = ampache.stats(ampache_url, ampache_api, 'artist', 'random', ampache_user, False, 0, 2, api_format)
-    shutil.move("docs/" + api_format + "-responses/stats." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/stats." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/stats." + api_format,
                 "docs/" + api_format + "-responses/stats (artist)." + api_format)
 
     if api_format == 'xml':
@@ -326,7 +364,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         single_artist = stats[0]['id']
 
     stats = ampache.stats(ampache_url, ampache_api, 'album', 'random', ampache_user, None, 0, 2, api_format)
-    shutil.move("docs/" + api_format + "-responses/stats." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/stats." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/stats." + api_format,
                 "docs/" + api_format + "-responses/stats (album)." + api_format)
 
     if api_format == 'xml':
@@ -367,7 +407,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def catalog_action(ampache_url, ampache_api, task, catalog, api_format = 'xml'):
     """
     catalog_action = ampache.catalog_action(ampache_url, ampache_api, 'clean', 2, api_format)
-    shutil.move("docs/" + api_format + "-responses/catalog_action." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/catalog_action." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/catalog_action." + api_format,
                 "docs/" + api_format + "-responses/catalog_action (error)." + api_format)
 
     catalog_action = ampache.catalog_action(ampache_url, ampache_api, 'clean_catalog', 2, api_format)
@@ -433,7 +475,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, 77371, 0, api_format)
     ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, 77371, 1, api_format)
-    shutil.move("docs/" + api_format + "-responses/playlist_add_song." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/playlist_add_song." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/playlist_add_song." + api_format,
                 "docs/" + api_format + "-responses/playlist_add_song (error)." + api_format)
     ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, 77371, 0, api_format)
 
@@ -462,22 +506,30 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     'song'|'index'|'id'
     """
     ampache.playlist_generate(ampache_url, ampache_api, 'random', False, False, False, False, 'song', 0, limit, api_format)
-    shutil.move("docs/" + api_format + "-responses/playlist_generate." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/playlist_generate." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/playlist_generate." + api_format,
                 "docs/" + api_format + "-responses/playlist_generate (song)." + api_format)
 
     ampache.playlist_generate(ampache_url, ampache_api, 'random', False, False, False, False, 'index', 0, limit, api_format)
-    shutil.move("docs/" + api_format + "-responses/playlist_generate." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/playlist_generate." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/playlist_generate." + api_format,
                 "docs/" + api_format + "-responses/playlist_generate (index)." + api_format)
 
     ampache.playlist_generate(ampache_url, ampache_api, 'random', False, False, False, False, 'id', 0, limit, api_format)
-    shutil.move("docs/" + api_format + "-responses/playlist_generate." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/ping." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/playlist_generate." + api_format,
                 "docs/" + api_format + "-responses/playlist_generate (id)." + api_format)
 
     """ scrobble
     def scrobble(ampache_url, ampache_api, title, artist, album, MBtitle = False, MBartist = False, MBalbum = False, time = False, client = 'AmpacheAPI', api_format = 'xml'):
     """
     scrobble = ampache.scrobble(ampache_url, ampache_api, 'Hear. Life. Spoken', 'Sub Atari Knives', 'Sub Atari Knives', False, False, False, int(time.time()), 'AmpaceApi', api_format)
-    shutil.move("docs/" + api_format + "-responses/scrobble." + api_format,
+
+    if os.path.isfile("docs/" + api_format + "-responses/scrobble." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/scrobble." + api_format,
                 "docs/" + api_format + "-responses/scrobble (error)." + api_format)
 
     scrobble = ampache.scrobble(ampache_url, ampache_api, 'Welcome to Planet Sexor', 'Tiga', 'Sexor', False, False, False, int(time.time()), 'test.py', api_format)
@@ -646,7 +698,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     ampache.localplay(ampache_url, ampache_api, 'status', False, False, 0, api_format)
     if os.path.isfile("docs/" + api_format + "-responses/localplay." + api_format):
-        shutil.move("docs/" + api_format + "-responses/localplay." + api_format,
+    
+    if os.path.isfile("docs/" + api_format + "-responses/localplay." + api_format):
+      shutil.move(      "docs/" + api_format + "-responses/localplay." + api_format,
                     "docs/" + api_format + "-responses/localplay (status)." + api_format)
 
     ampache.localplay(ampache_url, ampache_api, 'stop', False, False, 0, api_format)
