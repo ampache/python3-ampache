@@ -217,7 +217,7 @@ def handshake(ampache_url: str, ampache_api: str, ampache_user: str = False,
         return token
 
 
-def ping(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
+def ping(ampache_url: str, ampache_api: str = False, api_format: str = 'xml'):
     """ ping
         MINIMUM_API_VERSION=380001
 
