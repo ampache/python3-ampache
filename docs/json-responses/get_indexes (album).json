@@ -1,98 +1,92 @@
 [
     {
-        "id": "665",
-        "name": "#1 Record",
+        "id": "12",
+        "name": "Buried in Nausea",
         "artist": {
-            "id": "202",
-            "name": "Big Star"
+            "id": "19",
+            "name": "Various Artists"
         },
-        "year": 2004,
-        "tracks": 12,
+        "time": 1437,
+        "year": 2012,
+        "tracks": "7",
+        "songcount": 7,
         "disk": 1,
         "tag": [
             {
-                "id": "107",
-                "name": "Power Pop"
+                "id": "7",
+                "name": "Punk"
             }
         ],
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=665&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "mbid": "4b78e722-c4ce-31df-9711-08c24aa307e6"
+        "mbid": null
     },
     {
-        "id": "382",
-        "name": "#Y\u00d8L\u00d8",
+        "id": "10",
+        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
         "artist": {
-            "id": "98",
-            "name": "Finsterforst"
+            "id": "16",
+            "name": "CARN\u00daN"
         },
-        "year": 2016,
-        "tracks": 10,
+        "time": 4282,
+        "year": 1996,
+        "tracks": "9",
+        "songcount": 9,
+        "disk": 1,
+        "tag": [],
+        "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "mbid": null
+    },
+    {
+        "id": "2",
+        "name": "Colorsmoke EP",
+        "artist": {
+            "id": "2",
+            "name": "Synthetic"
+        },
+        "time": 4568,
+        "year": 2007,
+        "tracks": "12",
+        "songcount": 12,
         "disk": 1,
         "tag": [
             {
-                "id": "105",
-                "name": "Folk Metal"
+                "id": "1",
+                "name": "Electronic"
             }
         ],
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=382&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "0d7773f5-0b92-43a7-8fc1-c4d5d4747fff"
+        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 1,
+        "preciserating": 5,
+        "rating": 5,
+        "averagerating": 3,
+        "mbid": null
     },
     {
-        "id": "2659",
-        "name": "& B: The Singles",
+        "id": "9",
+        "name": "Creeping Lawler 2",
         "artist": {
-            "id": "902",
-            "name": "Procol Harum"
+            "id": "15",
+            "name": "Warfare 3.0"
         },
-        "year": 2002,
-        "tracks": 57,
-        "disk": 3,
-        "tag": [
-            {
-                "id": "35",
-                "name": "Progressive Rock"
-            }
-        ],
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=2659&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "04698f52-192c-483a-9c3b-1a32a9716cfe"
-    },
-    {
-        "id": "2590",
-        "name": "(C)Lick Me",
-        "artist": {
-            "id": "888",
-            "name": "Junksista"
-        },
-        "year": 2011,
-        "tracks": 4,
+        "time": 592,
+        "year": 0,
+        "tracks": "2",
+        "songcount": 2,
         "disk": 1,
-        "tag": [
-            {
-                "id": "15",
-                "name": "Synthpop"
-            },
-            {
-                "id": "200",
-                "name": "Electropop"
-            }
-        ],
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=2590&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "tag": [],
+        "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
-        "preciserating": null,
-        "rating": null,
+        "preciserating": 3,
+        "rating": 3,
         "averagerating": null,
-        "mbid": "334071c6-3376-4105-b766-d0a4cea66727"
+        "mbid": null
     }
 ]

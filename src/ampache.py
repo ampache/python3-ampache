@@ -54,6 +54,33 @@ def set_debug(mybool):
     AMPACHE_DEBUG = mybool
 
 
+def get_id_list(data, attribute: str, data_format: str = 'xml'):
+    """ get_id_list
+
+        return a list of id's from the data you've got from the api
+
+        INPUTS
+        * data        = (mixed) XML or JSON from the API
+        * attribute   = (string) attribute you are searching for
+        * data_format = (string) 'xml','json'
+    """
+    id_list = list()
+    if not data:
+        return id_list
+    if data_format == 'xml':
+        for child in data:
+            if child.tag == attribute:
+                id_list.append(child.attrib['id'])
+    else:
+        try:
+            for data_object in data[attribute]:
+                id_list.append(data_object['id'])
+        except TypeError:
+            for data_object in data:
+                id_list.append(data_object[0])
+    return id_list
+
+
 def write_xml(xmlstr, filename):
     """ write_xml
 

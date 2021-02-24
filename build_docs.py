@@ -156,7 +156,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (album)." + api_format)
 
-    ampache.get_indexes(ampache_url, ampache_session, 'album', False, False, False, False, True, offset, limit, api_format)
+    ampache.get_indexes(ampache_url, ampache_session, 'album', False, False, False, False, True, offset, 1, api_format)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (album with include)." + api_format)
@@ -166,7 +166,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (artist)." + api_format)
 
-    ampache.get_indexes(ampache_url, ampache_session, 'artist', False, False, False, False, True, offset, limit, api_format)
+    ampache.get_indexes(ampache_url, ampache_session, 'artist', False, False, False, False, True, offset, 1, api_format)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (artist with include)." + api_format)
@@ -186,7 +186,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (podcast)." + api_format)
 
-    ampache.get_indexes(ampache_url, ampache_session, 'podcast', False, False, False, False, True, offset, limit, api_format)
+    ampache.get_indexes(ampache_url, ampache_session, 'podcast', False, False, False, False, True, offset, 1, api_format)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (podcast with include)." + api_format)
