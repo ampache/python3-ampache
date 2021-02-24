@@ -3,9 +3,110 @@
         {
             "id": "5770",
             "name": "_ and The Secret Formula",
-            "albums": [],
+            "albums": [
+                {
+                    "id": "95281",
+                    "name": "Amazing Power of The...",
+                    "artist": {
+                        "id": "5770",
+                        "name": "_ and The Secret Formula"
+                    },
+                    "time": 0,
+                    "year": 1999,
+                    "tracks": [],
+                    "songcount": 1,
+                    "disk": 1,
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "163",
+                            "name": "Downtempo"
+                        },
+                        {
+                            "id": "854",
+                            "name": "Broken Beat"
+                        }
+                    ],
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=95281&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "mbid": "a6338959-2961-466f-8726-19264b3f7593"
+                }
+            ],
             "albumcount": 1,
-            "songs": [],
+            "songs": [
+                {
+                    "id": "92786",
+                    "title": "The Amazing Power of The...",
+                    "name": "The Amazing Power of The...",
+                    "artist": {
+                        "id": "5770",
+                        "name": "_ and The Secret Formula"
+                    },
+                    "album": {
+                        "id": "95281",
+                        "name": "The Amazing Power of The..."
+                    },
+                    "albumartist": {
+                        "id": "5770",
+                        "name": "_ and The Secret Formula"
+                    },
+                    "disk": 1,
+                    "track": 1,
+                    "filename": "\/mnt\/music\/_ and The Secret Formula\/(1999) The Amazing Power of The... [m211.mp3.015]\/101 - The Amazing Power of The....mp3",
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "163",
+                            "name": "Downtempo"
+                        },
+                        {
+                            "id": "854",
+                            "name": "Broken Beat"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 279,
+                    "year": 1999,
+                    "bitrate": 128000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=92786&uid=2&player=api&name=-%20and%20The%20Secret%20Formula%20-%20The%20Amazing%20Power%20of%20The....mp3",
+                    "size": 4526535,
+                    "mbid": "4e11f9e9-eb6b-4a1f-9a0f-7080aa19f41a",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=95281&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "mot_universe@yahoo.com :)",
+                    "license": null,
+                    "publisher": "Mono211",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-3.960000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
             "songcount": 1,
             "genre": [
                 {
@@ -21,7 +122,7 @@
                     "name": "Broken Beat"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=5770&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=5770&object_type=artist&auth=33fafad997299d0ebb8038e5a8e606e9",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -35,9 +136,866 @@
         {
             "id": "10071",
             "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9",
-            "albums": [],
+            "albums": [
+                {
+                    "id": "97129",
+                    "name": "Lamomali",
+                    "artist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "time": 0,
+                    "year": 2017,
+                    "tracks": [],
+                    "songcount": 11,
+                    "disk": 1,
+                    "genre": [
+                        {
+                            "id": "6",
+                            "name": "Rock"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Pop"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Jazz"
+                        },
+                        {
+                            "id": "91",
+                            "name": "Blues"
+                        },
+                        {
+                            "id": "2563",
+                            "name": "Funk\/Soul"
+                        }
+                    ],
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=97129&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "mbid": "644ddb6d-3511-422f-8f3d-ea3724730fa2"
+                }
+            ],
             "albumcount": 1,
-            "songs": [],
+            "songs": [
+                {
+                    "id": "764481",
+                    "title": "Manitoumani",
+                    "name": "Manitoumani",
+                    "artist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "album": {
+                        "id": "97129",
+                        "name": "Lamomali"
+                    },
+                    "albumartist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "disk": 1,
+                    "track": 1,
+                    "filename": "\/mnt\/music\/-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9\/(2017) Lamomali\/101 - Manitoumani.mp3",
+                    "genre": [
+                        {
+                            "id": "6",
+                            "name": "Rock"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Pop"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Jazz"
+                        },
+                        {
+                            "id": "91",
+                            "name": "Blues"
+                        },
+                        {
+                            "id": "2563",
+                            "name": "Funk\/Soul"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 208,
+                    "year": 2017,
+                    "bitrate": 320040,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=764481&uid=2&player=api&name=-M-%20Toumani%20Diabat-%20-%20Sidiki%20Diabat-%20-%20Manitoumani.mp3",
+                    "size": 8584172,
+                    "mbid": "783dc52a-3eea-47a8-9ec4-a601c2d70022",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=97129&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "Labo -M-\u00003\u00e8me Bureau\u0000Wagram Music",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-8.260000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "764486",
+                    "title": "Bal de Bamako",
+                    "name": "Bal de Bamako",
+                    "artist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "album": {
+                        "id": "97129",
+                        "name": "Lamomali"
+                    },
+                    "albumartist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "disk": 1,
+                    "track": 2,
+                    "filename": "\/mnt\/music\/-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9\/(2017) Lamomali\/102 - Bal de Bamako.mp3",
+                    "genre": [
+                        {
+                            "id": "6",
+                            "name": "Rock"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Pop"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Jazz"
+                        },
+                        {
+                            "id": "91",
+                            "name": "Blues"
+                        },
+                        {
+                            "id": "2563",
+                            "name": "Funk\/Soul"
+                        }
+                    ],
+                    "playlisttrack": 2,
+                    "time": 229,
+                    "year": 2017,
+                    "bitrate": 320036,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=764486&uid=2&player=api&name=-M-%20Toumani%20Diabat-%20-%20Sidiki%20Diabat-%20-%20Bal%20de%20Bamako.mp3",
+                    "size": 9414866,
+                    "mbid": "91716d19-c139-4a3f-9a09-3540527988f1",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=97129&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "Labo -M-\u00003\u00e8me Bureau\u0000Wagram Music",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-10.320000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "764487",
+                    "title": "Cet air",
+                    "name": "Cet air",
+                    "artist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "album": {
+                        "id": "97129",
+                        "name": "Lamomali"
+                    },
+                    "albumartist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "disk": 1,
+                    "track": 3,
+                    "filename": "\/mnt\/music\/-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9\/(2017) Lamomali\/103 - Cet air.mp3",
+                    "genre": [
+                        {
+                            "id": "6",
+                            "name": "Rock"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Pop"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Jazz"
+                        },
+                        {
+                            "id": "91",
+                            "name": "Blues"
+                        },
+                        {
+                            "id": "2563",
+                            "name": "Funk\/Soul"
+                        }
+                    ],
+                    "playlisttrack": 3,
+                    "time": 225,
+                    "year": 2017,
+                    "bitrate": 320037,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=764487&uid=2&player=api&name=-M-%20Toumani%20Diabat-%20-%20Sidiki%20Diabat-%20-%20Cet%20air.mp3",
+                    "size": 9266491,
+                    "mbid": "6f33c06f-7b52-4b19-8a85-0acdeae8e877",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=97129&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "Labo -M-\u00003\u00e8me Bureau\u0000Wagram Music",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-7.990000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "764483",
+                    "title": "Interlude",
+                    "name": "Interlude",
+                    "artist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "album": {
+                        "id": "97129",
+                        "name": "Lamomali"
+                    },
+                    "albumartist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "disk": 1,
+                    "track": 4,
+                    "filename": "\/mnt\/music\/-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9\/(2017) Lamomali\/104 - Interlude.mp3",
+                    "genre": [
+                        {
+                            "id": "6",
+                            "name": "Rock"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Pop"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Jazz"
+                        },
+                        {
+                            "id": "91",
+                            "name": "Blues"
+                        },
+                        {
+                            "id": "2563",
+                            "name": "Funk\/Soul"
+                        }
+                    ],
+                    "playlisttrack": 4,
+                    "time": 38,
+                    "year": 2017,
+                    "bitrate": 320217,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=764483&uid=2&player=api&name=-M-%20Toumani%20Diabat-%20-%20Sidiki%20Diabat-%20-%20Interlude.mp3",
+                    "size": 1777829,
+                    "mbid": "6594077f-cf97-4132-abd2-e42e86f6fd2b",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=97129&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": 1,
+                    "rating": 1,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "Labo -M-\u00003\u00e8me Bureau\u0000Wagram Music",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-5.450000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "764479",
+                    "title": "Une \u00e2me",
+                    "name": "Une \u00e2me",
+                    "artist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "album": {
+                        "id": "97129",
+                        "name": "Lamomali"
+                    },
+                    "albumartist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "disk": 1,
+                    "track": 5,
+                    "filename": "\/mnt\/music\/-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9\/(2017) Lamomali\/105 - Une \u00e2me.mp3",
+                    "genre": [
+                        {
+                            "id": "6",
+                            "name": "Rock"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Pop"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Jazz"
+                        },
+                        {
+                            "id": "91",
+                            "name": "Blues"
+                        },
+                        {
+                            "id": "2563",
+                            "name": "Funk\/Soul"
+                        }
+                    ],
+                    "playlisttrack": 5,
+                    "time": 208,
+                    "year": 2017,
+                    "bitrate": 320040,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=764479&uid=2&player=api&name=-M-%20Toumani%20Diabat-%20-%20Sidiki%20Diabat-%20-%20Une%20-me.mp3",
+                    "size": 8584172,
+                    "mbid": "a9d448b2-7223-4515-b12b-2f505ed92786",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=97129&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "Labo -M-\u00003\u00e8me Bureau\u0000Wagram Music",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-8.130000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "764485",
+                    "title": "Le Bonheur",
+                    "name": "Le Bonheur",
+                    "artist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "album": {
+                        "id": "97129",
+                        "name": "Lamomali"
+                    },
+                    "albumartist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "disk": 1,
+                    "track": 6,
+                    "filename": "\/mnt\/music\/-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9\/(2017) Lamomali\/106 - Le Bonheur.mp3",
+                    "genre": [
+                        {
+                            "id": "6",
+                            "name": "Rock"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Pop"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Jazz"
+                        },
+                        {
+                            "id": "91",
+                            "name": "Blues"
+                        },
+                        {
+                            "id": "2563",
+                            "name": "Funk\/Soul"
+                        }
+                    ],
+                    "playlisttrack": 6,
+                    "time": 186,
+                    "year": 2017,
+                    "bitrate": 320044,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=764485&uid=2&player=api&name=-M-%20Toumani%20Diabat-%20-%20Sidiki%20Diabat-%20-%20Le%20Bonheur.mp3",
+                    "size": 7709738,
+                    "mbid": "89244950-a112-4ffe-814e-fe1d4d171ab5",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=97129&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "Labo -M-\u00003\u00e8me Bureau\u0000Wagram Music",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-7.130000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "764484",
+                    "title": "Solidarit\u00e9",
+                    "name": "Solidarit\u00e9",
+                    "artist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "album": {
+                        "id": "97129",
+                        "name": "Lamomali"
+                    },
+                    "albumartist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "disk": 1,
+                    "track": 7,
+                    "filename": "\/mnt\/music\/-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9\/(2017) Lamomali\/107 - Solidarit\u00e9.mp3",
+                    "genre": [
+                        {
+                            "id": "6",
+                            "name": "Rock"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Pop"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Jazz"
+                        },
+                        {
+                            "id": "91",
+                            "name": "Blues"
+                        },
+                        {
+                            "id": "2563",
+                            "name": "Funk\/Soul"
+                        }
+                    ],
+                    "playlisttrack": 7,
+                    "time": 195,
+                    "year": 2017,
+                    "bitrate": 320042,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=764484&uid=2&player=api&name=-M-%20Toumani%20Diabat-%20-%20Sidiki%20Diabat-%20-%20Solidarit-.mp3",
+                    "size": 8060679,
+                    "mbid": "dce14b8c-730e-4f6c-b6bc-8a5d7ec07678",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=97129&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "Labo -M-\u00003\u00e8me Bureau\u0000Wagram Music",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-9.090000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "764482",
+                    "title": "Toi moi",
+                    "name": "Toi moi",
+                    "artist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "album": {
+                        "id": "97129",
+                        "name": "Lamomali"
+                    },
+                    "albumartist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "disk": 1,
+                    "track": 8,
+                    "filename": "\/mnt\/music\/-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9\/(2017) Lamomali\/108 - Toi moi.mp3",
+                    "genre": [
+                        {
+                            "id": "6",
+                            "name": "Rock"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Pop"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Jazz"
+                        },
+                        {
+                            "id": "91",
+                            "name": "Blues"
+                        },
+                        {
+                            "id": "2563",
+                            "name": "Funk\/Soul"
+                        }
+                    ],
+                    "playlisttrack": 8,
+                    "time": 221,
+                    "year": 2017,
+                    "bitrate": 320037,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=764482&uid=2&player=api&name=-M-%20Toumani%20Diabat-%20-%20Sidiki%20Diabat-%20-%20Toi%20moi.mp3",
+                    "size": 9121250,
+                    "mbid": "9d76c7cb-a0ed-4e73-9a1c-06258b091ca4",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=97129&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "Labo -M-\u00003\u00e8me Bureau\u0000Wagram Music",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-6.880000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "764480",
+                    "title": "L'\u00c2me au Mali",
+                    "name": "L'\u00c2me au Mali",
+                    "artist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "album": {
+                        "id": "97129",
+                        "name": "Lamomali"
+                    },
+                    "albumartist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "disk": 1,
+                    "track": 9,
+                    "filename": "\/mnt\/music\/-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9\/(2017) Lamomali\/109 - L'\u00c2me au Mali.mp3",
+                    "genre": [
+                        {
+                            "id": "6",
+                            "name": "Rock"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Pop"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Jazz"
+                        },
+                        {
+                            "id": "91",
+                            "name": "Blues"
+                        },
+                        {
+                            "id": "2563",
+                            "name": "Funk\/Soul"
+                        }
+                    ],
+                    "playlisttrack": 9,
+                    "time": 188,
+                    "year": 2017,
+                    "bitrate": 320044,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=764480&uid=2&player=api&name=-M-%20Toumani%20Diabat-%20-%20Sidiki%20Diabat-%20-%20L-me%20au%20Mali.mp3",
+                    "size": 7792124,
+                    "mbid": "785bcc1e-2553-491a-b9e0-bebbdfda1f37",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=97129&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "Labo -M-\u00003\u00e8me Bureau\u0000Wagram Music",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-10.710000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "764478",
+                    "title": "Mama",
+                    "name": "Mama",
+                    "artist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "album": {
+                        "id": "97129",
+                        "name": "Lamomali"
+                    },
+                    "albumartist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "disk": 1,
+                    "track": 10,
+                    "filename": "\/mnt\/music\/-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9\/(2017) Lamomali\/110 - Mama.mp3",
+                    "genre": [
+                        {
+                            "id": "6",
+                            "name": "Rock"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Pop"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Jazz"
+                        },
+                        {
+                            "id": "91",
+                            "name": "Blues"
+                        },
+                        {
+                            "id": "2563",
+                            "name": "Funk\/Soul"
+                        }
+                    ],
+                    "playlisttrack": 10,
+                    "time": 298,
+                    "year": 2017,
+                    "bitrate": 320027,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=764478&uid=2&player=api&name=-M-%20Toumani%20Diabat-%20-%20Sidiki%20Diabat-%20-%20Mama.mp3",
+                    "size": 12180711,
+                    "mbid": "9400c74f-b38a-454b-8ee9-daf5244383fa",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=97129&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "Labo -M-\u00003\u00e8me Bureau\u0000Wagram Music",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-6.580000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "764477",
+                    "title": "Koman le h\u00e9ros",
+                    "name": "Koman le h\u00e9ros",
+                    "artist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "album": {
+                        "id": "97129",
+                        "name": "Lamomali"
+                    },
+                    "albumartist": {
+                        "id": "10071",
+                        "name": "-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9"
+                    },
+                    "disk": 1,
+                    "track": 11,
+                    "filename": "\/mnt\/music\/-M-, Toumani Diabat\u00e9 & Sidiki Diabat\u00e9\/(2017) Lamomali\/111 - Koman le h\u00e9ros.mp3",
+                    "genre": [
+                        {
+                            "id": "6",
+                            "name": "Rock"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Pop"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Jazz"
+                        },
+                        {
+                            "id": "91",
+                            "name": "Blues"
+                        },
+                        {
+                            "id": "2563",
+                            "name": "Funk\/Soul"
+                        }
+                    ],
+                    "playlisttrack": 11,
+                    "time": 161,
+                    "year": 2017,
+                    "bitrate": 320051,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=764477&uid=2&player=api&name=-M-%20Toumani%20Diabat-%20-%20Sidiki%20Diabat-%20-%20Koman%20le%20h-ros.mp3",
+                    "size": 6709280,
+                    "mbid": "8e5e9fe5-44a3-4a3b-8358-0d49f2c1acbb",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=97129&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "Labo -M-\u00003\u00e8me Bureau\u0000Wagram Music",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-7.500000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
             "songcount": 11,
             "genre": [
                 {
@@ -61,7 +1019,7 @@
                     "name": "Funk\/Soul"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=10071&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=10071&object_type=artist&auth=33fafad997299d0ebb8038e5a8e606e9",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -75,9 +1033,838 @@
         {
             "id": "622",
             "name": ":10:",
-            "albums": [],
+            "albums": [
+                {
+                    "id": "49389",
+                    "name": "Industrial is Dead",
+                    "artist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "time": 0,
+                    "year": 2013,
+                    "tracks": [],
+                    "songcount": 6,
+                    "disk": 1,
+                    "genre": [],
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=49389&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "mbid": null
+                },
+                {
+                    "id": "68541",
+                    "name": "Aphotic",
+                    "artist": {
+                        "id": "14754",
+                        "name": "ReWIR3D \/ :10:"
+                    },
+                    "time": 0,
+                    "year": 2011,
+                    "tracks": [],
+                    "songcount": 10,
+                    "disk": 1,
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        },
+                        {
+                            "id": "46",
+                            "name": "Ambient"
+                        },
+                        {
+                            "id": "55",
+                            "name": "Electro"
+                        },
+                        {
+                            "id": "154",
+                            "name": "Noise"
+                        },
+                        {
+                            "id": "314",
+                            "name": "Breakbeat"
+                        },
+                        {
+                            "id": "596",
+                            "name": "Abstract"
+                        }
+                    ],
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=68541&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "mbid": "18300ebe-49b1-4ce5-aff9-d74bf57d4619"
+                }
+            ],
             "albumcount": 2,
-            "songs": [],
+            "songs": [
+                {
+                    "id": "17236",
+                    "title": "Refute",
+                    "name": "Refute",
+                    "artist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "album": {
+                        "id": "49389",
+                        "name": "Industrial is Dead"
+                    },
+                    "albumartist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "disk": 1,
+                    "track": 1,
+                    "filename": "\/mnt\/music\/_10_\/(2013) Industrial is Dead\/101 - Refute.mp3",
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 278,
+                    "year": 2013,
+                    "bitrate": 244607,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=17236&uid=2&player=api&name=-10-%20-%20Refute.mp3",
+                    "size": 8572309,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=49389&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-8.000000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "17233",
+                    "title": "Industrial is Dead (feat. Chiasm & Keldrick Brown)",
+                    "name": "Industrial is Dead (feat. Chiasm & Keldrick Brown)",
+                    "artist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "album": {
+                        "id": "49389",
+                        "name": "Industrial is Dead"
+                    },
+                    "albumartist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "disk": 1,
+                    "track": 2,
+                    "filename": "\/mnt\/music\/_10_\/(2013) Industrial is Dead\/102 - Industrial is Dead (feat. Chiasm & Keldrick Brown).mp3",
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 2,
+                    "time": 238,
+                    "year": 2013,
+                    "bitrate": 254641,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=17233&uid=2&player=api&name=-10-%20-%20Industrial%20is%20Dead%20-feat.%20Chiasm%20-%20Keldrick%20Brown-.mp3",
+                    "size": 7627484,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=49389&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-8.440000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "17237",
+                    "title": "Deep Wounds",
+                    "name": "Deep Wounds",
+                    "artist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "album": {
+                        "id": "49389",
+                        "name": "Industrial is Dead"
+                    },
+                    "albumartist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "disk": 1,
+                    "track": 3,
+                    "filename": "\/mnt\/music\/_10_\/(2013) Industrial is Dead\/103 - Deep Wounds.mp3",
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 3,
+                    "time": 215,
+                    "year": 2013,
+                    "bitrate": 255011,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=17237&uid=2&player=api&name=-10-%20-%20Deep%20Wounds.mp3",
+                    "size": 6921468,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=49389&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-7.770000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "17234",
+                    "title": "Voices",
+                    "name": "Voices",
+                    "artist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "album": {
+                        "id": "49389",
+                        "name": "Industrial is Dead"
+                    },
+                    "albumartist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "disk": 1,
+                    "track": 4,
+                    "filename": "\/mnt\/music\/_10_\/(2013) Industrial is Dead\/104 - Voices.mp3",
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 4,
+                    "time": 218,
+                    "year": 2013,
+                    "bitrate": 287433,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=17234&uid=2&player=api&name=-10-%20-%20Voices.mp3",
+                    "size": 7892473,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=49389&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-9.010000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "17235",
+                    "title": "I Failed",
+                    "name": "I Failed",
+                    "artist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "album": {
+                        "id": "49389",
+                        "name": "Industrial is Dead"
+                    },
+                    "albumartist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "disk": 1,
+                    "track": 5,
+                    "filename": "\/mnt\/music\/_10_\/(2013) Industrial is Dead\/105 - I Failed.mp3",
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 5,
+                    "time": 190,
+                    "year": 2013,
+                    "bitrate": 259874,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=17235&uid=2&player=api&name=-10-%20-%20I%20Failed.mp3",
+                    "size": 6231250,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=49389&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-7.450000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "17232",
+                    "title": "Whats Left of Me",
+                    "name": "Whats Left of Me",
+                    "artist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "album": {
+                        "id": "49389",
+                        "name": "Industrial is Dead"
+                    },
+                    "albumartist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "disk": 1,
+                    "track": 6,
+                    "filename": "\/mnt\/music\/_10_\/(2013) Industrial is Dead\/106 - Whats Left of Me.mp3",
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 6,
+                    "time": 246,
+                    "year": 2013,
+                    "bitrate": 270964,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=17232&uid=2&player=api&name=-10-%20-%20Whats%20Left%20of%20Me.mp3",
+                    "size": 8396645,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=49389&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-8.330000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "872070",
+                    "title": "13",
+                    "name": "13",
+                    "artist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "album": {
+                        "id": "68541",
+                        "name": "Aphotic"
+                    },
+                    "albumartist": {
+                        "id": "14754",
+                        "name": "ReWIR3D \/ :10:"
+                    },
+                    "disk": 1,
+                    "track": 6,
+                    "filename": "\/mnt\/music\/ReWIR3D _ _10_\/(2011) Aphotic [002-SP]\/106 - 13.mp3",
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        },
+                        {
+                            "id": "46",
+                            "name": "Ambient"
+                        },
+                        {
+                            "id": "55",
+                            "name": "Electro"
+                        },
+                        {
+                            "id": "154",
+                            "name": "Noise"
+                        },
+                        {
+                            "id": "314",
+                            "name": "Breakbeat"
+                        },
+                        {
+                            "id": "596",
+                            "name": "Abstract"
+                        }
+                    ],
+                    "playlisttrack": 7,
+                    "time": 305,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=872070&uid=2&player=api&name=-10-%20-%2013.mp3",
+                    "size": 12468243,
+                    "mbid": "89f06ed8-ab1f-4868-baab-a85c12ed690a",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=68541&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "http:\/\/label.idmforums.com",
+                    "license": null,
+                    "publisher": "IDMf:Industrial",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-7.880000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "872071",
+                    "title": "Resolute",
+                    "name": "Resolute",
+                    "artist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "album": {
+                        "id": "68541",
+                        "name": "Aphotic"
+                    },
+                    "albumartist": {
+                        "id": "14754",
+                        "name": "ReWIR3D \/ :10:"
+                    },
+                    "disk": 1,
+                    "track": 7,
+                    "filename": "\/mnt\/music\/ReWIR3D _ _10_\/(2011) Aphotic [002-SP]\/107 - Resolute.mp3",
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        },
+                        {
+                            "id": "46",
+                            "name": "Ambient"
+                        },
+                        {
+                            "id": "55",
+                            "name": "Electro"
+                        },
+                        {
+                            "id": "154",
+                            "name": "Noise"
+                        },
+                        {
+                            "id": "314",
+                            "name": "Breakbeat"
+                        },
+                        {
+                            "id": "596",
+                            "name": "Abstract"
+                        }
+                    ],
+                    "playlisttrack": 8,
+                    "time": 232,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=872071&uid=2&player=api&name=-10-%20-%20Resolute.mp3",
+                    "size": 9550269,
+                    "mbid": "06784832-772e-4d93-a012-27d30eb1b60f",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=68541&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "http:\/\/label.idmforums.com",
+                    "license": null,
+                    "publisher": "IDMf:Industrial",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-7.440000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "872069",
+                    "title": "Pathogen",
+                    "name": "Pathogen",
+                    "artist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "album": {
+                        "id": "68541",
+                        "name": "Aphotic"
+                    },
+                    "albumartist": {
+                        "id": "14754",
+                        "name": "ReWIR3D \/ :10:"
+                    },
+                    "disk": 1,
+                    "track": 8,
+                    "filename": "\/mnt\/music\/ReWIR3D _ _10_\/(2011) Aphotic [002-SP]\/108 - Pathogen.mp3",
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        },
+                        {
+                            "id": "46",
+                            "name": "Ambient"
+                        },
+                        {
+                            "id": "55",
+                            "name": "Electro"
+                        },
+                        {
+                            "id": "154",
+                            "name": "Noise"
+                        },
+                        {
+                            "id": "314",
+                            "name": "Breakbeat"
+                        },
+                        {
+                            "id": "596",
+                            "name": "Abstract"
+                        }
+                    ],
+                    "playlisttrack": 9,
+                    "time": 258,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=872069&uid=2&player=api&name=-10-%20-%20Pathogen.mp3",
+                    "size": 10563993,
+                    "mbid": "a951665d-4f17-49e0-90a1-c0a29baddfd7",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=68541&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "http:\/\/label.idmforums.com",
+                    "license": null,
+                    "publisher": "IDMf:Industrial",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-7.160000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "872065",
+                    "title": "Sick",
+                    "name": "Sick",
+                    "artist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "album": {
+                        "id": "68541",
+                        "name": "Aphotic"
+                    },
+                    "albumartist": {
+                        "id": "14754",
+                        "name": "ReWIR3D \/ :10:"
+                    },
+                    "disk": 1,
+                    "track": 9,
+                    "filename": "\/mnt\/music\/ReWIR3D _ _10_\/(2011) Aphotic [002-SP]\/109 - Sick.mp3",
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        },
+                        {
+                            "id": "46",
+                            "name": "Ambient"
+                        },
+                        {
+                            "id": "55",
+                            "name": "Electro"
+                        },
+                        {
+                            "id": "154",
+                            "name": "Noise"
+                        },
+                        {
+                            "id": "314",
+                            "name": "Breakbeat"
+                        },
+                        {
+                            "id": "596",
+                            "name": "Abstract"
+                        }
+                    ],
+                    "playlisttrack": 10,
+                    "time": 247,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=872065&uid=2&player=api&name=-10-%20-%20Sick.mp3",
+                    "size": 10129685,
+                    "mbid": "0b61e411-2f17-428a-bbaf-b7e6f65b547e",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=68541&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "http:\/\/label.idmforums.com",
+                    "license": null,
+                    "publisher": "IDMf:Industrial",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-7.030000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "872072",
+                    "title": "In Hallow",
+                    "name": "In Hallow",
+                    "artist": {
+                        "id": "622",
+                        "name": ":10:"
+                    },
+                    "album": {
+                        "id": "68541",
+                        "name": "Aphotic"
+                    },
+                    "albumartist": {
+                        "id": "14754",
+                        "name": "ReWIR3D \/ :10:"
+                    },
+                    "disk": 1,
+                    "track": 10,
+                    "filename": "\/mnt\/music\/ReWIR3D _ _10_\/(2011) Aphotic [002-SP]\/110 - In Hallow.mp3",
+                    "genre": [
+                        {
+                            "id": "4",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        },
+                        {
+                            "id": "46",
+                            "name": "Ambient"
+                        },
+                        {
+                            "id": "55",
+                            "name": "Electro"
+                        },
+                        {
+                            "id": "154",
+                            "name": "Noise"
+                        },
+                        {
+                            "id": "314",
+                            "name": "Breakbeat"
+                        },
+                        {
+                            "id": "596",
+                            "name": "Abstract"
+                        }
+                    ],
+                    "playlisttrack": 11,
+                    "time": 324,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=872072&uid=2&player=api&name=-10-%20-%20In%20Hallow.mp3",
+                    "size": 13216799,
+                    "mbid": "dc09becf-69f5-4016-ae62-3986cb11a5fe",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=68541&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "http:\/\/label.idmforums.com",
+                    "license": null,
+                    "publisher": "IDMf:Industrial",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-4.660000",
+                    "replaygain_track_peak": "0.977000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
             "songcount": 11,
             "genre": [
                 {
@@ -109,7 +1896,7 @@
                     "name": "Abstract"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=622&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=622&object_type=artist&auth=33fafad997299d0ebb8038e5a8e606e9",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -123,9 +1910,1191 @@
         {
             "id": "2296",
             "name": ":meamexcel:",
-            "albums": [],
+            "albums": [
+                {
+                    "id": "43367",
+                    "name": "isolatioN. Vol.2",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "time": 0,
+                    "year": 2011,
+                    "tracks": [],
+                    "songcount": 20,
+                    "disk": 1,
+                    "genre": [],
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "mbid": null
+                }
+            ],
             "albumcount": 1,
-            "songs": [],
+            "songs": [
+                {
+                    "id": "41329",
+                    "title": "The Shadow at the Bottom of the World",
+                    "name": "The Shadow at the Bottom of the World",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 1,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/101 - The Shadow at the Bottom of the World.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 97,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41329&uid=2&player=api&name=-meamexcel-%20-%20The%20Shadow%20at%20the%20Bottom%20of%20the%20World.mp3",
+                    "size": 3997641,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-11.350000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41339",
+                    "title": "I Miss You...So Fucking Much...",
+                    "name": "I Miss You...So Fucking Much...",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 2,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/102 - I Miss You...So Fucking Much....mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 2,
+                    "time": 234,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41339&uid=2&player=api&name=-meamexcel-%20-%20I%20Miss%20You...So%20Fucking%20Much....mp3",
+                    "size": 9452002,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-1.390000",
+                    "replaygain_track_peak": "0.759000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41335",
+                    "title": "Nihil (Nurse with Wound Cover)",
+                    "name": "Nihil (Nurse with Wound Cover)",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 3,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/103 - Nihil (Nurse with Wound Cover).mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 3,
+                    "time": 1144,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41335&uid=2&player=api&name=-meamexcel-%20-%20Nihil%20-Nurse%20with%20Wound%20Cover-.mp3",
+                    "size": 45881324,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-0.110000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41331",
+                    "title": "Proprioception",
+                    "name": "Proprioception",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 4,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/104 - Proprioception.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 4,
+                    "time": 195,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41331&uid=2&player=api&name=-meamexcel-%20-%20Proprioception.mp3",
+                    "size": 7914941,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-6.060000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41337",
+                    "title": "Tubular Bells (Erika's Interpretation)",
+                    "name": "Tubular Bells (Erika's Interpretation)",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 5,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/105 - Tubular Bells (Erika's Interpretation).mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 5,
+                    "time": 357,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41337&uid=2&player=api&name=-meamexcel-%20-%20Tubular%20Bells%20-Erika-s%20Interpretation-.mp3",
+                    "size": 14398556,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "8.300000",
+                    "replaygain_track_peak": "0.214000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41338",
+                    "title": "The Architect's Lie",
+                    "name": "The Architect's Lie",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 6,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/106 - The Architect's Lie.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 6,
+                    "time": 388,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41338&uid=2&player=api&name=-meamexcel-%20-%20The%20Architect-s%20Lie.mp3",
+                    "size": 15640921,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "8.140000",
+                    "replaygain_track_peak": "0.359000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41333",
+                    "title": "Antigonish",
+                    "name": "Antigonish",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 7,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/107 - Antigonish.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 7,
+                    "time": 266,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41333&uid=2&player=api&name=-meamexcel-%20-%20Antigonish.mp3",
+                    "size": 10738251,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "4.150000",
+                    "replaygain_track_peak": "0.646000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41341",
+                    "title": "Thin Red Lines of Crimson Spill Down My Back, the Droplets Forming Questionable Shapes on the Concrete",
+                    "name": "Thin Red Lines of Crimson Spill Down My Back, the Droplets Forming Questionable Shapes on the Concrete",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 8,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/108 - Thin Red Lines of Crimson Spill Down My Back, the Droplets Forming Questionable Shapes on the Concrete.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 8,
+                    "time": 815,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41341&uid=2&player=api&name=-meamexcel-%20-%20Thin%20Red%20Lines%20of%20Crimson%20Spill%20Down%20My%20Back-%20the%20Droplets%20Forming%20Questionable%20Shapes%20on%20the%20Concrete.mp3",
+                    "size": 32726131,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-2.060000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41334",
+                    "title": "Oneirophrenia",
+                    "name": "Oneirophrenia",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 9,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/109 - Oneirophrenia.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 9,
+                    "time": 587,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41334&uid=2&player=api&name=-meamexcel-%20-%20Oneirophrenia.mp3",
+                    "size": 23572735,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "8.350000",
+                    "replaygain_track_peak": "0.543000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41330",
+                    "title": "Aokigahara",
+                    "name": "Aokigahara",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 10,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/110 - Aokigahara.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 10,
+                    "time": 378,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41330&uid=2&player=api&name=-meamexcel-%20-%20Aokigahara.mp3",
+                    "size": 15250121,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "9.790000",
+                    "replaygain_track_peak": "0.427000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41343",
+                    "title": "Let Me In",
+                    "name": "Let Me In",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 11,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/111 - Let Me In.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 11,
+                    "time": 261,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41343&uid=2&player=api&name=-meamexcel-%20-%20Let%20Me%20In.mp3",
+                    "size": 10539720,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "-5.010000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41346",
+                    "title": "\u300cKodomo no y\u016brei\u300d",
+                    "name": "\u300cKodomo no y\u016brei\u300d",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 12,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/112 - \u300cKodomo no y\u016brei\u300d.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 12,
+                    "time": 257,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41346&uid=2&player=api&name=-meamexcel-%20-%20-Kodomo%20no%20y-rei-.mp3",
+                    "size": 10403896,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "6.890000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41332",
+                    "title": "Concealed Enmity",
+                    "name": "Concealed Enmity",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 13,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/113 - Concealed Enmity.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 13,
+                    "time": 342,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41332&uid=2&player=api&name=-meamexcel-%20-%20Concealed%20Enmity.mp3",
+                    "size": 13800854,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "2.450000",
+                    "replaygain_track_peak": "1.000000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41344",
+                    "title": "The Thing in the Bathtub",
+                    "name": "The Thing in the Bathtub",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 14,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/114 - The Thing in the Bathtub.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 14,
+                    "time": 145,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41344&uid=2&player=api&name=-meamexcel-%20-%20The%20Thing%20in%20the%20Bathtub.mp3",
+                    "size": 5893074,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "11.990000",
+                    "replaygain_track_peak": "0.143000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41327",
+                    "title": "Dyspnea",
+                    "name": "Dyspnea",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 15,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/115 - Dyspnea.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 15,
+                    "time": 895,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41327&uid=2&player=api&name=-meamexcel-%20-%20Dyspnea.mp3",
+                    "size": 35896257,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "15.690000",
+                    "replaygain_track_peak": "0.272000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41342",
+                    "title": "Stalker Pt. 1",
+                    "name": "Stalker Pt. 1",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 16,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/116 - Stalker Pt. 1.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 16,
+                    "time": 35,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41342&uid=2&player=api&name=-meamexcel-%20-%20Stalker%20Pt.%201.mp3",
+                    "size": 1495087,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "18.400000",
+                    "replaygain_track_peak": "0.122000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41336",
+                    "title": "Stalker Pt. 2",
+                    "name": "Stalker Pt. 2",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 17,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/117 - Stalker Pt. 2.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 17,
+                    "time": 62,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41336&uid=2&player=api&name=-meamexcel-%20-%20Stalker%20Pt.%202.mp3",
+                    "size": 2580736,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "9.080000",
+                    "replaygain_track_peak": "0.237000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41328",
+                    "title": "Stalker Pt. 3",
+                    "name": "Stalker Pt. 3",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 18,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/118 - Stalker Pt. 3.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 18,
+                    "time": 109,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41328&uid=2&player=api&name=-meamexcel-%20-%20Stalker%20Pt.%203.mp3",
+                    "size": 4468867,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "14.780000",
+                    "replaygain_track_peak": "0.221000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41340",
+                    "title": "Stalker Pt. 4",
+                    "name": "Stalker Pt. 4",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 19,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/119 - Stalker Pt. 4.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 19,
+                    "time": 325,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41340&uid=2&player=api&name=-meamexcel-%20-%20Stalker%20Pt.%204.mp3",
+                    "size": 13107038,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "18.140000",
+                    "replaygain_track_peak": "0.168000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "41345",
+                    "title": "Stalker Pt. 5",
+                    "name": "Stalker Pt. 5",
+                    "artist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "album": {
+                        "id": "43367",
+                        "name": "isolatioN. Vol.2"
+                    },
+                    "albumartist": {
+                        "id": "2296",
+                        "name": ":meamexcel:"
+                    },
+                    "disk": 1,
+                    "track": 20,
+                    "filename": "\/mnt\/music\/_meamexcel_\/(2011) isolatioN. Vol.2\/120 - Stalker Pt. 5.mp3",
+                    "genre": [
+                        {
+                            "id": "9",
+                            "name": "Industrial"
+                        }
+                    ],
+                    "playlisttrack": 20,
+                    "time": 188,
+                    "year": 2011,
+                    "bitrate": 320000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=41345&uid=2&player=api&name=-meamexcel-%20-%20Stalker%20Pt.%205.mp3",
+                    "size": 7635953,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": null,
+                    "albumartist_mbid": null,
+                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=43367&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 2,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": "0.000000",
+                    "replaygain_album_peak": "0.000000",
+                    "replaygain_track_gain": "17.830000",
+                    "replaygain_track_peak": "0.151000",
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
             "songcount": 20,
             "genre": [
                 {
@@ -133,7 +3102,7 @@
                     "name": "Industrial"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=2296&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=2296&object_type=artist&auth=33fafad997299d0ebb8038e5a8e606e9",
             "flag": 0,
             "preciserating": null,
             "rating": null,

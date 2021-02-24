@@ -1,223 +1,53 @@
 {
     "song": [
         {
-            "id": "72335",
-            "title": "Move to Memphis",
-            "name": "Move to Memphis",
+            "id": "811456",
+            "title": "Su auto dej\u00f3 de funcionar",
+            "name": "Su auto dej\u00f3 de funcionar",
             "artist": {
-                "id": "3922",
-                "name": "a-ha"
+                "id": "10591",
+                "name": "Babas\u00f3nicos"
             },
             "album": {
-                "id": "78768",
-                "name": "Headlines and Deadlines: The Hits of a-ha"
+                "id": "79721",
+                "name": "Vedette"
             },
             "albumartist": {
-                "id": "3922",
-                "name": "a-ha"
+                "id": "10591",
+                "name": "Babas\u00f3nicos"
             },
-            "disk": 0,
-            "track": 9,
-            "filename": "\/mnt\/music\/a-ha\/(1991) Headlines and Deadlines_ The Hits of a-ha\/109 - Move to Memphis.mp3",
+            "disk": 1,
+            "track": 3,
+            "filename": "\/mnt\/music\/Babas\u00f3nicos\/(2000) Vedette\/103 - Su auto dej\u00f3 de funcionar.mp3",
             "genre": [
                 {
-                    "id": "4",
-                    "name": "Electronic"
+                    "id": "6",
+                    "name": "Rock"
+                },
+                {
+                    "id": "2012",
+                    "name": "Latino"
                 }
             ],
             "playlisttrack": 1,
-            "time": 257,
-            "year": 1991,
+            "time": 195,
+            "year": 2000,
             "bitrate": 320000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=72335&uid=2&player=api&name=a-ha%20-%20Move%20to%20Memphis.mp3",
-            "size": 10356319,
-            "mbid": "5093fe66-6409-4183-9cb6-f78e2bac6e5e",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=811456&uid=2&player=api&name=Babas-nicos%20-%20Su%20auto%20dej-%20de%20funcionar.mp3",
+            "size": 7826163,
+            "mbid": "f0bfe6d4-aec6-4ecb-9ad8-1d4ca5f87a81",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=78768&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=79721&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "Warner Bros. Records",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-1.820000",
-            "replaygain_track_peak": "1.000000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "960841",
-            "title": "Linien im Sand",
-            "name": "Linien im Sand",
-            "artist": {
-                "id": "3157",
-                "name": "Saltatio Mortis"
-            },
-            "album": {
-                "id": "98722",
-                "name": "F\u00fcr immer frei"
-            },
-            "albumartist": {
-                "id": "3157",
-                "name": "Saltatio Mortis"
-            },
-            "disk": 0,
-            "track": 4,
-            "filename": "\/mnt\/music\/Saltatio Mortis\/(2020) F\u00fcr immer frei\/104 - Linien im Sand.mp3",
-            "genre": [
-                {
-                    "id": "469",
-                    "name": "Folk Metal"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 201,
-            "year": 2020,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=960841&uid=2&player=api&name=Saltatio%20Mortis%20-%20Linien%20im%20Sand.mp3",
-            "size": 8151877,
-            "mbid": "105223b6-734a-41ba-b63b-ba1f88e7b51a",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=98722&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "WE LOVE MUSIC",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-11.290000",
-            "replaygain_track_peak": "1.000000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "138439",
-            "title": "You Push for the World (club edition)",
-            "name": "You Push for the World (club edition)",
-            "artist": {
-                "id": "2383",
-                "name": "Electro Spectre"
-            },
-            "album": {
-                "id": "83687",
-                "name": "Bullets & Desert Blooms"
-            },
-            "albumartist": {
-                "id": "2383",
-                "name": "Electro Spectre"
-            },
-            "disk": 0,
-            "track": 15,
-            "filename": "\/mnt\/music\/Electro Spectre\/(2014) Bullets & Desert Blooms [RAZ010]\/115 - You Push for the World (club edition).mp3",
-            "genre": [
-                {
-                    "id": "7",
-                    "name": "Synthpop"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 182,
-            "year": 2014,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=138439&uid=2&player=api&name=Electro%20Spectre%20-%20You%20Push%20for%20the%20World%20-club%20edition-.mp3",
-            "size": 7456811,
-            "mbid": "70326089-73e2-476c-905a-f0967b54813e",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=83687&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 1,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "Razgom Music",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-10.450000",
-            "replaygain_track_peak": "1.000000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "32573",
-            "title": "Intro",
-            "name": "Intro",
-            "artist": {
-                "id": "1177",
-                "name": "Grendel"
-            },
-            "album": {
-                "id": "100173",
-                "name": "Live at Hard Club Gaia 18.06.2"
-            },
-            "albumartist": {
-                "id": "1177",
-                "name": "Grendel"
-            },
-            "disk": 0,
-            "track": 1,
-            "filename": "\/mnt\/music\/Grendel\/(2005) Live at Hard Club Gaia 18.06.2\/101 - Intro.mp3",
-            "genre": [
-                {
-                    "id": "9",
-                    "name": "Industrial"
-                }
-            ],
-            "playlisttrack": 4,
-            "time": 32,
-            "year": 2005,
-            "bitrate": 192839,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=32573&uid=2&player=api&name=Grendel%20-%20Intro.mp3",
-            "size": 795303,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=100173&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": 1,
-            "rating": 1,
-            "averagerating": null,
-            "playcount": 1,
             "catalog": 2,
             "composer": "",
             "channels": null,
@@ -225,10 +55,204 @@
             "license": null,
             "publisher": "",
             "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "0.000000",
-            "replaygain_track_peak": "0.000000",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-6.560000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "908375",
+            "title": "I'll Be There",
+            "name": "I'll Be There",
+            "artist": {
+                "id": "16686",
+                "name": "Something With Numbers"
+            },
+            "album": {
+                "id": "73090",
+                "name": "Engineering the Soul"
+            },
+            "albumartist": {
+                "id": "16686",
+                "name": "Something With Numbers"
+            },
+            "disk": 1,
+            "track": 12,
+            "filename": "\/mnt\/music\/Something With Numbers\/(2008) Engineering the Soul [PAR35_1]\/112 - I'll Be There.mp3",
+            "genre": [
+                {
+                    "id": "16",
+                    "name": "Alternative"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 229,
+            "year": 2008,
+            "bitrate": 320036,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=908375&uid=2&player=api&name=Something%20With%20Numbers%20-%20I-ll%20Be%20There.mp3",
+            "size": 9242918,
+            "mbid": "4113ccf6-3b40-4200-88db-6af4b2929e6b",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=73090&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "Below Par Records",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-5.970000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "162203",
+            "title": "Breakdown",
+            "name": "Breakdown",
+            "artist": {
+                "id": "4003",
+                "name": "Pzychobitch"
+            },
+            "album": {
+                "id": "89902",
+                "name": "The Day Before"
+            },
+            "albumartist": {
+                "id": "4003",
+                "name": "Pzychobitch"
+            },
+            "disk": 1,
+            "track": 1,
+            "filename": "\/mnt\/music\/Pzychobitch\/(2003) The Day Before [minus011]\/101 - Breakdown.mp3",
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "65",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 274,
+            "year": 2003,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=162203&uid=2&player=api&name=Pzychobitch%20-%20Breakdown.mp3",
+            "size": 10985107,
+            "mbid": "143bf957-22cd-417c-971f-8ed9e07ee2f0",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=89902&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "Minuswelt Musikfabrik",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-11.650000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "806827",
+            "title": "Walk On",
+            "name": "Walk On",
+            "artist": {
+                "id": "11467",
+                "name": "Widespread Panic"
+            },
+            "album": {
+                "id": "94503",
+                "name": "\u00dcber Cobra"
+            },
+            "albumartist": {
+                "id": "11467",
+                "name": "Widespread Panic"
+            },
+            "disk": 1,
+            "track": 1,
+            "filename": "\/mnt\/music\/Widespread Panic\/(2004) \u00dcber Cobra [84698]\/101 - Walk On.mp3",
+            "genre": [
+                {
+                    "id": "6",
+                    "name": "Rock"
+                },
+                {
+                    "id": "22",
+                    "name": "Pop"
+                },
+                {
+                    "id": "1036",
+                    "name": "Southern Rock"
+                },
+                {
+                    "id": "1793",
+                    "name": "Jam Bands"
+                },
+                {
+                    "id": "1794",
+                    "name": "American Trad Rock"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 359,
+            "year": 2004,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=806827&uid=2&player=api&name=Widespread%20Panic%20-%20Walk%20On.mp3",
+            "size": 14451901,
+            "mbid": "d04f0a61-4a52-4d66-97af-dd2f5f6afcc1",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=94503&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "Sanctuary Records",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-6.070000",
+            "replaygain_track_peak": "1.000000",
             "r128_album_gain": null,
             "r128_track_gain": null
         }

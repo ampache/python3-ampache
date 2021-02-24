@@ -1,49 +1,53 @@
 {
     "album": [
         {
-            "id": "95999",
-            "name": "H.N.I.C.",
+            "id": "69887",
+            "name": "Survivor",
             "artist": {
-                "id": "7233",
-                "name": "Prodigy of Mobb Deep"
+                "id": "15425",
+                "name": "Destiny's Child"
             },
             "time": 0,
-            "year": 2000,
+            "year": 2001,
             "tracks": [],
-            "songcount": 22,
+            "songcount": 18,
             "disk": 1,
             "genre": [
                 {
-                    "id": "1409",
-                    "name": "Hip Hop"
+                    "id": "360",
+                    "name": "R&B"
+                },
+                {
+                    "id": "955",
+                    "name": "Contemporary R&B"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=95999&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 1,
-            "preciserating": 5,
-            "rating": 5,
-            "averagerating": null,
-            "mbid": "0aa7d672-c6bc-49fc-b717-2238d5003c0b"
-        },
-        {
-            "id": "92850",
-            "name": "Negativ",
-            "artist": {
-                "id": "932",
-                "name": "Black Heaven"
-            },
-            "time": 0,
-            "year": 2008,
-            "tracks": [],
-            "songcount": 17,
-            "disk": 1,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=92850&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=69887&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": "cb164ef8-4e44-44d1-9be6-562610fd02f6"
+            "mbid": "034d0533-6a54-42b7-a536-a653127021a1"
+        },
+        {
+            "id": "83487",
+            "name": "Ringleader of the Tormentors",
+            "artist": {
+                "id": "7636",
+                "name": "Morrissey"
+            },
+            "time": 0,
+            "year": 2006,
+            "tracks": [],
+            "songcount": 12,
+            "disk": 1,
+            "genre": [],
+            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=83487&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "04a5715f-0842-3e8d-93cd-37ae9163de69"
         }
     ]
 }
