@@ -661,12 +661,12 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ license
     def license(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
-    my_license = ampache.license(ampache_url, ampache_api, 2, api_format)
+    my_license = ampache.license(ampache_url, ampache_api, 1, api_format)
 
     """ license_songs
     def license_songs(ampache_url, ampache_api, filter, api_format = 'xml'):
     """
-    license_songs = ampache.license_songs(ampache_url, ampache_api, 2, api_format)
+    license_songs = ampache.license_songs(ampache_url, ampache_api, 1, api_format)
 
     """ timeline
     def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, api_format = 'xml'):

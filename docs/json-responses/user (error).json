@@ -1,17 +1,6 @@
 {
-    "user": {
-        "id": "",
-        "username": null,
-        "auth": null,
-        "email": null,
-        "access": "",
-        "fullname_public": "",
-        "validation": null,
-        "disabled": "",
-        "create_date": null,
-        "last_seen": null,
-        "website": null,
-        "state": null,
-        "city": null
+    "error": {
+        "code": "404",
+        "message": "User_id not found"
     }
 }

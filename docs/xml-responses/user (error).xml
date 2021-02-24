@@ -1,19 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-<user id="">
-	<username><![CDATA[]]></username>
-	<auth><![CDATA[]]></auth>
-	<email><![CDATA[]]></email>
-	<access><![CDATA[]]></access>
-	<fullname_public><![CDATA[]]></fullname_public>
-	<validation><![CDATA[]]></validation>
-	<disabled><![CDATA[]]></disabled>
-	<create_date><![CDATA[]]></create_date>
-	<last_seen><![CDATA[]]></last_seen>
-	<link><![CDATA[]]></link>
-	<website><![CDATA[]]></website>
-	<state><![CDATA[]]></state>
-	<city><![CDATA[]]></city>
-	<fullname><![CDATA[]]></fullname>
-</user>
+	<error code="404"><![CDATA[User_id not found]]></error>
 </root>
