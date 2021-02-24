@@ -1,112 +1,124 @@
 {
     "song": [
         {
-            "id": "817126",
-            "title": "Palm Reader (alternate version)",
-            "name": "Palm Reader (alternate version)",
+            "id": "804373",
+            "title": "... And I Called for Revolution",
+            "name": "... And I Called for Revolution",
             "artist": {
-                "id": "11941",
-                "name": "The Wonder Years"
+                "id": "11433",
+                "name": "Degree of Arc"
             },
             "album": {
-                "id": "80118",
-                "name": "No Closer to Heaven"
+                "id": "91691",
+                "name": "Circles"
             },
-            "genre": [
-                {
-                    "id": "170",
-                    "name": "Pop Punk"
-                }
-            ],
             "albumartist": {
-                "id": "11941",
-                "name": "The Wonder Years"
+                "id": "11433",
+                "name": "Degree of Arc"
             },
-            "filename": "\/mnt\/music\/The Wonder Years\/(2015) No Closer to Heaven [HR2173-2]\/115 - Palm Reader (alternate version).mp3",
-            "track": 15,
-            "playlisttrack": 1,
-            "time": 236,
-            "year": 2015,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=817126&uid=2&player=api&name=The%20Wonder%20Years%20-%20Palm%20Reader%20-alternate%20version-.mp3",
-            "size": 9530432,
-            "mbid": "876c1913-e6e4-4c40-90d5-70fbdeec0065",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=80118&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "Matt Brasch",
-            "channels": null,
-            "comment": "",
-            "publisher": "Hopeless Records",
-            "language": "mul",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-7.100000",
-            "replaygain_track_peak": "0.989000"
-        },
-        {
-            "id": "895745",
-            "title": "Tonight's the Night",
-            "name": "Tonight's the Night",
-            "artist": {
-                "id": "7256",
-                "name": "Neil Young"
-            },
-            "album": {
-                "id": "84946",
-                "name": "Tonight's the Night"
-            },
-            "genre": [
-                {
-                    "id": "402",
-                    "name": "Country Rock"
-                }
-            ],
-            "albumartist": {
-                "id": "7256",
-                "name": "Neil Young"
-            },
-            "filename": "\/mnt\/music\/Neil Young\/(1975) Tonight's the Night [2221-2]\/101 - Tonight's the Night.mp3",
+            "disk": 0,
             "track": 1,
-            "playlisttrack": 2,
-            "time": 282,
-            "year": 1987,
+            "filename": "\/mnt\/music\/Degree of Arc\/(2012) Circles\/101 - ... And I Called for Revolution.mp3",
+            "genre": [
+                {
+                    "id": "63",
+                    "name": "Instrumental"
+                },
+                {
+                    "id": "1415",
+                    "name": "Post Rock"
+                }
+            ],
+            "playlisttrack": 1,
+            "time": 317,
+            "year": 2012,
             "bitrate": 320000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=895745&uid=2&player=api&name=Neil%20Young%20-%20Tonight-s%20the%20Night.mp3",
-            "size": 11365197,
-            "mbid": "7120cf10-477f-4b7f-a75d-67c11596e4d0",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=804373&uid=2&player=api&name=Degree%20of%20Arc%20-%20...%20And%20I%20Called%20for%20Revolution.mp3",
+            "size": 12736764,
+            "mbid": "4da7abda-1a32-491f-8720-d2468056d41f",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=84946&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=91691&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 2,
-            "composer": "Neil Young",
+            "composer": "",
             "channels": null,
             "comment": "",
-            "publisher": "Reprise Records",
+            "license": null,
+            "publisher": "",
             "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-4.620000",
-            "replaygain_track_peak": "1.000000"
+            "replaygain_track_gain": "-7.340000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "952784",
+            "title": "Mach 5 (live)",
+            "name": "Mach 5 (live)",
+            "artist": {
+                "id": "604",
+                "name": "The Presidents of the United States of America"
+            },
+            "album": {
+                "id": "87797",
+                "name": "II"
+            },
+            "albumartist": {
+                "id": "604",
+                "name": "The Presidents of the United States of America"
+            },
+            "disk": 0,
+            "track": 15,
+            "filename": "\/mnt\/music\/The Presidents of the United States of America\/(1996) II [SRCS 8186]\/115 - Mach 5 (live).flac",
+            "genre": [
+                {
+                    "id": "16",
+                    "name": "Alternative"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 220,
+            "year": 1996,
+            "bitrate": 916830,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=952784&uid=2&player=api&name=The%20Presidents%20of%20the%20United%20States%20of%20America%20-%20Mach%205%20-live-.flac",
+            "size": 25263253,
+            "mbid": "d6536e39-ff31-41fa-908d-83b1e9dfbd43",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=87797&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "Sony Records",
+            "language": "eng",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
         }
     ]
 }

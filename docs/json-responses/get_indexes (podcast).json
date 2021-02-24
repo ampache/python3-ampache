@@ -1,20 +1,6 @@
 {
     "podcast": [
         {
-            "id": "10",
-            "name": "1",
-            "description": "Acquisitions Incorporated serves up locally-sourced adventure from convenient franchise locations across Faer\u00fbn. Their adventures began in 2007 with a podcast of three friends playing D&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;D, and inexplicably progressed to live games on-stage before thousands of audience members at PAX.",
-            "language": "en-us",
-            "copyright": "False",
-            "feed_url": "http:\/\/www.acq-inc.com\/feed\/cteam_podcast",
-            "generator": "xml",
-            "website": "http:\/\/www.acq-inc.com\/",
-            "build_date": "2018\/03\/22 01:10pm",
-            "sync_date": "2021\/01\/11 03:05pm",
-            "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=10",
-            "podcast_episode": []
-        },
-        {
             "id": "11",
             "name": "Drunks and Dragons - Dungeons and Dragons 5e Actual Play",
             "description": "\n      The Dungeons and Dragons Podcast\n    ",
@@ -24,8 +10,13 @@
             "generator": "",
             "website": "http:\/\/wondery.com\/wondery\/shows\/drunksanddragons\/",
             "build_date": "2018\/04\/03 03:17am",
-            "sync_date": "2020\/10\/21 09:50pm",
+            "sync_date": "2021\/02\/04 00:56pm",
             "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=11",
+            "art": "https:\/\/music.com.au\/image.php?object_id=11&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": "",
             "podcast_episode": []
         },
         {
@@ -38,8 +29,13 @@
             "generator": "https:\/\/simplecast.com",
             "website": "http:\/\/tabletopchampions.com",
             "build_date": "2018\/04\/01 11:58pm",
-            "sync_date": "2020\/10\/21 09:54pm",
+            "sync_date": "2021\/02\/04 00:57pm",
             "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=12",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": "",
             "podcast_episode": []
         },
         {
@@ -52,8 +48,32 @@
             "generator": "Libsyn WebEngine 2.0",
             "website": "http:\/\/sneakpodcast.com",
             "build_date": "2018\/03\/30 02:40pm",
-            "sync_date": "2020\/10\/21 09:56pm",
+            "sync_date": "2021\/02\/04 00:57pm",
             "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=14",
+            "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": "",
+            "podcast_episode": []
+        },
+        {
+            "id": "15",
+            "name": "Brute Force",
+            "description": "Brute Force is a real-play comedic RPG podcast blended with in-character narration. We play a campaign of FATE Core (we started with World of Darkness) set in the high fantasy world of Eorith. The adventurers are a party of monsters tasked with saving a world that barely tolerates their existence.",
+            "language": "en-US",
+            "copyright": "&copy; 2016 All rights reserved",
+            "feed_url": "https:\/\/feeds.feedburner.com\/BruteForcePodcast",
+            "generator": "https:\/\/wordpress.org\/?v=4.9.3",
+            "website": "https:\/\/geeklyinc.com\/category\/brute-force\/",
+            "build_date": "2018\/03\/27 07:15pm",
+            "sync_date": "2021\/02\/04 00:57pm",
+            "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=15",
+            "art": "https:\/\/music.com.au\/image.php?object_id=15&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": "",
             "podcast_episode": []
         }
     ]

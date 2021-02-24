@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<success code="1"><![CDATA[successfully recorded play: 77371]]></success>
+  <error errorCode="4704">
+    <errorAction><![CDATA[record_play]]></errorAction>
+    <errorType><![CDATA[id]]></errorType>
+    <errorMessage><![CDATA[Not Found: 70]]></errorMessage>
+  </error>
 </root>

@@ -1,54 +1,106 @@
 {
     "album": [
         {
-            "id": "82938",
-            "name": "Awaken to the Suffering",
+            "id": "87479",
+            "name": "Very Best of",
             "artist": {
-                "id": "11725",
-                "name": "Pathology"
+                "id": "13282",
+                "name": "Men Without Hats"
             },
-            "time": 1875,
-            "year": 2011,
+            "time": 0,
+            "year": 1998,
             "tracks": [],
-            "songcount": 12,
+            "songcount": 7,
             "disk": 1,
             "genre": [
                 {
-                    "id": "2750",
-                    "name": "Slamming Brutal Death Metal"
+                    "id": "3",
+                    "name": "Punk"
+                },
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "6",
+                    "name": "Rock"
+                },
+                {
+                    "id": "7",
+                    "name": "Synthpop"
+                },
+                {
+                    "id": "22",
+                    "name": "Pop"
+                },
+                {
+                    "id": "43",
+                    "name": "Soundtrack"
+                },
+                {
+                    "id": "48",
+                    "name": "New Wave"
+                },
+                {
+                    "id": "656",
+                    "name": "Dance-Rock"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=82938&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=87479&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": "91b2f1fa-0705-4cef-ab51-b7402104fe8e"
+            "mbid": null
         },
         {
-            "id": "82939",
-            "name": "Age of Onset",
+            "id": "94591",
+            "name": "Dynamite",
             "artist": {
-                "id": "11725",
-                "name": "Pathology"
+                "id": "40",
+                "name": "Jamiroquai"
             },
-            "time": 1749,
-            "year": 2009,
+            "time": 0,
+            "year": 2005,
             "tracks": [],
-            "songcount": 10,
+            "songcount": 16,
             "disk": 1,
             "genre": [
                 {
-                    "id": "2750",
-                    "name": "Slamming Brutal Death Metal"
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "18",
+                    "name": "Funk"
+                },
+                {
+                    "id": "28",
+                    "name": "House"
+                },
+                {
+                    "id": "181",
+                    "name": "Disco"
+                },
+                {
+                    "id": "589",
+                    "name": "Alternative Dance"
+                },
+                {
+                    "id": "656",
+                    "name": "Dance-Rock"
+                },
+                {
+                    "id": "2563",
+                    "name": "Funk\/Soul"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=82939&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=94591&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": "f2b0a45c-3836-4b4d-a6a7-ee595b6f584a"
+            "mbid": null
         }
     ]
 }

@@ -12,18 +12,19 @@
                 "id": "80234",
                 "name": "The World Is Getting Colder"
             },
+            "albumartist": {
+                "id": "11932",
+                "name": "Lebanon Hanover \/ La Fete Triste"
+            },
+            "disk": 0,
+            "track": 8,
+            "filename": "\/mnt\/music\/Lebanon Hanover\/(2012) The World Is Getting Colder [[none]]\/108 - _.mp3",
             "genre": [
                 {
                     "id": "73",
                     "name": "Post-Punk"
                 }
             ],
-            "albumartist": {
-                "id": "11932",
-                "name": "Lebanon Hanover \/ La Fete Triste"
-            },
-            "filename": "\/mnt\/music\/Lebanon Hanover\/(2012) The World Is Getting Colder [[none]]\/108 - _.mp3",
-            "track": 8,
             "playlisttrack": 1,
             "time": 198,
             "year": 2012,
@@ -47,12 +48,15 @@
             "composer": "",
             "channels": null,
             "comment": "",
+            "license": null,
             "publisher": "[no label]",
             "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
             "replaygain_track_gain": "-7.240000",
-            "replaygain_track_peak": "0.944000"
+            "replaygain_track_peak": "0.944000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
         },
         {
             "id": "813353",
@@ -66,6 +70,13 @@
                 "id": "97007",
                 "name": "Leave"
             },
+            "albumartist": {
+                "id": "9392",
+                "name": "Sadness"
+            },
+            "disk": 0,
+            "track": 2,
+            "filename": "\/mnt\/music\/Sadness\/(2017) Leave\/102 - _____.mp3",
             "genre": [
                 {
                     "id": "6",
@@ -80,12 +91,6 @@
                     "name": "Depressive Black Metal"
                 }
             ],
-            "albumartist": {
-                "id": "9392",
-                "name": "Sadness"
-            },
-            "filename": "\/mnt\/music\/Sadness\/(2017) Leave\/102 - _____.mp3",
-            "track": 2,
             "playlisttrack": 2,
             "time": 327,
             "year": 2017,
@@ -109,12 +114,15 @@
             "composer": "",
             "channels": null,
             "comment": "",
+            "license": null,
             "publisher": "Not On Label",
             "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
             "replaygain_track_gain": "-6.670000",
-            "replaygain_track_peak": "0.989000"
+            "replaygain_track_peak": "0.989000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
         },
         {
             "id": "795306",
@@ -128,18 +136,19 @@
                 "id": "86343",
                 "name": "This Silence Kills"
             },
+            "albumartist": {
+                "id": "10926",
+                "name": "Dillon"
+            },
+            "disk": 0,
+            "track": 7,
+            "filename": "\/mnt\/music\/Dillon\/(2011) This Silence Kills [BPC240]\/107 - _________________.mp3",
             "genre": [
                 {
                     "id": "702",
                     "name": "Modern Classical"
                 }
             ],
-            "albumartist": {
-                "id": "10926",
-                "name": "Dillon"
-            },
-            "filename": "\/mnt\/music\/Dillon\/(2011) This Silence Kills [BPC240]\/107 - _________________.mp3",
-            "track": 7,
             "playlisttrack": 3,
             "time": 293,
             "year": 2011,
@@ -163,12 +172,15 @@
             "composer": "Tamer Fahri \u00d6zg\u00f6nenc",
             "channels": null,
             "comment": "",
+            "license": null,
             "publisher": "BPitch Control",
             "language": "eng",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
             "replaygain_track_gain": "-4.130000",
-            "replaygain_track_peak": "0.944000"
+            "replaygain_track_peak": "0.944000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
         },
         {
             "id": "833254",
@@ -182,18 +194,19 @@
                 "id": "82495",
                 "name": "Unununium"
             },
+            "albumartist": {
+                "id": "12639",
+                "name": "NHK"
+            },
+            "disk": 0,
+            "track": 3,
+            "filename": "\/mnt\/music\/NHK\/(2008) Unununium [R-N 111]\/103 - _1.mp3",
             "genre": [
                 {
                     "id": "4",
                     "name": "Electronic"
                 }
             ],
-            "albumartist": {
-                "id": "12639",
-                "name": "NHK"
-            },
-            "filename": "\/mnt\/music\/NHK\/(2008) Unununium [R-N 111]\/103 - _1.mp3",
-            "track": 3,
             "playlisttrack": 4,
             "time": 167,
             "year": 2008,
@@ -217,12 +230,15 @@
             "composer": "",
             "channels": null,
             "comment": "",
+            "license": null,
             "publisher": "Raster-Noton",
             "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
             "replaygain_track_gain": "-4.780000",
-            "replaygain_track_peak": "0.624000"
+            "replaygain_track_peak": "0.624000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
         }
     ]
 }

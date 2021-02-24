@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<user id="8">
-	<username><![CDATA[demo]]></username>
-	<auth><![CDATA[demodemo]]></auth>
-	<email><![CDATA[demo@ampache.dev]]></email>
-	<access>25</access>
-	<fullname_public>0</fullname_public>
-	<validation><![CDATA[]]></validation>
-	<disabled>1</disabled>
-	<create_date>1602714400</create_date>
-	<last_seen>0</last_seen>
-	<link><![CDATA[https://music.com.au/stats.php?action=show_user&user_id=8]]></link>
-	<website><![CDATA[]]></website>
-	<state><![CDATA[]]></state>
-	<city><![CDATA[]]></city>
-	<fullname><![CDATA[Demo User]]></fullname>
-</user>
+  <user id="8">
+    <username><![CDATA[demo]]></username>
+    <auth><![CDATA[demodemo]]></auth>
+    <email><![CDATA[demo@ampache.dev]]></email>
+    <access>25</access>
+    <fullname_public>0</fullname_public>
+    <validation><![CDATA[]]></validation>
+    <disabled>0</disabled>
+    <create_date>1602714400</create_date>
+    <last_seen>1613640897</last_seen>
+    <link><![CDATA[https://music.com.au/stats.php?action=show_user&user_id=8]]></link>
+    <website><![CDATA[]]></website>
+    <state><![CDATA[]]></state>
+    <city><![CDATA[]]></city>
+    <fullname><![CDATA[Demo User]]></fullname>
+  </user>
 </root>

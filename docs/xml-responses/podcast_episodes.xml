@@ -1,64 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<total_count>2236</total_count>
-	<podcast_episode id="8300">
-		<name><![CDATA[s4 ep19 - The Ballad of Fred Chicken, Part Two]]></name>
-		<description><![CDATA[]]></description>
-		<category><![CDATA[]]></category>
-		<author><![CDATA[]]></author>
-		<author_full><![CDATA[]]></author_full>
-		<website><![CDATA[http://www.acq-inc.com/listen/cteam/the-ballad-of-fred-chicken-part-two/the-ballad-of-fred-chicken-part-two.mp3]]></website>
-		<pubdate><![CDATA[2020/05/28 11:00am]]></pubdate>
-		<state><![CDATA[Completed]]></state>
-		<filelength><![CDATA[01:49:21]]></filelength>
-		<filesize><![CDATA[150.18 MB]]></filesize>
-		<filename><![CDATA[1 - s4 ep19 - The Ballad of Fred Chicken, Part Two.mp3]]></filename>
-		<url><![CDATA[https://music.com.au/podcast_episode.php?action=show&podcast_episode=8300]]></url>
-		<played>0</played>
-	</podcast_episode>
-	<podcast_episode id="8296">
-		<name><![CDATA[s4 ep18 - The Ballad of Fred Chicken, Part One]]></name>
-		<description><![CDATA[]]></description>
-		<category><![CDATA[]]></category>
-		<author><![CDATA[]]></author>
-		<author_full><![CDATA[]]></author_full>
-		<website><![CDATA[http://www.acq-inc.com/listen/cteam/the-ballad-of-fred-chicken-part-one/the-ballad-of-fred-chicken-part-one.mp3]]></website>
-		<pubdate><![CDATA[2020/05/21 11:00am]]></pubdate>
-		<state><![CDATA[Completed]]></state>
-		<filelength><![CDATA[00:30:14]]></filelength>
-		<filesize><![CDATA[99.84 MB]]></filesize>
-		<filename><![CDATA[1 - s4 ep18 - The Ballad of Fred Chicken, Part One.mp3]]></filename>
-		<url><![CDATA[https://music.com.au/podcast_episode.php?action=show&podcast_episode=8296]]></url>
-		<played>0</played>
-	</podcast_episode>
-	<podcast_episode id="7797">
-		<name><![CDATA[s4 ep17 - The Collections Agency, Part Nine]]></name>
-		<description><![CDATA[]]></description>
-		<category><![CDATA[]]></category>
-		<author><![CDATA[]]></author>
-		<author_full><![CDATA[]]></author_full>
-		<website><![CDATA[http://www.acq-inc.com/listen/cteam/the-collections-agency-part-nine/the-collections-agency-part-nine.mp3]]></website>
-		<pubdate><![CDATA[2020/05/14 02:05pm]]></pubdate>
-		<state><![CDATA[Completed]]></state>
-		<filelength><![CDATA[00:32:19]]></filelength>
-		<filesize><![CDATA[148.66 MB]]></filesize>
-		<filename><![CDATA[1 - s4 ep17 - The Collections Agency, Part Nine.mp3]]></filename>
-		<url><![CDATA[https://music.com.au/podcast_episode.php?action=show&podcast_episode=7797]]></url>
-		<played>0</played>
-	</podcast_episode>
-	<podcast_episode id="7796">
-		<name><![CDATA[Table Talk s4 ep17 - The Collections Agency, Part Nine]]></name>
-		<description><![CDATA[Table talk for episode 17, season 4: The Collections Agency, Part Nine]]></description>
-		<category><![CDATA[]]></category>
-		<author><![CDATA[]]></author>
-		<author_full><![CDATA[]]></author_full>
-		<website><![CDATA[http://www.acq-inc.com/listen/cteam/table-talk-the-collections-agency-part-nine/table-talk-the-collections-agency-part-nine.mp3]]></website>
-		<pubdate><![CDATA[2020/05/14 02:05pm]]></pubdate>
-		<state><![CDATA[Completed]]></state>
-		<filelength><![CDATA[00:32:04]]></filelength>
-		<filesize><![CDATA[23.61 MB]]></filesize>
-		<filename><![CDATA[1 - Table Talk s4 ep17 - The Collections Agency, Part Nine.mp3]]></filename>
-		<url><![CDATA[https://music.com.au/podcast_episode.php?action=show&podcast_episode=7796]]></url>
-		<played>0</played>
-	</podcast_episode>
+  <error errorCode="4704">
+    <errorAction><![CDATA[podcast_episodes]]></errorAction>
+    <errorType><![CDATA[filter]]></errorType>
+    <errorMessage><![CDATA[Not Found: 10]]></errorMessage>
+  </error>
 </root>

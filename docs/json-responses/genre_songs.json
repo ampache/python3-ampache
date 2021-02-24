@@ -1,58 +1,74 @@
 {
     "song": [
         {
-            "id": "836449",
-            "title": "Opposing Globalization",
-            "name": "Opposing Globalization",
+            "id": "808369",
+            "title": "Canned Head (7\"Edit)",
+            "name": "Canned Head (7\"Edit)",
             "artist": {
-                "id": "11725",
-                "name": "Pathology"
+                "id": "40",
+                "name": "Jamiroquai"
             },
             "album": {
-                "id": "82938",
-                "name": "Awaken to the Suffering"
+                "id": "94591",
+                "name": "Dynamite"
             },
+            "albumartist": {
+                "id": "40",
+                "name": "Jamiroquai"
+            },
+            "disk": 0,
+            "track": 13,
+            "filename": "\/mnt\/music\/Jamiroquai\/(2005) Dynamite [5201112]\/113 - Canned Head (7\"Edit).mp3",
             "genre": [
                 {
-                    "id": "2750",
-                    "name": "Slamming Brutal Death Metal"
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "589",
+                    "name": "Alternative Dance"
+                },
+                {
+                    "id": "656",
+                    "name": "Dance-Rock"
+                },
+                {
+                    "id": "2563",
+                    "name": "Funk\/Soul"
                 }
             ],
-            "albumartist": {
-                "id": "11725",
-                "name": "Pathology"
-            },
-            "filename": "\/mnt\/music\/Pathology\/(2011) Awaken to the Suffering\/110 - Opposing Globalization.mp3",
-            "track": 10,
             "playlisttrack": 1,
-            "time": 185,
-            "year": 2011,
+            "time": 225,
+            "year": 2005,
             "bitrate": 320000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=836449&uid=2&player=api&name=Pathology%20-%20Opposing%20Globalization.mp3",
-            "size": 7476664,
-            "mbid": "39ec1463-8f59-4c21-86b6-6fb250fb093a",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=808369&uid=2&player=api&name=Jamiroquai%20-%20Canned%20Head%20-7-Edit-.mp3",
+            "size": 10390634,
+            "mbid": "76207846-fdb7-4eb5-b5d5-336dc7b7dbae",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=82938&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=94591&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 2,
-            "composer": "",
+            "composer": "Jason Kay",
             "channels": null,
             "comment": "",
-            "publisher": "Victory Records",
+            "license": null,
+            "publisher": "Sony BMG Music Entertainment",
             "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-12.100000",
-            "replaygain_track_peak": "1.000000"
+            "replaygain_track_gain": "-8.370000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
         }
     ]
 }

@@ -1,3 +1,8 @@
 {
-    "success": "rating set to 0 for 164527"
+    "error": {
+        "errorCode": "4704",
+        "errorAction": "rate",
+        "errorType": "id",
+        "errorMessage": "Not Found: 70"
+    }
 }

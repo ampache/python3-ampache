@@ -1,14 +1,8 @@
 {
-    "localplay": {
-        "command": {
-            "status": {
-                "state": "play",
-                "volume": "14",
-                "repeat": "0",
-                "random": "0",
-                "track": 1,
-                "track_title": "Hypa Hypa"
-            }
-        }
+    "error": {
+        "errorCode": "4710",
+        "errorAction": "localplay",
+        "errorType": "account",
+        "errorMessage": "Unable to connect to localplay controller"
     }
 }

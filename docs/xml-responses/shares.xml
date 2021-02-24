@@ -1,20 +1,52 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<total_count>1</total_count>
-<share id="129">
-	<name><![CDATA[hudson]]></name>
-	<user><![CDATA[user]]></user>
-	<allow_stream>1</allow_stream>
-	<allow_download>1</allow_download>
-	<creation_date><![CDATA[2020/08/24 09:06am]]></creation_date>
-	<lastvisit_date><![CDATA[2020/08/24 09:06am]]></lastvisit_date>
-	<object_type><![CDATA[playlist]]></object_type>
-	<object_id>2069</object_id>
-	<expire_days>0</expire_days>
-	<max_counter>0</max_counter>
-	<counter>2</counter>
-	<secret><![CDATA[ur9N4IUl]]></secret>
-	<public_url><![CDATA[https://music.com.au/share.php?id=129&secret=ur9N4IUl]]></public_url>
-	<description><![CDATA[Playlist - hudson]]></description>
-</share>
+  <total_count>3</total_count>
+  <share id="129">
+    <name><![CDATA[hudson]]></name>
+    <user><![CDATA[lachlan-00]]></user>
+    <allow_stream>1</allow_stream>
+    <allow_download>1</allow_download>
+    <creation_date><![CDATA[2020/08/24 09:06am]]></creation_date>
+    <lastvisit_date><![CDATA[2020/08/24 09:14am]]></lastvisit_date>
+    <object_type><![CDATA[playlist]]></object_type>
+    <object_id>2069</object_id>
+    <expire_days>0</expire_days>
+    <max_counter>0</max_counter>
+    <counter>2</counter>
+    <secret><![CDATA[ur9N4IUl]]></secret>
+    <public_url><![CDATA[https://music.com.au/share.php?id=129&secret=ur9N4IUl]]></public_url>
+    <description><![CDATA[Playlist - hudson]]></description>
+  </share>
+  <share id="189">
+    <name><![CDATA[Drugfuck]]></name>
+    <user><![CDATA[lachlan-00]]></user>
+    <allow_stream>1</allow_stream>
+    <allow_download>1</allow_download>
+    <creation_date><![CDATA[2020/11/23 10:07am]]></creation_date>
+    <lastvisit_date><![CDATA[2021/01/27 03:20pm]]></lastvisit_date>
+    <object_type><![CDATA[song]]></object_type>
+    <object_id>956909</object_id>
+    <expire_days>0</expire_days>
+    <max_counter>0</max_counter>
+    <counter>2</counter>
+    <secret><![CDATA[k7145JmO]]></secret>
+    <public_url><![CDATA[https://music.com.au/share.php?id=189&secret=k7145JmO]]></public_url>
+    <description><![CDATA[Drugfuck]]></description>
+  </share>
+  <share id="214">
+    <name><![CDATA[Your Wedding Night]]></name>
+    <user><![CDATA[lachlan-00]]></user>
+    <allow_stream>1</allow_stream>
+    <allow_download>1</allow_download>
+    <creation_date><![CDATA[2021/02/03 10:46am]]></creation_date>
+    <lastvisit_date><![CDATA[2021/02/04 00:17am]]></lastvisit_date>
+    <object_type><![CDATA[album]]></object_type>
+    <object_id>85393</object_id>
+    <expire_days>0</expire_days>
+    <max_counter>0</max_counter>
+    <counter>11</counter>
+    <secret><![CDATA[RSdXBNc9]]></secret>
+    <public_url><![CDATA[https://music.com.au/share.php?id=214&secret=RSdXBNc9]]></public_url>
+    <description><![CDATA[Your Wedding Night (Your Wedding Night)]]></description>
+  </share>
 </root>

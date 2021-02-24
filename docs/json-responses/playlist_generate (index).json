@@ -1,97 +1,44 @@
 {
     "song": [
         {
-            "id": "795532",
-            "title": "Bride of Christ",
-            "name": "Bride of Christ",
+            "id": "72335",
+            "title": "Move to Memphis",
+            "name": "Move to Memphis",
             "artist": {
-                "id": "11064",
-                "name": "Astral Doors"
+                "id": "3922",
+                "name": "a-ha"
             },
             "album": {
-                "id": "86366",
-                "name": "Evil Is Forever"
+                "id": "78768",
+                "name": "Headlines and Deadlines: The Hits of a-ha"
             },
-            "genre": [
-                {
-                    "id": "64",
-                    "name": "Heavy Metal"
-                }
-            ],
             "albumartist": {
-                "id": "11064",
-                "name": "Astral Doors"
+                "id": "3922",
+                "name": "a-ha"
             },
-            "filename": "\/mnt\/music\/Astral Doors\/(2005) Evil Is Forever [KICP-1051]\/101 - Bride of Christ.mp3",
-            "track": 1,
-            "playlisttrack": 1,
-            "time": 221,
-            "year": 2005,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=795532&uid=2&player=api&name=Astral%20Doors%20-%20Bride%20of%20Christ.mp3",
-            "size": 8930171,
-            "mbid": "f698a917-1921-4b6c-83ed-e30f0064df82",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=86366&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "METAL FRONTIER",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-12.250000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "78149",
-            "title": "Dna Nanobots",
-            "name": "Dna Nanobots",
-            "artist": {
-                "id": "4224",
-                "name": "Apraxia"
-            },
-            "album": {
-                "id": "79088",
-                "name": "Protoform"
-            },
+            "disk": 0,
+            "track": 9,
+            "filename": "\/mnt\/music\/a-ha\/(1991) Headlines and Deadlines_ The Hits of a-ha\/109 - Move to Memphis.mp3",
             "genre": [
                 {
                     "id": "4",
                     "name": "Electronic"
                 }
             ],
-            "albumartist": {
-                "id": "4224",
-                "name": "Apraxia"
-            },
-            "filename": "\/mnt\/music\/Apraxia\/(2008) Protoform\/102 - Dna Nanobots.mp3",
-            "track": 2,
-            "playlisttrack": 2,
-            "time": 209,
-            "year": 2008,
-            "bitrate": 177545,
+            "playlisttrack": 1,
+            "time": 257,
+            "year": 1991,
+            "bitrate": 320000,
             "rate": 44100,
-            "mode": "vbr",
+            "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78149&uid=2&player=api&name=Apraxia%20-%20Dna%20Nanobots.mp3",
-            "size": 4714822,
-            "mbid": "22a2d951-95ca-493c-b3a5-b4f80d90cc13",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=72335&uid=2&player=api&name=a-ha%20-%20Move%20to%20Memphis.mp3",
+            "size": 10356319,
+            "mbid": "5093fe66-6409-4183-9cb6-f78e2bac6e5e",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=79088&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=78768&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -101,136 +48,189 @@
             "composer": "",
             "channels": null,
             "comment": "",
-            "publisher": "",
-            "language": "English",
+            "license": null,
+            "publisher": "Warner Bros. Records",
+            "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-7.640000",
-            "replaygain_track_peak": "1.000000"
+            "replaygain_track_gain": "-1.820000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
         },
         {
-            "id": "18612",
-            "title": "Intro",
-            "name": "Intro",
+            "id": "960841",
+            "title": "Linien im Sand",
+            "name": "Linien im Sand",
             "artist": {
-                "id": "675",
-                "name": "GWAR"
+                "id": "3157",
+                "name": "Saltatio Mortis"
             },
             "album": {
-                "id": "94037",
-                "name": "Beyond Hell"
+                "id": "98722",
+                "name": "F\u00fcr immer frei"
             },
+            "albumartist": {
+                "id": "3157",
+                "name": "Saltatio Mortis"
+            },
+            "disk": 0,
+            "track": 4,
+            "filename": "\/mnt\/music\/Saltatio Mortis\/(2020) F\u00fcr immer frei\/104 - Linien im Sand.mp3",
             "genre": [
                 {
-                    "id": "6",
-                    "name": "Rock"
-                },
-                {
-                    "id": "64",
-                    "name": "Heavy Metal"
-                },
-                {
-                    "id": "635",
-                    "name": "Thrash"
+                    "id": "469",
+                    "name": "Folk Metal"
                 }
             ],
-            "albumartist": {
-                "id": "675",
-                "name": "GWAR"
-            },
-            "filename": "\/mnt\/music\/GWAR\/(2006) Beyond Hell\/101 - Intro.mp3",
-            "track": 1,
-            "playlisttrack": 3,
-            "time": 60,
-            "year": 2006,
+            "playlisttrack": 2,
+            "time": 201,
+            "year": 2020,
             "bitrate": 320000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=18612&uid=2&player=api&name=GWAR%20-%20Intro.mp3",
-            "size": 2424246,
-            "mbid": "100af12a-88bf-47c9-b6b8-11e6a0b0634a",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=960841&uid=2&player=api&name=Saltatio%20Mortis%20-%20Linien%20im%20Sand.mp3",
+            "size": 8151877,
+            "mbid": "105223b6-734a-41ba-b63b-ba1f88e7b51a",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=94037&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=98722&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "WE LOVE MUSIC",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-11.290000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "138439",
+            "title": "You Push for the World (club edition)",
+            "name": "You Push for the World (club edition)",
+            "artist": {
+                "id": "2383",
+                "name": "Electro Spectre"
+            },
+            "album": {
+                "id": "83687",
+                "name": "Bullets & Desert Blooms"
+            },
+            "albumartist": {
+                "id": "2383",
+                "name": "Electro Spectre"
+            },
+            "disk": 0,
+            "track": 15,
+            "filename": "\/mnt\/music\/Electro Spectre\/(2014) Bullets & Desert Blooms [RAZ010]\/115 - You Push for the World (club edition).mp3",
+            "genre": [
+                {
+                    "id": "7",
+                    "name": "Synthpop"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 182,
+            "year": 2014,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=138439&uid=2&player=api&name=Electro%20Spectre%20-%20You%20Push%20for%20the%20World%20-club%20edition-.mp3",
+            "size": 7456811,
+            "mbid": "70326089-73e2-476c-905a-f0967b54813e",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=83687&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "Razgom Music",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-10.450000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "32573",
+            "title": "Intro",
+            "name": "Intro",
+            "artist": {
+                "id": "1177",
+                "name": "Grendel"
+            },
+            "album": {
+                "id": "100173",
+                "name": "Live at Hard Club Gaia 18.06.2"
+            },
+            "albumartist": {
+                "id": "1177",
+                "name": "Grendel"
+            },
+            "disk": 0,
+            "track": 1,
+            "filename": "\/mnt\/music\/Grendel\/(2005) Live at Hard Club Gaia 18.06.2\/101 - Intro.mp3",
+            "genre": [
+                {
+                    "id": "9",
+                    "name": "Industrial"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 32,
+            "year": 2005,
+            "bitrate": 192839,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=32573&uid=2&player=api&name=Grendel%20-%20Intro.mp3",
+            "size": 795303,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=100173&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": 1,
             "rating": 1,
             "averagerating": null,
             "playcount": 1,
             "catalog": 2,
-            "composer": "GWAR",
-            "channels": null,
-            "comment": "",
-            "publisher": "DRT Entertainment",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-6.280000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "852048",
-            "title": "The Virgin of the Snow",
-            "name": "The Virgin of the Snow",
-            "artist": {
-                "id": "13225",
-                "name": "Josephine Foster"
-            },
-            "album": {
-                "id": "66678",
-                "name": "Faithful Fairy Harmony"
-            },
-            "genre": [
-                {
-                    "id": "35",
-                    "name": "Indie"
-                },
-                {
-                    "id": "70",
-                    "name": "Folk"
-                },
-                {
-                    "id": "381",
-                    "name": "Psychedelic Rock"
-                }
-            ],
-            "albumartist": {
-                "id": "13225",
-                "name": "Josephine Foster"
-            },
-            "filename": "\/mnt\/music\/Josephine Foster\/(2018) Faithful Fairy Harmony [FIRECD533]\/103 - The Virgin of the Snow.mp3",
-            "track": 3,
-            "playlisttrack": 4,
-            "time": 398,
-            "year": 2018,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=852048&uid=2&player=api&name=Josephine%20Foster%20-%20The%20Virgin%20of%20the%20Snow.mp3",
-            "size": 16017953,
-            "mbid": "9e9b8aef-68ab-4474-8e1c-c6a267b25ac3",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=66678&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
             "composer": "",
             "channels": null,
             "comment": "",
-            "publisher": "Fire Records",
+            "license": null,
+            "publisher": "",
             "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-2.940000",
-            "replaygain_track_peak": "0.881000"
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
         }
     ]
 }

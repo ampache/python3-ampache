@@ -1,16 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<total_count>18</total_count>
-<podcast id="10">
-	<name><![CDATA[1]]></name>
-	<description><![CDATA[Acquisitions Incorporated serves up locally-sourced adventure from convenient franchise locations across Faerûn. Their adventures began in 2007 with a podcast of three friends playing D&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;D, and inexplicably progressed to live games on-stage before thousands of audience members at PAX.]]></description>
-	<language><![CDATA[en-us]]></language>
-	<copyright><![CDATA[False]]></copyright>
-	<feed_url><![CDATA[http://www.acq-inc.com/feed/cteam_podcast]]></feed_url>
-	<generator><![CDATA[json]]></generator>
-	<website><![CDATA[http://www.acq-inc.com/]]></website>
-	<build_date><![CDATA[2018/03/22 01:10pm]]></build_date>
-	<sync_date><![CDATA[2020/10/23 07:59am]]></sync_date>
-	<public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=10]]></public_url>
-	</podcast>
+  <error errorCode="4704">
+    <errorAction><![CDATA[podcast]]></errorAction>
+    <errorType><![CDATA[filter]]></errorType>
+    <errorMessage><![CDATA[Not Found: 10]]></errorMessage>
+  </error>
 </root>

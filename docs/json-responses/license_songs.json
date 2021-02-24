@@ -1,178 +1,57 @@
 {
     "song": [
         {
-            "id": "925850",
-            "title": "You Are Worthless Alec Baldwin (Bonus Track)",
-            "name": "You Are Worthless Alec Baldwin (Bonus Track)",
+            "id": "963380",
+            "title": "Burn (Instrumental Master)",
+            "name": "Burn (Instrumental Master)",
             "artist": {
-                "id": "17616",
-                "name": "DVDA"
+                "id": "287",
+                "name": "Switchkicker"
             },
             "album": {
-                "id": "74903",
-                "name": "DVDA - The Album"
+                "id": "99803",
+                "name": "Patreon Only 2020\/12\/15"
             },
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Comedy"
-                },
-                {
-                    "id": "6",
-                    "name": "Rock"
-                },
-                {
-                    "id": "22",
-                    "name": "Pop"
-                },
-                {
-                    "id": "33",
-                    "name": "Alternative Rock"
-                },
-                {
-                    "id": "43",
-                    "name": "Soundtrack"
-                },
-                {
-                    "id": "184",
-                    "name": "Parody"
-                },
-                {
-                    "id": "544",
-                    "name": "Thug Rap"
-                },
-                {
-                    "id": "826",
-                    "name": "Stage & Screen"
-                },
-                {
-                    "id": "1409",
-                    "name": "Hip Hop"
-                }
-            ],
             "albumartist": {
-                "id": "17616",
-                "name": "DVDA"
+                "id": "287",
+                "name": "Switchkicker"
             },
-            "filename": "\/mnt\/music\/DVDA\/(2014) DVDA - The Album\/171 - You Are Worthless Alec Baldwin (Bonus Track).flac",
-            "track": 71,
+            "disk": 0,
+            "track": 1,
+            "filename": "\/mnt\/music\/Switchkicker\/(2020) Patreon Only 2020_12_15 [none]\/101 - Burn (Instrumental Master).wav",
+            "genre": [],
             "playlisttrack": 1,
-            "time": 80,
-            "year": 2014,
-            "bitrate": 716191,
+            "time": 292,
+            "year": 2020,
+            "bitrate": 1411200,
             "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/x-flac",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=925850&uid=2&player=api&name=DVDA%20-%20You%20Are%20Worthless%20Alec%20Baldwin%20-Bonus%20Track-.flac",
-            "size": 7233238,
-            "mbid": "2ced591e-4902-4cba-a107-30c5b7d5c8bf",
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=963380&uid=2&player=api&name=Switchkicker%20-%20Burn%20-Instrumental%20Master-.wav",
+            "size": 51656284,
+            "mbid": null,
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=74903&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=99803&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "playcount": 0,
+            "playcount": 1,
             "catalog": 2,
             "composer": "",
             "channels": null,
-            "comment": "Visit http:\/\/kennytweek.bandcamp.com",
-            "license": "<a href=\"https:\/\/creativecommons.org\/licenses\/by\/3.0\/\">CC BY 3.0<\/a>",
+            "comment": "Patreon Only Pre-Release Instrumental",
+            "license": "0 - default",
             "publisher": "",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
             "replaygain_track_gain": null,
-            "replaygain_track_peak": null
-        },
-        {
-            "id": "925851",
-            "title": "Freedom Isn't Free",
-            "name": "Freedom Isn't Free",
-            "artist": {
-                "id": "17616",
-                "name": "DVDA"
-            },
-            "album": {
-                "id": "74903",
-                "name": "DVDA - The Album"
-            },
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Comedy"
-                },
-                {
-                    "id": "6",
-                    "name": "Rock"
-                },
-                {
-                    "id": "22",
-                    "name": "Pop"
-                },
-                {
-                    "id": "33",
-                    "name": "Alternative Rock"
-                },
-                {
-                    "id": "43",
-                    "name": "Soundtrack"
-                },
-                {
-                    "id": "184",
-                    "name": "Parody"
-                },
-                {
-                    "id": "544",
-                    "name": "Thug Rap"
-                },
-                {
-                    "id": "826",
-                    "name": "Stage & Screen"
-                },
-                {
-                    "id": "1409",
-                    "name": "Hip Hop"
-                }
-            ],
-            "albumartist": {
-                "id": "17616",
-                "name": "DVDA"
-            },
-            "filename": "\/mnt\/music\/DVDA\/(2014) DVDA - The Album\/102 - Freedom Isn't Free.flac",
-            "track": 2,
-            "playlisttrack": 2,
-            "time": 158,
-            "year": 2014,
-            "bitrate": 832013,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/x-flac",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=925851&uid=2&player=api&name=DVDA%20-%20Freedom%20Isn-t%20Free.flac",
-            "size": 16507142,
-            "mbid": "d1b1f835-1d2d-4709-812b-427ec1d493ed",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=74903&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "Visit http:\/\/kennytweek.bandcamp.com",
-            "license": "<a href=\"https:\/\/creativecommons.org\/licenses\/by\/3.0\/\">CC BY 3.0<\/a>",
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
         }
     ]
 }

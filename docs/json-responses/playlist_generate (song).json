@@ -1,43 +1,48 @@
 {
     "song": [
         {
-            "id": "746076",
-            "title": "When I Get My Wings",
-            "name": "When I Get My Wings",
+            "id": "966834",
+            "title": "Hollow",
+            "name": "Hollow",
             "artist": {
-                "id": "9460",
-                "name": "Will Hoge"
+                "id": "19416",
+                "name": "Parkway Drive"
             },
             "album": {
-                "id": "90154",
-                "name": "Number Seven"
+                "id": "99931",
+                "name": "Deep Blue"
             },
-            "genre": [
-                {
-                    "id": "6",
-                    "name": "Rock"
-                }
-            ],
             "albumartist": {
-                "id": "9460",
-                "name": "Will Hoge"
+                "id": "19416",
+                "name": "Parkway Drive"
             },
-            "filename": "\/mnt\/music\/Will Hoge\/(2011) Number Seven [RCD 11116]\/111 - When I Get My Wings.mp3",
+            "disk": 0,
             "track": 11,
+            "filename": "\/mnt\/music\/Parkway Drive\/(2010) Deep Blue [RES100]\/111 - Hollow.mp3",
+            "genre": [
+                {
+                    "id": "840",
+                    "name": "Metalcore"
+                },
+                {
+                    "id": "3383",
+                    "name": "Melodic Metalcore"
+                }
+            ],
             "playlisttrack": 1,
-            "time": 227,
-            "year": 2011,
+            "time": 180,
+            "year": 2010,
             "bitrate": 320000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=746076&uid=2&player=api&name=Will%20Hoge%20-%20When%20I%20Get%20My%20Wings.mp3",
-            "size": 9107119,
-            "mbid": "6d2e7f71-70d0-48d4-b44e-111c5270e333",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=966834&uid=2&player=api&name=Parkway%20Drive%20-%20Hollow.mp3",
+            "size": 7331477,
+            "mbid": "44da14e4-f9ec-4c5b-bfa5-8fd0c304ca10",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=90154&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=99931&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -47,178 +52,209 @@
             "composer": "",
             "channels": null,
             "comment": "",
-            "publisher": "Rykodisc",
+            "license": null,
+            "publisher": "Resist Records",
             "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-9.080000",
-            "replaygain_track_peak": "1.000000"
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
         },
         {
-            "id": "82193",
-            "title": "Water & Steel",
-            "name": "Water & Steel",
+            "id": "129310",
+            "title": "Fight! (Live)",
+            "name": "Fight! (Live)",
             "artist": {
-                "id": "4411",
-                "name": "Vice"
+                "id": "2602",
+                "name": "Blind Passenger"
             },
             "album": {
-                "id": "44099",
-                "name": "Vice, a Plain Reprise & More"
+                "id": "87957",
+                "name": "Digital Criminal"
             },
-            "genre": [
-                {
-                    "id": "48",
-                    "name": "New Wave"
-                }
-            ],
             "albumartist": {
-                "id": "4411",
-                "name": "Vice"
+                "id": "2602",
+                "name": "Blind Passenger"
             },
-            "filename": "\/mnt\/music\/Vice\/(2013) Vice, a Plain Reprise & More\/109 - Water & Steel.mp3",
-            "track": 9,
-            "playlisttrack": 2,
-            "time": 272,
-            "year": 2013,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82193&uid=2&player=api&name=Vice%20-%20Water%20-%20Steel.mp3",
-            "size": 10934316,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=44099&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-4.900000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "39802",
-            "title": "Mother Hunger",
-            "name": "Mother Hunger",
-            "artist": {
-                "id": "2248",
-                "name": "Die Sektor"
-            },
-            "album": {
-                "id": "95354",
-                "name": "To Be Fed Upon"
-            },
-            "genre": [
-                {
-                    "id": "76",
-                    "name": "Dark Electro"
-                }
-            ],
-            "albumartist": {
-                "id": "2248",
-                "name": "Die Sektor"
-            },
-            "filename": "\/mnt\/music\/Die Sektor\/(2006) To Be Fed Upon\/109 - Mother Hunger (Rough Mix).mp3",
-            "track": 6,
-            "playlisttrack": 3,
-            "time": 386,
-            "year": 2006,
-            "bitrate": 168734,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=39802&uid=2&player=api&name=Die%20Sektor%20-%20Mother%20Hunger.mp3",
-            "size": 27088626,
-            "mbid": "1a3ff5fb-f3f6-401a-a6d8-af5a4dec7991",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=95354&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "NoiTekk",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-9.380000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "907561",
-            "title": "\u00c9poca",
-            "name": "\u00c9poca",
-            "artist": {
-                "id": "15435",
-                "name": "Gotan Project"
-            },
-            "album": {
-                "id": "73017",
-                "name": "La Revancha del Tango"
-            },
+            "disk": 0,
+            "track": 7,
+            "filename": "\/mnt\/music\/Blind Passenger\/(2014) Digital Criminal EP [SEE095]\/107 - Fight! (Live).mp3",
             "genre": [
                 {
                     "id": "4",
                     "name": "Electronic"
                 },
                 {
-                    "id": "379",
-                    "name": "World"
+                    "id": "7",
+                    "name": "Synthpop"
+                },
+                {
+                    "id": "50",
+                    "name": "EBM"
                 }
             ],
-            "albumartist": {
-                "id": "15435",
-                "name": "Gotan Project"
-            },
-            "filename": "\/mnt\/music\/Gotan Project\/(2001) La Revancha del Tango [YAB 013 CD]\/102 - \u00c9poca.mp3",
-            "track": 2,
-            "playlisttrack": 4,
-            "time": 268,
-            "year": 2001,
+            "playlisttrack": 2,
+            "time": 207,
+            "year": 2014,
             "bitrate": 320000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=907561&uid=2&player=api&name=Gotan%20Project%20-%20-poca.mp3",
-            "size": 10792645,
-            "mbid": "6d7d4289-c47a-45e0-b1b1-4900205f9cf2",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=129310&uid=2&player=api&name=Blind%20Passenger%20-%20Fight-%20-Live-.mp3",
+            "size": 8405150,
+            "mbid": "43526a73-d115-47fd-9a0c-ddade4561c66",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=73017&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=87957&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 2,
-            "composer": "Philippe Cohen Solal",
+            "composer": "",
             "channels": null,
             "comment": "",
-            "publisher": "\u00a1Ya Basta! Records",
+            "license": null,
+            "publisher": "Wannsee Records",
             "language": "",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-4.080000",
-            "replaygain_track_peak": "0.912000"
+            "replaygain_track_gain": "-6.950000",
+            "replaygain_track_peak": "0.989000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "752485",
+            "title": "Don't Rock My Boat",
+            "name": "Don't Rock My Boat",
+            "artist": {
+                "id": "9609",
+                "name": "Bob Marley & The Wailers"
+            },
+            "album": {
+                "id": "85597",
+                "name": "MTV History 2000"
+            },
+            "albumartist": {
+                "id": "9609",
+                "name": "Bob Marley & The Wailers"
+            },
+            "disk": 0,
+            "track": 13,
+            "filename": "\/mnt\/music\/Bob Marley & The Wailers\/(2001) MTV History 2000\/113 - Don't Rock My Boat.mp3",
+            "genre": [
+                {
+                    "id": "786",
+                    "name": "Reggae"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 195,
+            "year": 2001,
+            "bitrate": 192000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=752485&uid=2&player=api&name=Bob%20Marley%20-%20The%20Wailers%20-%20Don-t%20Rock%20My%20Boat.mp3",
+            "size": 4820962,
+            "mbid": "1b28454d-3056-4666-83c8-797206b5d006",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=85597&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "2.600000",
+            "replaygain_track_peak": "0.495000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "790746",
+            "title": "The Sun",
+            "name": "The Sun",
+            "artist": {
+                "id": "6197",
+                "name": "Gothminister"
+            },
+            "album": {
+                "id": "85068",
+                "name": "The Other Side"
+            },
+            "albumartist": {
+                "id": "6197",
+                "name": "Gothminister"
+            },
+            "disk": 0,
+            "track": 2,
+            "filename": "\/mnt\/music\/Gothminister\/(2017) The Other Side [AFM_6449]\/102 - The Sun.mp3",
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "6",
+                    "name": "Rock"
+                },
+                {
+                    "id": "9",
+                    "name": "Industrial"
+                },
+                {
+                    "id": "1403",
+                    "name": "Goth Rock"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 182,
+            "year": 2017,
+            "bitrate": 320000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=790746&uid=2&player=api&name=Gothminister%20-%20The%20Sun.mp3",
+            "size": 7416896,
+            "mbid": "889f0e41-e662-4b39-871e-0bb57f73def4",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=85068&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "AFM Records",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "-10.760000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
         }
     ]
 }

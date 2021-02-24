@@ -12,18 +12,19 @@
                 "id": "97597",
                 "name": "Hold Your Colour"
             },
+            "albumartist": {
+                "id": "57",
+                "name": "Pendulum"
+            },
+            "disk": 0,
+            "track": 4,
+            "filename": "\/mnt\/music\/Pendulum\/(2005) Hold Your Colour\/104 - Fasten Your Seatbelt.mp3",
             "genre": [
                 {
                     "id": "1461",
                     "name": "Drum N Bass"
                 }
             ],
-            "albumartist": {
-                "id": "57",
-                "name": "Pendulum"
-            },
-            "filename": "\/mnt\/music\/Pendulum\/(2005) Hold Your Colour\/104 - Fasten Your Seatbelt.mp3",
-            "track": 4,
             "playlisttrack": 1,
             "time": 398,
             "year": 2007,
@@ -47,12 +48,15 @@
             "composer": "Matt Cantor",
             "channels": null,
             "comment": "",
+            "license": null,
             "publisher": "Breakbeat Kaos",
             "language": "eng",
             "replaygain_album_gain": "0.000000",
             "replaygain_album_peak": "0.000000",
             "replaygain_track_gain": "-9.080000",
-            "replaygain_track_peak": "1.000000"
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
         }
     ]
 }

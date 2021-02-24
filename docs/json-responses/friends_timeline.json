@@ -1,47 +1,47 @@
 {
     "activity": [
         {
-            "id": "175892",
-            "date": "1609495730",
-            "object_type": "album",
-            "object_id": "85787",
-            "action": "userflag",
-            "user": {
-                "id": "5",
-                "username": "nyssa"
-            }
-        },
-        {
-            "id": "175891",
-            "date": "1609495729",
+            "id": "177742",
+            "date": "1613640897",
             "object_type": "song",
-            "object_id": "754884",
-            "action": "userflag",
+            "object_id": "108986",
+            "action": "play",
             "user": {
-                "id": "5",
-                "username": "nyssa"
+                "id": "8",
+                "username": "demo"
             }
         },
         {
-            "id": "175889",
-            "date": "1609495696",
+            "id": "177733",
+            "date": "1613623767",
+            "object_type": "playlist",
+            "object_id": "2069",
+            "action": "userflag",
+            "user": {
+                "id": "8",
+                "username": "demo"
+            }
+        },
+        {
+            "id": "177732",
+            "date": "1613623757",
+            "object_type": "user",
+            "object_id": "4",
+            "action": "follow",
+            "user": {
+                "id": "8",
+                "username": "demo"
+            }
+        },
+        {
+            "id": "177731",
+            "date": "1613623725",
             "object_type": "song",
-            "object_id": "754970",
+            "object_id": "164527",
             "action": "userflag",
             "user": {
-                "id": "5",
-                "username": "nyssa"
-            }
-        },
-        {
-            "id": "175890",
-            "date": "1609495696",
-            "object_type": "artist",
-            "object_id": "5429",
-            "action": "userflag",
-            "user": {
-                "id": "5",
-                "username": "nyssa"
+                "id": "8",
+                "username": "demo"
             }
         }
     ]

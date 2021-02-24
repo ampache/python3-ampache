@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<success code="1"><![CDATA[Synced episodes for podcast: 10]]></success>
+  <error errorCode="4704">
+    <errorAction><![CDATA[update_podcast]]></errorAction>
+    <errorType><![CDATA[filter]]></errorType>
+    <errorMessage><![CDATA[Not Found: 10]]></errorMessage>
+  </error>
 </root>

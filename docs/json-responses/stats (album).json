@@ -1,53 +1,49 @@
 {
     "album": [
         {
-            "id": "93912",
-            "name": "Wastelands",
+            "id": "95999",
+            "name": "H.N.I.C.",
             "artist": {
-                "id": "2055",
-                "name": "Eskimo Joe"
+                "id": "7233",
+                "name": "Prodigy of Mobb Deep"
             },
-            "time": 2539,
-            "year": 2013,
+            "time": 0,
+            "year": 2000,
             "tracks": [],
-            "songcount": 10,
-            "disk": 1,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=93912&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "9df4ac1a-83b0-442e-a1db-e847784c0745"
-        },
-        {
-            "id": "69758",
-            "name": "Today",
-            "artist": {
-                "id": "9530",
-                "name": "Babe Rainbow"
-            },
-            "time": 2826,
-            "year": 2019,
-            "tracks": [],
-            "songcount": 11,
+            "songcount": 22,
             "disk": 1,
             "genre": [
                 {
-                    "id": "35",
-                    "name": "Indie"
-                },
-                {
-                    "id": "2556",
-                    "name": "Neo Psychedelic"
+                    "id": "1409",
+                    "name": "Hip Hop"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=69758&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=95999&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": null,
+            "mbid": "0aa7d672-c6bc-49fc-b717-2238d5003c0b"
+        },
+        {
+            "id": "92850",
+            "name": "Negativ",
+            "artist": {
+                "id": "932",
+                "name": "Black Heaven"
+            },
+            "time": 0,
+            "year": 2008,
+            "tracks": [],
+            "songcount": 17,
+            "disk": 1,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=92850&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": "3300e00f-3137-4213-832e-3e3f8c220e76"
+            "mbid": "cb164ef8-4e44-44d1-9be6-562610fd02f6"
         }
     ]
 }

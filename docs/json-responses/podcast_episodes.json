@@ -1,68 +1,8 @@
 {
-    "podcast_episode": [
-        {
-            "id": "8736",
-            "name": "Table Talk s4 ep23 - A Tales from the Loop Adventure, Part Four",
-            "description": "Table talk for episode 23, season 4: A Tales from the Loop Adventure, Part Four",
-            "category": "",
-            "author": "",
-            "author_full": "",
-            "website": "https:\/\/www.acq-inc.com\/listen\/cteam\/table-talk-tales-from-the-loop-part-four\/table-talk-tales-from-the-loop-part-four.mp3",
-            "pubdate": "2020\/12\/17 03:16pm",
-            "state": "Pending",
-            "filelength": "00:00:00",
-            "filesize": "0 B",
-            "filename": "1 - Table Talk s4 ep23 - A Tales from the Loop Adventure, Part Four.",
-            "url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=8736",
-            "played": "0"
-        },
-        {
-            "id": "8737",
-            "name": "s4 ep23 - A Tales from the Loop Adventure, Part Four",
-            "description": "",
-            "category": "",
-            "author": "",
-            "author_full": "",
-            "website": "https:\/\/www.acq-inc.com\/listen\/cteam\/a-tales-from-the-loop-adventure-part-four\/a-tales-from-the-loop-adventure-part-four.mp3",
-            "pubdate": "2020\/12\/17 03:16pm",
-            "state": "Pending",
-            "filelength": "00:00:00",
-            "filesize": "0 B",
-            "filename": "1 - s4 ep23 - A Tales from the Loop Adventure, Part Four.",
-            "url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=8737",
-            "played": "0"
-        },
-        {
-            "id": "8739",
-            "name": "s4 ep22 - A Tales from the Loop Adventure, Part Three",
-            "description": "",
-            "category": "",
-            "author": "",
-            "author_full": "",
-            "website": "https:\/\/www.acq-inc.com\/listen\/cteam\/a-tales-from-the-loop-adventure-part-three\/a-tales-from-the-loop-adventure-part-three.mp3",
-            "pubdate": "2020\/12\/10 02:48pm",
-            "state": "Pending",
-            "filelength": "00:00:00",
-            "filesize": "0 B",
-            "filename": "1 - s4 ep22 - A Tales from the Loop Adventure, Part Three.",
-            "url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=8739",
-            "played": "0"
-        },
-        {
-            "id": "8738",
-            "name": "Table Talk s4 ep22 - A Tales from the Loop Adventure, Part Three",
-            "description": "Table talk for episode 22, season 4: A Tales from the Loop Adventure, Part Three",
-            "category": "",
-            "author": "",
-            "author_full": "",
-            "website": "https:\/\/www.acq-inc.com\/listen\/cteam\/table-talk-tales-from-the-loop-part-three\/table-talk-tales-from-the-loop-part-three.mp3",
-            "pubdate": "2020\/12\/10 02:48pm",
-            "state": "Pending",
-            "filelength": "00:00:00",
-            "filesize": "0 B",
-            "filename": "1 - Table Talk s4 ep22 - A Tales from the Loop Adventure, Part Three.",
-            "url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=8738",
-            "played": "0"
-        }
-    ]
+    "error": {
+        "errorCode": "4704",
+        "errorAction": "podcast_episodes",
+        "errorType": "filter",
+        "errorMessage": "Not Found: 10"
+    }
 }

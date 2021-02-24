@@ -1,43 +1,118 @@
 {
     "song": [
         {
-            "id": "850302",
-            "title": "Terroir 1",
-            "name": "Terroir 1",
+            "id": "887015",
+            "title": "Forget Them",
+            "name": "Forget Them",
             "artist": {
-                "id": "13179",
-                "name": "Handful of Snowdrops"
+                "id": "7094",
+                "name": "Chaos All Stars"
             },
             "album": {
-                "id": "66517",
-                "name": "Land of the Damned"
+                "id": "80815",
+                "name": "Face the Beat: Session 1"
             },
+            "albumartist": {
+                "id": "15962",
+                "name": "Various Artists"
+            },
+            "disk": 0,
+            "track": 10,
+            "filename": "\/mnt\/music\/Various Artists\/(2011) Face the Beat_ Session 1 [[none]]\/110 - Chaos All Stars feat. Kari Berg - Forget Them.mp3",
             "genre": [
                 {
-                    "id": "52",
-                    "name": "Darkwave"
+                    "id": "4",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "9",
+                    "name": "Industrial"
+                },
+                {
+                    "id": "50",
+                    "name": "EBM"
+                },
+                {
+                    "id": "55",
+                    "name": "Electro"
+                },
+                {
+                    "id": "84",
+                    "name": "IDM"
                 }
             ],
-            "albumartist": {
-                "id": "13179",
-                "name": "Handful of Snowdrops"
-            },
-            "filename": "\/mnt\/music\/Handful of Snowdrops\/(1990) Land of the Damned [CLM-CD 028]\/101 - Terroir 1.mp3",
-            "track": 1,
             "playlisttrack": 1,
-            "time": 161,
-            "year": 1990,
+            "time": 247,
+            "year": 2011,
+            "bitrate": 259117,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=887015&uid=2&player=api&name=Chaos%20All%20Stars%20-%20Forget%20Them.mp3",
+            "size": 8041357,
+            "mbid": "1582d22d-03d3-41ab-adb4-3fd0aa5bcf09",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=80815&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 2,
+            "composer": "",
+            "channels": null,
+            "comment": "Visit http:\/\/sidelinemag.bandcamp.com",
+            "license": null,
+            "publisher": "Side-Line",
+            "language": "",
+            "replaygain_album_gain": "0.000000",
+            "replaygain_album_peak": "0.000000",
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "123356",
+            "title": "We Are the Sinners",
+            "name": "We Are the Sinners",
+            "artist": {
+                "id": "7094",
+                "name": "Chaos All Stars"
+            },
+            "album": {
+                "id": "98875",
+                "name": "Absolute Grrrls Manifesto (A Collection Of Underground Femina Vox) [Chapter 1]"
+            },
+            "albumartist": {
+                "id": "15962",
+                "name": "Various Artists"
+            },
+            "disk": 0,
+            "track": 16,
+            "filename": "\/mnt\/music\/Various Artists\/(2013) Absolute Grrrls Manifesto_ A Collection Of Underground Femina Vox [Chapter 1]\/216 - We Are The Sinners.mp3",
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Electronic"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 220,
+            "year": 2013,
             "bitrate": 320000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=850302&uid=2&player=api&name=Handful%20of%20Snowdrops%20-%20Terroir%201.mp3",
-            "size": 6462570,
-            "mbid": "9e3c88ec-227d-4951-a8d6-9070345f6131",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=123356&uid=2&player=api&name=Chaos%20All%20Stars%20-%20We%20Are%20the%20Sinners.mp3",
+            "size": 8933921,
+            "mbid": "c83498a3-acc2-4852-b8c0-6fac2377fbbb",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=66517&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=98875&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -47,174 +122,15 @@
             "composer": "",
             "channels": null,
             "comment": "",
-            "publisher": "C'est la Mort",
+            "license": null,
+            "publisher": "Alfa Matrix",
             "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-6.550000",
-            "replaygain_track_peak": "0.989000"
-        },
-        {
-            "id": "850295",
-            "title": "When Comes Daylight",
-            "name": "When Comes Daylight",
-            "artist": {
-                "id": "13179",
-                "name": "Handful of Snowdrops"
-            },
-            "album": {
-                "id": "66517",
-                "name": "Land of the Damned"
-            },
-            "genre": [
-                {
-                    "id": "52",
-                    "name": "Darkwave"
-                }
-            ],
-            "albumartist": {
-                "id": "13179",
-                "name": "Handful of Snowdrops"
-            },
-            "filename": "\/mnt\/music\/Handful of Snowdrops\/(1990) Land of the Damned [CLM-CD 028]\/102 - When Comes Daylight.mp3",
-            "track": 2,
-            "playlisttrack": 2,
-            "time": 299,
-            "year": 1990,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=850295&uid=2&player=api&name=Handful%20of%20Snowdrops%20-%20When%20Comes%20Daylight.mp3",
-            "size": 11983811,
-            "mbid": "7d1a0166-4d92-4900-89fa-0d2ab2534973",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=66517&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "C'est la Mort",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-9.630000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "850296",
-            "title": "Gabrielle",
-            "name": "Gabrielle",
-            "artist": {
-                "id": "13179",
-                "name": "Handful of Snowdrops"
-            },
-            "album": {
-                "id": "66517",
-                "name": "Land of the Damned"
-            },
-            "genre": [
-                {
-                    "id": "52",
-                    "name": "Darkwave"
-                }
-            ],
-            "albumartist": {
-                "id": "13179",
-                "name": "Handful of Snowdrops"
-            },
-            "filename": "\/mnt\/music\/Handful of Snowdrops\/(1990) Land of the Damned [CLM-CD 028]\/103 - Gabrielle.mp3",
-            "track": 3,
-            "playlisttrack": 3,
-            "time": 393,
-            "year": 1990,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=850296&uid=2&player=api&name=Handful%20of%20Snowdrops%20-%20Gabrielle.mp3",
-            "size": 15746488,
-            "mbid": "bf4c76aa-eeff-4486-af3c-e11be4a69909",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=66517&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "C'est la Mort",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-9.030000",
-            "replaygain_track_peak": "1.000000"
-        },
-        {
-            "id": "850299",
-            "title": "A Miracle",
-            "name": "A Miracle",
-            "artist": {
-                "id": "13179",
-                "name": "Handful of Snowdrops"
-            },
-            "album": {
-                "id": "66517",
-                "name": "Land of the Damned"
-            },
-            "genre": [
-                {
-                    "id": "52",
-                    "name": "Darkwave"
-                }
-            ],
-            "albumartist": {
-                "id": "13179",
-                "name": "Handful of Snowdrops"
-            },
-            "filename": "\/mnt\/music\/Handful of Snowdrops\/(1990) Land of the Damned [CLM-CD 028]\/104 - A Miracle.mp3",
-            "track": 4,
-            "playlisttrack": 4,
-            "time": 297,
-            "year": 1990,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=850299&uid=2&player=api&name=Handful%20of%20Snowdrops%20-%20A%20Miracle.mp3",
-            "size": 11906488,
-            "mbid": "09c5dd31-c9de-44fe-a0f2-bce11bb6f622",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=66517&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "C'est la Mort",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-8.030000",
-            "replaygain_track_peak": "1.000000"
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
         }
     ]
 }

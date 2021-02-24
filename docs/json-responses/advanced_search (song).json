@@ -1,6 +1,64 @@
 {
     "song": [
         {
+            "id": "154925",
+            "title": "Dance This Mess Around",
+            "name": "Dance This Mess Around",
+            "artist": {
+                "id": "6884",
+                "name": "The B-52s"
+            },
+            "album": {
+                "id": "100167",
+                "name": "1982-11-27 Jamaica (13)"
+            },
+            "albumartist": {
+                "id": "6884",
+                "name": "The B-52s"
+            },
+            "disk": 0,
+            "track": 9,
+            "filename": "\/mnt\/files-music\/boots\/B-52's\/1982-11-27 - Montego Bay, Jamaica (13)\/09 - Dance This Mess Around.flac",
+            "genre": [
+                {
+                    "id": "666",
+                    "name": "Bootleg"
+                }
+            ],
+            "playlisttrack": 1,
+            "time": 251,
+            "year": 1982,
+            "bitrate": 1035422,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=154925&uid=2&player=api&name=The%20B-52s%20-%20Dance%20This%20Mess%20Around.flac",
+            "size": 32576127,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=100167&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": 6,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
             "id": "154139",
             "title": "Blue Monday",
             "name": "Blue Monday",
@@ -12,19 +70,20 @@
                 "id": "97958",
                 "name": "Blockbuster Pavillion, Los Angeles, CA, US (13)"
             },
+            "albumartist": {
+                "id": "8279",
+                "name": "New Order with Billy Corgan"
+            },
+            "disk": 0,
+            "track": 12,
+            "filename": "\/mnt\/files-music\/boots\/New Order\/2001-08-05 - Blockbuster Pavillion, Los Angeles, CA, US (13)\/12 - Blue Monday.flac",
             "genre": [
                 {
                     "id": "666",
                     "name": "Bootleg"
                 }
             ],
-            "albumartist": {
-                "id": "8279",
-                "name": "New Order with Billy Corgan"
-            },
-            "filename": "\/mnt\/files-music\/boots\/New Order\/2001-08-05 - Blockbuster Pavillion, Los Angeles, CA, US (13)\/12 - Blue Monday.flac",
-            "track": 12,
-            "playlisttrack": 1,
+            "playlisttrack": 2,
             "time": 646,
             "year": 2001,
             "bitrate": 907480,
@@ -47,12 +106,15 @@
             "composer": "",
             "channels": null,
             "comment": "",
+            "license": null,
             "publisher": "",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
             "replaygain_track_gain": null,
-            "replaygain_track_peak": null
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
         },
         {
             "id": "155058",
@@ -66,19 +128,20 @@
                 "id": "97832",
                 "name": "Songs for the Deaf Demos (13)"
             },
+            "albumartist": {
+                "id": "475",
+                "name": "Queens of the Stone Age"
+            },
+            "disk": 0,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/boots\/Queens of the Stone Age\/(2001) Songs for the Deaf Demos (13)\/04 - Go with the Flow.flac",
             "genre": [
                 {
                     "id": "666",
                     "name": "Bootleg"
                 }
             ],
-            "albumartist": {
-                "id": "475",
-                "name": "Queens of the Stone Age"
-            },
-            "filename": "\/mnt\/files-music\/boots\/Queens of the Stone Age\/(2001) Songs for the Deaf Demos (13)\/04 - Go with the Flow.flac",
-            "track": 4,
-            "playlisttrack": 2,
+            "playlisttrack": 3,
             "time": 184,
             "year": 2001,
             "bitrate": 1110074,
@@ -101,120 +164,73 @@
             "composer": "",
             "channels": null,
             "comment": "",
+            "license": null,
             "publisher": "",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
             "replaygain_track_gain": null,
-            "replaygain_track_peak": null
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
         },
         {
-            "id": "150881",
-            "title": "Stained Glass Window",
-            "name": "Stained Glass Window",
+            "id": "150754",
+            "title": "Dance Hit #4 (Unfinished)",
+            "name": "Dance Hit #4 (Unfinished)",
             "artist": {
                 "id": "8273",
                 "name": "The Marked"
             },
             "album": {
-                "id": "97952",
-                "name": "The Marked 85-87 Demos"
+                "id": "97950",
+                "name": "October 1986 Tape"
             },
-            "genre": [
-                {
-                    "id": "666",
-                    "name": "Bootleg"
-                }
-            ],
             "albumartist": {
                 "id": "8273",
                 "name": "The Marked"
             },
-            "filename": "\/mnt\/files-music\/boots\/The Marked\/The Marked 85-87 Demos\/07 - Stained Glass Window.flac",
+            "disk": 0,
             "track": 7,
-            "playlisttrack": 3,
-            "time": 30,
-            "year": 1987,
-            "bitrate": 915558,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/x-flac",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=150881&uid=2&player=api&name=The%20Marked%20-%20Stained%20Glass%20Window.flac",
-            "size": 3454706,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=97952&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 1,
-            "preciserating": 5,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 1,
-            "catalog": 6,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null
-        },
-        {
-            "id": "152252",
-            "title": "Stars Fall In",
-            "name": "Stars Fall In",
-            "artist": {
-                "id": "1240",
-                "name": "The Smashing Pumpkins"
-            },
-            "album": {
-                "id": "79491",
-                "name": "Moon Demo Tape"
-            },
+            "filename": "\/mnt\/files-music\/boots\/The Marked\/September - October 1986 Tape\/d1t07 - Dance Hit #4 (Unfinished).flac",
             "genre": [
                 {
                     "id": "666",
                     "name": "Bootleg"
                 }
             ],
-            "albumartist": {
-                "id": "1240",
-                "name": "The Smashing Pumpkins"
-            },
-            "filename": "\/mnt\/files-music\/boots\/The Smashing Pumpkins\/(1989) Moon Demo Tape\/06 - Stars Fall In.flac",
-            "track": 6,
             "playlisttrack": 4,
-            "time": 178,
-            "year": 1989,
-            "bitrate": 988594,
+            "time": 187,
+            "year": 1986,
+            "bitrate": 580933,
             "rate": 44100,
             "mode": "vbr",
             "mime": "audio\/x-flac",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=152252&uid=2&player=api&name=The%20Smashing%20Pumpkins%20-%20Stars%20Fall%20In.flac",
-            "size": 22091794,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=150754&uid=2&player=api&name=The%20Marked%20-%20Dance%20Hit%20-4%20-Unfinished-.flac",
+            "size": 13593844,
             "mbid": "",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=79491&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
-            "flag": 1,
-            "preciserating": 5,
-            "rating": 5,
+            "art": "https:\/\/music.com.au\/image.php?object_id=97950&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
             "averagerating": null,
-            "playcount": 1,
+            "playcount": 0,
             "catalog": 6,
             "composer": "",
             "channels": null,
             "comment": "",
+            "license": null,
             "publisher": "",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
             "replaygain_track_gain": null,
-            "replaygain_track_peak": null
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
         }
     ]
 }

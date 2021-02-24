@@ -1,3 +1,8 @@
 {
-    "success": "Synced episodes for podcast: 10"
+    "error": {
+        "errorCode": "4704",
+        "errorAction": "update_podcast",
+        "errorType": "filter",
+        "errorMessage": "Not Found: 10"
+    }
 }
