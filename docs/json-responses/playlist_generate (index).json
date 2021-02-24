@@ -1,167 +1,151 @@
 [
     {
-        "id": "20872",
-        "title": "One Step Closer (Humble Brothers remix) (FM radio)",
-        "name": "One Step Closer (Humble Brothers remix) (FM radio)",
+        "id": "112",
+        "title": "08 MxBxCx - Personal Truth",
+        "name": "08 MxBxCx - Personal Truth",
         "artist": {
-            "id": "713",
-            "name": "Linkin Park"
+            "id": "25",
+            "name": "Unknown (Orphaned)"
         },
         "album": {
-            "id": "2058",
-            "name": "Greatest Hits"
+            "id": "13",
+            "name": "Unknown (Orphaned)"
         },
-        "tag": [
-            {
-                "id": "4",
-                "name": "Rock"
-            },
-            {
-                "id": "50",
-                "name": "Nu Metal"
-            }
-        ],
         "albumartist": {
-            "id": "713",
-            "name": "Linkin Park"
+            "id": "",
+            "name": ""
         },
-        "filename": "\/mnt\/music\/Linkin Park\/(2013) Greatest Hits\/108 - One Step Closer (Humble Brothers remix) (FM radio).mp3",
-        "track": 8,
+        "disk": 1,
+        "track": 0,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/08Mxbxcx-PersonalTruth.mp3",
+        "tag": [],
         "playlisttrack": 1,
-        "time": 189,
-        "year": 2013,
-        "bitrate": 320000,
+        "time": 208,
+        "year": 0,
+        "bitrate": 179860,
         "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=20872&uid=3&player=api&name=Linkin%20Park%20-%20One%20Step%20Closer%20-Humble%20Brothers%20remix-%20-FM%20radio-.mp3",
-        "size": 7640822,
-        "mbid": "7b5dbab9-0da6-48ce-8a76-388e40da21cb",
-        "album_mbid": null,
-        "artist_mbid": "f59c5520-5f46-4d2c-b2c4-822eabf53419",
-        "albumartist_mbid": "f59c5520-5f46-4d2c-b2c4-822eabf53419",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=2058&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "",
-        "language": "eng",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": "-7.570000",
-        "replaygain_track_peak": "0.832000",
-        "genre": [
-            {
-                "name": "Rock"
-            },
-            {
-                "name": "Nu Metal"
-            }
-        ]
-    },
-    {
-        "id": "29646",
-        "title": "You Might (Live At Hammersmith Odeon December 1984)",
-        "name": "You Might (Live At Hammersmith Odeon December 1984)",
-        "artist": {
-            "id": "997",
-            "name": "Nik Kershaw"
-        },
-        "album": {
-            "id": "2957",
-            "name": "The Riddle"
-        },
-        "tag": [
-            {
-                "id": "48",
-                "name": "New Wave"
-            }
-        ],
-        "albumartist": {
-            "id": "997",
-            "name": "Nik Kershaw"
-        },
-        "filename": "\/mnt\/music\/Nik Kershaw\/(1984) The Riddle\/209 - You Might (Live At Hammersmith Odeon December 1984).mp3",
-        "track": 9,
-        "playlisttrack": 2,
-        "time": 210,
-        "year": 2013,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=29646&uid=3&player=api&name=Nik%20Kershaw%20-%20You%20Might%20-Live%20At%20Hammersmith%20Odeon%20December%201984-.mp3",
-        "size": 8425056,
-        "mbid": "3263bea7-3c27-48c2-84a4-7ac00e89e8f4",
-        "album_mbid": "317f4785-a1dc-4542-b6f1-3b0e1b669c48",
-        "artist_mbid": "6286e04b-7bc1-4f22-bca5-fdd34d1b0d93",
-        "albumartist_mbid": "6286e04b-7bc1-4f22-bca5-fdd34d1b0d93",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=2957&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "",
-        "channels": null,
-        "comment": "Bonus",
-        "publisher": "Universal UMC",
-        "language": "",
-        "replaygain_album_gain": "-6.150000",
-        "replaygain_album_peak": "1.000000",
-        "replaygain_track_gain": "-7.170000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "New Wave"
-            }
-        ]
-    },
-    {
-        "id": "9053",
-        "title": "Hulk Smash",
-        "name": "Hulk Smash",
-        "artist": {
-            "id": "295",
-            "name": "NerdOut"
-        },
-        "album": {
-            "id": "899",
-            "name": "Hulk Smash"
-        },
-        "tag": [
-            {
-                "id": "17",
-                "name": "Hip Hop"
-            }
-        ],
-        "albumartist": {
-            "id": "295",
-            "name": "NerdOut"
-        },
-        "filename": "\/mnt\/music\/NerdOut\/(2020) Hulk Smash\/01 - Hulk Smash.mp3",
-        "track": 1,
-        "playlisttrack": 3,
-        "time": 220,
-        "year": 2020,
-        "bitrate": 175504,
-        "rate": 48000,
         "mode": "vbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=9053&uid=3&player=api&name=NerdOut%20-%20Hulk%20Smash.mp3",
-        "size": 4853755,
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&player=api&name=Unknown%20-Orphaned-%20-%2008%20MxBxCx%20-%20Personal%20Truth.mp3",
+        "size": 4687011,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+        "license": null,
+        "publisher": "",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
+    },
+    {
+        "id": "73",
+        "title": "inominavel p05",
+        "name": "inominavel p05",
+        "artist": {
+            "id": "11",
+            "name": "structura"
+        },
+        "album": {
+            "id": "5",
+            "name": "Inominavel (live.v.01)"
+        },
+        "albumartist": {
+            "id": "11",
+            "name": "structura"
+        },
+        "disk": 1,
+        "track": 5,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/05_structura_-_inominavel_p05.mp3",
+        "tag": [
+            {
+                "id": "3",
+                "name": "Noise"
+            }
+        ],
+        "playlisttrack": 2,
+        "time": 310,
+        "year": 2007,
+        "bitrate": 192000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=73&uid=4&player=api&name=structura%20-%20inominavel%20p05.mp3",
+        "size": 7448576,
         "mbid": null,
         "album_mbid": null,
         "artist_mbid": "",
         "albumartist_mbid": "",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=899&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "art": "https:\/\/music.com.au\/image.php?object_id=5&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "http:\/\/enoughrecords.scene.org",
+        "license": null,
+        "publisher": "",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": [
+            {
+                "name": "Noise"
+            }
+        ]
+    },
+    {
+        "id": "115",
+        "title": "Are we going Crazy",
+        "name": "Are we going Crazy",
+        "artist": {
+            "id": "27",
+            "name": "Chi.Otic"
+        },
+        "album": {
+            "id": "12",
+            "name": "Buried in Nausea"
+        },
+        "albumartist": {
+            "id": "19",
+            "name": "Various Artists"
+        },
+        "disk": 1,
+        "track": 7,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
+        "tag": [],
+        "playlisttrack": 3,
+        "time": 433,
+        "year": 2012,
+        "bitrate": 32582,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/x-ms-wma",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.wma",
+        "size": 1776580,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -171,89 +155,65 @@
         "composer": "",
         "channels": null,
         "comment": "",
+        "license": null,
         "publisher": "",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-8.980000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Hip Hop"
-            }
-        ]
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
     },
     {
-        "id": "8333",
-        "title": "(Can't You) Trip Like I Do (instrumental)",
-        "name": "(Can't You) Trip Like I Do (instrumental)",
+        "id": "96",
+        "title": "Creeping Lawler 2",
+        "name": "Creeping Lawler 2",
         "artist": {
-            "id": "265",
-            "name": "Filter & The Crystal Method"
+            "id": "15",
+            "name": "Warfare 3.0"
         },
         "album": {
-            "id": "831",
-            "name": "(Can't You) Trip Like I Do"
+            "id": "9",
+            "name": "Creeping Lawler 2"
         },
-        "tag": [
-            {
-                "id": "14",
-                "name": "Electronic"
-            },
-            {
-                "id": "51",
-                "name": "Experimental"
-            },
-            {
-                "id": "167",
-                "name": "Breakbeat"
-            }
-        ],
         "albumartist": {
-            "id": "265",
-            "name": "Filter & The Crystal Method"
+            "id": "15",
+            "name": "Warfare 3.0"
         },
-        "filename": "\/mnt\/music\/Filter & The Crystal Method\/(1997) (Can't You) Trip Like I Do [665086 2]\/103 - (Can't You) Trip Like I Do (instrumental).mp3",
-        "track": 3,
+        "disk": 1,
+        "track": 1,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.wav",
+        "tag": [],
         "playlisttrack": 4,
-        "time": 269,
-        "year": 1997,
-        "bitrate": 256000,
+        "time": 296,
+        "year": 0,
+        "bitrate": 1411200,
         "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=8333&uid=3&player=api&name=Filter%20-%20The%20Crystal%20Method%20-%20-Can-t%20You-%20Trip%20Like%20I%20Do%20-instrumental-.mp3",
-        "size": 8682561,
-        "mbid": "dfdca13d-cdcb-49a7-89fa-18e749171adb",
-        "album_mbid": "a7f1ce97-a5fc-412d-b0eb-3e156cee8a78",
-        "artist_mbid": "6ae51665-8261-4ae5-883f-1899651ad31b",
-        "albumartist_mbid": "6ae51665-8261-4ae5-883f-1899651ad31b",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=831&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.wav",
+        "size": 52341524,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "playcount": 0,
+        "playcount": 1,
         "catalog": 1,
-        "composer": "Filter\/The Crystal Method",
+        "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "EpicImmortal Records",
-        "language": "mul",
+        "license": null,
+        "publisher": "",
+        "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-10.040000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Electronic"
-            },
-            {
-                "name": "Experimental"
-            },
-            {
-                "name": "Breakbeat"
-            }
-        ]
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
     }
 ]

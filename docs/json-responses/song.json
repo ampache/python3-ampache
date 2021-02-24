@@ -1,50 +1,43 @@
 [
     {
-        "id": "1",
-        "title": "I Don't Know How the Young Men Living",
-        "name": "I Don't Know How the Young Men Living",
+        "id": "54",
+        "title": "Red&GreenSmoke",
+        "name": "Red&GreenSmoke",
         "artist": {
-            "id": "1",
-            "name": "Kreuzberg Museum"
+            "id": "2",
+            "name": "Synthetic"
         },
         "album": {
-            "id": "1",
-            "name": "Calypso"
+            "id": "2",
+            "name": "Colorsmoke EP"
         },
+        "albumartist": {
+            "id": "2",
+            "name": "Synthetic"
+        },
+        "disk": 1,
+        "track": 5,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
         "tag": [
             {
                 "id": "1",
-                "name": "Contemporary Folk"
-            },
-            {
-                "id": "2",
-                "name": "Indie Folk"
-            },
-            {
-                "id": "3",
-                "name": "Singer-Songwriter"
+                "name": "Electronic"
             }
         ],
-        "albumartist": {
-            "id": "1",
-            "name": "Kreuzberg Museum"
-        },
-        "filename": "\/mnt\/music\/Kreuzberg Museum\/(2007) Calypso\/103 - I Don't Know How the Young Men Living.mp3",
-        "track": 3,
         "playlisttrack": 1,
-        "time": 146,
+        "time": 400,
         "year": 2007,
-        "bitrate": 320000,
-        "rate": 44100,
+        "bitrate": 64000,
+        "rate": 22050,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=1&uid=3&player=api&name=Kreuzberg%20Museum%20-%20I%20Don-t%20Know%20How%20the%20Young%20Men%20Living.mp3",
-        "size": 5986557,
-        "mbid": "e46fdc3f-4e73-499a-84b7-2fa7294f1493",
-        "album_mbid": "ceadbfeb-ae5b-4dbc-81a9-95de3e496a7f",
-        "artist_mbid": "aca13b05-626f-4d5a-91a7-ef86ebdd8384",
-        "albumartist_mbid": "aca13b05-626f-4d5a-91a7-ef86ebdd8384",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+        "size": 3205738,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -54,21 +47,16 @@
         "composer": "",
         "channels": null,
         "comment": "",
+        "license": null,
         "publisher": "",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-4.320000",
-        "replaygain_track_peak": "1.000000",
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
         "genre": [
             {
-                "name": "Contemporary Folk"
-            },
-            {
-                "name": "Indie Folk"
-            },
-            {
-                "name": "Singer-Songwriter"
+                "name": "Electronic"
             }
         ]
     }

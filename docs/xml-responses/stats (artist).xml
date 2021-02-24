@@ -1,41 +1,41 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<total_count>2</total_count>
-<artist id="880">
-	<name><![CDATA[Bert Jansch Conundrum]]></name>
-	<tag id="1" count="1" ><![CDATA[Contemporary Folk]]></tag>
-	<tag id="3" count="1" ><![CDATA[Singer-Songwriter]]></tag>
-	<tag id="44" count="1" ><![CDATA[Folk Rock]]></tag>
-	<tag id="278" count="1" ><![CDATA[British Folk]]></tag>
-	<albums>1</albums>
-	<songs>13</songs>
-	<art><![CDATA[https://music.com.au/image.php?object_id=880&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>0</flag>
-	<preciserating></preciserating>
-	<rating></rating>
-	<averagerating></averagerating>
-	<mbid><![CDATA[]]></mbid>
-	<summary><![CDATA[]]></summary>
-	<yearformed></yearformed>
-	<placeformed><![CDATA[]]></placeformed>
-</artist>
-<artist id="252">
-	<name><![CDATA[Shino]]></name>
-	<tag id="4" count="1" ><![CDATA[Rock]]></tag>
-	<tag id="9" count="1" ><![CDATA[Folk]]></tag>
-	<tag id="28" count="1" ><![CDATA[Acoustic]]></tag>
-	<tag id="79" count="1" ><![CDATA[Gothic]]></tag>
-	<tag id="134" count="1" ><![CDATA[Folk World & Country]]></tag>
-	<albums>8</albums>
-	<songs>88</songs>
-	<art><![CDATA[https://music.com.au/image.php?object_id=252&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>0</flag>
-	<preciserating></preciserating>
-	<rating></rating>
-	<averagerating></averagerating>
-	<mbid><![CDATA[ecd4c9cf-196e-4702-9acf-69fbe5f1981a]]></mbid>
-	<summary><![CDATA[]]></summary>
-	<yearformed></yearformed>
-	<placeformed><![CDATA[]]></placeformed>
-</artist>
+  <total_count>2</total_count>
+  <artist id="20">
+    <name><![CDATA[R/B]]></name>
+    <tag id="7" count="1"><![CDATA[Punk]]></tag>
+    <albums>1</albums>
+    <albumcount>1</albumcount>
+    <songs>1</songs>
+    <songcount>1</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=20&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[ ]]></summary>
+    <time><![CDATA[96]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
+  <artist id="19">
+    <name><![CDATA[Various Artists]]></name>
+    <albums>0</albums>
+    <albumcount>0</albumcount>
+    <songs>0</songs>
+    <songcount>0</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=19&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[Warning! Deleting this artist may remove other artists and scrobbles from your library - please handle with caution!  Note: You can view albums tagged as 'Various Artists' in your library here. 
+
+The term Various Artists is used in the record industry when numerous singers and musicians collaborate on a song or collection of songs. Most often on Last.fm, compilation album tracks appear under the name of Various Artists erroneously because the individual artist is not listed in the album's ID3 information. ]]></summary>
+    <time><![CDATA[1437]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
 </root>

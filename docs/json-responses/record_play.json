@@ -1,3 +1,6 @@
 {
-    "success": "successfully recorded play: 21890 for: demo"
+    "error": {
+        "code": "404",
+        "message": "Library item not found"
+    }
 }

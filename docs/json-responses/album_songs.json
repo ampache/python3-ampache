@@ -1,42 +1,38 @@
 [
     {
-        "id": "6743",
-        "title": "Feel",
-        "name": "Feel",
+        "id": "110",
+        "title": "I wanna walk through the fire",
+        "name": "I wanna walk through the fire",
         "artist": {
-            "id": "202",
-            "name": "Big Star"
+            "id": "23",
+            "name": "Manic Notion"
         },
         "album": {
-            "id": "665",
-            "name": "#1 Record"
+            "id": "12",
+            "name": "Buried in Nausea"
         },
-        "tag": [
-            {
-                "id": "107",
-                "name": "Power Pop"
-            }
-        ],
         "albumartist": {
-            "id": "202",
-            "name": "Big Star"
+            "id": "19",
+            "name": "Various Artists"
         },
-        "filename": "\/mnt\/music\/Big Star\/(1972) #1 Record [AK 028]\/101 - Feel.mp3",
+        "disk": 1,
         "track": 1,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/01ManicNotion-IWannaWalkThroughTheFire.m4a",
+        "tag": [],
         "playlisttrack": 1,
-        "time": 214,
-        "year": 2004,
-        "bitrate": 320000,
+        "time": 197,
+        "year": 2012,
+        "bitrate": 267320,
         "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=6743&uid=3&player=api&name=Big%20Star%20-%20Feel.mp3",
-        "size": 8578245,
-        "mbid": "34c837f6-26bc-448a-a1aa-c02cb6a09dfc",
-        "album_mbid": "4b78e722-c4ce-31df-9711-08c24aa307e6",
-        "artist_mbid": "21d177ba-3d51-461e-9b3f-ad9a80b419dc",
-        "albumartist_mbid": "21d177ba-3d51-461e-9b3f-ad9a80b419dc",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=665&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "mode": "vbr",
+        "mime": "audio\/mp4",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.m4a",
+        "size": 6648489,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -46,56 +42,49 @@
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Akarma",
-        "language": "eng",
+        "license": null,
+        "publisher": "",
+        "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-4.320000",
-        "replaygain_track_peak": "0.733000",
-        "genre": [
-            {
-                "name": "Power Pop"
-            }
-        ]
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
     },
     {
-        "id": "6735",
-        "title": "The Ballad of El Goodo",
-        "name": "The Ballad of El Goodo",
+        "id": "114",
+        "title": "He is the Master of War",
+        "name": "He is the Master of War",
         "artist": {
-            "id": "202",
-            "name": "Big Star"
+            "id": "26",
+            "name": "Stress Builds Character"
         },
         "album": {
-            "id": "665",
-            "name": "#1 Record"
+            "id": "12",
+            "name": "Buried in Nausea"
         },
-        "tag": [
-            {
-                "id": "107",
-                "name": "Power Pop"
-            }
-        ],
         "albumartist": {
-            "id": "202",
-            "name": "Big Star"
+            "id": "19",
+            "name": "Various Artists"
         },
-        "filename": "\/mnt\/music\/Big Star\/(1972) #1 Record [AK 028]\/102 - The Ballad of El Goodo.mp3",
+        "disk": 1,
         "track": 2,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a",
+        "tag": [],
         "playlisttrack": 2,
-        "time": 261,
-        "year": 2004,
-        "bitrate": 320000,
+        "time": 233,
+        "year": 2012,
+        "bitrate": 256245,
         "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=6735&uid=3&player=api&name=Big%20Star%20-%20The%20Ballad%20of%20El%20Goodo.mp3",
-        "size": 10455926,
-        "mbid": "66defaf1-39c9-4466-88e2-7c2fe3751537",
-        "album_mbid": "4b78e722-c4ce-31df-9711-08c24aa307e6",
-        "artist_mbid": "21d177ba-3d51-461e-9b3f-ad9a80b419dc",
-        "albumartist_mbid": "21d177ba-3d51-461e-9b3f-ad9a80b419dc",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=665&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "mode": "vbr",
+        "mime": "audio\/mp4",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.m4a",
+        "size": 7531274,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -105,56 +94,49 @@
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Akarma",
-        "language": "eng",
+        "license": null,
+        "publisher": "",
+        "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-5.080000",
-        "replaygain_track_peak": "0.871000",
-        "genre": [
-            {
-                "name": "Power Pop"
-            }
-        ]
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
     },
     {
-        "id": "6741",
-        "title": "In the Street",
-        "name": "In the Street",
+        "id": "109",
+        "title": "Dance with the Devil",
+        "name": "Dance with the Devil",
         "artist": {
-            "id": "202",
-            "name": "Big Star"
+            "id": "22",
+            "name": "Comedown Kid"
         },
         "album": {
-            "id": "665",
-            "name": "#1 Record"
+            "id": "12",
+            "name": "Buried in Nausea"
         },
-        "tag": [
-            {
-                "id": "107",
-                "name": "Power Pop"
-            }
-        ],
         "albumartist": {
-            "id": "202",
-            "name": "Big Star"
+            "id": "19",
+            "name": "Various Artists"
         },
-        "filename": "\/mnt\/music\/Big Star\/(1972) #1 Record [AK 028]\/103 - In the Street.mp3",
+        "disk": 1,
         "track": 3,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
+        "tag": [],
         "playlisttrack": 3,
-        "time": 175,
-        "year": 2004,
-        "bitrate": 320000,
+        "time": 116,
+        "year": 2012,
+        "bitrate": 32582,
         "rate": 44100,
         "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=6741&uid=3&player=api&name=Big%20Star%20-%20In%20the%20Street.mp3",
-        "size": 7018212,
-        "mbid": "930cb068-c06f-44ea-97df-c60723ebd8df",
-        "album_mbid": "4b78e722-c4ce-31df-9711-08c24aa307e6",
-        "artist_mbid": "21d177ba-3d51-461e-9b3f-ad9a80b419dc",
-        "albumartist_mbid": "21d177ba-3d51-461e-9b3f-ad9a80b419dc",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=665&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "mime": "audio\/x-ms-wma",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.wma",
+        "size": 483444,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -164,75 +146,65 @@
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Akarma",
-        "language": "eng",
+        "license": null,
+        "publisher": "",
+        "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-4.740000",
-        "replaygain_track_peak": "0.851000",
-        "genre": [
-            {
-                "name": "Power Pop"
-            }
-        ]
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
     },
     {
-        "id": "6738",
-        "title": "Thirteen",
-        "name": "Thirteen",
+        "id": "111",
+        "title": "The art of free expression",
+        "name": "The art of free expression",
         "artist": {
-            "id": "202",
-            "name": "Big Star"
+            "id": "24",
+            "name": "Tip-C"
         },
         "album": {
-            "id": "665",
-            "name": "#1 Record"
+            "id": "12",
+            "name": "Buried in Nausea"
         },
-        "tag": [
-            {
-                "id": "107",
-                "name": "Power Pop"
-            }
-        ],
         "albumartist": {
-            "id": "202",
-            "name": "Big Star"
+            "id": "19",
+            "name": "Various Artists"
         },
-        "filename": "\/mnt\/music\/Big Star\/(1972) #1 Record [AK 028]\/104 - Thirteen.mp3",
-        "track": 4,
+        "disk": 1,
+        "track": 5,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/05Tip-c-TheArtOfFreeExpression.wma",
+        "tag": [],
         "playlisttrack": 4,
-        "time": 154,
-        "year": 2004,
-        "bitrate": 320000,
+        "time": 110,
+        "year": 2012,
+        "bitrate": 32582,
         "rate": 44100,
         "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=6738&uid=3&player=api&name=Big%20Star%20-%20Thirteen.mp3",
-        "size": 6206326,
-        "mbid": "c43d06e1-1c31-44db-8f2e-8e188ccc224a",
-        "album_mbid": "4b78e722-c4ce-31df-9711-08c24aa307e6",
-        "artist_mbid": "21d177ba-3d51-461e-9b3f-ad9a80b419dc",
-        "albumartist_mbid": "21d177ba-3d51-461e-9b3f-ad9a80b419dc",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=665&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "mime": "audio\/x-ms-wma",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.wma",
+        "size": 460498,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
         "playcount": 0,
         "catalog": 1,
-        "composer": "Chris Bell",
+        "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Akarma",
-        "language": "eng",
+        "license": null,
+        "publisher": "",
+        "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-5.490000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Power Pop"
-            }
-        ]
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
     }
 ]

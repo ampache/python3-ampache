@@ -1,42 +1,43 @@
 [
     {
-        "id": "15609",
-        "title": "Right Turn",
-        "name": "Right Turn",
+        "id": "73",
+        "title": "inominavel p05",
+        "name": "inominavel p05",
         "artist": {
-            "id": "538",
-            "name": "Alice Mudgarden"
+            "id": "11",
+            "name": "structura"
         },
         "album": {
-            "id": "1538",
-            "name": "Sap"
+            "id": "5",
+            "name": "Inominavel (live.v.01)"
         },
+        "albumartist": {
+            "id": "11",
+            "name": "structura"
+        },
+        "disk": 1,
+        "track": 5,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/05_structura_-_inominavel_p05.mp3",
         "tag": [
             {
-                "id": "19",
-                "name": "Alternative Rock"
+                "id": "3",
+                "name": "Noise"
             }
         ],
-        "albumartist": {
-            "id": "537",
-            "name": "Alice in Chains"
-        },
-        "filename": "\/mnt\/music\/Alice in Chains\/(1992) Sap [44K 74182]\/103 - Alice Mudgarden - Right Turn.mp3",
-        "track": 3,
         "playlisttrack": 1,
-        "time": 199,
-        "year": 1992,
+        "time": 310,
+        "year": 2007,
         "bitrate": 192000,
         "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=15609&uid=3&player=api&name=Alice%20Mudgarden%20-%20Right%20Turn.mp3",
-        "size": 4946800,
-        "mbid": "7bb159c6-5fa3-4f6d-a639-89a2944c5ec2",
-        "album_mbid": "e3b64649-e018-3e20-9b50-ca95ebed28ec",
-        "artist_mbid": "06932306-df61-4d21-8f47-916d55e417ee",
-        "albumartist_mbid": "4bd95eea-b9f6-4d70-a36c-cfea77431553",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1538&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=73&uid=4&player=api&name=structura%20-%20inominavel%20p05.mp3",
+        "size": 7448576,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=5&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -45,76 +46,70 @@
         "catalog": 1,
         "composer": "",
         "channels": null,
-        "comment": "",
-        "publisher": "Columbia",
-        "language": "eng",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": "-4.850000",
-        "replaygain_track_peak": "0.955000",
-        "genre": [
-            {
-                "name": "Alternative Rock"
-            }
-        ]
-    },
-    {
-        "id": "29202",
-        "title": "Fairytales",
-        "name": "Fairytales",
-        "artist": {
-            "id": "974",
-            "name": "Vampires on Tomato Juice"
-        },
-        "album": {
-            "id": "2913",
-            "name": "Fairytales"
-        },
-        "tag": [
-            {
-                "id": "49",
-                "name": "Alternative Metal"
-            }
-        ],
-        "albumartist": {
-            "id": "974",
-            "name": "Vampires on Tomato Juice"
-        },
-        "filename": "\/mnt\/music\/Vampires on Tomato Juice\/(2013) Fairytales\/111 - Fairytales.mp3",
-        "track": 11,
-        "playlisttrack": 2,
-        "time": 206,
-        "year": 2013,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=29202&uid=3&player=api&name=Vampires%20on%20Tomato%20Juice%20-%20Fairytales.mp3",
-        "size": 8317268,
-        "mbid": "356fe953-b260-48aa-9988-8a4c8998a0b4",
-        "album_mbid": "2d41e42d-d2d0-4d2f-a330-41ae0fde870b",
-        "artist_mbid": "48ffb9a8-e588-4897-aaf1-1308d208a4c7",
-        "albumartist_mbid": "48ffb9a8-e588-4897-aaf1-1308d208a4c7",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=2913&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "",
-        "channels": null,
-        "comment": "",
+        "comment": "http:\/\/enoughrecords.scene.org",
+        "license": null,
         "publisher": "",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-10.530000",
-        "replaygain_track_peak": "1.000000",
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
         "genre": [
             {
-                "name": "Alternative Metal"
+                "name": "Noise"
             }
         ]
+    },
+    {
+        "id": "97",
+        "title": "Creeping Lawler 2",
+        "name": "Creeping Lawler 2",
+        "artist": {
+            "id": "15",
+            "name": "Warfare 3.0"
+        },
+        "album": {
+            "id": "9",
+            "name": "Creeping Lawler 2"
+        },
+        "albumartist": {
+            "id": "15",
+            "name": "Warfare 3.0"
+        },
+        "disk": 1,
+        "track": 1,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
+        "tag": [],
+        "playlisttrack": 2,
+        "time": 296,
+        "year": 0,
+        "bitrate": 177349,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
+        "size": 6645248,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "https:\/\/archive.org\/details\/",
+        "license": null,
+        "publisher": "",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
     }
 ]

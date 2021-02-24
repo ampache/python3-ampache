@@ -1,60 +1,62 @@
 [
     {
-        "id": "30720",
-        "title": "Revolt Tonight!",
-        "name": "Revolt Tonight!",
+        "id": "60",
+        "title": "BrownSmoke",
+        "name": "BrownSmoke",
         "artist": {
-            "id": "1028",
-            "name": "Sin7sinS"
+            "id": "2",
+            "name": "Synthetic"
         },
         "album": {
-            "id": "3065",
-            "name": "Carnival of No Tomorrow"
+            "id": "2",
+            "name": "Colorsmoke EP"
         },
+        "albumartist": {
+            "id": "2",
+            "name": "Synthetic"
+        },
+        "disk": 1,
+        "track": 4,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
         "tag": [
             {
-                "id": "114",
-                "name": "Gothic Metal"
+                "id": "1",
+                "name": "Electronic"
             }
         ],
-        "albumartist": {
-            "id": "1028",
-            "name": "Sin7sinS"
-        },
-        "filename": "\/mnt\/music\/Sin7sinS\/(2012) Carnival of No Tomorrow\/109 - Revolt Tonight!.mp3",
-        "track": 9,
         "playlisttrack": 1,
-        "time": 249,
-        "year": 2012,
-        "bitrate": 320000,
-        "rate": 44100,
+        "time": 304,
+        "year": 2007,
+        "bitrate": 20627,
+        "rate": 22050,
         "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=30720&uid=3&player=api&name=Sin7sinS%20-%20Revolt%20Tonight-.mp3",
-        "size": 10006578,
-        "mbid": "60fae925-0707-452d-82ae-38fc16526fa0",
-        "album_mbid": "e49670e7-90ab-476e-8e60-61ec962ed7bd",
-        "artist_mbid": "81ee0f00-e894-4450-ac2b-ffb607d41c96",
-        "albumartist_mbid": "81ee0f00-e894-4450-ac2b-ffb607d41c96",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=3065&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "mime": "audio\/x-ms-wma",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma",
+        "size": 792307,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "playcount": 1,
+        "playcount": 0,
         "catalog": 1,
         "composer": "",
         "channels": null,
-        "comment": "",
-        "publisher": "S7S Records",
+        "comment": "Made with Sony ACID 5",
+        "license": null,
+        "publisher": "20kbps rec.",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-11.210000",
-        "replaygain_track_peak": "1.000000",
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
         "genre": [
             {
-                "name": "Gothic Metal"
+                "name": "Electronic"
             }
         ]
     }

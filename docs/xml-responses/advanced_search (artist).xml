@@ -1,78 +1,39 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<total_count>4</total_count>
-<artist id="955">
-	<name><![CDATA[Ashton]]></name>
-	<tag id="4" count="1" ><![CDATA[Rock]]></tag>
-	<albums>1</albums>
-	<songs>10</songs>
-	<art><![CDATA[https://music.com.au/image.php?object_id=955&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>1</flag>
-	<preciserating>2</preciserating>
-	<rating>2</rating>
-	<averagerating>3.5</averagerating>
-	<mbid><![CDATA[99b64731-48d9-4e10-aaa3-590c8b28fd2d]]></mbid>
-	<summary><![CDATA[Ashton surge a mediados de 2004 con la intención de crecer como músicos y experimentar nuevas vías de expresión. Después de siete años en la carrera, dos discos editados (Zero Records) y más de setenta conciertos en las principales capitales del país bajo el nombre de Sad Man Said, llega el momento de decir adiós por la partida de su vocalista. Guillermo Ceballos "Will" (guitarra) y David Mangado (bajo) retoman el proyecto junto a Oscar Hoyos (batería en la última etapa de Sad Man Said). ]]></summary>
-	<yearformed>0</yearformed>
-	<placeformed><![CDATA[]]></placeformed>
-</artist>
-<artist id="190">
-	<name><![CDATA[Cytotoxin]]></name>
-	<tag id="63" count="1" ><![CDATA[Death Metal]]></tag>
-	<albums>1</albums>
-	<songs>10</songs>
-	<art><![CDATA[https://music.com.au/image.php?object_id=190&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>1</flag>
-	<preciserating>3</preciserating>
-	<rating>3</rating>
-	<averagerating>4</averagerating>
-	<mbid><![CDATA[640659f0-bcd9-4600-950c-a2958420a680]]></mbid>
-	<summary><![CDATA[There are multiple artists with this name:
-
-
-
-1) Cytotoxin  is Technical Brutal Death Metal band from Germany.
-
-The band released their debut full length "Plutonium Heaven" in April 2011.
- ]]></summary>
-	<yearformed>0</yearformed>
-	<placeformed><![CDATA[]]></placeformed>
-</artist>
-<artist id="1024">
-	<name><![CDATA[John Maus]]></name>
-	<tag id="4" count="1" ><![CDATA[Rock]]></tag>
-	<tag id="6" count="1" ><![CDATA[Indie Rock]]></tag>
-	<tag id="8" count="1" ><![CDATA[Indie]]></tag>
-	<tag id="14" count="1" ><![CDATA[Electronic]]></tag>
-	<tag id="15" count="1" ><![CDATA[Synthpop]]></tag>
-	<tag id="21" count="1" ><![CDATA[Pop]]></tag>
-	<tag id="48" count="1" ><![CDATA[New Wave]]></tag>
-	<tag id="112" count="1" ><![CDATA[Lo-Fi]]></tag>
-	<albums>5</albums>
-	<songs>69</songs>
-	<art><![CDATA[https://music.com.au/image.php?object_id=1024&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>1</flag>
-	<preciserating>5</preciserating>
-	<rating>5</rating>
-	<averagerating></averagerating>
-	<mbid><![CDATA[c6be66af-28b4-4b87-a8ba-3f46ec6fe986]]></mbid>
-	<summary><![CDATA[]]></summary>
-	<yearformed></yearformed>
-	<placeformed><![CDATA[]]></placeformed>
-</artist>
-<artist id="1023">
-	<name><![CDATA[Pan Electric]]></name>
-	<tag id="12" count="1" ><![CDATA[Ambient]]></tag>
-	<albums>1</albums>
-	<songs>12</songs>
-	<art><![CDATA[https://music.com.au/image.php?object_id=1023&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>1</flag>
-	<preciserating>3</preciserating>
-	<rating>3</rating>
-	<averagerating></averagerating>
-	<mbid><![CDATA[18faac51-9e6a-4a90-bf43-11312c83142f]]></mbid>
-	<summary><![CDATA[]]></summary>
-	<yearformed></yearformed>
-	<placeformed><![CDATA[]]></placeformed>
-</artist>
+  <total_count>2</total_count>
+  <artist id="16">
+    <name><![CDATA[CARNÚN]]></name>
+    <albums>1</albums>
+    <albumcount>1</albumcount>
+    <songs>9</songs>
+    <songcount>9</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=16&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[ ]]></summary>
+    <time><![CDATA[4282]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
+  <artist id="2">
+    <name><![CDATA[Synthetic]]></name>
+    <tag id="1" count="1"><![CDATA[Electronic]]></tag>
+    <albums>1</albums>
+    <albumcount>1</albumcount>
+    <songs>12</songs>
+    <songcount>12</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>1</flag>
+    <preciserating>5</preciserating>
+    <rating>5</rating>
+    <averagerating>3</averagerating>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ]]></summary>
+    <time><![CDATA[4568]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
 </root>

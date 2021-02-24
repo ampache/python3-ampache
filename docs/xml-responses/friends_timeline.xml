@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
 <timeline>
-	<activity id="67">
-		<date>1612488643</date>
-		<object_type><![CDATA[user]]></object_type>
-		<object_id>7</object_id>
-		<action><![CDATA[follow]]></action>
-		<user id="2">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="66">
-		<date>1612488642</date>
-		<object_type><![CDATA[user]]></object_type>
-		<object_id>6</object_id>
-		<action><![CDATA[follow]]></action>
-		<user id="2">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="65">
-		<date>1612488641</date>
-		<object_type><![CDATA[user]]></object_type>
-		<object_id>3</object_id>
-		<action><![CDATA[follow]]></action>
-		<user id="2">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="56">
-		<date>1612487540</date>
-		<object_type><![CDATA[song]]></object_type>
-		<object_id>21890</object_id>
+	<activity id="31">
+		<date>1614055275</date>
+		<object_type><![CDATA[video]]></object_type>
+		<object_id>1</object_id>
 		<action><![CDATA[play]]></action>
-		<user id="6">
-			<username><![CDATA[generic]]></username>
+		<user id="2">
+			<username><![CDATA[admin]]></username>
+		</user>
+	</activity>
+	<activity id="30">
+		<date>1614055252</date>
+		<object_type><![CDATA[song]]></object_type>
+		<object_id>79</object_id>
+		<action><![CDATA[play]]></action>
+		<user id="2">
+			<username><![CDATA[admin]]></username>
+		</user>
+	</activity>
+	<activity id="26">
+		<date>1614055014</date>
+		<object_type><![CDATA[song]]></object_type>
+		<object_id>76</object_id>
+		<action><![CDATA[play]]></action>
+		<user id="2">
+			<username><![CDATA[admin]]></username>
+		</user>
+	</activity>
+	<activity id="25">
+		<date>1614054865</date>
+		<object_type><![CDATA[video]]></object_type>
+		<object_id>1</object_id>
+		<action><![CDATA[userflag]]></action>
+		<user id="2">
+			<username><![CDATA[admin]]></username>
 		</user>
 	</activity>
 </timeline>

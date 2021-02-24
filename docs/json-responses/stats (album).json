@@ -1,48 +1,42 @@
 [
     {
-        "id": "3062",
-        "name": "Everything Resembles You",
+        "id": "13",
+        "name": "Unknown (Orphaned)",
         "artist": {
-            "id": "1026",
-            "name": "Eternal Twilight"
+            "id": "25",
+            "name": "Unknown (Orphaned)"
         },
-        "year": 2011,
-        "tracks": 10,
+        "time": 442,
+        "year": 0,
+        "tracks": "2",
+        "songcount": 2,
         "disk": 1,
-        "tag": [
-            {
-                "id": "12",
-                "name": "Ambient"
-            }
-        ],
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=3062&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "tag": [],
+        "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "mbid": "20e795c0-ce18-4941-a368-19347528fde3"
+        "mbid": null
     },
     {
-        "id": "20",
-        "name": "H.N.I.C. 3",
+        "id": "10",
+        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
         "artist": {
-            "id": "14",
-            "name": "Prodigy of Mobb Deep"
+            "id": "16",
+            "name": "CARN\u00daN"
         },
-        "year": 2012,
-        "tracks": 20,
-        "disk": 2,
-        "tag": [
-            {
-                "id": "17",
-                "name": "Hip Hop"
-            }
-        ],
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=20&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "time": 4282,
+        "year": 1996,
+        "tracks": "9",
+        "songcount": 9,
+        "disk": 1,
+        "tag": [],
+        "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "mbid": "e92f42f5-0162-460e-bbec-035b74db3b8b"
+        "mbid": null
     }
 ]

@@ -1,223 +1,38 @@
 [
     {
-        "id": "3913",
-        "title": "Here and Now",
-        "name": "Here and Now",
+        "id": "109",
+        "title": "Dance with the Devil",
+        "name": "Dance with the Devil",
         "artist": {
-            "id": "104",
-            "name": "Hypernova"
+            "id": "22",
+            "name": "Comedown Kid"
         },
         "album": {
-            "id": "395",
-            "name": "Through the Chaos"
+            "id": "12",
+            "name": "Buried in Nausea"
         },
-        "tag": [
-            {
-                "id": "8",
-                "name": "Indie"
-            }
-        ],
         "albumartist": {
-            "id": "104",
-            "name": "Hypernova"
+            "id": "19",
+            "name": "Various Artists"
         },
-        "filename": "\/mnt\/files-music\/upload\/user\/106 - Here and Now (1).mp3",
-        "track": 6,
+        "disk": 1,
+        "track": 3,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
+        "tag": [],
         "playlisttrack": 1,
-        "time": 228,
-        "year": 2010,
-        "bitrate": 183869,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=3913&uid=3&player=api&name=Hypernova%20-%20Here%20and%20Now.mp3",
-        "size": 5405276,
-        "mbid": "b281066f-6bcf-426c-8329-935e0cc1617a",
-        "album_mbid": "b3e1059e-ecdc-49d0-a058-d3e0f0c866f1",
-        "artist_mbid": "2bf5998f-1f66-4036-bb07-ae49665d4f08",
-        "albumartist_mbid": "2bf5998f-1f66-4036-bb07-ae49665d4f08",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=395&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Narnack Records",
-        "language": "eng",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": "-4.380000",
-        "replaygain_track_peak": "0.513000",
-        "genre": [
-            {
-                "name": "Indie"
-            }
-        ]
-    },
-    {
-        "id": "3925",
-        "title": "Fairy Tales",
-        "name": "Fairy Tales",
-        "artist": {
-            "id": "104",
-            "name": "Hypernova"
-        },
-        "album": {
-            "id": "395",
-            "name": "Through the Chaos"
-        },
-        "tag": [
-            {
-                "id": "8",
-                "name": "Indie"
-            }
-        ],
-        "albumartist": {
-            "id": "104",
-            "name": "Hypernova"
-        },
-        "filename": "\/mnt\/files-music\/upload\/user\/108 - Fairy Tales (1).mp3",
-        "track": 8,
-        "playlisttrack": 2,
-        "time": 233,
-        "year": 2010,
-        "bitrate": 189559,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=3925&uid=3&player=api&name=Hypernova%20-%20Fairy%20Tales.mp3",
-        "size": 5701626,
-        "mbid": "8a270dd8-e316-404b-a6b8-82abcdcddc68",
-        "album_mbid": "b3e1059e-ecdc-49d0-a058-d3e0f0c866f1",
-        "artist_mbid": "2bf5998f-1f66-4036-bb07-ae49665d4f08",
-        "albumartist_mbid": "2bf5998f-1f66-4036-bb07-ae49665d4f08",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=395&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Narnack Records",
-        "language": "eng",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": "-0.670000",
-        "replaygain_track_peak": "0.324000",
-        "genre": [
-            {
-                "name": "Indie"
-            }
-        ]
-    },
-    {
-        "id": "3920",
-        "title": "Radio Commercial Album Release (Live at Perversion Cathedral, Los Angeles, 12\/13\/1991)",
-        "name": "Radio Commercial Album Release (Live at Perversion Cathedral, Los Angeles, 12\/13\/1991)",
-        "artist": {
-            "id": "106",
-            "name": "London After Midnight"
-        },
-        "album": {
-            "id": "397",
-            "name": "Live From Isolation"
-        },
-        "tag": [
-            {
-                "id": "47",
-                "name": "Gothic Rock"
-            }
-        ],
-        "albumartist": {
-            "id": "106",
-            "name": "London After Midnight"
-        },
-        "filename": "\/mnt\/files-music\/upload\/user\/13. Radio Commercial Album Release (Live at Perversion Cathedral, Los Angeles, 12131991).mp3",
-        "track": 13,
-        "playlisttrack": 3,
-        "time": 61,
-        "year": 2021,
-        "bitrate": 320000,
+        "time": 116,
+        "year": 2012,
+        "bitrate": 32582,
         "rate": 44100,
         "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=3920&uid=3&player=api&name=London%20After%20Midnight%20-%20Radio%20Commercial%20Album%20Release%20-Live%20at%20Perversion%20Cathedral-%20Los%20Angeles-%2012-13-1991-.mp3",
-        "size": 2666474,
+        "mime": "audio\/x-ms-wma",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.wma",
+        "size": 483444,
         "mbid": null,
         "album_mbid": null,
         "artist_mbid": "",
         "albumartist_mbid": "",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=397&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Darkride Records",
-        "language": "",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": null,
-        "replaygain_track_peak": null,
-        "genre": [
-            {
-                "name": "Gothic Rock"
-            }
-        ]
-    },
-    {
-        "id": "13517",
-        "title": "Blindman",
-        "name": "Blindman",
-        "artist": {
-            "id": "471",
-            "name": "100 Watt Vipers"
-        },
-        "album": {
-            "id": "1324",
-            "name": "Something Wicked Comes This Way"
-        },
-        "tag": [
-            {
-                "id": "4",
-                "name": "Rock"
-            },
-            {
-                "id": "118",
-                "name": "Blues"
-            }
-        ],
-        "albumartist": {
-            "id": "471",
-            "name": "100 Watt Vipers"
-        },
-        "filename": "\/mnt\/music\/100 Watt Vipers\/(2014) Something Wicked Comes This Way\/101 - Blindman.mp3",
-        "track": 1,
-        "playlisttrack": 4,
-        "time": 228,
-        "year": 2014,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=13517&uid=3&player=api&name=100%20Watt%20Vipers%20-%20Blindman.mp3",
-        "size": 10132460,
-        "mbid": "ebf9eae4-887c-42e7-ad20-270dfa80f376",
-        "album_mbid": "73780f50-ef52-482f-8ada-162eb269b85d",
-        "artist_mbid": "69eb8e6e-61c7-4bbb-a651-527a9edb28f3",
-        "albumartist_mbid": "69eb8e6e-61c7-4bbb-a651-527a9edb28f3",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1324&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -227,19 +42,13 @@
         "composer": "",
         "channels": null,
         "comment": "",
+        "license": null,
         "publisher": "",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-11.440000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
-            },
-            {
-                "name": "Blues"
-            }
-        ]
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
     }
 ]

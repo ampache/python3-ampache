@@ -1,3 +1,6 @@
 {
-    "success": "rating set to 0 for 21890"
+    "error": {
+        "code": "404",
+        "message": "Library item not found"
+    }
 }

@@ -1,42 +1,43 @@
 [
     {
-        "id": "27710",
-        "title": "Christ Consumed",
-        "name": "Christ Consumed",
+        "id": "81",
+        "title": "Galenskap",
+        "name": "Galenskap",
         "artist": {
-            "id": "938",
-            "name": "Broken Hope"
+            "id": "13",
+            "name": "IOK-1"
         },
         "album": {
-            "id": "2773",
-            "name": "Grotesque Blessings"
+            "id": "7",
+            "name": "Sensorisk Deprivation"
         },
+        "albumartist": {
+            "id": "13",
+            "name": "IOK-1"
+        },
+        "disk": 1,
+        "track": 3,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/03_-_IOK-1_-_Galenskap.flac",
         "tag": [
             {
-                "id": "285",
-                "name": "Brutal Death Metal"
+                "id": "4",
+                "name": "Dark Ambient"
             }
         ],
-        "albumartist": {
-            "id": "938",
-            "name": "Broken Hope"
-        },
-        "filename": "\/mnt\/music\/Broken Hope\/(1999) Grotesque Blessings\/104 - Christ Consumed.mp3",
-        "track": 4,
         "playlisttrack": 1,
-        "time": 346,
-        "year": 1999,
-        "bitrate": 320000,
+        "time": 998,
+        "year": 2011,
+        "bitrate": 389585,
         "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=27710&uid=3&player=api&name=Broken%20Hope%20-%20Christ%20Consumed.mp3",
-        "size": 13864117,
-        "mbid": "420c77eb-581c-438c-9b88-c86070cdf00c",
-        "album_mbid": "38bd4f42-f18a-4209-b414-6d3c16d24ef2",
-        "artist_mbid": "35542ce4-a774-4116-804d-b307ce89d12e",
-        "albumartist_mbid": "35542ce4-a774-4116-804d-b307ce89d12e",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=2773&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "mode": "vbr",
+        "mime": "audio\/x-flac",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&player=api&name=IOK-1%20-%20Galenskap.flac",
+        "size": 48620903,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -45,16 +46,17 @@
         "catalog": 1,
         "composer": "",
         "channels": null,
-        "comment": "",
-        "publisher": "",
+        "comment": "DNA Production release\r\nCatalogue # DNA 119",
+        "license": null,
+        "publisher": "DNA Production",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-8.320000",
-        "replaygain_track_peak": "1.000000",
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
         "genre": [
             {
-                "name": "Brutal Death Metal"
+                "name": "Dark Ambient"
             }
         ]
     }

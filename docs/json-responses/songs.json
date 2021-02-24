@@ -1,239 +1,142 @@
 [
     {
-        "id": "21890",
-        "title": "! (The Song Formerly Known As)",
-        "name": "! (The Song Formerly Known As)",
+        "id": "113",
+        "title": "04 Shorty Mac - Representin",
+        "name": "04 Shorty Mac - Representin",
         "artist": {
-            "id": "761",
-            "name": "Regurgitator"
+            "id": "25",
+            "name": "Unknown (Orphaned)"
         },
         "album": {
-            "id": "2159",
-            "name": "Unit"
+            "id": "13",
+            "name": "Unknown (Orphaned)"
         },
-        "tag": [
-            {
-                "id": "5",
-                "name": "Alternative"
-            }
-        ],
         "albumartist": {
-            "id": "761",
-            "name": "Regurgitator"
+            "id": "",
+            "name": ""
         },
-        "filename": "\/mnt\/music\/Regurgitator\/(1997) Unit\/103 - ! (The Song Formerly Known As).mp3",
-        "track": 3,
+        "disk": 1,
+        "track": 0,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
+        "tag": [],
         "playlisttrack": 1,
-        "time": 208,
-        "year": 1997,
-        "bitrate": 160000,
+        "time": 234,
+        "year": 0,
+        "bitrate": 123814,
         "rate": 44100,
-        "mode": "cbr",
+        "mode": "vbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=21890&uid=3&player=api&name=Regurgitator%20-%20-%20-The%20Song%20Formerly%20Known%20As-.mp3",
-        "size": 4198110,
-        "mbid": "5e14ee48-6337-4a70-8992-1ed74dddb945",
-        "album_mbid": "87383a10-7042-44d5-8457-9026f2365f8e",
-        "artist_mbid": "6b98b15d-a6a6-4190-9e15-56976f2c1068",
-        "albumartist_mbid": "6b98b15d-a6a6-4190-9e15-56976f2c1068",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=2159&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 1,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Warner Music Australia",
-        "language": "",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": "-10.460000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Alternative"
-            }
-        ]
-    },
-    {
-        "id": "10709",
-        "title": "\"Antmusic\"",
-        "name": "\"Antmusic\"",
-        "artist": {
-            "id": "333",
-            "name": "Adam and the Ants"
-        },
-        "album": {
-            "id": "1046",
-            "name": "Kings of the Wild Frontier"
-        },
-        "tag": [
-            {
-                "id": "48",
-                "name": "New Wave"
-            }
-        ],
-        "albumartist": {
-            "id": "333",
-            "name": "Adam and the Ants"
-        },
-        "filename": "\/mnt\/music\/Adam and The Ants\/(1980) Kings of the Wild Frontier\/102 - \"Antmusic\".mp3",
-        "track": 2,
-        "playlisttrack": 2,
-        "time": 214,
-        "year": 1980,
-        "bitrate": 128000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=10709&uid=3&player=api&name=Adam%20and%20the%20Ants%20-%20-Antmusic-.mp3",
-        "size": 3485907,
-        "mbid": "cb67f38f-b56e-4e72-b141-0a071ff44cbc",
-        "album_mbid": "1f1187eb-3278-4193-b9bc-cacd888b3c07",
-        "artist_mbid": "75d4f194-969c-4538-b789-742f3eb3d02c",
-        "albumartist_mbid": "75d4f194-969c-4538-b789-742f3eb3d02c",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1046&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Epic",
-        "language": "eng",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": "0.000000",
-        "replaygain_track_peak": "0.000000",
-        "genre": [
-            {
-                "name": "New Wave"
-            }
-        ]
-    },
-    {
-        "id": "22513",
-        "title": "\"C\" Moon Cry Like a Baby",
-        "name": "\"C\" Moon Cry Like a Baby",
-        "artist": {
-            "id": "778",
-            "name": "Simple Minds"
-        },
-        "album": {
-            "id": "2220",
-            "name": "Sparkle in the Rain"
-        },
-        "tag": [
-            {
-                "id": "20",
-                "name": "Pop Rock"
-            }
-        ],
-        "albumartist": {
-            "id": "778",
-            "name": "Simple Minds"
-        },
-        "filename": "\/mnt\/music\/Simple Minds\/(1984) Sparkle in the Rain [V2300]\/108 - \"C\" Moon Cry Like a Baby.mp3",
-        "track": 8,
-        "playlisttrack": 3,
-        "time": 261,
-        "year": 1984,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=22513&uid=3&player=api&name=Simple%20Minds%20-%20-C-%20Moon%20Cry%20Like%20a%20Baby.mp3",
-        "size": 10519564,
-        "mbid": "4b348a71-d17c-451a-ab1b-acb87c2cc16a",
-        "album_mbid": "7082a0f3-ed0f-4895-8bbe-a88ee72d812b",
-        "artist_mbid": "f41490ce-fe39-435d-86c0-ab5ce098b423",
-        "albumartist_mbid": "f41490ce-fe39-435d-86c0-ab5ce098b423",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=2220&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Virgin",
-        "language": "",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": "-2.750000",
-        "replaygain_track_peak": "0.832000",
-        "genre": [
-            {
-                "name": "Pop Rock"
-            }
-        ]
-    },
-    {
-        "id": "5611",
-        "title": "\"From Now On, We Are Enemies\"",
-        "name": "\"From Now On, We Are Enemies\"",
-        "artist": {
-            "id": "168",
-            "name": "Fall Out Boy"
-        },
-        "album": {
-            "id": "558",
-            "name": "Believers Never Die: Greatest Hits"
-        },
-        "tag": [
-            {
-                "id": "4",
-                "name": "Rock"
-            },
-            {
-                "id": "11",
-                "name": "Punk"
-            },
-            {
-                "id": "20",
-                "name": "Pop Rock"
-            },
-            {
-                "id": "21",
-                "name": "Pop"
-            },
-            {
-                "id": "107",
-                "name": "Power Pop"
-            },
-            {
-                "id": "140",
-                "name": "Emo"
-            }
-        ],
-        "albumartist": {
-            "id": "168",
-            "name": "Fall Out Boy"
-        },
-        "filename": "\/mnt\/music\/Fall Out Boy\/(2009) Believers Never Die_ Greatest Hits [602527252513]\/116 - Fall Out Boy - \"From Now On, We Are Enemies\".mp3",
-        "track": 16,
-        "playlisttrack": 4,
-        "time": 216,
-        "year": 2009,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=5611&uid=3&player=api&name=Fall%20Out%20Boy%20-%20-From%20Now%20On-%20We%20Are%20Enemies-.mp3",
-        "size": 9549784,
-        "mbid": "03fda14a-8710-473c-a4a1-324ae0aa9c6c",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&player=api&name=Unknown%20-Orphaned-%20-%2004%20Shorty%20Mac%20-%20Representin.mp3",
+        "size": 3623236,
+        "mbid": null,
         "album_mbid": null,
-        "artist_mbid": "516cef4d-0718-4007-9939-f9b38af3f784",
-        "albumartist_mbid": "516cef4d-0718-4007-9939-f9b38af3f784",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=558&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "artist_mbid": "",
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+        "license": null,
+        "publisher": "",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
+    },
+    {
+        "id": "112",
+        "title": "08 MxBxCx - Personal Truth",
+        "name": "08 MxBxCx - Personal Truth",
+        "artist": {
+            "id": "25",
+            "name": "Unknown (Orphaned)"
+        },
+        "album": {
+            "id": "13",
+            "name": "Unknown (Orphaned)"
+        },
+        "albumartist": {
+            "id": "",
+            "name": ""
+        },
+        "disk": 1,
+        "track": 0,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/08Mxbxcx-PersonalTruth.mp3",
+        "tag": [],
+        "playlisttrack": 2,
+        "time": 208,
+        "year": 0,
+        "bitrate": 179860,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&player=api&name=Unknown%20-Orphaned-%20-%2008%20MxBxCx%20-%20Personal%20Truth.mp3",
+        "size": 4687011,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+        "license": null,
+        "publisher": "",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
+    },
+    {
+        "id": "115",
+        "title": "Are we going Crazy",
+        "name": "Are we going Crazy",
+        "artist": {
+            "id": "27",
+            "name": "Chi.Otic"
+        },
+        "album": {
+            "id": "12",
+            "name": "Buried in Nausea"
+        },
+        "albumartist": {
+            "id": "19",
+            "name": "Various Artists"
+        },
+        "disk": 1,
+        "track": 7,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
+        "tag": [],
+        "playlisttrack": 3,
+        "time": 433,
+        "year": 2012,
+        "bitrate": 32582,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/x-ms-wma",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.wma",
+        "size": 1776580,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -243,30 +146,73 @@
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Island",
-        "language": "eng",
+        "license": null,
+        "publisher": "",
+        "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-11.950000",
-        "replaygain_track_peak": "1.000000",
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
+    },
+    {
+        "id": "107",
+        "title": "Arrest Me",
+        "name": "Arrest Me",
+        "artist": {
+            "id": "20",
+            "name": "R\/B"
+        },
+        "album": {
+            "id": "12",
+            "name": "Buried in Nausea"
+        },
+        "albumartist": {
+            "id": "19",
+            "name": "Various Artists"
+        },
+        "disk": 1,
+        "track": 10,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/09R_b-ArrestMe.m4a",
+        "tag": [
+            {
+                "id": "7",
+                "name": "Punk"
+            }
+        ],
+        "playlisttrack": 4,
+        "time": 96,
+        "year": 2012,
+        "bitrate": 252864,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mp4",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a",
+        "size": 3089501,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "license": null,
+        "publisher": "",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
         "genre": [
             {
-                "name": "Rock"
-            },
-            {
                 "name": "Punk"
-            },
-            {
-                "name": "Pop Rock"
-            },
-            {
-                "name": "Pop"
-            },
-            {
-                "name": "Power Pop"
-            },
-            {
-                "name": "Emo"
             }
         ]
     }

@@ -1,49 +1,46 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<total_count>1</total_count>
-<song id="4">
-	<title><![CDATA[The Parrot]]></title>
-	<name><![CDATA[The Parrot]]></name>
-	<artist id="1"><![CDATA[Kreuzberg Museum]]></artist>
-	<album id="1"><![CDATA[Calypso]]></album>
-	<albumartist id="1"><![CDATA[Kreuzberg Museum]]></albumartist>
-	<tag id="1" count="1" ><![CDATA[Contemporary Folk]]></tag>
-	<tag id="2" count="1" ><![CDATA[Indie Folk]]></tag>
-	<tag id="3" count="1" ><![CDATA[Singer-Songwriter]]></tag>
-	<filename><![CDATA[/mnt/music/Kreuzberg Museum/(2007) Calypso/105 - The Parrot.mp3]]></filename>
-	<track>5</track>
-	<playlisttrack>1</playlisttrack>
-	<time>158</time>
-	<year>2007</year>
-	<bitrate>320000</bitrate>
-	<rate>44100</rate>
-	<mode><![CDATA[cbr]]></mode>
-	<mime><![CDATA[audio/mpeg]]></mime>
-	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=4&uid=3&player=api&name=Kreuzberg%20Museum%20-%20The%20Parrot.mp3]]></url>
-	<size>6472381</size>
-	<mbid><![CDATA[8b02f592-5c41-4a3e-86ff-a56c4dce30e5]]></mbid>
-	<album_mbid><![CDATA[ceadbfeb-ae5b-4dbc-81a9-95de3e496a7f]]></album_mbid>
-	<artist_mbid><![CDATA[aca13b05-626f-4d5a-91a7-ef86ebdd8384]]></artist_mbid>
-	<albumartist_mbid><![CDATA[aca13b05-626f-4d5a-91a7-ef86ebdd8384]]></albumartist_mbid>
-	<art><![CDATA[https://music.com.au/image.php?object_id=1&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>0</flag>
-	<preciserating></preciserating>
-	<rating></rating>
-	<averagerating></averagerating>
-	<playcount>0</playcount>
-	<catalog>1</catalog>
-	<composer><![CDATA[]]></composer>
-	<channels></channels>
-	<comment><![CDATA[]]></comment>
-	<license><![CDATA[]]></license>
-	<publisher><![CDATA[]]></publisher>
-	<language></language>
-	<replaygain_album_gain></replaygain_album_gain>
-	<replaygain_album_peak></replaygain_album_peak>
-	<replaygain_track_gain>-4.110000</replaygain_track_gain>
-	<replaygain_track_peak>0.989000</replaygain_track_peak>
-	<genre><![CDATA[Contemporary Folk]]></genre>
-	<genre><![CDATA[Indie Folk]]></genre>
-	<genre><![CDATA[Singer-Songwriter]]></genre>
-</song>
+  <total_count>1</total_count>
+  <song id="57">
+    <title><![CDATA[PurpleSmoke]]></title>
+    <name><![CDATA[PurpleSmoke]]></name>
+    <artist id="2"><![CDATA[Synthetic]]></artist>
+    <album id="2"><![CDATA[Colorsmoke EP]]></album>
+    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>3</track>
+    <tag id="1" count="1"><![CDATA[Electronic]]></tag>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3]]></filename>
+    <playlisttrack>1</playlisttrack>
+    <time>390</time>
+    <year>2007</year>
+    <bitrate>64000</bitrate>
+    <rate>22050</rate>
+    <mode><![CDATA[cbr]]></mode>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
+    <size>3127705</size>
+    <mbid><![CDATA[]]></mbid>
+    <album_mbid><![CDATA[]]></album_mbid>
+    <artist_mbid><![CDATA[]]></artist_mbid>
+    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels/>
+    <comment><![CDATA[]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[]]></publisher>
+    <language/>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
+    <genre><![CDATA[Electronic]]></genre>
+  </song>
 </root>

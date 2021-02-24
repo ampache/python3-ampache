@@ -1,28 +1,40 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<total_count>4</total_count>
-<song id="23324">
-	<title><![CDATA[Wir sind okay!]]></title>
-	<name><![CDATA[Wir sind okay!]]></name>
-		<artist id="792"><![CDATA[Illuminate]]></artist>
-		<album id="2320"><![CDATA[GeZeichnet]]></album>
-</song>
-<song id="20418">
-	<title><![CDATA[Keep Your Hands Off My Girl]]></title>
-	<name><![CDATA[Keep Your Hands Off My Girl]]></name>
-		<artist id="695"><![CDATA[Good Charlotte]]></artist>
-		<album id="2013"><![CDATA[Greatest Hits]]></album>
-</song>
-<song id="10807">
-	<title><![CDATA[The Key]]></title>
-	<name><![CDATA[The Key]]></name>
-		<artist id="339"><![CDATA[Aaron Espe]]></artist>
-		<album id="1055"><![CDATA[Songs From A Small Town]]></album>
-</song>
-<song id="14635">
-	<title><![CDATA[Luxury]]></title>
-	<name><![CDATA[Luxury]]></name>
-		<artist id="522"><![CDATA[The Waitresses]]></artist>
-		<album id="1442"><![CDATA[Just Desserts: The Complete Waitresses]]></album>
-</song>
+  <total_count>4</total_count>
+  <song id="54">
+    <title><![CDATA[Red&GreenSmoke]]></title>
+    <name><![CDATA[Red&GreenSmoke]]></name>
+    <artist id="2"><![CDATA[Synthetic]]></artist>
+    <album id="2"><![CDATA[Colorsmoke EP]]></album>
+    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>5</track>
+  </song>
+  <song id="84">
+    <title><![CDATA[Vansinne]]></title>
+    <name><![CDATA[Vansinne]]></name>
+    <artist id="13"><![CDATA[IOK-1]]></artist>
+    <album id="7"><![CDATA[Sensorisk Deprivation]]></album>
+    <albumartist id="13"><![CDATA[IOK-1]]></albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>4</track>
+  </song>
+  <song id="112">
+    <title><![CDATA[08 MxBxCx - Personal Truth]]></title>
+    <name><![CDATA[08 MxBxCx - Personal Truth]]></name>
+    <artist id="25"><![CDATA[Unknown (Orphaned)]]></artist>
+    <album id="13"><![CDATA[Unknown (Orphaned)]]></album>
+    <albumartist id=""><![CDATA[]]></albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>0</track>
+  </song>
+  <song id="110">
+    <title><![CDATA[I wanna walk through the fire]]></title>
+    <name><![CDATA[I wanna walk through the fire]]></name>
+    <artist id="23"><![CDATA[Manic Notion]]></artist>
+    <album id="12"><![CDATA[Buried in Nausea]]></album>
+    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>1</track>
+  </song>
 </root>

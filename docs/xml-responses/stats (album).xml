@@ -1,32 +1,34 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<total_count>2</total_count>
-<album id="414">
-	<name><![CDATA[My Friend]]></name>
-	<artist id="112"><![CDATA[C.A.R.]]></artist>
-	<year>2014</year>
-	<tracks>12</tracks>
-	<disk>1</disk>
-	<tag id="34" count="1" ><![CDATA[Indie Pop]]></tag>
-	<art><![CDATA[https://music.com.au/image.php?object_id=414&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>0</flag>
-	<preciserating></preciserating>
-	<rating></rating>
-	<averagerating></averagerating>
-	<mbid><![CDATA[3b37cf04-677a-4dbd-82a9-e9a716ced71e]]></mbid>
-</album>
-<album id="2955">
-	<name><![CDATA[Ei8ht]]></name>
-	<artist id="997"><![CDATA[Nik Kershaw]]></artist>
-	<year>2012</year>
-	<tracks>12</tracks>
-	<disk>1</disk>
-	<tag id="48" count="1" ><![CDATA[New Wave]]></tag>
-	<art><![CDATA[https://music.com.au/image.php?object_id=2955&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>0</flag>
-	<preciserating></preciserating>
-	<rating></rating>
-	<averagerating></averagerating>
-	<mbid><![CDATA[21ea237e-8ee2-40f0-96b7-0631f3f4b418]]></mbid>
-</album>
+  <total_count>2</total_count>
+  <album id="10">
+    <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+    <artist id="16"><![CDATA[CARNÚN]]></artist>
+    <time>4282</time>
+    <year>1996</year>
+    <tracks>9</tracks>
+    <songcount>9</songcount>
+    <disk>1</disk>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+  </album>
+  <album id="9">
+    <name><![CDATA[Creeping Lawler 2]]></name>
+    <artist id="15"><![CDATA[Warfare 3.0]]></artist>
+    <time>592</time>
+    <year>0</year>
+    <tracks>2</tracks>
+    <songcount>2</songcount>
+    <disk>1</disk>
+    <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating>3</preciserating>
+    <rating>3</rating>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+  </album>
 </root>

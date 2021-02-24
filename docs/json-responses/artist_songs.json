@@ -1,101 +1,90 @@
 [
     {
-        "id": "18756",
-        "title": "Mondlicht",
-        "name": "Mondlicht",
+        "id": "79",
+        "title": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
+        "name": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
         "artist": {
-            "id": "633",
-            "name": "Xmal Deutschland"
+            "id": "12",
+            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
         },
         "album": {
-            "id": "1859",
-            "name": "Tocsin"
+            "id": "6",
+            "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)"
         },
-        "tag": [
-            {
-                "id": "248",
-                "name": "Goth"
-            }
-        ],
         "albumartist": {
-            "id": "633",
-            "name": "Xmal Deutschland"
+            "id": "12",
+            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
         },
-        "filename": "\/mnt\/music\/Xmal Deutschland\/(1984) Tocsin [CAD 407 CD]\/101 - Mondlicht.mp3",
+        "disk": 1,
         "track": 1,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c\/\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)\/01 - \u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d.mp3",
+        "tag": [],
         "playlisttrack": 1,
-        "time": 303,
-        "year": 1986,
-        "bitrate": 255428,
+        "time": 300,
+        "year": 0,
+        "bitrate": 175202,
         "rate": 44100,
         "mode": "vbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=18756&uid=3&player=api&name=Xmal%20Deutschland%20-%20Mondlicht.mp3",
-        "size": 9755945,
-        "mbid": "52ca08cb-4ea3-43e8-80d0-ddfa503e68cd",
-        "album_mbid": "9c567f7a-fb43-4b41-a7c9-616ef88788e2",
-        "artist_mbid": "4d94cf89-7757-4385-9049-52b7c3509e5f",
-        "albumartist_mbid": "4d94cf89-7757-4385-9049-52b7c3509e5f",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1859&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=79&uid=4&player=api&name=-%20-%20-%20-%20-%20-%20-.mp3",
+        "size": 6664157,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "playcount": 0,
+        "playcount": 1,
         "catalog": 1,
         "composer": "",
         "channels": null,
-        "comment": "",
-        "publisher": "4AD",
+        "comment": "https:\/\/archive.org\/details\/IBR_385",
+        "license": null,
+        "publisher": "",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-1.670000",
-        "replaygain_track_peak": "0.776000",
-        "genre": [
-            {
-                "name": "Goth"
-            }
-        ]
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
     },
     {
-        "id": "18765",
-        "title": "Eiland",
-        "name": "Eiland",
+        "id": "80",
+        "title": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
+        "name": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
         "artist": {
-            "id": "633",
-            "name": "Xmal Deutschland"
+            "id": "12",
+            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
         },
         "album": {
-            "id": "1859",
-            "name": "Tocsin"
+            "id": "6",
+            "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)"
         },
-        "tag": [
-            {
-                "id": "248",
-                "name": "Goth"
-            }
-        ],
         "albumartist": {
-            "id": "633",
-            "name": "Xmal Deutschland"
+            "id": "12",
+            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
         },
-        "filename": "\/mnt\/music\/Xmal Deutschland\/(1984) Tocsin [CAD 407 CD]\/102 - Eiland.mp3",
-        "track": 2,
+        "disk": 1,
+        "track": 1,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c\/\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)\/01 - \u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d.wav",
+        "tag": [],
         "playlisttrack": 2,
-        "time": 330,
-        "year": 1986,
-        "bitrate": 250117,
+        "time": 300,
+        "year": 0,
+        "bitrate": 1411200,
         "rate": 44100,
-        "mode": "vbr",
+        "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=18765&uid=3&player=api&name=Xmal%20Deutschland%20-%20Eiland.mp3",
-        "size": 10421893,
-        "mbid": "c3035db1-0680-4153-8686-d8113400a940",
-        "album_mbid": "9c567f7a-fb43-4b41-a7c9-616ef88788e2",
-        "artist_mbid": "4d94cf89-7757-4385-9049-52b7c3509e5f",
-        "albumartist_mbid": "4d94cf89-7757-4385-9049-52b7c3509e5f",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1859&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=80&uid=4&player=api&name=-%20-%20-%20-%20-%20-%20-.wav",
+        "size": 53018798,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -105,134 +94,13 @@
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "4AD",
+        "license": null,
+        "publisher": "",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-2.410000",
-        "replaygain_track_peak": "0.785000",
-        "genre": [
-            {
-                "name": "Goth"
-            }
-        ]
-    },
-    {
-        "id": "18760",
-        "title": "Reigen",
-        "name": "Reigen",
-        "artist": {
-            "id": "633",
-            "name": "Xmal Deutschland"
-        },
-        "album": {
-            "id": "1859",
-            "name": "Tocsin"
-        },
-        "tag": [
-            {
-                "id": "248",
-                "name": "Goth"
-            }
-        ],
-        "albumartist": {
-            "id": "633",
-            "name": "Xmal Deutschland"
-        },
-        "filename": "\/mnt\/music\/Xmal Deutschland\/(1984) Tocsin [CAD 407 CD]\/103 - Reigen.mp3",
-        "track": 3,
-        "playlisttrack": 3,
-        "time": 238,
-        "year": 1986,
-        "bitrate": 272949,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=18760&uid=3&player=api&name=Xmal%20Deutschland%20-%20Reigen.mp3",
-        "size": 8218999,
-        "mbid": "fa431049-9b37-41b2-8103-248db845b0c1",
-        "album_mbid": "9c567f7a-fb43-4b41-a7c9-616ef88788e2",
-        "artist_mbid": "4d94cf89-7757-4385-9049-52b7c3509e5f",
-        "albumartist_mbid": "4d94cf89-7757-4385-9049-52b7c3509e5f",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1859&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "4AD",
-        "language": "",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": "-2.620000",
-        "replaygain_track_peak": "0.851000",
-        "genre": [
-            {
-                "name": "Goth"
-            }
-        ]
-    },
-    {
-        "id": "18759",
-        "title": "Tag f\u00fcr Tag",
-        "name": "Tag f\u00fcr Tag",
-        "artist": {
-            "id": "633",
-            "name": "Xmal Deutschland"
-        },
-        "album": {
-            "id": "1859",
-            "name": "Tocsin"
-        },
-        "tag": [
-            {
-                "id": "248",
-                "name": "Goth"
-            }
-        ],
-        "albumartist": {
-            "id": "633",
-            "name": "Xmal Deutschland"
-        },
-        "filename": "\/mnt\/music\/Xmal Deutschland\/(1984) Tocsin [CAD 407 CD]\/104 - Tag f\u00fcr Tag.mp3",
-        "track": 4,
-        "playlisttrack": 4,
-        "time": 290,
-        "year": 1986,
-        "bitrate": 249036,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=18759&uid=3&player=api&name=Xmal%20Deutschland%20-%20Tag%20f-r%20Tag.mp3",
-        "size": 9129720,
-        "mbid": "8d87bdc4-204f-482a-9c15-a2e48621627d",
-        "album_mbid": "9c567f7a-fb43-4b41-a7c9-616ef88788e2",
-        "artist_mbid": "4d94cf89-7757-4385-9049-52b7c3509e5f",
-        "albumartist_mbid": "4d94cf89-7757-4385-9049-52b7c3509e5f",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1859&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "4AD",
-        "language": "",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": "-1.540000",
-        "replaygain_track_peak": "0.700000",
-        "genre": [
-            {
-                "name": "Goth"
-            }
-        ]
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
     }
 ]

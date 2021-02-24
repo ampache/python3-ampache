@@ -1,14 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<users>
-<user id="6">
-	<username><![CDATA[generic]]></username>
-</user>
-<user id="7">
-	<username><![CDATA[anoather]]></username>
-</user>
-<user id="2">
-	<username><![CDATA[user]]></username>
-</user>
-</users>
+  <users>
+    <user id="2">
+      <username><![CDATA[admin]]></username>
+    </user>
+    <user id="10">
+      <username><![CDATA[generic]]></username>
+    </user>
+  </users>
 </root>

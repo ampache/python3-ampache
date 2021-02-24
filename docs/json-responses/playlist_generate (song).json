@@ -1,233 +1,99 @@
 [
     {
-        "id": "1009",
-        "title": "EZ Going\u266c",
-        "name": "EZ Going\u266c",
+        "id": "55",
+        "title": "Red&GreenSmoke",
+        "name": "Red&GreenSmoke",
         "artist": {
-            "id": "25",
-            "name": "SPYAIR"
+            "id": "2",
+            "name": "Synthetic"
         },
         "album": {
-            "id": "104",
-            "name": "4"
+            "id": "2",
+            "name": "Colorsmoke EP"
         },
+        "albumartist": {
+            "id": "2",
+            "name": "Synthetic"
+        },
+        "disk": 1,
+        "track": 5,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
         "tag": [
             {
-                "id": "39",
-                "name": "JRock"
+                "id": "1",
+                "name": "Electronic"
             }
         ],
-        "albumartist": {
-            "id": "25",
-            "name": "SPYAIR"
-        },
-        "filename": "\/mnt\/music\/SPYAIR\/(2015) 4 [AICL-2993]\/108 - EZ Going\u266c.mp3",
-        "track": 8,
         "playlisttrack": 1,
-        "time": 182,
-        "year": 2015,
-        "bitrate": 320000,
-        "rate": 44100,
+        "time": 400,
+        "year": 2007,
+        "bitrate": 64000,
+        "rate": 22050,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=1009&uid=3&player=api&name=SPYAIR%20-%20EZ%20Going-.mp3",
-        "size": 7320685,
-        "mbid": "938c86e4-4698-42c9-9cdd-1a2120019b79",
-        "album_mbid": "8e17c122-5eea-4930-a0cc-3e0ffce47813",
-        "artist_mbid": "668d4190-f273-4470-9d1a-15d4d2d589c6",
-        "albumartist_mbid": "668d4190-f273-4470-9d1a-15d4d2d589c6",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=104&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+        "size": 3206156,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "playcount": 0,
+        "playcount": 1,
         "catalog": 1,
-        "composer": "UZ",
+        "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Sony Music Associated Records",
-        "language": "jpn",
+        "license": null,
+        "publisher": "",
+        "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-6.870000",
-        "replaygain_track_peak": "0.661000",
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
         "genre": [
             {
-                "name": "JRock"
+                "name": "Electronic"
             }
         ]
     },
     {
-        "id": "15863",
-        "title": "King of New York",
-        "name": "King of New York",
+        "id": "108",
+        "title": "I've been down this road before",
+        "name": "I've been down this road before",
         "artist": {
-            "id": "550",
-            "name": "Fun Lovin' Criminals"
+            "id": "21",
+            "name": "Tip-C (featuring Mike Beers)"
         },
         "album": {
-            "id": "1568",
-            "name": "Come Find Yourself"
+            "id": "12",
+            "name": "Buried in Nausea"
         },
-        "tag": [
-            {
-                "id": "19",
-                "name": "Alternative Rock"
-            },
-            {
-                "id": "205",
-                "name": "Alternative Pop"
-            }
-        ],
         "albumartist": {
-            "id": "550",
-            "name": "Fun Lovin' Criminals"
+            "id": "19",
+            "name": "Various Artists"
         },
-        "filename": "\/mnt\/music\/Fun Lovin' Criminals\/(1996) Come Find Yourself [D 115778; E2-35703]\/108 - King of New York.mp3",
-        "track": 8,
-        "playlisttrack": 2,
-        "time": 228,
-        "year": 1996,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=15863&uid=3&player=api&name=Fun%20Lovin-%20Criminals%20-%20King%20of%20New%20York.mp3",
-        "size": 9223333,
-        "mbid": "d24175e4-8151-4f56-8cf8-a95d94910248",
-        "album_mbid": "d2e18dd3-f92c-402d-b1a4-438d5eb907c9",
-        "artist_mbid": "1b15e90d-910c-4be4-99cb-463772a6430f",
-        "albumartist_mbid": "1b15e90d-910c-4be4-99cb-463772a6430f",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=1568&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "Ant\u00f4nio Carlos Jobim",
-        "channels": null,
-        "comment": "",
-        "publisher": "BMG Direct Marketing, Inc.EMI",
-        "language": "eng",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": "-6.660000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Alternative Rock"
-            },
-            {
-                "name": "Alternative Pop"
-            }
-        ]
-    },
-    {
-        "id": "30372",
-        "title": "Straight Ahead",
-        "name": "Straight Ahead",
-        "artist": {
-            "id": "1021",
-            "name": "Jimi Hendrix"
-        },
-        "album": {
-            "id": "3030",
-            "name": "The Cry of Love"
-        },
-        "tag": [
-            {
-                "id": "4",
-                "name": "Rock"
-            },
-            {
-                "id": "77",
-                "name": "Psychedelic Rock"
-            }
-        ],
-        "albumartist": {
-            "id": "1021",
-            "name": "Jimi Hendrix"
-        },
-        "filename": "\/mnt\/music\/Jimi Hendrix\/(1971) The Cry of Love [2408 101]\/106 - Straight Ahead.mp3",
+        "disk": 1,
         "track": 6,
-        "playlisttrack": 3,
-        "time": 283,
-        "year": 1971,
-        "bitrate": 320000,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
+        "tag": [],
+        "playlisttrack": 2,
+        "time": 252,
+        "year": 2012,
+        "bitrate": 32582,
         "rate": 44100,
         "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=30372&uid=3&player=api&name=Jimi%20Hendrix%20-%20Straight%20Ahead.mp3",
-        "size": 11533000,
-        "mbid": "3ccbb93f-2d92-4d5e-a447-6fc675626b55",
-        "album_mbid": "dcea5045-be29-351c-96b6-3445823c15c1",
-        "artist_mbid": "06fb1c8b-566e-4cb2-985b-b467c90781d4",
-        "albumartist_mbid": "06fb1c8b-566e-4cb2-985b-b467c90781d4",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=3030&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "Jimi Hendrix",
-        "channels": null,
-        "comment": "SS77(Strik)",
-        "publisher": "Track Record",
-        "language": "eng",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": "-2.930000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
-            },
-            {
-                "name": "Psychedelic Rock"
-            }
-        ]
-    },
-    {
-        "id": "278",
-        "title": "H.N.I.C. (outro)",
-        "name": "H.N.I.C. (outro)",
-        "artist": {
-            "id": "14",
-            "name": "Prodigy of Mobb Deep"
-        },
-        "album": {
-            "id": "24",
-            "name": "H.N.I.C."
-        },
-        "tag": [
-            {
-                "id": "17",
-                "name": "Hip Hop"
-            }
-        ],
-        "albumartist": {
-            "id": "14",
-            "name": "Prodigy of Mobb Deep"
-        },
-        "filename": "\/mnt\/music\/Prodigy of Mobb Deep\/(2000) H.N.I.C. [498533 2]\/122 - H.N.I.C. (outro).mp3",
-        "track": 22,
-        "playlisttrack": 4,
-        "time": 18,
-        "year": 2000,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.lachlandewaard.org\/master\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=278&uid=3&player=api&name=Prodigy%20of%20Mobb%20Deep%20-%20H.N.I.C.%20-outro-.mp3",
-        "size": 796300,
-        "mbid": "7e4cc651-004f-412b-ac8a-72dc486848c0",
-        "album_mbid": "0aa7d672-c6bc-49fc-b717-2238d5003c0b",
-        "artist_mbid": "2996c6a2-215d-4f78-aed6-81a130b04816",
-        "albumartist_mbid": "2996c6a2-215d-4f78-aed6-81a130b04816",
-        "art": "https:\/\/music.lachlandewaard.org\/master\/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "mime": "audio\/x-ms-wma",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.wma",
+        "size": 1035322,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -237,15 +103,141 @@
         "composer": "",
         "channels": null,
         "comment": "",
-        "publisher": "Loud Records",
+        "license": null,
+        "publisher": "",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "0.000000",
-        "replaygain_track_peak": "0.000000",
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": []
+    },
+    {
+        "id": "84",
+        "title": "Vansinne",
+        "name": "Vansinne",
+        "artist": {
+            "id": "13",
+            "name": "IOK-1"
+        },
+        "album": {
+            "id": "7",
+            "name": "Sensorisk Deprivation"
+        },
+        "albumartist": {
+            "id": "13",
+            "name": "IOK-1"
+        },
+        "disk": 1,
+        "track": 4,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/04_-_IOK-1_-_Vansinne.flac",
+        "tag": [
+            {
+                "id": "4",
+                "name": "Dark Ambient"
+            }
+        ],
+        "playlisttrack": 3,
+        "time": 787,
+        "year": 2011,
+        "bitrate": 713079,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/x-flac",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&player=api&name=IOK-1%20-%20Vansinne.flac",
+        "size": 70173300,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "DNA Production release\r\nCatalogue # DNA 119",
+        "license": null,
+        "publisher": "DNA Production",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
         "genre": [
             {
-                "name": "Hip Hop"
+                "name": "Dark Ambient"
+            }
+        ]
+    },
+    {
+        "id": "88",
+        "title": "Netro",
+        "name": "Netro",
+        "artist": {
+            "id": "14",
+            "name": "Nofi\/found."
+        },
+        "album": {
+            "id": "8",
+            "name": "Nofi Devices"
+        },
+        "albumartist": {
+            "id": "14",
+            "name": "Nofi\/found."
+        },
+        "disk": 1,
+        "track": 10,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/10_Netro.mp3",
+        "tag": [
+            {
+                "id": "5",
+                "name": "Electronica"
+            },
+            {
+                "id": "6",
+                "name": "Dance"
+            }
+        ],
+        "playlisttrack": 4,
+        "time": 601,
+        "year": 0,
+        "bitrate": 192000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=88&uid=4&player=api&name=Nofi-found.%20-%20Netro.mp3",
+        "size": 14439314,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "Jeffrey Melton",
+        "channels": null,
+        "comment": "00000261 000001F5 0000CFEC 0000AA6D 0003B8F5 0003B8F5 000083A9 0000806E 000119A1 0003ECB1",
+        "license": null,
+        "publisher": "",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": [
+            {
+                "name": "Electronica"
+            },
+            {
+                "name": "Dance"
             }
         ]
     }

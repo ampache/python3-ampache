@@ -1,73 +1,81 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<total_count>4</total_count>
-<artist id="545">
-	<name><![CDATA[*NSYNC]]></name>
-	<tag id="21" count="1" ><![CDATA[Pop]]></tag>
-	<tag id="153" count="1" ><![CDATA[Ballad]]></tag>
-	<albums>1</albums>
-	<songs>16</songs>
-	<art><![CDATA[https://music.com.au/image.php?object_id=545&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>0</flag>
-	<preciserating></preciserating>
-	<rating></rating>
-	<averagerating></averagerating>
-	<mbid><![CDATA[603ba565-3967-4be1-931e-9cb945394e86]]></mbid>
-	<summary><![CDATA[]]></summary>
-	<yearformed></yearformed>
-	<placeformed><![CDATA[]]></placeformed>
-</artist>
-<artist id="471">
-	<name><![CDATA[100 Watt Vipers]]></name>
-	<tag id="4" count="1" ><![CDATA[Rock]]></tag>
-	<tag id="118" count="1" ><![CDATA[Blues]]></tag>
-	<tag id="168" count="1" ><![CDATA[Blues Rock]]></tag>
-	<albums>4</albums>
-	<songs>45</songs>
-	<art><![CDATA[https://music.com.au/image.php?object_id=471&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>0</flag>
-	<preciserating>3</preciserating>
-	<rating>3</rating>
-	<averagerating></averagerating>
-	<mbid><![CDATA[69eb8e6e-61c7-4bbb-a651-527a9edb28f3]]></mbid>
-	<summary><![CDATA[]]></summary>
-	<yearformed></yearformed>
-	<placeformed><![CDATA[]]></placeformed>
-</artist>
-<artist id="1014">
-	<name><![CDATA[12 Stones]]></name>
-	<tag id="4" count="1" ><![CDATA[Rock]]></tag>
-	<tag id="19" count="1" ><![CDATA[Alternative Rock]]></tag>
-	<tag id="27" count="1" ><![CDATA[Heavy Metal]]></tag>
-	<tag id="115" count="1" ><![CDATA[Hard Rock]]></tag>
-	<tag id="165" count="1" ><![CDATA[Post-Grunge]]></tag>
-	<tag id="290" count="1" ><![CDATA[Gospel]]></tag>
-	<tag id="291" count="1" ><![CDATA[Religious]]></tag>
-	<albums>7</albums>
-	<songs>81</songs>
-	<art><![CDATA[https://music.com.au/image.php?object_id=1014&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>0</flag>
-	<preciserating></preciserating>
-	<rating></rating>
-	<averagerating></averagerating>
-	<mbid><![CDATA[6f81a7dc-be31-4498-ae95-6d994ffec614]]></mbid>
-	<summary><![CDATA[]]></summary>
-	<yearformed></yearformed>
-	<placeformed><![CDATA[]]></placeformed>
-</artist>
-<artist id="774">
-	<name><![CDATA[13th Floor Elevators]]></name>
-	<tag id="77" count="1" ><![CDATA[Psychedelic Rock]]></tag>
-	<albums>1</albums>
-	<songs>19</songs>
-	<art><![CDATA[https://music.com.au/image.php?object_id=774&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>0</flag>
-	<preciserating></preciserating>
-	<rating></rating>
-	<averagerating></averagerating>
-	<mbid><![CDATA[1964494f-9f1a-41c1-b054-80ef3b95025c]]></mbid>
-	<summary><![CDATA[]]></summary>
-	<yearformed></yearformed>
-	<placeformed><![CDATA[]]></placeformed>
-</artist>
+  <total_count>4</total_count>
+  <artist id="16">
+    <name><![CDATA[CARNÚN]]></name>
+    <albums>1</albums>
+    <albumcount>1</albumcount>
+    <songs>9</songs>
+    <songcount>9</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=16&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[ ]]></summary>
+    <time><![CDATA[4282]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
+  <artist id="27">
+    <name><![CDATA[Chi.Otic]]></name>
+    <albums>1</albums>
+    <albumcount>1</albumcount>
+    <songs>1</songs>
+    <songcount>1</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[ ]]></summary>
+    <time><![CDATA[433]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
+  <artist id="22">
+    <name><![CDATA[Comedown Kid]]></name>
+    <albums>1</albums>
+    <albumcount>1</albumcount>
+    <songs>1</songs>
+    <songcount>1</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=22&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[ ]]></summary>
+    <time><![CDATA[116]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
+  <artist id="13">
+    <name><![CDATA[IOK-1]]></name>
+    <tag id="4" count="1"><![CDATA[Dark Ambient]]></tag>
+    <albums>1</albums>
+    <albumcount>1</albumcount>
+    <songs>4</songs>
+    <songcount>4</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=13&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[IOK-1 was a side project of Tarmskrap, but it became his main project. 
+He creates ambient, dark ambient, drone something.
+
+IOK-1 soundcloud 
+ 
+Has released one 3" cdr on Witte Dood Records called "Rost",  appears on Public Spaces Lab's Ceci n’est pas une pipe and Public Spaces Lab's The Future Lab
+
+He released a full length called "Poems" on Deersound. 
+It is limited to 10 copies, 4 discs, clocks in at just over five hours. ]]></summary>
+    <time><![CDATA[3428]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
 </root>
