@@ -34,6 +34,11 @@ from xml.etree import ElementTree
 # used for printing results
 AMPACHE_DEBUG = False
 
+# Test colors for printing
+OKGREEN = '\033[92m'
+WARNING = '\033[93m'
+FAIL = '\033[91m'
+ENDC = '\033[0m'
 
 """
 ----------------
@@ -54,6 +59,41 @@ def set_debug(mybool: bool):
     AMPACHE_DEBUG = mybool
 
 
+def test_result(result, title):
+    """ set_debug
+
+        This function can be used to enable/disable debugging messages
+
+        INPUTS
+        * bool = (boolean) Enable/disable debug messages
+    """
+    if not result:
+        print("ampache." + title + f": {FAIL}FAIL{ENDC}")
+        return False
+    if 'Require: ' in result:
+        print(f"ampache." + title + f": {WARNING}WARNING{ENDC} " + result)
+        return True
+    if result:
+        print("ampache." + title + f": {OKGREEN}PASS{ENDC}")
+        return True
+    print("ampache." + title + f": {FAIL}FAIL{ENDC}")
+    return False
+
+
+def return_data(data, data_format: str = 'xml'):
+    # json format
+    if data_format == 'json':
+        json_data = json.loads(data.decode('utf-8'))
+        return json_data
+    # xml format
+    else:
+        try:
+            tree = ElementTree.fromstring(data.decode('utf-8'))
+        except ElementTree.ParseError:
+            return False
+        return tree
+
+
 def get_id_list(data, attribute: str, data_format: str = 'xml'):
     """ get_id_list
 
@@ -68,9 +108,12 @@ def get_id_list(data, attribute: str, data_format: str = 'xml'):
     if not data:
         return id_list
     if data_format == 'xml':
-        for child in data:
-            if child.tag == attribute:
-                id_list.append(child.attrib['id'])
+        try:
+            for child in data:
+                if child.tag == attribute:
+                    id_list.append(child.attrib['id'])
+        except KeyError:
+            id_list.append(data['id'])
     else:
         try:
             for data_object in data[attribute]:
@@ -78,7 +121,35 @@ def get_id_list(data, attribute: str, data_format: str = 'xml'):
         except TypeError:
             for data_object in data:
                 id_list.append(data_object[0])
+        except KeyError:
+            id_list.append(data['id'])
     return id_list
+
+
+def get_message(data, data_format: str = 'xml'):
+    """ get_id_list
+
+        return a list of objects from the data matching your field stirng
+
+        INPUTS
+        * data        = (mixed) XML or JSON from the API
+        * data_format = (string) 'xml','json'
+    """
+    message = data
+    print(data)
+    if 'error' in data:
+        try:
+            message = data['error']['message']
+        except TypeError:
+            message = data['error']
+        except KeyError:
+            message = data['error']['errorMessage']
+    if 'success' in data:
+        try:
+            message = data['success']['message']
+        except TypeError:
+            message = data['success']
+    return message
 
 
 def write_xml(xmlstr, filename: str):
@@ -219,7 +290,7 @@ def handshake(ampache_url: str, ampache_api: str, ampache_user: str = False,
         return token
 
 
-def ping(ampache_url: str, ampache_api: str = False, api_format: str = 'xml'):
+def ping(ampache_url: str, ampache_api: str = False, version: str = '5.0.0', api_format: str = 'xml'):
     """ ping
         MINIMUM_API_VERSION=380001
 
@@ -280,17 +351,7 @@ def goodbye(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
     ampache_response = fetch_url(full_url, api_format, 'goodbye')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def url_to_song(ampache_url: str, ampache_api: str, url, api_format: str = 'xml'):
@@ -314,17 +375,7 @@ def url_to_song(ampache_url: str, ampache_api: str, url, api_format: str = 'xml'
     ampache_response = fetch_url(full_url, api_format, 'url_to_song')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def get_similar(ampache_url: str, ampache_api: str, object_type, filter_id: int,
@@ -355,17 +406,7 @@ def get_similar(ampache_url: str, ampache_api: str, object_type, filter_id: int,
     ampache_response = fetch_url(full_url, api_format, 'get_similar')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def get_indexes(ampache_url: str, ampache_api: str, object_type,
@@ -417,17 +458,7 @@ def get_indexes(ampache_url: str, ampache_api: str, object_type,
     ampache_response = fetch_url(full_url, api_format, 'get_indexes')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def artists(ampache_url: str, ampache_api: str, filter_str: str = False,
@@ -471,17 +502,7 @@ def artists(ampache_url: str, ampache_api: str, filter_str: str = False,
     ampache_response = fetch_url(full_url, api_format, 'artists')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def artist(ampache_url: str, ampache_api: str, filter_id: int, include=False, api_format: str = 'xml'):
@@ -509,17 +530,7 @@ def artist(ampache_url: str, ampache_api: str, filter_id: int, include=False, ap
     ampache_response = fetch_url(full_url, api_format, 'artist')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def artist_albums(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
@@ -547,17 +558,7 @@ def artist_albums(ampache_url: str, ampache_api: str, filter_id: int, offset=0, 
     ampache_response = fetch_url(full_url, api_format, 'artist_albums')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def artist_songs(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
@@ -585,17 +586,7 @@ def artist_songs(ampache_url: str, ampache_api: str, filter_id: int, offset=0, l
     ampache_response = fetch_url(full_url, api_format, 'artist_songs')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def albums(ampache_url: str, ampache_api: str, filter_str: str = False,
@@ -641,17 +632,7 @@ def albums(ampache_url: str, ampache_api: str, filter_str: str = False,
     ampache_response = fetch_url(full_url, api_format, 'albums')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def album(ampache_url: str, ampache_api: str, filter_id: int, include=False, api_format: str = 'xml'):
@@ -676,21 +657,10 @@ def album(ampache_url: str, ampache_api: str, filter_id: int, include=False, api
         data.pop('include')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
-    print(full_url)
     ampache_response = fetch_url(full_url, api_format, 'album')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def album_songs(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
@@ -718,17 +688,7 @@ def album_songs(ampache_url: str, ampache_api: str, filter_id: int, offset=0, li
     ampache_response = fetch_url(full_url, api_format, 'album_songs')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def genres(ampache_url: str, ampache_api: str, filter_str: str = False,
@@ -763,17 +723,7 @@ def genres(ampache_url: str, ampache_api: str, filter_str: str = False,
     ampache_response = fetch_url(full_url, api_format, 'genres')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def genre(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -797,17 +747,7 @@ def genre(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 
     ampache_response = fetch_url(full_url, api_format, 'genre')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def genre_artists(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
@@ -835,17 +775,7 @@ def genre_artists(ampache_url: str, ampache_api: str, filter_id: int, offset=0, 
     ampache_response = fetch_url(full_url, api_format, 'genre_artists')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def genre_albums(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
@@ -873,17 +803,7 @@ def genre_albums(ampache_url: str, ampache_api: str, filter_id: int, offset=0, l
     ampache_response = fetch_url(full_url, api_format, 'genre_albums')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def genre_songs(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
@@ -911,17 +831,7 @@ def genre_songs(ampache_url: str, ampache_api: str, filter_id: int, offset=0, li
     ampache_response = fetch_url(full_url, api_format, 'genre_songs')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def songs(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False,
@@ -964,17 +874,7 @@ def songs(ampache_url: str, ampache_api: str, filter_str: str = False, exact: in
     ampache_response = fetch_url(full_url, api_format, 'songs')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def song(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -998,17 +898,7 @@ def song(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = '
     ampache_response = fetch_url(full_url, api_format, 'song')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def song_delete(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -1032,17 +922,7 @@ def song_delete(ampache_url: str, ampache_api: str, filter_id: int, api_format: 
     ampache_response = fetch_url(full_url, api_format, 'song')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def playlists(ampache_url: str, ampache_api: str, filter_str: str = False,
@@ -1077,17 +957,7 @@ def playlists(ampache_url: str, ampache_api: str, filter_str: str = False,
     ampache_response = fetch_url(full_url, api_format, 'playlists')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def playlist(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -1111,17 +981,7 @@ def playlist(ampache_url: str, ampache_api: str, filter_id: int, api_format: str
     ampache_response = fetch_url(full_url, api_format, 'playlist')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def playlist_songs(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
@@ -1149,17 +1009,7 @@ def playlist_songs(ampache_url: str, ampache_api: str, filter_id: int, offset=0,
     ampache_response = fetch_url(full_url, api_format, 'playlist_songs')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def playlist_create(ampache_url: str, ampache_api: str, name, object_type, api_format: str = 'xml'):
@@ -1185,27 +1035,7 @@ def playlist_create(ampache_url: str, ampache_api: str, name, object_type, api_f
     ampache_response = fetch_url(full_url, api_format, 'playlist_create')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        try:
-            token = tree.find('playlist').text
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+    return return_data(ampache_response, api_format)
 
 
 def playlist_edit(ampache_url: str, ampache_api: str, filter_id: int, name=False,
@@ -1238,17 +1068,7 @@ def playlist_edit(ampache_url: str, ampache_api: str, filter_id: int, name=False
     ampache_response = fetch_url(full_url, api_format, 'playlist_edit')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def playlist_delete(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -1272,17 +1092,7 @@ def playlist_delete(ampache_url: str, ampache_api: str, filter_id: int, api_form
     ampache_response = fetch_url(full_url, api_format, 'playlist_delete')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def playlist_add_song(ampache_url: str, ampache_api: str, filter_id: int, song_id, check=False,
@@ -1317,17 +1127,7 @@ def playlist_add_song(ampache_url: str, ampache_api: str, filter_id: int, song_i
     ampache_response = fetch_url(full_url, api_format, 'playlist_add_song')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def playlist_remove_song(ampache_url: str, ampache_api: str, filter_id: int,
@@ -1362,17 +1162,7 @@ def playlist_remove_song(ampache_url: str, ampache_api: str, filter_id: int,
     ampache_response = fetch_url(full_url, api_format, 'playlist_remove_song')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def playlist_generate(ampache_url: str, ampache_api: str, mode='random',
@@ -1424,17 +1214,7 @@ def playlist_generate(ampache_url: str, ampache_api: str, mode='random',
     ampache_response = fetch_url(full_url, api_format, 'playlist_generate')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def shares(ampache_url: str, ampache_api: str, filter_str: str = False,
@@ -1467,17 +1247,7 @@ def shares(ampache_url: str, ampache_api: str, filter_str: str = False,
     ampache_response = fetch_url(full_url, api_format, 'shares')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def share(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -1501,17 +1271,7 @@ def share(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 
     ampache_response = fetch_url(full_url, api_format, 'share')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def share_create(ampache_url: str, ampache_api: str, filter_id: int, object_type,
@@ -1547,27 +1307,7 @@ def share_create(ampache_url: str, ampache_api: str, filter_id: int, object_type
     ampache_response = fetch_url(full_url, api_format, 'share_create')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        try:
-            token = tree.find('share').text
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+    return return_data(ampache_response, api_format)
 
 
 def share_edit(ampache_url: str, ampache_api: str, filter_id: int, can_stream=False, can_download=False,
@@ -1609,17 +1349,7 @@ def share_edit(ampache_url: str, ampache_api: str, filter_id: int, can_stream=Fa
     ampache_response = fetch_url(full_url, api_format, 'share_edit')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def share_delete(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -1643,17 +1373,7 @@ def share_delete(ampache_url: str, ampache_api: str, filter_id: int, api_format:
     ampache_response = fetch_url(full_url, api_format, 'share_delete')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def catalogs(ampache_url: str, ampache_api: str, filter_str: str = False, offset=0, limit=0, api_format: str = 'xml'):
@@ -1681,17 +1401,7 @@ def catalogs(ampache_url: str, ampache_api: str, filter_str: str = False, offset
     ampache_response = fetch_url(full_url, api_format, 'catalogs')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def catalog(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
@@ -1717,17 +1427,7 @@ def catalog(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=
     ampache_response = fetch_url(full_url, api_format, 'catalog')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def catalog_action(ampache_url: str, ampache_api: str, task, catalog_id, api_format: str = 'xml'):
@@ -1753,17 +1453,7 @@ def catalog_action(ampache_url: str, ampache_api: str, task, catalog_id, api_for
     ampache_response = fetch_url(full_url, api_format, 'catalog_action')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def catalog_file(ampache_url: str, ampache_api: str, file, task, catalog_id, api_format: str = 'xml'):
@@ -1793,17 +1483,7 @@ def catalog_file(ampache_url: str, ampache_api: str, file, task, catalog_id, api
     ampache_response = fetch_url(full_url, api_format, 'catalog_action')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def podcasts(ampache_url: str, ampache_api: str, filter_str: str = False,
@@ -1836,17 +1516,7 @@ def podcasts(ampache_url: str, ampache_api: str, filter_str: str = False,
     ampache_response = fetch_url(full_url, api_format, 'podcasts')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def podcast(ampache_url: str, ampache_api: str, filter_id: int, include=False, api_format: str = 'xml'):
@@ -1874,17 +1544,7 @@ def podcast(ampache_url: str, ampache_api: str, filter_id: int, include=False, a
     ampache_response = fetch_url(full_url, api_format, 'podcast')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def podcast_create(ampache_url: str, ampache_api: str, url, catalog_id, api_format: str = 'xml'):
@@ -1910,17 +1570,7 @@ def podcast_create(ampache_url: str, ampache_api: str, url, catalog_id, api_form
     ampache_response = fetch_url(full_url, api_format, 'podcast_create')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def podcast_edit(ampache_url: str, ampache_api: str, filter_id: int,
@@ -1971,17 +1621,7 @@ def podcast_edit(ampache_url: str, ampache_api: str, filter_id: int,
     ampache_response = fetch_url(full_url, api_format, 'podcast_edit')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def podcast_delete(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -2005,17 +1645,7 @@ def podcast_delete(ampache_url: str, ampache_api: str, filter_id: int, api_forma
     ampache_response = fetch_url(full_url, api_format, 'podcast_delete')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def podcast_episodes(ampache_url: str, ampache_api: str, filter_id: int, offset=0, limit=0, api_format: str = 'xml'):
@@ -2041,17 +1671,7 @@ def podcast_episodes(ampache_url: str, ampache_api: str, filter_id: int, offset=
     ampache_response = fetch_url(full_url, api_format, 'podcast_episodes')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def podcast_episode(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -2075,17 +1695,7 @@ def podcast_episode(ampache_url: str, ampache_api: str, filter_id: int, api_form
     ampache_response = fetch_url(full_url, api_format, 'podcast_episode')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def podcast_episode_delete(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -2109,17 +1719,7 @@ def podcast_episode_delete(ampache_url: str, ampache_api: str, filter_id: int, a
     ampache_response = fetch_url(full_url, api_format, 'podcast_episode')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def update_podcast(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -2143,17 +1743,7 @@ def update_podcast(ampache_url: str, ampache_api: str, filter_id: int, api_forma
     ampache_response = fetch_url(full_url, api_format, 'update_podcast')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def search_songs(ampache_url: str, ampache_api: str, filter_str, offset=0, limit=0, api_format: str = 'xml'):
@@ -2181,17 +1771,7 @@ def search_songs(ampache_url: str, ampache_api: str, filter_str, offset=0, limit
     ampache_response = fetch_url(full_url, api_format, 'search_songs')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def advanced_search(ampache_url: str, ampache_api: str, rules,
@@ -2239,17 +1819,7 @@ def advanced_search(ampache_url: str, ampache_api: str, rules,
     ampache_response = fetch_url(full_url, api_format, 'advanced_search')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def videos(ampache_url: str, ampache_api: str, filter_str: str = False,
@@ -2284,17 +1854,7 @@ def videos(ampache_url: str, ampache_api: str, filter_str: str = False,
     ampache_response = fetch_url(full_url, api_format, 'videos')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def video(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -2318,17 +1878,7 @@ def video(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 
     ampache_response = fetch_url(full_url, api_format, 'video')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def localplay(ampache_url: str, ampache_api: str, command, oid=False, otype=False, clear=0, api_format: str = 'xml'):
@@ -2367,17 +1917,7 @@ def localplay(ampache_url: str, ampache_api: str, command, oid=False, otype=Fals
     ampache_response = fetch_url(full_url, api_format, 'localplay')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def democratic(ampache_url: str, ampache_api: str, method, oid, api_format: str = 'xml'):
@@ -2403,17 +1943,7 @@ def democratic(ampache_url: str, ampache_api: str, method, oid, api_format: str 
     ampache_response = fetch_url(full_url, api_format, 'democratic')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def stats(ampache_url: str, ampache_api: str, object_type, filter_str='random',
@@ -2453,25 +1983,15 @@ def stats(ampache_url: str, ampache_api: str, object_type, filter_str='random',
     ampache_response = fetch_url(full_url, api_format, 'stats')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def users(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
     """ users
         MINIMUM_API_VERSION=5.0.0
-    
+
         Get ids and usernames for your site users
-    
+
         INPUTS
         * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
         * ampache_api = (string) session 'auth' key
@@ -2485,17 +2005,7 @@ def users(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
     ampache_response = fetch_url(full_url, api_format, 'user')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def user(ampache_url: str, ampache_api: str, username, api_format: str = 'xml'):
@@ -2519,29 +2029,19 @@ def user(ampache_url: str, ampache_api: str, username, api_format: str = 'xml'):
     ampache_response = fetch_url(full_url, api_format, 'user')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def followers(ampache_url: str, ampache_api: str, username, api_format: str = 'xml'):
     """ followers
         MINIMUM_API_VERSION=380001
-    
+
         This get an user followers
-    
+
         INPUTS
         * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
         * ampache_api = (string) session 'auth' key
-        * username    = 
+        * username    =
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
@@ -2553,17 +2053,7 @@ def followers(ampache_url: str, ampache_api: str, username, api_format: str = 'x
     ampache_response = fetch_url(full_url, api_format, 'followers')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def following(ampache_url: str, ampache_api: str, username, api_format: str = 'xml'):
@@ -2587,17 +2077,7 @@ def following(ampache_url: str, ampache_api: str, username, api_format: str = 'x
     ampache_response = fetch_url(full_url, api_format, 'following')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def toggle_follow(ampache_url: str, ampache_api: str, username, api_format: str = 'xml'):
@@ -2621,17 +2101,7 @@ def toggle_follow(ampache_url: str, ampache_api: str, username, api_format: str 
     ampache_response = fetch_url(full_url, api_format, 'toggle_follow')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def last_shouts(ampache_url: str, ampache_api: str, username, limit=0, api_format: str = 'xml'):
@@ -2657,17 +2127,7 @@ def last_shouts(ampache_url: str, ampache_api: str, username, limit=0, api_forma
     ampache_response = fetch_url(full_url, api_format, 'last_shouts')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def rate(ampache_url: str, ampache_api: str, object_type, object_id, rating, api_format: str = 'xml'):
@@ -2697,17 +2157,7 @@ def rate(ampache_url: str, ampache_api: str, object_type, object_id, rating, api
     ampache_response = fetch_url(full_url, api_format, 'rate')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def flag(ampache_url: str, ampache_api: str, object_type, object_id, flagbool, api_format: str = 'xml'):
@@ -2742,17 +2192,7 @@ def flag(ampache_url: str, ampache_api: str, object_type, object_id, flagbool, a
     ampache_response = fetch_url(full_url, api_format, 'flag')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def record_play(ampache_url: str, ampache_api: str, object_id, user_id, client='AmpacheAPI', api_format: str = 'xml'):
@@ -2781,17 +2221,7 @@ def record_play(ampache_url: str, ampache_api: str, object_id, user_id, client='
     ampache_response = fetch_url(full_url, api_format, 'record_play')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def scrobble(ampache_url: str, ampache_api: str, title, artist_name, album_name,
@@ -2832,17 +2262,7 @@ def scrobble(ampache_url: str, ampache_api: str, title, artist_name, album_name,
     ampache_response = fetch_url(full_url, api_format, 'scrobble')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def timeline(ampache_url: str, ampache_api: str, username, limit=0, since=0, api_format: str = 'xml'):
@@ -2870,17 +2290,7 @@ def timeline(ampache_url: str, ampache_api: str, username, limit=0, since=0, api
     ampache_response = fetch_url(full_url, api_format, 'timeline')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def friends_timeline(ampache_url: str, ampache_api: str, limit=0, since=0, api_format: str = 'xml'):
@@ -2906,17 +2316,7 @@ def friends_timeline(ampache_url: str, ampache_api: str, limit=0, since=0, api_f
     ampache_response = fetch_url(full_url, api_format, 'friends_timeline')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def update_from_tags(ampache_url: str, ampache_api: str, ampache_type, ampache_id, api_format: str = 'xml'):
@@ -2942,17 +2342,7 @@ def update_from_tags(ampache_url: str, ampache_api: str, ampache_type, ampache_i
     ampache_response = fetch_url(full_url, api_format, 'update_from_tags')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def update_art(ampache_url: str, ampache_api: str, ampache_type, ampache_id, overwrite=False, api_format: str = 'xml'):
@@ -2985,17 +2375,7 @@ def update_art(ampache_url: str, ampache_api: str, ampache_type, ampache_id, ove
     ampache_response = fetch_url(full_url, api_format, 'update_art')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def update_artist_info(ampache_url: str, ampache_api: str, object_id, api_format: str = 'xml'):
@@ -3020,17 +2400,7 @@ def update_artist_info(ampache_url: str, ampache_api: str, object_id, api_format
     ampache_response = fetch_url(full_url, api_format, 'update_artist_info')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def stream(ampache_url: str, ampache_api: str, object_id, object_type, destination, api_format: str = 'xml'):
@@ -3157,17 +2527,7 @@ def user_create(ampache_url: str, ampache_api: str, username: str, password: str
     ampache_response = fetch_url(full_url, api_format, 'user_create')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def user_update(ampache_url: str, ampache_api: str, username, password=False, fullname=False, email=False,
@@ -3226,17 +2586,7 @@ def user_update(ampache_url: str, ampache_api: str, username, password=False, fu
     ampache_response = fetch_url(full_url, api_format, 'user_update')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def user_delete(ampache_url: str, ampache_api: str, username, api_format: str = 'xml'):
@@ -3260,17 +2610,7 @@ def user_delete(ampache_url: str, ampache_api: str, username, api_format: str = 
     ampache_response = fetch_url(full_url, api_format, 'user_delete')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def user_preferences(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
@@ -3292,17 +2632,7 @@ def user_preferences(ampache_url: str, ampache_api: str, api_format: str = 'xml'
     ampache_response = fetch_url(full_url, api_format, 'user_preferences')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def user_preference(ampache_url: str, ampache_api: str, filter_str, api_format: str = 'xml'):
@@ -3326,17 +2656,7 @@ def user_preference(ampache_url: str, ampache_api: str, filter_str, api_format: 
     ampache_response = fetch_url(full_url, api_format, 'user_preferences')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def system_preferences(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
@@ -3358,17 +2678,7 @@ def system_preferences(ampache_url: str, ampache_api: str, api_format: str = 'xm
     ampache_response = fetch_url(full_url, api_format, 'system_preferences')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def system_preference(ampache_url: str, ampache_api: str, filter_str, api_format: str = 'xml'):
@@ -3392,17 +2702,7 @@ def system_preference(ampache_url: str, ampache_api: str, filter_str, api_format
     ampache_response = fetch_url(full_url, api_format, 'system_preferences')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def system_update(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
@@ -3424,17 +2724,7 @@ def system_update(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
     ampache_response = fetch_url(full_url, api_format, 'system_update')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def preference_create(ampache_url: str, ampache_api: str, filter_str, type_str, default, category,
@@ -3475,17 +2765,7 @@ def preference_create(ampache_url: str, ampache_api: str, filter_str, type_str, 
     ampache_response = fetch_url(full_url, api_format, 'preference_create')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def preference_edit(ampache_url: str, ampache_api: str, filter_str, value, apply_all=0, api_format: str = 'xml'):
@@ -3513,17 +2793,7 @@ def preference_edit(ampache_url: str, ampache_api: str, filter_str, value, apply
     ampache_response = fetch_url(full_url, api_format, 'preference_edit')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def preference_delete(ampache_url: str, ampache_api: str, filter_str, api_format: str = 'xml'):
@@ -3547,17 +2817,7 @@ def preference_delete(ampache_url: str, ampache_api: str, filter_str, api_format
     ampache_response = fetch_url(full_url, api_format, 'preference_delete')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def licenses(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False,
@@ -3600,17 +2860,7 @@ def licenses(ampache_url: str, ampache_api: str, filter_str: str = False, exact:
     ampache_response = fetch_url(full_url, api_format, 'licenses')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def license(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -3634,17 +2884,7 @@ def license(ampache_url: str, ampache_api: str, filter_id: int, api_format: str 
     ampache_response = fetch_url(full_url, api_format, 'license')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def license_songs(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -3668,17 +2908,7 @@ def license_songs(ampache_url: str, ampache_api: str, filter_id: int, api_format
     ampache_response = fetch_url(full_url, api_format, 'license_songs')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def labels(ampache_url: str, ampache_api: str, filter_str: str = False, exact: int = False,
@@ -3713,17 +2943,7 @@ def labels(ampache_url: str, ampache_api: str, filter_str: str = False, exact: i
     ampache_response = fetch_url(full_url, api_format, 'labels')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def label(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -3747,17 +2967,7 @@ def label(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 
     ampache_response = fetch_url(full_url, api_format, 'label')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def label_artists(ampache_url: str, ampache_api: str, filter_id: int, api_format: str = 'xml'):
@@ -3781,17 +2991,7 @@ def label_artists(ampache_url: str, ampache_api: str, filter_id: int, api_format
     ampache_response = fetch_url(full_url, api_format, 'label_artists')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def get_bookmark(ampache_url: str, ampache_api: str, filter_id: str, object_type: str, api_format: str = 'xml'):
@@ -3817,17 +3017,7 @@ def get_bookmark(ampache_url: str, ampache_api: str, filter_id: str, object_type
     ampache_response = fetch_url(full_url, api_format, 'get_bookmark')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def bookmarks(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
@@ -3849,17 +3039,7 @@ def bookmarks(ampache_url: str, ampache_api: str, api_format: str = 'xml'):
     ampache_response = fetch_url(full_url, api_format, 'bookmarks')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 def bookmark_create(ampache_url: str, ampache_api: str, filter_id, object_type,
@@ -3896,27 +3076,7 @@ def bookmark_create(ampache_url: str, ampache_api: str, filter_id, object_type,
     ampache_response = fetch_url(full_url, api_format, 'bookmark_create')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        try:
-            token = tree.find('playlist').text
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+    return return_data(ampache_response, api_format)
 
 
 def bookmark_edit(ampache_url: str, ampache_api: str, filter_id, object_type,
@@ -3953,27 +3113,7 @@ def bookmark_edit(ampache_url: str, ampache_api: str, filter_id, object_type,
     ampache_response = fetch_url(full_url, api_format, 'bookmark_edit')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        try:
-            token = tree.find('playlist').text
-        except AttributeError:
-            token = False
-        if token:
-            return tree
-        try:
-            token = tree.find('error').text
-        except AttributeError:
-            token = False
-        return token
+    return return_data(ampache_response, api_format)
 
 
 def bookmark_delete(ampache_url: str, ampache_api: str, filter_id: int, object_type=False, api_format: str = 'xml'):
@@ -3999,17 +3139,7 @@ def bookmark_delete(ampache_url: str, ampache_api: str, filter_id: int, object_t
     ampache_response = fetch_url(full_url, api_format, 'bookmark_delete')
     if not ampache_response:
         return False
-    # json format
-    if api_format == 'json':
-        json_data = json.loads(ampache_response.decode('utf-8'))
-        return json_data
-    # xml format
-    else:
-        try:
-            tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
-        except ElementTree.ParseError:
-            return False
-        return tree
+    return return_data(ampache_response, api_format)
 
 
 """
