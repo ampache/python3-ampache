@@ -1,122 +1,122 @@
 {
     "song": [
         {
-            "id": "747366",
-            "title": "Part 6",
-            "name": "Part 6",
+            "id": "90",
+            "title": "Invo",
+            "name": "Invo",
             "artist": {
-                "id": "9524",
-                "name": "Acid Seven"
+                "id": "14",
+                "name": "Nofi\/found."
             },
             "album": {
-                "id": "38365",
-                "name": "Oz Days Live"
+                "id": "8",
+                "name": "Nofi Devices"
             },
             "albumartist": {
-                "id": "15962",
-                "name": "Various Artists"
+                "id": "14",
+                "name": "Nofi\/found."
             },
             "disk": 1,
-            "track": 6,
-            "filename": "\/mnt\/music\/Various Artists\/(2007) Oz Days Live [OZ1]\/106 - Acid Seven - Part 6.mp3",
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/01_Invo.mp3",
             "genre": [
                 {
-                    "id": "361",
-                    "name": "Psychedelic"
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
                 }
             ],
             "playlisttrack": 1,
-            "time": 429,
-            "year": 2007,
-            "bitrate": 239555,
+            "time": 47,
+            "year": 0,
+            "bitrate": 192000,
             "rate": 44100,
-            "mode": "vbr",
+            "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=747366&uid=2&player=api&name=Acid%20Seven%20-%20Part%206.mp3",
-            "size": 12864157,
-            "mbid": "41774419-9d78-4b3d-b6e1-1a51d5949c5d",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&player=api&name=Nofi-found.%20-%20Invo.mp3",
+            "size": 1140687,
+            "mbid": null,
             "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=38365&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 2,
-            "composer": "",
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
             "channels": null,
-            "comment": "",
+            "comment": "00000440 0000048C 0000348D 00002A4D 00009429 000066C1 00006367 0000777A 00005A82 00005A68",
             "license": null,
-            "publisher": "[no label]",
+            "publisher": "",
             "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-2.940000",
-            "replaygain_track_peak": "0.977000",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "911535",
-            "title": "The Government Knows",
-            "name": "The Government Knows",
+            "id": "84",
+            "title": "Vansinne",
+            "name": "Vansinne",
             "artist": {
-                "id": "16760",
-                "name": "KNOWER"
+                "id": "13",
+                "name": "IOK-1"
             },
             "album": {
-                "id": "73401",
-                "name": "Life"
+                "id": "7",
+                "name": "Sensorisk Deprivation"
             },
             "albumartist": {
-                "id": "16760",
-                "name": "KNOWER"
+                "id": "13",
+                "name": "IOK-1"
             },
             "disk": 1,
-            "track": 3,
-            "filename": "\/mnt\/music\/KNOWER\/(2016) Life\/103 - The Government Knows.mp3",
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/04_-_IOK-1_-_Vansinne.flac",
             "genre": [
                 {
-                    "id": "234",
-                    "name": "Indie Pop"
-                },
-                {
-                    "id": "685",
-                    "name": "Jazz-Funk"
+                    "id": "4",
+                    "name": "Dark Ambient"
                 }
             ],
             "playlisttrack": 2,
-            "time": 223,
-            "year": 2016,
-            "bitrate": 320037,
+            "time": 787,
+            "year": 2011,
+            "bitrate": 713079,
             "rate": 44100,
             "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=911535&uid=2&player=api&name=KNOWER%20-%20The%20Government%20Knows.mp3",
-            "size": 9028011,
-            "mbid": "dbcf6bb7-0cf1-4ab4-b51d-03a04a8a08d8",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&player=api&name=IOK-1%20-%20Vansinne.flac",
+            "size": 70173300,
+            "mbid": null,
             "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=73401&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 2,
+            "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "",
+            "comment": "DNA Production release\r\nCatalogue # DNA 119",
             "license": null,
-            "publisher": "Knower",
+            "publisher": "DNA Production",
             "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-11.380000",
-            "replaygain_track_peak": "1.000000",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

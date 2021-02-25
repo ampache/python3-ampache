@@ -1,242 +1,219 @@
 {
     "song": [
         {
-            "id": "818816",
-            "title": "_",
-            "name": "_",
+            "id": "113",
+            "title": "04 Shorty Mac - Representin",
+            "name": "04 Shorty Mac - Representin",
             "artist": {
-                "id": "11932",
-                "name": "Lebanon Hanover \/ La Fete Triste"
+                "id": "25",
+                "name": "Unknown (Orphaned)"
             },
             "album": {
-                "id": "80234",
-                "name": "The World Is Getting Colder"
+                "id": "13",
+                "name": "Unknown (Orphaned)"
             },
             "albumartist": {
-                "id": "11932",
-                "name": "Lebanon Hanover \/ La Fete Triste"
+                "id": "",
+                "name": ""
             },
             "disk": 1,
-            "track": 8,
-            "filename": "\/mnt\/music\/Lebanon Hanover\/(2012) The World Is Getting Colder [[none]]\/108 - _.mp3",
-            "genre": [
-                {
-                    "id": "73",
-                    "name": "Post-Punk"
-                }
-            ],
+            "track": 0,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
+            "genre": [],
             "playlisttrack": 1,
-            "time": 198,
-            "year": 2012,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=818816&uid=2&player=api&name=Lebanon%20Hanover%20-%20La%20Fete%20Triste%20-%20-.mp3",
-            "size": 7933954,
-            "mbid": "90e4a6f6-ef6e-4399-b416-ba09cc42afa1",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=80234&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "[no label]",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-7.240000",
-            "replaygain_track_peak": "0.944000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "813353",
-            "title": "_____",
-            "name": "_____",
-            "artist": {
-                "id": "9392",
-                "name": "Sadness"
-            },
-            "album": {
-                "id": "97007",
-                "name": "Leave"
-            },
-            "albumartist": {
-                "id": "9392",
-                "name": "Sadness"
-            },
-            "disk": 1,
-            "track": 2,
-            "filename": "\/mnt\/music\/Sadness\/(2017) Leave\/102 - _____.mp3",
-            "genre": [
-                {
-                    "id": "6",
-                    "name": "Rock"
-                },
-                {
-                    "id": "422",
-                    "name": "Shoegaze"
-                },
-                {
-                    "id": "2243",
-                    "name": "Depressive Black Metal"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 327,
-            "year": 2017,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=813353&uid=2&player=api&name=Sadness%20-%20-.mp3",
-            "size": 13133575,
-            "mbid": "041ba790-049c-4f79-9721-1adc614b15db",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=97007&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "Not On Label",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-6.670000",
-            "replaygain_track_peak": "0.989000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "795306",
-            "title": "_________________",
-            "name": "_________________",
-            "artist": {
-                "id": "10926",
-                "name": "Dillon"
-            },
-            "album": {
-                "id": "86343",
-                "name": "This Silence Kills"
-            },
-            "albumartist": {
-                "id": "10926",
-                "name": "Dillon"
-            },
-            "disk": 1,
-            "track": 7,
-            "filename": "\/mnt\/music\/Dillon\/(2011) This Silence Kills [BPC240]\/107 - _________________.mp3",
-            "genre": [
-                {
-                    "id": "702",
-                    "name": "Modern Classical"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 293,
-            "year": 2011,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=795306&uid=2&player=api&name=Dillon%20-%20-.mp3",
-            "size": 12990047,
-            "mbid": "04b80f07-8a99-41c3-bd9a-74032ea6a15b",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=86343&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
-            "composer": "Tamer Fahri \u00d6zg\u00f6nenc",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "BPitch Control",
-            "language": "eng",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-4.130000",
-            "replaygain_track_peak": "0.944000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "833254",
-            "title": "_1",
-            "name": "_1",
-            "artist": {
-                "id": "12639",
-                "name": "NHK"
-            },
-            "album": {
-                "id": "82495",
-                "name": "Unununium"
-            },
-            "albumartist": {
-                "id": "12639",
-                "name": "NHK"
-            },
-            "disk": 1,
-            "track": 3,
-            "filename": "\/mnt\/music\/NHK\/(2008) Unununium [R-N 111]\/103 - _1.mp3",
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Electronic"
-                }
-            ],
-            "playlisttrack": 4,
-            "time": 167,
-            "year": 2008,
-            "bitrate": 209676,
+            "time": 234,
+            "year": 0,
+            "bitrate": 123814,
             "rate": 44100,
             "mode": "vbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=833254&uid=2&player=api&name=NHK%20-%20-1.mp3",
-            "size": 4395626,
-            "mbid": "47ec1da9-3849-44ae-9a6c-80c882519755",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&player=api&name=Unknown%20-Orphaned-%20-%2004%20Shorty%20Mac%20-%20Representin.mp3",
+            "size": 3623236,
+            "mbid": null,
             "album_mbid": null,
-            "artist_mbid": null,
+            "artist_mbid": "",
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=82495&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=13&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "playcount": 1,
-            "catalog": 2,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+            "license": null,
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "112",
+            "title": "08 MxBxCx - Personal Truth",
+            "name": "08 MxBxCx - Personal Truth",
+            "artist": {
+                "id": "25",
+                "name": "Unknown (Orphaned)"
+            },
+            "album": {
+                "id": "13",
+                "name": "Unknown (Orphaned)"
+            },
+            "albumartist": {
+                "id": "",
+                "name": ""
+            },
+            "disk": 1,
+            "track": 0,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/08Mxbxcx-PersonalTruth.mp3",
+            "genre": [],
+            "playlisttrack": 2,
+            "time": 208,
+            "year": 0,
+            "bitrate": 179860,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&player=api&name=Unknown%20-Orphaned-%20-%2008%20MxBxCx%20-%20Personal%20Truth.mp3",
+            "size": 4687011,
+            "mbid": null,
+            "album_mbid": null,
+            "artist_mbid": "",
+            "albumartist_mbid": null,
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=13&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+            "license": null,
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "115",
+            "title": "Are we going Crazy",
+            "name": "Are we going Crazy",
+            "artist": {
+                "id": "27",
+                "name": "Chi.Otic"
+            },
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists"
+            },
+            "disk": 1,
+            "track": 7,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
+            "genre": [],
+            "playlisttrack": 3,
+            "time": 433,
+            "year": 2012,
+            "bitrate": 32582,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.wma",
+            "size": 1776580,
+            "mbid": null,
+            "album_mbid": null,
+            "artist_mbid": "7",
+            "albumartist_mbid": "",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
             "composer": "",
             "channels": null,
             "comment": "",
             "license": null,
-            "publisher": "Raster-Noton",
+            "publisher": "",
             "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-4.780000",
-            "replaygain_track_peak": "0.624000",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "107",
+            "title": "Arrest Me",
+            "name": "Arrest Me",
+            "artist": {
+                "id": "20",
+                "name": "R\/B"
+            },
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists"
+            },
+            "disk": 1,
+            "track": 10,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/09R_b-ArrestMe.m4a",
+            "genre": [
+                {
+                    "id": "7",
+                    "name": "Punk"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 96,
+            "year": 2012,
+            "bitrate": 252864,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mp4",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a",
+            "size": 3089501,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

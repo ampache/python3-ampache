@@ -1,72 +1,60 @@
 {
     "song": [
         {
-            "id": "808369",
-            "title": "Canned Head (7\"Edit)",
-            "name": "Canned Head (7\"Edit)",
+            "id": "81",
+            "title": "Galenskap",
+            "name": "Galenskap",
             "artist": {
-                "id": "40",
-                "name": "Jamiroquai"
+                "id": "13",
+                "name": "IOK-1"
             },
             "album": {
-                "id": "94591",
-                "name": "Dynamite"
+                "id": "7",
+                "name": "Sensorisk Deprivation"
             },
             "albumartist": {
-                "id": "40",
-                "name": "Jamiroquai"
+                "id": "13",
+                "name": "IOK-1"
             },
             "disk": 1,
-            "track": 13,
-            "filename": "\/mnt\/music\/Jamiroquai\/(2005) Dynamite [5201112]\/113 - Canned Head (7\"Edit).mp3",
+            "track": 3,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/03_-_IOK-1_-_Galenskap.flac",
             "genre": [
                 {
                     "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "589",
-                    "name": "Alternative Dance"
-                },
-                {
-                    "id": "656",
-                    "name": "Dance-Rock"
-                },
-                {
-                    "id": "2563",
-                    "name": "Funk\/Soul"
+                    "name": "Dark Ambient"
                 }
             ],
             "playlisttrack": 1,
-            "time": 225,
-            "year": 2005,
-            "bitrate": 320000,
+            "time": 998,
+            "year": 2011,
+            "bitrate": 389585,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=808369&uid=2&player=api&name=Jamiroquai%20-%20Canned%20Head%20-7-Edit-.mp3",
-            "size": 10390634,
-            "mbid": "76207846-fdb7-4eb5-b5d5-336dc7b7dbae",
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&player=api&name=IOK-1%20-%20Galenskap.flac",
+            "size": 48620903,
+            "mbid": null,
             "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=94591&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 2,
-            "composer": "Jason Kay",
+            "catalog": 1,
+            "composer": "",
             "channels": null,
-            "comment": "",
+            "comment": "DNA Production release\r\nCatalogue # DNA 119",
             "license": null,
-            "publisher": "Sony BMG Music Entertainment",
+            "publisher": "DNA Production",
             "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-8.370000",
-            "replaygain_track_peak": "1.000000",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

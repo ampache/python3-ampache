@@ -1,69 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>18</total_count>
-  <podcast id="63">
-    <name><![CDATA[Acquisitions Incorporated: The Series]]></name>
-    <description><![CDATA[Acquisitions Incorporated serves up locally-sourced adventure from convenient franchise locations across Faerûn. Their adventures began in 2007 with a podcast of three friends playing D&D, and inexplicably progressed to live games on-stage before thousands of audience members at PAX.]]></description>
+  <total_count>2</total_count>
+  <podcast id="1">
+    <name><![CDATA[60-Second Science]]></name>
+    <description><![CDATA[Tune in every weekday for quick reports and commentaries on the world of science—it'll just take a minute]]></description>
     <language><![CDATA[en-us]]></language>
-    <copyright><![CDATA[Copyright (c) 1998-2020 Penny Arcade, Inc.]]></copyright>
-    <feed_url><![CDATA[https://www.penny-arcade.com/feed/podcasts-ai]]></feed_url>
+    <copyright><![CDATA[Scientific American, a Division of Springer Nature America, Inc.]]></copyright>
+    <feed_url><![CDATA[http://rss.sciam.com/sciam/60secsciencepodcast]]></feed_url>
     <generator><![CDATA[]]></generator>
-    <website><![CDATA[https://www.penny-arcade.com/podcasts]]></website>
-    <build_date><![CDATA[2020/11/09 05:56am]]></build_date>
-    <sync_date><![CDATA[2021/02/04 01:02pm]]></sync_date>
-    <public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=63]]></public_url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=63&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <website><![CDATA[https://www.scientificamerican.com/podcast/60-second-science/]]></website>
+    <build_date><![CDATA[1/1/70, 10:00 AM]]></build_date>
+    <sync_date><![CDATA[2/24/21, 4:02 PM]]></sync_date>
+    <public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=1]]></public_url>
+    <art><![CDATA[https://music.com.au/image.php?object_id=1&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
     <averagerating/>
   </podcast>
-  <podcast id="64">
-    <name><![CDATA[AI: The "C" Team]]></name>
-    <description><![CDATA[Acquisitions Incorporated serves up locally-sourced adventure from convenient franchise locations across Faerûn. Their adventures began in 2007 with a podcast of three friends playing D&D, and inexplicably progressed to live games on-stage before thousands of audience members at PAX.]]></description>
-    <language><![CDATA[en-us]]></language>
-    <copyright><![CDATA[Copyright (c) 1998-2020 Penny Arcade, Inc.]]></copyright>
-    <feed_url><![CDATA[http://www.acq-inc.com/feed/cteam_podcast]]></feed_url>
-    <generator><![CDATA[]]></generator>
-    <website><![CDATA[https://www.acq-inc.com/]]></website>
-    <build_date><![CDATA[2020/12/17 03:16pm]]></build_date>
-    <sync_date><![CDATA[2021/02/04 01:02pm]]></sync_date>
-    <public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=64]]></public_url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=64&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </podcast>
-  <podcast id="15">
-    <name><![CDATA[Brute Force]]></name>
-    <description><![CDATA[Brute Force is a real-play comedic RPG podcast blended with in-character narration. We play a campaign of FATE Core (we started with World of Darkness) set in the high fantasy world of Eorith. The adventurers are a party of monsters tasked with saving a world that barely tolerates their existence.]]></description>
-    <language><![CDATA[en-US]]></language>
-    <copyright><![CDATA[&copy; 2016 All rights reserved]]></copyright>
-    <feed_url><![CDATA[https://feeds.feedburner.com/BruteForcePodcast]]></feed_url>
-    <generator><![CDATA[https://wordpress.org/?v=4.9.3]]></generator>
-    <website><![CDATA[https://geeklyinc.com/category/brute-force/]]></website>
-    <build_date><![CDATA[2018/03/27 07:15pm]]></build_date>
-    <sync_date><![CDATA[2021/02/04 00:57pm]]></sync_date>
-    <public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=15]]></public_url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=15&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </podcast>
-  <podcast id="16">
-    <name><![CDATA[Cthulhu &amp; Friends]]></name>
-    <description><![CDATA[]]></description>
-    <language><![CDATA[en-US]]></language>
-    <copyright><![CDATA[Cthulhu &amp; Friends Podcast]]></copyright>
-    <feed_url><![CDATA[http://feeds.feedburner.com/CaFPodcast]]></feed_url>
-    <generator><![CDATA[https://wordpress.org/?v=4.9.3]]></generator>
-    <website><![CDATA[https://geeklyinc.com/category/caf-podcast/]]></website>
-    <build_date><![CDATA[2018/03/29 06:15pm]]></build_date>
-    <sync_date><![CDATA[2021/02/04 00:57pm]]></sync_date>
-    <public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=16]]></public_url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=16&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+  <podcast id="2">
+    <name><![CDATA[Plays Well with Others]]></name>
+    <description><![CDATA[From Creative Commons, a podcast about the art and science of collaboration. With a focus on the tools, techniques, and mechanics of collaboration, we explore how today's most interesting collaborators are making new things, solving old problems, and getting things done — together. Hosted by Creative Commons CEO Ryan Merkley. ]]></description>
+    <language><![CDATA[en]]></language>
+    <copyright><![CDATA[Creative Commons]]></copyright>
+    <feed_url><![CDATA[https://anchor.fm/s/90932e8/podcast/rss]]></feed_url>
+    <generator><![CDATA[Anchor Podcasts]]></generator>
+    <website><![CDATA[playswellwithothers.org]]></website>
+    <build_date><![CDATA[2/23/21, 2:18 PM]]></build_date>
+    <sync_date><![CDATA[2/23/21, 2:31 PM]]></sync_date>
+    <public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=2]]></public_url>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>

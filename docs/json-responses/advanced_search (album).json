@@ -1,126 +1,29 @@
 {
     "album": [
         {
-            "id": "73836",
-            "name": "... De Los Valles y Las Monta\u00f1as",
+            "id": "2",
+            "name": "Colorsmoke EP",
             "artist": {
-                "id": "16949",
-                "name": "Bosques de mi Mente"
+                "id": "2",
+                "name": "Synthetic"
             },
             "time": 0,
-            "year": 2016,
+            "year": 2007,
             "tracks": [],
-            "songcount": 10,
+            "songcount": 12,
             "disk": 1,
             "genre": [
                 {
-                    "id": "4",
+                    "id": "1",
                     "name": "Electronic"
-                },
-                {
-                    "id": "46",
-                    "name": "Ambient"
-                },
-                {
-                    "id": "150",
-                    "name": "Classical"
-                },
-                {
-                    "id": "1263",
-                    "name": "Contemporary"
-                },
-                {
-                    "id": "1584",
-                    "name": "modern"
-                },
-                {
-                    "id": "1612",
-                    "name": "Neo-Classical"
-                },
-                {
-                    "id": "3179",
-                    "name": "Post-Modern"
                 }
             ],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=73836&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "3e775784-6e32-4433-9023-8711cff98df3"
-        },
-        {
-            "id": "87821",
-            "name": "...and Justice for All",
-            "artist": {
-                "id": "563",
-                "name": "Metallica"
-            },
-            "time": 0,
-            "year": 1988,
-            "tracks": [],
-            "songcount": 9,
-            "disk": 1,
-            "genre": [
-                {
-                    "id": "20",
-                    "name": "Metal"
-                },
-                {
-                    "id": "64",
-                    "name": "Heavy Metal"
-                },
-                {
-                    "id": "86",
-                    "name": "Thrash Metal"
-                }
-            ],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=87821&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 1,
             "preciserating": 5,
             "rating": 5,
-            "averagerating": null,
-            "mbid": "cb2704e5-b7a3-343e-918f-aa9cd3489170"
-        },
-        {
-            "id": "92916",
-            "name": "...magni blandinn ok megintiri...",
-            "artist": {
-                "id": "340",
-                "name": "Falkenbach"
-            },
-            "time": 0,
-            "year": 1998,
-            "tracks": [],
-            "songcount": 6,
-            "disk": 1,
-            "genre": [],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=92916&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
-            "flag": 1,
-            "preciserating": 5,
-            "rating": 5,
-            "averagerating": null,
-            "mbid": "45b29982-94d8-4629-8537-fd635f6464b8"
-        },
-        {
-            "id": "88969",
-            "name": "...The Dandy Warhols Come Down",
-            "artist": {
-                "id": "1187",
-                "name": "Dandy Warhols"
-            },
-            "time": 0,
-            "year": 1997,
-            "tracks": [],
-            "songcount": 14,
-            "disk": 1,
-            "genre": [],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=88969&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
-            "flag": 1,
-            "preciserating": 5,
-            "rating": 5,
-            "averagerating": null,
-            "mbid": "674023e2-07cd-407a-9b92-878e4e32210a"
+            "averagerating": 3,
+            "mbid": null
         }
     ]
 }

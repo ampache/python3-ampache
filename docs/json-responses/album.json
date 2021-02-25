@@ -1,37 +1,29 @@
 {
     "album": [
         {
-            "id": "98156",
-            "name": "-+",
+            "id": "12",
+            "name": "Buried in Nausea",
             "artist": {
-                "id": "1081",
-                "name": "Mr.Kitty"
+                "id": "19",
+                "name": "Various Artists"
             },
             "time": 0,
-            "year": 2020,
+            "year": 2012,
             "tracks": [],
-            "songcount": 6,
+            "songcount": 7,
             "disk": 1,
             "genre": [
                 {
-                    "id": "4",
-                    "name": "Electronic"
-                },
-                {
                     "id": "7",
-                    "name": "Synthpop"
-                },
-                {
-                    "id": "48",
-                    "name": "New Wave"
+                    "name": "Punk"
                 }
             ],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=98156&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": "984aeded-cb31-495f-8a19-b38db868d4d6"
+            "mbid": null
         }
     ]
 }

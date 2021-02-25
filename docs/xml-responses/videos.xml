@@ -1,197 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>14</total_count>
-  <video id="1331">
-    <title><![CDATA[sample-avi-file]]></title>
-    <name><![CDATA[sample-avi-file]]></name>
-    <mime><![CDATA[video/avi]]></mime>
-    <resolution><![CDATA[320x240]]></resolution>
-    <size>8324510</size>
-    <time><![CDATA[125]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1331&uid=2&player=api&name=sample-avi-file.avi]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1331&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </video>
-  <video id="1339">
-    <title><![CDATA[sample-flv-file]]></title>
-    <name><![CDATA[sample-flv-file]]></name>
-    <mime><![CDATA[video/x-flv]]></mime>
-    <resolution><![CDATA[320x240]]></resolution>
-    <size>4824146</size>
-    <time><![CDATA[125]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1339&uid=2&player=api&name=sample-flv-file.flv]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1339&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </video>
-  <video id="1333">
-    <title><![CDATA[sample-mkv-file]]></title>
-    <name><![CDATA[sample-mkv-file]]></name>
-    <mime><![CDATA[video/x-matroska]]></mime>
-    <resolution><![CDATA[320x240]]></resolution>
-    <size>4910847</size>
-    <time><![CDATA[126]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1333&uid=2&player=api&name=sample-mkv-file.mkv]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1333&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </video>
-  <video id="1336">
-    <title><![CDATA[sample-mov-file]]></title>
-    <name><![CDATA[sample-mov-file]]></name>
-    <mime><![CDATA[video/mp4]]></mime>
-    <resolution><![CDATA[320x240]]></resolution>
-    <size>14461898</size>
-    <time><![CDATA[125]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1336&uid=2&player=api&name=sample-mov-file.mov]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1336&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </video>
-  <video id="1338">
-    <title><![CDATA[sample-mp4-file]]></title>
-    <name><![CDATA[sample-mp4-file]]></name>
-    <mime><![CDATA[video/mp4]]></mime>
-    <resolution><![CDATA[320x240]]></resolution>
-    <size>10546620</size>
-    <time><![CDATA[125]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1338&uid=2&player=api&name=sample-mp4-file.mp4]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1338&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </video>
-  <video id="1332">
-    <title><![CDATA[sample-mpg-file]]></title>
-    <name><![CDATA[sample-mpg-file]]></name>
-    <mime><![CDATA[video/mpeg]]></mime>
-    <resolution><![CDATA[320x240]]></resolution>
-    <size>5918720</size>
-    <time><![CDATA[0]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1332&uid=2&player=api&name=sample-mpg-file.mpg]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1332&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </video>
-  <video id="1335">
-    <title><![CDATA[sample-ogv-file]]></title>
-    <name><![CDATA[sample-ogv-file]]></name>
+  <total_count>2</total_count>
+  <video id="2">
+    <title><![CDATA[Magic Fly]]></title>
+    <name><![CDATA[Magic Fly]]></name>
     <mime><![CDATA[video/ogg]]></mime>
-    <resolution><![CDATA[320x240]]></resolution>
-    <size>5407067</size>
+    <resolution><![CDATA[400x300]]></resolution>
+    <size>14950742</size>
     <time><![CDATA[0]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1335&uid=2&player=api&name=sample-ogv-file.ogv]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1335&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=2&uid=4&player=api&name=Magic%20Fly.ogv]]></url>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
     <averagerating/>
   </video>
-  <video id="1334">
-    <title><![CDATA[sample-webm-file]]></title>
-    <name><![CDATA[sample-webm-file]]></name>
-    <mime><![CDATA[video/webm]]></mime>
-    <resolution><![CDATA[320x240]]></resolution>
-    <size>12615807</size>
-    <time><![CDATA[126]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1334&uid=2&player=api&name=sample-webm-file.webm]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1334&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </video>
-  <video id="1337">
-    <title><![CDATA[sample-wmv-file]]></title>
-    <name><![CDATA[sample-wmv-file]]></name>
-    <mime><![CDATA[video/x-ms-wmv]]></mime>
-    <resolution><![CDATA[320x240]]></resolution>
-    <size>5972851</size>
-    <time><![CDATA[126]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1337&uid=2&player=api&name=sample-wmv-file.wmv]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1337&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </video>
-  <video id="1250">
-    <title><![CDATA[Sub Atari Knives - Alter Ego-ouuDlB0aXcI]]></title>
-    <name><![CDATA[Sub Atari Knives - Alter Ego-ouuDlB0aXcI]]></name>
-    <mime><![CDATA[video/x-matroska]]></mime>
+  <video id="1">
+    <title><![CDATA[SPACE   Magic Fly (1977) - https://archive.org/details/SPACE_Magic_Fly_1977]]></title>
+    <name><![CDATA[SPACE   Magic Fly (1977) - https://archive.org/details/SPACE_Magic_Fly_1977]]></name>
+    <mime><![CDATA[video/mp4]]></mime>
     <resolution><![CDATA[640x480]]></resolution>
-    <size>6223086</size>
-    <time><![CDATA[316]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1250&uid=2&player=api&name=Sub%20Atari%20Knives%20-%20Alter%20Ego-ouuDlB0aXcI.mkv]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1250&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </video>
-  <video id="1263">
-    <title><![CDATA[Sub Atari Knives - Blaze Control-uhp2cNsaS6c]]></title>
-    <name><![CDATA[Sub Atari Knives - Blaze Control-uhp2cNsaS6c]]></name>
-    <mime><![CDATA[video/x-matroska]]></mime>
-    <resolution><![CDATA[640x480]]></resolution>
-    <size>5685786</size>
-    <time><![CDATA[297]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1263&uid=2&player=api&name=Sub%20Atari%20Knives%20-%20Blaze%20Control-uhp2cNsaS6c.mkv]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1263&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </video>
-  <video id="1252">
-    <title><![CDATA[Sub Atari Knives - Hear.Life.Spoken-1OU1nOTKfz8]]></title>
-    <name><![CDATA[Sub Atari Knives - Hear.Life.Spoken-1OU1nOTKfz8]]></name>
-    <mime><![CDATA[video/x-matroska]]></mime>
-    <resolution><![CDATA[1440x1080]]></resolution>
-    <size>7516003</size>
-    <time><![CDATA[264]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1252&uid=2&player=api&name=Sub%20Atari%20Knives%20-%20Hear.Life.Spoken-1OU1nOTKfz8.mkv]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1252&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </video>
-  <video id="1262">
-    <title><![CDATA[Sub Atari Knives - Hear.Life.Spoken-RX5JK3jaiMY]]></title>
-    <name><![CDATA[Sub Atari Knives - Hear.Life.Spoken-RX5JK3jaiMY]]></name>
-    <mime><![CDATA[video/x-matroska]]></mime>
-    <resolution><![CDATA[1920x1080]]></resolution>
-    <size>124125138</size>
-    <time><![CDATA[237]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1262&uid=2&player=api&name=Sub%20Atari%20Knives%20-%20Hear.Life.Spoken-RX5JK3jaiMY.mkv]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1262&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating>4</preciserating>
-    <rating>4</rating>
-    <averagerating/>
-  </video>
-  <video id="1251">
-    <title><![CDATA[Sub Atari Knives - Sub Atari Knives-xLY6W6_NJI4]]></title>
-    <name><![CDATA[Sub Atari Knives - Sub Atari Knives-xLY6W6_NJI4]]></name>
-    <mime><![CDATA[video/webm]]></mime>
-    <resolution><![CDATA[1440x1080]]></resolution>
-    <size>8588758</size>
-    <time><![CDATA[268]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1251&uid=2&player=api&name=Sub%20Atari%20Knives%20-%20Sub%20Atari%20Knives-xLY6W6-NJI4.webm]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1251&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+    <size>20084777</size>
+    <time><![CDATA[193]]></time>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1&uid=4&player=api&name=SPACE%20%20%20Magic%20Fly%20-1977-%20-%20https-archive.org-details-SPACE-Magic-Fly-1977.mp4]]></url>
+    <art><![CDATA[https://music.com.au/image.php?object_id=1&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>

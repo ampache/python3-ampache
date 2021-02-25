@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>325612</total_count>
-  <song id="956">
-    <title><![CDATA[Come Cover Me]]></title>
-    <name><![CDATA[Come Cover Me]]></name>
-    <artist id="55"><![CDATA[Nightwish]]></artist>
-    <album id="94918"><![CDATA[Wishmaster]]></album>
-    <albumartist id="55"><![CDATA[Nightwish]]></albumartist>
+  <total_count>55</total_count>
+  <song id="54">
+    <title><![CDATA[Red&GreenSmoke]]></title>
+    <name><![CDATA[Red&GreenSmoke]]></name>
+    <artist id="2"><![CDATA[Synthetic]]></artist>
+    <album id="2"><![CDATA[Colorsmoke EP]]></album>
+    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>3</track>
-    <genre id="20"><![CDATA[Metal]]></genre>
-    <filename><![CDATA[/mnt/music/Nightwish/(2000) Wishmaster/103 - Come Cover Me.mp3]]></filename>
+    <track>5</track>
+    <genre id="1"><![CDATA[Electronic]]></genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3]]></filename>
     <playlisttrack>1</playlisttrack>
-    <time>274</time>
-    <year>2000</year>
-    <bitrate>260129</bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[vbr]]></mode>
+    <time>400</time>
+    <year>2007</year>
+    <bitrate>64000</bitrate>
+    <rate>22050</rate>
+    <mode><![CDATA[cbr]]></mode>
     <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=956&uid=2&player=api&name=Nightwish%20-%20Come%20Cover%20Me.mp3]]></url>
-    <size>9003198</size>
-    <mbid><![CDATA[39aaa2f7-383b-443e-8c31-534df2b55845]]></mbid>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
+    <size>3205738</size>
+    <mbid><![CDATA[]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=94918&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <artist_mbid><![CDATA[1]]></artist_mbid>
+    <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
     <averagerating/>
     <playcount>0</playcount>
-    <catalog>2</catalog>
-    <composer><![CDATA[Tuomas Holopainen]]></composer>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
     <channels/>
     <comment><![CDATA[]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[Drakkar Records]]></publisher>
-    <language>eng</language>
-    <replaygain_album_gain>0.000000</replaygain_album_gain>
-    <replaygain_album_peak>0.000000</replaygain_album_peak>
-    <replaygain_track_gain>-9.740000</replaygain_track_gain>
-    <replaygain_track_peak>1.000000</replaygain_track_peak>
+    <publisher><![CDATA[]]></publisher>
+    <language/>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

@@ -1,63 +1,50 @@
 {
     "song": [
         {
-            "id": "955505",
-            "title": "Hurt",
-            "name": "Hurt",
+            "id": "110",
+            "title": "I wanna walk through the fire",
+            "name": "I wanna walk through the fire",
             "artist": {
-                "id": "1081",
-                "name": "Mr.Kitty"
+                "id": "23",
+                "name": "Manic Notion"
             },
             "album": {
-                "id": "98156",
-                "name": "-+"
+                "id": "12",
+                "name": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "1081",
-                "name": "Mr.Kitty"
+                "id": "19",
+                "name": "Various Artists"
             },
             "disk": 1,
             "track": 1,
-            "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/101 - Hurt.flac",
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "7",
-                    "name": "Synthpop"
-                },
-                {
-                    "id": "48",
-                    "name": "New Wave"
-                }
-            ],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/01ManicNotion-IWannaWalkThroughTheFire.m4a",
+            "genre": [],
             "playlisttrack": 1,
-            "time": 273,
-            "year": 2020,
-            "bitrate": 930105,
+            "time": 197,
+            "year": 2012,
+            "bitrate": 267320,
             "rate": 44100,
             "mode": "vbr",
-            "mime": "audio\/x-flac",
-            "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=955505&uid=2&player=api&name=Mr.Kitty%20-%20Hurt.flac",
-            "size": 31767236,
-            "mbid": "21aecbf4-594a-4168-b298-7a831569e756",
+            "mime": "audio\/mp4",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.m4a",
+            "size": 6648489,
+            "mbid": "",
             "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=98156&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "playcount": 1,
-            "catalog": 2,
+            "playcount": 0,
+            "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
+            "comment": "",
             "license": null,
-            "publisher": "[no label]",
+            "publisher": "",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
@@ -67,63 +54,50 @@
             "r128_track_gain": null
         },
         {
-            "id": "955506",
-            "title": "Let Go",
-            "name": "Let Go",
+            "id": "114",
+            "title": "He is the Master of War",
+            "name": "He is the Master of War",
             "artist": {
-                "id": "1081",
-                "name": "Mr.Kitty"
+                "id": "26",
+                "name": "Stress Builds Character"
             },
             "album": {
-                "id": "98156",
-                "name": "-+"
+                "id": "12",
+                "name": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "1081",
-                "name": "Mr.Kitty"
+                "id": "19",
+                "name": "Various Artists"
             },
             "disk": 1,
             "track": 2,
-            "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/102 - Let Go.flac",
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "7",
-                    "name": "Synthpop"
-                },
-                {
-                    "id": "48",
-                    "name": "New Wave"
-                }
-            ],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a",
+            "genre": [],
             "playlisttrack": 2,
-            "time": 244,
-            "year": 2020,
-            "bitrate": 980624,
+            "time": 233,
+            "year": 2012,
+            "bitrate": 256245,
             "rate": 44100,
             "mode": "vbr",
-            "mime": "audio\/x-flac",
-            "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=955506&uid=2&player=api&name=Mr.Kitty%20-%20Let%20Go.flac",
-            "size": 29970961,
-            "mbid": "d28d089b-2c3e-41ac-b0f8-519aa938b2d1",
+            "mime": "audio\/mp4",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.m4a",
+            "size": 7531274,
+            "mbid": "",
             "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=98156&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "playcount": 1,
-            "catalog": 2,
+            "playcount": 0,
+            "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
+            "comment": "",
             "license": null,
-            "publisher": "[no label]",
+            "publisher": "",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
@@ -133,63 +107,50 @@
             "r128_track_gain": null
         },
         {
-            "id": "955507",
-            "title": "In Loving Memory",
-            "name": "In Loving Memory",
+            "id": "109",
+            "title": "Dance with the Devil",
+            "name": "Dance with the Devil",
             "artist": {
-                "id": "1081",
-                "name": "Mr.Kitty"
+                "id": "29",
+                "name": "Synthetic"
             },
             "album": {
-                "id": "98156",
-                "name": "-+"
+                "id": "12",
+                "name": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "1081",
-                "name": "Mr.Kitty"
+                "id": "19",
+                "name": "Various Artists"
             },
             "disk": 1,
             "track": 3,
-            "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/103 - In Loving Memory.flac",
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "7",
-                    "name": "Synthpop"
-                },
-                {
-                    "id": "48",
-                    "name": "New Wave"
-                }
-            ],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
+            "genre": [],
             "playlisttrack": 3,
-            "time": 234,
-            "year": 2020,
-            "bitrate": 1031864,
+            "time": 116,
+            "year": 2012,
+            "bitrate": 32582,
             "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/x-flac",
-            "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=955507&uid=2&player=api&name=Mr.Kitty%20-%20In%20Loving%20Memory.flac",
-            "size": 30268614,
-            "mbid": "08294ca5-5341-4d18-9928-97b510d616a6",
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Synthetic%20-%20Dance%20with%20the%20Devil.wma",
+            "size": 483444,
+            "mbid": "",
             "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=98156&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+            "artist_mbid": "3",
+            "albumartist_mbid": "",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 1,
-            "catalog": 2,
+            "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
+            "comment": "",
             "license": null,
-            "publisher": "[no label]",
+            "publisher": "",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
@@ -199,63 +160,50 @@
             "r128_track_gain": null
         },
         {
-            "id": "955508",
-            "title": "Everything Will Be Okay",
-            "name": "Everything Will Be Okay",
+            "id": "111",
+            "title": "The art of free expression",
+            "name": "The art of free expression",
             "artist": {
-                "id": "1081",
-                "name": "Mr.Kitty"
+                "id": "31",
+                "name": "Synthetic"
             },
             "album": {
-                "id": "98156",
-                "name": "-+"
+                "id": "12",
+                "name": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "1081",
-                "name": "Mr.Kitty"
+                "id": "19",
+                "name": "Various Artists"
             },
             "disk": 1,
-            "track": 4,
-            "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/104 - Everything Will Be Okay.flac",
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "7",
-                    "name": "Synthpop"
-                },
-                {
-                    "id": "48",
-                    "name": "New Wave"
-                }
-            ],
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/05Tip-c-TheArtOfFreeExpression.wma",
+            "genre": [],
             "playlisttrack": 4,
-            "time": 294,
-            "year": 2020,
-            "bitrate": 928342,
+            "time": 110,
+            "year": 2012,
+            "bitrate": 32582,
             "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/x-flac",
-            "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=955508&uid=2&player=api&name=Mr.Kitty%20-%20Everything%20Will%20Be%20Okay.flac",
-            "size": 34117022,
-            "mbid": "48c6d7f2-503a-4877-8e95-225ab55ebd20",
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&player=api&name=Synthetic%20-%20The%20art%20of%20free%20expression.wma",
+            "size": 460498,
+            "mbid": "",
             "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=98156&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+            "artist_mbid": "5",
+            "albumartist_mbid": "",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "playcount": 1,
-            "catalog": 2,
+            "playcount": 0,
+            "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
+            "comment": "",
             "license": null,
-            "publisher": "[no label]",
+            "publisher": "",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,

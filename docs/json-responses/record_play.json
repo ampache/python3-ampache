@@ -1,3 +1,8 @@
 {
-    "success": "successfully recorded play: 154925 for: generic"
+    "error": {
+        "errorCode": "4704",
+        "errorAction": "record_play",
+        "errorType": "id",
+        "errorMessage": "Not Found: 70"
+    }
 }

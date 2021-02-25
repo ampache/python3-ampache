@@ -1,37 +1,17 @@
 {
     "playlist": [
         {
-            "id": "2197",
-            "name": "17102-2",
-            "owner": "lachlan-00",
+            "id": "80",
+            "name": "documentation",
+            "owner": "user",
             "items": [
                 {
-                    "id": "8582",
+                    "id": "54",
                     "playlisttrack": 1
-                },
-                {
-                    "id": "8587",
-                    "playlisttrack": 2
-                },
-                {
-                    "id": "8583",
-                    "playlisttrack": 3
-                },
-                {
-                    "id": "963380",
-                    "playlisttrack": 4
-                },
-                {
-                    "id": "8586",
-                    "playlisttrack": 5
-                },
-                {
-                    "id": "8589",
-                    "playlisttrack": 6
                 }
             ],
-            "type": "private",
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=2197&object_type=playlist&auth=33fafad997299d0ebb8038e5a8e606e9",
+            "type": "public",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=80&object_type=playlist&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,

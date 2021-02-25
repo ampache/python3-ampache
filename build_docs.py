@@ -42,11 +42,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def stream(ampache_url, ampache_api, id, type, destination, api_format = 'xml'):
     def download(ampache_url, ampache_api, id, type, destination, format = 'raw', api_format = 'xml'):
     get_similar: send artist or song id to get related objects from last.fm
-    shares: get a list of shares you can access
-    share: get a share by id
-    share_create: create a share
-    share_edit: edit an existing share
-    share_delete: delete an existing share
     podcast_episode_delete: delete an existing podcast_episode
     catalogs: get all the catalogs
     catalog: get a catalog by id
@@ -59,10 +54,10 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     ampache.set_debug(True)
 
     # send a bad ping
-    ampache.ping(ampache_url, False, api_format)
+    ampache.ping(ampache_url, False, api_version, api_format)
     if os.path.isfile("docs/" + api_format + "-responses/ping." + api_format):
         shutil.move("docs/" + api_format + "-responses/ping." + api_format,
-                    "docs/" + api_format + "-responses/ping (No Auth)." + api_format)
+                    "docs/" + api_format + "-responses/ping (no auth)." + api_format)
 
     """ def encrypt_string(ampache_api, user)
         This function can be used to encrypt your apikey into the accepted format.
@@ -88,7 +83,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         This can be called without being authenticated, it is useful for determining if what the status
         of the server is, and what version it is running/compatible with
     """
-    my_ping = ampache.ping(ampache_url, ampache_session, api_format)
+    my_ping = ampache.ping(ampache_url, ampache_session, api_version, api_format)
     if not my_ping:
         print()
         sys.exit('ERROR: Failed to ping ' + ampache_url)
@@ -258,6 +253,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def album(ampache_url, ampache_api, filter, include = False, api_format = 'xml'):
     """
+    ampache.album(ampache_url, ampache_session, single_album, True, api_format)
+    if os.path.isfile("docs/" + api_format + "-responses/album." + api_format):
+        shutil.move("docs/" + api_format + "-responses/album." + api_format,
+                    "docs/" + api_format + "-responses/album (with include)." + api_format)
+
     album = ampache.album(ampache_url, ampache_session, single_album, False, api_format)
 
     if api_format == 'xml':
@@ -273,6 +273,11 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def albums(ampache_url, ampache_api, filter = False, exact = False, add = False, update = False, offset = 0, limit = 0, include = False, api_format = 'xml'):
     """
+    ampache.albums(ampache_url, ampache_session, album_title, 1, False, False, 0, 2, True, api_format)
+    if os.path.isfile("docs/" + api_format + "-responses/albums." + api_format):
+        shutil.move("docs/" + api_format + "-responses/albums." + api_format,
+                    "docs/" + api_format + "-responses/albums (with include)." + api_format)
+
     albums = ampache.albums(ampache_url, ampache_session, album_title, 1, False, False, 0, 10, False, api_format)
 
     """ def stats(ampache_url, ampache_api, type, filter = 'random', username = False, user_id = False, offset = 0, limit = 0, api_format = 'xml'):
@@ -313,6 +318,18 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def artist(ampache_url, ampache_api, filter, include = False, api_format = 'xml'):
     """
+    ampache.artist(ampache_url, ampache_session, single_artist, True, api_format)
+    if os.path.isfile("docs/" + api_format + "-responses/artist." + api_format):
+        shutil.move("docs/" + api_format + "-responses/artist." + api_format,
+                    "docs/" + api_format + "-responses/artist (with include songs,albums)." + api_format)
+    ampache.artist(ampache_url, ampache_session, single_artist, 'songs', api_format)
+    if os.path.isfile("docs/" + api_format + "-responses/artist." + api_format):
+        shutil.move("docs/" + api_format + "-responses/artist." + api_format,
+                    "docs/" + api_format + "-responses/artist (with include songs)." + api_format)
+    ampache.artist(ampache_url, ampache_session, single_artist, 'albums', api_format)
+    if os.path.isfile("docs/" + api_format + "-responses/artist." + api_format):
+        shutil.move("docs/" + api_format + "-responses/artist." + api_format,
+                    "docs/" + api_format + "-responses/artist (with include albums)." + api_format)
     artist = ampache.artist(ampache_url, ampache_session, single_artist, False, api_format)
 
     if api_format == 'xml':
@@ -330,6 +347,18 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def artists(ampache_url, ampache_api, filter = False, add = False, update = False, offset = 0, limit = 0, include = False, api_format = 'xml'):
     """
+    ampache.artists(ampache_url, ampache_session, False, False, False, offset, limit, True, api_format)
+    if os.path.isfile("docs/" + api_format + "-responses/artists." + api_format):
+        shutil.move("docs/" + api_format + "-responses/artists." + api_format,
+                    "docs/" + api_format + "-responses/artists (with include songs,albums)." + api_format)
+    ampache.artists(ampache_url, ampache_session, False, False, False, offset, limit, 'songs', api_format)
+    if os.path.isfile("docs/" + api_format + "-responses/artists." + api_format):
+        shutil.move("docs/" + api_format + "-responses/artists." + api_format,
+                    "docs/" + api_format + "-responses/artists (with include songs)." + api_format)
+    ampache.artists(ampache_url, ampache_session, False, False, False, offset, limit, 'albums', api_format)
+    if os.path.isfile("docs/" + api_format + "-responses/artists." + api_format):
+        shutil.move("docs/" + api_format + "-responses/artists." + api_format,
+                    "docs/" + api_format + "-responses/artists (with include albums)." + api_format)
     ampache.artists(ampache_url, ampache_session, False, False, False, offset, limit, False, api_format)
 
     """ def catalog_action(ampache_url, ampache_api, task, catalog, api_format = 'xml'):

@@ -1,132 +1,94 @@
 {
     "album": [
         {
-            "id": "98156",
-            "name": "-+",
+            "id": "12",
+            "name": "Buried in Nausea",
             "artist": {
-                "id": "1081",
-                "name": "Mr.Kitty"
-            },
-            "time": 0,
-            "year": 2020,
-            "tracks": [],
-            "songcount": 6,
-            "disk": 1,
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "7",
-                    "name": "Synthpop"
-                },
-                {
-                    "id": "48",
-                    "name": "New Wave"
-                }
-            ],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=98156&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "984aeded-cb31-495f-8a19-b38db868d4d6"
-        },
-        {
-            "id": "81350",
-            "name": "-2-",
-            "artist": {
-                "id": "292",
-                "name": "Vinterriket"
-            },
-            "time": 0,
-            "year": 2005,
-            "tracks": [],
-            "songcount": 8,
-            "disk": 1,
-            "genre": [
-                {
-                    "id": "46",
-                    "name": "Ambient"
-                }
-            ],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=81350&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "8844cfdc-4957-467b-ad70-d46e640d473e"
-        },
-        {
-            "id": "90265",
-            "name": "-273\u00b0C",
-            "artist": {
-                "id": "5696",
-                "name": "Newt"
-            },
-            "time": 0,
-            "year": 1997,
-            "tracks": [],
-            "songcount": 10,
-            "disk": 1,
-            "genre": [
-                {
-                    "id": "11",
-                    "name": "Techno"
-                },
-                {
-                    "id": "77",
-                    "name": "Experimental"
-                },
-                {
-                    "id": "84",
-                    "name": "IDM"
-                },
-                {
-                    "id": "1461",
-                    "name": "Drum N Bass"
-                }
-            ],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=90265&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "c6133aab-0f1b-415f-b3eb-c10a1e6f0765"
-        },
-        {
-            "id": "67900",
-            "name": ": Licht! :",
-            "artist": {
-                "id": "13647",
-                "name": "Leger des Heils"
+                "id": "19",
+                "name": "Various Artists"
             },
             "time": 0,
             "year": 2012,
             "tracks": [],
-            "songcount": 9,
+            "songcount": 7,
             "disk": 1,
             "genre": [
                 {
-                    "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "241",
-                    "name": "Neofolk"
-                },
-                {
-                    "id": "702",
-                    "name": "Modern Classical"
+                    "id": "7",
+                    "name": "Punk"
                 }
             ],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=67900&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": "773c657a-1046-4407-a655-5035de33bc92"
+            "mbid": null
+        },
+        {
+            "id": "10",
+            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "artist": {
+                "id": "16",
+                "name": "CARN\u00daN"
+            },
+            "time": 0,
+            "year": 1996,
+            "tracks": [],
+            "songcount": 9,
+            "disk": 1,
+            "genre": [],
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": null
+        },
+        {
+            "id": "2",
+            "name": "Colorsmoke EP",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "time": 0,
+            "year": 2007,
+            "tracks": [],
+            "songcount": 12,
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": 3,
+            "mbid": null
+        },
+        {
+            "id": "9",
+            "name": "Creeping Lawler 2",
+            "artist": {
+                "id": "15",
+                "name": "Warfare 3.0"
+            },
+            "time": 0,
+            "year": 0,
+            "tracks": [],
+            "songcount": 2,
+            "disk": 1,
+            "genre": [],
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": 3,
+            "rating": 3,
+            "averagerating": null,
+            "mbid": null
         }
     ]
 }

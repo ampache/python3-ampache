@@ -1,19 +1,8 @@
 {
-    "id": "67",
-    "name": "Trace",
-    "description": "\n            \n        Lawyer Nicola Gobbo represented some of Australia\u2019s most dangerous criminals, all the while secretly working as a police informer. Why did she do it, and how was it allowed to happen? For the first time, she tells the full story behind why she became an informer, and what happened when her double life was exposed to the world.\n            \n        ",
-    "language": "en-AU",
-    "copyright": "Copyright 2021, Australian Broadcasting Corporation. All Rights Reserved.",
-    "feed_url": "https:\/\/www.abc.net.au\/radio\/programs\/trace\/feed\/8597522\/podcast.xml",
-    "generator": "",
-    "website": "https:\/\/www.abc.net.au\/radio\/programs\/trace\/",
-    "build_date": "2020\/12\/17 00:01am",
-    "sync_date": "2021\/02\/23 04:18pm",
-    "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=67",
-    "art": "https:\/\/music.com.au\/image.php?object_id=67&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg?v=2",
-    "flag": 0,
-    "preciserating": null,
-    "rating": null,
-    "averagerating": "",
-    "podcast_episode": []
+    "error": {
+        "errorCode": "4710",
+        "errorAction": "podcast_create",
+        "errorType": "system",
+        "errorMessage": "Bad Request"
+    }
 }

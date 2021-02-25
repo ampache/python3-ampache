@@ -1,63 +1,27 @@
 {
     "artist": [
         {
-            "id": "40",
-            "name": "Jamiroquai",
+            "id": "13",
+            "name": "IOK-1",
             "albums": [],
-            "albumcount": 10,
+            "albumcount": 1,
             "songs": [],
-            "songcount": 100,
+            "songcount": 4,
             "genre": [
                 {
-                    "id": "3",
-                    "name": "Punk"
-                },
-                {
                     "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "6",
-                    "name": "Rock"
-                },
-                {
-                    "id": "11",
-                    "name": "Techno"
-                },
-                {
-                    "id": "18",
-                    "name": "Funk"
-                },
-                {
-                    "id": "22",
-                    "name": "Pop"
-                },
-                {
-                    "id": "23",
-                    "name": "Jazz"
-                },
-                {
-                    "id": "28",
-                    "name": "House"
-                },
-                {
-                    "id": "33",
-                    "name": "Alternative Rock"
-                },
-                {
-                    "id": "36",
-                    "name": "Indie Rock"
+                    "name": "Dark Ambient"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=40&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 1,
-            "preciserating": 5,
-            "rating": 5,
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=13&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
             "averagerating": null,
-            "mbid": "f4857fb9-e255-4dc6-bd01-e4ca7cc68544",
-            "summary": "\nJamiroquai is a funk\/acid jazz band which formed in London, England, United Kingdom in 1992. The band currently consists of Jason Luis 'Jay Kay' Cheetham  (vocals), Matt Johnson (keyboards), Rob Harris (guitar), Paul Turner (bass), Derrick McKenzie (drums) , Sola Akingbola (percussion), Lorraine McIntosh (backing vocals) and Hazel Fernandez (backing vocals). The name \"Jamiroquai\" is derived from the Native American Iroquois tribe, with which Kay has said he identifies philosophically, combined with 'Jam', as in musical jamming. ",
-            "time": 29904,
-            "yearformed": 1992,
+            "mbid": "",
+            "summary": "IOK-1 was a side project of Tarmskrap, but it became his main project. \nHe creates ambient, dark ambient, drone something.\n\nIOK-1 soundcloud \n \nHas released one 3\" cdr on Witte Dood Records called \"Rost\",  appears on Public Spaces Lab's Ceci n\u2019est pas une pipe and Public Spaces Lab's The Future Lab\n\nHe released a full length called \"Poems\" on Deersound. \nIt is limited to 10 copies, 4 discs, clocks in at just over five hours. ",
+            "time": 3428,
+            "yearformed": 0,
             "placeformed": ""
         }
     ]

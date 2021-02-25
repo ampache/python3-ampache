@@ -1,53 +1,29 @@
 {
     "album": [
         {
-            "id": "73836",
-            "name": "... De Los Valles y Las Monta\u00f1as",
+            "id": "2",
+            "name": "Colorsmoke EP",
             "artist": {
-                "id": "16949",
-                "name": "Bosques de mi Mente"
+                "id": "2",
+                "name": "Synthetic"
             },
             "time": 0,
-            "year": 2016,
+            "year": 2007,
             "tracks": [],
-            "songcount": 10,
+            "songcount": 12,
             "disk": 1,
             "genre": [
                 {
-                    "id": "4",
+                    "id": "1",
                     "name": "Electronic"
-                },
-                {
-                    "id": "46",
-                    "name": "Ambient"
-                },
-                {
-                    "id": "150",
-                    "name": "Classical"
-                },
-                {
-                    "id": "1263",
-                    "name": "Contemporary"
-                },
-                {
-                    "id": "1584",
-                    "name": "modern"
-                },
-                {
-                    "id": "1612",
-                    "name": "Neo-Classical"
-                },
-                {
-                    "id": "3179",
-                    "name": "Post-Modern"
                 }
             ],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=73836&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "3e775784-6e32-4433-9023-8711cff98df3"
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": 3,
+            "mbid": null
         }
     ]
 }

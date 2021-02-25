@@ -1,242 +1,228 @@
 {
     "song": [
         {
-            "id": "876287",
-            "title": "Dream of Him",
-            "name": "Dream of Him",
+            "id": "103",
+            "title": "In The Seven Woods (Instrumental Re-Recording)",
+            "name": "In The Seven Woods (Instrumental Re-Recording)",
             "artist": {
-                "id": "15241",
-                "name": "The Green Man"
+                "id": "16",
+                "name": "CARN\u00daN"
             },
             "album": {
-                "id": "95264",
-                "name": "The Teacher and the Man of Lie"
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)"
             },
             "albumartist": {
-                "id": "15241",
-                "name": "The Green Man"
+                "id": "16",
+                "name": "CARN\u00daN"
             },
             "disk": 1,
-            "track": 11,
-            "filename": "\/mnt\/music\/The Green Man\/(2007) The Teacher and the Man of Lie [HR! SPQR XII]\/111 - Dream of Him.mp3",
-            "genre": [
-                {
-                    "id": "144",
-                    "name": "Dark Folk"
-                }
-            ],
+            "track": 7,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
+            "genre": [],
             "playlisttrack": 1,
-            "time": 214,
-            "year": 2007,
-            "bitrate": 316400,
+            "time": 648,
+            "year": 1996,
+            "bitrate": 96000,
             "rate": 44100,
             "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=876287&uid=2&player=api&name=The%20Green%20Man%20-%20Dream%20of%20Him.mp3",
-            "size": 8524228,
-            "mbid": "f87baac0-34a5-498d-a077-19450e96f1b1",
+            "mime": "application\/ogg",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.ogg",
+            "size": 7780518,
+            "mbid": null,
             "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=95264&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 2,
+            "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "",
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com",
             "license": null,
-            "publisher": "Hau Ruck! SPQR",
+            "publisher": "",
             "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-7.350000",
-            "replaygain_track_peak": "1.000000",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "78355",
-            "title": "Between Us",
-            "name": "Between Us",
+            "id": "55",
+            "title": "Red&GreenSmoke",
+            "name": "Red&GreenSmoke",
             "artist": {
-                "id": "4232",
-                "name": "Adom9"
+                "id": "2",
+                "name": "Synthetic"
             },
             "album": {
-                "id": "15047",
-                "name": "Deluge"
+                "id": "2",
+                "name": "Colorsmoke EP"
             },
             "albumartist": {
-                "id": "4232",
-                "name": "Adom9"
+                "id": "2",
+                "name": "Synthetic"
             },
             "disk": 1,
             "track": 5,
-            "filename": "\/mnt\/music\/Adom9\/(2005) Deluge\/105 - Between Us.mp3",
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
             "genre": [
                 {
-                    "id": "7",
-                    "name": "Synthpop"
+                    "id": "1",
+                    "name": "Electronic"
                 }
             ],
             "playlisttrack": 2,
-            "time": 219,
-            "year": 2005,
-            "bitrate": 320000,
-            "rate": 44100,
+            "time": 400,
+            "year": 2007,
+            "bitrate": 64000,
+            "rate": 22050,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=78355&uid=2&player=api&name=Adom9%20-%20Between%20Us.mp3",
-            "size": 9043593,
-            "mbid": "51aca2fe-d570-48e2-9251-1c0e592f80d4",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+            "size": 3206156,
+            "mbid": null,
             "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=15047&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+            "artist_mbid": "1",
+            "albumartist_mbid": "1",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 1,
-            "catalog": 2,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "[no label]",
-            "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-7.810000",
-            "replaygain_track_peak": "0.977000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "894557",
-            "title": "You Don't Say",
-            "name": "You Don't Say",
-            "artist": {
-                "id": "16080",
-                "name": "Richard Thompson"
-            },
-            "album": {
-                "id": "71071",
-                "name": "Across a Crowded Room"
-            },
-            "albumartist": {
-                "id": "16080",
-                "name": "Richard Thompson"
-            },
-            "disk": 1,
-            "track": 2,
-            "filename": "\/mnt\/music\/Richard Thompson\/(1985) Across a Crowded Room\/102 - You Don't Say.mp3",
-            "genre": [
-                {
-                    "id": "1396",
-                    "name": "Folk Rock"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 216,
-            "year": 1985,
-            "bitrate": 320000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=894557&uid=2&player=api&name=Richard%20Thompson%20-%20You%20Don-t%20Say.mp3",
-            "size": 8647619,
-            "mbid": "f57e43d0-f167-4d0f-93ed-e32d2ce8ae01",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=71071&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 2,
+            "catalog": 1,
             "composer": "",
             "channels": null,
             "comment": "",
             "license": null,
             "publisher": "",
             "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-0.290000",
-            "replaygain_track_peak": "0.891000",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "138591",
-            "title": "The Curse of Millhaven",
-            "name": "The Curse of Millhaven",
+            "id": "104",
+            "title": "The Infernal Serpent",
+            "name": "The Infernal Serpent",
             "artist": {
-                "id": "5429",
-                "name": "Nick Cave & The Bad Seeds"
+                "id": "16",
+                "name": "CARN\u00daN"
             },
             "album": {
-                "id": "83698",
-                "name": "Murder Ballads"
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)"
             },
             "albumartist": {
-                "id": "5429",
-                "name": "Nick Cave & The Bad Seeds"
+                "id": "16",
+                "name": "CARN\u00daN"
             },
             "disk": 1,
-            "track": 6,
-            "filename": "\/mnt\/music\/Nick Cave & The Bad Seeds\/(1996) Murder Ballads [PCCY-00885]\/106 - The Curse of Millhaven.mp3",
-            "genre": [
-                {
-                    "id": "6",
-                    "name": "Rock"
-                },
-                {
-                    "id": "33",
-                    "name": "Alternative Rock"
-                },
-                {
-                    "id": "1396",
-                    "name": "Folk Rock"
-                }
-            ],
-            "playlisttrack": 4,
-            "time": 415,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/04TheInfernalSerpent.ogg",
+            "genre": [],
+            "playlisttrack": 3,
+            "time": 404,
             "year": 1996,
-            "bitrate": 320000,
+            "bitrate": 99043,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=138591&uid=2&player=api&name=Nick%20Cave%20-%20The%20Bad%20Seeds%20-%20The%20Curse%20of%20Millhaven.mp3",
-            "size": 25209920,
-            "mbid": "b16e1d0d-89f3-4957-9299-9b4044b25b5d",
+            "mode": "vbr",
+            "mime": "application\/ogg",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.ogg",
+            "size": 5034384,
+            "mbid": null,
             "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=83698&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 2,
-            "composer": "Nick Cave",
+            "catalog": 1,
+            "composer": "",
             "channels": null,
-            "comment": "",
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com",
             "license": null,
-            "publisher": "Mute",
+            "publisher": "",
             "language": "",
-            "replaygain_album_gain": "0.000000",
-            "replaygain_album_peak": "0.000000",
-            "replaygain_track_gain": "-7.730000",
-            "replaygain_track_peak": "1.000000",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "90",
+            "title": "Invo",
+            "name": "Invo",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found."
+            },
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found."
+            },
+            "disk": 1,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/01_Invo.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 47,
+            "year": 0,
+            "bitrate": 192000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&player=api&name=Nofi-found.%20-%20Invo.mp3",
+            "size": 1140687,
+            "mbid": null,
+            "album_mbid": null,
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": null,
+            "comment": "00000440 0000048C 0000348D 00002A4D 00009429 000066C1 00006367 0000777A 00005A82 00005A68",
+            "license": null,
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

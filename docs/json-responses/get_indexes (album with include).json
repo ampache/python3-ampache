@@ -1,2290 +1,1753 @@
 {
     "album": [
         {
-            "id": "98156",
-            "name": "-+",
+            "id": "12",
+            "name": "Buried in Nausea",
             "artist": {
-                "id": "1081",
-                "name": "Mr.Kitty"
-            },
-            "time": 0,
-            "year": 2020,
-            "tracks": [
-                {
-                    "id": "955505",
-                    "title": "Hurt",
-                    "name": "Hurt",
-                    "artist": {
-                        "id": "1081",
-                        "name": "Mr.Kitty"
-                    },
-                    "album": {
-                        "id": "98156",
-                        "name": "-+"
-                    },
-                    "albumartist": {
-                        "id": "1081",
-                        "name": "Mr.Kitty"
-                    },
-                    "disk": 1,
-                    "track": 1,
-                    "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/101 - Hurt.flac",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "7",
-                            "name": "Synthpop"
-                        },
-                        {
-                            "id": "48",
-                            "name": "New Wave"
-                        }
-                    ],
-                    "playlisttrack": 1,
-                    "time": 273,
-                    "year": 2020,
-                    "bitrate": 930105,
-                    "rate": 44100,
-                    "mode": "vbr",
-                    "mime": "audio\/x-flac",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=955505&uid=2&player=api&name=Mr.Kitty%20-%20Hurt.flac",
-                    "size": 31767236,
-                    "mbid": "21aecbf4-594a-4168-b298-7a831569e756",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=98156&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
-                    "license": null,
-                    "publisher": "[no label]",
-                    "language": "",
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": null,
-                    "replaygain_track_peak": null,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "955506",
-                    "title": "Let Go",
-                    "name": "Let Go",
-                    "artist": {
-                        "id": "1081",
-                        "name": "Mr.Kitty"
-                    },
-                    "album": {
-                        "id": "98156",
-                        "name": "-+"
-                    },
-                    "albumartist": {
-                        "id": "1081",
-                        "name": "Mr.Kitty"
-                    },
-                    "disk": 1,
-                    "track": 2,
-                    "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/102 - Let Go.flac",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "7",
-                            "name": "Synthpop"
-                        },
-                        {
-                            "id": "48",
-                            "name": "New Wave"
-                        }
-                    ],
-                    "playlisttrack": 2,
-                    "time": 244,
-                    "year": 2020,
-                    "bitrate": 980624,
-                    "rate": 44100,
-                    "mode": "vbr",
-                    "mime": "audio\/x-flac",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=955506&uid=2&player=api&name=Mr.Kitty%20-%20Let%20Go.flac",
-                    "size": 29970961,
-                    "mbid": "d28d089b-2c3e-41ac-b0f8-519aa938b2d1",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=98156&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
-                    "license": null,
-                    "publisher": "[no label]",
-                    "language": "",
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": null,
-                    "replaygain_track_peak": null,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "955507",
-                    "title": "In Loving Memory",
-                    "name": "In Loving Memory",
-                    "artist": {
-                        "id": "1081",
-                        "name": "Mr.Kitty"
-                    },
-                    "album": {
-                        "id": "98156",
-                        "name": "-+"
-                    },
-                    "albumartist": {
-                        "id": "1081",
-                        "name": "Mr.Kitty"
-                    },
-                    "disk": 1,
-                    "track": 3,
-                    "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/103 - In Loving Memory.flac",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "7",
-                            "name": "Synthpop"
-                        },
-                        {
-                            "id": "48",
-                            "name": "New Wave"
-                        }
-                    ],
-                    "playlisttrack": 3,
-                    "time": 234,
-                    "year": 2020,
-                    "bitrate": 1031864,
-                    "rate": 44100,
-                    "mode": "vbr",
-                    "mime": "audio\/x-flac",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=955507&uid=2&player=api&name=Mr.Kitty%20-%20In%20Loving%20Memory.flac",
-                    "size": 30268614,
-                    "mbid": "08294ca5-5341-4d18-9928-97b510d616a6",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=98156&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
-                    "license": null,
-                    "publisher": "[no label]",
-                    "language": "",
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": null,
-                    "replaygain_track_peak": null,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "955508",
-                    "title": "Everything Will Be Okay",
-                    "name": "Everything Will Be Okay",
-                    "artist": {
-                        "id": "1081",
-                        "name": "Mr.Kitty"
-                    },
-                    "album": {
-                        "id": "98156",
-                        "name": "-+"
-                    },
-                    "albumartist": {
-                        "id": "1081",
-                        "name": "Mr.Kitty"
-                    },
-                    "disk": 1,
-                    "track": 4,
-                    "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/104 - Everything Will Be Okay.flac",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "7",
-                            "name": "Synthpop"
-                        },
-                        {
-                            "id": "48",
-                            "name": "New Wave"
-                        }
-                    ],
-                    "playlisttrack": 4,
-                    "time": 294,
-                    "year": 2020,
-                    "bitrate": 928342,
-                    "rate": 44100,
-                    "mode": "vbr",
-                    "mime": "audio\/x-flac",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=955508&uid=2&player=api&name=Mr.Kitty%20-%20Everything%20Will%20Be%20Okay.flac",
-                    "size": 34117022,
-                    "mbid": "48c6d7f2-503a-4877-8e95-225ab55ebd20",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=98156&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
-                    "license": null,
-                    "publisher": "[no label]",
-                    "language": "",
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": null,
-                    "replaygain_track_peak": null,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "955509",
-                    "title": "The Glass Inside Your Skull",
-                    "name": "The Glass Inside Your Skull",
-                    "artist": {
-                        "id": "1081",
-                        "name": "Mr.Kitty"
-                    },
-                    "album": {
-                        "id": "98156",
-                        "name": "-+"
-                    },
-                    "albumartist": {
-                        "id": "1081",
-                        "name": "Mr.Kitty"
-                    },
-                    "disk": 1,
-                    "track": 5,
-                    "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/105 - The Glass Inside Your Skull.flac",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "7",
-                            "name": "Synthpop"
-                        },
-                        {
-                            "id": "48",
-                            "name": "New Wave"
-                        }
-                    ],
-                    "playlisttrack": 5,
-                    "time": 249,
-                    "year": 2020,
-                    "bitrate": 1014867,
-                    "rate": 44100,
-                    "mode": "vbr",
-                    "mime": "audio\/x-flac",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=955509&uid=2&player=api&name=Mr.Kitty%20-%20The%20Glass%20Inside%20Your%20Skull.flac",
-                    "size": 31664511,
-                    "mbid": "a6a6343c-eebb-42ff-962c-442cfe4957d9",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=98156&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
-                    "license": null,
-                    "publisher": "[no label]",
-                    "language": "",
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": null,
-                    "replaygain_track_peak": null,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "955510",
-                    "title": "The Rose Of Versailles",
-                    "name": "The Rose Of Versailles",
-                    "artist": {
-                        "id": "1081",
-                        "name": "Mr.Kitty"
-                    },
-                    "album": {
-                        "id": "98156",
-                        "name": "-+"
-                    },
-                    "albumartist": {
-                        "id": "1081",
-                        "name": "Mr.Kitty"
-                    },
-                    "disk": 1,
-                    "track": 6,
-                    "filename": "\/mnt\/music\/Mr.Kitty\/(2016) -+\/106 - The Rose Of Versailles.flac",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "7",
-                            "name": "Synthpop"
-                        },
-                        {
-                            "id": "48",
-                            "name": "New Wave"
-                        }
-                    ],
-                    "playlisttrack": 6,
-                    "time": 258,
-                    "year": 2020,
-                    "bitrate": 888887,
-                    "rate": 44100,
-                    "mode": "vbr",
-                    "mime": "audio\/x-flac",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=955510&uid=2&player=api&name=Mr.Kitty%20-%20The%20Rose%20Of%20Versailles.flac",
-                    "size": 28718426,
-                    "mbid": "ffd92cad-bc25-4985-bffa-a7e05ce10bf6",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=98156&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "Visit https:\/\/mrkittyngp.bandcamp.com",
-                    "license": null,
-                    "publisher": "[no label]",
-                    "language": "",
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": null,
-                    "replaygain_track_peak": null,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ],
-            "songcount": 6,
-            "disk": 1,
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "7",
-                    "name": "Synthpop"
-                },
-                {
-                    "id": "48",
-                    "name": "New Wave"
-                }
-            ],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=98156&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "984aeded-cb31-495f-8a19-b38db868d4d6"
-        },
-        {
-            "id": "81350",
-            "name": "-2-",
-            "artist": {
-                "id": "292",
-                "name": "Vinterriket"
-            },
-            "time": 0,
-            "year": 2005,
-            "tracks": [
-                {
-                    "id": "117828",
-                    "title": "Am brennenden n\u00f6rdlichen Firmament",
-                    "name": "Am brennenden n\u00f6rdlichen Firmament",
-                    "artist": {
-                        "id": "292",
-                        "name": "Vinterriket"
-                    },
-                    "album": {
-                        "id": "81350",
-                        "name": "-2-"
-                    },
-                    "albumartist": {
-                        "id": "292",
-                        "name": "Vinterriket"
-                    },
-                    "disk": 1,
-                    "track": 1,
-                    "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/101 - Vinterriket - Am brennenden n\u00f6rdlichen Firmament.mp3",
-                    "genre": [
-                        {
-                            "id": "46",
-                            "name": "Ambient"
-                        }
-                    ],
-                    "playlisttrack": 1,
-                    "time": 416,
-                    "year": 2005,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=117828&uid=2&player=api&name=Vinterriket%20-%20Am%20brennenden%20n-rdlichen%20Firmament.mp3",
-                    "size": 16774063,
-                    "mbid": "bbd5cb67-45da-4aeb-a0ce-cb609e494870",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=81350&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Drama Company",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-5.130000",
-                    "replaygain_track_peak": "1.000000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "117835",
-                    "title": "Stumme Winternacht",
-                    "name": "Stumme Winternacht",
-                    "artist": {
-                        "id": "292",
-                        "name": "Vinterriket"
-                    },
-                    "album": {
-                        "id": "81350",
-                        "name": "-2-"
-                    },
-                    "albumartist": {
-                        "id": "292",
-                        "name": "Vinterriket"
-                    },
-                    "disk": 1,
-                    "track": 2,
-                    "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/102 - Vinterriket - Stumme Winternacht.mp3",
-                    "genre": [
-                        {
-                            "id": "46",
-                            "name": "Ambient"
-                        }
-                    ],
-                    "playlisttrack": 2,
-                    "time": 390,
-                    "year": 2005,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=117835&uid=2&player=api&name=Vinterriket%20-%20Stumme%20Winternacht.mp3",
-                    "size": 15701936,
-                    "mbid": "4cfbc903-9c13-47b1-b307-a382052d54f0",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=81350&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Drama Company",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-2.980000",
-                    "replaygain_track_peak": "1.000000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "117832",
-                    "title": "Monde ewiger Verdammnis",
-                    "name": "Monde ewiger Verdammnis",
-                    "artist": {
-                        "id": "292",
-                        "name": "Vinterriket"
-                    },
-                    "album": {
-                        "id": "81350",
-                        "name": "-2-"
-                    },
-                    "albumartist": {
-                        "id": "292",
-                        "name": "Vinterriket"
-                    },
-                    "disk": 1,
-                    "track": 3,
-                    "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/103 - Vinterriket - Monde ewiger Verdammnis.mp3",
-                    "genre": [
-                        {
-                            "id": "46",
-                            "name": "Ambient"
-                        }
-                    ],
-                    "playlisttrack": 3,
-                    "time": 422,
-                    "year": 2005,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=117832&uid=2&player=api&name=Vinterriket%20-%20Monde%20ewiger%20Verdammnis.mp3",
-                    "size": 16999964,
-                    "mbid": "e8a6b633-5d43-430b-9c45-7c135d7490ac",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=81350&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Drama Company",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-1.990000",
-                    "replaygain_track_peak": "1.000000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "117829",
-                    "title": "Vom Echo der Melancholie",
-                    "name": "Vom Echo der Melancholie",
-                    "artist": {
-                        "id": "292",
-                        "name": "Vinterriket"
-                    },
-                    "album": {
-                        "id": "81350",
-                        "name": "-2-"
-                    },
-                    "albumartist": {
-                        "id": "292",
-                        "name": "Vinterriket"
-                    },
-                    "disk": 1,
-                    "track": 4,
-                    "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/104 - Vinterriket - Vom Echo der Melancholie.mp3",
-                    "genre": [
-                        {
-                            "id": "46",
-                            "name": "Ambient"
-                        }
-                    ],
-                    "playlisttrack": 4,
-                    "time": 411,
-                    "year": 2005,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=117829&uid=2&player=api&name=Vinterriket%20-%20Vom%20Echo%20der%20Melancholie.mp3",
-                    "size": 16553346,
-                    "mbid": "2d81225a-20fb-43c3-854b-dbfdddeb3a39",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=81350&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Drama Company",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "2.410000",
-                    "replaygain_track_peak": "1.000000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "117834",
-                    "title": "Der Tod Wuotans",
-                    "name": "Der Tod Wuotans",
-                    "artist": {
-                        "id": "292",
-                        "name": "Vinterriket"
-                    },
-                    "album": {
-                        "id": "81350",
-                        "name": "-2-"
-                    },
-                    "albumartist": {
-                        "id": "292",
-                        "name": "Vinterriket"
-                    },
-                    "disk": 1,
-                    "track": 5,
-                    "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/105 - Vinterriket - Der Tod Wuotans.mp3",
-                    "genre": [
-                        {
-                            "id": "46",
-                            "name": "Ambient"
-                        }
-                    ],
-                    "playlisttrack": 5,
-                    "time": 406,
-                    "year": 2005,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=117834&uid=2&player=api&name=Vinterriket%20-%20Der%20Tod%20Wuotans.mp3",
-                    "size": 16359054,
-                    "mbid": "4e477038-d7ec-41f0-bd87-e0aa62a02547",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=81350&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "Varg Vikernes",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Drama Company",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-3.330000",
-                    "replaygain_track_peak": "1.000000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "117831",
-                    "title": "Der Schrei des Blutes",
-                    "name": "Der Schrei des Blutes",
-                    "artist": {
-                        "id": "6600",
-                        "name": "Uruk-Hai"
-                    },
-                    "album": {
-                        "id": "81350",
-                        "name": "-2-"
-                    },
-                    "albumartist": {
-                        "id": "292",
-                        "name": "Vinterriket"
-                    },
-                    "disk": 1,
-                    "track": 6,
-                    "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/106 - Uruk-Hai - Der Schrei des Blutes.mp3",
-                    "genre": [
-                        {
-                            "id": "46",
-                            "name": "Ambient"
-                        }
-                    ],
-                    "playlisttrack": 6,
-                    "time": 686,
-                    "year": 2005,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=117831&uid=2&player=api&name=Uruk-Hai%20-%20Der%20Schrei%20des%20Blutes.mp3",
-                    "size": 27553504,
-                    "mbid": "2c3b4ba0-74ba-451a-b356-82d82a7fea90",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=81350&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Drama Company",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "0.760000",
-                    "replaygain_track_peak": "0.767000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "117830",
-                    "title": "Stahlzeit",
-                    "name": "Stahlzeit",
-                    "artist": {
-                        "id": "6600",
-                        "name": "Uruk-Hai"
-                    },
-                    "album": {
-                        "id": "81350",
-                        "name": "-2-"
-                    },
-                    "albumartist": {
-                        "id": "292",
-                        "name": "Vinterriket"
-                    },
-                    "disk": 1,
-                    "track": 7,
-                    "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/107 - Uruk-Hai - Stahlzeit.mp3",
-                    "genre": [
-                        {
-                            "id": "46",
-                            "name": "Ambient"
-                        }
-                    ],
-                    "playlisttrack": 7,
-                    "time": 1160,
-                    "year": 2005,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=117830&uid=2&player=api&name=Uruk-Hai%20-%20Stahlzeit.mp3",
-                    "size": 46553033,
-                    "mbid": "4d69e144-0edc-403b-9ddb-6c98ea488156",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=81350&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Drama Company",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "2.540000",
-                    "replaygain_track_peak": "0.759000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "117833",
-                    "title": "Hermo\u00f0r \u00e1 Helfer\u00f0",
-                    "name": "Hermo\u00f0r \u00e1 Helfer\u00f0",
-                    "artist": {
-                        "id": "6600",
-                        "name": "Uruk-Hai"
-                    },
-                    "album": {
-                        "id": "81350",
-                        "name": "-2-"
-                    },
-                    "albumartist": {
-                        "id": "292",
-                        "name": "Vinterriket"
-                    },
-                    "disk": 1,
-                    "track": 8,
-                    "filename": "\/mnt\/music\/Vinterriket _ Uruk-Hai\/(2005) -2- [[none]]\/108 - Uruk-Hai - Hermo\u00f0r \u00e1 Helfer\u00f0.mp3",
-                    "genre": [
-                        {
-                            "id": "46",
-                            "name": "Ambient"
-                        }
-                    ],
-                    "playlisttrack": 8,
-                    "time": 176,
-                    "year": 2005,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=117833&uid=2&player=api&name=Uruk-Hai%20-%20Hermo-r%20-%20Helfer-.mp3",
-                    "size": 7131737,
-                    "mbid": "981ada91-7a11-4134-a098-fb2e0889a03a",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=81350&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "Varg Vikernes",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Drama Company",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-5.280000",
-                    "replaygain_track_peak": "0.871000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ],
-            "songcount": 8,
-            "disk": 1,
-            "genre": [
-                {
-                    "id": "46",
-                    "name": "Ambient"
-                }
-            ],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=81350&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "8844cfdc-4957-467b-ad70-d46e640d473e"
-        },
-        {
-            "id": "90265",
-            "name": "-273\u00b0C",
-            "artist": {
-                "id": "5696",
-                "name": "Newt"
-            },
-            "time": 0,
-            "year": 1997,
-            "tracks": [
-                {
-                    "id": "90237",
-                    "title": "Motive One",
-                    "name": "Motive One",
-                    "artist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "album": {
-                        "id": "90265",
-                        "name": "-273\u00b0C"
-                    },
-                    "albumartist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "disk": 1,
-                    "track": 1,
-                    "filename": "\/mnt\/music\/Newt\/(1997) -273\u00b0C [21C.3002]\/101 - Motive One.mp3",
-                    "genre": [
-                        {
-                            "id": "11",
-                            "name": "Techno"
-                        },
-                        {
-                            "id": "77",
-                            "name": "Experimental"
-                        },
-                        {
-                            "id": "84",
-                            "name": "IDM"
-                        },
-                        {
-                            "id": "1461",
-                            "name": "Drum N Bass"
-                        }
-                    ],
-                    "playlisttrack": 1,
-                    "time": 440,
-                    "year": 1997,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=90237&uid=2&player=api&name=Newt%20-%20Motive%20One.mp3",
-                    "size": 17697344,
-                    "mbid": "c5de1e2c-56ab-470d-bf44-9beae825d24c",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=90265&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Quantum Loop",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-0.090000",
-                    "replaygain_track_peak": "1.000000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "90235",
-                    "title": "Hull Break",
-                    "name": "Hull Break",
-                    "artist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "album": {
-                        "id": "90265",
-                        "name": "-273\u00b0C"
-                    },
-                    "albumartist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "disk": 1,
-                    "track": 2,
-                    "filename": "\/mnt\/music\/Newt\/(1997) -273\u00b0C [21C.3002]\/102 - Hull Break.mp3",
-                    "genre": [
-                        {
-                            "id": "11",
-                            "name": "Techno"
-                        },
-                        {
-                            "id": "77",
-                            "name": "Experimental"
-                        },
-                        {
-                            "id": "84",
-                            "name": "IDM"
-                        },
-                        {
-                            "id": "1461",
-                            "name": "Drum N Bass"
-                        }
-                    ],
-                    "playlisttrack": 2,
-                    "time": 389,
-                    "year": 1997,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=90235&uid=2&player=api&name=Newt%20-%20Hull%20Break.mp3",
-                    "size": 15658748,
-                    "mbid": "d9f97ee7-833c-4bbc-bf96-61a9aad91719",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=90265&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Quantum Loop",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-1.760000",
-                    "replaygain_track_peak": "0.989000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "90238",
-                    "title": "Ostad-Revisited",
-                    "name": "Ostad-Revisited",
-                    "artist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "album": {
-                        "id": "90265",
-                        "name": "-273\u00b0C"
-                    },
-                    "albumartist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "disk": 1,
-                    "track": 3,
-                    "filename": "\/mnt\/music\/Newt\/(1997) -273\u00b0C [21C.3002]\/103 - Ostad-Revisited.mp3",
-                    "genre": [
-                        {
-                            "id": "11",
-                            "name": "Techno"
-                        },
-                        {
-                            "id": "77",
-                            "name": "Experimental"
-                        },
-                        {
-                            "id": "84",
-                            "name": "IDM"
-                        },
-                        {
-                            "id": "1461",
-                            "name": "Drum N Bass"
-                        }
-                    ],
-                    "playlisttrack": 3,
-                    "time": 494,
-                    "year": 1997,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=90238&uid=2&player=api&name=Newt%20-%20Ostad-Revisited.mp3",
-                    "size": 19827890,
-                    "mbid": "2cd71ffe-2d1c-4b6b-bb87-a01ea7904673",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=90265&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Quantum Loop",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-3.670000",
-                    "replaygain_track_peak": "0.989000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "90234",
-                    "title": "Testone",
-                    "name": "Testone",
-                    "artist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "album": {
-                        "id": "90265",
-                        "name": "-273\u00b0C"
-                    },
-                    "albumartist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "disk": 1,
-                    "track": 4,
-                    "filename": "\/mnt\/music\/Newt\/(1997) -273\u00b0C [21C.3002]\/104 - Testone.mp3",
-                    "genre": [
-                        {
-                            "id": "11",
-                            "name": "Techno"
-                        },
-                        {
-                            "id": "77",
-                            "name": "Experimental"
-                        },
-                        {
-                            "id": "84",
-                            "name": "IDM"
-                        },
-                        {
-                            "id": "1461",
-                            "name": "Drum N Bass"
-                        }
-                    ],
-                    "playlisttrack": 4,
-                    "time": 331,
-                    "year": 1997,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=90234&uid=2&player=api&name=Newt%20-%20Testone.mp3",
-                    "size": 13304593,
-                    "mbid": "67768c17-e28d-4024-87a0-da6dab6e830b",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=90265&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Quantum Loop",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "1.000000",
-                    "replaygain_track_peak": "1.000000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "90236",
-                    "title": "-273\u00b0C vs. +37\u00b0C",
-                    "name": "-273\u00b0C vs. +37\u00b0C",
-                    "artist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "album": {
-                        "id": "90265",
-                        "name": "-273\u00b0C"
-                    },
-                    "albumartist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "disk": 1,
-                    "track": 5,
-                    "filename": "\/mnt\/music\/Newt\/(1997) -273\u00b0C [21C.3002]\/105 - -273\u00b0C vs. +37\u00b0C.mp3",
-                    "genre": [
-                        {
-                            "id": "11",
-                            "name": "Techno"
-                        },
-                        {
-                            "id": "77",
-                            "name": "Experimental"
-                        },
-                        {
-                            "id": "84",
-                            "name": "IDM"
-                        },
-                        {
-                            "id": "1461",
-                            "name": "Drum N Bass"
-                        }
-                    ],
-                    "playlisttrack": 5,
-                    "time": 417,
-                    "year": 1997,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=90236&uid=2&player=api&name=Newt%20-%20-273-C%20vs.%20-37-C.mp3",
-                    "size": 16745442,
-                    "mbid": "14cde0f0-31a8-467a-8122-a4ede8fee8ed",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=90265&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Quantum Loop",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-0.220000",
-                    "replaygain_track_peak": "1.000000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "90229",
-                    "title": "Motive Two",
-                    "name": "Motive Two",
-                    "artist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "album": {
-                        "id": "90265",
-                        "name": "-273\u00b0C"
-                    },
-                    "albumartist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "disk": 1,
-                    "track": 6,
-                    "filename": "\/mnt\/music\/Newt\/(1997) -273\u00b0C [21C.3002]\/106 - Motive Two.mp3",
-                    "genre": [
-                        {
-                            "id": "11",
-                            "name": "Techno"
-                        },
-                        {
-                            "id": "77",
-                            "name": "Experimental"
-                        },
-                        {
-                            "id": "84",
-                            "name": "IDM"
-                        },
-                        {
-                            "id": "1461",
-                            "name": "Drum N Bass"
-                        }
-                    ],
-                    "playlisttrack": 6,
-                    "time": 158,
-                    "year": 1997,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=90229&uid=2&player=api&name=Newt%20-%20Motive%20Two.mp3",
-                    "size": 6415580,
-                    "mbid": "f4f1d11f-6a08-426b-b2ed-448da97f9207",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=90265&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Quantum Loop",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-1.120000",
-                    "replaygain_track_peak": "0.989000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "90231",
-                    "title": "Abyss",
-                    "name": "Abyss",
-                    "artist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "album": {
-                        "id": "90265",
-                        "name": "-273\u00b0C"
-                    },
-                    "albumartist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "disk": 1,
-                    "track": 7,
-                    "filename": "\/mnt\/music\/Newt\/(1997) -273\u00b0C [21C.3002]\/107 - Abyss.mp3",
-                    "genre": [
-                        {
-                            "id": "11",
-                            "name": "Techno"
-                        },
-                        {
-                            "id": "77",
-                            "name": "Experimental"
-                        },
-                        {
-                            "id": "84",
-                            "name": "IDM"
-                        },
-                        {
-                            "id": "1461",
-                            "name": "Drum N Bass"
-                        }
-                    ],
-                    "playlisttrack": 7,
-                    "time": 413,
-                    "year": 1997,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=90231&uid=2&player=api&name=Newt%20-%20Abyss.mp3",
-                    "size": 16614829,
-                    "mbid": "a45f3aac-f618-4a00-87ea-2dfb80149aa8",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=90265&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Quantum Loop",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "1.630000",
-                    "replaygain_track_peak": "1.000000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "90232",
-                    "title": "Phasenverschiebung",
-                    "name": "Phasenverschiebung",
-                    "artist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "album": {
-                        "id": "90265",
-                        "name": "-273\u00b0C"
-                    },
-                    "albumartist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "disk": 1,
-                    "track": 8,
-                    "filename": "\/mnt\/music\/Newt\/(1997) -273\u00b0C [21C.3002]\/108 - Phasenverschiebung.mp3",
-                    "genre": [
-                        {
-                            "id": "11",
-                            "name": "Techno"
-                        },
-                        {
-                            "id": "77",
-                            "name": "Experimental"
-                        },
-                        {
-                            "id": "84",
-                            "name": "IDM"
-                        },
-                        {
-                            "id": "1461",
-                            "name": "Drum N Bass"
-                        }
-                    ],
-                    "playlisttrack": 8,
-                    "time": 413,
-                    "year": 1997,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=90232&uid=2&player=api&name=Newt%20-%20Phasenverschiebung.mp3",
-                    "size": 16584527,
-                    "mbid": "6940dbd6-247b-423e-9bef-9dedbcc7c46e",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=90265&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Quantum Loop",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-4.520000",
-                    "replaygain_track_peak": "1.000000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "90233",
-                    "title": "Ostad",
-                    "name": "Ostad",
-                    "artist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "album": {
-                        "id": "90265",
-                        "name": "-273\u00b0C"
-                    },
-                    "albumartist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "disk": 1,
-                    "track": 9,
-                    "filename": "\/mnt\/music\/Newt\/(1997) -273\u00b0C [21C.3002]\/109 - Ostad.mp3",
-                    "genre": [
-                        {
-                            "id": "11",
-                            "name": "Techno"
-                        },
-                        {
-                            "id": "77",
-                            "name": "Experimental"
-                        },
-                        {
-                            "id": "84",
-                            "name": "IDM"
-                        },
-                        {
-                            "id": "1461",
-                            "name": "Drum N Bass"
-                        }
-                    ],
-                    "playlisttrack": 9,
-                    "time": 431,
-                    "year": 1997,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=90233&uid=2&player=api&name=Newt%20-%20Ostad.mp3",
-                    "size": 17327450,
-                    "mbid": "904e6b9a-8bee-4cd8-81e0-6104db1e2d04",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=90265&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Quantum Loop",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-2.240000",
-                    "replaygain_track_peak": "1.000000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "90230",
-                    "title": "White Sun",
-                    "name": "White Sun",
-                    "artist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "album": {
-                        "id": "90265",
-                        "name": "-273\u00b0C"
-                    },
-                    "albumartist": {
-                        "id": "5696",
-                        "name": "Newt"
-                    },
-                    "disk": 1,
-                    "track": 10,
-                    "filename": "\/mnt\/music\/Newt\/(1997) -273\u00b0C [21C.3002]\/110 - White Sun.mp3",
-                    "genre": [
-                        {
-                            "id": "11",
-                            "name": "Techno"
-                        },
-                        {
-                            "id": "77",
-                            "name": "Experimental"
-                        },
-                        {
-                            "id": "84",
-                            "name": "IDM"
-                        },
-                        {
-                            "id": "1461",
-                            "name": "Drum N Bass"
-                        }
-                    ],
-                    "playlisttrack": 10,
-                    "time": 336,
-                    "year": 1997,
-                    "bitrate": 320000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=90230&uid=2&player=api&name=Newt%20-%20White%20Sun.mp3",
-                    "size": 13520886,
-                    "mbid": "1d467bb0-b149-4925-bf62-b2455b7aa7de",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=90265&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Quantum Loop",
-                    "language": "",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-6.200000",
-                    "replaygain_track_peak": "1.000000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ],
-            "songcount": 10,
-            "disk": 1,
-            "genre": [
-                {
-                    "id": "11",
-                    "name": "Techno"
-                },
-                {
-                    "id": "77",
-                    "name": "Experimental"
-                },
-                {
-                    "id": "84",
-                    "name": "IDM"
-                },
-                {
-                    "id": "1461",
-                    "name": "Drum N Bass"
-                }
-            ],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=90265&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "c6133aab-0f1b-415f-b3eb-c10a1e6f0765"
-        },
-        {
-            "id": "67900",
-            "name": ": Licht! :",
-            "artist": {
-                "id": "13647",
-                "name": "Leger des Heils"
+                "id": "19",
+                "name": "Various Artists"
             },
             "time": 0,
             "year": 2012,
             "tracks": [
                 {
-                    "id": "865386",
-                    "title": "Klang Der Freiheit I",
-                    "name": "Klang Der Freiheit I",
+                    "id": "110",
+                    "title": "I wanna walk through the fire",
+                    "name": "I wanna walk through the fire",
                     "artist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "23",
+                        "name": "Manic Notion"
                     },
                     "album": {
-                        "id": "67900",
-                        "name": ": Licht! :"
+                        "id": "12",
+                        "name": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "19",
+                        "name": "Various Artists"
                     },
                     "disk": 1,
                     "track": 1,
-                    "filename": "\/mnt\/music\/Leger des Heils\/(2012) _ Licht! _ [ARIS I]\/101 - Klang Der Freiheit I.mp3",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "241",
-                            "name": "Neofolk"
-                        },
-                        {
-                            "id": "702",
-                            "name": "Modern Classical"
-                        }
-                    ],
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/01ManicNotion-IWannaWalkThroughTheFire.m4a",
+                    "genre": [],
                     "playlisttrack": 1,
-                    "time": 140,
+                    "time": 197,
                     "year": 2012,
-                    "bitrate": 214823,
+                    "bitrate": 267320,
                     "rate": 44100,
                     "mode": "vbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=865386&uid=2&player=api&name=Leger%20des%20Heils%20-%20Klang%20Der%20Freiheit%20I.mp3",
-                    "size": 3771085,
-                    "mbid": "7abda18c-8de5-406d-aca9-0daa50c6e441",
+                    "mime": "audio\/mp4",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.m4a",
+                    "size": 6648489,
+                    "mbid": "",
                     "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=67900&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
                     "flag": 0,
                     "preciserating": null,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
-                    "catalog": 2,
+                    "catalog": 1,
                     "composer": "",
                     "channels": null,
                     "comment": "",
                     "license": null,
-                    "publisher": "Aristae",
-                    "language": "English",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "1.330000",
-                    "replaygain_track_peak": "0.724000",
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
                     "r128_album_gain": null,
                     "r128_track_gain": null
                 },
                 {
-                    "id": "865392",
-                    "title": "Geweihtes Land",
-                    "name": "Geweihtes Land",
+                    "id": "114",
+                    "title": "He is the Master of War",
+                    "name": "He is the Master of War",
                     "artist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "26",
+                        "name": "Stress Builds Character"
                     },
                     "album": {
-                        "id": "67900",
-                        "name": ": Licht! :"
+                        "id": "12",
+                        "name": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "19",
+                        "name": "Various Artists"
                     },
                     "disk": 1,
                     "track": 2,
-                    "filename": "\/mnt\/music\/Leger des Heils\/(2012) _ Licht! _ [ARIS I]\/102 - Geweihtes Land.mp3",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "241",
-                            "name": "Neofolk"
-                        },
-                        {
-                            "id": "702",
-                            "name": "Modern Classical"
-                        }
-                    ],
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a",
+                    "genre": [],
                     "playlisttrack": 2,
-                    "time": 272,
+                    "time": 233,
                     "year": 2012,
-                    "bitrate": 231072,
+                    "bitrate": 256245,
                     "rate": 44100,
                     "mode": "vbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=865392&uid=2&player=api&name=Leger%20des%20Heils%20-%20Geweihtes%20Land.mp3",
-                    "size": 7862587,
-                    "mbid": "9f730d69-e959-460b-9d0b-658f5b25e95c",
+                    "mime": "audio\/mp4",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.m4a",
+                    "size": 7531274,
+                    "mbid": "",
                     "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=67900&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
                     "flag": 0,
                     "preciserating": null,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
-                    "catalog": 2,
+                    "catalog": 1,
                     "composer": "",
                     "channels": null,
                     "comment": "",
                     "license": null,
-                    "publisher": "Aristae",
-                    "language": "English",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-1.760000",
-                    "replaygain_track_peak": "0.871000",
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
                     "r128_album_gain": null,
                     "r128_track_gain": null
                 },
                 {
-                    "id": "865389",
-                    "title": "Peaceful Hours",
-                    "name": "Peaceful Hours",
+                    "id": "109",
+                    "title": "Dance with the Devil",
+                    "name": "Dance with the Devil",
                     "artist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "29",
+                        "name": "Synthetic"
                     },
                     "album": {
-                        "id": "67900",
-                        "name": ": Licht! :"
+                        "id": "12",
+                        "name": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "19",
+                        "name": "Various Artists"
                     },
                     "disk": 1,
                     "track": 3,
-                    "filename": "\/mnt\/music\/Leger des Heils\/(2012) _ Licht! _ [ARIS I]\/103 - Peaceful Hours.mp3",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "241",
-                            "name": "Neofolk"
-                        },
-                        {
-                            "id": "702",
-                            "name": "Modern Classical"
-                        }
-                    ],
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
+                    "genre": [],
                     "playlisttrack": 3,
-                    "time": 137,
+                    "time": 116,
                     "year": 2012,
-                    "bitrate": 218429,
+                    "bitrate": 32582,
                     "rate": 44100,
-                    "mode": "vbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=865389&uid=2&player=api&name=Leger%20des%20Heils%20-%20Peaceful%20Hours.mp3",
-                    "size": 3755859,
-                    "mbid": "b31b5599-827f-4d86-b817-d7d53a14edc9",
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Synthetic%20-%20Dance%20with%20the%20Devil.wma",
+                    "size": 483444,
+                    "mbid": "",
                     "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=67900&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "artist_mbid": "3",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
                     "flag": 0,
                     "preciserating": null,
                     "rating": null,
                     "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
+                    "playcount": 1,
+                    "catalog": 1,
                     "composer": "",
                     "channels": null,
                     "comment": "",
                     "license": null,
-                    "publisher": "Aristae",
-                    "language": "English",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-1.980000",
-                    "replaygain_track_peak": "0.684000",
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
                     "r128_album_gain": null,
                     "r128_track_gain": null
                 },
                 {
-                    "id": "865387",
-                    "title": "Stirb Und Werde",
-                    "name": "Stirb Und Werde",
+                    "id": "111",
+                    "title": "The art of free expression",
+                    "name": "The art of free expression",
                     "artist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "31",
+                        "name": "Synthetic"
                     },
                     "album": {
-                        "id": "67900",
-                        "name": ": Licht! :"
+                        "id": "12",
+                        "name": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
-                    },
-                    "disk": 1,
-                    "track": 4,
-                    "filename": "\/mnt\/music\/Leger des Heils\/(2012) _ Licht! _ [ARIS I]\/104 - Stirb Und Werde.mp3",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "241",
-                            "name": "Neofolk"
-                        },
-                        {
-                            "id": "702",
-                            "name": "Modern Classical"
-                        }
-                    ],
-                    "playlisttrack": 4,
-                    "time": 356,
-                    "year": 2012,
-                    "bitrate": 224674,
-                    "rate": 44100,
-                    "mode": "vbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=865387&uid=2&player=api&name=Leger%20des%20Heils%20-%20Stirb%20Und%20Werde.mp3",
-                    "size": 10020510,
-                    "mbid": "150fe148-065d-4972-9178-737563c25a50",
-                    "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=67900&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
-                    "flag": 0,
-                    "preciserating": null,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 2,
-                    "composer": "",
-                    "channels": null,
-                    "comment": "",
-                    "license": null,
-                    "publisher": "Aristae",
-                    "language": "English",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-0.450000",
-                    "replaygain_track_peak": "0.813000",
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                },
-                {
-                    "id": "865393",
-                    "title": "Sacrum",
-                    "name": "Sacrum",
-                    "artist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
-                    },
-                    "album": {
-                        "id": "67900",
-                        "name": ": Licht! :"
-                    },
-                    "albumartist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "19",
+                        "name": "Various Artists"
                     },
                     "disk": 1,
                     "track": 5,
-                    "filename": "\/mnt\/music\/Leger des Heils\/(2012) _ Licht! _ [ARIS I]\/105 - Sacrum.mp3",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "241",
-                            "name": "Neofolk"
-                        },
-                        {
-                            "id": "702",
-                            "name": "Modern Classical"
-                        }
-                    ],
-                    "playlisttrack": 5,
-                    "time": 235,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/05Tip-c-TheArtOfFreeExpression.wma",
+                    "genre": [],
+                    "playlisttrack": 4,
+                    "time": 110,
                     "year": 2012,
-                    "bitrate": 230399,
+                    "bitrate": 32582,
                     "rate": 44100,
-                    "mode": "vbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=865393&uid=2&player=api&name=Leger%20des%20Heils%20-%20Sacrum.mp3",
-                    "size": 6775139,
-                    "mbid": "09c3bf7f-7443-4996-862f-ce842110ec50",
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&player=api&name=Synthetic%20-%20The%20art%20of%20free%20expression.wma",
+                    "size": 460498,
+                    "mbid": "",
                     "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=67900&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "artist_mbid": "5",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
                     "flag": 0,
                     "preciserating": null,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
-                    "catalog": 2,
+                    "catalog": 1,
                     "composer": "",
                     "channels": null,
                     "comment": "",
                     "license": null,
-                    "publisher": "Aristae",
-                    "language": "English",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-1.640000",
-                    "replaygain_track_peak": "0.457000",
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
                     "r128_album_gain": null,
                     "r128_track_gain": null
                 },
                 {
-                    "id": "865390",
-                    "title": "Zeitenwende",
-                    "name": "Zeitenwende",
+                    "id": "108",
+                    "title": "I've been down this road before",
+                    "name": "I've been down this road before",
                     "artist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "21",
+                        "name": "Tip-C (featuring Mike Beers)"
                     },
                     "album": {
-                        "id": "67900",
-                        "name": ": Licht! :"
+                        "id": "12",
+                        "name": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "19",
+                        "name": "Various Artists"
                     },
                     "disk": 1,
                     "track": 6,
-                    "filename": "\/mnt\/music\/Leger des Heils\/(2012) _ Licht! _ [ARIS I]\/106 - Zeitenwende.mp3",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "241",
-                            "name": "Neofolk"
-                        },
-                        {
-                            "id": "702",
-                            "name": "Modern Classical"
-                        }
-                    ],
-                    "playlisttrack": 6,
-                    "time": 228,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
+                    "genre": [],
+                    "playlisttrack": 5,
+                    "time": 252,
                     "year": 2012,
-                    "bitrate": 229680,
+                    "bitrate": 32582,
                     "rate": 44100,
-                    "mode": "vbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=865390&uid=2&player=api&name=Leger%20des%20Heils%20-%20Zeitenwende.mp3",
-                    "size": 6563536,
-                    "mbid": "b8b378f9-d851-4cde-8da3-761e3c4d29e5",
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.wma",
+                    "size": 1035322,
+                    "mbid": null,
                     "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=67900&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "artist_mbid": "6",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
                     "flag": 0,
                     "preciserating": null,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
-                    "catalog": 2,
+                    "catalog": 1,
                     "composer": "",
                     "channels": null,
                     "comment": "",
                     "license": null,
-                    "publisher": "Aristae",
-                    "language": "English",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-1.780000",
-                    "replaygain_track_peak": "0.832000",
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
                     "r128_album_gain": null,
                     "r128_track_gain": null
                 },
                 {
-                    "id": "865391",
-                    "title": "Solitude",
-                    "name": "Solitude",
+                    "id": "115",
+                    "title": "Are we going Crazy",
+                    "name": "Are we going Crazy",
                     "artist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "27",
+                        "name": "Chi.Otic"
                     },
                     "album": {
-                        "id": "67900",
-                        "name": ": Licht! :"
+                        "id": "12",
+                        "name": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "19",
+                        "name": "Various Artists"
                     },
                     "disk": 1,
                     "track": 7,
-                    "filename": "\/mnt\/music\/Leger des Heils\/(2012) _ Licht! _ [ARIS I]\/107 - Solitude.mp3",
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
+                    "genre": [],
+                    "playlisttrack": 6,
+                    "time": 433,
+                    "year": 2012,
+                    "bitrate": 32582,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.wma",
+                    "size": 1776580,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "7",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "107",
+                    "title": "Arrest Me",
+                    "name": "Arrest Me",
+                    "artist": {
+                        "id": "20",
+                        "name": "R\/B"
+                    },
+                    "album": {
+                        "id": "12",
+                        "name": "Buried in Nausea"
+                    },
+                    "albumartist": {
+                        "id": "19",
+                        "name": "Various Artists"
+                    },
+                    "disk": 1,
+                    "track": 10,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/09R_b-ArrestMe.m4a",
                     "genre": [
                         {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "241",
-                            "name": "Neofolk"
-                        },
-                        {
-                            "id": "702",
-                            "name": "Modern Classical"
+                            "id": "7",
+                            "name": "Punk"
                         }
                     ],
                     "playlisttrack": 7,
-                    "time": 433,
+                    "time": 96,
                     "year": 2012,
-                    "bitrate": 220655,
+                    "bitrate": 252864,
                     "rate": 44100,
                     "mode": "vbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=865391&uid=2&player=api&name=Leger%20des%20Heils%20-%20Solitude.mp3",
-                    "size": 11948068,
-                    "mbid": "3aebb888-c1a7-4228-b9b2-5682013a664f",
+                    "mime": "audio\/mp4",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a",
+                    "size": 3089501,
+                    "mbid": "",
                     "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=67900&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
                     "flag": 0,
                     "preciserating": null,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
-                    "catalog": 2,
+                    "catalog": 1,
                     "composer": "",
                     "channels": null,
                     "comment": "",
                     "license": null,
-                    "publisher": "Aristae",
-                    "language": "English",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "0.250000",
-                    "replaygain_track_peak": "1.000000",
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
+            "songcount": 7,
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "7",
+                    "name": "Punk"
+                }
+            ],
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": null
+        },
+        {
+            "id": "10",
+            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "artist": {
+                "id": "16",
+                "name": "CARN\u00daN"
+            },
+            "time": 0,
+            "year": 1996,
+            "tracks": [
+                {
+                    "id": "106",
+                    "title": "Malkuth - Intro",
+                    "name": "Malkuth - Intro",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/01Intro.ogg",
+                    "genre": [],
+                    "playlisttrack": 1,
+                    "time": 76,
+                    "year": 1996,
+                    "bitrate": 96000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.ogg",
+                    "size": 923291,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
                     "r128_album_gain": null,
                     "r128_track_gain": null
                 },
                 {
-                    "id": "865388",
-                    "title": "Adieu!",
-                    "name": "Adieu!",
+                    "id": "100",
+                    "title": "The Prophecies Of The Horned One",
+                    "name": "The Prophecies Of The Horned One",
                     "artist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "16",
+                        "name": "CARN\u00daN"
                     },
                     "album": {
-                        "id": "67900",
-                        "name": ": Licht! :"
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)"
                     },
                     "albumartist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "track": 2,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/02ThePropheciesOfTheHornedOne.ogg",
+                    "genre": [],
+                    "playlisttrack": 2,
+                    "time": 378,
+                    "year": 1996,
+                    "bitrate": 88847,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.ogg",
+                    "size": 4237971,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "98",
+                    "title": "In The Seven Woods",
+                    "name": "In The Seven Woods",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "track": 3,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/03InTheSevenWoods.ogg",
+                    "genre": [],
+                    "playlisttrack": 3,
+                    "time": 420,
+                    "year": 1996,
+                    "bitrate": 83804,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.ogg",
+                    "size": 4414576,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "104",
+                    "title": "The Infernal Serpent",
+                    "name": "The Infernal Serpent",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "track": 4,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/04TheInfernalSerpent.ogg",
+                    "genre": [],
+                    "playlisttrack": 4,
+                    "time": 404,
+                    "year": 1996,
+                    "bitrate": 99043,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.ogg",
+                    "size": 5034384,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "102",
+                    "title": "Moremque Sinistrum Sacrorum",
+                    "name": "Moremque Sinistrum Sacrorum",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "track": 5,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/05MoremqueSinistrumSacrorum.ogg",
+                    "genre": [],
+                    "playlisttrack": 5,
+                    "time": 182,
+                    "year": 1996,
+                    "bitrate": 96000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.ogg",
+                    "size": 2188900,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "99",
+                    "title": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
+                    "name": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "track": 6,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg",
+                    "genre": [],
+                    "playlisttrack": 6,
+                    "time": 637,
+                    "year": 1996,
+                    "bitrate": 96000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.ogg",
+                    "size": 7651772,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "103",
+                    "title": "In The Seven Woods (Instrumental Re-Recording)",
+                    "name": "In The Seven Woods (Instrumental Re-Recording)",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "track": 7,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
+                    "genre": [],
+                    "playlisttrack": 7,
+                    "time": 648,
+                    "year": 1996,
+                    "bitrate": 96000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.ogg",
+                    "size": 7780518,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "105",
+                    "title": "The Infernal Serpent (Instrumental Re-Recording)",
+                    "name": "The Infernal Serpent (Instrumental Re-Recording)",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
+                    },
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN"
                     },
                     "disk": 1,
                     "track": 8,
-                    "filename": "\/mnt\/music\/Leger des Heils\/(2012) _ Licht! _ [ARIS I]\/108 - Adieu!.mp3",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "241",
-                            "name": "Neofolk"
-                        },
-                        {
-                            "id": "702",
-                            "name": "Modern Classical"
-                        }
-                    ],
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/08TheInfernalSerpent_InstrumentalReRecording.ogg",
+                    "genre": [],
                     "playlisttrack": 8,
-                    "time": 198,
-                    "year": 2012,
-                    "bitrate": 223928,
+                    "time": 557,
+                    "year": 1996,
+                    "bitrate": 138607,
                     "rate": 44100,
                     "mode": "vbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=865388&uid=2&player=api&name=Leger%20des%20Heils%20-%20Adieu-.mp3",
-                    "size": 5564965,
-                    "mbid": "47abc2dd-9419-4ad3-ae23-be757122627b",
+                    "mime": "application\/ogg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=4&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.ogg",
+                    "size": 9665824,
+                    "mbid": null,
                     "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=67900&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
                     "flag": 0,
                     "preciserating": null,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
-                    "catalog": 2,
+                    "catalog": 1,
                     "composer": "",
                     "channels": null,
-                    "comment": "",
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com",
                     "license": null,
-                    "publisher": "Aristae",
-                    "language": "English",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-0.740000",
-                    "replaygain_track_peak": "0.813000",
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
                     "r128_album_gain": null,
                     "r128_track_gain": null
                 },
                 {
-                    "id": "865394",
-                    "title": "Klang der Freiheit II",
-                    "name": "Klang der Freiheit II",
+                    "id": "101",
+                    "title": "Rehearsal Tape (1996)",
+                    "name": "Rehearsal Tape (1996)",
                     "artist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "16",
+                        "name": "CARN\u00daN"
                     },
                     "album": {
-                        "id": "67900",
-                        "name": ": Licht! :"
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)"
                     },
                     "albumartist": {
-                        "id": "13647",
-                        "name": "Leger des Heils"
+                        "id": "16",
+                        "name": "CARN\u00daN"
                     },
                     "disk": 1,
                     "track": 9,
-                    "filename": "\/mnt\/music\/Leger des Heils\/(2012) _ Licht! _ [ARIS I]\/109 - Klang der Freiheit II.mp3",
-                    "genre": [
-                        {
-                            "id": "4",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "241",
-                            "name": "Neofolk"
-                        },
-                        {
-                            "id": "702",
-                            "name": "Modern Classical"
-                        }
-                    ],
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/09RehearsalTape1996.ogg",
+                    "genre": [],
                     "playlisttrack": 9,
-                    "time": 638,
-                    "year": 2012,
-                    "bitrate": 212539,
+                    "time": 980,
+                    "year": 1996,
+                    "bitrate": 66434,
                     "rate": 44100,
                     "mode": "vbr",
-                    "mime": "audio\/mpeg",
-                    "url": "https:\/\/music.lachlandewaard.org\/play\/index.php?ssid=33fafad997299d0ebb8038e5a8e606e9&type=song&oid=865394&uid=2&player=api&name=Leger%20des%20Heils%20-%20Klang%20der%20Freiheit%20II.mp3",
-                    "size": 16975424,
-                    "mbid": "3eadec48-60eb-4ccd-a04b-25667c9e5ba9",
+                    "mime": "application\/ogg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.ogg",
+                    "size": 8160295,
+                    "mbid": null,
                     "album_mbid": null,
-                    "artist_mbid": null,
-                    "albumartist_mbid": null,
-                    "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=67900&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9&name=art.jpg",
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
                     "flag": 0,
                     "preciserating": null,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
-                    "catalog": 2,
+                    "catalog": 1,
                     "composer": "",
                     "channels": null,
-                    "comment": "",
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com",
                     "license": null,
-                    "publisher": "Aristae",
-                    "language": "English",
-                    "replaygain_album_gain": "0.000000",
-                    "replaygain_album_peak": "0.000000",
-                    "replaygain_track_gain": "-1.040000",
-                    "replaygain_track_peak": "0.733000",
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
                     "r128_album_gain": null,
                     "r128_track_gain": null
                 }
             ],
             "songcount": 9,
             "disk": 1,
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "241",
-                    "name": "Neofolk"
-                },
-                {
-                    "id": "702",
-                    "name": "Modern Classical"
-                }
-            ],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=67900&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
+            "genre": [],
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": "773c657a-1046-4407-a655-5035de33bc92"
+            "mbid": null
+        },
+        {
+            "id": "2",
+            "name": "Colorsmoke EP",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "time": 0,
+            "year": 2007,
+            "tracks": [
+                {
+                    "id": "56",
+                    "title": "Black&BlueSmoke",
+                    "name": "Black&BlueSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "disk": 1,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 500,
+                    "year": 2007,
+                    "bitrate": 64000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+                    "size": 4007141,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "1",
+                    "albumartist_mbid": "1",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "64",
+                    "title": "Black&BlueSmoke",
+                    "name": "Black&BlueSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "disk": 1,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 2,
+                    "time": 500,
+                    "year": 2007,
+                    "bitrate": 20627,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.wma",
+                    "size": 1298227,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "1",
+                    "albumartist_mbid": "1",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "59",
+                    "title": "YellowSmoke",
+                    "name": "YellowSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "disk": 1,
+                    "track": 2,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 3,
+                    "time": 290,
+                    "year": 2007,
+                    "bitrate": 64000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
+                    "size": 2325048,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "1",
+                    "albumartist_mbid": "1",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "65",
+                    "title": "YellowSmoke",
+                    "name": "YellowSmoke",
+                    "artist": {
+                        "id": "28",
+                        "name": "Synthetic"
+                    },
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "disk": 1,
+                    "track": 2,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/02-Synthetic_-_YellowSmoke20k22hS.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 4,
+                    "time": 290,
+                    "year": 2007,
+                    "bitrate": 20627,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.wma",
+                    "size": 754867,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": "2",
+                    "albumartist_mbid": "1",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "57",
+                    "title": "PurpleSmoke",
+                    "name": "PurpleSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "disk": 1,
+                    "track": 3,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 5,
+                    "time": 390,
+                    "year": 2007,
+                    "bitrate": 64000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.mp3",
+                    "size": 3127705,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "1",
+                    "albumartist_mbid": "1",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "62",
+                    "title": "PurpleSmoke",
+                    "name": "PurpleSmoke",
+                    "artist": {
+                        "id": "29",
+                        "name": "Synthetic"
+                    },
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "disk": 1,
+                    "track": 3,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 6,
+                    "time": 390,
+                    "year": 2007,
+                    "bitrate": 20627,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.wma",
+                    "size": 1014067,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": "3",
+                    "albumartist_mbid": "1",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "58",
+                    "title": "BrownSmoke",
+                    "name": "BrownSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "disk": 1,
+                    "track": 4,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 7,
+                    "time": 304,
+                    "year": 2007,
+                    "bitrate": 64000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
+                    "size": 2437380,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "1",
+                    "albumartist_mbid": "1",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "60",
+                    "title": "BrownSmoke",
+                    "name": "BrownSmoke",
+                    "artist": {
+                        "id": "30",
+                        "name": "Synthetic"
+                    },
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "disk": 1,
+                    "track": 4,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 8,
+                    "time": 304,
+                    "year": 2007,
+                    "bitrate": 20627,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma",
+                    "size": 792307,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": "4",
+                    "albumartist_mbid": "1",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "54",
+                    "title": "Red&GreenSmoke",
+                    "name": "Red&GreenSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "disk": 1,
+                    "track": 5,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 9,
+                    "time": 400,
+                    "year": 2007,
+                    "bitrate": 64000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+                    "size": 3205738,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "1",
+                    "albumartist_mbid": "1",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "55",
+                    "title": "Red&GreenSmoke",
+                    "name": "Red&GreenSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "disk": 1,
+                    "track": 5,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 10,
+                    "time": 400,
+                    "year": 2007,
+                    "bitrate": 64000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+                    "size": 3206156,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "1",
+                    "albumartist_mbid": "1",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "61",
+                    "title": "Red&GreenSmoke",
+                    "name": "Red&GreenSmoke",
+                    "artist": {
+                        "id": "31",
+                        "name": "Synthetic"
+                    },
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "disk": 1,
+                    "track": 5,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/05-Synthetic_-_RedGreenSmokePM20k44khM.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 11,
+                    "time": 400,
+                    "year": 2007,
+                    "bitrate": 20627,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.wma",
+                    "size": 1044783,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": "5",
+                    "albumartist_mbid": "1",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "63",
+                    "title": "Red&GreenSmoke",
+                    "name": "Red&GreenSmoke",
+                    "artist": {
+                        "id": "31",
+                        "name": "Synthetic"
+                    },
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic"
+                    },
+                    "disk": 1,
+                    "track": 5,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/05-Synthetic_-_RedGreenSmokePM20k22khS.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 12,
+                    "time": 400,
+                    "year": 2007,
+                    "bitrate": 20627,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=63&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.wma",
+                    "size": 1040947,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": "5",
+                    "albumartist_mbid": "1",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
+            "songcount": 12,
+            "disk": 1,
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": 3,
+            "mbid": null
+        },
+        {
+            "id": "9",
+            "name": "Creeping Lawler 2",
+            "artist": {
+                "id": "15",
+                "name": "Warfare 3.0"
+            },
+            "time": 0,
+            "year": 0,
+            "tracks": [
+                {
+                    "id": "96",
+                    "title": "Creeping Lawler 2",
+                    "name": "Creeping Lawler 2",
+                    "artist": {
+                        "id": "15",
+                        "name": "Warfare 3.0"
+                    },
+                    "album": {
+                        "id": "9",
+                        "name": "Creeping Lawler 2"
+                    },
+                    "albumartist": {
+                        "id": "15",
+                        "name": "Warfare 3.0"
+                    },
+                    "disk": 1,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.wav",
+                    "genre": [],
+                    "playlisttrack": 1,
+                    "time": 296,
+                    "year": 0,
+                    "bitrate": 1411200,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.wav",
+                    "size": 52341524,
+                    "mbid": "",
+                    "album_mbid": null,
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "97",
+                    "title": "Creeping Lawler 2",
+                    "name": "Creeping Lawler 2",
+                    "artist": {
+                        "id": "15",
+                        "name": "Warfare 3.0"
+                    },
+                    "album": {
+                        "id": "9",
+                        "name": "Creeping Lawler 2"
+                    },
+                    "albumartist": {
+                        "id": "15",
+                        "name": "Warfare 3.0"
+                    },
+                    "disk": 1,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
+                    "genre": [],
+                    "playlisttrack": 2,
+                    "time": 296,
+                    "year": 0,
+                    "bitrate": 177349,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
+                    "size": 6645248,
+                    "mbid": null,
+                    "album_mbid": null,
+                    "artist_mbid": "",
+                    "albumartist_mbid": "",
+                    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                    "flag": 0,
+                    "preciserating": null,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": "",
+                    "channels": null,
+                    "comment": "https:\/\/archive.org\/details\/",
+                    "license": null,
+                    "publisher": "",
+                    "language": "",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
+            "songcount": 2,
+            "disk": 1,
+            "genre": [],
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": 3,
+            "rating": 3,
+            "averagerating": null,
+            "mbid": null
         }
     ]
 }

@@ -1,41 +1,29 @@
 {
     "album": [
         {
-            "id": "31608",
-            "name": "Music for the Maases",
+            "id": "7",
+            "name": "Sensorisk Deprivation",
             "artist": {
-                "id": "7142",
-                "name": "Timo Maas"
+                "id": "13",
+                "name": "IOK-1"
             },
             "time": 0,
-            "year": 2000,
+            "year": 2011,
             "tracks": [],
-            "songcount": 20,
-            "disk": 2,
+            "songcount": 4,
+            "disk": 1,
             "genre": [
                 {
                     "id": "4",
-                    "name": "Electronic"
-                },
-                {
-                    "id": "315",
-                    "name": "Breaks"
-                },
-                {
-                    "id": "497",
-                    "name": "Progressive House"
-                },
-                {
-                    "id": "534",
-                    "name": "Progressive Trance"
+                    "name": "Dark Ambient"
                 }
             ],
-            "art": "https:\/\/music.lachlandewaard.org\/image.php?object_id=31608&object_type=album&auth=33fafad997299d0ebb8038e5a8e606e9",
+            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": "af73a12a-0d1c-4f44-b745-2b7c6542aa67"
+            "mbid": null
         }
     ]
 }

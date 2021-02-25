@@ -481,6 +481,8 @@ def artists(ampache_url: str, ampache_api: str, filter_str: str = False,
         * api_format   = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    if bool(include) and not isinstance(include, str):
+        include = 'albums,songs'
     data = {'action': 'artists',
             'auth': ampache_api,
             'filter': filter_str,
@@ -519,6 +521,8 @@ def artist(ampache_url: str, ampache_api: str, filter_id: int, include=False, ap
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    if bool(include) and not isinstance(include, str):
+        include = 'albums,songs'
     data = {'action': 'artist',
             'auth': ampache_api,
             'filter': filter_id,
@@ -610,6 +614,8 @@ def albums(ampache_url: str, ampache_api: str, filter_str: str = False,
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    if bool(include) and not isinstance(include, str):
+        include = 'songs'
     data = {'action': 'albums',
             'auth': ampache_api,
             'filter': filter_str,
@@ -649,6 +655,8 @@ def album(ampache_url: str, ampache_api: str, filter_id: int, include=False, api
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
+    if bool(include) and not isinstance(include, str):
+        include = 'songs'
     data = {'action': 'album',
             'auth': ampache_api,
             'filter': filter_id,

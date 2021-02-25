@@ -1,8 +1,7 @@
 {
-    "error": {
-        "errorCode": "4710",
-        "errorAction": "localplay",
-        "errorType": "account",
-        "errorMessage": "Unable to connect to localplay controller"
+    "localplay": {
+        "command": {
+            "stop": true
+        }
     }
 }

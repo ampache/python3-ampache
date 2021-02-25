@@ -1,47 +1,47 @@
 {
     "activity": [
         {
-            "id": "177742",
-            "date": "1613640897",
-            "object_type": "song",
-            "object_id": "108986",
+            "id": "31",
+            "date": "1614055275",
+            "object_type": "video",
+            "object_id": "1",
             "action": "play",
             "user": {
-                "id": "8",
-                "username": "demo"
+                "id": "2",
+                "username": "admin"
             }
         },
         {
-            "id": "177733",
-            "date": "1613623767",
-            "object_type": "playlist",
-            "object_id": "2069",
-            "action": "userflag",
-            "user": {
-                "id": "8",
-                "username": "demo"
-            }
-        },
-        {
-            "id": "177732",
-            "date": "1613623757",
-            "object_type": "user",
-            "object_id": "4",
-            "action": "follow",
-            "user": {
-                "id": "8",
-                "username": "demo"
-            }
-        },
-        {
-            "id": "177731",
-            "date": "1613623725",
+            "id": "30",
+            "date": "1614055252",
             "object_type": "song",
-            "object_id": "164527",
+            "object_id": "79",
+            "action": "play",
+            "user": {
+                "id": "2",
+                "username": "admin"
+            }
+        },
+        {
+            "id": "26",
+            "date": "1614055014",
+            "object_type": "song",
+            "object_id": "76",
+            "action": "play",
+            "user": {
+                "id": "2",
+                "username": "admin"
+            }
+        },
+        {
+            "id": "25",
+            "date": "1614054865",
+            "object_type": "video",
+            "object_id": "1",
             "action": "userflag",
             "user": {
-                "id": "8",
-                "username": "demo"
+                "id": "2",
+                "username": "admin"
             }
         }
     ]

@@ -1,58 +1,58 @@
 {
-    "id": "956",
-    "title": "Come Cover Me",
-    "name": "Come Cover Me",
+    "id": "54",
+    "title": "Red&GreenSmoke",
+    "name": "Red&GreenSmoke",
     "artist": {
-        "id": "55",
-        "name": "Nightwish"
+        "id": "2",
+        "name": "Synthetic"
     },
     "album": {
-        "id": "94918",
-        "name": "Wishmaster"
+        "id": "2",
+        "name": "Colorsmoke EP"
     },
     "albumartist": {
-        "id": "55",
-        "name": "Nightwish"
+        "id": "2",
+        "name": "Synthetic"
     },
     "disk": 1,
-    "track": 3,
-    "filename": "\/mnt\/music\/Nightwish\/(2000) Wishmaster\/103 - Come Cover Me.mp3",
+    "track": 5,
+    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
     "genre": [
         {
-            "id": "20",
-            "name": "Metal"
+            "id": "1",
+            "name": "Electronic"
         }
     ],
     "playlisttrack": 1,
-    "time": 274,
-    "year": 2000,
-    "bitrate": 260129,
-    "rate": 44100,
-    "mode": "vbr",
+    "time": 400,
+    "year": 2007,
+    "bitrate": 64000,
+    "rate": 22050,
+    "mode": "cbr",
     "mime": "audio\/mpeg",
-    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=956&uid=2&player=api&name=Nightwish%20-%20Come%20Cover%20Me.mp3",
-    "size": 9003198,
-    "mbid": "39aaa2f7-383b-443e-8c31-534df2b55845",
+    "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+    "size": 3205738,
+    "mbid": null,
     "album_mbid": null,
-    "artist_mbid": null,
-    "albumartist_mbid": null,
-    "art": "https:\/\/music.com.au\/image.php?object_id=94918&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+    "artist_mbid": "1",
+    "albumartist_mbid": "1",
+    "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
     "flag": 0,
     "preciserating": null,
     "rating": null,
     "averagerating": null,
     "playcount": 0,
-    "catalog": 2,
-    "composer": "Tuomas Holopainen",
+    "catalog": 1,
+    "composer": "",
     "channels": null,
     "comment": "",
     "license": null,
-    "publisher": "Drakkar Records",
-    "language": "eng",
-    "replaygain_album_gain": "0.000000",
-    "replaygain_album_peak": "0.000000",
-    "replaygain_track_gain": "-9.740000",
-    "replaygain_track_peak": "1.000000",
+    "publisher": "",
+    "language": "",
+    "replaygain_album_gain": null,
+    "replaygain_album_peak": null,
+    "replaygain_track_gain": null,
+    "replaygain_track_peak": null,
     "r128_album_gain": null,
     "r128_track_gain": null
 }

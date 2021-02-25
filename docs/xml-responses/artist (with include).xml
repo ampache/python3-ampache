@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <total_count>17</total_count>
+  <artist id="20">
+    <name><![CDATA[R/B]]></name>
+    <genre id="7"><![CDATA[Punk]]></genre>
+    <albums>
+      <album id="12">
+        <name><![CDATA[Buried in Nausea]]></name>
+        <artist id="19"><![CDATA[Various Artists]]></artist>
+        <time>0</time>
+        <year>2012</year>
+        <tracks/>
+        <songcount>7</songcount>
+        <disk>1</disk>
+        <genre id="7"><![CDATA[Punk]]></genre>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <mbid><![CDATA[]]></mbid>
+      </album>
+    </albums>
+    <albumcount>1</albumcount>
+    <songs>
+      <song id="107">
+        <title><![CDATA[Arrest Me]]></title>
+        <name><![CDATA[Arrest Me]]></name>
+        <artist id="20"><![CDATA[R/B]]></artist>
+        <album id="12"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>10</track>
+        <genre id="7"><![CDATA[Punk]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/09R_b-ArrestMe.m4a]]></filename>
+        <playlisttrack>1</playlisttrack>
+        <time>96</time>
+        <year>2012</year>
+        <bitrate>252864</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/mp4]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a]]></url>
+        <size>3089501</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels/>
+        <comment><![CDATA[]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[]]></publisher>
+        <language/>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain/>
+        <replaygain_track_peak/>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+    </songs>
+    <songcount>1</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=20&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[ ]]></summary>
+    <time><![CDATA[96]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
+</root>
