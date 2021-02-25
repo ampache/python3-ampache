@@ -10,22 +10,26 @@ import time
 from src import ampache
 
 # user variables
-url = 'https://music.server'
-api = 'mysuperapikey'
-user = 'myusername'
+url = None
+api = None
+user = None
 try:
-    if sys.argv[1] and sys.argv[2] and sys.argv[3]:
+    if sys.argv[1]:
         url = sys.argv[1]
+    if sys.argv[2]:
         api = sys.argv[2]
+    if sys.argv[3]:
         user = sys.argv[3]
 except IndexError:
     if os.path.isfile('docs/examples/ampyche.conf'):
         conf = configparser.RawConfigParser()
         conf.read('docs/examples/ampyche.conf')
-        url = conf.get('conf', 'ampache_url')
-        user = conf.get('conf', 'ampache_user')
-        api = conf.get('conf', 'ampache_apikey')
-    
+        if not url:
+            url = conf.get('conf', 'ampache_url')
+        if not api:
+            api = conf.get('conf', 'ampache_apikey')
+        if not user:
+            user = conf.get('conf', 'ampache_user')
 
 limit = 4
 offset = 0
@@ -54,6 +58,12 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     ampache.set_debug(True)
 
+    # send a bad ping
+    ampache.ping(ampache_url, False, api_format)
+    if os.path.isfile("docs/" + api_format + "-responses/ping." + api_format):
+        shutil.move("docs/" + api_format + "-responses/ping." + api_format,
+                    "docs/" + api_format + "-responses/ping (No Auth)." + api_format)
+
     """ def encrypt_string(ampache_api, user)
         This function can be used to encrypt your apikey into the accepted format.
     """
@@ -78,10 +88,6 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         This can be called without being authenticated, it is useful for determining if what the status
         of the server is, and what version it is running/compatible with
     """
-    ampache.ping(ampache_url, False, api_format)
-    if os.path.isfile("docs/" + api_format + "-responses/ping." + api_format):
-        shutil.move("docs/" + api_format + "-responses/ping." + api_format,
-                    "docs/" + api_format + "-responses/ping (No Auth)." + api_format)
     my_ping = ampache.ping(ampache_url, ampache_session, api_format)
     if not my_ping:
         print()
@@ -211,7 +217,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def advanced_search(ampache_url, ampache_api, rules, operator = 'and', type = 'song', offset = 0, limit = 0, api_format = 'xml'):
     """
-    search_rules = [['favorite', 0, '%'], ['title', 2, 'Dance']]
+    search_rules = [['favorite', 0, '%'], ['title', 2, 'D']]
     search_song = ampache.advanced_search(ampache_url, ampache_session, search_rules, 'or', 'song', offset, limit, 0, api_format)
     if os.path.isfile("docs/" + api_format + "-responses/advanced_search." + api_format):
         shutil.move("docs/" + api_format + "-responses/advanced_search." + api_format,
@@ -488,7 +494,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ def genres(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
     genre = ''
-    tags = ampache.genres(ampache_url, ampache_session, 'Da', False, offset, limit, api_format)
+    tags = ampache.genres(ampache_url, ampache_session, 'D', False, offset, limit, api_format)
     if api_format == 'xml':
         for child in tags:
             if child.tag == 'genre':
