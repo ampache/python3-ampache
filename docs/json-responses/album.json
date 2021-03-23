@@ -1,30 +1,33 @@
 {
-    "album": [
+    "id": "98156",
+    "name": "-+",
+    "artist": {
+        "id": "1081",
+        "name": "Mr.Kitty"
+    },
+    "time": 1552,
+    "year": 2020,
+    "tracks": [],
+    "songcount": 6,
+    "diskcount": 1,
+    "genre": [
         {
-            "id": "12",
-            "name": "Buried in Nausea",
-            "artist": {
-                "id": "19",
-                "name": "Various Artists"
-            },
-            "time": 1437,
-            "year": 2012,
-            "tracks": [],
-            "songcount": 7,
-            "diskcount": 1,
-            "type": null,
-            "genre": [
-                {
-                    "id": "7",
-                    "name": "Punk"
-                }
-            ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": null
+            "id": "4",
+            "name": "Electronic"
+        },
+        {
+            "id": "7",
+            "name": "Synthpop"
+        },
+        {
+            "id": "48",
+            "name": "New Wave"
         }
-    ]
-}
+    ],
+    "art": "https:\/\/music.com.au\/image.php?object_id=98156&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+    "flag": 0,
+    "preciserating": null,
+    "rating": null,
+    "averagerating": null,
+    "mbid": "984aeded-cb31-495f-8a19-b38db868d4d6"
+
