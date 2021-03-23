@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>55</total_count>
-  <song id="64">
-    <title><![CDATA[Black&BlueSmoke]]></title>
-    <name><![CDATA[Black&BlueSmoke]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
-    <album id="2"><![CDATA[Colorsmoke EP]]></album>
-    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+  <song id="106">
+    <title><![CDATA[Malkuth - Intro]]></title>
+    <name><![CDATA[Malkuth - Intro]]></name>
+    <artist id="16"><![CDATA[CARNÚN]]></artist>
+    <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
+    <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
     <disk><![CDATA[1]]></disk>
     <track>1</track>
-    <genre id="1"><![CDATA[Electronic]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma]]></filename>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/01Intro.ogg]]></filename>
     <playlisttrack>1</playlisttrack>
-    <time>500</time>
-    <year>2007</year>
-    <bitrate>20627</bitrate>
-    <rate>22050</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/x-ms-wma]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.wma]]></url>
-    <size>1298227</size>
+    <time>76</time>
+    <year>1996</year>
+    <bitrate>96000</bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[application/ogg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.ogg]]></url>
+    <size>923291</size>
     <mbid><![CDATA[]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[1]]></artist_mbid>
-    <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+    <artist_mbid><![CDATA[]]></artist_mbid>
+    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
     <averagerating/>
-    <playcount>0</playcount>
+    <playcount>1</playcount>
     <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
     <channels/>
-    <comment><![CDATA[Made with Sony ACID 5]]></comment>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[20kbps rec.]]></publisher>
+    <publisher><![CDATA[]]></publisher>
     <language/>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
@@ -44,7 +43,7 @@
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="96">
+  <song id="97">
     <title><![CDATA[Creeping Lawler 2]]></title>
     <name><![CDATA[Creeping Lawler 2]]></name>
     <artist id="15"><![CDATA[Warfare 3.0]]></artist>
@@ -52,16 +51,16 @@
     <albumartist id="15"><![CDATA[Warfare 3.0]]></albumartist>
     <disk><![CDATA[1]]></disk>
     <track>1</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.wav]]></filename>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.mp3]]></filename>
     <playlisttrack>2</playlisttrack>
     <time>296</time>
     <year>0</year>
-    <bitrate>1411200</bitrate>
+    <bitrate>177349</bitrate>
     <rate>44100</rate>
-    <mode><![CDATA[cbr]]></mode>
+    <mode><![CDATA[vbr]]></mode>
     <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.wav]]></url>
-    <size>52341524</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
+    <size>6645248</size>
     <mbid><![CDATA[]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
     <artist_mbid><![CDATA[]]></artist_mbid>
@@ -71,7 +70,49 @@
     <preciserating/>
     <rating/>
     <averagerating/>
-    <playcount>1</playcount>
+    <playcount>0</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels/>
+    <comment><![CDATA[https://archive.org/details/]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[]]></publisher>
+    <language/>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="115">
+    <title><![CDATA[Are we going Crazy]]></title>
+    <name><![CDATA[Are we going Crazy]]></name>
+    <artist id="27"><![CDATA[Chi.Otic]]></artist>
+    <album id="12"><![CDATA[Buried in Nausea]]></album>
+    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>7</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
+    <playlisttrack>3</playlisttrack>
+    <time>433</time>
+    <year>2012</year>
+    <bitrate>32582</bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[cbr]]></mode>
+    <mime><![CDATA[audio/x-ms-wma]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.wma]]></url>
+    <size>1776580</size>
+    <mbid><![CDATA[]]></mbid>
+    <album_mbid><![CDATA[]]></album_mbid>
+    <artist_mbid><![CDATA[7]]></artist_mbid>
+    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
     <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
     <channels/>
@@ -86,74 +127,30 @@
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="83">
-    <title><![CDATA[Sensorisk Deprivation]]></title>
-    <name><![CDATA[Sensorisk Deprivation]]></name>
-    <artist id="13"><![CDATA[IOK-1]]></artist>
-    <album id="7"><![CDATA[Sensorisk Deprivation]]></album>
-    <albumartist id="13"><![CDATA[IOK-1]]></albumartist>
+  <song id="62">
+    <title><![CDATA[PurpleSmoke]]></title>
+    <name><![CDATA[PurpleSmoke]]></name>
+    <artist id="29"><![CDATA[Synthetic]]></artist>
+    <album id="2"><![CDATA[Colorsmoke EP]]></album>
+    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>1</track>
-    <genre id="4"><![CDATA[Dark Ambient]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/01_-_IOK-1_-_Sensorisk_Deprivation.flac]]></filename>
-    <playlisttrack>3</playlisttrack>
-    <time>818</time>
-    <year>2011</year>
-    <bitrate>385726</bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/x-flac]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=83&uid=4&player=api&name=IOK-1%20-%20Sensorisk%20Deprivation.flac]]></url>
-    <size>39463403</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>1</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels/>
-    <comment><![CDATA[DNA Production release
-Catalogue # DNA 119]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[DNA Production]]></publisher>
-    <language/>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="82">
-    <title><![CDATA[Vanvett]]></title>
-    <name><![CDATA[Vanvett]]></name>
-    <artist id="13"><![CDATA[IOK-1]]></artist>
-    <album id="7"><![CDATA[Sensorisk Deprivation]]></album>
-    <albumartist id="13"><![CDATA[IOK-1]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>2</track>
-    <genre id="4"><![CDATA[Dark Ambient]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/02_-_IOK-1_-_Vanvett.flac]]></filename>
+    <track>3</track>
+    <genre id="1"><![CDATA[Electronic]]></genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma]]></filename>
     <playlisttrack>4</playlisttrack>
-    <time>825</time>
-    <year>2011</year>
-    <bitrate>371757</bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/x-flac]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=4&player=api&name=IOK-1%20-%20Vanvett.flac]]></url>
-    <size>38379313</size>
+    <time>390</time>
+    <year>2007</year>
+    <bitrate>20627</bitrate>
+    <rate>22050</rate>
+    <mode><![CDATA[cbr]]></mode>
+    <mime><![CDATA[audio/x-ms-wma]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.wma]]></url>
+    <size>1014067</size>
     <mbid><![CDATA[]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <artist_mbid><![CDATA[3]]></artist_mbid>
+    <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
@@ -162,10 +159,9 @@ Catalogue # DNA 119]]></comment>
     <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
     <channels/>
-    <comment><![CDATA[DNA Production release
-Catalogue # DNA 119]]></comment>
+    <comment><![CDATA[Made with Sony ACID 5]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[DNA Production]]></publisher>
+    <publisher><![CDATA[20kbps rec.]]></publisher>
     <language/>
     <replaygain_album_gain/>
     <replaygain_album_peak/>

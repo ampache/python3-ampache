@@ -1,3 +1,8 @@
 {
-    "success": "podcast 10 updated"
+    "error": {
+        "errorCode": "4704",
+        "errorAction": "podcast_edit",
+        "errorType": "filter",
+        "errorMessage": "Not Found: 10"
+    }
 }

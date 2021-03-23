@@ -1,17 +1,25 @@
 {
     "playlist": [
         {
-            "id": "80",
+            "id": "97",
             "name": "documentation",
             "owner": "user",
             "items": [
                 {
-                    "id": "54",
+                    "id": "72",
                     "playlisttrack": 1
+                },
+                {
+                    "id": "54",
+                    "playlisttrack": 2
+                },
+                {
+                    "id": "54",
+                    "playlisttrack": 3
                 }
             ],
             "type": "public",
-            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=80&object_type=playlist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=97&object_type=playlist&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,

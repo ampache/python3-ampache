@@ -1,48 +1,55 @@
 {
     "album": [
         {
-            "id": "12",
-            "name": "Buried in Nausea",
+            "id": "5",
+            "name": "Inominavel (live.v.01)",
             "artist": {
-                "id": "19",
-                "name": "Various Artists"
+                "id": "11",
+                "name": "structura"
             },
-            "time": 0,
-            "year": 2012,
+            "time": 1339,
+            "year": 2007,
             "tracks": [],
-            "songcount": 7,
-            "disk": 1,
+            "songcount": 6,
+            "diskcount": 1,
+            "type": null,
             "genre": [
                 {
-                    "id": "7",
-                    "name": "Punk"
+                    "id": "3",
+                    "name": "Noise"
                 }
             ],
-            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=5&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": 4,
+            "rating": 4,
+            "averagerating": 3.6667,
+            "mbid": null
+        },
+        {
+            "id": "7",
+            "name": "Sensorisk Deprivation",
+            "artist": {
+                "id": "13",
+                "name": "IOK-1"
+            },
+            "time": 3428,
+            "year": 2011,
+            "tracks": [],
+            "songcount": 4,
+            "diskcount": 1,
+            "type": null,
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Dark Ambient"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": null
-        },
-        {
-            "id": "6",
-            "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
-            "artist": {
-                "id": "12",
-                "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
-            },
-            "time": 0,
-            "year": 0,
-            "tracks": [],
-            "songcount": 2,
-            "disk": 1,
-            "genre": [],
-            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=6&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
-            "preciserating": 1,
-            "rating": 1,
-            "averagerating": 1,
             "mbid": null
         }
     ]

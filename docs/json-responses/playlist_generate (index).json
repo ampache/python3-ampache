@@ -1,203 +1,101 @@
 {
     "song": [
         {
-            "id": "109",
-            "title": "Dance with the Devil",
-            "name": "Dance with the Devil",
+            "id": "91",
+            "title": "Home Capsules",
+            "name": "Home Capsules",
             "artist": {
-                "id": "29",
-                "name": "Synthetic"
+                "id": "14",
+                "name": "Nofi\/found."
             },
             "album": {
-                "id": "12",
-                "name": "Buried in Nausea"
+                "id": "8",
+                "name": "Nofi Devices"
             },
             "albumartist": {
-                "id": "19",
-                "name": "Various Artists"
+                "id": "14",
+                "name": "Nofi\/found."
             },
             "disk": 1,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
-            "genre": [],
+            "track": 9,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/09_Home_Capsules.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
             "playlisttrack": 1,
-            "time": 116,
-            "year": 2012,
-            "bitrate": 32582,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
-            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Synthetic%20-%20Dance%20with%20the%20Devil.wma",
-            "size": 483444,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": "3",
-            "albumartist_mbid": "",
-            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 1,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "80",
-            "title": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
-            "name": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
-            "artist": {
-                "id": "12",
-                "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
-            },
-            "album": {
-                "id": "6",
-                "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)"
-            },
-            "albumartist": {
-                "id": "12",
-                "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
-            },
-            "disk": 1,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c\/\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)\/01 - \u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d.wav",
-            "genre": [],
-            "playlisttrack": 2,
-            "time": 300,
+            "time": 294,
             "year": 0,
-            "bitrate": 1411200,
+            "bitrate": 192000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=80&uid=4&player=api&name=-%20-%20-%20-%20-%20-%20-.wav",
-            "size": 53018798,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": "",
-            "albumartist_mbid": "",
-            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=6&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "60",
-            "title": "BrownSmoke",
-            "name": "BrownSmoke",
-            "artist": {
-                "id": "30",
-                "name": "Synthetic"
-            },
-            "album": {
-                "id": "2",
-                "name": "Colorsmoke EP"
-            },
-            "albumartist": {
-                "id": "2",
-                "name": "Synthetic"
-            },
-            "disk": 1,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 304,
-            "year": 2007,
-            "bitrate": 20627,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
-            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma",
-            "size": 792307,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": "4",
-            "albumartist_mbid": "1",
-            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "Made with Sony ACID 5",
-            "license": null,
-            "publisher": "20kbps rec.",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "102",
-            "title": "Moremque Sinistrum Sacrorum",
-            "name": "Moremque Sinistrum Sacrorum",
-            "artist": {
-                "id": "16",
-                "name": "CARN\u00daN"
-            },
-            "album": {
-                "id": "10",
-                "name": "CARN\u00daN - MALKUTH (Demo 1996)"
-            },
-            "albumartist": {
-                "id": "16",
-                "name": "CARN\u00daN"
-            },
-            "disk": 1,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/05MoremqueSinistrumSacrorum.ogg",
-            "genre": [],
-            "playlisttrack": 4,
-            "time": 182,
-            "year": 1996,
-            "bitrate": 96000,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "application\/ogg",
-            "url": "https:\/\/ampache.lachlandewaard.org\/develop\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.ogg",
-            "size": 2188900,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3",
+            "size": 7070274,
             "mbid": null,
             "album_mbid": null,
             "artist_mbid": "",
             "albumartist_mbid": "",
-            "art": "https:\/\/ampache.lachlandewaard.org\/develop\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": null,
+            "comment": "00000236 00000227 00003413 00005398 00037E14 0003273E 00007FDB 00007D6D 00022A7D 00030EC1",
+            "license": null,
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "97",
+            "title": "Creeping Lawler 2",
+            "name": "Creeping Lawler 2",
+            "artist": {
+                "id": "15",
+                "name": "Warfare 3.0"
+            },
+            "album": {
+                "id": "9",
+                "name": "Creeping Lawler 2"
+            },
+            "albumartist": {
+                "id": "15",
+                "name": "Warfare 3.0"
+            },
+            "disk": 1,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
+            "genre": [],
+            "playlisttrack": 2,
+            "time": 296,
+            "year": 0,
+            "bitrate": 177349,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
+            "size": 6645248,
+            "mbid": null,
+            "album_mbid": null,
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -206,7 +104,131 @@
             "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "Visit http:\/\/irish-metal.bandcamp.com",
+            "comment": "https:\/\/archive.org\/details\/",
+            "license": null,
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "95",
+            "title": "Spirus Falls",
+            "name": "Spirus Falls",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found."
+            },
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found."
+            },
+            "disk": 1,
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/02_Spirus_Falls.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 327,
+            "year": 0,
+            "bitrate": 192000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3",
+            "size": 7869621,
+            "mbid": null,
+            "album_mbid": null,
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": null,
+            "comment": "00000208 000001B0 000055B9 00004166 0003AA43 0003AA43 00007CFB 00007B60 0001D5E5 0003D91A",
+            "license": null,
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "93",
+            "title": "Scribnus 3",
+            "name": "Scribnus 3",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found."
+            },
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found."
+            },
+            "disk": 1,
+            "track": 3,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/03_Scribnus_3.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 641,
+            "year": 0,
+            "bitrate": 192000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3",
+            "size": 15389752,
+            "mbid": null,
+            "album_mbid": null,
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": null,
+            "comment": "00000125 000000E2 0000547A 000037E3 00073258 00073258 00008077 00006AC4 0001C234 0001C234",
             "license": null,
             "publisher": "",
             "language": "",
