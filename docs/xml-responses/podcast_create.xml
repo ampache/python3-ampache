@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4710">
-    <errorAction><![CDATA[podcast_create]]></errorAction>
-    <errorType><![CDATA[system]]></errorType>
-    <errorMessage><![CDATA[Bad Request]]></errorMessage>
-  </error>
+  <total_count>3</total_count>
+  <podcast id="5">
+    <name><![CDATA[Trace]]></name>
+    <description><![CDATA[
+            
+        Lawyer Nicola Gobbo represented some of Australia’s most dangerous criminals, all the while secretly working as a police informer. Why did she do it, and how was it allowed to happen? For the first time, she tells the full story behind why she became an informer, and what happened when her double life was exposed to the world.
+            
+        ]]></description>
+    <language><![CDATA[en-AU]]></language>
+    <copyright><![CDATA[Copyright 2021, Australian Broadcasting Corporation. All Rights Reserved.]]></copyright>
+    <feed_url><![CDATA[https://www.abc.net.au/radio/programs/trace/feed/8597522/podcast.xml]]></feed_url>
+    <generator><![CDATA[]]></generator>
+    <website><![CDATA[https://www.abc.net.au/radio/programs/trace/]]></website>
+    <build_date><![CDATA[12/17/20, 12:01 AM]]></build_date>
+    <sync_date><![CDATA[3/31/21, 5:17 PM]]></sync_date>
+    <public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=5]]></public_url>
+    <art><![CDATA[https://music.com.au/image.php?object_id=5&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg?v=2]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+  </podcast>
 </root>

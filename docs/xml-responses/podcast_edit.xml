@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[podcast_edit]]></errorAction>
-    <errorType><![CDATA[filter]]></errorType>
-    <errorMessage><![CDATA[Not Found: 10]]></errorMessage>
-  </error>
+  <success code="1"><![CDATA[podcast 1 updated]]></success>
 </root>

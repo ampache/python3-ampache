@@ -1,112 +1,6 @@
 {
     "song": [
         {
-            "id": "113",
-            "title": "04 Shorty Mac - Representin",
-            "name": "04 Shorty Mac - Representin",
-            "artist": {
-                "id": "25",
-                "name": "Unknown (Orphaned)"
-            },
-            "album": {
-                "id": "13",
-                "name": "Unknown (Orphaned)"
-            },
-            "albumartist": {
-                "id": "",
-                "name": ""
-            },
-            "disk": 1,
-            "track": 0,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
-            "genre": [],
-            "playlisttrack": 1,
-            "time": 234,
-            "year": 0,
-            "bitrate": 123814,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&player=api&name=Unknown%20-Orphaned-%20-%2004%20Shorty%20Mac%20-%20Representin.mp3",
-            "size": 3623236,
-            "mbid": null,
-            "album_mbid": null,
-            "artist_mbid": "",
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
-            "license": null,
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "112",
-            "title": "08 MxBxCx - Personal Truth",
-            "name": "08 MxBxCx - Personal Truth",
-            "artist": {
-                "id": "25",
-                "name": "Unknown (Orphaned)"
-            },
-            "album": {
-                "id": "13",
-                "name": "Unknown (Orphaned)"
-            },
-            "albumartist": {
-                "id": "",
-                "name": ""
-            },
-            "disk": 1,
-            "track": 0,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/08Mxbxcx-PersonalTruth.mp3",
-            "genre": [],
-            "playlisttrack": 2,
-            "time": 208,
-            "year": 0,
-            "bitrate": 179860,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&player=api&name=Unknown%20-Orphaned-%20-%2008%20MxBxCx%20-%20Personal%20Truth.mp3",
-            "size": 4687011,
-            "mbid": null,
-            "album_mbid": null,
-            "artist_mbid": "",
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 1,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
-            "license": null,
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
             "id": "115",
             "title": "Are we going Crazy",
             "name": "Are we going Crazy",
@@ -126,7 +20,7 @@
             "track": 7,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
             "genre": [],
-            "playlisttrack": 3,
+            "playlisttrack": 1,
             "time": 433,
             "year": 2012,
             "bitrate": 32582,
@@ -135,7 +29,7 @@
             "mime": "audio\/x-ms-wma",
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.wma",
             "size": 1776580,
-            "mbid": null,
+            "mbid": "",
             "album_mbid": null,
             "artist_mbid": "7",
             "albumartist_mbid": "",
@@ -176,7 +70,7 @@
                 "name": "Various Artists"
             },
             "disk": 1,
-            "track": 10,
+            "track": 9,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/09R_b-ArrestMe.m4a",
             "genre": [
                 {
@@ -184,7 +78,7 @@
                     "name": "Punk"
                 }
             ],
-            "playlisttrack": 4,
+            "playlisttrack": 2,
             "time": 96,
             "year": 2012,
             "bitrate": 252864,
@@ -192,7 +86,7 @@
             "mode": "vbr",
             "mime": "audio\/mp4",
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a",
-            "size": 3089501,
+            "size": 3091727,
             "mbid": "",
             "album_mbid": null,
             "artist_mbid": "",
@@ -212,8 +106,128 @@
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
+            "replaygain_track_gain": "-1.350000",
+            "replaygain_track_peak": "0.881000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "85",
+            "title": "Beq Ultra Fat",
+            "name": "Beq Ultra Fat",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found."
+            },
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found."
+            },
+            "disk": 1,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/04_Beq_Ultra_Fat.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 413,
+            "year": 0,
+            "bitrate": 192000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3",
+            "size": 9935896,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": null,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "0.940000",
+            "replaygain_track_peak": "0.989000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "56",
+            "title": "Black&BlueSmoke",
+            "name": "Black&BlueSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP"
+            },
+            "albumartist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "disk": 1,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 500,
+            "year": 2007,
+            "bitrate": 64000,
+            "rate": 22050,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+            "size": 4010069,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": "1",
+            "albumartist_mbid": "1",
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "20kbps rec.",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "-5.110000",
+            "replaygain_track_peak": "1.000000",
             "r128_album_gain": null,
             "r128_track_gain": null
         }

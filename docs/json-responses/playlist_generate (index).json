@@ -1,101 +1,44 @@
 {
     "song": [
         {
-            "id": "91",
-            "title": "Home Capsules",
-            "name": "Home Capsules",
+            "id": "59",
+            "title": "YellowSmoke",
+            "name": "YellowSmoke",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found."
+                "id": "2",
+                "name": "Synthetic"
             },
             "album": {
-                "id": "8",
-                "name": "Nofi Devices"
+                "id": "2",
+                "name": "Colorsmoke EP"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found."
+                "id": "2",
+                "name": "Synthetic"
             },
             "disk": 1,
-            "track": 9,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/09_Home_Capsules.mp3",
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
             "genre": [
                 {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
+                    "id": "1",
+                    "name": "Electronic"
                 }
             ],
             "playlisttrack": 1,
-            "time": 294,
-            "year": 0,
-            "bitrate": 192000,
-            "rate": 44100,
+            "time": 290,
+            "year": 2007,
+            "bitrate": 64000,
+            "rate": 22050,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3",
-            "size": 7070274,
-            "mbid": null,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
+            "size": 2325568,
+            "mbid": "",
             "album_mbid": null,
-            "artist_mbid": "",
-            "albumartist_mbid": "",
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
-            "channels": null,
-            "comment": "00000236 00000227 00003413 00005398 00037E14 0003273E 00007FDB 00007D6D 00022A7D 00030EC1",
-            "license": null,
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "97",
-            "title": "Creeping Lawler 2",
-            "name": "Creeping Lawler 2",
-            "artist": {
-                "id": "15",
-                "name": "Warfare 3.0"
-            },
-            "album": {
-                "id": "9",
-                "name": "Creeping Lawler 2"
-            },
-            "albumartist": {
-                "id": "15",
-                "name": "Warfare 3.0"
-            },
-            "disk": 1,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
-            "genre": [],
-            "playlisttrack": 2,
-            "time": 296,
-            "year": 0,
-            "bitrate": 177349,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
-            "size": 6645248,
-            "mbid": null,
-            "album_mbid": null,
-            "artist_mbid": "",
-            "albumartist_mbid": "",
-            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "artist_mbid": "1",
+            "albumartist_mbid": "1",
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -104,69 +47,113 @@
             "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "https:\/\/archive.org\/details\/",
+            "comment": "",
             "license": null,
-            "publisher": "",
+            "publisher": "20kbps rec.",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
+            "replaygain_track_gain": "2.750000",
+            "replaygain_track_peak": "0.716000",
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "95",
-            "title": "Spirus Falls",
-            "name": "Spirus Falls",
+            "id": "99",
+            "title": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
+            "name": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found."
+                "id": "16",
+                "name": "CARN\u00daN"
             },
             "album": {
-                "id": "8",
-                "name": "Nofi Devices"
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found."
+                "id": "16",
+                "name": "CARN\u00daN"
             },
             "disk": 1,
-            "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/02_Spirus_Falls.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 327,
-            "year": 0,
-            "bitrate": 192000,
+            "track": 6,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg",
+            "genre": [],
+            "playlisttrack": 2,
+            "time": 427,
+            "year": 1996,
+            "bitrate": 143788,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3",
-            "size": 7869621,
-            "mbid": null,
+            "mode": "vbr",
+            "mime": "application\/ogg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.ogg",
+            "size": 7696008,
+            "mbid": "",
             "album_mbid": null,
             "artist_mbid": "",
             "albumartist_mbid": "",
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 1,
-            "composer": "Jeffrey Melton",
+            "composer": "",
             "channels": null,
-            "comment": "00000208 000001B0 000055B9 00004166 0003AA43 0003AA43 00007CFB 00007B60 0001D5E5 0003D91A",
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+            "license": null,
+            "publisher": "archive.org",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "111",
+            "title": "The art of free expression",
+            "name": "The art of free expression",
+            "artist": {
+                "id": "35",
+                "name": "Tip-C"
+            },
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists"
+            },
+            "disk": 1,
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/05Tip-c-TheArtOfFreeExpression.wma",
+            "genre": [],
+            "playlisttrack": 3,
+            "time": 110,
+            "year": 2012,
+            "bitrate": 32582,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.wma",
+            "size": 460498,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "",
             "license": null,
             "publisher": "",
             "language": "",
@@ -178,9 +165,9 @@
             "r128_track_gain": null
         },
         {
-            "id": "93",
-            "title": "Scribnus 3",
-            "name": "Scribnus 3",
+            "id": "88",
+            "title": "Netro",
+            "name": "Netro",
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found."
@@ -194,8 +181,8 @@
                 "name": "Nofi\/found."
             },
             "disk": 1,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/03_Scribnus_3.mp3",
+            "track": 10,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/10_Netro.mp3",
             "genre": [
                 {
                     "id": "5",
@@ -207,15 +194,15 @@
                 }
             ],
             "playlisttrack": 4,
-            "time": 641,
+            "time": 601,
             "year": 0,
             "bitrate": 192000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3",
-            "size": 15389752,
-            "mbid": null,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=88&uid=4&player=api&name=Nofi-found.%20-%20Netro.mp3",
+            "size": 14445467,
+            "mbid": "",
             "album_mbid": null,
             "artist_mbid": "",
             "albumartist_mbid": "",
@@ -228,14 +215,14 @@
             "catalog": 1,
             "composer": "Jeffrey Melton",
             "channels": null,
-            "comment": "00000125 000000E2 0000547A 000037E3 00073258 00073258 00008077 00006AC4 0001C234 0001C234",
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
             "license": null,
-            "publisher": "",
+            "publisher": "archive.org",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
+            "replaygain_track_gain": "-1.280000",
+            "replaygain_track_peak": "1.000000",
             "r128_album_gain": null,
             "r128_track_gain": null
         }

@@ -1,15 +1,39 @@
 {
     "label": [
         {
+            "id": "2",
+            "name": "20kbps rec.",
+            "artists": 5,
+            "summary": null,
+            "external_link": "https:\/\/music.com.au\/labels.php?action=show&label=2",
+            "address": null,
+            "category": "tag_generated",
+            "email": null,
+            "website": null,
+            "user": "4"
+        },
+        {
             "id": "1",
-            "name": "No Label",
-            "artists": 1,
-            "summary": "",
+            "name": "archive.org",
+            "artists": 8,
+            "summary": null,
             "external_link": "https:\/\/music.com.au\/labels.php?action=show&label=1",
-            "address": "",
-            "category": "personal",
-            "email": "",
-            "website": "",
+            "address": null,
+            "category": "tag_generated",
+            "email": null,
+            "website": null,
+            "user": "4"
+        },
+        {
+            "id": "3",
+            "name": "DNA Production",
+            "artists": 1,
+            "summary": null,
+            "external_link": "https:\/\/music.com.au\/labels.php?action=show&label=3",
+            "address": null,
+            "category": "tag_generated",
+            "email": null,
+            "website": null,
             "user": "4"
         }
     ]

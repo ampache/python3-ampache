@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>55</total_count>
-  <song id="54">
-    <title><![CDATA[Red&GreenSmoke]]></title>
-    <name><![CDATA[Red&GreenSmoke]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
-    <album id="2"><![CDATA[Colorsmoke EP]]></album>
-    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+  <song id="102">
+    <title><![CDATA[Moremque Sinistrum Sacrorum]]></title>
+    <name><![CDATA[Moremque Sinistrum Sacrorum]]></name>
+    <artist id="16"><![CDATA[CARNÚN]]></artist>
+    <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
+    <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
     <disk><![CDATA[1]]></disk>
     <track>5</track>
-    <genre id="1"><![CDATA[Electronic]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3]]></filename>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/05MoremqueSinistrumSacrorum.ogg]]></filename>
     <playlisttrack>1</playlisttrack>
-    <time>400</time>
-    <year>2007</year>
-    <bitrate>64000</bitrate>
-    <rate>22050</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-    <size>3205738</size>
+    <time>164</time>
+    <year>1996</year>
+    <bitrate>106647</bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[application/ogg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.ogg]]></url>
+    <size>2202971</size>
     <mbid><![CDATA[]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[1]]></artist_mbid>
-    <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+    <artist_mbid><![CDATA[]]></artist_mbid>
+    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
@@ -33,9 +32,9 @@
     <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
     <channels/>
-    <comment><![CDATA[]]></comment>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
+    <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
@@ -44,40 +43,40 @@
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="79">
-    <title><![CDATA[Хикки найди свою Тян]]></title>
-    <name><![CDATA[Хикки найди свою Тян]]></name>
-    <artist id="12"><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></artist>
-    <album id="6"><![CDATA[Хикки Найди Свою Тян (Single)]]></album>
-    <albumartist id="12"><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></albumartist>
+  <song id="101">
+    <title><![CDATA[Rehearsal Tape (1996)]]></title>
+    <name><![CDATA[Rehearsal Tape (1996)]]></name>
+    <artist id="16"><![CDATA[CARNÚN]]></artist>
+    <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
+    <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>1</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь/Хикки Найди Свою Тян (Single)/01 - Хикки найди свою Тян.mp3]]></filename>
+    <track>9</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/09RehearsalTape1996.ogg]]></filename>
     <playlisttrack>2</playlisttrack>
-    <time>300</time>
-    <year>0</year>
-    <bitrate>175202</bitrate>
+    <time>980</time>
+    <year>1996</year>
+    <bitrate>66912</bitrate>
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=79&uid=4&player=api&name=-%20-%20-%20-%20-%20-%20-.mp3]]></url>
-    <size>6664157</size>
+    <mime><![CDATA[application/ogg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.ogg]]></url>
+    <size>8219821</size>
     <mbid><![CDATA[]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
     <artist_mbid><![CDATA[]]></artist_mbid>
     <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=6&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
     <averagerating/>
-    <playcount>1</playcount>
+    <playcount>0</playcount>
     <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
     <channels/>
-    <comment><![CDATA[https://archive.org/details/IBR_385]]></comment>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
+    <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <replaygain_album_gain/>
     <replaygain_album_peak/>

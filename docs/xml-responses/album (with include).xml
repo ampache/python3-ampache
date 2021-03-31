@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>9</total_count>
+  <total_count>8</total_count>
   <album id="12">
     <name><![CDATA[Buried in Nausea]]></name>
     <artist id="19"><![CDATA[Various Artists]]></artist>
-    <time>1437</time>
+    <time>1879</time>
     <year>2012</year>
     <tracks>
       <song id="110">
@@ -24,7 +24,7 @@
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mp4]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.m4a]]></url>
-        <size>6648489</size>
+        <size>6651911</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -44,8 +44,8 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-5.150000</replaygain_track_gain>
+        <replaygain_track_peak>0.989000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -66,7 +66,7 @@
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mp4]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.m4a]]></url>
-        <size>7531274</size>
+        <size>7535126</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -86,15 +86,15 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-10.740000</replaygain_track_gain>
+        <replaygain_track_peak>1.035000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
       <song id="109">
         <title><![CDATA[Dance with the Devil]]></title>
         <name><![CDATA[Dance with the Devil]]></name>
-        <artist id="29"><![CDATA[Synthetic]]></artist>
+        <artist id="34"><![CDATA[Comedown Kid]]></artist>
         <album id="12"><![CDATA[Buried in Nausea]]></album>
         <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
@@ -107,11 +107,11 @@
         <rate>44100</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Synthetic%20-%20Dance%20with%20the%20Devil.wma]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.wma]]></url>
         <size>483444</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[3]]></artist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
@@ -133,27 +133,69 @@
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
+      <song id="113">
+        <title><![CDATA[Representin]]></title>
+        <name><![CDATA[Representin]]></name>
+        <artist id="32"><![CDATA[Shorty Mac]]></artist>
+        <album id="12"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>4</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3]]></filename>
+        <playlisttrack>4</playlisttrack>
+        <time>234</time>
+        <year>2012</year>
+        <bitrate>123814</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&player=api&name=Shorty%20Mac%20-%20Representin.mp3]]></url>
+        <size>3628327</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels/>
+        <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>1.910000</replaygain_track_gain>
+        <replaygain_track_peak>0.851000</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
       <song id="111">
         <title><![CDATA[The art of free expression]]></title>
         <name><![CDATA[The art of free expression]]></name>
-        <artist id="31"><![CDATA[Synthetic]]></artist>
+        <artist id="35"><![CDATA[Tip-C]]></artist>
         <album id="12"><![CDATA[Buried in Nausea]]></album>
         <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>5</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/05Tip-c-TheArtOfFreeExpression.wma]]></filename>
-        <playlisttrack>4</playlisttrack>
+        <playlisttrack>5</playlisttrack>
         <time>110</time>
         <year>2012</year>
         <bitrate>32582</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&player=api&name=Synthetic%20-%20The%20art%20of%20free%20expression.wma]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.wma]]></url>
         <size>460498</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[5]]></artist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
@@ -184,7 +226,7 @@
         <disk><![CDATA[1]]></disk>
         <track>6</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma]]></filename>
-        <playlisttrack>5</playlisttrack>
+        <playlisttrack>6</playlisttrack>
         <time>252</time>
         <year>2012</year>
         <bitrate>32582</bitrate>
@@ -226,7 +268,7 @@
         <disk><![CDATA[1]]></disk>
         <track>7</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
-        <playlisttrack>6</playlisttrack>
+        <playlisttrack>7</playlisttrack>
         <time>433</time>
         <year>2012</year>
         <bitrate>32582</bitrate>
@@ -259,6 +301,48 @@
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
+      <song id="112">
+        <title><![CDATA[Personal Truth]]></title>
+        <name><![CDATA[Personal Truth]]></name>
+        <artist id="33"><![CDATA[MxBxCx]]></artist>
+        <album id="12"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>8</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/08Mxbxcx-PersonalTruth.mp3]]></filename>
+        <playlisttrack>8</playlisttrack>
+        <time>208</time>
+        <year>2012</year>
+        <bitrate>179860</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3]]></url>
+        <size>4693165</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels/>
+        <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-8.270000</replaygain_track_gain>
+        <replaygain_track_peak>0.881000</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
       <song id="107">
         <title><![CDATA[Arrest Me]]></title>
         <name><![CDATA[Arrest Me]]></name>
@@ -266,10 +350,10 @@
         <album id="12"><![CDATA[Buried in Nausea]]></album>
         <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
-        <track>10</track>
+        <track>9</track>
         <genre id="7"><![CDATA[Punk]]></genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/09R_b-ArrestMe.m4a]]></filename>
-        <playlisttrack>7</playlisttrack>
+        <playlisttrack>9</playlisttrack>
         <time>96</time>
         <year>2012</year>
         <bitrate>252864</bitrate>
@@ -277,7 +361,7 @@
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mp4]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a]]></url>
-        <size>3089501</size>
+        <size>3091727</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -297,15 +381,15 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-1.350000</replaygain_track_gain>
+        <replaygain_track_peak>0.881000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
     </tracks>
-    <songcount>7</songcount>
+    <songcount>9</songcount>
     <diskcount>1</diskcount>
-    <type/>
+    <type>compilation</type>
     <genre id="7"><![CDATA[Punk]]></genre>
     <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
     <flag>0</flag>

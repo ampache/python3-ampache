@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>17</total_count>
+  <total_count>16</total_count>
   <artist id="16">
     <name><![CDATA[CARNÚN]]></name>
     <albums>
       <album id="10">
         <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
         <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <time>4282</time>
+        <time>3873</time>
         <year>1996</year>
         <tracks/>
         <songcount>9</songcount>
@@ -41,12 +41,12 @@
       <album id="12">
         <name><![CDATA[Buried in Nausea]]></name>
         <artist id="19"><![CDATA[Various Artists]]></artist>
-        <time>1437</time>
+        <time>1879</time>
         <year>2012</year>
         <tracks/>
-        <songcount>7</songcount>
+        <songcount>9</songcount>
         <diskcount>1</diskcount>
-        <type/>
+        <type>compilation</type>
         <genre id="7"><![CDATA[Punk]]></genre>
         <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
@@ -56,7 +56,7 @@
         <mbid><![CDATA[]]></mbid>
       </album>
     </albums>
-    <albumcount>1</albumcount>
+    <albumcount>0</albumcount>
     <songs/>
     <songcount>1</songcount>
     <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
@@ -67,6 +67,41 @@
     <mbid><![CDATA[7]]></mbid>
     <summary><![CDATA[ ]]></summary>
     <time><![CDATA[433]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
+  <artist id="34">
+    <name><![CDATA[Comedown Kid]]></name>
+    <albums>
+      <album id="12">
+        <name><![CDATA[Buried in Nausea]]></name>
+        <artist id="19"><![CDATA[Various Artists]]></artist>
+        <time>1879</time>
+        <year>2012</year>
+        <tracks/>
+        <songcount>9</songcount>
+        <diskcount>1</diskcount>
+        <type>compilation</type>
+        <genre id="7"><![CDATA[Punk]]></genre>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <mbid><![CDATA[]]></mbid>
+      </album>
+    </albums>
+    <albumcount>0</albumcount>
+    <songs/>
+    <songcount>1</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=34&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[]]></summary>
+    <time><![CDATA[116]]></time>
     <yearformed>0</yearformed>
     <placeformed><![CDATA[]]></placeformed>
   </artist>
@@ -111,41 +146,6 @@ Has released one 3" cdr on Witte Dood Records called "Rost",  appears on Public 
 He released a full length called "Poems" on Deersound. 
 It is limited to 10 copies, 4 discs, clocks in at just over five hours. ]]></summary>
     <time><![CDATA[3428]]></time>
-    <yearformed>0</yearformed>
-    <placeformed><![CDATA[]]></placeformed>
-  </artist>
-  <artist id="23">
-    <name><![CDATA[Manic Notion]]></name>
-    <albums>
-      <album id="12">
-        <name><![CDATA[Buried in Nausea]]></name>
-        <artist id="19"><![CDATA[Various Artists]]></artist>
-        <time>1437</time>
-        <year>2012</year>
-        <tracks/>
-        <songcount>7</songcount>
-        <diskcount>1</diskcount>
-        <type/>
-        <genre id="7"><![CDATA[Punk]]></genre>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-        <flag>0</flag>
-        <preciserating/>
-        <rating/>
-        <averagerating/>
-        <mbid><![CDATA[]]></mbid>
-      </album>
-    </albums>
-    <albumcount>1</albumcount>
-    <songs/>
-    <songcount>1</songcount>
-    <art><![CDATA[https://music.com.au/image.php?object_id=23&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <mbid><![CDATA[]]></mbid>
-    <summary><![CDATA[ ]]></summary>
-    <time><![CDATA[197]]></time>
     <yearformed>0</yearformed>
     <placeformed><![CDATA[]]></placeformed>
   </artist>

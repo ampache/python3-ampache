@@ -1,3 +1,8 @@
 {
-    "success": "podcast 57 deleted"
+    "error": {
+        "errorCode": "4704",
+        "errorAction": "podcast_delete",
+        "errorType": "filter",
+        "errorMessage": "Not Found: 3"
+    }
 }

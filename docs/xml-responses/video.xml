@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[video]]></errorAction>
-    <errorType><![CDATA[song]]></errorType>
-    <errorMessage><![CDATA[Not Found: 1262]]></errorMessage>
-  </error>
+  <total_count>2</total_count>
+  <video id="1">
+    <title><![CDATA[SPACE   Magic Fly (1977) - https://archive.org/details/SPACE_Magic_Fly_1977]]></title>
+    <name><![CDATA[SPACE   Magic Fly (1977) - https://archive.org/details/SPACE_Magic_Fly_1977]]></name>
+    <mime><![CDATA[video/mp4]]></mime>
+    <resolution><![CDATA[640x480]]></resolution>
+    <size>20084777</size>
+    <time><![CDATA[193]]></time>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1&uid=4&player=api&name=SPACE%20%20%20Magic%20Fly%20-1977-%20-%20https-archive.org-details-SPACE-Magic-Fly-1977.mp4]]></url>
+    <art><![CDATA[https://music.com.au/image.php?object_id=1&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+  </video>
 </root>

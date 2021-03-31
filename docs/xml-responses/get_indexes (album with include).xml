@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>9</total_count>
+  <total_count>8</total_count>
   <album id="12">
     <name><![CDATA[Buried in Nausea]]></name>
     <artist id="19"><![CDATA[Various Artists]]></artist>
-    <time>1437</time>
+    <time>1879</time>
     <year>2012</year>
     <tracks>
       <song id="110">
@@ -24,7 +24,7 @@
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mp4]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.m4a]]></url>
-        <size>6648489</size>
+        <size>6651911</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -44,8 +44,8 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-5.150000</replaygain_track_gain>
+        <replaygain_track_peak>0.989000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -66,7 +66,7 @@
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mp4]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.m4a]]></url>
-        <size>7531274</size>
+        <size>7535126</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -86,15 +86,15 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-10.740000</replaygain_track_gain>
+        <replaygain_track_peak>1.035000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
       <song id="109">
         <title><![CDATA[Dance with the Devil]]></title>
         <name><![CDATA[Dance with the Devil]]></name>
-        <artist id="29"><![CDATA[Synthetic]]></artist>
+        <artist id="34"><![CDATA[Comedown Kid]]></artist>
         <album id="12"><![CDATA[Buried in Nausea]]></album>
         <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
@@ -107,11 +107,11 @@
         <rate>44100</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Synthetic%20-%20Dance%20with%20the%20Devil.wma]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.wma]]></url>
         <size>483444</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[3]]></artist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
@@ -133,27 +133,69 @@
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
+      <song id="113">
+        <title><![CDATA[Representin]]></title>
+        <name><![CDATA[Representin]]></name>
+        <artist id="32"><![CDATA[Shorty Mac]]></artist>
+        <album id="12"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>4</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3]]></filename>
+        <playlisttrack>4</playlisttrack>
+        <time>234</time>
+        <year>2012</year>
+        <bitrate>123814</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&player=api&name=Shorty%20Mac%20-%20Representin.mp3]]></url>
+        <size>3628327</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels/>
+        <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>1.910000</replaygain_track_gain>
+        <replaygain_track_peak>0.851000</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
       <song id="111">
         <title><![CDATA[The art of free expression]]></title>
         <name><![CDATA[The art of free expression]]></name>
-        <artist id="31"><![CDATA[Synthetic]]></artist>
+        <artist id="35"><![CDATA[Tip-C]]></artist>
         <album id="12"><![CDATA[Buried in Nausea]]></album>
         <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>5</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/05Tip-c-TheArtOfFreeExpression.wma]]></filename>
-        <playlisttrack>4</playlisttrack>
+        <playlisttrack>5</playlisttrack>
         <time>110</time>
         <year>2012</year>
         <bitrate>32582</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&player=api&name=Synthetic%20-%20The%20art%20of%20free%20expression.wma]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.wma]]></url>
         <size>460498</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[5]]></artist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
@@ -184,7 +226,7 @@
         <disk><![CDATA[1]]></disk>
         <track>6</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma]]></filename>
-        <playlisttrack>5</playlisttrack>
+        <playlisttrack>6</playlisttrack>
         <time>252</time>
         <year>2012</year>
         <bitrate>32582</bitrate>
@@ -226,7 +268,7 @@
         <disk><![CDATA[1]]></disk>
         <track>7</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
-        <playlisttrack>6</playlisttrack>
+        <playlisttrack>7</playlisttrack>
         <time>433</time>
         <year>2012</year>
         <bitrate>32582</bitrate>
@@ -259,6 +301,48 @@
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
+      <song id="112">
+        <title><![CDATA[Personal Truth]]></title>
+        <name><![CDATA[Personal Truth]]></name>
+        <artist id="33"><![CDATA[MxBxCx]]></artist>
+        <album id="12"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>8</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/08Mxbxcx-PersonalTruth.mp3]]></filename>
+        <playlisttrack>8</playlisttrack>
+        <time>208</time>
+        <year>2012</year>
+        <bitrate>179860</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3]]></url>
+        <size>4693165</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels/>
+        <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-8.270000</replaygain_track_gain>
+        <replaygain_track_peak>0.881000</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
       <song id="107">
         <title><![CDATA[Arrest Me]]></title>
         <name><![CDATA[Arrest Me]]></name>
@@ -266,10 +350,10 @@
         <album id="12"><![CDATA[Buried in Nausea]]></album>
         <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
-        <track>10</track>
+        <track>9</track>
         <genre id="7"><![CDATA[Punk]]></genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/09R_b-ArrestMe.m4a]]></filename>
-        <playlisttrack>7</playlisttrack>
+        <playlisttrack>9</playlisttrack>
         <time>96</time>
         <year>2012</year>
         <bitrate>252864</bitrate>
@@ -277,7 +361,7 @@
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mp4]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a]]></url>
-        <size>3089501</size>
+        <size>3091727</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -297,15 +381,15 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-1.350000</replaygain_track_gain>
+        <replaygain_track_peak>0.881000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
     </tracks>
-    <songcount>7</songcount>
+    <songcount>9</songcount>
     <diskcount>1</diskcount>
-    <type/>
+    <type>compilation</type>
     <genre id="7"><![CDATA[Punk]]></genre>
     <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
     <flag>0</flag>
@@ -317,7 +401,7 @@
   <album id="10">
     <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
     <artist id="16"><![CDATA[CARNÚN]]></artist>
-    <time>4282</time>
+    <time>3873</time>
     <year>1996</year>
     <tracks>
       <song id="106">
@@ -330,14 +414,14 @@
         <track>1</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/01Intro.ogg]]></filename>
         <playlisttrack>1</playlisttrack>
-        <time>76</time>
+        <time>91</time>
         <year>1996</year>
-        <bitrate>96000</bitrate>
+        <bitrate>80962</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.ogg]]></url>
-        <size>923291</size>
+        <size>930226</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -351,9 +435,9 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com]]></comment>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
@@ -374,12 +458,12 @@
         <playlisttrack>2</playlisttrack>
         <time>378</time>
         <year>1996</year>
-        <bitrate>88847</bitrate>
+        <bitrate>89965</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.ogg]]></url>
-        <size>4237971</size>
+        <size>4265791</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -393,9 +477,9 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com]]></comment>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
@@ -416,12 +500,12 @@
         <playlisttrack>3</playlisttrack>
         <time>420</time>
         <year>1996</year>
-        <bitrate>83804</bitrate>
+        <bitrate>84423</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.ogg]]></url>
-        <size>4414576</size>
+        <size>4444403</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -435,9 +519,9 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com]]></comment>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
@@ -458,12 +542,12 @@
         <playlisttrack>4</playlisttrack>
         <time>404</time>
         <year>1996</year>
-        <bitrate>99043</bitrate>
+        <bitrate>100053</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.ogg]]></url>
-        <size>5034384</size>
+        <size>5066698</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -477,9 +561,9 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com]]></comment>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
@@ -498,14 +582,14 @@
         <track>5</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/05MoremqueSinistrumSacrorum.ogg]]></filename>
         <playlisttrack>5</playlisttrack>
-        <time>182</time>
+        <time>164</time>
         <year>1996</year>
-        <bitrate>96000</bitrate>
+        <bitrate>106647</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.ogg]]></url>
-        <size>2188900</size>
+        <size>2202971</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -519,9 +603,9 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com]]></comment>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
@@ -540,14 +624,14 @@
         <track>6</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg]]></filename>
         <playlisttrack>6</playlisttrack>
-        <time>637</time>
+        <time>427</time>
         <year>1996</year>
-        <bitrate>96000</bitrate>
+        <bitrate>143788</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.ogg]]></url>
-        <size>7651772</size>
+        <size>7696008</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -561,9 +645,9 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com]]></comment>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
@@ -582,14 +666,14 @@
         <track>7</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/07InTheSevenWoods_InstrumentalReRecording.ogg]]></filename>
         <playlisttrack>7</playlisttrack>
-        <time>648</time>
+        <time>452</time>
         <year>1996</year>
-        <bitrate>96000</bitrate>
+        <bitrate>138338</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.ogg]]></url>
-        <size>7780518</size>
+        <size>7826238</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -603,9 +687,9 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com]]></comment>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
@@ -626,12 +710,12 @@
         <playlisttrack>8</playlisttrack>
         <time>557</time>
         <year>1996</year>
-        <bitrate>138607</bitrate>
+        <bitrate>139453</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=4&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.ogg]]></url>
-        <size>9665824</size>
+        <size>9722091</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -645,9 +729,9 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com]]></comment>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
@@ -668,12 +752,12 @@
         <playlisttrack>9</playlisttrack>
         <time>980</time>
         <year>1996</year>
-        <bitrate>66434</bitrate>
+        <bitrate>66912</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.ogg]]></url>
-        <size>8160295</size>
+        <size>8219821</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -687,9 +771,9 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com]]></comment>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
@@ -733,7 +817,7 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
-        <size>4007141</size>
+        <size>4010069</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
@@ -749,12 +833,12 @@
         <channels/>
         <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-5.110000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -776,7 +860,7 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.wma]]></url>
-        <size>1298227</size>
+        <size>1298295</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
@@ -819,7 +903,7 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
-        <size>2325048</size>
+        <size>2325568</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
@@ -835,19 +919,19 @@
         <channels/>
         <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>2.750000</replaygain_track_gain>
+        <replaygain_track_peak>0.716000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
       <song id="65">
         <title><![CDATA[YellowSmoke]]></title>
         <name><![CDATA[YellowSmoke]]></name>
-        <artist id="28"><![CDATA[Synthetic]]></artist>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
         <album id="2"><![CDATA[Colorsmoke EP]]></album>
         <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
         <disk><![CDATA[1]]></disk>
@@ -862,10 +946,10 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.wma]]></url>
-        <size>754867</size>
+        <size>754935</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[2]]></artist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
         <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
@@ -905,7 +989,7 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
-        <size>3127705</size>
+        <size>3131519</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
@@ -921,19 +1005,19 @@
         <channels/>
         <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-5.130000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
       <song id="62">
         <title><![CDATA[PurpleSmoke]]></title>
         <name><![CDATA[PurpleSmoke]]></name>
-        <artist id="29"><![CDATA[Synthetic]]></artist>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
         <album id="2"><![CDATA[Colorsmoke EP]]></album>
         <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
         <disk><![CDATA[1]]></disk>
@@ -948,10 +1032,10 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.wma]]></url>
-        <size>1014067</size>
+        <size>1014135</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[3]]></artist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
         <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
@@ -991,7 +1075,7 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
-        <size>2437380</size>
+        <size>2441886</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
@@ -1007,19 +1091,19 @@
         <channels/>
         <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>0.960000</replaygain_track_gain>
+        <replaygain_track_peak>0.912000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
       <song id="60">
         <title><![CDATA[BrownSmoke]]></title>
         <name><![CDATA[BrownSmoke]]></name>
-        <artist id="30"><![CDATA[Synthetic]]></artist>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
         <album id="2"><![CDATA[Colorsmoke EP]]></album>
         <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
         <disk><![CDATA[1]]></disk>
@@ -1034,10 +1118,10 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma]]></url>
-        <size>792307</size>
+        <size>792375</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[4]]></artist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
         <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
@@ -1077,7 +1161,7 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-        <size>3205738</size>
+        <size>3209468</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
@@ -1093,12 +1177,12 @@
         <channels/>
         <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-2.880000</replaygain_track_gain>
+        <replaygain_track_peak>0.977000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -1120,7 +1204,7 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-        <size>3206156</size>
+        <size>3209886</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
@@ -1136,19 +1220,19 @@
         <channels/>
         <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-4.060000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
       <song id="61">
         <title><![CDATA[Red&GreenSmoke]]></title>
         <name><![CDATA[Red&GreenSmoke]]></name>
-        <artist id="31"><![CDATA[Synthetic]]></artist>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
         <album id="2"><![CDATA[Colorsmoke EP]]></album>
         <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
         <disk><![CDATA[1]]></disk>
@@ -1163,10 +1247,10 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.wma]]></url>
-        <size>1044783</size>
+        <size>1044851</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[5]]></artist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
         <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
@@ -1191,7 +1275,7 @@
       <song id="63">
         <title><![CDATA[Red&GreenSmoke]]></title>
         <name><![CDATA[Red&GreenSmoke]]></name>
-        <artist id="31"><![CDATA[Synthetic]]></artist>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
         <album id="2"><![CDATA[Colorsmoke EP]]></album>
         <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
         <disk><![CDATA[1]]></disk>
@@ -1206,10 +1290,10 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=63&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.wma]]></url>
-        <size>1040947</size>
+        <size>1041065</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[5]]></artist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
         <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
@@ -1266,7 +1350,7 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.wav]]></url>
-        <size>52341524</size>
+        <size>52345628</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -1282,12 +1366,12 @@
         <channels/>
         <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-4.310000</replaygain_track_gain>
+        <replaygain_track_peak>0.989000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -1308,7 +1392,7 @@
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
-        <size>6645248</size>
+        <size>6652448</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -1322,14 +1406,14 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[https://archive.org/details/]]></comment>
+        <comment><![CDATA[https://archive.org/details/Creeping_Lawler_2]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-4.320000</replaygain_track_gain>
+        <replaygain_track_peak>0.977000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
