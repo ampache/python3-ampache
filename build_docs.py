@@ -228,7 +228,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         song_id = search_song['song'][0]['id']
     song_title = "Fasten Your Seatbelt"
 
-    search_rules = [['favorite', 0, '%'], ['artist', 0, 'Men']]
+    search_rules = [['artist', 0, 'Synthetic']]
     search_album = ampacheConnection.advanced_search(search_rules, 'or', 'album', offset, limit, 0)
     if os.path.isfile("docs/" + api_format + "-responses/advanced_search." + api_format):
         shutil.move("docs/" + api_format + "-responses/advanced_search." + api_format,
@@ -241,7 +241,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     else:
         album_title = search_album['album'][0]['name']
 
-    search_rules = [['favorite', 0, '%'], ['artist', 2, 'Car']]
+    search_rules = [['artist', 2, 'CARN'], ['artist', 2, 'Synthetic']]
     search_artist = ampacheConnection.advanced_search(search_rules, 'or', 'artist', offset, limit, 0)
     if os.path.isfile("docs/" + api_format + "-responses/advanced_search." + api_format):
         shutil.move("docs/" + api_format + "-responses/advanced_search." + api_format,
@@ -669,7 +669,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def update_from_tags(ampache_type, ampache_id, api_format = 'xml'):
     """
-    ampacheConnection.update_from_tags('album', 5)
+    ampacheConnection.update_from_tags('album', 6)
 
     """ def update_artist_info(id, api_format = 'xml'):
     """

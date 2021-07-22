@@ -118,7 +118,7 @@
         <preciserating/>
         <rating/>
         <averagerating/>
-        <playcount>1</playcount>
+        <playcount>0</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
@@ -237,7 +237,7 @@
         <size>1035322</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[6]]></artist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
@@ -279,7 +279,7 @@
         <size>1776580</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[7]]></artist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
@@ -426,11 +426,11 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
-        <averagerating/>
+        <averagerating>2</averagerating>
         <playcount>1</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
@@ -441,8 +441,8 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>1.980000</replaygain_track_gain>
+        <replaygain_track_peak>0.861000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -468,11 +468,11 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
-        <averagerating/>
+        <averagerating>5</averagerating>
         <playcount>0</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
@@ -483,8 +483,8 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-10.510000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -510,7 +510,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -525,8 +525,8 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-9.700000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -552,11 +552,11 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
-        <averagerating/>
+        <averagerating>4</averagerating>
         <playcount>0</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
@@ -567,8 +567,8 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-11.260000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -594,11 +594,11 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
-        <averagerating/>
+        <averagerating>3</averagerating>
         <playcount>0</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
@@ -609,8 +609,8 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-7.480000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -636,7 +636,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -651,8 +651,8 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-12.660000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -678,7 +678,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -693,8 +693,8 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-12.210000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -720,7 +720,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -735,8 +735,8 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-12.240000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -762,7 +762,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -777,8 +777,8 @@
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-9.560000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
@@ -790,7 +790,7 @@
     <flag>0</flag>
     <preciserating/>
     <rating/>
-    <averagerating/>
+    <averagerating>5</averagerating>
     <mbid><![CDATA[]]></mbid>
   </album>
   <album id="2">
@@ -820,8 +820,8 @@
         <size>4010069</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -863,13 +863,13 @@
         <size>1298295</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
-        <averagerating/>
+        <averagerating>1</averagerating>
         <playcount>0</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
@@ -906,8 +906,8 @@
         <size>2325568</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -949,8 +949,8 @@
         <size>754935</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -992,8 +992,8 @@
         <size>3131519</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1035,8 +1035,8 @@
         <size>1014135</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1078,8 +1078,8 @@
         <size>2441886</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1121,8 +1121,8 @@
         <size>792375</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1164,13 +1164,13 @@
         <size>3209468</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
-        <averagerating/>
+        <averagerating>1</averagerating>
         <playcount>0</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
@@ -1207,8 +1207,8 @@
         <size>3209886</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1250,8 +1250,8 @@
         <size>1044851</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1293,8 +1293,8 @@
         <size>1041065</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1360,7 +1360,7 @@
         <preciserating/>
         <rating/>
         <averagerating/>
-        <playcount>1</playcount>
+        <playcount>3</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
@@ -1425,7 +1425,7 @@
     <flag>0</flag>
     <preciserating>3</preciserating>
     <rating>3</rating>
-    <averagerating/>
+    <averagerating>3</averagerating>
     <mbid><![CDATA[]]></mbid>
   </album>
 </root>

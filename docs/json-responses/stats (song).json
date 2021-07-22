@@ -1,9 +1,9 @@
 {
     "song": [
         {
-            "id": "58",
-            "title": "BrownSmoke",
-            "name": "BrownSmoke",
+            "id": "59",
+            "title": "YellowSmoke",
+            "name": "YellowSmoke",
             "artist": {
                 "id": "2",
                 "name": "Synthetic"
@@ -17,8 +17,8 @@
                 "name": "Synthetic"
             },
             "disk": 1,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
             "genre": [
                 {
                     "id": "1",
@@ -26,18 +26,18 @@
                 }
             ],
             "playlisttrack": 1,
-            "time": 304,
+            "time": 290,
             "year": 2007,
             "bitrate": 64000,
             "rate": 22050,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
-            "size": 2441886,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
+            "size": 2325568,
             "mbid": "",
             "album_mbid": null,
-            "artist_mbid": "1",
-            "albumartist_mbid": "1",
+            "artist_mbid": null,
+            "albumartist_mbid": null,
             "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
             "flag": 0,
             "preciserating": null,
@@ -53,70 +53,66 @@
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": "0.960000",
-            "replaygain_track_peak": "0.912000",
+            "replaygain_track_gain": "2.750000",
+            "replaygain_track_peak": "0.716000",
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "89",
-            "title": "Stolen",
-            "name": "Stolen",
+            "id": "82",
+            "title": "Vanvett",
+            "name": "Vanvett",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found."
+                "id": "13",
+                "name": "IOK-1"
             },
             "album": {
-                "id": "8",
-                "name": "Nofi Devices"
+                "id": "7",
+                "name": "Sensorisk Deprivation"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found."
+                "id": "13",
+                "name": "IOK-1"
             },
             "disk": 1,
-            "track": 11,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/11_Stolen.mp3",
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/02_-_IOK-1_-_Vanvett.flac",
             "genre": [
                 {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
+                    "id": "4",
+                    "name": "Dark Ambient"
                 }
             ],
             "playlisttrack": 2,
-            "time": 628,
-            "year": 0,
-            "bitrate": 192000,
+            "time": 825,
+            "year": 2011,
+            "bitrate": 371855,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=89&uid=4&player=api&name=Nofi-found.%20-%20Stolen.mp3",
-            "size": 15100325,
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=4&player=api&name=IOK-1%20-%20Vanvett.flac",
+            "size": 38389422,
             "mbid": "",
             "album_mbid": null,
-            "artist_mbid": "",
-            "albumartist_mbid": "",
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 1,
-            "composer": "Jeffrey Melton",
+            "composer": "",
             "channels": null,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "comment": "DNA Production release\r\nCatalogue # DNA 119",
             "license": null,
             "publisher": "archive.org",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": "2.660000",
-            "replaygain_track_peak": "0.989000",
+            "replaygain_track_gain": "-2.570000",
+            "replaygain_track_peak": "0.977000",
             "r128_album_gain": null,
             "r128_track_gain": null
         }

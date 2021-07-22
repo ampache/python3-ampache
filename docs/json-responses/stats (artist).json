@@ -1,40 +1,45 @@
 {
     "artist": [
         {
-            "id": "15",
-            "name": "Warfare 3.0",
+            "id": "20",
+            "name": "R\/B",
             "albums": [],
-            "albumcount": 1,
+            "albumcount": 0,
             "songs": [],
-            "songcount": 2,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=15&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
-            "preciserating": 3,
-            "rating": 3,
-            "averagerating": null,
-            "mbid": "",
-            "summary": null,
-            "time": 592,
-            "yearformed": 0,
-            "placeformed": null
-        },
-        {
-            "id": "16",
-            "name": "CARN\u00daN",
-            "albums": [],
-            "albumcount": 1,
-            "songs": [],
-            "songcount": 9,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=16&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "songcount": 1,
+            "genre": [
+                {
+                    "id": "7",
+                    "name": "Punk"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=20&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "mbid": "",
             "summary": " ",
-            "time": 4282,
+            "time": 96,
+            "yearformed": 0,
+            "placeformed": ""
+        },
+        {
+            "id": "19",
+            "name": "Various Artists",
+            "albums": [],
+            "albumcount": 1,
+            "songs": [],
+            "songcount": 0,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=19&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "",
+            "summary": "Warning! Deleting this artist may remove other artists and scrobbles from your library - please handle with caution!  Note: You can view albums tagged as 'Various Artists' in your library here. \n\nThe term Various Artists is used in the record industry when numerous singers and musicians collaborate on a song or collection of songs. Most often on Last.fm, compilation album tracks appear under the name of Various Artists erroneously because the individual artist is not listed in the album's ID3 information. ",
+            "time": 1437,
             "yearformed": 0,
             "placeformed": ""
         }
