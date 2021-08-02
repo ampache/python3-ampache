@@ -2880,6 +2880,73 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+    def deleted_songs(self, offset=0, limit=0):
+        """ deleted_songs
+            MINIMUM_API_VERSION=500000
+
+            Returns deleted_song
+
+            INPUTS
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'deleted_songs',
+                'auth': self.AMPACHE_SESSION,
+                'offset': str(offset),
+                'limit': str(limit)}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'deleted_songs')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def deleted_podcast_episodes(self, offset=0, limit=0):
+        """ deleted_podcast_episodes
+            MINIMUM_API_VERSION=500000
+
+            Returns deleted_podcast_episode
+
+            INPUTS
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'deleted_podcast_episodes',
+                'auth': self.AMPACHE_SESSION,
+                'offset': str(offset),
+                'limit': str(limit)}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'deleted_podcast_episodes')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+
+    def deleted_videos(self, offset=0, limit=0):
+        """ deleted_videos
+            MINIMUM_API_VERSION=500000
+
+            Returns deleted_video
+
+            INPUTS
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'deleted_videos',
+                'auth': self.AMPACHE_SESSION,
+                'offset': str(offset),
+                'limit': str(limit)}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'deleted_videos')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     """
     --------------------
     BACKCOMPAT FUNCTIONS
