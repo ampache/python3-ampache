@@ -688,6 +688,19 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     ampacheConnection.localplay('stop', False, False, 0)
 
+
+    """ def deleted_songs(offset = 0, limit = 0, api_format = 'xml'):
+    """
+    ampacheConnection.deleted_songs()
+
+    """ def deleted_podcast_episodes(offset = 0, limit = 0, api_format = 'xml'):
+    """
+    ampacheConnection.deleted_podcast_episodes()
+
+    """ def deleted_videos(offset = 0, limit = 0, api_format = 'xml'):
+    """
+    ampacheConnection.deleted_videos()
+
     """ def democratic(method, action, oid, api_format = 'xml'):
     """
     # ampacheConnection.democratic()
