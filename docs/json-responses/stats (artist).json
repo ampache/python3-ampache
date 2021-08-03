@@ -1,42 +1,47 @@
 {
     "artist": [
         {
-            "id": "15",
-            "name": "Warfare 3.0",
+            "id": "19",
+            "name": "Various Artists",
             "albums": [],
             "albumcount": 1,
             "songs": [],
-            "songcount": 2,
+            "songcount": 0,
             "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=15&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
-            "preciserating": 3,
-            "rating": 3,
-            "averagerating": 3,
-            "mbid": "",
-            "summary": null,
-            "time": 592,
-            "yearformed": 0,
-            "placeformed": null
-        },
-        {
-            "id": "34",
-            "name": "Comedown Kid",
-            "albums": [],
-            "albumcount": 0,
-            "songs": [],
-            "songcount": 1,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=34&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=19&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "mbid": "",
-            "summary": null,
-            "time": 116,
+            "summary": "Warning! Deleting this artist may remove other artists and scrobbles from your library - please handle with caution!  Note: You can view albums tagged as 'Various Artists' in your library here. \n\nThe term Various Artists is used in the record industry when numerous singers and musicians collaborate on a song or collection of songs. Most often on Last.fm, compilation album tracks appear under the name of Various Artists erroneously because the individual artist is not listed in the album's ID3 information. ",
+            "time": 1437,
             "yearformed": 0,
-            "placeformed": null
+            "placeformed": ""
+        },
+        {
+            "id": "2",
+            "name": "Synthetic",
+            "albums": [],
+            "albumcount": 1,
+            "songs": [],
+            "songcount": 12,
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": 3,
+            "mbid": "1",
+            "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
+            "time": 4568,
+            "yearformed": 0,
+            "placeformed": ""
         }
     ]
 }
