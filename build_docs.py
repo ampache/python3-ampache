@@ -688,6 +688,12 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     ampacheConnection.localplay('stop', False, False, 0)
 
+    """ catalogs: get all the catalogs
+    """ 
+    ampacheConnection.catalogs()
+    """ catalog: get a catalog by id
+    """ 
+    ampacheConnection.catalog(1)
 
     """ def deleted_songs(offset = 0, limit = 0, api_format = 'xml'):
     """
