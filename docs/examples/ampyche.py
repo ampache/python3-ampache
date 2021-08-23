@@ -166,7 +166,7 @@ class AMPYCHE(object):
 
         # get your lists
         self.list_songs = list()
-        if OID > 0:
+        if int(OID) > 0:
             if TYPE == 'playlist':
                 self.playlist_songs(OID)
             if TYPE == 'song':
