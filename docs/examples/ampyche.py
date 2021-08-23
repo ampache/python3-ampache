@@ -158,9 +158,11 @@ class AMPYCHE(object):
             print('CONNECTION ERROR')
             return
 
-        # workaround for bug
+        # workaround for bugs
         if not self.ampacheConnection.AMPACHE_URL:
             self.ampacheConnection.AMPACHE_URL = self.ampache_url
+        if not self.ampacheConnection.AMPACHE_SESSION:
+            self.ampacheConnection.AMPACHE_SESSION = self.ampache_session
 
         # get your lists
         self.list_songs = list()
