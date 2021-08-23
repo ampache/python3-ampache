@@ -16,6 +16,10 @@ Code examples and scripts are available from github
 
 There has been a pretty significant change in the library between Ampache 4 and Ampache 5.
 
+For anyone wanting to stay on v4 the branch has been separated from the master branch.
+
+`<https://github.com/ampache/python3-ampache/tree/api4>`_
+
 Once you connect with your passphrase or api key, the url and auth token are stored allowing you to call methods without them.
 
 .. code-block:: python3
