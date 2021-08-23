@@ -400,6 +400,8 @@ class API(object):
         if self.AMPACHE_API == 'json':
             json_data = json.loads(ampache_response.decode('utf-8'))
             if 'session_expire' in json_data:
+                if not self.AMPACHE_URL:
+                    self.AMPACHE_URL = ampache_url
                 self.AMPACHE_SESSION = ampache_api
                 return ampache_api
             else:
@@ -412,6 +414,9 @@ class API(object):
                 return False
             try:
                 tree.find('session_expire').text
+                if not self.AMPACHE_URL:
+                    self.AMPACHE_URL = ampache_url
+                self.AMPACHE_SESSION = ampache_api
             except AttributeError:
                 return False
             return ampache_api
@@ -940,8 +945,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def playlists(self, filter_str: str = False,
-                  exact: int = False, offset=0, limit=0):
+    def playlists(self, filter_str: str = False, exact: int = False, offset=0, limit=0):
         """ playlists
             MINIMUM_API_VERSION=380001
 
