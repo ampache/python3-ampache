@@ -328,7 +328,7 @@ class API(object):
 
             INPUTS
             * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
-            * ampache_api = (string) encrypted apikey
+            * ampache_api = (string) encrypted apikey OR password if using password auth
             * user        = (string) username //optional
             * timestamp   = (integer) UNIXTIME() //optional
             * version     = (string) //optional
@@ -2116,6 +2116,12 @@ class API(object):
                 'songmbid': mbtitle,
                 'albummbid': mbalbum,
                 'artistmdib': mbartist}
+        if not mbtitle:
+            data.pop('songmbid')
+        if not mbalbum:
+            data.pop('albummbid')
+        if not mbartist:
+            data.pop('artistmdib')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'scrobble')

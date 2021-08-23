@@ -8,11 +8,45 @@ Upload to PyPI
 INFO
 ====
 
-A python3 library for interaction with your Ampache server using the XML & JSON API
+A python3 library for interaction with your Ampache 5.x.x server using the XML & JSON API
 
-`<http://ampache.org/API/>`_
+`<https://ampache.org/API/>`_
 
 Code examples and scripts are available from github
+
+There has been a pretty significant change in the library between Ampache 4 and Ampache 5.
+
+Once you connect with your passphrase or api key, the url and auth token are stored allowing you to call methods without them.
+
+.. code-block:: python3
+
+    import ampache
+    import time
+
+    # connect to the server
+    ampacheConnection = ampache.API()
+
+    # if using password auth use encrypt_password
+    mytime = int(time.time())
+    passphrase = ampacheConnection.encrypt_password('mypassword', mytime)
+    auth = ampacheConnection.handshake('https://music.com.au', passphrase, 'my username', mytime)
+
+    # if using an API key auth keep using encrypt_string
+    passphrase = ampacheConnection.encrypt_string('my apikey', 'my username')
+    auth = ampacheConnection.handshake('https://music.com.au', passphrase)
+
+    # now you can call methods without having to keep putting in the url and userkey
+    ampacheConnection.label(1677)
+    
+    # ping has always allowed empty calls so you have to ping with a url and session still
+    ampacheConnection.ping('https://music.com.au', auth)
+
+NEWS
+====
+
+* Password handshake auth is available now.
+* This library only supports Ampache 5+ with a lot of significant change on the Ampache and library side
+
 
 INSTALL
 =======
