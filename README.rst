@@ -14,6 +14,10 @@ A python3 library for interaction with your Ampache 5.x.x server using the XML &
 
 Code examples and scripts are available from github
 
+The class documentation has been extracted out into a markdown file for easier reading.
+
+`<https://raw.githubusercontent.com/ampache/python3-ampache/master/docs/MANUAL.md>`_
+
 There has been a pretty significant change in the library between Ampache 4 and Ampache 5.
 
 For anyone wanting to stay on v4 the branch has been separated from the master branch.
