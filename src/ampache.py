@@ -82,22 +82,22 @@ class API(object):
     def set_user(self, myuser: str):
         """ set_user
 
-            set user for connection
+            Set the user string for connection
 
             INPUTS
-            * myuser = (string) 'xml'|'json'
+            * myuser = (string) ''
         """
         self.AMPACHE_USER = myuser
 
     def set_key(self, mykey: str):
         """ set_key
 
-            set api key
+            set AMPACHE_KEY (api key or password)
 
             INPUTS
-            * mykey = (string) 'xml'|'json'
+            * mykey = (string) ''
         """
-        self.AMPACHE_API = mykey
+        self.AMPACHE_KEY = mykey
 
     def set_url(self, myurl: str):
         """ set_url
@@ -105,7 +105,7 @@ class API(object):
             set the ampache url
 
             INPUTS
-            * myurl = (string) 'xml'|'json'
+            * myurl = (string) ''
         """
         self.AMPACHE_URL = myurl
 
@@ -130,6 +130,13 @@ class API(object):
         return False
 
     def return_data(self, data):
+        """ return_data
+
+            return json or xml data based on api format
+
+            INPUTS
+            * data = (string)
+        """
         # json format
         if self.AMPACHE_API == 'json':
             json_data = json.loads(data.decode('utf-8'))
@@ -212,9 +219,9 @@ class API(object):
 
     @staticmethod
     def get_message(data):
-        """ get_id_list
+        """ get_message
 
-            return a list of objects from the data matching your field stirng
+            Return the string message text from the api response
 
             INPUTS
             * data = (mixed) XML or JSON from the API
@@ -533,7 +540,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def artists(self, filter_str: str = False,
-                add: int = False, update: int = False, offset=0, limit=0, include=False):
+                add: int = False, update: int = False, offset=0, limit=0, include=False, album_artist=False):
         """ artists
             MINIMUM_API_VERSION=380001
 
@@ -547,7 +554,6 @@ class API(object):
             * limit        = (integer) //optional
             * include      = (string) 'albums', 'songs' //optional
             * album_artist = (boolean) 0,1 if true filter for album artists only //optional
-            * self.AMPACHE_API   = (string) 'xml'|'json' //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         if bool(include) and not isinstance(include, str):
@@ -559,7 +565,8 @@ class API(object):
                 'update': update,
                 'offset': str(offset),
                 'limit': str(limit),
-                'include': include}
+                'include': include,
+                'album_artist': album_artist}
         if not filter_str:
             data.pop('filter')
         if not add:
@@ -568,6 +575,8 @@ class API(object):
             data.pop('update')
         if not include:
             data.pop('include')
+        if not album_artist:
+            data.pop('album_artist')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'artists')
@@ -1294,7 +1303,6 @@ class API(object):
             * can_download = (boolean) 0,1 //optional
             * expires      = (integer) number of whole days before expiry //optional
             * description  = (string) update description //optional
-            * self.AMPACHE_API   = (string) 'xml'|'json' //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'share_edit',
@@ -1327,7 +1335,7 @@ class API(object):
 
             INPUT
             * filter_id   = (integer) UID of Share to delete
-         """
+        """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'share_delete',
                 'auth': self.AMPACHE_SESSION,
@@ -1525,7 +1533,6 @@ class API(object):
             * description   = (string) //optional
             * generator     = (string) //optional
             * copyright_str = (string) //optional
-            * self.AMPACHE_API    = (string) 'xml'|'json' //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'podcast_edit',
@@ -1813,12 +1820,10 @@ class API(object):
         return self.return_data(ampache_response)
 
     def localplay_songs(self):
-        """ localplay
+        """ localplay_songs
             MINIMUM_API_VERSION=5.0.0
 
-            This is for controlling localplay
-
-            INPUTS
+            Get the list of songs in your localplay playlist
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'localplay_songs',
