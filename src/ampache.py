@@ -2124,13 +2124,13 @@ class API(object):
                 'album': album_name,
                 'songmbid': mbtitle,
                 'albummbid': mbalbum,
-                'artistmdib': mbartist}
+                'artistmbid': mbartist}
         if not mbtitle:
             data.pop('songmbid')
         if not mbalbum:
             data.pop('albummbid')
         if not mbartist:
-            data.pop('artistmdib')
+            data.pop('artistmbid')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'scrobble')
