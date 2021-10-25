@@ -94,6 +94,14 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     ampacheConnection.system_update()
 
+    """ def live_streams(filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
+    """
+    ampacheConnection.live_streams(False, False, offset, limit)
+
+    """ def live_stream(filter, api_format = 'xml'):
+    """
+    ampacheConnection.live_stream(3)
+
     """ def labels(filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
     ampacheConnection.labels(False, False, offset, limit)
@@ -372,7 +380,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         shutil.move("docs/" + api_format + "-responses/catalog_action." + api_format,
                     "docs/" + api_format + "-responses/catalog_action (error)." + api_format)
 
-    ampacheConnection.catalog_action('clean_catalog', 2)
+    #ampacheConnection.catalog_action('clean_catalog', 2)
 
     """ def flag(type, id, flag, api_format = 'xml'):
     """
@@ -727,6 +735,7 @@ def self_check(api_format, ampache_url, ampache_api, ampache_session):
         filedata = f.read()
         f.close()
 
+        url_text = ampache_url.replace("https://", "")
         url_text = ampache_url.replace("https://", "")
         url_json = url_text.replace("/", "\\/")
         newdata = re.sub(url_text, "music.com.au", filedata)

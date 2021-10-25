@@ -1,56 +1,60 @@
 {
     "album": [
         {
-            "id": "2",
-            "name": "Colorsmoke EP",
+            "id": "7",
+            "name": "Sensorisk Deprivation",
             "artist": {
-                "id": "2",
-                "name": "Synthetic"
+                "id": "13",
+                "name": "IOK-1"
             },
-            "time": 4568,
-            "year": 2007,
+            "time": 3428,
+            "year": 2011,
             "tracks": [],
-            "songcount": 12,
+            "songcount": 4,
             "diskcount": 1,
             "type": null,
             "genre": [
                 {
-                    "id": "1",
-                    "name": "Electronic"
+                    "id": "4",
+                    "name": "Dark Ambient"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 1,
-            "preciserating": 5,
-            "rating": 5,
-            "averagerating": 3,
-            "mbid": null
-        },
-        {
-            "id": "21",
-            "name": "Forget and Remember",
-            "artist": {
-                "id": "36",
-                "name": "Comfort Fit"
-            },
-            "time": 4248,
-            "year": 2005,
-            "tracks": [],
-            "songcount": 20,
-            "diskcount": 1,
-            "type": "album",
-            "genre": [
-                {
-                    "id": "8",
-                    "name": "Hip-Hop"
-                }
-            ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2"
+            "mbid": null
+        },
+        {
+            "id": "8",
+            "name": "Nofi Devices",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found."
+            },
+            "time": 4423,
+            "year": 0,
+            "tracks": [],
+            "songcount": 11,
+            "diskcount": 1,
+            "type": null,
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": 2,
+            "rating": 2,
+            "averagerating": 2,
+            "mbid": null
         }
     ]
 }

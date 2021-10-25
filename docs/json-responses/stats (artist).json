@@ -1,23 +1,32 @@
 {
     "artist": [
         {
-            "id": "19",
-            "name": "Various Artists",
+            "id": "14",
+            "name": "Nofi\/found.",
             "albums": [],
             "albumcount": 1,
             "songs": [],
-            "songcount": 0,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=19&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "songcount": 11,
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "",
-            "summary": "Warning! Deleting this artist may remove other artists and scrobbles from your library - please handle with caution!  Note: You can view albums tagged as 'Various Artists' in your library here. \n\nThe term Various Artists is used in the record industry when numerous singers and musicians collaborate on a song or collection of songs. Most often on Last.fm, compilation album tracks appear under the name of Various Artists erroneously because the individual artist is not listed in the album's ID3 information. ",
-            "time": 1437,
+            "preciserating": 2,
+            "rating": 2,
+            "averagerating": 2,
+            "mbid": null,
+            "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
+            "time": 4423,
             "yearformed": 0,
-            "placeformed": ""
+            "placeformed": null
         },
         {
             "id": "2",
@@ -41,7 +50,7 @@
             "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
             "time": 4568,
             "yearformed": 0,
-            "placeformed": ""
+            "placeformed": null
         }
     ]
 }

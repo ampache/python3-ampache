@@ -1,117 +1,118 @@
 {
     "song": [
         {
-            "id": "102",
-            "title": "Moremque Sinistrum Sacrorum",
-            "name": "Moremque Sinistrum Sacrorum",
+            "id": "76",
+            "title": "inominavel p04",
+            "name": "inominavel p04",
             "artist": {
-                "id": "16",
-                "name": "CARN\u00daN"
+                "id": "11",
+                "name": "structura"
             },
             "album": {
-                "id": "10",
-                "name": "CARN\u00daN - MALKUTH (Demo 1996)"
+                "id": "18",
+                "name": "Inominavel (live.v.01)"
             },
             "albumartist": {
-                "id": "16",
-                "name": "CARN\u00daN"
+                "id": "11",
+                "name": "structura"
             },
             "disk": 1,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/05MoremqueSinistrumSacrorum.ogg",
-            "genre": [],
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/04_structura_-_inominavel_p04.mp3",
+            "genre": [
+                {
+                    "id": "3",
+                    "name": "Noise"
+                }
+            ],
             "playlisttrack": 1,
-            "time": 164,
-            "year": 1996,
-            "bitrate": 106647,
+            "time": 317,
+            "year": 2007,
+            "bitrate": 192000,
             "rate": 44100,
-            "mode": "vbr",
-            "mime": "application\/ogg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.ogg",
-            "size": 2202971,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=76&uid=4&player=api&name=structura%20-%20inominavel%20p04.mp3",
+            "size": 7629821,
             "mbid": "",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": 3,
-            "playcount": 0,
+            "playcount": 1,
             "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+            "comment": "https:\/\/enoughrecords.scene.org",
             "license": null,
             "publisher": "archive.org",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": "-7.480000",
-            "replaygain_track_peak": "1.000000",
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000",
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "87",
-            "title": "Wonders of Nando",
-            "name": "Wonders of Nando",
+            "id": "120",
+            "title": "Freeze the Cut",
+            "name": "Freeze the Cut",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found."
+                "id": "36",
+                "name": "Comfort Fit"
             },
             "album": {
-                "id": "8",
-                "name": "Nofi Devices"
+                "id": "21",
+                "name": "Forget and Remember"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found."
+                "id": "36",
+                "name": "Comfort Fit"
             },
             "disk": 1,
-            "track": 6,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/06_Wonders_of_Nando.mp3",
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/4 - Freeze The Cut.mp3",
             "genre": [
                 {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
+                    "id": "8",
+                    "name": "Hip-Hop"
                 }
             ],
             "playlisttrack": 2,
-            "time": 319,
-            "year": 0,
-            "bitrate": 192000,
+            "time": 168,
+            "year": 2005,
+            "bitrate": 246979,
             "rate": 44100,
-            "mode": "cbr",
+            "mode": "vbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=87&uid=4&player=api&name=Nofi-found.%20-%20Wonders%20of%20Nando.mp3",
-            "size": 7673901,
-            "mbid": "",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=120&uid=4&player=api&name=Comfort%20Fit%20-%20Freeze%20the%20Cut.mp3",
+            "size": 5216305,
+            "mbid": "d927db0b-7d3a-4fba-867c-d140cb19aeb9",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
+            "catalog": 4,
+            "composer": "",
             "channels": null,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-04-comfort_fit-freeze_the_cut_feat_blaktroniks\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
             "license": null,
-            "publisher": "archive.org",
+            "publisher": "Tokyo Dawn Records",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": "-1.440000",
-            "replaygain_track_peak": "1.000000",
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }
