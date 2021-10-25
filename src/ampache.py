@@ -2696,6 +2696,57 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+    def live_streams(self, filter_str: str = False, exact: int = False,
+               offset=0, limit=0):
+        """ live_streams
+            MINIMUM_API_VERSION=5.1.0
+
+            Returns live_streams based on the specified filter_str
+
+            INPUTS
+            * filter_str  = (string) search the name of a live_stream //optional
+            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'live_streams',
+                'auth': self.AMPACHE_SESSION,
+                'exact': exact,
+                'filter': filter_str,
+                'offset': str(offset),
+                'limit': str(limit)}
+        if not filter_str:
+            data.pop('filter')
+        if not exact:
+            data.pop('exact')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_streams')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def live_stream(self, filter_id: int):
+        """ live_stream
+            MINIMUM_API_VERSION=5.1.0
+
+            returns a single live_stream based on UID
+
+            INPUTS
+            * filter_id   = (integer) $live_stream_id
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'live_stream',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_stream')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def labels(self, filter_str: str = False, exact: int = False,
                offset=0, limit=0):
         """ labels
