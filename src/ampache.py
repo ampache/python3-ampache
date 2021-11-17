@@ -162,7 +162,7 @@ API FUNCTIONS
 """
 
 
-def handshake(ampache_url, ampache_api, ampache_user=False, timestamp=False, version='400004', api_format='xml'):
+def handshake(ampache_url, ampache_api, ampache_user=False, timestamp=False, version='443000', api_format='xml'):
     """ handshake
         MINIMUM_API_VERSION=380001
 
@@ -216,7 +216,7 @@ def handshake(ampache_url, ampache_api, ampache_user=False, timestamp=False, ver
         return token
 
 
-def ping(ampache_url, ampache_api=False, api_format='xml'):
+def ping(ampache_url, ampache_api=False, version='443000', api_format='xml'):
     """ ping
         MINIMUM_API_VERSION=380001
 
@@ -226,11 +226,13 @@ def ping(ampache_url, ampache_api=False, api_format='xml'):
         INPUTS
         * ampache_url = (string)
         * ampache_api = (string) session auth key //optional
+        * version     = (string) //optional
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'ping',
-            'auth': ampache_api}
+            'auth': ampache_api,
+            'version': version}
     if not ampache_api:
         data.pop('auth')
     data = urllib.parse.urlencode(data)
@@ -628,7 +630,7 @@ def albums(ampache_url, ampache_api, filter_str=False,
             'limit': str(limit),
             'include': include}
     if not filter_str:
-        data.pop('filter_str')
+        data.pop('filter')
     if not add:
         data.pop('add')
     if not update:
@@ -2840,12 +2842,12 @@ def scrobble(ampache_url, ampache_api, title, artist, album,
             'songmbid': mbtitle,
             'albummbid': mbalbum,
             'artistmbid': mbartist}
-        if not mbtitle:
-            data.pop('songmbid')
-        if not mbalbum:
-            data.pop('albummbid')
-        if not mbartist:
-            data.pop('artistmbid')
+    if not mbtitle:
+        data.pop('songmbid')
+    if not mbalbum:
+        data.pop('albummbid')
+    if not mbartist:
+        data.pop('artistmbid')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'scrobble')
