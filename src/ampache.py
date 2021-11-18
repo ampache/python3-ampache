@@ -2395,7 +2395,7 @@ def localplay(ampache_url, ampache_api, command, oid=False, otype=False, clear=0
         return tree
 
 
-def democratic(ampache_url, ampache_api, method, action, oid, api_format='xml'):
+def democratic(ampache_url, ampache_api, method, oid, api_format='xml'):
     """ democratic
         MINIMUM_API_VERSION=380001
 
