@@ -28,7 +28,7 @@ except IndexError:
 
 limit = 4
 offset = 0
-api_version = '440000'
+api_version = '444000'
 song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma'
 
 
@@ -83,12 +83,12 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ ping
     def ping(ampache_url, ampache_api, api_format = 'xml'):
     """
-    ampache.ping(ampache_url, False, api_format)
+    ampache.ping(ampache_url, False, api_version, api_format)
     if os.path.isfile("docs/" + api_format + "-responses/ping." + api_format):
         shutil.move("docs/" + api_format + "-responses/ping." + api_format,
                     "docs/" + api_format + "-responses/ping (No Auth)." + api_format)
     # did all this work?
-    my_ping = ampache.ping(ampache_url, ampache_session, api_format)
+    my_ping = ampache.ping(ampache_url, ampache_session, api_version, api_format)
     if not my_ping:
         sys.exit('ERROR: Failed to ping ' + ampache_url)
 
@@ -150,6 +150,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (song with include)." + api_format)
+    single_song = 57
 
     albums = ampache.get_indexes(ampache_url, ampache_session, 'album', False, False, False, False, False, offset, limit, api_format)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
@@ -195,29 +196,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def videos(ampache_url, ampache_api, filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
     videos = ampache.videos(ampache_url, ampache_session, False, False, 0, 0, api_format)
-
-    if api_format == 'xml':
-        for child in songs:
-            if child.tag == 'song':
-                single_song = child.attrib['id']
-        for child in albums:
-            if child.tag == 'album':
-                single_album = child.attrib['id']
-        for child in artists:
-            if child.tag == 'artist':
-                single_artist = child.attrib['id']
-        for child in playlists:
-            if child.tag == 'playlist':
-                single_playlist = child.attrib['id']
-        for child in videos:
-            if child.tag == 'video':
-                single_video = child.attrib['id']
-    else:
-        single_song = songs[0]['id']
-        single_album = albums[0]['id']
-        single_artist = artists[0]['id']
-        single_playlist = playlists[0]['id']
-        single_video = videos[0]['id']
+    single_video = 1
 
     """ video
     def video(ampache_url, ampache_api, filter, api_format = 'xml'):
@@ -274,6 +253,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ album
     def album(ampache_url, ampache_api, filter, include = False, api_format = 'xml'):
     """
+    single_album = 9
     album = ampache.album(ampache_url, ampache_session, single_album, False, api_format)
 
     if api_format == 'xml':
@@ -306,12 +286,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         shutil.move("docs/" + api_format + "-responses/stats." + api_format,
                     "docs/" + api_format + "-responses/stats (artist)." + api_format)
 
-    if api_format == 'xml':
-        for child in stats:
-            if child.tag == 'artist':
-                single_artist = child.attrib['id']
-    else:
-        single_artist = stats[0]['id']
+    single_artist = 19
 
     stats = ampache.stats(ampache_url, ampache_session, 'album', 'random', ampache_user, None, 0, 2, api_format)
     if os.path.isfile("docs/" + api_format + "-responses/stats." + api_format):
@@ -354,7 +329,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         shutil.move("docs/" + api_format + "-responses/catalog_action." + api_format,
                     "docs/" + api_format + "-responses/catalog_action (error)." + api_format)
 
-    catalog_action = ampache.catalog_action(ampache_url, ampache_session, 'clean_catalog', 2, api_format)
+    #catalog_action = ampache.catalog_action(ampache_url, ampache_session, 'clean_catalog', 2, api_format)
 
     """ flag
     def flag(ampache_url, ampache_api, type, id, flag, api_format = 'xml'):
