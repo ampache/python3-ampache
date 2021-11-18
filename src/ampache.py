@@ -326,7 +326,7 @@ class API(object):
     """
 
     def handshake(self, ampache_url: str, ampache_api: str, ampache_user: str = False,
-                  timestamp: int = 0, version: str = '5.0.0'):
+                  timestamp: int = 0, version: str = '5.1.0'):
         """ handshake
             MINIMUM_API_VERSION=380001
 
@@ -381,7 +381,7 @@ class API(object):
             self.AMPACHE_SESSION = token
             return token
 
-    def ping(self, ampache_url: str, ampache_api: str = False, version: str = '5.0.0'):
+    def ping(self, ampache_url: str, ampache_api: str = False, version: str = '5.1.0'):
         """ ping
             MINIMUM_API_VERSION=380001
 
@@ -1808,7 +1808,7 @@ class API(object):
                 'clear': clear}
         if not oid:
             data.pop('oid')
-        if not type:
+        if not otype:
             data.pop('type')
         if not clear:
             data.pop('clear')
