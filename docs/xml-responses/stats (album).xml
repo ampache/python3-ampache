@@ -1,34 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>2</total_count>
-  <album id="10">
-    <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
-    <artist id="16"><![CDATA[CARNÚN]]></artist>
-    <time>4282</time>
-    <year>1996</year>
-    <tracks>9</tracks>
-    <songcount>9</songcount>
+  <total_count>1</total_count>
+  <album id="21">
+    <name><![CDATA[Forget and Remember]]></name>
+    <artist id="36"><![CDATA[]]></artist>
+    <year>2005</year>
+    <tracks>20</tracks>
     <disk>1</disk>
-    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <flag>0</flag>
+    <tag id="8" count="1"><![CDATA[Hip-Hop]]></tag>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
     <preciserating/>
     <rating/>
     <averagerating/>
-    <mbid><![CDATA[]]></mbid>
-  </album>
-  <album id="9">
-    <name><![CDATA[Creeping Lawler 2]]></name>
-    <artist id="15"><![CDATA[Warfare 3.0]]></artist>
-    <time>592</time>
-    <year>0</year>
-    <tracks>2</tracks>
-    <songcount>2</songcount>
-    <disk>1</disk>
-    <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <flag>0</flag>
-    <preciserating>3</preciserating>
-    <rating>3</rating>
-    <averagerating/>
-    <mbid><![CDATA[]]></mbid>
+    <mbid>6e1d48f7-717c-416e-af35-5d2454a13af2</mbid>
   </album>
 </root>

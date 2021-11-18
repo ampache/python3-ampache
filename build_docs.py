@@ -28,7 +28,7 @@ except IndexError:
 
 limit = 4
 offset = 0
-api_version = '444000'
+api_version = '390000'
 song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma'
 
 

@@ -7,39 +7,33 @@
     <artist id="15"><![CDATA[Warfare 3.0]]></artist>
     <album id="9"><![CDATA[Creeping Lawler 2]]></album>
     <albumartist id="15"><![CDATA[Warfare 3.0]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>1</track>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.wav]]></filename>
-    <playlisttrack>1</playlisttrack>
+    <track>1</track>
     <time>296</time>
     <year>0</year>
     <bitrate>1411200</bitrate>
     <rate>44100</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.wav]]></url>
-    <size>52341524</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <mode>cbr</mode>
+    <mime>audio/mpeg</mime>
+    <url><![CDATA[https://music.lachlandewaard.org:443/develop/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=496&name=Warfare%203.0%20-%20Creeping%20Lawler%202.wav]]></url>
+    <size>52345628</size>
+    <mbid/>
+    <album_mbid/>
+    <artist_mbid/>
+    <albumartist_mbid/>
     <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>1</playcount>
-    <catalog>1</catalog>
+    <preciserating>0</preciserating>
+    <rating>0</rating>
+    <averagerating>0</averagerating>
     <composer><![CDATA[]]></composer>
     <channels/>
     <comment><![CDATA[]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
+    <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
+    <replaygain_track_gain>-4.310000</replaygain_track_gain>
+    <replaygain_track_peak>0.989000</replaygain_track_peak>
   </song>
   <song id="97">
     <title><![CDATA[Creeping Lawler 2]]></title>
@@ -47,38 +41,32 @@
     <artist id="15"><![CDATA[Warfare 3.0]]></artist>
     <album id="9"><![CDATA[Creeping Lawler 2]]></album>
     <albumartist id="15"><![CDATA[Warfare 3.0]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>1</track>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.mp3]]></filename>
-    <playlisttrack>2</playlisttrack>
+    <track>1</track>
     <time>296</time>
     <year>0</year>
     <bitrate>177349</bitrate>
     <rate>44100</rate>
-    <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
-    <size>6645248</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <mode>vbr</mode>
+    <mime>audio/mpeg</mime>
+    <url><![CDATA[https://music.lachlandewaard.org:443/develop/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=497&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
+    <size>6652448</size>
+    <mbid/>
+    <album_mbid/>
+    <artist_mbid/>
+    <albumartist_mbid/>
     <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
+    <preciserating>0</preciserating>
+    <rating>0</rating>
+    <averagerating>0</averagerating>
     <composer><![CDATA[]]></composer>
     <channels/>
-    <comment><![CDATA[https://archive.org/details/]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
+    <comment><![CDATA[https://archive.org/details/Creeping_Lawler_2]]></comment>
+    <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
+    <replaygain_track_gain>-4.320000</replaygain_track_gain>
+    <replaygain_track_peak>0.977000</replaygain_track_peak>
   </song>
 </root>

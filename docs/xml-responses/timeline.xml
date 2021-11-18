@@ -1,95 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
 <timeline>
-	<activity id="164">
-		<date>1614143461</date>
+	<activity id="233">
+		<date>1637210832</date>
+		<object_type><![CDATA[user]]></object_type>
+		<object_id>10</object_id>
+		<action><![CDATA[follow]]></action>
+		<username><![CDATA[user]]></username>	</activity>n	<activity id="232">
+		<date>1637210602</date>
+		<object_type><![CDATA[user]]></object_type>
+		<object_id>10</object_id>
+		<action><![CDATA[follow]]></action>
+		<username><![CDATA[user]]></username>	</activity>n	<activity id="231">
+		<date>1637210600</date>
 		<object_type><![CDATA[song]]></object_type>
-		<object_id>83</object_id>
-		<action><![CDATA[play]]></action>
-		<user id="4">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="163">
-		<date>1614143459</date>
+		<object_id>93</object_id>
+		<action><![CDATA[userflag]]></action>
+		<username><![CDATA[user]]></username>	</activity>n	<activity id="230">
+		<date>1637210598</date>
 		<object_type><![CDATA[playlist]]></object_type>
 		<object_id>2</object_id>
 		<action><![CDATA[userflag]]></action>
-		<user id="4">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="162">
-		<date>1614141533</date>
+		<username><![CDATA[user]]></username>	</activity>n	<activity id="229">
+		<date>1637210588</date>
 		<object_type><![CDATA[user]]></object_type>
 		<object_id>10</object_id>
 		<action><![CDATA[follow]]></action>
-		<user id="4">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="161">
-		<date>1614141528</date>
+		<username><![CDATA[user]]></username>	</activity>n	<activity id="228">
+		<date>1637210585</date>
+		<object_type><![CDATA[song]]></object_type>
+		<object_id>93</object_id>
+		<action><![CDATA[userflag]]></action>
+		<username><![CDATA[user]]></username>	</activity>n	<activity id="227">
+		<date>1637210583</date>
 		<object_type><![CDATA[playlist]]></object_type>
 		<object_id>2</object_id>
 		<action><![CDATA[userflag]]></action>
-		<user id="4">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="160">
-		<date>1614141519</date>
+		<username><![CDATA[user]]></username>	</activity>n	<activity id="226">
+		<date>1637210565</date>
+		<object_type><![CDATA[song]]></object_type>
+		<object_id>93</object_id>
+		<action><![CDATA[userflag]]></action>
+		<username><![CDATA[user]]></username>	</activity>n	<activity id="225">
+		<date>1637210564</date>
+		<object_type><![CDATA[playlist]]></object_type>
+		<object_id>2</object_id>
+		<action><![CDATA[userflag]]></action>
+		<username><![CDATA[user]]></username>	</activity>n	<activity id="224">
+		<date>1637210527</date>
 		<object_type><![CDATA[user]]></object_type>
 		<object_id>10</object_id>
 		<action><![CDATA[follow]]></action>
-		<user id="4">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="159">
-		<date>1614141516</date>
-		<object_type><![CDATA[playlist]]></object_type>
-		<object_id>2</object_id>
-		<action><![CDATA[userflag]]></action>
-		<user id="4">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="158">
-		<date>1614141118</date>
-		<object_type><![CDATA[user]]></object_type>
-		<object_id>10</object_id>
-		<action><![CDATA[follow]]></action>
-		<user id="4">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="157">
-		<date>1614141115</date>
-		<object_type><![CDATA[playlist]]></object_type>
-		<object_id>2</object_id>
-		<action><![CDATA[userflag]]></action>
-		<user id="4">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="156">
-		<date>1614141058</date>
-		<object_type><![CDATA[user]]></object_type>
-		<object_id>10</object_id>
-		<action><![CDATA[follow]]></action>
-		<user id="4">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="155">
-		<date>1614141056</date>
-		<object_type><![CDATA[playlist]]></object_type>
-		<object_id>2</object_id>
-		<action><![CDATA[userflag]]></action>
-		<user id="4">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-</timeline>
+		<username><![CDATA[user]]></username>	</activity>n</timeline>
+
 </root>

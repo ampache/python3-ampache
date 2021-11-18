@@ -1,47 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>1</total_count>
+  <total_count>4</total_count>
   <song id="81">
     <title><![CDATA[Galenskap]]></title>
     <name><![CDATA[Galenskap]]></name>
     <artist id="13"><![CDATA[IOK-1]]></artist>
     <album id="7"><![CDATA[Sensorisk Deprivation]]></album>
     <albumartist id="13"><![CDATA[IOK-1]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>3</track>
     <tag id="4" count="1"><![CDATA[Dark Ambient]]></tag>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/03_-_IOK-1_-_Galenskap.flac]]></filename>
-    <playlisttrack>1</playlisttrack>
+    <track>3</track>
     <time>998</time>
     <year>2011</year>
-    <bitrate>389585</bitrate>
+    <bitrate>389683</bitrate>
     <rate>44100</rate>
-    <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/x-flac]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&player=api&name=IOK-1%20-%20Galenskap.flac]]></url>
-    <size>48620903</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
+    <mode>vbr</mode>
+    <mime>audio/x-flac</mime>
+    <url><![CDATA[https://music.lachlandewaard.org:443/develop/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=481&name=IOK-1%20-%20Galenskap.flac]]></url>
+    <size>48633049</size>
+    <mbid/>
+    <album_mbid/>
+    <artist_mbid/>
+    <albumartist_mbid/>
+    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <preciserating>0</preciserating>
+    <rating>0</rating>
+    <averagerating>0</averagerating>
     <composer><![CDATA[]]></composer>
     <channels/>
     <comment><![CDATA[DNA Production release
 Catalogue # DNA 119]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[DNA Production]]></publisher>
+    <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
+    <replaygain_track_gain>-5.330000</replaygain_track_gain>
+    <replaygain_track_peak>0.977000</replaygain_track_peak>
     <genre><![CDATA[Dark Ambient]]></genre>
   </song>
 </root>
