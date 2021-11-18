@@ -2373,7 +2373,7 @@ def localplay(ampache_url, ampache_api, command, oid=False, otype=False, clear=0
             'clear': clear}
     if not oid:
         data.pop('oid')
-    if not type:
+    if not otype:
         data.pop('type')
     if not clear:
         data.pop('clear')
