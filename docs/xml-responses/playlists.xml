@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>2</total_count>
+  <total_count>3</total_count>
   <playlist id="3">
     <name><![CDATA[random - admin - private]]></name>
     <owner><![CDATA[admin]]></owner>
@@ -12,5 +12,11 @@
     <owner><![CDATA[admin]]></owner>
     <items>43</items>
     <type>public</type>
+  </playlist>
+  <playlist id="94">
+    <name><![CDATA[rename]]></name>
+    <owner><![CDATA[user]]></owner>
+    <items>49</items>
+    <type>private</type>
   </playlist>
 </root>
