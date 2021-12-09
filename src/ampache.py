@@ -34,7 +34,6 @@ from xml.etree import ElementTree
 # used for printing results
 AMPACHE_DEBUG = False
 
-
 """
 ----------------
 HELPER FUNCTIONS
@@ -1010,7 +1009,8 @@ def song(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def playlists(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+def playlists(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, hide_search: int = False,
+              show_dupes: int = False, api_format='xml'):
     """ playlists
         MINIMUM_API_VERSION=380001
 
@@ -1024,6 +1024,8 @@ def playlists(ampache_url, ampache_api, filter_str=False, exact=False, offset=0,
         * offset      = (integer) //optional
         * limit       = (integer) //optional
         * api_format  = (string) 'xml'|'json' //optional
+        * hide_search = (integer) 0,1, if true do not include searches/smartlists in the result //optional
+        * show_dupes  = (integer) 0,1, if true ignore 'api_hide_dupe_searches' setting //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
     data = {'action': 'playlists',
@@ -1031,11 +1033,17 @@ def playlists(ampache_url, ampache_api, filter_str=False, exact=False, offset=0,
             'exact': exact,
             'filter': filter_str,
             'offset': str(offset),
-            'limit': str(limit)}
+            'limit': str(limit),
+            'hide_search': hide_search,
+            'show_dupes': show_dupes}
     if not filter_str:
         data.pop('filter')
     if not exact:
         data.pop('exact')
+    if not hide_search:
+        data.pop('hide_search')
+    if not show_dupes:
+        data.pop('show_dupes')
     data = urllib.parse.urlencode(data)
     full_url = ampache_url + '?' + data
     ampache_response = fetch_url(full_url, api_format, 'playlists')
