@@ -30,6 +30,9 @@ except IndexError:
             api = conf.get('conf', 'ampache_apikey')
         if not user:
             user = conf.get('conf', 'ampache_user')
+    else:
+        print()
+        sys.exit('Error: docs/examples/ampyche.conf not found and no arguments set')
 
 limit = 4
 offset = 0

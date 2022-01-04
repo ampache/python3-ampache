@@ -688,7 +688,7 @@ class API(object):
                 'limit': str(limit),
                 'include': include}
         if not filter_str:
-            data.pop('filter_str')
+            data.pop('filter')
         if not add:
             data.pop('add')
         if not update:
