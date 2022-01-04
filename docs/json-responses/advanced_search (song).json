@@ -1,236 +1,115 @@
-[
-    {
-        "id": "802560",
-        "title": "Baker Street",
-        "name": "Baker Street",
-        "artist": {
-            "id": "254",
-            "name": "Foo Fighters"
-        },
-        "album": {
-            "id": "71644",
-            "name": "My Hero"
-        },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+{
+    "song": [
+        {
+            "id": "109",
+            "title": "Dance with the Devil",
+            "name": "Dance with the Devil",
+            "artist": {
+                "id": "34",
+                "name": "Comedown Kid"
             },
-            {
-                "id": "22",
-                "name": "Pop"
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea"
             },
-            {
-                "id": "33",
-                "name": "Alternative Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/Foo Fighters\/(1998) My Hero (single) [CDCL 796]\/102 - Baker Street.mp3",
-        "track": 2,
-        "playlisttrack": 1,
-        "time": 339,
-        "year": 1998,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=802560&uid=2&player=api&name=Foo%20Fighters%20-%20Baker%20Street.mp3",
-        "size": 13650833,
-        "mbid": "57497521-16ac-4870-8fe0-4f486652d8ef",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=71644&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "Gerry Rafferty",
-        "channels": null,
-        "comment": "",
-        "publisher": "Capitol Records",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-7.200000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists"
             },
-            {
-                "name": "Pop"
+            "disk": 1,
+            "track": 3,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
+            "genre": [],
+            "playlisttrack": 1,
+            "time": 116,
+            "year": 2012,
+            "bitrate": 32582,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.wma",
+            "size": 483444,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "126",
+            "title": "Don't Show This Message Again",
+            "name": "Don't Show This Message Again",
+            "artist": {
+                "id": "36",
+                "name": "Comfort Fit"
             },
-            {
-                "name": "Alternative Rock"
-            }
-        ]
-    },
-    {
-        "id": "1008",
-        "title": "Coma (original version)",
-        "name": "Coma (original version)",
-        "artist": {
-            "id": "8990",
-            "name": "Pendulum"
-        },
-        "album": {
-            "id": "67470",
-            "name": "Coma"
-        },
-        "tag": [
-            {
-                "id": "28",
-                "name": "House"
-            }
-        ],
-        "filename": "\/mnt\/music\/Pendulum\/(1998) Coma\/104 - Coma (Original Version).mp3",
-        "track": 4,
-        "playlisttrack": 2,
-        "time": 406,
-        "year": 1998,
-        "bitrate": 250659,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=1008&uid=2&player=api&name=Pendulum%20-%20Coma%20-original%20version-.mp3",
-        "size": 12778055,
-        "mbid": "1dc5a9ce-0867-4a41-a0bc-71e015e3c8ad",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=67470&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-5.670000",
-        "replaygain_track_peak": "0.977000",
-        "genre": [
-            {
-                "name": "House"
-            }
-        ]
-    },
-    {
-        "id": "1026",
-        "title": "Crush",
-        "name": "Crush",
-        "artist": {
-            "id": "57",
-            "name": "Pendulum"
-        },
-        "album": {
-            "id": "48760",
-            "name": "Immersion"
-        },
-        "tag": [
-            {
-                "id": "1461",
-                "name": "Drum N Bass"
-            }
-        ],
-        "filename": "\/mnt\/music\/Pendulum\/(2010) Immersion\/105 - Crush.mp3",
-        "track": 5,
-        "playlisttrack": 3,
-        "time": 253,
-        "year": 2010,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=1026&uid=2&player=api&name=Pendulum%20-%20Crush.mp3",
-        "size": 10357155,
-        "mbid": "55375fb8-162b-4539-bb1f-88524eadb442",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=48760&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-11.120000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Drum N Bass"
-            }
-        ]
-    },
-    {
-        "id": "1084",
-        "title": "Fasten Your Seatbelt",
-        "name": "Fasten Your Seatbelt",
-        "artist": {
-            "id": "57",
-            "name": "Pendulum"
-        },
-        "album": {
-            "id": "48761",
-            "name": "Hold Your Colour"
-        },
-        "tag": [
-            {
-                "id": "1461",
-                "name": "Drum N Bass"
-            }
-        ],
-        "filename": "\/mnt\/music\/Pendulum\/(2005) Hold Your Colour\/104 - Fasten Your Seatbelt.mp3",
-        "track": 4,
-        "playlisttrack": 4,
-        "time": 398,
-        "year": 2007,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=1084&uid=2&player=api&name=Pendulum%20-%20Fasten%20Your%20Seatbelt.mp3",
-        "size": 15937872,
-        "mbid": "7f151e01-0e89-4c37-9c6d-85311eea23bf",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=48761&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "Matt Cantor",
-        "channels": null,
-        "comment": "",
-        "publisher": "Breakbeat Kaos",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-9.080000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Drum N Bass"
-            }
-        ]
-    }
-]
+            "album": {
+                "id": "21",
+                "name": "Forget and Remember"
+            },
+            "albumartist": {
+                "id": "36",
+                "name": "Comfort Fit"
+            },
+            "disk": 1,
+            "track": 12,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/12 - Don\u2019t Show This Message Again.mp3",
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 197,
+            "year": 2005,
+            "bitrate": 232690,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=126&uid=4&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3",
+            "size": 5755191,
+            "mbid": "6b582438-c034-47c2-86b0-61c63ec96b4b",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 4,
+            "composer": "",
+            "channels": null,
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-12-comfort_fit-dont_show_this_message_again\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+            "license": null,
+            "publisher": "Tokyo Dawn Records",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        }
+    ]
+}

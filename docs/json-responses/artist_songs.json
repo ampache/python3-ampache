@@ -1,250 +1,236 @@
-[
-    {
-        "id": "95577",
-        "title": "Out of the Fridge \/ Into the Fire",
-        "name": "Out of the Fridge \/ Into the Fire",
-        "artist": {
-            "id": "2298",
-            "name": "The Cops"
-        },
-        "album": {
-            "id": "52480",
-            "name": "Drop It in Their Laps"
-        },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+{
+    "song": [
+        {
+            "id": "64",
+            "title": "Black&BlueSmoke",
+            "name": "Black&BlueSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/The Cops\/(2007) Drop It in Their Laps [IR5225CD]\/101 - Out of the Fridge _ Into the Fire.mp3",
-        "track": 1,
-        "playlisttrack": 1,
-        "time": 261,
-        "year": 2007,
-        "bitrate": 320031,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=95577&uid=2&player=api&name=The%20Cops%20-%20Out%20of%20the%20Fridge%20-%20Into%20the%20Fire.mp3",
-        "size": 10454247,
-        "mbid": "b3d81e9c-0a7a-48dc-9888-f48f2325dfe5",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Inertia Recordings",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-10.870000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP"
             },
-            {
-                "name": "Pop Rock"
-            }
-        ]
-    },
-    {
-        "id": "95571",
-        "title": "Cop Pop",
-        "name": "Cop Pop",
-        "artist": {
-            "id": "2298",
-            "name": "The Cops"
+            "albumartist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "disk": 1,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "playlisttrack": 1,
+            "time": 500,
+            "year": 2007,
+            "bitrate": 20627,
+            "rate": 22050,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.wma",
+            "size": 1298295,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": 1,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "Made with Sony ACID 5",
+            "license": null,
+            "publisher": "20kbps rec.",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
         },
-        "album": {
-            "id": "52480",
-            "name": "Drop It in Their Laps"
+        {
+            "id": "56",
+            "title": "Black&BlueSmoke",
+            "name": "Black&BlueSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP"
+            },
+            "albumartist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "disk": 1,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 500,
+            "year": 2007,
+            "bitrate": 64000,
+            "rate": 22050,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+            "size": 4010069,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "20kbps rec.",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "-5.110000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
         },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+        {
+            "id": "65",
+            "title": "YellowSmoke",
+            "name": "YellowSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/The Cops\/(2007) Drop It in Their Laps [IR5225CD]\/102 - Cop Pop.mp3",
-        "track": 2,
-        "playlisttrack": 2,
-        "time": 168,
-        "year": 2007,
-        "bitrate": 320049,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=95571&uid=2&player=api&name=The%20Cops%20-%20Cop%20Pop.mp3",
-        "size": 6767074,
-        "mbid": "85932e71-c812-46ec-8765-1beb98665888",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Inertia Recordings",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-10.390000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP"
             },
-            {
-                "name": "Pop Rock"
-            }
-        ]
-    },
-    {
-        "id": "95575",
-        "title": "Call Me Anytime",
-        "name": "Call Me Anytime",
-        "artist": {
-            "id": "2298",
-            "name": "The Cops"
+            "albumartist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "disk": 1,
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/02-Synthetic_-_YellowSmoke20k22hS.wma",
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 290,
+            "year": 2007,
+            "bitrate": 20627,
+            "rate": 22050,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.wma",
+            "size": 754935,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "Made with Sony ACID 5",
+            "license": null,
+            "publisher": "20kbps rec.",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
         },
-        "album": {
-            "id": "52480",
-            "name": "Drop It in Their Laps"
-        },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+        {
+            "id": "59",
+            "title": "YellowSmoke",
+            "name": "YellowSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/The Cops\/(2007) Drop It in Their Laps [IR5225CD]\/103 - Call Me Anytime.mp3",
-        "track": 3,
-        "playlisttrack": 3,
-        "time": 229,
-        "year": 2007,
-        "bitrate": 320036,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=95575&uid=2&player=api&name=The%20Cops%20-%20Call%20Me%20Anytime.mp3",
-        "size": 9178427,
-        "mbid": "eba800a2-cc6a-4f35-926b-553ae6a7302b",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Inertia Recordings",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-10.030000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP"
             },
-            {
-                "name": "Pop Rock"
-            }
-        ]
-    },
-    {
-        "id": "95582",
-        "title": "The Message",
-        "name": "The Message",
-        "artist": {
-            "id": "2298",
-            "name": "The Cops"
-        },
-        "album": {
-            "id": "52480",
-            "name": "Drop It in Their Laps"
-        },
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+            "albumartist": {
+                "id": "2",
+                "name": "Synthetic"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/The Cops\/(2007) Drop It in Their Laps [IR5225CD]\/104 - The Message.mp3",
-        "track": 4,
-        "playlisttrack": 4,
-        "time": 253,
-        "year": 2007,
-        "bitrate": 320032,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=95582&uid=2&player=api&name=The%20Cops%20-%20The%20Message.mp3",
-        "size": 10133464,
-        "mbid": "588a5193-cc90-4392-ace2-a16db728d3f7",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=52480&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Inertia Recordings",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-10.500000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Rock"
-            },
-            {
-                "name": "Pop Rock"
-            }
-        ]
-    }
-]
+            "disk": 1,
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 290,
+            "year": 2007,
+            "bitrate": 64000,
+            "rate": 22050,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
+            "size": 2325568,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "20kbps rec.",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "2.750000",
+            "replaygain_track_peak": "0.716000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        }
+    ]
+}

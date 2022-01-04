@@ -1,34 +1,44 @@
 #!/usr/bin/env python3
 
+import ampache
 import sys
 import time
-
-import ampache
 
 from multiprocessing import Process
 
 # user variables
-ampache_url  = 'https://music.server'
-ampache_api  = 'mysuperapikey'
-ampache_user = 'myusername'
+ampache_url = 'https://develop.ampache.dev'
+ampache_api = 'demodemo'
+ampache_user = 'demo'
+
+ampacheConnection = ampache.API()
 
 """
 encrypt_string
 """
-encrypted_key = ampache.encrypt_string(ampache_api, ampache_user)
+encrypted_key = ampacheConnection.encrypt_string(ampache_api, ampache_user)
+
 
 """
 handshake
 """
-# processed details
 print('Connecting to:\n    ', ampache_url)
-src_api = ampache_api
-ampache_api = ampache.handshake(ampache_url, encrypted_key)
-print('\nThe ampache handshake for:\n    ', src_api, '\n\nReturned the following session key:\n    ', ampache_api)
-if not ampache_api:
-     print()
-     sys.exit('ERROR: Failed to connect to ' + ampache_url)
+ampache_session = ampacheConnection.handshake(ampache_url, encrypted_key)
+print('\nThe ampache handshake for:\n    ',
+      ampache_api, '\n\nReturned the following session key:\n    ',
+      ampache_session)
 
-Process(target=ampache.scrobble,
-        args=(ampache_url, ampache_api, 'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed',
-              '', '', '', int(time.time()))).start()
+"""
+if you didn't connect you can't do anything
+"""
+if not ampache_session:
+    print()
+    sys.exit('ERROR: Failed to connect to ' + ampache_url)
+
+"""
+scrobble
+"""
+if ampache_session:
+    Process(target=ampacheConnection.scrobble,
+            args=('Beneath The Cold Clay', 'Crust', '...and a Dirge Becomes an Anthem',
+                  '', '', '', int(time.time()))).start()

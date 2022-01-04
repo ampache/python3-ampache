@@ -1,59 +1,56 @@
-[
-    {
-        "id": "49748",
-        "name": "Chapter One",
-        "artist": {
-            "id": "932",
-            "name": "Black Heaven"
+{
+    "album": [
+        {
+            "id": "2",
+            "name": "Colorsmoke EP",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "time": 4568,
+            "year": 2007,
+            "tracks": [],
+            "songcount": 12,
+            "diskcount": 1,
+            "type": null,
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": 3,
+            "mbid": null
         },
-        "year": 2001,
-        "tracks": 12,
-        "disk": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=49748&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "c62a2624-c2ad-46fa-8bd7-b8b7bf9a015b"
-    },
-    {
-        "id": "72877",
-        "name": "Apple Venus, Volume 1",
-        "artist": {
-            "id": "5710",
-            "name": "XTC"
-        },
-        "year": 1999,
-        "tracks": 11,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+        {
+            "id": "21",
+            "name": "Forget and Remember",
+            "artist": {
+                "id": "36",
+                "name": "Comfort Fit"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            },
-            {
-                "id": "122",
-                "name": "Art Rock"
-            },
-            {
-                "id": "1875",
-                "name": "Chamber Pop"
-            },
-            {
-                "id": "1897",
-                "name": "Art Pop"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=72877&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "ea9190fe-d7d9-4b82-a200-5e9874b61090"
-    }
-]
+            "time": 4248,
+            "year": 2005,
+            "tracks": [],
+            "songcount": 20,
+            "diskcount": 1,
+            "type": "album",
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2"
+        }
+    ]
+}

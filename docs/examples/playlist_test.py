@@ -5,16 +5,16 @@ import sys
 import ampache
 
 # user variables
-ampache_url  = 'https://music.server'
-ampache_api  = 'mysuperapikey'
-ampache_user = 'myusername'
+ampache_url = 'https://develop.ampache.dev'
+ampache_api = 'demodemo'
+ampache_user = 'demo'
 
-print('\n#######################\nTesting the ampache API\n#######################\n')
+ampacheConnection = ampache.API()
 
 """
 encrypt_string
 """
-encrypted_key = ampache.encrypt_string(ampache_api, ampache_user)
+encrypted_key = ampacheConnection.encrypt_string(ampache_api, ampache_user)
 
 """
 handshake
@@ -22,32 +22,32 @@ handshake
 # processed details
 print('Connecting to:\n    ', ampache_url)
 src_api = ampache_api
-ampache_api = ampache.handshake(ampache_url, encrypted_key)
+ampache_api = ampacheConnection.handshake(ampache_url, encrypted_key)
 print('\nThe ampache handshake for:\n    ', src_api, '\n\nReturned the following session key:\n    ', ampache_api)
 if not ampache_api:
-     print()
-     sys.exit('ERROR: Failed to connect to ' + ampache_url)
+    print()
+    sys.exit('ERROR: Failed to connect to ' + ampache_url)
 
 """
 ping
 """
 # did all this work?
-my_ping = ampache.ping(ampache_url, ampache_api)
+my_ping = ampacheConnection.ping(ampache_url, ampache_api)
 print('\nif your handshake was correct, ping will return your session key and extend the session.')
 print('\nPing returned:\n    ', my_ping)
 if not my_ping:
-     print()
-     sys.exit('ERROR: Failed to ping ' + ampache_url)
+    print()
+    sys.exit('ERROR: Failed to ping ' + ampache_url)
 
 """
 playlists
 """
-#playlists = ampache.playlists(ampache_url, ampache_api)
+playlists = ampacheConnection.playlists()
 
 """
 playlist_create
 """
-playlist_create = (ampache.playlist_create(ampache_url, ampache_api, 'python-test', 'private'))
+playlist_create = (ampacheConnection.playlist_create('python-test', 'private'))
 if playlist_create:
     for child in playlist_create:
         if child.tag == 'playlist':
@@ -57,51 +57,47 @@ print('\nplaylist_create created the following id:\n    ', single_playlist)
 """
 playlist
 """
-#playlist = ampache.playlists(ampache_url, ampache_api, 'python-test', 'private')
-#if playlist:
-    #for child in playlist:
-        #print(child.tag, child.attrib)
-        #if child.tag == 'playlist':
-        #    single_playlist = child.attrib['id']
-        #for subchildren in child:
-        #    print(str(subchildren.tag) + ': ' + str(subchildren.text))
+playlist = ampacheConnection.playlists('python-test', 'private')
+if playlist:
+    for child in playlist:
+        print(child.tag, child.attrib)
+        if child.tag == 'playlist':
+            single_playlist = child.attrib['id']
+        for subchildren in child:
+            print(str(subchildren.tag) + ': ' + str(subchildren.text))
 
 """
 playlist_add_song
 """
-songs = ampache.get_indexes(ampache_url, ampache_api, 'song', '', '', '', '', 10)
-for child in songs:
-    if child.tag == 'song':
-        print(ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, child.attrib['id'], 1))
-        print(ampache.playlist_add_song(ampache_url, ampache_api, single_playlist, child.attrib['id'], 1))
+songs = ampacheConnection.get_indexes('song', False, False, False, False, False, 0, 10)
+
+for child in ampacheConnection.get_id_list(songs, 'song'):
+    ampacheConnection.playlist_add_song(single_playlist, child, 1)
 
 """
 playlist_songs
 """
-playlist_songs = ampache.playlist_songs(ampache_url, ampache_api, single_playlist)
+playlist_songs = ampacheConnection.playlist_songs(single_playlist)
 
 """
 playlist_remove_song
 """
-for child in playlist_songs:
-    if child.tag == 'song':
-        print(ampache.playlist_remove_song(ampache_url, ampache_api, single_playlist, child.attrib['id']))
+for child in ampacheConnection.get_id_list(playlist_songs, 'song'):
+    ampacheConnection.playlist_remove_song(single_playlist, child)
 
 """
 playlist_edit
 """
-print(ampache.playlist_edit(ampache_url, ampache_api, single_playlist, 'generic', 'public'))
 
 
 """
 playlist_delete
 """
-print(ampache.playlist_delete(ampache_url, ampache_api, single_playlist))
+ampacheConnection.playlist_delete(single_playlist)
 
 """
 goodbye
 """
 # Close your session when you're done
 print('\nWhen you are finished it\'s a good idea to kill your session')
-print('    ', ampache.goodbye(ampache_url, ampache_api))
-
+ampacheConnection.goodbye()

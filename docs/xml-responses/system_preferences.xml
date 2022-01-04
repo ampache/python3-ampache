@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<preference id="123">
+		<name><![CDATA[ajax_load]]></name>
+		<level>25</level>
+		<description><![CDATA[Ajax page load]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[]]></subcategory>
+	</preference>
+	<preference id="140">
+		<name><![CDATA[notify_email]]></name>
+		<level>25</level>
+		<description><![CDATA[Allow E-mail notifications]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[options]]></category>
+		<subcategory><![CDATA[]]></subcategory>
+	</preference>
+	<preference id="220">
+		<name><![CDATA[user_start_page]]></name>
+		<level>25</level>
+		<description><![CDATA[Default logon page]]></description>
+		<value><![CDATA[default]]></value>
+		<type><![CDATA[special]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[]]></subcategory>
+	</preference>
+	<preference id="110">
+		<name><![CDATA[demo_clear_sessions]]></name>
+		<level>25</level>
+		<description><![CDATA[Democratic - Clear votes for expired user sessions]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[playlist]]></category>
+		<subcategory><![CDATA[]]></subcategory>
+	</preference>
+	<preference id="101">
+		<name><![CDATA[stream_beautiful_url]]></name>
+		<level>100</level>
+		<description><![CDATA[Enable URL Rewriting]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[streaming]]></category>
+		<subcategory><![CDATA[]]></subcategory>
+	</preference>
+	<preference id="24">
+		<name><![CDATA[force_http_play]]></name>
+		<level>100</level>
+		<description><![CDATA[Force HTTP playback regardless of port]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[]]></subcategory>
+	</preference>
+	<preference id="31">
+		<name><![CDATA[lang]]></name>
+		<level>100</level>
+		<description><![CDATA[Language]]></description>
+		<value><![CDATA[en_GB]]></value>
+		<type><![CDATA[special]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[]]></subcategory>
+	</preference>
+	<preference id="23">
+		<name><![CDATA[lock_songs]]></name>
+		<level>100</level>
+		<description><![CDATA[Lock Songs]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[]]></subcategory>
+	</preference>
+	<preference id="218">
+		<name><![CDATA[unique_playlist]]></name>
+		<level>25</level>
+		<description><![CDATA[Only add unique items to playlists]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[playlist]]></category>
+		<subcategory><![CDATA[]]></subcategory>
+	</preference>
+	<preference id="29">
+		<name><![CDATA[play_type]]></name>
+		<level>25</level>
+		<description><![CDATA[Playback Type]]></description>
+		<value><![CDATA[web_player]]></value>
+		<type><![CDATA[special]]></type>
+		<category><![CDATA[streaming]]></category>
+		<subcategory><![CDATA[]]></subcategory>
+	</preference>
+	<preference id="53">
+		<name><![CDATA[playlist_method]]></name>
+		<level>5</level>
+		<description><![CDATA[Playlist Method]]></description>
+		<value><![CDATA[default]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[playlist]]></category>
+		<subcategory><![CDATA[]]></subcategory>
+	</preference>
+	<preference id="32">
+		<name><![CDATA[playlist_type]]></name>
+		<level>100</level>
+		<description><![CDATA[Playlist Type]]></description>
+		<value><![CDATA[m3u]]></value>
+		<type><![CDATA[special]]></type>
+		<category><![CDATA[playlist]]></category>
+		<subcategory><![CDATA[]]></subcategory>
+	</preference>
+	<preference id="111">
+		<name><![CDATA[show_donate]]></name>
+		<level>25</level>
+		<description><![CDATA[Show donate button in footer]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[]]></subcategory>
+	</preference>
+	<preference id="119">
+		<name><![CDATA[daap_pass]]></name>
+		<level>100</level>
+		<description><![CDATA[DAAP backend password]]></description>
+		<value>5145162</value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[backend]]></subcategory>
+	</preference>
+	<preference id="118">
+		<name><![CDATA[daap_backend]]></name>
+		<level>100</level>
+		<description><![CDATA[Use DAAP backend]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[backend]]></subcategory>
+	</preference>
+	<preference id="86">
+		<name><![CDATA[subsonic_backend]]></name>
+		<level>100</level>
+		<description><![CDATA[Use Subsonic backend]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[backend]]></subcategory>
+	</preference>
+	<preference id="120">
+		<name><![CDATA[upnp_backend]]></name>
+		<level>100</level>
+		<description><![CDATA[Use UPnP backend]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[backend]]></subcategory>
+	</preference>
+	<preference id="139">
+		<name><![CDATA[webdav_backend]]></name>
+		<level>100</level>
+		<description><![CDATA[Use WebDAV backend]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[backend]]></subcategory>
+	</preference>
+	<preference id="231">
+		<name><![CDATA[bitly_api_key]]></name>
+		<level>75</level>
+		<description><![CDATA[Bit.ly API key]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[bit.ly]]></subcategory>
+	</preference>
+	<preference id="230">
+		<name><![CDATA[bitly_username]]></name>
+		<level>75</level>
+		<description><![CDATA[Bit.ly Username]]></description>
+		<value><![CDATA[ampadmin]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[bit.ly]]></subcategory>
+	</preference>
+	<preference id="214">
+		<name><![CDATA[cron_cache]]></name>
+		<level>25</level>
+		<description><![CDATA[Cache computed SQL data (eg. media hits stats) using a cron]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[catalog]]></subcategory>
+	</preference>
+	<preference id="148">
+		<name><![CDATA[catalog_check_duplicate]]></name>
+		<level>100</level>
+		<description><![CDATA[Check library item at import time and don't import duplicates]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[catalog]]></subcategory>
+	</preference>
+	<preference id="213">
+		<name><![CDATA[custom_datetime]]></name>
+		<level>25</level>
+		<description><![CDATA[Custom datetime]]></description>
+		<value><![CDATA[y/MM/dd KK:mma]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[custom]]></subcategory>
+	</preference>
+	<preference id="138">
+		<name><![CDATA[custom_text_footer]]></name>
+		<level>75</level>
+		<description><![CDATA[Custom text footer]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[custom]]></subcategory>
+	</preference>
+	<preference id="137">
+		<name><![CDATA[custom_favicon]]></name>
+		<level>75</level>
+		<description><![CDATA[Custom URL - Favicon]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[custom]]></subcategory>
+	</preference>
+	<preference id="275">
+		<name><![CDATA[custom_login_background]]></name>
+		<level>75</level>
+		<description><![CDATA[Custom URL - Login page background]]></description>
+		<value><![CDATA[art/background.png]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[custom]]></subcategory>
+	</preference>
+	<preference id="136">
+		<name><![CDATA[custom_login_logo]]></name>
+		<level>75</level>
+		<description><![CDATA[Custom URL - Login page logo]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[custom]]></subcategory>
+	</preference>
+	<preference id="129">
+		<name><![CDATA[custom_logo]]></name>
+		<level>25</level>
+		<description><![CDATA[Custom URL - Logo]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[custom]]></subcategory>
+	</preference>
+	<preference id="22">
+		<name><![CDATA[site_title]]></name>
+		<level>100</level>
+		<description><![CDATA[Website Title]]></description>
+		<value><![CDATA[Ampache :: develop]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[custom]]></subcategory>
+	</preference>
+	<preference id="176">
+		<name><![CDATA[discogs_api_key]]></name>
+		<level>75</level>
+		<description><![CDATA[Discogs consumer key]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[discogs]]></subcategory>
+	</preference>
+	<preference id="177">
+		<name><![CDATA[discogs_secret_api_key]]></name>
+		<level>75</level>
+		<description><![CDATA[Discogs secret]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[discogs]]></subcategory>
+	</preference>
+	<preference id="45">
+		<name><![CDATA[allow_democratic_playback]]></name>
+		<level>100</level>
+		<description><![CDATA[Allow Democratic Play]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[options]]></category>
+		<subcategory><![CDATA[feature]]></subcategory>
+	</preference>
+	<preference id="1">
+		<name><![CDATA[download]]></name>
+		<level>100</level>
+		<description><![CDATA[Allow Downloads]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[options]]></category>
+		<subcategory><![CDATA[feature]]></subcategory>
+	</preference>
+	<preference id="133">
+		<name><![CDATA[geolocation]]></name>
+		<level>25</level>
+		<description><![CDATA[Allow Geolocation]]></description>
+		<value>0</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[options]]></category>
+		<subcategory><![CDATA[feature]]></subcategory>
+	</preference>
+	<preference id="102">
+		<name><![CDATA[share]]></name>
+		<level>100</level>
+		<description><![CDATA[Allow Share]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[options]]></category>
+		<subcategory><![CDATA[feature]]></subcategory>
+	</preference>
+	<preference id="44">
+		<name><![CDATA[allow_stream_playback]]></name>
+		<level>100</level>
+		<description><![CDATA[Allow Streaming]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[options]]></category>
+		<subcategory><![CDATA[feature]]></subcategory>
+	</preference>
+	<preference id="121">
+		<name><![CDATA[allow_video]]></name>
+		<level>75</level>
+		<description><![CDATA[Allow Video Features]]></description>
+		<value>1</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[options]]></category>
+		<subcategory><![CDATA[feature]]></subcategory>
+	</preference>
+	<preference id="82">
+		<name><![CDATA[now_playing_per_user]]></name>
+		<level>50</level>
+		<description><![CDATA[Now Playing filtered per user]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[home]]></subcategory>
+	</preference>
+	<preference id="242">
+		<name><![CDATA[of_the_moment]]></name>
+		<level>25</level>
+		<description><![CDATA[Set the amount of items Album/Video of the Moment will display]]></description>
+		<value>4</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[home]]></subcategory>
+	</preference>
+	<preference id="125">
+		<name><![CDATA[home_moment_albums]]></name>
+		<level>25</level>
+		<description><![CDATA[Show Albums of the Moment]]></description>
+		<value>1</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[home]]></subcategory>
+	</preference>
+	<preference id="128">
+		<name><![CDATA[home_now_playing]]></name>
+		<level>25</level>
+		<description><![CDATA[Show Now Playing]]></description>
+		<value>1</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[home]]></subcategory>
+	</preference>
+	<preference id="127">
+		<name><![CDATA[home_recently_played]]></name>
+		<level>25</level>
+		<description><![CDATA[Show Recently Played]]></description>
+		<value>1</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[home]]></subcategory>
+	</preference>
+	<preference id="126">
+		<name><![CDATA[home_moment_videos]]></name>
+		<level>25</level>
+		<description><![CDATA[Show Videos of the Moment]]></description>
+		<value>0</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[home]]></subcategory>
+	</preference>
+	<preference id="83">
+		<name><![CDATA[album_sort]]></name>
+		<level>25</level>
+		<description><![CDATA[Album - Default sort]]></description>
+		<value><![CDATA[year_desc]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[library]]></subcategory>
+	</preference>
+	<preference id="108">
+		<name><![CDATA[album_group]]></name>
+		<level>25</level>
+		<description><![CDATA[Album - Group multiple disks]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[library]]></subcategory>
+	</preference>
+	<preference id="122">
+		<name><![CDATA[album_release_type]]></name>
+		<level>25</level>
+		<description><![CDATA[Album - Group per release type]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[library]]></subcategory>
+	</preference>
+	<preference id="130">
+		<name><![CDATA[album_release_type_sort]]></name>
+		<level>25</level>
+		<description><![CDATA[Album - Group per release type Sort]]></description>
+		<value><![CDATA[album,ep,live,single,compilation]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[library]]></subcategory>
+	</preference>
+	<preference id="146">
+		<name><![CDATA[libitem_contextmenu]]></name>
+		<level>5</level>
+		<description><![CDATA[Library item context menu]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[library]]></subcategory>
+	</preference>
+	<preference id="84">
+		<name><![CDATA[show_played_times]]></name>
+		<level>25</level>
+		<description><![CDATA[Show # played]]></description>
+		<value>1</value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[library]]></subcategory>
+	</preference>
+	<preference id="212">
+		<name><![CDATA[show_skipped_times]]></name>
+		<level>25</level>
+		<description><![CDATA[Show # skipped]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[library]]></subcategory>
+	</preference>
+	<preference id="149">
+		<name><![CDATA[browse_filter]]></name>
+		<level>25</level>
+		<description><![CDATA[Show filter box on browse]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[library]]></subcategory>
+	</preference>
+	<preference id="46">
+		<name><![CDATA[allow_localplay_playback]]></name>
+		<level>100</level>
+		<description><![CDATA[Allow Localplay Play]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[options]]></category>
+		<subcategory><![CDATA[localplay]]></subcategory>
+	</preference>
+	<preference id="40">
+		<name><![CDATA[localplay_level]]></name>
+		<level>100</level>
+		<description><![CDATA[Localplay Access]]></description>
+		<value>100</value>
+		<type><![CDATA[special]]></type>
+		<category><![CDATA[options]]></category>
+		<subcategory><![CDATA[localplay]]></subcategory>
+	</preference>
+	<preference id="41">
+		<name><![CDATA[localplay_controller]]></name>
+		<level>100</level>
+		<description><![CDATA[Localplay Type]]></description>
+		<value><![CDATA[mpd]]></value>
+		<type><![CDATA[special]]></type>
+		<category><![CDATA[options]]></category>
+		<subcategory><![CDATA[localplay]]></subcategory>
+	</preference>
+	<preference id="143">
+		<name><![CDATA[disabled_custom_metadata_fields_input]]></name>
+		<level>100</level>
+		<description><![CDATA[Custom metadata - Define field list]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[metadata]]></subcategory>
+	</preference>
+	<preference id="142">
+		<name><![CDATA[disabled_custom_metadata_fields]]></name>
+		<level>100</level>
+		<description><![CDATA[Custom metadata - Disable these fields]]></description>
+		<value><![CDATA[Array]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[metadata]]></subcategory>
+	</preference>
+	<preference id="131">
+		<name><![CDATA[browser_notify]]></name>
+		<level>25</level>
+		<description><![CDATA[Web Player browser notifications]]></description>
+		<value>1</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[notification]]></subcategory>
+	</preference>
+	<preference id="132">
+		<name><![CDATA[browser_notify_timeout]]></name>
+		<level>25</level>
+		<description><![CDATA[Web Player browser notifications timeout (seconds)]]></description>
+		<value>10</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[notification]]></subcategory>
+	</preference>
+	<preference id="253">
+		<name><![CDATA[paypal_currency_code]]></name>
+		<level>25</level>
+		<description><![CDATA[PayPal Currency Code]]></description>
+		<value><![CDATA[USD]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[paypal]]></subcategory>
+	</preference>
+	<preference id="252">
+		<name><![CDATA[paypal_business]]></name>
+		<level>25</level>
+		<description><![CDATA[PayPal ID]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[paypal]]></subcategory>
+	</preference>
+	<preference id="235">
+		<name><![CDATA[personalfav_playlist]]></name>
+		<level>25</level>
+		<description><![CDATA[Favorite Playlist ID]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[personal favorites]]></subcategory>
+	</preference>
+	<preference id="236">
+		<name><![CDATA[personalfav_smartlist]]></name>
+		<level>25</level>
+		<description><![CDATA[Favorite Smartlist ID]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[personal favorites]]></subcategory>
+	</preference>
+	<preference id="234">
+		<name><![CDATA[personalfav_display]]></name>
+		<level>25</level>
+		<description><![CDATA[Personal favorites on the homepage]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[personal favorites]]></subcategory>
+	</preference>
+	<preference id="104">
+		<name><![CDATA[slideshow_time]]></name>
+		<level>25</level>
+		<description><![CDATA[Artist slideshow inactivity time]]></description>
+		<value>0</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[player]]></subcategory>
+	</preference>
+	<preference id="88">
+		<name><![CDATA[webplayer_flash]]></name>
+		<level>25</level>
+		<description><![CDATA[Authorize Flash Web Player]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[streaming]]></category>
+		<subcategory><![CDATA[player]]></subcategory>
+	</preference>
+	<preference id="89">
+		<name><![CDATA[webplayer_html5]]></name>
+		<level>25</level>
+		<description><![CDATA[Authorize HTML5 Web Player]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[streaming]]></category>
+		<subcategory><![CDATA[player]]></subcategory>
+	</preference>
+	<preference id="134">
+		<name><![CDATA[webplayer_aurora]]></name>
+		<level>25</level>
+		<description><![CDATA[Authorize JavaScript decoder (Aurora.js) in Web Player]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[streaming]]></category>
+		<subcategory><![CDATA[player]]></subcategory>
+	</preference>
+	<preference id="100">
+		<name><![CDATA[webplayer_pausetabs]]></name>
+		<level>25</level>
+		<description><![CDATA[Auto-pause betweens tabs]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[player]]></subcategory>
+	</preference>
+	<preference id="105">
+		<name><![CDATA[broadcast_by_default]]></name>
+		<level>25</level>
+		<description><![CDATA[Broadcast web player by default]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[streaming]]></category>
+		<subcategory><![CDATA[player]]></subcategory>
+	</preference>
+	<preference id="99">
+		<name><![CDATA[webplayer_confirmclose]]></name>
+		<level>25</level>
+		<description><![CDATA[Confirmation when closing current playing window]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[player]]></subcategory>
+	</preference>
+	<preference id="124">
+		<name><![CDATA[direct_play_limit]]></name>
+		<level>25</level>
+		<description><![CDATA[Limit direct play to maximum media count]]></description>
+		<value>0</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[player]]></subcategory>
+	</preference>
+	<preference id="85">
+		<name><![CDATA[song_page_title]]></name>
+		<level>25</level>
+		<description><![CDATA[Show current song in Web player page title]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[player]]></subcategory>
+	</preference>
+	<preference id="69">
+		<name><![CDATA[show_lyrics]]></name>
+		<level>5</level>
+		<description><![CDATA[Show Lyrics]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[player]]></subcategory>
+	</preference>
+	<preference id="145">
+		<name><![CDATA[podcast_new_download]]></name>
+		<level>100</level>
+		<description><![CDATA[# episodes to download when new episodes are available]]></description>
+		<value>0</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[podcast]]></subcategory>
+	</preference>
+	<preference id="144">
+		<name><![CDATA[podcast_keep]]></name>
+		<level>100</level>
+		<description><![CDATA[# latest episodes to keep]]></description>
+		<value>0</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[podcast]]></subcategory>
+	</preference>
+	<preference id="90">
+		<name><![CDATA[allow_personal_info_now]]></name>
+		<level>25</level>
+		<description><![CDATA[Share Now Playing information]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[privacy]]></subcategory>
+	</preference>
+	<preference id="91">
+		<name><![CDATA[allow_personal_info_recent]]></name>
+		<level>25</level>
+		<description><![CDATA[Share Recently Played information]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[privacy]]></subcategory>
+	</preference>
+	<preference id="93">
+		<name><![CDATA[allow_personal_info_agent]]></name>
+		<level>25</level>
+		<description><![CDATA[Share Recently Played information - Allow access to streaming agent]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[privacy]]></subcategory>
+	</preference>
+	<preference id="92">
+		<name><![CDATA[allow_personal_info_time]]></name>
+		<level>25</level>
+		<description><![CDATA[Share Recently Played information - Allow access to streaming date/time]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[privacy]]></subcategory>
+	</preference>
+	<preference id="106">
+		<name><![CDATA[concerts_limit_future]]></name>
+		<level>25</level>
+		<description><![CDATA[Limit number of future events]]></description>
+		<value>0</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[query]]></subcategory>
+	</preference>
+	<preference id="107">
+		<name><![CDATA[concerts_limit_past]]></name>
+		<level>25</level>
+		<description><![CDATA[Limit number of past events]]></description>
+		<value>0</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[query]]></subcategory>
+	</preference>
+	<preference id="51">
+		<name><![CDATA[offset_limit]]></name>
+		<level>5</level>
+		<description><![CDATA[Offset Limit]]></description>
+		<value>50</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[query]]></subcategory>
+	</preference>
+	<preference id="4">
+		<name><![CDATA[popular_threshold]]></name>
+		<level>25</level>
+		<description><![CDATA[Popular Threshold]]></description>
+		<value>12</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[query]]></subcategory>
+	</preference>
+	<preference id="47">
+		<name><![CDATA[stats_threshold]]></name>
+		<level>75</level>
+		<description><![CDATA[Statistics Day Threshold]]></description>
+		<value>20</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[query]]></subcategory>
+	</preference>
+	<preference id="269">
+		<name><![CDATA[ratingmatch_star1_rule]]></name>
+		<level>25</level>
+		<description><![CDATA[Match rule for 1 Star ($play,$skip)]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[ratingmatch]]></subcategory>
+	</preference>
+	<preference id="270">
+		<name><![CDATA[ratingmatch_star2_rule]]></name>
+		<level>25</level>
+		<description><![CDATA[Match rule for 2 Stars]]></description>
+		<value><![CDATA[1,10]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[ratingmatch]]></subcategory>
+	</preference>
+	<preference id="271">
+		<name><![CDATA[ratingmatch_star3_rule]]></name>
+		<level>25</level>
+		<description><![CDATA[Match rule for 3 Stars]]></description>
+		<value><![CDATA[20,0]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[ratingmatch]]></subcategory>
+	</preference>
+	<preference id="272">
+		<name><![CDATA[ratingmatch_star4_rule]]></name>
+		<level>25</level>
+		<description><![CDATA[Match rule for 4 Stars]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[ratingmatch]]></subcategory>
+	</preference>
+	<preference id="273">
+		<name><![CDATA[ratingmatch_star5_rule]]></name>
+		<level>25</level>
+		<description><![CDATA[Match rule for 5 Stars]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[ratingmatch]]></subcategory>
+	</preference>
+	<preference id="274">
+		<name><![CDATA[ratingmatch_flag_rule]]></name>
+		<level>25</level>
+		<description><![CDATA[Match rule for Flags]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[ratingmatch]]></subcategory>
+	</preference>
+	<preference id="267">
+		<name><![CDATA[ratingmatch_stars]]></name>
+		<level>25</level>
+		<description><![CDATA[Minimum star rating to match]]></description>
+		<value>3</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[ratingmatch]]></subcategory>
+	</preference>
+	<preference id="268">
+		<name><![CDATA[ratingmatch_flags]]></name>
+		<level>25</level>
+		<description><![CDATA[When you love a track, flag the album and artist]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[ratingmatch]]></subcategory>
+	</preference>
+	<preference id="103">
+		<name><![CDATA[share_expire]]></name>
+		<level>100</level>
+		<description><![CDATA[Share links default expiration days (0=never)]]></description>
+		<value>7</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[share]]></subcategory>
+	</preference>
+	<preference id="94">
+		<name><![CDATA[ui_fixed]]></name>
+		<level>25</level>
+		<description><![CDATA[Fix header position on compatible themes]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[theme]]></subcategory>
+	</preference>
+	<preference id="33">
+		<name><![CDATA[theme_name]]></name>
+		<level>5</level>
+		<description><![CDATA[Theme]]></description>
+		<value><![CDATA[reborn]]></value>
+		<type><![CDATA[special]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[theme]]></subcategory>
+	</preference>
+	<preference id="141">
+		<name><![CDATA[theme_color]]></name>
+		<level>5</level>
+		<description><![CDATA[Theme color]]></description>
+		<value><![CDATA[dark]]></value>
+		<type><![CDATA[special]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[theme]]></subcategory>
+	</preference>
+	<preference id="109">
+		<name><![CDATA[topmenu]]></name>
+		<level>25</level>
+		<description><![CDATA[Top menu]]></description>
+		<value>0</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[interface]]></category>
+		<subcategory><![CDATA[theme]]></subcategory>
+	</preference>
+	<preference id="223">
+		<name><![CDATA[tmdb_api_key]]></name>
+		<level>75</level>
+		<description><![CDATA[TMDb API key]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[tmdb]]></subcategory>
+	</preference>
+	<preference id="55">
+		<name><![CDATA[transcode]]></name>
+		<level>25</level>
+		<description><![CDATA[Allow Transcoding]]></description>
+		<value><![CDATA[default]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[streaming]]></category>
+		<subcategory><![CDATA[transcoding]]></subcategory>
+	</preference>
+	<preference id="52">
+		<name><![CDATA[rate_limit]]></name>
+		<level>100</level>
+		<description><![CDATA[Rate Limit]]></description>
+		<value>16384</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[streaming]]></category>
+		<subcategory><![CDATA[transcoding]]></subcategory>
+	</preference>
+	<preference id="19">
+		<name><![CDATA[transcode_bitrate]]></name>
+		<level>25</level>
+		<description><![CDATA[Transcode Bitrate]]></description>
+		<value>192</value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[streaming]]></category>
+		<subcategory><![CDATA[transcoding]]></subcategory>
+	</preference>
+	<preference id="222">
+		<name><![CDATA[tvdb_api_key]]></name>
+		<level>75</level>
+		<description><![CDATA[TVDb API key]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[plugins]]></category>
+		<subcategory><![CDATA[tvdb]]></subcategory>
+	</preference>
+	<preference id="95">
+		<name><![CDATA[autoupdate]]></name>
+		<level>25</level>
+		<description><![CDATA[Check for Ampache updates automatically]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[update]]></subcategory>
+	</preference>
+	<preference id="113">
+		<name><![CDATA[allow_upload]]></name>
+		<level>25</level>
+		<description><![CDATA[Allow user uploads]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[upload]]></subcategory>
+	</preference>
+	<preference id="117">
+		<name><![CDATA[upload_allow_edit]]></name>
+		<level>75</level>
+		<description><![CDATA[Allow users to edit uploaded songs]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[upload]]></subcategory>
+	</preference>
+	<preference id="135">
+		<name><![CDATA[upload_allow_remove]]></name>
+		<level>75</level>
+		<description><![CDATA[Allow users to remove uploaded songs]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[upload]]></subcategory>
+	</preference>
+	<preference id="114">
+		<name><![CDATA[upload_subdir]]></name>
+		<level>75</level>
+		<description><![CDATA[Create a subdirectory per user]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[upload]]></subcategory>
+	</preference>
+	<preference id="112">
+		<name><![CDATA[upload_catalog]]></name>
+		<level>75</level>
+		<description><![CDATA[Destination catalog]]></description>
+		<value>21</value>
+		<type><![CDATA[integer]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[upload]]></subcategory>
+	</preference>
+	<preference id="116">
+		<name><![CDATA[upload_script]]></name>
+		<level>75</level>
+		<description><![CDATA[Post-upload script (current directory = upload target directory)]]></description>
+		<value><![CDATA[]]></value>
+		<type><![CDATA[string]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[upload]]></subcategory>
+	</preference>
+	<preference id="147">
+		<name><![CDATA[upload_catalog_pattern]]></name>
+		<level>100</level>
+		<description><![CDATA[Rename uploaded file according to catalog pattern]]></description>
+		<value>1</value>
+		<type><![CDATA[boolean]]></type>
+		<category><![CDATA[system]]></category>
+		<subcategory><![CDATA[upload]]></subcategory>
+	</preference>
+</root>

@@ -1,102 +1,98 @@
-[
-    {
-        "id": "54130",
-        "name": "\"...Famous Last Words...\"",
-        "artist": {
-            "id": "6778",
-            "name": "Supertramp"
-        },
-        "year": 2002,
-        "tracks": 9,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "6",
-                "name": "Rock"
+{
+    "album": [
+        {
+            "id": "12",
+            "name": "Buried in Nausea",
+            "artist": {
+                "id": "19",
+                "name": "Various Artists"
             },
-            {
-                "id": "47",
-                "name": "Pop Rock"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=54130&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "dc0bdca9-ae06-426b-9a43-f23334d0e939"
-    },
-    {
-        "id": "72713",
-        "name": "\"Awaken, My Love!\"",
-        "artist": {
-            "id": "13600",
-            "name": "Childish Gambino"
+            "time": 1879,
+            "year": 2012,
+            "tracks": [],
+            "songcount": 9,
+            "diskcount": 1,
+            "type": "compilation",
+            "genre": [
+                {
+                    "id": "7",
+                    "name": "Punk"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": null
         },
-        "year": 2016,
-        "tracks": 11,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "360",
-                "name": "R&B"
+        {
+            "id": "10",
+            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "artist": {
+                "id": "16",
+                "name": "CARN\u00daN"
             },
-            {
-                "id": "2701",
-                "name": "HipHop"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=72713&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "c716704d-b2a1-44f9-8cec-66b10361c4ed"
-    },
-    {
-        "id": "63679",
-        "name": "\"Bettin' on a Longshot\" The Singles Collection",
-        "artist": {
-            "id": "9303",
-            "name": "Harrington Saints"
+            "time": 3873,
+            "year": 1996,
+            "tracks": [],
+            "songcount": 9,
+            "diskcount": 1,
+            "type": null,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": 5,
+            "mbid": null
         },
-        "year": 2013,
-        "tracks": 15,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "60",
-                "name": "Punk Rock"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=63679&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "71baccde-5011-43b6-b175-30b08c726b06"
-    },
-    {
-        "id": "75376",
-        "name": "\"C\" Is for (Please Insert Sophomoric Genitalia Reference HERE)",
-        "artist": {
-            "id": "474",
-            "name": "Puscifer"
+        {
+            "id": "2",
+            "name": "Colorsmoke EP",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "time": 4568,
+            "year": 2007,
+            "tracks": [],
+            "songcount": 12,
+            "diskcount": 1,
+            "type": null,
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": 3,
+            "mbid": null
         },
-        "year": 2010,
-        "tracks": 8,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "4",
-                "name": "Electronic"
-            }
-        ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=75376&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "46e02dda-058d-4226-a356-76b6bfdd5790"
-    }
-]
+        {
+            "id": "9",
+            "name": "Creeping Lawler 2",
+            "artist": {
+                "id": "15",
+                "name": "Warfare 3.0"
+            },
+            "time": 592,
+            "year": 0,
+            "tracks": [],
+            "songcount": 2,
+            "diskcount": 1,
+            "type": null,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": 3,
+            "rating": 3,
+            "averagerating": 3,
+            "mbid": null
+        }
+    ]
+}

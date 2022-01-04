@@ -1,56 +1,48 @@
 {
-    "timeline": [
+    "activity": [
         {
-            "id": "167387",
-            "data": "1595916266",
-            "object_type": "song",
-            "object_id": "77371",
+            "id": "31",
+            "date": "1614055275",
+            "object_type": "video",
+            "object_id": "1",
             "action": "play",
-            "user": [
-                {
-                    "id": "4",
-                    "username": "generic"
-                }
-            ]
+            "user": {
+                "id": "2",
+                "username": "admin"
+            }
         },
         {
-            "id": "167382",
-            "data": "1595916087",
+            "id": "30",
+            "date": "1614055252",
             "object_type": "song",
-            "object_id": "77371",
+            "object_id": "79",
             "action": "play",
-            "user": [
-                {
-                    "id": "4",
-                    "username": "generic"
-                }
-            ]
+            "user": {
+                "id": "2",
+                "username": "admin"
+            }
         },
         {
-            "id": "166906",
-            "data": "1595373969",
+            "id": "26",
+            "date": "1614055014",
             "object_type": "song",
-            "object_id": "886242",
+            "object_id": "76",
             "action": "play",
-            "user": [
-                {
-                    "id": "4",
-                    "username": "generic"
-                }
-            ]
+            "user": {
+                "id": "2",
+                "username": "admin"
+            }
         },
         {
-            "id": "166904",
-            "data": "1595373920",
-            "object_type": "song",
-            "object_id": "886249",
-            "action": "play",
-            "user": [
-                {
-                    "id": "4",
-                    "username": "generic"
-                }
-            ]
+            "id": "25",
+            "date": "1614054865",
+            "object_type": "video",
+            "object_id": "1",
+            "action": "userflag",
+            "user": {
+                "id": "2",
+                "username": "admin"
+            }
         }
     ]
 }

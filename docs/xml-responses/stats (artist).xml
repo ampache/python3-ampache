@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<total_count>2</total_count>
-<artist id="4896">
-	<name><![CDATA[The Hacker]]></name>
-	<tag id="4" count="1" ><![CDATA[Electronic]]></tag>
-	<tag id="55" count="1" ><![CDATA[Electro]]></tag>
-	<albums>1</albums>
-	<songs>1</songs>
-	<art><![CDATA[https://music.com.au/image.php?object_id=4896&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>0</flag>
-	<preciserating></preciserating>
-	<rating></rating>
-	<averagerating></averagerating>
-	<mbid><![CDATA[e044fb9c-7c2e-48f7-81f6-ea2ae99d2ef0]]></mbid>
-	<summary><![CDATA[The Hacker is a French electroclash and techno producer who has worked extensively with Miss Kittin.
-
-« L'homme de l'ombre »… From his start in the hardcore technoscene, to the massive success he found with Miss Kittin; Michel Amato aka The Hacker is one of today's most talented and innovative French artists. With influences from Electro (Kraftwerk) to New Wave music (The Cure and Depeche Mode) and familiarity with the French rave scene of the early 1990s his sound is well defined, yet original. ]]></summary>
-	<yearformed>0</yearformed>
-	<placeformed><![CDATA[]]></placeformed>
-</artist>
-<artist id="12902">
-	<name><![CDATA[Sotiria]]></name>
-	<tag id="22" count="1" ><![CDATA[Pop]]></tag>
-	<albums>1</albums>
-	<songs>18</songs>
-	<art><![CDATA[https://music.com.au/image.php?object_id=12902&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-	<flag>0</flag>
-	<preciserating></preciserating>
-	<rating></rating>
-	<averagerating></averagerating>
-	<mbid><![CDATA[54558d21-21ec-4064-a5a5-603c26316729]]></mbid>
-	<summary><![CDATA[ ]]></summary>
-	<yearformed>0</yearformed>
-	<placeformed><![CDATA[]]></placeformed>
-</artist>
+  <total_count>17</total_count>
+  <artist id="20">
+    <name><![CDATA[R/B]]></name>
+    <genre id="7"><![CDATA[Punk]]></genre>
+    <albums/>
+    <albumcount>0</albumcount>
+    <songs/>
+    <songcount>1</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=20&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[ ]]></summary>
+    <time><![CDATA[96]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
+  <artist id="14">
+    <name><![CDATA[Nofi/found.]]></name>
+    <genre id="5"><![CDATA[Electronica]]></genre>
+    <genre id="6"><![CDATA[Dance]]></genre>
+    <albums/>
+    <albumcount>1</albumcount>
+    <songs/>
+    <songcount>11</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=14&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating>2</preciserating>
+    <rating>2</rating>
+    <averagerating>2</averagerating>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[Nofi/found. is the work of Jeffrey Melton released prior to 2005. From the website:
+Nofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. ’stateless’). ]]></summary>
+    <time><![CDATA[4423]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
 </root>

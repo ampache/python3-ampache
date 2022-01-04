@@ -1,222 +1,221 @@
-[
-    {
-        "id": "184033",
-        "title": "Pete Shore",
-        "name": "Pete Shore",
-        "artist": {
-            "id": "9151",
-            "name": "Boss Hog"
-        },
-        "album": {
-            "id": "57496",
-            "name": "Cold Hands"
-        },
-        "tag": [
-            {
-                "id": "60",
-                "name": "Punk Rock"
-            }
-        ],
-        "filename": "\/mnt\/music\/Boss Hog\/(1990) Cold Hands [ARR 89192-2]\/106 - Pete Shore.mp3",
-        "track": 6,
-        "playlisttrack": 1,
-        "time": 189,
-        "year": 1990,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=184033&uid=2&player=api&name=Boss%20Hog%20-%20Pete%20Shore.mp3",
-        "size": 7955604,
-        "mbid": "4664872f-9e47-4eae-bfa8-cad33ddf9ee4",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=57496&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Amphetamine Reptile Records",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-2.050000",
-        "replaygain_track_peak": "0.624000",
-        "genre": [
-            {
-                "name": "Punk Rock"
-            }
-        ]
-    },
-    {
-        "id": "809216",
-        "title": "Running for You",
-        "name": "Running for You",
-        "artist": {
-            "id": "11588",
-            "name": "Model1"
-        },
-        "album": {
-            "id": "63245",
-            "name": "The Vocoders Strikes Back"
-        },
-        "tag": [
-            {
-                "id": "7",
-                "name": "Synthpop"
-            }
-        ],
-        "filename": "\/mnt\/music\/Model1\/(2016) The Vocoders Strikes Back [RAZ 023]\/111 - Running for You.mp3",
-        "track": 11,
-        "playlisttrack": 2,
-        "time": 348,
-        "year": 2016,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=809216&uid=2&player=api&name=Model1%20-%20Running%20for%20You.mp3",
-        "size": 14001216,
-        "mbid": "6068dee5-4835-4027-9971-77ee55a3f4d0",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=63245&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "ms",
-        "publisher": "Razgrom Music",
-        "language": "",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-8.450000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Synthpop"
-            }
-        ]
-    },
-    {
-        "id": "19594",
-        "title": "You've Got the Love",
-        "name": "You've Got the Love",
-        "artist": {
-            "id": "698",
-            "name": "Florence + the Machine"
-        },
-        "album": {
-            "id": "35848",
-            "name": "Between Two Lungs"
-        },
-        "tag": [
-            {
+{
+    "song": [
+        {
+            "id": "103",
+            "title": "In The Seven Woods (Instrumental Re-Recording)",
+            "name": "In The Seven Woods (Instrumental Re-Recording)",
+            "artist": {
                 "id": "16",
-                "name": "Alternative"
-            }
-        ],
-        "filename": "\/mnt\/music\/Florence + the Machine\/(2010) Between Two Lungs\/113 - You've Got the Love.mp3",
-        "track": 13,
-        "playlisttrack": 3,
-        "time": 168,
-        "year": 2010,
-        "bitrate": 200112,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=19594&uid=2&player=api&name=Florence%20-%20the%20Machine%20-%20You-ve%20Got%20the%20Love.mp3",
-        "size": 4231463,
-        "mbid": "261847b5-befc-440a-a4a9-7f17e168f29a",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=35848&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 1,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Island; \u3082\u3057\u3082\u3057",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-10.040000",
-        "replaygain_track_peak": "1.000000",
-        "genre": [
-            {
-                "name": "Alternative"
-            }
-        ]
-    },
-    {
-        "id": "882739",
-        "title": "Hells Home",
-        "name": "Hells Home",
-        "artist": {
-            "id": "15471",
-            "name": "Cabaret Voltaire \/ Tecnoville"
+                "name": "CARN\u00daN"
+            },
+            "album": {
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)"
+            },
+            "albumartist": {
+                "id": "16",
+                "name": "CARN\u00daN"
+            },
+            "disk": 1,
+            "track": 7,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
+            "genre": [],
+            "playlisttrack": 1,
+            "time": 452,
+            "year": 1996,
+            "bitrate": 138338,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "application\/ogg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.ogg",
+            "size": 7826238,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+            "license": null,
+            "publisher": "archive.org",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "-12.210000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
         },
-        "album": {
-            "id": "70011",
-            "name": "The Covenant, the Sword and the Arm of the Lord"
+        {
+            "id": "60",
+            "title": "BrownSmoke",
+            "name": "BrownSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP"
+            },
+            "albumartist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "disk": 1,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 304,
+            "year": 2007,
+            "bitrate": 20627,
+            "rate": 22050,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma",
+            "size": 792375,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "Made with Sony ACID 5",
+            "license": null,
+            "publisher": "20kbps rec.",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
         },
-        "tag": [
-            {
-                "id": "55",
-                "name": "Electro"
-            }
-        ],
-        "filename": "\/mnt\/music\/Cabaret Voltaire\/(1985) The Covenant, the Sword and the Arm of the Lord [CVCD3]\/103 - Hells Home.mp3",
-        "track": 3,
-        "playlisttrack": 4,
-        "time": 308,
-        "year": 1985,
-        "bitrate": 320000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=882739&uid=2&player=api&name=Cabaret%20Voltaire%20-%20Tecnoville%20-%20Hells%20Home.mp3",
-        "size": 12382711,
-        "mbid": "4690c426-06b3-4ab8-8f0f-c7af1bbcfd50",
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=70011&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 2,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "publisher": "Virgin",
-        "language": "eng",
-        "replaygain_album_gain": "0.000000",
-        "replaygain_album_peak": "0.000000",
-        "replaygain_track_gain": "-5.490000",
-        "replaygain_track_peak": "0.822000",
-        "genre": [
-            {
-                "name": "Electro"
-            }
-        ]
-    }
-]
+        {
+            "id": "80",
+            "title": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
+            "name": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
+            "artist": {
+                "id": "12",
+                "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+            },
+            "album": {
+                "id": "6",
+                "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)"
+            },
+            "albumartist": {
+                "id": "12",
+                "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+            },
+            "disk": 1,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c\/\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)\/01 - \u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d.wav",
+            "genre": [],
+            "playlisttrack": 3,
+            "time": 300,
+            "year": 0,
+            "bitrate": 1411200,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=80&uid=4&player=api&name=-%20-%20-%20-%20-%20-%20-.wav",
+            "size": 53026998,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": 1,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "archive.org",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "-21.750000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "110",
+            "title": "I wanna walk through the fire",
+            "name": "I wanna walk through the fire",
+            "artist": {
+                "id": "23",
+                "name": "Manic Notion"
+            },
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists"
+            },
+            "disk": 1,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/01ManicNotion-IWannaWalkThroughTheFire.m4a",
+            "genre": [],
+            "playlisttrack": 4,
+            "time": 197,
+            "year": 2012,
+            "bitrate": 267320,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mp4",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.m4a",
+            "size": 6651911,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "-5.150000",
+            "replaygain_track_peak": "0.989000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        }
+    ]
+}
