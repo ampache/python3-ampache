@@ -1,39 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <root>
-  <total_count>9</total_count>
-  <album id="8">
-    <name><![CDATA[Nofi Devices]]></name>
-    <artist id="14"><![CDATA[Nofi/found.]]></artist>
-    <time>4423</time>
-    <year>0</year>
-    <tracks/>
-    <songcount>11</songcount>
-    <diskcount>1</diskcount>
-    <type/>
-    <genre id="5"><![CDATA[Electronica]]></genre>
-    <genre id="6"><![CDATA[Dance]]></genre>
-    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <flag>0</flag>
-    <preciserating>2</preciserating>
-    <rating>2</rating>
-    <averagerating>2</averagerating>
-    <mbid><![CDATA[]]></mbid>
-  </album>
-  <album id="21">
-    <name><![CDATA[Forget and Remember]]></name>
-    <artist id="36"><![CDATA[Comfort Fit]]></artist>
-    <time>4248</time>
-    <year>2005</year>
-    <tracks/>
-    <songcount>20</songcount>
-    <diskcount>1</diskcount>
-    <type>album</type>
-    <genre id="8"><![CDATA[Hip-Hop]]></genre>
-    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <mbid><![CDATA[6e1d48f7-717c-416e-af35-5d2454a13af2]]></mbid>
-  </album>
+<total_count>2</total_count>
+<album id="61765">
+	<name><![CDATA[Déjà vu]]></name>
+	<artist id="2591"><![CDATA[Cyclotimia]]></artist>
+	<year>2008</year>
+	<tracks>14</tracks>
+	<disk>1</disk>
+	<art><![CDATA[https://music.com.au/image.php?object_id=61765&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+	<flag>0</flag>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<mbid><![CDATA[325bfd61-1d62-4243-946c-895dd434be60]]></mbid>
+</album>
+<album id="55201">
+	<name><![CDATA[Böse Wetter]]></name>
+	<artist id="785"><![CDATA[Metallspürhunde]]></artist>
+	<year>2009</year>
+	<tracks>12</tracks>
+	<disk>1</disk>
+	<art><![CDATA[https://music.com.au/image.php?object_id=55201&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+	<flag>0</flag>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<mbid><![CDATA[c0467eca-00d9-45d1-a3e1-16453abd917a]]></mbid>
+</album>
 </root>

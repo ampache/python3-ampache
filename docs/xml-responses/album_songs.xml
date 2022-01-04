@@ -1,172 +1,164 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <root>
-  <total_count>75</total_count>
-  <song id="110">
-    <title><![CDATA[I wanna walk through the fire]]></title>
-    <name><![CDATA[I wanna walk through the fire]]></name>
-    <artist id="23"><![CDATA[Manic Notion]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>1</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/01ManicNotion-IWannaWalkThroughTheFire.m4a]]></filename>
-    <playlisttrack>1</playlisttrack>
-    <time>197</time>
-    <year>2012</year>
-    <bitrate>267320</bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/mp4]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.m4a]]></url>
-    <size>6651911</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels/>
-    <comment><![CDATA[]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
-    <language/>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain>-5.150000</replaygain_track_gain>
-    <replaygain_track_peak>0.989000</replaygain_track_peak>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="114">
-    <title><![CDATA[He is the Master of War]]></title>
-    <name><![CDATA[He is the Master of War]]></name>
-    <artist id="26"><![CDATA[Stress Builds Character]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>2</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a]]></filename>
-    <playlisttrack>2</playlisttrack>
-    <time>233</time>
-    <year>2012</year>
-    <bitrate>256245</bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/mp4]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.m4a]]></url>
-    <size>7535126</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels/>
-    <comment><![CDATA[]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
-    <language/>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain>-10.740000</replaygain_track_gain>
-    <replaygain_track_peak>1.035000</replaygain_track_peak>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="109">
-    <title><![CDATA[Dance with the Devil]]></title>
-    <name><![CDATA[Dance with the Devil]]></name>
-    <artist id="34"><![CDATA[Comedown Kid]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>3</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
-    <playlisttrack>3</playlisttrack>
-    <time>116</time>
-    <year>2012</year>
-    <bitrate>32582</bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/x-ms-wma]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.wma]]></url>
-    <size>483444</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels/>
-    <comment><![CDATA[]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
-    <language/>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="113">
-    <title><![CDATA[Representin]]></title>
-    <name><![CDATA[Representin]]></name>
-    <artist id="32"><![CDATA[Shorty Mac]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>4</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3]]></filename>
-    <playlisttrack>4</playlisttrack>
-    <time>234</time>
-    <year>2012</year>
-    <bitrate>123814</bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&player=api&name=Shorty%20Mac%20-%20Representin.mp3]]></url>
-    <size>3628327</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels/>
-    <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[archive.org]]></publisher>
-    <language/>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain>1.910000</replaygain_track_gain>
-    <replaygain_track_peak>0.851000</replaygain_track_peak>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
+<total_count>4</total_count>
+<song id="794437">
+	<title><![CDATA[Polar Bear]]></title>
+	<name><![CDATA[Polar Bear]]></name>
+	<artist id="474"><![CDATA[Puscifer]]></artist>
+	<album id="75376"><![CDATA["C" Is for (Please Insert Sophomoric Genitalia Reference HERE)]]></album>
+	<tag id="4" count="1" ><![CDATA[Electronic]]></tag>
+	<filename><![CDATA[/mnt/music/Puscifer/(2009) "C" Is for (Please Insert Sophomoric Genitalia Reference HERE)/101 - Polar Bear.mp3]]></filename>
+	<track>1</track>
+	<playlisttrack>1</playlisttrack>
+	<time>242</time>
+	<year>2010</year>
+	<bitrate>320000</bitrate>
+	<rate>48000</rate>
+	<mode><![CDATA[cbr]]></mode>
+	<mime><![CDATA[audio/mpeg]]></mime>
+	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=794437&uid=2&player=api&name=Puscifer%20-%20Polar%20Bear.mp3]]></url>
+	<size>9697600</size>
+	<mbid><![CDATA[13df81bb-7d1c-4a2c-8b3a-085d715b09ba]]></mbid>
+	<album_mbid><![CDATA[]]></album_mbid>
+	<artist_mbid><![CDATA[]]></artist_mbid>
+	<albumartist_mbid><![CDATA[]]></albumartist_mbid>
+	<art><![CDATA[https://music.com.au/image.php?object_id=75376&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+	<flag>0</flag>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<playcount>1</playcount>
+	<catalog>2</catalog>
+	<composer><![CDATA[]]></composer>
+	<channels></channels>
+	<comment><![CDATA[Vinyl Rip]]></comment>
+	<license><![CDATA[]]></license>
+	<publisher><![CDATA[Puscifer Entertainment]]></publisher>
+	<language>eng</language>
+	<replaygain_album_gain>0.000000</replaygain_album_gain>
+	<replaygain_album_peak>0.000000</replaygain_album_peak>
+	<replaygain_track_gain>0.000000</replaygain_track_gain>
+	<replaygain_track_peak>0.000000</replaygain_track_peak>
+	<genre><![CDATA[Electronic]]></genre>
+</song>
+<song id="794438">
+	<title><![CDATA[Potions (Deliverance mix)]]></title>
+	<name><![CDATA[Potions (Deliverance mix)]]></name>
+	<artist id="474"><![CDATA[Puscifer]]></artist>
+	<album id="75376"><![CDATA["C" Is for (Please Insert Sophomoric Genitalia Reference HERE)]]></album>
+	<tag id="4" count="1" ><![CDATA[Electronic]]></tag>
+	<filename><![CDATA[/mnt/music/Puscifer/(2009) "C" Is for (Please Insert Sophomoric Genitalia Reference HERE)/102 - Potions (Deliverance mix).mp3]]></filename>
+	<track>2</track>
+	<playlisttrack>2</playlisttrack>
+	<time>277</time>
+	<year>2010</year>
+	<bitrate>320000</bitrate>
+	<rate>48000</rate>
+	<mode><![CDATA[cbr]]></mode>
+	<mime><![CDATA[audio/mpeg]]></mime>
+	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=794438&uid=2&player=api&name=Puscifer%20-%20Potions%20-Deliverance%20mix-.mp3]]></url>
+	<size>11112640</size>
+	<mbid><![CDATA[2964e361-374f-4214-901b-20107aa49e5e]]></mbid>
+	<album_mbid><![CDATA[]]></album_mbid>
+	<artist_mbid><![CDATA[]]></artist_mbid>
+	<albumartist_mbid><![CDATA[]]></albumartist_mbid>
+	<art><![CDATA[https://music.com.au/image.php?object_id=75376&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+	<flag>0</flag>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<playcount>1</playcount>
+	<catalog>2</catalog>
+	<composer><![CDATA[]]></composer>
+	<channels></channels>
+	<comment><![CDATA[Vinyl Rip]]></comment>
+	<license><![CDATA[]]></license>
+	<publisher><![CDATA[Puscifer Entertainment]]></publisher>
+	<language></language>
+	<replaygain_album_gain>0.000000</replaygain_album_gain>
+	<replaygain_album_peak>0.000000</replaygain_album_peak>
+	<replaygain_track_gain>0.000000</replaygain_track_gain>
+	<replaygain_track_peak>0.000000</replaygain_track_peak>
+	<genre><![CDATA[Electronic]]></genre>
+</song>
+<song id="794432">
+	<title><![CDATA[The Humbling River (Nagual del Judith mix)]]></title>
+	<name><![CDATA[The Humbling River (Nagual del Judith mix)]]></name>
+	<artist id="474"><![CDATA[Puscifer]]></artist>
+	<album id="75376"><![CDATA["C" Is for (Please Insert Sophomoric Genitalia Reference HERE)]]></album>
+	<tag id="4" count="1" ><![CDATA[Electronic]]></tag>
+	<filename><![CDATA[/mnt/music/Puscifer/(2009) "C" Is for (Please Insert Sophomoric Genitalia Reference HERE)/103 - The Humbling River (Nagual del Judith mix).mp3]]></filename>
+	<track>3</track>
+	<playlisttrack>3</playlisttrack>
+	<time>293</time>
+	<year>2010</year>
+	<bitrate>320000</bitrate>
+	<rate>48000</rate>
+	<mode><![CDATA[cbr]]></mode>
+	<mime><![CDATA[audio/mpeg]]></mime>
+	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=794432&uid=2&player=api&name=Puscifer%20-%20The%20Humbling%20River%20-Nagual%20del%20Judith%20mix-.mp3]]></url>
+	<size>11753920</size>
+	<mbid><![CDATA[cc3f5c5d-0268-48f9-ad75-0f8693a3ef88]]></mbid>
+	<album_mbid><![CDATA[]]></album_mbid>
+	<artist_mbid><![CDATA[]]></artist_mbid>
+	<albumartist_mbid><![CDATA[]]></albumartist_mbid>
+	<art><![CDATA[https://music.com.au/image.php?object_id=75376&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+	<flag>0</flag>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<playcount>1</playcount>
+	<catalog>2</catalog>
+	<composer><![CDATA[]]></composer>
+	<channels></channels>
+	<comment><![CDATA[Vinyl Rip]]></comment>
+	<license><![CDATA[]]></license>
+	<publisher><![CDATA[Puscifer Entertainment]]></publisher>
+	<language></language>
+	<replaygain_album_gain>0.000000</replaygain_album_gain>
+	<replaygain_album_peak>0.000000</replaygain_album_peak>
+	<replaygain_track_gain>0.000000</replaygain_track_gain>
+	<replaygain_track_peak>0.000000</replaygain_track_peak>
+	<genre><![CDATA[Electronic]]></genre>
+</song>
+<song id="794431">
+	<title><![CDATA[Vagina Mine (Alive @ Club Nokia)]]></title>
+	<name><![CDATA[Vagina Mine (Alive @ Club Nokia)]]></name>
+	<artist id="474"><![CDATA[Puscifer]]></artist>
+	<album id="75376"><![CDATA["C" Is for (Please Insert Sophomoric Genitalia Reference HERE)]]></album>
+	<tag id="4" count="1" ><![CDATA[Electronic]]></tag>
+	<filename><![CDATA[/mnt/music/Puscifer/(2009) "C" Is for (Please Insert Sophomoric Genitalia Reference HERE)/104 - Vagina Mine (Alive @ Club Nokia).mp3]]></filename>
+	<track>4</track>
+	<playlisttrack>4</playlisttrack>
+	<time>307</time>
+	<year>2010</year>
+	<bitrate>320000</bitrate>
+	<rate>48000</rate>
+	<mode><![CDATA[cbr]]></mode>
+	<mime><![CDATA[audio/mpeg]]></mime>
+	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=794431&uid=2&player=api&name=Puscifer%20-%20Vagina%20Mine%20-Alive%20-%20Club%20Nokia-.mp3]]></url>
+	<size>12323200</size>
+	<mbid><![CDATA[dd5775dc-25ee-4799-96ce-130303bcf0a0]]></mbid>
+	<album_mbid><![CDATA[]]></album_mbid>
+	<artist_mbid><![CDATA[]]></artist_mbid>
+	<albumartist_mbid><![CDATA[]]></albumartist_mbid>
+	<art><![CDATA[https://music.com.au/image.php?object_id=75376&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+	<flag>0</flag>
+	<preciserating></preciserating>
+	<rating></rating>
+	<averagerating></averagerating>
+	<playcount>1</playcount>
+	<catalog>2</catalog>
+	<composer><![CDATA[Maynard James Keenan]]></composer>
+	<channels></channels>
+	<comment><![CDATA[Vinyl Rip]]></comment>
+	<license><![CDATA[]]></license>
+	<publisher><![CDATA[Puscifer Entertainment]]></publisher>
+	<language></language>
+	<replaygain_album_gain>0.000000</replaygain_album_gain>
+	<replaygain_album_peak>0.000000</replaygain_album_peak>
+	<replaygain_track_gain>0.000000</replaygain_track_gain>
+	<replaygain_track_peak>0.000000</replaygain_track_peak>
+	<genre><![CDATA[Electronic]]></genre>
+</song>
 </root>

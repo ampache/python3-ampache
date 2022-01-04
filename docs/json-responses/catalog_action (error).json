@@ -1,8 +1,6 @@
 {
     "error": {
-        "errorCode": "4710",
-        "errorAction": "catalog_action",
-        "errorType": "task",
-        "errorMessage": "Bad Request: clean"
+        "code": "401",
+        "message": "Incorrect catalogue task clean"
     }
 }

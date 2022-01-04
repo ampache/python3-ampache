@@ -1,216 +1,250 @@
-{
-    "song": [
-        {
-            "id": "110",
-            "title": "I wanna walk through the fire",
-            "name": "I wanna walk through the fire",
-            "artist": {
-                "id": "23",
-                "name": "Manic Notion"
-            },
-            "album": {
-                "id": "12",
-                "name": "Buried in Nausea"
-            },
-            "albumartist": {
-                "id": "19",
-                "name": "Various Artists"
-            },
-            "disk": 1,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/01ManicNotion-IWannaWalkThroughTheFire.m4a",
-            "genre": [],
-            "playlisttrack": 1,
-            "time": 197,
-            "year": 2012,
-            "bitrate": 267320,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mp4",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.m4a",
-            "size": 6651911,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "-5.150000",
-            "replaygain_track_peak": "0.989000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
+[
+    {
+        "id": "130769",
+        "title": "Crazy",
+        "name": "Crazy",
+        "artist": {
+            "id": "6778",
+            "name": "Supertramp"
         },
-        {
-            "id": "114",
-            "title": "He is the Master of War",
-            "name": "He is the Master of War",
-            "artist": {
-                "id": "26",
-                "name": "Stress Builds Character"
-            },
-            "album": {
-                "id": "12",
-                "name": "Buried in Nausea"
-            },
-            "albumartist": {
-                "id": "19",
-                "name": "Various Artists"
-            },
-            "disk": 1,
-            "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a",
-            "genre": [],
-            "playlisttrack": 2,
-            "time": 233,
-            "year": 2012,
-            "bitrate": 256245,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mp4",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.m4a",
-            "size": 7535126,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "-10.740000",
-            "replaygain_track_peak": "1.035000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
+        "album": {
+            "id": "54130",
+            "name": "\"...Famous Last Words...\""
         },
-        {
-            "id": "109",
-            "title": "Dance with the Devil",
-            "name": "Dance with the Devil",
-            "artist": {
-                "id": "34",
-                "name": "Comedown Kid"
+        "tag": [
+            {
+                "id": "6",
+                "name": "Rock"
             },
-            "album": {
-                "id": "12",
-                "name": "Buried in Nausea"
+            {
+                "id": "47",
+                "name": "Pop Rock"
+            }
+        ],
+        "filename": "\/mnt\/music\/Supertramp\/(1982) \"...Famous Last Words...\" [493 353-2]\/101 - Crazy.mp3",
+        "track": 1,
+        "playlisttrack": 1,
+        "time": 284,
+        "year": 2002,
+        "bitrate": 320000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130769&uid=2&player=api&name=Supertramp%20-%20Crazy.mp3",
+        "size": 11401970,
+        "mbid": "1f54f7f0-f63b-47d0-abcc-e06db26ba9f0",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=54130&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "Roger Hodgson",
+        "channels": null,
+        "comment": "",
+        "publisher": "A&M Records",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-7.660000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Rock"
             },
-            "albumartist": {
-                "id": "19",
-                "name": "Various Artists"
-            },
-            "disk": 1,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
-            "genre": [],
-            "playlisttrack": 3,
-            "time": 116,
-            "year": 2012,
-            "bitrate": 32582,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.wma",
-            "size": 483444,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
+            {
+                "name": "Pop Rock"
+            }
+        ]
+    },
+    {
+        "id": "130773",
+        "title": "Put on Your Old Brown Shoes",
+        "name": "Put on Your Old Brown Shoes",
+        "artist": {
+            "id": "6778",
+            "name": "Supertramp"
         },
-        {
-            "id": "113",
-            "title": "Representin",
-            "name": "Representin",
-            "artist": {
-                "id": "32",
-                "name": "Shorty Mac"
+        "album": {
+            "id": "54130",
+            "name": "\"...Famous Last Words...\""
+        },
+        "tag": [
+            {
+                "id": "47",
+                "name": "Pop Rock"
             },
-            "album": {
-                "id": "12",
-                "name": "Buried in Nausea"
+            {
+                "id": "6",
+                "name": "Rock"
+            }
+        ],
+        "filename": "\/mnt\/music\/Supertramp\/(1982) \"...Famous Last Words...\" [493 353-2]\/102 - Put on Your Old Brown Shoes.mp3",
+        "track": 2,
+        "playlisttrack": 2,
+        "time": 259,
+        "year": 2002,
+        "bitrate": 320000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130773&uid=2&player=api&name=Supertramp%20-%20Put%20on%20Your%20Old%20Brown%20Shoes.mp3",
+        "size": 10400957,
+        "mbid": "d837f15b-e74d-4463-8bdb-25c36eb9c7a5",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=54130&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
+        "composer": "Rick Davies",
+        "channels": null,
+        "comment": "",
+        "publisher": "A&M Records",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-5.630000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Pop Rock"
             },
-            "albumartist": {
-                "id": "19",
-                "name": "Various Artists"
+            {
+                "name": "Rock"
+            }
+        ]
+    },
+    {
+        "id": "130770",
+        "title": "It's Raining Again",
+        "name": "It's Raining Again",
+        "artist": {
+            "id": "6778",
+            "name": "Supertramp"
+        },
+        "album": {
+            "id": "54130",
+            "name": "\"...Famous Last Words...\""
+        },
+        "tag": [
+            {
+                "id": "6",
+                "name": "Rock"
             },
-            "disk": 1,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
-            "genre": [],
-            "playlisttrack": 4,
-            "time": 234,
-            "year": 2012,
-            "bitrate": 123814,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
-            "size": 3628327,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
-            "license": null,
-            "publisher": "archive.org",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "1.910000",
-            "replaygain_track_peak": "0.851000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        }
-    ]
-}
+            {
+                "id": "47",
+                "name": "Pop Rock"
+            }
+        ],
+        "filename": "\/mnt\/music\/Supertramp\/(1982) \"...Famous Last Words...\" [493 353-2]\/103 - It's Raining Again.mp3",
+        "track": 3,
+        "playlisttrack": 3,
+        "time": 264,
+        "year": 2002,
+        "bitrate": 320000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130770&uid=2&player=api&name=Supertramp%20-%20It-s%20Raining%20Again.mp3",
+        "size": 10583815,
+        "mbid": "45b93719-bc48-4ee9-bb7a-b5f8b8a2e5f5",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=54130&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "Roger Hodgson",
+        "channels": null,
+        "comment": "",
+        "publisher": "A&M Records",
+        "language": "eng",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-7.840000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Rock"
+            },
+            {
+                "name": "Pop Rock"
+            }
+        ]
+    },
+    {
+        "id": "130776",
+        "title": "Bonnie",
+        "name": "Bonnie",
+        "artist": {
+            "id": "6778",
+            "name": "Supertramp"
+        },
+        "album": {
+            "id": "54130",
+            "name": "\"...Famous Last Words...\""
+        },
+        "tag": [
+            {
+                "id": "6",
+                "name": "Rock"
+            },
+            {
+                "id": "47",
+                "name": "Pop Rock"
+            }
+        ],
+        "filename": "\/mnt\/music\/Supertramp\/(1982) \"...Famous Last Words...\" [493 353-2]\/104 - Bonnie.mp3",
+        "track": 4,
+        "playlisttrack": 4,
+        "time": 335,
+        "year": 2002,
+        "bitrate": 320000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=130776&uid=2&player=api&name=Supertramp%20-%20Bonnie.mp3",
+        "size": 13441610,
+        "mbid": "849a2238-5854-4f02-8b6b-4800281775be",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=54130&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "Rick Davies",
+        "channels": null,
+        "comment": "",
+        "publisher": "A&M Records",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-6.760000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Rock"
+            },
+            {
+                "name": "Pop Rock"
+            }
+        ]
+    }
+]

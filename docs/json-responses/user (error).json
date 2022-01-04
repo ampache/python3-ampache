@@ -1,8 +1,17 @@
 {
-    "error": {
-        "errorCode": "4704",
-        "errorAction": "user",
-        "errorType": "username",
-        "errorMessage": "Not Found: missing_user"
+    "user": {
+        "id": "",
+        "username": null,
+        "auth": null,
+        "email": null,
+        "access": "",
+        "fullname_public": "",
+        "validation": null,
+        "disabled": "",
+        "create_date": null,
+        "last_seen": null,
+        "website": null,
+        "state": null,
+        "city": null
     }
 }

@@ -1,114 +1,134 @@
 {
-    "activity": [
+    "timeline": [
         {
-            "id": "212",
-            "date": "1627949322",
+            "id": "167388",
+            "data": "1595916340",
             "object_type": "song",
-            "object_id": "93",
-            "action": "userflag",
-            "user": {
-                "id": "4",
-                "username": "user"
-            }
+            "object_id": "77371",
+            "action": "play",
+            "user": [
+                {
+                    "id": "2",
+                    "username": "user"
+                }
+            ]
         },
         {
-            "id": "211",
-            "date": "1627949320",
-            "object_type": "playlist",
-            "object_id": "2",
-            "action": "userflag",
-            "user": {
-                "id": "4",
-                "username": "user"
-            }
-        },
-        {
-            "id": "209",
-            "date": "1627948526",
-            "object_type": "user",
-            "object_id": "10",
-            "action": "follow",
-            "user": {
-                "id": "4",
-                "username": "user"
-            }
-        },
-        {
-            "id": "208",
-            "date": "1627948523",
+            "id": "167385",
+            "data": "1595916253",
             "object_type": "song",
-            "object_id": "93",
-            "action": "userflag",
-            "user": {
-                "id": "4",
-                "username": "user"
-            }
+            "object_id": "44648",
+            "action": "play",
+            "user": [
+                {
+                    "id": "2",
+                    "username": "user"
+                }
+            ]
         },
         {
-            "id": "207",
-            "date": "1627948521",
-            "object_type": "playlist",
-            "object_id": "2",
-            "action": "userflag",
-            "user": {
-                "id": "4",
-                "username": "user"
-            }
-        },
-        {
-            "id": "206",
-            "date": "1627948509",
-            "object_type": "user",
-            "object_id": "10",
-            "action": "follow",
-            "user": {
-                "id": "4",
-                "username": "user"
-            }
-        },
-        {
-            "id": "205",
-            "date": "1627948501",
+            "id": "167372",
+            "data": "1595914553",
             "object_type": "song",
-            "object_id": "93",
-            "action": "userflag",
-            "user": {
-                "id": "4",
-                "username": "user"
-            }
+            "object_id": "94770",
+            "action": "play",
+            "user": [
+                {
+                    "id": "2",
+                    "username": "user"
+                }
+            ]
         },
         {
-            "id": "204",
-            "date": "1627948498",
-            "object_type": "playlist",
-            "object_id": "2",
-            "action": "userflag",
-            "user": {
-                "id": "4",
-                "username": "user"
-            }
-        },
-        {
-            "id": "199",
-            "date": "1626919787",
+            "id": "167371",
+            "data": "1595914371",
             "object_type": "song",
-            "object_id": "131",
-            "action": "upload",
-            "user": {
-                "id": "4",
-                "username": "user"
-            }
+            "object_id": "67568",
+            "action": "play",
+            "user": [
+                {
+                    "id": "2",
+                    "username": "user"
+                }
+            ]
         },
         {
-            "id": "196",
-            "date": "1626919787",
+            "id": "167370",
+            "data": "1595914100",
             "object_type": "song",
-            "object_id": "128",
-            "action": "upload",
-            "user": {
-                "id": "4",
-                "username": "user"
-            }
+            "object_id": "19851",
+            "action": "play",
+            "user": [
+                {
+                    "id": "2",
+                    "username": "user"
+                }
+            ]
+        },
+        {
+            "id": "167369",
+            "data": "1595913831",
+            "object_type": "song",
+            "object_id": "864164",
+            "action": "play",
+            "user": [
+                {
+                    "id": "2",
+                    "username": "user"
+                }
+            ]
+        },
+        {
+            "id": "167368",
+            "data": "1595913486",
+            "object_type": "song",
+            "object_id": "13373",
+            "action": "play",
+            "user": [
+                {
+                    "id": "2",
+                    "username": "user"
+                }
+            ]
+        },
+        {
+            "id": "167367",
+            "data": "1595913244",
+            "object_type": "song",
+            "object_id": "68840",
+            "action": "play",
+            "user": [
+                {
+                    "id": "2",
+                    "username": "user"
+                }
+            ]
+        },
+        {
+            "id": "167366",
+            "data": "1595913013",
+            "object_type": "song",
+            "object_id": "107346",
+            "action": "play",
+            "user": [
+                {
+                    "id": "2",
+                    "username": "user"
+                }
+            ]
+        },
+        {
+            "id": "167365",
+            "data": "1595912775",
+            "object_type": "song",
+            "object_id": "787588",
+            "action": "play",
+            "user": [
+                {
+                    "id": "2",
+                    "username": "user"
+                }
+            ]
         }
     ]
 }

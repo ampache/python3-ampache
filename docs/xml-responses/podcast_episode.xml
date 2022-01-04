@@ -1,8 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[podcast_episode]]></errorAction>
-    <errorType><![CDATA[filter]]></errorType>
-    <errorMessage><![CDATA[Not Found: 47]]></errorMessage>
-  </error>
+<total_count>1</total_count>
+	<podcast_episode id="6394">
+		<name><![CDATA[s4 ep12 - The Collections Agency, Part Five]]></name>
+		<description><![CDATA[]]></description>
+		<category><![CDATA[]]></category>
+		<author><![CDATA[]]></author>
+		<author_full><![CDATA[]]></author_full>
+		<website><![CDATA[http://www.acq-inc.com/listen/cteam/the-collections-agency-part-five/the-collections-agency-part-five.mp3]]></website>
+		<pubdate><![CDATA[2020/04/09 01:10PM]]></pubdate>
+		<state><![CDATA[Completed]]></state>
+		<filelength><![CDATA[00:35:50]]></filelength>
+		<filesize><![CDATA[145.79 MB]]></filesize>
+		<filename><![CDATA[AI: The "C" Team - s4 ep12 - The Collections Agency, Part Five.mp3]]></filename>
+		<url><![CDATA[https://music.com.au/podcast_episode.php?action=show&podcast_episode=6394]]></url>
+	</podcast_episode>
 </root>
