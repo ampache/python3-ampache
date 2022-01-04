@@ -1,120 +1,195 @@
-{
-    "song": [
-        {
-            "id": "54",
-            "title": "Red&GreenSmoke",
-            "name": "Red&GreenSmoke",
-            "artist": {
-                "id": "2",
-                "name": "Synthetic"
-            },
-            "album": {
-                "id": "2",
-                "name": "Colorsmoke EP"
-            },
-            "albumartist": {
-                "id": "2",
-                "name": "Synthetic"
-            },
-            "disk": 1,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "playlisttrack": 1,
-            "time": 400,
-            "year": 2007,
-            "bitrate": 64000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-            "size": 3209468,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": 1,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "20kbps rec.",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "-2.880000",
-            "replaygain_track_peak": "0.977000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
+[
+    {
+        "id": "802686",
+        "title": "Chapter",
+        "name": "Chapter",
+        "artist": {
+            "id": "11350",
+            "name": "NOFX, Jeff Alulis"
         },
-        {
-            "id": "54",
-            "title": "Red&GreenSmoke",
-            "name": "Red&GreenSmoke",
-            "artist": {
-                "id": "2",
-                "name": "Synthetic"
-            },
-            "album": {
-                "id": "2",
-                "name": "Colorsmoke EP"
-            },
-            "albumartist": {
-                "id": "2",
-                "name": "Synthetic"
-            },
-            "disk": 1,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 400,
-            "year": 2007,
-            "bitrate": 64000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-            "size": 3209468,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": 1,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "20kbps rec.",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "-2.880000",
-            "replaygain_track_peak": "0.977000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        }
-    ]
-}
+        "album": {
+            "id": "44850",
+            "name": "NOFX: The Hepatitis Bathtub and Other Stories"
+        },
+        "tag": [],
+        "filename": "\/mnt\/music\/NOFX\/(2016) NOFX: The Hepatitis Bathtub and Other Stories\/1027 - Chapter.mp3",
+        "track": 27,
+        "playlisttrack": 1,
+        "time": 752,
+        "year": 2016,
+        "bitrate": 97179,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=802686&uid=2&player=api&name=NOFX-%20Jeff%20Alulis%20-%20Chapter.mp3",
+        "size": 9229718,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=44850&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
+        "composer": "NOFX, Jello Biafra, Tommy Chong",
+        "channels": null,
+        "comment": "Available as an audiobook for the first time, read by band members 'Fat Mike' Burkett, Eric Melvin, Erik 'Smelly' Sandin, and Aaron 'El Hefe' Abeyta along with special guest narrator musician and comedian Tommy Chong. In addition, the audiobook features exclusive, previously unreleased tracks, 'Bouncy' (a NOFX instrumental), 'La Pieta' (Fat Mike piano &amp; vocal song about his mother), and 'Young Drunk &amp; Stupid' (live NOFX song from an Idaho basement gig in 1986) NOFX: The Hepatitis Bathtub and Other Stories is the first tell-all autobiography from one of the world's most influential and controversial punk bands. Fans and non-fans alike will be shocked by the stories of murder, suicide, addiction, counterfeiting, riots, bondage, terminal illness, the Yakuza, and drinking pee. Told from the perspective of each of the band's members, this audiobook looks back at more than 30 years of comedy, tragedy, and completely inexplicable success.",
+        "publisher": "",
+        "language": "eng",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "0.000000",
+        "replaygain_track_peak": "0.000000",
+        "genre": []
+    },
+    {
+        "id": "802687",
+        "title": "Chapter",
+        "name": "Chapter",
+        "artist": {
+            "id": "11350",
+            "name": "NOFX, Jeff Alulis"
+        },
+        "album": {
+            "id": "44850",
+            "name": "NOFX: The Hepatitis Bathtub and Other Stories"
+        },
+        "tag": [],
+        "filename": "\/mnt\/music\/NOFX\/(2016) NOFX: The Hepatitis Bathtub and Other Stories\/1050 - Chapter.mp3",
+        "track": 50,
+        "playlisttrack": 2,
+        "time": 275,
+        "year": 2016,
+        "bitrate": 97730,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=802687&uid=2&player=api&name=NOFX-%20Jeff%20Alulis%20-%20Chapter.mp3",
+        "size": 3455996,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=44850&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "NOFX, Jello Biafra, Tommy Chong",
+        "channels": null,
+        "comment": "Available as an audiobook for the first time, read by band members 'Fat Mike' Burkett, Eric Melvin, Erik 'Smelly' Sandin, and Aaron 'El Hefe' Abeyta along with special guest narrator musician and comedian Tommy Chong. In addition, the audiobook features exclusive, previously unreleased tracks, 'Bouncy' (a NOFX instrumental), 'La Pieta' (Fat Mike piano &amp; vocal song about his mother), and 'Young Drunk &amp; Stupid' (live NOFX song from an Idaho basement gig in 1986) NOFX: The Hepatitis Bathtub and Other Stories is the first tell-all autobiography from one of the world's most influential and controversial punk bands. Fans and non-fans alike will be shocked by the stories of murder, suicide, addiction, counterfeiting, riots, bondage, terminal illness, the Yakuza, and drinking pee. Told from the perspective of each of the band's members, this audiobook looks back at more than 30 years of comedy, tragedy, and completely inexplicable success.",
+        "publisher": "",
+        "language": "eng",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "0.000000",
+        "replaygain_track_peak": "0.000000",
+        "genre": []
+    },
+    {
+        "id": "802685",
+        "title": "Chapter",
+        "name": "Chapter",
+        "artist": {
+            "id": "11350",
+            "name": "NOFX, Jeff Alulis"
+        },
+        "album": {
+            "id": "44850",
+            "name": "NOFX: The Hepatitis Bathtub and Other Stories"
+        },
+        "tag": [
+            {
+                "id": "1310",
+                "name": "Audiobook"
+            }
+        ],
+        "filename": "\/mnt\/music\/NOFX\/(2016) NOFX: The Hepatitis Bathtub and Other Stories\/1048 - Chapter.mp3",
+        "track": 48,
+        "playlisttrack": 3,
+        "time": 210,
+        "year": 2016,
+        "bitrate": 99212,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=802685&uid=2&player=api&name=NOFX-%20Jeff%20Alulis%20-%20Chapter.mp3",
+        "size": 2701132,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=44850&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "NOFX, Jello Biafra, Tommy Chong",
+        "channels": null,
+        "comment": "Available as an audiobook for the first time, read by band members 'Fat Mike' Burkett, Eric Melvin, Erik 'Smelly' Sandin, and Aaron 'El Hefe' Abeyta along with special guest narrator musician and comedian Tommy Chong. In addition, the audiobook features exclusive, previously unreleased tracks, 'Bouncy' (a NOFX instrumental), 'La Pieta' (Fat Mike piano &amp; vocal song about his mother), and 'Young Drunk &amp; Stupid' (live NOFX song from an Idaho basement gig in 1986) NOFX: The Hepatitis Bathtub and Other Stories is the first tell-all autobiography from one of the world's most influential and controversial punk bands. Fans and non-fans alike will be shocked by the stories of murder, suicide, addiction, counterfeiting, riots, bondage, terminal illness, the Yakuza, and drinking pee. Told from the perspective of each of the band's members, this audiobook looks back at more than 30 years of comedy, tragedy, and completely inexplicable success.",
+        "publisher": "",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "0.000000",
+        "replaygain_track_peak": "0.000000",
+        "genre": [
+            {
+                "name": "Audiobook"
+            }
+        ]
+    },
+    {
+        "id": "802684",
+        "title": "Chapter",
+        "name": "Chapter",
+        "artist": {
+            "id": "11350",
+            "name": "NOFX, Jeff Alulis"
+        },
+        "album": {
+            "id": "44850",
+            "name": "NOFX: The Hepatitis Bathtub and Other Stories"
+        },
+        "tag": [],
+        "filename": "\/mnt\/music\/NOFX\/(2016) NOFX: The Hepatitis Bathtub and Other Stories\/1033 - Chapter.mp3",
+        "track": 33,
+        "playlisttrack": 4,
+        "time": 348,
+        "year": 2016,
+        "bitrate": 96823,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=802684&uid=2&player=api&name=NOFX-%20Jeff%20Alulis%20-%20Chapter.mp3",
+        "size": 4314312,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=44850&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "NOFX, Jello Biafra, Tommy Chong",
+        "channels": null,
+        "comment": "Available as an audiobook for the first time, read by band members 'Fat Mike' Burkett, Eric Melvin, Erik 'Smelly' Sandin, and Aaron 'El Hefe' Abeyta along with special guest narrator musician and comedian Tommy Chong. In addition, the audiobook features exclusive, previously unreleased tracks, 'Bouncy' (a NOFX instrumental), 'La Pieta' (Fat Mike piano &amp; vocal song about his mother), and 'Young Drunk &amp; Stupid' (live NOFX song from an Idaho basement gig in 1986) NOFX: The Hepatitis Bathtub and Other Stories is the first tell-all autobiography from one of the world's most influential and controversial punk bands. Fans and non-fans alike will be shocked by the stories of murder, suicide, addiction, counterfeiting, riots, bondage, terminal illness, the Yakuza, and drinking pee. Told from the perspective of each of the band's members, this audiobook looks back at more than 30 years of comedy, tragedy, and completely inexplicable success.",
+        "publisher": "",
+        "language": "eng",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "0.000000",
+        "replaygain_track_peak": "0.000000",
+        "genre": []
+    }
+]

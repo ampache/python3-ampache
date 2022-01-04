@@ -1,5 +1,5 @@
 """
-Setup file
+Setup file for srlearn
 Refer to https://github.com/ampache/python3-ampache
 """
 
@@ -24,7 +24,7 @@ setup(
     author="Lachlan de Waard (lachlan-00)",
     author_email="lachlan.00@gmail.com",
     version=__version__,
-    description="Python library for Amapche XML & JSON API",
+    description="Python library for Amapche XML-API",
     long_description=LONG_DESCRIPTION,
     include_package_data=False,
     url="https://github.com/ampache/python3-ampache",
@@ -35,12 +35,9 @@ setup(
         "Development Status :: 5 - Production/Stable",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: POSIX :: Linux",
-        "Operating System :: Microsoft :: Windows",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
         "Topic :: Software Development :: Libraries :: PHP Classes",
-        "Intended Audience :: Developers",
     ],
     keywords="",
     install_requires=[""],

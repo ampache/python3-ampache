@@ -1,34 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <root>
-  <total_count>2</total_count>
-  <video id="2">
-    <title><![CDATA[Magic Fly]]></title>
-    <name><![CDATA[Magic Fly]]></name>
-    <mime><![CDATA[video/ogg]]></mime>
-    <resolution><![CDATA[400x300]]></resolution>
-    <size>14950742</size>
-    <time><![CDATA[0]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=2&uid=4&player=api&name=Magic%20Fly.ogv]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>1</playcount>
-  </video>
-  <video id="1">
-    <title><![CDATA[SPACE   Magic Fly (1977) - https://archive.org/details/SPACE_Magic_Fly_1977]]></title>
-    <name><![CDATA[SPACE   Magic Fly (1977) - https://archive.org/details/SPACE_Magic_Fly_1977]]></name>
-    <mime><![CDATA[video/mp4]]></mime>
-    <resolution><![CDATA[640x480]]></resolution>
-    <size>20084777</size>
-    <time><![CDATA[193]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1&uid=4&player=api&name=SPACE%20%20%20Magic%20Fly%20-1977-%20-%20https-archive.org-details-SPACE-Magic-Fly-1977.mp4]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=1&object_type=video&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>3</playcount>
-  </video>
+<total_count>4</total_count>
+<video id="1263">
+	<title><![CDATA[Blaze Control]]></title>
+	<name><![CDATA[Blaze Control]]></name>
+	<mime><![CDATA[video/x-matroska]]></mime>
+	<resolution><![CDATA[640x480]]></resolution>
+	<size>5685786</size>
+	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=video&oid=1263&uid=2&player=api&name=Blaze%20Control.webm]]></url>
+</video>
+<video id="1258">
+	<title><![CDATA[Futurama]]></title>
+	<name><![CDATA[Futurama]]></name>
+	<mime><![CDATA[video/x-matroska]]></mime>
+	<resolution><![CDATA[960x720]]></resolution>
+	<size>201563070</size>
+	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=video&oid=1258&uid=2&player=api&name=Futurama.webm]]></url>
+</video>
+<video id="1260">
+	<title><![CDATA[Futurama]]></title>
+	<name><![CDATA[Futurama]]></name>
+	<mime><![CDATA[video/x-matroska]]></mime>
+	<resolution><![CDATA[960x720]]></resolution>
+	<size>215266908</size>
+	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=video&oid=1260&uid=2&player=api&name=Futurama.webm]]></url>
+</video>
+<video id="1262">
+	<title><![CDATA[Hear.Life.Spoken]]></title>
+	<name><![CDATA[Hear.Life.Spoken]]></name>
+	<mime><![CDATA[video/x-matroska]]></mime>
+	<resolution><![CDATA[1920x1080]]></resolution>
+	<size>124125138</size>
+	<url><![CDATA[https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=video&oid=1262&uid=2&player=api&name=Hear.Life.Spoken.webm]]></url>
+</video>
 </root>

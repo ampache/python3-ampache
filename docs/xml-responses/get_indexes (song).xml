@@ -1,40 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <root>
-  <total_count>75</total_count>
-  <song id="54">
-    <title><![CDATA[Red&GreenSmoke]]></title>
-    <name><![CDATA[Red&GreenSmoke]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
-    <album id="2"><![CDATA[Colorsmoke EP]]></album>
-    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>5</track>
-  </song>
-  <song id="55">
-    <title><![CDATA[Red&GreenSmoke]]></title>
-    <name><![CDATA[Red&GreenSmoke]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
-    <album id="2"><![CDATA[Colorsmoke EP]]></album>
-    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>5</track>
-  </song>
-  <song id="56">
-    <title><![CDATA[Black&BlueSmoke]]></title>
-    <name><![CDATA[Black&BlueSmoke]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
-    <album id="2"><![CDATA[Colorsmoke EP]]></album>
-    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>1</track>
-  </song>
-  <song id="57">
-    <title><![CDATA[PurpleSmoke]]></title>
-    <name><![CDATA[PurpleSmoke]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
-    <album id="2"><![CDATA[Colorsmoke EP]]></album>
-    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>3</track>
-  </song>
+<total_count>4</total_count>
+<song id="953">
+	<title><![CDATA[Wishmaster]]></title>
+	<name><![CDATA[Wishmaster]]></name>
+		<artist id="55"><![CDATA[Nightwish]]></artist>
+		<album id="48753"><![CDATA[Wishmaster]]></album>
+</song>
+<song id="955">
+	<title><![CDATA[Wanderlust]]></title>
+	<name><![CDATA[Wanderlust]]></name>
+		<artist id="55"><![CDATA[Nightwish]]></artist>
+		<album id="48753"><![CDATA[Wishmaster]]></album>
+</song>
+<song id="956">
+	<title><![CDATA[Come Cover Me]]></title>
+	<name><![CDATA[Come Cover Me]]></name>
+		<artist id="55"><![CDATA[Nightwish]]></artist>
+		<album id="48753"><![CDATA[Wishmaster]]></album>
+</song>
+<song id="958">
+	<title><![CDATA[Dead Boy's Poem]]></title>
+	<name><![CDATA[Dead Boy's Poem]]></name>
+		<artist id="55"><![CDATA[Nightwish]]></artist>
+		<album id="48753"><![CDATA[Wishmaster]]></album>
+</song>
 </root>

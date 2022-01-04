@@ -1,6 +1,222 @@
 [
-    60,
-    129,
-    112,
-    74
+    {
+        "id": "772543",
+        "title": "Fog",
+        "name": "Fog",
+        "artist": {
+            "id": "10335",
+            "name": "Kristin Hersh"
+        },
+        "album": {
+            "id": "60805",
+            "name": "Sky Motel"
+        },
+        "tag": [
+            {
+                "id": "6",
+                "name": "Rock"
+            }
+        ],
+        "filename": "\/mnt\/music\/Kristin Hersh\/(1999) Sky Motel [CAD 9008 CD]\/103 - Fog.mp3",
+        "track": 3,
+        "playlisttrack": 1,
+        "time": 96,
+        "year": 1999,
+        "bitrate": 320000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=772543&uid=2&player=api&name=Kristin%20Hersh%20-%20Fog.mp3",
+        "size": 3967320,
+        "mbid": "27acb34d-ce7a-4c19-b5bd-c6437019478c",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=60805&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "4AD; Shock Records",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-7.370000",
+        "replaygain_track_peak": "0.891000",
+        "genre": [
+            {
+                "name": "Rock"
+            }
+        ]
+    },
+    {
+        "id": "151361",
+        "title": "A100",
+        "name": "A100",
+        "artist": {
+            "id": "2445",
+            "name": "Billy Corgan"
+        },
+        "album": {
+            "id": "34143",
+            "name": "Paradiso, Amsterdam, NL"
+        },
+        "tag": [
+            {
+                "id": "666",
+                "name": "Bootleg"
+            }
+        ],
+        "filename": "\/mnt\/files-music\/boots\/Billy Corgan\/2005-06-09 - Paradiso, Amsterdam, NL\/09 - A100.flac",
+        "track": 9,
+        "playlisttrack": 2,
+        "time": 293,
+        "year": 2005,
+        "bitrate": 729446,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/x-flac",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=151361&uid=2&player=api&name=Billy%20Corgan%20-%20A100.opus",
+        "size": 26721540,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=34143&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 6,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "0.000000",
+        "replaygain_track_peak": "0.000000",
+        "genre": [
+            {
+                "name": "Bootleg"
+            }
+        ]
+    },
+    {
+        "id": "10411",
+        "title": "Whisper of Rain",
+        "name": "Whisper of Rain",
+        "artist": {
+            "id": "362",
+            "name": "Pokrov Music"
+        },
+        "album": {
+            "id": "43640",
+            "name": "Never Forget"
+        },
+        "tag": [
+            {
+                "id": "7",
+                "name": "Synthpop"
+            }
+        ],
+        "filename": "\/mnt\/music\/Pokrov Music\/(2009) Never Forget\/103 - Whisper of Rain.mp3",
+        "track": 3,
+        "playlisttrack": 3,
+        "time": 259,
+        "year": 2009,
+        "bitrate": 219783,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=10411&uid=2&player=api&name=Pokrov%20Music%20-%20Whisper%20of%20Rain.mp3",
+        "size": 7143513,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=43640&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "",
+        "language": "English",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "0.000000",
+        "replaygain_track_peak": "0.000000",
+        "genre": [
+            {
+                "name": "Synthpop"
+            }
+        ]
+    },
+    {
+        "id": "801913",
+        "title": "Business Ideas",
+        "name": "Business Ideas",
+        "artist": {
+            "id": "30",
+            "name": "Dennis Miller"
+        },
+        "album": {
+            "id": "10457",
+            "name": "America 180"
+        },
+        "tag": [
+            {
+                "id": "5",
+                "name": "Comedy"
+            }
+        ],
+        "filename": "\/mnt\/music\/Dennis Miller\/(2014) America 180\/117 - Business Ideas.mp3",
+        "track": 17,
+        "playlisttrack": 4,
+        "time": 82,
+        "year": 2014,
+        "bitrate": 176773,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=801913&uid=2&player=api&name=Dennis%20Miller%20-%20Business%20Ideas.mp3",
+        "size": 1882116,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=10457&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "In America 180, Dennis Miller examines the current state of our Union. From the antics of those running Washington, to the blunders of President Obama''s healthcare initiative, to our wild efforts to save the planet one light bulb at a time, his take on today''s America is both hysterical and painfully right on target. Dennis Miller: America 180 was taped at the Barclay Theatre in Irvine, California.",
+        "publisher": "New Wave Dynamics",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-8.540000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Comedy"
+            }
+        ]
+    }
 ]

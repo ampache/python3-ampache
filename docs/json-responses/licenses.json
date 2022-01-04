@@ -1,88 +1,176 @@
-{
-    "license": [
-        {
-            "id": "1",
-            "name": "0 - default",
-            "description": null,
-            "external_link": ""
-        },
-        {
-            "id": "14",
-            "name": "C Reaction",
-            "description": null,
-            "external_link": "http:\/\/morne.free.fr\/Necktar7\/creaction.htm"
-        },
-        {
-            "id": "2",
-            "name": "CC BY",
-            "description": null,
-            "external_link": "https:\/\/creativecommons.org\/licenses\/by\/3.0\/"
-        },
-        {
-            "id": "3",
-            "name": "CC BY NC",
-            "description": null,
-            "external_link": "https:\/\/creativecommons.org\/licenses\/by-nc\/3.0\/"
-        },
-        {
-            "id": "4",
-            "name": "CC BY NC ND",
-            "description": null,
-            "external_link": "https:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/"
-        },
-        {
-            "id": "5",
-            "name": "CC BY NC SA",
-            "description": null,
-            "external_link": "https:\/\/creativecommons.org\/licenses\/by-nc-sa\/3.0\/"
-        },
-        {
-            "id": "6",
-            "name": "CC BY ND",
-            "description": null,
-            "external_link": "https:\/\/creativecommons.org\/licenses\/by-nd\/3.0\/"
-        },
-        {
-            "id": "7",
-            "name": "CC BY SA",
-            "description": null,
-            "external_link": "https:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/"
-        },
-        {
-            "id": "13",
-            "name": "FMPL",
-            "description": null,
-            "external_link": "http:\/\/www.fmpl.org\/fmpl.html"
-        },
-        {
-            "id": "11",
-            "name": "Gnu GPL Art",
-            "description": null,
-            "external_link": "http:\/\/gnuart.org\/english\/gnugpl.html"
-        },
-        {
-            "id": "10",
-            "name": "Green OpenMusic",
-            "description": null,
-            "external_link": "http:\/\/openmusic.linuxtag.org\/green.html"
-        },
-        {
-            "id": "8",
-            "name": "Licence Art Libre",
-            "description": null,
-            "external_link": "http:\/\/artlibre.org\/licence\/lal\/"
-        },
-        {
-            "id": "12",
-            "name": "WTFPL",
-            "description": null,
-            "external_link": "https:\/\/en.wikipedia.org\/wiki\/WTFPL"
-        },
-        {
-            "id": "9",
-            "name": "Yellow OpenMusic",
-            "description": null,
-            "external_link": "http:\/\/openmusic.linuxtag.org\/yellow.html"
-        }
-    ]
-}
+[
+    {
+        "id": "15",
+        "name": "0 - default",
+        "description": null,
+        "external_link": ""
+    },
+    {
+        "id": "16",
+        "name": "0 - default",
+        "description": null,
+        "external_link": ""
+    },
+    {
+        "id": "29",
+        "name": "C Reaction",
+        "description": null,
+        "external_link": "http:\/\/morne.free.fr\/Necktar7\/creaction.htm"
+    },
+    {
+        "id": "14",
+        "name": "C Reaction",
+        "description": null,
+        "external_link": "http:\/\/morne.free.fr\/Necktar7\/creaction.htm"
+    },
+    {
+        "id": "17",
+        "name": "CC BY",
+        "description": null,
+        "external_link": "https:\/\/creativecommons.org\/licenses\/by\/3.0\/"
+    },
+    {
+        "id": "2",
+        "name": "CC BY",
+        "description": null,
+        "external_link": "https:\/\/creativecommons.org\/licenses\/by\/3.0\/"
+    },
+    {
+        "id": "18",
+        "name": "CC BY NC",
+        "description": null,
+        "external_link": "https:\/\/creativecommons.org\/licenses\/by-nc\/3.0\/"
+    },
+    {
+        "id": "3",
+        "name": "CC BY NC",
+        "description": null,
+        "external_link": "https:\/\/creativecommons.org\/licenses\/by-nc\/3.0\/"
+    },
+    {
+        "id": "19",
+        "name": "CC BY NC ND",
+        "description": null,
+        "external_link": "https:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/"
+    },
+    {
+        "id": "4",
+        "name": "CC BY NC ND",
+        "description": null,
+        "external_link": "https:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/"
+    },
+    {
+        "id": "20",
+        "name": "CC BY NC SA",
+        "description": null,
+        "external_link": "https:\/\/creativecommons.org\/licenses\/by-nc-sa\/3.0\/"
+    },
+    {
+        "id": "5",
+        "name": "CC BY NC SA",
+        "description": null,
+        "external_link": "https:\/\/creativecommons.org\/licenses\/by-nc-sa\/3.0\/"
+    },
+    {
+        "id": "21",
+        "name": "CC BY ND",
+        "description": null,
+        "external_link": "https:\/\/creativecommons.org\/licenses\/by-nd\/3.0\/"
+    },
+    {
+        "id": "6",
+        "name": "CC BY ND",
+        "description": null,
+        "external_link": "https:\/\/creativecommons.org\/licenses\/by-nd\/3.0\/"
+    },
+    {
+        "id": "22",
+        "name": "CC BY SA",
+        "description": null,
+        "external_link": "https:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/"
+    },
+    {
+        "id": "7",
+        "name": "CC BY SA",
+        "description": null,
+        "external_link": "https:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/"
+    },
+    {
+        "id": "28",
+        "name": "FMPL",
+        "description": null,
+        "external_link": "http:\/\/www.fmpl.org\/fmpl.html"
+    },
+    {
+        "id": "13",
+        "name": "FMPL",
+        "description": null,
+        "external_link": "http:\/\/www.fmpl.org\/fmpl.html"
+    },
+    {
+        "id": "11",
+        "name": "Gnu GPL Art",
+        "description": null,
+        "external_link": "http:\/\/gnuart.org\/english\/gnugpl.html"
+    },
+    {
+        "id": "26",
+        "name": "Gnu GPL Art",
+        "description": null,
+        "external_link": "http:\/\/gnuart.org\/english\/gnugpl.html"
+    },
+    {
+        "id": "10",
+        "name": "Green OpenMusic",
+        "description": null,
+        "external_link": "http:\/\/openmusic.linuxtag.org\/green.html"
+    },
+    {
+        "id": "25",
+        "name": "Green OpenMusic",
+        "description": null,
+        "external_link": "http:\/\/openmusic.linuxtag.org\/green.html"
+    },
+    {
+        "id": "8",
+        "name": "Licence Art Libre",
+        "description": null,
+        "external_link": "http:\/\/artlibre.org\/licence\/lal\/"
+    },
+    {
+        "id": "23",
+        "name": "Licence Art Libre",
+        "description": null,
+        "external_link": "http:\/\/artlibre.org\/licence\/lal\/"
+    },
+    {
+        "id": "12",
+        "name": "WTFPL",
+        "description": null,
+        "external_link": "https:\/\/en.wikipedia.org\/wiki\/WTFPL"
+    },
+    {
+        "id": "27",
+        "name": "WTFPL",
+        "description": null,
+        "external_link": "https:\/\/en.wikipedia.org\/wiki\/WTFPL"
+    },
+    {
+        "id": "24",
+        "name": "Yellow OpenMusic",
+        "description": null,
+        "external_link": "http:\/\/openmusic.linuxtag.org\/yellow.html"
+    },
+    {
+        "id": "9",
+        "name": "Yellow OpenMusic",
+        "description": null,
+        "external_link": "http:\/\/openmusic.linuxtag.org\/yellow.html"
+    },
+    {
+        "id": "1",
+        "name": "_default",
+        "description": null,
+        "external_link": ""
+    }
+]

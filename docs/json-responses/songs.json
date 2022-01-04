@@ -1,235 +1,306 @@
-{
-    "song": [
-        {
-            "id": "115",
-            "title": "Are we going Crazy",
-            "name": "Are we going Crazy",
-            "artist": {
-                "id": "27",
-                "name": "Chi.Otic"
-            },
-            "album": {
-                "id": "12",
-                "name": "Buried in Nausea"
-            },
-            "albumartist": {
-                "id": "19",
-                "name": "Various Artists"
-            },
-            "disk": 1,
-            "track": 7,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
-            "genre": [],
-            "playlisttrack": 1,
-            "time": 433,
-            "year": 2012,
-            "bitrate": 32582,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.wma",
-            "size": 1776580,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
+[
+    {
+        "id": "164215",
+        "title": "!",
+        "name": "!",
+        "artist": {
+            "id": "8526",
+            "name": "Hellyeah"
         },
-        {
-            "id": "107",
-            "title": "Arrest Me",
-            "name": "Arrest Me",
-            "artist": {
+        "album": {
+            "id": "56038",
+            "name": "Unden!able"
+        },
+        "tag": [
+            {
                 "id": "20",
-                "name": "R\/B"
+                "name": "Metal"
             },
-            "album": {
-                "id": "12",
-                "name": "Buried in Nausea"
+            {
+                "id": "37",
+                "name": "Hard Rock"
+            }
+        ],
+        "filename": "\/mnt\/music\/Hellyeah\/(2016) Unden!able [ESM 171-2]\/101 - !.mp3",
+        "track": 1,
+        "playlisttrack": 1,
+        "time": 79,
+        "year": 2016,
+        "bitrate": 320000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=164215&uid=2&player=api&name=Hellyeah%20-%20-.mp3",
+        "size": 3184944,
+        "mbid": "42bb2b7a-bf67-4cc4-8610-25399d56474b",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=56038&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "Eleven Seven Music",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-6.920000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Metal"
             },
-            "albumartist": {
-                "id": "19",
-                "name": "Various Artists"
-            },
-            "disk": 1,
-            "track": 9,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/09R_b-ArrestMe.m4a",
-            "genre": [
-                {
-                    "id": "7",
-                    "name": "Punk"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 96,
-            "year": 2012,
-            "bitrate": 252864,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mp4",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a",
-            "size": 3091727,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "-1.350000",
-            "replaygain_track_peak": "0.881000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
+            {
+                "name": "Hard Rock"
+            }
+        ]
+    },
+    {
+        "id": "41252",
+        "title": "! (The Song Formerly Known As)",
+        "name": "! (The Song Formerly Known As)",
+        "artist": {
+            "id": "1464",
+            "name": "Regurgitator"
         },
-        {
-            "id": "118",
-            "title": "As Pure as Possible",
-            "name": "As Pure as Possible",
-            "artist": {
-                "id": "36",
-                "name": "Comfort Fit"
-            },
-            "album": {
-                "id": "21",
-                "name": "Forget and Remember"
-            },
-            "albumartist": {
-                "id": "36",
-                "name": "Comfort Fit"
-            },
-            "disk": 1,
-            "track": 9,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/9 - As Pure as Possible.mp3",
-            "genre": [
-                {
-                    "id": "8",
-                    "name": "Hip-Hop"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 128,
-            "year": 2005,
-            "bitrate": 234690,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=118&uid=4&player=api&name=Comfort%20Fit%20-%20As%20Pure%20as%20Possible.mp3",
-            "size": 3789410,
-            "mbid": "7a3d740d-5546-4900-88af-b97b42c3344e",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 4,
-            "composer": "",
-            "channels": null,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-09-comfort_fit-as_pure_as_possible\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
-            "license": null,
-            "publisher": "Tokyo Dawn Records",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
+        "album": {
+            "id": "50272",
+            "name": "Unit"
         },
-        {
-            "id": "85",
-            "title": "Beq Ultra Fat",
-            "name": "Beq Ultra Fat",
-            "artist": {
-                "id": "14",
-                "name": "Nofi\/found."
+        "tag": [
+            {
+                "id": "16",
+                "name": "Alternative"
+            }
+        ],
+        "filename": "\/mnt\/music\/Regurgitator\/(1997) Unit\/103 - ! (The Song Formerly Known As).mp3",
+        "track": 3,
+        "playlisttrack": 2,
+        "time": 208,
+        "year": 1997,
+        "bitrate": 160000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=41252&uid=2&player=api&name=Regurgitator%20-%20-%20-The%20Song%20Formerly%20Known%20As-.mp3",
+        "size": 4198110,
+        "mbid": "5e14ee48-6337-4a70-8992-1ed74dddb945",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=50272&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": 3,
+        "rating": 3,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "Warner Music Australia",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-10.460000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Alternative"
+            }
+        ]
+    },
+    {
+        "id": "84148",
+        "title": "! (The Song Formerly Known As)",
+        "name": "! (The Song Formerly Known As)",
+        "artist": {
+            "id": "1464",
+            "name": "Regurgitator"
+        },
+        "album": {
+            "id": "32856",
+            "name": "Triple J: Hottest 100, Volume 6"
+        },
+        "tag": [
+            {
+                "id": "3",
+                "name": "Punk"
             },
-            "album": {
-                "id": "8",
-                "name": "Nofi Devices"
+            {
+                "id": "4",
+                "name": "Electronic"
             },
-            "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found."
+            {
+                "id": "6",
+                "name": "Rock"
             },
-            "disk": 1,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/04_Beq_Ultra_Fat.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "playlisttrack": 4,
-            "time": 413,
-            "year": 0,
-            "bitrate": 192000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3",
-            "size": 9935896,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
-            "channels": null,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
-            "license": null,
-            "publisher": "archive.org",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "0.940000",
-            "replaygain_track_peak": "0.989000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        }
-    ]
-}
+            {
+                "id": "7",
+                "name": "Synthpop"
+            },
+            {
+                "id": "22",
+                "name": "Pop"
+            },
+            {
+                "id": "37",
+                "name": "Hard Rock"
+            },
+            {
+                "id": "184",
+                "name": "Parody"
+            },
+            {
+                "id": "615",
+                "name": "Big Beat"
+            },
+            {
+                "id": "1409",
+                "name": "Hip Hop"
+            }
+        ],
+        "filename": "\/mnt\/music\/Various Artists\/(1999) Triple J: Hottest 100, Volume 6\/212 - ! (The Song Formerly Known As).mp3",
+        "track": 12,
+        "playlisttrack": 3,
+        "time": 207,
+        "year": 1999,
+        "bitrate": 160000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=84148&uid=2&player=api&name=Regurgitator%20-%20-%20-The%20Song%20Formerly%20Known%20As-.mp3",
+        "size": 4149473,
+        "mbid": "5e14ee48-6337-4a70-8992-1ed74dddb945",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=32856&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "EMI Music Australia; Triple J",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-8.090000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Punk"
+            },
+            {
+                "name": "Electronic"
+            },
+            {
+                "name": "Rock"
+            },
+            {
+                "name": "Synthpop"
+            },
+            {
+                "name": "Pop"
+            },
+            {
+                "name": "Hard Rock"
+            },
+            {
+                "name": "Parody"
+            },
+            {
+                "name": "Big Beat"
+            },
+            {
+                "name": "Hip Hop"
+            }
+        ]
+    },
+    {
+        "id": "776781",
+        "title": "! (The Song Formerly Known As)",
+        "name": "! (The Song Formerly Known As)",
+        "artist": {
+            "id": "1464",
+            "name": "Regurgitator"
+        },
+        "album": {
+            "id": "41794",
+            "name": "Recovery"
+        },
+        "tag": [
+            {
+                "id": "4",
+                "name": "Electronic"
+            },
+            {
+                "id": "6",
+                "name": "Rock"
+            },
+            {
+                "id": "33",
+                "name": "Alternative Rock"
+            },
+            {
+                "id": "36",
+                "name": "Indie Rock"
+            }
+        ],
+        "filename": "\/mnt\/music\/Various Artists\/(2016) Recovery [5715567]\/101 - Regurgitator - ! (The Song Formerly Known As).mp3",
+        "track": 1,
+        "playlisttrack": 4,
+        "time": 204,
+        "year": 2016,
+        "bitrate": 320040,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=776781&uid=2&player=api&name=Regurgitator%20-%20-%20-The%20Song%20Formerly%20Known%20As-.mp3",
+        "size": 8186819,
+        "mbid": "5e14ee48-6337-4a70-8992-1ed74dddb945",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=41794&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "ABC Music",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-7.290000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Electronic"
+            },
+            {
+                "name": "Rock"
+            },
+            {
+                "name": "Alternative Rock"
+            },
+            {
+                "name": "Indie Rock"
+            }
+        ]
+    }
+]

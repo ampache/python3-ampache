@@ -1,26 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <root>
-  <total_count>19</total_count>
-  <playlist id="3">
-    <name><![CDATA[random - admin - private (admin)]]></name>
-    <owner><![CDATA[admin]]></owner>
-    <items>43</items>
-    <type>private</type>
-    <art><![CDATA[https://music.com.au/image.php?object_id=3&object_type=playlist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </playlist>
-  <playlist id="2">
-    <name><![CDATA[random - admin - public (admin)]]></name>
-    <owner><![CDATA[admin]]></owner>
-    <items>43</items>
-    <type>public</type>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=playlist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <flag>1</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-  </playlist>
+<total_count>4</total_count>
+<playlist id="2002">
+	<name><![CDATA[dewaardradio]]></name>
+	<owner><![CDATA[System]]></owner>
+	<items>12694</items>
+	<type>private</type>
+</playlist>
+<playlist id="2069">
+	<name><![CDATA[Hudson]]></name>
+	<owner><![CDATA[user]]></owner>
+	<items>23</items>
+	<type>public</type>
+</playlist>
+<playlist id="1994">
+	<name><![CDATA[nyssa mixed]]></name>
+	<owner><![CDATA[nyssa]]></owner>
+	<items>3112</items>
+	<type>private</type>
+</playlist>
+<playlist id="19">
+	<name><![CDATA[nyssaRadio]]></name>
+	<owner><![CDATA[nyssa]]></owner>
+	<items>4456</items>
+	<type>private</type>
+</playlist>
 </root>

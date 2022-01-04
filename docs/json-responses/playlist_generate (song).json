@@ -1,235 +1,250 @@
-{
-    "song": [
-        {
-            "id": "129",
-            "title": "The Hunt",
-            "name": "The Hunt",
-            "artist": {
-                "id": "36",
-                "name": "Comfort Fit"
-            },
-            "album": {
-                "id": "21",
-                "name": "Forget and Remember"
-            },
-            "albumartist": {
-                "id": "36",
-                "name": "Comfort Fit"
-            },
-            "disk": 1,
-            "track": 16,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/16 - The Hunt.mp3",
-            "genre": [
-                {
-                    "id": "8",
-                    "name": "Hip-Hop"
-                }
-            ],
-            "playlisttrack": 1,
-            "time": 226,
-            "year": 2005,
-            "bitrate": 224425,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=129&uid=4&player=api&name=Comfort%20Fit%20-%20The%20Hunt.mp3",
-            "size": 6373874,
-            "mbid": "8d22ccfd-38e9-42ca-9664-a236302ab8bf",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 4,
-            "composer": "",
-            "channels": null,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-16-comfort_fit-the_hunt\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
-            "license": null,
-            "publisher": "Tokyo Dawn Records",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
+[
+    {
+        "id": "911946",
+        "title": "He Won't Fight",
+        "name": "He Won't Fight",
+        "artist": {
+            "id": "16795",
+            "name": "Indoor Voices"
         },
-        {
-            "id": "115",
-            "title": "Are we going Crazy",
-            "name": "Are we going Crazy",
-            "artist": {
-                "id": "27",
-                "name": "Chi.Otic"
-            },
-            "album": {
-                "id": "12",
-                "name": "Buried in Nausea"
-            },
-            "albumartist": {
-                "id": "19",
-                "name": "Various Artists"
-            },
-            "disk": 1,
-            "track": 7,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
-            "genre": [],
-            "playlisttrack": 2,
-            "time": 433,
-            "year": 2012,
-            "bitrate": 32582,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.wma",
-            "size": 1776580,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
+        "album": {
+            "id": "73444",
+            "name": "Animal"
         },
-        {
-            "id": "94",
-            "title": "Strangers Query",
-            "name": "Strangers Query",
-            "artist": {
-                "id": "14",
-                "name": "Nofi\/found."
+        "tag": [
+            {
+                "id": "6",
+                "name": "Rock"
             },
-            "album": {
-                "id": "8",
-                "name": "Nofi Devices"
+            {
+                "id": "422",
+                "name": "Shoegaze"
+            }
+        ],
+        "filename": "\/mnt\/music\/Indoor Voices\/(2020) Animal\/101 - He Won't Fight.mp3",
+        "track": 1,
+        "playlisttrack": 1,
+        "time": 285,
+        "year": 2020,
+        "bitrate": 320000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=911946&uid=2&player=api&name=Indoor%20Voices%20-%20He%20Won-t%20Fight.mp3",
+        "size": 11530583,
+        "mbid": "7e54910d-b9b6-41e3-a581-0e28a615a10a",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=73444&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "Not On Label (Indoor Voices Self-Released)",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-7.060000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Rock"
             },
-            "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found."
-            },
-            "disk": 1,
-            "track": 7,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/07_Strangers_Query.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 279,
-            "year": 0,
-            "bitrate": 192000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=94&uid=4&player=api&name=Nofi-found.%20-%20Strangers%20Query.mp3",
-            "size": 6719700,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
-            "channels": null,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
-            "license": null,
-            "publisher": "archive.org",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "-3.800000",
-            "replaygain_track_peak": "0.966000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
+            {
+                "name": "Shoegaze"
+            }
+        ]
+    },
+    {
+        "id": "39963",
+        "title": "When Death Had No Name",
+        "name": "When Death Had No Name",
+        "artist": {
+            "id": "1379",
+            "name": "Danzig"
         },
-        {
-            "id": "117",
-            "title": "Remember Something I Forgot",
-            "name": "Remember Something I Forgot",
-            "artist": {
-                "id": "36",
-                "name": "Comfort Fit"
+        "album": {
+            "id": "49257",
+            "name": "The Power of the Dark Side"
+        },
+        "tag": [
+            {
+                "id": "6",
+                "name": "Rock"
             },
-            "album": {
-                "id": "21",
-                "name": "Forget and Remember"
+            {
+                "id": "22",
+                "name": "Pop"
             },
-            "albumartist": {
-                "id": "36",
-                "name": "Comfort Fit"
+            {
+                "id": "64",
+                "name": "Heavy Metal"
             },
-            "disk": 1,
-            "track": 11,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/11 - Remember Something I Forgot.mp3",
-            "genre": [
-                {
-                    "id": "8",
-                    "name": "Hip-Hop"
-                }
-            ],
-            "playlisttrack": 4,
-            "time": 163,
-            "year": 2005,
-            "bitrate": 235109,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=117&uid=4&player=api&name=Comfort%20Fit%20-%20Remember%20Something%20I%20Forgot.mp3",
-            "size": 4816734,
-            "mbid": "ba784e10-e268-4c44-9c82-091167162c27",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 4,
-            "composer": "",
-            "channels": null,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-11-comfort_fit-remember_something_i_forgot\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
-            "license": null,
-            "publisher": "Tokyo Dawn Records",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        }
-    ]
-}
+            {
+                "id": "156",
+                "name": "Alternative Metal"
+            }
+        ],
+        "filename": "\/mnt\/music\/Danzig\/(1995) The Power of the Dark Side\/107 - When Death Had No Name.mp3",
+        "track": 7,
+        "playlisttrack": 2,
+        "time": 298,
+        "year": 1995,
+        "bitrate": 192000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=39963&uid=2&player=api&name=Danzig%20-%20When%20Death%20Had%20No%20Name.mp3",
+        "size": 7176403,
+        "mbid": "bb01a973-5622-4cdb-9717-b6a452bd9f27",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=49257&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "",
+        "language": "eng",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-8.330000",
+        "replaygain_track_peak": "0.989000",
+        "genre": [
+            {
+                "name": "Rock"
+            },
+            {
+                "name": "Pop"
+            },
+            {
+                "name": "Heavy Metal"
+            },
+            {
+                "name": "Alternative Metal"
+            }
+        ]
+    },
+    {
+        "id": "799251",
+        "title": "My Sacrifice",
+        "name": "My Sacrifice",
+        "artist": {
+            "id": "11230",
+            "name": "Aeon Zen"
+        },
+        "album": {
+            "id": "62509",
+            "name": "The Face of the Unknown"
+        },
+        "tag": [
+            {
+                "id": "71",
+                "name": "Progressive Metal"
+            }
+        ],
+        "filename": "\/mnt\/music\/Aeon Zen\/(2010) The Face of the Unknown\/108 - My Sacrifice.mp3",
+        "track": 8,
+        "playlisttrack": 3,
+        "time": 311,
+        "year": 2010,
+        "bitrate": 320024,
+        "rate": 48000,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=799251&uid=2&player=api&name=Aeon%20Zen%20-%20My%20Sacrifice.mp3",
+        "size": 12769152,
+        "mbid": "d9326de8-ae3d-44c2-a65d-7a980c6e307d",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=62509&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 2,
+        "composer": "",
+        "channels": null,
+        "comment": "",
+        "publisher": "Time Divide Records",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-10.870000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Progressive Metal"
+            }
+        ]
+    },
+    {
+        "id": "9564",
+        "title": "The 4th Knife",
+        "name": "The 4th Knife",
+        "artist": {
+            "id": "333",
+            "name": "Diva Destruction"
+        },
+        "album": {
+            "id": "49107",
+            "name": "Run Cold"
+        },
+        "tag": [
+            {
+                "id": "1403",
+                "name": "Goth Rock"
+            }
+        ],
+        "filename": "\/mnt\/music\/Diva Destruction\/(2006) Run Cold\/103 - The 4th Knife.mp3",
+        "track": 3,
+        "playlisttrack": 4,
+        "time": 237,
+        "year": 2006,
+        "bitrate": 229142,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=9564&uid=2&player=api&name=Diva%20Destruction%20-%20The%204th%20Knife.mp3",
+        "size": 6811636,
+        "mbid": "cea78438-4580-4d0e-b6c6-c71562d7502f",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=49107&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 2,
+        "composer": "Debra Fogarty",
+        "channels": null,
+        "comment": "Lb:AliceIn C:aiw143",
+        "publisher": "Alice in...",
+        "language": "",
+        "replaygain_album_gain": "0.000000",
+        "replaygain_album_peak": "0.000000",
+        "replaygain_track_gain": "-10.220000",
+        "replaygain_track_peak": "1.000000",
+        "genre": [
+            {
+                "name": "Goth Rock"
+            }
+        ]
+    }
+]

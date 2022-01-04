@@ -1,61 +1,54 @@
-{
-    "podcast": [
-        {
-            "id": "1",
-            "name": "60-Second Science",
-            "description": "Tune in every weekday for quick reports and commentaries on the world of science\u2014it'll just take a minute",
-            "language": "en-us",
-            "copyright": "False",
-            "feed_url": "http:\/\/rss.sciam.com\/sciam\/60secsciencepodcast",
-            "generator": "",
-            "website": "https:\/\/www.scientificamerican.com\/podcast\/60-second-science\/",
-            "build_date": "1970-01-01T10:00:00+10:00",
-            "sync_date": "2021-08-20T11:08:30+10:00",
-            "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=1",
-            "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": "",
-            "podcast_episode": []
-        },
-        {
-            "id": "2",
-            "name": "Plays Well with Others",
-            "description": "From Creative Commons, a podcast about the art and science of collaboration. With a focus on the tools, techniques, and mechanics of collaboration, we explore how today's most interesting collaborators are making new things, solving old problems, and getting things done \u2014 together. Hosted by Creative Commons CEO Ryan Merkley. ",
-            "language": "en",
-            "copyright": "Creative Commons",
-            "feed_url": "https:\/\/anchor.fm\/s\/90932e8\/podcast\/rss",
-            "generator": "Anchor Podcasts",
-            "website": "playswellwithothers.org",
-            "build_date": "2021-02-23T14:18:58+10:00",
-            "sync_date": "2021-04-01T17:03:54+10:00",
-            "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=2",
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": "",
-            "podcast_episode": []
-        },
-        {
-            "id": "6",
-            "name": "Trace",
-            "description": "\n            \n        An investigative podcast hosted by ABC journalist Rachael Brown, Trace examines the fractures in Australia's criminal justice system, and the decades-long ripples they have caused.\n            \n        ",
-            "language": "en-AU",
-            "copyright": "Copyright 2021, Australian Broadcasting Corporation. All Rights Reserved.",
-            "feed_url": "https:\/\/www.abc.net.au\/radio\/programs\/trace\/feed\/8597522\/podcast.xml",
-            "generator": "",
-            "website": "https:\/\/www.abc.net.au\/radio\/programs\/trace\/",
-            "build_date": "2021-08-13T01:00:00+10:00",
-            "sync_date": "2021-08-20T10:51:24+10:00",
-            "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=6",
-            "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=podcast&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg?v=8",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": "",
-            "podcast_episode": []
-        }
-    ]
-}
+[
+    {
+        "id": "10",
+        "name": "AI: The \"C\" Team",
+        "description": "Acquisitions Incorporated serves up locally-sourced adventure from convenient franchise locations across Faer\u00fbn. Their adventures began in 2007 with a podcast of three friends playing D&D, and inexplicably progressed to live games on-stage before thousands of audience members at PAX.",
+        "language": "en-us",
+        "copyright": "Copyright (c) 1998-2018 Penny Arcade, Inc.",
+        "generator": "",
+        "website": "http:\/\/www.acq-inc.com\/",
+        "build_date": "2018\/03\/22 01:10PM",
+        "sync_date": "2020\/04\/15 05:12PM",
+        "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=10",
+        "podcast_episode": []
+    },
+    {
+        "id": "15",
+        "name": "Brute Force",
+        "description": "Brute Force is a real-play comedic RPG podcast blended with in-character narration. We play a campaign of FATE Core (we started with World of Darkness) set in the high fantasy world of Eorith. The adventurers are a party of monsters tasked with saving a world that barely tolerates their existence.",
+        "language": "en-US",
+        "copyright": "&copy; 2016 All rights reserved",
+        "generator": "https:\/\/wordpress.org\/?v=4.9.3",
+        "website": "https:\/\/geeklyinc.com\/category\/brute-force\/",
+        "build_date": "2018\/03\/27 07:15PM",
+        "sync_date": "2020\/03\/24 04:38AM",
+        "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=15",
+        "podcast_episode": []
+    },
+    {
+        "id": "16",
+        "name": "Cthulhu &amp; Friends",
+        "description": "",
+        "language": "en-US",
+        "copyright": "Cthulhu &amp; Friends Podcast",
+        "generator": "https:\/\/wordpress.org\/?v=4.9.3",
+        "website": "https:\/\/geeklyinc.com\/category\/caf-podcast\/",
+        "build_date": "2018\/03\/29 06:15PM",
+        "sync_date": "2020\/03\/24 04:38AM",
+        "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=16",
+        "podcast_episode": []
+    },
+    {
+        "id": "25",
+        "name": "Devin Townsend Podcast",
+        "description": "A podcast in which musician Devin Townsend rambles on about a bunch of things with a tendency to repeat certain words and say 'uhhh' a lot.",
+        "language": "en",
+        "copyright": "Devin Townsend",
+        "generator": "Anchor Podcasts",
+        "website": "https:\/\/www.hevydevy.com\/",
+        "build_date": "2020\/04\/12 12:07PM",
+        "sync_date": "2020\/04\/12 12:09PM",
+        "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=25",
+        "podcast_episode": []
+    }
+]
