@@ -730,7 +730,7 @@ def album_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_for
         return tree
 
 
-def tags(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+def genres(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
     """ tags
         MINIMUM_API_VERSION=380001
 
@@ -746,7 +746,7 @@ def tags(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limi
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = {'action': 'tags',
+    data = {'action': 'genres',
             'auth': ampache_api,
             'exact': exact,
             'filter': filter_str,
@@ -774,7 +774,7 @@ def tags(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limi
         return tree
 
 
-def tag(ampache_url, ampache_api, filter_str, api_format='xml'):
+def genre(ampache_url, ampache_api, filter_str, api_format='xml'):
     """ tag
         MINIMUM_API_VERSION=380001
 
@@ -787,7 +787,7 @@ def tag(ampache_url, ampache_api, filter_str, api_format='xml'):
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = {'action': 'tag',
+    data = {'action': 'genre',
             'auth': ampache_api,
             'filter': filter_str}
     data = urllib.parse.urlencode(data)
@@ -808,7 +808,7 @@ def tag(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-def tag_artists(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def genre_artists(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ tag_artists
         MINIMUM_API_VERSION=380001
 
@@ -823,7 +823,7 @@ def tag_artists(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_for
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = {'action': 'tag_artists',
+    data = {'action': 'genre_artists',
             'auth': ampache_api,
             'filter': filter_str,
             'offset': str(offset),
@@ -846,7 +846,7 @@ def tag_artists(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_for
         return tree
 
 
-def tag_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def genre_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ tag_albums
         MINIMUM_API_VERSION=380001
 
@@ -861,7 +861,7 @@ def tag_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_form
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = {'action': 'tag_albums',
+    data = {'action': 'genre_albums',
             'auth': ampache_api,
             'filter': filter_str,
             'offset': str(offset),
@@ -884,7 +884,7 @@ def tag_albums(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_form
         return tree
 
 
-def tag_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+def genre_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
     """ tag_songs
         MINIMUM_API_VERSION=380001
 
@@ -899,7 +899,7 @@ def tag_songs(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_forma
         * api_format  = (string) 'xml'|'json' //optional
     """
     ampache_url = ampache_url + '/server/' + api_format + '.server.php'
-    data = {'action': 'tag_songs',
+    data = {'action': 'genre_songs',
             'auth': ampache_api,
             'filter': filter_str,
             'offset': str(offset),
@@ -3418,3 +3418,10 @@ def license_songs(ampache_url, ampache_api, filter_str, api_format='xml'):
         except ElementTree.ParseError:
             return False
         return tree
+
+
+tags = genres
+tag = genre
+tag_artists = genre_artists
+tag_albums = genre_albums
+tag_songs = genre_songs
