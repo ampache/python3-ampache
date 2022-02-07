@@ -3420,8 +3420,13 @@ def license_songs(ampache_url, ampache_api, filter_str, api_format='xml'):
         return tree
 
 
-tags = genres
+"""
+--------------------
+BACKCOMPAT FUNCTIONS
+--------------------
+"""
 tag = genre
+tags = genres
 tag_artists = genre_artists
 tag_albums = genre_albums
 tag_songs = genre_songs
