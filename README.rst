@@ -90,7 +90,7 @@ ampyche.py help:
         (next, prev, stop, play, pause, add, volume_up,
             volume_down, volume_mute, delete_all, skip, status)
 
-Here is a short code sample for python to scrobble a track to your server
+Here is a short code sample for python using version 5.x.x+ to scrobble a track to your server
 
 .. code-block:: python3
 
@@ -103,15 +103,15 @@ Here is a short code sample for python to scrobble a track to your server
     user = 'myusername'
 
     # processed details
-    encrypted_key = ampache.encrypt_string(my_api_key, user)
-    ampache_session = ampache.handshake(ampache_url, encrypted_key)
+    ampacheConnection = ampache.API()
+    encrypted_key = ampacheConnection.encrypt_string(my_api_key, user)
+    ampache_session = ampacheConnection.handshake(ampache_url, encrypted_key)
 
     if ampache_session:
         # Scrobble a music track to your ampache server
-        Process(target=ampache.scrobble,
-                args=(ampache_url, ampache_session,
-                      'Hear.Life.Spoken', 'Sub Atari Knives', 'Unearthed',
-                      '', '', int(time.time()))).start()
+        Process(target=ampacheConnection.scrobble,
+                args=('Beneath The Cold Clay', 'Crust', '...and a Dirge Becomes an Anthem',
+                      '', '', '', int(time.time()))).start()
 
 LINKS
 =====
