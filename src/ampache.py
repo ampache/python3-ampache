@@ -33,6 +33,7 @@ from xml.etree import ElementTree
 
 # used for printing results
 AMPACHE_DEBUG = False
+DOCS_PATH = "docs/"
 
 """
 ----------------
@@ -51,6 +52,18 @@ def set_debug(mybool):
     """
     global AMPACHE_DEBUG
     AMPACHE_DEBUG = mybool
+
+
+def set_debug_path(path_string):
+    """ set_debug_path
+
+        This function can be used to set the output folder for docs
+
+        INPUTS
+        * path_string = (string) folder path
+    """
+    global DOCS_PATH
+    DOCS_PATH = path_string
 
 
 def get_id_list(data, attribute: str, data_format: str = 'xml'):
@@ -142,11 +155,16 @@ def fetch_url(full_url, api_format, method):
     ampache_response = result.read()
     result.close()
     if AMPACHE_DEBUG:
+        global DOCS_PATH
+        if DOCS_PATH == "docs/":
+            DOCS_PATH = DOCS_PATH + api_format + "-responses/"
         url_response = ampache_response.decode('utf-8')
         print(url_response)
         print(full_url)
         try:
-            text_file = open("docs/" + api_format + "-responses/" + method + "." + api_format, "w", encoding="utf-8")
+            if not os.path.isdir(DOCS_PATH):
+                os.makedirs(DOCS_PATH)
+            text_file = open(DOCS_PATH + method + "." + api_format, "w", encoding="utf-8")
             text_file.write(url_response)
             text_file.close()
         except FileNotFoundError:
