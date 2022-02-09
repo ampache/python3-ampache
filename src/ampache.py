@@ -37,6 +37,7 @@ class API(object):
     def __init__(self):
         self.AMPACHE_API = 'xml'
         self.AMPACHE_DEBUG = False
+        self.DOCS_PATH = "docs/"
         self.AMPACHE_URL = ''
         self.AMPACHE_SESSION = ''
         self.AMPACHE_USER = ''
@@ -78,6 +79,16 @@ class API(object):
         else:
             print('AMPACHE_DEBUG' + f": {self.WARNING}disabled{self.ENDC}")
         self.AMPACHE_DEBUG = mybool
+
+    def set_debug_path(self, path_string: str):
+        """ set_debug_path
+
+        This function can be used to set the output folder for docs
+
+        INPUTS
+        * path_string = (string) folder path
+        """
+        self.DOCS_PATH = path_string
 
     def set_user(self, myuser: str):
         """ set_user
@@ -308,11 +319,15 @@ class API(object):
         ampache_response = result.read()
         result.close()
         if self.AMPACHE_DEBUG:
+            if self.DOCS_PATH == "docs/":
+                self.DOCS_PATH = self.DOCS_PATH + api_format + "-responses/"
             url_response = ampache_response.decode('utf-8')
             print(url_response)
             print(full_url)
             try:
-                text_file = open("docs/" + api_format + "-responses/" + method + "." + api_format, "w", encoding="utf-8")
+                if not os.path.isdir(self.DOCS_PATH):
+                    os.makedirs(self.DOCS_PATH)
+                text_file = open(self.DOCS_PATH + method + "." + api_format, "w", encoding="utf-8")
                 text_file.write(url_response)
                 text_file.close()
             except FileNotFoundError:
