@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>9</total_count>
-  <album id="12">
-    <name><![CDATA[Buried in Nausea]]></name>
-    <artist id="19"><![CDATA[Various Artists]]></artist>
-    <time>1879</time>
-    <year>2012</year>
+  <album id="2">
+    <name><![CDATA[Colorsmoke EP]]></name>
+    <artist id="2"><![CDATA[Synthetic]]></artist>
+    <time>4568</time>
+    <year>2007</year>
     <tracks>
-      <song id="110">
-        <title><![CDATA[I wanna walk through the fire]]></title>
-        <name><![CDATA[I wanna walk through the fire]]></name>
-        <artist id="23"><![CDATA[Manic Notion]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+      <song id="56">
+        <title><![CDATA[Black&BlueSmoke]]></title>
+        <name><![CDATA[Black&BlueSmoke]]></name>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
+        <album id="2"><![CDATA[Colorsmoke EP]]></album>
+        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>1</track>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/01ManicNotion-IWannaWalkThroughTheFire.m4a]]></filename>
+        <genre id="1"><![CDATA[Electronic]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3]]></filename>
         <playlisttrack>1</playlisttrack>
-        <time>197</time>
-        <year>2012</year>
-        <bitrate>267320</bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[vbr]]></mode>
-        <mime><![CDATA[audio/mp4]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.m4a]]></url>
-        <size>6651911</size>
+        <time>500</time>
+        <year>2007</year>
+        <bitrate>64000</bitrate>
+        <rate>22050</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
+        <size>4010069</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -40,38 +41,82 @@
         <channels/>
         <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>-5.150000</replaygain_track_gain>
-        <replaygain_track_peak>0.989000</replaygain_track_peak>
+        <replaygain_track_gain>-5.110000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="114">
-        <title><![CDATA[He is the Master of War]]></title>
-        <name><![CDATA[He is the Master of War]]></name>
-        <artist id="26"><![CDATA[Stress Builds Character]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+      <song id="64">
+        <title><![CDATA[Black&BlueSmoke]]></title>
+        <name><![CDATA[Black&BlueSmoke]]></name>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
+        <album id="2"><![CDATA[Colorsmoke EP]]></album>
+        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>1</track>
+        <genre id="1"><![CDATA[Electronic]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma]]></filename>
+        <playlisttrack>2</playlisttrack>
+        <time>500</time>
+        <year>2007</year>
+        <bitrate>20627</bitrate>
+        <rate>22050</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/x-ms-wma]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.wma]]></url>
+        <size>1298295</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating>1</averagerating>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels/>
+        <comment><![CDATA[Made with Sony ACID 5]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
+        <language/>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain/>
+        <replaygain_track_peak/>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="59">
+        <title><![CDATA[YellowSmoke]]></title>
+        <name><![CDATA[YellowSmoke]]></name>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
+        <album id="2"><![CDATA[Colorsmoke EP]]></album>
+        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>2</track>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a]]></filename>
-        <playlisttrack>2</playlisttrack>
-        <time>233</time>
-        <year>2012</year>
-        <bitrate>256245</bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[vbr]]></mode>
-        <mime><![CDATA[audio/mp4]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.m4a]]></url>
-        <size>7535126</size>
+        <genre id="1"><![CDATA[Electronic]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3]]></filename>
+        <playlisttrack>3</playlisttrack>
+        <time>290</time>
+        <year>2007</year>
+        <bitrate>64000</bitrate>
+        <rate>22050</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
+        <size>2325568</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -82,38 +127,82 @@
         <channels/>
         <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>-10.740000</replaygain_track_gain>
-        <replaygain_track_peak>1.035000</replaygain_track_peak>
+        <replaygain_track_gain>2.750000</replaygain_track_gain>
+        <replaygain_track_peak>0.716000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="109">
-        <title><![CDATA[Dance with the Devil]]></title>
-        <name><![CDATA[Dance with the Devil]]></name>
-        <artist id="34"><![CDATA[Comedown Kid]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+      <song id="65">
+        <title><![CDATA[YellowSmoke]]></title>
+        <name><![CDATA[YellowSmoke]]></name>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
+        <album id="2"><![CDATA[Colorsmoke EP]]></album>
+        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>2</track>
+        <genre id="1"><![CDATA[Electronic]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/02-Synthetic_-_YellowSmoke20k22hS.wma]]></filename>
+        <playlisttrack>4</playlisttrack>
+        <time>290</time>
+        <year>2007</year>
+        <bitrate>20627</bitrate>
+        <rate>22050</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/x-ms-wma]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.wma]]></url>
+        <size>754935</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels/>
+        <comment><![CDATA[Made with Sony ACID 5]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
+        <language/>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain/>
+        <replaygain_track_peak/>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="57">
+        <title><![CDATA[PurpleSmoke]]></title>
+        <name><![CDATA[PurpleSmoke]]></name>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
+        <album id="2"><![CDATA[Colorsmoke EP]]></album>
+        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>3</track>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
-        <playlisttrack>3</playlisttrack>
-        <time>116</time>
-        <year>2012</year>
-        <bitrate>32582</bitrate>
-        <rate>44100</rate>
+        <genre id="1"><![CDATA[Electronic]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3]]></filename>
+        <playlisttrack>5</playlisttrack>
+        <time>390</time>
+        <year>2007</year>
+        <bitrate>64000</bitrate>
+        <rate>22050</rate>
         <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.wma]]></url>
-        <size>483444</size>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
+        <size>3131519</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -124,7 +213,50 @@
         <channels/>
         <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
+        <language/>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-5.130000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="62">
+        <title><![CDATA[PurpleSmoke]]></title>
+        <name><![CDATA[PurpleSmoke]]></name>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
+        <album id="2"><![CDATA[Colorsmoke EP]]></album>
+        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>3</track>
+        <genre id="1"><![CDATA[Electronic]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma]]></filename>
+        <playlisttrack>6</playlisttrack>
+        <time>390</time>
+        <year>2007</year>
+        <bitrate>20627</bitrate>
+        <rate>22050</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/x-ms-wma]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.wma]]></url>
+        <size>1014135</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels/>
+        <comment><![CDATA[Made with Sony ACID 5]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
@@ -133,29 +265,30 @@
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="113">
-        <title><![CDATA[Representin]]></title>
-        <name><![CDATA[Representin]]></name>
-        <artist id="32"><![CDATA[Shorty Mac]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+      <song id="58">
+        <title><![CDATA[BrownSmoke]]></title>
+        <name><![CDATA[BrownSmoke]]></name>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
+        <album id="2"><![CDATA[Colorsmoke EP]]></album>
+        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>4</track>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3]]></filename>
-        <playlisttrack>4</playlisttrack>
-        <time>234</time>
-        <year>2012</year>
-        <bitrate>123814</bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[vbr]]></mode>
+        <genre id="1"><![CDATA[Electronic]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3]]></filename>
+        <playlisttrack>7</playlisttrack>
+        <time>304</time>
+        <year>2007</year>
+        <bitrate>64000</bitrate>
+        <rate>22050</rate>
+        <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&player=api&name=Shorty%20Mac%20-%20Representin.mp3]]></url>
-        <size>3628327</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
+        <size>2441886</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -164,209 +297,170 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
+        <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[archive.org]]></publisher>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>1.910000</replaygain_track_gain>
-        <replaygain_track_peak>0.851000</replaygain_track_peak>
+        <replaygain_track_gain>0.960000</replaygain_track_gain>
+        <replaygain_track_peak>0.912000</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="111">
-        <title><![CDATA[The art of free expression]]></title>
-        <name><![CDATA[The art of free expression]]></name>
-        <artist id="35"><![CDATA[Tip-C]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+      <song id="60">
+        <title><![CDATA[BrownSmoke]]></title>
+        <name><![CDATA[BrownSmoke]]></name>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
+        <album id="2"><![CDATA[Colorsmoke EP]]></album>
+        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>4</track>
+        <genre id="1"><![CDATA[Electronic]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma]]></filename>
+        <playlisttrack>8</playlisttrack>
+        <time>304</time>
+        <year>2007</year>
+        <bitrate>20627</bitrate>
+        <rate>22050</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/x-ms-wma]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma]]></url>
+        <size>792375</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels/>
+        <comment><![CDATA[Made with Sony ACID 5]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
+        <language/>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain/>
+        <replaygain_track_peak/>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="54">
+        <title><![CDATA[Red&GreenSmoke]]></title>
+        <name><![CDATA[Red&GreenSmoke]]></name>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
+        <album id="2"><![CDATA[Colorsmoke EP]]></album>
+        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>5</track>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/05Tip-c-TheArtOfFreeExpression.wma]]></filename>
-        <playlisttrack>5</playlisttrack>
-        <time>110</time>
-        <year>2012</year>
-        <bitrate>32582</bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.wma]]></url>
-        <size>460498</size>
-        <mbid><![CDATA[]]></mbid>
-        <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-        <flag>0</flag>
-        <preciserating/>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels/>
-        <comment><![CDATA[]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="108">
-        <title><![CDATA[I've been down this road before]]></title>
-        <name><![CDATA[I've been down this road before]]></name>
-        <artist id="21"><![CDATA[Tip-C (featuring Mike Beers)]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-        <disk><![CDATA[1]]></disk>
-        <track>6</track>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma]]></filename>
-        <playlisttrack>6</playlisttrack>
-        <time>252</time>
-        <year>2012</year>
-        <bitrate>32582</bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.wma]]></url>
-        <size>1035322</size>
-        <mbid><![CDATA[]]></mbid>
-        <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-        <flag>0</flag>
-        <preciserating/>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels/>
-        <comment><![CDATA[]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="115">
-        <title><![CDATA[Are we going Crazy]]></title>
-        <name><![CDATA[Are we going Crazy]]></name>
-        <artist id="27"><![CDATA[Chi.Otic]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-        <disk><![CDATA[1]]></disk>
-        <track>7</track>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
-        <playlisttrack>7</playlisttrack>
-        <time>433</time>
-        <year>2012</year>
-        <bitrate>32582</bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.wma]]></url>
-        <size>1776580</size>
-        <mbid><![CDATA[]]></mbid>
-        <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-        <flag>0</flag>
-        <preciserating/>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels/>
-        <comment><![CDATA[]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="112">
-        <title><![CDATA[Personal Truth]]></title>
-        <name><![CDATA[Personal Truth]]></name>
-        <artist id="33"><![CDATA[MxBxCx]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-        <disk><![CDATA[1]]></disk>
-        <track>8</track>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/08Mxbxcx-PersonalTruth.mp3]]></filename>
-        <playlisttrack>8</playlisttrack>
-        <time>208</time>
-        <year>2012</year>
-        <bitrate>179860</bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[vbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3]]></url>
-        <size>4693165</size>
-        <mbid><![CDATA[]]></mbid>
-        <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-        <flag>0</flag>
-        <preciserating/>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels/>
-        <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[archive.org]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-8.270000</replaygain_track_gain>
-        <replaygain_track_peak>0.881000</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="107">
-        <title><![CDATA[Arrest Me]]></title>
-        <name><![CDATA[Arrest Me]]></name>
-        <artist id="20"><![CDATA[R/B]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-        <disk><![CDATA[1]]></disk>
-        <track>9</track>
-        <genre id="7"><![CDATA[Punk]]></genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/09R_b-ArrestMe.m4a]]></filename>
+        <genre id="1"><![CDATA[Electronic]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3]]></filename>
         <playlisttrack>9</playlisttrack>
-        <time>96</time>
-        <year>2012</year>
-        <bitrate>252864</bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[vbr]]></mode>
-        <mime><![CDATA[audio/mp4]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a]]></url>
-        <size>3091727</size>
+        <time>400</time>
+        <year>2007</year>
+        <bitrate>64000</bitrate>
+        <rate>22050</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
+        <size>3209468</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating>1</averagerating>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels/>
+        <comment><![CDATA[]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
+        <language/>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-2.880000</replaygain_track_gain>
+        <replaygain_track_peak>0.977000</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="55">
+        <title><![CDATA[Red&GreenSmoke]]></title>
+        <name><![CDATA[Red&GreenSmoke]]></name>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
+        <album id="2"><![CDATA[Colorsmoke EP]]></album>
+        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>5</track>
+        <genre id="1"><![CDATA[Electronic]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3]]></filename>
+        <playlisttrack>10</playlisttrack>
+        <time>400</time>
+        <year>2007</year>
+        <bitrate>64000</bitrate>
+        <rate>22050</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
+        <size>3209886</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>1</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels/>
+        <comment><![CDATA[]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
+        <language/>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-4.060000</replaygain_track_gain>
+        <replaygain_track_peak>1.000000</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="61">
+        <title><![CDATA[Red&GreenSmoke]]></title>
+        <name><![CDATA[Red&GreenSmoke]]></name>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
+        <album id="2"><![CDATA[Colorsmoke EP]]></album>
+        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>5</track>
+        <genre id="1"><![CDATA[Electronic]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k44khM.wma]]></filename>
+        <playlisttrack>11</playlisttrack>
+        <time>400</time>
+        <year>2007</year>
+        <bitrate>20627</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/x-ms-wma]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.wma]]></url>
+        <size>1044851</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -375,27 +469,70 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[]]></comment>
+        <comment><![CDATA[Made with Sony ACID 5]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>-1.350000</replaygain_track_gain>
-        <replaygain_track_peak>0.881000</replaygain_track_peak>
+        <replaygain_track_gain/>
+        <replaygain_track_peak/>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="63">
+        <title><![CDATA[Red&GreenSmoke]]></title>
+        <name><![CDATA[Red&GreenSmoke]]></name>
+        <artist id="2"><![CDATA[Synthetic]]></artist>
+        <album id="2"><![CDATA[Colorsmoke EP]]></album>
+        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>5</track>
+        <genre id="1"><![CDATA[Electronic]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k22khS.wma]]></filename>
+        <playlisttrack>12</playlisttrack>
+        <time>400</time>
+        <year>2007</year>
+        <bitrate>20627</bitrate>
+        <rate>22050</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/x-ms-wma]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=63&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.wma]]></url>
+        <size>1041065</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels/>
+        <comment><![CDATA[Made with Sony ACID 5]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[20kbps rec.]]></publisher>
+        <language/>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain/>
+        <replaygain_track_peak/>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
     </tracks>
-    <songcount>9</songcount>
+    <songcount>12</songcount>
     <diskcount>1</diskcount>
-    <type>compilation</type>
-    <genre id="7"><![CDATA[Punk]]></genre>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
+    <type/>
+    <genre id="1"><![CDATA[Electronic]]></genre>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>1</flag>
+    <preciserating>5</preciserating>
+    <rating>5</rating>
+    <averagerating>3</averagerating>
     <mbid><![CDATA[]]></mbid>
   </album>
 </root>

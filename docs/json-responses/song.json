@@ -1,7 +1,7 @@
 {
-    "id": "54",
-    "title": "Red&GreenSmoke",
-    "name": "Red&GreenSmoke",
+    "id": "57",
+    "title": "PurpleSmoke",
+    "name": "PurpleSmoke",
     "artist": {
         "id": "2",
         "name": "Synthetic"
@@ -15,8 +15,8 @@
         "name": "Synthetic"
     },
     "disk": 1,
-    "track": 5,
-    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
+    "track": 3,
+    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3",
     "genre": [
         {
             "id": "1",
@@ -24,14 +24,14 @@
         }
     ],
     "playlisttrack": 1,
-    "time": 400,
+    "time": 390,
     "year": 2007,
     "bitrate": 64000,
     "rate": 22050,
     "mode": "cbr",
     "mime": "audio\/mpeg",
-    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-    "size": 3209468,
+    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.mp3",
+    "size": 3131519,
     "mbid": "",
     "album_mbid": null,
     "artist_mbid": null,
@@ -40,7 +40,7 @@
     "flag": 0,
     "preciserating": null,
     "rating": null,
-    "averagerating": 1,
+    "averagerating": null,
     "playcount": 0,
     "catalog": 1,
     "composer": "",
@@ -51,8 +51,8 @@
     "language": "",
     "replaygain_album_gain": null,
     "replaygain_album_peak": null,
-    "replaygain_track_gain": "-2.880000",
-    "replaygain_track_peak": "0.977000",
+    "replaygain_track_gain": "-5.130000",
+    "replaygain_track_peak": "1.000000",
     "r128_album_gain": null,
     "r128_track_gain": null
 }

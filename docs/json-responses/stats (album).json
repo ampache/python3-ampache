@@ -1,59 +1,50 @@
 {
     "album": [
         {
-            "id": "7",
-            "name": "Sensorisk Deprivation",
+            "id": "2",
+            "name": "Colorsmoke EP",
             "artist": {
-                "id": "13",
-                "name": "IOK-1"
+                "id": "2",
+                "name": "Synthetic"
             },
-            "time": 3428,
-            "year": 2011,
+            "time": 4568,
+            "year": 2007,
             "tracks": [],
-            "songcount": 4,
+            "songcount": 12,
             "diskcount": 1,
             "type": null,
             "genre": [
                 {
-                    "id": "4",
-                    "name": "Dark Ambient"
+                    "id": "1",
+                    "name": "Electronic"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": 3,
             "mbid": null
         },
         {
-            "id": "8",
-            "name": "Nofi Devices",
+            "id": "10",
+            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found."
+                "id": "16",
+                "name": "CARN\u00daN"
             },
-            "time": 4423,
-            "year": 0,
+            "time": 3873,
+            "year": 1996,
             "tracks": [],
-            "songcount": 11,
+            "songcount": 9,
             "diskcount": 1,
             "type": null,
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
-            "preciserating": 2,
-            "rating": 2,
-            "averagerating": 2,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": 5,
             "mbid": null
         }
     ]

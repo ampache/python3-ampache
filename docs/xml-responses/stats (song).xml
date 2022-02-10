@@ -1,68 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <song id="108">
-    <title><![CDATA[I've been down this road before]]></title>
-    <name><![CDATA[I've been down this road before]]></name>
-    <artist id="21"><![CDATA[Tip-C (featuring Mike Beers)]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>6</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma]]></filename>
-    <playlisttrack>1</playlisttrack>
-    <time>252</time>
-    <year>2012</year>
-    <bitrate>32582</bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/x-ms-wma]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.wma]]></url>
-    <size>1035322</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels/>
-    <comment><![CDATA[]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
-    <language/>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="133">
-    <title><![CDATA[Kurz Vor Danach Ganz '05]]></title>
-    <name><![CDATA[Kurz Vor Danach Ganz '05]]></name>
+  <song id="118">
+    <title><![CDATA[As Pure as Possible]]></title>
+    <name><![CDATA[As Pure as Possible]]></name>
     <artist id="36"><![CDATA[Comfort Fit]]></artist>
     <album id="21"><![CDATA[Forget and Remember]]></album>
     <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>13</track>
+    <track>9</track>
     <genre id="8"><![CDATA[Hip-Hop]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/13 - Kurz Vor Danach Ganz ‘05.mp3]]></filename>
-    <playlisttrack>2</playlisttrack>
-    <time>247</time>
+    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/9 - As Pure as Possible.mp3]]></filename>
+    <playlisttrack>1</playlisttrack>
+    <time>128</time>
     <year>2005</year>
-    <bitrate>230429</bitrate>
+    <bitrate>234690</bitrate>
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
     <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=133&uid=4&player=api&name=Comfort%20Fit%20-%20Kurz%20Vor%20Danach%20Ganz%20-05.mp3]]></url>
-    <size>7136353</size>
-    <mbid><![CDATA[60ca3461-5f2b-4d0d-9cc5-ce79b358de7b]]></mbid>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=118&uid=4&player=api&name=Comfort%20Fit%20-%20As%20Pure%20as%20Possible.mp3]]></url>
+    <size>3789410</size>
+    <mbid><![CDATA[7a3d740d-5546-4900-88af-b97b42c3344e]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
     <artist_mbid><![CDATA[]]></artist_mbid>
     <albumartist_mbid><![CDATA[]]></albumartist_mbid>
@@ -75,7 +33,7 @@
     <catalog>4</catalog>
     <composer><![CDATA[]]></composer>
     <channels/>
-    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-13-comfort_fit-kurz_vor_danach_ganz_05
+    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-09-comfort_fit-as_pure_as_possible
 Comments: http://freemusicarchive.org/
 Curator: WFMU
 Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
@@ -86,6 +44,49 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <replaygain_album_peak/>
     <replaygain_track_gain/>
     <replaygain_track_peak/>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="56">
+    <title><![CDATA[Black&BlueSmoke]]></title>
+    <name><![CDATA[Black&BlueSmoke]]></name>
+    <artist id="2"><![CDATA[Synthetic]]></artist>
+    <album id="2"><![CDATA[Colorsmoke EP]]></album>
+    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>1</track>
+    <genre id="1"><![CDATA[Electronic]]></genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3]]></filename>
+    <playlisttrack>2</playlisttrack>
+    <time>500</time>
+    <year>2007</year>
+    <bitrate>64000</bitrate>
+    <rate>22050</rate>
+    <mode><![CDATA[cbr]]></mode>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
+    <size>4010069</size>
+    <mbid><![CDATA[]]></mbid>
+    <album_mbid><![CDATA[]]></album_mbid>
+    <artist_mbid><![CDATA[]]></artist_mbid>
+    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels/>
+    <comment><![CDATA[]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[20kbps rec.]]></publisher>
+    <language/>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>-5.110000</replaygain_track_gain>
+    <replaygain_track_peak>1.000000</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

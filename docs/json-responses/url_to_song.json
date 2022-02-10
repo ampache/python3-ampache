@@ -1,58 +1,8 @@
 {
-    "id": "60",
-    "title": "BrownSmoke",
-    "name": "BrownSmoke",
-    "artist": {
-        "id": "2",
-        "name": "Synthetic"
-    },
-    "album": {
-        "id": "2",
-        "name": "Colorsmoke EP"
-    },
-    "albumartist": {
-        "id": "2",
-        "name": "Synthetic"
-    },
-    "disk": 1,
-    "track": 4,
-    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
-    "genre": [
-        {
-            "id": "1",
-            "name": "Electronic"
-        }
-    ],
-    "playlisttrack": 1,
-    "time": 304,
-    "year": 2007,
-    "bitrate": 20627,
-    "rate": 22050,
-    "mode": "cbr",
-    "mime": "audio\/x-ms-wma",
-    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma",
-    "size": 792375,
-    "mbid": "",
-    "album_mbid": null,
-    "artist_mbid": null,
-    "albumartist_mbid": null,
-    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
-    "flag": 0,
-    "preciserating": null,
-    "rating": null,
-    "averagerating": null,
-    "playcount": 0,
-    "catalog": 1,
-    "composer": "",
-    "channels": null,
-    "comment": "Made with Sony ACID 5",
-    "license": null,
-    "publisher": "20kbps rec.",
-    "language": "",
-    "replaygain_album_gain": null,
-    "replaygain_album_peak": null,
-    "replaygain_track_gain": null,
-    "replaygain_track_peak": null,
-    "r128_album_gain": null,
-    "r128_track_gain": null
+    "error": {
+        "errorCode": "4710",
+        "errorAction": "url_to_song",
+        "errorType": "url",
+        "errorMessage": "Bad Request"
+    }
 }

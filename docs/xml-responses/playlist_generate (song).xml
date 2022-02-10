@@ -1,26 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <song id="129">
-    <title><![CDATA[The Hunt]]></title>
-    <name><![CDATA[The Hunt]]></name>
+  <song id="56">
+    <title><![CDATA[Black&BlueSmoke]]></title>
+    <name><![CDATA[Black&BlueSmoke]]></name>
+    <artist id="2"><![CDATA[Synthetic]]></artist>
+    <album id="2"><![CDATA[Colorsmoke EP]]></album>
+    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>1</track>
+    <genre id="1"><![CDATA[Electronic]]></genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3]]></filename>
+    <playlisttrack>1</playlisttrack>
+    <time>500</time>
+    <year>2007</year>
+    <bitrate>64000</bitrate>
+    <rate>22050</rate>
+    <mode><![CDATA[cbr]]></mode>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
+    <size>4010069</size>
+    <mbid><![CDATA[]]></mbid>
+    <album_mbid><![CDATA[]]></album_mbid>
+    <artist_mbid><![CDATA[]]></artist_mbid>
+    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels/>
+    <comment><![CDATA[]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[20kbps rec.]]></publisher>
+    <language/>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>-5.110000</replaygain_track_gain>
+    <replaygain_track_peak>1.000000</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="122">
+    <title><![CDATA[Thursday Is Thursty]]></title>
+    <name><![CDATA[Thursday Is Thursty]]></name>
     <artist id="36"><![CDATA[Comfort Fit]]></artist>
     <album id="21"><![CDATA[Forget and Remember]]></album>
     <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>16</track>
+    <track>7</track>
     <genre id="8"><![CDATA[Hip-Hop]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/16 - The Hunt.mp3]]></filename>
-    <playlisttrack>1</playlisttrack>
-    <time>226</time>
+    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/7 - Thursday is Thursdy.mp3]]></filename>
+    <playlisttrack>2</playlisttrack>
+    <time>92</time>
     <year>2005</year>
-    <bitrate>224425</bitrate>
+    <bitrate>225219</bitrate>
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
     <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=129&uid=4&player=api&name=Comfort%20Fit%20-%20The%20Hunt.mp3]]></url>
-    <size>6373874</size>
-    <mbid><![CDATA[8d22ccfd-38e9-42ca-9664-a236302ab8bf]]></mbid>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=122&uid=4&player=api&name=Comfort%20Fit%20-%20Thursday%20Is%20Thursty.mp3]]></url>
+    <size>2607497</size>
+    <mbid><![CDATA[36fa39a1-483d-49d9-907b-17c4e3d60b47]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
     <artist_mbid><![CDATA[]]></artist_mbid>
     <albumartist_mbid><![CDATA[]]></albumartist_mbid>
@@ -33,7 +76,7 @@
     <catalog>4</catalog>
     <composer><![CDATA[]]></composer>
     <channels/>
-    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-16-comfort_fit-the_hunt
+    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-07-comfort_fit-thursday_is_thursty
 Comments: http://freemusicarchive.org/
 Curator: WFMU
 Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
@@ -47,29 +90,29 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="112">
-    <title><![CDATA[Personal Truth]]></title>
-    <name><![CDATA[Personal Truth]]></name>
-    <artist id="33"><![CDATA[MxBxCx]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+  <song id="105">
+    <title><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></title>
+    <name><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></name>
+    <artist id="16"><![CDATA[CARNÚN]]></artist>
+    <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
+    <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
     <disk><![CDATA[1]]></disk>
     <track>8</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/08Mxbxcx-PersonalTruth.mp3]]></filename>
-    <playlisttrack>2</playlisttrack>
-    <time>208</time>
-    <year>2012</year>
-    <bitrate>179860</bitrate>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/08TheInfernalSerpent_InstrumentalReRecording.ogg]]></filename>
+    <playlisttrack>3</playlisttrack>
+    <time>557</time>
+    <year>1996</year>
+    <bitrate>139453</bitrate>
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3]]></url>
-    <size>4693165</size>
+    <mime><![CDATA[application/ogg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=4&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.ogg]]></url>
+    <size>9722091</size>
     <mbid><![CDATA[]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
     <artist_mbid><![CDATA[]]></artist_mbid>
     <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
@@ -78,36 +121,36 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
     <channels/>
-    <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
     <license><![CDATA[]]></license>
     <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-8.270000</replaygain_track_gain>
-    <replaygain_track_peak>0.881000</replaygain_track_peak>
+    <replaygain_track_gain>-12.240000</replaygain_track_gain>
+    <replaygain_track_peak>1.000000</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="65">
-    <title><![CDATA[YellowSmoke]]></title>
-    <name><![CDATA[YellowSmoke]]></name>
+  <song id="60">
+    <title><![CDATA[BrownSmoke]]></title>
+    <name><![CDATA[BrownSmoke]]></name>
     <artist id="2"><![CDATA[Synthetic]]></artist>
     <album id="2"><![CDATA[Colorsmoke EP]]></album>
     <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>2</track>
+    <track>4</track>
     <genre id="1"><![CDATA[Electronic]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/02-Synthetic_-_YellowSmoke20k22hS.wma]]></filename>
-    <playlisttrack>3</playlisttrack>
-    <time>290</time>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma]]></filename>
+    <playlisttrack>4</playlisttrack>
+    <time>304</time>
     <year>2007</year>
     <bitrate>20627</bitrate>
     <rate>22050</rate>
     <mode><![CDATA[cbr]]></mode>
     <mime><![CDATA[audio/x-ms-wma]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.wma]]></url>
-    <size>754935</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma]]></url>
+    <size>792375</size>
     <mbid><![CDATA[]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
     <artist_mbid><![CDATA[]]></artist_mbid>
@@ -129,49 +172,6 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <replaygain_album_peak/>
     <replaygain_track_gain/>
     <replaygain_track_peak/>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="74">
-    <title><![CDATA[inominavel p03]]></title>
-    <name><![CDATA[inominavel p03]]></name>
-    <artist id="11"><![CDATA[structura]]></artist>
-    <album id="18"><![CDATA[Inominavel (live.v.01)]]></album>
-    <albumartist id="11"><![CDATA[structura]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>3</track>
-    <genre id="3"><![CDATA[Noise]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/03_structura_-_inominavel_p03.mp3]]></filename>
-    <playlisttrack>4</playlisttrack>
-    <time>143</time>
-    <year>2007</year>
-    <bitrate>192000</bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=74&uid=4&player=api&name=structura%20-%20inominavel%20p03.mp3]]></url>
-    <size>3449255</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels/>
-    <comment><![CDATA[https://enoughrecords.scene.org]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[archive.org]]></publisher>
-    <language/>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain>0.000000</replaygain_track_gain>
-    <replaygain_track_peak>0.000000</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

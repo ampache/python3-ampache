@@ -1,9 +1,9 @@
 {
     "song": [
         {
-            "id": "122",
-            "title": "Thursday Is Thursty",
-            "name": "Thursday Is Thursty",
+            "id": "132",
+            "title": "Hairy Crushed Nuts",
+            "name": "Hairy Crushed Nuts",
             "artist": {
                 "id": "36",
                 "name": "Comfort Fit"
@@ -17,8 +17,8 @@
                 "name": "Comfort Fit"
             },
             "disk": 1,
-            "track": 7,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/7 - Thursday is Thursdy.mp3",
+            "track": 15,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/15 - Hairy Crushed Nuts.mp3",
             "genre": [
                 {
                     "id": "8",
@@ -26,15 +26,15 @@
                 }
             ],
             "playlisttrack": 1,
-            "time": 92,
+            "time": 267,
             "year": 2005,
-            "bitrate": 225219,
+            "bitrate": 248806,
             "rate": 44100,
             "mode": "vbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=122&uid=4&player=api&name=Comfort%20Fit%20-%20Thursday%20Is%20Thursty.mp3",
-            "size": 2607497,
-            "mbid": "36fa39a1-483d-49d9-907b-17c4e3d60b47",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=132&uid=4&player=api&name=Comfort%20Fit%20-%20Hairy%20Crushed%20Nuts.mp3",
+            "size": 8328099,
+            "mbid": "db672da0-963b-45a4-b3d8-23efc9c1953d",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
@@ -47,7 +47,7 @@
             "catalog": 4,
             "composer": "",
             "channels": null,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-07-comfort_fit-thursday_is_thursty\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-15-comfort_fit-hairy_crushed_nuts\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
             "license": null,
             "publisher": "Tokyo Dawn Records",
             "language": "",
@@ -59,164 +59,150 @@
             "r128_track_gain": null
         },
         {
-            "id": "77",
-            "title": "inominavel p02",
-            "name": "inominavel p02",
+            "id": "105",
+            "title": "The Infernal Serpent (Instrumental Re-Recording)",
+            "name": "The Infernal Serpent (Instrumental Re-Recording)",
             "artist": {
-                "id": "11",
-                "name": "structura"
+                "id": "16",
+                "name": "CARN\u00daN"
             },
             "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)"
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)"
             },
             "albumartist": {
-                "id": "11",
-                "name": "structura"
+                "id": "16",
+                "name": "CARN\u00daN"
             },
             "disk": 1,
-            "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/02_structura_-_inominavel_p02.mp3",
-            "genre": [
-                {
-                    "id": "3",
-                    "name": "Noise"
-                }
-            ],
+            "track": 8,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/08TheInfernalSerpent_InstrumentalReRecording.ogg",
+            "genre": [],
             "playlisttrack": 2,
-            "time": 237,
-            "year": 2007,
-            "bitrate": 192000,
+            "time": 557,
+            "year": 1996,
+            "bitrate": 139453,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=77&uid=4&player=api&name=structura%20-%20inominavel%20p02.mp3",
-            "size": 5723290,
+            "mode": "vbr",
+            "mime": "application\/ogg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=4&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.ogg",
+            "size": 9722091,
             "mbid": "",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": 4,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "https:\/\/enoughrecords.scene.org",
-            "license": null,
-            "publisher": "archive.org",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "0.000000",
-            "replaygain_track_peak": "0.000000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "86",
-            "title": "Caloonashine",
-            "name": "Caloonashine",
-            "artist": {
-                "id": "14",
-                "name": "Nofi\/found."
-            },
-            "album": {
-                "id": "8",
-                "name": "Nofi Devices"
-            },
-            "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found."
-            },
-            "disk": 1,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/05_Caloonashine.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 330,
-            "year": 0,
-            "bitrate": 192000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&player=api&name=Nofi-found.%20-%20Caloonashine.mp3",
-            "size": 7929692,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 1,
-            "composer": "Jeffrey Melton",
+            "composer": "",
             "channels": null,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
             "license": null,
             "publisher": "archive.org",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": "-0.350000",
-            "replaygain_track_peak": "0.955000",
+            "replaygain_track_gain": "-12.240000",
+            "replaygain_track_peak": "1.000000",
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "74",
-            "title": "inominavel p03",
-            "name": "inominavel p03",
+            "id": "108",
+            "title": "I've been down this road before",
+            "name": "I've been down this road before",
             "artist": {
-                "id": "11",
-                "name": "structura"
+                "id": "21",
+                "name": "Tip-C (featuring Mike Beers)"
             },
             "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)"
+                "id": "12",
+                "name": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "11",
-                "name": "structura"
+                "id": "19",
+                "name": "Various Artists"
             },
             "disk": 1,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/03_structura_-_inominavel_p03.mp3",
+            "track": 6,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
+            "genre": [],
+            "playlisttrack": 3,
+            "time": 252,
+            "year": 2012,
+            "bitrate": 32582,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.wma",
+            "size": 1035322,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "",
+            "language": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "58",
+            "title": "BrownSmoke",
+            "name": "BrownSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP"
+            },
+            "albumartist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "disk": 1,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
             "genre": [
                 {
-                    "id": "3",
-                    "name": "Noise"
+                    "id": "1",
+                    "name": "Electronic"
                 }
             ],
             "playlisttrack": 4,
-            "time": 143,
+            "time": 304,
             "year": 2007,
-            "bitrate": 192000,
-            "rate": 44100,
+            "bitrate": 64000,
+            "rate": 22050,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=74&uid=4&player=api&name=structura%20-%20inominavel%20p03.mp3",
-            "size": 3449255,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
+            "size": 2441886,
             "mbid": "",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -225,14 +211,14 @@
             "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "https:\/\/enoughrecords.scene.org",
+            "comment": "",
             "license": null,
-            "publisher": "archive.org",
+            "publisher": "20kbps rec.",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": "0.000000",
-            "replaygain_track_peak": "0.000000",
+            "replaygain_track_gain": "0.960000",
+            "replaygain_track_peak": "0.912000",
             "r128_album_gain": null,
             "r128_track_gain": null
         }

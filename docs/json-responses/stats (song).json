@@ -1,113 +1,108 @@
 {
     "song": [
         {
-            "id": "76",
-            "title": "inominavel p04",
-            "name": "inominavel p04",
+            "id": "55",
+            "title": "Red&GreenSmoke",
+            "name": "Red&GreenSmoke",
             "artist": {
-                "id": "11",
-                "name": "structura"
+                "id": "2",
+                "name": "Synthetic"
             },
             "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)"
+                "id": "2",
+                "name": "Colorsmoke EP"
             },
             "albumartist": {
-                "id": "11",
-                "name": "structura"
+                "id": "2",
+                "name": "Synthetic"
             },
             "disk": 1,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/04_structura_-_inominavel_p04.mp3",
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
             "genre": [
                 {
-                    "id": "3",
-                    "name": "Noise"
+                    "id": "1",
+                    "name": "Electronic"
                 }
             ],
             "playlisttrack": 1,
-            "time": 317,
+            "time": 400,
             "year": 2007,
-            "bitrate": 192000,
-            "rate": 44100,
+            "bitrate": 64000,
+            "rate": 22050,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=76&uid=4&player=api&name=structura%20-%20inominavel%20p04.mp3",
-            "size": 7629821,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+            "size": 3209886,
             "mbid": "",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
             "flag": 0,
             "preciserating": null,
             "rating": null,
-            "averagerating": 3,
+            "averagerating": null,
             "playcount": 1,
             "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "https:\/\/enoughrecords.scene.org",
+            "comment": "",
             "license": null,
-            "publisher": "archive.org",
+            "publisher": "20kbps rec.",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": "0.000000",
-            "replaygain_track_peak": "0.000000",
+            "replaygain_track_gain": "-4.060000",
+            "replaygain_track_peak": "1.000000",
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "120",
-            "title": "Freeze the Cut",
-            "name": "Freeze the Cut",
+            "id": "108",
+            "title": "I've been down this road before",
+            "name": "I've been down this road before",
             "artist": {
-                "id": "36",
-                "name": "Comfort Fit"
+                "id": "21",
+                "name": "Tip-C (featuring Mike Beers)"
             },
             "album": {
-                "id": "21",
-                "name": "Forget and Remember"
+                "id": "12",
+                "name": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "36",
-                "name": "Comfort Fit"
+                "id": "19",
+                "name": "Various Artists"
             },
             "disk": 1,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/4 - Freeze The Cut.mp3",
-            "genre": [
-                {
-                    "id": "8",
-                    "name": "Hip-Hop"
-                }
-            ],
+            "track": 6,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
+            "genre": [],
             "playlisttrack": 2,
-            "time": 168,
-            "year": 2005,
-            "bitrate": 246979,
+            "time": 252,
+            "year": 2012,
+            "bitrate": 32582,
             "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=120&uid=4&player=api&name=Comfort%20Fit%20-%20Freeze%20the%20Cut.mp3",
-            "size": 5216305,
-            "mbid": "d927db0b-7d3a-4fba-867c-d140cb19aeb9",
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.wma",
+            "size": 1035322,
+            "mbid": "",
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 4,
+            "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-04-comfort_fit-freeze_the_cut_feat_blaktroniks\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+            "comment": "",
             "license": null,
-            "publisher": "Tokyo Dawn Records",
+            "publisher": "",
             "language": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
