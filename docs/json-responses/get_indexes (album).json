@@ -6,10 +6,11 @@
             "id": "19",
             "name": "Various Artists"
         },
-        "time": 1437,
+        "time": 1879,
         "year": 2012,
-        "tracks": "7",
-        "songcount": 7,
+        "tracks": 9,
+        "songcount": 9,
+        "type": "compilation",
         "disk": 1,
         "tag": [
             {
@@ -31,17 +32,18 @@
             "id": "16",
             "name": "CARN\u00daN"
         },
-        "time": 4282,
+        "time": 3873,
         "year": 1996,
-        "tracks": "9",
+        "tracks": 9,
         "songcount": 9,
+        "type": null,
         "disk": 1,
         "tag": [],
         "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": null,
         "rating": null,
-        "averagerating": null,
+        "averagerating": 5,
         "mbid": null
     },
     {
@@ -53,8 +55,9 @@
         },
         "time": 4568,
         "year": 2007,
-        "tracks": "12",
+        "tracks": 12,
         "songcount": 12,
+        "type": null,
         "disk": 1,
         "tag": [
             {
@@ -78,15 +81,16 @@
         },
         "time": 592,
         "year": 0,
-        "tracks": "2",
+        "tracks": 2,
         "songcount": 2,
+        "type": null,
         "disk": 1,
         "tag": [],
         "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": 3,
         "rating": 3,
-        "averagerating": null,
+        "averagerating": 3,
         "mbid": null
     }
 ]

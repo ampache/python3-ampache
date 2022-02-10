@@ -1,18 +1,24 @@
 [
     {
-        "id": "13",
-        "name": "Unknown (Orphaned)",
+        "id": "7",
+        "name": "Sensorisk Deprivation",
         "artist": {
-            "id": "25",
-            "name": "Unknown (Orphaned)"
+            "id": "13",
+            "name": "IOK-1"
         },
-        "time": 442,
-        "year": 0,
-        "tracks": "2",
-        "songcount": 2,
+        "time": 3428,
+        "year": 2011,
+        "tracks": 4,
+        "songcount": 4,
+        "type": null,
         "disk": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "tag": [
+            {
+                "id": "4",
+                "name": "Dark Ambient"
+            }
+        ],
+        "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -20,23 +26,29 @@
         "mbid": null
     },
     {
-        "id": "10",
-        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+        "id": "18",
+        "name": "Inominavel (live.v.01)",
         "artist": {
-            "id": "16",
-            "name": "CARN\u00daN"
+            "id": "11",
+            "name": "structura"
         },
-        "time": 4282,
-        "year": 1996,
-        "tracks": "9",
-        "songcount": 9,
+        "time": 1339,
+        "year": 2007,
+        "tracks": 6,
+        "songcount": 6,
+        "type": null,
         "disk": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "tag": [
+            {
+                "id": "3",
+                "name": "Noise"
+            }
+        ],
+        "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
+        "preciserating": 4,
+        "rating": 4,
+        "averagerating": 3,
         "mbid": null
     }
 ]

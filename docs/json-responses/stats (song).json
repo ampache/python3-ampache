@@ -1,14 +1,75 @@
 [
     {
-        "id": "73",
-        "title": "inominavel p05",
-        "name": "inominavel p05",
+        "id": "60",
+        "title": "BrownSmoke",
+        "name": "BrownSmoke",
+        "artist": {
+            "id": "2",
+            "name": "Synthetic"
+        },
+        "album": {
+            "id": "2",
+            "name": "Colorsmoke EP"
+        },
+        "albumartist": {
+            "id": "2",
+            "name": "Synthetic"
+        },
+        "disk": 1,
+        "track": 4,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
+        "tag": [
+            {
+                "id": "1",
+                "name": "Electronic"
+            }
+        ],
+        "playlisttrack": 1,
+        "time": 304,
+        "year": 2007,
+        "bitrate": 20627,
+        "rate": 22050,
+        "mode": "cbr",
+        "mime": "audio\/x-ms-wma",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma",
+        "size": 792375,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "Made with Sony ACID 5",
+        "license": null,
+        "publisher": "20kbps rec.",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": [
+            {
+                "name": "Electronic"
+            }
+        ]
+    },
+    {
+        "id": "78",
+        "title": "inominavel p01",
+        "name": "inominavel p01",
         "artist": {
             "id": "11",
             "name": "structura"
         },
         "album": {
-            "id": "5",
+            "id": "18",
             "name": "Inominavel (live.v.01)"
         },
         "albumartist": {
@@ -16,28 +77,28 @@
             "name": "structura"
         },
         "disk": 1,
-        "track": 5,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/05_structura_-_inominavel_p05.mp3",
+        "track": 1,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/01_structura_-_inominavel_p01.mp3",
         "tag": [
             {
                 "id": "3",
                 "name": "Noise"
             }
         ],
-        "playlisttrack": 1,
-        "time": 310,
+        "playlisttrack": 2,
+        "time": 84,
         "year": 2007,
         "bitrate": 192000,
         "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=73&uid=4&player=api&name=structura%20-%20inominavel%20p05.mp3",
-        "size": 7448576,
-        "mbid": null,
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78&uid=4&player=api&name=structura%20-%20inominavel%20p01.mp3",
+        "size": 2036632,
+        "mbid": "",
         "album_mbid": null,
-        "artist_mbid": "",
-        "albumartist_mbid": "",
-        "art": "https:\/\/music.com.au\/image.php?object_id=5&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -48,68 +109,16 @@
         "channels": null,
         "comment": "http:\/\/enoughrecords.scene.org",
         "license": null,
-        "publisher": "",
+        "publisher": "archive.org",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": null,
-        "replaygain_track_peak": null,
+        "replaygain_track_gain": "0.000000",
+        "replaygain_track_peak": "0.000000",
         "genre": [
             {
                 "name": "Noise"
             }
         ]
-    },
-    {
-        "id": "97",
-        "title": "Creeping Lawler 2",
-        "name": "Creeping Lawler 2",
-        "artist": {
-            "id": "15",
-            "name": "Warfare 3.0"
-        },
-        "album": {
-            "id": "9",
-            "name": "Creeping Lawler 2"
-        },
-        "albumartist": {
-            "id": "15",
-            "name": "Warfare 3.0"
-        },
-        "disk": 1,
-        "track": 1,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
-        "tag": [],
-        "playlisttrack": 2,
-        "time": 296,
-        "year": 0,
-        "bitrate": 177349,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
-        "size": 6645248,
-        "mbid": null,
-        "album_mbid": null,
-        "artist_mbid": "",
-        "albumartist_mbid": "",
-        "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "",
-        "channels": null,
-        "comment": "https:\/\/archive.org\/details\/",
-        "license": null,
-        "publisher": "",
-        "language": "",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": null,
-        "replaygain_track_peak": null,
-        "genre": []
     }
 ]

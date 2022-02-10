@@ -1,54 +1,54 @@
 {
     "timeline": [
         {
-            "id": "31",
-            "data": "1614055275",
-            "object_type": "video",
-            "object_id": "1",
-            "action": "play",
-            "user": [
-                {
-                    "id": "2",
-                    "username": "admin"
-                }
-            ]
-        },
-        {
-            "id": "30",
-            "data": "1614055252",
-            "object_type": "song",
-            "object_id": "79",
-            "action": "play",
-            "user": [
-                {
-                    "id": "2",
-                    "username": "admin"
-                }
-            ]
-        },
-        {
-            "id": "26",
-            "data": "1614055014",
-            "object_type": "song",
-            "object_id": "76",
-            "action": "play",
-            "user": [
-                {
-                    "id": "2",
-                    "username": "admin"
-                }
-            ]
-        },
-        {
-            "id": "25",
-            "data": "1614054865",
-            "object_type": "video",
-            "object_id": "1",
+            "id": "214",
+            "data": "1644465749",
+            "object_type": "playlist",
+            "object_id": "2",
             "action": "userflag",
             "user": [
                 {
-                    "id": "2",
-                    "username": "admin"
+                    "id": "4",
+                    "username": "user"
+                }
+            ]
+        },
+        {
+            "id": "213",
+            "data": "1644465739",
+            "object_type": "user",
+            "object_id": "10",
+            "action": "follow",
+            "user": [
+                {
+                    "id": "4",
+                    "username": "user"
+                }
+            ]
+        },
+        {
+            "id": "212",
+            "data": "1644465737",
+            "object_type": "song",
+            "object_id": "83",
+            "action": "play",
+            "user": [
+                {
+                    "id": "4",
+                    "username": "user"
+                }
+            ]
+        },
+        {
+            "id": "211",
+            "data": "1644465736",
+            "object_type": "playlist",
+            "object_id": "2",
+            "action": "userflag",
+            "user": [
+                {
+                    "id": "4",
+                    "username": "user"
                 }
             ]
         }

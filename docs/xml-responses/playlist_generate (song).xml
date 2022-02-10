@@ -1,25 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>4</total_count>
-  <song id="58">
-    <title><![CDATA[BrownSmoke]]></title>
-    <name><![CDATA[BrownSmoke]]></name>
+  <song id="131">
+    <title><![CDATA[Miles of Smiles]]></title>
+    <name><![CDATA[Miles of Smiles]]></name>
+    <artist id="36"><![CDATA[Comfort Fit]]></artist>
+    <album id="21"><![CDATA[Forget and Remember]]></album>
+    <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>20</track>
+    <tag id="8" count="1"><![CDATA[Hip-Hop]]></tag>
+    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/20 - Miles of Smiles.mp3]]></filename>
+    <playlisttrack>1</playlisttrack>
+    <time>290</time>
+    <year>2005</year>
+    <bitrate>247925</bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=131&uid=4&player=api&name=Comfort%20Fit%20-%20Miles%20of%20Smiles.mp3]]></url>
+    <size>9028758</size>
+    <mbid><![CDATA[ec160787-e0db-4f76-85b5-5a76f59f36f9]]></mbid>
+    <album_mbid><![CDATA[]]></album_mbid>
+    <artist_mbid><![CDATA[]]></artist_mbid>
+    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>4</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels/>
+    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-20-comfort_fit-miles_of_smiles
+Comments: http://freemusicarchive.org/
+Curator: WFMU
+Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[Tokyo Dawn Records]]></publisher>
+    <language/>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
+    <genre><![CDATA[Hip-Hop]]></genre>
+  </song>
+  <song id="101">
+    <title><![CDATA[Rehearsal Tape (1996)]]></title>
+    <name><![CDATA[Rehearsal Tape (1996)]]></name>
+    <artist id="16"><![CDATA[CARNÚN]]></artist>
+    <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
+    <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>9</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/09RehearsalTape1996.ogg]]></filename>
+    <playlisttrack>2</playlisttrack>
+    <time>980</time>
+    <year>1996</year>
+    <bitrate>66912</bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[application/ogg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.ogg]]></url>
+    <size>8219821</size>
+    <mbid><![CDATA[]]></mbid>
+    <album_mbid><![CDATA[]]></album_mbid>
+    <artist_mbid><![CDATA[]]></artist_mbid>
+    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels/>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[archive.org]]></publisher>
+    <language/>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>-9.560000</replaygain_track_gain>
+    <replaygain_track_peak>1.000000</replaygain_track_peak>
+  </song>
+  <song id="124">
+    <title><![CDATA[True Form]]></title>
+    <name><![CDATA[True Form]]></name>
+    <artist id="36"><![CDATA[Comfort Fit]]></artist>
+    <album id="21"><![CDATA[Forget and Remember]]></album>
+    <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>6</track>
+    <tag id="8" count="1"><![CDATA[Hip-Hop]]></tag>
+    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/6 - True Form.mp3]]></filename>
+    <playlisttrack>3</playlisttrack>
+    <time>192</time>
+    <year>2005</year>
+    <bitrate>243031</bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=124&uid=4&player=api&name=Comfort%20Fit%20-%20True%20Form.mp3]]></url>
+    <size>5848663</size>
+    <mbid><![CDATA[8bf3acd2-860b-4ece-896f-9b2de89e35fa]]></mbid>
+    <album_mbid><![CDATA[]]></album_mbid>
+    <artist_mbid><![CDATA[]]></artist_mbid>
+    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>4</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels/>
+    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-06-comfort_fit-true_form
+Comments: http://freemusicarchive.org/
+Curator: WFMU
+Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[Tokyo Dawn Records]]></publisher>
+    <language/>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
+    <genre><![CDATA[Hip-Hop]]></genre>
+  </song>
+  <song id="59">
+    <title><![CDATA[YellowSmoke]]></title>
+    <name><![CDATA[YellowSmoke]]></name>
     <artist id="2"><![CDATA[Synthetic]]></artist>
     <album id="2"><![CDATA[Colorsmoke EP]]></album>
     <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>4</track>
+    <track>2</track>
     <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3]]></filename>
-    <playlisttrack>1</playlisttrack>
-    <time>304</time>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3]]></filename>
+    <playlisttrack>4</playlisttrack>
+    <time>290</time>
     <year>2007</year>
     <bitrate>64000</bitrate>
     <rate>22050</rate>
     <mode><![CDATA[cbr]]></mode>
     <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
-    <size>2437380</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
+    <size>2325568</size>
     <mbid><![CDATA[]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
     <artist_mbid><![CDATA[]]></artist_mbid>
@@ -35,132 +165,12 @@
     <channels/>
     <comment><![CDATA[]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
+    <publisher><![CDATA[20kbps rec.]]></publisher>
     <language/>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
+    <replaygain_track_gain>2.750000</replaygain_track_gain>
+    <replaygain_track_peak>0.716000</replaygain_track_peak>
     <genre><![CDATA[Electronic]]></genre>
-  </song>
-  <song id="109">
-    <title><![CDATA[Dance with the Devil]]></title>
-    <name><![CDATA[Dance with the Devil]]></name>
-    <artist id="22"><![CDATA[Comedown Kid]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>3</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
-    <playlisttrack>2</playlisttrack>
-    <time>116</time>
-    <year>2012</year>
-    <bitrate>32582</bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/x-ms-wma]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.wma]]></url>
-    <size>483444</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels/>
-    <comment><![CDATA[]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
-    <language/>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
-  </song>
-  <song id="98">
-    <title><![CDATA[In The Seven Woods]]></title>
-    <name><![CDATA[In The Seven Woods]]></name>
-    <artist id="16"><![CDATA[CARNÚN]]></artist>
-    <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-    <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>3</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/03InTheSevenWoods.ogg]]></filename>
-    <playlisttrack>3</playlisttrack>
-    <time>420</time>
-    <year>1996</year>
-    <bitrate>83804</bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[application/ogg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.ogg]]></url>
-    <size>4414576</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels/>
-    <comment><![CDATA[Visit http://irish-metal.bandcamp.com]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
-    <language/>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
-  </song>
-  <song id="110">
-    <title><![CDATA[I wanna walk through the fire]]></title>
-    <name><![CDATA[I wanna walk through the fire]]></name>
-    <artist id="23"><![CDATA[Manic Notion]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>1</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/01ManicNotion-IWannaWalkThroughTheFire.m4a]]></filename>
-    <playlisttrack>4</playlisttrack>
-    <time>197</time>
-    <year>2012</year>
-    <bitrate>267320</bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/mp4]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.m4a]]></url>
-    <size>6648489</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels/>
-    <comment><![CDATA[]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
-    <language/>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
   </song>
 </root>

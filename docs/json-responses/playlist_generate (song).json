@@ -1,8 +1,164 @@
 [
     {
-        "id": "55",
-        "title": "Red&GreenSmoke",
-        "name": "Red&GreenSmoke",
+        "id": "100",
+        "title": "The Prophecies Of The Horned One",
+        "name": "The Prophecies Of The Horned One",
+        "artist": {
+            "id": "16",
+            "name": "CARN\u00daN"
+        },
+        "album": {
+            "id": "10",
+            "name": "CARN\u00daN - MALKUTH (Demo 1996)"
+        },
+        "albumartist": {
+            "id": "16",
+            "name": "CARN\u00daN"
+        },
+        "disk": 1,
+        "track": 2,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/02ThePropheciesOfTheHornedOne.ogg",
+        "tag": [],
+        "playlisttrack": 1,
+        "time": 378,
+        "year": 1996,
+        "bitrate": 89965,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "application\/ogg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.ogg",
+        "size": 4265791,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": 5,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+        "license": null,
+        "publisher": "archive.org",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-10.510000",
+        "replaygain_track_peak": "1.000000",
+        "genre": []
+    },
+    {
+        "id": "105",
+        "title": "The Infernal Serpent (Instrumental Re-Recording)",
+        "name": "The Infernal Serpent (Instrumental Re-Recording)",
+        "artist": {
+            "id": "16",
+            "name": "CARN\u00daN"
+        },
+        "album": {
+            "id": "10",
+            "name": "CARN\u00daN - MALKUTH (Demo 1996)"
+        },
+        "albumartist": {
+            "id": "16",
+            "name": "CARN\u00daN"
+        },
+        "disk": 1,
+        "track": 8,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/08TheInfernalSerpent_InstrumentalReRecording.ogg",
+        "tag": [],
+        "playlisttrack": 2,
+        "time": 557,
+        "year": 1996,
+        "bitrate": 139453,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "application\/ogg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=4&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.ogg",
+        "size": 9722091,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+        "license": null,
+        "publisher": "archive.org",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "-12.240000",
+        "replaygain_track_peak": "1.000000",
+        "genre": []
+    },
+    {
+        "id": "113",
+        "title": "Representin",
+        "name": "Representin",
+        "artist": {
+            "id": "32",
+            "name": "Shorty Mac"
+        },
+        "album": {
+            "id": "12",
+            "name": "Buried in Nausea"
+        },
+        "albumartist": {
+            "id": "19",
+            "name": "Various Artists"
+        },
+        "disk": 1,
+        "track": 4,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
+        "tag": [],
+        "playlisttrack": 3,
+        "time": 234,
+        "year": 2012,
+        "bitrate": 123814,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
+        "size": 3628327,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "",
+        "channels": null,
+        "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+        "license": null,
+        "publisher": "archive.org",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "1.910000",
+        "replaygain_track_peak": "0.851000",
+        "genre": []
+    },
+    {
+        "id": "58",
+        "title": "BrownSmoke",
+        "name": "BrownSmoke",
         "artist": {
             "id": "2",
             "name": "Synthetic"
@@ -16,228 +172,47 @@
             "name": "Synthetic"
         },
         "disk": 1,
-        "track": 5,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
+        "track": 4,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
         "tag": [
             {
                 "id": "1",
                 "name": "Electronic"
             }
         ],
-        "playlisttrack": 1,
-        "time": 400,
+        "playlisttrack": 4,
+        "time": 304,
         "year": 2007,
         "bitrate": 64000,
         "rate": 22050,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-        "size": 3206156,
-        "mbid": null,
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
+        "size": 2441886,
+        "mbid": "",
         "album_mbid": null,
-        "artist_mbid": "",
-        "albumartist_mbid": "",
+        "artist_mbid": null,
+        "albumartist_mbid": null,
         "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
-        "playcount": 1,
+        "playcount": 0,
         "catalog": 1,
         "composer": "",
         "channels": null,
         "comment": "",
         "license": null,
-        "publisher": "",
+        "publisher": "20kbps rec.",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": null,
-        "replaygain_track_peak": null,
+        "replaygain_track_gain": "0.960000",
+        "replaygain_track_peak": "0.912000",
         "genre": [
             {
                 "name": "Electronic"
-            }
-        ]
-    },
-    {
-        "id": "108",
-        "title": "I've been down this road before",
-        "name": "I've been down this road before",
-        "artist": {
-            "id": "21",
-            "name": "Tip-C (featuring Mike Beers)"
-        },
-        "album": {
-            "id": "12",
-            "name": "Buried in Nausea"
-        },
-        "albumartist": {
-            "id": "19",
-            "name": "Various Artists"
-        },
-        "disk": 1,
-        "track": 6,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
-        "tag": [],
-        "playlisttrack": 2,
-        "time": 252,
-        "year": 2012,
-        "bitrate": 32582,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/x-ms-wma",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.wma",
-        "size": 1035322,
-        "mbid": null,
-        "album_mbid": null,
-        "artist_mbid": "",
-        "albumartist_mbid": "",
-        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "",
-        "channels": null,
-        "comment": "",
-        "license": null,
-        "publisher": "",
-        "language": "",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": null,
-        "replaygain_track_peak": null,
-        "genre": []
-    },
-    {
-        "id": "84",
-        "title": "Vansinne",
-        "name": "Vansinne",
-        "artist": {
-            "id": "13",
-            "name": "IOK-1"
-        },
-        "album": {
-            "id": "7",
-            "name": "Sensorisk Deprivation"
-        },
-        "albumartist": {
-            "id": "13",
-            "name": "IOK-1"
-        },
-        "disk": 1,
-        "track": 4,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/04_-_IOK-1_-_Vansinne.flac",
-        "tag": [
-            {
-                "id": "4",
-                "name": "Dark Ambient"
-            }
-        ],
-        "playlisttrack": 3,
-        "time": 787,
-        "year": 2011,
-        "bitrate": 713079,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/x-flac",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&player=api&name=IOK-1%20-%20Vansinne.flac",
-        "size": 70173300,
-        "mbid": null,
-        "album_mbid": null,
-        "artist_mbid": "",
-        "albumartist_mbid": "",
-        "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "",
-        "channels": null,
-        "comment": "DNA Production release\r\nCatalogue # DNA 119",
-        "license": null,
-        "publisher": "DNA Production",
-        "language": "",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": null,
-        "replaygain_track_peak": null,
-        "genre": [
-            {
-                "name": "Dark Ambient"
-            }
-        ]
-    },
-    {
-        "id": "88",
-        "title": "Netro",
-        "name": "Netro",
-        "artist": {
-            "id": "14",
-            "name": "Nofi\/found."
-        },
-        "album": {
-            "id": "8",
-            "name": "Nofi Devices"
-        },
-        "albumartist": {
-            "id": "14",
-            "name": "Nofi\/found."
-        },
-        "disk": 1,
-        "track": 10,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/10_Netro.mp3",
-        "tag": [
-            {
-                "id": "5",
-                "name": "Electronica"
-            },
-            {
-                "id": "6",
-                "name": "Dance"
-            }
-        ],
-        "playlisttrack": 4,
-        "time": 601,
-        "year": 0,
-        "bitrate": 192000,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=88&uid=4&player=api&name=Nofi-found.%20-%20Netro.mp3",
-        "size": 14439314,
-        "mbid": null,
-        "album_mbid": null,
-        "artist_mbid": "",
-        "albumartist_mbid": "",
-        "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "Jeffrey Melton",
-        "channels": null,
-        "comment": "00000261 000001F5 0000CFEC 0000AA6D 0003B8F5 0003B8F5 000083A9 0000806E 000119A1 0003ECB1",
-        "license": null,
-        "publisher": "",
-        "language": "",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": null,
-        "replaygain_track_peak": null,
-        "genre": [
-            {
-                "name": "Electronica"
-            },
-            {
-                "name": "Dance"
             }
         ]
     }
