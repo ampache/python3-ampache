@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <action><![CDATA[democratic]]></action>
-  <method><![CDATA[vote]]></method>
-  <result><![CDATA[1]]></result>
+  <error code="400"><![CDATA[Media Object Invalid or Not Specified]]></error>
 </root>
