@@ -8,29 +8,39 @@ import sys
 import time
 
 # pip3 install --user ampache==4.4.0
-import ampache
+from src import ampache
 
 # user variables
-url = 'https://music.server'
-api = 'mysuperapikey'
-user = 'myusername'
-try:
-    if sys.argv[1] and sys.argv[2] and sys.argv[3]:
-        url = sys.argv[1]
-        api = sys.argv[2]
-        user = sys.argv[3]
-except IndexError:
-    if os.path.isfile('docs/examples/ampyche.conf'):
-        conf = configparser.RawConfigParser()
-        conf.read('docs/examples/ampyche.conf')
-        url = conf.get('conf', 'ampache_url')
-        user = conf.get('conf', 'ampache_user')
-        api = conf.get('conf', 'ampache_apikey')
-
+url = 'https://demo.ampache.dev'
+api = 'demo'
+user = 'demodemo'
 limit = 4
 offset = 0
 api_version = '390000'
 song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma'
+try:
+    if sys.argv[1]:
+        url = sys.argv[1]
+    if sys.argv[2]:
+        api = sys.argv[2]
+    if sys.argv[3]:
+        user = sys.argv[3]
+except IndexError:
+    if os.path.isfile(os.path.join(os.pardir, 'ampache.conf')):
+        conf = configparser.RawConfigParser()
+        conf.read(os.path.join(os.pardir, 'ampache.conf'))
+        url = conf.get('conf', 'ampache_url')
+        api = conf.get('conf', 'ampache_apikey')
+        user = conf.get('conf', 'ampache_user')
+    elif os.path.isfile('docs/examples/ampyche.conf'):
+        conf = configparser.RawConfigParser()
+        conf.read('docs/examples/ampyche.conf')
+        url = conf.get('conf', 'ampache_url')
+        api = conf.get('conf', 'ampache_apikey')
+        user = conf.get('conf', 'ampache_user')
+    else:
+        print()
+        sys.exit('Error: docs/examples/ampyche.conf not found and no arguments set')
 
 
 def build_docs(ampache_url, ampache_api, ampache_user, api_format):
