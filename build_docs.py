@@ -10,9 +10,13 @@ import time
 from src import ampache
 
 # user variables
-url = None
-api = None
-user = None
+url = 'https://demo.ampache.dev'
+api = 'demo'
+user = 'demodemo'
+limit = 4
+offset = 0
+api_version = '5.1.0'
+song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma'
 try:
     if sys.argv[1]:
         url = sys.argv[1]
@@ -21,23 +25,21 @@ try:
     if sys.argv[3]:
         user = sys.argv[3]
 except IndexError:
-    if os.path.isfile('docs/examples/ampyche.conf'):
+    if os.path.isfile(os.path.join(os.pardir, 'ampache.conf')):
+        conf = configparser.RawConfigParser()
+        conf.read(os.path.join(os.pardir, 'ampache.conf'))
+        url = conf.get('conf', 'ampache_url')
+        api = conf.get('conf', 'ampache_apikey')
+        user = conf.get('conf', 'ampache_user')
+    elif os.path.isfile('docs/examples/ampyche.conf'):
         conf = configparser.RawConfigParser()
         conf.read('docs/examples/ampyche.conf')
-        if not url:
-            url = conf.get('conf', 'ampache_url')
-        if not api:
-            api = conf.get('conf', 'ampache_apikey')
-        if not user:
-            user = conf.get('conf', 'ampache_user')
+        url = conf.get('conf', 'ampache_url')
+        api = conf.get('conf', 'ampache_apikey')
+        user = conf.get('conf', 'ampache_user')
     else:
         print()
         sys.exit('Error: docs/examples/ampyche.conf not found and no arguments set')
-
-limit = 4
-offset = 0
-api_version = '5.1.0'
-song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma'
 
 
 def build_docs(ampache_url, ampache_api, ampache_user, api_format):
