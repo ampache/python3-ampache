@@ -1591,7 +1591,7 @@ def share_edit(ampache_url, ampache_api, filter_str, stream=False, download=Fals
             'expires': expires,
             'description': description}
     if not stream:
-        data.pop('name')
+        data.pop('stream')
     if not download:
         data.pop('download')
     if not expires:
