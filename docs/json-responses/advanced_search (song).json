@@ -1,5 +1,73 @@
 [
     {
+        "id": "93",
+        "title": "Scribnus 3",
+        "name": "Scribnus 3",
+        "artist": {
+            "id": "14",
+            "name": "Nofi\/found."
+        },
+        "album": {
+            "id": "8",
+            "name": "Nofi Devices"
+        },
+        "albumartist": {
+            "id": "14",
+            "name": "Nofi\/found."
+        },
+        "disk": 1,
+        "track": 3,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/03_Scribnus_3.mp3",
+        "tag": [
+            {
+                "id": "5",
+                "name": "Electronica"
+            },
+            {
+                "id": "6",
+                "name": "Dance"
+            }
+        ],
+        "playlisttrack": 1,
+        "time": 641,
+        "year": 0,
+        "bitrate": 192000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3",
+        "size": 15400002,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 1,
+        "preciserating": 5,
+        "rating": 5,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 1,
+        "composer": "Jeffrey Melton",
+        "channels": null,
+        "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+        "license": null,
+        "publisher": "archive.org",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "1.530000",
+        "replaygain_track_peak": "0.989000",
+        "genre": [
+            {
+                "name": "Electronica"
+            },
+            {
+                "name": "Dance"
+            }
+        ]
+    },
+    {
         "id": "109",
         "title": "Dance with the Devil",
         "name": "Dance with the Devil",
@@ -19,7 +87,7 @@
         "track": 3,
         "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
         "tag": [],
-        "playlisttrack": 1,
+        "playlisttrack": 2,
         "time": 116,
         "year": 2012,
         "bitrate": 32582,
@@ -30,8 +98,8 @@
         "size": 483444,
         "mbid": "",
         "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
         "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
@@ -50,5 +118,66 @@
         "replaygain_track_gain": null,
         "replaygain_track_peak": null,
         "genre": []
+    },
+    {
+        "id": "126",
+        "title": "Don't Show This Message Again",
+        "name": "Don't Show This Message Again",
+        "artist": {
+            "id": "36",
+            "name": "Comfort Fit"
+        },
+        "album": {
+            "id": "21",
+            "name": "Forget and Remember"
+        },
+        "albumartist": {
+            "id": "36",
+            "name": "Comfort Fit"
+        },
+        "disk": 1,
+        "track": 12,
+        "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/12 - Don\u2019t Show This Message Again.mp3",
+        "tag": [
+            {
+                "id": "8",
+                "name": "Hip-Hop"
+            }
+        ],
+        "playlisttrack": 3,
+        "time": 197,
+        "year": 2005,
+        "bitrate": 232690,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=126&uid=4&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3",
+        "size": 5755191,
+        "mbid": "6b582438-c034-47c2-86b0-61c63ec96b4b",
+        "album_mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+        "artist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
+        "albumartist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
+        "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 4,
+        "composer": "",
+        "channels": null,
+        "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-12-comfort_fit-dont_show_this_message_again\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+        "license": null,
+        "publisher": "Tokyo Dawn Records",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": [
+            {
+                "name": "Hip-Hop"
+            }
+        ]
     }
 ]

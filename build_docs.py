@@ -47,15 +47,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def stream(ampache_url, ampache_api, id, type, destination, api_format = 'xml'):
     def download(ampache_url, ampache_api, id, type, destination, format = 'raw', api_format = 'xml'):
     get_similar: send artist or song id to get related objects from last.fm
-    shares: get a list of shares you can access
-    share: get a share by id
     share_create: create a share
     share_edit: edit an existing share
     share_delete: delete an existing share
-    podcasts: get a list of podcasts you can access
-    podcast: get a podcast by id
-    podcast_episodes: get a list of podcast_episodes you can access
-    podcast_episode: get a podcast_episode by id
     podcast_episode_delete: delete an existing podcast_episode
     podcast_create: create a podcast
     podcast_edit: edit an existing podcast
@@ -386,10 +380,18 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     playlist_create = ampache.playlist_create(ampache_url, ampache_session, 'rename', 'private', api_format)
 
+    single_playlist = 2
     if api_format == 'xml':
-        tmp_playlist = playlist_create[1].attrib
-        single_playlist = tmp_playlist['id']
+        for child in playlist_create:
+            try:
+                if child.tag == 'playlist':
+                    tmp_playlist = child.attrib['id']
+                    single_playlist = tmp_playlist
+            except AttributeError:
+                print("child " + child)
+                continue
     else:
+        print(playlist_create)
         single_playlist = playlist_create[0]['id']
 
     """ playlist_edit
@@ -551,6 +553,72 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     ampache.license_songs(ampache_url, ampache_session, 1, api_format)
 
+    """ podcast
+    def podcast_episodes(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+    """
+    ampache.podcast(ampache_url, ampache_session, 1, False, False, api_format)
+
+    """ podcast_episodes
+    def podcast_episodes(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+    """
+    ampache.podcast_episodes(ampache_url, ampache_session, 1, offset, limit, api_format)
+
+    """ podcast_episodes
+    def podcast_episode(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+    """
+    ampache.podcast_episode(ampache_url, ampache_session, 47, offset, limit, api_format)
+
+    """ podcasts
+    def podcasts(ampache_url, ampache_api, filter_str=False, exact=False, offset=0, limit=0, api_format='xml'):
+    """
+    ampache.podcasts(ampache_url, ampache_session, False, False, 0, 4, api_format)
+
+    """ shares
+    """
+    shares = ampache.shares(ampache_url, ampache_session, False, False, offset, limit, api_format)
+    if api_format == 'xml':
+        for child in shares:
+            if child.tag == 'share':
+                share_id = child.attrib['id']
+    else:
+        share_id = shares[0]['id']
+
+    """ share
+    def share(ampache_url, ampache_api, filter_str, offset=0, limit=0, api_format='xml'):
+    """
+    ampache.share(ampache_url, ampache_session, share_id, offset, limit, api_format)
+
+    """ share_create
+    def share_create(ampache_url, ampache_api, filter_str, object_type, description=False, expires=False, api_format='xml')
+    """
+    """
+    share_create = ampache.share_create(ampache_url, ampache_session, single_song, 'song', False, False, api_format)
+    share_new = 1
+    if api_format == 'xml':
+        for child in share_create:
+            try:
+                if child.tag == 'share':
+                    share_new = child.attrib['id']
+            except AttributeError:
+                print("child: " + child)
+                continue
+    else:
+        print(share_create)
+        share_new = share_create[0]['id']
+    """
+
+    """ share_edit
+    """
+    """
+    ampache.share_edit(ampache_url, ampache_session, share_new, 0, 0, False, False, api_format)
+    """
+
+    """ share_delete
+    """
+    """
+    ampache.share_delete(ampache_url, ampache_session, share_new, api_format)
+    """
+
     """ timeline
     def timeline(ampache_url, ampache_api, username, limit = 0, since = 0, api_format = 'xml'):
     """
@@ -619,7 +687,12 @@ def self_check(api_format, ampache_url, ampache_api, ampache_session):
         f.close()
 
         url_text = ampache_url.replace("https://", "")
+        url_text = ampache_url.replace("http://", "")
+        url_json = url_text.replace("/", "\\/")
         newdata = re.sub(url_text, "music.com.au", filedata)
+        newdata = re.sub(url_text.replace("/", "\\/"), "music.com.au", newdata)
+        newdata = re.sub("http://music.com.au", "https://music.com.au", newdata)
+        newdata = re.sub("http:\\/\\/music.com.au", "https:\\/\\/music.com.au", newdata)
         newdata = re.sub(ampache_api, "eeb9f1b6056246a7d563f479f518bb34", newdata)
         newdata = re.sub(ampache_session, "cfj3f237d563f479f5223k23189dbb34", newdata)
         newdata = re.sub('auth=[a-z0-9]*', "auth=eeb9f1b6056246a7d563f479f518bb34", newdata)
