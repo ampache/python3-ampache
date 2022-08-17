@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>1</total_count>
+  <total_count>2</total_count>
   <song id="109">
     <title><![CDATA[Dance with the Devil]]></title>
     <name><![CDATA[Dance with the Devil]]></name>
@@ -34,5 +34,44 @@
     <replaygain_album_peak/>
     <replaygain_track_gain/>
     <replaygain_track_peak/>
+  </song>
+  <song id="126">
+    <title><![CDATA[Don't Show This Message Again]]></title>
+    <name><![CDATA[Don't Show This Message Again]]></name>
+    <artist id="36"><![CDATA[Comfort Fit]]></artist>
+    <album id="21"><![CDATA[Forget and Remember]]></album>
+    <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+    <tag id="8" count="1"><![CDATA[Hip-Hop]]></tag>
+    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/12 - Don’t Show This Message Again.mp3]]></filename>
+    <track>12</track>
+    <time>197</time>
+    <year>2005</year>
+    <bitrate>232690</bitrate>
+    <rate>44100</rate>
+    <mode>vbr</mode>
+    <mime>audio/mpeg</mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=126&uid=4&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3]]></url>
+    <size>5755191</size>
+    <mbid>6b582438-c034-47c2-86b0-61c63ec96b4b</mbid>
+    <album_mbid>6e1d48f7-717c-416e-af35-5d2454a13af2</album_mbid>
+    <artist_mbid>e6e2b787-0b4c-4267-8161-310399b101a5</artist_mbid>
+    <albumartist_mbid>e6e2b787-0b4c-4267-8161-310399b101a5</albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <preciserating>0</preciserating>
+    <rating>0</rating>
+    <averagerating>0</averagerating>
+    <composer><![CDATA[]]></composer>
+    <channels/>
+    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-12-comfort_fit-dont_show_this_message_again
+Comments: http://freemusicarchive.org/
+Curator: WFMU
+Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
+    <publisher><![CDATA[Tokyo Dawn Records]]></publisher>
+    <language/>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
+    <genre><![CDATA[Hip-Hop]]></genre>
   </song>
 </root>
