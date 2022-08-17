@@ -1,0 +1,54 @@
+[
+    {
+        "id": "1",
+        "name": "music",
+        "type": "local",
+        "gather_types": "music",
+        "last_add": "1",
+        "allow_download": "8\/3\/21, 12:04 AM",
+        "last_clean": "8\/3\/21, 12:05 AM",
+        "last_update": "7\/21\/21, 2:51 AM",
+        "path": "\/mnt/files-music/ampache-test\/music",
+        "rename_pattern": "%T - %t",
+        "sort_pattern": "%a\/%A"
+    },
+    {
+        "id": "3",
+        "name": "podcast",
+        "type": "local",
+        "gather_types": "podcast",
+        "last_add": "1",
+        "allow_download": "4\/1\/21, 7:03 AM",
+        "last_clean": "4\/1\/21, 7:03 AM",
+        "last_update": "Never",
+        "path": "\/mnt/files-music/ampache-test\/podcast",
+        "rename_pattern": "%T - %t",
+        "sort_pattern": "%a\/%A"
+    },
+    {
+        "id": "4",
+        "name": "upload",
+        "type": "local",
+        "gather_types": "music",
+        "last_add": "1",
+        "allow_download": "4\/1\/21, 7:03 AM",
+        "last_clean": "4\/1\/21, 7:03 AM",
+        "last_update": "Never",
+        "path": "\/mnt/files-music/ampache-test\/upload",
+        "rename_pattern": "%T - %t",
+        "sort_pattern": "%a\/%A"
+    },
+    {
+        "id": "2",
+        "name": "video",
+        "type": "local",
+        "gather_types": "clip",
+        "last_add": "1",
+        "allow_download": "8\/3\/21, 12:04 AM",
+        "last_clean": "8\/3\/21, 12:05 AM",
+        "last_update": "Never",
+        "path": "\/mnt/files-music/ampache-test\/video",
+        "rename_pattern": "%a - %t (%y)",
+        "sort_pattern": ""
+    }
+]
