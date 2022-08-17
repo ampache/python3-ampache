@@ -1,97 +1,39 @@
 {
     "song": [
         {
-            "id": "55",
-            "title": "Red&GreenSmoke",
-            "name": "Red&GreenSmoke",
+            "id": "103",
+            "title": "In The Seven Woods (Instrumental Re-Recording)",
+            "name": "In The Seven Woods (Instrumental Re-Recording)",
             "artist": {
-                "id": "2",
-                "name": "Synthetic"
+                "id": "16",
+                "name": "CARN\u00daN"
             },
             "album": {
-                "id": "2",
-                "name": "Colorsmoke EP"
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)"
             },
             "albumartist": {
-                "id": "2",
-                "name": "Synthetic"
+                "id": "16",
+                "name": "CARN\u00daN"
             },
             "disk": 1,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "playlisttrack": 1,
-            "time": 400,
-            "year": 2007,
-            "bitrate": 64000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-            "size": 3209886,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 1,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "20kbps rec.",
-            "language": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "-4.060000",
-            "replaygain_track_peak": "1.000000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "108",
-            "title": "I've been down this road before",
-            "name": "I've been down this road before",
-            "artist": {
-                "id": "21",
-                "name": "Tip-C (featuring Mike Beers)"
-            },
-            "album": {
-                "id": "12",
-                "name": "Buried in Nausea"
-            },
-            "albumartist": {
-                "id": "19",
-                "name": "Various Artists"
-            },
-            "disk": 1,
-            "track": 6,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
+            "track": 7,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
             "genre": [],
-            "playlisttrack": 2,
-            "time": 252,
-            "year": 2012,
-            "bitrate": 32582,
+            "playlisttrack": 1,
+            "time": 452,
+            "year": 1996,
+            "bitrate": 138338,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.wma",
-            "size": 1035322,
+            "mode": "vbr",
+            "mime": "application\/ogg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.ogg",
+            "size": 7826238,
             "mbid": "",
             "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -100,14 +42,74 @@
             "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "",
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
             "license": null,
-            "publisher": "",
+            "publisher": "archive.org",
             "language": "",
+            "lyrics": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
+            "replaygain_track_gain": "-12.210000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "82",
+            "title": "Vanvett",
+            "name": "Vanvett",
+            "artist": {
+                "id": "13",
+                "name": "IOK-1"
+            },
+            "album": {
+                "id": "7",
+                "name": "Sensorisk Deprivation"
+            },
+            "albumartist": {
+                "id": "13",
+                "name": "IOK-1"
+            },
+            "disk": 1,
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/02_-_IOK-1_-_Vanvett.flac",
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Dark Ambient"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 825,
+            "year": 2011,
+            "bitrate": 371855,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/x-flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=4&player=api&name=IOK-1%20-%20Vanvett.flac",
+            "size": 38389422,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "DNA Production release\r\nCatalogue # DNA 119",
+            "license": null,
+            "publisher": "archive.org",
+            "language": "",
+            "lyrics": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "-2.570000",
+            "replaygain_track_peak": "0.977000",
             "r128_album_gain": null,
             "r128_track_gain": null
         }

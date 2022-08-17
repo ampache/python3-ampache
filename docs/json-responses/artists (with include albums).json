@@ -22,7 +22,7 @@
                     "flag": 0,
                     "preciserating": null,
                     "rating": null,
-                    "averagerating": 5,
+                    "averagerating": null,
                     "mbid": null
                 }
             ],
@@ -34,7 +34,7 @@
             "flag": 0,
             "preciserating": null,
             "rating": null,
-            "averagerating": 5,
+            "averagerating": null,
             "mbid": "",
             "summary": " ",
             "time": 3873,
@@ -46,13 +46,13 @@
             "name": "Chi.Otic",
             "albums": [
                 {
-                    "id": "12",
+                    "id": "24",
                     "name": "Buried in Nausea",
                     "artist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists"
                     },
-                    "time": 1879,
+                    "time": 0,
                     "year": 2012,
                     "tracks": [],
                     "songcount": 9,
@@ -64,11 +64,32 @@
                             "name": "Punk"
                         }
                     ],
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
                     "flag": 0,
                     "preciserating": null,
                     "rating": null,
                     "averagerating": null,
+                    "mbid": null
+                },
+                {
+                    "id": "23",
+                    "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
+                    "artist": {
+                        "id": "12",
+                        "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+                    },
+                    "time": 0,
+                    "year": 2018,
+                    "tracks": [],
+                    "songcount": 2,
+                    "diskcount": 1,
+                    "type": null,
+                    "genre": [],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+                    "flag": 0,
+                    "preciserating": 1,
+                    "rating": 1,
+                    "averagerating": 1,
                     "mbid": null
                 }
             ],
@@ -92,13 +113,13 @@
             "name": "Comedown Kid",
             "albums": [
                 {
-                    "id": "12",
+                    "id": "24",
                     "name": "Buried in Nausea",
                     "artist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists"
                     },
-                    "time": 1879,
+                    "time": 0,
                     "year": 2012,
                     "tracks": [],
                     "songcount": 9,
@@ -110,11 +131,32 @@
                             "name": "Punk"
                         }
                     ],
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
                     "flag": 0,
                     "preciserating": null,
                     "rating": null,
                     "averagerating": null,
+                    "mbid": null
+                },
+                {
+                    "id": "23",
+                    "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
+                    "artist": {
+                        "id": "12",
+                        "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+                    },
+                    "time": 0,
+                    "year": 2018,
+                    "tracks": [],
+                    "songcount": 2,
+                    "diskcount": 1,
+                    "type": null,
+                    "genre": [],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+                    "flag": 0,
+                    "preciserating": 1,
+                    "rating": 1,
+                    "averagerating": 1,
                     "mbid": null
                 }
             ],

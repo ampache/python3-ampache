@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>9</total_count>
-  <album id="7">
-    <name><![CDATA[Sensorisk Deprivation]]></name>
-    <artist id="13"><![CDATA[IOK-1]]></artist>
-    <time>3428</time>
-    <year>2011</year>
-    <tracks/>
-    <songcount>4</songcount>
-    <diskcount>1</diskcount>
-    <type/>
-    <genre id="4"><![CDATA[Dark Ambient]]></genre>
-    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <mbid><![CDATA[]]></mbid>
-  </album>
   <album id="10">
     <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
     <artist id="16"><![CDATA[CARNÚN]]></artist>
@@ -31,7 +14,24 @@
     <flag>0</flag>
     <preciserating/>
     <rating/>
-    <averagerating>5</averagerating>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+  </album>
+  <album id="24">
+    <name><![CDATA[Buried in Nausea]]></name>
+    <artist id="38"><![CDATA[Various Artists]]></artist>
+    <time>0</time>
+    <year>2012</year>
+    <tracks/>
+    <songcount>9</songcount>
+    <diskcount>1</diskcount>
+    <type>compilation</type>
+    <genre id="7"><![CDATA[Punk]]></genre>
+    <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
     <mbid><![CDATA[]]></mbid>
   </album>
 </root>

@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4710">
-    <errorAction><![CDATA[system_update]]></errorAction>
-    <errorType><![CDATA[system]]></errorType>
-    <errorMessage><![CDATA[Bad Request]]></errorMessage>
-  </error>
+  <success code="1"><![CDATA[No update available]]></success>
 </root>

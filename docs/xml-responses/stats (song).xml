@@ -1,29 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <song id="118">
-    <title><![CDATA[As Pure as Possible]]></title>
-    <name><![CDATA[As Pure as Possible]]></name>
+  <song id="75">
+    <title><![CDATA[T - live]]></title>
+    <name><![CDATA[T - live]]></name>
+    <artist id="11"><![CDATA[structura]]></artist>
+    <album id="18"><![CDATA[Inominavel (live.v.01)]]></album>
+    <albumartist id="11"><![CDATA[structura]]></albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>6</track>
+    <genre id="3"><![CDATA[Noise]]></genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/06_structura_-_t_live.mp3]]></filename>
+    <playlisttrack>1</playlisttrack>
+    <time>248</time>
+    <year>2007</year>
+    <bitrate>192000</bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[cbr]]></mode>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=75&uid=4&player=api&name=structura%20-%20T%20-%20live.mp3]]></url>
+    <size>5986451</size>
+    <mbid><![CDATA[]]></mbid>
+    <album_mbid><![CDATA[]]></album_mbid>
+    <artist_mbid><![CDATA[]]></artist_mbid>
+    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels/>
+    <comment><![CDATA[http://enoughrecords.scene.org]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[archive.org]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>0.000000</replaygain_track_gain>
+    <replaygain_track_peak>0.000000</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="123">
+    <title><![CDATA[Go on, Take It Further]]></title>
+    <name><![CDATA[Go on, Take It Further]]></name>
     <artist id="36"><![CDATA[Comfort Fit]]></artist>
     <album id="21"><![CDATA[Forget and Remember]]></album>
     <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>9</track>
+    <track>18</track>
     <genre id="8"><![CDATA[Hip-Hop]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/9 - As Pure as Possible.mp3]]></filename>
-    <playlisttrack>1</playlisttrack>
-    <time>128</time>
+    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/18 - Go On, Take It Further.mp3]]></filename>
+    <playlisttrack>2</playlisttrack>
+    <time>69</time>
     <year>2005</year>
-    <bitrate>234690</bitrate>
+    <bitrate>206742</bitrate>
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
     <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=118&uid=4&player=api&name=Comfort%20Fit%20-%20As%20Pure%20as%20Possible.mp3]]></url>
-    <size>3789410</size>
-    <mbid><![CDATA[7a3d740d-5546-4900-88af-b97b42c3344e]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=123&uid=4&player=api&name=Comfort%20Fit%20-%20Go%20on-%20Take%20It%20Further.mp3]]></url>
+    <size>1795861</size>
+    <mbid><![CDATA[64f731fb-da3f-41d0-a08b-47ecce55a3e4]]></mbid>
+    <album_mbid><![CDATA[6e1d48f7-717c-416e-af35-5d2454a13af2]]></album_mbid>
+    <artist_mbid><![CDATA[e6e2b787-0b4c-4267-8161-310399b101a5]]></artist_mbid>
+    <albumartist_mbid><![CDATA[e6e2b787-0b4c-4267-8161-310399b101a5]]></albumartist_mbid>
     <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
@@ -33,60 +77,18 @@
     <catalog>4</catalog>
     <composer><![CDATA[]]></composer>
     <channels/>
-    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-09-comfort_fit-as_pure_as_possible
+    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-18-comfort_fit-go_on_take_it_further
 Comments: http://freemusicarchive.org/
 Curator: WFMU
 Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
     <license><![CDATA[]]></license>
     <publisher><![CDATA[Tokyo Dawn Records]]></publisher>
     <language/>
+    <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
     <replaygain_track_gain/>
     <replaygain_track_peak/>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="56">
-    <title><![CDATA[Black&BlueSmoke]]></title>
-    <name><![CDATA[Black&BlueSmoke]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
-    <album id="2"><![CDATA[Colorsmoke EP]]></album>
-    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>1</track>
-    <genre id="1"><![CDATA[Electronic]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3]]></filename>
-    <playlisttrack>2</playlisttrack>
-    <time>500</time>
-    <year>2007</year>
-    <bitrate>64000</bitrate>
-    <rate>22050</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
-    <size>4010069</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels/>
-    <comment><![CDATA[]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[20kbps rec.]]></publisher>
-    <language/>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain>-5.110000</replaygain_track_gain>
-    <replaygain_track_peak>1.000000</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

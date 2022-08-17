@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <song id="57">
-    <title><![CDATA[PurpleSmoke]]></title>
-    <name><![CDATA[PurpleSmoke]]></name>
+  <song id="54">
+    <title><![CDATA[Red&GreenSmoke]]></title>
+    <name><![CDATA[Red&GreenSmoke]]></name>
     <artist id="2"><![CDATA[Synthetic]]></artist>
     <album id="2"><![CDATA[Colorsmoke EP]]></album>
     <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>3</track>
+    <track>5</track>
     <genre id="1"><![CDATA[Electronic]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3]]></filename>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3]]></filename>
     <playlisttrack>1</playlisttrack>
-    <time>390</time>
+    <time>400</time>
     <year>2007</year>
     <bitrate>64000</bitrate>
     <rate>22050</rate>
     <mode><![CDATA[cbr]]></mode>
     <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
-    <size>3131519</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
+    <size>3209468</size>
     <mbid><![CDATA[]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+    <artist_mbid><![CDATA[1]]></artist_mbid>
+    <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
     <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
     <flag>0</flag>
     <preciserating/>
@@ -37,53 +37,11 @@
     <license><![CDATA[]]></license>
     <publisher><![CDATA[20kbps rec.]]></publisher>
     <language/>
+    <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-5.130000</replaygain_track_gain>
-    <replaygain_track_peak>1.000000</replaygain_track_peak>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="57">
-    <title><![CDATA[PurpleSmoke]]></title>
-    <name><![CDATA[PurpleSmoke]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
-    <album id="2"><![CDATA[Colorsmoke EP]]></album>
-    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>3</track>
-    <genre id="1"><![CDATA[Electronic]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3]]></filename>
-    <playlisttrack>2</playlisttrack>
-    <time>390</time>
-    <year>2007</year>
-    <bitrate>64000</bitrate>
-    <rate>22050</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
-    <size>3131519</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels/>
-    <comment><![CDATA[]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[20kbps rec.]]></publisher>
-    <language/>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain>-5.130000</replaygain_track_gain>
-    <replaygain_track_peak>1.000000</replaygain_track_peak>
+    <replaygain_track_gain>-2.880000</replaygain_track_gain>
+    <replaygain_track_peak>0.977000</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

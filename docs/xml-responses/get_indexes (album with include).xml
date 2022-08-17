@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>9</total_count>
-  <album id="12">
+  <album id="24">
     <name><![CDATA[Buried in Nausea]]></name>
-    <artist id="19"><![CDATA[Various Artists]]></artist>
-    <time>1879</time>
+    <artist id="38"><![CDATA[Various Artists]]></artist>
+    <time>0</time>
     <year>2012</year>
     <tracks>
       <song id="110">
         <title><![CDATA[I wanna walk through the fire]]></title>
         <name><![CDATA[I wanna walk through the fire]]></name>
         <artist id="23"><![CDATA[Manic Notion]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <album id="24"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="38"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>1</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/01ManicNotion-IWannaWalkThroughTheFire.m4a]]></filename>
@@ -28,8 +28,8 @@
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <albumartist_mbid><![CDATA[89ad4ac3-39f7-470e-963a-56509c546377]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -42,6 +42,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-5.150000</replaygain_track_gain>
@@ -53,8 +54,8 @@
         <title><![CDATA[He is the Master of War]]></title>
         <name><![CDATA[He is the Master of War]]></name>
         <artist id="26"><![CDATA[Stress Builds Character]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <album id="24"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="38"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>2</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a]]></filename>
@@ -70,8 +71,8 @@
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <albumartist_mbid><![CDATA[89ad4ac3-39f7-470e-963a-56509c546377]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -84,6 +85,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-10.740000</replaygain_track_gain>
@@ -95,8 +97,8 @@
         <title><![CDATA[Dance with the Devil]]></title>
         <name><![CDATA[Dance with the Devil]]></name>
         <artist id="34"><![CDATA[Comedown Kid]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <album id="24"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="38"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>3</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
@@ -112,8 +114,8 @@
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <albumartist_mbid><![CDATA[89ad4ac3-39f7-470e-963a-56509c546377]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -126,6 +128,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain/>
@@ -137,8 +140,8 @@
         <title><![CDATA[Representin]]></title>
         <name><![CDATA[Representin]]></name>
         <artist id="32"><![CDATA[Shorty Mac]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <album id="24"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="38"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>4</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3]]></filename>
@@ -150,12 +153,12 @@
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&player=api&name=Shorty%20Mac%20-%20Representin.mp3]]></url>
-        <size>3628327</size>
+        <size>3628199</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <albumartist_mbid><![CDATA[89ad4ac3-39f7-470e-963a-56509c546377]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -164,10 +167,11 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
+        <comment><![CDATA[http://archive.org/details/gt]]></comment>
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>1.910000</replaygain_track_gain>
@@ -179,8 +183,8 @@
         <title><![CDATA[The art of free expression]]></title>
         <name><![CDATA[The art of free expression]]></name>
         <artist id="35"><![CDATA[Tip-C]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <album id="24"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="38"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>5</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/05Tip-c-TheArtOfFreeExpression.wma]]></filename>
@@ -196,8 +200,8 @@
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <albumartist_mbid><![CDATA[89ad4ac3-39f7-470e-963a-56509c546377]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -210,6 +214,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain/>
@@ -221,8 +226,8 @@
         <title><![CDATA[I've been down this road before]]></title>
         <name><![CDATA[I've been down this road before]]></name>
         <artist id="21"><![CDATA[Tip-C (featuring Mike Beers)]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <album id="24"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="38"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>6</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma]]></filename>
@@ -237,9 +242,9 @@
         <size>1035322</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <artist_mbid><![CDATA[6]]></artist_mbid>
+        <albumartist_mbid><![CDATA[89ad4ac3-39f7-470e-963a-56509c546377]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -252,6 +257,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain/>
@@ -263,8 +269,8 @@
         <title><![CDATA[Are we going Crazy]]></title>
         <name><![CDATA[Are we going Crazy]]></name>
         <artist id="27"><![CDATA[Chi.Otic]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <album id="24"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="38"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>7</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
@@ -279,9 +285,9 @@
         <size>1776580</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <artist_mbid><![CDATA[7]]></artist_mbid>
+        <albumartist_mbid><![CDATA[89ad4ac3-39f7-470e-963a-56509c546377]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -294,6 +300,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain/>
@@ -305,8 +312,8 @@
         <title><![CDATA[Personal Truth]]></title>
         <name><![CDATA[Personal Truth]]></name>
         <artist id="33"><![CDATA[MxBxCx]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <album id="24"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="38"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>8</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/08Mxbxcx-PersonalTruth.mp3]]></filename>
@@ -318,12 +325,12 @@
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3]]></url>
-        <size>4693165</size>
+        <size>4693037</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <albumartist_mbid><![CDATA[89ad4ac3-39f7-470e-963a-56509c546377]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -332,10 +339,11 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels/>
-        <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
+        <comment><![CDATA[http://archive.org/details/gt]]></comment>
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-8.270000</replaygain_track_gain>
@@ -347,8 +355,8 @@
         <title><![CDATA[Arrest Me]]></title>
         <name><![CDATA[Arrest Me]]></name>
         <artist id="20"><![CDATA[R/B]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <album id="24"><![CDATA[Buried in Nausea]]></album>
+        <albumartist id="38"><![CDATA[Various Artists]]></albumartist>
         <disk><![CDATA[1]]></disk>
         <track>9</track>
         <genre id="7"><![CDATA[Punk]]></genre>
@@ -365,8 +373,8 @@
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+        <albumartist_mbid><![CDATA[89ad4ac3-39f7-470e-963a-56509c546377]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -379,6 +387,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-1.350000</replaygain_track_gain>
@@ -391,7 +400,7 @@
     <diskcount>1</diskcount>
     <type>compilation</type>
     <genre id="7"><![CDATA[Punk]]></genre>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
@@ -426,11 +435,11 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
-        <averagerating>2</averagerating>
+        <averagerating/>
         <playcount>1</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
@@ -439,6 +448,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>1.980000</replaygain_track_gain>
@@ -468,11 +478,11 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
-        <averagerating>5</averagerating>
+        <averagerating/>
         <playcount>0</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
@@ -481,6 +491,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-10.510000</replaygain_track_gain>
@@ -510,7 +521,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -523,6 +534,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-9.700000</replaygain_track_gain>
@@ -552,11 +564,11 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
-        <averagerating>4</averagerating>
+        <averagerating/>
         <playcount>0</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
@@ -565,6 +577,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-11.260000</replaygain_track_gain>
@@ -594,11 +607,11 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
-        <averagerating>3</averagerating>
+        <averagerating/>
         <playcount>0</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
@@ -607,6 +620,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-7.480000</replaygain_track_gain>
@@ -636,7 +650,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -649,6 +663,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-12.660000</replaygain_track_gain>
@@ -678,7 +693,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -691,6 +706,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-12.210000</replaygain_track_gain>
@@ -720,7 +736,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -733,6 +749,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-12.240000</replaygain_track_gain>
@@ -762,7 +779,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -775,6 +792,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-9.560000</replaygain_track_gain>
@@ -790,7 +808,7 @@
     <flag>0</flag>
     <preciserating/>
     <rating/>
-    <averagerating>5</averagerating>
+    <averagerating/>
     <mbid><![CDATA[]]></mbid>
   </album>
   <album id="2">
@@ -820,8 +838,8 @@
         <size>4010069</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
+        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -835,6 +853,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-5.110000</replaygain_track_gain>
@@ -863,13 +882,13 @@
         <size>1298295</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
+        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
-        <averagerating>1</averagerating>
+        <averagerating/>
         <playcount>0</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
@@ -878,6 +897,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain/>
@@ -906,8 +926,8 @@
         <size>2325568</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
+        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -921,6 +941,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>2.750000</replaygain_track_gain>
@@ -949,8 +970,8 @@
         <size>754935</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
+        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -964,6 +985,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain/>
@@ -992,8 +1014,8 @@
         <size>3131519</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
+        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1007,6 +1029,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-5.130000</replaygain_track_gain>
@@ -1035,8 +1058,8 @@
         <size>1014135</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
+        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1050,6 +1073,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain/>
@@ -1078,8 +1102,8 @@
         <size>2441886</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
+        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1093,6 +1117,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>0.960000</replaygain_track_gain>
@@ -1121,8 +1146,8 @@
         <size>792375</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
+        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1136,6 +1161,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain/>
@@ -1164,13 +1190,13 @@
         <size>3209468</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
+        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
-        <averagerating>1</averagerating>
+        <averagerating/>
         <playcount>0</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
@@ -1179,6 +1205,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-2.880000</replaygain_track_gain>
@@ -1207,8 +1234,8 @@
         <size>3209886</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
+        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1222,6 +1249,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-4.060000</replaygain_track_gain>
@@ -1250,8 +1278,8 @@
         <size>1044851</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
+        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1265,6 +1293,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain/>
@@ -1293,8 +1322,8 @@
         <size>1041065</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <artist_mbid><![CDATA[1]]></artist_mbid>
+        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -1308,6 +1337,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[20kbps rec.]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain/>
@@ -1368,6 +1398,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-4.310000</replaygain_track_gain>
@@ -1410,6 +1441,7 @@
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
+        <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
         <replaygain_track_gain>-4.320000</replaygain_track_gain>
@@ -1425,7 +1457,7 @@
     <flag>0</flag>
     <preciserating>3</preciserating>
     <rating>3</rating>
-    <averagerating>3</averagerating>
+    <averagerating/>
     <mbid><![CDATA[]]></mbid>
   </album>
 </root>

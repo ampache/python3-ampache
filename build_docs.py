@@ -427,7 +427,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         for child in playlist_create:
             if child.tag == 'playlist':
                 tmp_playlist = child.attrib['id']
-        single_playlist = tmp_playlist
+                single_playlist = tmp_playlist
     else:
         single_playlist = playlist_create['id']
 
@@ -741,14 +741,16 @@ def self_check(api_format, ampache_url, ampache_api, ampache_session):
         f.close()
 
         url_text = ampache_url.replace("https://", "")
-        url_text = ampache_url.replace("https://", "")
+        url_text = ampache_url.replace("http://", "")
         url_json = url_text.replace("/", "\\/")
         newdata = re.sub(url_text, "music.com.au", filedata)
         newdata = re.sub(url_text.replace("/", "\\/"), "music.com.au", newdata)
+        newdata = re.sub("http://music.com.au", "https://music.com.au", newdata)
+        newdata = re.sub("http:\\/\\/music.com.au", "https:\\/\\/music.com.au", newdata)
         newdata = re.sub(ampache_api, "eeb9f1b6056246a7d563f479f518bb34", newdata)
+        newdata = re.sub(ampache_session, "cfj3f237d563f479f5223k23189dbb34", newdata)
         newdata = re.sub('auth=[a-z0-9]*', "auth=eeb9f1b6056246a7d563f479f518bb34", newdata)
         newdata = re.sub('ssid=[a-z0-9]*', "ssid=cfj3f237d563f479f5223k23189dbb34", newdata)
-        newdata = re.sub(ampache_session, "cfj3f237d563f479f5223k23189dbb34", newdata)
 
         f = open("./docs/" + api_format + "-responses/" + files, 'w', encoding="utf-8")
         f.write(newdata)

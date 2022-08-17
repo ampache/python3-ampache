@@ -1,6 +1,69 @@
 {
     "song": [
         {
+            "id": "93",
+            "title": "Scribnus 3",
+            "name": "Scribnus 3",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found."
+            },
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found."
+            },
+            "disk": 1,
+            "track": 3,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/03_Scribnus_3.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 1,
+            "time": 641,
+            "year": 0,
+            "bitrate": 192000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3",
+            "size": 15400002,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 4,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": null,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": "",
+            "lyrics": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "1.530000",
+            "replaygain_track_peak": "0.989000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
             "id": "109",
             "title": "Dance with the Devil",
             "name": "Dance with the Devil",
@@ -9,18 +72,18 @@
                 "name": "Comedown Kid"
             },
             "album": {
-                "id": "12",
+                "id": "24",
                 "name": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "19",
+                "id": "38",
                 "name": "Various Artists"
             },
             "disk": 1,
             "track": 3,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
             "genre": [],
-            "playlisttrack": 1,
+            "playlisttrack": 2,
             "time": 116,
             "year": 2012,
             "bitrate": 32582,
@@ -31,9 +94,9 @@
             "size": 483444,
             "mbid": "",
             "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "artist_mbid": "",
+            "albumartist_mbid": "89ad4ac3-39f7-470e-963a-56509c546377",
+            "art": "https:\/\/music.com.au\/image.php?object_id=24&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -46,6 +109,7 @@
             "license": null,
             "publisher": "",
             "language": "",
+            "lyrics": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
             "replaygain_track_gain": null,
@@ -78,7 +142,7 @@
                     "name": "Hip-Hop"
                 }
             ],
-            "playlisttrack": 2,
+            "playlisttrack": 3,
             "time": 197,
             "year": 2005,
             "bitrate": 232690,
@@ -88,9 +152,9 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=126&uid=4&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3",
             "size": 5755191,
             "mbid": "6b582438-c034-47c2-86b0-61c63ec96b4b",
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
+            "album_mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+            "artist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
+            "albumartist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
             "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
@@ -104,6 +168,7 @@
             "license": null,
             "publisher": "Tokyo Dawn Records",
             "language": "",
+            "lyrics": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
             "replaygain_track_gain": null,
