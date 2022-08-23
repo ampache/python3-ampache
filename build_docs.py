@@ -384,7 +384,13 @@ def self_check(api_format, ampache_url, ampache_api, ampache_session):
         f.close()
 
         url_text = ampache_url.replace("https://", "")
+        url_text = ampache_url.replace("http://", "")
         newdata = re.sub(url_text, "music.com.au", filedata)
+        newdata = re.sub("CDATA\[\/media\/", "CDATA[/mnt/files-music/ampache-test/", newdata)
+        newdata = re.sub("\\\/media\\\/", "\\\/mnt\\\/files-music\\\/ampache-test\\\/", newdata)
+        newdata = re.sub(url_text.replace("/", "\\\/"), "music.com.au", newdata)
+        newdata = re.sub("http://music.com.au", "https://music.com.au", newdata)
+        newdata = re.sub("http:\\\/\\\/music.com.au", "https:\\\/\\\/music.com.au", newdata)
         newdata = re.sub(ampache_api, "eeb9f1b6056246a7d563f479f518bb34", newdata)
         newdata = re.sub(ampache_session, "cfj3f237d563f479f5223k23189dbb34", newdata)
         newdata = re.sub('auth=[a-z0-9]*', "auth=eeb9f1b6056246a7d563f479f518bb34", newdata)
