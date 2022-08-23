@@ -53,7 +53,7 @@ NEWS
 ====
 
 * Password handshake auth is available now.
-* This library only supports Ampache 5+ with a lot of significant change on the Ampache and library side
+* This library now supports every Ampache API release (3, 4 and 5)
 
 
 INSTALL
