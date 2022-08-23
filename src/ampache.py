@@ -3042,8 +3042,127 @@ class API(object):
     BACKCOMPAT FUNCTIONS
     --------------------
     """
-    tag = genre
-    tags = genres
-    tag_artists = genre_artists
-    tag_albums = genre_albums
-    tag_songs = genre_songs
+
+    def tags(self, filter_str: str = False,
+               exact: int = False, offset=0, limit=0):
+        """ tags
+            MINIMUM_API_VERSION=380001
+
+            This returns the tags (Tags) based on the specified filter
+
+            INPUTS
+            * filter_str = (string) search the name of a tag //optional
+            * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'tags',
+                'auth': self.AMPACHE_SESSION,
+                'exact': exact,
+                'filter': filter_str,
+                'offset': str(offset),
+                'limit': str(limit)}
+        if not filter_str:
+            data.pop('filter')
+        if not exact:
+            data.pop('exact')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tags')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def tag(self, filter_id: int):
+        """ tag
+            MINIMUM_API_VERSION=380001
+
+            This returns a single tag based on UID
+
+            INPUTS
+            * filter_id = (integer) $tag_id
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'tag',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tag')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def tag_artists(self, filter_id: int, offset=0, limit=0):
+        """ tag_artists
+            MINIMUM_API_VERSION=380001
+
+            This returns the artists associated with the tag in question as defined by the UID
+
+            INPUTS
+            * filter_id   = (integer) $tag_id
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'tag_artists',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'offset': str(offset),
+                'limit': str(limit)}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tag_artists')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def tag_albums(self, filter_id: int, offset=0, limit=0):
+        """ tag_albums
+            MINIMUM_API_VERSION=380001
+
+            This returns the albums associated with the tag in question
+
+            INPUTS
+            * filter_id = (integer) $tag_id
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'tag_albums',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'offset': str(offset),
+                'limit': str(limit)}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tag_albums')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def tag_songs(self, filter_id: int, offset=0, limit=0):
+        """ tag_songs
+            MINIMUM_API_VERSION=380001
+
+            returns the songs for this tag
+
+            INPUTS
+            * filter_id = (integer) $tag_id
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'tag_songs',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'offset': str(offset),
+                'limit': str(limit)}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tag_songs')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
