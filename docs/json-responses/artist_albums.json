@@ -1,29 +1,29 @@
 {
     "album": [
         {
-            "id": "2",
-            "name": "Colorsmoke EP",
+            "id": "12",
+            "name": "Buried in Nausea",
             "artist": {
-                "id": "2",
-                "name": "Synthetic"
+                "id": "19",
+                "name": "Various Artists"
             },
-            "time": 4568,
-            "year": 2007,
+            "time": 1879,
+            "year": 2012,
             "tracks": [],
-            "songcount": 12,
+            "songcount": 9,
             "diskcount": 1,
-            "type": null,
+            "type": "compilation",
             "genre": [
                 {
-                    "id": "1",
-                    "name": "Electronic"
+                    "id": "7",
+                    "name": "Punk"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 1,
-            "preciserating": 5,
-            "rating": 5,
-            "averagerating": 3,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
             "mbid": null
         }
     ]
