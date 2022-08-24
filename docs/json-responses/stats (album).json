@@ -1,32 +1,6 @@
 {
     "album": [
         {
-            "id": "2",
-            "name": "Colorsmoke EP",
-            "artist": {
-                "id": "2",
-                "name": "Synthetic"
-            },
-            "time": 4568,
-            "year": 2007,
-            "tracks": [],
-            "songcount": 12,
-            "diskcount": 1,
-            "type": null,
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 1,
-            "preciserating": 5,
-            "rating": 5,
-            "averagerating": 3,
-            "mbid": null
-        },
-        {
             "id": "10",
             "name": "CARN\u00daN - MALKUTH (Demo 1996)",
             "artist": {
@@ -41,6 +15,32 @@
             "type": null,
             "genre": [],
             "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": null
+        },
+        {
+            "id": "12",
+            "name": "Buried in Nausea",
+            "artist": {
+                "id": "19",
+                "name": "Various Artists"
+            },
+            "time": 1879,
+            "year": 2012,
+            "tracks": [],
+            "songcount": 9,
+            "diskcount": 1,
+            "type": "compilation",
+            "genre": [
+                {
+                    "id": "7",
+                    "name": "Punk"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
             "preciserating": null,
             "rating": null,
