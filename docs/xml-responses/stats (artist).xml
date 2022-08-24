@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>2</total_count>
-  <album id="7">
-    <name><![CDATA[Sensorisk Deprivation]]></name>
-    <artist id="13"><![CDATA[IOK-1]]></artist>
-    <year>2011</year>
-    <tracks>4</tracks>
-    <disk>1</disk>
-    <tag id="4" count="1"><![CDATA[Dark Ambient]]></tag>
-    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <mbid/>
-  </album>
   <album id="21">
     <name><![CDATA[Forget and Remember]]></name>
     <artist id="36"><![CDATA[Comfort Fit]]></artist>
@@ -26,5 +13,17 @@
     <rating/>
     <averagerating/>
     <mbid>6e1d48f7-717c-416e-af35-5d2454a13af2</mbid>
+  </album>
+  <album id="10">
+    <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+    <artist id="16"><![CDATA[CARNÚN]]></artist>
+    <year>1996</year>
+    <tracks>9</tracks>
+    <disk>1</disk>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid/>
   </album>
 </root>

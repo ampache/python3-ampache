@@ -3,7 +3,22 @@
   <total_count>1</total_count>
   <artist id="19">
     <name><![CDATA[Various Artists]]></name>
-    <albums>1</albums>
+    <albums>
+      <total_count>1</total_count>
+      <album id="12">
+        <name><![CDATA[Buried in Nausea]]></name>
+        <artist id="0"><![CDATA[Various]]></artist>
+        <year>2012</year>
+        <tracks>9</tracks>
+        <disk>1</disk>
+        <tag id="7" count="1"><![CDATA[Punk]]></tag>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <mbid/>
+      </album>
+    </albums>
     <songs>0</songs>
     <art><![CDATA[https://music.com.au/image.php?object_id=19&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
     <preciserating>0</preciserating>

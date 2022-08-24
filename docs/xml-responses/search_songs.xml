@@ -1,4 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>0</total_count>
+  <total_count>1</total_count>
+  <song id="109">
+    <title><![CDATA[Dance with the Devil]]></title>
+    <name><![CDATA[Dance with the Devil]]></name>
+    <artist id="34"><![CDATA[Comedown Kid]]></artist>
+    <album id="12"><![CDATA[Buried in Nausea]]></album>
+    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
+    <track>3</track>
+    <time>116</time>
+    <year>2012</year>
+    <bitrate>32582</bitrate>
+    <rate>44100</rate>
+    <mode>cbr</mode>
+    <mime>audio/x-ms-wma</mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.wma]]></url>
+    <size>483444</size>
+    <mbid/>
+    <album_mbid/>
+    <artist_mbid/>
+    <albumartist_mbid/>
+    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <preciserating>0</preciserating>
+    <rating>0</rating>
+    <averagerating>0</averagerating>
+    <composer><![CDATA[]]></composer>
+    <channels/>
+    <comment><![CDATA[]]></comment>
+    <publisher><![CDATA[]]></publisher>
+    <language/>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
+  </song>
 </root>
