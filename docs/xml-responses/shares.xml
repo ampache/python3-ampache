@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>3</total_count>
+  <total_count>2</total_count>
   <share id="1">
     <name><![CDATA[Creeping Lawler 2]]></name>
     <user><![CDATA[user]]></user>
@@ -32,21 +32,5 @@
     <secret><![CDATA[qq6SPPmy]]></secret>
     <public_url><![CDATA[https://music.com.au/share.php?id=2&secret=qq6SPPmy]]></public_url>
     <description><![CDATA[Buried in Nausea (Various Artists)]]></description>
-  </share>
-  <share id="7">
-    <name><![CDATA[Red&GreenSmoke]]></name>
-    <user><![CDATA[user]]></user>
-    <allow_stream>1</allow_stream>
-    <allow_download>1</allow_download>
-    <creation_date><![CDATA[1660711714]]></creation_date>
-    <lastvisit_date><![CDATA[0]]></lastvisit_date>
-    <object_type><![CDATA[song]]></object_type>
-    <object_id>54</object_id>
-    <expire_days>7</expire_days>
-    <max_counter>0</max_counter>
-    <counter>0</counter>
-    <secret><![CDATA[AayxCs3R]]></secret>
-    <public_url><![CDATA[https://music.com.au/share.php?id=7&secret=AayxCs3R]]></public_url>
-    <description><![CDATA[Red&GreenSmoke]]></description>
   </share>
 </root>

@@ -1,38 +1,43 @@
 [
     {
-        "id": "98",
-        "title": "In The Seven Woods",
-        "name": "In The Seven Woods",
+        "id": "58",
+        "title": "BrownSmoke",
+        "name": "BrownSmoke",
         "artist": {
-            "id": "16",
-            "name": "CARN\u00daN"
+            "id": "2",
+            "name": "Synthetic"
         },
         "album": {
-            "id": "10",
-            "name": "CARN\u00daN - MALKUTH (Demo 1996)"
+            "id": "2",
+            "name": "Colorsmoke EP"
         },
         "albumartist": {
-            "id": "16",
-            "name": "CARN\u00daN"
+            "id": "2",
+            "name": "Synthetic"
         },
         "disk": 1,
-        "track": 3,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/03InTheSevenWoods.ogg",
-        "tag": [],
+        "track": 4,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
+        "tag": [
+            {
+                "id": "1",
+                "name": "Electronic"
+            }
+        ],
         "playlisttrack": 1,
-        "time": 420,
-        "year": 1996,
-        "bitrate": 84423,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "application\/ogg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.ogg",
-        "size": 4444403,
+        "time": 304,
+        "year": 2007,
+        "bitrate": 64000,
+        "rate": 22050,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
+        "size": 2441886,
         "mbid": "",
         "album_mbid": null,
-        "artist_mbid": "",
-        "albumartist_mbid": "",
-        "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "artist_mbid": "1",
+        "albumartist_mbid": "1",
+        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -41,50 +46,59 @@
         "catalog": 1,
         "composer": "",
         "channels": null,
-        "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+        "comment": "",
         "license": null,
-        "publisher": "archive.org",
+        "publisher": "20kbps rec.",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-9.700000",
-        "replaygain_track_peak": "1.000000",
-        "genre": []
+        "replaygain_track_gain": "0.960000",
+        "replaygain_track_peak": "0.912000",
+        "genre": [
+            {
+                "name": "Electronic"
+            }
+        ]
     },
     {
-        "id": "101",
-        "title": "Rehearsal Tape (1996)",
-        "name": "Rehearsal Tape (1996)",
+        "id": "64",
+        "title": "Black&BlueSmoke",
+        "name": "Black&BlueSmoke",
         "artist": {
-            "id": "16",
-            "name": "CARN\u00daN"
+            "id": "2",
+            "name": "Synthetic"
         },
         "album": {
-            "id": "10",
-            "name": "CARN\u00daN - MALKUTH (Demo 1996)"
+            "id": "2",
+            "name": "Colorsmoke EP"
         },
         "albumartist": {
-            "id": "16",
-            "name": "CARN\u00daN"
+            "id": "2",
+            "name": "Synthetic"
         },
         "disk": 1,
-        "track": 9,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/09RehearsalTape1996.ogg",
-        "tag": [],
+        "track": 1,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
+        "tag": [
+            {
+                "id": "1",
+                "name": "Electronic"
+            }
+        ],
         "playlisttrack": 2,
-        "time": 980,
-        "year": 1996,
-        "bitrate": 66912,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "application\/ogg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.ogg",
-        "size": 8219821,
+        "time": 500,
+        "year": 2007,
+        "bitrate": 20627,
+        "rate": 22050,
+        "mode": "cbr",
+        "mime": "audio\/x-ms-wma",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.wma",
+        "size": 1298295,
         "mbid": "",
         "album_mbid": null,
-        "artist_mbid": "",
-        "albumartist_mbid": "",
-        "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "artist_mbid": "1",
+        "albumartist_mbid": "1",
+        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -93,14 +107,18 @@
         "catalog": 1,
         "composer": "",
         "channels": null,
-        "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+        "comment": "Made with Sony ACID 5",
         "license": null,
-        "publisher": "archive.org",
+        "publisher": "20kbps rec.",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "-9.560000",
-        "replaygain_track_peak": "1.000000",
-        "genre": []
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": [
+            {
+                "name": "Electronic"
+            }
+        ]
     }
 ]

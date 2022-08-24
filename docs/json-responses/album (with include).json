@@ -1,48 +1,53 @@
 [
     {
-        "id": "12",
-        "name": "Buried in Nausea",
+        "id": "2",
+        "name": "Colorsmoke EP",
         "artist": {
-            "id": "19",
-            "name": "Various Artists"
+            "id": "2",
+            "name": "Synthetic"
         },
-        "time": 1879,
-        "year": 2012,
+        "time": 4568,
+        "year": 2007,
         "tracks": [
             {
-                "id": "110",
-                "title": "I wanna walk through the fire",
-                "name": "I wanna walk through the fire",
+                "id": "56",
+                "title": "Black&BlueSmoke",
+                "name": "Black&BlueSmoke",
                 "artist": {
-                    "id": "23",
-                    "name": "Manic Notion"
+                    "id": "2",
+                    "name": "Synthetic"
                 },
                 "album": {
-                    "id": "12",
-                    "name": "Buried in Nausea"
+                    "id": "2",
+                    "name": "Colorsmoke EP"
                 },
                 "albumartist": {
-                    "id": "19",
-                    "name": "Various Artists"
+                    "id": "2",
+                    "name": "Synthetic"
                 },
                 "disk": 1,
                 "track": 1,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/01ManicNotion-IWannaWalkThroughTheFire.m4a",
-                "tag": [],
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
+                "tag": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
                 "playlisttrack": 1,
-                "time": 197,
-                "year": 2012,
-                "bitrate": 267320,
-                "rate": 44100,
-                "mode": "vbr",
-                "mime": "audio\/mp4",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.m4a",
-                "size": 6651911,
+                "time": 500,
+                "year": 2007,
+                "bitrate": 64000,
+                "rate": 22050,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+                "size": 4010069,
                 "mbid": "",
                 "album_mbid": null,
-                "artist_mbid": "",
-                "albumartist_mbid": "",
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                "artist_mbid": "1",
+                "albumartist_mbid": "1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
                 "flag": 0,
                 "preciserating": null,
                 "rating": null,
@@ -53,48 +58,118 @@
                 "channels": null,
                 "comment": "",
                 "license": null,
-                "publisher": "",
+                "publisher": "20kbps rec.",
                 "language": "",
                 "replaygain_album_gain": null,
                 "replaygain_album_peak": null,
-                "replaygain_track_gain": "-5.150000",
-                "replaygain_track_peak": "0.989000",
-                "genre": []
+                "replaygain_track_gain": "-5.110000",
+                "replaygain_track_peak": "1.000000",
+                "genre": [
+                    {
+                        "name": "Electronic"
+                    }
+                ]
             },
             {
-                "id": "114",
-                "title": "He is the Master of War",
-                "name": "He is the Master of War",
+                "id": "64",
+                "title": "Black&BlueSmoke",
+                "name": "Black&BlueSmoke",
                 "artist": {
-                    "id": "26",
-                    "name": "Stress Builds Character"
+                    "id": "2",
+                    "name": "Synthetic"
                 },
                 "album": {
-                    "id": "12",
-                    "name": "Buried in Nausea"
+                    "id": "2",
+                    "name": "Colorsmoke EP"
                 },
                 "albumartist": {
-                    "id": "19",
-                    "name": "Various Artists"
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "disk": 1,
+                "track": 1,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
+                "tag": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "playlisttrack": 2,
+                "time": 500,
+                "year": 2007,
+                "bitrate": 20627,
+                "rate": 22050,
+                "mode": "cbr",
+                "mime": "audio\/x-ms-wma",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.wma",
+                "size": 1298295,
+                "mbid": "",
+                "album_mbid": null,
+                "artist_mbid": "1",
+                "albumartist_mbid": "1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "",
+                "channels": null,
+                "comment": "Made with Sony ACID 5",
+                "license": null,
+                "publisher": "20kbps rec.",
+                "language": "",
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": null,
+                "replaygain_track_peak": null,
+                "genre": [
+                    {
+                        "name": "Electronic"
+                    }
+                ]
+            },
+            {
+                "id": "59",
+                "title": "YellowSmoke",
+                "name": "YellowSmoke",
+                "artist": {
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "album": {
+                    "id": "2",
+                    "name": "Colorsmoke EP"
+                },
+                "albumartist": {
+                    "id": "2",
+                    "name": "Synthetic"
                 },
                 "disk": 1,
                 "track": 2,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a",
-                "tag": [],
-                "playlisttrack": 2,
-                "time": 233,
-                "year": 2012,
-                "bitrate": 256245,
-                "rate": 44100,
-                "mode": "vbr",
-                "mime": "audio\/mp4",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.m4a",
-                "size": 7535126,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
+                "tag": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "playlisttrack": 3,
+                "time": 290,
+                "year": 2007,
+                "bitrate": 64000,
+                "rate": 22050,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
+                "size": 2325568,
                 "mbid": "",
                 "album_mbid": null,
-                "artist_mbid": "",
-                "albumartist_mbid": "",
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                "artist_mbid": "1",
+                "albumartist_mbid": "1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
                 "flag": 0,
                 "preciserating": null,
                 "rating": null,
@@ -105,48 +180,118 @@
                 "channels": null,
                 "comment": "",
                 "license": null,
-                "publisher": "",
+                "publisher": "20kbps rec.",
                 "language": "",
                 "replaygain_album_gain": null,
                 "replaygain_album_peak": null,
-                "replaygain_track_gain": "-10.740000",
-                "replaygain_track_peak": "1.035000",
-                "genre": []
+                "replaygain_track_gain": "2.750000",
+                "replaygain_track_peak": "0.716000",
+                "genre": [
+                    {
+                        "name": "Electronic"
+                    }
+                ]
             },
             {
-                "id": "109",
-                "title": "Dance with the Devil",
-                "name": "Dance with the Devil",
+                "id": "65",
+                "title": "YellowSmoke",
+                "name": "YellowSmoke",
                 "artist": {
-                    "id": "34",
-                    "name": "Comedown Kid"
+                    "id": "2",
+                    "name": "Synthetic"
                 },
                 "album": {
-                    "id": "12",
-                    "name": "Buried in Nausea"
+                    "id": "2",
+                    "name": "Colorsmoke EP"
                 },
                 "albumartist": {
-                    "id": "19",
-                    "name": "Various Artists"
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "disk": 1,
+                "track": 2,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/02-Synthetic_-_YellowSmoke20k22hS.wma",
+                "tag": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "playlisttrack": 4,
+                "time": 290,
+                "year": 2007,
+                "bitrate": 20627,
+                "rate": 22050,
+                "mode": "cbr",
+                "mime": "audio\/x-ms-wma",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.wma",
+                "size": 754935,
+                "mbid": "",
+                "album_mbid": null,
+                "artist_mbid": "1",
+                "albumartist_mbid": "1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "",
+                "channels": null,
+                "comment": "Made with Sony ACID 5",
+                "license": null,
+                "publisher": "20kbps rec.",
+                "language": "",
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": null,
+                "replaygain_track_peak": null,
+                "genre": [
+                    {
+                        "name": "Electronic"
+                    }
+                ]
+            },
+            {
+                "id": "57",
+                "title": "PurpleSmoke",
+                "name": "PurpleSmoke",
+                "artist": {
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "album": {
+                    "id": "2",
+                    "name": "Colorsmoke EP"
+                },
+                "albumartist": {
+                    "id": "2",
+                    "name": "Synthetic"
                 },
                 "disk": 1,
                 "track": 3,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
-                "tag": [],
-                "playlisttrack": 3,
-                "time": 116,
-                "year": 2012,
-                "bitrate": 32582,
-                "rate": 44100,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3",
+                "tag": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "playlisttrack": 5,
+                "time": 390,
+                "year": 2007,
+                "bitrate": 64000,
+                "rate": 22050,
                 "mode": "cbr",
-                "mime": "audio\/x-ms-wma",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.wma",
-                "size": 483444,
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.mp3",
+                "size": 3131519,
                 "mbid": "",
                 "album_mbid": null,
-                "artist_mbid": "",
-                "albumartist_mbid": "",
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                "artist_mbid": "1",
+                "albumartist_mbid": "1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
                 "flag": 0,
                 "preciserating": null,
                 "rating": null,
@@ -157,48 +302,118 @@
                 "channels": null,
                 "comment": "",
                 "license": null,
-                "publisher": "",
+                "publisher": "20kbps rec.",
+                "language": "",
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": "-5.130000",
+                "replaygain_track_peak": "1.000000",
+                "genre": [
+                    {
+                        "name": "Electronic"
+                    }
+                ]
+            },
+            {
+                "id": "62",
+                "title": "PurpleSmoke",
+                "name": "PurpleSmoke",
+                "artist": {
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "album": {
+                    "id": "2",
+                    "name": "Colorsmoke EP"
+                },
+                "albumartist": {
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "disk": 1,
+                "track": 3,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma",
+                "tag": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "playlisttrack": 6,
+                "time": 390,
+                "year": 2007,
+                "bitrate": 20627,
+                "rate": 22050,
+                "mode": "cbr",
+                "mime": "audio\/x-ms-wma",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.wma",
+                "size": 1014135,
+                "mbid": "",
+                "album_mbid": null,
+                "artist_mbid": "1",
+                "albumartist_mbid": "1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "",
+                "channels": null,
+                "comment": "Made with Sony ACID 5",
+                "license": null,
+                "publisher": "20kbps rec.",
                 "language": "",
                 "replaygain_album_gain": null,
                 "replaygain_album_peak": null,
                 "replaygain_track_gain": null,
                 "replaygain_track_peak": null,
-                "genre": []
+                "genre": [
+                    {
+                        "name": "Electronic"
+                    }
+                ]
             },
             {
-                "id": "113",
-                "title": "Representin",
-                "name": "Representin",
+                "id": "58",
+                "title": "BrownSmoke",
+                "name": "BrownSmoke",
                 "artist": {
-                    "id": "32",
-                    "name": "Shorty Mac"
+                    "id": "2",
+                    "name": "Synthetic"
                 },
                 "album": {
-                    "id": "12",
-                    "name": "Buried in Nausea"
+                    "id": "2",
+                    "name": "Colorsmoke EP"
                 },
                 "albumartist": {
-                    "id": "19",
-                    "name": "Various Artists"
+                    "id": "2",
+                    "name": "Synthetic"
                 },
                 "disk": 1,
                 "track": 4,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
-                "tag": [],
-                "playlisttrack": 4,
-                "time": 234,
-                "year": 2012,
-                "bitrate": 123814,
-                "rate": 44100,
-                "mode": "vbr",
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
+                "tag": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "playlisttrack": 7,
+                "time": 304,
+                "year": 2007,
+                "bitrate": 64000,
+                "rate": 22050,
+                "mode": "cbr",
                 "mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
-                "size": 3628327,
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
+                "size": 2441886,
                 "mbid": "",
                 "album_mbid": null,
-                "artist_mbid": "",
-                "albumartist_mbid": "",
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                "artist_mbid": "1",
+                "albumartist_mbid": "1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
                 "flag": 0,
                 "preciserating": null,
                 "rating": null,
@@ -207,263 +422,120 @@
                 "catalog": 1,
                 "composer": "",
                 "channels": null,
-                "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+                "comment": "",
                 "license": null,
-                "publisher": "archive.org",
+                "publisher": "20kbps rec.",
                 "language": "",
                 "replaygain_album_gain": null,
                 "replaygain_album_peak": null,
-                "replaygain_track_gain": "1.910000",
-                "replaygain_track_peak": "0.851000",
-                "genre": []
+                "replaygain_track_gain": "0.960000",
+                "replaygain_track_peak": "0.912000",
+                "genre": [
+                    {
+                        "name": "Electronic"
+                    }
+                ]
             },
             {
-                "id": "111",
-                "title": "The art of free expression",
-                "name": "The art of free expression",
+                "id": "60",
+                "title": "BrownSmoke",
+                "name": "BrownSmoke",
                 "artist": {
-                    "id": "35",
-                    "name": "Tip-C"
+                    "id": "2",
+                    "name": "Synthetic"
                 },
                 "album": {
-                    "id": "12",
-                    "name": "Buried in Nausea"
+                    "id": "2",
+                    "name": "Colorsmoke EP"
                 },
                 "albumartist": {
-                    "id": "19",
-                    "name": "Various Artists"
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "disk": 1,
+                "track": 4,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
+                "tag": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "playlisttrack": 8,
+                "time": 304,
+                "year": 2007,
+                "bitrate": 20627,
+                "rate": 22050,
+                "mode": "cbr",
+                "mime": "audio\/x-ms-wma",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma",
+                "size": 792375,
+                "mbid": "",
+                "album_mbid": null,
+                "artist_mbid": "1",
+                "albumartist_mbid": "1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "",
+                "channels": null,
+                "comment": "Made with Sony ACID 5",
+                "license": null,
+                "publisher": "20kbps rec.",
+                "language": "",
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": null,
+                "replaygain_track_peak": null,
+                "genre": [
+                    {
+                        "name": "Electronic"
+                    }
+                ]
+            },
+            {
+                "id": "54",
+                "title": "Red&GreenSmoke",
+                "name": "Red&GreenSmoke",
+                "artist": {
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "album": {
+                    "id": "2",
+                    "name": "Colorsmoke EP"
+                },
+                "albumartist": {
+                    "id": "2",
+                    "name": "Synthetic"
                 },
                 "disk": 1,
                 "track": 5,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/05Tip-c-TheArtOfFreeExpression.wma",
-                "tag": [],
-                "playlisttrack": 5,
-                "time": 110,
-                "year": 2012,
-                "bitrate": 32582,
-                "rate": 44100,
-                "mode": "cbr",
-                "mime": "audio\/x-ms-wma",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.wma",
-                "size": 460498,
-                "mbid": "",
-                "album_mbid": null,
-                "artist_mbid": "",
-                "albumartist_mbid": "",
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": "",
-                "channels": null,
-                "comment": "",
-                "license": null,
-                "publisher": "",
-                "language": "",
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": null,
-                "replaygain_track_peak": null,
-                "genre": []
-            },
-            {
-                "id": "108",
-                "title": "I've been down this road before",
-                "name": "I've been down this road before",
-                "artist": {
-                    "id": "21",
-                    "name": "Tip-C (featuring Mike Beers)"
-                },
-                "album": {
-                    "id": "12",
-                    "name": "Buried in Nausea"
-                },
-                "albumartist": {
-                    "id": "19",
-                    "name": "Various Artists"
-                },
-                "disk": 1,
-                "track": 6,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
-                "tag": [],
-                "playlisttrack": 6,
-                "time": 252,
-                "year": 2012,
-                "bitrate": 32582,
-                "rate": 44100,
-                "mode": "cbr",
-                "mime": "audio\/x-ms-wma",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.wma",
-                "size": 1035322,
-                "mbid": "",
-                "album_mbid": null,
-                "artist_mbid": "6",
-                "albumartist_mbid": "",
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": "",
-                "channels": null,
-                "comment": "",
-                "license": null,
-                "publisher": "",
-                "language": "",
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": null,
-                "replaygain_track_peak": null,
-                "genre": []
-            },
-            {
-                "id": "115",
-                "title": "Are we going Crazy",
-                "name": "Are we going Crazy",
-                "artist": {
-                    "id": "27",
-                    "name": "Chi.Otic"
-                },
-                "album": {
-                    "id": "12",
-                    "name": "Buried in Nausea"
-                },
-                "albumartist": {
-                    "id": "19",
-                    "name": "Various Artists"
-                },
-                "disk": 1,
-                "track": 7,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
-                "tag": [],
-                "playlisttrack": 7,
-                "time": 433,
-                "year": 2012,
-                "bitrate": 32582,
-                "rate": 44100,
-                "mode": "cbr",
-                "mime": "audio\/x-ms-wma",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.wma",
-                "size": 1776580,
-                "mbid": "",
-                "album_mbid": null,
-                "artist_mbid": "7",
-                "albumartist_mbid": "",
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": "",
-                "channels": null,
-                "comment": "",
-                "license": null,
-                "publisher": "",
-                "language": "",
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": null,
-                "replaygain_track_peak": null,
-                "genre": []
-            },
-            {
-                "id": "112",
-                "title": "Personal Truth",
-                "name": "Personal Truth",
-                "artist": {
-                    "id": "33",
-                    "name": "MxBxCx"
-                },
-                "album": {
-                    "id": "12",
-                    "name": "Buried in Nausea"
-                },
-                "albumartist": {
-                    "id": "19",
-                    "name": "Various Artists"
-                },
-                "disk": 1,
-                "track": 8,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/08Mxbxcx-PersonalTruth.mp3",
-                "tag": [],
-                "playlisttrack": 8,
-                "time": 208,
-                "year": 2012,
-                "bitrate": 179860,
-                "rate": 44100,
-                "mode": "vbr",
-                "mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3",
-                "size": 4693165,
-                "mbid": "",
-                "album_mbid": null,
-                "artist_mbid": "",
-                "albumartist_mbid": "",
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": "",
-                "channels": null,
-                "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
-                "license": null,
-                "publisher": "archive.org",
-                "language": "",
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": "-8.270000",
-                "replaygain_track_peak": "0.881000",
-                "genre": []
-            },
-            {
-                "id": "107",
-                "title": "Arrest Me",
-                "name": "Arrest Me",
-                "artist": {
-                    "id": "20",
-                    "name": "R\/B"
-                },
-                "album": {
-                    "id": "12",
-                    "name": "Buried in Nausea"
-                },
-                "albumartist": {
-                    "id": "19",
-                    "name": "Various Artists"
-                },
-                "disk": 1,
-                "track": 9,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/09R_b-ArrestMe.m4a",
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
                 "tag": [
                     {
-                        "id": "7",
-                        "name": "Punk"
+                        "id": "1",
+                        "name": "Electronic"
                     }
                 ],
                 "playlisttrack": 9,
-                "time": 96,
-                "year": 2012,
-                "bitrate": 252864,
-                "rate": 44100,
-                "mode": "vbr",
-                "mime": "audio\/mp4",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a",
-                "size": 3091727,
+                "time": 400,
+                "year": 2007,
+                "bitrate": 64000,
+                "rate": 22050,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+                "size": 3209468,
                 "mbid": "",
                 "album_mbid": null,
-                "artist_mbid": "",
-                "albumartist_mbid": "",
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+                "artist_mbid": "1",
+                "albumartist_mbid": "1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
                 "flag": 0,
                 "preciserating": null,
                 "rating": null,
@@ -474,33 +546,216 @@
                 "channels": null,
                 "comment": "",
                 "license": null,
-                "publisher": "",
+                "publisher": "20kbps rec.",
                 "language": "",
                 "replaygain_album_gain": null,
                 "replaygain_album_peak": null,
-                "replaygain_track_gain": "-1.350000",
-                "replaygain_track_peak": "0.881000",
+                "replaygain_track_gain": "-2.880000",
+                "replaygain_track_peak": "0.977000",
                 "genre": [
                     {
-                        "name": "Punk"
+                        "name": "Electronic"
+                    }
+                ]
+            },
+            {
+                "id": "55",
+                "title": "Red&GreenSmoke",
+                "name": "Red&GreenSmoke",
+                "artist": {
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "album": {
+                    "id": "2",
+                    "name": "Colorsmoke EP"
+                },
+                "albumartist": {
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "disk": 1,
+                "track": 5,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
+                "tag": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "playlisttrack": 10,
+                "time": 400,
+                "year": 2007,
+                "bitrate": 64000,
+                "rate": 22050,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+                "size": 3209886,
+                "mbid": "",
+                "album_mbid": null,
+                "artist_mbid": "1",
+                "albumartist_mbid": "1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 1,
+                "catalog": 1,
+                "composer": "",
+                "channels": null,
+                "comment": "",
+                "license": null,
+                "publisher": "20kbps rec.",
+                "language": "",
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": "-4.060000",
+                "replaygain_track_peak": "1.000000",
+                "genre": [
+                    {
+                        "name": "Electronic"
+                    }
+                ]
+            },
+            {
+                "id": "61",
+                "title": "Red&GreenSmoke",
+                "name": "Red&GreenSmoke",
+                "artist": {
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "album": {
+                    "id": "2",
+                    "name": "Colorsmoke EP"
+                },
+                "albumartist": {
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "disk": 1,
+                "track": 5,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/05-Synthetic_-_RedGreenSmokePM20k44khM.wma",
+                "tag": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "playlisttrack": 11,
+                "time": 400,
+                "year": 2007,
+                "bitrate": 20627,
+                "rate": 44100,
+                "mode": "cbr",
+                "mime": "audio\/x-ms-wma",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.wma",
+                "size": 1044851,
+                "mbid": "",
+                "album_mbid": null,
+                "artist_mbid": "1",
+                "albumartist_mbid": "1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "",
+                "channels": null,
+                "comment": "Made with Sony ACID 5",
+                "license": null,
+                "publisher": "20kbps rec.",
+                "language": "",
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": null,
+                "replaygain_track_peak": null,
+                "genre": [
+                    {
+                        "name": "Electronic"
+                    }
+                ]
+            },
+            {
+                "id": "63",
+                "title": "Red&GreenSmoke",
+                "name": "Red&GreenSmoke",
+                "artist": {
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "album": {
+                    "id": "2",
+                    "name": "Colorsmoke EP"
+                },
+                "albumartist": {
+                    "id": "2",
+                    "name": "Synthetic"
+                },
+                "disk": 1,
+                "track": 5,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/05-Synthetic_-_RedGreenSmokePM20k22khS.wma",
+                "tag": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "playlisttrack": 12,
+                "time": 400,
+                "year": 2007,
+                "bitrate": 20627,
+                "rate": 22050,
+                "mode": "cbr",
+                "mime": "audio\/x-ms-wma",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=63&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.wma",
+                "size": 1041065,
+                "mbid": "",
+                "album_mbid": null,
+                "artist_mbid": "1",
+                "albumartist_mbid": "1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "",
+                "channels": null,
+                "comment": "Made with Sony ACID 5",
+                "license": null,
+                "publisher": "20kbps rec.",
+                "language": "",
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": null,
+                "replaygain_track_peak": null,
+                "genre": [
+                    {
+                        "name": "Electronic"
                     }
                 ]
             }
         ],
-        "songcount": 9,
-        "type": "compilation",
+        "songcount": 12,
+        "type": null,
         "disk": 1,
         "tag": [
             {
-                "id": "7",
-                "name": "Punk"
+                "id": "1",
+                "name": "Electronic"
             }
         ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
+        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 1,
+        "preciserating": 5,
+        "rating": 5,
+        "averagerating": 3,
         "mbid": null
     }
 ]
