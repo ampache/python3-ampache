@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>12</total_count>
-  <song id="64">
-    <title><![CDATA[Black&BlueSmoke]]></title>
-    <name><![CDATA[Black&BlueSmoke]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
-    <album id="2"><![CDATA[Colorsmoke EP]]></album>
-    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-    <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma]]></filename>
-    <track>1</track>
-    <time>500</time>
-    <year>2007</year>
-    <bitrate>20627</bitrate>
-    <rate>22050</rate>
-    <mode>cbr</mode>
-    <mime>audio/x-ms-wma</mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.wma]]></url>
-    <size>1298295</size>
-    <mbid/>
-    <album_mbid/>
-    <artist_mbid>1</artist_mbid>
-    <albumartist_mbid>1</albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
-    <preciserating>0</preciserating>
-    <rating>0</rating>
-    <averagerating>0</averagerating>
-    <composer><![CDATA[]]></composer>
-    <channels/>
-    <comment><![CDATA[Made with Sony ACID 5]]></comment>
-    <publisher><![CDATA[20kbps rec.]]></publisher>
-    <language/>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
-    <genre><![CDATA[Electronic]]></genre>
-  </song>
   <song id="56">
     <title><![CDATA[Black&BlueSmoke]]></title>
     <name><![CDATA[Black&BlueSmoke]]></name>
@@ -71,6 +35,42 @@
     <replaygain_album_peak/>
     <replaygain_track_gain>-5.110000</replaygain_track_gain>
     <replaygain_track_peak>1.000000</replaygain_track_peak>
+    <genre><![CDATA[Electronic]]></genre>
+  </song>
+  <song id="64">
+    <title><![CDATA[Black&BlueSmoke]]></title>
+    <name><![CDATA[Black&BlueSmoke]]></name>
+    <artist id="2"><![CDATA[Synthetic]]></artist>
+    <album id="2"><![CDATA[Colorsmoke EP]]></album>
+    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+    <tag id="1" count="1"><![CDATA[Electronic]]></tag>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma]]></filename>
+    <track>1</track>
+    <time>500</time>
+    <year>2007</year>
+    <bitrate>20627</bitrate>
+    <rate>22050</rate>
+    <mode>cbr</mode>
+    <mime>audio/x-ms-wma</mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.wma]]></url>
+    <size>1298295</size>
+    <mbid/>
+    <album_mbid/>
+    <artist_mbid>1</artist_mbid>
+    <albumartist_mbid>1</albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+    <preciserating>0</preciserating>
+    <rating>0</rating>
+    <averagerating>0</averagerating>
+    <composer><![CDATA[]]></composer>
+    <channels/>
+    <comment><![CDATA[Made with Sony ACID 5]]></comment>
+    <publisher><![CDATA[20kbps rec.]]></publisher>
+    <language/>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
     <genre><![CDATA[Electronic]]></genre>
   </song>
   <song id="59">
