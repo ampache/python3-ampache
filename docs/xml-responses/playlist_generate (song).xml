@@ -1,61 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <song id="107">
-    <name><![CDATA[Arrest Me]]></name>
-    <title><![CDATA[Arrest Me]]></title>
-    <artist id="20">
-      <name><![CDATA[R/B]]></name>
+  <song id="134">
+    <name><![CDATA[Swabian Sound System]]></name>
+    <title><![CDATA[Swabian Sound System]]></title>
+    <artist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[R/B]]></basename>
+      <basename><![CDATA[Comfort Fit]]></basename>
     </artist>
-    <album id="12">
-      <name><![CDATA[Buried in Nausea]]></name>
+    <album id="21">
+      <name><![CDATA[Forget and Remember]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Buried in Nausea]]></basename>
+      <basename><![CDATA[Forget and Remember]]></basename>
     </album>
-    <albumartist id="19">
-      <name><![CDATA[Various Artists]]></name>
+    <albumartist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Various Artists]]></basename>
+      <basename><![CDATA[Comfort Fit]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>9</track>
-    <genre id="7">
-      <name><![CDATA[Punk]]></name>
+    <track>19</track>
+    <genre id="8">
+      <name><![CDATA[Hip-Hop]]></name>
     </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/09R_b-ArrestMe.m4a]]></filename>
+    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/19 - Swabian Sound System.mp3]]></filename>
     <playlisttrack>1</playlisttrack>
-    <time>96</time>
-    <year>2012</year>
-    <bitrate>252864</bitrate>
+    <time>281</time>
+    <year>2005</year>
+    <bitrate>244202</bitrate>
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/mp4]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a]]></url>
-    <size>3091727</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=134&uid=4&player=api&name=Comfort%20Fit%20-%20Swabian%20Sound%20System.mp3]]></url>
+    <size>8594721</size>
+    <mbid><![CDATA[8e993e63-ddf9-4603-a2c0-5d2f18efebce]]></mbid>
+    <album_mbid><![CDATA[6e1d48f7-717c-416e-af35-5d2454a13af2]]></album_mbid>
+    <artist_mbid><![CDATA[e6e2b787-0b4c-4267-8161-310399b101a5]]></artist_mbid>
+    <albumartist_mbid><![CDATA[e6e2b787-0b4c-4267-8161-310399b101a5]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
     <averagerating/>
     <playcount>0</playcount>
-    <catalog>1</catalog>
+    <catalog>4</catalog>
     <composer><![CDATA[]]></composer>
     <channels/>
-    <comment><![CDATA[]]></comment>
+    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-19-comfort_fit-swabian_sound_system
+Comments: http://freemusicarchive.org/
+Curator: WFMU
+Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
+    <publisher><![CDATA[Tokyo Dawn Records]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-1.350000</replaygain_track_gain>
-    <replaygain_track_peak>0.881000</replaygain_track_peak>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="124">
+    <name><![CDATA[True Form]]></name>
+    <title><![CDATA[True Form]]></title>
+    <artist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Comfort Fit]]></basename>
+    </artist>
+    <album id="21">
+      <name><![CDATA[Forget and Remember]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Forget and Remember]]></basename>
+    </album>
+    <albumartist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Comfort Fit]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>6</track>
+    <genre id="8">
+      <name><![CDATA[Hip-Hop]]></name>
+    </genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/6 - True Form.mp3]]></filename>
+    <playlisttrack>2</playlisttrack>
+    <time>192</time>
+    <year>2005</year>
+    <bitrate>243031</bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=124&uid=4&player=api&name=Comfort%20Fit%20-%20True%20Form.mp3]]></url>
+    <size>5848663</size>
+    <mbid><![CDATA[8bf3acd2-860b-4ece-896f-9b2de89e35fa]]></mbid>
+    <album_mbid><![CDATA[6e1d48f7-717c-416e-af35-5d2454a13af2]]></album_mbid>
+    <artist_mbid><![CDATA[e6e2b787-0b4c-4267-8161-310399b101a5]]></artist_mbid>
+    <albumartist_mbid><![CDATA[e6e2b787-0b4c-4267-8161-310399b101a5]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>4</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels/>
+    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-06-comfort_fit-true_form
+Comments: http://freemusicarchive.org/
+Curator: WFMU
+Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[Tokyo Dawn Records]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
@@ -86,7 +150,7 @@
       <name><![CDATA[Dance]]></name>
     </genre>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/01_Invo.mp3]]></filename>
-    <playlisttrack>2</playlisttrack>
+    <playlisttrack>3</playlisttrack>
     <time>47</time>
     <year>0</year>
     <bitrate>192000</bitrate>
@@ -120,119 +184,64 @@
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="105">
-    <name><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></name>
-    <title><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></title>
-    <artist id="16">
-      <name><![CDATA[CARNÚN]]></name>
+  <song id="122">
+    <name><![CDATA[Thursday Is Thursty]]></name>
+    <title><![CDATA[Thursday Is Thursty]]></title>
+    <artist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN]]></basename>
+      <basename><![CDATA[Comfort Fit]]></basename>
     </artist>
-    <album id="10">
-      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+    <album id="21">
+      <name><![CDATA[Forget and Remember]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+      <basename><![CDATA[Forget and Remember]]></basename>
     </album>
-    <albumartist id="16">
-      <name><![CDATA[CARNÚN]]></name>
+    <albumartist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN]]></basename>
+      <basename><![CDATA[Comfort Fit]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>8</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/08TheInfernalSerpent_InstrumentalReRecording.ogg]]></filename>
-    <playlisttrack>3</playlisttrack>
-    <time>557</time>
-    <year>1996</year>
-    <bitrate>139453</bitrate>
+    <track>7</track>
+    <genre id="8">
+      <name><![CDATA[Hip-Hop]]></name>
+    </genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/7 - Thursday is Thursdy.mp3]]></filename>
+    <playlisttrack>4</playlisttrack>
+    <time>92</time>
+    <year>2005</year>
+    <bitrate>225219</bitrate>
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[application/ogg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=4&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.ogg]]></url>
-    <size>9722091</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=122&uid=4&player=api&name=Comfort%20Fit%20-%20Thursday%20Is%20Thursty.mp3]]></url>
+    <size>2607497</size>
+    <mbid><![CDATA[36fa39a1-483d-49d9-907b-17c4e3d60b47]]></mbid>
+    <album_mbid><![CDATA[6e1d48f7-717c-416e-af35-5d2454a13af2]]></album_mbid>
+    <artist_mbid><![CDATA[e6e2b787-0b4c-4267-8161-310399b101a5]]></artist_mbid>
+    <albumartist_mbid><![CDATA[e6e2b787-0b4c-4267-8161-310399b101a5]]></albumartist_mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
     <averagerating/>
     <playcount>0</playcount>
-    <catalog>1</catalog>
+    <catalog>4</catalog>
     <composer><![CDATA[]]></composer>
     <channels/>
-    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-07-comfort_fit-thursday_is_thursty
+Comments: http://freemusicarchive.org/
+Curator: WFMU
+Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[archive.org]]></publisher>
+    <publisher><![CDATA[Tokyo Dawn Records]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-12.240000</replaygain_track_gain>
-    <replaygain_track_peak>1.000000</replaygain_track_peak>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="95">
-    <name><![CDATA[Spirus Falls]]></name>
-    <title><![CDATA[Spirus Falls]]></title>
-    <artist id="14">
-      <name><![CDATA[Nofi/found.]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi/found.]]></basename>
-    </artist>
-    <album id="8">
-      <name><![CDATA[Nofi Devices]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi Devices]]></basename>
-    </album>
-    <albumartist id="14">
-      <name><![CDATA[Nofi/found.]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi/found.]]></basename>
-    </albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>2</track>
-    <genre id="5">
-      <name><![CDATA[Electronica]]></name>
-    </genre>
-    <genre id="6">
-      <name><![CDATA[Dance]]></name>
-    </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/02_Spirus_Falls.mp3]]></filename>
-    <playlisttrack>4</playlisttrack>
-    <time>327</time>
-    <year>0</year>
-    <bitrate>192000</bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3]]></url>
-    <size>7875775</size>
-    <mbid><![CDATA[]]></mbid>
-    <album_mbid><![CDATA[]]></album_mbid>
-    <artist_mbid><![CDATA[]]></artist_mbid>
-    <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[Jeffrey Melton]]></composer>
-    <channels/>
-    <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[archive.org]]></publisher>
-    <language/>
-    <lyrics><![CDATA[]]></lyrics>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain>-1.530000</replaygain_track_gain>
-    <replaygain_track_peak>1.000000</replaygain_track_peak>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

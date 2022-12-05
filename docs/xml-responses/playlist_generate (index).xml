@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <song id="128">
-    <title><![CDATA[Whenever You Wanna Call Me]]></title>
-    <name><![CDATA[Whenever You Wanna Call Me]]></name>
+  <song id="112">
+    <title><![CDATA[Personal Truth]]></title>
+    <name><![CDATA[Personal Truth]]></name>
+    <artist id="33">
+      <name><![CDATA[MxBxCx]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[MxBxCx]]></basename>
+    </artist>
+    <album id="12">
+      <name><![CDATA[Buried in Nausea]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Buried in Nausea]]></basename>
+    </album>
+    <albumartist id="19">
+      <name><![CDATA[Various Artists]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Various Artists]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>8</track>
+  </song>
+  <song id="123">
+    <title><![CDATA[Go on, Take It Further]]></title>
+    <name><![CDATA[Go on, Take It Further]]></name>
     <artist id="36">
       <name><![CDATA[Comfort Fit]]></name>
       <prefix><![CDATA[]]></prefix>
@@ -20,53 +41,11 @@
       <basename><![CDATA[Comfort Fit]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>8</track>
+    <track>18</track>
   </song>
-  <song id="92">
-    <title><![CDATA[Stance]]></title>
-    <name><![CDATA[Stance]]></name>
-    <artist id="14">
-      <name><![CDATA[Nofi/found.]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi/found.]]></basename>
-    </artist>
-    <album id="8">
-      <name><![CDATA[Nofi Devices]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi Devices]]></basename>
-    </album>
-    <albumartist id="14">
-      <name><![CDATA[Nofi/found.]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi/found.]]></basename>
-    </albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>8</track>
-  </song>
-  <song id="100">
-    <title><![CDATA[The Prophecies Of The Horned One]]></title>
-    <name><![CDATA[The Prophecies Of The Horned One]]></name>
-    <artist id="16">
-      <name><![CDATA[CARNÚN]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN]]></basename>
-    </artist>
-    <album id="10">
-      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
-    </album>
-    <albumartist id="16">
-      <name><![CDATA[CARNÚN]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN]]></basename>
-    </albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>2</track>
-  </song>
-  <song id="62">
-    <title><![CDATA[PurpleSmoke]]></title>
-    <name><![CDATA[PurpleSmoke]]></name>
+  <song id="65">
+    <title><![CDATA[YellowSmoke]]></title>
+    <name><![CDATA[YellowSmoke]]></name>
     <artist id="2">
       <name><![CDATA[Synthetic]]></name>
       <prefix><![CDATA[]]></prefix>
@@ -83,6 +62,27 @@
       <basename><![CDATA[Synthetic]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>3</track>
+    <track>2</track>
+  </song>
+  <song id="105">
+    <title><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></title>
+    <name><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></name>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </artist>
+    <album id="10">
+      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+    </album>
+    <albumartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>8</track>
   </song>
 </root>

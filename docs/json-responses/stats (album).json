@@ -1,66 +1,57 @@
 {
     "album": [
         {
-            "id": "2",
-            "name": "Colorsmoke EP",
+            "id": "9",
+            "name": "Creeping Lawler 2",
             "prefix": null,
-            "basename": "Colorsmoke EP",
+            "basename": "Creeping Lawler 2",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "15",
+                "name": "Warfare 3.0",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Warfare 3.0"
             },
-            "time": 4568,
-            "year": 2007,
+            "time": 592,
+            "year": 0,
             "tracks": [],
-            "songcount": 12,
+            "songcount": 2,
             "diskcount": 1,
             "type": null,
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 1,
-            "preciserating": 5,
-            "rating": 5,
-            "averagerating": 3,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 0,
+            "preciserating": 3,
+            "rating": 3,
+            "averagerating": null,
             "mbid": null
         },
         {
-            "id": "8",
-            "name": "Nofi Devices",
+            "id": "12",
+            "name": "Buried in Nausea",
             "prefix": null,
-            "basename": "Nofi Devices",
+            "basename": "Buried in Nausea",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "19",
+                "name": "Various Artists",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "Various Artists"
             },
-            "time": 4423,
-            "year": 0,
+            "time": 1879,
+            "year": 2012,
             "tracks": [],
-            "songcount": 11,
+            "songcount": 9,
             "diskcount": 1,
-            "type": null,
+            "type": "compilation",
             "genre": [
                 {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
+                    "id": "7",
+                    "name": "Punk"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
-            "preciserating": 2,
-            "rating": 2,
+            "preciserating": null,
+            "rating": null,
             "averagerating": null,
             "mbid": null
         }
