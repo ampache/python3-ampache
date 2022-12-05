@@ -1,20 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>17</total_count>
-  <artist id="15">
-    <name><![CDATA[Warfare 3.0]]></name>
+  <artist id="33">
+    <name><![CDATA[MxBxCx]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[MxBxCx]]></basename>
     <albums/>
-    <albumcount>1</albumcount>
+    <albumcount>0</albumcount>
     <songs/>
-    <songcount>2</songcount>
-    <art><![CDATA[https://music.com.au/image.php?object_id=15&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <songcount>1</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=33&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
     <flag>0</flag>
-    <preciserating>3</preciserating>
-    <rating>3</rating>
+    <preciserating/>
+    <rating/>
     <averagerating/>
     <mbid><![CDATA[]]></mbid>
     <summary><![CDATA[]]></summary>
-    <time><![CDATA[592]]></time>
+    <time><![CDATA[208]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
+  <artist id="20">
+    <name><![CDATA[R/B]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[R/B]]></basename>
+    <genre id="7">
+      <name><![CDATA[Punk]]></name>
+    </genre>
+    <albums/>
+    <albumcount>0</albumcount>
+    <songs/>
+    <songcount>1</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=20&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[ ]]></summary>
+    <time><![CDATA[96]]></time>
     <yearformed>0</yearformed>
     <placeformed><![CDATA[]]></placeformed>
   </artist>

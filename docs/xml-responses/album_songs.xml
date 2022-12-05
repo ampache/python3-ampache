@@ -2,11 +2,23 @@
 <root>
   <total_count>75</total_count>
   <song id="110">
-    <title><![CDATA[I wanna walk through the fire]]></title>
     <name><![CDATA[I wanna walk through the fire]]></name>
-    <artist id="23"><![CDATA[Manic Notion]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+    <title><![CDATA[I wanna walk through the fire]]></title>
+    <artist id="23">
+      <name><![CDATA[Manic Notion]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Manic Notion]]></basename>
+    </artist>
+    <album id="12">
+      <name><![CDATA[Buried in Nausea]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Buried in Nausea]]></basename>
+    </album>
+    <albumartist id="19">
+      <name><![CDATA[Various Artists]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Various Artists]]></basename>
+    </albumartist>
     <disk><![CDATA[1]]></disk>
     <track>1</track>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/01ManicNotion-IWannaWalkThroughTheFire.m4a]]></filename>
@@ -45,11 +57,23 @@
     <r128_track_gain/>
   </song>
   <song id="114">
-    <title><![CDATA[He is the Master of War]]></title>
     <name><![CDATA[He is the Master of War]]></name>
-    <artist id="26"><![CDATA[Stress Builds Character]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+    <title><![CDATA[He is the Master of War]]></title>
+    <artist id="26">
+      <name><![CDATA[Stress Builds Character]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Stress Builds Character]]></basename>
+    </artist>
+    <album id="12">
+      <name><![CDATA[Buried in Nausea]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Buried in Nausea]]></basename>
+    </album>
+    <albumartist id="19">
+      <name><![CDATA[Various Artists]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Various Artists]]></basename>
+    </albumartist>
     <disk><![CDATA[1]]></disk>
     <track>2</track>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a]]></filename>
@@ -88,11 +112,23 @@
     <r128_track_gain/>
   </song>
   <song id="109">
-    <title><![CDATA[Dance with the Devil]]></title>
     <name><![CDATA[Dance with the Devil]]></name>
-    <artist id="34"><![CDATA[Comedown Kid]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+    <title><![CDATA[Dance with the Devil]]></title>
+    <artist id="34">
+      <name><![CDATA[Comedown Kid]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Comedown Kid]]></basename>
+    </artist>
+    <album id="12">
+      <name><![CDATA[Buried in Nausea]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Buried in Nausea]]></basename>
+    </album>
+    <albumartist id="19">
+      <name><![CDATA[Various Artists]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Various Artists]]></basename>
+    </albumartist>
     <disk><![CDATA[1]]></disk>
     <track>3</track>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
@@ -131,11 +167,23 @@
     <r128_track_gain/>
   </song>
   <song id="113">
-    <title><![CDATA[Representin]]></title>
     <name><![CDATA[Representin]]></name>
-    <artist id="32"><![CDATA[Shorty Mac]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+    <title><![CDATA[Representin]]></title>
+    <artist id="32">
+      <name><![CDATA[Shorty Mac]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Shorty Mac]]></basename>
+    </artist>
+    <album id="12">
+      <name><![CDATA[Buried in Nausea]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Buried in Nausea]]></basename>
+    </album>
+    <albumartist id="19">
+      <name><![CDATA[Various Artists]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Various Artists]]></basename>
+    </albumartist>
     <disk><![CDATA[1]]></disk>
     <track>4</track>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3]]></filename>

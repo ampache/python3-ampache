@@ -3,19 +3,39 @@
   <total_count>9</total_count>
   <album id="2">
     <name><![CDATA[Colorsmoke EP]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Colorsmoke EP]]></basename>
+    <artist id="2">
+      <name><![CDATA[Synthetic]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Synthetic]]></basename>
+    </artist>
     <time>4568</time>
     <year>2007</year>
     <tracks>
       <song id="56">
-        <title><![CDATA[Black&BlueSmoke]]></title>
         <name><![CDATA[Black&BlueSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <title><![CDATA[Black&BlueSmoke]]></title>
+        <artist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </artist>
+        <album id="2">
+          <name><![CDATA[Colorsmoke EP]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Colorsmoke EP]]></basename>
+        </album>
+        <albumartist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>1</track>
-        <genre id="1"><![CDATA[Electronic]]></genre>
+        <genre id="1">
+          <name><![CDATA[Electronic]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3]]></filename>
         <playlisttrack>1</playlisttrack>
         <time>500</time>
@@ -52,14 +72,28 @@
         <r128_track_gain/>
       </song>
       <song id="64">
-        <title><![CDATA[Black&BlueSmoke]]></title>
         <name><![CDATA[Black&BlueSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <title><![CDATA[Black&BlueSmoke]]></title>
+        <artist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </artist>
+        <album id="2">
+          <name><![CDATA[Colorsmoke EP]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Colorsmoke EP]]></basename>
+        </album>
+        <albumartist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>1</track>
-        <genre id="1"><![CDATA[Electronic]]></genre>
+        <genre id="1">
+          <name><![CDATA[Electronic]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma]]></filename>
         <playlisttrack>2</playlisttrack>
         <time>500</time>
@@ -96,14 +130,28 @@
         <r128_track_gain/>
       </song>
       <song id="59">
-        <title><![CDATA[YellowSmoke]]></title>
         <name><![CDATA[YellowSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <title><![CDATA[YellowSmoke]]></title>
+        <artist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </artist>
+        <album id="2">
+          <name><![CDATA[Colorsmoke EP]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Colorsmoke EP]]></basename>
+        </album>
+        <albumartist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>2</track>
-        <genre id="1"><![CDATA[Electronic]]></genre>
+        <genre id="1">
+          <name><![CDATA[Electronic]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3]]></filename>
         <playlisttrack>3</playlisttrack>
         <time>290</time>
@@ -140,14 +188,28 @@
         <r128_track_gain/>
       </song>
       <song id="65">
-        <title><![CDATA[YellowSmoke]]></title>
         <name><![CDATA[YellowSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <title><![CDATA[YellowSmoke]]></title>
+        <artist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </artist>
+        <album id="2">
+          <name><![CDATA[Colorsmoke EP]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Colorsmoke EP]]></basename>
+        </album>
+        <albumartist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>2</track>
-        <genre id="1"><![CDATA[Electronic]]></genre>
+        <genre id="1">
+          <name><![CDATA[Electronic]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/02-Synthetic_-_YellowSmoke20k22hS.wma]]></filename>
         <playlisttrack>4</playlisttrack>
         <time>290</time>
@@ -184,14 +246,28 @@
         <r128_track_gain/>
       </song>
       <song id="57">
-        <title><![CDATA[PurpleSmoke]]></title>
         <name><![CDATA[PurpleSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <title><![CDATA[PurpleSmoke]]></title>
+        <artist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </artist>
+        <album id="2">
+          <name><![CDATA[Colorsmoke EP]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Colorsmoke EP]]></basename>
+        </album>
+        <albumartist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>3</track>
-        <genre id="1"><![CDATA[Electronic]]></genre>
+        <genre id="1">
+          <name><![CDATA[Electronic]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3]]></filename>
         <playlisttrack>5</playlisttrack>
         <time>390</time>
@@ -228,14 +304,28 @@
         <r128_track_gain/>
       </song>
       <song id="62">
-        <title><![CDATA[PurpleSmoke]]></title>
         <name><![CDATA[PurpleSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <title><![CDATA[PurpleSmoke]]></title>
+        <artist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </artist>
+        <album id="2">
+          <name><![CDATA[Colorsmoke EP]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Colorsmoke EP]]></basename>
+        </album>
+        <albumartist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>3</track>
-        <genre id="1"><![CDATA[Electronic]]></genre>
+        <genre id="1">
+          <name><![CDATA[Electronic]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma]]></filename>
         <playlisttrack>6</playlisttrack>
         <time>390</time>
@@ -272,14 +362,28 @@
         <r128_track_gain/>
       </song>
       <song id="58">
-        <title><![CDATA[BrownSmoke]]></title>
         <name><![CDATA[BrownSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <title><![CDATA[BrownSmoke]]></title>
+        <artist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </artist>
+        <album id="2">
+          <name><![CDATA[Colorsmoke EP]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Colorsmoke EP]]></basename>
+        </album>
+        <albumartist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>4</track>
-        <genre id="1"><![CDATA[Electronic]]></genre>
+        <genre id="1">
+          <name><![CDATA[Electronic]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3]]></filename>
         <playlisttrack>7</playlisttrack>
         <time>304</time>
@@ -316,14 +420,28 @@
         <r128_track_gain/>
       </song>
       <song id="60">
-        <title><![CDATA[BrownSmoke]]></title>
         <name><![CDATA[BrownSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <title><![CDATA[BrownSmoke]]></title>
+        <artist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </artist>
+        <album id="2">
+          <name><![CDATA[Colorsmoke EP]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Colorsmoke EP]]></basename>
+        </album>
+        <albumartist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>4</track>
-        <genre id="1"><![CDATA[Electronic]]></genre>
+        <genre id="1">
+          <name><![CDATA[Electronic]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma]]></filename>
         <playlisttrack>8</playlisttrack>
         <time>304</time>
@@ -360,14 +478,28 @@
         <r128_track_gain/>
       </song>
       <song id="54">
-        <title><![CDATA[Red&GreenSmoke]]></title>
         <name><![CDATA[Red&GreenSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <title><![CDATA[Red&GreenSmoke]]></title>
+        <artist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </artist>
+        <album id="2">
+          <name><![CDATA[Colorsmoke EP]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Colorsmoke EP]]></basename>
+        </album>
+        <albumartist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>5</track>
-        <genre id="1"><![CDATA[Electronic]]></genre>
+        <genre id="1">
+          <name><![CDATA[Electronic]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3]]></filename>
         <playlisttrack>9</playlisttrack>
         <time>400</time>
@@ -404,14 +536,28 @@
         <r128_track_gain/>
       </song>
       <song id="55">
-        <title><![CDATA[Red&GreenSmoke]]></title>
         <name><![CDATA[Red&GreenSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <title><![CDATA[Red&GreenSmoke]]></title>
+        <artist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </artist>
+        <album id="2">
+          <name><![CDATA[Colorsmoke EP]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Colorsmoke EP]]></basename>
+        </album>
+        <albumartist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>5</track>
-        <genre id="1"><![CDATA[Electronic]]></genre>
+        <genre id="1">
+          <name><![CDATA[Electronic]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3]]></filename>
         <playlisttrack>10</playlisttrack>
         <time>400</time>
@@ -448,14 +594,28 @@
         <r128_track_gain/>
       </song>
       <song id="61">
-        <title><![CDATA[Red&GreenSmoke]]></title>
         <name><![CDATA[Red&GreenSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <title><![CDATA[Red&GreenSmoke]]></title>
+        <artist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </artist>
+        <album id="2">
+          <name><![CDATA[Colorsmoke EP]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Colorsmoke EP]]></basename>
+        </album>
+        <albumartist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>5</track>
-        <genre id="1"><![CDATA[Electronic]]></genre>
+        <genre id="1">
+          <name><![CDATA[Electronic]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k44khM.wma]]></filename>
         <playlisttrack>11</playlisttrack>
         <time>400</time>
@@ -492,14 +652,28 @@
         <r128_track_gain/>
       </song>
       <song id="63">
-        <title><![CDATA[Red&GreenSmoke]]></title>
         <name><![CDATA[Red&GreenSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+        <title><![CDATA[Red&GreenSmoke]]></title>
+        <artist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </artist>
+        <album id="2">
+          <name><![CDATA[Colorsmoke EP]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Colorsmoke EP]]></basename>
+        </album>
+        <albumartist id="2">
+          <name><![CDATA[Synthetic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Synthetic]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>5</track>
-        <genre id="1"><![CDATA[Electronic]]></genre>
+        <genre id="1">
+          <name><![CDATA[Electronic]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k22khS.wma]]></filename>
         <playlisttrack>12</playlisttrack>
         <time>400</time>
@@ -539,7 +713,9 @@
     <songcount>12</songcount>
     <diskcount>1</diskcount>
     <type/>
-    <genre id="1"><![CDATA[Electronic]]></genre>
+    <genre id="1">
+      <name><![CDATA[Electronic]]></name>
+    </genre>
     <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
     <flag>1</flag>
     <preciserating>5</preciserating>

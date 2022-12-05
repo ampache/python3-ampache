@@ -2,14 +2,28 @@
 <root>
   <total_count>75</total_count>
   <song id="54">
-    <title><![CDATA[Red&GreenSmoke]]></title>
     <name><![CDATA[Red&GreenSmoke]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
-    <album id="2"><![CDATA[Colorsmoke EP]]></album>
-    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
+    <title><![CDATA[Red&GreenSmoke]]></title>
+    <artist id="2">
+      <name><![CDATA[Synthetic]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Synthetic]]></basename>
+    </artist>
+    <album id="2">
+      <name><![CDATA[Colorsmoke EP]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Colorsmoke EP]]></basename>
+    </album>
+    <albumartist id="2">
+      <name><![CDATA[Synthetic]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Synthetic]]></basename>
+    </albumartist>
     <disk><![CDATA[1]]></disk>
     <track>5</track>
-    <genre id="1"><![CDATA[Electronic]]></genre>
+    <genre id="1">
+      <name><![CDATA[Electronic]]></name>
+    </genre>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3]]></filename>
     <playlisttrack>1</playlisttrack>
     <time>400</time>

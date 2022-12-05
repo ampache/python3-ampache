@@ -3,10 +3,18 @@
   <total_count>17</total_count>
   <artist id="16">
     <name><![CDATA[CARNÚN]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[CARNÚN]]></basename>
     <albums>
       <album id="10">
         <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
         <time>3873</time>
         <year>1996</year>
         <tracks/>

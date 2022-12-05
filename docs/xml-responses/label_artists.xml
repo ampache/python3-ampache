@@ -3,7 +3,11 @@
   <total_count>17</total_count>
   <artist id="2">
     <name><![CDATA[Synthetic]]></name>
-    <genre id="1"><![CDATA[Electronic]]></genre>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Synthetic]]></basename>
+    <genre id="1">
+      <name><![CDATA[Electronic]]></name>
+    </genre>
     <albums/>
     <albumcount>1</albumcount>
     <songs/>

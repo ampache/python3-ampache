@@ -1,34 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>9</total_count>
-  <album id="12">
-    <name><![CDATA[Buried in Nausea]]></name>
-    <artist id="19"><![CDATA[Various Artists]]></artist>
-    <time>1879</time>
-    <year>2012</year>
+  <album id="2">
+    <name><![CDATA[Colorsmoke EP]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Colorsmoke EP]]></basename>
+    <artist id="2">
+      <name><![CDATA[Synthetic]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Synthetic]]></basename>
+    </artist>
+    <time>4568</time>
+    <year>2007</year>
     <tracks/>
-    <songcount>9</songcount>
+    <songcount>12</songcount>
     <diskcount>1</diskcount>
-    <type>compilation</type>
-    <genre id="7"><![CDATA[Punk]]></genre>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
+    <type/>
+    <genre id="1">
+      <name><![CDATA[Electronic]]></name>
+    </genre>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>1</flag>
+    <preciserating>5</preciserating>
+    <rating>5</rating>
+    <averagerating>3</averagerating>
     <mbid><![CDATA[]]></mbid>
   </album>
   <album id="8">
     <name><![CDATA[Nofi Devices]]></name>
-    <artist id="14"><![CDATA[Nofi/found.]]></artist>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Nofi Devices]]></basename>
+    <artist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Nofi/found.]]></basename>
+    </artist>
     <time>4423</time>
     <year>0</year>
     <tracks/>
     <songcount>11</songcount>
     <diskcount>1</diskcount>
     <type/>
-    <genre id="5"><![CDATA[Electronica]]></genre>
-    <genre id="6"><![CDATA[Dance]]></genre>
+    <genre id="5">
+      <name><![CDATA[Electronica]]></name>
+    </genre>
+    <genre id="6">
+      <name><![CDATA[Dance]]></name>
+    </genre>
     <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
     <flag>0</flag>
     <preciserating>2</preciserating>

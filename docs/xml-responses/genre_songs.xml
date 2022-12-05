@@ -2,14 +2,28 @@
 <root>
   <total_count>75</total_count>
   <song id="81">
-    <title><![CDATA[Galenskap]]></title>
     <name><![CDATA[Galenskap]]></name>
-    <artist id="13"><![CDATA[IOK-1]]></artist>
-    <album id="7"><![CDATA[Sensorisk Deprivation]]></album>
-    <albumartist id="13"><![CDATA[IOK-1]]></albumartist>
+    <title><![CDATA[Galenskap]]></title>
+    <artist id="13">
+      <name><![CDATA[IOK-1]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[IOK-1]]></basename>
+    </artist>
+    <album id="7">
+      <name><![CDATA[Sensorisk Deprivation]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Sensorisk Deprivation]]></basename>
+    </album>
+    <albumartist id="13">
+      <name><![CDATA[IOK-1]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[IOK-1]]></basename>
+    </albumartist>
     <disk><![CDATA[1]]></disk>
     <track>3</track>
-    <genre id="4"><![CDATA[Dark Ambient]]></genre>
+    <genre id="4">
+      <name><![CDATA[Dark Ambient]]></name>
+    </genre>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/03_-_IOK-1_-_Galenskap.flac]]></filename>
     <playlisttrack>1</playlisttrack>
     <time>998</time>

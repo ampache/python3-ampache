@@ -2,15 +2,31 @@
 <root>
   <total_count>75</total_count>
   <song id="93">
-    <title><![CDATA[Scribnus 3]]></title>
     <name><![CDATA[Scribnus 3]]></name>
-    <artist id="14"><![CDATA[Nofi/found.]]></artist>
-    <album id="8"><![CDATA[Nofi Devices]]></album>
-    <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+    <title><![CDATA[Scribnus 3]]></title>
+    <artist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Nofi/found.]]></basename>
+    </artist>
+    <album id="8">
+      <name><![CDATA[Nofi Devices]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Nofi Devices]]></basename>
+    </album>
+    <albumartist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Nofi/found.]]></basename>
+    </albumartist>
     <disk><![CDATA[1]]></disk>
     <track>3</track>
-    <genre id="5"><![CDATA[Electronica]]></genre>
-    <genre id="6"><![CDATA[Dance]]></genre>
+    <genre id="5">
+      <name><![CDATA[Electronica]]></name>
+    </genre>
+    <genre id="6">
+      <name><![CDATA[Dance]]></name>
+    </genre>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3]]></filename>
     <playlisttrack>1</playlisttrack>
     <time>641</time>
@@ -47,11 +63,23 @@
     <r128_track_gain/>
   </song>
   <song id="109">
-    <title><![CDATA[Dance with the Devil]]></title>
     <name><![CDATA[Dance with the Devil]]></name>
-    <artist id="34"><![CDATA[Comedown Kid]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+    <title><![CDATA[Dance with the Devil]]></title>
+    <artist id="34">
+      <name><![CDATA[Comedown Kid]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Comedown Kid]]></basename>
+    </artist>
+    <album id="12">
+      <name><![CDATA[Buried in Nausea]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Buried in Nausea]]></basename>
+    </album>
+    <albumartist id="19">
+      <name><![CDATA[Various Artists]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Various Artists]]></basename>
+    </albumartist>
     <disk><![CDATA[1]]></disk>
     <track>3</track>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
@@ -90,14 +118,28 @@
     <r128_track_gain/>
   </song>
   <song id="126">
-    <title><![CDATA[Don't Show This Message Again]]></title>
     <name><![CDATA[Don't Show This Message Again]]></name>
-    <artist id="36"><![CDATA[Comfort Fit]]></artist>
-    <album id="21"><![CDATA[Forget and Remember]]></album>
-    <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+    <title><![CDATA[Don't Show This Message Again]]></title>
+    <artist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Comfort Fit]]></basename>
+    </artist>
+    <album id="21">
+      <name><![CDATA[Forget and Remember]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Forget and Remember]]></basename>
+    </album>
+    <albumartist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Comfort Fit]]></basename>
+    </albumartist>
     <disk><![CDATA[1]]></disk>
     <track>12</track>
-    <genre id="8"><![CDATA[Hip-Hop]]></genre>
+    <genre id="8">
+      <name><![CDATA[Hip-Hop]]></name>
+    </genre>
     <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/12 - Don’t Show This Message Again.mp3]]></filename>
     <playlisttrack>3</playlisttrack>
     <time>197</time>

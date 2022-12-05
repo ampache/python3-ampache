@@ -3,10 +3,18 @@
   <total_count>17</total_count>
   <artist id="16">
     <name><![CDATA[CARNÚN]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[CARNÚN]]></basename>
     <albums>
       <album id="10">
         <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
         <time>3873</time>
         <year>1996</year>
         <tracks/>
@@ -24,23 +32,35 @@
     <albumcount>1</albumcount>
     <songs>
       <song id="106">
-        <title><![CDATA[Malkuth - Intro]]></title>
         <name><![CDATA[Malkuth - Intro]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
+        <title><![CDATA[Malkuth - Intro]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>1</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/01Intro.ogg]]></filename>
         <playlisttrack>1</playlisttrack>
         <time>91</time>
         <year>1996</year>
-        <bitrate>81137</bitrate>
+        <bitrate>80962</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.ogg]]></url>
-        <size>932235</size>
+        <size>930226</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -67,23 +87,35 @@
         <r128_track_gain/>
       </song>
       <song id="100">
-        <title><![CDATA[The Prophecies Of The Horned One]]></title>
         <name><![CDATA[The Prophecies Of The Horned One]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
+        <title><![CDATA[The Prophecies Of The Horned One]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>2</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/02ThePropheciesOfTheHornedOne.ogg]]></filename>
         <playlisttrack>2</playlisttrack>
         <time>378</time>
         <year>1996</year>
-        <bitrate>90078</bitrate>
+        <bitrate>89965</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.ogg]]></url>
-        <size>4271173</size>
+        <size>4265791</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -110,23 +142,35 @@
         <r128_track_gain/>
       </song>
       <song id="98">
-        <title><![CDATA[In The Seven Woods]]></title>
         <name><![CDATA[In The Seven Woods]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
+        <title><![CDATA[In The Seven Woods]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>3</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/03InTheSevenWoods.ogg]]></filename>
         <playlisttrack>3</playlisttrack>
         <time>420</time>
         <year>1996</year>
-        <bitrate>84528</bitrate>
+        <bitrate>84423</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.ogg]]></url>
-        <size>4449963</size>
+        <size>4444403</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -153,23 +197,35 @@
         <r128_track_gain/>
       </song>
       <song id="104">
-        <title><![CDATA[The Infernal Serpent]]></title>
         <name><![CDATA[The Infernal Serpent]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
+        <title><![CDATA[The Infernal Serpent]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>4</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/04TheInfernalSerpent.ogg]]></filename>
         <playlisttrack>4</playlisttrack>
         <time>404</time>
         <year>1996</year>
-        <bitrate>100174</bitrate>
+        <bitrate>100053</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.ogg]]></url>
-        <size>5072883</size>
+        <size>5066698</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -196,23 +252,35 @@
         <r128_track_gain/>
       </song>
       <song id="102">
-        <title><![CDATA[Moremque Sinistrum Sacrorum]]></title>
         <name><![CDATA[Moremque Sinistrum Sacrorum]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
+        <title><![CDATA[Moremque Sinistrum Sacrorum]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>5</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/05MoremqueSinistrumSacrorum.ogg]]></filename>
         <playlisttrack>5</playlisttrack>
         <time>164</time>
         <year>1996</year>
-        <bitrate>106806</bitrate>
+        <bitrate>106647</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.ogg]]></url>
-        <size>2206257</size>
+        <size>2202971</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -239,23 +307,35 @@
         <r128_track_gain/>
       </song>
       <song id="99">
-        <title><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></title>
         <name><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
+        <title><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>6</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg]]></filename>
         <playlisttrack>6</playlisttrack>
         <time>427</time>
         <year>1996</year>
-        <bitrate>143953</bitrate>
+        <bitrate>143788</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.ogg]]></url>
-        <size>7704860</size>
+        <size>7696008</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -282,23 +362,35 @@
         <r128_track_gain/>
       </song>
       <song id="103">
-        <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
         <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
+        <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>7</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/07InTheSevenWoods_InstrumentalReRecording.ogg]]></filename>
         <playlisttrack>7</playlisttrack>
         <time>452</time>
         <year>1996</year>
-        <bitrate>138496</bitrate>
+        <bitrate>138338</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.ogg]]></url>
-        <size>7835220</size>
+        <size>7826238</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -325,23 +417,35 @@
         <r128_track_gain/>
       </song>
       <song id="105">
-        <title><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></title>
         <name><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
+        <title><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>8</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/08TheInfernalSerpent_InstrumentalReRecording.ogg]]></filename>
         <playlisttrack>8</playlisttrack>
         <time>557</time>
         <year>1996</year>
-        <bitrate>139609</bitrate>
+        <bitrate>139453</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=4&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.ogg]]></url>
-        <size>9733002</size>
+        <size>9722091</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -368,23 +472,35 @@
         <r128_track_gain/>
       </song>
       <song id="101">
-        <title><![CDATA[Rehearsal Tape (1996)]]></title>
         <name><![CDATA[Rehearsal Tape (1996)]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
+        <title><![CDATA[Rehearsal Tape (1996)]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>9</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/09RehearsalTape1996.ogg]]></filename>
         <playlisttrack>9</playlisttrack>
         <time>980</time>
         <year>1996</year>
-        <bitrate>66988</bitrate>
+        <bitrate>66912</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.ogg]]></url>
-        <size>8229246</size>
+        <size>8219821</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -425,17 +541,27 @@
   </artist>
   <artist id="27">
     <name><![CDATA[Chi.Otic]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Chi.Otic]]></basename>
     <albums>
       <album id="12">
         <name><![CDATA[Buried in Nausea]]></name>
-        <artist id="19"><![CDATA[Various Artists]]></artist>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Buried in Nausea]]></basename>
+        <artist id="19">
+          <name><![CDATA[Various Artists]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Various Artists]]></basename>
+        </artist>
         <time>1879</time>
         <year>2012</year>
         <tracks/>
         <songcount>9</songcount>
         <diskcount>1</diskcount>
         <type>compilation</type>
-        <genre id="7"><![CDATA[Punk]]></genre>
+        <genre id="7">
+          <name><![CDATA[Punk]]></name>
+        </genre>
         <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -447,11 +573,23 @@
     <albumcount>0</albumcount>
     <songs>
       <song id="115">
-        <title><![CDATA[Are we going Crazy]]></title>
         <name><![CDATA[Are we going Crazy]]></name>
-        <artist id="27"><![CDATA[Chi.Otic]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <title><![CDATA[Are we going Crazy]]></title>
+        <artist id="27">
+          <name><![CDATA[Chi.Otic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Chi.Otic]]></basename>
+        </artist>
+        <album id="12">
+          <name><![CDATA[Buried in Nausea]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Buried in Nausea]]></basename>
+        </album>
+        <albumartist id="19">
+          <name><![CDATA[Various Artists]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Various Artists]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>7</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
@@ -504,17 +642,27 @@
   </artist>
   <artist id="34">
     <name><![CDATA[Comedown Kid]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Comedown Kid]]></basename>
     <albums>
       <album id="12">
         <name><![CDATA[Buried in Nausea]]></name>
-        <artist id="19"><![CDATA[Various Artists]]></artist>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Buried in Nausea]]></basename>
+        <artist id="19">
+          <name><![CDATA[Various Artists]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Various Artists]]></basename>
+        </artist>
         <time>1879</time>
         <year>2012</year>
         <tracks/>
         <songcount>9</songcount>
         <diskcount>1</diskcount>
         <type>compilation</type>
-        <genre id="7"><![CDATA[Punk]]></genre>
+        <genre id="7">
+          <name><![CDATA[Punk]]></name>
+        </genre>
         <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -526,11 +674,23 @@
     <albumcount>0</albumcount>
     <songs>
       <song id="109">
-        <title><![CDATA[Dance with the Devil]]></title>
         <name><![CDATA[Dance with the Devil]]></name>
-        <artist id="34"><![CDATA[Comedown Kid]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+        <title><![CDATA[Dance with the Devil]]></title>
+        <artist id="34">
+          <name><![CDATA[Comedown Kid]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comedown Kid]]></basename>
+        </artist>
+        <album id="12">
+          <name><![CDATA[Buried in Nausea]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Buried in Nausea]]></basename>
+        </album>
+        <albumartist id="19">
+          <name><![CDATA[Various Artists]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Various Artists]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>3</track>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
@@ -583,18 +743,30 @@
   </artist>
   <artist id="36">
     <name><![CDATA[Comfort Fit]]></name>
-    <genre id="8"><![CDATA[Hip-Hop]]></genre>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Comfort Fit]]></basename>
+    <genre id="8">
+      <name><![CDATA[Hip-Hop]]></name>
+    </genre>
     <albums>
       <album id="21">
         <name><![CDATA[Forget and Remember]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Forget and Remember]]></basename>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
         <time>4248</time>
         <year>2005</year>
         <tracks/>
         <songcount>20</songcount>
         <diskcount>1</diskcount>
         <type>album</type>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
         <flag>0</flag>
         <preciserating/>
@@ -606,14 +778,28 @@
     <albumcount>1</albumcount>
     <songs>
       <song id="116">
-        <title><![CDATA[Can I Help U?]]></title>
         <name><![CDATA[Can I Help U?]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Can I Help U?]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>1</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/1 - Can I Help U?.mp3]]></filename>
         <playlisttrack>1</playlisttrack>
         <time>103</time>
@@ -653,14 +839,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="121">
-        <title><![CDATA[Planetary Picknick]]></title>
         <name><![CDATA[Planetary Picknick]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Planetary Picknick]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>2</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/2 - Planetary Picknick.mp3]]></filename>
         <playlisttrack>2</playlisttrack>
         <time>358</time>
@@ -700,14 +900,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="119">
-        <title><![CDATA[Sorry]]></title>
         <name><![CDATA[Sorry]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Sorry]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>3</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/3 - Sorry.mp3]]></filename>
         <playlisttrack>3</playlisttrack>
         <time>200</time>
@@ -747,14 +961,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="120">
-        <title><![CDATA[Freeze the Cut]]></title>
         <name><![CDATA[Freeze the Cut]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Freeze the Cut]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>4</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/4 - Freeze The Cut.mp3]]></filename>
         <playlisttrack>4</playlisttrack>
         <time>168</time>
@@ -794,14 +1022,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="125">
-        <title><![CDATA[Take a Look]]></title>
         <name><![CDATA[Take a Look]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Take a Look]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>5</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/5 - Take a Look.mp3]]></filename>
         <playlisttrack>5</playlisttrack>
         <time>230</time>
@@ -841,14 +1083,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="124">
-        <title><![CDATA[True Form]]></title>
         <name><![CDATA[True Form]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[True Form]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>6</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/6 - True Form.mp3]]></filename>
         <playlisttrack>6</playlisttrack>
         <time>192</time>
@@ -888,14 +1144,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="122">
-        <title><![CDATA[Thursday Is Thursty]]></title>
         <name><![CDATA[Thursday Is Thursty]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Thursday Is Thursty]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>7</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/7 - Thursday is Thursdy.mp3]]></filename>
         <playlisttrack>7</playlisttrack>
         <time>92</time>
@@ -935,14 +1205,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="128">
-        <title><![CDATA[Whenever You Wanna Call Me]]></title>
         <name><![CDATA[Whenever You Wanna Call Me]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Whenever You Wanna Call Me]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>8</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/8 - Whenever You Wanna Call Me.mp3]]></filename>
         <playlisttrack>8</playlisttrack>
         <time>188</time>
@@ -982,14 +1266,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="118">
-        <title><![CDATA[As Pure as Possible]]></title>
         <name><![CDATA[As Pure as Possible]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[As Pure as Possible]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>9</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/9 - As Pure as Possible.mp3]]></filename>
         <playlisttrack>9</playlisttrack>
         <time>128</time>
@@ -1029,14 +1327,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="127">
-        <title><![CDATA[She Knows Me Now]]></title>
         <name><![CDATA[She Knows Me Now]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[She Knows Me Now]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>10</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/10 - She Knows Me Now (re-edit).mp3]]></filename>
         <playlisttrack>10</playlisttrack>
         <time>209</time>
@@ -1076,14 +1388,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="117">
-        <title><![CDATA[Remember Something I Forgot]]></title>
         <name><![CDATA[Remember Something I Forgot]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Remember Something I Forgot]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>11</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/11 - Remember Something I Forgot.mp3]]></filename>
         <playlisttrack>11</playlisttrack>
         <time>163</time>
@@ -1123,14 +1449,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="126">
-        <title><![CDATA[Don't Show This Message Again]]></title>
         <name><![CDATA[Don't Show This Message Again]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Don't Show This Message Again]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>12</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/12 - Don’t Show This Message Again.mp3]]></filename>
         <playlisttrack>12</playlisttrack>
         <time>197</time>
@@ -1170,14 +1510,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="133">
-        <title><![CDATA[Kurz Vor Danach Ganz '05]]></title>
         <name><![CDATA[Kurz Vor Danach Ganz '05]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Kurz Vor Danach Ganz '05]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>13</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/13 - Kurz Vor Danach Ganz ‘05.mp3]]></filename>
         <playlisttrack>13</playlisttrack>
         <time>247</time>
@@ -1217,14 +1571,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="135">
-        <title><![CDATA[Emotional Draft]]></title>
         <name><![CDATA[Emotional Draft]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Emotional Draft]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>14</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/14 - Emotional Draft.mp3]]></filename>
         <playlisttrack>14</playlisttrack>
         <time>379</time>
@@ -1264,14 +1632,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="132">
-        <title><![CDATA[Hairy Crushed Nuts]]></title>
         <name><![CDATA[Hairy Crushed Nuts]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Hairy Crushed Nuts]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>15</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/15 - Hairy Crushed Nuts.mp3]]></filename>
         <playlisttrack>15</playlisttrack>
         <time>267</time>
@@ -1311,14 +1693,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="129">
-        <title><![CDATA[The Hunt]]></title>
         <name><![CDATA[The Hunt]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[The Hunt]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>16</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/16 - The Hunt.mp3]]></filename>
         <playlisttrack>16</playlisttrack>
         <time>226</time>
@@ -1358,14 +1754,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="130">
-        <title><![CDATA[Something to Do]]></title>
         <name><![CDATA[Something to Do]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Something to Do]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>17</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/17 - Something To Do.mp3]]></filename>
         <playlisttrack>17</playlisttrack>
         <time>261</time>
@@ -1405,14 +1815,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="123">
-        <title><![CDATA[Go on, Take It Further]]></title>
         <name><![CDATA[Go on, Take It Further]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Go on, Take It Further]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>18</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/18 - Go On, Take It Further.mp3]]></filename>
         <playlisttrack>18</playlisttrack>
         <time>69</time>
@@ -1452,14 +1876,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="134">
-        <title><![CDATA[Swabian Sound System]]></title>
         <name><![CDATA[Swabian Sound System]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Swabian Sound System]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>19</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/19 - Swabian Sound System.mp3]]></filename>
         <playlisttrack>19</playlisttrack>
         <time>281</time>
@@ -1499,14 +1937,28 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_track_gain/>
       </song>
       <song id="131">
-        <title><![CDATA[Miles of Smiles]]></title>
         <name><![CDATA[Miles of Smiles]]></name>
-        <artist id="36"><![CDATA[Comfort Fit]]></artist>
-        <album id="21"><![CDATA[Forget and Remember]]></album>
-        <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
+        <title><![CDATA[Miles of Smiles]]></title>
+        <artist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </artist>
+        <album id="21">
+          <name><![CDATA[Forget and Remember]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Forget and Remember]]></basename>
+        </album>
+        <albumartist id="36">
+          <name><![CDATA[Comfort Fit]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Comfort Fit]]></basename>
+        </albumartist>
         <disk><![CDATA[1]]></disk>
         <track>20</track>
-        <genre id="8"><![CDATA[Hip-Hop]]></genre>
+        <genre id="8">
+          <name><![CDATA[Hip-Hop]]></name>
+        </genre>
         <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/20 - Miles of Smiles.mp3]]></filename>
         <playlisttrack>20</playlisttrack>
         <time>290</time>

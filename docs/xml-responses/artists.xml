@@ -3,6 +3,8 @@
   <total_count>17</total_count>
   <artist id="16">
     <name><![CDATA[CARNÚN]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[CARNÚN]]></basename>
     <albums/>
     <albumcount>1</albumcount>
     <songs/>
@@ -20,6 +22,8 @@
   </artist>
   <artist id="27">
     <name><![CDATA[Chi.Otic]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Chi.Otic]]></basename>
     <albums/>
     <albumcount>0</albumcount>
     <songs/>
@@ -37,6 +41,8 @@
   </artist>
   <artist id="34">
     <name><![CDATA[Comedown Kid]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Comedown Kid]]></basename>
     <albums/>
     <albumcount>0</albumcount>
     <songs/>
@@ -54,7 +60,11 @@
   </artist>
   <artist id="36">
     <name><![CDATA[Comfort Fit]]></name>
-    <genre id="8"><![CDATA[Hip-Hop]]></genre>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Comfort Fit]]></basename>
+    <genre id="8">
+      <name><![CDATA[Hip-Hop]]></name>
+    </genre>
     <albums/>
     <albumcount>1</albumcount>
     <songs/>

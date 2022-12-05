@@ -6,15 +6,21 @@
             "name": "Galenskap",
             "artist": {
                 "id": "13",
-                "name": "IOK-1"
+                "name": "IOK-1",
+                "prefix": null,
+                "basename": "IOK-1"
             },
             "album": {
                 "id": "7",
-                "name": "Sensorisk Deprivation"
+                "name": "Sensorisk Deprivation",
+                "prefix": null,
+                "basename": "Sensorisk Deprivation"
             },
             "albumartist": {
                 "id": "13",
-                "name": "IOK-1"
+                "name": "IOK-1",
+                "prefix": null,
+                "basename": "IOK-1"
             },
             "disk": 1,
             "track": 3,

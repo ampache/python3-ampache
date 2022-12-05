@@ -6,15 +6,21 @@
             "name": "Dance with the Devil",
             "artist": {
                 "id": "34",
-                "name": "Comedown Kid"
+                "name": "Comedown Kid",
+                "prefix": null,
+                "basename": "Comedown Kid"
             },
             "album": {
                 "id": "12",
-                "name": "Buried in Nausea"
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
                 "id": "19",
-                "name": "Various Artists"
+                "name": "Various Artists",
+                "prefix": null,
+                "basename": "Various Artists"
             },
             "disk": 1,
             "track": 3,

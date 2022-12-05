@@ -3,18 +3,42 @@
   <total_count>9</total_count>
   <album id="12">
     <name><![CDATA[Buried in Nausea]]></name>
-    <artist id="19"><![CDATA[Various Artists]]></artist>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Buried in Nausea]]></basename>
+    <artist id="19">
+      <name><![CDATA[Various Artists]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Various Artists]]></basename>
+    </artist>
   </album>
   <album id="10">
     <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
-    <artist id="16"><![CDATA[CARNÚN]]></artist>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </artist>
   </album>
   <album id="2">
     <name><![CDATA[Colorsmoke EP]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Colorsmoke EP]]></basename>
+    <artist id="2">
+      <name><![CDATA[Synthetic]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Synthetic]]></basename>
+    </artist>
   </album>
   <album id="9">
     <name><![CDATA[Creeping Lawler 2]]></name>
-    <artist id="15"><![CDATA[Warfare 3.0]]></artist>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Creeping Lawler 2]]></basename>
+    <artist id="15">
+      <name><![CDATA[Warfare 3.0]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Warfare 3.0]]></basename>
+    </artist>
   </album>
 </root>

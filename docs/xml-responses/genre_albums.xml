@@ -3,14 +3,22 @@
   <total_count>9</total_count>
   <album id="7">
     <name><![CDATA[Sensorisk Deprivation]]></name>
-    <artist id="13"><![CDATA[IOK-1]]></artist>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Sensorisk Deprivation]]></basename>
+    <artist id="13">
+      <name><![CDATA[IOK-1]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[IOK-1]]></basename>
+    </artist>
     <time>3428</time>
     <year>2011</year>
     <tracks/>
     <songcount>4</songcount>
     <diskcount>1</diskcount>
     <type/>
-    <genre id="4"><![CDATA[Dark Ambient]]></genre>
+    <genre id="4">
+      <name><![CDATA[Dark Ambient]]></name>
+    </genre>
     <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
     <flag>0</flag>
     <preciserating/>

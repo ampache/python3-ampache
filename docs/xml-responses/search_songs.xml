@@ -2,11 +2,23 @@
 <root>
   <total_count>75</total_count>
   <song id="109">
-    <title><![CDATA[Dance with the Devil]]></title>
     <name><![CDATA[Dance with the Devil]]></name>
-    <artist id="34"><![CDATA[Comedown Kid]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+    <title><![CDATA[Dance with the Devil]]></title>
+    <artist id="34">
+      <name><![CDATA[Comedown Kid]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Comedown Kid]]></basename>
+    </artist>
+    <album id="12">
+      <name><![CDATA[Buried in Nausea]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Buried in Nausea]]></basename>
+    </album>
+    <albumartist id="19">
+      <name><![CDATA[Various Artists]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Various Artists]]></basename>
+    </albumartist>
     <disk><![CDATA[1]]></disk>
     <track>3</track>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>

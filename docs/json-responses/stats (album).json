@@ -1,49 +1,66 @@
 {
     "album": [
         {
-            "id": "10",
-            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "id": "2",
+            "name": "Colorsmoke EP",
+            "prefix": null,
+            "basename": "Colorsmoke EP",
             "artist": {
-                "id": "16",
-                "name": "CARN\u00daN"
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic"
             },
-            "time": 3873,
-            "year": 1996,
+            "time": 4568,
+            "year": 2007,
             "tracks": [],
-            "songcount": 9,
+            "songcount": 12,
             "diskcount": 1,
             "type": null,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": 1,
+            "preciserating": 5,
+            "rating": 5,
+            "averagerating": 3,
             "mbid": null
         },
         {
-            "id": "12",
-            "name": "Buried in Nausea",
+            "id": "8",
+            "name": "Nofi Devices",
+            "prefix": null,
+            "basename": "Nofi Devices",
             "artist": {
-                "id": "19",
-                "name": "Various Artists"
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
             },
-            "time": 1879,
-            "year": 2012,
+            "time": 4423,
+            "year": 0,
             "tracks": [],
-            "songcount": 9,
+            "songcount": 11,
             "diskcount": 1,
-            "type": "compilation",
+            "type": null,
             "genre": [
                 {
-                    "id": "7",
-                    "name": "Punk"
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
-            "preciserating": null,
-            "rating": null,
+            "preciserating": 2,
+            "rating": 2,
             "averagerating": null,
             "mbid": null
         }
