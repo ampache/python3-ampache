@@ -7,7 +7,7 @@
             "items": 43,
             "type": "private",
             "art": "https:\/\/music.com.au\/image.php?object_id=3&object_type=playlist&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
+            "flag": false,
             "preciserating": null,
             "rating": null,
             "averagerating": null
@@ -19,7 +19,7 @@
             "items": 43,
             "type": "public",
             "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=playlist&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 1,
+            "flag": true,
             "preciserating": null,
             "rating": null,
             "averagerating": null
@@ -31,7 +31,7 @@
             "items": 5000,
             "type": "public",
             "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=search&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
+            "flag": false,
             "preciserating": null,
             "rating": null,
             "averagerating": null
@@ -43,7 +43,7 @@
             "items": 2,
             "type": "public",
             "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=search&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
+            "flag": false,
             "preciserating": null,
             "rating": null,
             "averagerating": null

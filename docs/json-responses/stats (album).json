@@ -1,6 +1,40 @@
 {
     "album": [
         {
+            "id": "8",
+            "name": "Nofi Devices",
+            "prefix": null,
+            "basename": "Nofi Devices",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "time": 4423,
+            "year": 0,
+            "tracks": [],
+            "songcount": 11,
+            "diskcount": 1,
+            "type": null,
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": false,
+            "preciserating": 2,
+            "rating": 2,
+            "averagerating": null,
+            "mbid": null
+        },
+        {
             "id": "9",
             "name": "Creeping Lawler 2",
             "prefix": null,
@@ -19,39 +53,9 @@
             "type": null,
             "genre": [],
             "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
+            "flag": false,
             "preciserating": 3,
             "rating": 3,
-            "averagerating": null,
-            "mbid": null
-        },
-        {
-            "id": "12",
-            "name": "Buried in Nausea",
-            "prefix": null,
-            "basename": "Buried in Nausea",
-            "artist": {
-                "id": "19",
-                "name": "Various Artists",
-                "prefix": null,
-                "basename": "Various Artists"
-            },
-            "time": 1879,
-            "year": 2012,
-            "tracks": [],
-            "songcount": 9,
-            "diskcount": 1,
-            "type": "compilation",
-            "genre": [
-                {
-                    "id": "7",
-                    "name": "Punk"
-                }
-            ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
             "averagerating": null,
             "mbid": null
         }

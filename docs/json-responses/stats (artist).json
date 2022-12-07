@@ -1,25 +1,46 @@
 {
     "artist": [
         {
-            "id": "35",
-            "name": "Tip-C",
+            "id": "33",
+            "name": "MxBxCx",
             "prefix": null,
-            "basename": "Tip-C",
+            "basename": "MxBxCx",
             "albums": [],
             "albumcount": 0,
             "songs": [],
             "songcount": 1,
             "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=35&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": 0,
+            "art": "https:\/\/music.com.au\/image.php?object_id=33&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": false,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "mbid": "",
             "summary": null,
-            "time": 110,
+            "time": 208,
             "yearformed": 0,
             "placeformed": null
+        },
+        {
+            "id": "16",
+            "name": "CARN\u00daN",
+            "prefix": null,
+            "basename": "CARN\u00daN",
+            "albums": [],
+            "albumcount": 1,
+            "songs": [],
+            "songcount": 9,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=16&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": false,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "",
+            "summary": " ",
+            "time": 3873,
+            "yearformed": 0,
+            "placeformed": ""
         }
     ]
 }

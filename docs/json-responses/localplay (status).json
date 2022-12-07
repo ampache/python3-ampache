@@ -4,12 +4,12 @@
             "status": {
                 "state": "stop",
                 "volume": "27",
-                "repeat": "0",
-                "random": "1",
-                "track": 31,
-                "track_title": "More Than a Feeling",
-                "track_artist": "Boston",
-                "track_album": "Boston"
+                "repeat": false,
+                "random": true,
+                "track": 1,
+                "track_title": "Oxford Comma",
+                "track_artist": "Vampire Weekend",
+                "track_album": "Vampire Weekend"
             }
         }
     }
