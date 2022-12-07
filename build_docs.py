@@ -192,22 +192,12 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ stats
     def stats(ampache_url, ampache_api, type, filter = 'random', username = False, user_id = False, offset = 0, limit = 0, api_format = 'xml'):
     """
-    ampache.stats(ampache_url, ampache_session, 'song', 'random', ampache_user, None, 0, 2, api_format)
-    if os.path.isfile("docs/" + api_format + "-responses/stats." + api_format):
-        shutil.move("docs/" + api_format + "-responses/stats." + api_format,
-                    "docs/" + api_format + "-responses/stats (song)." + api_format)
-
-    stats = ampache.stats(ampache_url, ampache_session, 'artist', 'random', ampache_user, False, 0, 2, api_format)
-    if os.path.isfile("docs/" + api_format + "-responses/stats." + api_format):
-        shutil.move("docs/" + api_format + "-responses/stats." + api_format,
-                    "docs/" + api_format + "-responses/stats (artist)." + api_format)
-
-    single_artist = 2
-
     ampache.stats(ampache_url, ampache_session, 'album', 'random', ampache_user, None, 0, 2, api_format)
     if os.path.isfile("docs/" + api_format + "-responses/stats." + api_format):
         shutil.move("docs/" + api_format + "-responses/stats." + api_format,
                     "docs/" + api_format + "-responses/stats (album)." + api_format)
+
+    single_artist = 2
 
     """ artist
     def artist(ampache_url, ampache_api, filter, include = False, api_format = 'xml'):
