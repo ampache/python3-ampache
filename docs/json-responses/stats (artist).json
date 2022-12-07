@@ -1,20 +1,44 @@
 [
     {
-        "id": "12",
-        "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+        "id": "11",
+        "name": "structura",
         "albums": 1,
         "albumcount": 1,
-        "songs": 2,
-        "songcount": 2,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "songs": 6,
+        "songcount": 6,
+        "tag": [
+            {
+                "id": "3",
+                "name": "Noise"
+            }
+        ],
+        "art": "https:\/\/music.com.au\/image.php?object_id=11&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
         "flag": 0,
-        "preciserating": 1,
-        "rating": 1,
-        "averagerating": null,
+        "preciserating": 4,
+        "rating": 4,
+        "averagerating": 4,
         "mbid": "",
+        "summary": ". Born in 2000 at Lisbon - Portugal, Structura is a sound exploration project using as main tools electronic composition, frequency modulation and effects, the cut-up (of texts), spoken word, DJing, samples, video and others.\nStructura works sounds normally associated with experimental electronica currents like Rhythmic-Noise, Power-Electronics, Break'n'Noise, IDM, Spoken-Word but freelly enough not to get to attached to them.\nThe sound compositions in Structura are linked to concepts, images, literature, cinema and other arts.\n\n ",
+        "time": 1339,
+        "yearformed": 0,
+        "placeformed": ""
+    },
+    {
+        "id": "27",
+        "name": "Chi.Otic",
+        "albums": 0,
+        "albumcount": 0,
+        "songs": 1,
+        "songcount": 1,
+        "tag": [],
+        "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "mbid": "7",
         "summary": " ",
-        "time": 600,
+        "time": 433,
         "yearformed": 0,
         "placeformed": ""
     }

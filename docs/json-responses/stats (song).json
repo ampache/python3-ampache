@@ -1,115 +1,54 @@
 [
     {
-        "id": "58",
-        "title": "BrownSmoke",
-        "name": "BrownSmoke",
+        "id": "124",
+        "title": "True Form",
+        "name": "True Form",
         "artist": {
-            "id": "2",
-            "name": "Synthetic"
+            "id": "36",
+            "name": "Comfort Fit"
         },
         "album": {
-            "id": "2",
-            "name": "Colorsmoke EP"
+            "id": "21",
+            "name": "Forget and Remember"
         },
         "albumartist": {
-            "id": "2",
-            "name": "Synthetic"
+            "id": "36",
+            "name": "Comfort Fit"
         },
         "disk": 1,
-        "track": 4,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
+        "track": 6,
+        "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/6 - True Form.mp3",
         "tag": [
             {
-                "id": "1",
-                "name": "Electronic"
+                "id": "8",
+                "name": "Hip-Hop"
             }
         ],
         "playlisttrack": 1,
-        "time": 304,
-        "year": 2007,
-        "bitrate": 64000,
-        "rate": 22050,
-        "mode": "cbr",
+        "time": 192,
+        "year": 2005,
+        "bitrate": 243031,
+        "rate": 44100,
+        "mode": "vbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
-        "size": 2441886,
-        "mbid": "",
-        "album_mbid": null,
-        "artist_mbid": "1",
-        "albumartist_mbid": "1",
-        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=124&uid=4&player=api&name=Comfort%20Fit%20-%20True%20Form.mp3",
+        "size": 5848663,
+        "mbid": "8bf3acd2-860b-4ece-896f-9b2de89e35fa",
+        "album_mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+        "artist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
+        "albumartist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
+        "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": null,
         "playcount": 0,
-        "catalog": 1,
+        "catalog": 4,
         "composer": "",
         "channels": null,
-        "comment": "",
+        "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-06-comfort_fit-true_form\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
         "license": null,
-        "publisher": "20kbps rec.",
-        "language": "",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": "0.960000",
-        "replaygain_track_peak": "0.912000",
-        "genre": [
-            {
-                "name": "Electronic"
-            }
-        ]
-    },
-    {
-        "id": "64",
-        "title": "Black&BlueSmoke",
-        "name": "Black&BlueSmoke",
-        "artist": {
-            "id": "2",
-            "name": "Synthetic"
-        },
-        "album": {
-            "id": "2",
-            "name": "Colorsmoke EP"
-        },
-        "albumartist": {
-            "id": "2",
-            "name": "Synthetic"
-        },
-        "disk": 1,
-        "track": 1,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
-        "tag": [
-            {
-                "id": "1",
-                "name": "Electronic"
-            }
-        ],
-        "playlisttrack": 2,
-        "time": 500,
-        "year": 2007,
-        "bitrate": 20627,
-        "rate": 22050,
-        "mode": "cbr",
-        "mime": "audio\/x-ms-wma",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.wma",
-        "size": 1298295,
-        "mbid": "",
-        "album_mbid": null,
-        "artist_mbid": "1",
-        "albumartist_mbid": "1",
-        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "",
-        "channels": null,
-        "comment": "Made with Sony ACID 5",
-        "license": null,
-        "publisher": "20kbps rec.",
+        "publisher": "Tokyo Dawn Records",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
@@ -117,7 +56,68 @@
         "replaygain_track_peak": null,
         "genre": [
             {
-                "name": "Electronic"
+                "name": "Hip-Hop"
+            }
+        ]
+    },
+    {
+        "id": "131",
+        "title": "Miles of Smiles",
+        "name": "Miles of Smiles",
+        "artist": {
+            "id": "36",
+            "name": "Comfort Fit"
+        },
+        "album": {
+            "id": "21",
+            "name": "Forget and Remember"
+        },
+        "albumartist": {
+            "id": "36",
+            "name": "Comfort Fit"
+        },
+        "disk": 1,
+        "track": 20,
+        "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/20 - Miles of Smiles.mp3",
+        "tag": [
+            {
+                "id": "8",
+                "name": "Hip-Hop"
+            }
+        ],
+        "playlisttrack": 2,
+        "time": 290,
+        "year": 2005,
+        "bitrate": 247925,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=131&uid=4&player=api&name=Comfort%20Fit%20-%20Miles%20of%20Smiles.mp3",
+        "size": 9028758,
+        "mbid": "ec160787-e0db-4f76-85b5-5a76f59f36f9",
+        "album_mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+        "artist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
+        "albumartist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
+        "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 4,
+        "composer": "",
+        "channels": null,
+        "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-20-comfort_fit-miles_of_smiles\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+        "license": null,
+        "publisher": "Tokyo Dawn Records",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": null,
+        "replaygain_track_peak": null,
+        "genre": [
+            {
+                "name": "Hip-Hop"
             }
         ]
     }

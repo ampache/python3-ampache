@@ -1,8 +1,76 @@
 [
     {
-        "id": "121",
-        "title": "Planetary Picknick",
-        "name": "Planetary Picknick",
+        "id": "89",
+        "title": "Stolen",
+        "name": "Stolen",
+        "artist": {
+            "id": "14",
+            "name": "Nofi\/found."
+        },
+        "album": {
+            "id": "8",
+            "name": "Nofi Devices"
+        },
+        "albumartist": {
+            "id": "14",
+            "name": "Nofi\/found."
+        },
+        "disk": 1,
+        "track": 11,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/11_Stolen.mp3",
+        "tag": [
+            {
+                "id": "5",
+                "name": "Electronica"
+            },
+            {
+                "id": "6",
+                "name": "Dance"
+            }
+        ],
+        "playlisttrack": 1,
+        "time": 628,
+        "year": 0,
+        "bitrate": 192000,
+        "rate": 44100,
+        "mode": "cbr",
+        "mime": "audio\/mpeg",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=89&uid=4&player=api&name=Nofi-found.%20-%20Stolen.mp3",
+        "size": 15100325,
+        "mbid": "",
+        "album_mbid": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "playcount": 0,
+        "catalog": 1,
+        "composer": "Jeffrey Melton",
+        "channels": null,
+        "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+        "license": null,
+        "publisher": "archive.org",
+        "language": "",
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": "2.660000",
+        "replaygain_track_peak": "0.989000",
+        "genre": [
+            {
+                "name": "Electronica"
+            },
+            {
+                "name": "Dance"
+            }
+        ]
+    },
+    {
+        "id": "133",
+        "title": "Kurz Vor Danach Ganz '05",
+        "name": "Kurz Vor Danach Ganz '05",
         "artist": {
             "id": "36",
             "name": "Comfort Fit"
@@ -16,24 +84,24 @@
             "name": "Comfort Fit"
         },
         "disk": 1,
-        "track": 2,
-        "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/2 - Planetary Picknick.mp3",
+        "track": 13,
+        "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/13 - Kurz Vor Danach Ganz \u201805.mp3",
         "tag": [
             {
                 "id": "8",
                 "name": "Hip-Hop"
             }
         ],
-        "playlisttrack": 1,
-        "time": 358,
+        "playlisttrack": 2,
+        "time": 247,
         "year": 2005,
-        "bitrate": 238812,
+        "bitrate": 230429,
         "rate": 44100,
         "mode": "vbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=121&uid=4&player=api&name=Comfort%20Fit%20-%20Planetary%20Picknick.mp3",
-        "size": 10715592,
-        "mbid": "6defae67-37da-4a85-90f6-80df5c27d88c",
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=133&uid=4&player=api&name=Comfort%20Fit%20-%20Kurz%20Vor%20Danach%20Ganz%20-05.mp3",
+        "size": 7136353,
+        "mbid": "60ca3461-5f2b-4d0d-9cc5-ce79b358de7b",
         "album_mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
         "artist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
         "albumartist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
@@ -46,7 +114,7 @@
         "catalog": 4,
         "composer": "",
         "channels": null,
-        "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-02-comfort_fit-planetary_picknick\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+        "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-13-comfort_fit-kurz_vor_danach_ganz_05\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
         "license": null,
         "publisher": "Tokyo Dawn Records",
         "language": "",
@@ -85,7 +153,7 @@
                 "name": "Hip-Hop"
             }
         ],
-        "playlisttrack": 2,
+        "playlisttrack": 3,
         "time": 200,
         "year": 2005,
         "bitrate": 239161,
@@ -122,124 +190,70 @@
         ]
     },
     {
-        "id": "61",
-        "title": "Red&GreenSmoke",
-        "name": "Red&GreenSmoke",
+        "id": "93",
+        "title": "Scribnus 3",
+        "name": "Scribnus 3",
         "artist": {
-            "id": "2",
-            "name": "Synthetic"
+            "id": "14",
+            "name": "Nofi\/found."
         },
         "album": {
-            "id": "2",
-            "name": "Colorsmoke EP"
+            "id": "8",
+            "name": "Nofi Devices"
         },
         "albumartist": {
-            "id": "2",
-            "name": "Synthetic"
+            "id": "14",
+            "name": "Nofi\/found."
         },
         "disk": 1,
-        "track": 5,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/05-Synthetic_-_RedGreenSmokePM20k44khM.wma",
+        "track": 3,
+        "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/03_Scribnus_3.mp3",
         "tag": [
             {
-                "id": "1",
-                "name": "Electronic"
-            }
-        ],
-        "playlisttrack": 3,
-        "time": 400,
-        "year": 2007,
-        "bitrate": 20627,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/x-ms-wma",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.wma",
-        "size": 1044851,
-        "mbid": "",
-        "album_mbid": null,
-        "artist_mbid": "1",
-        "albumartist_mbid": "1",
-        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": "",
-        "channels": null,
-        "comment": "Made with Sony ACID 5",
-        "license": null,
-        "publisher": "20kbps rec.",
-        "language": "",
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": null,
-        "replaygain_track_peak": null,
-        "genre": [
+                "id": "5",
+                "name": "Electronica"
+            },
             {
-                "name": "Electronic"
-            }
-        ]
-    },
-    {
-        "id": "58",
-        "title": "BrownSmoke",
-        "name": "BrownSmoke",
-        "artist": {
-            "id": "2",
-            "name": "Synthetic"
-        },
-        "album": {
-            "id": "2",
-            "name": "Colorsmoke EP"
-        },
-        "albumartist": {
-            "id": "2",
-            "name": "Synthetic"
-        },
-        "disk": 1,
-        "track": 4,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
-        "tag": [
-            {
-                "id": "1",
-                "name": "Electronic"
+                "id": "6",
+                "name": "Dance"
             }
         ],
         "playlisttrack": 4,
-        "time": 304,
-        "year": 2007,
-        "bitrate": 64000,
-        "rate": 22050,
+        "time": 641,
+        "year": 0,
+        "bitrate": 192000,
+        "rate": 44100,
         "mode": "cbr",
         "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
-        "size": 2441886,
+        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3",
+        "size": 15400002,
         "mbid": "",
         "album_mbid": null,
-        "artist_mbid": "1",
-        "albumartist_mbid": "1",
-        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
+        "artist_mbid": "",
+        "albumartist_mbid": "",
+        "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+        "flag": 1,
+        "preciserating": 5,
+        "rating": 5,
         "averagerating": null,
-        "playcount": 0,
+        "playcount": 1,
         "catalog": 1,
-        "composer": "",
+        "composer": "Jeffrey Melton",
         "channels": null,
-        "comment": "",
+        "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
         "license": null,
-        "publisher": "20kbps rec.",
+        "publisher": "archive.org",
         "language": "",
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": "0.960000",
-        "replaygain_track_peak": "0.912000",
+        "replaygain_track_gain": "1.530000",
+        "replaygain_track_peak": "0.989000",
         "genre": [
             {
-                "name": "Electronic"
+                "name": "Electronica"
+            },
+            {
+                "name": "Dance"
             }
         ]
     }
