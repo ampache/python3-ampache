@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <song id="131">
-    <title><![CDATA[Miles of Smiles]]></title>
-    <name><![CDATA[Miles of Smiles]]></name>
+  <song id="117">
+    <title><![CDATA[Remember Something I Forgot]]></title>
+    <name><![CDATA[Remember Something I Forgot]]></name>
     <artist id="36"><![CDATA[Comfort Fit]]></artist>
     <album id="21"><![CDATA[Forget and Remember]]></album>
     <albumartist id="36"><![CDATA[Comfort Fit]]></albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>20</track>
+    <track>11</track>
     <genre id="8"><![CDATA[Hip-Hop]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/20 - Miles of Smiles.mp3]]></filename>
+    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/11 - Remember Something I Forgot.mp3]]></filename>
     <playlisttrack>1</playlisttrack>
-    <time>290</time>
+    <time>163</time>
     <year>2005</year>
-    <bitrate>247925</bitrate>
+    <bitrate>235109</bitrate>
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
     <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=131&uid=4&player=api&name=Comfort%20Fit%20-%20Miles%20of%20Smiles.mp3]]></url>
-    <size>9028758</size>
-    <mbid><![CDATA[ec160787-e0db-4f76-85b5-5a76f59f36f9]]></mbid>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=117&uid=4&player=api&name=Comfort%20Fit%20-%20Remember%20Something%20I%20Forgot.mp3]]></url>
+    <size>4816734</size>
+    <mbid><![CDATA[ba784e10-e268-4c44-9c82-091167162c27]]></mbid>
     <album_mbid><![CDATA[6e1d48f7-717c-416e-af35-5d2454a13af2]]></album_mbid>
     <artist_mbid><![CDATA[e6e2b787-0b4c-4267-8161-310399b101a5]]></artist_mbid>
     <albumartist_mbid><![CDATA[e6e2b787-0b4c-4267-8161-310399b101a5]]></albumartist_mbid>
@@ -33,7 +33,7 @@
     <catalog>4</catalog>
     <composer><![CDATA[]]></composer>
     <channels/>
-    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-20-comfort_fit-miles_of_smiles
+    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-11-comfort_fit-remember_something_i_forgot
 Comments: http://freemusicarchive.org/
 Curator: WFMU
 Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
@@ -48,7 +48,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="61">
+  <song id="54">
     <title><![CDATA[Red&GreenSmoke]]></title>
     <name><![CDATA[Red&GreenSmoke]]></name>
     <artist id="2"><![CDATA[Synthetic]]></artist>
@@ -57,16 +57,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <disk><![CDATA[1]]></disk>
     <track>5</track>
     <genre id="1"><![CDATA[Electronic]]></genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k44khM.wma]]></filename>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3]]></filename>
     <playlisttrack>2</playlisttrack>
     <time>400</time>
     <year>2007</year>
-    <bitrate>20627</bitrate>
-    <rate>44100</rate>
+    <bitrate>64000</bitrate>
+    <rate>22050</rate>
     <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/x-ms-wma]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.wma]]></url>
-    <size>1044851</size>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
+    <size>3209468</size>
     <mbid><![CDATA[]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
     <artist_mbid><![CDATA[1]]></artist_mbid>
@@ -80,15 +80,15 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
     <channels/>
-    <comment><![CDATA[Made with Sony ACID 5]]></comment>
+    <comment><![CDATA[]]></comment>
     <license><![CDATA[]]></license>
     <publisher><![CDATA[20kbps rec.]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
+    <replaygain_track_gain>-2.880000</replaygain_track_gain>
+    <replaygain_track_peak>0.977000</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

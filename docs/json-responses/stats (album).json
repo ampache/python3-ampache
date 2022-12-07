@@ -1,50 +1,50 @@
 {
     "album": [
         {
-            "id": "10",
-            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "id": "9",
+            "name": "Creeping Lawler 2",
             "artist": {
-                "id": "16",
-                "name": "CARN\u00daN"
+                "id": "15",
+                "name": "Warfare 3.0"
             },
-            "time": 3873,
-            "year": 1996,
+            "time": 592,
+            "year": 0,
             "tracks": [],
-            "songcount": 9,
+            "songcount": 2,
             "diskcount": 1,
             "type": null,
             "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
-            "preciserating": null,
-            "rating": null,
+            "preciserating": 3,
+            "rating": 3,
             "averagerating": null,
             "mbid": null
         },
         {
-            "id": "12",
-            "name": "Buried in Nausea",
+            "id": "18",
+            "name": "Inominavel (live.v.01)",
             "artist": {
-                "id": "19",
-                "name": "Various Artists"
+                "id": "11",
+                "name": "structura"
             },
-            "time": 1879,
-            "year": 2012,
+            "time": 1339,
+            "year": 2007,
             "tracks": [],
-            "songcount": 9,
+            "songcount": 6,
             "diskcount": 1,
-            "type": "compilation",
+            "type": null,
             "genre": [
                 {
-                    "id": "7",
-                    "name": "Punk"
+                    "id": "3",
+                    "name": "Noise"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
+            "preciserating": 4,
+            "rating": 4,
+            "averagerating": 3.67,
             "mbid": null
         }
     ]

@@ -1,120 +1,56 @@
 {
     "song": [
         {
-            "id": "129",
-            "title": "The Hunt",
-            "name": "The Hunt",
+            "id": "113",
+            "title": "Representin",
+            "name": "Representin",
             "artist": {
-                "id": "36",
-                "name": "Comfort Fit"
+                "id": "32",
+                "name": "Shorty Mac"
             },
             "album": {
-                "id": "21",
-                "name": "Forget and Remember"
+                "id": "12",
+                "name": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "36",
-                "name": "Comfort Fit"
+                "id": "19",
+                "name": "Various Artists"
             },
             "disk": 1,
-            "track": 16,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/16 - The Hunt.mp3",
-            "genre": [
-                {
-                    "id": "8",
-                    "name": "Hip-Hop"
-                }
-            ],
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
+            "genre": [],
             "playlisttrack": 1,
-            "time": 226,
-            "year": 2005,
-            "bitrate": 224425,
+            "time": 234,
+            "year": 2012,
+            "bitrate": 123814,
             "rate": 44100,
             "mode": "vbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=129&uid=4&player=api&name=Comfort%20Fit%20-%20The%20Hunt.mp3",
-            "size": 6373874,
-            "mbid": "8d22ccfd-38e9-42ca-9664-a236302ab8bf",
-            "album_mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
-            "artist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
-            "albumartist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
+            "size": 3628327,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 4,
+            "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-16-comfort_fit-the_hunt\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
             "license": null,
-            "publisher": "Tokyo Dawn Records",
+            "publisher": "archive.org",
             "language": "",
             "lyrics": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "126",
-            "title": "Don't Show This Message Again",
-            "name": "Don't Show This Message Again",
-            "artist": {
-                "id": "36",
-                "name": "Comfort Fit"
-            },
-            "album": {
-                "id": "21",
-                "name": "Forget and Remember"
-            },
-            "albumartist": {
-                "id": "36",
-                "name": "Comfort Fit"
-            },
-            "disk": 1,
-            "track": 12,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/12 - Don\u2019t Show This Message Again.mp3",
-            "genre": [
-                {
-                    "id": "8",
-                    "name": "Hip-Hop"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 197,
-            "year": 2005,
-            "bitrate": 232690,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=126&uid=4&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3",
-            "size": 5755191,
-            "mbid": "6b582438-c034-47c2-86b0-61c63ec96b4b",
-            "album_mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
-            "artist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
-            "albumartist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 4,
-            "composer": "",
-            "channels": null,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-12-comfort_fit-dont_show_this_message_again\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
-            "license": null,
-            "publisher": "Tokyo Dawn Records",
-            "language": "",
-            "lyrics": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
+            "replaygain_track_gain": "1.910000",
+            "replaygain_track_peak": "0.851000",
             "r128_album_gain": null,
             "r128_track_gain": null
         },
@@ -138,7 +74,7 @@
             "track": 1,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c\/\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)\/01 - \u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d.mp3",
             "genre": [],
-            "playlisttrack": 3,
+            "playlisttrack": 2,
             "time": 300,
             "year": 0,
             "bitrate": 175202,
@@ -173,44 +109,39 @@
             "r128_track_gain": null
         },
         {
-            "id": "54",
-            "title": "Red&GreenSmoke",
-            "name": "Red&GreenSmoke",
+            "id": "97",
+            "title": "Creeping Lawler 2",
+            "name": "Creeping Lawler 2",
             "artist": {
-                "id": "2",
-                "name": "Synthetic"
+                "id": "15",
+                "name": "Warfare 3.0"
             },
             "album": {
-                "id": "2",
-                "name": "Colorsmoke EP"
+                "id": "9",
+                "name": "Creeping Lawler 2"
             },
             "albumartist": {
-                "id": "2",
-                "name": "Synthetic"
+                "id": "15",
+                "name": "Warfare 3.0"
             },
             "disk": 1,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "playlisttrack": 4,
-            "time": 400,
-            "year": 2007,
-            "bitrate": 64000,
-            "rate": 22050,
-            "mode": "cbr",
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
+            "genre": [],
+            "playlisttrack": 3,
+            "time": 296,
+            "year": 0,
+            "bitrate": 177349,
+            "rate": 44100,
+            "mode": "vbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-            "size": 3209468,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
+            "size": 6652448,
             "mbid": "",
             "album_mbid": null,
-            "artist_mbid": "1",
-            "albumartist_mbid": "1",
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -219,15 +150,78 @@
             "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "",
+            "comment": "https:\/\/archive.org\/details\/Creeping_Lawler_2",
             "license": null,
-            "publisher": "20kbps rec.",
+            "publisher": "archive.org",
             "language": "",
             "lyrics": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": "-2.880000",
+            "replaygain_track_gain": "-4.320000",
             "replaygain_track_peak": "0.977000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "86",
+            "title": "Caloonashine",
+            "name": "Caloonashine",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found."
+            },
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found."
+            },
+            "disk": 1,
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/05_Caloonashine.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 330,
+            "year": 0,
+            "bitrate": 192000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&player=api&name=Nofi-found.%20-%20Caloonashine.mp3",
+            "size": 7929692,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": "",
+            "albumartist_mbid": "",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": null,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": "",
+            "lyrics": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "-0.350000",
+            "replaygain_track_peak": "0.955000",
             "r128_album_gain": null,
             "r128_track_gain": null
         }

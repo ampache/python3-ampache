@@ -1,107 +1,44 @@
 {
     "song": [
         {
-            "id": "86",
-            "title": "Caloonashine",
-            "name": "Caloonashine",
+            "id": "74",
+            "title": "inominavel p03",
+            "name": "inominavel p03",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found."
+                "id": "11",
+                "name": "structura"
             },
             "album": {
-                "id": "8",
-                "name": "Nofi Devices"
+                "id": "18",
+                "name": "Inominavel (live.v.01)"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found."
+                "id": "11",
+                "name": "structura"
             },
             "disk": 1,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/05_Caloonashine.mp3",
+            "track": 3,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/03_structura_-_inominavel_p03.mp3",
             "genre": [
                 {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
+                    "id": "3",
+                    "name": "Noise"
                 }
             ],
             "playlisttrack": 1,
-            "time": 330,
-            "year": 0,
+            "time": 143,
+            "year": 2007,
             "bitrate": 192000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&player=api&name=Nofi-found.%20-%20Caloonashine.mp3",
-            "size": 7929692,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=74&uid=4&player=api&name=structura%20-%20inominavel%20p03.mp3",
+            "size": 3449255,
             "mbid": "",
             "album_mbid": null,
             "artist_mbid": "",
             "albumartist_mbid": "",
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
-            "channels": null,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
-            "license": null,
-            "publisher": "archive.org",
-            "language": "",
-            "lyrics": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "-0.350000",
-            "replaygain_track_peak": "0.955000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "107",
-            "title": "Arrest Me",
-            "name": "Arrest Me",
-            "artist": {
-                "id": "20",
-                "name": "R\/B"
-            },
-            "album": {
-                "id": "12",
-                "name": "Buried in Nausea"
-            },
-            "albumartist": {
-                "id": "19",
-                "name": "Various Artists"
-            },
-            "disk": 1,
-            "track": 9,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/09R_b-ArrestMe.m4a",
-            "genre": [
-                {
-                    "id": "7",
-                    "name": "Punk"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 96,
-            "year": 2012,
-            "bitrate": 252864,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mp4",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a",
-            "size": 3091727,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": "",
-            "albumartist_mbid": "",
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -110,15 +47,74 @@
             "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "",
+            "comment": "http:\/\/enoughrecords.scene.org",
             "license": null,
-            "publisher": "",
+            "publisher": "archive.org",
             "language": "",
             "lyrics": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": "-1.350000",
-            "replaygain_track_peak": "0.881000",
+            "replaygain_track_gain": "0.000000",
+            "replaygain_track_peak": "0.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "61",
+            "title": "Red&GreenSmoke",
+            "name": "Red&GreenSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP"
+            },
+            "albumartist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "disk": 1,
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/05-Synthetic_-_RedGreenSmokePM20k44khM.wma",
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 400,
+            "year": 2007,
+            "bitrate": 20627,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.wma",
+            "size": 1044851,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": "1",
+            "albumartist_mbid": "1",
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "Made with Sony ACID 5",
+            "license": null,
+            "publisher": "20kbps rec.",
+            "language": "",
+            "lyrics": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }
