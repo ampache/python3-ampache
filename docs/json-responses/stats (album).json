@@ -1,61 +1,60 @@
 {
     "album": [
         {
-            "id": "8",
-            "name": "Nofi Devices",
+            "id": "18",
+            "name": "Inominavel (live.v.01)",
             "prefix": null,
-            "basename": "Nofi Devices",
+            "basename": "Inominavel (live.v.01)",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "11",
+                "name": "structura",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "structura"
             },
-            "time": 4423,
-            "year": 0,
+            "time": 1339,
+            "year": 2007,
             "tracks": [],
-            "songcount": 11,
+            "songcount": 6,
             "diskcount": 1,
             "type": null,
             "genre": [
                 {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
+                    "id": "3",
+                    "name": "Noise"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": false,
-            "preciserating": 2,
-            "rating": 2,
-            "averagerating": null,
+            "rating": 4,
+            "averagerating": 3.67,
             "mbid": null
         },
         {
-            "id": "9",
-            "name": "Creeping Lawler 2",
+            "id": "12",
+            "name": "Buried in Nausea",
             "prefix": null,
-            "basename": "Creeping Lawler 2",
+            "basename": "Buried in Nausea",
             "artist": {
-                "id": "15",
-                "name": "Warfare 3.0",
+                "id": "19",
+                "name": "Various Artists",
                 "prefix": null,
-                "basename": "Warfare 3.0"
+                "basename": "Various Artists"
             },
-            "time": 592,
-            "year": 0,
+            "time": 1879,
+            "year": 2012,
             "tracks": [],
-            "songcount": 2,
+            "songcount": 9,
             "diskcount": 1,
-            "type": null,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "type": "compilation",
+            "genre": [
+                {
+                    "id": "7",
+                    "name": "Punk"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": false,
-            "preciserating": 3,
-            "rating": 3,
+            "rating": null,
             "averagerating": null,
             "mbid": null
         }

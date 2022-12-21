@@ -1,54 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>9</total_count>
-  <album id="12">
-    <name><![CDATA[Buried in Nausea]]></name>
+  <album id="9">
+    <name><![CDATA[Creeping Lawler 2]]></name>
     <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[Buried in Nausea]]></basename>
-    <artist id="19">
-      <name><![CDATA[Various Artists]]></name>
+    <basename><![CDATA[Creeping Lawler 2]]></basename>
+    <artist id="15">
+      <name><![CDATA[Warfare 3.0]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Various Artists]]></basename>
+      <basename><![CDATA[Warfare 3.0]]></basename>
     </artist>
-    <time>1879</time>
-    <year>2012</year>
+    <time>592</time>
+    <year>0</year>
     <tracks/>
-    <songcount>9</songcount>
+    <songcount>2</songcount>
     <diskcount>1</diskcount>
-    <type>compilation</type>
-    <genre id="7">
-      <name><![CDATA[Punk]]></name>
-    </genre>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <type/>
+    <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
     <flag>0</flag>
-    <preciserating/>
-    <rating/>
+    <rating>3</rating>
     <averagerating/>
     <mbid><![CDATA[]]></mbid>
   </album>
-  <album id="2">
-    <name><![CDATA[Colorsmoke EP]]></name>
+  <album id="8">
+    <name><![CDATA[Nofi Devices]]></name>
     <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[Colorsmoke EP]]></basename>
-    <artist id="2">
-      <name><![CDATA[Synthetic]]></name>
+    <basename><![CDATA[Nofi Devices]]></basename>
+    <artist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Synthetic]]></basename>
+      <basename><![CDATA[Nofi/found.]]></basename>
     </artist>
-    <time>4568</time>
-    <year>2007</year>
+    <time>4423</time>
+    <year>0</year>
     <tracks/>
-    <songcount>12</songcount>
+    <songcount>11</songcount>
     <diskcount>1</diskcount>
     <type/>
-    <genre id="1">
-      <name><![CDATA[Electronic]]></name>
+    <genre id="5">
+      <name><![CDATA[Electronica]]></name>
     </genre>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <flag>1</flag>
-    <preciserating>5</preciserating>
-    <rating>5</rating>
-    <averagerating>3</averagerating>
+    <genre id="6">
+      <name><![CDATA[Dance]]></name>
+    </genre>
+    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <rating>2</rating>
+    <averagerating/>
     <mbid><![CDATA[]]></mbid>
   </album>
 </root>
