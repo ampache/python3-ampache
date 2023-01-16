@@ -58,7 +58,7 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     def handshake(ampache_url, ampache_api, user = False, timestamp = False, version = '400004', api_format = 'xml'):
     """
     # processed details
-    ampache_api = ampache.handshake(ampache_url, encrypted_key, False, False, '400004', api_format)
+    ampache_api = ampache.handshake(ampache_url, encrypted_key, '', 0, '400004', api_format)
     if ampache_api:
         print(f"ampache.handshake: {OKGREEN}PASS{ENDC}")
         #print("\nreturned:\n" + ampache_api)
