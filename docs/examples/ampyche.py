@@ -244,7 +244,7 @@ class AMPYCHE(object):
         encrypted_key = self.ampacheConnection.encrypt_string(self.ampache_apikey, self.ampache_user)
 
         # handshake
-        self.ampache_session = self.ampacheConnection.handshake(self.ampache_url, encrypted_key, False, False, '430000')
+        self.ampache_session = self.ampacheConnection.handshake(self.ampache_url, encrypted_key, '', 0, '5.5.6')
         # if you didn't get a sessoin there's nothing you can do
         if not self.ampache_session:
             print()

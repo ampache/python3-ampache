@@ -70,10 +70,10 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
         sys.exit(f"\nampache.encrypted_key:     {FAIL}FAIL{ENDC}")
 
     """ handshake
-    def handshake(user = False, timestamp = False, version = '420000', api_format = 'xml'):
+    def handshake(user = False, timestamp = False, version = '5.5.6', api_format = 'xml'):
     """
     # processed details
-    ampache_api = ampacheConnection.handshake(ampache_url, encrypted_key, False, False, '420000')
+    ampache_api = ampacheConnection.handshake(ampache_url, encrypted_key, '', 0, '5.5.6')
     if ampache_api:
         print(f"ampacheConnection.handshake: {OKGREEN}PASS{ENDC}")
         #print("\nreturned:\n" + ampache_api)

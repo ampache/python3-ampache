@@ -76,12 +76,12 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
         Takes a timestamp, auth key, and username.
     """
     # bad handshake
-    ampacheConnection.handshake(ampache_url, 'badkey', False, False, api_version)
+    ampacheConnection.handshake(ampache_url, 'badkey', '', 0, api_version)
     if os.path.isfile("docs/" + api_format + "-responses/handshake." + api_format):
         shutil.move("docs/" + api_format + "-responses/handshake." + api_format,
                     "docs/" + api_format + "-responses/handshake (error)." + api_format)
     # use correct details
-    ampache_session = ampacheConnection.handshake(ampache_url, encrypted_key, False, False, api_version)
+    ampache_session = ampacheConnection.handshake(ampache_url, encrypted_key, '', 0, api_version)
     if not ampache_session:
         print(encrypted_key)
         sys.exit('ERROR: Failed to connect to ' + ampache_url)

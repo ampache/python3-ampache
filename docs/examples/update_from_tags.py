@@ -26,7 +26,7 @@ ampacheConnection = ampache.API()
 ampacheConnection.set_debug(False)
 ampacheConnection.set_format(api_format)
 encrypted_key = ampacheConnection.encrypt_string(ampache_api, ampache_user)
-ampache_session = ampacheConnection.handshake(ampache_url, encrypted_key, False, False, api_version)
+ampache_session = ampacheConnection.handshake(ampache_url, encrypted_key, '', 0, api_version)
 
 if not ampache_api:
     print()
