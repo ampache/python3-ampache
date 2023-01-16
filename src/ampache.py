@@ -180,7 +180,7 @@ API FUNCTIONS
 """
 
 
-def handshake(ampache_url, ampache_api, ampache_user=False, timestamp=False, version='443000', api_format='xml'):
+def handshake(ampache_url, ampache_api, ampache_user=False, timestamp=False, version='390001', api_format='xml'):
     """ handshake
         MINIMUM_API_VERSION=380001
 
@@ -234,7 +234,7 @@ def handshake(ampache_url, ampache_api, ampache_user=False, timestamp=False, ver
         return token
 
 
-def ping(ampache_url, ampache_api=False, version='443000', api_format='xml'):
+def ping(ampache_url, ampache_api=False, version='390001', api_format='xml'):
     """ ping
         MINIMUM_API_VERSION=380001
 

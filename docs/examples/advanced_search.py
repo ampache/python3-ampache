@@ -20,7 +20,7 @@ handshake
 # processed details
 print('Connecting to:\n    ', ampache_url)
 src_api = ampache_api
-ampache_api = ampache.handshake(ampache_url, encrypted_key, False, False, '400004', 'xml')
+ampache_api = ampache.handshake(ampache_url, encrypted_key, '', 0, '390001', 'xml')
 print('\nThe ampache handshake for:\n    ', src_api, '\n\nReturned the following session key:\n    ', ampache_api)
 if not ampache_api:
      print()

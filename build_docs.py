@@ -81,18 +81,18 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     def handshake(ampache_url, ampache_api, user = False, timestamp = False, version = api_version, api_format = 'xml'):
     """
     # bad handshake
-    ampache.handshake(ampache_url, 'badkey', False, False, api_version, api_format)
+    ampache.handshake(ampache_url, 'badkey', '', 0, api_version, api_format)
     if os.path.isfile("docs/" + api_format + "-responses/handshake." + api_format):
         shutil.move("docs/" + api_format + "-responses/handshake." + api_format,
                     "docs/" + api_format + "-responses/handshake (error)." + api_format)
     # use correct details
-    ampache_session = ampache.handshake(ampache_url, encrypted_key, False, False, api_version, api_format)
+    ampache_session = ampache.handshake(ampache_url, encrypted_key, '', 0, api_version, api_format)
     if not ampache_session:
         print()
         sys.exit('ERROR: Failed to connect to ' + ampache_url)
 
     """ ping
-    def ping(ampache_url, ampache_api=False, version='443000', api_format='xml'):
+    def ping(ampache_url, ampache_api=False, version='390001', api_format='xml'):
     """
     ampache.ping(ampache_url, False, api_version, api_format)
     if os.path.isfile("docs/" + api_format + "-responses/ping." + api_format):
