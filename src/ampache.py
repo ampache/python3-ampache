@@ -38,6 +38,8 @@ class API(object):
         self.AMPACHE_API = 'xml'
         self.AMPACHE_DEBUG = False
         self.DOCS_PATH = "docs/"
+        self.CONFIG_FILE = "ampache.json"
+        self.CONFIG_PATH = ""
         self.AMPACHE_URL = ''
         self.AMPACHE_SESSION = ''
         self.AMPACHE_USER = ''
@@ -63,7 +65,8 @@ class API(object):
             * myformat = (string) 'xml'|'json'
         """
         if myformat == 'xml' or myformat == 'json':
-            print('AMPACHE_API set to ' + myformat)
+            if self.AMPACHE_DEBUG:
+                print('AMPACHE_API set to ' + myformat)
             self.AMPACHE_API = myformat
 
     def set_debug(self, mybool: bool):
@@ -74,10 +77,11 @@ class API(object):
             INPUTS
             * bool = (boolean) Enable/disable debug messages
         """
-        if mybool:
-            print('AMPACHE_DEBUG' + f": {self.OKGREEN}enabled{self.ENDC}")
-        else:
-            print('AMPACHE_DEBUG' + f": {self.WARNING}disabled{self.ENDC}")
+        if self.AMPACHE_DEBUG:
+            if mybool:
+                print('AMPACHE_DEBUG' + f": {self.OKGREEN}enabled{self.ENDC}")
+            else:
+                print('AMPACHE_DEBUG' + f": {self.WARNING}disabled{self.ENDC}")
         self.AMPACHE_DEBUG = mybool
 
     def set_debug_path(self, path_string: str):
@@ -120,13 +124,71 @@ class API(object):
         """
         self.AMPACHE_URL = myurl
 
+    def set_config_path(self, path: str):
+        """ set_config_path
+
+            Set the folder which contains your config to a folder instead of the working directory
+
+            INPUTS
+            * path = (string) ''
+        """
+        if not os.path.isdir(path):
+            os.makedirs(path)
+        self.CONFIG_PATH = path
+
+    def get_config(self):
+        """ get_config
+
+            read the config and set values from the json config file
+        """
+        output_file = os.path.join(self.CONFIG_PATH, self.CONFIG_FILE)
+        if os.path.isfile(output_file):
+            with open(output_file, 'r') as file:
+                config = json.load(file)
+            try:
+                self.AMPACHE_URL = config["ampache_url"]
+                self.AMPACHE_USER = config["ampache_user"]
+                self.AMPACHE_KEY = config["ampache_apikey"]
+                self.AMPACHE_SESSION = config["ampache_session"]
+                self.AMPACHE_API = config["api_format"]
+            except TypeError:
+                return False
+            except IndexError:
+                return False
+
+            return True
+        return False
+
+    def save_config(self):
+        """ save_config
+
+            save config to a json file for use later
+
+            INPUTS
+            * myurl = (string) ''
+        """
+        config = {
+            "ampache_url": self.AMPACHE_URL,
+            "ampache_user": self.AMPACHE_USER,
+            "ampache_apikey": self.AMPACHE_KEY,
+            "ampache_session": self.AMPACHE_SESSION,
+            "api_format": self.AMPACHE_API
+        }
+
+        if self.CONFIG_PATH and not os.path.isdir(self.CONFIG_PATH):
+            os.makedirs(self.CONFIG_PATH)
+        output_file = os.path.join(self.CONFIG_PATH, self.CONFIG_FILE)
+        with open(output_file, 'w') as file:
+            json.dump(config, file)
+
     def test_result(self, result, title):
-        """ set_debug
+        """ test_result
 
             This function can be used to enable/disable debugging messages
 
             INPUTS
-            * bool = (boolean) Enable/disable debug messages
+            * result = The response from the request
+            * title = (string) generall the function name that was called
         """
         if not result:
             print("ampache." + title + f": {self.FAIL}FAIL{self.ENDC}")
@@ -322,8 +384,9 @@ class API(object):
             if self.DOCS_PATH == "docs/":
                 self.DOCS_PATH = self.DOCS_PATH + api_format + "-responses/"
             url_response = ampache_response.decode('utf-8')
-            print(url_response)
-            print(full_url)
+            if self.AMPACHE_DEBUG:
+                print(url_response)
+                print(full_url)
             try:
                 if not os.path.isdir(self.DOCS_PATH):
                     os.makedirs(self.DOCS_PATH)
@@ -341,7 +404,7 @@ class API(object):
     """
 
     def handshake(self, ampache_url: str, ampache_api: str, ampache_user: str = False,
-                  timestamp: int = 0, version: str = '5.1.0'):
+                  timestamp: int = 0, version: str = '6.0.0'):
         """ handshake
             MINIMUM_API_VERSION=380001
 
@@ -396,7 +459,7 @@ class API(object):
             self.AMPACHE_SESSION = token
             return token
 
-    def ping(self, ampache_url: str, ampache_api: str = False, version: str = '5.1.0'):
+    def ping(self, ampache_url: str, ampache_api: str = False, version: str = '6.0.0'):
         """ ping
             MINIMUM_API_VERSION=380001
 
@@ -2048,7 +2111,8 @@ class API(object):
             * object_id   = (integer) $object_id
             * rating      = (integer) 0|1|2|3|4|5
         """
-        if (rating < 0 or rating > 5) or not (object_type == 'song' or object_type == 'album' or object_type == 'artist'):
+        if (rating < 0 or rating > 5) or not (
+                object_type == 'song' or object_type == 'album' or object_type == 'artist'):
             return False
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'rate',
@@ -2721,7 +2785,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def live_streams(self, filter_str: str = False, exact: int = False,
-               offset=0, limit=0):
+                     offset=0, limit=0):
         """ live_streams
             MINIMUM_API_VERSION=5.1.0
 
@@ -3014,7 +3078,6 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-
     def deleted_videos(self, offset=0, limit=0):
         """ deleted_videos
             MINIMUM_API_VERSION=500000
@@ -3044,7 +3107,7 @@ class API(object):
     """
 
     def tags(self, filter_str: str = False,
-               exact: int = False, offset=0, limit=0):
+             exact: int = False, offset=0, limit=0):
         """ tags
             MINIMUM_API_VERSION=380001
 
@@ -3165,4 +3228,3 @@ class API(object):
         if not ampache_response:
             return False
         return self.return_data(ampache_response)
-
