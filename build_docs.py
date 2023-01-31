@@ -616,9 +616,10 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ def podcast_episodes
     """
     ampacheConnection.podcast_episodes(1, offset, limit)
+
     """ def podcast_episode
     """
-    ampacheConnection.podcast_episode(47)
+    ampacheConnection.podcast_episode(23)
 
     """ def podcast_create
     """
