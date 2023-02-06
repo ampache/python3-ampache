@@ -506,8 +506,7 @@ class API(object):
                 return False
             return ampache_api
 
-    def register(self, username, password=False, fullname=False, email=False,
-                    website=False, state=False, city=False, disable=False, maxbitrate=False):
+    def register(self, username, fullname, password, email):
         """ register
             MINIMUM_API_VERSION=600000
 
