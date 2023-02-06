@@ -506,6 +506,37 @@ class API(object):
                 return False
             return ampache_api
 
+    def register(self, username, password=False, fullname=False, email=False,
+                    website=False, state=False, city=False, disable=False, maxbitrate=False):
+        """ register
+            MINIMUM_API_VERSION=600000
+
+            Register a new user.
+            Requires the username, password and email.
+
+            INPUTS
+            * username = (string) $username
+            * fullname = (string) $fullname //optional
+            * password = (string) hash('sha256', $password))
+            * email    = (string) $email
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        if bool(disable):
+            disable = 1
+        else:
+            disable = 0
+        data = {'action': 'register',
+                'username': username,
+                'fullname': fullname,
+                'password': password,
+                'email': email}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'register')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def goodbye(self):
         """ goodbye
             MINIMUM_API_VERSION=400001
@@ -565,6 +596,46 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'get_similar')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def list(self, object_type,
+                    filter_str: str = False, exact: int = False, add: int = False, update: int = False,
+                    offset=0, limit=0):
+        """ list
+            MINIMUM_API_VERSION=600000
+
+            This takes a collection of inputs and returns ID + name for the object type
+
+            INPUTS
+            * object_type = (string) 'song'|'album'|'artist'|'album_artist'|'playlist'
+            * filter_str  = (string) search the name of the object_type //optional
+            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * add         = (integer) UNIXTIME() //optional
+            * update      = (integer) UNIXTIME() //optional
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'list',
+                'auth': self.AMPACHE_SESSION,
+                'type': object_type,
+                'filter': filter_str,
+                'exact': exact,
+                'add': add,
+                'update': update,
+                'offset': str(offset),
+                'limit': str(limit)}
+        if not filter_str:
+            data.pop('filter')
+        if not add:
+            data.pop('add')
+        if not update:
+            data.pop('update')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'list')
         if not ampache_response:
             return False
         return self.return_data(ampache_response)
