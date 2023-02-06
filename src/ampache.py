@@ -596,12 +596,12 @@ class API(object):
         return self.return_data(ampache_response)
 
     def list(self, object_type,
-                    filter_str: str = False, exact: int = False, add: int = False, update: int = False,
-                    offset=0, limit=0):
+             filter_str: str = False, exact: int = False, add: int = False, update: int = False,
+             offset=0, limit=0):
         """ list
             MINIMUM_API_VERSION=600000
 
-            This takes a collection of inputs and returns ID + name for the object type
+            This takes a named array of objects and returning `id`, `name`, `prefix` and `basename`
 
             INPUTS
             * object_type = (string) 'song'|'album'|'artist'|'album_artist'|'playlist'
