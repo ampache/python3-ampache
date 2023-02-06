@@ -520,10 +520,6 @@ class API(object):
             * email    = (string) $email
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        if bool(disable):
-            disable = 1
-        else:
-            disable = 0
         data = {'action': 'register',
                 'username': username,
                 'fullname': fullname,
