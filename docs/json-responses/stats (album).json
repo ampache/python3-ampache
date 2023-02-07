@@ -1,50 +1,54 @@
 {
     "album": [
         {
-            "id": "9",
-            "name": "Creeping Lawler 2",
+            "id": "10",
+            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
             "artist": {
-                "id": "15",
-                "name": "Warfare 3.0"
+                "id": "16",
+                "name": "CARN\u00daN"
             },
-            "time": 592,
-            "year": 0,
+            "time": 3873,
+            "year": 1996,
             "tracks": [],
-            "songcount": 2,
+            "songcount": 9,
             "diskcount": 1,
             "type": null,
             "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
-            "preciserating": 3,
-            "rating": 3,
+            "preciserating": null,
+            "rating": null,
             "averagerating": null,
             "mbid": null
         },
         {
-            "id": "18",
-            "name": "Inominavel (live.v.01)",
+            "id": "8",
+            "name": "Nofi Devices",
             "artist": {
-                "id": "11",
-                "name": "structura"
+                "id": "14",
+                "name": "Nofi\/found."
             },
-            "time": 1339,
-            "year": 2007,
+            "time": 4423,
+            "year": 0,
             "tracks": [],
-            "songcount": 6,
+            "songcount": 11,
             "diskcount": 1,
             "type": null,
             "genre": [
                 {
-                    "id": "3",
-                    "name": "Noise"
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": 0,
-            "preciserating": 4,
-            "rating": 4,
-            "averagerating": 3.67,
+            "preciserating": 2,
+            "rating": 2,
+            "averagerating": null,
             "mbid": null
         }
     ]

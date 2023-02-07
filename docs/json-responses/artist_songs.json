@@ -1,65 +1,6 @@
 {
     "song": [
         {
-            "id": "56",
-            "title": "Black&BlueSmoke",
-            "name": "Black&BlueSmoke",
-            "artist": {
-                "id": "2",
-                "name": "Synthetic"
-            },
-            "album": {
-                "id": "2",
-                "name": "Colorsmoke EP"
-            },
-            "albumartist": {
-                "id": "2",
-                "name": "Synthetic"
-            },
-            "disk": 1,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "playlisttrack": 1,
-            "time": 500,
-            "year": 2007,
-            "bitrate": 64000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-            "size": 4010069,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": "1",
-            "albumartist_mbid": "1",
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
-            "flag": 0,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": null,
-            "comment": "",
-            "license": null,
-            "publisher": "20kbps rec.",
-            "language": "",
-            "lyrics": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "-5.110000",
-            "replaygain_track_peak": "1.000000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
             "id": "64",
             "title": "Black&BlueSmoke",
             "name": "Black&BlueSmoke",
@@ -84,7 +25,7 @@
                     "name": "Electronic"
                 }
             ],
-            "playlisttrack": 2,
+            "playlisttrack": 1,
             "time": 500,
             "year": 2007,
             "bitrate": 20627,
@@ -115,6 +56,65 @@
             "replaygain_album_peak": null,
             "replaygain_track_gain": null,
             "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "56",
+            "title": "Black&BlueSmoke",
+            "name": "Black&BlueSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP"
+            },
+            "albumartist": {
+                "id": "2",
+                "name": "Synthetic"
+            },
+            "disk": 1,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 500,
+            "year": 2007,
+            "bitrate": 64000,
+            "rate": 22050,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+            "size": 4010069,
+            "mbid": "",
+            "album_mbid": null,
+            "artist_mbid": "1",
+            "albumartist_mbid": "1",
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": null,
+            "comment": "",
+            "license": null,
+            "publisher": "20kbps rec.",
+            "language": "",
+            "lyrics": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "-5.110000",
+            "replaygain_track_peak": "1.000000",
             "r128_album_gain": null,
             "r128_track_gain": null
         },

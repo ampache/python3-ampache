@@ -1,68 +1,63 @@
 {
     "song": [
         {
-            "id": "74",
-            "title": "inominavel p03",
-            "name": "inominavel p03",
+            "id": "79",
+            "title": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
+            "name": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
             "artist": {
-                "id": "11",
-                "name": "structura"
+                "id": "12",
+                "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
             },
             "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)"
+                "id": "6",
+                "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)"
             },
             "albumartist": {
-                "id": "11",
-                "name": "structura"
+                "id": "12",
+                "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
             },
             "disk": 1,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/03_structura_-_inominavel_p03.mp3",
-            "genre": [
-                {
-                    "id": "3",
-                    "name": "Noise"
-                }
-            ],
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c\/\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)\/01 - \u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d.mp3",
+            "genre": [],
             "playlisttrack": 1,
-            "time": 143,
-            "year": 2007,
-            "bitrate": 192000,
+            "time": 300,
+            "year": 0,
+            "bitrate": 175202,
             "rate": 44100,
-            "mode": "cbr",
+            "mode": "vbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=74&uid=4&player=api&name=structura%20-%20inominavel%20p03.mp3",
-            "size": 3449255,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=79&uid=4&player=api&name=-%20-%20-%20-%20-%20-%20-.mp3",
+            "size": 6664157,
             "mbid": "",
             "album_mbid": null,
             "artist_mbid": "",
             "albumartist_mbid": "",
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "playcount": 0,
+            "playcount": 1,
             "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "http:\/\/enoughrecords.scene.org",
+            "comment": "https:\/\/archive.org\/details\/IBR_385",
             "license": null,
             "publisher": "archive.org",
             "language": "",
             "lyrics": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": "0.000000",
-            "replaygain_track_peak": "0.000000",
+            "replaygain_track_gain": "-21.280000",
+            "replaygain_track_peak": "1.000000",
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "61",
-            "title": "Red&GreenSmoke",
-            "name": "Red&GreenSmoke",
+            "id": "56",
+            "title": "Black&BlueSmoke",
+            "name": "Black&BlueSmoke",
             "artist": {
                 "id": "2",
                 "name": "Synthetic"
@@ -76,8 +71,8 @@
                 "name": "Synthetic"
             },
             "disk": 1,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/05-Synthetic_-_RedGreenSmokePM20k44khM.wma",
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
             "genre": [
                 {
                     "id": "1",
@@ -85,14 +80,14 @@
                 }
             ],
             "playlisttrack": 2,
-            "time": 400,
+            "time": 500,
             "year": 2007,
-            "bitrate": 20627,
-            "rate": 44100,
+            "bitrate": 64000,
+            "rate": 22050,
             "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.wma",
-            "size": 1044851,
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+            "size": 4010069,
             "mbid": "",
             "album_mbid": null,
             "artist_mbid": "1",
@@ -106,15 +101,15 @@
             "catalog": 1,
             "composer": "",
             "channels": null,
-            "comment": "Made with Sony ACID 5",
+            "comment": "",
             "license": null,
             "publisher": "20kbps rec.",
             "language": "",
             "lyrics": "",
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
+            "replaygain_track_gain": "-5.110000",
+            "replaygain_track_peak": "1.000000",
             "r128_album_gain": null,
             "r128_track_gain": null
         }
