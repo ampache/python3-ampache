@@ -1,39 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>17</total_count>
-  <artist id="34">
-    <name><![CDATA[Comedown Kid]]></name>
+  <artist id="11">
+    <name><![CDATA[structura]]></name>
     <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[Comedown Kid]]></basename>
+    <basename><![CDATA[structura]]></basename>
+    <genre id="3">
+      <name><![CDATA[Noise]]></name>
+    </genre>
+    <albums/>
+    <albumcount>1</albumcount>
+    <songs/>
+    <songcount>6</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=11&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <rating>4</rating>
+    <averagerating>4</averagerating>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[. Born in 2000 at Lisbon - Portugal, Structura is a sound exploration project using as main tools electronic composition, frequency modulation and effects, the cut-up (of texts), spoken word, DJing, samples, video and others.
+Structura works sounds normally associated with experimental electronica currents like Rhythmic-Noise, Power-Electronics, Break'n'Noise, IDM, Spoken-Word but freelly enough not to get to attached to them.
+The sound compositions in Structura are linked to concepts, images, literature, cinema and other arts.
+
+ ]]></summary>
+    <time><![CDATA[1339]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
+  <artist id="35">
+    <name><![CDATA[Tip-C]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Tip-C]]></basename>
     <albums/>
     <albumcount>0</albumcount>
     <songs/>
     <songcount>1</songcount>
-    <art><![CDATA[https://music.com.au/image.php?object_id=34&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=35&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
     <flag>0</flag>
     <rating/>
     <averagerating/>
     <mbid><![CDATA[]]></mbid>
     <summary><![CDATA[]]></summary>
-    <time><![CDATA[116]]></time>
-    <yearformed>0</yearformed>
-    <placeformed><![CDATA[]]></placeformed>
-  </artist>
-  <artist id="21">
-    <name><![CDATA[Tip-C (featuring Mike Beers)]]></name>
-    <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[Tip-C (featuring Mike Beers)]]></basename>
-    <albums/>
-    <albumcount>0</albumcount>
-    <songs/>
-    <songcount>1</songcount>
-    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <flag>0</flag>
-    <rating/>
-    <averagerating/>
-    <mbid><![CDATA[6]]></mbid>
-    <summary><![CDATA[]]></summary>
-    <time><![CDATA[252]]></time>
+    <time><![CDATA[110]]></time>
     <yearformed>0</yearformed>
     <placeformed><![CDATA[]]></placeformed>
   </artist>
