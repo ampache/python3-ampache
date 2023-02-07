@@ -2901,6 +2901,96 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+    def live_stream_create(self, name: str, stream_url: str, codec: str, catalog_id: int, site_url: str = ''):
+        """ live_stream_create
+            MINIMUM_API_VERSION=6.0.0
+
+            Create a live_stream (radio station) object.
+
+            INPUTS
+            * name     = (string) Stream title
+            * url      = (string) URL of the http/s stream
+            * codec    = (string) stream codec ('mp3', 'flac', 'ogg', 'vorbis', 'opus', 'aac', 'alac')
+            * catalog  = (int) Catalog ID to associate with this stream
+            * site_url = (string) Homepage URL of the stream //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'live_stream_create',
+                'auth': self.AMPACHE_SESSION,
+                'name': name,
+                'url': stream_url,
+                'codec': codec,
+                'catalog': catalog_id,
+                'site_url': site_url}
+        if not site_url:
+            data.pop('site_url')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_stream_create')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def live_stream_edit(self, filter_id, name: str = '', stream_url: str = '', codec: str = '', catalog_id: int = 0, site_url: str = ''):
+        """ live_stream_edit
+            MINIMUM_API_VERSION=6.0.0
+
+            Edit a live_stream (radio station) object.
+
+            INPUTS
+            * filter   = (string) object_id
+            * name     = (string) Stream title //optional
+            * url      = (string) URL of the http/s stream //optional
+            * codec    = (string) stream codec ('mp3', 'flac', 'ogg', 'vorbis', 'opus', 'aac', 'alac') //optional
+            * catalog  = (int) Catalog ID to associate with this stream //optional
+            * site_url = (string) Homepage URL of the stream //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'live_stream_edit',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'name': name,
+                'url': stream_url,
+                'codec': codec,
+                'catalog': catalog_id,
+                'site_url': site_url}
+        if not name:
+            data.pop('name')
+        if not stream_url:
+            data.pop('url')
+        if not codec:
+            data.pop('codec')
+        if not catalog_id:
+            data.pop('catalog')
+        if not site_url:
+            data.pop('site_url')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_stream_edit')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def live_stream_delete(self, filter_id: int, object_type=False):
+        """ live_stream_delete
+            MINIMUM_API_VERSION=6.0.0
+
+            Delete an existing live_stream (radio station). (if it exists)
+
+            INPUTS
+            * filter_id = (integer) object_id
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'live_stream_delete',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_stream_delete')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def labels(self, filter_str: str = False, exact: int = False,
                offset=0, limit=0):
         """ labels
