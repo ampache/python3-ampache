@@ -1854,7 +1854,7 @@ class API(object):
             http://ampache.org/api/api-advanced-search
 
             INPUTS
-            * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input], [rule_2,rule_2_operator,rule_2_input], [etc]]
+            * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
             * operator    = (string) 'and'|'or' (whether to match one rule or all) //optional
             * object_type = (string)  //optional
             * offset      = (integer) //optional
@@ -2931,7 +2931,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def live_stream_edit(self, filter_id, name: str = '', stream_url: str = '', codec: str = '', catalog_id: int = 0, site_url: str = ''):
+    def live_stream_edit(self, filter_id, name: str = '', stream_url: str = '', codec: str = '', catalog_id: int = 0,
+                         site_url: str = ''):
         """ live_stream_edit
             MINIMUM_API_VERSION=6.0.0
 
@@ -2971,7 +2972,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def live_stream_delete(self, filter_id: int, object_type=False):
+    def live_stream_delete(self, filter_id: int):
         """ live_stream_delete
             MINIMUM_API_VERSION=6.0.0
 
