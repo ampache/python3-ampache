@@ -129,9 +129,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     ampacheConnection.user_create(tempusername, 'supoersecretpassword', 'email@gmail.com', False, False)
     ampacheConnection.user(tempusername)
 
-    """ def user_update(username, password = False, fullname = False, email = False, website = False, state = False, city = False, disable = False, maxbitrate = False, api_format = 'xml'):
+    """ def user_edit(username, password = False, fullname = False, email = False, website = False, state = False, city = False, disable = False, maxbitrate = False, api_format = 'xml'):
     """
-    ampacheConnection.user_update(tempusername, False, False, False, False, False, False, True, False)
+    ampacheConnection.user_edit(tempusername, False, False, False, False, False, False, True, False)
     ampacheConnection.user(tempusername)
     if os.path.isfile("docs/" + api_format + "-responses/user." + api_format):
         shutil.move("docs/" + api_format + "-responses/user." + api_format,
