@@ -2521,10 +2521,10 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def user_update(self, username, password=False, fullname=False, email=False,
+    def user_edit(self, username, password=False, fullname=False, email=False,
                     website=False, state=False, city=False, disable=False, maxbitrate=False):
         """ user_update
-            MINIMUM_API_VERSION=400001
+            MINIMUM_API_VERSION=600000
 
             Update an existing user. @param array $input
 
@@ -2544,7 +2544,7 @@ class API(object):
             disable = 1
         else:
             disable = 0
-        data = {'action': 'user_update',
+        data = {'action': 'user_edit',
                 'auth': self.AMPACHE_SESSION,
                 'username': username,
                 'password': password,
@@ -3382,6 +3382,62 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tag_songs')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+
+    def user_update(self, username, password=False, fullname=False, email=False,
+                    website=False, state=False, city=False, disable=False, maxbitrate=False):
+        """ user_update
+            MINIMUM_API_VERSION=400001
+
+            Update an existing user. @param array $input
+
+            INPUTS
+            * username    = (string) $username
+            * password    = (string) hash('sha256', $password)) //optional
+            * fullname    = (string) //optional
+            * email       = (string) 'user@gmail.com' //optional
+            * website     = (string) //optional
+            * state       = (string) //optional
+            * city        = (string) //optional
+            * disable     = (boolean|integer) (True,False | 0|1) //optional
+            * maxbitrate  = (string) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        if bool(disable):
+            disable = 1
+        else:
+            disable = 0
+        data = {'action': 'user_update',
+                'auth': self.AMPACHE_SESSION,
+                'username': username,
+                'password': password,
+                'fullname': fullname,
+                'email': email,
+                'website': website,
+                'state': state,
+                'city': city,
+                'disable': disable,
+                'maxbitrate': maxbitrate}
+        if not password:
+            data.pop('password')
+        if not fullname:
+            data.pop('fullname')
+        if not email:
+            data.pop('email')
+        if not website:
+            data.pop('website')
+        if not state:
+            data.pop('state')
+        if not city:
+            data.pop('city')
+        if not maxbitrate:
+            data.pop('maxbitrate')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_update')
         if not ampache_response:
             return False
         return self.return_data(ampache_response)
