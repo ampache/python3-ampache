@@ -26,6 +26,7 @@ import json
 import os
 import requests
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -372,9 +373,9 @@ class API(object):
         """
         try:
             result = urllib.request.urlopen(full_url)
-        except urllib.error.URLError:
-            return False
         except urllib.error.HTTPError:
+            return False
+        except urllib.error.URLError:
             return False
         except ValueError:
             return False
