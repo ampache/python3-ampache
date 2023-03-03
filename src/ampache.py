@@ -1547,6 +1547,72 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+    def catalog_add(self, cat_name, cat_path, cat_type=False, media_type=False, file_pattern=False, folder_pattern=False, username=False, password=False):
+        """ catalog_add
+            MINIMUM_API_VERSION=6.0.0
+
+            Create a new catalog
+
+            INPUTS
+            * name           = (string) catalog_name
+            * path           = (string) URL or folder path for your catalog
+            * type           = (string) catalog_type default: local ('local', 'beets', 'remote', 'subsonic', 'seafile', 'beetsremote') //optional
+            * media_type     = (string) Default: 'music' ('music', 'podcast', 'clip', 'tvshow', 'movie', 'personal_video') //optional
+            * file_pattern   = (string) Pattern used identify tags from the file name. Default '%T - %t' //optional
+            * folder_pattern = (string) Pattern used identify tags from the folder name. Default '%a/%A' //optional
+            * username       = (string) login to remote catalog ('remote', 'subsonic', 'seafile') //optional
+            * password       = (string) password to remote catalog ('remote', 'subsonic', 'seafile', 'beetsremote') //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'catalog_add',
+                'auth': self.AMPACHE_SESSION,
+                'name': cat_name,
+                'path': cat_path,
+                'type': cat_type,
+                'media_type': media_type,
+                'file_pattern': file_pattern,
+                'folder_pattern': folder_pattern,
+                'username': username,
+                'password': password}
+        if not cat_type:
+            data.pop('type')
+        if not media_type:
+            data.pop('media_type')
+        if not file_pattern:
+            data.pop('file_pattern')
+        if not folder_pattern:
+            data.pop('folder_pattern')
+        if not username:
+            data.pop('username')
+        if not password:
+            data.pop('password')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalog_action')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def catalog_delete(self, filter_id: int):
+        """ catalog_delete
+            MINIMUM_API_VERSION=6.0.0
+
+            Delete an existing catalog. (if it exists)
+
+            INPUTS
+            * filter = (string) catalog_id to delete
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'catalog_delete',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark_delete')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def catalog_action(self, task, catalog_id):
         """ catalog_action
             MINIMUM_API_VERSION=400001
