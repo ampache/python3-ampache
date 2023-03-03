@@ -636,6 +636,50 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+    def browse(self, filter_str: str = False, object_type: str = False, catalog: int = False, add: int = False,
+               update: int = False, offset=0, limit=0):
+        """ browse
+            MINIMUM_API_VERSION=6.0.0
+
+            Return children of a parent object in a folder traversal/browse style
+            If you don't send any parameters you'll get a catalog list (the 'root' path)
+
+            INPUTS
+            * filter_str  = (string) object_id //optional
+            * object_type = (string) 'root', 'catalog', 'artist', 'album', 'podcast' // optional
+            * catalog = (integer) catalog ID you are browsing
+            * add     = Api::set_filter(date) //optional
+            * update  = Api::set_filter(date) //optional
+            * offset  = (integer) //optional
+            * limit   = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'browse',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str,
+                'type': object_type,
+                'catalog': catalog,
+                'add': add,
+                'update': update,
+                'offset': str(offset),
+                'limit': str(limit)}
+        if not filter_str:
+            data.pop('filter')
+        if not object_type:
+            data.pop('type')
+        if not catalog:
+            data.pop('catalog')
+        if not add:
+            data.pop('add')
+        if not update:
+            data.pop('update')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'list')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def get_indexes(self, object_type,
                     filter_str: str = False, exact: int = False, add: int = False, update: int = False,
                     include=False, offset=0, limit=0):
@@ -1547,7 +1591,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def catalog_add(self, cat_name, cat_path, cat_type=False, media_type=False, file_pattern=False, folder_pattern=False, username=False, password=False):
+    def catalog_add(self, cat_name, cat_path, cat_type=False, media_type=False, file_pattern=False,
+                    folder_pattern=False, username=False, password=False):
         """ catalog_add
             MINIMUM_API_VERSION=6.0.0
 
@@ -2589,7 +2634,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def user_edit(self, username, password=False, fullname=False, email=False,
-                    website=False, state=False, city=False, disable=False, maxbitrate=False):
+                  website=False, state=False, city=False, disable=False, maxbitrate=False):
         """ user_update
             MINIMUM_API_VERSION=600000
 
@@ -3452,7 +3497,6 @@ class API(object):
         if not ampache_response:
             return False
         return self.return_data(ampache_response)
-
 
     def user_update(self, username, password=False, fullname=False, email=False,
                     website=False, state=False, city=False, disable=False, maxbitrate=False):
