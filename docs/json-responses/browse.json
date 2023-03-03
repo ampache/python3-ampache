@@ -1,0 +1,27 @@
+{
+    "total_count": 3,
+    "catalog_id": "",
+    "parent_id": "",
+    "parent_type": "root",
+    "child_type": "catalog",
+    "browse": [
+        {
+            "id": "1",
+            "name": "music",
+            "prefix": null,
+            "basename": "music"
+        },
+        {
+            "id": "3",
+            "name": "podcast",
+            "prefix": null,
+            "basename": "podcast"
+        },
+        {
+            "id": "4",
+            "name": "upload",
+            "prefix": null,
+            "basename": "upload"
+        }
+    ]
+}
