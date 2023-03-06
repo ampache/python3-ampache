@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <success code="1"><![CDATA[Gathered new art for: 21 (album)]]></success>
-  <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+  <success code="1">
+    <message><![CDATA[Gathered new art for: 21 (album)]]></message>
+  </success>
+  <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
 </root>

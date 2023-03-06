@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <success code="1"><![CDATA[Please wait for an administrator to activate your account]]></success>
+  <success code="1">
+    <message><![CDATA[Please wait for an administrator to activate your account]]></message>
+  </success>
 </root>
