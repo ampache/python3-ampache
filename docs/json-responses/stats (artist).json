@@ -1,49 +1,50 @@
 {
+    "total_count": 2,
     "artist": [
         {
-            "id": "2",
-            "name": "Synthetic",
+            "id": "11",
+            "name": "structura",
             "prefix": null,
-            "basename": "Synthetic",
+            "basename": "structura",
             "albums": [],
             "albumcount": 1,
             "songs": [],
-            "songcount": 12,
+            "songcount": 6,
             "genre": [
                 {
-                    "id": "1",
-                    "name": "Electronic"
+                    "id": "3",
+                    "name": "Noise"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": true,
-            "rating": 5,
-            "averagerating": 3,
-            "mbid": "1",
-            "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
-            "time": 4568,
+            "art": "https:\/\/music.com.au\/image.php?object_id=11&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": false,
+            "rating": 4,
+            "averagerating": 4,
+            "mbid": "",
+            "summary": ". Born in 2000 at Lisbon - Portugal, Structura is a sound exploration project using as main tools electronic composition, frequency modulation and effects, the cut-up (of texts), spoken word, DJing, samples, video and others.\nStructura works sounds normally associated with experimental electronica currents like Rhythmic-Noise, Power-Electronics, Break'n'Noise, IDM, Spoken-Word but freelly enough not to get to attached to them.\nThe sound compositions in Structura are linked to concepts, images, literature, cinema and other arts.\n\n ",
+            "time": 1339,
             "yearformed": 0,
             "placeformed": ""
         },
         {
-            "id": "12",
-            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+            "id": "32",
+            "name": "Shorty Mac",
             "prefix": null,
-            "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+            "basename": "Shorty Mac",
             "albums": [],
-            "albumcount": 1,
+            "albumcount": 0,
             "songs": [],
-            "songcount": 2,
+            "songcount": 1,
             "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=32&object_type=artist&auth=eeb9f1b6056246a7d563f479f518bb34",
             "flag": false,
-            "rating": 1,
+            "rating": null,
             "averagerating": null,
             "mbid": "",
-            "summary": " ",
-            "time": 600,
+            "summary": null,
+            "time": 234,
             "yearformed": 0,
-            "placeformed": ""
+            "placeformed": null
         }
     ]
 }
