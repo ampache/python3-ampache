@@ -1,0 +1,39 @@
+{
+   "subsonic-response" : {
+      "status" : "ok",
+      "version" : "1.16.1",
+      "playlists" : {
+         "playlist" : [ {
+            "id" : "1",
+            "name" : "Mar 16, 2023 11:01 AM",
+            "owner" : "admin",
+            "public" : false,
+            "songCount" : 40,
+            "duration" : 16714,
+            "created" : "2023-03-16T01:01:57.888Z",
+            "changed" : "2023-03-16T01:01:57.890Z",
+            "coverArt" : "pl-1"
+         }, {
+            "id" : "2",
+            "name" : "testcreate",
+            "owner" : "admin",
+            "public" : false,
+            "songCount" : 1,
+            "duration" : 0,
+            "created" : "2023-03-16T01:02:33.773Z",
+            "changed" : "2023-03-16T01:02:33.773Z",
+            "coverArt" : "pl-2"
+         }, {
+            "id" : "3",
+            "name" : "testcreate",
+            "owner" : "admin",
+            "public" : false,
+            "songCount" : 1,
+            "duration" : 0,
+            "created" : "2023-03-16T01:02:34.604Z",
+            "changed" : "2023-03-16T01:02:34.604Z",
+            "coverArt" : "pl-3"
+         } ]
+      }
+   }
+}

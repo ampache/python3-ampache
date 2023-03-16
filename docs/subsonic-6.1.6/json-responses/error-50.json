@@ -1,0 +1,10 @@
+{
+   "subsonic-response" : {
+      "status" : "failed",
+      "version" : "1.16.1",
+      "error" : {
+         "code" : 50,
+         "message" : "guest is not authorized to change password for created"
+      }
+   }
+}

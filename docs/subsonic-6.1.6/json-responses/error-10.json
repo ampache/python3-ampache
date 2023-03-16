@@ -1,0 +1,10 @@
+{
+   "subsonic-response" : {
+      "status" : "failed",
+      "version" : "1.16.1",
+      "error" : {
+         "code" : 10,
+         "message" : "Required int parameter 'id' is not present"
+      }
+   }
+}

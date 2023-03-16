@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1">
+   <artists ignoredArticles="The El La Los Las Le Les">
+      <index name="C">
+         <artist id="9" name="CARNÚN" coverArt="ar-9" albumCount="1"/>
+      </index>
+      <index name="I">
+         <artist id="6" name="IOK-1" coverArt="ar-6" albumCount="1"/>
+      </index>
+      <index name="N">
+         <artist id="7" name="Nofi/found." coverArt="ar-7" albumCount="1"/>
+      </index>
+      <index name="S">
+         <artist id="3" name="structura" coverArt="ar-3" albumCount="1"/>
+         <artist id="1" name="Synthetic" coverArt="ar-1" albumCount="1"/>
+      </index>
+      <index name="V">
+         <artist id="2" name="Various Artists" coverArt="ar-2" albumCount="1" starred="2023-03-16T01:00:51.616Z"/>
+      </index>
+      <index name="W">
+         <artist id="8" name="Warfare 3.0" coverArt="ar-8" albumCount="1"/>
+      </index>
+      <index name="#">
+         <artist id="5" name="?-?-?-?-?-?-?-?- ?-?-?-?-?-?-?-?" coverArt="ar-5" albumCount="1"/>
+         <artist id="4" name="К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь" coverArt="ar-4" albumCount="1"/>
+      </index>
+   </artists>
+</subsonic-response>

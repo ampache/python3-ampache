@@ -1,0 +1,27 @@
+{
+   "subsonic-response" : {
+      "status" : "ok",
+      "version" : "1.16.1",
+      "playlist" : {
+         "id" : "4",
+         "name" : "testcreate",
+         "owner" : "admin",
+         "public" : false,
+         "songCount" : 1,
+         "duration" : 0,
+         "created" : "2023-03-16T01:04:41.199Z",
+         "changed" : "2023-03-16T01:04:41.199Z",
+         "coverArt" : "pl-4",
+         "entry" : [ {
+            "id" : "6",
+            "isDir" : true,
+            "title" : "IOK-1",
+            "artist" : "IOK-1",
+            "userRating" : 5,
+            "averageRating" : 5.0,
+            "playCount" : 2,
+            "created" : "2021-02-24T01:33:48.519Z"
+         } ]
+      }
+   }
+}

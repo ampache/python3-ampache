@@ -1,0 +1,25 @@
+{
+   "subsonic-response" : {
+      "status" : "ok",
+      "version" : "1.16.1",
+      "artist" : {
+         "id" : "6",
+         "name" : "IOK-1",
+         "coverArt" : "ar-6",
+         "albumCount" : 1,
+         "album" : [ {
+            "id" : "6",
+            "name" : "Sensorisk Deprivation",
+            "artist" : "IOK-1",
+            "artistId" : "6",
+            "coverArt" : "al-6",
+            "songCount" : 4,
+            "duration" : 3429,
+            "playCount" : 1,
+            "created" : "2022-02-10T23:16:14.287Z",
+            "year" : 2011,
+            "genre" : "Dark Ambient"
+         } ]
+      }
+   }
+}

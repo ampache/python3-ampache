@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1">
+   <starred>
+      <artist id="2" name="Synthetic" starred="2023-03-16T01:00:51.616Z"/>
+      <album id="11" parent="2" isDir="true" title="Synthetic_-_Colorsmoke_EP-20k217-2007" album="Colorsmoke EP" artist="Synthetic" year="2007" genre="Electronic" coverArt="11" userRating="5" averageRating="5.0" playCount="0" created="2021-03-31T07:11:41.788Z" starred="2023-03-16T00:59:52.273Z"/>
+      <song id="58" parent="49" isDir="false" title="Scribnus 3" album="Nofi Devices" artist="Nofi/found." track="3" year="1999" genre="Electronica" coverArt="49" size="15399874" contentType="audio/mpeg" suffix="mp3" duration="641" bitRate="192" path="Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3" playCount="0" created="2022-02-10T23:16:10.275Z" starred="2023-03-16T01:01:33.720Z" albumId="7" artistId="7" type="music"/>
+   </starred>
+</subsonic-response>

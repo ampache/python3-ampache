@@ -1,0 +1,82 @@
+{
+   "subsonic-response" : {
+      "status" : "ok",
+      "version" : "1.16.1",
+      "indexes" : {
+         "lastModified" : 1678928582046,
+         "ignoredArticles" : "The El La Los Las Le Les",
+         "index" : [ {
+            "name" : "C",
+            "artist" : [ {
+               "id" : "9",
+               "name" : "Carnún"
+            } ]
+         }, {
+            "name" : "I",
+            "artist" : [ {
+               "id" : "6",
+               "name" : "IOK-1"
+            } ]
+         }, {
+            "name" : "N",
+            "artist" : [ {
+               "id" : "7",
+               "name" : "Nofi_found"
+            } ]
+         }, {
+            "name" : "S",
+            "artist" : [ {
+               "id" : "4",
+               "name" : "Structura"
+            }, {
+               "id" : "2",
+               "name" : "Synthetic",
+               "starred" : "2023-03-16T01:00:51.616Z"
+            } ]
+         }, {
+            "name" : "V",
+            "artist" : [ {
+               "id" : "3",
+               "name" : "Various Artists"
+            } ]
+         }, {
+            "name" : "W",
+            "artist" : [ {
+               "id" : "8",
+               "name" : "Warfare 3.0"
+            } ]
+         }, {
+            "name" : "#",
+            "artist" : [ {
+               "id" : "5",
+               "name" : "К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь"
+            } ]
+         } ],
+         "child" : [ {
+            "id" : "83",
+            "isDir" : false,
+            "title" : "SPACE - Magic Fly (1977)",
+            "size" : 14950742,
+            "contentType" : "video/ogg",
+            "suffix" : "ogv",
+            "path" : "SPACE - Magic Fly (1977).ogv",
+            "isVideo" : true,
+            "playCount" : 0,
+            "created" : "2021-02-23T04:09:57.391Z",
+            "type" : "video"
+         }, {
+            "id" : "82",
+            "isDir" : false,
+            "title" : "SPACE_Magic_Fly_1977",
+            "size" : 20084777,
+            "contentType" : "video/mp4",
+            "suffix" : "mp4",
+            "path" : "SPACE_Magic_Fly_1977.mp4",
+            "isVideo" : true,
+            "playCount" : 1,
+            "created" : "2021-02-23T04:21:29.040Z",
+            "type" : "video"
+         } ]
+      }
+   }
+}

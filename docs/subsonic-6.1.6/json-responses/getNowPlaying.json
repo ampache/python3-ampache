@@ -1,0 +1,47 @@
+{
+   "subsonic-response" : {
+      "status" : "ok",
+      "version" : "1.16.1",
+      "nowPlaying" : {
+         "entry" : [ {
+            "id" : "6",
+            "isDir" : true,
+            "title" : "IOK-1",
+            "artist" : "IOK-1",
+            "userRating" : 5,
+            "averageRating" : 5.0,
+            "playCount" : 2,
+            "created" : "2021-02-24T01:33:48.519Z",
+            "username" : "admin",
+            "minutesAgo" : 2,
+            "playerId" : 2,
+            "playerName" : "Ampache"
+         }, {
+            "id" : "46",
+            "parent" : "44",
+            "isDir" : false,
+            "title" : "Vanvett",
+            "album" : "Sensorisk Deprivation",
+            "artist" : "IOK-1",
+            "track" : 2,
+            "year" : 2011,
+            "genre" : "Dark Ambient",
+            "coverArt" : "44",
+            "size" : 38389422,
+            "contentType" : "audio/flac",
+            "suffix" : "flac",
+            "duration" : 826,
+            "bitRate" : 371,
+            "path" : "IOK-1/Sensorisk Deprivation/02_-_IOK-1_-_Vanvett.flac",
+            "playCount" : 1,
+            "created" : "2022-02-10T23:16:14.171Z",
+            "albumId" : "6",
+            "artistId" : "6",
+            "type" : "music",
+            "username" : "admin",
+            "minutesAgo" : 0,
+            "playerId" : 1
+         } ]
+      }
+   }
+}

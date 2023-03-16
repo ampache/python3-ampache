@@ -1,0 +1,30 @@
+{
+   "subsonic-response" : {
+      "status" : "ok",
+      "version" : "1.16.1",
+      "searchResult2" : {
+         "song" : [ {
+            "id" : "419",
+            "parent" : "392",
+            "isDir" : false,
+            "title" : "Interstella 666 [electro-metal]",
+            "album" : "All-in",
+            "artist" : "Capashen",
+            "track" : 2,
+            "genre" : "(255)",
+            "coverArt" : "392",
+            "size" : 5899410,
+            "contentType" : "audio/mpeg",
+            "suffix" : "mp3",
+            "duration" : 212,
+            "bitRate" : 220,
+            "path" : "Capashen/All In/02 - Capashen - Interstella 666 _electro-metal_.mp3",
+            "playCount" : 1343,
+            "created" : "2017-03-12T11:05:45.000Z",
+            "albumId" : "44",
+            "artistId" : "21",
+            "type" : "music"
+         } ]
+      }
+   }
+}

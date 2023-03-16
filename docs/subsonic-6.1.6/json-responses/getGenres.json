@@ -1,0 +1,37 @@
+{
+   "subsonic-response" : {
+      "status" : "ok",
+      "version" : "1.16.1",
+      "genres" : {
+         "genre" : [ {
+            "songCount" : 12,
+            "albumCount" : 2,
+            "value" : "Electronic"
+         }, {
+            "songCount" : 11,
+            "albumCount" : 1,
+            "value" : "Electronica"
+         }, {
+            "songCount" : 6,
+            "albumCount" : 1,
+            "value" : "Noise"
+         }, {
+            "songCount" : 4,
+            "albumCount" : 1,
+            "value" : "Dark Ambient"
+         }, {
+            "songCount" : 1,
+            "albumCount" : 0,
+            "value" : "Harsh Noise Wall, Shit Noise Wall"
+         }, {
+            "songCount" : 1,
+            "albumCount" : 1,
+            "value" : "Harsh Noise Wall"
+         }, {
+            "songCount" : 1,
+            "albumCount" : 1,
+            "value" : "Punk"
+         } ]
+      }
+   }
+}

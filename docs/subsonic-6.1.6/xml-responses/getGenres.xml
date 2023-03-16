@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1">
+   <genres>
+      <genre songCount="12" albumCount="2">Electronic</genre>
+      <genre songCount="11" albumCount="1">Electronica</genre>
+      <genre songCount="6" albumCount="1">Noise</genre>
+      <genre songCount="4" albumCount="1">Dark Ambient</genre>
+      <genre songCount="1" albumCount="0">Harsh Noise Wall, Shit Noise Wall</genre>
+      <genre songCount="1" albumCount="1">Harsh Noise Wall</genre>
+      <genre songCount="1" albumCount="1">Punk</genre>
+   </genres>
+</subsonic-response>
