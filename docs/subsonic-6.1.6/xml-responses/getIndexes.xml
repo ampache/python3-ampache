@@ -1,2 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1"/>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1">
+   <indexes lastModified="1678026167249" ignoredArticles="The El La Los Las Le">
+      <index name="A">
+         <artist id="6" name="Antigona" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/b8b609ff5f624ff2a349ad78314216ca.png"/>
+         <artist id="10" name="Aygan" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/88534cf63fe74940bb2d86805caa2890.png"/>
+      </index>
+      <index name="B">
+         <artist id="12" name="bilk" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/c30c16dc8a6249628869181c2d8619e0.png"/>
+         <artist id="16" name="Binaerpilot" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/07d9022601af4b6c93de2e84d21a4045.png"/>
+         <artist id="18" name="Brad Sucks" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/0113f4cb7837456a82a20a18a443d8bb.png"/>
+      </index>
+      <index name="C">
+         <artist id="22" name="Capashen" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/65d6e8b1a795419b9b3eb3478335c2ea.png"/>
+         <artist id="21" name="Curb Jaw" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/888a3bc212d841288dcde7f2ccca76b2.png"/>
+      </index>
+      <index name="D">
+         <artist id="15" name="The Dada Weatherman" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/71fe26e282594c91a53aba688cd0ab54.png"/>
+         <artist id="23" name="Deflone"/>
+         <artist id="13" name="Dereleech" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/70bb4f4da32e4f96a769799cdf08b27e.png"/>
+      </index>
+      <index name="F">
+         <artist id="20" name="Full Faya Orchestra" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/52070c8a9a558d3b9039b1fd96f42fab.png"/>
+      </index>
+      <index name="J">
+         <artist id="9" name="Joe Farren" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/85370451628b4aee9e60b0422ddbf22b.png"/>
+         <artist id="5" name="Johndoe" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/92f76acd6c1b4421927581afa7418bbb.png"/>
+      </index>
+      <index name="M">
+         <artist id="3" name="Maya Filipic" starred="2019-11-26T19:14:01.641Z"/>
+         <artist id="7" name="Metisse" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/10f02d8fc33b4a5688f564b8137828bf.png"/>
+         <artist id="11" name="Michael Ellis" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/c74d7bfc534e830885da0544ace0f3f8.png"/>
+         <artist id="8" name="Microdub"/>
+         <artist id="2" name="Misteur Valaire" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/57e9f164bc54459d8f4e8a2a9eddcf18.png"/>
+         <artist id="24" name="Movies"/>
+      </index>
+      <index name="P">
+         <artist id="17" name="PeerGynt Lobogris" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/49cd81afc39e4f9c9e4325d77b2c5ab4.png"/>
+      </index>
+      <index name="S">
+         <artist id="19" name="Shearer" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/a7994c768b914543a2f2928d42559311.png" starred="2019-04-14T18:40:25.447Z"/>
+         <artist id="4" name="Silence Is Sexy" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/959cdf5d084e4d42864a919281b3d58e.png"/>
+      </index>
+      <index name="U">
+         <artist id="14" name="Ugress" artistImageUrl="https://lastfm-img2.akamaized.net/i/u/6f2ce47efe15482eb5a3592e4d193ce7.png"/>
+      </index>
+   </indexes>
+</subsonic-response>

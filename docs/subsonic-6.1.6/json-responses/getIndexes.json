@@ -3,79 +3,128 @@
       "status" : "ok",
       "version" : "1.16.1",
       "indexes" : {
-         "lastModified" : 1678928582046,
-         "ignoredArticles" : "The El La Los Las Le Les",
+         "lastModified" : 1678026167249,
+         "ignoredArticles" : "The El La Los Las Le",
          "index" : [ {
-            "name" : "C",
-            "artist" : [ {
-               "id" : "9",
-               "name" : "Carnún"
-            } ]
-         }, {
-            "name" : "I",
+            "name" : "A",
             "artist" : [ {
                "id" : "6",
-               "name" : "IOK-1"
+               "name" : "Antigona",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/b8b609ff5f624ff2a349ad78314216ca.png"
+            }, {
+               "id" : "10",
+               "name" : "Aygan",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/88534cf63fe74940bb2d86805caa2890.png"
             } ]
          }, {
-            "name" : "N",
+            "name" : "B",
             "artist" : [ {
+               "id" : "12",
+               "name" : "bilk",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/c30c16dc8a6249628869181c2d8619e0.png"
+            }, {
+               "id" : "16",
+               "name" : "Binaerpilot",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/07d9022601af4b6c93de2e84d21a4045.png"
+            }, {
+               "id" : "18",
+               "name" : "Brad Sucks",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/0113f4cb7837456a82a20a18a443d8bb.png"
+            } ]
+         }, {
+            "name" : "C",
+            "artist" : [ {
+               "id" : "22",
+               "name" : "Capashen",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/65d6e8b1a795419b9b3eb3478335c2ea.png"
+            }, {
+               "id" : "21",
+               "name" : "Curb Jaw",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/888a3bc212d841288dcde7f2ccca76b2.png"
+            } ]
+         }, {
+            "name" : "D",
+            "artist" : [ {
+               "id" : "15",
+               "name" : "The Dada Weatherman",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/71fe26e282594c91a53aba688cd0ab54.png"
+            }, {
+               "id" : "23",
+               "name" : "Deflone"
+            }, {
+               "id" : "13",
+               "name" : "Dereleech",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/70bb4f4da32e4f96a769799cdf08b27e.png"
+            } ]
+         }, {
+            "name" : "F",
+            "artist" : [ {
+               "id" : "20",
+               "name" : "Full Faya Orchestra",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/52070c8a9a558d3b9039b1fd96f42fab.png"
+            } ]
+         }, {
+            "name" : "J",
+            "artist" : [ {
+               "id" : "9",
+               "name" : "Joe Farren",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/85370451628b4aee9e60b0422ddbf22b.png"
+            }, {
+               "id" : "5",
+               "name" : "Johndoe",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/92f76acd6c1b4421927581afa7418bbb.png"
+            } ]
+         }, {
+            "name" : "M",
+            "artist" : [ {
+               "id" : "3",
+               "name" : "Maya Filipic",
+               "starred" : "2019-11-26T19:14:01.641Z"
+            }, {
                "id" : "7",
-               "name" : "Nofi_found"
+               "name" : "Metisse",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/10f02d8fc33b4a5688f564b8137828bf.png"
+            }, {
+               "id" : "11",
+               "name" : "Michael Ellis",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/c74d7bfc534e830885da0544ace0f3f8.png"
+            }, {
+               "id" : "8",
+               "name" : "Microdub"
+            }, {
+               "id" : "2",
+               "name" : "Misteur Valaire",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/57e9f164bc54459d8f4e8a2a9eddcf18.png"
+            }, {
+               "id" : "24",
+               "name" : "Movies"
+            } ]
+         }, {
+            "name" : "P",
+            "artist" : [ {
+               "id" : "17",
+               "name" : "PeerGynt Lobogris",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/49cd81afc39e4f9c9e4325d77b2c5ab4.png"
             } ]
          }, {
             "name" : "S",
             "artist" : [ {
-               "id" : "4",
-               "name" : "Structura"
+               "id" : "19",
+               "name" : "Shearer",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/a7994c768b914543a2f2928d42559311.png",
+               "starred" : "2019-04-14T18:40:25.447Z"
             }, {
-               "id" : "2",
-               "name" : "Synthetic",
-               "starred" : "2023-03-16T01:00:51.616Z"
+               "id" : "4",
+               "name" : "Silence Is Sexy",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/959cdf5d084e4d42864a919281b3d58e.png"
             } ]
          }, {
-            "name" : "V",
+            "name" : "U",
             "artist" : [ {
-               "id" : "3",
-               "name" : "Various Artists"
+               "id" : "14",
+               "name" : "Ugress",
+               "artistImageUrl" : "https://lastfm-img2.akamaized.net/i/u/6f2ce47efe15482eb5a3592e4d193ce7.png"
             } ]
-         }, {
-            "name" : "W",
-            "artist" : [ {
-               "id" : "8",
-               "name" : "Warfare 3.0"
-            } ]
-         }, {
-            "name" : "#",
-            "artist" : [ {
-               "id" : "5",
-               "name" : "К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь"
-            } ]
-         } ],
-         "child" : [ {
-            "id" : "83",
-            "isDir" : false,
-            "title" : "SPACE - Magic Fly (1977)",
-            "size" : 14950742,
-            "contentType" : "video/ogg",
-            "suffix" : "ogv",
-            "path" : "SPACE - Magic Fly (1977).ogv",
-            "isVideo" : true,
-            "playCount" : 0,
-            "created" : "2021-02-23T04:09:57.391Z",
-            "type" : "video"
-         }, {
-            "id" : "82",
-            "isDir" : false,
-            "title" : "SPACE_Magic_Fly_1977",
-            "size" : 20084777,
-            "contentType" : "video/mp4",
-            "suffix" : "mp4",
-            "path" : "SPACE_Magic_Fly_1977.mp4",
-            "isVideo" : true,
-            "playCount" : 1,
-            "created" : "2021-02-23T04:21:29.040Z",
-            "type" : "video"
          } ]
       }
    }
