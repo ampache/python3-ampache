@@ -675,7 +675,7 @@ class API(object):
             data.pop('update')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'list')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'browse')
         if not ampache_response:
             return False
         return self.return_data(ampache_response)
