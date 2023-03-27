@@ -8,7 +8,7 @@ Upload to PyPI
 INFO
 ====
 
-A python3 library for interaction with your Ampache 5.x.x server using the XML & JSON API
+A python3 library for interaction with your Ampache server using the XML & JSON API
 
 `<https://ampache.org/API/>`_
 
@@ -53,7 +53,7 @@ NEWS
 ====
 
 * Password handshake auth is available now.
-* This library now supports every Ampache API release (3, 4 and 5)
+* This library now supports every Ampache API release (3, 4, 5 and 6)
 * You can save and restore from a json config file using new methods
   * set_config_path: Set a folder to your config path
   * get_config: Load the config and set Ampache globals
