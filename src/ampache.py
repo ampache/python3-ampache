@@ -569,8 +569,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def get_similar(self, object_type, filter_id: int,
-                    offset=0, limit=0):
+    def get_similar(self, object_type, filter_id: int, offset=0, limit=0):
         """ get_similar
             MINIMUM_API_VERSION=420000
 
@@ -596,9 +595,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def list(self, object_type,
-             filter_str: str = False, exact: int = False, add: int = False, update: int = False,
-             offset=0, limit=0):
+    def list(self, object_type, filter_str: str = False,
+             exact: int = False, add: int = False, update: int = False, offset=0, limit=0):
         """ list
             MINIMUM_API_VERSION=600000
 
@@ -625,6 +623,8 @@ class API(object):
                 'limit': str(limit)}
         if not filter_str:
             data.pop('filter')
+        if not exact:
+            data.pop('exact')
         if not add:
             data.pop('add')
         if not update:
@@ -636,8 +636,9 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def browse(self, filter_str: str = False, object_type: str = False, catalog: int = False, add: int = False,
-               update: int = False, offset=0, limit=0):
+    def browse(self, filter_str: str = False,
+               object_type: str = False, catalog: int = False, add: int = False, update: int = False,
+               offset=0, limit=0):
         """ browse
             MINIMUM_API_VERSION=6.0.0
 
@@ -680,9 +681,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def get_indexes(self, object_type,
-                    filter_str: str = False, exact: int = False, add: int = False, update: int = False,
-                    include=False, offset=0, limit=0):
+    def get_indexes(self, object_type, filter_str: str = False,
+                    exact: int = False, add: int = False, update: int = False, include: int = False, offset=0, limit=0):
         """ get_indexes
             MINIMUM_API_VERSION=400001
 
@@ -699,10 +699,6 @@ class API(object):
             * limit       = (integer) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        if bool(include):
-            include = 1
-        else:
-            include = 0
         data = {'action': 'get_indexes',
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
@@ -715,6 +711,8 @@ class API(object):
                 'limit': str(limit)}
         if not filter_str:
             data.pop('filter')
+        if not exact:
+            data.pop('exact')
         if not add:
             data.pop('add')
         if not update:
@@ -729,7 +727,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def artists(self, filter_str: str = False,
-                add: int = False, update: int = False, offset=0, limit=0, include=False, album_artist=False):
+                add: int = False, update: int = False, offset=0, limit=0, include=False, album_artist: int = False):
         """ artists
             MINIMUM_API_VERSION=380001
 
@@ -848,7 +846,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def albums(self, filter_str: str = False,
-               exact=False, add: int = False, update: int = False, offset=0, limit=0,
+               exact: int = False, add: int = False, update: int = False, offset=0, limit=0,
                include=False):
         """ albums
             MINIMUM_API_VERSION=380001
@@ -878,6 +876,8 @@ class API(object):
                 'include': include}
         if not filter_str:
             data.pop('filter')
+        if not exact:
+            data.pop('exact')
         if not add:
             data.pop('add')
         if not update:
@@ -917,7 +917,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def album_songs(self, filter_id: int, offset=0, limit=0):
+    def album_songs(self, filter_id: int, offset=0, limit=0,
+                    exact: int = False):
         """ album_songs
             MINIMUM_API_VERSION=380001
 
@@ -927,13 +928,21 @@ class API(object):
             * filter_id = (integer) $album_id
             * offset    = (integer) //optional
             * limit     = (integer) //optional
+            * exact     = (integer) 0,1, if true don't group songs from different disks //optional (IGNORED IN API6)
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        if bool(exact):
+            exact = 1
+        else:
+            exact = 0
         data = {'action': 'album_songs',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
+                'exact': exact,
                 'offset': str(offset),
                 'limit': str(limit)}
+        if not exact:
+            data.pop('exact')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'album_songs')
@@ -957,8 +966,8 @@ class API(object):
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'genres',
                 'auth': self.AMPACHE_SESSION,
-                'exact': exact,
                 'filter': filter_str,
+                'exact': exact,
                 'offset': str(offset),
                 'limit': str(limit)}
         if not filter_str:
@@ -1064,8 +1073,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def songs(self, filter_str: str = False, exact: int = False,
-              add: int = False, update: int = False, offset=0, limit=0):
+    def songs(self, filter_str: str = False,
+              exact: int = False, add: int = False, update: int = False, offset=0, limit=0):
         """ songs
             MINIMUM_API_VERSION=380001
 
@@ -1143,8 +1152,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def playlists(self, filter_str: str = False, exact: int = False, offset=0, limit=0, hide_search: int = False,
-                  show_dupes: int = False):
+    def playlists(self, filter_str: str = False,
+                  exact: int = False, offset=0, limit=0, hide_search: int = False, show_dupes: int = False):
         """ playlists
             MINIMUM_API_VERSION=380001
 
@@ -1161,8 +1170,8 @@ class API(object):
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'playlists',
                 'auth': self.AMPACHE_SESSION,
-                'exact': exact,
                 'filter': filter_str,
+                'exact': exact,
                 'offset': str(offset),
                 'limit': str(limit),
                 'hide_search': hide_search,
@@ -1487,8 +1496,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def share_edit(self, filter_id: int, can_stream=False, can_download=False,
-                   expires=False, description=False):
+    def share_edit(self, filter_id: int, can_stream: int = False, can_download: int = False,
+                   expires: int = False, description=False):
         """ share_edit
             MINIMUM_API_VERSION=420000
 
@@ -2049,7 +2058,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def localplay(self, command, oid=False, otype=False, clear=0):
+    def localplay(self, command, oid: int = False, otype=False, clear: int = False):
         """ localplay
             MINIMUM_API_VERSION=380001
             CHANGED_IN_API_VERSION=5.0.0
@@ -2883,8 +2892,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def licenses(self, filter_str: str = False, exact: int = False,
-                 add: int = False, update: int = False, offset=0, limit=0):
+    def licenses(self, filter_str: str = False,
+                 exact: int = False, add: int = False, update: int = False, offset=0, limit=0):
         """ licenses
             MINIMUM_API_VERSION=420000
 
@@ -2962,8 +2971,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def live_streams(self, filter_str: str = False, exact: int = False,
-                     offset=0, limit=0):
+    def live_streams(self, filter_str: str = False,
+                     exact: int = False, offset=0, limit=0):
         """ live_streams
             MINIMUM_API_VERSION=5.1.0
 
@@ -3104,8 +3113,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def labels(self, filter_str: str = False, exact: int = False,
-               offset=0, limit=0):
+    def labels(self, filter_str: str = False,
+               exact: int = False, offset=0, limit=0):
         """ labels
             MINIMUM_API_VERSION=420000
 
@@ -3120,8 +3129,8 @@ class API(object):
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'labels',
                 'auth': self.AMPACHE_SESSION,
-                'exact': exact,
                 'filter': filter_str,
+                'exact': exact,
                 'offset': str(offset),
                 'limit': str(limit)}
         if not filter_str:
