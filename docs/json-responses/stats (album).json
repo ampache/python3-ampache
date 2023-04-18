@@ -12,6 +12,14 @@
                 "prefix": null,
                 "basename": "Comfort Fit"
             },
+            "artists": [
+                {
+                    "id": "36",
+                    "name": "Comfort Fit",
+                    "prefix": null,
+                    "basename": "Comfort Fit"
+                }
+            ],
             "time": 4248,
             "year": 2005,
             "tracks": [],
@@ -31,32 +39,40 @@
             "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2"
         },
         {
-            "id": "2",
-            "name": "Colorsmoke EP",
+            "id": "12",
+            "name": "Buried in Nausea",
             "prefix": null,
-            "basename": "Colorsmoke EP",
+            "basename": "Buried in Nausea",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "19",
+                "name": "Various Artists",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Various Artists"
             },
-            "time": 4568,
-            "year": 2007,
-            "tracks": [],
-            "songcount": 12,
-            "diskcount": 1,
-            "type": null,
-            "genre": [
+            "artists": [
                 {
-                    "id": "1",
-                    "name": "Electronic"
+                    "id": "19",
+                    "name": "Various Artists",
+                    "prefix": null,
+                    "basename": "Various Artists"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-            "flag": true,
-            "rating": 5,
-            "averagerating": 3,
+            "time": 1879,
+            "year": 2012,
+            "tracks": [],
+            "songcount": 9,
+            "diskcount": 1,
+            "type": "compilation",
+            "genre": [
+                {
+                    "id": "7",
+                    "name": "Punk"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
             "mbid": null
         }
     ]

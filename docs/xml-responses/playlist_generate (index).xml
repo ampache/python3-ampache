@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <song id="108">
-    <title><![CDATA[I've been down this road before]]></title>
-    <name><![CDATA[I've been down this road before]]></name>
-    <artist id="21">
-      <name><![CDATA[Tip-C (featuring Mike Beers)]]></name>
+  <song id="65">
+    <title><![CDATA[YellowSmoke]]></title>
+    <name><![CDATA[YellowSmoke]]></name>
+    <artist id="2">
+      <name><![CDATA[Synthetic]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Tip-C (featuring Mike Beers)]]></basename>
+      <basename><![CDATA[Synthetic]]></basename>
+    </artist>
+    <album id="2">
+      <name><![CDATA[Colorsmoke EP]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Colorsmoke EP]]></basename>
+    </album>
+    <albumartist id="2">
+      <name><![CDATA[Synthetic]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Synthetic]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <track>2</track>
+  </song>
+  <song id="114">
+    <title><![CDATA[He is the Master of War]]></title>
+    <name><![CDATA[He is the Master of War]]></name>
+    <artist id="26">
+      <name><![CDATA[Stress Builds Character]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Stress Builds Character]]></basename>
     </artist>
     <album id="12">
       <name><![CDATA[Buried in Nausea]]></name>
@@ -20,69 +41,48 @@
       <basename><![CDATA[Various Artists]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>6</track>
+    <track>2</track>
   </song>
-  <song id="102">
-    <title><![CDATA[Moremque Sinistrum Sacrorum]]></title>
-    <name><![CDATA[Moremque Sinistrum Sacrorum]]></name>
-    <artist id="16">
-      <name><![CDATA[CARNÚN]]></name>
+  <song id="96">
+    <title><![CDATA[Creeping Lawler 2]]></title>
+    <name><![CDATA[Creeping Lawler 2]]></name>
+    <artist id="15">
+      <name><![CDATA[Warfare 3.0]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN]]></basename>
+      <basename><![CDATA[Warfare 3.0]]></basename>
     </artist>
-    <album id="10">
-      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+    <album id="9">
+      <name><![CDATA[Creeping Lawler 2]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+      <basename><![CDATA[Creeping Lawler 2]]></basename>
     </album>
-    <albumartist id="16">
-      <name><![CDATA[CARNÚN]]></name>
+    <albumartist id="15">
+      <name><![CDATA[Warfare 3.0]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN]]></basename>
+      <basename><![CDATA[Warfare 3.0]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>5</track>
+    <track>1</track>
   </song>
-  <song id="54">
-    <title><![CDATA[Red&GreenSmoke]]></title>
-    <name><![CDATA[Red&GreenSmoke]]></name>
-    <artist id="2">
-      <name><![CDATA[Synthetic]]></name>
+  <song id="127">
+    <title><![CDATA[She Knows Me Now]]></title>
+    <name><![CDATA[She Knows Me Now]]></name>
+    <artist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Synthetic]]></basename>
+      <basename><![CDATA[Comfort Fit]]></basename>
     </artist>
-    <album id="2">
-      <name><![CDATA[Colorsmoke EP]]></name>
+    <album id="21">
+      <name><![CDATA[Forget and Remember]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Colorsmoke EP]]></basename>
+      <basename><![CDATA[Forget and Remember]]></basename>
     </album>
-    <albumartist id="2">
-      <name><![CDATA[Synthetic]]></name>
+    <albumartist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Synthetic]]></basename>
+      <basename><![CDATA[Comfort Fit]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>5</track>
-  </song>
-  <song id="58">
-    <title><![CDATA[BrownSmoke]]></title>
-    <name><![CDATA[BrownSmoke]]></name>
-    <artist id="2">
-      <name><![CDATA[Synthetic]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Synthetic]]></basename>
-    </artist>
-    <album id="2">
-      <name><![CDATA[Colorsmoke EP]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Colorsmoke EP]]></basename>
-    </album>
-    <albumartist id="2">
-      <name><![CDATA[Synthetic]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Synthetic]]></basename>
-    </albumartist>
-    <disk><![CDATA[1]]></disk>
-    <track>4</track>
+    <track>10</track>
   </song>
 </root>

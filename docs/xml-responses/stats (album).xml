@@ -1,33 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>9</total_count>
-  <album id="8">
-    <name><![CDATA[Nofi Devices]]></name>
-    <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[Nofi Devices]]></basename>
-    <artist id="14">
-      <name><![CDATA[Nofi/found.]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi/found.]]></basename>
-    </artist>
-    <time>4423</time>
-    <year>0</year>
-    <tracks/>
-    <songcount>11</songcount>
-    <diskcount>1</diskcount>
-    <type/>
-    <genre id="5">
-      <name><![CDATA[Electronica]]></name>
-    </genre>
-    <genre id="6">
-      <name><![CDATA[Dance]]></name>
-    </genre>
-    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
-    <flag>0</flag>
-    <rating>2</rating>
-    <averagerating/>
-    <mbid><![CDATA[]]></mbid>
-  </album>
   <album id="21">
     <name><![CDATA[Forget and Remember]]></name>
     <prefix><![CDATA[]]></prefix>
@@ -51,5 +24,29 @@
     <rating/>
     <averagerating/>
     <mbid><![CDATA[6e1d48f7-717c-416e-af35-5d2454a13af2]]></mbid>
+  </album>
+  <album id="12">
+    <name><![CDATA[Buried in Nausea]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Buried in Nausea]]></basename>
+    <artist id="19">
+      <name><![CDATA[Various Artists]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Various Artists]]></basename>
+    </artist>
+    <time>1879</time>
+    <year>2012</year>
+    <tracks/>
+    <songcount>9</songcount>
+    <diskcount>1</diskcount>
+    <type>compilation</type>
+    <genre id="7">
+      <name><![CDATA[Punk]]></name>
+    </genre>
+    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
   </album>
 </root>

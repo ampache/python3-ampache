@@ -2,74 +2,6 @@
     "total_count": 12,
     "song": [
         {
-            "id": "56",
-            "title": "Black&BlueSmoke",
-            "name": "Black&BlueSmoke",
-            "artist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
-                "prefix": null,
-                "basename": "Colorsmoke EP"
-            },
-            "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "disk": 1,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "playlisttrack": 1,
-            "time": 500,
-            "year": 2007,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 64000,
-            "stream_bitrate": 64000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-            "size": 4010069,
-            "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": "1",
-            "albumartist_mbid": "1",
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "",
-            "channels": 2,
-            "comment": "",
-            "license": null,
-            "publisher": "20kbps rec.",
-            "language": "",
-            "lyrics": "",
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "-5.110000",
-            "replaygain_track_peak": "1.000000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
             "id": "64",
             "title": "Black&BlueSmoke",
             "name": "Black&BlueSmoke",
@@ -79,6 +11,14 @@
                 "prefix": null,
                 "basename": "Synthetic"
             },
+            "artists": [
+                {
+                    "id": "2",
+                    "name": "Synthetic",
+                    "prefix": null,
+                    "basename": "Synthetic"
+                }
+            ],
             "album": {
                 "id": "2",
                 "name": "Colorsmoke EP",
@@ -100,7 +40,7 @@
                     "name": "Electronic"
                 }
             ],
-            "playlisttrack": 2,
+            "playlisttrack": 1,
             "time": 500,
             "year": 2007,
             "format": "wma",
@@ -114,9 +54,6 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.wma",
             "size": 1298295,
             "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": "1",
-            "albumartist_mbid": "1",
             "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
             "flag": false,
             "rating": null,
@@ -138,6 +75,79 @@
             "r128_track_gain": null
         },
         {
+            "id": "56",
+            "title": "Black&BlueSmoke",
+            "name": "Black&BlueSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic"
+            },
+            "artists": [
+                {
+                    "id": "2",
+                    "name": "Synthetic",
+                    "prefix": null,
+                    "basename": "Synthetic"
+                }
+            ],
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP",
+                "prefix": null,
+                "basename": "Colorsmoke EP"
+            },
+            "albumartist": {
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic"
+            },
+            "disk": 1,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 500,
+            "year": 2007,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 64000,
+            "stream_bitrate": 64000,
+            "rate": 22050,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+            "size": 4010069,
+            "mbid": "",
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "",
+            "channels": 2,
+            "comment": "",
+            "license": null,
+            "publisher": "20kbps rec.",
+            "language": "",
+            "lyrics": "",
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "-5.110000",
+            "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
             "id": "59",
             "title": "YellowSmoke",
             "name": "YellowSmoke",
@@ -147,6 +157,14 @@
                 "prefix": null,
                 "basename": "Synthetic"
             },
+            "artists": [
+                {
+                    "id": "2",
+                    "name": "Synthetic",
+                    "prefix": null,
+                    "basename": "Synthetic"
+                }
+            ],
             "album": {
                 "id": "2",
                 "name": "Colorsmoke EP",
@@ -182,9 +200,6 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
             "size": 2325568,
             "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": "1",
-            "albumartist_mbid": "1",
             "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
             "flag": false,
             "rating": null,
@@ -215,6 +230,14 @@
                 "prefix": null,
                 "basename": "Synthetic"
             },
+            "artists": [
+                {
+                    "id": "2",
+                    "name": "Synthetic",
+                    "prefix": null,
+                    "basename": "Synthetic"
+                }
+            ],
             "album": {
                 "id": "2",
                 "name": "Colorsmoke EP",
@@ -250,9 +273,6 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.wma",
             "size": 754935,
             "mbid": "",
-            "album_mbid": null,
-            "artist_mbid": "1",
-            "albumartist_mbid": "1",
             "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png",
             "flag": false,
             "rating": null,

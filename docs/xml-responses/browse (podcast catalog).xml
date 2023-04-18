@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>2</total_count>
+  <total_count>3</total_count>
   <catalog_id/>
   <parent_id>3</parent_id>
   <parent_type>catalog</parent_type>
@@ -14,5 +14,10 @@
     <name><![CDATA[Plays Well with Others]]></name>
     <prefix><![CDATA[]]></prefix>
     <basename><![CDATA[Plays Well with Others]]></basename>
+  </list>
+  <list id="6">
+    <name><![CDATA[Trace]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Trace]]></basename>
   </list>
 </root>

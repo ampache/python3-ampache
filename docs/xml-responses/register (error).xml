@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4703">
+  <error errorCode="4710">
     <errorAction><![CDATA[register]]></errorAction>
-    <errorType><![CDATA[system]]></errorType>
-    <errorMessage><![CDATA[Enable: allow_public_registration]]></errorMessage>
+    <errorType><![CDATA[username]]></errorType>
+    <errorMessage><![CDATA[Bad Request: user]]></errorMessage>
   </error>
 </root>
