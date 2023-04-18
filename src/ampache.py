@@ -699,6 +699,8 @@ class API(object):
             * limit       = (integer) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        if bool(include) and not isinstance(include, int):
+            include = 1
         data = {'action': 'get_indexes',
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
