@@ -455,9 +455,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """
     ampacheConnection.playlist(single_playlist)
 
-    """ def playlist_songs(filter, offset = 0, limit = 0, api_format = 'xml'):
+    """ def playlist_songs(filter, random, offset = 0, limit = 0, api_format = 'xml'):
     """
-    ampacheConnection.playlist_songs(single_playlist, offset, limit)
+    ampacheConnection.playlist_songs(single_playlist, 0, offset, limit)
 
     """ def playlist_delete(filter, api_format = 'xml'):
     """

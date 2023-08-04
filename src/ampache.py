@@ -1213,7 +1213,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def playlist_songs(self, filter_id: int, offset=0, limit=0):
+    def playlist_songs(self, filter_id: int, random: int = False, offset=0, limit=0):
         """ playlist_songs
             MINIMUM_API_VERSION=380001
 
@@ -1221,6 +1221,7 @@ class API(object):
 
             INPUTS
             * filter_id   = (integer) $playlist_id
+            * random      = (integer) 0,1, if true get random songs using limit //optional
             * offset      = (integer) //optional
             * limit       = (integer) //optional
         """
@@ -1228,8 +1229,11 @@ class API(object):
         data = {'action': 'playlist_songs',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
+                'random': random,
                 'offset': str(offset),
                 'limit': str(limit)}
+        if not random:
+            data.pop('random')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_songs')
