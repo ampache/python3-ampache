@@ -730,7 +730,7 @@ INPUTS
 
 user(username)
 
-This get an user public information
+This gets a user's public information
 
 * username = (string)
 
@@ -738,7 +738,7 @@ This get an user public information
 
 followers(username)
 
-This get an user followers
+This gets a user's followers
 
 * username = (string)
 

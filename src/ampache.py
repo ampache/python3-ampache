@@ -2195,7 +2195,7 @@ class API(object):
         """ user
             MINIMUM_API_VERSION=380001
 
-            This get an user public information
+            This gets a user's public information
 
             INPUTS
             * username    =
@@ -2215,7 +2215,7 @@ class API(object):
         """ followers
             MINIMUM_API_VERSION=380001
 
-            This get an user followers
+            This gets a user's followers
 
             INPUTS
             * username    =

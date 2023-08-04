@@ -52,18 +52,19 @@ Once you connect with your passphrase or api key, the url and auth token are sto
 NEWS
 ====
 
-* Password handshake auth is available now.
-* This library now supports every Ampache API release (3, 4, 5 and 6)
-* You can save and restore from a json config file using new methods
-  * set_config_path: Set a folder to your config path
-  * get_config: Load the config and set Ampache globals
-  * save_config: Save the config file with the current globals
+- Password handshake auth is available now.
+- This library now supports every Ampache API release (3, 4, 5 and 6)
+- You can save and restore from a json config file using new methods
 
-AMPACHE_URL = The URL of your Ampache server
-AMPACHE_USER = config["ampache_user"]
-AMPACHE_KEY = Your encrypted apikey OR password if using password auth
-AMPACHE_SESSION = Current session auth from the handshake. Use to reconnect to an existing session
-AMPACHE_API = API output format "json" || "xml"
+  - set_config_path: Set a folder to your config path
+  - get_config: Load the config and set Ampache globals
+  - save_config: Save the config file with the current globals
+
+    - AMPACHE_URL = The URL of your Ampache server
+    - AMPACHE_USER = config["ampache_user"]
+    - AMPACHE_KEY = Your encrypted apikey OR password if using password auth
+    - AMPACHE_SESSION = Current session auth from the handshake. Use to reconnect to an existing session
+    - AMPACHE_API = API output format "json" || "xml"
 
 INSTALL
 =======
@@ -128,3 +129,4 @@ LINKS
 `<https://github.com/ampache/python3-ampache/>`_
 
 `<https://pypi.org/project/ampache/>`_
+
