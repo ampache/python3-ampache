@@ -2195,7 +2195,7 @@ class API(object):
         """ user
             MINIMUM_API_VERSION=380001
 
-            This gets a user's public information
+            This get an user public information
 
             INPUTS
             * username    =
@@ -2215,7 +2215,7 @@ class API(object):
         """ followers
             MINIMUM_API_VERSION=380001
 
-            This gets a user's followers
+            This get an user followers
 
             INPUTS
             * username    =
@@ -2649,28 +2649,32 @@ class API(object):
         return self.return_data(ampache_response)
 
     def user_edit(self, username, password=False, fullname=False, email=False,
-                  website=False, state=False, city=False, disable=False, maxbitrate=False):
-        """ user_update
+                  website=False, state=False, city=False, disable=False, maxbitrate=False,
+                  fullname_public=False, reset_apikey=False, reset_streamtoken=False, clear_stats=False):
+        """ user_edit
             MINIMUM_API_VERSION=600000
 
             Update an existing user. @param array $input
 
             INPUTS
-            * username    = (string) $username
-            * password    = (string) hash('sha256', $password)) //optional
-            * fullname    = (string) //optional
-            * email       = (string) 'user@gmail.com' //optional
-            * website     = (string) //optional
-            * state       = (string) //optional
-            * city        = (string) //optional
-            * disable     = (boolean|integer) (True,False | 0|1) //optional
-            * maxbitrate  = (string) //optional
+            * username          = (string) $username
+            * password          = (string) hash('sha256', $password)) //optional
+            * fullname          = (string) $fullname //optional
+            * email             = (string) $email //optional
+            * website           = (string) $website //optional
+            * state             = (string) $state //optional
+            * city              = (string) $city //optional
+            * disable           = (integer) 0,1 true to disable the user (if enabled) //optional
+            * group             = (integer) Catalog filter group for the new user //optional, default = 0
+            * maxbitrate        = (integer) $maxbitrate //optional
+            * fullname_public   = (integer) 0,1 true to enable, false to disable using fullname in public display //optional
+            * reset_apikey      = (integer) 0,1 true to reset a user Api Key //optional
+            * reset_streamtoken = (integer) 0,1 true to reset a user Stream Token //optional
+            * clear_stats       = (integer) 0,1 true reset all stats for this user //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         if bool(disable):
             disable = 1
-        else:
-            disable = 0
         data = {'action': 'user_edit',
                 'auth': self.AMPACHE_SESSION,
                 'username': username,
@@ -2681,7 +2685,11 @@ class API(object):
                 'state': state,
                 'city': city,
                 'disable': disable,
-                'maxbitrate': maxbitrate}
+                'maxbitrate': maxbitrate,
+                'fullname_public': fullname_public,
+                'reset_apikey': reset_apikey,
+                'reset_streamtoken': reset_streamtoken,
+                'clear_stats': clear_stats}
         if not password:
             data.pop('password')
         if not fullname:
@@ -2694,8 +2702,18 @@ class API(object):
             data.pop('state')
         if not city:
             data.pop('city')
+        if not disable:
+            data.pop('disable')
         if not maxbitrate:
             data.pop('maxbitrate')
+        if not fullname_public:
+            data.pop('fullname_public')
+        if not reset_apikey:
+            data.pop('reset_apikey')
+        if not reset_streamtoken:
+            data.pop('reset_streamtoken')
+        if not clear_stats:
+            data.pop('clear_stats')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_update')
@@ -3514,56 +3532,13 @@ class API(object):
         return self.return_data(ampache_response)
 
     def user_update(self, username, password=False, fullname=False, email=False,
-                    website=False, state=False, city=False, disable=False, maxbitrate=False):
+                    website=False, state=False, city=False, disable=False, maxbitrate=False,
+                    fullname_public=False, reset_apikey=False, reset_streamtoken=False, clear_stats=False):
         """ user_update
-            MINIMUM_API_VERSION=400001
+            MINIMUM_API_VERSION=600000
 
-            Update an existing user. @param array $input
-
-            INPUTS
-            * username    = (string) $username
-            * password    = (string) hash('sha256', $password)) //optional
-            * fullname    = (string) //optional
-            * email       = (string) 'user@gmail.com' //optional
-            * website     = (string) //optional
-            * state       = (string) //optional
-            * city        = (string) //optional
-            * disable     = (boolean|integer) (True,False | 0|1) //optional
-            * maxbitrate  = (string) //optional
+            Update an existing user. Backcompat function for api6 (Use user_edit)
         """
-        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        if bool(disable):
-            disable = 1
-        else:
-            disable = 0
-        data = {'action': 'user_update',
-                'auth': self.AMPACHE_SESSION,
-                'username': username,
-                'password': password,
-                'fullname': fullname,
-                'email': email,
-                'website': website,
-                'state': state,
-                'city': city,
-                'disable': disable,
-                'maxbitrate': maxbitrate}
-        if not password:
-            data.pop('password')
-        if not fullname:
-            data.pop('fullname')
-        if not email:
-            data.pop('email')
-        if not website:
-            data.pop('website')
-        if not state:
-            data.pop('state')
-        if not city:
-            data.pop('city')
-        if not maxbitrate:
-            data.pop('maxbitrate')
-        data = urllib.parse.urlencode(data)
-        full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_update')
-        if not ampache_response:
-            return False
-        return self.return_data(ampache_response)
+        return self.user_edit(username, password, fullname, email,
+                              website, state, city, disable, maxbitrate,
+                              fullname_public, reset_apikey, reset_streamtoken, clear_stats)
