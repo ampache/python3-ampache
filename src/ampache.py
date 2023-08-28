@@ -1721,6 +1721,32 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+    def catalog_folder(self, folder, task, catalog_id):
+        """ catalog_folder
+            MINIMUM_API_VERSION=6.0.0
+
+            Perform actions on local catalog folders.
+            Single folder versions of catalog add, clean and verify.
+            Make sure you remember to urlencode those folder names!
+
+            INPUTS
+            * folder        = (string) urlencode(FULL path to local folder)
+            * task        = (string) 'add'|'clean'|'verify'|'remove'
+            * catalog_id  = (integer) $catalog_id
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'catalog_folder',
+                'auth': self.AMPACHE_SESSION,
+                'folder': folder,
+                'task': task,
+                'catalog': catalog_id}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalog_action')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def podcasts(self, filter_str: str = False,
                  exact: int = False, offset=0, limit=0):
         """ podcasts
