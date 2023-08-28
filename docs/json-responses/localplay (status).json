@@ -3,13 +3,13 @@
         "command": {
             "status": {
                 "state": "stop",
-                "volume": "55",
+                "volume": "72",
                 "repeat": true,
-                "random": true,
+                "random": false,
                 "track": 1,
-                "track_title": "The Smashing Pumpkins - A Night Like This",
-                "track_artist": "",
-                "track_album": ""
+                "track_title": "Been Caught Stealing",
+                "track_artist": "Jane's Addiction",
+                "track_album": "Ritual de lo habitual"
             }
         }
     }

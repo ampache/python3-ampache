@@ -29,17 +29,17 @@
     <time>998</time>
     <year>2011</year>
     <format>flac</format>
-    <stream_format>flac</stream_format>
+    <stream_format>mp3</stream_format>
     <bitrate>389683</bitrate>
-    <stream_bitrate>389683</stream_bitrate>
+    <stream_bitrate>32000</stream_bitrate>
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/x-flac]]></mime>
-    <stream_mime><![CDATA[audio/x-flac]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&player=api&name=IOK-1%20-%20Galenskap.flac]]></url>
+    <mime><![CDATA[audio/flac]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&transcode_to=mp3&player=api&name=IOK-1%20-%20Galenskap.mp3]]></url>
     <size>48633049</size>
     <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
     <flag>0</flag>
     <rating/>
     <averagerating/>
