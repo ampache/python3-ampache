@@ -2766,7 +2766,7 @@ class API(object):
             Returns preference based on the specified filter_str
 
             INPUTS
-            * filter_str  = (string) search the name of a preference //optional
+            * filter_str  = (string) search the name of a preference
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'user_preference',
@@ -2804,7 +2804,7 @@ class API(object):
             Returns preference based on the specified filter_str
 
             INPUTS
-            * filter_str  = (string) search the name of a preference //optional
+            * filter_str  = (string) search the name of a preference
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'system_preference',
