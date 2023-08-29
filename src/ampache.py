@@ -2769,12 +2769,12 @@ class API(object):
             * filter_str  = (string) search the name of a preference //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'user_preferences',
+        data = {'action': 'user_preference',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_preferences')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_preference')
         if not ampache_response:
             return False
         return self.return_data(ampache_response)
@@ -2807,12 +2807,12 @@ class API(object):
             * filter_str  = (string) search the name of a preference //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'system_preferences',
+        data = {'action': 'system_preference',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'system_preferences')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'system_preference')
         if not ampache_response:
             return False
         return self.return_data(ampache_response)
