@@ -2,136 +2,55 @@
     "total_count": 4,
     "song": [
         {
-            "id": "90",
-            "title": "Invo",
-            "name": "Invo",
+            "id": "100",
+            "title": "The Prophecies Of The Horned One",
+            "name": "The Prophecies Of The Horned One",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "16",
+                "name": "CARN\u00daN",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "CARN\u00daN"
             },
             "artists": [
                 {
-                    "id": "14",
-                    "name": "Nofi\/found.",
+                    "id": "16",
+                    "name": "CARN\u00daN",
                     "prefix": null,
-                    "basename": "Nofi\/found."
+                    "basename": "CARN\u00daN"
                 }
             ],
             "album": {
-                "id": "8",
-                "name": "Nofi Devices",
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
                 "prefix": null,
-                "basename": "Nofi Devices"
+                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "16",
+                "name": "CARN\u00daN",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "CARN\u00daN"
             },
             "disk": 1,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/01_Invo.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
+            "disksubtitle": null,
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/02ThePropheciesOfTheHornedOne.ogg",
+            "genre": [],
             "playlisttrack": 1,
-            "time": 47,
-            "year": 0,
-            "format": "mp3",
+            "time": 378,
+            "year": 1996,
+            "format": "ogg",
             "stream_format": "mp3",
-            "bitrate": 192000,
-            "stream_bitrate": 192000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&player=api&name=Nofi-found.%20-%20Invo.mp3",
-            "size": 1140815,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
-            "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
-            "license": null,
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "-3.050000",
-            "replaygain_track_peak": "0.933000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "107",
-            "title": "Arrest Me",
-            "name": "Arrest Me",
-            "artist": {
-                "id": "20",
-                "name": "R\/B",
-                "prefix": null,
-                "basename": "R\/B"
-            },
-            "artists": [
-                {
-                    "id": "20",
-                    "name": "R\/B",
-                    "prefix": null,
-                    "basename": "R\/B"
-                }
-            ],
-            "album": {
-                "id": "12",
-                "name": "Buried in Nausea",
-                "prefix": null,
-                "basename": "Buried in Nausea"
-            },
-            "albumartist": {
-                "id": "19",
-                "name": "Various Artists",
-                "prefix": null,
-                "basename": "Various Artists"
-            },
-            "disk": 1,
-            "track": 9,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/09R_b-ArrestMe.m4a",
-            "genre": [
-                {
-                    "id": "7",
-                    "name": "Punk"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 96,
-            "year": 2012,
-            "format": "m4a",
-            "stream_format": "mp3",
-            "bitrate": 252864,
+            "bitrate": 89965,
             "stream_bitrate": 32000,
             "rate": 44100,
             "mode": "vbr",
-            "mime": "audio\/mp4",
+            "mime": "application\/ogg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&transcode_to=mp3&player=api&name=R-B%20-%20Arrest%20Me.mp3",
-            "size": 3091727,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3",
+            "size": 4265791,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
             "flag": false,
             "rating": null,
             "averagerating": null,
@@ -139,90 +58,22 @@
             "catalog": 1,
             "composer": null,
             "channels": 2,
-            "comment": null,
-            "license": null,
-            "publisher": null,
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "-1.350000",
-            "replaygain_track_peak": "0.881000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "96",
-            "title": "Creeping Lawler 2",
-            "name": "Creeping Lawler 2",
-            "artist": {
-                "id": "15",
-                "name": "Warfare 3.0",
-                "prefix": null,
-                "basename": "Warfare 3.0"
-            },
-            "artists": [
-                {
-                    "id": "15",
-                    "name": "Warfare 3.0",
-                    "prefix": null,
-                    "basename": "Warfare 3.0"
-                }
-            ],
-            "album": {
-                "id": "9",
-                "name": "Creeping Lawler 2",
-                "prefix": null,
-                "basename": "Creeping Lawler 2"
-            },
-            "albumartist": {
-                "id": "15",
-                "name": "Warfare 3.0",
-                "prefix": null,
-                "basename": "Warfare 3.0"
-            },
-            "disk": 1,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.wav",
-            "genre": [],
-            "playlisttrack": 3,
-            "time": 296,
-            "year": 0,
-            "format": "wav",
-            "stream_format": "mp3",
-            "bitrate": 1411200,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/wav",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&transcode_to=mp3&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
-            "size": 52345628,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&name=art.jpg",
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 3,
-            "catalog": 1,
-            "composer": null,
-            "channels": 2,
-            "comment": null,
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": "-4.310000",
-            "replaygain_track_peak": "0.989000",
+            "replaygain_track_gain": "-10.510000",
+            "replaygain_track_peak": "1.000000",
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "76",
-            "title": "inominavel p04",
-            "name": "inominavel p04",
+            "id": "78",
+            "title": "inominavel p01",
+            "name": "inominavel p01",
             "artist": {
                 "id": "11",
                 "name": "structura",
@@ -250,16 +101,17 @@
                 "basename": "structura"
             },
             "disk": 1,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/04_structura_-_inominavel_p04.mp3",
+            "disksubtitle": null,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/01_structura_-_inominavel_p01.mp3",
             "genre": [
                 {
                     "id": "3",
                     "name": "Noise"
                 }
             ],
-            "playlisttrack": 4,
-            "time": 317,
+            "playlisttrack": 2,
+            "time": 84,
             "year": 2007,
             "format": "mp3",
             "stream_format": "mp3",
@@ -269,14 +121,14 @@
             "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=76&uid=4&player=api&name=structura%20-%20inominavel%20p04.mp3",
-            "size": 7629821,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78&uid=4&player=api&name=structura%20-%20inominavel%20p01.mp3",
+            "size": 2036632,
             "mbid": null,
             "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&name=art.jpg",
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "playcount": 1,
+            "playcount": 0,
             "catalog": 1,
             "composer": null,
             "channels": 2,
@@ -289,6 +141,153 @@
             "replaygain_album_peak": null,
             "replaygain_track_gain": "0.000000",
             "replaygain_track_peak": "0.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "92",
+            "title": "Stance",
+            "name": "Stance",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 8,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/08_Stance.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 544,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 192000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&player=api&name=Nofi-found.%20-%20Stance.mp3",
+            "size": 13078740,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": "-2.380000",
+            "replaygain_track_peak": "0.989000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "111",
+            "title": "The art of free expression",
+            "name": "The art of free expression",
+            "artist": {
+                "id": "35",
+                "name": "Tip-C",
+                "prefix": null,
+                "basename": "Tip-C"
+            },
+            "artists": [
+                {
+                    "id": "35",
+                    "name": "Tip-C",
+                    "prefix": null,
+                    "basename": "Tip-C"
+                }
+            ],
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": null,
+                "basename": "Various Artists"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/05Tip-c-TheArtOfFreeExpression.wma",
+            "genre": [],
+            "playlisttrack": 4,
+            "time": 110,
+            "year": 2012,
+            "format": "wma",
+            "stream_format": "mp3",
+            "bitrate": 32582,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&transcode_to=mp3&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.mp3",
+            "size": 460498,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 1,
+            "comment": null,
+            "license": null,
+            "publisher": null,
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

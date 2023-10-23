@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <song id="109">
-    <name><![CDATA[Dance with the Devil]]></name>
-    <title><![CDATA[Dance with the Devil]]></title>
-    <artist id="34">
-      <name><![CDATA[Comedown Kid]]></name>
+  <song id="115">
+    <name><![CDATA[Are we going Crazy]]></name>
+    <title><![CDATA[Are we going Crazy]]></title>
+    <artist id="27">
+      <name><![CDATA[Chi.Otic]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Comedown Kid]]></basename>
+      <basename><![CDATA[Chi.Otic]]></basename>
     </artist>
     <album id="12">
       <name><![CDATA[Buried in Nausea]]></name>
@@ -20,10 +20,11 @@
       <basename><![CDATA[Various Artists]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>3</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <track>7</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
     <playlisttrack>1</playlisttrack>
-    <time>116</time>
+    <time>433</time>
     <year>2012</year>
     <format>wma</format>
     <stream_format>mp3</stream_format>
@@ -33,8 +34,8 @@
     <mode><![CDATA[cbr]]></mode>
     <mime><![CDATA[audio/x-ms-wma]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3]]></url>
-    <size>483444</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
+    <size>1776580</size>
     <mbid><![CDATA[]]></mbid>
     <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
     <flag>0</flag>
@@ -56,64 +57,59 @@
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="121">
-    <name><![CDATA[Planetary Picknick]]></name>
-    <title><![CDATA[Planetary Picknick]]></title>
-    <artist id="36">
-      <name><![CDATA[Comfort Fit]]></name>
+  <song id="102">
+    <name><![CDATA[Moremque Sinistrum Sacrorum]]></name>
+    <title><![CDATA[Moremque Sinistrum Sacrorum]]></title>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Comfort Fit]]></basename>
+      <basename><![CDATA[CARNÚN]]></basename>
     </artist>
-    <album id="21">
-      <name><![CDATA[Forget and Remember]]></name>
+    <album id="10">
+      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Forget and Remember]]></basename>
+      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
     </album>
-    <albumartist id="36">
-      <name><![CDATA[Comfort Fit]]></name>
+    <albumartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Comfort Fit]]></basename>
+      <basename><![CDATA[CARNÚN]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
-    <track>2</track>
-    <genre id="8">
-      <name><![CDATA[Hip-Hop]]></name>
-    </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/2 - Planetary Picknick.mp3]]></filename>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <track>5</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/05MoremqueSinistrumSacrorum.ogg]]></filename>
     <playlisttrack>2</playlisttrack>
-    <time>358</time>
-    <year>2005</year>
-    <format>mp3</format>
+    <time>164</time>
+    <year>1996</year>
+    <format>ogg</format>
     <stream_format>mp3</stream_format>
-    <bitrate>238812</bitrate>
-    <stream_bitrate>238812</stream_bitrate>
+    <bitrate>106806</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
+    <mime><![CDATA[application/ogg]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=121&uid=4&player=api&name=Comfort%20Fit%20-%20Planetary%20Picknick.mp3]]></url>
-    <size>10715592</size>
-    <mbid><![CDATA[6defae67-37da-4a85-90f6-80df5c27d88c]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3]]></url>
+    <size>2206257</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
     <flag>0</flag>
     <rating/>
     <averagerating/>
     <playcount>0</playcount>
-    <catalog>4</catalog>
+    <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
     <channels>2</channels>
-    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-02-comfort_fit-planetary_picknick
-Comments: http://freemusicarchive.org/
-Curator: WFMU
-Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[Tokyo Dawn Records]]></publisher>
+    <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
+    <replaygain_track_gain>-7.480000</replaygain_track_gain>
+    <replaygain_track_peak>1.000000</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
