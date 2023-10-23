@@ -405,7 +405,7 @@ class API(object):
     """
 
     def handshake(self, ampache_url: str, ampache_api: str, ampache_user: str = False,
-                  timestamp: int = 0, version: str = '6.0.0'):
+                  timestamp: int = 0, version: str = '6.1.0'):
         """ handshake
             MINIMUM_API_VERSION=380001
 
@@ -460,7 +460,7 @@ class API(object):
             self.AMPACHE_SESSION = token
             return token
 
-    def ping(self, ampache_url: str, ampache_api: str = False, version: str = '6.0.0'):
+    def ping(self, ampache_url: str, ampache_api: str = False, version: str = '6.1.0'):
         """ ping
             MINIMUM_API_VERSION=380001
 
@@ -509,7 +509,7 @@ class API(object):
 
     def register(self, username, fullname, password, email):
         """ register
-            MINIMUM_API_VERSION=600000
+            MINIMUM_API_VERSION=6.0.0
 
             Register a new user.
             Requires the username, password and email.
@@ -614,7 +614,7 @@ class API(object):
     def list(self, object_type, filter_str: str = False,
              exact: int = False, add: int = False, update: int = False, offset=0, limit=0):
         """ list
-            MINIMUM_API_VERSION=600000
+            MINIMUM_API_VERSION=6.0.0
 
             This takes a named array of objects and returning `id`, `name`, `prefix` and `basename`
 
@@ -2694,7 +2694,7 @@ class API(object):
                   website=False, state=False, city=False, disable=False, maxbitrate=False,
                   fullname_public=False, reset_apikey=False, reset_streamtoken=False, clear_stats=False):
         """ user_edit
-            MINIMUM_API_VERSION=600000
+            MINIMUM_API_VERSION=6.0.0
 
             Update an existing user. @param array $input
 
@@ -3609,7 +3609,7 @@ class API(object):
                     website=False, state=False, city=False, disable=False, maxbitrate=False,
                     fullname_public=False, reset_apikey=False, reset_streamtoken=False, clear_stats=False):
         """ user_update
-            MINIMUM_API_VERSION=600000
+            MINIMUM_API_VERSION=6.0.0
 
             Update an existing user. Backcompat function for api6 (Use user_edit)
         """
