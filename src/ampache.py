@@ -533,6 +533,22 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+    def lost_password(self):
+        """ lost_password
+            MINIMUM_API_VERSION=6.1.0
+
+            Destroy session for ampache_api auth key.
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'goodbye',
+                'auth': self.AMPACHE_SESSION}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'goodbye')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def goodbye(self):
         """ goodbye
             MINIMUM_API_VERSION=400001
