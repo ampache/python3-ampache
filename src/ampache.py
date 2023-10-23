@@ -3250,7 +3250,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def get_bookmark(self, filter_id: str, object_type: str):
+    def get_bookmark(self, filter_id: str, object_type: str, include=False):
         """ get_bookmark
             MINIMUM_API_VERSION=5.0.0
 
@@ -3258,7 +3258,7 @@ class API(object):
 
             INPUTS
             * filter_id   = (integer) object_id
-            * object_type = (string) object_type ('song', 'video', 'podcast_episode')
+            * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'get_bookmark',
@@ -3272,17 +3272,49 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def bookmarks(self):
+    def bookmark(self, filter_id: str, include=False):
+        """ bookmark
+            MINIMUM_API_VERSION=6.1.0
+
+            Get information about bookmarked media this user is allowed to manage.
+
+            INPUTS
+            * filter  = (string) bookmark_id
+            * include = (integer) 0,1, if true include the object in the bookmark //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'bookmark',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'include': include}
+        if not include:
+            data.pop('include')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def bookmarks(self, client=False, include=False):
         """ bookmarks
             MINIMUM_API_VERSION=5.0.0
 
             Get information about bookmarked media this user is allowed to manage.
 
             INPUTS
+            * client  = (string) filter by bookmark_id //optional
+            * include = (integer) 0,1, if true include the object in the bookmark //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'bookmarks',
-                'auth': self.AMPACHE_SESSION}
+                'auth': self.AMPACHE_SESSION,
+                'client': client,
+                'type': include}
+        if not client:
+            data.pop('client')
+        if not include:
+            data.pop('include')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmarks')
@@ -3291,7 +3323,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def bookmark_create(self, filter_id, object_type,
-                        position: int = 0, client: str = 'AmpacheAPI', date=False):
+                        position: int = 0, client: str = 'AmpacheAPI', date=False, include=False):
         """ bookmark_create
             MINIMUM_API_VERSION=5.0.0
 
@@ -3299,7 +3331,7 @@ class API(object):
 
             INPUTS
             * filter_id   = (integer) object_id
-            * object_type = (string) object_type ('song', 'video', 'podcast_episode')
+            * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
             * position    = (integer) current track time in seconds
             * client      = (string) Agent string. (Default: 'AmpacheAPI') //optional
             * date        = (integer) update time (Default: UNIXTIME()) //optional
@@ -3324,7 +3356,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def bookmark_edit(self, filter_id, object_type,
-                      position: int = 0, client: str = 'AmpacheAPI', date=False):
+                      position: int = 0, client: str = 'AmpacheAPI', date=False, include=False):
         """ bookmark_edit
             MINIMUM_API_VERSION=5.0.0
 
@@ -3332,7 +3364,7 @@ class API(object):
 
             INPUTS
             * filter_id   = (integer) object_id
-            * object_type = (string) object_type ('song', 'video', 'podcast_episode')
+            * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
             * position    = (integer) current track time in seconds
             * client      = (string) Agent string. (Default: 'AmpacheAPI') //optional
             * date        = (integer) update time (Default: UNIXTIME()) //optional
@@ -3364,7 +3396,7 @@ class API(object):
 
             INPUTS
             * filter_id   = (integer) object_id
-            * object_type = (string) object_type ('song', 'video', 'podcast_episode')
+            * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'bookmark_delete',
