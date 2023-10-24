@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<total_count>3</total_count>
-<catalog_id></catalog_id>
-<parent_id></parent_id>
-<parent_type>root</parent_type>
-<child_type>catalog</child_type>
-<browse id="1">
-	<name><![CDATA[music]]></name>
-	<prefix><![CDATA[]]></prefix>
-	<basename><![CDATA[music]]></basename>
-</list>
-<browse id="3">
-	<name><![CDATA[podcast]]></name>
-	<prefix><![CDATA[]]></prefix>
-	<basename><![CDATA[podcast]]></basename>
-</list>
-<browse id="4">
-	<name><![CDATA[upload]]></name>
-	<prefix><![CDATA[]]></prefix>
-	<basename><![CDATA[upload]]></basename>
-</list>
+  <total_count>3</total_count>
+  <catalog_id/>
+  <parent_id/>
+  <parent_type>root</parent_type>
+  <child_type>catalog</child_type>
+  <browse id="1">
+    <name><![CDATA[music]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[music]]></basename>
+  </browse>
+  <browse id="3">
+    <name><![CDATA[podcast]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[podcast]]></basename>
+  </browse>
+  <browse id="4">
+    <name><![CDATA[upload]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[upload]]></basename>
+  </browse>
 </root>
