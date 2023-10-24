@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.0.0">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.1.0">
   <shares>
     <share id="1" url="https://music.com.au/share.php?id=1&amp;secret=zWUTlFER" description="Creeping Lawler 2 (Warfare 3.0)" username="user" created="2021-02-24T01:20:41+00:00" lastVisited="2021-02-24T01:20:43+00:00" visitCount="1">
       <entry id="300000096" parent="200000009" title="Creeping Lawler 2" isDir="false" isVideo="false" type="music" albumId="200000009" album="Creeping Lawler 2" artistId="100000015" artist="Warfare 3.0" coverArt="300000096" duration="296" bitRate="1411" track="1" size="52345628" discNumber="1" suffix="wav" contentType="audio/mpeg" path="Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.wav"/>

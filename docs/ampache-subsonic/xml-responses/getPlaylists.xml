@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.0.0">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.1.0">
   <playlists>
     <playlist id="800000003" name="random - admin - private" owner="admin" public="false" created="2021-02-23T04:35:38+00:00" changed="2021-02-23T04:35:38+00:00" songCount="43" duration="17875"/>
     <playlist id="800000002" name="random - admin - public" owner="admin" public="true" created="2021-02-23T04:34:56+00:00" changed="2021-02-23T04:34:56+00:00" songCount="43" duration="17786"/>
