@@ -3310,7 +3310,7 @@ class API(object):
         data = {'action': 'bookmarks',
                 'auth': self.AMPACHE_SESSION,
                 'client': client,
-                'type': include}
+                'include': include}
         if not client:
             data.pop('client')
         if not include:
