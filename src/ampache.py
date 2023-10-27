@@ -3259,6 +3259,7 @@ class API(object):
             INPUTS
             * filter_id   = (integer) object_id
             * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
+            * include     = (integer) 0,1, if true include the object in the bookmark //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'get_bookmark',
@@ -3338,6 +3339,7 @@ class API(object):
             * position    = (integer) current track time in seconds
             * client      = (string) Agent string. (Default: 'AmpacheAPI') //optional
             * date        = (integer) update time (Default: UNIXTIME()) //optional
+            * include     = (integer) 0,1, if true include the object in the bookmark //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'bookmark_create',
@@ -3371,6 +3373,7 @@ class API(object):
             * position    = (integer) current track time in seconds
             * client      = (string) Agent string. (Default: 'AmpacheAPI') //optional
             * date        = (integer) update time (Default: UNIXTIME()) //optional
+            * include     = (integer) 0,1, if true include the object in the bookmark //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'bookmark_edit',
