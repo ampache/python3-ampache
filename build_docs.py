@@ -387,6 +387,9 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     #ampacheConnection.catalog_action('clean_catalog', 2)
 
+    ampacheConnection.bookmark_create(115, 'song', 0, 'client1')
+
+    ampacheConnection.bookmark_create(64, 'song', 10, 'client')
     # (https://raw.githubusercontent.com/ampache/python3-ampache/api6/docs/json-responses/bookmarks.json)
     # (https://raw.githubusercontent.com/ampache/python3-ampache/api6/docs/xml-responses/bookmarks.xml)
     ampacheConnection.bookmarks(False, True)
@@ -397,16 +400,16 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     # (https://raw.githubusercontent.com/ampache/python3-ampache/api6/docs/json-responses/bookmark.json)
     # (https://raw.githubusercontent.com/ampache/python3-ampache/api6/docs/xml-responses/bookmark.xml)
-    ampacheConnection.bookmark(40)
+    ampacheConnection.bookmark(1)
     if os.path.isfile("docs/" + api_format + "-responses/bookmark." + api_format):
         shutil.move("docs/" + api_format + "-responses/bookmark." + api_format,
                     "docs/" + api_format + "-responses/bookmark (with include)." + api_format)
-    ampacheConnection.bookmark(40)
+    ampacheConnection.bookmark(1)
 
     # (https://raw.githubusercontent.com/ampache/python3-ampache/api6/docs/json-responses/bookmark_create.json)
     # (https://raw.githubusercontent.com/ampache/python3-ampache/api6/docs/xml-responses/bookmark_create.xml)
-    ampacheConnection.bookmark_create(45, 'song')
-    ampacheConnection.get_bookmark(45, 'song', 1)
+    ampacheConnection.bookmark_create(93, 'song')
+    ampacheConnection.get_bookmark(93, 'song', 1)
     if os.path.isfile("docs/" + api_format + "-responses/get_bookmark." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_bookmark." + api_format,
                     "docs/" + api_format + "-responses/get_bookmark (with include)." + api_format)
