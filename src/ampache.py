@@ -3264,7 +3264,10 @@ class API(object):
         data = {'action': 'get_bookmark',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
-                'type': object_type}
+                'type': object_type,
+                'include': include}
+        if not include:
+            data.pop('include')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'get_bookmark')
