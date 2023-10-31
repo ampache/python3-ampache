@@ -140,7 +140,7 @@ class API(object):
     def get_config(self):
         """ get_config
 
-            read the config and set values from the json config file
+            Read the config and set values from the json config file
         """
         output_file = os.path.join(self.CONFIG_PATH, self.CONFIG_FILE)
         if os.path.isfile(output_file):
@@ -163,10 +163,7 @@ class API(object):
     def save_config(self):
         """ save_config
 
-            save config to a json file for use later
-
-            INPUTS
-            * myurl = (string) ''
+            Save config to a json file for use later
         """
         config = {
             "ampache_url": self.AMPACHE_URL,
@@ -537,7 +534,15 @@ class API(object):
         """ lost_password
             MINIMUM_API_VERSION=6.1.0
 
-            Destroy session for ampache_api auth key.
+            Allows a non-admin user to reset their password without web access to the main site.
+            It requires a reset token hash using your username and email
+
+            INPUTS
+            * auth = (string) (
+                $username;
+                $key = hash('sha256', 'email');
+                auth = hash('sha256', $username . $key);
+              ) 
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'goodbye',
@@ -3072,7 +3077,7 @@ class API(object):
         """ live_stream
             MINIMUM_API_VERSION=5.1.0
 
-            returns a single live_stream based on UID
+            Returns a single live_stream based on UID
 
             INPUTS
             * filter_id   = (integer) $live_stream_id
@@ -3250,7 +3255,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def get_bookmark(self, filter_id: str, object_type: str, include=False):
+    def get_bookmark(self, filter_id: str, object_type: str, include=False, show_all=False):
         """ get_bookmark
             MINIMUM_API_VERSION=5.0.0
 
@@ -3260,42 +3265,22 @@ class API(object):
             * filter_id   = (integer) object_id
             * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
             * include     = (integer) 0,1, if true include the object in the bookmark //optional
+            * all         = (integer) 0,1, if true every bookmark related to the object //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'get_bookmark',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'type': object_type,
-                'include': include}
+                'include': include,
+                'all': show_all}
         if not include:
             data.pop('include')
+        if not show_all:
+            data.pop('all')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'get_bookmark')
-        if not ampache_response:
-            return False
-        return self.return_data(ampache_response)
-
-    def bookmark(self, filter_id: str, include=False):
-        """ bookmark
-            MINIMUM_API_VERSION=6.1.0
-
-            Get information about bookmarked media this user is allowed to manage.
-
-            INPUTS
-            * filter  = (string) bookmark_id
-            * include = (integer) 0,1, if true include the object in the bookmark //optional
-        """
-        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'bookmark',
-                'auth': self.AMPACHE_SESSION,
-                'filter': filter_id,
-                'include': include}
-        if not include:
-            data.pop('include')
-        data = urllib.parse.urlencode(data)
-        full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark')
         if not ampache_response:
             return False
         return self.return_data(ampache_response)
@@ -3322,6 +3307,30 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmarks')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def bookmark(self, filter_id: str, include=False):
+        """ bookmark
+            MINIMUM_API_VERSION=6.1.0
+
+            Get information about bookmarked media this user is allowed to manage.
+
+            INPUTS
+            * filter  = (string) bookmark_id
+            * include = (integer) 0,1, if true include the object in the bookmark //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'bookmark',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'include': include}
+        if not include:
+            data.pop('include')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark')
         if not ampache_response:
             return False
         return self.return_data(ampache_response)
