@@ -2,10 +2,10 @@
 
 
 """
-Copyright (C)2020 Ampache.org
--------------------------------------------
-Ampache XML and JSON Api 420000 for python3
--------------------------------------------
+Copyright (C)2023 Ampache.org
+--------------------------------------------
+Ampache XML and JSON Api library for python3
+--------------------------------------------
 
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by

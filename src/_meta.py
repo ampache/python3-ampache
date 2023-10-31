@@ -1,4 +1,4 @@
-# Copyright 2020 Ampache.org
+# Copyright 2023 Ampache.org
 
 """
 ampache metadata
