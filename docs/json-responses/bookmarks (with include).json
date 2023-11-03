@@ -1,15 +1,111 @@
 {
-    "total_count": 2,
+    "total_count": 10,
     "bookmark": [
         {
             "id": "1",
+            "owner": "user",
+            "object_type": "podcast_episode",
+            "object_id": "2",
+            "position": 0,
+            "client": "AmpacheAPI",
+            "creation_date": 1670202706,
+            "update_date": 1698974919,
+            "podcast_episode": [
+                {
+                    "id": "2",
+                    "title": null,
+                    "name": null,
+                    "podcast": {
+                        "id": null,
+                        "name": null
+                    },
+                    "description": "",
+                    "category": "",
+                    "author": "",
+                    "author_full": "",
+                    "website": "",
+                    "pubdate": "1970-01-01T00:00:00+00:00",
+                    "state": "",
+                    "filelength": "00:00:00",
+                    "filesize": "",
+                    "filename": " - .",
+                    "mime": null,
+                    "time": 0,
+                    "size": 0,
+                    "bitrate": null,
+                    "stream_bitrate": null,
+                    "rate": 0,
+                    "mode": null,
+                    "channels": null,
+                    "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=2",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=2&uid=4&format=raw&player=api&name=%20-%20.",
+                    "catalog": "",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=&object_type=podcast",
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "played": ""
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "owner": "user",
+            "object_type": "podcast_episode",
+            "object_id": "2",
+            "position": 0,
+            "client": "AmpacheAPI",
+            "creation_date": 1670202706,
+            "update_date": 1698974919,
+            "podcast_episode": [
+                {
+                    "id": "2",
+                    "title": null,
+                    "name": null,
+                    "podcast": {
+                        "id": null,
+                        "name": null
+                    },
+                    "description": "",
+                    "category": "",
+                    "author": "",
+                    "author_full": "",
+                    "website": "",
+                    "pubdate": "1970-01-01T00:00:00+00:00",
+                    "state": "",
+                    "filelength": "00:00:00",
+                    "filesize": "",
+                    "filename": " - .",
+                    "mime": null,
+                    "time": 0,
+                    "size": 0,
+                    "bitrate": null,
+                    "stream_bitrate": null,
+                    "rate": 0,
+                    "mode": null,
+                    "channels": null,
+                    "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=2",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=2&uid=4&format=raw&player=api&name=%20-%20.",
+                    "catalog": "",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=&object_type=podcast",
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "played": ""
+                }
+            ]
+        },
+        {
+            "id": "3",
             "owner": "user",
             "object_type": "song",
             "object_id": "115",
             "position": 0,
             "client": "client1",
             "creation_date": 1670202706,
-            "update_date": 1698389707,
+            "update_date": 1698974919,
             "song": [
                 {
                     "id": "115",
@@ -83,14 +179,515 @@
             ]
         },
         {
-            "id": "2",
+            "id": "4",
             "owner": "user",
             "object_type": "song",
             "object_id": "64",
             "position": 10,
             "client": "client",
             "creation_date": 1670202706,
-            "update_date": 1698389707,
+            "update_date": 1698974919,
+            "song": [
+                {
+                    "id": "64",
+                    "title": "Black&BlueSmoke",
+                    "name": "Black&BlueSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 500,
+                    "year": 2007,
+                    "format": "wma",
+                    "stream_format": "mp3",
+                    "bitrate": 20627,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+                    "size": 1298295,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "owner": "user",
+            "object_type": "song",
+            "object_id": "115",
+            "position": 0,
+            "client": "client1",
+            "creation_date": 1670202706,
+            "update_date": 1698974919,
+            "song": [
+                {
+                    "id": "115",
+                    "title": "Are we going Crazy",
+                    "name": "Are we going Crazy",
+                    "artist": {
+                        "id": "27",
+                        "name": "Chi.Otic",
+                        "prefix": null,
+                        "basename": "Chi.Otic"
+                    },
+                    "artists": [
+                        {
+                            "id": "27",
+                            "name": "Chi.Otic",
+                            "prefix": null,
+                            "basename": "Chi.Otic"
+                        }
+                    ],
+                    "album": {
+                        "id": "12",
+                        "name": "Buried in Nausea",
+                        "prefix": null,
+                        "basename": "Buried in Nausea"
+                    },
+                    "albumartist": {
+                        "id": "19",
+                        "name": "Various Artists",
+                        "prefix": null,
+                        "basename": "Various Artists"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 7,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
+                    "genre": [],
+                    "playlisttrack": 1,
+                    "time": 433,
+                    "year": 2012,
+                    "format": "wma",
+                    "stream_format": "mp3",
+                    "bitrate": 32582,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
+                    "size": 1776580,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 1,
+                    "comment": null,
+                    "license": null,
+                    "publisher": null,
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "owner": "user",
+            "object_type": "song",
+            "object_id": "64",
+            "position": 10,
+            "client": "client",
+            "creation_date": 1670202706,
+            "update_date": 1698974919,
+            "song": [
+                {
+                    "id": "64",
+                    "title": "Black&BlueSmoke",
+                    "name": "Black&BlueSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 500,
+                    "year": 2007,
+                    "format": "wma",
+                    "stream_format": "mp3",
+                    "bitrate": 20627,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+                    "size": 1298295,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "owner": "user",
+            "object_type": "song",
+            "object_id": "115",
+            "position": 0,
+            "client": "client1",
+            "creation_date": 1670202706,
+            "update_date": 1698974919,
+            "song": [
+                {
+                    "id": "115",
+                    "title": "Are we going Crazy",
+                    "name": "Are we going Crazy",
+                    "artist": {
+                        "id": "27",
+                        "name": "Chi.Otic",
+                        "prefix": null,
+                        "basename": "Chi.Otic"
+                    },
+                    "artists": [
+                        {
+                            "id": "27",
+                            "name": "Chi.Otic",
+                            "prefix": null,
+                            "basename": "Chi.Otic"
+                        }
+                    ],
+                    "album": {
+                        "id": "12",
+                        "name": "Buried in Nausea",
+                        "prefix": null,
+                        "basename": "Buried in Nausea"
+                    },
+                    "albumartist": {
+                        "id": "19",
+                        "name": "Various Artists",
+                        "prefix": null,
+                        "basename": "Various Artists"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 7,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
+                    "genre": [],
+                    "playlisttrack": 1,
+                    "time": 433,
+                    "year": 2012,
+                    "format": "wma",
+                    "stream_format": "mp3",
+                    "bitrate": 32582,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
+                    "size": 1776580,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 1,
+                    "comment": null,
+                    "license": null,
+                    "publisher": null,
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "owner": "user",
+            "object_type": "song",
+            "object_id": "64",
+            "position": 10,
+            "client": "client",
+            "creation_date": 1670202706,
+            "update_date": 1698974919,
+            "song": [
+                {
+                    "id": "64",
+                    "title": "Black&BlueSmoke",
+                    "name": "Black&BlueSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 500,
+                    "year": 2007,
+                    "format": "wma",
+                    "stream_format": "mp3",
+                    "bitrate": 20627,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+                    "size": 1298295,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "owner": "user",
+            "object_type": "song",
+            "object_id": "115",
+            "position": 0,
+            "client": "client1",
+            "creation_date": 1670202706,
+            "update_date": 1698977660,
+            "song": [
+                {
+                    "id": "115",
+                    "title": "Are we going Crazy",
+                    "name": "Are we going Crazy",
+                    "artist": {
+                        "id": "27",
+                        "name": "Chi.Otic",
+                        "prefix": null,
+                        "basename": "Chi.Otic"
+                    },
+                    "artists": [
+                        {
+                            "id": "27",
+                            "name": "Chi.Otic",
+                            "prefix": null,
+                            "basename": "Chi.Otic"
+                        }
+                    ],
+                    "album": {
+                        "id": "12",
+                        "name": "Buried in Nausea",
+                        "prefix": null,
+                        "basename": "Buried in Nausea"
+                    },
+                    "albumartist": {
+                        "id": "19",
+                        "name": "Various Artists",
+                        "prefix": null,
+                        "basename": "Various Artists"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 7,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
+                    "genre": [],
+                    "playlisttrack": 1,
+                    "time": 433,
+                    "year": 2012,
+                    "format": "wma",
+                    "stream_format": "mp3",
+                    "bitrate": 32582,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
+                    "size": 1776580,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 1,
+                    "comment": null,
+                    "license": null,
+                    "publisher": null,
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "owner": "user",
+            "object_type": "song",
+            "object_id": "64",
+            "position": 10,
+            "client": "client",
+            "creation_date": 1670202706,
+            "update_date": 1698977660,
             "song": [
                 {
                     "id": "64",
