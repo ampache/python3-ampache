@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.0.0">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.1.0">
   <similarSongs>
     <song id="300126349" parent="200146928" title="Arc" isDir="false" isVideo="false" type="music" albumId="200146928" album="Riot Act" artistId="100007290" artist="Pearl Jam" coverArt="300126349" duration="65" bitRate="320" track="14" year="2002" genre="Grunge" size="2624980" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="Pearl Jam/(2002) Riot Act [EICP 161]/1-14 - Arc.mp3"/>
     <song id="300154897" parent="200102972" title="Settle Down" isDir="false" isVideo="false" type="music" albumId="200102972" album="La Cigale, Paris, FR" artistId="100003236" artist="Zwan" duration="361" bitRate="870" track="13" year="2003" genre="Bootleg" size="39346309" discNumber="1" suffix="flac" contentType="audio/x-flac" path="Zwan/2003-02-09 - La Cigale, Paris, FR/13 - Settle Down.flac" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>

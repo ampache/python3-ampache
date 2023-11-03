@@ -5,19 +5,19 @@
   <parent_id/>
   <parent_type>root</parent_type>
   <child_type>catalog</child_type>
-  <list id="1">
+  <browse id="1">
     <name><![CDATA[music]]></name>
     <prefix><![CDATA[]]></prefix>
     <basename><![CDATA[music]]></basename>
-  </list>
-  <list id="3">
+  </browse>
+  <browse id="3">
     <name><![CDATA[podcast]]></name>
     <prefix><![CDATA[]]></prefix>
     <basename><![CDATA[podcast]]></basename>
-  </list>
-  <list id="4">
+  </browse>
+  <browse id="4">
     <name><![CDATA[upload]]></name>
     <prefix><![CDATA[]]></prefix>
     <basename><![CDATA[upload]]></basename>
-  </list>
+  </browse>
 </root>

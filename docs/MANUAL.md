@@ -8,6 +8,9 @@
 * AMPACHE_SESSION (string)
 * AMPACHE_USER (string)
 * AMPACHE_KEY (string)
+* DOCS_PATH = (string) default: "docs/"
+* CONFIG_FILE = (string) default: "ampache.json"
+* CONFIG_PATH = (string)
 
 ## HELPER FUNCTIONS
 
@@ -28,6 +31,14 @@ set_debug(mybool: bool)
 This function can be used to enable/disable debugging messages
 
 * bool = (boolean) Enable/disable debug messages
+
+### set_debug_path
+
+set_debug_path(path_string: str)
+
+This function can be used to set the output folder for docs
+
+* path_string = (string) folder path
 
 ### set_user
 
@@ -52,6 +63,26 @@ set_url(myurl: str)
 Set the ampache url
 
 * myurl (string)
+
+### set_config_path
+
+set_config_path(path: str):
+
+Set the folder which contains your config to a folder instead of the working directory
+
+* path = (string)
+
+### get_config
+
+get_config():
+
+Read the config and set values from the json config file
+
+### save_config
+
+save_config():
+
+Save config to a json file for use later
 
 ### test_result
 
@@ -169,6 +200,31 @@ of the server is, and what version it is running/compatible with
 * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
 * ampache_api = (string) encrypted apikey //optional
 
+### register
+
+register(username, fullname, password, email)
+
+Register a new user.
+Requires the username, password and email.
+
+* username = (string)
+* fullname = (string) //optional
+* password = (string) hash('sha256', $password))
+* email    = (string)
+
+### lost_password
+
+lost_password()
+
+Allows a non-admin user to reset their password without web access to the main site.
+It requires a reset token hash using your username and email
+
+* auth = (string) (
+    $username;
+    $key = hash('sha256', 'email');
+    auth = hash('sha256', $username . $key);
+  ) 
+
 ### goodbye
 
 goodbye()
@@ -193,6 +249,34 @@ Return similar artist id's or similar song ids compared to the input filter
 * filter_id   = (integer) $artist_id or song_id
 * offset      = (integer) //optional
 * limit       = (integer) //optional
+
+### list
+list(object_type, filter_str: str = False,  exact: int = False, add: int = False, update: int = False, offset=0, limit=0):
+
+This takes a named array of objects and returning `id`, `name`, `prefix` and `basename`
+
+* object_type = (string) 'song'|'album'|'artist'|'album_artist'|'playlist'
+* filter_str  = (string) search the name of the object_type //optional
+* exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+* add         = (integer) UNIXTIME() //optional
+* update      = (integer) UNIXTIME() //optional
+* offset      = (integer) //optional
+* limit       = (integer) //optional
+
+### browse
+
+browse(filter_str: str = False, object_type: str = False, catalog: int = False, add: int = False, update: int = False, offset=0, limit=0):
+
+Return children of a parent object in a folder traversal/browse style
+If you don't send any parameters you'll get a catalog list (the 'root' path)
+
+* filter_str  = (string) object_id //optional
+* object_type = (string) 'root', 'catalog', 'artist', 'album', 'podcast' // optional
+* catalog = (integer) catalog ID you are browsing
+* add     = Api::set_filter(date) //optional
+* update  = Api::set_filter(date) //optional
+* offset  = (integer) //optional
+* limit   = (integer) //optional
 
 ### get_indexes
 
@@ -530,6 +614,29 @@ Return catalogs by UID
 
 * filter_id = (integer) UID of catalog
 
+### catalog_add
+
+catalog_add(cat_name, cat_path, cat_type=False, media_type=False, file_pattern=False, folder_pattern=False, username=False, password=False)
+
+Create a new catalog
+
+* name           = (string) catalog_name
+* path           = (string) URL or folder path for your catalog
+* type           = (string) catalog_type default: local ('local', 'beets', 'remote', 'subsonic', 'seafile', 'beetsremote') //optional
+* media_type     = (string) Default: 'music' ('music', 'podcast', 'clip', 'tvshow', 'movie', 'personal_video') //optional
+* file_pattern   = (string) Pattern used identify tags from the file name. Default '%T - %t' //optional
+* folder_pattern = (string) Pattern used identify tags from the folder name. Default '%a/%A' //optional
+* username       = (string) login to remote catalog ('remote', 'subsonic', 'seafile') //optional
+* password       = (string) password to remote catalog ('remote', 'subsonic', 'seafile', 'beetsremote') //optional
+
+### catalog_delete
+
+catalog_delete(filter_id: int)
+
+Delete an existing catalog. (if it exists)
+
+* filter = (string) catalog_id to delete
+
 ### catalog_action
 
 catalog_action(task, catalog_id)
@@ -550,6 +657,18 @@ Make sure you remember to urlencode those file names!
 * file       = (string) urlencode(FULL path to local file)
 * task       = (string) 'add'|'clean'|'verify'|'remove'
 * catalog_id = (integer) $catalog_id
+
+### catalog_folder
+
+catalog_folder(folder, task, catalog_id)
+
+Perform actions on local catalog folders.
+Single folder versions of catalog add, clean and verify.
+Make sure you remember to urlencode those folder names!
+
+* folder      = (string) urlencode(FULL path to local folder)
+* task        = (string) 'add'|'clean'|'verify'|'remove'
+* catalog_id  = (integer) $catalog_id
 
 ### podcasts
 
@@ -908,11 +1027,13 @@ Create a new user. (Requires the username, password and email.) @param array $in
 * fullname    = (string) //optional
 * disable     = (boolean|integer) (True,False | 0|1) //optional
 
-### user_update
+### user_edit
 
-user_update(username, password=False, fullname=False, email=False, website=False, state=False, city=False, disable=False, maxbitrate=False)
+user_edit(username, password=False, fullname=False, email=False, website=False, state=False, city=False, disable=False, maxbitrate=False)
 
 Update an existing user. @param array $input
+
+(Alias for old function user_update redirects to this method)
 
 * username   = (string) $username
 * password   = (string) hash('sha256', $password)) //optional
@@ -1033,6 +1154,60 @@ returns a songs for a single license ID
 
 * filter_id = (integer) $license_id
 
+### live_streams
+
+live_streams(filter_str: str = False, exact: int = False, offset=0, limit=0):
+
+Returns live_streams based on the specified filter_str
+
+* filter_str  = (string) search the name of a live_stream //optional
+* exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+* offset      = (integer) //optional
+* limit       = (integer) //optional
+
+### live_stream
+
+live_stream(filter_id: int)
+
+Returns a single live_stream based on UID
+
+* filter_id   = (integer) $live_stream_id
+
+### live_stream_create
+
+live_stream_create(name: str, stream_url: str, codec: str, catalog_id: int, site_url: str = ''):
+
+Create a live_stream (radio station) object.
+
+* name     = (string) Stream title
+* url      = (string) URL of the http/s stream
+* codec    = (string) stream codec ('mp3', 'flac', 'ogg', 'vorbis', 'opus', 'aac', 'alac')
+* catalog  = (int) Catalog ID to associate with this stream
+* site_url = (string) Homepage URL of the stream //optional
+
+### live_stream_edit
+
+live_stream_edit(filter_id, name: str = '', stream_url: str = '', codec: str = '', catalog_id: int = 0, site_url: str = ''):
+
+Edit a live_stream (radio station) object.
+
+* filter   = (string) object_id
+* name     = (string) Stream title //optional
+* url      = (string) URL of the http/s stream //optional
+* codec    = (string) stream codec ('mp3', 'flac', 'ogg', 'vorbis', 'opus', 'aac', 'alac') //optional
+* catalog  = (int) Catalog ID to associate with this stream //optional
+* site_url = (string) Homepage URL of the stream //optional
+
+### live_stream_delete
+
+live_stream_delete(self, filter_id: int):
+
+Delete an existing live_stream (radio station). (if it exists)
+
+* filter_id = (integer) object_id
+
+
+
 ### labels
 
 labels(filter_str: str = False, exact: int = False, offset=0, limit=0)
@@ -1062,20 +1237,32 @@ returns a artists for a single label ID
 
 ### get_bookmark
 
-get_bookmark(filter_id: str, object_type: str)
+get_bookmark(filter_id: str, object_type: str, include=False)
 
 Get the bookmark from it's object_id and object_type.
 
 * filter_id   = (integer) object_id
 * object_type = (string) object_type ('song', 'video', 'podcast_episode')
+* include     = (integer) 0,1, if true include the object in the bookmark //optional
+* all         = (integer) 0,1, if true every bookmark related to the object //optional
 
 ### bookmarks
 
-bookmarks()
+bookmarks(client=False, include=False)
 
 Get information about bookmarked media this user is allowed to manage.
 
-INPUTS
+* client  = (string) filter by bookmark_id //optional
+* include = (integer) 0,1, if true include the object in the bookmark //optional
+
+### bookmark
+
+bookmark(filter_id: str, include=False):
+
+Get information about bookmarked media this user is allowed to manage.
+
+* filter  = (string) bookmark_id
+* include = (integer) 0,1, if true include the object in the bookmark //optional
 
 ### bookmark_create
 
@@ -1139,12 +1326,12 @@ Returns deleted_video
 
 ## BACKWARD COMPATIBLE FUNCTION NAMES
 
-Renamed Ampache 4 functions that are not part of Ampache 5
+Renamed Ampache 4 functions that are not part of Ampache 5+
 
-* tag         = genre
 * tags        = genres
+* tag         = genre
 * tag_artists = genre_artists
 * tag_albums  = genre_albums
 * tag_songs   = genre_songs
-
+* user_update = user_edit
 

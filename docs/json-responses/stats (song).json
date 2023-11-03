@@ -2,86 +2,9 @@
     "total_count": 2,
     "song": [
         {
-            "id": "86",
-            "title": "Caloonashine",
-            "name": "Caloonashine",
-            "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "artists": [
-                {
-                    "id": "14",
-                    "name": "Nofi\/found.",
-                    "prefix": null,
-                    "basename": "Nofi\/found."
-                }
-            ],
-            "album": {
-                "id": "8",
-                "name": "Nofi Devices",
-                "prefix": null,
-                "basename": "Nofi Devices"
-            },
-            "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "disk": 1,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/05_Caloonashine.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "playlisttrack": 1,
-            "time": 330,
-            "year": 0,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 192000,
-            "stream_bitrate": 192000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&player=api&name=Nofi-found.%20-%20Caloonashine.mp3",
-            "size": 7929692,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
-            "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
-            "license": null,
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": "-0.350000",
-            "replaygain_track_peak": "0.955000",
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "99",
-            "title": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
-            "name": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
+            "id": "104",
+            "title": "The Infernal Serpent",
+            "name": "The Infernal Serpent",
             "artist": {
                 "id": "16",
                 "name": "CARN\u00daN",
@@ -109,22 +32,23 @@
                 "basename": "CARN\u00daN"
             },
             "disk": 1,
-            "track": 6,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg",
+            "disksubtitle": null,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/04TheInfernalSerpent.ogg",
             "genre": [],
-            "playlisttrack": 2,
-            "time": 427,
+            "playlisttrack": 1,
+            "time": 404,
             "year": 1996,
             "format": "ogg",
             "stream_format": "mp3",
-            "bitrate": 143788,
+            "bitrate": 100053,
             "stream_bitrate": 32000,
             "rate": 44100,
             "mode": "vbr",
             "mime": "application\/ogg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3",
-            "size": 7696008,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3",
+            "size": 5066698,
             "mbid": null,
             "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
             "flag": false,
@@ -141,8 +65,82 @@
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": "-12.660000",
+            "replaygain_track_gain": "-11.260000",
             "replaygain_track_peak": "1.000000",
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "62",
+            "title": "PurpleSmoke",
+            "name": "PurpleSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic"
+            },
+            "artists": [
+                {
+                    "id": "2",
+                    "name": "Synthetic",
+                    "prefix": null,
+                    "basename": "Synthetic"
+                }
+            ],
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP",
+                "prefix": null,
+                "basename": "Colorsmoke EP"
+            },
+            "albumartist": {
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 3,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma",
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 390,
+            "year": 2007,
+            "format": "wma",
+            "stream_format": "mp3",
+            "bitrate": 20627,
+            "stream_bitrate": 32000,
+            "rate": 22050,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20PurpleSmoke.mp3",
+            "size": 1014135,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 2,
+            "comment": "Made with Sony ACID 5",
+            "license": null,
+            "publisher": "20kbps rec.",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

@@ -5,19 +5,19 @@
   <parent_id>3</parent_id>
   <parent_type>catalog</parent_type>
   <child_type>podcast</child_type>
-  <list id="1">
+  <browse id="1">
     <name><![CDATA[60-Second Science]]></name>
     <prefix><![CDATA[]]></prefix>
     <basename><![CDATA[60-Second Science]]></basename>
-  </list>
-  <list id="2">
+  </browse>
+  <browse id="2">
     <name><![CDATA[Plays Well with Others]]></name>
     <prefix><![CDATA[]]></prefix>
     <basename><![CDATA[Plays Well with Others]]></basename>
-  </list>
-  <list id="6">
+  </browse>
+  <browse id="6">
     <name><![CDATA[Trace]]></name>
     <prefix><![CDATA[]]></prefix>
     <basename><![CDATA[Trace]]></basename>
-  </list>
+  </browse>
 </root>

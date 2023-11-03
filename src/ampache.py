@@ -2,10 +2,10 @@
 
 
 """
-Copyright (C)2020 Ampache.org
--------------------------------------------
-Ampache XML and JSON Api 420000 for python3
--------------------------------------------
+Copyright (C)2023 Ampache.org
+--------------------------------------------
+Ampache XML and JSON Api library for python3
+--------------------------------------------
 
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -140,7 +140,7 @@ class API(object):
     def get_config(self):
         """ get_config
 
-            read the config and set values from the json config file
+            Read the config and set values from the json config file
         """
         output_file = os.path.join(self.CONFIG_PATH, self.CONFIG_FILE)
         if os.path.isfile(output_file):
@@ -163,10 +163,7 @@ class API(object):
     def save_config(self):
         """ save_config
 
-            save config to a json file for use later
-
-            INPUTS
-            * myurl = (string) ''
+            Save config to a json file for use later
         """
         config = {
             "ampache_url": self.AMPACHE_URL,
@@ -385,9 +382,8 @@ class API(object):
             if self.DOCS_PATH == "docs/":
                 self.DOCS_PATH = self.DOCS_PATH + api_format + "-responses/"
             url_response = ampache_response.decode('utf-8')
-            if self.AMPACHE_DEBUG:
-                print(url_response)
-                print(full_url)
+            print(url_response)
+            print(full_url)
             try:
                 if not os.path.isdir(self.DOCS_PATH):
                     os.makedirs(self.DOCS_PATH)
@@ -405,7 +401,7 @@ class API(object):
     """
 
     def handshake(self, ampache_url: str, ampache_api: str, ampache_user: str = False,
-                  timestamp: int = 0, version: str = '6.0.0'):
+                  timestamp: int = 0, version: str = '6.1.0'):
         """ handshake
             MINIMUM_API_VERSION=380001
 
@@ -460,7 +456,7 @@ class API(object):
             self.AMPACHE_SESSION = token
             return token
 
-    def ping(self, ampache_url: str, ampache_api: str = False, version: str = '6.0.0'):
+    def ping(self, ampache_url: str, ampache_api: str = False, version: str = '6.1.0'):
         """ ping
             MINIMUM_API_VERSION=380001
 
@@ -509,7 +505,7 @@ class API(object):
 
     def register(self, username, fullname, password, email):
         """ register
-            MINIMUM_API_VERSION=600000
+            MINIMUM_API_VERSION=6.0.0
 
             Register a new user.
             Requires the username, password and email.
@@ -529,6 +525,30 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'register')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def lost_password(self):
+        """ lost_password
+            MINIMUM_API_VERSION=6.1.0
+
+            Allows a non-admin user to reset their password without web access to the main site.
+            It requires a reset token hash using your username and email
+
+            INPUTS
+            * auth = (string) (
+                $username;
+                $key = hash('sha256', 'email');
+                auth = hash('sha256', $username . $key);
+              ) 
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'goodbye',
+                'auth': self.AMPACHE_SESSION}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'goodbye')
         if not ampache_response:
             return False
         return self.return_data(ampache_response)
@@ -598,7 +618,7 @@ class API(object):
     def list(self, object_type, filter_str: str = False,
              exact: int = False, add: int = False, update: int = False, offset=0, limit=0):
         """ list
-            MINIMUM_API_VERSION=600000
+            MINIMUM_API_VERSION=6.0.0
 
             This takes a named array of objects and returning `id`, `name`, `prefix` and `basename`
 
@@ -2678,7 +2698,7 @@ class API(object):
                   website=False, state=False, city=False, disable=False, maxbitrate=False,
                   fullname_public=False, reset_apikey=False, reset_streamtoken=False, clear_stats=False):
         """ user_edit
-            MINIMUM_API_VERSION=600000
+            MINIMUM_API_VERSION=6.0.0
 
             Update an existing user. @param array $input
 
@@ -3056,7 +3076,7 @@ class API(object):
         """ live_stream
             MINIMUM_API_VERSION=5.1.0
 
-            returns a single live_stream based on UID
+            Returns a single live_stream based on UID
 
             INPUTS
             * filter_id   = (integer) $live_stream_id
@@ -3234,7 +3254,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def get_bookmark(self, filter_id: str, object_type: str):
+    def get_bookmark(self, filter_id: str, object_type: str, include=False, show_all=False):
         """ get_bookmark
             MINIMUM_API_VERSION=5.0.0
 
@@ -3242,13 +3262,21 @@ class API(object):
 
             INPUTS
             * filter_id   = (integer) object_id
-            * object_type = (string) object_type ('song', 'video', 'podcast_episode')
+            * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
+            * include     = (integer) 0,1, if true include the object in the bookmark //optional
+            * all         = (integer) 0,1, if true every bookmark related to the object //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'get_bookmark',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
-                'type': object_type}
+                'type': object_type,
+                'include': include,
+                'all': show_all}
+        if not include:
+            data.pop('include')
+        if not show_all:
+            data.pop('all')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'get_bookmark')
@@ -3256,17 +3284,25 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def bookmarks(self):
+    def bookmarks(self, client=False, include=False):
         """ bookmarks
             MINIMUM_API_VERSION=5.0.0
 
             Get information about bookmarked media this user is allowed to manage.
 
             INPUTS
+            * client  = (string) filter by bookmark_id //optional
+            * include = (integer) 0,1, if true include the object in the bookmark //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'bookmarks',
-                'auth': self.AMPACHE_SESSION}
+                'auth': self.AMPACHE_SESSION,
+                'client': client,
+                'include': include}
+        if not client:
+            data.pop('client')
+        if not include:
+            data.pop('include')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmarks')
@@ -3274,8 +3310,32 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+    def bookmark(self, filter_id: str, include=False):
+        """ bookmark
+            MINIMUM_API_VERSION=6.1.0
+
+            Get information about bookmarked media this user is allowed to manage.
+
+            INPUTS
+            * filter  = (string) bookmark_id
+            * include = (integer) 0,1, if true include the object in the bookmark //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'bookmark',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'include': include}
+        if not include:
+            data.pop('include')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def bookmark_create(self, filter_id, object_type,
-                        position: int = 0, client: str = 'AmpacheAPI', date=False):
+                        position: int = 0, client: str = 'AmpacheAPI', date=False, include=False):
         """ bookmark_create
             MINIMUM_API_VERSION=5.0.0
 
@@ -3283,10 +3343,11 @@ class API(object):
 
             INPUTS
             * filter_id   = (integer) object_id
-            * object_type = (string) object_type ('song', 'video', 'podcast_episode')
+            * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
             * position    = (integer) current track time in seconds
             * client      = (string) Agent string. (Default: 'AmpacheAPI') //optional
             * date        = (integer) update time (Default: UNIXTIME()) //optional
+            * include     = (integer) 0,1, if true include the object in the bookmark //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'bookmark_create',
@@ -3308,7 +3369,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def bookmark_edit(self, filter_id, object_type,
-                      position: int = 0, client: str = 'AmpacheAPI', date=False):
+                      position: int = 0, client: str = 'AmpacheAPI', date=False, include=False):
         """ bookmark_edit
             MINIMUM_API_VERSION=5.0.0
 
@@ -3316,10 +3377,11 @@ class API(object):
 
             INPUTS
             * filter_id   = (integer) object_id
-            * object_type = (string) object_type ('song', 'video', 'podcast_episode')
+            * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
             * position    = (integer) current track time in seconds
             * client      = (string) Agent string. (Default: 'AmpacheAPI') //optional
             * date        = (integer) update time (Default: UNIXTIME()) //optional
+            * include     = (integer) 0,1, if true include the object in the bookmark //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'bookmark_edit',
@@ -3348,7 +3410,7 @@ class API(object):
 
             INPUTS
             * filter_id   = (integer) object_id
-            * object_type = (string) object_type ('song', 'video', 'podcast_episode')
+            * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'bookmark_delete',
@@ -3561,7 +3623,7 @@ class API(object):
                     website=False, state=False, city=False, disable=False, maxbitrate=False,
                     fullname_public=False, reset_apikey=False, reset_streamtoken=False, clear_stats=False):
         """ user_update
-            MINIMUM_API_VERSION=600000
+            MINIMUM_API_VERSION=6.0.0
 
             Update an existing user. Backcompat function for api6 (Use user_edit)
         """
