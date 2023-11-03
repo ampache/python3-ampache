@@ -382,9 +382,8 @@ class API(object):
             if self.DOCS_PATH == "docs/":
                 self.DOCS_PATH = self.DOCS_PATH + api_format + "-responses/"
             url_response = ampache_response.decode('utf-8')
-            if self.AMPACHE_DEBUG:
-                print(url_response)
-                print(full_url)
+            print(url_response)
+            print(full_url)
             try:
                 if not os.path.isdir(self.DOCS_PATH):
                     os.makedirs(self.DOCS_PATH)
