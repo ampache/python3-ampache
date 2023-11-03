@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[bookmark_delete]]></errorAction>
-    <errorType><![CDATA[bookmark]]></errorType>
-    <errorMessage><![CDATA[Not Found: <Element 'root' at 0x7f2303463a60>]]></errorMessage>
-  </error>
+  <success code="1">
+    <message><![CDATA[Deleted Bookmark: 14]]></message>
+  </success>
 </root>
