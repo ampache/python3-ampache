@@ -1,3 +1,8 @@
 {
-    "success": "successfully updated: temp_user"
+    "error": {
+        "errorCode": "4710",
+        "errorAction": "user_edit",
+        "errorType": "system",
+        "errorMessage": "Bad Request: filter"
+    }
 }

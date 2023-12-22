@@ -17,13 +17,13 @@
     <rate>44100</rate>
     <mode><![CDATA[cbr]]></mode>
     <mime><![CDATA[audio/x-ms-wma]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.wma]]></url>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
     <size>1776580</size>
     <mbid><![CDATA[]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
     <artist_mbid><![CDATA[7]]></artist_mbid>
     <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
@@ -31,7 +31,7 @@
     <playcount>0</playcount>
     <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
-    <channels/>
+    <channels>1</channels>
     <comment><![CDATA[]]></comment>
     <license><![CDATA[]]></license>
     <publisher><![CDATA[]]></publisher>
@@ -61,13 +61,13 @@
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
     <mime><![CDATA[audio/mp4]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a]]></url>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&transcode_to=mp3&player=api&name=R-B%20-%20Arrest%20Me.mp3]]></url>
     <size>3091727</size>
     <mbid><![CDATA[]]></mbid>
     <album_mbid><![CDATA[]]></album_mbid>
     <artist_mbid><![CDATA[]]></artist_mbid>
     <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
@@ -75,7 +75,7 @@
     <playcount>0</playcount>
     <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
-    <channels/>
+    <channels>2</channels>
     <comment><![CDATA[]]></comment>
     <license><![CDATA[]]></license>
     <publisher><![CDATA[]]></publisher>
@@ -83,8 +83,8 @@
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-1.350000</replaygain_track_gain>
-    <replaygain_track_peak>0.881000</replaygain_track_peak>
+    <replaygain_track_gain>-1.35</replaygain_track_gain>
+    <replaygain_track_peak>0.881</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
@@ -111,7 +111,7 @@
     <album_mbid><![CDATA[6e1d48f7-717c-416e-af35-5d2454a13af2]]></album_mbid>
     <artist_mbid><![CDATA[e6e2b787-0b4c-4267-8161-310399b101a5]]></artist_mbid>
     <albumartist_mbid><![CDATA[e6e2b787-0b4c-4267-8161-310399b101a5]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
@@ -119,7 +119,7 @@
     <playcount>0</playcount>
     <catalog>4</catalog>
     <composer><![CDATA[]]></composer>
-    <channels/>
+    <channels>2</channels>
     <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-09-comfort_fit-as_pure_as_possible
 Comments: http://freemusicarchive.org/
 Curator: WFMU
@@ -159,7 +159,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <album_mbid><![CDATA[]]></album_mbid>
     <artist_mbid><![CDATA[]]></artist_mbid>
     <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
@@ -167,7 +167,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <playcount>0</playcount>
     <catalog>1</catalog>
     <composer><![CDATA[Jeffrey Melton]]></composer>
-    <channels/>
+    <channels>2</channels>
     <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
     <license><![CDATA[]]></license>
     <publisher><![CDATA[archive.org]]></publisher>
@@ -175,8 +175,8 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>0.940000</replaygain_track_gain>
-    <replaygain_track_peak>0.989000</replaygain_track_peak>
+    <replaygain_track_gain>0.94</replaygain_track_gain>
+    <replaygain_track_peak>0.989</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

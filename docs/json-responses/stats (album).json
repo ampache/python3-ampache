@@ -1,53 +1,54 @@
 {
     "album": [
         {
-            "id": "10",
-            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "id": "21",
+            "name": "Forget and Remember",
             "artist": {
-                "id": "16",
-                "name": "CARN\u00daN"
+                "id": "36",
+                "name": "Comfort Fit"
             },
-            "time": 3873,
-            "year": 1996,
+            "time": 4248,
+            "year": 2005,
             "tracks": [],
-            "songcount": 9,
+            "songcount": 20,
             "diskcount": 1,
-            "type": null,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "type": "album",
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
-            "mbid": null
+            "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2"
         },
         {
-            "id": "8",
-            "name": "Nofi Devices",
+            "id": "12",
+            "name": "Buried in Nausea",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found."
+                "id": "19",
+                "name": "Various Artists"
             },
-            "time": 4423,
-            "year": 0,
+            "time": 1879,
+            "year": 2012,
             "tracks": [],
-            "songcount": 11,
+            "songcount": 9,
             "diskcount": 1,
-            "type": null,
+            "type": "compilation",
             "genre": [
                 {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
+                    "id": "7",
+                    "name": "Punk"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album",
             "flag": 0,
-            "preciserating": 2,
-            "rating": 2,
+            "preciserating": null,
+            "rating": null,
             "averagerating": null,
             "mbid": null
         }
