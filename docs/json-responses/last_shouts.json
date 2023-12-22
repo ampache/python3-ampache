@@ -3,11 +3,9 @@
         "id": "1",
         "date": 1613973947,
         "text": "Love this album",
-        "user": [
-            {
-                "id": "4",
-                "username": "user"
-            }
-        ]
+        "user": {
+            "id": "4",
+            "username": "user"
+        }
     }
 ]

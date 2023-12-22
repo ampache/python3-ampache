@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>4</total_count>
-  <playlist id="3">
-    <name><![CDATA[random - admin - private]]></name>
-    <items>43</items>
-    <owner><![CDATA[admin]]></owner>
-    <type><![CDATA[private]]></type>
-  </playlist>
   <playlist id="2">
-    <name><![CDATA[random - admin - public]]></name>
+    <name><![CDATA[random - admin - public (admin)]]></name>
     <items>43</items>
     <owner><![CDATA[admin]]></owner>
     <type><![CDATA[public]]></type>
   </playlist>
   <playlist id="smart_21">
-    <name><![CDATA[admin - 02/23/2021 14:36:44]]></name>
-    <items>5000</items>
+    <name><![CDATA[admin - 02/23/2021 14:36:44 (admin)]]></name>
+    <items>0</items>
     <owner><![CDATA[public]]></owner>
     <type><![CDATA[public]]></type>
   </playlist>
   <playlist id="smart_14">
-    <name><![CDATA[Album 1*]]></name>
+    <name><![CDATA[Album 1* (System)]]></name>
     <items>2</items>
+    <owner><![CDATA[public]]></owner>
+    <type><![CDATA[public]]></type>
+  </playlist>
+  <playlist id="smart_13">
+    <name><![CDATA[Album 2* (System)]]></name>
+    <items>11</items>
     <owner><![CDATA[public]]></owner>
     <type><![CDATA[public]]></type>
   </playlist>

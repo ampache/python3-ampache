@@ -6,9 +6,9 @@
     <type><![CDATA[local]]></type>
     <gather_types><![CDATA[music]]></gather_types>
     <enabled>1</enabled>
-    <last_add><![CDATA[8/3/21, 12:04 AM]]></last_add>
-    <last_clean><![CDATA[8/3/21, 12:05 AM]]></last_clean>
-    <last_update><![CDATA[7/21/21, 2:51 AM]]></last_update>
+    <last_add><![CDATA[8/3/21, 12:04 AM]]></last_add>
+    <last_clean><![CDATA[8/3/21, 12:05 AM]]></last_clean>
+    <last_update><![CDATA[7/21/21, 2:51 AM]]></last_update>
     <path><![CDATA[/mnt/files-music/ampache-test/music]]></path>
     <rename_pattern><![CDATA[%T - %t]]></rename_pattern>
     <sort_pattern><![CDATA[%a/%A]]></sort_pattern>
@@ -18,9 +18,9 @@
     <type><![CDATA[local]]></type>
     <gather_types><![CDATA[podcast]]></gather_types>
     <enabled>1</enabled>
-    <last_add><![CDATA[4/1/21, 7:03 AM]]></last_add>
-    <last_clean><![CDATA[4/1/21, 7:03 AM]]></last_clean>
-    <last_update><![CDATA[Never]]></last_update>
+    <last_add><![CDATA[4/1/21, 7:03 AM]]></last_add>
+    <last_clean><![CDATA[4/1/21, 7:03 AM]]></last_clean>
+    <last_update><![CDATA[5/18/23, 7:13 AM]]></last_update>
     <path><![CDATA[/mnt/files-music/ampache-test/podcast]]></path>
     <rename_pattern><![CDATA[%T - %t]]></rename_pattern>
     <sort_pattern><![CDATA[%a/%A]]></sort_pattern>
@@ -30,8 +30,8 @@
     <type><![CDATA[local]]></type>
     <gather_types><![CDATA[music]]></gather_types>
     <enabled>1</enabled>
-    <last_add><![CDATA[4/1/21, 7:03 AM]]></last_add>
-    <last_clean><![CDATA[4/1/21, 7:03 AM]]></last_clean>
+    <last_add><![CDATA[4/1/21, 7:03 AM]]></last_add>
+    <last_clean><![CDATA[4/1/21, 7:03 AM]]></last_clean>
     <last_update><![CDATA[Never]]></last_update>
     <path><![CDATA[/mnt/files-music/ampache-test/upload]]></path>
     <rename_pattern><![CDATA[%T - %t]]></rename_pattern>
@@ -42,8 +42,8 @@
     <type><![CDATA[local]]></type>
     <gather_types><![CDATA[clip]]></gather_types>
     <enabled>1</enabled>
-    <last_add><![CDATA[8/3/21, 12:04 AM]]></last_add>
-    <last_clean><![CDATA[8/3/21, 12:05 AM]]></last_clean>
+    <last_add><![CDATA[8/3/21, 12:04 AM]]></last_add>
+    <last_clean><![CDATA[8/3/21, 12:05 AM]]></last_clean>
     <last_update><![CDATA[Never]]></last_update>
     <path><![CDATA[/mnt/files-music/ampache-test/video]]></path>
     <rename_pattern><![CDATA[%a - %t (%y)]]></rename_pattern>

@@ -24,23 +24,23 @@
     <album_mbid><![CDATA[]]></album_mbid>
     <artist_mbid><![CDATA[1]]></artist_mbid>
     <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.png]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
     <averagerating/>
-    <playcount>0</playcount>
+    <playcount/>
     <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
-    <channels/>
+    <channels>1</channels>
     <comment><![CDATA[]]></comment>
     <license><![CDATA[]]></license>
     <publisher><![CDATA[20kbps rec.]]></publisher>
     <language/>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-2.880000</replaygain_track_gain>
-    <replaygain_track_peak>0.977000</replaygain_track_peak>
+    <replaygain_track_gain>-2.88</replaygain_track_gain>
+    <replaygain_track_peak>0.977</replaygain_track_peak>
     <genre><![CDATA[Electronic]]></genre>
   </song>
 </root>
