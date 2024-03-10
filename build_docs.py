@@ -15,7 +15,7 @@ api = 'demo'
 user = 'demodemo'
 limit = 4
 offset = 0
-api_version = '5.1.0'
+api_version = '6.3.0'
 song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma'
 try:
     if sys.argv[1]:
@@ -266,6 +266,30 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
                 artist_title = child.find('name').text
     else:
         artist_title = search_artist['artist'][0]['name']
+
+    search_rules = [['favorite', 0, '%'], ['title', 2, 'D']]
+    # (https://raw.githubusercontent.com/ampache/python3-ampache/api6/docs/json-responses/search_group%20\(all\).json)
+    # (https://raw.githubusercontent.com/ampache/python3-ampache/api6/docs/xml-responses/search_group%20\(all\).xml)]]
+    ampacheConnection.search_group(search_rules, 'or', 'all', offset, limit, 0)
+    if os.path.isfile(docpath + "search_group." + api_format):
+        shutil.move(docpath + "search_group." + api_format,
+                    docpath + "search_group (all)." + api_format)
+
+    search_rules = [['artist', 0, 'Synthetic']]
+    # (https://raw.githubusercontent.com/ampache/python3-ampache/api6/docs/json-responses/search_group%20\(music\).json)
+    # (https://raw.githubusercontent.com/ampache/python3-ampache/api6/docs/xml-responses/search_group%20\(music\).xml)]]
+    ampacheConnection.search_group(search_rules, 'or', 'music', offset, limit, 0)
+    if os.path.isfile(docpath + "search_group." + api_format):
+        shutil.move(docpath + "search_group." + api_format,
+                    docpath + "search_group (music)." + api_format)
+
+    search_rules = [['title', 2, 'D']]
+    # (https://raw.githubusercontent.com/ampache/python3-ampache/api6/docs/json-responses/search_group%20\(podcast\).json)
+    # (https://raw.githubusercontent.com/ampache/python3-ampache/api6/docs/xml-responses/search_group%20\(podcast\).xml)]]
+    ampacheConnection.search_group(search_rules, 'or', 'podcast', offset, limit, 0)
+    if os.path.isfile(docpath + "search_group." + api_format):
+        shutil.move(docpath + "search_group." + api_format,
+                    docpath + "search_group (podcast)." + api_format)
 
     """ def album(filter, include = False, api_format = 'xml'):
     """

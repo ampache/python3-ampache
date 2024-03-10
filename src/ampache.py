@@ -2059,6 +2059,51 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+
+    def search_group(self, rules,
+                        operator='and', object_type='all', offset=0, limit=0, random=0):
+        """ advanced_search
+            MINIMUM_API_VERSION=380001
+
+            Perform an advanced search given passed rules
+            the rules can occur multiple times and are joined by the operator item.
+
+            Refer to the wiki for further information
+            http://ampache.org/api/api-advanced-search
+
+            INPUTS
+            * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
+            * operator    = (string) 'and'|'or' (whether to match one rule or all) //optional
+            * object_type = (string)  //optional
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+            * random      = (integer) 0|1' //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'search_group',
+                'auth': self.AMPACHE_SESSION,
+                'operator': operator,
+                'type': object_type,
+                'offset': offset,
+                'limit': limit,
+                'random': random}
+        count = 0
+        # inputs  [rule_1, rule_1_operator, rule_1_input]
+        # example ['year', 2, 1999]
+        for item in rules:
+            count = count + 1
+            data['rule_' + str(count)] = item[0]
+            data['rule_' + str(count) + '_operator'] = item[1]
+            data['rule_' + str(count) + '_input'] = item[2]
+            if item[0] == 'metadata':
+                data['rule_' + str(count) + '_subtype'] = item[3]
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'search_group')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def videos(self, filter_str: str = False,
                exact: int = False, offset=0, limit=0):
         """ videos
