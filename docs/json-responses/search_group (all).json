@@ -1,0 +1,325 @@
+{
+    "search": {
+        "song": [
+            {
+                "id": "109",
+                "title": "Dance with the Devil",
+                "name": "Dance with the Devil",
+                "artist": {
+                    "id": "34",
+                    "name": "Comedown Kid",
+                    "prefix": null,
+                    "basename": "Comedown Kid"
+                },
+                "artists": [
+                    {
+                        "id": "34",
+                        "name": "Comedown Kid",
+                        "prefix": null,
+                        "basename": "Comedown Kid"
+                    }
+                ],
+                "album": {
+                    "id": "12",
+                    "name": "Buried in Nausea",
+                    "prefix": null,
+                    "basename": "Buried in Nausea"
+                },
+                "albumartist": {
+                    "id": "19",
+                    "name": "Various Artists",
+                    "prefix": null,
+                    "basename": "Various Artists"
+                },
+                "disk": 1,
+                "disksubtitle": null,
+                "track": 3,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
+                "genre": [],
+                "playlisttrack": 1,
+                "time": 116,
+                "year": 2012,
+                "format": "wma",
+                "stream_format": "mp3",
+                "bitrate": 32582,
+                "stream_bitrate": 32000,
+                "rate": 44100,
+                "mode": "cbr",
+                "mime": "audio\/x-ms-wma",
+                "stream_mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
+                "size": 483444,
+                "mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": null,
+                "channels": 1,
+                "comment": null,
+                "license": "",
+                "publisher": null,
+                "language": null,
+                "lyrics": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": null,
+                "replaygain_track_peak": null,
+                "r128_album_gain": null,
+                "r128_track_gain": null
+            },
+            {
+                "id": "126",
+                "title": "Don't Show This Message Again",
+                "name": "Don't Show This Message Again",
+                "artist": {
+                    "id": "36",
+                    "name": "Comfort Fit",
+                    "prefix": null,
+                    "basename": "Comfort Fit"
+                },
+                "artists": [
+                    {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    }
+                ],
+                "album": {
+                    "id": "21",
+                    "name": "Forget and Remember",
+                    "prefix": null,
+                    "basename": "Forget and Remember"
+                },
+                "albumartist": {
+                    "id": "36",
+                    "name": "Comfort Fit",
+                    "prefix": null,
+                    "basename": "Comfort Fit"
+                },
+                "disk": 1,
+                "disksubtitle": null,
+                "track": 12,
+                "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/12 - Don\u2019t Show This Message Again.mp3",
+                "genre": [
+                    {
+                        "id": "8",
+                        "name": "Hip-Hop"
+                    }
+                ],
+                "playlisttrack": 2,
+                "time": 197,
+                "year": 2005,
+                "format": "mp3",
+                "stream_format": "mp3",
+                "bitrate": 232690,
+                "stream_bitrate": 232690,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "audio\/mpeg",
+                "stream_mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=126&uid=4&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3",
+                "size": 5755191,
+                "mbid": "6b582438-c034-47c2-86b0-61c63ec96b4b",
+                "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 4,
+                "composer": null,
+                "channels": 2,
+                "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-12-comfort_fit-dont_show_this_message_again\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                "license": "",
+                "publisher": "Tokyo Dawn Records",
+                "language": null,
+                "lyrics": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": null,
+                "replaygain_track_peak": null,
+                "r128_album_gain": null,
+                "r128_track_gain": null
+            }
+        ],
+        "album": [
+            {
+                "id": "2",
+                "name": "Colorsmoke EP",
+                "prefix": null,
+                "basename": "Colorsmoke EP",
+                "artist": {
+                    "id": "2",
+                    "name": "Synthetic",
+                    "prefix": null,
+                    "basename": "Synthetic"
+                },
+                "artists": [
+                    {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    }
+                ],
+                "time": 4568,
+                "year": 2007,
+                "tracks": [],
+                "songcount": 12,
+                "diskcount": 1,
+                "type": null,
+                "genre": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album",
+                "flag": true,
+                "rating": 5,
+                "averagerating": 3,
+                "mbid": null
+            }
+        ],
+        "song_artist": [
+            {
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic",
+                "albums": [],
+                "albumcount": 1,
+                "songs": [],
+                "songcount": 12,
+                "genre": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=artist",
+                "has_art": true,
+                "flag": true,
+                "rating": 5,
+                "averagerating": 3,
+                "mbid": "1",
+                "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
+                "time": 4568,
+                "yearformed": 0,
+                "placeformed": null
+            }
+        ],
+        "album_artist": [
+            {
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic",
+                "albums": [],
+                "albumcount": 1,
+                "songs": [],
+                "songcount": 12,
+                "genre": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=artist",
+                "has_art": true,
+                "flag": true,
+                "rating": 5,
+                "averagerating": 3,
+                "mbid": "1",
+                "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
+                "time": 4568,
+                "yearformed": 0,
+                "placeformed": null
+            }
+        ],
+        "artist": [
+            {
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic",
+                "albums": [],
+                "albumcount": 1,
+                "songs": [],
+                "songcount": 12,
+                "genre": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=artist",
+                "has_art": true,
+                "flag": true,
+                "rating": 5,
+                "averagerating": 3,
+                "mbid": "1",
+                "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
+                "time": 4568,
+                "yearformed": 0,
+                "placeformed": null
+            }
+        ],
+        "label": [
+            {
+                "id": "3",
+                "name": "DNA Production",
+                "artists": 1,
+                "summary": null,
+                "external_link": "https:\/\/music.com.au\/labels.php?action=show&label=3",
+                "address": null,
+                "category": "tag_generated",
+                "email": null,
+                "website": null,
+                "user": "4"
+            }
+        ],
+        "playlist": [
+            {
+                "id": "2",
+                "name": "random - admin - public (admin)",
+                "owner": "admin",
+                "items": 43,
+                "type": "public",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=playlist",
+                "has_art": false,
+                "flag": true,
+                "rating": null,
+                "averagerating": null
+            }
+        ],
+        "podcast": [],
+        "podcast_episode": [],
+        "genre": [
+            {
+                "id": "6",
+                "name": "Dance",
+                "albums": 1,
+                "artists": 1,
+                "songs": 11,
+                "videos": 0,
+                "playlists": 0,
+                "live_streams": 0
+            },
+            {
+                "id": "4",
+                "name": "Dark Ambient",
+                "albums": 1,
+                "artists": 1,
+                "songs": 4,
+                "videos": 0,
+                "playlists": 0,
+                "live_streams": 0
+            }
+        ],
+        "user": []
+    }
+}
