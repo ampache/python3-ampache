@@ -701,6 +701,57 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+    def index(self, object_type, filter_str: str = False, exact: int = False,
+              add: int = False, update: int = False, include: int = False, offset=0, limit=0, hide_search: int = False):
+        """ index
+            MINIMUM_API_VERSION=400001
+
+            This takes a collection of inputs and return ID's for the object type
+            Add 'include' to include child objects
+
+            INPUTS
+            * object_type = (string) 'catalog', 'song', 'album', 'artist', 'album_artist', 'song_artist', 'playlist', 'podcast', 'podcast_episode', 'share', 'video', 'live_stream'
+            * filter_str  = (string) search the name of the object_type //optional
+            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * add         = (integer) UNIXTIME() //optional
+            * update      = (integer) UNIXTIME() //optional
+            * include     = (integer) 0,1 include songs if available for that object //optional
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+            * hide_search = (integer) 0,1, if true do not include searches/smartlists in the result //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        if bool(include):
+            include = 1
+        data = {'action': 'index',
+                'auth': self.AMPACHE_SESSION,
+                'type': object_type,
+                'filter': filter_str,
+                'exact': exact,
+                'add': add,
+                'update': update,
+                'include': include,
+                'offset': str(offset),
+                'limit': str(limit)}
+        if not filter_str:
+            data.pop('filter')
+        if not exact:
+            data.pop('exact')
+        if not add:
+            data.pop('add')
+        if not update:
+            data.pop('update')
+        if not include:
+            data.pop('include')
+        if not hide_search:
+            data.pop('hide_search')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'index')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def get_indexes(self, object_type, filter_str: str = False,
                     exact: int = False, add: int = False, update: int = False, include: int = False, offset=0, limit=0):
         """ get_indexes
@@ -1174,6 +1225,66 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+    def user_playlists(self, filter_str: str = False, exact: int = False, offset=0, limit=0):
+        """ user_playlists
+            MINIMUM_API_VERSION=6.3.0
+
+            This returns playlists based on the specified filter (Does not include searches / smartlists)
+
+            INPUTS
+            * filter_str  = (string) search the name of a playlist //optional
+            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'user_playlists',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str,
+                'exact': exact,
+                'offset': str(offset),
+                'limit': str(limit)}
+        if not filter_str:
+            data.pop('filter')
+        if not exact:
+            data.pop('exact')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_playlists')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def user_smartlists(self, filter_str: str = False, exact: int = False, offset=0, limit=0):
+        """ user_smartlists
+            MINIMUM_API_VERSION=6.3.0
+
+            This returns smartlists (searches) based on the specified filter (Does not include playlists)
+
+            INPUTS
+            * filter_str  = (string) search the name of a playlist //optional
+            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'user_smartlists',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str,
+                'exact': exact,
+                'offset': str(offset),
+                'limit': str(limit)}
+        if not filter_str:
+            data.pop('filter')
+        if not exact:
+            data.pop('exact')
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_smartlists')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def playlists(self, filter_str: str = False,
                   exact: int = False, offset=0, limit=0, hide_search: int = False, show_dupes: int = False):
         """ playlists
@@ -1328,6 +1439,34 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_delete')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
+    def playlist_add(self, filter_id: int, object_id, check=False):
+        """ playlist_add
+            MINIMUM_API_VERSION=6.3.0
+
+            This adds a song to a playlist, allowing different song parent types
+
+            INPUTS
+            * filter = (int) UID of playlist
+            * id     = (int) $object_id
+            * type   = (string) 'song', 'album', 'artist', 'playlist'
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        if bool(check):
+            check = 1
+        else:
+            check = 0
+        data = {'action': 'playlist_add',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'id': object_id,
+                'type': check}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_add')
         if not ampache_response:
             return False
         return self.return_data(ampache_response)
@@ -2059,9 +2198,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-
     def search_group(self, rules,
-                        operator='and', object_type='all', offset=0, limit=0, random=0):
+                     operator='and', object_type='all', offset=0, limit=0, random=0):
         """ advanced_search
             MINIMUM_API_VERSION=380001
 
@@ -3540,6 +3678,49 @@ class API(object):
     BACKCOMPAT FUNCTIONS
     --------------------
     """
+
+    def search(self, rules, operator='and', object_type='song', offset=0, limit=0, random=0):
+        """ search
+            MINIMUM_API_VERSION=380001
+
+            Perform an advanced search given passed rules
+            the rules can occur multiple times and are joined by the operator item.
+
+            Refer to the wiki for further information
+            http://ampache.org/api/api-advanced-search
+
+            INPUTS
+            * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
+            * operator    = (string) 'and'|'or' (whether to match one rule or all) //optional
+            * object_type = (string)  //optional
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+            * random      = (integer) 0|1' //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'search',
+                'auth': self.AMPACHE_SESSION,
+                'operator': operator,
+                'type': object_type,
+                'offset': offset,
+                'limit': limit,
+                'random': random}
+        count = 0
+        # inputs  [rule_1, rule_1_operator, rule_1_input]
+        # example ['year', 2, 1999]
+        for item in rules:
+            count = count + 1
+            data['rule_' + str(count)] = item[0]
+            data['rule_' + str(count) + '_operator'] = item[1]
+            data['rule_' + str(count) + '_input'] = item[2]
+            if item[0] == 'metadata':
+                data['rule_' + str(count) + '_subtype'] = item[3]
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'search')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
 
     def tags(self, filter_str: str = False,
              exact: int = False, offset=0, limit=0):
