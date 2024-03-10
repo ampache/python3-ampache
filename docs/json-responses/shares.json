@@ -1,5 +1,5 @@
 {
-    "total_count": 2,
+    "total_count": 3,
     "share": [
         {
             "id": "1",
@@ -34,6 +34,23 @@
             "secret": "GJ7EzBPT",
             "public_url": "https:\/\/music.com.au\/share.php?id=2&secret=GJ7EzBPT",
             "description": "Buried in Nausea (Various Artists)"
+        },
+        {
+            "id": "7",
+            "name": "Colorsmoke EP",
+            "owner": "user",
+            "allow_stream": true,
+            "allow_download": true,
+            "creation_date": 1670202706,
+            "lastvisit_date": 0,
+            "object_type": "album",
+            "object_id": "2",
+            "expire_days": 0,
+            "max_counter": 0,
+            "counter": 0,
+            "secret": "GJ7EzBPT",
+            "public_url": "https:\/\/music.com.au\/share.php?id=7&secret=GJ7EzBPT",
+            "description": "Colorsmoke EP (Synthetic)"
         }
     ]
 }

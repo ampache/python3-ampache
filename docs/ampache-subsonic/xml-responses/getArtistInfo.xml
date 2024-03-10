@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.1.0">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.3.0">
   <artistInfo>
-    <biography/>
     <musicBrainzId>1</musicBrainzId>
-    <smallImageUrl>http://localhost:8989/play/art/aaddd8ce5a4ecfbc654d6cda495de016/artist/2/thumb34.jpg</smallImageUrl>
-    <mediumImageUrl>http://localhost:8989/play/art/509748ebc556cfb36ff214b756ca72f7/artist/2/thumb64.jpg</mediumImageUrl>
-    <largeImageUrl>http://localhost:8989/play/art/9cf701c5b5f5eae2dee134090bdb415d/artist/2/thumb174.jpg</largeImageUrl>
+    <smallImageUrl>http://localhost:8989/play/art/6c94c2ca19ed07b86b472d462a283ca3/artist/2/thumb34.jpg</smallImageUrl>
+    <mediumImageUrl>http://localhost:8989/play/art/2ee37e60ba41c919f48c1bafe7375c01/artist/2/thumb64.jpg</mediumImageUrl>
+    <largeImageUrl>http://localhost:8989/play/art/3e306594ef5248f3764c367d4295d2f2/artist/2/thumb174.jpg</largeImageUrl>
   </artistInfo>
 </subsonic-response>

@@ -3,12 +3,12 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.0.0",
+        "serverVersion": "6.3.0",
         "videos": {
             "video": [
                 {
                     "id": "500000001",
-                    "title": "SPACE   Magic Fly (1977) - https://archive.org/details/SPACE_Magic_Fly_1977",
+                    "title": "SPACE   Magic Fly (1977) - https://archive.org/details/SPACE_Magic_Fly_1977.mp4",
                     "isDir": false,
                     "isVideo": true,
                     "type": "video",
@@ -20,7 +20,7 @@
                 },
                 {
                     "id": "500000002",
-                    "title": "[SPACE] Magic Fly",
+                    "title": "[SPACE] Magic Fly.ogv",
                     "isDir": false,
                     "isVideo": true,
                     "type": "video",
@@ -28,8 +28,7 @@
                     "size": 14950742,
                     "suffix": "ogv",
                     "contentType": "video/ogg",
-                    "path": "SPACE - Magic Fly (1977).ogv",
-                    "starred": "2023-03-16T02:51:17Z"
+                    "path": "SPACE - Magic Fly (1977).ogv"
                 }
             ]
         }

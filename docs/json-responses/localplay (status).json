@@ -1,16 +1,8 @@
 {
-    "localplay": {
-        "command": {
-            "status": {
-                "state": "stop",
-                "volume": "72",
-                "repeat": true,
-                "random": false,
-                "track": 1,
-                "track_title": "Been Caught Stealing",
-                "track_artist": "Jane's Addiction",
-                "track_album": "Ritual de lo habitual"
-            }
-        }
+    "error": {
+        "errorCode": "4702",
+        "errorAction": "localplay",
+        "errorType": "system",
+        "errorMessage": "Generic error"
     }
 }

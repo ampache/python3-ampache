@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.1.0">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.3.0">
   <directory id="1" name="music">
     <child id="100000016" parent="1" isDir="true" title="CARNÚN" artist="CARNÚN" coverArt="ar-100000016"/>
     <child id="100000027" parent="1" isDir="true" title="Chi.Otic" artist="Chi.Otic" coverArt="ar-100000027"/>

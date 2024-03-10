@@ -3,7 +3,7 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.0.0",
+        "serverVersion": "6.3.0",
         "starred": {
             "artist": [
                 {
@@ -23,7 +23,7 @@
                     "songCount": 12,
                     "created": "2021-02-23T04:24:48+00:00",
                     "duration": 4568,
-                    "playCount": 3,
+                    "playCount": 1,
                     "artistId": "100000002",
                     "artist": "Synthetic",
                     "year": 2007,
@@ -31,56 +31,6 @@
                     "userRating": 5,
                     "averageRating": 3,
                     "starred": "2021-02-22T05:51:53Z"
-                }
-            ],
-            "song": [
-                {
-                    "id": "300000099",
-                    "parent": "200000010",
-                    "title": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "200000010",
-                    "album": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "artistId": "100000016",
-                    "artist": "CARN\u00daN",
-                    "coverArt": "300000099",
-                    "duration": 427,
-                    "bitRate": 143,
-                    "userRating": 5,
-                    "starred": "2023-03-16T02:50:51Z",
-                    "track": 6,
-                    "year": 1996,
-                    "size": 7704860,
-                    "discNumber": 1,
-                    "suffix": "ogg",
-                    "contentType": "application/ogg",
-                    "path": "Carn\u00fan/Malkuth (Demo1996)/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg"
-                },
-                {
-                    "id": "300000093",
-                    "parent": "200000008",
-                    "title": "Scribnus 3",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "200000008",
-                    "album": "Nofi Devices",
-                    "artistId": "100000014",
-                    "artist": "Nofi/found.",
-                    "coverArt": "300000093",
-                    "duration": 641,
-                    "bitRate": 192,
-                    "userRating": 5,
-                    "starred": "2023-03-06T23:45:12Z",
-                    "track": 3,
-                    "genre": "Electronica",
-                    "size": 15400002,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3"
                 }
             ]
         }

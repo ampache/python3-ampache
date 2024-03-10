@@ -2,38 +2,101 @@
 <root>
   <bookmark id="1">
     <user><![CDATA[user]]></user>
+    <object_type><![CDATA[podcast_episode]]></object_type>
+    <object_id>2</object_id>
+    <position>0</position>
+    <client><![CDATA[AmpacheAPI]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1698974919]]></update_date>
+  </bookmark>
+  <bookmark id="2">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[podcast_episode]]></object_type>
+    <object_id>2</object_id>
+    <position>0</position>
+    <client><![CDATA[AmpacheAPI]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1698974919]]></update_date>
+  </bookmark>
+  <bookmark id="3">
+    <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
     <object_id>115</object_id>
     <position>0</position>
     <client><![CDATA[client1]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1698389707]]></update_date>
-  </bookmark>
-  <bookmark id="2">
-    <user><![CDATA[user]]></user>
-    <object_type><![CDATA[song]]></object_type>
-    <object_id>64</object_id>
-    <position>10</position>
-    <client><![CDATA[client]]></client>
-    <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1698389707]]></update_date>
+    <update_date><![CDATA[1698974919]]></update_date>
   </bookmark>
   <bookmark id="4">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
+    <object_id>64</object_id>
+    <position>10</position>
+    <client><![CDATA[client]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1698974919]]></update_date>
+  </bookmark>
+  <bookmark id="5">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
     <object_id>115</object_id>
     <position>0</position>
     <client><![CDATA[client1]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1698389724]]></update_date>
+    <update_date><![CDATA[1698974919]]></update_date>
   </bookmark>
-  <bookmark id="5">
+  <bookmark id="6">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
     <object_id>64</object_id>
     <position>10</position>
     <client><![CDATA[client]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1698389724]]></update_date>
+    <update_date><![CDATA[1698974919]]></update_date>
+  </bookmark>
+  <bookmark id="7">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
+    <object_id>115</object_id>
+    <position>0</position>
+    <client><![CDATA[client1]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1698974919]]></update_date>
+  </bookmark>
+  <bookmark id="8">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
+    <object_id>64</object_id>
+    <position>10</position>
+    <client><![CDATA[client]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1698974919]]></update_date>
+  </bookmark>
+  <bookmark id="9">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
+    <object_id>55</object_id>
+    <position>0</position>
+    <client><![CDATA[client1]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1710062891]]></update_date>
+  </bookmark>
+  <bookmark id="11">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
+    <object_id>55</object_id>
+    <position>0</position>
+    <client><![CDATA[client1]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1710062904]]></update_date>
+  </bookmark>
+  <bookmark id="12">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
+    <object_id>54</object_id>
+    <position>10</position>
+    <client><![CDATA[client]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1710062904]]></update_date>
   </bookmark>
 </root>

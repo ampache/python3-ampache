@@ -3,50 +3,7 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.0.0",
-        "chatMessages": {
-            "chatMessage": [
-                {
-                    "username": "admin",
-                    "time": 1678935707000,
-                    "message": "Api Script Testing"
-                },
-                {
-                    "username": "user",
-                    "time": 1678935699000,
-                    "message": "Api Script Testing"
-                },
-                {
-                    "username": "admin",
-                    "time": 1678935601000,
-                    "message": "Api Script Testing"
-                },
-                {
-                    "username": "user",
-                    "time": 1678935593000,
-                    "message": "Api Script Testing"
-                },
-                {
-                    "username": "admin",
-                    "time": 1678935098000,
-                    "message": "Api Script Testing"
-                },
-                {
-                    "username": "user",
-                    "time": 1678935092000,
-                    "message": "Api Script Testing"
-                },
-                {
-                    "username": "admin",
-                    "time": 1678934172000,
-                    "message": "Api Script Testing"
-                },
-                {
-                    "username": "user",
-                    "time": 1678934167000,
-                    "message": "Api Script Testing"
-                }
-            ]
-        }
+        "serverVersion": "6.3.0",
+        "chatMessages": {}
     }
 }

@@ -2,7 +2,7 @@
 <root>
   <error errorCode="4704">
     <errorAction><![CDATA[podcast_delete]]></errorAction>
-    <errorType><![CDATA[filter]]></errorType>
-    <errorMessage><![CDATA[Not Found: 3]]></errorMessage>
+    <errorType><![CDATA[empty]]></errorType>
+    <errorMessage><![CDATA[3]]></errorMessage>
   </error>
 </root>
