@@ -732,7 +732,8 @@ class API(object):
                 'update': update,
                 'include': include,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'hide_search': hide_search}
         if not filter_str:
             data.pop('filter')
         if not exact:
