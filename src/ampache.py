@@ -1443,7 +1443,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def playlist_add(self, filter_id: int, object_id, check=False):
+    def playlist_add(self, filter_id: int, object_id: int, object_type: str):
         """ playlist_add
             MINIMUM_API_VERSION=6.3.0
 
@@ -1463,7 +1463,7 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'id': object_id,
-                'type': check}
+                'type': object_type}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_add')
@@ -2154,9 +2154,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def advanced_search(self, rules,
-                        operator='and', object_type='song', offset=0, limit=0, random=0):
-        """ advanced_search
+    def search(self, rules, operator='and', object_type='song', offset=0, limit=0, random=0):
+        """ search
             MINIMUM_API_VERSION=380001
 
             Perform an advanced search given passed rules
@@ -2174,7 +2173,7 @@ class API(object):
             * random      = (integer) 0|1' //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'advanced_search',
+        data = {'action': 'search',
                 'auth': self.AMPACHE_SESSION,
                 'operator': operator,
                 'type': object_type,
@@ -2193,7 +2192,7 @@ class API(object):
                 data['rule_' + str(count) + '_subtype'] = item[3]
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'advanced_search')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'search')
         if not ampache_response:
             return False
         return self.return_data(ampache_response)
@@ -3679,8 +3678,9 @@ class API(object):
     --------------------
     """
 
-    def search(self, rules, operator='and', object_type='song', offset=0, limit=0, random=0):
-        """ search
+    def advanced_search(self, rules,
+                        operator='and', object_type='song', offset=0, limit=0, random=0):
+        """ advanced_search
             MINIMUM_API_VERSION=380001
 
             Perform an advanced search given passed rules
@@ -3698,7 +3698,7 @@ class API(object):
             * random      = (integer) 0|1' //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'search',
+        data = {'action': 'advanced_search',
                 'auth': self.AMPACHE_SESSION,
                 'operator': operator,
                 'type': object_type,
@@ -3717,11 +3717,12 @@ class API(object):
                 data['rule_' + str(count) + '_subtype'] = item[3]
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'search')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'advanced_search')
         if not ampache_response:
             return False
         return self.return_data(ampache_response)
 
+    
     def tags(self, filter_str: str = False,
              exact: int = False, offset=0, limit=0):
         """ tags
