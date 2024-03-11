@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4702">
-    <errorAction><![CDATA[localplay]]></errorAction>
-    <errorType><![CDATA[system]]></errorType>
-    <errorMessage><![CDATA[Generic error]]></errorMessage>
-  </error>
+  <localplay>
+    <command>
+      <status>
+        <state><![CDATA[stop]]></state>
+        <volume><![CDATA[42]]></volume>
+        <repeat><![CDATA[0]]></repeat>
+        <random><![CDATA[0]]></random>
+        <track><![CDATA[1]]></track>
+        <track_title><![CDATA[Unknown]]></track_title>
+        <track_artist><![CDATA[Unknown]]></track_artist>
+        <track_album><![CDATA[Unknown]]></track_album>
+      </status>
+    </command>
+  </localplay>
 </root>

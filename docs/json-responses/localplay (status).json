@@ -1,8 +1,16 @@
 {
-    "error": {
-        "errorCode": "4702",
-        "errorAction": "localplay",
-        "errorType": "system",
-        "errorMessage": "Generic error"
+    "localplay": {
+        "command": {
+            "status": {
+                "state": "stop",
+                "volume": "42",
+                "repeat": false,
+                "random": false,
+                "track": 1,
+                "track_title": "Unknown",
+                "track_artist": "Unknown",
+                "track_album": "Unknown"
+            }
+        }
     }
 }
