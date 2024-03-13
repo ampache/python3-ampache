@@ -2200,14 +2200,15 @@ class API(object):
 
     def search_group(self, rules,
                      operator='and', object_type='all', offset=0, limit=0, random=0):
-        """ advanced_search
-            MINIMUM_API_VERSION=380001
+        """ search_group
+            MINIMUM_API_VERSION=6.3.0
 
-            Perform an advanced search given passed rules
-            the rules can occur multiple times and are joined by the operator item.
+            Perform a search given passed rules and return matching objects in a group.
+            If the rules to not exist for the object type or would return the entire table they will not return objects
 
-            Refer to the wiki for further information
-            http://ampache.org/api/api-advanced-search
+            Refer to the wiki for further information on rule_* types and data
+            https://ampache.org/api/api-xml-methods
+            https://ampache.org/api/api-json-methods
 
             INPUTS
             * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
