@@ -2,9 +2,9 @@
     "total_count": 4,
     "song": [
         {
-            "id": "85",
-            "title": "Beq Ultra Fat",
-            "name": "Beq Ultra Fat",
+            "id": "92",
+            "title": "Stance",
+            "name": "Stance",
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
@@ -33,8 +33,8 @@
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/04_Beq_Ultra_Fat.mp3",
+            "track": 8,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/08_Stance.mp3",
             "genre": [
                 {
                     "id": "5",
@@ -46,7 +46,7 @@
                 }
             ],
             "playlisttrack": 1,
-            "time": 413,
+            "time": 544,
             "year": 0,
             "format": "mp3",
             "stream_format": "mp3",
@@ -56,8 +56,8 @@
             "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3",
-            "size": 9935896,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&player=api&name=Nofi-found.%20-%20Stance.mp3",
+            "size": 13078740,
             "mbid": null,
             "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "flag": false,
@@ -74,15 +74,15 @@
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": 0.94,
+            "replaygain_track_gain": -2.38,
             "replaygain_track_peak": 0.989,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "54",
-            "title": "Red&GreenSmoke",
-            "name": "Red&GreenSmoke",
+            "id": "59",
+            "title": "YellowSmoke",
+            "name": "YellowSmoke",
             "artist": {
                 "id": "2",
                 "name": "Synthetic",
@@ -111,8 +111,8 @@
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
             "genre": [
                 {
                     "id": "1",
@@ -120,7 +120,7 @@
                 }
             ],
             "playlisttrack": 2,
-            "time": 400,
+            "time": 290,
             "year": 2007,
             "format": "mp3",
             "stream_format": "mp3",
@@ -130,8 +130,8 @@
             "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-            "size": 3209468,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
+            "size": 2325568,
             "mbid": null,
             "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
             "flag": false,
@@ -140,7 +140,7 @@
             "playcount": 0,
             "catalog": 1,
             "composer": null,
-            "channels": 1,
+            "channels": 2,
             "comment": null,
             "license": "",
             "publisher": "20kbps rec.",
@@ -148,66 +148,61 @@
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -2.88,
-            "replaygain_track_peak": 0.977,
+            "replaygain_track_gain": 2.75,
+            "replaygain_track_peak": 0.716,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "75",
-            "title": "T - live",
-            "name": "T - live",
+            "id": "112",
+            "title": "Personal Truth",
+            "name": "Personal Truth",
             "artist": {
-                "id": "11",
-                "name": "structura",
+                "id": "33",
+                "name": "MxBxCx",
                 "prefix": null,
-                "basename": "structura"
+                "basename": "MxBxCx"
             },
             "artists": [
                 {
-                    "id": "11",
-                    "name": "structura",
+                    "id": "33",
+                    "name": "MxBxCx",
                     "prefix": null,
-                    "basename": "structura"
+                    "basename": "MxBxCx"
                 }
             ],
             "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)",
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "Inominavel (live.v.01)"
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "11",
-                "name": "structura",
+                "id": "19",
+                "name": "Various Artists",
                 "prefix": null,
-                "basename": "structura"
+                "basename": "Various Artists"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 6,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/06_structura_-_t_live.mp3",
-            "genre": [
-                {
-                    "id": "3",
-                    "name": "Noise"
-                }
-            ],
+            "track": 8,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/08Mxbxcx-PersonalTruth.mp3",
+            "genre": [],
             "playlisttrack": 3,
-            "time": 248,
-            "year": 2007,
+            "time": 208,
+            "year": 2012,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 192000,
-            "stream_bitrate": 192000,
+            "bitrate": 179860,
+            "stream_bitrate": 179860,
             "rate": 44100,
-            "mode": "cbr",
+            "mode": "vbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=75&uid=4&player=api&name=structura%20-%20T%20-%20live.mp3",
-            "size": 5986451,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3",
+            "size": 4693165,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
             "flag": false,
             "rating": null,
             "averagerating": null,
@@ -215,93 +210,84 @@
             "catalog": 1,
             "composer": null,
             "channels": 2,
-            "comment": "http:\/\/enoughrecords.scene.org",
+            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
             "license": "",
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": 0,
-            "replaygain_track_peak": 0,
+            "replaygain_track_gain": -8.27,
+            "replaygain_track_peak": 0.881,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "90",
-            "title": "Invo",
-            "name": "Invo",
+            "id": "102",
+            "title": "Moremque Sinistrum Sacrorum",
+            "name": "Moremque Sinistrum Sacrorum",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "16",
+                "name": "CARN\u00daN",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "CARN\u00daN"
             },
             "artists": [
                 {
-                    "id": "14",
-                    "name": "Nofi\/found.",
+                    "id": "16",
+                    "name": "CARN\u00daN",
                     "prefix": null,
-                    "basename": "Nofi\/found."
+                    "basename": "CARN\u00daN"
                 }
             ],
             "album": {
-                "id": "8",
-                "name": "Nofi Devices",
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
                 "prefix": null,
-                "basename": "Nofi Devices"
+                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "16",
+                "name": "CARN\u00daN",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "CARN\u00daN"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/01_Invo.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/05MoremqueSinistrumSacrorum.ogg",
+            "genre": [],
             "playlisttrack": 4,
-            "time": 47,
-            "year": 0,
-            "format": "mp3",
+            "time": 164,
+            "year": 1996,
+            "format": "ogg",
             "stream_format": "mp3",
-            "bitrate": 192000,
-            "stream_bitrate": 192000,
+            "bitrate": 106647,
+            "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
+            "mode": "vbr",
+            "mime": "application\/ogg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&player=api&name=Nofi-found.%20-%20Invo.mp3",
-            "size": 1140815,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3",
+            "size": 2202971,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 1,
-            "composer": "Jeffrey Melton",
+            "composer": null,
             "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
             "license": "",
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -3.05,
-            "replaygain_track_peak": 0.933,
+            "replaygain_track_gain": -7.48,
+            "replaygain_track_peak": 1,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

@@ -1,5 +1,5 @@
 {
-    "total_count": 2,
+    "total_count": 45,
     "song": [
         {
             "id": "54",
@@ -146,6 +146,144 @@
             "replaygain_album_peak": null,
             "replaygain_track_gain": -2.88,
             "replaygain_track_peak": 0.977,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "102",
+            "title": "Moremque Sinistrum Sacrorum",
+            "name": "Moremque Sinistrum Sacrorum",
+            "artist": {
+                "id": "16",
+                "name": "CARN\u00daN",
+                "prefix": null,
+                "basename": "CARN\u00daN"
+            },
+            "artists": [
+                {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                }
+            ],
+            "album": {
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "prefix": null,
+                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+            },
+            "albumartist": {
+                "id": "16",
+                "name": "CARN\u00daN",
+                "prefix": null,
+                "basename": "CARN\u00daN"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/05MoremqueSinistrumSacrorum.ogg",
+            "genre": [],
+            "playlisttrack": 3,
+            "time": 164,
+            "year": 1996,
+            "format": "ogg",
+            "stream_format": "mp3",
+            "bitrate": 106647,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "application\/ogg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3",
+            "size": 2202971,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 2,
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+            "license": "",
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -7.48,
+            "replaygain_track_peak": 1,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "98",
+            "title": "In The Seven Woods",
+            "name": "In The Seven Woods",
+            "artist": {
+                "id": "16",
+                "name": "CARN\u00daN",
+                "prefix": null,
+                "basename": "CARN\u00daN"
+            },
+            "artists": [
+                {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                }
+            ],
+            "album": {
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "prefix": null,
+                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+            },
+            "albumartist": {
+                "id": "16",
+                "name": "CARN\u00daN",
+                "prefix": null,
+                "basename": "CARN\u00daN"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 3,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/03InTheSevenWoods.ogg",
+            "genre": [],
+            "playlisttrack": 4,
+            "time": 420,
+            "year": 1996,
+            "format": "ogg",
+            "stream_format": "mp3",
+            "bitrate": 84423,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "application\/ogg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3",
+            "size": 4444403,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 2,
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+            "license": "",
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -9.7,
+            "replaygain_track_peak": 1,
             "r128_album_gain": null,
             "r128_track_gain": null
         }
