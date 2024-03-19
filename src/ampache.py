@@ -2523,6 +2523,22 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+    def now_playing(self):
+        """  now_playing
+             MINIMUM_API_VERSION=6.3.1
+
+             Get what is currently being played by all users.
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'now_playing',
+                'auth': self.AMPACHE_SESSION}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'now_playing')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def rate(self, object_type, object_id, rating):
         """ rate
             MINIMUM_API_VERSION=380001
