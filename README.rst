@@ -10,7 +10,7 @@ INFO
 
 A python3 library for interaction with your Ampache server using the XML & JSON API
 
-`<https://ampache.org/API/>`_
+`<https://ampache.org/api/>`_
 
 Code examples and scripts are available from github
 
