@@ -2527,7 +2527,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def player(self, filter_str, object_type='song', state='play', time=0, client='api'):
+    def player(self, filter_str, object_type='song', state='play', time=0, client='python3-ampache'):
         """ player
             MINIMUM_API_VERSION=6.4.0
 
@@ -2537,7 +2537,7 @@ class API(object):
             object_type = (string)  $object_type ('song', 'podcast_episode', 'video'), DEFAULT 'song'//optional
             state       = (string)  'play', 'stop', DEFAULT 'play' //optional
             time        = (integer) current song time in whole seconds, DEFAULT 0 //optional
-            client      = (string)  $agent, DEFAULT 'api' //optional
+            client      = (string)  $agent, DEFAULT 'python3-ampache' //optional
         """
         action = self.player.__name__
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
@@ -2629,7 +2629,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def record_play(self, object_id, user_id, client='AmpacheAPI'):
+    def record_play(self, object_id, user_id, client='python3-ampache'):
         """ record_play
             MINIMUM_API_VERSION=400001
 
@@ -2656,7 +2656,7 @@ class API(object):
 
     def scrobble(self, title, artist_name, album_name,
                  mbtitle=False, mbartist=False, mbalbum=False, stime=False,
-                 client='AmpacheAPI'):
+                 client='python3-ampache'):
         """ scrobble
             MINIMUM_API_VERSION=400001
 
@@ -3571,7 +3571,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def bookmark_create(self, filter_id, object_type,
-                        position: int = 0, client: str = 'AmpacheAPI', date=False, include=False):
+                        position: int = 0, client: str = 'python3-ampache', date=False, include=False):
         """ bookmark_create
             MINIMUM_API_VERSION=5.0.0
 
@@ -3581,7 +3581,7 @@ class API(object):
             * filter_id   = (integer) object_id
             * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
             * position    = (integer) current track time in seconds
-            * client      = (string) Agent string. (Default: 'AmpacheAPI') //optional
+            * client      = (string) Agent string. (Default: 'python3-ampache') //optional
             * date        = (integer) update time (Default: UNIXTIME()) //optional
             * include     = (integer) 0,1, if true include the object in the bookmark //optional
         """
@@ -3605,7 +3605,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def bookmark_edit(self, filter_id, object_type,
-                      position: int = 0, client: str = 'AmpacheAPI', date=False, include=False):
+                      position: int = 0, client: str = 'python3-ampache', date=False, include=False):
         """ bookmark_edit
             MINIMUM_API_VERSION=5.0.0
 
@@ -3615,7 +3615,7 @@ class API(object):
             * filter_id   = (integer) object_id
             * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
             * position    = (integer) current track time in seconds
-            * client      = (string) Agent string. (Default: 'AmpacheAPI') //optional
+            * client      = (string) Agent string. (Default: 'python3-ampache') //optional
             * date        = (integer) update time (Default: UNIXTIME()) //optional
             * include     = (integer) 0,1, if true include the object in the bookmark //optional
         """
