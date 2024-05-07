@@ -1286,8 +1286,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def playlists(self, filter_str: str = False,
-                  exact: int = False, offset=0, limit=0, hide_search: int = False, show_dupes: int = False):
+    def playlists(self, filter_str: str = False, exact: int = False,
+                  offset=0, limit=0, hide_search: int = False, show_dupes: int = False, include: int = False):
         """ playlists
             MINIMUM_API_VERSION=380001
 
@@ -1300,6 +1300,7 @@ class API(object):
             * limit       = (integer) //optional
             * hide_search = (integer) 0,1, if true do not include searches/smartlists in the result //optional
             * show_dupes  = (integer) 0,1, if true ignore 'api_hide_dupe_searches' setting //optional
+            * include     = (integer) 0,1, if true include the objects in the playlist //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'playlists',
@@ -1309,7 +1310,8 @@ class API(object):
                 'offset': str(offset),
                 'limit': str(limit),
                 'hide_search': hide_search,
-                'show_dupes': show_dupes}
+                'show_dupes': show_dupes,
+                'include': include}
         if not filter_str:
             data.pop('filter')
         if not exact:
@@ -1318,6 +1320,8 @@ class API(object):
             data.pop('hide_search')
         if not show_dupes:
             data.pop('show_dupes')
+        if not include:
+            data.pop('include')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlists')
@@ -2523,6 +2527,34 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+    def player(self, filter_str, object_type='song', state='play', time=0, client='api'):
+        """ player
+            MINIMUM_API_VERSION=6.4.0
+
+            Inform the server about the state of your client. (Song you are playing, Play/Pause state, etc.)
+
+            filter_str  = (integer) $object_id
+            object_type = (string)  $object_type ('song', 'podcast_episode', 'video'), DEFAULT 'song'//optional
+            state       = (string)  'play', 'stop', DEFAULT 'play' //optional
+            time        = (integer) current song time in whole seconds, DEFAULT 0 //optional
+            client      = (string)  $agent, DEFAULT 'api' //optional
+        """
+        action = self.player.__name__
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': action,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str,
+                'type': object_type,
+                'state': state,
+                'time': time,
+                'client': client}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, action)
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def now_playing(self):
         """  now_playing
              MINIMUM_API_VERSION=6.3.1
@@ -2808,17 +2840,18 @@ class API(object):
         return True
 
     def download(self, object_id, object_type, destination,
-                 transcode='raw'):
+                 transcode='raw', bitrate=False):
         """ download
             MINIMUM_API_VERSION=400001
 
             download a song or podcast episode
 
             INPUTS
-            * object_id   = (string) $song_id / $podcast_episode_id
-            * object_type = (string) 'song'|'podcast'
+            * object_id   = (string) $song_id / $podcast_episode_id / $search_id / $playlist_id
+            * object_type = (string) 'song'|'podcast'|'search'|'playlist'
             * destination = (string) full file path
-            * transcode   = (string) 'mp3', 'ogg', etc. ('raw' / original by default) //optional
+            * transcode   = (string) 'mp3', 'ogg', etc. ('raw' / original by default) //optional SONG ONLY
+            * bitrate     = (integer) max bitrate for transcoding, '128', '256' //optional SONG ONLY
         """
         os.makedirs(os.path.dirname(destination), exist_ok=True)
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
@@ -2826,7 +2859,10 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'id': object_id,
                 'type': object_type,
-                'format': transcode}
+                'format': transcode,
+                'bitrate': bitrate}
+        if not bitrate:
+            data.pop('bitrate')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         result = requests.get(full_url, allow_redirects=True)
