@@ -401,7 +401,7 @@ class API(object):
     """
 
     def handshake(self, ampache_url: str, ampache_api: str, ampache_user: str = False,
-                  timestamp: int = 0, version: str = '6.1.0'):
+                  timestamp: int = 0, version: str = '6.5.1'):
         """ handshake
             MINIMUM_API_VERSION=380001
 
@@ -456,7 +456,7 @@ class API(object):
             self.AMPACHE_SESSION = token
             return token
 
-    def ping(self, ampache_url: str, ampache_api: str = False, version: str = '6.1.0'):
+    def ping(self, ampache_url: str, ampache_api: str = False, version: str = '6.5.1'):
         """ ping
             MINIMUM_API_VERSION=380001
 
@@ -761,7 +761,7 @@ class API(object):
             This takes a collection of inputs and returns ID + name for the object type
 
             INPUTS
-            * object_type = (string) 'song'|'album'|'artist'|'album_artist'|'playlist'
+            * object_type = (string) 'catalog'|'album_artist'|'song_artist'|'song'|'album'|'artist'|'album_artist'|'playlist'
             * filter_str  = (string) search the name of the object_type //optional
             * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
             * add         = (integer) UNIXTIME() //optional
