@@ -871,7 +871,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def artist_albums(self, filter_id: int, offset=0, limit=0):
+    def artist_albums(self, filter_id: int, offset=0, limit=0, album_artist=False):
         """ artist_albums
             MINIMUM_API_VERSION=380001
 
@@ -879,15 +879,19 @@ class API(object):
 
             INPUTS
             * filter_id   = (integer) $artist_id
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * offset       = (integer) //optional
+            * limit        = (integer) //optional
+            * album_artist = (integer) 0,1, if true return albums where the UID is an album_artist of the object //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'artist_albums',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'album_artist': album_artist}
+        if not album_artist:
+            data.pop('album_artist')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'artist_albums')
@@ -902,9 +906,9 @@ class API(object):
             This returns the songs of the specified artist
 
             INPUTS
-            * filter_id   = (integer) $artist_id
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * filter_id = (integer) $artist_id
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'artist_songs',
