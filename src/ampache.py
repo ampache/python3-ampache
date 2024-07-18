@@ -1484,10 +1484,6 @@ class API(object):
             * type   = (string) 'song', 'album', 'artist', 'playlist'
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        if bool(check):
-            check = 1
-        else:
-            check = 0
         data = {'action': 'playlist_add',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
