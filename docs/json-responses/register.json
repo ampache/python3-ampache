@@ -1,3 +1,8 @@
 {
-    "success": "Please wait for an administrator to activate your account"
+    "error": {
+        "errorCode": "4710",
+        "errorAction": "register",
+        "errorType": "username",
+        "errorMessage": "Bad Request: usernamejson"
+    }
 }
