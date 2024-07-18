@@ -1,153 +1,154 @@
 {
     "total_count": 2,
-    "md5": "afa0b484ecbec3029397bcf007856834",
+    "md5": "ef4466e7eb7e0ac67f3fd6e7919257a3",
     "song": [
         {
-            "id": "94",
-            "title": "Strangers Query",
-            "name": "Strangers Query",
+            "id": "131",
+            "title": "Miles of Smiles",
+            "name": "Miles of Smiles",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "36",
+                "name": "Comfort Fit",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "Comfort Fit"
             },
             "artists": [
                 {
-                    "id": "14",
-                    "name": "Nofi\/found.",
+                    "id": "36",
+                    "name": "Comfort Fit",
                     "prefix": null,
-                    "basename": "Nofi\/found."
+                    "basename": "Comfort Fit"
                 }
             ],
             "album": {
-                "id": "8",
-                "name": "Nofi Devices",
+                "id": "21",
+                "name": "Forget and Remember",
                 "prefix": null,
-                "basename": "Nofi Devices"
+                "basename": "Forget and Remember"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "36",
+                "name": "Comfort Fit",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "Comfort Fit"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 7,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/07_Strangers_Query.mp3",
+            "track": 20,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/20 - Miles of Smiles.mp3",
             "genre": [
                 {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
+                    "id": "8",
+                    "name": "Hip-Hop"
                 }
             ],
             "playlisttrack": 1,
-            "time": 279,
-            "year": 0,
+            "time": 290,
+            "year": 2005,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 192000,
+            "bitrate": 247925,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "cbr",
+            "mode": "vbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=94&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Strangers%20Query.mp3",
-            "size": 6719700,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=131&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Miles%20of%20Smiles.mp3",
+            "size": 9028758,
+            "mbid": "ec160787-e0db-4f76-85b5-5a76f59f36f9",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
+            "catalog": 4,
+            "composer": null,
             "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-20-comfort_fit-miles_of_smiles\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
             "license": "",
-            "publisher": "archive.org",
+            "publisher": "Tokyo Dawn Records",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -3.8,
-            "replaygain_track_peak": 0.966,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "103",
-            "title": "In The Seven Woods (Instrumental Re-Recording)",
-            "name": "In The Seven Woods (Instrumental Re-Recording)",
+            "id": "127",
+            "title": "She Knows Me Now",
+            "name": "She Knows Me Now",
             "artist": {
-                "id": "16",
-                "name": "CARN\u00daN",
+                "id": "36",
+                "name": "Comfort Fit",
                 "prefix": null,
-                "basename": "CARN\u00daN"
+                "basename": "Comfort Fit"
             },
             "artists": [
                 {
-                    "id": "16",
-                    "name": "CARN\u00daN",
+                    "id": "36",
+                    "name": "Comfort Fit",
                     "prefix": null,
-                    "basename": "CARN\u00daN"
+                    "basename": "Comfort Fit"
                 }
             ],
             "album": {
-                "id": "10",
-                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "id": "21",
+                "name": "Forget and Remember",
                 "prefix": null,
-                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                "basename": "Forget and Remember"
             },
             "albumartist": {
-                "id": "16",
-                "name": "CARN\u00daN",
+                "id": "36",
+                "name": "Comfort Fit",
                 "prefix": null,
-                "basename": "CARN\u00daN"
+                "basename": "Comfort Fit"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 7,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
-            "genre": [],
+            "track": 10,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/10 - She Knows Me Now (re-edit).mp3",
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
             "playlisttrack": 2,
-            "time": 452,
-            "year": 1996,
-            "format": "ogg",
+            "time": 209,
+            "year": 2005,
+            "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 138338,
+            "bitrate": 217167,
             "stream_bitrate": 32000,
             "rate": 44100,
             "mode": "vbr",
-            "mime": "application\/ogg",
+            "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
-            "size": 7826238,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=127&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20She%20Knows%20Me%20Now.mp3",
+            "size": 5690938,
+            "mbid": "3845cef9-b874-449f-94a5-5c9acdead9df",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 1,
+            "catalog": 4,
             "composer": null,
             "channels": 2,
-            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-10-comfort_fit-she_knows_me_now_feat_mercury_waters__prymer\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
             "license": "",
-            "publisher": "archive.org",
+            "publisher": "Tokyo Dawn Records",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -12.21,
-            "replaygain_track_peak": 1,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

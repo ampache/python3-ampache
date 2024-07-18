@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.0">
   <shares>
-    <share id="9" url="http://localhost:8989/share.php?id=9&amp;secret=99GsmNVo" description="" username="user" created="2024-07-18T00:57:12+00:00" visitCount="0">
+    <share id="9" url="http://localhost:8989/share.php?id=9&amp;secret=BKOS78Tx" description="" username="user" created="2024-07-18T02:57:38+00:00" visitCount="0">
       <entry id="300000078" parent="200000018" title="inominavel p01" isDir="false" isVideo="false" type="music" albumId="200000018" album="Inominavel (live.v.01)" artistId="100000011" artist="structura" coverArt="200000018" duration="84" bitRate="187" track="1" year="2007" genre="Noise" size="2036632" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/media/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3"/>
     </share>
   </shares>

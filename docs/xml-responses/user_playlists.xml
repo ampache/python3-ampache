@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>2</total_count>
-  <playlist id="3">
-    <name><![CDATA[random - admin - private (admin)]]></name>
-    <owner><![CDATA[admin]]></owner>
+  <md5>adcb9b75260590ff6058773ddcb9ddd6</md5>
+  <playlist id="4">
+    <name><![CDATA[random - user - private]]></name>
+    <owner><![CDATA[user]]></owner>
     <items>43</items>
     <type>private</type>
-    <art><![CDATA[https://music.com.au/image.php?object_id=3&object_type=playlist]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=4&object_type=playlist]]></art>
+    <has_access>1</has_access>
+    <has_collaborate>1</has_collaborate>
     <has_art>0</has_art>
     <flag>0</flag>
     <rating/>
     <averagerating/>
-  </playlist>
-  <playlist id="2">
-    <name><![CDATA[random - admin - public (admin)]]></name>
-    <owner><![CDATA[admin]]></owner>
-    <items>43</items>
-    <type>public</type>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=playlist]]></art>
-    <has_art>0</has_art>
-    <flag>1</flag>
-    <rating/>
-    <averagerating/>
+    <md5/>
+    <last_update>1614054938</last_update>
   </playlist>
 </root>

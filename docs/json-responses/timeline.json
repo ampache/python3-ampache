@@ -1,19 +1,8 @@
 {
     "activity": [
         {
-            "id": "212",
-            "date": 1721264114,
-            "object_type": "song",
-            "object_id": "93",
-            "action": "userflag",
-            "user": {
-                "id": "4",
-                "username": "user"
-            }
-        },
-        {
             "id": "213",
-            "date": 1721264114,
+            "date": 1721271340,
             "object_type": "song",
             "object_id": "93",
             "action": "rating",
@@ -24,9 +13,20 @@
         },
         {
             "id": "211",
-            "date": 1721264113,
+            "date": 1721271339,
             "object_type": "playlist",
             "object_id": "2",
+            "action": "userflag",
+            "user": {
+                "id": "4",
+                "username": "user"
+            }
+        },
+        {
+            "id": "212",
+            "date": 1721271339,
+            "object_type": "song",
+            "object_id": "93",
             "action": "userflag",
             "user": {
                 "id": "4",

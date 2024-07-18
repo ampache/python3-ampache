@@ -1,29 +1,22 @@
 {
-    "total_count": 2,
+    "total_count": 1,
+    "md5": "adcb9b75260590ff6058773ddcb9ddd6",
     "playlist": [
         {
-            "id": "3",
-            "name": "random - admin - private (admin)",
-            "owner": "admin",
+            "id": "4",
+            "name": "random - user - private",
+            "owner": "user",
             "items": 43,
             "type": "private",
-            "art": "https:\/\/music.com.au\/image.php?object_id=3&object_type=playlist",
+            "art": "https:\/\/music.com.au\/image.php?object_id=4&object_type=playlist",
+            "has_access": true,
+            "has_collaborate": true,
             "has_art": false,
             "flag": false,
             "rating": null,
-            "averagerating": null
-        },
-        {
-            "id": "2",
-            "name": "random - admin - public (admin)",
-            "owner": "admin",
-            "items": 43,
-            "type": "public",
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=playlist",
-            "has_art": false,
-            "flag": true,
-            "rating": null,
-            "averagerating": null
+            "averagerating": null,
+            "md5": null,
+            "last_update": 1614054938
         }
     ]
 }

@@ -1,11 +1,11 @@
 {
     "total_count": 4,
-    "md5": "4d25329cb87035f651afd54842785d60",
+    "md5": "318d48ad40b6341c21d8a0da596fae89",
     "song": [
         {
-            "id": "55",
-            "title": "Red&GreenSmoke",
-            "name": "Red&GreenSmoke",
+            "id": "65",
+            "title": "YellowSmoke",
+            "name": "YellowSmoke",
             "artist": {
                 "id": "2",
                 "name": "Synthetic",
@@ -34,8 +34,8 @@
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/02-Synthetic_-_YellowSmoke20k22hS.wma",
             "genre": [
                 {
                     "id": "1",
@@ -43,93 +43,18 @@
                 }
             ],
             "playlisttrack": 1,
-            "time": 400,
+            "time": 290,
             "year": 2007,
-            "format": "mp3",
+            "format": "wma",
             "stream_format": "mp3",
-            "bitrate": 64000,
+            "bitrate": 20627,
             "stream_bitrate": 32000,
             "rate": 22050,
             "mode": "cbr",
-            "mime": "audio\/mpeg",
+            "mime": "audio\/x-ms-wma",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-            "size": 3209886,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 1,
-            "catalog": 1,
-            "composer": null,
-            "channels": 2,
-            "comment": null,
-            "license": "",
-            "publisher": "20kbps rec.",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": -4.06,
-            "replaygain_track_peak": 1,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "58",
-            "title": "BrownSmoke",
-            "name": "BrownSmoke",
-            "artist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "artists": [
-                {
-                    "id": "2",
-                    "name": "Synthetic",
-                    "prefix": null,
-                    "basename": "Synthetic"
-                }
-            ],
-            "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
-                "prefix": null,
-                "basename": "Colorsmoke EP"
-            },
-            "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 304,
-            "year": 2007,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 64000,
-            "stream_bitrate": 32000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
-            "size": 2441886,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
+            "size": 754935,
             "mbid": null,
             "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
             "has_art": true,
@@ -140,84 +65,9 @@
             "catalog": 1,
             "composer": null,
             "channels": 2,
-            "comment": null,
+            "comment": "Made with Sony ACID 5",
             "license": "",
             "publisher": "20kbps rec.",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": 0.96,
-            "replaygain_track_peak": 0.912,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "125",
-            "title": "Take a Look",
-            "name": "Take a Look",
-            "artist": {
-                "id": "36",
-                "name": "Comfort Fit",
-                "prefix": null,
-                "basename": "Comfort Fit"
-            },
-            "artists": [
-                {
-                    "id": "36",
-                    "name": "Comfort Fit",
-                    "prefix": null,
-                    "basename": "Comfort Fit"
-                }
-            ],
-            "album": {
-                "id": "21",
-                "name": "Forget and Remember",
-                "prefix": null,
-                "basename": "Forget and Remember"
-            },
-            "albumartist": {
-                "id": "36",
-                "name": "Comfort Fit",
-                "prefix": null,
-                "basename": "Comfort Fit"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/5 - Take a Look.mp3",
-            "genre": [
-                {
-                    "id": "8",
-                    "name": "Hip-Hop"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 230,
-            "year": 2005,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 243729,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=125&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Take%20a%20Look.mp3",
-            "size": 7018987,
-            "mbid": "8a3bdac5-f0bd-4197-9deb-d4880d6f3b6d",
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 4,
-            "composer": null,
-            "channels": 2,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-05-comfort_fit-take_a_look\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
-            "license": "",
-            "publisher": "Tokyo Dawn Records",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
@@ -228,77 +78,226 @@
             "r128_track_gain": null
         },
         {
-            "id": "116",
-            "title": "Can I Help U?",
-            "name": "Can I Help U?",
+            "id": "78",
+            "title": "inominavel p01",
+            "name": "inominavel p01",
             "artist": {
-                "id": "36",
-                "name": "Comfort Fit",
+                "id": "11",
+                "name": "structura",
                 "prefix": null,
-                "basename": "Comfort Fit"
+                "basename": "structura"
             },
             "artists": [
                 {
-                    "id": "36",
-                    "name": "Comfort Fit",
+                    "id": "11",
+                    "name": "structura",
                     "prefix": null,
-                    "basename": "Comfort Fit"
+                    "basename": "structura"
                 }
             ],
             "album": {
-                "id": "21",
-                "name": "Forget and Remember",
+                "id": "18",
+                "name": "Inominavel (live.v.01)",
                 "prefix": null,
-                "basename": "Forget and Remember"
+                "basename": "Inominavel (live.v.01)"
             },
             "albumartist": {
-                "id": "36",
-                "name": "Comfort Fit",
+                "id": "11",
+                "name": "structura",
                 "prefix": null,
-                "basename": "Comfort Fit"
+                "basename": "structura"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/1 - Can I Help U?.mp3",
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/01_structura_-_inominavel_p01.mp3",
             "genre": [
                 {
-                    "id": "8",
-                    "name": "Hip-Hop"
+                    "id": "3",
+                    "name": "Noise"
                 }
             ],
-            "playlisttrack": 4,
-            "time": 103,
-            "year": 2005,
+            "playlisttrack": 2,
+            "time": 84,
+            "year": 2007,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 216839,
+            "bitrate": 192000,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "vbr",
+            "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=116&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Can%20I%20Help%20U-.mp3",
-            "size": 2811819,
-            "mbid": "51d0e252-f20c-414c-b169-8dcf18ef9d26",
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p01.mp3",
+            "size": 2036632,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 4,
+            "catalog": 1,
             "composer": null,
             "channels": 2,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-01-comfort_fit-can_i_help_u\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+            "comment": "http:\/\/enoughrecords.scene.org",
             "license": "",
-            "publisher": "Tokyo Dawn Records",
+            "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
+            "replaygain_track_gain": 0,
+            "replaygain_track_peak": 0,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "97",
+            "title": "Creeping Lawler 2",
+            "name": "Creeping Lawler 2",
+            "artist": {
+                "id": "15",
+                "name": "Warfare 3.0",
+                "prefix": null,
+                "basename": "Warfare 3.0"
+            },
+            "artists": [
+                {
+                    "id": "15",
+                    "name": "Warfare 3.0",
+                    "prefix": null,
+                    "basename": "Warfare 3.0"
+                }
+            ],
+            "album": {
+                "id": "9",
+                "name": "Creeping Lawler 2",
+                "prefix": null,
+                "basename": "Creeping Lawler 2"
+            },
+            "albumartist": {
+                "id": "15",
+                "name": "Warfare 3.0",
+                "prefix": null,
+                "basename": "Warfare 3.0"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
+            "genre": [],
+            "playlisttrack": 3,
+            "time": 296,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 177349,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
+            "size": 6652448,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 2,
+            "comment": "https:\/\/archive.org\/details\/Creeping_Lawler_2",
+            "license": "",
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -4.32,
+            "replaygain_track_peak": 0.977,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "95",
+            "title": "Spirus Falls",
+            "name": "Spirus Falls",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/02_Spirus_Falls.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 327,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3",
+            "size": 7875775,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": "",
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -1.53,
+            "replaygain_track_peak": 1,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

@@ -2,55 +2,55 @@
     "search": {
         "song": [
             {
-                "id": "109",
-                "title": "Dance with the Devil",
-                "name": "Dance with the Devil",
+                "id": "100",
+                "title": "The Prophecies Of The Horned One",
+                "name": "The Prophecies Of The Horned One",
                 "artist": {
-                    "id": "34",
-                    "name": "Comedown Kid",
+                    "id": "16",
+                    "name": "CARN\u00daN",
                     "prefix": null,
-                    "basename": "Comedown Kid"
+                    "basename": "CARN\u00daN"
                 },
                 "artists": [
                     {
-                        "id": "34",
-                        "name": "Comedown Kid",
+                        "id": "16",
+                        "name": "CARN\u00daN",
                         "prefix": null,
-                        "basename": "Comedown Kid"
+                        "basename": "CARN\u00daN"
                     }
                 ],
                 "album": {
-                    "id": "12",
-                    "name": "Buried in Nausea",
+                    "id": "10",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
                     "prefix": null,
-                    "basename": "Buried in Nausea"
+                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
                 },
                 "albumartist": {
-                    "id": "19",
-                    "name": "Various Artists",
+                    "id": "16",
+                    "name": "CARN\u00daN",
                     "prefix": null,
-                    "basename": "Various Artists"
+                    "basename": "CARN\u00daN"
                 },
                 "disk": 1,
                 "disksubtitle": null,
-                "track": 3,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
+                "track": 2,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/02ThePropheciesOfTheHornedOne.ogg",
                 "genre": [],
                 "playlisttrack": 1,
-                "time": 116,
-                "year": 2012,
-                "format": "wma",
+                "time": 378,
+                "year": 1996,
+                "format": "ogg",
                 "stream_format": "mp3",
-                "bitrate": 32582,
+                "bitrate": 89965,
                 "stream_bitrate": 32000,
                 "rate": 44100,
-                "mode": "cbr",
-                "mime": "audio\/x-ms-wma",
+                "mode": "vbr",
+                "mime": "application\/ogg",
                 "stream_mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
-                "size": 483444,
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3",
+                "size": 4265791,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
@@ -58,96 +58,366 @@
                 "playcount": 0,
                 "catalog": 1,
                 "composer": null,
-                "channels": 1,
-                "comment": null,
+                "channels": 2,
+                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
                 "license": "",
-                "publisher": null,
+                "publisher": "archive.org",
                 "language": null,
                 "lyrics": null,
                 "replaygain_album_gain": null,
                 "replaygain_album_peak": null,
-                "replaygain_track_gain": null,
-                "replaygain_track_peak": null,
+                "replaygain_track_gain": -10.51,
+                "replaygain_track_peak": 1,
                 "r128_album_gain": null,
                 "r128_track_gain": null
             },
             {
-                "id": "126",
-                "title": "Don't Show This Message Again",
-                "name": "Don't Show This Message Again",
+                "id": "98",
+                "title": "In The Seven Woods",
+                "name": "In The Seven Woods",
                 "artist": {
-                    "id": "36",
-                    "name": "Comfort Fit",
+                    "id": "16",
+                    "name": "CARN\u00daN",
                     "prefix": null,
-                    "basename": "Comfort Fit"
+                    "basename": "CARN\u00daN"
                 },
                 "artists": [
                     {
-                        "id": "36",
-                        "name": "Comfort Fit",
+                        "id": "16",
+                        "name": "CARN\u00daN",
                         "prefix": null,
-                        "basename": "Comfort Fit"
+                        "basename": "CARN\u00daN"
                     }
                 ],
                 "album": {
-                    "id": "21",
-                    "name": "Forget and Remember",
+                    "id": "10",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
                     "prefix": null,
-                    "basename": "Forget and Remember"
+                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
                 },
                 "albumartist": {
-                    "id": "36",
-                    "name": "Comfort Fit",
+                    "id": "16",
+                    "name": "CARN\u00daN",
                     "prefix": null,
-                    "basename": "Comfort Fit"
+                    "basename": "CARN\u00daN"
                 },
                 "disk": 1,
                 "disksubtitle": null,
-                "track": 12,
-                "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/12 - Don\u2019t Show This Message Again.mp3",
-                "genre": [
-                    {
-                        "id": "8",
-                        "name": "Hip-Hop"
-                    }
-                ],
+                "track": 3,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/03InTheSevenWoods.ogg",
+                "genre": [],
                 "playlisttrack": 2,
-                "time": 197,
-                "year": 2005,
-                "format": "mp3",
+                "time": 420,
+                "year": 1996,
+                "format": "ogg",
                 "stream_format": "mp3",
-                "bitrate": 232690,
+                "bitrate": 84423,
                 "stream_bitrate": 32000,
                 "rate": 44100,
                 "mode": "vbr",
-                "mime": "audio\/mpeg",
+                "mime": "application\/ogg",
                 "stream_mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=126&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3",
-                "size": 5755191,
-                "mbid": "6b582438-c034-47c2-86b0-61c63ec96b4b",
-                "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3",
+                "size": 4444403,
+                "mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
                 "playcount": 0,
-                "catalog": 4,
+                "catalog": 1,
                 "composer": null,
                 "channels": 2,
-                "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-12-comfort_fit-dont_show_this_message_again\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
                 "license": "",
-                "publisher": "Tokyo Dawn Records",
+                "publisher": "archive.org",
                 "language": null,
                 "lyrics": null,
                 "replaygain_album_gain": null,
                 "replaygain_album_peak": null,
-                "replaygain_track_gain": null,
-                "replaygain_track_peak": null,
+                "replaygain_track_gain": -9.7,
+                "replaygain_track_peak": 1,
+                "r128_album_gain": null,
+                "r128_track_gain": null
+            },
+            {
+                "id": "99",
+                "title": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
+                "name": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
+                "artist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "artists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "album": {
+                    "id": "10",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "prefix": null,
+                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                },
+                "albumartist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "disk": 1,
+                "disksubtitle": null,
+                "track": 6,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg",
+                "genre": [],
+                "playlisttrack": 3,
+                "time": 427,
+                "year": 1996,
+                "format": "ogg",
+                "stream_format": "mp3",
+                "bitrate": 143788,
+                "stream_bitrate": 32000,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "application\/ogg",
+                "stream_mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3",
+                "size": 7696008,
+                "mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                "license": "",
+                "publisher": "archive.org",
+                "language": null,
+                "lyrics": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -12.66,
+                "replaygain_track_peak": 1,
+                "r128_album_gain": null,
+                "r128_track_gain": null
+            },
+            {
+                "id": "103",
+                "title": "In The Seven Woods (Instrumental Re-Recording)",
+                "name": "In The Seven Woods (Instrumental Re-Recording)",
+                "artist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "artists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "album": {
+                    "id": "10",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "prefix": null,
+                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                },
+                "albumartist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "disk": 1,
+                "disksubtitle": null,
+                "track": 7,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
+                "genre": [],
+                "playlisttrack": 4,
+                "time": 452,
+                "year": 1996,
+                "format": "ogg",
+                "stream_format": "mp3",
+                "bitrate": 138338,
+                "stream_bitrate": 32000,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "application\/ogg",
+                "stream_mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
+                "size": 7826238,
+                "mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                "license": "",
+                "publisher": "archive.org",
+                "language": null,
+                "lyrics": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -12.21,
+                "replaygain_track_peak": 1,
                 "r128_album_gain": null,
                 "r128_track_gain": null
             }
         ],
         "album": [
+            {
+                "id": "12",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea",
+                "artist": {
+                    "id": "19",
+                    "name": "Various Artists",
+                    "prefix": null,
+                    "basename": "Various Artists"
+                },
+                "artists": [
+                    {
+                        "id": "19",
+                        "name": "Various Artists",
+                        "prefix": null,
+                        "basename": "Various Artists"
+                    }
+                ],
+                "songartists": [
+                    {
+                        "id": "20",
+                        "name": "R\/B",
+                        "prefix": null,
+                        "basename": "R\/B"
+                    },
+                    {
+                        "id": "21",
+                        "name": "Tip-C (featuring Mike Beers)",
+                        "prefix": null,
+                        "basename": "Tip-C (featuring Mike Beers)"
+                    },
+                    {
+                        "id": "23",
+                        "name": "Manic Notion",
+                        "prefix": null,
+                        "basename": "Manic Notion"
+                    },
+                    {
+                        "id": "26",
+                        "name": "Stress Builds Character",
+                        "prefix": null,
+                        "basename": "Stress Builds Character"
+                    },
+                    {
+                        "id": "27",
+                        "name": "Chi.Otic",
+                        "prefix": null,
+                        "basename": "Chi.Otic"
+                    },
+                    {
+                        "id": "32",
+                        "name": "Shorty Mac",
+                        "prefix": null,
+                        "basename": "Shorty Mac"
+                    },
+                    {
+                        "id": "33",
+                        "name": "MxBxCx",
+                        "prefix": null,
+                        "basename": "MxBxCx"
+                    },
+                    {
+                        "id": "34",
+                        "name": "Comedown Kid",
+                        "prefix": null,
+                        "basename": "Comedown Kid"
+                    },
+                    {
+                        "id": "35",
+                        "name": "Tip-C",
+                        "prefix": null,
+                        "basename": "Tip-C"
+                    }
+                ],
+                "time": 1879,
+                "year": 2012,
+                "tracks": [],
+                "songcount": 9,
+                "diskcount": 1,
+                "type": "compilation",
+                "genre": [
+                    {
+                        "id": "7",
+                        "name": "Punk"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null
+            },
+            {
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "prefix": null,
+                "basename": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "artist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "artists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "songartists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "time": 3873,
+                "year": 1996,
+                "tracks": [],
+                "songcount": 9,
+                "diskcount": 1,
+                "type": null,
+                "genre": [],
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null
+            },
             {
                 "id": "2",
                 "name": "Colorsmoke EP",
@@ -193,9 +463,127 @@
                 "rating": 5,
                 "averagerating": 3,
                 "mbid": null
+            },
+            {
+                "id": "21",
+                "name": "Forget and Remember",
+                "prefix": null,
+                "basename": "Forget and Remember",
+                "artist": {
+                    "id": "36",
+                    "name": "Comfort Fit",
+                    "prefix": null,
+                    "basename": "Comfort Fit"
+                },
+                "artists": [
+                    {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    }
+                ],
+                "songartists": [
+                    {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    }
+                ],
+                "time": 4248,
+                "year": 2005,
+                "tracks": [],
+                "songcount": 20,
+                "diskcount": 1,
+                "type": "album",
+                "genre": [
+                    {
+                        "id": "8",
+                        "name": "Hip-Hop"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2"
             }
         ],
         "song_artist": [
+            {
+                "id": "34",
+                "name": "Comedown Kid",
+                "prefix": null,
+                "basename": "Comedown Kid",
+                "albums": [],
+                "albumcount": 0,
+                "songs": [],
+                "songcount": 1,
+                "genre": [],
+                "art": "https:\/\/music.com.au\/image.php?object_id=34&object_type=artist",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null,
+                "summary": null,
+                "time": 116,
+                "yearformed": 0,
+                "placeformed": null
+            },
+            {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found.",
+                "albums": [],
+                "albumcount": 1,
+                "songs": [],
+                "songcount": 11,
+                "genre": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist",
+                "has_art": false,
+                "flag": false,
+                "rating": 2,
+                "averagerating": null,
+                "mbid": null,
+                "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
+                "time": 4423,
+                "yearformed": 0,
+                "placeformed": null
+            },
+            {
+                "id": "26",
+                "name": "Stress Builds Character",
+                "prefix": null,
+                "basename": "Stress Builds Character",
+                "albums": [],
+                "albumcount": 0,
+                "songs": [],
+                "songcount": 1,
+                "genre": [],
+                "art": "https:\/\/music.com.au\/image.php?object_id=26&object_type=artist",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null,
+                "summary": "There are 2 artists with this name:\n1) A crust band\n2) A hardcore band from Toronto\n\n1) Started as \"Hands That Mold\" later changed to \"Stress Builds Character\". We play grindy, sludgy, crusty, melodic, apocalyptic punk with a twist of power violence. We had a few practices, got a new 2nd vocalist (after Teagan left) and recorded our original demo. Joe was one of the lead vocalists for the first 4 shows and original demo until right after the 4th show when he left the band. ",
+                "time": 233,
+                "yearformed": 0,
+                "placeformed": null
+            },
             {
                 "id": "2",
                 "name": "Synthetic",
@@ -225,6 +613,36 @@
         ],
         "album_artist": [
             {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found.",
+                "albums": [],
+                "albumcount": 1,
+                "songs": [],
+                "songcount": 11,
+                "genre": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist",
+                "has_art": false,
+                "flag": false,
+                "rating": 2,
+                "averagerating": null,
+                "mbid": null,
+                "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
+                "time": 4423,
+                "yearformed": 0,
+                "placeformed": null
+            },
+            {
                 "id": "2",
                 "name": "Synthetic",
                 "prefix": null,
@@ -252,6 +670,78 @@
             }
         ],
         "artist": [
+            {
+                "id": "34",
+                "name": "Comedown Kid",
+                "prefix": null,
+                "basename": "Comedown Kid",
+                "albums": [],
+                "albumcount": 0,
+                "songs": [],
+                "songcount": 1,
+                "genre": [],
+                "art": "https:\/\/music.com.au\/image.php?object_id=34&object_type=artist",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null,
+                "summary": null,
+                "time": 116,
+                "yearformed": 0,
+                "placeformed": null
+            },
+            {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found.",
+                "albums": [],
+                "albumcount": 1,
+                "songs": [],
+                "songcount": 11,
+                "genre": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist",
+                "has_art": false,
+                "flag": false,
+                "rating": 2,
+                "averagerating": null,
+                "mbid": null,
+                "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
+                "time": 4423,
+                "yearformed": 0,
+                "placeformed": null
+            },
+            {
+                "id": "26",
+                "name": "Stress Builds Character",
+                "prefix": null,
+                "basename": "Stress Builds Character",
+                "albums": [],
+                "albumcount": 0,
+                "songs": [],
+                "songcount": 1,
+                "genre": [],
+                "art": "https:\/\/music.com.au\/image.php?object_id=26&object_type=artist",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null,
+                "summary": "There are 2 artists with this name:\n1) A crust band\n2) A hardcore band from Toronto\n\n1) Started as \"Hands That Mold\" later changed to \"Stress Builds Character\". We play grindy, sludgy, crusty, melodic, apocalyptic punk with a twist of power violence. We had a few practices, got a new 2nd vocalist (after Teagan left) and recorded our original demo. Joe was one of the lead vocalists for the first 4 shows and original demo until right after the 4th show when he left the band. ",
+                "time": 233,
+                "yearformed": 0,
+                "placeformed": null
+            },
             {
                 "id": "2",
                 "name": "Synthetic",
@@ -295,6 +785,22 @@
         ],
         "playlist": [
             {
+                "id": "3",
+                "name": "random - admin - private (admin)",
+                "owner": "admin",
+                "items": 43,
+                "type": "private",
+                "art": "https:\/\/music.com.au\/image.php?object_id=3&object_type=playlist",
+                "has_access": true,
+                "has_collaborate": true,
+                "has_art": false,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "md5": null,
+                "last_update": 1614054938
+            },
+            {
                 "id": "2",
                 "name": "random - admin - public (admin)",
                 "owner": "admin",
@@ -309,10 +815,195 @@
                 "averagerating": null,
                 "md5": null,
                 "last_update": 1614054896
+            },
+            {
+                "id": "4",
+                "name": "random - user - private",
+                "owner": "user",
+                "items": 43,
+                "type": "private",
+                "art": "https:\/\/music.com.au\/image.php?object_id=4&object_type=playlist",
+                "has_access": true,
+                "has_collaborate": true,
+                "has_art": false,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "md5": null,
+                "last_update": 1614054938
             }
         ],
-        "podcast": [],
-        "podcast_episode": [],
+        "podcast": [
+            {
+                "id": "1",
+                "name": "60-Second Science",
+                "description": "Tune in every weekday for quick reports and commentaries on the world of science&mdash;it&#039;ll just take a minute",
+                "language": "en-us",
+                "copyright": "False",
+                "feed_url": "http:\/\/rss.sciam.com\/sciam\/60secsciencepodcast",
+                "generator": "",
+                "website": "https:\/\/www.scientificamerican.com\/podcast\/60-second-science\/",
+                "build_date": "1970-01-01T00:00:00+00:00",
+                "sync_date": "2022-08-17T05:07:11+00:00",
+                "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "podcast_episode": []
+            }
+        ],
+        "podcast_episode": [
+            {
+                "id": "93",
+                "title": "COVID, Quickly, Episode 12: Masking Up Again and Why People Refuse Shots",
+                "name": "COVID, Quickly, Episode 12: Masking Up Again and Why People Refuse Shots",
+                "podcast": {
+                    "id": 1,
+                    "name": "60-Second Science"
+                },
+                "description": "Today we bring you a new episode in our podcast series&nbsp;COVID, Quickly. Every two weeks, Scientific American&rsquo;s senior health editors Tanya Lewis and Josh Fischman catch you up on the...&lt;br\/&gt;\n&lt;br\/&gt;\n-- Read more on ScientificAmerican.com&lt;div class=&quot;feedflare&quot;&gt;\n&lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:yIl2AUoC8zA&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=yIl2AUoC8zA&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:qj6IDK7rITs&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=qj6IDK7rITs&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:l6gmwiTKsz0&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=l6gmwiTKsz0&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:gIN9vFwOqvQ&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?i=Jyx10yeCC4w:4dxFuClQTT0:gIN9vFwOqvQ&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:ZC7T4KBF6Nw&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=ZC7T4KBF6Nw&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:I9og5sOYxJI&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=I9og5sOYxJI&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:xQlvkV3S7Ew&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=xQlvkV3S7Ew&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt;\n&lt;\/div&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~r\/sciam\/60secsciencepodcast\/~4\/Jyx10yeCC4w&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;\/&gt;",
+                "category": "Health",
+                "author": "",
+                "author_full": "",
+                "website": "http:\/\/rss.sciam.com\/~r\/sciam\/60secsciencepodcast\/~3\/Jyx10yeCC4w\/",
+                "pubdate": "2021-07-30T17:00:00+00:00",
+                "state": "completed",
+                "filelength": "00:06:18",
+                "filesize": "6.28 MB",
+                "filename": "60-Second Science - COVID, Quickly, Episode 12: Masking Up Again and Why People Refuse Shots.mp3",
+                "mime": "audio\/mpeg",
+                "time": 378,
+                "size": 6589487,
+                "bitrate": 0,
+                "stream_bitrate": 0,
+                "rate": 0,
+                "mode": null,
+                "channels": null,
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=93",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=93&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20COVID-%20Quickly-%20Episode%2012-%20Masking%20Up%20Again%20and%20Why%20People%20Refuse%20Shots.mp3",
+                "catalog": "3",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "played": ""
+            },
+            {
+                "id": "94",
+                "title": "The Kavli Prize Presents: Understanding Touch [Sponsored]",
+                "name": "The Kavli Prize Presents: Understanding Touch [Sponsored]",
+                "podcast": {
+                    "id": 1,
+                    "name": "60-Second Science"
+                },
+                "description": "Ardem Patapoutian&nbsp;shared the Kavli Prize in Neuroscience in 2020 for answering a basic question: How does touch actually work?&lt;br\/&gt;\n&lt;br\/&gt;\n-- Read more on ScientificAmerican.com&lt;div class=&quot;feedflare&quot;&gt;\n&lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UbHjr2YNB_c:TLKeymYoepg:yIl2AUoC8zA&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=yIl2AUoC8zA&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UbHjr2YNB_c:TLKeymYoepg:qj6IDK7rITs&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=qj6IDK7rITs&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UbHjr2YNB_c:TLKeymYoepg:l6gmwiTKsz0&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=l6gmwiTKsz0&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UbHjr2YNB_c:TLKeymYoepg:gIN9vFwOqvQ&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?i=UbHjr2YNB_c:TLKeymYoepg:gIN9vFwOqvQ&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UbHjr2YNB_c:TLKeymYoepg:ZC7T4KBF6Nw&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=ZC7T4KBF6Nw&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UbHjr2YNB_c:TLKeymYoepg:I9og5sOYxJI&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=I9og5sOYxJI&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UbHjr2YNB_c:TLKeymYoepg:xQlvkV3S7Ew&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=xQlvkV3S7Ew&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt;\n&lt;\/div&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~r\/sciam\/60secsciencepodcast\/~4\/UbHjr2YNB_c&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;\/&gt;",
+                "category": "Health",
+                "author": "",
+                "author_full": "",
+                "website": "http:\/\/rss.sciam.com\/~r\/sciam\/60secsciencepodcast\/~3\/UbHjr2YNB_c\/",
+                "pubdate": "2021-07-22T18:00:00+00:00",
+                "state": "pending",
+                "filelength": "00:05:46",
+                "filesize": "",
+                "filename": "60-Second Science - The Kavli Prize Presents: Understanding Touch [Sponsored].",
+                "mime": null,
+                "time": 346,
+                "size": 0,
+                "bitrate": 0,
+                "stream_bitrate": 0,
+                "rate": 0,
+                "mode": null,
+                "channels": null,
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=94",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=94&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20The%20Kavli%20Prize%20Presents-%20Understanding%20Touch%20-Sponsored-.",
+                "catalog": "3",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "played": ""
+            },
+            {
+                "id": "95",
+                "title": "Moths Have an Acoustic Invisibility Cloak to Stay under Bats' Radar",
+                "name": "Moths Have an Acoustic Invisibility Cloak to Stay under Bats' Radar",
+                "podcast": {
+                    "id": 1,
+                    "name": "60-Second Science"
+                },
+                "description": "New research finds they fly around on noise-cancelling wings&lt;br\/&gt;\n&lt;br\/&gt;\n-- Read more on ScientificAmerican.com&lt;div class=&quot;feedflare&quot;&gt;\n&lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UHImHfeFNNY:YbBf23xXc9Y:yIl2AUoC8zA&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=yIl2AUoC8zA&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UHImHfeFNNY:YbBf23xXc9Y:qj6IDK7rITs&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=qj6IDK7rITs&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UHImHfeFNNY:YbBf23xXc9Y:l6gmwiTKsz0&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=l6gmwiTKsz0&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UHImHfeFNNY:YbBf23xXc9Y:gIN9vFwOqvQ&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?i=UHImHfeFNNY:YbBf23xXc9Y:gIN9vFwOqvQ&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UHImHfeFNNY:YbBf23xXc9Y:ZC7T4KBF6Nw&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=ZC7T4KBF6Nw&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UHImHfeFNNY:YbBf23xXc9Y:I9og5sOYxJI&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=I9og5sOYxJI&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=UHImHfeFNNY:YbBf23xXc9Y:xQlvkV3S7Ew&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=xQlvkV3S7Ew&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt;\n&lt;\/div&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~r\/sciam\/60secsciencepodcast\/~4\/UHImHfeFNNY&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;\/&gt;",
+                "category": "Evolution",
+                "author": "",
+                "author_full": "",
+                "website": "http:\/\/rss.sciam.com\/~r\/sciam\/60secsciencepodcast\/~3\/UHImHfeFNNY\/",
+                "pubdate": "2021-07-21T12:00:00+00:00",
+                "state": "pending",
+                "filelength": "00:02:45",
+                "filesize": "",
+                "filename": "60-Second Science - Moths Have an Acoustic Invisibility Cloak to Stay under Bats' Radar.",
+                "mime": null,
+                "time": 165,
+                "size": 0,
+                "bitrate": 0,
+                "stream_bitrate": 0,
+                "rate": 0,
+                "mode": null,
+                "channels": null,
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=95",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=95&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20Moths%20Have%20an%20Acoustic%20Invisibility%20Cloak%20to%20Stay%20under%20Bats-%20Radar.",
+                "catalog": "3",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "played": ""
+            },
+            {
+                "id": "96",
+                "title": "COVID, Quickly, Episode 11: Vaccine Booster Shots, and Reopening Offices Safely",
+                "name": "COVID, Quickly, Episode 11: Vaccine Booster Shots, and Reopening Offices Safely",
+                "podcast": {
+                    "id": 1,
+                    "name": "60-Second Science"
+                },
+                "description": "Today&nbsp;we bring you a new episode in our&nbsp;podcast series: COVID, Quickly.&nbsp;Every two weeks,&nbsp;Scientific American&rsquo;s senior health editors&nbsp;Tanya Lewis&nbsp;and&nbsp;Josh...&lt;br\/&gt;\n&lt;br\/&gt;\n-- Read more on ScientificAmerican.com&lt;div class=&quot;feedflare&quot;&gt;\n&lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=R97BXjeb_Ls:8mq9cZvxdGE:yIl2AUoC8zA&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=yIl2AUoC8zA&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=R97BXjeb_Ls:8mq9cZvxdGE:qj6IDK7rITs&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=qj6IDK7rITs&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=R97BXjeb_Ls:8mq9cZvxdGE:l6gmwiTKsz0&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=l6gmwiTKsz0&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=R97BXjeb_Ls:8mq9cZvxdGE:gIN9vFwOqvQ&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?i=R97BXjeb_Ls:8mq9cZvxdGE:gIN9vFwOqvQ&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=R97BXjeb_Ls:8mq9cZvxdGE:ZC7T4KBF6Nw&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=ZC7T4KBF6Nw&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=R97BXjeb_Ls:8mq9cZvxdGE:I9og5sOYxJI&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=I9og5sOYxJI&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=R97BXjeb_Ls:8mq9cZvxdGE:xQlvkV3S7Ew&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=xQlvkV3S7Ew&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt;\n&lt;\/div&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~r\/sciam\/60secsciencepodcast\/~4\/R97BXjeb_Ls&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;\/&gt;",
+                "category": "Health",
+                "author": "",
+                "author_full": "",
+                "website": "http:\/\/rss.sciam.com\/~r\/sciam\/60secsciencepodcast\/~3\/R97BXjeb_Ls\/",
+                "pubdate": "2021-07-16T17:00:00+00:00",
+                "state": "pending",
+                "filelength": "00:05:33",
+                "filesize": "",
+                "filename": "60-Second Science - COVID, Quickly, Episode 11: Vaccine Booster Shots, and Reopening Offices Safely.",
+                "mime": null,
+                "time": 333,
+                "size": 0,
+                "bitrate": 0,
+                "stream_bitrate": 0,
+                "rate": 0,
+                "mode": null,
+                "channels": null,
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=96",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=96&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20COVID-%20Quickly-%20Episode%2011-%20Vaccine%20Booster%20Shots-%20and%20Reopening%20Offices%20Safely.",
+                "catalog": "3",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "played": ""
+            }
+        ],
         "genre": [
             {
                 "id": "6",
