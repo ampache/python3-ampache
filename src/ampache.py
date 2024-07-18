@@ -1353,6 +1353,26 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
+    def playlist_hash(self, filter_id: int):
+        """ playlist_hash
+            MINIMUM_API_VERSION=6.6.0
+
+            his returns the md5 hash for the songs in a playlist
+
+            INPUTS
+            filter_id = (string) UID of playlist
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'playlist_hash',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_hash')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def playlist_songs(self, filter_id: int, random: int = False, offset=0, limit=0):
         """ playlist_songs
             MINIMUM_API_VERSION=380001
