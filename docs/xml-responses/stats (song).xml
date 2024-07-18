@@ -1,66 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <song id="96">
-    <name><![CDATA[Creeping Lawler 2]]></name>
-    <title><![CDATA[Creeping Lawler 2]]></title>
-    <artist id="15">
-      <name><![CDATA[Warfare 3.0]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Warfare 3.0]]></basename>
-    </artist>
-    <album id="9">
-      <name><![CDATA[Creeping Lawler 2]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Creeping Lawler 2]]></basename>
-    </album>
-    <albumartist id="15">
-      <name><![CDATA[Warfare 3.0]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Warfare 3.0]]></basename>
-    </albumartist>
-    <disk><![CDATA[1]]></disk>
-    <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>1</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.wav]]></filename>
-    <playlisttrack>1</playlisttrack>
-    <time>296</time>
-    <year>0</year>
-    <format>wav</format>
-    <stream_format>mp3</stream_format>
-    <bitrate>1411200</bitrate>
-    <stream_bitrate>32000</stream_bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/wav]]></mime>
-    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&transcode_to=mp3&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
-    <size>52345628</size>
-    <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&name=art.jpg]]></art>
-    <has_art>1</has_art>
-    <flag>0</flag>
-    <rating/>
-    <averagerating/>
-    <playcount>3</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels>2</channels>
-    <comment><![CDATA[]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[archive.org]]></publisher>
-    <language/>
-    <lyrics><![CDATA[]]></lyrics>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain>-4.31</replaygain_track_gain>
-    <replaygain_track_peak>0.989</replaygain_track_peak>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="92">
-    <name><![CDATA[Stance]]></name>
-    <title><![CDATA[Stance]]></title>
+  <md5>a35d6b0a58e8ff9418613aefaea60b49</md5>
+  <song id="93">
+    <name><![CDATA[Scribnus 3]]></name>
+    <title><![CDATA[Scribnus 3]]></title>
     <artist id="14">
       <name><![CDATA[Nofi/found.]]></name>
       <prefix><![CDATA[]]></prefix>
@@ -78,34 +22,34 @@
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>8</track>
+    <track>3</track>
     <genre id="5">
       <name><![CDATA[Electronica]]></name>
     </genre>
     <genre id="6">
       <name><![CDATA[Dance]]></name>
     </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/08_Stance.mp3]]></filename>
-    <playlisttrack>2</playlisttrack>
-    <time>544</time>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3]]></filename>
+    <playlisttrack>1</playlisttrack>
+    <time>641</time>
     <year>0</year>
     <format>mp3</format>
     <stream_format>mp3</stream_format>
     <bitrate>192000</bitrate>
-    <stream_bitrate>192000</stream_bitrate>
+    <stream_bitrate>32000</stream_bitrate>
     <rate>44100</rate>
     <mode><![CDATA[cbr]]></mode>
     <mime><![CDATA[audio/mpeg]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&player=api&name=Nofi-found.%20-%20Stance.mp3]]></url>
-    <size>13078740</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3]]></url>
+    <size>15400002</size>
     <mbid><![CDATA[]]></mbid>
     <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
     <has_art>1</has_art>
-    <flag>0</flag>
-    <rating/>
+    <flag>1</flag>
+    <rating>5</rating>
     <averagerating/>
-    <playcount>0</playcount>
+    <playcount>4</playcount>
     <catalog>1</catalog>
     <composer><![CDATA[Jeffrey Melton]]></composer>
     <channels>2</channels>
@@ -116,8 +60,65 @@
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-2.38</replaygain_track_gain>
+    <replaygain_track_gain>1.53</replaygain_track_gain>
     <replaygain_track_peak>0.989</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="109">
+    <name><![CDATA[Dance with the Devil]]></name>
+    <title><![CDATA[Dance with the Devil]]></title>
+    <artist id="34">
+      <name><![CDATA[Comedown Kid]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Comedown Kid]]></basename>
+    </artist>
+    <album id="12">
+      <name><![CDATA[Buried in Nausea]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Buried in Nausea]]></basename>
+    </album>
+    <albumartist id="19">
+      <name><![CDATA[Various Artists]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Various Artists]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <track>3</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
+    <playlisttrack>2</playlisttrack>
+    <time>116</time>
+    <year>2012</year>
+    <format>wma</format>
+    <stream_format>mp3</stream_format>
+    <bitrate>32582</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[cbr]]></mode>
+    <mime><![CDATA[audio/x-ms-wma]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3]]></url>
+    <size>483444</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels>1</channels>
+    <comment><![CDATA[]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

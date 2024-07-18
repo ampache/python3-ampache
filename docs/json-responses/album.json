@@ -17,6 +17,14 @@
             "basename": "Synthetic"
         }
     ],
+    "songartists": [
+        {
+            "id": "2",
+            "name": "Synthetic",
+            "prefix": null,
+            "basename": "Synthetic"
+        }
+    ],
     "time": 4568,
     "year": 2007,
     "tracks": [],
@@ -30,6 +38,7 @@
         }
     ],
     "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album",
+    "has_art": true,
     "flag": true,
     "rating": 5,
     "averagerating": 3,

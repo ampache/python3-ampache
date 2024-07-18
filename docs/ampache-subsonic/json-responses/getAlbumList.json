@@ -3,7 +3,7 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.3.0",
+        "serverVersion": "6.6.0",
         "albumList": {
             "album": [
                 {
@@ -39,6 +39,22 @@
                     "artist": "Various Artists",
                     "year": 2012,
                     "genre": "Punk"
+                },
+                {
+                    "id": "200000010",
+                    "parent": "100000016",
+                    "album": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "title": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "isDir": true,
+                    "coverArt": "al-200000010",
+                    "songCount": 9,
+                    "created": "2021-02-23T04:24:51+00:00",
+                    "duration": 3873,
+                    "playCount": 2,
+                    "artistId": "100000016",
+                    "artist": "CARN\u00daN",
+                    "year": 1996
                 },
                 {
                     "id": "200000007",
@@ -91,39 +107,6 @@
                     "userRating": 3
                 },
                 {
-                    "id": "200000010",
-                    "parent": "100000016",
-                    "album": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "title": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "isDir": true,
-                    "coverArt": "al-200000010",
-                    "songCount": 9,
-                    "created": "2021-02-23T04:24:51+00:00",
-                    "duration": 3873,
-                    "playCount": 2,
-                    "artistId": "100000016",
-                    "artist": "CARN\u00daN",
-                    "year": 1996
-                },
-                {
-                    "id": "200000006",
-                    "parent": "100000012",
-                    "album": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
-                    "title": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
-                    "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
-                    "isDir": true,
-                    "coverArt": "al-200000006",
-                    "songCount": 2,
-                    "created": "2021-02-23T04:24:50+00:00",
-                    "duration": 600,
-                    "playCount": 1,
-                    "artistId": "100000012",
-                    "artist": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
-                    "userRating": 1,
-                    "averageRating": 1
-                },
-                {
                     "id": "200000018",
                     "parent": "100000011",
                     "album": "Inominavel (live.v.01)",
@@ -141,6 +124,23 @@
                     "genre": "Noise",
                     "userRating": 4,
                     "averageRating": 3.67
+                },
+                {
+                    "id": "200000006",
+                    "parent": "100000012",
+                    "album": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
+                    "title": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
+                    "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
+                    "isDir": true,
+                    "coverArt": "al-200000006",
+                    "songCount": 2,
+                    "created": "2021-02-23T04:24:50+00:00",
+                    "duration": 600,
+                    "playCount": 1,
+                    "artistId": "100000012",
+                    "artist": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                    "userRating": 1,
+                    "averageRating": 1
                 },
                 {
                     "id": "200000002",

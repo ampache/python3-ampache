@@ -3,15 +3,15 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.3.0",
+        "serverVersion": "6.6.0",
         "shares": {
             "share": [
                 {
                     "id": "8",
-                    "url": "http://localhost:8989/share.php?id=8&secret=GePtEap7",
+                    "url": "http://localhost:8989/share.php?id=8&secret=7AAw93W0",
                     "description": "",
                     "username": "user",
-                    "created": "2024-03-10T09:28:43+00:00",
+                    "created": "2024-07-18T00:56:58+00:00",
                     "visitCount": 0,
                     "entry": [
                         {
@@ -35,7 +35,7 @@
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
-                            "path": "Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3"
+                            "path": "/media/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3"
                         }
                     ]
                 }

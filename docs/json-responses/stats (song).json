@@ -1,151 +1,153 @@
 {
     "total_count": 2,
+    "md5": "afa0b484ecbec3029397bcf007856834",
     "song": [
         {
-            "id": "124",
-            "title": "True Form",
-            "name": "True Form",
+            "id": "94",
+            "title": "Strangers Query",
+            "name": "Strangers Query",
             "artist": {
-                "id": "36",
-                "name": "Comfort Fit",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Comfort Fit"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "36",
-                    "name": "Comfort Fit",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "Comfort Fit"
+                    "basename": "Nofi\/found."
                 }
             ],
             "album": {
-                "id": "21",
-                "name": "Forget and Remember",
+                "id": "8",
+                "name": "Nofi Devices",
                 "prefix": null,
-                "basename": "Forget and Remember"
+                "basename": "Nofi Devices"
             },
             "albumartist": {
-                "id": "36",
-                "name": "Comfort Fit",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Comfort Fit"
+                "basename": "Nofi\/found."
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 6,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/6 - True Form.mp3",
+            "track": 7,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/07_Strangers_Query.mp3",
             "genre": [
                 {
-                    "id": "8",
-                    "name": "Hip-Hop"
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
                 }
             ],
             "playlisttrack": 1,
-            "time": 192,
-            "year": 2005,
+            "time": 279,
+            "year": 0,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 243031,
-            "stream_bitrate": 243031,
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "vbr",
+            "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=124&uid=4&player=api&name=Comfort%20Fit%20-%20True%20Form.mp3",
-            "size": 5848663,
-            "mbid": "8bf3acd2-860b-4ece-896f-9b2de89e35fa",
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=94&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Strangers%20Query.mp3",
+            "size": 6719700,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 4,
-            "composer": null,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
             "channels": 2,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-06-comfort_fit-true_form\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
             "license": "",
-            "publisher": "Tokyo Dawn Records",
+            "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
+            "replaygain_track_gain": -3.8,
+            "replaygain_track_peak": 0.966,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "54",
-            "title": "Red&GreenSmoke",
-            "name": "Red&GreenSmoke",
+            "id": "103",
+            "title": "In The Seven Woods (Instrumental Re-Recording)",
+            "name": "In The Seven Woods (Instrumental Re-Recording)",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "16",
+                "name": "CARN\u00daN",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "CARN\u00daN"
             },
             "artists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "16",
+                    "name": "CARN\u00daN",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "CARN\u00daN"
                 }
             ],
             "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
                 "prefix": null,
-                "basename": "Colorsmoke EP"
+                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
             },
             "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "16",
+                "name": "CARN\u00daN",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "CARN\u00daN"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
+            "track": 7,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
+            "genre": [],
             "playlisttrack": 2,
-            "time": 400,
-            "year": 2007,
-            "format": "mp3",
+            "time": 452,
+            "year": 1996,
+            "format": "ogg",
             "stream_format": "mp3",
-            "bitrate": 64000,
-            "stream_bitrate": 64000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
+            "bitrate": 138338,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "application\/ogg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-            "size": 3209468,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
+            "size": 7826238,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 1,
             "composer": null,
-            "channels": 1,
-            "comment": null,
+            "channels": 2,
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
             "license": "",
-            "publisher": "20kbps rec.",
+            "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -2.88,
-            "replaygain_track_peak": 0.977,
+            "replaygain_track_gain": -12.21,
+            "replaygain_track_peak": 1,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

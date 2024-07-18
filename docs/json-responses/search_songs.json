@@ -1,5 +1,6 @@
 {
     "total_count": 1,
+    "md5": "779824090289b105333c6256857f48cf",
     "song": [
         {
             "id": "109",
@@ -47,10 +48,11 @@
             "mode": "cbr",
             "mime": "audio\/x-ms-wma",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
             "size": 483444,
             "mbid": null,
             "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,

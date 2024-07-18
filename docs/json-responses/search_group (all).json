@@ -47,10 +47,11 @@
                 "mode": "cbr",
                 "mime": "audio\/x-ms-wma",
                 "stream_mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
                 "size": 483444,
                 "mbid": null,
                 "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                "has_art": true,
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
@@ -116,15 +117,16 @@
                 "format": "mp3",
                 "stream_format": "mp3",
                 "bitrate": 232690,
-                "stream_bitrate": 232690,
+                "stream_bitrate": 32000,
                 "rate": 44100,
                 "mode": "vbr",
                 "mime": "audio\/mpeg",
                 "stream_mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=126&uid=4&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=126&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3",
                 "size": 5755191,
                 "mbid": "6b582438-c034-47c2-86b0-61c63ec96b4b",
                 "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                "has_art": true,
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
@@ -165,6 +167,14 @@
                         "basename": "Synthetic"
                     }
                 ],
+                "songartists": [
+                    {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    }
+                ],
                 "time": 4568,
                 "year": 2007,
                 "tracks": [],
@@ -178,6 +188,7 @@
                     }
                 ],
                 "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album",
+                "has_art": true,
                 "flag": true,
                 "rating": 5,
                 "averagerating": 3,
@@ -290,10 +301,14 @@
                 "items": 43,
                 "type": "public",
                 "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=playlist",
+                "has_access": true,
+                "has_collaborate": true,
                 "has_art": false,
                 "flag": true,
                 "rating": null,
-                "averagerating": null
+                "averagerating": null,
+                "md5": null,
+                "last_update": 1614054896
             }
         ],
         "podcast": [],

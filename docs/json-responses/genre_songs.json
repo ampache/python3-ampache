@@ -1,5 +1,6 @@
 {
     "total_count": 4,
+    "md5": "6c0ceb88aae422bbba511319cc0ac100",
     "song": [
         {
             "id": "81",
@@ -52,10 +53,11 @@
             "mode": "vbr",
             "mime": "audio\/flac",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&transcode_to=mp3&player=api&name=IOK-1%20-%20Galenskap.mp3",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Galenskap.mp3",
             "size": 48633049,
             "mbid": null,
             "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,

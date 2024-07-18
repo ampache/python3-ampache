@@ -1,5 +1,6 @@
 {
     "total_count": 1,
+    "md5": "d63aca0b7e6237c7964320bd7fc95644",
     "album": [
         {
             "id": "7",
@@ -20,6 +21,14 @@
                     "basename": "IOK-1"
                 }
             ],
+            "songartists": [
+                {
+                    "id": "13",
+                    "name": "IOK-1",
+                    "prefix": null,
+                    "basename": "IOK-1"
+                }
+            ],
             "time": 3428,
             "year": 2011,
             "tracks": [],
@@ -33,6 +42,7 @@
                 }
             ],
             "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,

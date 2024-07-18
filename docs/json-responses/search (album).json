@@ -1,5 +1,6 @@
 {
     "total_count": 2,
+    "md5": "01ed2302951cf117f3469345febb8488",
     "album": [
         {
             "id": "10",
@@ -20,6 +21,14 @@
                     "basename": "CARN\u00daN"
                 }
             ],
+            "songartists": [
+                {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                }
+            ],
             "time": 3873,
             "year": 1996,
             "tracks": [],
@@ -28,6 +37,7 @@
             "type": null,
             "genre": [],
             "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
@@ -52,6 +62,14 @@
                     "basename": "Synthetic"
                 }
             ],
+            "songartists": [
+                {
+                    "id": "2",
+                    "name": "Synthetic",
+                    "prefix": null,
+                    "basename": "Synthetic"
+                }
+            ],
             "time": 4568,
             "year": 2007,
             "tracks": [],
@@ -65,6 +83,7 @@
                 }
             ],
             "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album",
+            "has_art": true,
             "flag": true,
             "rating": 5,
             "averagerating": 3,

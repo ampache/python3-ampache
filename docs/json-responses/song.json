@@ -1,58 +1,54 @@
 {
-    "id": "54",
-    "title": "Red&GreenSmoke",
-    "name": "Red&GreenSmoke",
+    "id": "115",
+    "title": "Are we going Crazy",
+    "name": "Are we going Crazy",
     "artist": {
-        "id": "2",
-        "name": "Synthetic",
+        "id": "27",
+        "name": "Chi.Otic",
         "prefix": null,
-        "basename": "Synthetic"
+        "basename": "Chi.Otic"
     },
     "artists": [
         {
-            "id": "2",
-            "name": "Synthetic",
+            "id": "27",
+            "name": "Chi.Otic",
             "prefix": null,
-            "basename": "Synthetic"
+            "basename": "Chi.Otic"
         }
     ],
     "album": {
-        "id": "2",
-        "name": "Colorsmoke EP",
+        "id": "12",
+        "name": "Buried in Nausea",
         "prefix": null,
-        "basename": "Colorsmoke EP"
+        "basename": "Buried in Nausea"
     },
     "albumartist": {
-        "id": "2",
-        "name": "Synthetic",
+        "id": "19",
+        "name": "Various Artists",
         "prefix": null,
-        "basename": "Synthetic"
+        "basename": "Various Artists"
     },
     "disk": 1,
     "disksubtitle": null,
-    "track": 5,
-    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
-    "genre": [
-        {
-            "id": "1",
-            "name": "Electronic"
-        }
-    ],
+    "track": 7,
+    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
+    "genre": [],
     "playlisttrack": 1,
-    "time": 400,
-    "year": 2007,
-    "format": "mp3",
+    "time": 433,
+    "year": 2012,
+    "format": "wma",
     "stream_format": "mp3",
-    "bitrate": 64000,
-    "stream_bitrate": 64000,
-    "rate": 22050,
+    "bitrate": 32582,
+    "stream_bitrate": 32000,
+    "rate": 44100,
     "mode": "cbr",
-    "mime": "audio\/mpeg",
+    "mime": "audio\/x-ms-wma",
     "stream_mime": "audio\/mpeg",
-    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-    "size": 3209468,
+    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
+    "size": 1776580,
     "mbid": null,
-    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+    "has_art": true,
     "flag": false,
     "rating": null,
     "averagerating": null,
@@ -62,13 +58,13 @@
     "channels": 1,
     "comment": null,
     "license": "",
-    "publisher": "20kbps rec.",
+    "publisher": null,
     "language": null,
     "lyrics": null,
     "replaygain_album_gain": null,
     "replaygain_album_peak": null,
-    "replaygain_track_gain": -2.88,
-    "replaygain_track_peak": 0.977,
+    "replaygain_track_gain": null,
+    "replaygain_track_peak": null,
     "r128_album_gain": null,
     "r128_track_gain": null
 }

@@ -7,7 +7,7 @@
     <position>10</position>
     <client><![CDATA[client]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1710226314]]></update_date>
+    <update_date><![CDATA[1721264130]]></update_date>
     <song id="54">
       <name><![CDATA[Red&GreenSmoke]]></name>
       <title><![CDATA[Red&GreenSmoke]]></title>
@@ -39,12 +39,12 @@
       <format>mp3</format>
       <stream_format>mp3</stream_format>
       <bitrate>64000</bitrate>
-      <stream_bitrate>64000</stream_bitrate>
+      <stream_bitrate>32000</stream_bitrate>
       <rate>22050</rate>
       <mode><![CDATA[cbr]]></mode>
       <mime><![CDATA[audio/mpeg]]></mime>
       <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
       <size>3209468</size>
       <mbid><![CDATA[]]></mbid>
       <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>

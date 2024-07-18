@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>9</total_count>
+  <md5>01ed2302951cf117f3469345febb8488</md5>
   <album id="10">
     <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
     <prefix><![CDATA[]]></prefix>
@@ -10,6 +11,11 @@
       <prefix><![CDATA[]]></prefix>
       <basename><![CDATA[CARNÚN]]></basename>
     </artist>
+    <songartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </songartist>
     <time>3873</time>
     <year>1996</year>
     <tracks/>
@@ -32,6 +38,11 @@
       <prefix><![CDATA[]]></prefix>
       <basename><![CDATA[Synthetic]]></basename>
     </artist>
+    <songartist id="2">
+      <name><![CDATA[Synthetic]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Synthetic]]></basename>
+    </songartist>
     <time>4568</time>
     <year>2007</year>
     <tracks/>
