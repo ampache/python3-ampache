@@ -1,9 +1,16 @@
 {
-    "total_count": 0,
-    "md5": "40cd750bba9870f18aada2478b24840a",
+    "total_count": 1,
+    "md5": "0475a100f90a63c34041f8a533f9fefd",
     "catalog_id": "1",
     "parent_id": "19",
     "parent_type": "artist",
     "child_type": "album",
-    "browse": []
+    "browse": [
+        {
+            "id": "12",
+            "name": "Buried in Nausea",
+            "prefix": null,
+            "basename": "Buried in Nausea"
+        }
+    ]
 }
