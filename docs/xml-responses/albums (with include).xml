@@ -1,64 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>9</total_count>
-  <md5>a5f5d7a5fc80600513c623db108873af</md5>
-  <album id="2">
-    <name><![CDATA[Colorsmoke EP]]></name>
+  <md5>56b9dbda97055de3f4c18b575499fc5e</md5>
+  <album id="12">
+    <name><![CDATA[Buried in Nausea]]></name>
     <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[Colorsmoke EP]]></basename>
-    <artist id="2">
-      <name><![CDATA[Synthetic]]></name>
+    <basename><![CDATA[Buried in Nausea]]></basename>
+    <artist id="19">
+      <name><![CDATA[Various Artists]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Synthetic]]></basename>
+      <basename><![CDATA[Various Artists]]></basename>
     </artist>
-    <songartist id="2">
-      <name><![CDATA[Synthetic]]></name>
+    <songartist id="20">
+      <name><![CDATA[R/B]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Synthetic]]></basename>
+      <basename><![CDATA[R/B]]></basename>
     </songartist>
-    <time>4568</time>
-    <year>2007</year>
+    <songartist id="21">
+      <name><![CDATA[Tip-C (featuring Mike Beers)]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Tip-C (featuring Mike Beers)]]></basename>
+    </songartist>
+    <songartist id="23">
+      <name><![CDATA[Manic Notion]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Manic Notion]]></basename>
+    </songartist>
+    <songartist id="26">
+      <name><![CDATA[Stress Builds Character]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Stress Builds Character]]></basename>
+    </songartist>
+    <songartist id="27">
+      <name><![CDATA[Chi.Otic]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Chi.Otic]]></basename>
+    </songartist>
+    <songartist id="32">
+      <name><![CDATA[Shorty Mac]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Shorty Mac]]></basename>
+    </songartist>
+    <songartist id="33">
+      <name><![CDATA[MxBxCx]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[MxBxCx]]></basename>
+    </songartist>
+    <songartist id="34">
+      <name><![CDATA[Comedown Kid]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Comedown Kid]]></basename>
+    </songartist>
+    <songartist id="35">
+      <name><![CDATA[Tip-C]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Tip-C]]></basename>
+    </songartist>
+    <time>1879</time>
+    <year>2012</year>
     <tracks>
-      <song id="56">
-        <name><![CDATA[Black&BlueSmoke]]></name>
-        <title><![CDATA[Black&BlueSmoke]]></title>
-        <artist id="2">
-          <name><![CDATA[Synthetic]]></name>
+      <song id="110">
+        <name><![CDATA[I wanna walk through the fire]]></name>
+        <title><![CDATA[I wanna walk through the fire]]></title>
+        <artist id="23">
+          <name><![CDATA[Manic Notion]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
+          <basename><![CDATA[Manic Notion]]></basename>
         </artist>
-        <album id="2">
-          <name><![CDATA[Colorsmoke EP]]></name>
+        <album id="12">
+          <name><![CDATA[Buried in Nausea]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Colorsmoke EP]]></basename>
+          <basename><![CDATA[Buried in Nausea]]></basename>
         </album>
-        <albumartist id="2">
-          <name><![CDATA[Synthetic]]></name>
+        <albumartist id="19">
+          <name><![CDATA[Various Artists]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
+          <basename><![CDATA[Various Artists]]></basename>
         </albumartist>
         <disk><![CDATA[1]]></disk>
         <disksubtitle><![CDATA[]]></disksubtitle>
         <track>1</track>
-        <genre id="1">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/01ManicNotion-IWannaWalkThroughTheFire.m4a]]></filename>
         <playlisttrack>1</playlisttrack>
-        <time>500</time>
-        <year>2007</year>
-        <format>mp3</format>
+        <time>197</time>
+        <year>2012</year>
+        <format>m4a</format>
         <stream_format>mp3</stream_format>
-        <bitrate>64000</bitrate>
+        <bitrate>267320</bitrate>
         <stream_bitrate>32000</stream_bitrate>
-        <rate>22050</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/mp4]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
-        <size>4010069</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.mp3]]></url>
+        <size>6651911</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -69,56 +106,53 @@
         <channels>2</channels>
         <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
+        <publisher><![CDATA[]]></publisher>
         <language/>
         <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>-5.11</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
+        <replaygain_track_gain>-5.15</replaygain_track_gain>
+        <replaygain_track_peak>0.989</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="64">
-        <name><![CDATA[Black&BlueSmoke]]></name>
-        <title><![CDATA[Black&BlueSmoke]]></title>
-        <artist id="2">
-          <name><![CDATA[Synthetic]]></name>
+      <song id="114">
+        <name><![CDATA[He is the Master of War]]></name>
+        <title><![CDATA[He is the Master of War]]></title>
+        <artist id="26">
+          <name><![CDATA[Stress Builds Character]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
+          <basename><![CDATA[Stress Builds Character]]></basename>
         </artist>
-        <album id="2">
-          <name><![CDATA[Colorsmoke EP]]></name>
+        <album id="12">
+          <name><![CDATA[Buried in Nausea]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Colorsmoke EP]]></basename>
+          <basename><![CDATA[Buried in Nausea]]></basename>
         </album>
-        <albumartist id="2">
-          <name><![CDATA[Synthetic]]></name>
+        <albumartist id="19">
+          <name><![CDATA[Various Artists]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
+          <basename><![CDATA[Various Artists]]></basename>
         </albumartist>
         <disk><![CDATA[1]]></disk>
         <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>1</track>
-        <genre id="1">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma]]></filename>
+        <track>2</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a]]></filename>
         <playlisttrack>2</playlisttrack>
-        <time>500</time>
-        <year>2007</year>
-        <format>wma</format>
+        <time>233</time>
+        <year>2012</year>
+        <format>m4a</format>
         <stream_format>mp3</stream_format>
-        <bitrate>20627</bitrate>
+        <bitrate>256245</bitrate>
         <stream_bitrate>32000</stream_bitrate>
-        <rate>22050</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/x-ms-wma]]></mime>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/mp4]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
-        <size>1298295</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.mp3]]></url>
+        <size>7535126</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -127,538 +161,55 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[Made with Sony ACID 5]]></comment>
+        <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
+        <publisher><![CDATA[]]></publisher>
         <language/>
         <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-10.74</replaygain_track_gain>
+        <replaygain_track_peak>1.035</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="59">
-        <name><![CDATA[YellowSmoke]]></name>
-        <title><![CDATA[YellowSmoke]]></title>
-        <artist id="2">
-          <name><![CDATA[Synthetic]]></name>
+      <song id="109">
+        <name><![CDATA[Dance with the Devil]]></name>
+        <title><![CDATA[Dance with the Devil]]></title>
+        <artist id="34">
+          <name><![CDATA[Comedown Kid]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
+          <basename><![CDATA[Comedown Kid]]></basename>
         </artist>
-        <album id="2">
-          <name><![CDATA[Colorsmoke EP]]></name>
+        <album id="12">
+          <name><![CDATA[Buried in Nausea]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Colorsmoke EP]]></basename>
+          <basename><![CDATA[Buried in Nausea]]></basename>
         </album>
-        <albumartist id="2">
-          <name><![CDATA[Synthetic]]></name>
+        <albumartist id="19">
+          <name><![CDATA[Various Artists]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
+          <basename><![CDATA[Various Artists]]></basename>
         </albumartist>
         <disk><![CDATA[1]]></disk>
         <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>2</track>
-        <genre id="1">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3]]></filename>
+        <track>3</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
         <playlisttrack>3</playlisttrack>
-        <time>290</time>
-        <year>2007</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>64000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>22050</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
-        <size>2325568</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>2.75</replaygain_track_gain>
-        <replaygain_track_peak>0.716</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="65">
-        <name><![CDATA[YellowSmoke]]></name>
-        <title><![CDATA[YellowSmoke]]></title>
-        <artist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </artist>
-        <album id="2">
-          <name><![CDATA[Colorsmoke EP]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Colorsmoke EP]]></basename>
-        </album>
-        <albumartist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>2</track>
-        <genre id="1">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/02-Synthetic_-_YellowSmoke20k22hS.wma]]></filename>
-        <playlisttrack>4</playlisttrack>
-        <time>290</time>
-        <year>2007</year>
+        <time>116</time>
+        <year>2012</year>
         <format>wma</format>
         <stream_format>mp3</stream_format>
-        <bitrate>20627</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>22050</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
-        <size>754935</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Made with Sony ACID 5]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="57">
-        <name><![CDATA[PurpleSmoke]]></name>
-        <title><![CDATA[PurpleSmoke]]></title>
-        <artist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </artist>
-        <album id="2">
-          <name><![CDATA[Colorsmoke EP]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Colorsmoke EP]]></basename>
-        </album>
-        <albumartist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>3</track>
-        <genre id="1">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3]]></filename>
-        <playlisttrack>5</playlisttrack>
-        <time>390</time>
-        <year>2007</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>64000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>22050</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
-        <size>3131519</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-5.13</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="62">
-        <name><![CDATA[PurpleSmoke]]></name>
-        <title><![CDATA[PurpleSmoke]]></title>
-        <artist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </artist>
-        <album id="2">
-          <name><![CDATA[Colorsmoke EP]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Colorsmoke EP]]></basename>
-        </album>
-        <albumartist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>3</track>
-        <genre id="1">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma]]></filename>
-        <playlisttrack>6</playlisttrack>
-        <time>390</time>
-        <year>2007</year>
-        <format>wma</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>20627</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>22050</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
-        <size>1014135</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Made with Sony ACID 5]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="58">
-        <name><![CDATA[BrownSmoke]]></name>
-        <title><![CDATA[BrownSmoke]]></title>
-        <artist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </artist>
-        <album id="2">
-          <name><![CDATA[Colorsmoke EP]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Colorsmoke EP]]></basename>
-        </album>
-        <albumartist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>4</track>
-        <genre id="1">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3]]></filename>
-        <playlisttrack>7</playlisttrack>
-        <time>304</time>
-        <year>2007</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>64000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>22050</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
-        <size>2441886</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>0.96</replaygain_track_gain>
-        <replaygain_track_peak>0.912</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="60">
-        <name><![CDATA[BrownSmoke]]></name>
-        <title><![CDATA[BrownSmoke]]></title>
-        <artist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </artist>
-        <album id="2">
-          <name><![CDATA[Colorsmoke EP]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Colorsmoke EP]]></basename>
-        </album>
-        <albumartist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>4</track>
-        <genre id="1">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma]]></filename>
-        <playlisttrack>8</playlisttrack>
-        <time>304</time>
-        <year>2007</year>
-        <format>wma</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>20627</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>22050</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
-        <size>792375</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Made with Sony ACID 5]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="54">
-        <name><![CDATA[Red&GreenSmoke]]></name>
-        <title><![CDATA[Red&GreenSmoke]]></title>
-        <artist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </artist>
-        <album id="2">
-          <name><![CDATA[Colorsmoke EP]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Colorsmoke EP]]></basename>
-        </album>
-        <albumartist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>5</track>
-        <genre id="1">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3]]></filename>
-        <playlisttrack>9</playlisttrack>
-        <time>400</time>
-        <year>2007</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>64000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>22050</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-        <size>3209468</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>1</channels>
-        <comment><![CDATA[]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-2.88</replaygain_track_gain>
-        <replaygain_track_peak>0.977</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="55">
-        <name><![CDATA[Red&GreenSmoke]]></name>
-        <title><![CDATA[Red&GreenSmoke]]></title>
-        <artist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </artist>
-        <album id="2">
-          <name><![CDATA[Colorsmoke EP]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Colorsmoke EP]]></basename>
-        </album>
-        <albumartist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>5</track>
-        <genre id="1">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3]]></filename>
-        <playlisttrack>10</playlisttrack>
-        <time>400</time>
-        <year>2007</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>64000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>22050</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-        <size>3209886</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>1</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-4.06</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="61">
-        <name><![CDATA[Red&GreenSmoke]]></name>
-        <title><![CDATA[Red&GreenSmoke]]></title>
-        <artist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </artist>
-        <album id="2">
-          <name><![CDATA[Colorsmoke EP]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Colorsmoke EP]]></basename>
-        </album>
-        <albumartist id="2">
-          <name><![CDATA[Synthetic]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>5</track>
-        <genre id="1">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k44khM.wma]]></filename>
-        <playlisttrack>11</playlisttrack>
-        <time>400</time>
-        <year>2007</year>
-        <format>wma</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>20627</bitrate>
+        <bitrate>32582</bitrate>
         <stream_bitrate>32000</stream_bitrate>
         <rate>44100</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-        <size>1044851</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3]]></url>
+        <size>483444</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -667,9 +218,9 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>1</channels>
-        <comment><![CDATA[Made with Sony ACID 5]]></comment>
+        <comment><![CDATA[]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
+        <publisher><![CDATA[]]></publisher>
         <language/>
         <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
@@ -679,46 +230,43 @@
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="63">
-        <name><![CDATA[Red&GreenSmoke]]></name>
-        <title><![CDATA[Red&GreenSmoke]]></title>
-        <artist id="2">
-          <name><![CDATA[Synthetic]]></name>
+      <song id="113">
+        <name><![CDATA[Representin]]></name>
+        <title><![CDATA[Representin]]></title>
+        <artist id="32">
+          <name><![CDATA[Shorty Mac]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
+          <basename><![CDATA[Shorty Mac]]></basename>
         </artist>
-        <album id="2">
-          <name><![CDATA[Colorsmoke EP]]></name>
+        <album id="12">
+          <name><![CDATA[Buried in Nausea]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Colorsmoke EP]]></basename>
+          <basename><![CDATA[Buried in Nausea]]></basename>
         </album>
-        <albumartist id="2">
-          <name><![CDATA[Synthetic]]></name>
+        <albumartist id="19">
+          <name><![CDATA[Various Artists]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Synthetic]]></basename>
+          <basename><![CDATA[Various Artists]]></basename>
         </albumartist>
         <disk><![CDATA[1]]></disk>
         <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>5</track>
-        <genre id="1">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k22khS.wma]]></filename>
-        <playlisttrack>12</playlisttrack>
-        <time>400</time>
-        <year>2007</year>
-        <format>wma</format>
+        <track>4</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3]]></filename>
+        <playlisttrack>4</playlisttrack>
+        <time>234</time>
+        <year>2012</year>
+        <format>mp3</format>
         <stream_format>mp3</stream_format>
-        <bitrate>20627</bitrate>
+        <bitrate>123814</bitrate>
         <stream_bitrate>32000</stream_bitrate>
-        <rate>22050</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/x-ms-wma]]></mime>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=63&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-        <size>1041065</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3]]></url>
+        <size>3628327</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -727,9 +275,66 @@
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[Made with Sony ACID 5]]></comment>
+        <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>1.91</replaygain_track_gain>
+        <replaygain_track_peak>0.851</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="111">
+        <name><![CDATA[The art of free expression]]></name>
+        <title><![CDATA[The art of free expression]]></title>
+        <artist id="35">
+          <name><![CDATA[Tip-C]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Tip-C]]></basename>
+        </artist>
+        <album id="12">
+          <name><![CDATA[Buried in Nausea]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Buried in Nausea]]></basename>
+        </album>
+        <albumartist id="19">
+          <name><![CDATA[Various Artists]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Various Artists]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>5</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/05Tip-c-TheArtOfFreeExpression.wma]]></filename>
+        <playlisttrack>5</playlisttrack>
+        <time>110</time>
+        <year>2012</year>
+        <format>wma</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>32582</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/x-ms-wma]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.mp3]]></url>
+        <size>460498</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>1</channels>
+        <comment><![CDATA[]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[]]></publisher>
         <language/>
         <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
@@ -739,18 +344,790 @@
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
+      <song id="108">
+        <name><![CDATA[I've been down this road before]]></name>
+        <title><![CDATA[I've been down this road before]]></title>
+        <artist id="21">
+          <name><![CDATA[Tip-C (featuring Mike Beers)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Tip-C (featuring Mike Beers)]]></basename>
+        </artist>
+        <album id="12">
+          <name><![CDATA[Buried in Nausea]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Buried in Nausea]]></basename>
+        </album>
+        <albumartist id="19">
+          <name><![CDATA[Various Artists]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Various Artists]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>6</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma]]></filename>
+        <playlisttrack>6</playlisttrack>
+        <time>252</time>
+        <year>2012</year>
+        <format>wma</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>32582</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/x-ms-wma]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.mp3]]></url>
+        <size>1035322</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>1</channels>
+        <comment><![CDATA[]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain/>
+        <replaygain_track_peak/>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="115">
+        <name><![CDATA[Are we going Crazy]]></name>
+        <title><![CDATA[Are we going Crazy]]></title>
+        <artist id="27">
+          <name><![CDATA[Chi.Otic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Chi.Otic]]></basename>
+        </artist>
+        <album id="12">
+          <name><![CDATA[Buried in Nausea]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Buried in Nausea]]></basename>
+        </album>
+        <albumartist id="19">
+          <name><![CDATA[Various Artists]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Various Artists]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>7</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
+        <playlisttrack>7</playlisttrack>
+        <time>433</time>
+        <year>2012</year>
+        <format>wma</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>32582</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/x-ms-wma]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
+        <size>1776580</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>1</channels>
+        <comment><![CDATA[]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain/>
+        <replaygain_track_peak/>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="112">
+        <name><![CDATA[Personal Truth]]></name>
+        <title><![CDATA[Personal Truth]]></title>
+        <artist id="33">
+          <name><![CDATA[MxBxCx]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[MxBxCx]]></basename>
+        </artist>
+        <album id="12">
+          <name><![CDATA[Buried in Nausea]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Buried in Nausea]]></basename>
+        </album>
+        <albumartist id="19">
+          <name><![CDATA[Various Artists]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Various Artists]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>8</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/08Mxbxcx-PersonalTruth.mp3]]></filename>
+        <playlisttrack>8</playlisttrack>
+        <time>208</time>
+        <year>2012</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>179860</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3]]></url>
+        <size>4693165</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-8.27</replaygain_track_gain>
+        <replaygain_track_peak>0.881</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="107">
+        <name><![CDATA[Arrest Me]]></name>
+        <title><![CDATA[Arrest Me]]></title>
+        <artist id="20">
+          <name><![CDATA[R/B]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[R/B]]></basename>
+        </artist>
+        <album id="12">
+          <name><![CDATA[Buried in Nausea]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Buried in Nausea]]></basename>
+        </album>
+        <albumartist id="19">
+          <name><![CDATA[Various Artists]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Various Artists]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>9</track>
+        <genre id="7">
+          <name><![CDATA[Punk]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/09R_b-ArrestMe.m4a]]></filename>
+        <playlisttrack>9</playlisttrack>
+        <time>96</time>
+        <year>2012</year>
+        <format>m4a</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>252864</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/mp4]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=R-B%20-%20Arrest%20Me.mp3]]></url>
+        <size>3091727</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-1.35</replaygain_track_gain>
+        <replaygain_track_peak>0.881</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
     </tracks>
-    <songcount>12</songcount>
+    <songcount>9</songcount>
+    <diskcount>1</diskcount>
+    <type>compilation</type>
+    <genre id="7">
+      <name><![CDATA[Punk]]></name>
+    </genre>
+    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+  </album>
+  <album id="10">
+    <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </artist>
+    <songartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </songartist>
+    <time>3873</time>
+    <year>1996</year>
+    <tracks>
+      <song id="106">
+        <name><![CDATA[Malkuth - Intro]]></name>
+        <title><![CDATA[Malkuth - Intro]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>1</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/01Intro.ogg]]></filename>
+        <playlisttrack>1</playlisttrack>
+        <time>91</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>81137</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.mp3]]></url>
+        <size>932235</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>1.98</replaygain_track_gain>
+        <replaygain_track_peak>0.861</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="100">
+        <name><![CDATA[The Prophecies Of The Horned One]]></name>
+        <title><![CDATA[The Prophecies Of The Horned One]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>2</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/02ThePropheciesOfTheHornedOne.ogg]]></filename>
+        <playlisttrack>2</playlisttrack>
+        <time>378</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>90078</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3]]></url>
+        <size>4271173</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-10.51</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="98">
+        <name><![CDATA[In The Seven Woods]]></name>
+        <title><![CDATA[In The Seven Woods]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>3</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/03InTheSevenWoods.ogg]]></filename>
+        <playlisttrack>3</playlisttrack>
+        <time>420</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>84528</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3]]></url>
+        <size>4449963</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-9.7</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="104">
+        <name><![CDATA[The Infernal Serpent]]></name>
+        <title><![CDATA[The Infernal Serpent]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>4</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/04TheInfernalSerpent.ogg]]></filename>
+        <playlisttrack>4</playlisttrack>
+        <time>404</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>100174</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3]]></url>
+        <size>5072883</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-11.26</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="102">
+        <name><![CDATA[Moremque Sinistrum Sacrorum]]></name>
+        <title><![CDATA[Moremque Sinistrum Sacrorum]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>5</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/05MoremqueSinistrumSacrorum.ogg]]></filename>
+        <playlisttrack>5</playlisttrack>
+        <time>164</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>106806</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3]]></url>
+        <size>2206257</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-7.48</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="99">
+        <name><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></name>
+        <title><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>6</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg]]></filename>
+        <playlisttrack>6</playlisttrack>
+        <time>427</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>143953</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3]]></url>
+        <size>7704860</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-12.66</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="103">
+        <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
+        <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>7</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/07InTheSevenWoods_InstrumentalReRecording.ogg]]></filename>
+        <playlisttrack>7</playlisttrack>
+        <time>452</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>138496</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
+        <size>7835220</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-12.21</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="105">
+        <name><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></name>
+        <title><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>8</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/08TheInfernalSerpent_InstrumentalReRecording.ogg]]></filename>
+        <playlisttrack>8</playlisttrack>
+        <time>557</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>139609</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.mp3]]></url>
+        <size>9733002</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-12.24</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="101">
+        <name><![CDATA[Rehearsal Tape (1996)]]></name>
+        <title><![CDATA[Rehearsal Tape (1996)]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>9</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/09RehearsalTape1996.ogg]]></filename>
+        <playlisttrack>9</playlisttrack>
+        <time>980</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>66988</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.mp3]]></url>
+        <size>8229246</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-9.56</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+    </tracks>
+    <songcount>9</songcount>
     <diskcount>1</diskcount>
     <type/>
-    <genre id="1">
-      <name><![CDATA[Electronic]]></name>
-    </genre>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
     <has_art>1</has_art>
-    <flag>1</flag>
-    <rating>5</rating>
-    <averagerating>3</averagerating>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
     <mbid><![CDATA[]]></mbid>
   </album>
 </root>

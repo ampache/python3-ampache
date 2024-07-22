@@ -1,62 +1,57 @@
 {
     "total_count": 4,
-    "md5": "318d48ad40b6341c21d8a0da596fae89",
+    "md5": "c943d05f5ae7cc400be71467ecdd9675",
     "song": [
         {
-            "id": "65",
-            "title": "YellowSmoke",
-            "name": "YellowSmoke",
+            "id": "108",
+            "title": "I've been down this road before",
+            "name": "I've been down this road before",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "21",
+                "name": "Tip-C (featuring Mike Beers)",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Tip-C (featuring Mike Beers)"
             },
             "artists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "21",
+                    "name": "Tip-C (featuring Mike Beers)",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "Tip-C (featuring Mike Beers)"
                 }
             ],
             "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "Colorsmoke EP"
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "19",
+                "name": "Various Artists",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Various Artists"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/02-Synthetic_-_YellowSmoke20k22hS.wma",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
+            "track": 6,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
+            "genre": [],
             "playlisttrack": 1,
-            "time": 290,
-            "year": 2007,
+            "time": 252,
+            "year": 2012,
             "format": "wma",
             "stream_format": "mp3",
-            "bitrate": 20627,
+            "bitrate": 32582,
             "stream_bitrate": 32000,
-            "rate": 22050,
+            "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/x-ms-wma",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
-            "size": 754935,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.mp3",
+            "size": 1035322,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -64,10 +59,10 @@
             "playcount": 0,
             "catalog": 1,
             "composer": null,
-            "channels": 2,
-            "comment": "Made with Sony ACID 5",
+            "channels": 1,
+            "comment": null,
             "license": "",
-            "publisher": "20kbps rec.",
+            "publisher": null,
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
@@ -78,130 +73,55 @@
             "r128_track_gain": null
         },
         {
-            "id": "78",
-            "title": "inominavel p01",
-            "name": "inominavel p01",
+            "id": "113",
+            "title": "Representin",
+            "name": "Representin",
             "artist": {
-                "id": "11",
-                "name": "structura",
+                "id": "32",
+                "name": "Shorty Mac",
                 "prefix": null,
-                "basename": "structura"
+                "basename": "Shorty Mac"
             },
             "artists": [
                 {
-                    "id": "11",
-                    "name": "structura",
+                    "id": "32",
+                    "name": "Shorty Mac",
                     "prefix": null,
-                    "basename": "structura"
+                    "basename": "Shorty Mac"
                 }
             ],
             "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)",
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "Inominavel (live.v.01)"
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "11",
-                "name": "structura",
+                "id": "19",
+                "name": "Various Artists",
                 "prefix": null,
-                "basename": "structura"
+                "basename": "Various Artists"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/01_structura_-_inominavel_p01.mp3",
-            "genre": [
-                {
-                    "id": "3",
-                    "name": "Noise"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 84,
-            "year": 2007,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 192000,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p01.mp3",
-            "size": 2036632,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": null,
-            "channels": 2,
-            "comment": "http:\/\/enoughrecords.scene.org",
-            "license": "",
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": 0,
-            "replaygain_track_peak": 0,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "97",
-            "title": "Creeping Lawler 2",
-            "name": "Creeping Lawler 2",
-            "artist": {
-                "id": "15",
-                "name": "Warfare 3.0",
-                "prefix": null,
-                "basename": "Warfare 3.0"
-            },
-            "artists": [
-                {
-                    "id": "15",
-                    "name": "Warfare 3.0",
-                    "prefix": null,
-                    "basename": "Warfare 3.0"
-                }
-            ],
-            "album": {
-                "id": "9",
-                "name": "Creeping Lawler 2",
-                "prefix": null,
-                "basename": "Creeping Lawler 2"
-            },
-            "albumartist": {
-                "id": "15",
-                "name": "Warfare 3.0",
-                "prefix": null,
-                "basename": "Warfare 3.0"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
             "genre": [],
-            "playlisttrack": 3,
-            "time": 296,
-            "year": 0,
+            "playlisttrack": 2,
+            "time": 234,
+            "year": 2012,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 177349,
+            "bitrate": 123814,
             "stream_bitrate": 32000,
             "rate": 44100,
             "mode": "vbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
-            "size": 6652448,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
+            "size": 3628327,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -210,94 +130,160 @@
             "catalog": 1,
             "composer": null,
             "channels": 2,
-            "comment": "https:\/\/archive.org\/details\/Creeping_Lawler_2",
+            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
             "license": "",
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -4.32,
-            "replaygain_track_peak": 0.977,
+            "replaygain_track_gain": 1.91,
+            "replaygain_track_peak": 0.851,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "95",
-            "title": "Spirus Falls",
-            "name": "Spirus Falls",
+            "id": "82",
+            "title": "Vanvett",
+            "name": "Vanvett",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "13",
+                "name": "IOK-1",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "IOK-1"
             },
             "artists": [
                 {
-                    "id": "14",
-                    "name": "Nofi\/found.",
+                    "id": "13",
+                    "name": "IOK-1",
                     "prefix": null,
-                    "basename": "Nofi\/found."
+                    "basename": "IOK-1"
                 }
             ],
             "album": {
-                "id": "8",
-                "name": "Nofi Devices",
+                "id": "7",
+                "name": "Sensorisk Deprivation",
                 "prefix": null,
-                "basename": "Nofi Devices"
+                "basename": "Sensorisk Deprivation"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "13",
+                "name": "IOK-1",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "IOK-1"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/02_Spirus_Falls.mp3",
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/02_-_IOK-1_-_Vanvett.flac",
             "genre": [
                 {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
+                    "id": "4",
+                    "name": "Dark Ambient"
                 }
             ],
-            "playlisttrack": 4,
-            "time": 327,
-            "year": 0,
-            "format": "mp3",
+            "playlisttrack": 3,
+            "time": 825,
+            "year": 2011,
+            "format": "flac",
             "stream_format": "mp3",
-            "bitrate": 192000,
+            "bitrate": 371855,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
+            "mode": "vbr",
+            "mime": "audio\/flac",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3",
-            "size": 7875775,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3",
+            "size": 38389422,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 1,
-            "composer": "Jeffrey Melton",
+            "composer": null,
             "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "comment": "DNA Production release\r\nCatalogue # DNA 119",
             "license": "",
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -1.53,
-            "replaygain_track_peak": 1,
+            "replaygain_track_gain": -2.57,
+            "replaygain_track_peak": 0.977,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "115",
+            "title": "Are we going Crazy",
+            "name": "Are we going Crazy",
+            "artist": {
+                "id": "27",
+                "name": "Chi.Otic",
+                "prefix": null,
+                "basename": "Chi.Otic"
+            },
+            "artists": [
+                {
+                    "id": "27",
+                    "name": "Chi.Otic",
+                    "prefix": null,
+                    "basename": "Chi.Otic"
+                }
+            ],
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": null,
+                "basename": "Various Artists"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 7,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
+            "genre": [],
+            "playlisttrack": 4,
+            "time": 433,
+            "year": 2012,
+            "format": "wma",
+            "stream_format": "mp3",
+            "bitrate": 32582,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
+            "size": 1776580,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 1,
+            "comment": null,
+            "license": "",
+            "publisher": null,
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }
