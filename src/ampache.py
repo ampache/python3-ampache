@@ -241,17 +241,52 @@ class API(object):
                 id_list.append(data['id'])
         else:
             try:
-                for data_object in data[attribute]:
-                    id_list.append(data_object['id'])
-            except TypeError:
-                for data_object in data:
-                    id_list.append(data_object[0])
-            except KeyError:
-                id_list.append(data['id'])
+                if data[0][0][attribute]:
+                    try:
+                        if data[0][0][attribute]['id']:
+                            id_list.append(data[0][0][attribute]['id'])
+                    except (KeyError, TypeError):
+                        for data_object in data[0][0][attribute]:
+                            try:
+                                id_list.append(data_object[0]['id'])
+                            except (KeyError, TypeError):
+                                id_list.append(data_object['id'])
+            except (KeyError, TypeError):
+                try:
+                    if data[0][attribute]:
+                        try:
+                            if data[0][attribute]['id']:
+                                id_list.append(data[0][attribute]['id'])
+                        except (KeyError, TypeError):
+                            for data_object in data[0][attribute]:
+                                try:
+                                    id_list.append(data_object[0]['id'])
+                                except (KeyError, TypeError):
+                                    id_list.append(data_object['id'])
+                except (KeyError, TypeError):
+                    try:
+                        if data[attribute]:
+                            try:
+                                if data[attribute]['id']:
+                                    id_list.append(data[attribute]['id'])
+                            except (KeyError, TypeError):
+                                for data_object in data[attribute]:
+                                    try:
+                                        id_list.append(data_object[0]['id'])
+                                    except (KeyError, TypeError):
+                                        id_list.append(data_object['id'])
+                    except (KeyError, TypeError):
+                        try:
+                            try:
+                                id_list.append(data[0]['id'])
+                            except (KeyError, TypeError):
+                                id_list.append(data['id'])
+                        except (KeyError, TypeError):
+                            id_list.append(data)
+
         return id_list
 
-    @staticmethod
-    def get_object_list(data, field: str, data_format: str = 'xml'):
+    def get_object_list(self, data, field: str):
         """ get_id_list
 
             return a list of objects from the data matching your field stirng
@@ -262,15 +297,25 @@ class API(object):
             * data_format = (string) 'xml','json'
         """
         id_list = list()
-        if data_format == 'xml':
+        if self.AMPACHE_API == 'xml':
             return data.findall(field)
         else:
+            if not data:
+                return id_list
             try:
-                for data_object in data[field]:
-                    id_list.append(data_object['id'])
-            except TypeError:
-                for data_object in data:
-                    id_list.append(data_object[0])
+                for data_object in data[0][0][field]:
+                    id_list.append(data_object)
+            except KeyError:
+                try:
+                    for data_object in data[0][field]:
+                        id_list.append(data_object)
+                except KeyError:
+                    try:
+                        for data_object in data[field]:
+                            id_list.append(data_object)
+                    except (KeyError, TypeError):
+                        id_list.append(data)
+        
         return id_list
 
     @staticmethod
@@ -401,7 +446,7 @@ class API(object):
     """
 
     def handshake(self, ampache_url: str, ampache_api: str, ampache_user: str = False,
-                  timestamp: int = 0, version: str = '6.5.1'):
+                  timestamp: int = 0, version: str = '6.6.0'):
         """ handshake
             MINIMUM_API_VERSION=380001
 
@@ -456,7 +501,7 @@ class API(object):
             self.AMPACHE_SESSION = token
             return token
 
-    def ping(self, ampache_url: str, ampache_api: str = False, version: str = '6.5.1'):
+    def ping(self, ampache_url: str, ampache_api: str = False, version: str = '6.6.0'):
         """ ping
             MINIMUM_API_VERSION=380001
 
@@ -2547,7 +2592,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def player(self, filter_str, object_type='song', state='play', time=0, client='python3-ampache'):
+    def player(self, filter_str, object_type='song', state='play', play_time=0, client='python3-ampache'):
         """ player
             MINIMUM_API_VERSION=6.4.0
 
@@ -2556,7 +2601,7 @@ class API(object):
             filter_str  = (integer) $object_id
             object_type = (string)  $object_type ('song', 'podcast_episode', 'video'), DEFAULT 'song'//optional
             state       = (string)  'play', 'stop', DEFAULT 'play' //optional
-            time        = (integer) current song time in whole seconds, DEFAULT 0 //optional
+            play_time   = (integer) current song time in whole seconds, DEFAULT 0 //optional
             client      = (string)  $agent, DEFAULT 'python3-ampache' //optional
         """
         action = self.player.__name__
@@ -2566,7 +2611,7 @@ class API(object):
                 'filter': filter_str,
                 'type': object_type,
                 'state': state,
-                'time': time,
+                'time': play_time,
                 'client': client}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
@@ -3796,7 +3841,6 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    
     def tags(self, filter_str: str = False,
              exact: int = False, offset=0, limit=0):
         """ tags
