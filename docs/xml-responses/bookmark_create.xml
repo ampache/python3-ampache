@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[bookmark_create]]></errorAction>
-    <errorType><![CDATA[filter]]></errorType>
-    <errorMessage><![CDATA[Not Found: 33]]></errorMessage>
-  </error>
+  <bookmark id="8">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
+    <object_id>103</object_id>
+    <position>0</position>
+    <client><![CDATA[python3-ampache]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1721607286]]></update_date>
+  </bookmark>
 </root>
