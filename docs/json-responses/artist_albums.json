@@ -1,5 +1,6 @@
 {
     "total_count": 1,
+    "md5": "25117f4b9fd9bb6384d0eb8ea708c8b9",
     "album": [
         {
             "id": "12",
@@ -20,6 +21,62 @@
                     "basename": "Various Artists"
                 }
             ],
+            "songartists": [
+                {
+                    "id": "20",
+                    "name": "R\/B",
+                    "prefix": null,
+                    "basename": "R\/B"
+                },
+                {
+                    "id": "21",
+                    "name": "Tip-C (featuring Mike Beers)",
+                    "prefix": null,
+                    "basename": "Tip-C (featuring Mike Beers)"
+                },
+                {
+                    "id": "23",
+                    "name": "Manic Notion",
+                    "prefix": null,
+                    "basename": "Manic Notion"
+                },
+                {
+                    "id": "26",
+                    "name": "Stress Builds Character",
+                    "prefix": null,
+                    "basename": "Stress Builds Character"
+                },
+                {
+                    "id": "27",
+                    "name": "Chi.Otic",
+                    "prefix": null,
+                    "basename": "Chi.Otic"
+                },
+                {
+                    "id": "32",
+                    "name": "Shorty Mac",
+                    "prefix": null,
+                    "basename": "Shorty Mac"
+                },
+                {
+                    "id": "33",
+                    "name": "MxBxCx",
+                    "prefix": null,
+                    "basename": "MxBxCx"
+                },
+                {
+                    "id": "34",
+                    "name": "Comedown Kid",
+                    "prefix": null,
+                    "basename": "Comedown Kid"
+                },
+                {
+                    "id": "35",
+                    "name": "Tip-C",
+                    "prefix": null,
+                    "basename": "Tip-C"
+                }
+            ],
             "time": 1879,
             "year": 2012,
             "tracks": [],
@@ -33,6 +90,7 @@
                 }
             ],
             "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,

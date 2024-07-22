@@ -1,61 +1,58 @@
 {
     "total_count": 75,
+    "md5": "c776c28ee7bb4e7f46fd3bbfbf34c5ff",
     "song": [
         {
-            "id": "54",
-            "title": "Red&GreenSmoke",
-            "name": "Red&GreenSmoke",
+            "id": "115",
+            "title": "Are we going Crazy",
+            "name": "Are we going Crazy",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "27",
+                "name": "Chi.Otic",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Chi.Otic"
             },
             "artists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "27",
+                    "name": "Chi.Otic",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "Chi.Otic"
                 }
             ],
             "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "Colorsmoke EP"
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "19",
+                "name": "Various Artists",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Various Artists"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
+            "track": 7,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
+            "genre": [],
             "playlisttrack": 1,
-            "time": 400,
-            "year": 2007,
-            "format": "mp3",
+            "time": 433,
+            "year": 2012,
+            "format": "wma",
             "stream_format": "mp3",
-            "bitrate": 64000,
-            "stream_bitrate": 64000,
-            "rate": 22050,
+            "bitrate": 32582,
+            "stream_bitrate": 32000,
+            "rate": 44100,
             "mode": "cbr",
-            "mime": "audio\/mpeg",
+            "mime": "audio\/x-ms-wma",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-            "size": 3209468,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
+            "size": 1776580,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
@@ -65,235 +62,242 @@
             "channels": 1,
             "comment": null,
             "license": "",
-            "publisher": "20kbps rec.",
+            "publisher": null,
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -2.88,
-            "replaygain_track_peak": 0.977,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "55",
-            "title": "Red&GreenSmoke",
-            "name": "Red&GreenSmoke",
+            "id": "107",
+            "title": "Arrest Me",
+            "name": "Arrest Me",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "20",
+                "name": "R\/B",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "R\/B"
             },
             "artists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "20",
+                    "name": "R\/B",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "R\/B"
                 }
             ],
             "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "Colorsmoke EP"
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "19",
+                "name": "Various Artists",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Various Artists"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
+            "track": 9,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/09R_b-ArrestMe.m4a",
             "genre": [
                 {
-                    "id": "1",
-                    "name": "Electronic"
+                    "id": "7",
+                    "name": "Punk"
                 }
             ],
             "playlisttrack": 2,
-            "time": 400,
-            "year": 2007,
-            "format": "mp3",
+            "time": 96,
+            "year": 2012,
+            "format": "m4a",
             "stream_format": "mp3",
-            "bitrate": 64000,
-            "stream_bitrate": 64000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
+            "bitrate": 252864,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mp4",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-            "size": 3209886,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=R-B%20-%20Arrest%20Me.mp3",
+            "size": 3091727,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "playcount": 1,
+            "playcount": 0,
             "catalog": 1,
             "composer": null,
             "channels": 2,
             "comment": null,
             "license": "",
-            "publisher": "20kbps rec.",
+            "publisher": null,
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -4.06,
-            "replaygain_track_peak": 1,
+            "replaygain_track_gain": -1.35,
+            "replaygain_track_peak": 0.881,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "56",
-            "title": "Black&BlueSmoke",
-            "name": "Black&BlueSmoke",
+            "id": "118",
+            "title": "As Pure as Possible",
+            "name": "As Pure as Possible",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "36",
+                "name": "Comfort Fit",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Comfort Fit"
             },
             "artists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "36",
+                    "name": "Comfort Fit",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "Comfort Fit"
                 }
             ],
             "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
+                "id": "21",
+                "name": "Forget and Remember",
                 "prefix": null,
-                "basename": "Colorsmoke EP"
+                "basename": "Forget and Remember"
             },
             "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "36",
+                "name": "Comfort Fit",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Comfort Fit"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
+            "track": 9,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/9 - As Pure as Possible.mp3",
             "genre": [
                 {
-                    "id": "1",
-                    "name": "Electronic"
+                    "id": "8",
+                    "name": "Hip-Hop"
                 }
             ],
             "playlisttrack": 3,
-            "time": 500,
-            "year": 2007,
+            "time": 128,
+            "year": 2005,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 64000,
-            "stream_bitrate": 64000,
-            "rate": 22050,
-            "mode": "cbr",
+            "bitrate": 234690,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-            "size": 4010069,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=118&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20As%20Pure%20as%20Possible.mp3",
+            "size": 3789410,
+            "mbid": "7a3d740d-5546-4900-88af-b97b42c3344e",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album",
+            "has_art": false,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 1,
+            "catalog": 4,
             "composer": null,
             "channels": 2,
-            "comment": null,
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-09-comfort_fit-as_pure_as_possible\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
             "license": "",
-            "publisher": "20kbps rec.",
+            "publisher": "Tokyo Dawn Records",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -5.11,
-            "replaygain_track_peak": 1,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "57",
-            "title": "PurpleSmoke",
-            "name": "PurpleSmoke",
+            "id": "85",
+            "title": "Beq Ultra Fat",
+            "name": "Beq Ultra Fat",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "Nofi\/found."
                 }
             ],
             "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
+                "id": "8",
+                "name": "Nofi Devices",
                 "prefix": null,
-                "basename": "Colorsmoke EP"
+                "basename": "Nofi Devices"
             },
             "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Nofi\/found."
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3",
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/04_Beq_Ultra_Fat.mp3",
             "genre": [
                 {
-                    "id": "1",
-                    "name": "Electronic"
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
                 }
             ],
             "playlisttrack": 4,
-            "time": 390,
-            "year": 2007,
+            "time": 413,
+            "year": 0,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 64000,
-            "stream_bitrate": 64000,
-            "rate": 22050,
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.mp3",
-            "size": 3131519,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3",
+            "size": 9935896,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 1,
-            "composer": null,
+            "composer": "Jeffrey Melton",
             "channels": 2,
-            "comment": null,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
             "license": "",
-            "publisher": "20kbps rec.",
+            "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -5.13,
-            "replaygain_track_peak": 1,
+            "replaygain_track_gain": 0.94,
+            "replaygain_track_peak": 0.989,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

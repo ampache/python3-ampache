@@ -1,40 +1,54 @@
 {
     "total_count": 1,
+    "md5": "60fda3b54003017dc64a0c492471bbfe",
     "album": [
         {
-            "id": "7",
-            "name": "Sensorisk Deprivation",
+            "id": "8",
+            "name": "Nofi Devices",
             "prefix": null,
-            "basename": "Sensorisk Deprivation",
+            "basename": "Nofi Devices",
             "artist": {
-                "id": "13",
-                "name": "IOK-1",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "IOK-1"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "13",
-                    "name": "IOK-1",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "IOK-1"
+                    "basename": "Nofi\/found."
                 }
             ],
-            "time": 3428,
-            "year": 2011,
+            "songartists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "time": 4423,
+            "year": 0,
             "tracks": [],
-            "songcount": 4,
+            "songcount": 11,
             "diskcount": 1,
             "type": null,
             "genre": [
                 {
-                    "id": "4",
-                    "name": "Dark Ambient"
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album",
+            "has_art": true,
             "flag": false,
-            "rating": null,
+            "rating": 2,
             "averagerating": null,
             "mbid": null
         }

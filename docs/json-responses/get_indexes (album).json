@@ -1,5 +1,6 @@
 {
     "total_count": 9,
+    "md5": "56b9dbda97055de3f4c18b575499fc5e",
     "album": [
         {
             "id": "12",
@@ -20,6 +21,62 @@
                     "basename": "Various Artists"
                 }
             ],
+            "songartists": [
+                {
+                    "id": "20",
+                    "name": "R\/B",
+                    "prefix": null,
+                    "basename": "R\/B"
+                },
+                {
+                    "id": "21",
+                    "name": "Tip-C (featuring Mike Beers)",
+                    "prefix": null,
+                    "basename": "Tip-C (featuring Mike Beers)"
+                },
+                {
+                    "id": "23",
+                    "name": "Manic Notion",
+                    "prefix": null,
+                    "basename": "Manic Notion"
+                },
+                {
+                    "id": "26",
+                    "name": "Stress Builds Character",
+                    "prefix": null,
+                    "basename": "Stress Builds Character"
+                },
+                {
+                    "id": "27",
+                    "name": "Chi.Otic",
+                    "prefix": null,
+                    "basename": "Chi.Otic"
+                },
+                {
+                    "id": "32",
+                    "name": "Shorty Mac",
+                    "prefix": null,
+                    "basename": "Shorty Mac"
+                },
+                {
+                    "id": "33",
+                    "name": "MxBxCx",
+                    "prefix": null,
+                    "basename": "MxBxCx"
+                },
+                {
+                    "id": "34",
+                    "name": "Comedown Kid",
+                    "prefix": null,
+                    "basename": "Comedown Kid"
+                },
+                {
+                    "id": "35",
+                    "name": "Tip-C",
+                    "prefix": null,
+                    "basename": "Tip-C"
+                }
+            ],
             "time": 1879,
             "year": 2012,
             "tracks": [],
@@ -33,6 +90,7 @@
                 }
             ],
             "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
@@ -57,6 +115,14 @@
                     "basename": "CARN\u00daN"
                 }
             ],
+            "songartists": [
+                {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                }
+            ],
             "time": 3873,
             "year": 1996,
             "tracks": [],
@@ -65,6 +131,7 @@
             "type": null,
             "genre": [],
             "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
@@ -89,6 +156,14 @@
                     "basename": "Synthetic"
                 }
             ],
+            "songartists": [
+                {
+                    "id": "2",
+                    "name": "Synthetic",
+                    "prefix": null,
+                    "basename": "Synthetic"
+                }
+            ],
             "time": 4568,
             "year": 2007,
             "tracks": [],
@@ -102,6 +177,7 @@
                 }
             ],
             "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album",
+            "has_art": true,
             "flag": true,
             "rating": 5,
             "averagerating": 3,
@@ -126,6 +202,14 @@
                     "basename": "Warfare 3.0"
                 }
             ],
+            "songartists": [
+                {
+                    "id": "15",
+                    "name": "Warfare 3.0",
+                    "prefix": null,
+                    "basename": "Warfare 3.0"
+                }
+            ],
             "time": 592,
             "year": 0,
             "tracks": [],
@@ -134,6 +218,7 @@
             "type": null,
             "genre": [],
             "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album",
+            "has_art": true,
             "flag": false,
             "rating": 3,
             "averagerating": null,

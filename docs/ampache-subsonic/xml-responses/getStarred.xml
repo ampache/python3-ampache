@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.3.0">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.0">
   <starred>
     <artist id="100000002" name="Synthetic"/>
     <album id="200000002" parent="100000002" album="Colorsmoke EP" title="Colorsmoke EP" name="Colorsmoke EP" isDir="true" coverArt="al-200000002" songCount="12" created="2021-02-23T04:24:48+00:00" duration="4568" playCount="2" artistId="100000002" artist="Synthetic" year="2007" genre="Electronic" userRating="5" averageRating="3" starred="2021-02-22T05:51:53Z"/>

@@ -1,22 +1,23 @@
 {
     "total_count": 4,
+    "md5": "c943d05f5ae7cc400be71467ecdd9675",
     "song": [
         {
-            "id": "109",
-            "title": "Dance with the Devil",
-            "name": "Dance with the Devil",
+            "id": "108",
+            "title": "I've been down this road before",
+            "name": "I've been down this road before",
             "artist": {
-                "id": "34",
-                "name": "Comedown Kid",
+                "id": "21",
+                "name": "Tip-C (featuring Mike Beers)",
                 "prefix": null,
-                "basename": "Comedown Kid"
+                "basename": "Tip-C (featuring Mike Beers)"
             },
             "artists": [
                 {
-                    "id": "34",
-                    "name": "Comedown Kid",
+                    "id": "21",
+                    "name": "Tip-C (featuring Mike Beers)",
                     "prefix": null,
-                    "basename": "Comedown Kid"
+                    "basename": "Tip-C (featuring Mike Beers)"
                 }
             ],
             "album": {
@@ -33,11 +34,11 @@
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
+            "track": 6,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
             "genre": [],
             "playlisttrack": 1,
-            "time": 116,
+            "time": 252,
             "year": 2012,
             "format": "wma",
             "stream_format": "mp3",
@@ -47,10 +48,11 @@
             "mode": "cbr",
             "mime": "audio\/x-ms-wma",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
-            "size": 483444,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.mp3",
+            "size": 1035322,
             "mbid": null,
             "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
@@ -71,9 +73,79 @@
             "r128_track_gain": null
         },
         {
-            "id": "84",
-            "title": "Vansinne",
-            "name": "Vansinne",
+            "id": "113",
+            "title": "Representin",
+            "name": "Representin",
+            "artist": {
+                "id": "32",
+                "name": "Shorty Mac",
+                "prefix": null,
+                "basename": "Shorty Mac"
+            },
+            "artists": [
+                {
+                    "id": "32",
+                    "name": "Shorty Mac",
+                    "prefix": null,
+                    "basename": "Shorty Mac"
+                }
+            ],
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": null,
+                "basename": "Various Artists"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
+            "genre": [],
+            "playlisttrack": 2,
+            "time": 234,
+            "year": 2012,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 123814,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
+            "size": 3628327,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 2,
+            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+            "license": "",
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": 1.91,
+            "replaygain_track_peak": 0.851,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "82",
+            "title": "Vanvett",
+            "name": "Vanvett",
             "artist": {
                 "id": "13",
                 "name": "IOK-1",
@@ -102,29 +174,30 @@
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/04_-_IOK-1_-_Vansinne.flac",
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/02_-_IOK-1_-_Vanvett.flac",
             "genre": [
                 {
                     "id": "4",
                     "name": "Dark Ambient"
                 }
             ],
-            "playlisttrack": 2,
-            "time": 787,
+            "playlisttrack": 3,
+            "time": 825,
             "year": 2011,
             "format": "flac",
             "stream_format": "mp3",
-            "bitrate": 713176,
+            "bitrate": 371855,
             "stream_bitrate": 32000,
             "rate": 44100,
             "mode": "vbr",
             "mime": "audio\/flac",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&transcode_to=mp3&player=api&name=IOK-1%20-%20Vansinne.mp3",
-            "size": 70182824,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3",
+            "size": 38389422,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&name=art.jpg",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
@@ -139,140 +212,62 @@
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -5.35,
-            "replaygain_track_peak": 0.7,
+            "replaygain_track_gain": -2.57,
+            "replaygain_track_peak": 0.977,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "126",
-            "title": "Don't Show This Message Again",
-            "name": "Don't Show This Message Again",
+            "id": "115",
+            "title": "Are we going Crazy",
+            "name": "Are we going Crazy",
             "artist": {
-                "id": "36",
-                "name": "Comfort Fit",
+                "id": "27",
+                "name": "Chi.Otic",
                 "prefix": null,
-                "basename": "Comfort Fit"
+                "basename": "Chi.Otic"
             },
             "artists": [
                 {
-                    "id": "36",
-                    "name": "Comfort Fit",
+                    "id": "27",
+                    "name": "Chi.Otic",
                     "prefix": null,
-                    "basename": "Comfort Fit"
+                    "basename": "Chi.Otic"
                 }
             ],
             "album": {
-                "id": "21",
-                "name": "Forget and Remember",
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "Forget and Remember"
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "36",
-                "name": "Comfort Fit",
+                "id": "19",
+                "name": "Various Artists",
                 "prefix": null,
-                "basename": "Comfort Fit"
+                "basename": "Various Artists"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 12,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/12 - Don\u2019t Show This Message Again.mp3",
-            "genre": [
-                {
-                    "id": "8",
-                    "name": "Hip-Hop"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 197,
-            "year": 2005,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 232690,
-            "stream_bitrate": 232690,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=126&uid=4&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3",
-            "size": 5755191,
-            "mbid": "6b582438-c034-47c2-86b0-61c63ec96b4b",
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 4,
-            "composer": null,
-            "channels": 2,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-12-comfort_fit-dont_show_this_message_again\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
-            "license": "",
-            "publisher": "Tokyo Dawn Records",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "61",
-            "title": "Red&GreenSmoke",
-            "name": "Red&GreenSmoke",
-            "artist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "artists": [
-                {
-                    "id": "2",
-                    "name": "Synthetic",
-                    "prefix": null,
-                    "basename": "Synthetic"
-                }
-            ],
-            "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
-                "prefix": null,
-                "basename": "Colorsmoke EP"
-            },
-            "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/05-Synthetic_-_RedGreenSmokePM20k44khM.wma",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
+            "track": 7,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
+            "genre": [],
             "playlisttrack": 4,
-            "time": 400,
-            "year": 2007,
+            "time": 433,
+            "year": 2012,
             "format": "wma",
             "stream_format": "mp3",
-            "bitrate": 20627,
+            "bitrate": 32582,
             "stream_bitrate": 32000,
             "rate": 44100,
             "mode": "cbr",
             "mime": "audio\/x-ms-wma",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-            "size": 1044851,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
+            "size": 1776580,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
@@ -280,9 +275,9 @@
             "catalog": 1,
             "composer": null,
             "channels": 1,
-            "comment": "Made with Sony ACID 5",
+            "comment": null,
             "license": "",
-            "publisher": "20kbps rec.",
+            "publisher": null,
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,

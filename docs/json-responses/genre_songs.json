@@ -1,77 +1,83 @@
 {
-    "total_count": 4,
+    "total_count": 11,
+    "md5": "676b67467939d8c86ea3b9a7dcab2396",
     "song": [
         {
-            "id": "81",
-            "title": "Galenskap",
-            "name": "Galenskap",
+            "id": "85",
+            "title": "Beq Ultra Fat",
+            "name": "Beq Ultra Fat",
             "artist": {
-                "id": "13",
-                "name": "IOK-1",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "IOK-1"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "13",
-                    "name": "IOK-1",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "IOK-1"
+                    "basename": "Nofi\/found."
                 }
             ],
             "album": {
-                "id": "7",
-                "name": "Sensorisk Deprivation",
+                "id": "8",
+                "name": "Nofi Devices",
                 "prefix": null,
-                "basename": "Sensorisk Deprivation"
+                "basename": "Nofi Devices"
             },
             "albumartist": {
-                "id": "13",
-                "name": "IOK-1",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "IOK-1"
+                "basename": "Nofi\/found."
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/03_-_IOK-1_-_Galenskap.flac",
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/04_Beq_Ultra_Fat.mp3",
             "genre": [
                 {
-                    "id": "4",
-                    "name": "Dark Ambient"
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
                 }
             ],
             "playlisttrack": 1,
-            "time": 998,
-            "year": 2011,
-            "format": "flac",
+            "time": 413,
+            "year": 0,
+            "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 389683,
+            "bitrate": 192000,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/flac",
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&transcode_to=mp3&player=api&name=IOK-1%20-%20Galenskap.mp3",
-            "size": 48633049,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3",
+            "size": 9935896,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 1,
-            "composer": null,
+            "composer": "Jeffrey Melton",
             "channels": 2,
-            "comment": "DNA Production release\r\nCatalogue # DNA 119",
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
             "license": "",
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -5.33,
-            "replaygain_track_peak": 0.977,
+            "replaygain_track_gain": 0.94,
+            "replaygain_track_peak": 0.989,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

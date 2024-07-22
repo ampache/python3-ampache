@@ -1,8 +1,10 @@
 {
-    "error": {
-        "errorCode": "4704",
-        "errorAction": "bookmark_create",
-        "errorType": "filter",
-        "errorMessage": "Not Found: 33"
-    }
+    "id": "4",
+    "owner": "user",
+    "object_type": "song",
+    "object_id": "103",
+    "position": 0,
+    "client": "python3-ampache",
+    "creation_date": 1670202706,
+    "update_date": 1721613835
 }

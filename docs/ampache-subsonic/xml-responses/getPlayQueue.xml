@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.3.0">
-  <playQueue current="300000060" position="0" username="user" changed="2024-03-10T09:28:51+00:00" changedBy="Ampache">
-    <entry id="300000060" parent="200000002" title="BrownSmoke" isDir="false" isVideo="false" type="music" albumId="200000002" album="Colorsmoke EP" artistId="100000002" artist="Synthetic" coverArt="200000002" duration="304" bitRate="20" userRating="5" track="4" year="2007" genre="Electronic" size="792375" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.mp3" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.0">
+  <playQueue current="300000060" position="0" username="user" changed="2024-07-18T02:57:36+00:00" changedBy="Ampache">
+    <entry id="300000060" parent="200000002" title="BrownSmoke" isDir="false" isVideo="false" type="music" albumId="200000002" album="Colorsmoke EP" artistId="100000002" artist="Synthetic" coverArt="200000002" duration="304" bitRate="20" userRating="5" track="4" year="2007" genre="Electronic" size="792375" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
   </playQueue>
 </subsonic-response>

@@ -1,29 +1,22 @@
 {
-    "total_count": 18,
+    "total_count": 20,
+    "md5": "4359eb6cb9b9c6d3a23f76f46493ba89",
     "playlist": [
         {
-            "id": "2",
-            "name": "random - admin - public (admin)",
-            "owner": "admin",
-            "items": 43,
-            "type": "public",
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=playlist",
-            "has_art": false,
-            "flag": true,
-            "rating": null,
-            "averagerating": null
-        },
-        {
             "id": "smart_21",
-            "name": "admin - 02\/23\/2021 14:36:44 (admin)",
+            "name": "admin - 02\/23\/2021 14:36:44",
             "owner": "admin",
             "items": 1,
             "type": "public",
             "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=search",
+            "has_access": true,
+            "has_collaborate": true,
             "has_art": false,
             "flag": false,
             "rating": null,
-            "averagerating": null
+            "averagerating": null,
+            "md5": null,
+            "last_update": 0
         },
         {
             "id": "smart_14",
@@ -32,10 +25,14 @@
             "items": 2,
             "type": "public",
             "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=search",
+            "has_access": true,
+            "has_collaborate": true,
             "has_art": false,
             "flag": false,
             "rating": null,
-            "averagerating": null
+            "averagerating": null,
+            "md5": null,
+            "last_update": 0
         },
         {
             "id": "smart_13",
@@ -44,10 +41,30 @@
             "items": 11,
             "type": "public",
             "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=search",
+            "has_access": true,
+            "has_collaborate": true,
             "has_art": false,
             "flag": false,
             "rating": null,
-            "averagerating": null
+            "averagerating": null,
+            "md5": null,
+            "last_update": 0
+        },
+        {
+            "id": "smart_12",
+            "name": "Album 3* (System)",
+            "owner": "System",
+            "items": 8,
+            "type": "public",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=search",
+            "has_access": true,
+            "has_collaborate": true,
+            "has_art": false,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "md5": null,
+            "last_update": 0
         }
     ]
 }

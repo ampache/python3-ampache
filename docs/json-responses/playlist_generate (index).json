@@ -1,84 +1,7 @@
 {
     "total_count": 4,
+    "md5": "57682769a038bb7d6023a32faac00e30",
     "song": [
-        {
-            "id": "92",
-            "title": "Stance",
-            "name": "Stance",
-            "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "artists": [
-                {
-                    "id": "14",
-                    "name": "Nofi\/found.",
-                    "prefix": null,
-                    "basename": "Nofi\/found."
-                }
-            ],
-            "album": {
-                "id": "8",
-                "name": "Nofi Devices",
-                "prefix": null,
-                "basename": "Nofi Devices"
-            },
-            "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 8,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/08_Stance.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "playlisttrack": 1,
-            "time": 544,
-            "year": 0,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 192000,
-            "stream_bitrate": 192000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&player=api&name=Nofi-found.%20-%20Stance.mp3",
-            "size": 13078740,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
-            "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
-            "license": "",
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": -2.38,
-            "replaygain_track_peak": 0.989,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
         {
             "id": "59",
             "title": "YellowSmoke",
@@ -119,21 +42,22 @@
                     "name": "Electronic"
                 }
             ],
-            "playlisttrack": 2,
+            "playlisttrack": 1,
             "time": 290,
             "year": 2007,
             "format": "mp3",
             "stream_format": "mp3",
             "bitrate": 64000,
-            "stream_bitrate": 64000,
+            "stream_bitrate": 32000,
             "rate": 22050,
             "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
             "size": 2325568,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.jpg",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
@@ -154,21 +78,171 @@
             "r128_track_gain": null
         },
         {
-            "id": "112",
-            "title": "Personal Truth",
-            "name": "Personal Truth",
+            "id": "78",
+            "title": "inominavel p01",
+            "name": "inominavel p01",
             "artist": {
-                "id": "33",
-                "name": "MxBxCx",
+                "id": "11",
+                "name": "structura",
                 "prefix": null,
-                "basename": "MxBxCx"
+                "basename": "structura"
             },
             "artists": [
                 {
-                    "id": "33",
-                    "name": "MxBxCx",
+                    "id": "11",
+                    "name": "structura",
                     "prefix": null,
-                    "basename": "MxBxCx"
+                    "basename": "structura"
+                }
+            ],
+            "album": {
+                "id": "18",
+                "name": "Inominavel (live.v.01)",
+                "prefix": null,
+                "basename": "Inominavel (live.v.01)"
+            },
+            "albumartist": {
+                "id": "11",
+                "name": "structura",
+                "prefix": null,
+                "basename": "structura"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/01_structura_-_inominavel_p01.mp3",
+            "genre": [
+                {
+                    "id": "3",
+                    "name": "Noise"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 84,
+            "year": 2007,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p01.mp3",
+            "size": 2036632,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 2,
+            "comment": "http:\/\/enoughrecords.scene.org",
+            "license": "",
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": 0,
+            "replaygain_track_peak": 0,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "120",
+            "title": "Freeze the Cut",
+            "name": "Freeze the Cut",
+            "artist": {
+                "id": "36",
+                "name": "Comfort Fit",
+                "prefix": null,
+                "basename": "Comfort Fit"
+            },
+            "artists": [
+                {
+                    "id": "36",
+                    "name": "Comfort Fit",
+                    "prefix": null,
+                    "basename": "Comfort Fit"
+                }
+            ],
+            "album": {
+                "id": "21",
+                "name": "Forget and Remember",
+                "prefix": null,
+                "basename": "Forget and Remember"
+            },
+            "albumartist": {
+                "id": "36",
+                "name": "Comfort Fit",
+                "prefix": null,
+                "basename": "Comfort Fit"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/4 - Freeze The Cut.mp3",
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 168,
+            "year": 2005,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 246979,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=120&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Freeze%20the%20Cut.mp3",
+            "size": 5216305,
+            "mbid": "d927db0b-7d3a-4fba-867c-d140cb19aeb9",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album",
+            "has_art": false,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 4,
+            "composer": null,
+            "channels": 2,
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-04-comfort_fit-freeze_the_cut_feat_blaktroniks\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+            "license": "",
+            "publisher": "Tokyo Dawn Records",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "111",
+            "title": "The art of free expression",
+            "name": "The art of free expression",
+            "artist": {
+                "id": "35",
+                "name": "Tip-C",
+                "prefix": null,
+                "basename": "Tip-C"
+            },
+            "artists": [
+                {
+                    "id": "35",
+                    "name": "Tip-C",
+                    "prefix": null,
+                    "basename": "Tip-C"
                 }
             ],
             "album": {
@@ -185,109 +259,41 @@
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 8,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/08Mxbxcx-PersonalTruth.mp3",
-            "genre": [],
-            "playlisttrack": 3,
-            "time": 208,
-            "year": 2012,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 179860,
-            "stream_bitrate": 179860,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3",
-            "size": 4693165,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": null,
-            "channels": 2,
-            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
-            "license": "",
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": -8.27,
-            "replaygain_track_peak": 0.881,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "102",
-            "title": "Moremque Sinistrum Sacrorum",
-            "name": "Moremque Sinistrum Sacrorum",
-            "artist": {
-                "id": "16",
-                "name": "CARN\u00daN",
-                "prefix": null,
-                "basename": "CARN\u00daN"
-            },
-            "artists": [
-                {
-                    "id": "16",
-                    "name": "CARN\u00daN",
-                    "prefix": null,
-                    "basename": "CARN\u00daN"
-                }
-            ],
-            "album": {
-                "id": "10",
-                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
-                "prefix": null,
-                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
-            },
-            "albumartist": {
-                "id": "16",
-                "name": "CARN\u00daN",
-                "prefix": null,
-                "basename": "CARN\u00daN"
-            },
-            "disk": 1,
-            "disksubtitle": null,
             "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/05MoremqueSinistrumSacrorum.ogg",
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/05Tip-c-TheArtOfFreeExpression.wma",
             "genre": [],
             "playlisttrack": 4,
-            "time": 164,
-            "year": 1996,
-            "format": "ogg",
+            "time": 110,
+            "year": 2012,
+            "format": "wma",
             "stream_format": "mp3",
-            "bitrate": 106647,
+            "bitrate": 32582,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "vbr",
-            "mime": "application\/ogg",
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3",
-            "size": 2202971,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.mp3",
+            "size": 460498,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 1,
             "composer": null,
-            "channels": 2,
-            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+            "channels": 1,
+            "comment": null,
             "license": "",
-            "publisher": "archive.org",
+            "publisher": null,
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -7.48,
-            "replaygain_track_peak": 1,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

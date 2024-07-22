@@ -3,7 +3,7 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.3.0",
+        "serverVersion": "6.6.0",
         "song": {
             "id": "300000060",
             "parent": "200000002",
@@ -25,7 +25,7 @@
             "discNumber": 1,
             "suffix": "wma",
             "contentType": "audio/x-ms-wma",
-            "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.mp3",
+            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
             "transcodedSuffix": "mp3",
             "transcodedContentType": "audio/mpeg"
         }

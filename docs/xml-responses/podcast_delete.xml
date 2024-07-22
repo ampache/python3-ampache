@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[podcast_delete]]></errorAction>
-    <errorType><![CDATA[empty]]></errorType>
-    <errorMessage><![CDATA[3]]></errorMessage>
-  </error>
+  <success code="1">
+    <message><![CDATA[podcast 4 deleted]]></message>
+  </success>
 </root>

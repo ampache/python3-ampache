@@ -1,55 +1,46 @@
 {
     "total_count": 2,
+    "md5": "b058e685538e3a854da78873e4e08b89",
     "artist": [
         {
-            "id": "20",
-            "name": "R\/B",
+            "id": "15",
+            "name": "Warfare 3.0",
             "prefix": null,
-            "basename": "R\/B",
+            "basename": "Warfare 3.0",
+            "albums": [],
+            "albumcount": 1,
+            "songs": [],
+            "songcount": 2,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=15&object_type=artist",
+            "has_art": true,
+            "flag": false,
+            "rating": 3,
+            "averagerating": null,
+            "mbid": null,
+            "summary": null,
+            "time": 592,
+            "yearformed": 0,
+            "placeformed": null
+        },
+        {
+            "id": "33",
+            "name": "MxBxCx",
+            "prefix": null,
+            "basename": "MxBxCx",
             "albums": [],
             "albumcount": 0,
             "songs": [],
             "songcount": 1,
-            "genre": [
-                {
-                    "id": "7",
-                    "name": "Punk"
-                }
-            ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=20&object_type=artist",
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=33&object_type=artist",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "mbid": null,
             "summary": null,
-            "time": 96,
-            "yearformed": 0,
-            "placeformed": null
-        },
-        {
-            "id": "36",
-            "name": "Comfort Fit",
-            "prefix": null,
-            "basename": "Comfort Fit",
-            "albums": [],
-            "albumcount": 1,
-            "songs": [],
-            "songcount": 20,
-            "genre": [
-                {
-                    "id": "8",
-                    "name": "Hip-Hop"
-                }
-            ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=36&object_type=artist",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
-            "summary": "Comfort Fit\u2019s(Boris Mezga) versatile influences range from early detroit techno and minimal electronica to jazz, broken beats and hip-hop. This makes it easy for him to invisibly switch between musical styles within a fingersnap, taking the listener onto long and exciting journies. Wisely using music codes of genres such as hip-hop, dubstep and techno as a mere comic template, Comfort Fit has inspired hip-hop and techno artists around the world with his heavy beat techniques. Besides his numerous remix requests, even major brands have discovered his outstanding production skills and request his music for advertisements regularly. Since 2000 he has ",
-            "time": 4248,
+            "time": 208,
             "yearformed": 0,
             "placeformed": null
         }

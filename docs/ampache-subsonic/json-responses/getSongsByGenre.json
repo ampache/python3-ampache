@@ -3,7 +3,7 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.3.0",
+        "serverVersion": "6.6.0",
         "songsByGenre": {
             "song": [
                 {
@@ -27,7 +27,7 @@
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3"
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3"
                 },
                 {
                     "id": "300000055",
@@ -50,7 +50,7 @@
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3"
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3"
                 },
                 {
                     "id": "300000056",
@@ -73,7 +73,7 @@
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3"
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3"
                 },
                 {
                     "id": "300000057",
@@ -96,7 +96,7 @@
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3"
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3"
                 },
                 {
                     "id": "300000058",
@@ -119,7 +119,7 @@
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3"
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3"
                 },
                 {
                     "id": "300000059",
@@ -142,7 +142,7 @@
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3"
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3"
                 },
                 {
                     "id": "300000060",
@@ -165,7 +165,7 @@
                     "discNumber": 1,
                     "suffix": "wma",
                     "contentType": "audio/x-ms-wma",
-                    "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.mp3",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
                     "transcodedSuffix": "mp3",
                     "transcodedContentType": "audio/mpeg"
                 },
@@ -190,7 +190,7 @@
                     "discNumber": 1,
                     "suffix": "wma",
                     "contentType": "audio/x-ms-wma",
-                    "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k44khM.mp3",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k44khM.wma",
                     "transcodedSuffix": "mp3",
                     "transcodedContentType": "audio/mpeg"
                 },
@@ -215,7 +215,7 @@
                     "discNumber": 1,
                     "suffix": "wma",
                     "contentType": "audio/x-ms-wma",
-                    "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/03-Synthetic_-_PurpleSmokeVMix20k22khS2.mp3",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma",
                     "transcodedSuffix": "mp3",
                     "transcodedContentType": "audio/mpeg"
                 },
@@ -240,7 +240,7 @@
                     "discNumber": 1,
                     "suffix": "wma",
                     "contentType": "audio/x-ms-wma",
-                    "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k22khS.mp3",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k22khS.wma",
                     "transcodedSuffix": "mp3",
                     "transcodedContentType": "audio/mpeg"
                 },
@@ -265,7 +265,7 @@
                     "discNumber": 1,
                     "suffix": "wma",
                     "contentType": "audio/x-ms-wma",
-                    "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.mp3",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
                     "transcodedSuffix": "mp3",
                     "transcodedContentType": "audio/mpeg"
                 },
@@ -290,7 +290,7 @@
                     "discNumber": 1,
                     "suffix": "wma",
                     "contentType": "audio/x-ms-wma",
-                    "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/02-Synthetic_-_YellowSmoke20k22hS.mp3",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/02-Synthetic_-_YellowSmoke20k22hS.wma",
                     "transcodedSuffix": "mp3",
                     "transcodedContentType": "audio/mpeg"
                 }

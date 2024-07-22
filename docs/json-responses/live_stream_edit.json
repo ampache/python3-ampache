@@ -1,13 +1,8 @@
 {
-    "total_count": 1,
-    "live_stream": [
-        {
-            "id": "4",
-            "name": "HBR1.com - Tronic Lounge",
-            "url": "http:\/\/ubuntu.hbr1.com:19800\/tronic.ogg",
-            "codec": "ogg",
-            "catalog": "1",
-            "site_url": "http:\/\/ampache.org"
-        }
-    ]
+    "id": "4",
+    "name": "HBR1.com - Tronic Lounge",
+    "url": "http:\/\/ubuntu.hbr1.com:19800\/tronic.ogg",
+    "codec": "ogg",
+    "catalog": "1",
+    "site_url": "http:\/\/ampache.org"
 }

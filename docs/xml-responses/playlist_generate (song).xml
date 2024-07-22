@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <song id="78">
-    <name><![CDATA[inominavel p01]]></name>
-    <title><![CDATA[inominavel p01]]></title>
+  <md5>baf250a9afbf3e30d6a2751d89489071</md5>
+  <song id="74">
+    <name><![CDATA[inominavel p03]]></name>
+    <title><![CDATA[inominavel p03]]></title>
     <artist id="11">
       <name><![CDATA[structura]]></name>
       <prefix><![CDATA[]]></prefix>
@@ -21,24 +22,24 @@
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>1</track>
+    <track>3</track>
     <genre id="3">
       <name><![CDATA[Noise]]></name>
     </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3]]></filename>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/03_structura_-_inominavel_p03.mp3]]></filename>
     <playlisttrack>1</playlisttrack>
-    <time>84</time>
+    <time>143</time>
     <year>2007</year>
     <format>mp3</format>
     <stream_format>mp3</stream_format>
     <bitrate>192000</bitrate>
-    <stream_bitrate>192000</stream_bitrate>
+    <stream_bitrate>32000</stream_bitrate>
     <rate>44100</rate>
     <mode><![CDATA[cbr]]></mode>
     <mime><![CDATA[audio/mpeg]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78&uid=4&player=api&name=structura%20-%20inominavel%20p01.mp3]]></url>
-    <size>2036632</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=74&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p03.mp3]]></url>
+    <size>3449255</size>
     <mbid><![CDATA[]]></mbid>
     <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&name=art.jpg]]></art>
     <has_art>1</has_art>
@@ -61,66 +62,9 @@
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="97">
-    <name><![CDATA[Creeping Lawler 2]]></name>
-    <title><![CDATA[Creeping Lawler 2]]></title>
-    <artist id="15">
-      <name><![CDATA[Warfare 3.0]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Warfare 3.0]]></basename>
-    </artist>
-    <album id="9">
-      <name><![CDATA[Creeping Lawler 2]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Creeping Lawler 2]]></basename>
-    </album>
-    <albumartist id="15">
-      <name><![CDATA[Warfare 3.0]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Warfare 3.0]]></basename>
-    </albumartist>
-    <disk><![CDATA[1]]></disk>
-    <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>1</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.mp3]]></filename>
-    <playlisttrack>2</playlisttrack>
-    <time>296</time>
-    <year>0</year>
-    <format>mp3</format>
-    <stream_format>mp3</stream_format>
-    <bitrate>177349</bitrate>
-    <stream_bitrate>177349</stream_bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
-    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
-    <size>6652448</size>
-    <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&name=art.jpg]]></art>
-    <has_art>1</has_art>
-    <flag>0</flag>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels>2</channels>
-    <comment><![CDATA[https://archive.org/details/Creeping_Lawler_2]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[archive.org]]></publisher>
-    <language/>
-    <lyrics><![CDATA[]]></lyrics>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain>-4.32</replaygain_track_gain>
-    <replaygain_track_peak>0.977</replaygain_track_peak>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="92">
-    <name><![CDATA[Stance]]></name>
-    <title><![CDATA[Stance]]></title>
+  <song id="94">
+    <name><![CDATA[Strangers Query]]></name>
+    <title><![CDATA[Strangers Query]]></title>
     <artist id="14">
       <name><![CDATA[Nofi/found.]]></name>
       <prefix><![CDATA[]]></prefix>
@@ -138,27 +82,27 @@
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>8</track>
+    <track>7</track>
     <genre id="5">
       <name><![CDATA[Electronica]]></name>
     </genre>
     <genre id="6">
       <name><![CDATA[Dance]]></name>
     </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/08_Stance.mp3]]></filename>
-    <playlisttrack>3</playlisttrack>
-    <time>544</time>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/07_Strangers_Query.mp3]]></filename>
+    <playlisttrack>2</playlisttrack>
+    <time>279</time>
     <year>0</year>
     <format>mp3</format>
     <stream_format>mp3</stream_format>
     <bitrate>192000</bitrate>
-    <stream_bitrate>192000</stream_bitrate>
+    <stream_bitrate>32000</stream_bitrate>
     <rate>44100</rate>
     <mode><![CDATA[cbr]]></mode>
     <mime><![CDATA[audio/mpeg]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&player=api&name=Nofi-found.%20-%20Stance.mp3]]></url>
-    <size>13078740</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=94&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Strangers%20Query.mp3]]></url>
+    <size>6719700</size>
     <mbid><![CDATA[]]></mbid>
     <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
     <has_art>1</has_art>
@@ -176,69 +120,134 @@
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-2.38</replaygain_track_gain>
-    <replaygain_track_peak>0.989</replaygain_track_peak>
+    <replaygain_track_gain>-3.8</replaygain_track_gain>
+    <replaygain_track_peak>0.966</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="83">
-    <name><![CDATA[Sensorisk Deprivation]]></name>
-    <title><![CDATA[Sensorisk Deprivation]]></title>
-    <artist id="13">
-      <name><![CDATA[IOK-1]]></name>
+  <song id="119">
+    <name><![CDATA[Sorry]]></name>
+    <title><![CDATA[Sorry]]></title>
+    <artist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[IOK-1]]></basename>
+      <basename><![CDATA[Comfort Fit]]></basename>
     </artist>
-    <album id="7">
-      <name><![CDATA[Sensorisk Deprivation]]></name>
+    <album id="21">
+      <name><![CDATA[Forget and Remember]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Sensorisk Deprivation]]></basename>
+      <basename><![CDATA[Forget and Remember]]></basename>
     </album>
-    <albumartist id="13">
-      <name><![CDATA[IOK-1]]></name>
+    <albumartist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[IOK-1]]></basename>
+      <basename><![CDATA[Comfort Fit]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>1</track>
-    <genre id="4">
-      <name><![CDATA[Dark Ambient]]></name>
+    <track>3</track>
+    <genre id="8">
+      <name><![CDATA[Hip-Hop]]></name>
     </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/01_-_IOK-1_-_Sensorisk_Deprivation.flac]]></filename>
-    <playlisttrack>4</playlisttrack>
-    <time>818</time>
-    <year>2011</year>
-    <format>flac</format>
+    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/3 - Sorry.mp3]]></filename>
+    <playlisttrack>3</playlisttrack>
+    <time>200</time>
+    <year>2005</year>
+    <format>mp3</format>
     <stream_format>mp3</stream_format>
-    <bitrate>385823</bitrate>
+    <bitrate>239161</bitrate>
     <stream_bitrate>32000</stream_bitrate>
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/flac]]></mime>
+    <mime><![CDATA[audio/mpeg]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=83&uid=4&transcode_to=mp3&player=api&name=IOK-1%20-%20Sensorisk%20Deprivation.mp3]]></url>
-    <size>39473388</size>
-    <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=119&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Sorry.mp3]]></url>
+    <size>6018213</size>
+    <mbid><![CDATA[261964a4-8062-426d-b88e-82c0097ca98c]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating/>
     <averagerating/>
-    <playcount>13</playcount>
-    <catalog>1</catalog>
+    <playcount>0</playcount>
+    <catalog>4</catalog>
     <composer><![CDATA[]]></composer>
     <channels>2</channels>
-    <comment><![CDATA[DNA Production release
-Catalogue # DNA 119]]></comment>
+    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/03_Sorry
+Comments: http://freemusicarchive.org/
+Curator: Creative Commons
+Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[archive.org]]></publisher>
+    <publisher><![CDATA[Tokyo Dawn Records]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>1.11</replaygain_track_gain>
-    <replaygain_track_peak>0.977</replaygain_track_peak>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="133">
+    <name><![CDATA[Kurz Vor Danach Ganz '05]]></name>
+    <title><![CDATA[Kurz Vor Danach Ganz '05]]></title>
+    <artist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Comfort Fit]]></basename>
+    </artist>
+    <album id="21">
+      <name><![CDATA[Forget and Remember]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Forget and Remember]]></basename>
+    </album>
+    <albumartist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Comfort Fit]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <track>13</track>
+    <genre id="8">
+      <name><![CDATA[Hip-Hop]]></name>
+    </genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/13 - Kurz Vor Danach Ganz ‘05.mp3]]></filename>
+    <playlisttrack>4</playlisttrack>
+    <time>247</time>
+    <year>2005</year>
+    <format>mp3</format>
+    <stream_format>mp3</stream_format>
+    <bitrate>230429</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=133&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Kurz%20Vor%20Danach%20Ganz%20-05.mp3]]></url>
+    <size>7136353</size>
+    <mbid><![CDATA[60ca3461-5f2b-4d0d-9cc5-ce79b358de7b]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>4</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels>2</channels>
+    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-13-comfort_fit-kurz_vor_danach_ganz_05
+Comments: http://freemusicarchive.org/
+Curator: WFMU
+Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[Tokyo Dawn Records]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

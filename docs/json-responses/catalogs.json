@@ -1,5 +1,6 @@
 {
     "total_count": 4,
+    "md5": "a05f4e6584696143639b9a0776190ff0",
     "catalog": [
         {
             "id": "1",
@@ -13,6 +14,19 @@
             "path": "\/mnt\/files-music\/ampache-test\/music",
             "rename_pattern": "%T - %t",
             "sort_pattern": "%a\/%A"
+        },
+        {
+            "id": "2",
+            "name": "video",
+            "type": "local",
+            "gather_types": "clip",
+            "enabled": true,
+            "last_add": 1627949054,
+            "last_clean": 1627949144,
+            "last_update": 0,
+            "path": "\/mnt\/files-music\/ampache-test\/video",
+            "rename_pattern": "%a - %t (%y)",
+            "sort_pattern": ""
         },
         {
             "id": "3",
@@ -39,19 +53,6 @@
             "path": "\/mnt\/files-music\/ampache-test\/upload",
             "rename_pattern": "%T - %t",
             "sort_pattern": "%a\/%A"
-        },
-        {
-            "id": "2",
-            "name": "video",
-            "type": "local",
-            "gather_types": "clip",
-            "enabled": true,
-            "last_add": 1627949054,
-            "last_clean": 1627949144,
-            "last_update": 0,
-            "path": "\/mnt\/files-music\/ampache-test\/video",
-            "rename_pattern": "%a - %t (%y)",
-            "sort_pattern": ""
         }
     ]
 }

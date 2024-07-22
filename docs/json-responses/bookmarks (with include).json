@@ -1,538 +1,16 @@
 {
-    "total_count": 10,
+    "total_count": 4,
+    "md5": "a05f4e6584696143639b9a0776190ff0",
     "bookmark": [
         {
             "id": "1",
-            "owner": "user",
-            "object_type": "podcast_episode",
-            "object_id": "2",
-            "position": 0,
-            "client": "AmpacheAPI",
-            "creation_date": 1670202706,
-            "update_date": 1698974919,
-            "podcast_episode": []
-        },
-        {
-            "id": "2",
-            "owner": "user",
-            "object_type": "podcast_episode",
-            "object_id": "2",
-            "position": 0,
-            "client": "AmpacheAPI",
-            "creation_date": 1670202706,
-            "update_date": 1698974919,
-            "podcast_episode": []
-        },
-        {
-            "id": "3",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "115",
-            "position": 0,
-            "client": "client1",
-            "creation_date": 1670202706,
-            "update_date": 1698974919,
-            "song": [
-                {
-                    "id": "115",
-                    "title": "Are we going Crazy",
-                    "name": "Are we going Crazy",
-                    "artist": {
-                        "id": "27",
-                        "name": "Chi.Otic",
-                        "prefix": null,
-                        "basename": "Chi.Otic"
-                    },
-                    "artists": [
-                        {
-                            "id": "27",
-                            "name": "Chi.Otic",
-                            "prefix": null,
-                            "basename": "Chi.Otic"
-                        }
-                    ],
-                    "album": {
-                        "id": "12",
-                        "name": "Buried in Nausea",
-                        "prefix": null,
-                        "basename": "Buried in Nausea"
-                    },
-                    "albumartist": {
-                        "id": "19",
-                        "name": "Various Artists",
-                        "prefix": null,
-                        "basename": "Various Artists"
-                    },
-                    "disk": 1,
-                    "disksubtitle": null,
-                    "track": 7,
-                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
-                    "genre": [],
-                    "playlisttrack": 1,
-                    "time": 433,
-                    "year": 2012,
-                    "format": "wma",
-                    "stream_format": "mp3",
-                    "bitrate": 32582,
-                    "stream_bitrate": 32000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/x-ms-wma",
-                    "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
-                    "size": 1776580,
-                    "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
-                    "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 1,
-                    "composer": null,
-                    "channels": 1,
-                    "comment": null,
-                    "license": "",
-                    "publisher": null,
-                    "language": null,
-                    "lyrics": null,
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": null,
-                    "replaygain_track_peak": null,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ]
-        },
-        {
-            "id": "4",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "64",
-            "position": 10,
-            "client": "client",
-            "creation_date": 1670202706,
-            "update_date": 1698974919,
-            "song": [
-                {
-                    "id": "64",
-                    "title": "Black&BlueSmoke",
-                    "name": "Black&BlueSmoke",
-                    "artist": {
-                        "id": "2",
-                        "name": "Synthetic",
-                        "prefix": null,
-                        "basename": "Synthetic"
-                    },
-                    "artists": [
-                        {
-                            "id": "2",
-                            "name": "Synthetic",
-                            "prefix": null,
-                            "basename": "Synthetic"
-                        }
-                    ],
-                    "album": {
-                        "id": "2",
-                        "name": "Colorsmoke EP",
-                        "prefix": null,
-                        "basename": "Colorsmoke EP"
-                    },
-                    "albumartist": {
-                        "id": "2",
-                        "name": "Synthetic",
-                        "prefix": null,
-                        "basename": "Synthetic"
-                    },
-                    "disk": 1,
-                    "disksubtitle": null,
-                    "track": 1,
-                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
-                    "genre": [
-                        {
-                            "id": "1",
-                            "name": "Electronic"
-                        }
-                    ],
-                    "playlisttrack": 1,
-                    "time": 500,
-                    "year": 2007,
-                    "format": "wma",
-                    "stream_format": "mp3",
-                    "bitrate": 20627,
-                    "stream_bitrate": 32000,
-                    "rate": 22050,
-                    "mode": "cbr",
-                    "mime": "audio\/x-ms-wma",
-                    "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-                    "size": 1298295,
-                    "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                    "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 1,
-                    "composer": null,
-                    "channels": 2,
-                    "comment": "Made with Sony ACID 5",
-                    "license": "",
-                    "publisher": "20kbps rec.",
-                    "language": null,
-                    "lyrics": null,
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": null,
-                    "replaygain_track_peak": null,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ]
-        },
-        {
-            "id": "5",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "115",
-            "position": 0,
-            "client": "client1",
-            "creation_date": 1670202706,
-            "update_date": 1698974919,
-            "song": [
-                {
-                    "id": "115",
-                    "title": "Are we going Crazy",
-                    "name": "Are we going Crazy",
-                    "artist": {
-                        "id": "27",
-                        "name": "Chi.Otic",
-                        "prefix": null,
-                        "basename": "Chi.Otic"
-                    },
-                    "artists": [
-                        {
-                            "id": "27",
-                            "name": "Chi.Otic",
-                            "prefix": null,
-                            "basename": "Chi.Otic"
-                        }
-                    ],
-                    "album": {
-                        "id": "12",
-                        "name": "Buried in Nausea",
-                        "prefix": null,
-                        "basename": "Buried in Nausea"
-                    },
-                    "albumartist": {
-                        "id": "19",
-                        "name": "Various Artists",
-                        "prefix": null,
-                        "basename": "Various Artists"
-                    },
-                    "disk": 1,
-                    "disksubtitle": null,
-                    "track": 7,
-                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
-                    "genre": [],
-                    "playlisttrack": 1,
-                    "time": 433,
-                    "year": 2012,
-                    "format": "wma",
-                    "stream_format": "mp3",
-                    "bitrate": 32582,
-                    "stream_bitrate": 32000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/x-ms-wma",
-                    "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
-                    "size": 1776580,
-                    "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
-                    "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 1,
-                    "composer": null,
-                    "channels": 1,
-                    "comment": null,
-                    "license": "",
-                    "publisher": null,
-                    "language": null,
-                    "lyrics": null,
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": null,
-                    "replaygain_track_peak": null,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ]
-        },
-        {
-            "id": "6",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "64",
-            "position": 10,
-            "client": "client",
-            "creation_date": 1670202706,
-            "update_date": 1698974919,
-            "song": [
-                {
-                    "id": "64",
-                    "title": "Black&BlueSmoke",
-                    "name": "Black&BlueSmoke",
-                    "artist": {
-                        "id": "2",
-                        "name": "Synthetic",
-                        "prefix": null,
-                        "basename": "Synthetic"
-                    },
-                    "artists": [
-                        {
-                            "id": "2",
-                            "name": "Synthetic",
-                            "prefix": null,
-                            "basename": "Synthetic"
-                        }
-                    ],
-                    "album": {
-                        "id": "2",
-                        "name": "Colorsmoke EP",
-                        "prefix": null,
-                        "basename": "Colorsmoke EP"
-                    },
-                    "albumartist": {
-                        "id": "2",
-                        "name": "Synthetic",
-                        "prefix": null,
-                        "basename": "Synthetic"
-                    },
-                    "disk": 1,
-                    "disksubtitle": null,
-                    "track": 1,
-                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
-                    "genre": [
-                        {
-                            "id": "1",
-                            "name": "Electronic"
-                        }
-                    ],
-                    "playlisttrack": 1,
-                    "time": 500,
-                    "year": 2007,
-                    "format": "wma",
-                    "stream_format": "mp3",
-                    "bitrate": 20627,
-                    "stream_bitrate": 32000,
-                    "rate": 22050,
-                    "mode": "cbr",
-                    "mime": "audio\/x-ms-wma",
-                    "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-                    "size": 1298295,
-                    "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                    "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 1,
-                    "composer": null,
-                    "channels": 2,
-                    "comment": "Made with Sony ACID 5",
-                    "license": "",
-                    "publisher": "20kbps rec.",
-                    "language": null,
-                    "lyrics": null,
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": null,
-                    "replaygain_track_peak": null,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ]
-        },
-        {
-            "id": "7",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "115",
-            "position": 0,
-            "client": "client1",
-            "creation_date": 1670202706,
-            "update_date": 1698974919,
-            "song": [
-                {
-                    "id": "115",
-                    "title": "Are we going Crazy",
-                    "name": "Are we going Crazy",
-                    "artist": {
-                        "id": "27",
-                        "name": "Chi.Otic",
-                        "prefix": null,
-                        "basename": "Chi.Otic"
-                    },
-                    "artists": [
-                        {
-                            "id": "27",
-                            "name": "Chi.Otic",
-                            "prefix": null,
-                            "basename": "Chi.Otic"
-                        }
-                    ],
-                    "album": {
-                        "id": "12",
-                        "name": "Buried in Nausea",
-                        "prefix": null,
-                        "basename": "Buried in Nausea"
-                    },
-                    "albumartist": {
-                        "id": "19",
-                        "name": "Various Artists",
-                        "prefix": null,
-                        "basename": "Various Artists"
-                    },
-                    "disk": 1,
-                    "disksubtitle": null,
-                    "track": 7,
-                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
-                    "genre": [],
-                    "playlisttrack": 1,
-                    "time": 433,
-                    "year": 2012,
-                    "format": "wma",
-                    "stream_format": "mp3",
-                    "bitrate": 32582,
-                    "stream_bitrate": 32000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/x-ms-wma",
-                    "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
-                    "size": 1776580,
-                    "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
-                    "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 1,
-                    "composer": null,
-                    "channels": 1,
-                    "comment": null,
-                    "license": "",
-                    "publisher": null,
-                    "language": null,
-                    "lyrics": null,
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": null,
-                    "replaygain_track_peak": null,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ]
-        },
-        {
-            "id": "8",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "64",
-            "position": 10,
-            "client": "client",
-            "creation_date": 1670202706,
-            "update_date": 1698974919,
-            "song": [
-                {
-                    "id": "64",
-                    "title": "Black&BlueSmoke",
-                    "name": "Black&BlueSmoke",
-                    "artist": {
-                        "id": "2",
-                        "name": "Synthetic",
-                        "prefix": null,
-                        "basename": "Synthetic"
-                    },
-                    "artists": [
-                        {
-                            "id": "2",
-                            "name": "Synthetic",
-                            "prefix": null,
-                            "basename": "Synthetic"
-                        }
-                    ],
-                    "album": {
-                        "id": "2",
-                        "name": "Colorsmoke EP",
-                        "prefix": null,
-                        "basename": "Colorsmoke EP"
-                    },
-                    "albumartist": {
-                        "id": "2",
-                        "name": "Synthetic",
-                        "prefix": null,
-                        "basename": "Synthetic"
-                    },
-                    "disk": 1,
-                    "disksubtitle": null,
-                    "track": 1,
-                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
-                    "genre": [
-                        {
-                            "id": "1",
-                            "name": "Electronic"
-                        }
-                    ],
-                    "playlisttrack": 1,
-                    "time": 500,
-                    "year": 2007,
-                    "format": "wma",
-                    "stream_format": "mp3",
-                    "bitrate": 20627,
-                    "stream_bitrate": 32000,
-                    "rate": 22050,
-                    "mode": "cbr",
-                    "mime": "audio\/x-ms-wma",
-                    "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-                    "size": 1298295,
-                    "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                    "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 1,
-                    "composer": null,
-                    "channels": 2,
-                    "comment": "Made with Sony ACID 5",
-                    "license": "",
-                    "publisher": "20kbps rec.",
-                    "language": null,
-                    "lyrics": null,
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": null,
-                    "replaygain_track_peak": null,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ]
-        },
-        {
-            "id": "9",
             "owner": "user",
             "object_type": "song",
             "object_id": "55",
             "position": 0,
             "client": "client1",
             "creation_date": 1670202706,
-            "update_date": 1710226298,
+            "update_date": 1721613833,
             "song": [
                 {
                     "id": "55",
@@ -580,15 +58,16 @@
                     "format": "mp3",
                     "stream_format": "mp3",
                     "bitrate": 64000,
-                    "stream_bitrate": 64000,
+                    "stream_bitrate": 32000,
                     "rate": 22050,
                     "mode": "cbr",
                     "mime": "audio\/mpeg",
                     "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
                     "size": 3209886,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.jpg",
+                    "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
@@ -611,14 +90,14 @@
             ]
         },
         {
-            "id": "10",
+            "id": "2",
             "owner": "user",
             "object_type": "song",
             "object_id": "54",
             "position": 10,
             "client": "client",
             "creation_date": 1670202706,
-            "update_date": 1710226298,
+            "update_date": 1721613833,
             "song": [
                 {
                     "id": "54",
@@ -666,15 +145,16 @@
                     "format": "mp3",
                     "stream_format": "mp3",
                     "bitrate": 64000,
-                    "stream_bitrate": 64000,
+                    "stream_bitrate": 32000,
                     "rate": 22050,
                     "mode": "cbr",
                     "mime": "audio\/mpeg",
                     "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
                     "size": 3209468,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.jpg",
+                    "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
@@ -691,6 +171,170 @@
                     "replaygain_album_peak": null,
                     "replaygain_track_gain": -2.88,
                     "replaygain_track_peak": 0.977,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "owner": "user",
+            "object_type": "song",
+            "object_id": "103",
+            "position": 0,
+            "client": "python3-ampache",
+            "creation_date": 1670202706,
+            "update_date": 1721613833,
+            "song": [
+                {
+                    "id": "103",
+                    "title": "In The Seven Woods (Instrumental Re-Recording)",
+                    "name": "In The Seven Woods (Instrumental Re-Recording)",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "artists": [
+                        {
+                            "id": "16",
+                            "name": "CARN\u00daN",
+                            "prefix": null,
+                            "basename": "CARN\u00daN"
+                        }
+                    ],
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                        "prefix": null,
+                        "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 7,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
+                    "genre": [],
+                    "playlisttrack": 1,
+                    "time": 452,
+                    "year": 1996,
+                    "format": "ogg",
+                    "stream_format": "mp3",
+                    "bitrate": 138338,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
+                    "size": 7826238,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                    "license": "",
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -12.21,
+                    "replaygain_track_peak": 1,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "owner": "user",
+            "object_type": "song",
+            "object_id": "103",
+            "position": 0,
+            "client": "python3-ampache",
+            "creation_date": 1670202706,
+            "update_date": 1721613835,
+            "song": [
+                {
+                    "id": "103",
+                    "title": "In The Seven Woods (Instrumental Re-Recording)",
+                    "name": "In The Seven Woods (Instrumental Re-Recording)",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "artists": [
+                        {
+                            "id": "16",
+                            "name": "CARN\u00daN",
+                            "prefix": null,
+                            "basename": "CARN\u00daN"
+                        }
+                    ],
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                        "prefix": null,
+                        "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 7,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
+                    "genre": [],
+                    "playlisttrack": 1,
+                    "time": 452,
+                    "year": 1996,
+                    "format": "ogg",
+                    "stream_format": "mp3",
+                    "bitrate": 138338,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
+                    "size": 7826238,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                    "license": "",
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -12.21,
+                    "replaygain_track_peak": 1,
                     "r128_album_gain": null,
                     "r128_track_gain": null
                 }

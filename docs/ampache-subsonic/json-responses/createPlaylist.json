@@ -3,7 +3,7 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.3.0",
+        "serverVersion": "6.6.0",
         "playlist": {
             "id": "800000065",
             "name": "testcreate",
@@ -11,8 +11,8 @@
             "public": true,
             "songCount": 1,
             "duration": 304,
-            "created": "2024-03-10T09:28:43+00:00",
-            "changed": "2024-03-10T09:28:43+00:00",
+            "created": "2024-07-18T02:57:24+00:00",
+            "changed": "2024-07-18T02:57:24+00:00",
             "entry": [
                 {
                     "id": "300000060",
@@ -35,7 +35,7 @@
                     "discNumber": 1,
                     "suffix": "wma",
                     "contentType": "audio/x-ms-wma",
-                    "path": "Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.mp3",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
                     "transcodedSuffix": "mp3",
                     "transcodedContentType": "audio/mpeg"
                 }
