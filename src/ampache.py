@@ -553,7 +553,7 @@ class API(object):
             except AttributeError:
                 pass
             try:
-                token = tree.find('auth').text
+                token = tree.find('session_expire').text
                 if token and not self.AMPACHE_URL:
                     self.AMPACHE_URL = ampache_url
                 self.AMPACHE_SESSION = ampache_api
