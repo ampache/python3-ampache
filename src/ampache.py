@@ -37,10 +37,11 @@ class API(object):
 
     def __init__(self):
         self.AMPACHE_API = 'xml'
+        self.AMPACHE_SERVER = ''
         self.AMPACHE_DEBUG = False
-        self.DOCS_PATH = "docs/"
-        self.CONFIG_FILE = "ampache.json"
-        self.CONFIG_PATH = ""
+        self.DOCS_PATH = 'docs/'
+        self.CONFIG_FILE = 'ampache.json'
+        self.CONFIG_PATH = ''
         self.AMPACHE_URL = ''
         self.AMPACHE_SESSION = ''
         self.AMPACHE_USER = ''
@@ -483,6 +484,8 @@ class API(object):
         # json format
         if self.AMPACHE_API == 'json':
             json_data = json.loads(ampache_response.decode('utf-8'))
+            if 'api' in json_data:
+                self.AMPACHE_SERVER = json_data['api']
             if 'auth' in json_data:
                 self.AMPACHE_SESSION = json_data['auth']
                 return json_data['auth']
@@ -494,6 +497,10 @@ class API(object):
                 tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
             except ElementTree.ParseError:
                 return False
+            try:
+                self.AMPACHE_SERVER = tree.find('api').text
+            except AttributeError:
+                pass
             try:
                 token = tree.find('auth').text
             except AttributeError:
@@ -526,6 +533,8 @@ class API(object):
         # json format
         if self.AMPACHE_API == 'json':
             json_data = json.loads(ampache_response.decode('utf-8'))
+            if 'api' in json_data:
+                self.AMPACHE_SERVER = json_data['api']
             if 'session_expire' in json_data:
                 if not self.AMPACHE_URL:
                     self.AMPACHE_URL = ampache_url
@@ -540,8 +549,12 @@ class API(object):
             except ElementTree.ParseError:
                 return False
             try:
-                tree.find('session_expire').text
-                if not self.AMPACHE_URL:
+                self.AMPACHE_SERVER = tree.find('api').text
+            except AttributeError:
+                pass
+            try:
+                token = tree.find('auth').text
+                if token and not self.AMPACHE_URL:
                     self.AMPACHE_URL = ampache_url
                 self.AMPACHE_SESSION = ampache_api
             except AttributeError:
