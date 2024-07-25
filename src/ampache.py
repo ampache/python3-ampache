@@ -242,12 +242,12 @@ class API(object):
                 id_list.append(data['id'])
         else:
             try:
-                if data[0][0][attribute]:
+                if data[attribute]:
                     try:
-                        if data[0][0][attribute]['id']:
-                            id_list.append(data[0][0][attribute]['id'])
+                        if data[attribute]['id']:
+                            id_list.append(data[attribute]['id'])
                     except (KeyError, TypeError):
-                        for data_object in data[0][0][attribute]:
+                        for data_object in data[attribute]:
                             try:
                                 id_list.append(data_object[0]['id'])
                             except (KeyError, TypeError):
@@ -266,24 +266,22 @@ class API(object):
                                     id_list.append(data_object['id'])
                 except (KeyError, TypeError):
                     try:
-                        if data[attribute]:
+                        if data[0][0][attribute]:
                             try:
-                                if data[attribute]['id']:
-                                    id_list.append(data[attribute]['id'])
+                                if data[0][0][attribute]['id']:
+                                    id_list.append(data[0][0][attribute]['id'])
                             except (KeyError, TypeError):
-                                for data_object in data[attribute]:
+                                for data_object in data[0][0][attribute]:
                                     try:
                                         id_list.append(data_object[0]['id'])
                                     except (KeyError, TypeError):
                                         id_list.append(data_object['id'])
+                                    try:
+                                        id_list.append(data[0]['id'])
+                                    except (KeyError, TypeError):
+                                        id_list.append(data['id'])
                     except (KeyError, TypeError):
-                        try:
-                            try:
-                                id_list.append(data[0]['id'])
-                            except (KeyError, TypeError):
-                                id_list.append(data['id'])
-                        except (KeyError, TypeError):
-                            id_list.append(data)
+                        pass
 
         return id_list
 
@@ -316,7 +314,7 @@ class API(object):
                             id_list.append(data_object)
                     except (KeyError, TypeError):
                         id_list.append(data)
-        
+
         return id_list
 
     @staticmethod
@@ -1248,19 +1246,23 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def song(self, filter_id: int):
+    def song(self, filter_id: int, get_lyrics: int = False):
         """ song
             MINIMUM_API_VERSION=380001
 
             returns a single song
 
             INPUTS
-            * filter_id = (integer) $song_id
+            * filter_id  = (integer) $song_id
+            * get_lyrics = (integer) 0,1, if true fetch lyrics or try to find them using plugins //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'song',
                 'auth': self.AMPACHE_SESSION,
-                'filter': filter_id}
+                'filter': filter_id,
+                'get_lyrics': get_lyrics}
+        if not get_lyrics:
+            data.pop('get_lyrics')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'song')
