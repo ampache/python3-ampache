@@ -1246,7 +1246,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def song(self, filter_id: int, get_lyrics: int = False):
+    def song(self, filter_id: int):
         """ song
             MINIMUM_API_VERSION=380001
 
@@ -1259,10 +1259,7 @@ class API(object):
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'song',
                 'auth': self.AMPACHE_SESSION,
-                'filter': filter_id,
-                'get_lyrics': get_lyrics}
-        if not get_lyrics:
-            data.pop('get_lyrics')
+                'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'song')
