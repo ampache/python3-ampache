@@ -2706,7 +2706,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def record_play(self, object_id, user_id, client='python3-ampache'):
+    def record_play(self, object_id, user_id, client='python3-ampache', date=False):
         """ record_play
             MINIMUM_API_VERSION=400001
 
@@ -2717,13 +2717,17 @@ class API(object):
             * object_id   = (integer) $object_id
             * user_id     = (integer) $user_id
             * client      = (string) $agent //optional
+            * date        = (integer) UNIXTIME() //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'record_play',
                 'auth': self.AMPACHE_SESSION,
                 'id': object_id,
                 'user': user_id,
-                'client': client}
+                'client': client,
+                'date': date}
+        if not date:
+            data.pop('date')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'record_play')
