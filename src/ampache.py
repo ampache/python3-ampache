@@ -2675,7 +2675,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def flag(self, object_type, object_id, flagbool):
+    def flag(self, object_type, object_id, flagbool, date=False):
         """ flag
             MINIMUM_API_VERSION=400001
 
@@ -2688,6 +2688,7 @@ class API(object):
             * object_type = (string) 'song'|'album'|'artist'
             * object_id   = (integer) $object_id
             * flagbool    = (boolean|integer) (True,False | 0|1)
+            * date        = (integer) UNIXTIME() //optional
         """
         if bool(flagbool):
             flag_state = 1
@@ -2698,7 +2699,10 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
                 'id': object_id,
-                'flag': flag_state}
+                'flag': flag_state,
+                'date': date}
+        if not date:
+            data.pop('date')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'flag')
@@ -3993,3 +3997,4 @@ class API(object):
         return self.user_edit(username, password, fullname, email,
                               website, state, city, disable, maxbitrate,
                               fullname_public, reset_apikey, reset_streamtoken, clear_stats)
+
