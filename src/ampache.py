@@ -37,10 +37,11 @@ class API(object):
 
     def __init__(self):
         self.AMPACHE_API = 'xml'
+        self.AMPACHE_SERVER = ''
         self.AMPACHE_DEBUG = False
-        self.DOCS_PATH = "docs/"
-        self.CONFIG_FILE = "ampache.json"
-        self.CONFIG_PATH = ""
+        self.DOCS_PATH = 'docs/'
+        self.CONFIG_FILE = 'ampache.json'
+        self.CONFIG_PATH = ''
         self.AMPACHE_URL = ''
         self.AMPACHE_SESSION = ''
         self.AMPACHE_USER = ''
@@ -241,12 +242,12 @@ class API(object):
                 id_list.append(data['id'])
         else:
             try:
-                if data[0][0][attribute]:
+                if data[attribute]:
                     try:
-                        if data[0][0][attribute]['id']:
-                            id_list.append(data[0][0][attribute]['id'])
+                        if data[attribute]['id']:
+                            id_list.append(data[attribute]['id'])
                     except (KeyError, TypeError):
-                        for data_object in data[0][0][attribute]:
+                        for data_object in data[attribute]:
                             try:
                                 id_list.append(data_object[0]['id'])
                             except (KeyError, TypeError):
@@ -265,24 +266,22 @@ class API(object):
                                     id_list.append(data_object['id'])
                 except (KeyError, TypeError):
                     try:
-                        if data[attribute]:
+                        if data[0][0][attribute]:
                             try:
-                                if data[attribute]['id']:
-                                    id_list.append(data[attribute]['id'])
+                                if data[0][0][attribute]['id']:
+                                    id_list.append(data[0][0][attribute]['id'])
                             except (KeyError, TypeError):
-                                for data_object in data[attribute]:
+                                for data_object in data[0][0][attribute]:
                                     try:
                                         id_list.append(data_object[0]['id'])
                                     except (KeyError, TypeError):
                                         id_list.append(data_object['id'])
+                                    try:
+                                        id_list.append(data[0]['id'])
+                                    except (KeyError, TypeError):
+                                        id_list.append(data['id'])
                     except (KeyError, TypeError):
-                        try:
-                            try:
-                                id_list.append(data[0]['id'])
-                            except (KeyError, TypeError):
-                                id_list.append(data['id'])
-                        except (KeyError, TypeError):
-                            id_list.append(data)
+                        pass
 
         return id_list
 
@@ -315,7 +314,7 @@ class API(object):
                             id_list.append(data_object)
                     except (KeyError, TypeError):
                         id_list.append(data)
-        
+
         return id_list
 
     @staticmethod
@@ -483,6 +482,8 @@ class API(object):
         # json format
         if self.AMPACHE_API == 'json':
             json_data = json.loads(ampache_response.decode('utf-8'))
+            if 'api' in json_data:
+                self.AMPACHE_SERVER = json_data['api']
             if 'auth' in json_data:
                 self.AMPACHE_SESSION = json_data['auth']
                 return json_data['auth']
@@ -494,6 +495,10 @@ class API(object):
                 tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
             except ElementTree.ParseError:
                 return False
+            try:
+                self.AMPACHE_SERVER = tree.find('api').text
+            except AttributeError:
+                pass
             try:
                 token = tree.find('auth').text
             except AttributeError:
@@ -526,6 +531,8 @@ class API(object):
         # json format
         if self.AMPACHE_API == 'json':
             json_data = json.loads(ampache_response.decode('utf-8'))
+            if 'api' in json_data:
+                self.AMPACHE_SERVER = json_data['api']
             if 'session_expire' in json_data:
                 if not self.AMPACHE_URL:
                     self.AMPACHE_URL = ampache_url
@@ -540,8 +547,12 @@ class API(object):
             except ElementTree.ParseError:
                 return False
             try:
-                tree.find('session_expire').text
-                if not self.AMPACHE_URL:
+                self.AMPACHE_SERVER = tree.find('api').text
+            except AttributeError:
+                pass
+            try:
+                token = tree.find('session_expire').text
+                if token and not self.AMPACHE_URL:
                     self.AMPACHE_URL = ampache_url
                 self.AMPACHE_SESSION = ampache_api
             except AttributeError:
@@ -1242,7 +1253,8 @@ class API(object):
             returns a single song
 
             INPUTS
-            * filter_id = (integer) $song_id
+            * filter_id  = (integer) $song_id
+            * get_lyrics = (integer) 0,1, if true fetch lyrics or try to find them using plugins //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'song',
@@ -2663,7 +2675,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def flag(self, object_type, object_id, flagbool):
+    def flag(self, object_type, object_id, flagbool, date=False):
         """ flag
             MINIMUM_API_VERSION=400001
 
@@ -2676,6 +2688,7 @@ class API(object):
             * object_type = (string) 'song'|'album'|'artist'
             * object_id   = (integer) $object_id
             * flagbool    = (boolean|integer) (True,False | 0|1)
+            * date        = (integer) UNIXTIME() //optional
         """
         if bool(flagbool):
             flag_state = 1
@@ -2686,7 +2699,10 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
                 'id': object_id,
-                'flag': flag_state}
+                'flag': flag_state,
+                'date': date}
+        if not date:
+            data.pop('date')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'flag')
@@ -2694,7 +2710,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def record_play(self, object_id, user_id, client='python3-ampache'):
+    def record_play(self, object_id, user_id=False, client='python3-ampache', date=False):
         """ record_play
             MINIMUM_API_VERSION=400001
 
@@ -2703,15 +2719,21 @@ class API(object):
 
             INPUTS
             * object_id   = (integer) $object_id
-            * user_id     = (integer) $user_id
+            * user_id     = (integer) $user_id //optional
             * client      = (string) $agent //optional
+            * date        = (integer) UNIXTIME() //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'record_play',
                 'auth': self.AMPACHE_SESSION,
                 'id': object_id,
                 'user': user_id,
-                'client': client}
+                'client': client,
+                'date': date}
+        if not user_id:
+            data.pop('user')
+        if not date:
+            data.pop('date')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'record_play')
@@ -3975,3 +3997,4 @@ class API(object):
         return self.user_edit(username, password, fullname, email,
                               website, state, city, disable, maxbitrate,
                               fullname_public, reset_apikey, reset_streamtoken, clear_stats)
+
