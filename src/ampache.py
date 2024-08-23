@@ -2,7 +2,7 @@
 
 
 """
-Copyright (C)2023 Ampache.org
+Copyright (C)2024 Ampache.org
 --------------------------------------------
 Ampache XML and JSON Api library for python3
 --------------------------------------------
@@ -3998,3 +3998,27 @@ class API(object):
                               website, state, city, disable, maxbitrate,
                               fullname_public, reset_apikey, reset_streamtoken, clear_stats)
 
+    def execute(self, method: str, params=None):
+        if params is None:
+            params = {}
+        match method:
+            case 'handshake':
+                if not "version" in params:
+                    params["version"] = '6.6.0'
+                if not "ampache_url" in params:
+                    params["ampache_url"] = self.AMPACHE_URL
+                if not "ampache_api" in params:
+                    params["ampache_api"] = self.AMPACHE_KEY
+                if not "ampache_user" in params:
+                    params["ampache_user"] = self.AMPACHE_USER
+                if not "timestamp" in params or params["timestamp"] == 0:
+                    return self.handshake(params["ampache_url"], self.encrypt_string(params["ampache_api"], params["ampache_user"]), False,
+                                          False, params["version"])
+                return self.handshake(params["ampache_url"], self.encrypt_password(params["ampache_api"], int(params["timestamp"])), params["ampache_user"],
+                                   int(params["timestamp"]), params["version"])
+            case 'ping':
+                if not "ampache_url" in params:
+                    params["ampache_url"] = self.AMPACHE_URL
+                if not "ampache_api" in params:
+                    params["ampache_api"] = self.AMPACHE_KEY
+                return self.ping(params["ampache_url"], params["ampache_api"])
