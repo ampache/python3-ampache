@@ -37,6 +37,7 @@ class API(object):
 
     def __init__(self):
         self.AMPACHE_API = 'xml'
+        self.AMPACHE_VERSION = '6.6.0'
         self.AMPACHE_SERVER = ''
         self.AMPACHE_DEBUG = False
         self.DOCS_PATH = 'docs/'
@@ -70,6 +71,23 @@ class API(object):
             if self.AMPACHE_DEBUG:
                 print('AMPACHE_API set to ' + myformat)
             self.AMPACHE_API = myformat
+
+    def set_version(self, myversion: str):
+        """ set_version
+
+            Allow forcing a default API version
+
+            api3 = '390001'
+            api4 = '443000'
+            api5 = '5.5.6'
+            api6 = '6.6.0'
+
+            INPUTS
+            * myversion = (string) '6.6.0'|'390001'
+        """
+        if self.AMPACHE_DEBUG:
+            print('AMPACHE_VERSION set to ' + myversion)
+        self.AMPACHE_VERSION = myversion
 
     def set_debug(self, mybool: bool):
         """ set_debug
@@ -597,7 +615,7 @@ class API(object):
                 $username;
                 $key = hash('sha256', 'email');
                 auth = hash('sha256', $username . $key);
-              ) 
+              )
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'goodbye',
@@ -3713,11 +3731,14 @@ class API(object):
                 'type': object_type,
                 'position': position,
                 'client': client,
-                'date': date}
+                'date': date,
+                'include': include}
         if not client:
             data.pop('client')
         if not date:
             data.pop('date')
+        if not include:
+            data.pop('include')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark_edit')
@@ -4004,7 +4025,7 @@ class API(object):
         match method:
             case 'handshake':
                 if not "version" in params:
-                    params["version"] = '6.6.0'
+                    params["version"] = self.AMPACHE_VERSION
                 if not "ampache_url" in params:
                     params["ampache_url"] = self.AMPACHE_URL
                 if not "ampache_api" in params:
