@@ -72,23 +72,6 @@ class API(object):
                 print('AMPACHE_API set to ' + myformat)
             self.AMPACHE_API = myformat
 
-    def set_version(self, myversion: str):
-        """ set_version
-
-            Allow forcing a default API version
-
-            api3 = '390001'
-            api4 = '443000'
-            api5 = '5.5.6'
-            api6 = '6.6.0'
-
-            INPUTS
-            * myversion = (string) '6.6.0'|'390001'
-        """
-        if self.AMPACHE_DEBUG:
-            print('AMPACHE_VERSION set to ' + myversion)
-        self.AMPACHE_VERSION = myversion
-
     def set_debug(self, mybool: bool):
         """ set_debug
 
@@ -114,6 +97,23 @@ class API(object):
         """
         self.DOCS_PATH = path_string
 
+    def set_version(self, myversion: str):
+        """ set_version
+
+            Allow forcing a default API version
+
+            api3 = '390001'
+            api4 = '443000'
+            api5 = '5.5.6'
+            api6 = '6.6.0'
+
+            INPUTS
+            * myversion = (string) '6.6.0'|'390001'
+        """
+        if self.AMPACHE_DEBUG:
+            print('AMPACHE_VERSION set to ' + myversion)
+        self.AMPACHE_VERSION = myversion
+
     def set_user(self, myuser: str):
         """ set_user
 
@@ -122,6 +122,8 @@ class API(object):
             INPUTS
             * myuser = (string) ''
         """
+        if self.AMPACHE_DEBUG:
+            print('AMPACHE_USER set to ' + myuser)
         self.AMPACHE_USER = myuser
 
     def set_key(self, mykey: str):
@@ -132,6 +134,8 @@ class API(object):
             INPUTS
             * mykey = (string) ''
         """
+        if self.AMPACHE_DEBUG:
+            print('AMPACHE_KEY set to ' + mykey)
         self.AMPACHE_KEY = mykey
 
     def set_url(self, myurl: str):
@@ -142,6 +146,8 @@ class API(object):
             INPUTS
             * myurl = (string) ''
         """
+        if self.AMPACHE_DEBUG:
+            print('AMPACHE_URL set to ' + myurl)
         self.AMPACHE_URL = myurl
 
     def set_config_path(self, path: str):
@@ -299,7 +305,19 @@ class API(object):
                                     except (KeyError, TypeError):
                                         id_list.append(data['id'])
                     except (KeyError, TypeError):
-                        pass
+                        try:
+                            if data[0]['id']:
+                                for data_object in data:
+                                    try:
+                                        id_list.append(data_object[0]['id'])
+                                    except (KeyError, TypeError):
+                                        id_list.append(data_object['id'])
+                                    try:
+                                        id_list.append(data[0]['id'])
+                                    except (KeyError, TypeError):
+                                        id_list.append(data['id'])
+                        except (KeyError, TypeError):
+                            pass
 
         return id_list
 
