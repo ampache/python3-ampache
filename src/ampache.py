@@ -2,7 +2,7 @@
 
 
 """
-Copyright (C)2023 Ampache.org
+Copyright (C)2024 Ampache.org
 --------------------------------------------
 Ampache XML and JSON Api library for python3
 --------------------------------------------
@@ -37,6 +37,7 @@ class API(object):
 
     def __init__(self):
         self.AMPACHE_API = 'xml'
+        self.AMPACHE_VERSION = '6.6.0'
         self.AMPACHE_SERVER = ''
         self.AMPACHE_DEBUG = False
         self.DOCS_PATH = 'docs/'
@@ -96,6 +97,23 @@ class API(object):
         """
         self.DOCS_PATH = path_string
 
+    def set_version(self, myversion: str):
+        """ set_version
+
+            Allow forcing a default API version
+
+            api3 = '390001'
+            api4 = '443000'
+            api5 = '5.5.6'
+            api6 = '6.6.0'
+
+            INPUTS
+            * myversion = (string) '6.6.0'|'390001'
+        """
+        if self.AMPACHE_DEBUG:
+            print('AMPACHE_VERSION set to ' + myversion)
+        self.AMPACHE_VERSION = myversion
+
     def set_user(self, myuser: str):
         """ set_user
 
@@ -104,6 +122,8 @@ class API(object):
             INPUTS
             * myuser = (string) ''
         """
+        if self.AMPACHE_DEBUG:
+            print('AMPACHE_USER set to ' + myuser)
         self.AMPACHE_USER = myuser
 
     def set_key(self, mykey: str):
@@ -114,6 +134,8 @@ class API(object):
             INPUTS
             * mykey = (string) ''
         """
+        if self.AMPACHE_DEBUG:
+            print('AMPACHE_KEY set to ' + mykey)
         self.AMPACHE_KEY = mykey
 
     def set_url(self, myurl: str):
@@ -124,6 +146,8 @@ class API(object):
             INPUTS
             * myurl = (string) ''
         """
+        if self.AMPACHE_DEBUG:
+            print('AMPACHE_URL set to ' + myurl)
         self.AMPACHE_URL = myurl
 
     def set_config_path(self, path: str):
@@ -281,7 +305,19 @@ class API(object):
                                     except (KeyError, TypeError):
                                         id_list.append(data['id'])
                     except (KeyError, TypeError):
-                        pass
+                        try:
+                            if data[0]['id']:
+                                for data_object in data:
+                                    try:
+                                        id_list.append(data_object[0]['id'])
+                                    except (KeyError, TypeError):
+                                        id_list.append(data_object['id'])
+                                    try:
+                                        id_list.append(data[0]['id'])
+                                    except (KeyError, TypeError):
+                                        id_list.append(data['id'])
+                        except (KeyError, TypeError):
+                            pass
 
         return id_list
 
@@ -597,7 +633,7 @@ class API(object):
                 $username;
                 $key = hash('sha256', 'email');
                 auth = hash('sha256', $username . $key);
-              ) 
+              )
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'goodbye',
@@ -3713,11 +3749,14 @@ class API(object):
                 'type': object_type,
                 'position': position,
                 'client': client,
-                'date': date}
+                'date': date,
+                'include': include}
         if not client:
             data.pop('client')
         if not date:
             data.pop('date')
+        if not include:
+            data.pop('include')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark_edit')
@@ -3998,3 +4037,27 @@ class API(object):
                               website, state, city, disable, maxbitrate,
                               fullname_public, reset_apikey, reset_streamtoken, clear_stats)
 
+    def execute(self, method: str, params=None):
+        if params is None:
+            params = {}
+        match method:
+            case 'handshake':
+                if not "version" in params:
+                    params["version"] = self.AMPACHE_VERSION
+                if not "ampache_url" in params:
+                    params["ampache_url"] = self.AMPACHE_URL
+                if not "ampache_api" in params:
+                    params["ampache_api"] = self.AMPACHE_KEY
+                if not "ampache_user" in params:
+                    params["ampache_user"] = self.AMPACHE_USER
+                if not "timestamp" in params or params["timestamp"] == 0:
+                    return self.handshake(params["ampache_url"], self.encrypt_string(params["ampache_api"], params["ampache_user"]), False,
+                                          False, params["version"])
+                return self.handshake(params["ampache_url"], self.encrypt_password(params["ampache_api"], int(params["timestamp"])), params["ampache_user"],
+                                   int(params["timestamp"]), params["version"])
+            case 'ping':
+                if not "ampache_url" in params:
+                    params["ampache_url"] = self.AMPACHE_URL
+                if not "ampache_api" in params:
+                    params["ampache_api"] = self.AMPACHE_KEY
+                return self.ping(params["ampache_url"], params["ampache_api"])
