@@ -1290,7 +1290,6 @@ class API(object):
 
             INPUTS
             * filter_id  = (integer) $song_id
-            * get_lyrics = (integer) 0,1, if true fetch lyrics or try to find them using plugins //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'song',
