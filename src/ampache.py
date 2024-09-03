@@ -32,6 +32,8 @@ import urllib.request
 
 from xml.etree import ElementTree
 
+CLIENT_NAME = 'python3-ampache'
+
 
 class API(object):
 
@@ -1493,21 +1495,21 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def playlist_create(self, name, object_type):
+    def playlist_create(self, playlist_name, playlist_type):
         """ playlist_create
             MINIMUM_API_VERSION=380001
 
             This create a new playlist and return it
 
             INPUTS
-            * name        = (string)
-            * object_type = (string)
+            * playlist_name = (string)
+            * playlist_type = (string) public | private
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'playlist_create',
                 'auth': self.AMPACHE_SESSION,
-                'name': name,
-                'type': object_type}
+                'name': playlist_name,
+                'type': playlist_type}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_create')
@@ -2537,7 +2539,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def user(self, username):
+    def user(self, username: str):
         """ user
             MINIMUM_API_VERSION=380001
 
@@ -2557,7 +2559,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def followers(self, username):
+    def followers(self, username: str):
         """ followers
             MINIMUM_API_VERSION=380001
 
@@ -2577,7 +2579,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def following(self, username):
+    def following(self, username: str):
         """ following
             MINIMUM_API_VERSION=380001
 
@@ -2597,7 +2599,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def toggle_follow(self, username):
+    def toggle_follow(self, username: str):
         """ toggle_follow
             MINIMUM_API_VERSION=380001
 
@@ -2639,7 +2641,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def player(self, filter_str, object_type='song', state='play', play_time=0, client='python3-ampache'):
+    def player(self, filter_str, object_type='song', state='play', play_time=0, client=CLIENT_NAME):
         """ player
             MINIMUM_API_VERSION=6.4.0
 
@@ -2745,7 +2747,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def record_play(self, object_id, user_id=False, client='python3-ampache', date=False):
+    def record_play(self, object_id, user_id=False, client=CLIENT_NAME, date=False):
         """ record_play
             MINIMUM_API_VERSION=400001
 
@@ -2778,7 +2780,7 @@ class API(object):
 
     def scrobble(self, title, artist_name, album_name,
                  mbtitle=False, mbartist=False, mbalbum=False, stime=False,
-                 client='python3-ampache'):
+                 client=CLIENT_NAME):
         """ scrobble
             MINIMUM_API_VERSION=400001
 
@@ -2865,7 +2867,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def update_from_tags(self, ampache_type, ampache_id):
+    def update_from_tags(self, object_type, object_id):
         """ update_from_tags
             MINIMUM_API_VERSION=400001
 
@@ -2878,8 +2880,8 @@ class API(object):
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'update_from_tags',
                 'auth': self.AMPACHE_SESSION,
-                'type': ampache_type,
-                'id': ampache_id}
+                'type': object_type,
+                'id': object_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'update_from_tags')
@@ -2887,7 +2889,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def update_art(self, ampache_type, ampache_id, overwrite=False):
+    def update_art(self, object_type, object_id, overwrite=False):
         """ update_art
             MINIMUM_API_VERSION=400001
 
@@ -2906,8 +2908,8 @@ class API(object):
             overwrite = 0
         data = {'action': 'update_art',
                 'auth': self.AMPACHE_SESSION,
-                'type': ampache_type,
-                'id': ampache_id,
+                'type': object_type,
+                'id': object_id,
                 'overwrite': overwrite}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
@@ -2916,7 +2918,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def update_artist_info(self, object_id):
+    def update_artist_info(self, filter_id):
         """ update_artist_info
             MINIMUM_API_VERSION=400001
 
@@ -2924,12 +2926,12 @@ class API(object):
             Make sure lastfm_api_key is set in your configuration file
 
             INPUTS
-            * object_id   = (integer) $artist_id
+            * filter_id   = (integer) $artist_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'update_artist_info',
                 'auth': self.AMPACHE_SESSION,
-                'id': object_id}
+                'id': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'update_artist_info')
@@ -3125,7 +3127,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def user_delete(self, username):
+    def user_delete(self, username: str):
         """ user_delete
             MINIMUM_API_VERSION=400001
 
@@ -3693,7 +3695,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def bookmark_create(self, filter_id, object_type,
-                        position: int = 0, client: str = 'python3-ampache', date=False, include=False):
+                        position: int = 0, client: str = CLIENT_NAME, date=False, include=False):
         """ bookmark_create
             MINIMUM_API_VERSION=5.0.0
 
@@ -3727,7 +3729,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def bookmark_edit(self, filter_id, object_type,
-                      position: int = 0, client: str = 'python3-ampache', date=False, include=False):
+                      position: int = 0, client: str = CLIENT_NAME, date=False, include=False):
         """ bookmark_edit
             MINIMUM_API_VERSION=5.0.0
 
@@ -4050,13 +4052,811 @@ class API(object):
                 if not "ampache_user" in params:
                     params["ampache_user"] = self.AMPACHE_USER
                 if not "timestamp" in params or params["timestamp"] == 0:
-                    return self.handshake(params["ampache_url"], self.encrypt_string(params["ampache_api"], params["ampache_user"]), False,
-                                          False, params["version"])
-                return self.handshake(params["ampache_url"], self.encrypt_password(params["ampache_api"], int(params["timestamp"])), params["ampache_user"],
-                                   int(params["timestamp"]), params["version"])
+                    return self.handshake(params["ampache_url"],
+                                          self.encrypt_string(params["ampache_api"], params["ampache_user"]),
+                                          False, False, params["version"])
+                return self.handshake(params["ampache_url"],
+                                      self.encrypt_password(params["ampache_api"], int(params["timestamp"])),
+                                      params["ampache_user"], int(params["timestamp"]), params["version"])
+            case 'goodbye':
+                return self.goodbye()
+            case 'lost_password':
+                return self.lost_password()
             case 'ping':
                 if not "ampache_url" in params:
                     params["ampache_url"] = self.AMPACHE_URL
                 if not "ampache_api" in params:
                     params["ampache_api"] = self.AMPACHE_KEY
                 return self.ping(params["ampache_url"], params["ampache_api"])
+            case 'advanced_search':
+                if not "rules" in params:
+                    params["rules"] = list()
+                if not "operator" in params:
+                    params["operator"] = 'and'
+                if not "object_type" in params:
+                    params["object_type"] = 'song'
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "random" in params:
+                    params["random"] = 0
+                return self.advanced_search(params["rules"], params["operator"], params["object_type"],
+                                            params["offset"], params["limit"], params["random"])
+            case 'search':
+                if not "rules" in params:
+                    params["rules"] = list()
+                if not "operator" in params:
+                    params["operator"] = 'and'
+                if not "object_type" in params:
+                    params["object_type"] = 'song'
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "random" in params:
+                    params["random"] = 0
+                return self.search(params["rules"], params["operator"], params["object_type"], params["offset"],
+                                   params["limit"], params["random"])
+            case 'search_group':
+                if not "rules" in params:
+                    params["rules"] = list()
+                if not "operator" in params:
+                    params["operator"] = 'and'
+                if not "object_type" in params:
+                    params["object_type"] = 'all'
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "random" in params:
+                    params["random"] = 0
+                return self.search_group(params["filter_id"], params["operator"], params["object_type"],
+                                         params["offset"], params["limit"], params["random"])
+            case 'album':
+                if not "include" in params:
+                    params["include"] = False
+                return self.album(params["filter_id"], params["include"])
+            case 'albums':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "add" in params:
+                    params["add"] = False
+                if not "update" in params:
+                    params["update"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "include" in params:
+                    params["include"] = False
+                return self.albums(params["filter_str"], params["include"], params["add"], params["update"],
+                                   params["offset"], params["limit"], params["include"])
+            case 'album_songs':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "exact" in params:
+                    params["exact"] = False
+                return self.album_songs(params["filter_id"], params["offset"], params["limit"], params["exact"])
+            case 'artist':
+                if not "include" in params:
+                    params["include"] = False
+                return self.artist(params["filter_id"], params["include"])
+            case 'artist_albums':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "album_artist" in params:
+                    params["album_artist"] = False
+                return self.artist_albums(params["filter_id"], params["offset"], params["limit"],
+                                          params["album_artist"])
+            case 'artists':
+                if not "add" in params:
+                    params["add"] = False
+                if not "update" in params:
+                    params["update"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "include" in params:
+                    params["include"] = False
+                if not "album_artist" in params:
+                    params["album_artist"] = False
+                return self.artists(params["filter_str"], params["add"], params["update"], params["offset"],
+                                    params["limit"], params["include"], params["album_artist"])
+            case 'artist_songs':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.artist_songs(params["filter_id"], params["offset"], params["limit"])
+            case 'bookmark':
+                if not "include" in params:
+                    params["include"] = False
+                return self.bookmark(params["filter_id"], params["include"])
+            case 'bookmark_create':
+                if not "position" in params:
+                    params["position"] = 0
+                if not "client" in params:
+                    params["client"] = CLIENT_NAME
+                if not "date" in params:
+                    params["date"] = False
+                if not "include" in params:
+                    params["include"] = False
+                return self.bookmark_create(params["filter_id"], params["object_type"], params["position"],
+                                            params["client"], params["date"], params["include"])
+            case 'bookmark_delete':
+                return self.bookmark_delete(params["filter_id"], params["object_type"])
+            case 'bookmark_edit':
+                if not "position" in params:
+                    params["position"] = 0
+                if not "client" in params:
+                    params["client"] = CLIENT_NAME
+                if not "date" in params:
+                    params["date"] = False
+                if not "include" in params:
+                    params["include"] = False
+                return self.bookmark_edit(params["filter_id"], params["object_type"], params["position"],
+                                          params["client"], params["date"], params["include"])
+            case 'bookmarks':
+                return self.bookmarks(params["client"], params["include"])
+            case 'browse':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "object_type" in params:
+                    params["object_type"] = False
+                if not "catalog" in params:
+                    params["catalog"] = False
+                if not "add" in params:
+                    params["add"] = False
+                if not "update" in params:
+                    params["update"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.browse(params["filter_str"], params["object_type"], params["catalog"], params["add"],
+                                   params["update"], params["offset"], params["limit"])
+            case 'catalog':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.catalog(params["filter_id"], params["offset"], params["limit"])
+            case 'catalog_action':
+                return self.catalog_action(params["task"], params["catalog_id"])
+            case 'catalog_add':
+                if not "cat_type" in params:
+                    params["cat_type"] = False
+                if not "media_type" in params:
+                    params["media_type"] = False
+                if not "file_pattern" in params:
+                    params["file_pattern"] = False
+                if not "folder_pattern" in params:
+                    params["folder_pattern"] = False
+                if not "username" in params:
+                    params["username"] = False
+                if not "password" in params:
+                    params["password"] = False
+                return self.catalog_add(params["cat_name"], params["cat_path"], params["cat_type"],
+                                        params["media_type"], params["file_pattern"], params["folder_pattern"],
+                                        params["username"], params["password"])
+            case 'catalog_delete':
+                return self.catalog_delete(params["filter_id"])
+            case 'catalog_file':
+                return self.catalog_file(params["file"], params["task"], params["catalog_id"])
+            case 'catalog_folder':
+                return self.catalog_folder(params["folder"], params["task"], params["catalog_id"])
+            case 'catalogs':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.catalogs(params["filter_str"], params["offset"], params["limit"])
+            case 'deleted_podcast_episodes':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.deleted_podcast_episodes(params["offset"], params["limit"])
+            case 'deleted_songs':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.deleted_songs(params["offset"], params["limit"])
+            case 'deleted_videos':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.deleted_videos(params["offset"], params["limit"])
+            case 'democratic':
+                return self.democratic(params["method"], params["oid"])
+            case 'download':
+                if not "transcode" in params:
+                    params["transcode"] = 'raw'
+                if not "bitrate" in params:
+                    params["bitrate"] = False
+                return self.download(params["object_id"], params["object_type"], params["destination"])
+            case 'flag':
+                if not "date" in params:
+                    params["date"] = False
+                return self.flag(params["object_type"], params["object_id"], params["flagbool"], params["date"])
+            case 'followers':
+                return self.followers(params["username"])
+            case 'following':
+                return self.following(params["username"])
+            case 'friends_timeline':
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "since" in params:
+                    params["since"] = 0
+                return self.friends_timeline(params["limit"], params["since"])
+            case 'genre':
+                return self.genre(params["filter_id"])
+            case 'genre_albums':
+                return self.genre_albums(params["filter_id"])
+            case 'genre_artists':
+                return self.genre_artists(params["username"])
+            case 'genres':
+                return self.genres(params["username"])
+            case 'genre_songs':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.genre_songs(params["filter_id"], params["offset"], params["limit"])
+            case 'get_art':
+                return self.get_art(params["object_id"], params["object_type"], params["destination"])
+            case 'get_bookmark':
+                if not "include" in params:
+                    params["include"] = False
+                if not "show_all" in params:
+                    params["show_all"] = False
+                return self.get_bookmark(params["filter_id"], params["object_type"], params["include"],
+                                         params["show_all"])
+            case 'get_indexes':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "add" in params:
+                    params["add"] = False
+                if not "update" in params:
+                    params["update"] = False
+                if not "include" in params:
+                    params["include"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.get_indexes(params["object_type"], params["filter_str"], params["exact"], params["add"],
+                                        params["update"], params["include"], params["offset"], params["limit"])
+            case 'get_similar':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.get_similar(params["object_type"], params["filter_id"], params["offset"], params["limit"])
+            case 'index':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "add" in params:
+                    params["add"] = False
+                if not "update" in params:
+                    params["update"] = False
+                if not "include" in params:
+                    params["include"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "hide_search" in params:
+                    params["hide_search"] = False
+                return self.index(params["object_type"], params["filter_str"], params["exact"], params["add"],
+                                  params["update"], params["include"], params["offset"], params["limit"],
+                                  params["hide_search"])
+            case 'label':
+                return self.label(params["filter_id"])
+            case 'label_artists':
+                return self.label_artists(params["filter_id"])
+            case 'labels':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.labels(params["filter_str"], params["exact"], params["offset"], params["limit"])
+            case 'last_shouts':
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.last_shouts(params["username"], params["limit"])
+            case 'license':
+                return self.license(params["filter_id"])
+            case 'licenses':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "add" in params:
+                    params["add"] = False
+                if not "update" in params:
+                    params["update"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.licenses(params["filter_str"], params["exact"], params["add"], params["update"],
+                                     params["offset"], params["limit"])
+            case 'license_songs':
+                return self.license_songs(params["filter_id"])
+            case 'list':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "add" in params:
+                    params["add"] = False
+                if not "update" in params:
+                    params["update"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.list(params["object_type"], params["filter_str"], params["exact"], params["add"],
+                                 params["update"], params["offset"], params["limit"])
+            case 'live_stream':
+                return self.live_stream(params["filter_id"])
+            case 'live_stream_create':
+                if not "site_url" in params:
+                    params["site_url"] = ''
+                return self.live_stream_create(params["name"], params["stream_url"], params["codec"],
+                                               params["catalog_id"], params["site_url"])
+            case 'live_stream_delete':
+                return self.live_stream_delete(params["filter_id"])
+            case 'live_stream_edit':
+                if not "name" in params:
+                    params["name"] = ''
+                if not "stream_url" in params:
+                    params["stream_url"] = ''
+                if not "codec" in params:
+                    params["codec"] = ''
+                if not "catalog_id" in params:
+                    params["catalog_id"] = 0
+                if not "site_url" in params:
+                    params["site_url"] = ''
+                return self.live_stream_edit(params["filter_id"], params["name"], params["stream_url"],
+                                             params["codec"], params["catalog_id"], params["site_url"])
+            case 'live_streams':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.live_streams(params["filter_str"], params["exact"], params["offset"], params["limit"])
+            case 'localplay':
+                if not "oid" in params:
+                    params["oid"] = False
+                if not "otype" in params:
+                    params["otype"] = False
+                if not "clear" in params:
+                    params["clear"] = False
+                return self.localplay(params["command"])
+            case 'localplay_songs':
+                return self.localplay_songs()
+            case 'now_playing':
+                return self.now_playing()
+            case 'player':
+                if not "object_type" in params:
+                    params["object_type"] = 'song'
+                if not "state" in params:
+                    params["state"] = 'play'
+                if not "play_time" in params:
+                    params["play_time"] = 0
+                if not "client" in params:
+                    params["client"] = CLIENT_NAME
+                return self.player(params["filter_str"], params["object_type"], params["state"],
+                                   params["play_time"], params["client"])
+            case 'playlist':
+                return self.playlist(params["filter_id"])
+            case 'playlist_add':
+                return self.playlist_add(params["filter_id"], params["object_id"], params["object_type"])
+            case 'playlist_add_song':
+                if not "check" in params:
+                    params["check"] = False
+                return self.playlist_add_song(params["filter_id"], params["song_id"], params["check"])
+            case 'playlist_create':
+                return self.playlist_create(params["playlist_name"], params["playlist_type"])
+            case 'playlist_delete':
+                return self.playlist_delete(params["filter_id"])
+            case 'playlist_edit':
+                if not "playlist_name" in params:
+                    params["playlist_name"] = False
+                if not "playlist_type" in params:
+                    params["playlist_type"] = False
+                return self.playlist_edit(params["filter_id"], params["playlist_name"], params["playlist_type"])
+            case 'playlist_generate':
+                if not "mode" in params:
+                    params["mode"] = 'random'
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "album_id" in params:
+                    params["album_id"] = False
+                if not "artist_id" in params:
+                    params["artist_id"] = False
+                if not "flagged" in params:
+                    params["flagged"] = False
+                if not "list_format" in params:
+                    params["list_format"] = 'song'
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.playlist_generate(params["mode"], params["filter_str"], params["album_id"],
+                                              params["artist_id"], params["flagged"], params["list_format"],
+                                              params["offset"], params["limit"])
+            case 'playlist_hash':
+                return self.playlist_hash(params["filter_id"])
+            case 'playlist_remove_song':
+                if not "song_id" in params:
+                    params["song_id"] = False
+                if not "track" in params:
+                    params["track"] = False
+                return self.playlist_remove_song(params["filter_id"])
+            case 'playlists':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "hide_search" in params:
+                    params["hide_search"] = False
+                if not "show_dupes" in params:
+                    params["show_dupes"] = False
+                if not "include" in params:
+                    params["include"] = False
+                return self.playlists(params["filter_str"], params["exact"], params["offset"], params["limit"],
+                                      params["hide_search"], params["show_dupes"], params["include"])
+            case 'playlist_songs':
+                if not "random" in params:
+                    params["random"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.playlist_songs(params["filter_id"], params["random"], params["offset"], params["limit"])
+            case 'podcast':
+                if not "include" in params:
+                    params["include"] = False
+                return self.podcast(params["filter_id"], params["include"])
+            case 'podcast_create':
+                return self.podcast_create(params["url"], params["catalog_id"])
+            case 'podcast_delete':
+                return self.podcast_delete(params["filter_id"])
+            case 'podcast_edit':
+                if not "feed" in params:
+                    params["feed"] = False
+                if not "title" in params:
+                    params["title"] = False
+                if not "website" in params:
+                    params["website"] = False
+                if not "description" in params:
+                    params["description"] = False
+                if not "generator" in params:
+                    params["generator"] = False
+                if not "copyright_str" in params:
+                    params["copyright_str"] = False
+                return self.podcast_edit(params["filter_id"], params["feed"], params["title"], params["website"],
+                                         params["description"], params["generator"], params["copyright_str"])
+            case 'podcast_episode':
+                return self.podcast_episode(params["filter_id"])
+            case 'podcast_episode_delete':
+                return self.podcast_episode_delete(params["filter_id"])
+            case 'podcast_episodes':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.podcast_episodes(params["filter_id"], params["offset"], params["limit"])
+            case 'podcasts':
+                if not "exact" in params:
+                    params["exact"] = 0
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.podcasts(params["filter_id"], params["exact"], params["offset"], params["limit"])
+            case 'preference_create':
+                if not "description" in params:
+                    params["description"] = False
+                if not "subcategory" in params:
+                    params["subcategory"] = False
+                if not "level" in params:
+                    params["level"] = 100
+                return self.preference_create(params["filter_str"], params["type_str"], params["category"],
+                                              params["description"], params["subcategory"], params["level"])
+            case 'preference_delete':
+                return self.preference_delete(params["filter_str"])
+            case 'preference_edit':
+                if not "apply_all" in params:
+                    params["apply_all"] = 0
+                return self.preference_edit(params["filter_str"], params["value"], params["apply_all"])
+            case 'rate':
+                return self.rate(params["object_type"], params["object_id"], params["rating"])
+            case 'record_play':
+                if not "user_id" in params:
+                    params["user_id"] = False
+                if not "client" in params:
+                    params["client"] = CLIENT_NAME
+                if not "date" in params:
+                    params["date"] = False
+                return self.record_play(params["object_id"], params["user_id"], params["client"], params["date"])
+            case 'register':
+                return self.register(params["username"], params["fullname"], params["password"], params["email"])
+            case 'scrobble':
+                if not "mbtitle" in params:
+                    params["mbtitle"] = False
+                if not "mbartist" in params:
+                    params["mbartist"] = False
+                if not "mbalbum" in params:
+                    params["mbalbum"] = False
+                if not "stime" in params:
+                    params["stime"] = False
+                if not "client" in params:
+                    params["client"] = CLIENT_NAME
+                return self.scrobble(params["title"], params["artist_name"], params["album_name"],
+                                     params["mbtitle"], params["mbartist"], params["mbalbum"],
+                                     params["stime"], params["client"])
+            case 'search_songs':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.search_songs(params["filter_str"], params["offset"], params["limit"])
+            case 'share':
+                return self.share(params["filter_id"])
+            case 'share_create':
+                if not "description" in params:
+                    params["description"] = False
+                if not "expires" in params:
+                    params["expires"] = False
+                return self.share_create(params["filter_id"], params["object_type"],
+                                         params["description"], params["expires"])
+            case 'share_delete':
+                return self.share_delete(params["filter_id"])
+            case 'share_edit':
+                if not "can_stream" in params:
+                    params["can_stream"] = False
+                if not "can_download" in params:
+                    params["can_download"] = False
+                if not "expires" in params:
+                    params["expires"] = False
+                if not "description" in params:
+                    params["description"] = False
+                return self.share_edit(params["filter_id"], params["can_stream"], params["can_download"],
+                                       params["expires"], params["description"])
+            case 'shares':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.shares(params["filter_str"], params["exact"], params["offset"], params["limit"])
+            case 'song':
+                return self.song(params["filter_id"])
+            case 'song_delete':
+                return self.song_delete(params["filter_id"])
+            case 'songs':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "add" in params:
+                    params["add"] = False
+                if not "update" in params:
+                    params["update"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.songs(params["filter_str"], params["exact"], params["add"], params["update"],
+                                  params["offset"], params["limit"])
+            case 'stats':
+                if not "filter_str" in params:
+                    params["filter_str"] = 'random'
+                if not "username" in params:
+                    params["username"] = False
+                if not "user_id" in params:
+                    params["user_id"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.stats(params["object_type"], params["filter_str"], params["username"],
+                                  params["user_id"], params["offset"], params["limit"])
+            case 'stream':
+                return self.stream(params["object_id"], params["object_type"], params["destination"])
+            case 'system_preference':
+                return self.system_preference(params["filter_str"])
+            case 'system_preferences':
+                return self.system_preferences()
+            case 'system_update':
+                return self.system_update()
+            case 'tag':
+                return self.tag(params["filter_id"])
+            case 'tag_albums':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.tag_albums(params["filter_id"], params["offset"], params["limit"])
+            case 'tag_artists':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.tag_artists(params["filter_id"], params["offset"], params["limit"])
+            case 'tags':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.tags(params["filter_str"], params["exact"], params["offset"], params["limit"])
+            case 'tag_songs':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.tag_songs(params["filter_id"], params["offset"], params["limit"])
+            case 'timeline':
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "since" in params:
+                    params["since"] = 0
+                return self.timeline(params["username"], params["limit"], params["since"])
+            case 'toggle_follow':
+                return self.toggle_follow(params["username"])
+            case 'update_art':
+                if not "overwrite" in params:
+                    params["overwrite"] = False
+                return self.update_art(params["object_type"], params["object_id"], params["overwrite"])
+            case 'update_artist_info':
+                return self.update_artist_info(params["filter_id"])
+            case 'update_from_tags':
+                return self.update_from_tags(params["object_type"], params["object_id"], )
+            case 'update_podcast':
+                return self.update_podcast(params["filter_id"])
+            case 'url_to_song':
+                return self.url_to_song(params["url"])
+            case 'user':
+                return self.user(params["username"])
+            case 'user_create':
+                if not "fullname" in params:
+                    params["fullname"] = False
+                if not "disable" in params:
+                    params["disable"] = False
+                return self.user_create(params["username"], params["password"], params["email"],
+                                        params["fullname"], params["disable"])
+            case 'user_delete':
+                return self.user_delete(params["username"])
+            case 'user_edit':
+                if not "password" in params:
+                    params["password"] = False
+                if not "fullname" in params:
+                    params["fullname"] = False
+                if not "email" in params:
+                    params["email"] = False
+                if not "website" in params:
+                    params["website"] = False
+                if not "state" in params:
+                    params["state"] = False
+                if not "city" in params:
+                    params["city"] = False
+                if not "disable" in params:
+                    params["disable"] = False
+                if not "maxbitrate" in params:
+                    params["maxbitrate"] = False
+                if not "fullname_public" in params:
+                    params["fullname_public"] = False
+                if not "reset_apikey" in params:
+                    params["reset_apikey"] = False
+                if not "reset_streamtoken" in params:
+                    params["reset_streamtoken"] = False
+                if not "clear_stats" in params:
+                    params["clear_stats"] = False
+                return self.user_edit(params["username"], params["password"], params["fullname"], params["email"],
+                                      params["website"], params["state"], params["city"], params["disable"],
+                                      params["maxbitrate"], params["fullname_public"], params["reset_apikey"],
+                                      params["reset_streamtoken"], params["clear_stats"])
+            case 'user_playlists':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.user_playlists(params["filter_str"], params["exact"], params["offset"], params["limit"])
+            case 'user_preference':
+                return self.user_preference(params["filter_str"])
+            case 'user_preferences':
+                return self.user_preferences()
+            case 'users':
+                return self.users()
+            case 'user_smartlists':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.user_smartlists(params["filter_str"], params["exact"], params["offset"], params["limit"])
+            case 'user_update':
+                if not "password" in params:
+                    params["password"] = False
+                if not "fullname" in params:
+                    params["fullname"] = False
+                if not "email" in params:
+                    params["email"] = False
+                if not "website" in params:
+                    params["website"] = False
+                if not "state" in params:
+                    params["state"] = False
+                if not "city" in params:
+                    params["city"] = False
+                if not "disable" in params:
+                    params["disable"] = False
+                if not "maxbitrate" in params:
+                    params["maxbitrate"] = False
+                if not "fullname_public" in params:
+                    params["fullname_public"] = False
+                if not "reset_apikey" in params:
+                    params["reset_apikey"] = False
+                if not "reset_streamtoken" in params:
+                    params["reset_streamtoken"] = False
+                if not "clear_stats" in params:
+                    params["clear_stats"] = False
+                return self.user_update(params["username"], params["password"], params["fullname"], params["email"],
+                                        params["website"], params["state"], params["city"], params["disable"],
+                                        params["maxbitrate"], params["fullname_public"], params["reset_apikey"],
+                                        params["reset_streamtoken"], params["clear_stats"])
+            case 'video':
+                return self.video(params["filter_id"])
+            case 'videos':
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.videos(params["filter_str"], params["exact"], params["offset"], params["limit"])
