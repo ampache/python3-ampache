@@ -4066,7 +4066,7 @@ class API(object):
                 if not "ampache_url" in params:
                     params["ampache_url"] = self.AMPACHE_URL
                 if not "ampache_api" in params:
-                    params["ampache_api"] = self.AMPACHE_KEY
+                    params["ampache_api"] = self.AMPACHE_SESSION
                 return self.ping(params["ampache_url"], params["ampache_api"])
             case 'advanced_search':
                 if not "rules" in params:
