@@ -32,22 +32,22 @@ Once you connect with your passphrase or api key, the url and auth token are sto
     import time
 
     # connect to the server
-    ampacheConnection = ampache.API()
+    ampache_connection = ampache.API()
 
     # if using password auth use encrypt_password
     mytime = int(time.time())
-    passphrase = ampacheConnection.encrypt_password('mypassword', mytime)
-    auth = ampacheConnection.handshake('https://music.com.au', passphrase, 'my username', mytime)
+    passphrase = ampache_connection.encrypt_password('mypassword', mytime)
+    auth = ampache_connection.handshake('https://music.com.au', passphrase, 'my username', mytime)
 
     # if using an API key auth keep using encrypt_string
-    passphrase = ampacheConnection.encrypt_string('my apikey', 'my username')
-    auth = ampacheConnection.handshake('https://music.com.au', passphrase)
+    passphrase = ampache_connection.encrypt_string('my apikey', 'my username')
+    auth = ampache_connection.handshake('https://music.com.au', passphrase)
 
     # now you can call methods without having to keep putting in the url and userkey
-    ampacheConnection.label(1677)
+    ampache_connection.label(1677)
     
     # ping has always allowed empty calls so you have to ping with a url and session still
-    ampacheConnection.ping('https://music.com.au', auth)
+    ampache_connection.ping('https://music.com.au', auth)
 
 NEWS
 ====
@@ -104,24 +104,54 @@ Here is a short code sample for python using version 5.x.x+ to scrobble a track 
 
 .. code-block:: python3
 
-    import time
     import ampache
+    import sys
+    import time
 
-    # user variables
-    ampache_url = 'https://music.server'
-    my_api_key = 'mysuperapikey'
-    user = 'myusername'
+    # Open Ampache library
+    ampache_connection = ampache.API()
 
-    # processed details
-    ampacheConnection = ampache.API()
-    encrypted_key = ampacheConnection.encrypt_string(my_api_key, user)
-    ampache_session = ampacheConnection.handshake(ampache_url, encrypted_key)
+    # load up previous config
+    if not ampache_connection.get_config():
+        # user variables
+        api_version = '6.6.1'
+        ampache_url = 'https://music.server'
+        ampache_api_key = 'mysuperapikey'
+        ampache_user = 'myusername'
 
-    if ampache_session:
-        # Scrobble a music track to your ampache server
-        Process(target=ampacheConnection.scrobble,
-                args=('Beneath The Cold Clay', 'Crust', '...and a Dirge Becomes an Anthem',
-                      '', '', '', int(time.time()))).start()
+        # Set your details
+        ampache_connection.set_version(api_version)
+        ampache_connection.set_url(ampache_url)
+        ampache_connection.set_key(ampache_api_key)
+        ampache_connection.set_user(ampache_user)
+
+    # Get a session key using the handshake
+    #
+    # * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+    # * ampache_api = (string) encrypted apikey OR password if using password auth
+    # * user        = (string) username //optional
+    # * timestamp   = (integer) UNIXTIME() //optional
+    # * version     = (string) API Version //optional
+    ampache_session = ampache_connection.execute('handshake')
+
+    # Fail if you didn't connect
+    if not ampache_session:
+        sys.exit(ampache_connection.AMPACHE_VERSION + ' ERROR Failed to connect to ' + ampache_connection.AMPACHE_URL)
+
+    # save your successful connection in your local config
+    ampache_connection.save_config()
+
+    # Scrobble a music track to your ampache server
+    #
+    # * title       = (string) song title
+    # * artist_name = (string) artist name
+    # * album_name  = (string) album name
+    # * mbtitle     = (string) song mbid //optional
+    # * mbartist    = (string) artist mbid //optional
+    # * mbalbum     = (string) album mbid //optional
+    # * stime       = (integer) UNIXTIME() //optional
+    # * client      = (string) //optional
+    ampache_connection.execute('scrobble', {'title': 'Beneath The Cold Clay', 'artist_name': 'Crust', 'album_name': '...and a Dirge Becomes an Anthem', 'stime': int(time.time())})
 
 LINKS
 =====
