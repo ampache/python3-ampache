@@ -4159,6 +4159,8 @@ class API(object):
                 return self.artist_albums(params["filter_id"], params["offset"], params["limit"],
                                           params["album_artist"])
             case 'artists':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
                 if not "add" in params:
                     params["add"] = False
                 if not "update" in params:
