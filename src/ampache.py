@@ -626,7 +626,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def lost_password(self):
+    def lost_password(self, auth):
         """ lost_password
             MINIMUM_API_VERSION=6.1.0
 
@@ -641,8 +641,8 @@ class API(object):
               )
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'goodbye',
-                'auth': self.AMPACHE_SESSION}
+        data = {'action': 'lost_password',
+                'auth': auth}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'goodbye')
@@ -4064,7 +4064,9 @@ class API(object):
             case 'goodbye':
                 return self.goodbye()
             case 'lost_password':
-                return self.lost_password()
+                if "user" in params and "email" in params:
+                    params["auth"] = self.encrypt_string(params["email"], params["user"])
+                return self.lost_password(params["auth"])
             case 'ping':
                 if not "ampache_url" in params:
                     params["ampache_url"] = self.AMPACHE_URL
