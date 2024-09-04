@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import ampache
-import configparser
 import os
 import playsound
 import sys
@@ -13,11 +12,10 @@ VERSION = "0.0.2"
 OS = os.name
 if OS == 'nt':
     SLASH = '\\'
-    CONFIG = './ampyche.conf'
+    CONFIG = 'ampyche.json'
 elif OS == 'posix':
-    from xdg.BaseDirectory import xdg_config_dirs
     SLASH = '/'
-    CONFIG = xdg_config_dirs[0] + '/ampyche.conf'
+    CONFIG = 'ampyche.json'
 
 # troublesome unicode characters
 REPLACE = ('%', "#", ';', '"', '<', '>', '?', '[', '\\', "]", '^', '`', '{',
@@ -31,26 +29,6 @@ REPLACE = ('%', "#", ';', '"', '<', '>', '?', '[', '\\', "]", '^', '`', '{',
            'á', 'â', 'ã', 'ä', 'å', 'æ', 'ç', 'è', 'é', 'ê', 'ë', 'ì', 'í',
            'î', 'ï', 'ð', 'ñ', 'ò', 'ó', 'ô', 'õ', 'ö', '÷', 'ø', 'ù', 'ú',
            'û', 'ü', 'ý', 'þ', 'ÿ', '¦', ':', '*', '<<', '...')
-
-
-def check_config():
-    """ create a default config if not available """
-    if not os.path.isdir(os.path.dirname(CONFIG)):
-        os.makedirs(os.path.dirname(CONFIG))
-    if not os.path.isfile(CONFIG):
-        print("This is the first time you're running amPYche.\nEnter your user and site details.\n")
-        ampache_url = input("Enter Ampache URL:")
-        username = input("Enter Username:")
-        apikey = input("Enter apikey:")
-        conffile = open(CONFIG, "w")
-        conffile.write("[conf]\nampache_url = " + ampache_url +
-                       "\nampache_user = " + username +
-                       "\nampache_apikey = " + apikey +
-                       "\nampache_session = None" +
-                       "\napi_format = xml")
-        conffile.close()
-    return
-
 
 # Process names and replace any undesired characters
 def process(string):
@@ -67,8 +45,6 @@ def process(string):
 def show_help():
     """ show the help and current config """
     if os.path.isfile(CONFIG):
-        conf = configparser.RawConfigParser()
-        conf.read(CONFIG)
         print("\n##################\n"
               "# amPYche v" + VERSION + " #\n"
               "##################\n"
@@ -76,7 +52,7 @@ def show_help():
               "\n  Possible Actions:\n"
               "\n    /u:%CUSTOM_USER%\t(Custom username for the current action)"
               "\n    /k:%CUSTOM_APIKEY%\t(Custom apikey for the current action)"
-              "\n    /a:%ACTION% \t(ping, playlists, localplay, stream, download, configure, logout, showconfig)"
+              "\n    /a:%ACTION% \t(ping, playlists, localplay, stream, download list, configure, logout, showconfig)"
               "\n    /l:%LIMIT%  \t(integer)"
               "\n    /o:%OBJECT_ID%  \t(string)"
               "\n    /t:%OBJECT_TYPE%  \t(song, playlist)"
@@ -86,12 +62,15 @@ def show_help():
               "\n    /c:%COMMAND%\t(localplay command)"
               "\n       (next, prev, stop, play, pause, add, volume_up,"
               "\n        volume_down, volume_mute, delete_all, skip, status)\n")
-        print("URL:     " + conf.get('conf', 'ampache_url'))
-        print("USER:    " + conf.get('conf', 'ampache_user'))
-        print("API_KEY: " + conf.get('conf', 'ampache_apikey'))
-        print("SESSION: " + conf.get('conf', 'ampache_session'))
-        print("FORMAT:  " + conf.get('conf', 'api_format'))
-        print()
+        ampache_connection = ampache.API()
+        ampache_connection.CONFIG_FILE = CONFIG
+        if ampache_connection.get_config():
+            print("URL:     " + ampache_connection.AMPACHE_URL)
+            print("USER:    " + ampache_connection.AMPACHE_USER)
+            print("API_KEY: " + ampache_connection.AMPACHE_KEY)
+            print("SESSION: " + ampache_connection.AMPACHE_SESSION)
+            print("FORMAT:  " + ampache_connection.AMPACHE_API)
+            print()
     return
 
 
@@ -139,30 +118,23 @@ class AMPYCHE(object):
         print("\n##################\n"
               "# amPYche v" + VERSION + " #\n"
               "##################\n")
-        check_config()
-        self.conf = configparser.RawConfigParser()
-        self.conf.read(CONFIG)
-        self.ampache_url = self.conf.get('conf', 'ampache_url')
-        self.ampache_user = self.conf.get('conf', 'ampache_user')
-        self.ampache_apikey = self.conf.get('conf', 'ampache_apikey')
-        self.ampache_session = self.conf.get('conf', 'ampache_session')
-        self.api_format = self.conf.get('conf', 'api_format')
-        self.ampacheConnection = ampache.API()
-        self.ampacheConnection.set_format(self.api_format)
+        self.check_config()
+        self.ampache_connection = ampache.API()
+        self.ampache_connection.CONFIG_FILE = CONFIG
+        self.ampache_connection.get_config()
+        self.ampache_connection.set_format(self.ampache_connection.AMPACHE_API)
 
         # ping the last session to see if active
-        my_ping = self.ampacheConnection.ping(self.ampache_url, self.ampache_session)
-        if not my_ping:
-            self.handshake()
-        if not my_ping:
-            print('CONNECTION ERROR')
+        self.handshake()
+        if not self.ampache_connection.AMPACHE_SESSION:
+            print('CONNECTION ERROR ' + self.ampache_connection.AMPACHE_URL)
             return
 
         # workaround for bugs
-        if not self.ampacheConnection.AMPACHE_URL:
-            self.ampacheConnection.AMPACHE_URL = self.ampache_url
-        if not self.ampacheConnection.AMPACHE_SESSION:
-            self.ampacheConnection.AMPACHE_SESSION = self.ampache_session
+        if not self.ampache_connection.AMPACHE_URL:
+            self.ampache_connection.AMPACHE_URL = self.ampache_connection.AMPACHE_URL
+        if not self.ampache_connection.AMPACHE_SESSION:
+            self.ampache_connection.AMPACHE_SESSION = self.ampache_connection.AMPACHE_SESSION
 
         # get your lists
         self.list_songs = list()
@@ -170,8 +142,8 @@ class AMPYCHE(object):
             if TYPE == 'playlist':
                 self.playlist_songs(OID)
             if TYPE == 'song':
-                song = self.ampacheConnection.song(OID)
-                if self.api_format == 'xml':
+                song = self.ampache_connection.song(OID)
+                if self.ampache_connection.AMPACHE_API == 'xml':
                     for child in song:
                         if child.tag == 'song':
                             self.list_songs.append(child.attrib['id'])
@@ -180,17 +152,17 @@ class AMPYCHE(object):
                         self.list_songs.append(child['id'])
         # run your action
         if ACTION == 'ping':
-            print("\nSESSION: " + self.ampacheConnection.ping(self.ampache_url, self.ampache_session))
+            print("\nSESSION: " + self.ampache_connection.ping(self.ampache_connection.AMPACHE_URL, self.ampache_connection.AMPACHE_SESSION))
         elif ACTION == 'configure':
             self.saveconf()
         elif ACTION == 'logout':
             self.quit()
         elif ACTION == 'showconfig':
-            print("\nURL:     " + self.conf.get('conf', 'ampache_url'))
-            print("USER:    " + self.conf.get('conf', 'ampache_user'))
-            print("API_KEY: " + self.conf.get('conf', 'ampache_apikey'))
-            print("SESSION: " + self.conf.get('conf', 'ampache_session'))
-            print("FORMAT:  " + self.conf.get('conf', 'api_format') + "\n")
+            print("URL:     " + self.ampache_connection.AMPACHE_URL)
+            print("USER:    " + self.ampache_connection.AMPACHE_USER)
+            print("API_KEY: " + self.ampache_connection.AMPACHE_KEY)
+            print("SESSION: " + self.ampache_connection.AMPACHE_SESSION)
+            print("FORMAT:  " + self.ampache_connection.AMPACHE_API + "\n")
         elif ACTION == 'playlists':
             self.playlists()
         elif ACTION == 'localplay':
@@ -201,7 +173,7 @@ class AMPYCHE(object):
                 result = self.localplay(COMMAND)
                 if result:
                     for lines in result:
-                        if self.api_format == 'xml':
+                        if self.ampache_connection.AMPACHE_API == 'xml':
                             print(lines[0] + ": " + lines[1])
                         else:
                             print(str(lines) + ": " + str(result[lines]))
@@ -215,66 +187,76 @@ class AMPYCHE(object):
             for song_id in self.list_songs:
                 if song_id:
                     self.stream(song_id, TRANSCODE)
+        elif ACTION == 'list' and OID and type:
+            print('playlist has the following song')
+            for song_id in self.list_songs:
+                print(song_id)
+        return
+
+    def check_config(self):
+        """ create a default config if not available """
+        if not os.path.dirname(CONFIG) == '' and not os.path.isdir(os.path.dirname(CONFIG)):
+            os.makedirs(os.path.dirname(CONFIG))
+        if not os.path.isfile(CONFIG):
+            print("This is the first time you're running amPYche.\nEnter your user and site details.\n")
+            ampache_url = input("Enter Ampache URL:")
+            username = input("Enter Username:")
+            apikey = input("Enter apikey:")
+            self.ampache_connection.AMPACHE_URL = ampache_url
+            self.ampache_connection.AMPACHE_USER = username
+            self.ampache_connection.AMPACHE_KEY = apikey
+            self.ampache_connection.AMPACHE_SESSION = ''
+            self.ampache_connection.AMPACHE_API = 'xml'
+            self.ampache_connection.save_config()
         return
 
     def saveconf(self):
         """ save any config changes or press enter to keep the current value """
-        self.conf.read(CONFIG)
-        ampache_url = input("\nAmpache URL [" + self.ampache_url + "]\nEnter: ")
-        ampache_user = input("\nUsername [" + self.ampache_user + "]\nEnter: ")
-        ampache_apikey = input("\nAPIKey [" + self.ampache_apikey + "]\nEnter: ")
-        api_format = input("\nAPI Format (json/xml) [" + self.api_format + "]\nEnter: ")
+        ampache_url = input("\nAmpache URL [" + self.ampache_connection.AMPACHE_URL + "]\nEnter: ")
+        ampache_user = input("\nUsername [" + self.ampache_connection.AMPACHE_USER + "]\nEnter: ")
+        ampache_apikey = input("\nAPIKey [" + self.ampache_connection.AMPACHE_KEY + "]\nEnter: ")
+        api_format = input("\nAPI Format (json/xml) [" + self.ampache_connection.AMPACHE_API + "]\nEnter: ")
         if ampache_url:
-            self.conf.set('conf', 'ampache_url', ampache_url)
+            self.ampache_connection.AMPACHE_URL = ampache_url
         if ampache_user:
-            self.conf.set('conf', 'ampache_user', ampache_user)
+            self.ampache_connection.AMPACHE_USER = ampache_user
         if ampache_apikey:
-            self.conf.set('conf', 'ampache_apikey', ampache_apikey)
+            self.ampache_connection.AMPACHE_KEY = ampache_apikey
         if api_format:
-            self.conf.set('conf', 'api_format', api_format.lower())
+            self.ampache_connection.AMPACHE_API = api_format.lower()
 
         # write to conf file
-        conffile = open(CONFIG, "w")
-        self.conf.write(conffile)
-        conffile.close()
+        self.ampache_connection.save_config()
         return
 
     def handshake(self):
         """ Log into Ampache """
-        encrypted_key = self.ampacheConnection.encrypt_string(self.ampache_apikey, self.ampache_user)
+        if not self.ampache_connection.execute('ping'):
+            self.ampache_connection.execute('handshake')
 
-        # handshake
-        self.ampache_session = self.ampacheConnection.handshake(self.ampache_url, encrypted_key, '', 0, '6.0.0')
-        # if you didn't get a sessoin there's nothing you can do
-        if not self.ampache_session:
+        # if you didn't get a session there's nothing you can do
+        if not self.ampache_connection.AMPACHE_SESSION:
             print()
-            sys.exit('ERROR: Failed to connect to ' + self.ampache_url)
+            sys.exit('ERROR: Failed to connect to ' + self.ampache_connection.AMPACHE_URL)
 
         # did all this work?
-        my_ping = self.ampacheConnection.ping(self.ampache_url, self.ampache_session)
-        if not my_ping:
+        if not self.ampache_connection.execute('ping'):
             print()
-            sys.exit('ERROR: Failed to ping ' + self.ampache_url)
-
-        # save the last session key so you don't have to keep shaking each run
-        self.conf.read(CONFIG)
-        self.conf.set('conf', 'ampache_session', self.ampache_session)
+            sys.exit('ERROR: Failed to ping ' + self.ampache_connection.AMPACHE_URL)
 
         # write to conf file
-        conffile = open(CONFIG, "w")
-        self.conf.write(conffile)
-        conffile.close()
+        self.ampache_connection.save_config()
 
     def quit(self):
         """ delete your session and close the program"""
-        return self.ampacheConnection.goodbye(self.ampache_url, self.ampache_session)
+        return self.ampache_connection.goodbye()
 
     def playlists(self):
         """ print a list of playlists """
         print("\nChecking for playlists\n")
-        playlists = self.ampacheConnection.playlists(False, False, 0, LIMIT)
+        playlists = self.ampache_connection.execute('playlists')
         if playlists:
-            if self.api_format == 'xml':
+            if self.ampache_connection.AMPACHE_API == 'xml':
                 for child in playlists:
                     if child.tag == 'playlist':
                         print("\t" + child.attrib['id'] + ":\t" + child.find('name').text)
@@ -284,25 +266,19 @@ class AMPYCHE(object):
 
     def playlist_songs(self, playlist_id):
         """ collect all the songs in chosen playlist into self.list_songs """
-        playlist = self.ampacheConnection.playlist_songs(playlist_id, 0, LIMIT)
+        playlist = self.ampache_connection.playlist_songs(playlist_id, 0, LIMIT)
         print("\nChecking for songs in playlist " + str(playlist_id) + " with a limit of " + str(LIMIT) + "\n")
-        if self.api_format == 'xml':
-            for child in playlist:
-                if child.tag == 'song':
-                    self.list_songs.append(child.attrib['id'])
-        else:
-            for child in playlist:
-                self.list_songs.append(child['id'])
+        self.list_songs = self.ampache_connection.get_id_list(playlist, 'song')
 
     def localplay(self, action, object_id='', object_type='', clear=0):
         """ Perform a localplay command/action """
-        command = self.ampacheConnection.localplay(action, object_id, object_type, clear)
+        command = self.ampache_connection.localplay(action, int(object_id), object_type, clear)
 
         result = False
         statuslist = list()
         # if your command processed you will have a response
         if command:
-            if self.api_format == 'xml':
+            if self.ampache_connection.AMPACHE_API == 'xml':
                 for child in command:
                     if action == 'status':
                         for status in child[0][0]:
@@ -321,8 +297,7 @@ class AMPYCHE(object):
             # All commands except status have a single response which isn't that exciting
             if object_id:
                 print(action + " to localplay: " + str(object_id))
-                self.ampacheConnection.localplay('play', False, False, False,
-                                  self.api_format)
+                self.ampache_connection.localplay('play', False, False, False)
             else:
                 print("\n" + action + " sent to localplay\n")
         else:
@@ -339,61 +314,61 @@ class AMPYCHE(object):
         """ Download the requested track This could be extended or changed to support lists"""
         # look for various Artists
         object_id = song_id
-        search_song = self.ampacheConnection.song(object_id)
+        search_song = self.ampache_connection.song(object_id)
         list_songs = list()
         # get your song details into a list
         for child in search_song:
-            if self.api_format == 'xml':
+            if self.ampache_connection.AMPACHE_API == 'xml':
                 if child.tag == 'song':
                     if transcode != 'raw':
                         # transcoded files have a different extension to the original
-                        list_songs.append([child.attrib['id'],
-                                           process(child.find('albumartist').text),
-                                           process(child.find('album').text),
+                        list_songs.append([object_id,
+                                           process((child.find('albumartist')).find('name').text),
+                                           process((child.find('album')).find('name').text),
                                            process(os.path.basename(os.path.splitext(child.find('filename').text)[0] + '.' + transcode))])
                     else:
-                        list_songs.append([child.attrib['id'],
-                                           process(child.find('albumartist').text),
-                                           process(child.find('album').text),
+                        list_songs.append([object_id,
+                                           process((child.find('albumartist')).find('name').text),
+                                           process((child.find('album')).find('name').text),
                                            process(os.path.basename(child.find('filename').text))])
             else:
                 if transcode != 'raw':
                     # transcoded files have a different extension to the original
-                    list_songs.append([child['id'],
+                    list_songs.append([object_id,
                                        process(child['albumartist']['name']),
                                        process(child['album']['name']),
                                        process(os.path.basename(os.path.splitext(child['filename'])[0] + '.' + transcode))])
                 else:
-                    list_songs.append([child['id'],
+                    list_songs.append([object_id,
                                        process(child['albumartist']['name']),
                                        process(child['album']['name']),
                                        process(os.path.basename(child['filename']))])
         # now you have the details you can construct a file destination
-        for object_id in list_songs:
+        for song in list_songs:
             if NUMERIC:
                 # e.g. E:\7\Elliott Smith - 108 - Last Call.mp3
-                output = os.path.join(destination, (object_id[0][-1]), object_id[1] + " - " + object_id[3])
+                output = os.path.join(destination, (song[0][-1]), song[1] + " - " + song[3])
             else:
                 # e.g. E:\Elliott Smith\An Introduction to Elliott Smith\108 - Last Call.mp3
-                output = os.path.join(destination, object_id[1], object_id[2], object_id[3])
+                output = os.path.join(destination, song[1], song[2], song[3])
             if not os.path.isfile(output):
                 # download this file if it's not already there
-                print('OUTPUT: ' + output)
-                self.ampacheConnection.download(object_id[0],
+                print('OUTPUT: ', output)
+                self.ampache_connection.download(song[0],
                                  'song', output, transcode)
             else:
                 # skip existing files
-                print('**EXISTS**: ' + output)
+                print('**EXISTS**: ', output)
 
     def stream(self, song_id, transcode='raw'):
         """ Download the requested track This could be extended or changed to support lists"""
         # look for various Artists
         object_id = song_id
-        search_song = self.ampacheConnection.song(object_id)
+        search_song = self.ampache_connection.song(object_id)
         list_songs = list()
         # get your song details into a list
         for child in search_song:
-            if self.api_format == 'xml':
+            if self.ampache_connection.AMPACHE_API == 'xml':
                 if child.tag == 'song':
                     if transcode != 'raw':
                         # transcoded files have a different extension to the original
@@ -415,5 +390,4 @@ class AMPYCHE(object):
 
 
 if __name__ == "__main__":
-    check_config()
     AMPYCHE()
