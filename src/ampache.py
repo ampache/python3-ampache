@@ -4054,13 +4054,13 @@ class API(object):
                     params["ampache_api"] = self.AMPACHE_KEY
                 if not "ampache_user" in params:
                     params["ampache_user"] = self.AMPACHE_USER
-                if not "timestamp" in params or params["timestamp"] == 0:
+                if "timestamp" in params and not params["timestamp"] == 0:
                     return self.handshake(params["ampache_url"],
-                                          self.encrypt_string(params["ampache_api"], params["ampache_user"]),
-                                          False, False, params["version"])
+                                          self.encrypt_password(params["ampache_api"], int(params["timestamp"])),
+                                          params["ampache_user"], int(params["timestamp"]), params["version"])
                 return self.handshake(params["ampache_url"],
-                                      self.encrypt_password(params["ampache_api"], int(params["timestamp"])),
-                                      params["ampache_user"], int(params["timestamp"]), params["version"])
+                                      self.encrypt_string(params["ampache_api"], params["ampache_user"]),
+                                      False, False, params["version"])
             case 'goodbye':
                 return self.goodbye()
             case 'lost_password':
