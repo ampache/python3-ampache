@@ -52,7 +52,7 @@ def show_help():
               "\n  Possible Actions:\n"
               "\n    /u:%CUSTOM_USER%\t(Custom username for the current action)"
               "\n    /k:%CUSTOM_APIKEY%\t(Custom apikey for the current action)"
-              "\n    /a:%ACTION% \t(ping, playlists, localplay, stream, download list, configure, logout, showconfig)"
+              "\n    /a:%ACTION% \t(ping, playlists, localplay, stream, download, list, configure, logout, showconfig)"
               "\n    /l:%LIMIT%  \t(integer)"
               "\n    /o:%OBJECT_ID%  \t(string)"
               "\n    /t:%OBJECT_TYPE%  \t(song, playlist)"

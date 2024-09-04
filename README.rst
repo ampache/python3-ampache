@@ -18,42 +18,52 @@ The class documentation has been extracted out into a markdown file for easier r
 
 `<https://raw.githubusercontent.com/ampache/python3-ampache/master/docs/MANUAL.md>`_
 
-There has been a pretty significant change in the library between Ampache 4 and Ampache 5.
-
-For anyone wanting to stay on v4 the branch has been separated from the master branch.
-
-`<https://github.com/ampache/python3-ampache/tree/api4>`_
+This library supports connecting to any Ampache API release (3, 4, 5 and 6)
 
 Once you connect with your passphrase or api key, the url and auth token are stored allowing you to call methods without them.
 
 .. code-block:: python3
 
     import ampache
+    import sys
     import time
 
-    # connect to the server
+    # Open Ampache library
     ampache_connection = ampache.API()
 
-    # if using password auth use encrypt_password
-    mytime = int(time.time())
-    passphrase = ampache_connection.encrypt_password('mypassword', mytime)
-    auth = ampache_connection.handshake('https://music.com.au', passphrase, 'my username', mytime)
+    # Set your server details
+    ampache_connection.set_version('6.6.1')
+    ampache_connection.set_url('https://music.com.au')
+    ampache_connection.set_key('mypassword')
+    ampache_connection.set_user('myusername')
 
-    # if using an API key auth keep using encrypt_string
-    passphrase = ampache_connection.encrypt_string('my apikey', 'my username')
-    auth = ampache_connection.handshake('https://music.com.au', passphrase)
+    # Password auth requires a timestamp for encrypting the auth key
+    ampache_session = ampache_connection.execute('handshake', {'timestamp': int(time.time())})
+    if not ampache_session:
+        # if using an api key you don't need the timestamp to use encrypt_string
+        ampache_session = ampache_connection.execute('handshake')
+
+    # Fail if you didn't connect
+    if not ampache_session:
+        sys.exit(ampache_connection.AMPACHE_VERSION + ' ERROR Failed to connect to ' + ampache_connection.AMPACHE_URL)
 
     # now you can call methods without having to keep putting in the url and userkey
-    ampache_connection.label(1677)
-    
-    # ping has always allowed empty calls so you have to ping with a url and session still
-    ampache_connection.ping('https://music.com.au', auth)
+    artists = ampache_connection.execute('artists', {'limit': 10})
+
+    # You can parse a response to get a list of ID's for that response
+    artist_ids = ampache_connection.get_id_list(artists, 'artist')
+    if artist_ids:
+        print("We found some artists")
+        for artist in artist_ids:
+            print('ID:', artist)
+
+    # ping has always allowed empty calls so you have to ping with a session key
+    ampache_connection.execute('ping', {'ampache_api': ampache_session})
 
 NEWS
 ====
 
-- Password handshake auth is available now.
-- This library now supports every Ampache API release (3, 4, 5 and 6)
+- Examples are being updated to support the latest execute method which can simplify your code
 - You can save and restore from a json config file using new methods
 
   - set_config_path: Set a folder to your config path
@@ -89,7 +99,7 @@ ampyche.py help:
 
         /u:%CUSTOM_USER%    (Custom username for the current action)
         /k:%CUSTOM_APIKEY%  (Custom apikey for the current action)
-        /a:%ACTION%         (ping, playlists, localplay, download, configure, logout, showconfig)
+        /a:%ACTION%         (ping, playlists, localplay, download, list, configure, logout, showconfig)
         /l:%LIMIT%          (integer)
         /o:%OBJECT_ID%      (string)
         /t:%OBJECT_TYPE%    (song, playlist)
@@ -100,7 +110,7 @@ ampyche.py help:
         (next, prev, stop, play, pause, add, volume_up,
             volume_down, volume_mute, delete_all, skip, status)
 
-Here is a short code sample for python using version 5.x.x+ to scrobble a track to your server
+Here is a short code sample for python using version 6.x.x+ to scrobble a track to your server
 
 .. code-block:: python3
 
@@ -113,17 +123,11 @@ Here is a short code sample for python using version 5.x.x+ to scrobble a track 
 
     # load up previous config
     if not ampache_connection.get_config():
-        # user variables
-        api_version = '6.6.1'
-        ampache_url = 'https://music.server'
-        ampache_api_key = 'mysuperapikey'
-        ampache_user = 'myusername'
-
-        # Set your details
-        ampache_connection.set_version(api_version)
-        ampache_connection.set_url(ampache_url)
-        ampache_connection.set_key(ampache_api_key)
-        ampache_connection.set_user(ampache_user)
+        # Set your details manually if we can't get anything
+        ampache_connection.set_version('6.6.1')
+        ampache_connection.set_url('https://music.server')
+        ampache_connection.set_key('mysuperapikey')
+        ampache_connection.set_user('myusername')
 
     # Get a session key using the handshake
     #
@@ -151,7 +155,10 @@ Here is a short code sample for python using version 5.x.x+ to scrobble a track 
     # * mbalbum     = (string) album mbid //optional
     # * stime       = (integer) UNIXTIME() //optional
     # * client      = (string) //optional
-    ampache_connection.execute('scrobble', {'title': 'Beneath The Cold Clay', 'artist_name': 'Crust', 'album_name': '...and a Dirge Becomes an Anthem', 'stime': int(time.time())})
+    ampache_connection.execute('scrobble', {'title': 'Beneath The Cold Clay',
+                                            'artist_name': 'Crust',
+                                            'album_name': '...and a Dirge Becomes an Anthem',
+                                            'stime': int(time.time())})
 
 LINKS
 =====
