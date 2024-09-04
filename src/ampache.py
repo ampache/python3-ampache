@@ -526,6 +526,7 @@ class API(object):
                 self.AMPACHE_SESSION = json_data['auth']
                 return json_data['auth']
             else:
+                self.AMPACHE_SESSION = False
                 return False
         # xml format
         else:
@@ -565,6 +566,7 @@ class API(object):
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'ping')
         if not ampache_response:
+            self.AMPACHE_SESSION = False
             return False
         # json format
         if self.AMPACHE_API == 'json':
@@ -577,6 +579,7 @@ class API(object):
                 self.AMPACHE_SESSION = ampache_api
                 return ampache_api
             else:
+                self.AMPACHE_SESSION = False
                 return False
         # xml format
         else:
