@@ -2939,7 +2939,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def stream(self, object_id, object_type, destination):
+    def stream(self, object_id, object_type, destination, stats=1):
         """ stream
             MINIMUM_API_VERSION=400001
 
@@ -2956,7 +2956,8 @@ class API(object):
         data = {'action': 'stream',
                 'auth': self.AMPACHE_SESSION,
                 'id': object_id,
-                'type': object_type}
+                'type': object_type,
+                'stats': stats}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         result = requests.get(full_url, allow_redirects=True)
@@ -2964,7 +2965,7 @@ class API(object):
         return True
 
     def download(self, object_id, object_type, destination,
-                 transcode='raw', bitrate=False):
+                 transcode='raw', bitrate=False, stats=1):
         """ download
             MINIMUM_API_VERSION=400001
 
@@ -2984,7 +2985,8 @@ class API(object):
                 'id': object_id,
                 'type': object_type,
                 'format': transcode,
-                'bitrate': bitrate}
+                'bitrate': bitrate,
+                'stats': stats}
         if not bitrate:
             data.pop('bitrate')
         data = urllib.parse.urlencode(data)
@@ -4286,7 +4288,9 @@ class API(object):
                     params["transcode"] = 'raw'
                 if not "bitrate" in params:
                     params["bitrate"] = False
-                return self.download(params["object_id"], params["object_type"], params["destination"])
+                if not "stats" in params:
+                    params["stats"] = 1
+                return self.download(params["object_id"], params["object_type"], params["destination"], params["stats"])
             case 'flag':
                 if not "date" in params:
                     params["date"] = False
@@ -4698,7 +4702,9 @@ class API(object):
                 return self.stats(params["object_type"], params["filter_str"], params["username"],
                                   params["user_id"], params["offset"], params["limit"])
             case 'stream':
-                return self.stream(params["object_id"], params["object_type"], params["destination"])
+                if not "stats" in params:
+                    params["stats"] = 1
+                return self.stream(params["object_id"], params["object_type"], params["destination"], params["stats"])
             case 'system_preference':
                 return self.system_preference(params["filter_str"])
             case 'system_preferences':
