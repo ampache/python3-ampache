@@ -6,6 +6,10 @@
             "id": "smart_21",
             "name": "admin - 02\/23\/2021 14:36:44",
             "owner": "admin",
+            "user": {
+                "id": "2",
+                "username": "admin"
+            },
             "items": 1,
             "type": "public",
             "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=search",
@@ -22,6 +26,10 @@
             "id": "smart_14",
             "name": "Album 1* (System)",
             "owner": "System",
+            "user": {
+                "id": "-1",
+                "username": "System"
+            },
             "items": 2,
             "type": "public",
             "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=search",
@@ -38,6 +46,10 @@
             "id": "smart_13",
             "name": "Album 2* (System)",
             "owner": "System",
+            "user": {
+                "id": "-1",
+                "username": "System"
+            },
             "items": 11,
             "type": "public",
             "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=search",
@@ -54,6 +66,10 @@
             "id": "smart_12",
             "name": "Album 3* (System)",
             "owner": "System",
+            "user": {
+                "id": "-1",
+                "username": "System"
+            },
             "items": 8,
             "type": "public",
             "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=search",

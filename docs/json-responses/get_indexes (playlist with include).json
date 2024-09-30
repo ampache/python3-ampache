@@ -6,6 +6,10 @@
             "id": "smart_21",
             "name": "admin - 02\/23\/2021 14:36:44",
             "owner": "admin",
+            "user": {
+                "id": "2",
+                "username": "admin"
+            },
             "items": [
                 {
                     "id": "76",
@@ -27,6 +31,10 @@
             "id": "smart_14",
             "name": "Album 1* (System)",
             "owner": "System",
+            "user": {
+                "id": "-1",
+                "username": "System"
+            },
             "items": [
                 {
                     "id": "79",
@@ -52,6 +60,10 @@
             "id": "smart_13",
             "name": "Album 2* (System)",
             "owner": "System",
+            "user": {
+                "id": "-1",
+                "username": "System"
+            },
             "items": [
                 {
                     "id": "90",
@@ -113,6 +125,10 @@
             "id": "smart_12",
             "name": "Album 3* (System)",
             "owner": "System",
+            "user": {
+                "id": "-1",
+                "username": "System"
+            },
             "items": [
                 {
                     "id": "78",
