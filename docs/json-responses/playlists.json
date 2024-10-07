@@ -6,6 +6,10 @@
             "id": "65",
             "name": "documentation json",
             "owner": "user",
+            "user": {
+                "id": "2",
+                "username": "user"
+            },
             "items": 0,
             "type": "public",
             "art": "https:\/\/music.com.au\/image.php?object_id=65&object_type=playlist",
@@ -16,7 +20,7 @@
             "rating": null,
             "averagerating": null,
             "md5": null,
-            "last_update": 1721613835
+            "last_update": 1727689088
         }
     ]
 }

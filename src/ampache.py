@@ -64,7 +64,7 @@ class API(object):
     def set_format(self, myformat: str):
         """ set_format
 
-            Allow forcing a default format
+            Allow forcing a default API output format
 
             INPUTS
             * myformat = (string) 'xml'|'json'
@@ -1521,27 +1521,39 @@ class API(object):
         return self.return_data(ampache_response)
 
     def playlist_edit(self, filter_id: int, name=False,
-                      object_type=False):
+                      playlist_type=False, owner=False, items=False, tracks=False):
         """ playlist_edit
             MINIMUM_API_VERSION=400001
 
             This modifies name and type of a playlist
 
             INPUTS
-            * filter_id   = (integer)
-            * name        = (string) playlist name //optional
-            * object_type = (string) 'public'|'private'
+            * filter_id     = (integer)
+            * name          = (string) playlist name //optional
+            * playlist_type = (string) 'public'|'private' //optional
+            * owner       = (string) Change playlist owner to the user id (-1 = System playlist) //optional
+            * items       = (string) comma-separated song_id's (replaces existing items with a new id) //optional
+            * tracks      = (string) comma-separated playlisttrack numbers matched to 'items' in order //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'playlist_edit',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'name': name,
-                'type': object_type}
+                'type': playlist_type,
+                'owner': owner,
+                'items': items,
+                'tracks': tracks}
         if not name:
             data.pop('name')
-        if not object_type:
+        if not playlist_type:
             data.pop('type')
+        if not owner:
+            data.pop('owner')
+        if not items:
+            data.pop('items')
+        if not tracks:
+            data.pop('tracks')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_edit')
@@ -2942,7 +2954,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def stream(self, object_id, object_type, destination):
+    def stream(self, object_id, object_type, destination, stats=1):
         """ stream
             MINIMUM_API_VERSION=400001
 
@@ -2959,7 +2971,8 @@ class API(object):
         data = {'action': 'stream',
                 'auth': self.AMPACHE_SESSION,
                 'id': object_id,
-                'type': object_type}
+                'type': object_type,
+                'stats': stats}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         result = requests.get(full_url, allow_redirects=True)
@@ -2967,7 +2980,7 @@ class API(object):
         return True
 
     def download(self, object_id, object_type, destination,
-                 transcode='raw', bitrate=False):
+                 transcode='raw', bitrate=False, stats=1):
         """ download
             MINIMUM_API_VERSION=400001
 
@@ -2987,7 +3000,8 @@ class API(object):
                 'id': object_id,
                 'type': object_type,
                 'format': transcode,
-                'bitrate': bitrate}
+                'bitrate': bitrate,
+                'stats': stats}
         if not bitrate:
             data.pop('bitrate')
         data = urllib.parse.urlencode(data)
@@ -4293,7 +4307,9 @@ class API(object):
                     params["transcode"] = 'raw'
                 if not "bitrate" in params:
                     params["bitrate"] = False
-                return self.download(params["object_id"], params["object_type"], params["destination"])
+                if not "stats" in params:
+                    params["stats"] = 1
+                return self.download(params["object_id"], params["object_type"], params["destination"], params["stats"])
             case 'flag':
                 if not "date" in params:
                     params["date"] = False
@@ -4494,11 +4510,18 @@ class API(object):
             case 'playlist_delete':
                 return self.playlist_delete(params["filter_id"])
             case 'playlist_edit':
-                if not "playlist_name" in params:
-                    params["playlist_name"] = False
+                if not "name" in params:
+                    params["name"] = False
                 if not "playlist_type" in params:
                     params["playlist_type"] = False
-                return self.playlist_edit(params["filter_id"], params["playlist_name"], params["playlist_type"])
+                if not "owner" in params:
+                    params["owner"] = False
+                if not "items" in params:
+                    params["items"] = False
+                if not "tracks" in params:
+                    params["tracks"] = False
+                return self.playlist_edit(params["filter_id"], params["name"], params["playlist_type"],
+                                          params["owner"], params["items"], params["tracks"])
             case 'playlist_generate':
                 if not "mode" in params:
                     params["mode"] = 'random'
@@ -4705,7 +4728,9 @@ class API(object):
                 return self.stats(params["object_type"], params["filter_str"], params["username"],
                                   params["user_id"], params["offset"], params["limit"])
             case 'stream':
-                return self.stream(params["object_id"], params["object_type"], params["destination"])
+                if not "stats" in params:
+                    params["stats"] = 1
+                return self.stream(params["object_id"], params["object_type"], params["destination"], params["stats"])
             case 'system_preference':
                 return self.system_preference(params["filter_str"])
             case 'system_preferences':
