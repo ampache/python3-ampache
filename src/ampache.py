@@ -1520,7 +1520,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def playlist_edit(self, filter_id: int, name=False,
+    def playlist_edit(self, filter_id: int, playlist_name=False,
                       playlist_type=False, owner=False, items=False, tracks=False):
         """ playlist_edit
             MINIMUM_API_VERSION=400001
@@ -1529,22 +1529,22 @@ class API(object):
 
             INPUTS
             * filter_id     = (integer)
-            * name          = (string) playlist name //optional
+            * playlist_name = (string) playlist name //optional
             * playlist_type = (string) 'public'|'private' //optional
-            * owner       = (string) Change playlist owner to the user id (-1 = System playlist) //optional
-            * items       = (string) comma-separated song_id's (replaces existing items with a new id) //optional
-            * tracks      = (string) comma-separated playlisttrack numbers matched to 'items' in order //optional
+            * owner         = (string) Change playlist owner to the user id (-1 = System playlist) //optional
+            * items         = (string) comma-separated song_id's (replaces existing items with a new id) //optional
+            * tracks        = (string) comma-separated playlisttrack numbers matched to 'items' in order //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'playlist_edit',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
-                'name': name,
+                'name': playlist_name,
                 'type': playlist_type,
                 'owner': owner,
                 'items': items,
                 'tracks': tracks}
-        if not name:
+        if not playlist_name:
             data.pop('name')
         if not playlist_type:
             data.pop('type')
@@ -4510,8 +4510,8 @@ class API(object):
             case 'playlist_delete':
                 return self.playlist_delete(params["filter_id"])
             case 'playlist_edit':
-                if not "name" in params:
-                    params["name"] = False
+                if not "playlist_name" in params:
+                    params["playlist_name"] = False
                 if not "playlist_type" in params:
                     params["playlist_type"] = False
                 if not "owner" in params:
@@ -4520,7 +4520,7 @@ class API(object):
                     params["items"] = False
                 if not "tracks" in params:
                     params["tracks"] = False
-                return self.playlist_edit(params["filter_id"], params["name"], params["playlist_type"],
+                return self.playlist_edit(params["filter_id"], params["playlist_name"], params["playlist_type"],
                                           params["owner"], params["items"], params["tracks"])
             case 'playlist_generate':
                 if not "mode" in params:
