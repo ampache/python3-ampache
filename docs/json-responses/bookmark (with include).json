@@ -2,62 +2,67 @@
     "id": "4",
     "owner": "user",
     "object_type": "song",
-    "object_id": "103",
-    "position": 0,
-    "client": "python3-ampache",
+    "object_id": "64",
+    "position": 10,
+    "client": "client",
     "creation_date": 1670202706,
-    "update_date": 1721613835,
+    "update_date": 1698974919,
     "song": [
         {
-            "id": "103",
-            "title": "In The Seven Woods (Instrumental Re-Recording)",
-            "name": "In The Seven Woods (Instrumental Re-Recording)",
+            "id": "64",
+            "title": "Black&BlueSmoke",
+            "name": "Black&BlueSmoke",
             "artist": {
-                "id": "16",
-                "name": "CARN\u00daN",
+                "id": "2",
+                "name": "Synthetic",
                 "prefix": null,
-                "basename": "CARN\u00daN"
+                "basename": "Synthetic"
             },
             "artists": [
                 {
-                    "id": "16",
-                    "name": "CARN\u00daN",
+                    "id": "2",
+                    "name": "Synthetic",
                     "prefix": null,
-                    "basename": "CARN\u00daN"
+                    "basename": "Synthetic"
                 }
             ],
             "album": {
-                "id": "10",
-                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "id": "2",
+                "name": "Colorsmoke EP",
                 "prefix": null,
-                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                "basename": "Colorsmoke EP"
             },
             "albumartist": {
-                "id": "16",
-                "name": "CARN\u00daN",
+                "id": "2",
+                "name": "Synthetic",
                 "prefix": null,
-                "basename": "CARN\u00daN"
+                "basename": "Synthetic"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 7,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
-            "genre": [],
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
             "playlisttrack": 1,
-            "time": 452,
-            "year": 1996,
-            "format": "ogg",
+            "time": 500,
+            "year": 2007,
+            "format": "wma",
             "stream_format": "mp3",
-            "bitrate": 138338,
+            "bitrate": 20627,
             "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "application\/ogg",
+            "rate": 22050,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
-            "size": 7826238,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+            "size": 1298295,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -66,15 +71,15 @@
             "catalog": 1,
             "composer": null,
             "channels": 2,
-            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+            "comment": "Made with Sony ACID 5",
             "license": "",
-            "publisher": "archive.org",
+            "publisher": "20kbps rec.",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -12.21,
-            "replaygain_track_peak": 1,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

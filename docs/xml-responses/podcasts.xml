@@ -1,8 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>2</total_count>
-  <md5>adcb9b75260590ff6058773ddcb9ddd6</md5>
-  <podcast id="4">
+  <md5>e379d826bb1b6ffbc4564d33021e908c</md5>
+  <podcast id="1">
+    <name><![CDATA[60-Second Science]]></name>
+    <description><![CDATA[Tune in every weekday for quick reports and commentaries on the world of science&mdash;it&#039;ll just take a minute]]></description>
+    <language><![CDATA[en-us]]></language>
+    <copyright><![CDATA[False]]></copyright>
+    <feed_url><![CDATA[http://rss.sciam.com/sciam/60secsciencepodcast]]></feed_url>
+    <generator><![CDATA[]]></generator>
+    <website><![CDATA[https://www.scientificamerican.com/podcast/60-second-science/]]></website>
+    <build_date><![CDATA[1970-01-01T00:00:00+00:00]]></build_date>
+    <sync_date><![CDATA[2022-08-17T05:07:11+00:00]]></sync_date>
+    <public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=1]]></public_url>
+    <art><![CDATA[https://music.com.au/image.php?object_id=1&object_type=podcast&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+  </podcast>
+  <podcast id="2">
+    <name><![CDATA[Plays Well with Others]]></name>
+    <description><![CDATA[From Creative Commons, a podcast about the art and science of collaboration. With a focus on the tools, techniques, and mechanics of collaboration, we explore how today&#039;s most interesting collaborators are making new things, solving old problems, and getting things done &mdash; together. Hosted by Creative Commons CEO Ryan Merkley. ]]></description>
+    <language><![CDATA[en]]></language>
+    <copyright><![CDATA[Creative Commons]]></copyright>
+    <feed_url><![CDATA[https://anchor.fm/s/90932e8/podcast/rss]]></feed_url>
+    <generator><![CDATA[Anchor Podcasts]]></generator>
+    <website><![CDATA[playswellwithothers.org]]></website>
+    <build_date><![CDATA[2021-02-23T04:18:58+00:00]]></build_date>
+    <sync_date><![CDATA[2022-08-17T05:07:11+00:00]]></sync_date>
+    <public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=2]]></public_url>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=podcast&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+  </podcast>
+  <podcast id="7">
     <name><![CDATA[Trace]]></name>
     <description><![CDATA[An investigative podcast hosted by ABC journalist Rachael Brown, Trace examines the fractures in Australia&amp;#039;s criminal justice system, and the decades-long ripples they have caused.]]></description>
     <language><![CDATA[en]]></language>
@@ -12,8 +46,8 @@
     <website><![CDATA[https://www.abc.net.au/listen/programs/trace/]]></website>
     <build_date><![CDATA[2024-06-13T17:00:00+00:00]]></build_date>
     <sync_date><![CDATA[2022-08-17T05:07:11+00:00]]></sync_date>
-    <public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=4]]></public_url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=4&object_type=podcast]]></art>
+    <public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=7]]></public_url>
+    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=podcast]]></art>
     <has_art>0</has_art>
     <flag>0</flag>
     <rating/>

@@ -2,118 +2,67 @@
 <root>
   <bookmark id="1">
     <user><![CDATA[user]]></user>
-    <object_type><![CDATA[song]]></object_type>
-    <object_id>55</object_id>
+    <object_type><![CDATA[podcast_episode]]></object_type>
+    <object_id>2</object_id>
     <position>0</position>
-    <client><![CDATA[client1]]></client>
+    <client><![CDATA[AmpacheAPI]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1721613833]]></update_date>
-    <song id="55">
-      <name><![CDATA[Red&GreenSmoke]]></name>
-      <title><![CDATA[Red&GreenSmoke]]></title>
-      <artist id="2">
-        <name><![CDATA[Synthetic]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[Synthetic]]></basename>
-      </artist>
-      <album id="2">
-        <name><![CDATA[Colorsmoke EP]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[Colorsmoke EP]]></basename>
-      </album>
-      <albumartist id="2">
-        <name><![CDATA[Synthetic]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[Synthetic]]></basename>
-      </albumartist>
-      <disk><![CDATA[1]]></disk>
-      <disksubtitle><![CDATA[]]></disksubtitle>
-      <track>5</track>
-      <genre id="1">
-        <name><![CDATA[Electronic]]></name>
-      </genre>
-      <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3]]></filename>
-      <playlisttrack>1</playlisttrack>
-      <time>400</time>
-      <year>2007</year>
-      <format>mp3</format>
-      <stream_format>mp3</stream_format>
-      <bitrate>64000</bitrate>
-      <stream_bitrate>32000</stream_bitrate>
-      <rate>22050</rate>
-      <mode><![CDATA[cbr]]></mode>
-      <mime><![CDATA[audio/mpeg]]></mime>
-      <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-      <size>3209886</size>
-      <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
-      <has_art>1</has_art>
-      <flag>0</flag>
-      <rating/>
-      <averagerating/>
-      <playcount>1</playcount>
-      <catalog>1</catalog>
-      <composer><![CDATA[]]></composer>
-      <channels>2</channels>
-      <comment><![CDATA[]]></comment>
-      <license><![CDATA[]]></license>
-      <publisher><![CDATA[20kbps rec.]]></publisher>
-      <language/>
-      <lyrics><![CDATA[]]></lyrics>
-      <replaygain_album_gain/>
-      <replaygain_album_peak/>
-      <replaygain_track_gain>-4.06</replaygain_track_gain>
-      <replaygain_track_peak>1</replaygain_track_peak>
-      <r128_album_gain/>
-      <r128_track_gain/>
-    </song>
+    <update_date><![CDATA[1698974919]]></update_date>
+  </bookmark>
+  <bookmark id="2">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[podcast_episode]]></object_type>
+    <object_id>2</object_id>
+    <position>0</position>
+    <client><![CDATA[AmpacheAPI]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1698974919]]></update_date>
   </bookmark>
   <bookmark id="3">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
-    <object_id>103</object_id>
+    <object_id>115</object_id>
     <position>0</position>
-    <client><![CDATA[python3-ampache]]></client>
+    <client><![CDATA[client1]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1721613833]]></update_date>
-    <song id="103">
-      <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
-      <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
-      <artist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+    <update_date><![CDATA[1698974919]]></update_date>
+    <song id="115">
+      <name><![CDATA[Are we going Crazy]]></name>
+      <title><![CDATA[Are we going Crazy]]></title>
+      <artist id="27">
+        <name><![CDATA[Chi.Otic]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[Chi.Otic]]></basename>
       </artist>
-      <album id="10">
-        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <album id="12">
+        <name><![CDATA[Buried in Nausea]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        <basename><![CDATA[Buried in Nausea]]></basename>
       </album>
-      <albumartist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+      <albumartist id="19">
+        <name><![CDATA[Various Artists]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[Various Artists]]></basename>
       </albumartist>
       <disk><![CDATA[1]]></disk>
       <disksubtitle><![CDATA[]]></disksubtitle>
       <track>7</track>
-      <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/07InTheSevenWoods_InstrumentalReRecording.ogg]]></filename>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
       <playlisttrack>1</playlisttrack>
-      <time>452</time>
-      <year>1996</year>
-      <format>ogg</format>
+      <time>433</time>
+      <year>2012</year>
+      <format>wma</format>
       <stream_format>mp3</stream_format>
-      <bitrate>138496</bitrate>
+      <bitrate>32582</bitrate>
       <stream_bitrate>32000</stream_bitrate>
       <rate>44100</rate>
-      <mode><![CDATA[vbr]]></mode>
-      <mime><![CDATA[application/ogg]]></mime>
+      <mode><![CDATA[cbr]]></mode>
+      <mime><![CDATA[audio/x-ms-wma]]></mime>
       <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
-      <size>7835220</size>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
+      <size>1776580</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&name=art.jpg]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
@@ -121,16 +70,16 @@
       <playcount>0</playcount>
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
-      <channels>2</channels>
-      <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+      <channels>1</channels>
+      <comment><![CDATA[]]></comment>
       <license><![CDATA[]]></license>
-      <publisher><![CDATA[archive.org]]></publisher>
+      <publisher><![CDATA[]]></publisher>
       <language/>
       <lyrics><![CDATA[]]></lyrics>
       <replaygain_album_gain/>
       <replaygain_album_peak/>
-      <replaygain_track_gain>-12.21</replaygain_track_gain>
-      <replaygain_track_peak>1</replaygain_track_peak>
+      <replaygain_track_gain/>
+      <replaygain_track_peak/>
       <r128_album_gain/>
       <r128_track_gain/>
     </song>
@@ -138,48 +87,51 @@
   <bookmark id="4">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
-    <object_id>103</object_id>
-    <position>0</position>
-    <client><![CDATA[python3-ampache]]></client>
+    <object_id>64</object_id>
+    <position>10</position>
+    <client><![CDATA[client]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1721613835]]></update_date>
-    <song id="103">
-      <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
-      <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
-      <artist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+    <update_date><![CDATA[1698974919]]></update_date>
+    <song id="64">
+      <name><![CDATA[Black&BlueSmoke]]></name>
+      <title><![CDATA[Black&BlueSmoke]]></title>
+      <artist id="2">
+        <name><![CDATA[Synthetic]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[Synthetic]]></basename>
       </artist>
-      <album id="10">
-        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <album id="2">
+        <name><![CDATA[Colorsmoke EP]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        <basename><![CDATA[Colorsmoke EP]]></basename>
       </album>
-      <albumartist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+      <albumartist id="2">
+        <name><![CDATA[Synthetic]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[Synthetic]]></basename>
       </albumartist>
       <disk><![CDATA[1]]></disk>
       <disksubtitle><![CDATA[]]></disksubtitle>
-      <track>7</track>
-      <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/07InTheSevenWoods_InstrumentalReRecording.ogg]]></filename>
+      <track>1</track>
+      <genre id="1">
+        <name><![CDATA[Electronic]]></name>
+      </genre>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma]]></filename>
       <playlisttrack>1</playlisttrack>
-      <time>452</time>
-      <year>1996</year>
-      <format>ogg</format>
+      <time>500</time>
+      <year>2007</year>
+      <format>wma</format>
       <stream_format>mp3</stream_format>
-      <bitrate>138496</bitrate>
+      <bitrate>20627</bitrate>
       <stream_bitrate>32000</stream_bitrate>
-      <rate>44100</rate>
-      <mode><![CDATA[vbr]]></mode>
-      <mime><![CDATA[application/ogg]]></mime>
+      <rate>22050</rate>
+      <mode><![CDATA[cbr]]></mode>
+      <mime><![CDATA[audio/x-ms-wma]]></mime>
       <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
-      <size>7835220</size>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
+      <size>1298295</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&name=art.jpg]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
@@ -188,15 +140,15 @@
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
       <channels>2</channels>
-      <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+      <comment><![CDATA[Made with Sony ACID 5]]></comment>
       <license><![CDATA[]]></license>
-      <publisher><![CDATA[archive.org]]></publisher>
+      <publisher><![CDATA[20kbps rec.]]></publisher>
       <language/>
       <lyrics><![CDATA[]]></lyrics>
       <replaygain_album_gain/>
       <replaygain_album_peak/>
-      <replaygain_track_gain>-12.21</replaygain_track_gain>
-      <replaygain_track_peak>1</replaygain_track_peak>
+      <replaygain_track_gain/>
+      <replaygain_track_peak/>
       <r128_album_gain/>
       <r128_track_gain/>
     </song>
@@ -204,11 +156,281 @@
   <bookmark id="5">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
+    <object_id>115</object_id>
+    <position>0</position>
+    <client><![CDATA[client1]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1698974919]]></update_date>
+    <song id="115">
+      <name><![CDATA[Are we going Crazy]]></name>
+      <title><![CDATA[Are we going Crazy]]></title>
+      <artist id="27">
+        <name><![CDATA[Chi.Otic]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Chi.Otic]]></basename>
+      </artist>
+      <album id="12">
+        <name><![CDATA[Buried in Nausea]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Buried in Nausea]]></basename>
+      </album>
+      <albumartist id="19">
+        <name><![CDATA[Various Artists]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Various Artists]]></basename>
+      </albumartist>
+      <disk><![CDATA[1]]></disk>
+      <disksubtitle><![CDATA[]]></disksubtitle>
+      <track>7</track>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
+      <playlisttrack>1</playlisttrack>
+      <time>433</time>
+      <year>2012</year>
+      <format>wma</format>
+      <stream_format>mp3</stream_format>
+      <bitrate>32582</bitrate>
+      <stream_bitrate>32000</stream_bitrate>
+      <rate>44100</rate>
+      <mode><![CDATA[cbr]]></mode>
+      <mime><![CDATA[audio/x-ms-wma]]></mime>
+      <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
+      <size>1776580</size>
+      <mbid><![CDATA[]]></mbid>
+      <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+      <has_art>1</has_art>
+      <flag>0</flag>
+      <rating/>
+      <averagerating/>
+      <playcount>0</playcount>
+      <catalog>1</catalog>
+      <composer><![CDATA[]]></composer>
+      <channels>1</channels>
+      <comment><![CDATA[]]></comment>
+      <license><![CDATA[]]></license>
+      <publisher><![CDATA[]]></publisher>
+      <language/>
+      <lyrics><![CDATA[]]></lyrics>
+      <replaygain_album_gain/>
+      <replaygain_album_peak/>
+      <replaygain_track_gain/>
+      <replaygain_track_peak/>
+      <r128_album_gain/>
+      <r128_track_gain/>
+    </song>
+  </bookmark>
+  <bookmark id="6">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
+    <object_id>64</object_id>
+    <position>10</position>
+    <client><![CDATA[client]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1698974919]]></update_date>
+    <song id="64">
+      <name><![CDATA[Black&BlueSmoke]]></name>
+      <title><![CDATA[Black&BlueSmoke]]></title>
+      <artist id="2">
+        <name><![CDATA[Synthetic]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Synthetic]]></basename>
+      </artist>
+      <album id="2">
+        <name><![CDATA[Colorsmoke EP]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Colorsmoke EP]]></basename>
+      </album>
+      <albumartist id="2">
+        <name><![CDATA[Synthetic]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Synthetic]]></basename>
+      </albumartist>
+      <disk><![CDATA[1]]></disk>
+      <disksubtitle><![CDATA[]]></disksubtitle>
+      <track>1</track>
+      <genre id="1">
+        <name><![CDATA[Electronic]]></name>
+      </genre>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma]]></filename>
+      <playlisttrack>1</playlisttrack>
+      <time>500</time>
+      <year>2007</year>
+      <format>wma</format>
+      <stream_format>mp3</stream_format>
+      <bitrate>20627</bitrate>
+      <stream_bitrate>32000</stream_bitrate>
+      <rate>22050</rate>
+      <mode><![CDATA[cbr]]></mode>
+      <mime><![CDATA[audio/x-ms-wma]]></mime>
+      <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
+      <size>1298295</size>
+      <mbid><![CDATA[]]></mbid>
+      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+      <has_art>1</has_art>
+      <flag>0</flag>
+      <rating/>
+      <averagerating/>
+      <playcount>0</playcount>
+      <catalog>1</catalog>
+      <composer><![CDATA[]]></composer>
+      <channels>2</channels>
+      <comment><![CDATA[Made with Sony ACID 5]]></comment>
+      <license><![CDATA[]]></license>
+      <publisher><![CDATA[20kbps rec.]]></publisher>
+      <language/>
+      <lyrics><![CDATA[]]></lyrics>
+      <replaygain_album_gain/>
+      <replaygain_album_peak/>
+      <replaygain_track_gain/>
+      <replaygain_track_peak/>
+      <r128_album_gain/>
+      <r128_track_gain/>
+    </song>
+  </bookmark>
+  <bookmark id="7">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
+    <object_id>115</object_id>
+    <position>0</position>
+    <client><![CDATA[client1]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1698974919]]></update_date>
+    <song id="115">
+      <name><![CDATA[Are we going Crazy]]></name>
+      <title><![CDATA[Are we going Crazy]]></title>
+      <artist id="27">
+        <name><![CDATA[Chi.Otic]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Chi.Otic]]></basename>
+      </artist>
+      <album id="12">
+        <name><![CDATA[Buried in Nausea]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Buried in Nausea]]></basename>
+      </album>
+      <albumartist id="19">
+        <name><![CDATA[Various Artists]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Various Artists]]></basename>
+      </albumartist>
+      <disk><![CDATA[1]]></disk>
+      <disksubtitle><![CDATA[]]></disksubtitle>
+      <track>7</track>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
+      <playlisttrack>1</playlisttrack>
+      <time>433</time>
+      <year>2012</year>
+      <format>wma</format>
+      <stream_format>mp3</stream_format>
+      <bitrate>32582</bitrate>
+      <stream_bitrate>32000</stream_bitrate>
+      <rate>44100</rate>
+      <mode><![CDATA[cbr]]></mode>
+      <mime><![CDATA[audio/x-ms-wma]]></mime>
+      <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
+      <size>1776580</size>
+      <mbid><![CDATA[]]></mbid>
+      <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+      <has_art>1</has_art>
+      <flag>0</flag>
+      <rating/>
+      <averagerating/>
+      <playcount>0</playcount>
+      <catalog>1</catalog>
+      <composer><![CDATA[]]></composer>
+      <channels>1</channels>
+      <comment><![CDATA[]]></comment>
+      <license><![CDATA[]]></license>
+      <publisher><![CDATA[]]></publisher>
+      <language/>
+      <lyrics><![CDATA[]]></lyrics>
+      <replaygain_album_gain/>
+      <replaygain_album_peak/>
+      <replaygain_track_gain/>
+      <replaygain_track_peak/>
+      <r128_album_gain/>
+      <r128_track_gain/>
+    </song>
+  </bookmark>
+  <bookmark id="8">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
+    <object_id>64</object_id>
+    <position>10</position>
+    <client><![CDATA[client]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1698974919]]></update_date>
+    <song id="64">
+      <name><![CDATA[Black&BlueSmoke]]></name>
+      <title><![CDATA[Black&BlueSmoke]]></title>
+      <artist id="2">
+        <name><![CDATA[Synthetic]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Synthetic]]></basename>
+      </artist>
+      <album id="2">
+        <name><![CDATA[Colorsmoke EP]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Colorsmoke EP]]></basename>
+      </album>
+      <albumartist id="2">
+        <name><![CDATA[Synthetic]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Synthetic]]></basename>
+      </albumartist>
+      <disk><![CDATA[1]]></disk>
+      <disksubtitle><![CDATA[]]></disksubtitle>
+      <track>1</track>
+      <genre id="1">
+        <name><![CDATA[Electronic]]></name>
+      </genre>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma]]></filename>
+      <playlisttrack>1</playlisttrack>
+      <time>500</time>
+      <year>2007</year>
+      <format>wma</format>
+      <stream_format>mp3</stream_format>
+      <bitrate>20627</bitrate>
+      <stream_bitrate>32000</stream_bitrate>
+      <rate>22050</rate>
+      <mode><![CDATA[cbr]]></mode>
+      <mime><![CDATA[audio/x-ms-wma]]></mime>
+      <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
+      <size>1298295</size>
+      <mbid><![CDATA[]]></mbid>
+      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+      <has_art>1</has_art>
+      <flag>0</flag>
+      <rating/>
+      <averagerating/>
+      <playcount>0</playcount>
+      <catalog>1</catalog>
+      <composer><![CDATA[]]></composer>
+      <channels>2</channels>
+      <comment><![CDATA[Made with Sony ACID 5]]></comment>
+      <license><![CDATA[]]></license>
+      <publisher><![CDATA[20kbps rec.]]></publisher>
+      <language/>
+      <lyrics><![CDATA[]]></lyrics>
+      <replaygain_album_gain/>
+      <replaygain_album_peak/>
+      <replaygain_track_gain/>
+      <replaygain_track_peak/>
+      <r128_album_gain/>
+      <r128_track_gain/>
+    </song>
+  </bookmark>
+  <bookmark id="9">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
     <object_id>55</object_id>
     <position>0</position>
     <client><![CDATA[client1]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1721613848]]></update_date>
+    <update_date><![CDATA[1729484870]]></update_date>
     <song id="55">
       <name><![CDATA[Red&GreenSmoke]]></name>
       <title><![CDATA[Red&GreenSmoke]]></title>
@@ -245,10 +467,10 @@
       <mode><![CDATA[cbr]]></mode>
       <mime><![CDATA[audio/mpeg]]></mime>
       <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
       <size>3209886</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
@@ -270,14 +492,215 @@
       <r128_track_gain/>
     </song>
   </bookmark>
-  <bookmark id="6">
+  <bookmark id="11">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
+    <object_id>103</object_id>
+    <position>0</position>
+    <client><![CDATA[python3-ampache]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1729484870]]></update_date>
+    <song id="103">
+      <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
+      <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
+      <artist id="16">
+        <name><![CDATA[CARNÚN]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN]]></basename>
+      </artist>
+      <album id="10">
+        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+      </album>
+      <albumartist id="16">
+        <name><![CDATA[CARNÚN]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN]]></basename>
+      </albumartist>
+      <disk><![CDATA[1]]></disk>
+      <disksubtitle><![CDATA[]]></disksubtitle>
+      <track>7</track>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/07InTheSevenWoods_InstrumentalReRecording.ogg]]></filename>
+      <playlisttrack>1</playlisttrack>
+      <time>452</time>
+      <year>1996</year>
+      <format>ogg</format>
+      <stream_format>mp3</stream_format>
+      <bitrate>138496</bitrate>
+      <stream_bitrate>32000</stream_bitrate>
+      <rate>44100</rate>
+      <mode><![CDATA[vbr]]></mode>
+      <mime><![CDATA[application/ogg]]></mime>
+      <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
+      <size>7835220</size>
+      <mbid><![CDATA[]]></mbid>
+      <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+      <has_art>1</has_art>
+      <flag>0</flag>
+      <rating/>
+      <averagerating/>
+      <playcount>0</playcount>
+      <catalog>1</catalog>
+      <composer><![CDATA[]]></composer>
+      <channels>2</channels>
+      <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+      <license><![CDATA[]]></license>
+      <publisher><![CDATA[archive.org]]></publisher>
+      <language/>
+      <lyrics><![CDATA[]]></lyrics>
+      <replaygain_album_gain/>
+      <replaygain_album_peak/>
+      <replaygain_track_gain>-12.21</replaygain_track_gain>
+      <replaygain_track_peak>1</replaygain_track_peak>
+      <r128_album_gain/>
+      <r128_track_gain/>
+    </song>
+  </bookmark>
+  <bookmark id="12">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
+    <object_id>103</object_id>
+    <position>0</position>
+    <client><![CDATA[python3-ampache]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1729484872]]></update_date>
+    <song id="103">
+      <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
+      <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
+      <artist id="16">
+        <name><![CDATA[CARNÚN]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN]]></basename>
+      </artist>
+      <album id="10">
+        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+      </album>
+      <albumartist id="16">
+        <name><![CDATA[CARNÚN]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN]]></basename>
+      </albumartist>
+      <disk><![CDATA[1]]></disk>
+      <disksubtitle><![CDATA[]]></disksubtitle>
+      <track>7</track>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/07InTheSevenWoods_InstrumentalReRecording.ogg]]></filename>
+      <playlisttrack>1</playlisttrack>
+      <time>452</time>
+      <year>1996</year>
+      <format>ogg</format>
+      <stream_format>mp3</stream_format>
+      <bitrate>138496</bitrate>
+      <stream_bitrate>32000</stream_bitrate>
+      <rate>44100</rate>
+      <mode><![CDATA[vbr]]></mode>
+      <mime><![CDATA[application/ogg]]></mime>
+      <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
+      <size>7835220</size>
+      <mbid><![CDATA[]]></mbid>
+      <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+      <has_art>1</has_art>
+      <flag>0</flag>
+      <rating/>
+      <averagerating/>
+      <playcount>0</playcount>
+      <catalog>1</catalog>
+      <composer><![CDATA[]]></composer>
+      <channels>2</channels>
+      <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+      <license><![CDATA[]]></license>
+      <publisher><![CDATA[archive.org]]></publisher>
+      <language/>
+      <lyrics><![CDATA[]]></lyrics>
+      <replaygain_album_gain/>
+      <replaygain_album_peak/>
+      <replaygain_track_gain>-12.21</replaygain_track_gain>
+      <replaygain_track_peak>1</replaygain_track_peak>
+      <r128_album_gain/>
+      <r128_track_gain/>
+    </song>
+  </bookmark>
+  <bookmark id="13">
+    <user><![CDATA[user]]></user>
+    <object_type><![CDATA[song]]></object_type>
+    <object_id>55</object_id>
+    <position>0</position>
+    <client><![CDATA[client1]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1729484884]]></update_date>
+    <song id="55">
+      <name><![CDATA[Red&GreenSmoke]]></name>
+      <title><![CDATA[Red&GreenSmoke]]></title>
+      <artist id="2">
+        <name><![CDATA[Synthetic]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Synthetic]]></basename>
+      </artist>
+      <album id="2">
+        <name><![CDATA[Colorsmoke EP]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Colorsmoke EP]]></basename>
+      </album>
+      <albumartist id="2">
+        <name><![CDATA[Synthetic]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Synthetic]]></basename>
+      </albumartist>
+      <disk><![CDATA[1]]></disk>
+      <disksubtitle><![CDATA[]]></disksubtitle>
+      <track>5</track>
+      <genre id="1">
+        <name><![CDATA[Electronic]]></name>
+      </genre>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3]]></filename>
+      <playlisttrack>1</playlisttrack>
+      <time>400</time>
+      <year>2007</year>
+      <format>mp3</format>
+      <stream_format>mp3</stream_format>
+      <bitrate>64000</bitrate>
+      <stream_bitrate>32000</stream_bitrate>
+      <rate>22050</rate>
+      <mode><![CDATA[cbr]]></mode>
+      <mime><![CDATA[audio/mpeg]]></mime>
+      <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
+      <size>3209886</size>
+      <mbid><![CDATA[]]></mbid>
+      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+      <has_art>1</has_art>
+      <flag>0</flag>
+      <rating/>
+      <averagerating/>
+      <playcount>1</playcount>
+      <catalog>1</catalog>
+      <composer><![CDATA[]]></composer>
+      <channels>2</channels>
+      <comment><![CDATA[]]></comment>
+      <license><![CDATA[]]></license>
+      <publisher><![CDATA[20kbps rec.]]></publisher>
+      <language/>
+      <lyrics><![CDATA[]]></lyrics>
+      <replaygain_album_gain/>
+      <replaygain_album_peak/>
+      <replaygain_track_gain>-4.06</replaygain_track_gain>
+      <replaygain_track_peak>1</replaygain_track_peak>
+      <r128_album_gain/>
+      <r128_track_gain/>
+    </song>
+  </bookmark>
+  <bookmark id="14">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
     <object_id>54</object_id>
     <position>10</position>
     <client><![CDATA[client]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1721613848]]></update_date>
+    <update_date><![CDATA[1729484884]]></update_date>
     <song id="54">
       <name><![CDATA[Red&GreenSmoke]]></name>
       <title><![CDATA[Red&GreenSmoke]]></title>
@@ -314,10 +737,10 @@
       <mode><![CDATA[cbr]]></mode>
       <mime><![CDATA[audio/mpeg]]></mime>
       <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
       <size>3209468</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
@@ -339,14 +762,14 @@
       <r128_track_gain/>
     </song>
   </bookmark>
-  <bookmark id="7">
+  <bookmark id="15">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
     <object_id>103</object_id>
     <position>0</position>
     <client><![CDATA[python3-ampache]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1721613848]]></update_date>
+    <update_date><![CDATA[1729484884]]></update_date>
     <song id="103">
       <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
       <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
@@ -380,10 +803,10 @@
       <mode><![CDATA[vbr]]></mode>
       <mime><![CDATA[application/ogg]]></mime>
       <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
       <size>7835220</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&name=art.jpg]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
@@ -405,14 +828,14 @@
       <r128_track_gain/>
     </song>
   </bookmark>
-  <bookmark id="8">
+  <bookmark id="16">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
     <object_id>103</object_id>
     <position>0</position>
     <client><![CDATA[python3-ampache]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1721613850]]></update_date>
+    <update_date><![CDATA[1729484886]]></update_date>
     <song id="103">
       <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
       <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
@@ -446,10 +869,10 @@
       <mode><![CDATA[vbr]]></mode>
       <mime><![CDATA[application/ogg]]></mime>
       <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
       <size>7835220</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&name=art.jpg]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>

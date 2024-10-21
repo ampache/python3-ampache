@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>3</total_count>
-  <md5>92e41c872c709badead996c093eed60d</md5>
-  <playlist id="3">
-    <name><![CDATA[random - admin - private]]></name>
-    <owner><![CDATA[admin]]></owner>
-    <user id="2">
-      <username><![CDATA[admin]]></username>
+  <total_count>2</total_count>
+  <md5>6852d83006a0c272c761e4abe94db241</md5>
+  <playlist id="4">
+    <name><![CDATA[random - user - private]]></name>
+    <owner><![CDATA[user]]></owner>
+    <user id="4">
+      <username><![CDATA[user]]></username>
     </user>
     <items>43</items>
     <type>private</type>
-    <art><![CDATA[https://music.com.au/image.php?object_id=3&object_type=playlist]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=4&object_type=playlist]]></art>
     <has_access>1</has_access>
     <has_collaborate>1</has_collaborate>
     <has_art>0</has_art>
@@ -20,28 +20,10 @@
     <md5/>
     <last_update>1614054938</last_update>
   </playlist>
-  <playlist id="2">
-    <name><![CDATA[random - admin - public]]></name>
-    <owner><![CDATA[admin]]></owner>
-    <user id="2">
-      <username><![CDATA[admin]]></username>
-    </user>
-    <items>43</items>
-    <type>public</type>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=playlist]]></art>
-    <has_access>1</has_access>
-    <has_collaborate>1</has_collaborate>
-    <has_art>0</has_art>
-    <flag>1</flag>
-    <rating/>
-    <averagerating/>
-    <md5/>
-    <last_update>1614054896</last_update>
-  </playlist>
   <playlist id="66">
     <name><![CDATA[renamexml]]></name>
     <owner><![CDATA[user]]></owner>
-    <user id="2">
+    <user id="4">
       <username><![CDATA[user]]></username>
     </user>
     <items>0</items>
@@ -54,6 +36,6 @@
     <rating/>
     <averagerating/>
     <md5/>
-    <last_update>1727689104</last_update>
+    <last_update>1729484886</last_update>
   </playlist>
 </root>

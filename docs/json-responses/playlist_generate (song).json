@@ -1,23 +1,102 @@
 {
     "total_count": 4,
-    "md5": "c943d05f5ae7cc400be71467ecdd9675",
+    "md5": "e5ba983e5a742b7969e0680456088c94",
     "song": [
         {
-            "id": "108",
-            "title": "I've been down this road before",
-            "name": "I've been down this road before",
+            "id": "93",
+            "title": "Scribnus 3",
+            "name": "Scribnus 3",
             "artist": {
-                "id": "21",
-                "name": "Tip-C (featuring Mike Beers)",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Tip-C (featuring Mike Beers)"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "21",
-                    "name": "Tip-C (featuring Mike Beers)",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "Tip-C (featuring Mike Beers)"
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 3,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/03_Scribnus_3.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 1,
+            "time": 641,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3",
+            "size": 15400002,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": true,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 4,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": "",
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": 1.53,
+            "replaygain_track_peak": 0.989,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "114",
+            "title": "He is the Master of War",
+            "name": "He is the Master of War",
+            "artist": {
+                "id": "26",
+                "name": "Stress Builds Character",
+                "prefix": null,
+                "basename": "Stress Builds Character"
+            },
+            "artists": [
+                {
+                    "id": "26",
+                    "name": "Stress Builds Character",
+                    "prefix": null,
+                    "basename": "Stress Builds Character"
                 }
             ],
             "album": {
@@ -34,22 +113,22 @@
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 6,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a",
             "genre": [],
-            "playlisttrack": 1,
-            "time": 252,
+            "playlisttrack": 2,
+            "time": 233,
             "year": 2012,
-            "format": "wma",
+            "format": "m4a",
             "stream_format": "mp3",
-            "bitrate": 32582,
+            "bitrate": 256245,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
+            "mode": "vbr",
+            "mime": "audio\/mp4",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.mp3",
-            "size": 1035322,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.mp3",
+            "size": 7535126,
             "mbid": null,
             "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
             "has_art": true,
@@ -59,7 +138,7 @@
             "playcount": 0,
             "catalog": 1,
             "composer": null,
-            "channels": 1,
+            "channels": 2,
             "comment": null,
             "license": "",
             "publisher": null,
@@ -67,223 +146,158 @@
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
+            "replaygain_track_gain": -10.74,
+            "replaygain_track_peak": 1.035,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "113",
-            "title": "Representin",
-            "name": "Representin",
+            "id": "116",
+            "title": "Can I Help U?",
+            "name": "Can I Help U?",
             "artist": {
-                "id": "32",
-                "name": "Shorty Mac",
+                "id": "36",
+                "name": "Comfort Fit",
                 "prefix": null,
-                "basename": "Shorty Mac"
+                "basename": "Comfort Fit"
             },
             "artists": [
                 {
-                    "id": "32",
-                    "name": "Shorty Mac",
+                    "id": "36",
+                    "name": "Comfort Fit",
                     "prefix": null,
-                    "basename": "Shorty Mac"
+                    "basename": "Comfort Fit"
                 }
             ],
             "album": {
-                "id": "12",
-                "name": "Buried in Nausea",
+                "id": "21",
+                "name": "Forget and Remember",
                 "prefix": null,
-                "basename": "Buried in Nausea"
+                "basename": "Forget and Remember"
             },
             "albumartist": {
-                "id": "19",
-                "name": "Various Artists",
+                "id": "36",
+                "name": "Comfort Fit",
                 "prefix": null,
-                "basename": "Various Artists"
+                "basename": "Comfort Fit"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
-            "genre": [],
-            "playlisttrack": 2,
-            "time": 234,
-            "year": 2012,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/1 - Can I Help U?.mp3",
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 103,
+            "year": 2005,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 123814,
+            "bitrate": 216839,
             "stream_bitrate": 32000,
             "rate": 44100,
             "mode": "vbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
-            "size": 3628327,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=116&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Can%20I%20Help%20U-.mp3",
+            "size": 2811819,
+            "mbid": "51d0e252-f20c-414c-b169-8dcf18ef9d26",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 1,
+            "catalog": 4,
             "composer": null,
             "channels": 2,
-            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-01-comfort_fit-can_i_help_u\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
             "license": "",
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": 1.91,
-            "replaygain_track_peak": 0.851,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "82",
-            "title": "Vanvett",
-            "name": "Vanvett",
-            "artist": {
-                "id": "13",
-                "name": "IOK-1",
-                "prefix": null,
-                "basename": "IOK-1"
-            },
-            "artists": [
-                {
-                    "id": "13",
-                    "name": "IOK-1",
-                    "prefix": null,
-                    "basename": "IOK-1"
-                }
-            ],
-            "album": {
-                "id": "7",
-                "name": "Sensorisk Deprivation",
-                "prefix": null,
-                "basename": "Sensorisk Deprivation"
-            },
-            "albumartist": {
-                "id": "13",
-                "name": "IOK-1",
-                "prefix": null,
-                "basename": "IOK-1"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/02_-_IOK-1_-_Vanvett.flac",
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Dark Ambient"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 825,
-            "year": 2011,
-            "format": "flac",
-            "stream_format": "mp3",
-            "bitrate": 371855,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/flac",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3",
-            "size": 38389422,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": null,
-            "channels": 2,
-            "comment": "DNA Production release\r\nCatalogue # DNA 119",
-            "license": "",
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": -2.57,
-            "replaygain_track_peak": 0.977,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "115",
-            "title": "Are we going Crazy",
-            "name": "Are we going Crazy",
-            "artist": {
-                "id": "27",
-                "name": "Chi.Otic",
-                "prefix": null,
-                "basename": "Chi.Otic"
-            },
-            "artists": [
-                {
-                    "id": "27",
-                    "name": "Chi.Otic",
-                    "prefix": null,
-                    "basename": "Chi.Otic"
-                }
-            ],
-            "album": {
-                "id": "12",
-                "name": "Buried in Nausea",
-                "prefix": null,
-                "basename": "Buried in Nausea"
-            },
-            "albumartist": {
-                "id": "19",
-                "name": "Various Artists",
-                "prefix": null,
-                "basename": "Various Artists"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 7,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
-            "genre": [],
-            "playlisttrack": 4,
-            "time": 433,
-            "year": 2012,
-            "format": "wma",
-            "stream_format": "mp3",
-            "bitrate": 32582,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
-            "size": 1776580,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": null,
-            "channels": 1,
-            "comment": null,
-            "license": "",
-            "publisher": null,
+            "publisher": "Tokyo Dawn Records",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
             "replaygain_track_gain": null,
             "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "58",
+            "title": "BrownSmoke",
+            "name": "BrownSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic"
+            },
+            "artists": [
+                {
+                    "id": "2",
+                    "name": "Synthetic",
+                    "prefix": null,
+                    "basename": "Synthetic"
+                }
+            ],
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP",
+                "prefix": null,
+                "basename": "Colorsmoke EP"
+            },
+            "albumartist": {
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 304,
+            "year": 2007,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 64000,
+            "stream_bitrate": 32000,
+            "rate": 22050,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
+            "size": 2441886,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 2,
+            "comment": null,
+            "license": "",
+            "publisher": "20kbps rec.",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": 0.96,
+            "replaygain_track_peak": 0.912,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

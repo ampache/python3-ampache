@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>1</total_count>
-  <md5>6bc0ba5e4ba64ff41aa019f13332beb5</md5>
+  <total_count>2</total_count>
+  <md5>164b5ae18f519010c5d44ea03747e258</md5>
+  <share id="1">
+    <name><![CDATA[Creeping Lawler 2]]></name>
+    <user><![CDATA[user]]></user>
+    <allow_stream>1</allow_stream>
+    <allow_download/>
+    <creation_date>1670202706</creation_date>
+    <lastvisit_date>1614129643</lastvisit_date>
+    <object_type><![CDATA[album]]></object_type>
+    <object_id>9</object_id>
+    <expire_days>0</expire_days>
+    <max_counter>0</max_counter>
+    <counter>1</counter>
+    <secret><![CDATA[GJ7EzBPT]]></secret>
+    <public_url><![CDATA[https://music.com.au/share.php?id=1&secret=GJ7EzBPT]]></public_url>
+    <description><![CDATA[Creeping Lawler 2 (Warfare 3.0)]]></description>
+  </share>
   <share id="2">
     <name><![CDATA[Inominavel (live.v.01)]]></name>
     <user><![CDATA[demo]]></user>
@@ -17,6 +33,22 @@
     <secret><![CDATA[GJ7EzBPT]]></secret>
     <public_url><![CDATA[https://music.com.au/share.php?id=2&secret=GJ7EzBPT]]></public_url>
     <description><![CDATA[Buried in Nausea (Various Artists)]]></description>
+  </share>
+  <share id="7">
+    <name><![CDATA[Colorsmoke EP]]></name>
+    <user><![CDATA[user]]></user>
+    <allow_stream>1</allow_stream>
+    <allow_download>1</allow_download>
+    <creation_date>1670202706</creation_date>
+    <lastvisit_date>0</lastvisit_date>
+    <object_type><![CDATA[album]]></object_type>
+    <object_id>2</object_id>
+    <expire_days>0</expire_days>
+    <max_counter>0</max_counter>
+    <counter>0</counter>
+    <secret><![CDATA[GJ7EzBPT]]></secret>
+    <public_url><![CDATA[http://localhost:8989/share.php?id=7&secret=GJ7EzBPT]]></public_url>
+    <description><![CDATA[Colorsmoke EP (Synthetic)]]></description>
   </share>
   <share id="9">
     <name><![CDATA[Are we going Crazy]]></name>
