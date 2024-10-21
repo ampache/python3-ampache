@@ -1,0 +1,66 @@
+{
+    "subsonic-response": {
+        "status": "ok",
+        "version": "1.16.1",
+        "type": "ampache",
+        "serverVersion": "6.6.4",
+        "openSubsonic": true,
+        "starred": {
+            "artist": [
+                {
+                    "id": "100000002",
+                    "name": "Synthetic",
+                    "coverArt": "ar-100000002"
+                }
+            ],
+            "album": [
+                {
+                    "id": "200000002",
+                    "parent": "100000002",
+                    "album": "Colorsmoke EP",
+                    "title": "Colorsmoke EP",
+                    "name": "Colorsmoke EP",
+                    "isDir": true,
+                    "coverArt": "al-200000002",
+                    "songCount": 12,
+                    "created": "2021-02-23T04:24:48+00:00",
+                    "duration": 4568,
+                    "playCount": 1,
+                    "artistId": "100000002",
+                    "artist": "Synthetic",
+                    "year": 2007,
+                    "genre": "Electronic",
+                    "userRating": 5,
+                    "averageRating": 3,
+                    "starred": "2021-02-22T05:51:53Z"
+                }
+            ],
+            "song": [
+                {
+                    "id": "300000093",
+                    "parent": "200000008",
+                    "title": "Scribnus 3",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "200000008",
+                    "album": "Nofi Devices",
+                    "artistId": "100000014",
+                    "artist": "Nofi/found.",
+                    "coverArt": "200000008",
+                    "duration": 641,
+                    "bitRate": 187,
+                    "userRating": 5,
+                    "starred": "2024-10-21T04:28:53Z",
+                    "track": 3,
+                    "genre": "Electronica",
+                    "size": 15400002,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3"
+                }
+            ]
+        }
+    }
+}
