@@ -160,6 +160,15 @@ Here is a short code sample for python using version 6.x.x+ to scrobble a track 
                                             'album_name': '...and a Dirge Becomes an Anthem',
                                             'stime': int(time.time())})
 
+POWERED BY
+==========
+
+PhpStorm logo
+    .. image:: https://resources.jetbrains.com/storage/products/company/brand/logos/PyCharm.png
+       :target: https://jb.gg/OpenSourceSupport
+
+JetBrains have supported the project for many years now and their tools really do power Ampache development.
+
 LINKS
 =====
 
