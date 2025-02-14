@@ -23,7 +23,7 @@
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mp4]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&transcode_to=mp3&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.mp3]]></url>
         <size>6651911</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -63,7 +63,7 @@
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mp4]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&transcode_to=mp3&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.mp3]]></url>
         <size>7535126</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -103,7 +103,7 @@
         <rate>44100</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3]]></url>
         <size>483444</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -114,7 +114,7 @@
         <preciserating/>
         <rating/>
         <averagerating/>
-        <playcount/>
+        <playcount>1</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>1</channels>
@@ -143,7 +143,7 @@
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&player=api&name=Shorty%20Mac%20-%20Representin.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3]]></url>
         <size>3628327</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -183,7 +183,7 @@
         <rate>44100</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&transcode_to=mp3&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.mp3]]></url>
         <size>460498</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -223,7 +223,7 @@
         <rate>44100</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&transcode_to=mp3&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.mp3]]></url>
         <size>1035322</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -263,7 +263,7 @@
         <rate>44100</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
         <size>1776580</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -303,7 +303,7 @@
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3]]></url>
         <size>4693165</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -344,7 +344,7 @@
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mp4]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&transcode_to=mp3&player=api&name=R-B%20-%20Arrest%20Me.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=R-B%20-%20Arrest%20Me.mp3]]></url>
         <size>3091727</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -399,12 +399,12 @@
         <playlisttrack>1</playlisttrack>
         <time>91</time>
         <year>1996</year>
-        <bitrate>80962</bitrate>
+        <bitrate>81137</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.mp3]]></url>
-        <size>930226</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.mp3]]></url>
+        <size>932235</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -439,12 +439,12 @@
         <playlisttrack>2</playlisttrack>
         <time>378</time>
         <year>1996</year>
-        <bitrate>89965</bitrate>
+        <bitrate>90078</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3]]></url>
-        <size>4265791</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3]]></url>
+        <size>4271173</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -479,12 +479,12 @@
         <playlisttrack>3</playlisttrack>
         <time>420</time>
         <year>1996</year>
-        <bitrate>84423</bitrate>
+        <bitrate>84528</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3]]></url>
-        <size>4444403</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3]]></url>
+        <size>4449963</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -519,12 +519,12 @@
         <playlisttrack>4</playlisttrack>
         <time>404</time>
         <year>1996</year>
-        <bitrate>100053</bitrate>
+        <bitrate>100174</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3]]></url>
-        <size>5066698</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3]]></url>
+        <size>5072883</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -559,12 +559,12 @@
         <playlisttrack>5</playlisttrack>
         <time>164</time>
         <year>1996</year>
-        <bitrate>106647</bitrate>
+        <bitrate>106806</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3]]></url>
-        <size>2202971</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3]]></url>
+        <size>2206257</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -599,12 +599,12 @@
         <playlisttrack>6</playlisttrack>
         <time>427</time>
         <year>1996</year>
-        <bitrate>143788</bitrate>
+        <bitrate>143953</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3]]></url>
-        <size>7696008</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3]]></url>
+        <size>7704860</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -639,12 +639,12 @@
         <playlisttrack>7</playlisttrack>
         <time>452</time>
         <year>1996</year>
-        <bitrate>138338</bitrate>
+        <bitrate>138496</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
-        <size>7826238</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
+        <size>7835220</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -679,12 +679,12 @@
         <playlisttrack>8</playlisttrack>
         <time>557</time>
         <year>1996</year>
-        <bitrate>139453</bitrate>
+        <bitrate>139609</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.mp3]]></url>
-        <size>9722091</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.mp3]]></url>
+        <size>9733002</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -719,12 +719,12 @@
         <playlisttrack>9</playlisttrack>
         <time>980</time>
         <year>1996</year>
-        <bitrate>66912</bitrate>
+        <bitrate>66988</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&transcode_to=mp3&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.mp3]]></url>
-        <size>8219821</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.mp3]]></url>
+        <size>8229246</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
@@ -781,7 +781,7 @@
         <rate>22050</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
         <size>4010069</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -823,7 +823,7 @@
         <rate>22050</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
         <size>1298295</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -865,7 +865,7 @@
         <rate>22050</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
         <size>2325568</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -907,7 +907,7 @@
         <rate>22050</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
         <size>754935</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -949,7 +949,7 @@
         <rate>22050</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
         <size>3131519</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -991,7 +991,7 @@
         <rate>22050</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
         <size>1014135</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -1033,7 +1033,7 @@
         <rate>22050</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
         <size>2441886</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -1075,7 +1075,7 @@
         <rate>22050</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
         <size>792375</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -1117,7 +1117,7 @@
         <rate>22050</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
         <size>3209468</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -1159,7 +1159,7 @@
         <rate>22050</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
         <size>3209886</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -1201,7 +1201,7 @@
         <rate>44100</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
         <size>1044851</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -1243,7 +1243,7 @@
         <rate>22050</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=63&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=63&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
         <size>1041065</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -1302,7 +1302,7 @@
         <rate>44100</rate>
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/wav]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&transcode_to=mp3&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
         <size>52345628</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
@@ -1342,7 +1342,7 @@
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
         <size>6652448</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>

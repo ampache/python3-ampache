@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>1</total_count>
+  <total_count>9</total_count>
+  <album id="12">
+    <name><![CDATA[Buried in Nausea]]></name>
+    <artist id="19"><![CDATA[Various Artists]]></artist>
+    <time>1879</time>
+    <year>2012</year>
+    <tracks>9</tracks>
+    <songcount>9</songcount>
+    <type>compilation</type>
+    <disk>1</disk>
+    <tag id="7" count="1"><![CDATA[Punk]]></tag>
+    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+  </album>
+  <album id="10">
+    <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+    <artist id="16"><![CDATA[CARNÚN]]></artist>
+    <time>3873</time>
+    <year>1996</year>
+    <tracks>9</tracks>
+    <songcount>9</songcount>
+    <type/>
+    <disk>1</disk>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+  </album>
   <album id="2">
     <name><![CDATA[Colorsmoke EP]]></name>
     <artist id="2"><![CDATA[Synthetic]]></artist>
@@ -16,6 +49,107 @@
     <preciserating>5</preciserating>
     <rating>5</rating>
     <averagerating>3</averagerating>
+    <mbid><![CDATA[]]></mbid>
+  </album>
+  <album id="9">
+    <name><![CDATA[Creeping Lawler 2]]></name>
+    <artist id="15"><![CDATA[Warfare 3.0]]></artist>
+    <time>592</time>
+    <year>0</year>
+    <tracks>2</tracks>
+    <songcount>2</songcount>
+    <type/>
+    <disk>1</disk>
+    <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album]]></art>
+    <flag>0</flag>
+    <preciserating>3</preciserating>
+    <rating>3</rating>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+  </album>
+  <album id="21">
+    <name><![CDATA[Forget and Remember]]></name>
+    <artist id="36"><![CDATA[Comfort Fit]]></artist>
+    <time>4248</time>
+    <year>2005</year>
+    <tracks>20</tracks>
+    <songcount>20</songcount>
+    <type>album</type>
+    <disk>1</disk>
+    <tag id="8" count="1"><![CDATA[Hip-Hop]]></tag>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[6e1d48f7-717c-416e-af35-5d2454a13af2]]></mbid>
+  </album>
+  <album id="18">
+    <name><![CDATA[Inominavel (live.v.01)]]></name>
+    <artist id="11"><![CDATA[structura]]></artist>
+    <time>1339</time>
+    <year>2007</year>
+    <tracks>6</tracks>
+    <songcount>6</songcount>
+    <type/>
+    <disk>1</disk>
+    <tag id="3" count="1"><![CDATA[Noise]]></tag>
+    <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album]]></art>
+    <flag>0</flag>
+    <preciserating>4</preciserating>
+    <rating>4</rating>
+    <averagerating>3.67</averagerating>
+    <mbid><![CDATA[]]></mbid>
+  </album>
+  <album id="8">
+    <name><![CDATA[Nofi Devices]]></name>
+    <artist id="14"><![CDATA[Nofi/found.]]></artist>
+    <time>4423</time>
+    <year>0</year>
+    <tracks>11</tracks>
+    <songcount>11</songcount>
+    <type/>
+    <disk>1</disk>
+    <tag id="5" count="1"><![CDATA[Electronica]]></tag>
+    <tag id="6" count="1"><![CDATA[Dance]]></tag>
+    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album]]></art>
+    <flag>0</flag>
+    <preciserating>2</preciserating>
+    <rating>2</rating>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+  </album>
+  <album id="7">
+    <name><![CDATA[Sensorisk Deprivation]]></name>
+    <artist id="13"><![CDATA[IOK-1]]></artist>
+    <time>3428</time>
+    <year>2011</year>
+    <tracks>4</tracks>
+    <songcount>4</songcount>
+    <type/>
+    <disk>1</disk>
+    <tag id="4" count="1"><![CDATA[Dark Ambient]]></tag>
+    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+  </album>
+  <album id="6">
+    <name><![CDATA[Хикки Найди Свою Тян (Single)]]></name>
+    <artist id="12"><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></artist>
+    <time>600</time>
+    <year>0</year>
+    <tracks>2</tracks>
+    <songcount>2</songcount>
+    <type/>
+    <disk>1</disk>
+    <art><![CDATA[https://music.com.au/image.php?object_id=6&object_type=album]]></art>
+    <flag>0</flag>
+    <preciserating>1</preciserating>
+    <rating>1</rating>
+    <averagerating>1</averagerating>
     <mbid><![CDATA[]]></mbid>
   </album>
 </root>

@@ -1,185 +1,116 @@
 [
     {
-        "id": "2",
-        "name": "random - admin - public (admin)",
+        "id": "smart_21",
+        "name": "admin - 02\/23\/2021 14:36:44 (admin)",
         "owner": "admin",
         "items": [
             {
-                "id": "102",
-                "playlisttrack": 1
-            },
-            {
-                "id": "98",
-                "playlisttrack": 2
-            },
-            {
-                "id": "59",
-                "playlisttrack": 3
-            },
-            {
-                "id": "61",
-                "playlisttrack": 4
-            },
-            {
-                "id": "90",
-                "playlisttrack": 5
-            },
-            {
-                "id": "57",
-                "playlisttrack": 6
-            },
-            {
-                "id": "100",
-                "playlisttrack": 7
-            },
-            {
-                "id": "94",
-                "playlisttrack": 8
-            },
-            {
-                "id": "54",
-                "playlisttrack": 9
-            },
-            {
-                "id": "60",
-                "playlisttrack": 10
-            },
-            {
-                "id": "88",
-                "playlisttrack": 11
-            },
-            {
-                "id": "83",
-                "playlisttrack": 12
-            },
-            {
-                "id": "56",
-                "playlisttrack": 13
-            },
-            {
-                "id": "78",
-                "playlisttrack": 14
-            },
-            {
-                "id": "82",
-                "playlisttrack": 15
-            },
-            {
-                "id": "85",
-                "playlisttrack": 16
-            },
-            {
-                "id": "86",
-                "playlisttrack": 17
-            },
-            {
-                "id": "89",
-                "playlisttrack": 18
-            },
-            {
-                "id": "91",
-                "playlisttrack": 19
-            },
-            {
-                "id": "84",
-                "playlisttrack": 20
-            },
-            {
-                "id": "106",
-                "playlisttrack": 21
-            },
-            {
-                "id": "81",
-                "playlisttrack": 22
-            },
-            {
-                "id": "63",
-                "playlisttrack": 23
-            },
-            {
-                "id": "99",
-                "playlisttrack": 24
-            },
-            {
-                "id": "65",
-                "playlisttrack": 25
-            },
-            {
-                "id": "105",
-                "playlisttrack": 26
-            },
-            {
-                "id": "96",
-                "playlisttrack": 27
-            },
-            {
-                "id": "101",
-                "playlisttrack": 28
-            },
-            {
-                "id": "74",
-                "playlisttrack": 29
-            },
-            {
-                "id": "103",
-                "playlisttrack": 30
-            },
-            {
-                "id": "104",
-                "playlisttrack": 31
-            },
-            {
-                "id": "73",
-                "playlisttrack": 32
-            },
-            {
-                "id": "87",
-                "playlisttrack": 33
-            },
-            {
-                "id": "75",
-                "playlisttrack": 34
-            },
-            {
-                "id": "58",
-                "playlisttrack": 35
-            },
-            {
-                "id": "93",
-                "playlisttrack": 36
-            },
-            {
-                "id": "62",
-                "playlisttrack": 37
-            },
-            {
-                "id": "79",
-                "playlisttrack": 38
-            },
-            {
                 "id": "76",
-                "playlisttrack": 39
-            },
-            {
-                "id": "92",
-                "playlisttrack": 40
-            },
-            {
-                "id": "55",
-                "playlisttrack": 41
-            },
-            {
-                "id": "95",
-                "playlisttrack": 42
-            },
-            {
-                "id": "97",
-                "playlisttrack": 43
+                "playlisttrack": 1
             }
         ],
         "type": "public",
-        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=playlist",
-        "flag": 1,
+        "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=search",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": ""
+    },
+    {
+        "id": "smart_14",
+        "name": "Album 1* (System)",
+        "owner": "System",
+        "items": [
+            {
+                "id": "79",
+                "playlisttrack": 1
+            },
+            {
+                "id": "80",
+                "playlisttrack": 2
+            }
+        ],
+        "type": "public",
+        "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=search",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": ""
+    },
+    {
+        "id": "smart_13",
+        "name": "Album 2* (System)",
+        "owner": "System",
+        "items": [
+            {
+                "id": "90",
+                "playlisttrack": 1
+            },
+            {
+                "id": "95",
+                "playlisttrack": 2
+            },
+            {
+                "id": "93",
+                "playlisttrack": 3
+            },
+            {
+                "id": "85",
+                "playlisttrack": 4
+            },
+            {
+                "id": "86",
+                "playlisttrack": 5
+            },
+            {
+                "id": "87",
+                "playlisttrack": 6
+            },
+            {
+                "id": "94",
+                "playlisttrack": 7
+            },
+            {
+                "id": "92",
+                "playlisttrack": 8
+            },
+            {
+                "id": "91",
+                "playlisttrack": 9
+            },
+            {
+                "id": "88",
+                "playlisttrack": 10
+            },
+            {
+                "id": "89",
+                "playlisttrack": 11
+            }
+        ],
+        "type": "public",
+        "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=search",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": ""
+    },
+    {
+        "id": "smart_12",
+        "name": "Album 3* (System)",
+        "owner": "System",
+        "items": [
+            {
+                "id": "97",
+                "playlisttrack": 1
+            },
+            {
+                "id": "96",
+                "playlisttrack": 2
+            }
+        ],
+        "type": "public",
+        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=search",
+        "flag": 0,
         "preciserating": null,
         "rating": null,
         "averagerating": ""
