@@ -430,7 +430,7 @@
     <position>0</position>
     <client><![CDATA[client1]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1729484870]]></update_date>
+    <update_date><![CDATA[1739770128]]></update_date>
     <song id="55">
       <name><![CDATA[Red&GreenSmoke]]></name>
       <title><![CDATA[Red&GreenSmoke]]></title>
@@ -495,48 +495,48 @@
   <bookmark id="11">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
-    <object_id>103</object_id>
+    <object_id>113</object_id>
     <position>0</position>
     <client><![CDATA[python3-ampache]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1729484870]]></update_date>
-    <song id="103">
-      <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
-      <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
-      <artist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+    <update_date><![CDATA[1739770128]]></update_date>
+    <song id="113">
+      <name><![CDATA[Representin]]></name>
+      <title><![CDATA[Representin]]></title>
+      <artist id="32">
+        <name><![CDATA[Shorty Mac]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[Shorty Mac]]></basename>
       </artist>
-      <album id="10">
-        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <album id="12">
+        <name><![CDATA[Buried in Nausea]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        <basename><![CDATA[Buried in Nausea]]></basename>
       </album>
-      <albumartist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+      <albumartist id="19">
+        <name><![CDATA[Various Artists]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[Various Artists]]></basename>
       </albumartist>
       <disk><![CDATA[1]]></disk>
       <disksubtitle><![CDATA[]]></disksubtitle>
-      <track>7</track>
-      <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/07InTheSevenWoods_InstrumentalReRecording.ogg]]></filename>
+      <track>4</track>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3]]></filename>
       <playlisttrack>1</playlisttrack>
-      <time>452</time>
-      <year>1996</year>
-      <format>ogg</format>
+      <time>234</time>
+      <year>2012</year>
+      <format>mp3</format>
       <stream_format>mp3</stream_format>
-      <bitrate>138496</bitrate>
+      <bitrate>123814</bitrate>
       <stream_bitrate>32000</stream_bitrate>
       <rate>44100</rate>
       <mode><![CDATA[vbr]]></mode>
-      <mime><![CDATA[application/ogg]]></mime>
+      <mime><![CDATA[audio/mpeg]]></mime>
       <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
-      <size>7835220</size>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3]]></url>
+      <size>3628327</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
@@ -545,15 +545,15 @@
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
       <channels>2</channels>
-      <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+      <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
       <license><![CDATA[]]></license>
       <publisher><![CDATA[archive.org]]></publisher>
       <language/>
       <lyrics><![CDATA[]]></lyrics>
       <replaygain_album_gain/>
       <replaygain_album_peak/>
-      <replaygain_track_gain>-12.21</replaygain_track_gain>
-      <replaygain_track_peak>1</replaygain_track_peak>
+      <replaygain_track_gain>1.91</replaygain_track_gain>
+      <replaygain_track_peak>0.851</replaygain_track_peak>
       <r128_album_gain/>
       <r128_track_gain/>
     </song>
@@ -561,48 +561,48 @@
   <bookmark id="12">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
-    <object_id>103</object_id>
+    <object_id>113</object_id>
     <position>0</position>
     <client><![CDATA[python3-ampache]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1729484872]]></update_date>
-    <song id="103">
-      <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
-      <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
-      <artist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+    <update_date><![CDATA[1739770130]]></update_date>
+    <song id="113">
+      <name><![CDATA[Representin]]></name>
+      <title><![CDATA[Representin]]></title>
+      <artist id="32">
+        <name><![CDATA[Shorty Mac]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[Shorty Mac]]></basename>
       </artist>
-      <album id="10">
-        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <album id="12">
+        <name><![CDATA[Buried in Nausea]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        <basename><![CDATA[Buried in Nausea]]></basename>
       </album>
-      <albumartist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+      <albumartist id="19">
+        <name><![CDATA[Various Artists]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[Various Artists]]></basename>
       </albumartist>
       <disk><![CDATA[1]]></disk>
       <disksubtitle><![CDATA[]]></disksubtitle>
-      <track>7</track>
-      <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/07InTheSevenWoods_InstrumentalReRecording.ogg]]></filename>
+      <track>4</track>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3]]></filename>
       <playlisttrack>1</playlisttrack>
-      <time>452</time>
-      <year>1996</year>
-      <format>ogg</format>
+      <time>234</time>
+      <year>2012</year>
+      <format>mp3</format>
       <stream_format>mp3</stream_format>
-      <bitrate>138496</bitrate>
+      <bitrate>123814</bitrate>
       <stream_bitrate>32000</stream_bitrate>
       <rate>44100</rate>
       <mode><![CDATA[vbr]]></mode>
-      <mime><![CDATA[application/ogg]]></mime>
+      <mime><![CDATA[audio/mpeg]]></mime>
       <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
-      <size>7835220</size>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3]]></url>
+      <size>3628327</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
@@ -611,15 +611,15 @@
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
       <channels>2</channels>
-      <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+      <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
       <license><![CDATA[]]></license>
       <publisher><![CDATA[archive.org]]></publisher>
       <language/>
       <lyrics><![CDATA[]]></lyrics>
       <replaygain_album_gain/>
       <replaygain_album_peak/>
-      <replaygain_track_gain>-12.21</replaygain_track_gain>
-      <replaygain_track_peak>1</replaygain_track_peak>
+      <replaygain_track_gain>1.91</replaygain_track_gain>
+      <replaygain_track_peak>0.851</replaygain_track_peak>
       <r128_album_gain/>
       <r128_track_gain/>
     </song>
@@ -631,7 +631,7 @@
     <position>0</position>
     <client><![CDATA[client1]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1729484884]]></update_date>
+    <update_date><![CDATA[1739770137]]></update_date>
     <song id="55">
       <name><![CDATA[Red&GreenSmoke]]></name>
       <title><![CDATA[Red&GreenSmoke]]></title>
@@ -700,7 +700,7 @@
     <position>10</position>
     <client><![CDATA[client]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1729484884]]></update_date>
+    <update_date><![CDATA[1739770137]]></update_date>
     <song id="54">
       <name><![CDATA[Red&GreenSmoke]]></name>
       <title><![CDATA[Red&GreenSmoke]]></title>
@@ -765,48 +765,48 @@
   <bookmark id="15">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
-    <object_id>103</object_id>
+    <object_id>113</object_id>
     <position>0</position>
     <client><![CDATA[python3-ampache]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1729484884]]></update_date>
-    <song id="103">
-      <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
-      <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
-      <artist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+    <update_date><![CDATA[1739770137]]></update_date>
+    <song id="113">
+      <name><![CDATA[Representin]]></name>
+      <title><![CDATA[Representin]]></title>
+      <artist id="32">
+        <name><![CDATA[Shorty Mac]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[Shorty Mac]]></basename>
       </artist>
-      <album id="10">
-        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <album id="12">
+        <name><![CDATA[Buried in Nausea]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        <basename><![CDATA[Buried in Nausea]]></basename>
       </album>
-      <albumartist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+      <albumartist id="19">
+        <name><![CDATA[Various Artists]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[Various Artists]]></basename>
       </albumartist>
       <disk><![CDATA[1]]></disk>
       <disksubtitle><![CDATA[]]></disksubtitle>
-      <track>7</track>
-      <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/07InTheSevenWoods_InstrumentalReRecording.ogg]]></filename>
+      <track>4</track>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3]]></filename>
       <playlisttrack>1</playlisttrack>
-      <time>452</time>
-      <year>1996</year>
-      <format>ogg</format>
+      <time>234</time>
+      <year>2012</year>
+      <format>mp3</format>
       <stream_format>mp3</stream_format>
-      <bitrate>138496</bitrate>
+      <bitrate>123814</bitrate>
       <stream_bitrate>32000</stream_bitrate>
       <rate>44100</rate>
       <mode><![CDATA[vbr]]></mode>
-      <mime><![CDATA[application/ogg]]></mime>
+      <mime><![CDATA[audio/mpeg]]></mime>
       <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
-      <size>7835220</size>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3]]></url>
+      <size>3628327</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
@@ -815,15 +815,15 @@
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
       <channels>2</channels>
-      <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+      <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
       <license><![CDATA[]]></license>
       <publisher><![CDATA[archive.org]]></publisher>
       <language/>
       <lyrics><![CDATA[]]></lyrics>
       <replaygain_album_gain/>
       <replaygain_album_peak/>
-      <replaygain_track_gain>-12.21</replaygain_track_gain>
-      <replaygain_track_peak>1</replaygain_track_peak>
+      <replaygain_track_gain>1.91</replaygain_track_gain>
+      <replaygain_track_peak>0.851</replaygain_track_peak>
       <r128_album_gain/>
       <r128_track_gain/>
     </song>
@@ -831,48 +831,48 @@
   <bookmark id="16">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
-    <object_id>103</object_id>
+    <object_id>113</object_id>
     <position>0</position>
     <client><![CDATA[python3-ampache]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1729484886]]></update_date>
-    <song id="103">
-      <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
-      <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
-      <artist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+    <update_date><![CDATA[1739770139]]></update_date>
+    <song id="113">
+      <name><![CDATA[Representin]]></name>
+      <title><![CDATA[Representin]]></title>
+      <artist id="32">
+        <name><![CDATA[Shorty Mac]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[Shorty Mac]]></basename>
       </artist>
-      <album id="10">
-        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <album id="12">
+        <name><![CDATA[Buried in Nausea]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        <basename><![CDATA[Buried in Nausea]]></basename>
       </album>
-      <albumartist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+      <albumartist id="19">
+        <name><![CDATA[Various Artists]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[Various Artists]]></basename>
       </albumartist>
       <disk><![CDATA[1]]></disk>
       <disksubtitle><![CDATA[]]></disksubtitle>
-      <track>7</track>
-      <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/07InTheSevenWoods_InstrumentalReRecording.ogg]]></filename>
+      <track>4</track>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3]]></filename>
       <playlisttrack>1</playlisttrack>
-      <time>452</time>
-      <year>1996</year>
-      <format>ogg</format>
+      <time>234</time>
+      <year>2012</year>
+      <format>mp3</format>
       <stream_format>mp3</stream_format>
-      <bitrate>138496</bitrate>
+      <bitrate>123814</bitrate>
       <stream_bitrate>32000</stream_bitrate>
       <rate>44100</rate>
       <mode><![CDATA[vbr]]></mode>
-      <mime><![CDATA[application/ogg]]></mime>
+      <mime><![CDATA[audio/mpeg]]></mime>
       <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
-      <size>7835220</size>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3]]></url>
+      <size>3628327</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
@@ -881,15 +881,15 @@
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
       <channels>2</channels>
-      <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+      <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
       <license><![CDATA[]]></license>
       <publisher><![CDATA[archive.org]]></publisher>
       <language/>
       <lyrics><![CDATA[]]></lyrics>
       <replaygain_album_gain/>
       <replaygain_album_peak/>
-      <replaygain_track_gain>-12.21</replaygain_track_gain>
-      <replaygain_track_peak>1</replaygain_track_peak>
+      <replaygain_track_gain>1.91</replaygain_track_gain>
+      <replaygain_track_peak>0.851</replaygain_track_peak>
       <r128_album_gain/>
       <r128_track_gain/>
     </song>

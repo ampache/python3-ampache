@@ -1,90 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <search>
-    <song id="100">
-      <title><![CDATA[The Prophecies Of The Horned One]]></title>
-      <name><![CDATA[The Prophecies Of The Horned One]]></name>
-      <artist id="16">
-        <name><![CDATA[CARNÚN]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
-      </artist>
-      <album id="10">
-        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
-      </album>
-      <albumartist id="16">
-        <name><![CDATA[CARNÚN]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
-      </albumartist>
-      <disk><![CDATA[1]]></disk>
-      <track>2</track>
-    </song>
-    <song id="98">
-      <title><![CDATA[In The Seven Woods]]></title>
-      <name><![CDATA[In The Seven Woods]]></name>
-      <artist id="16">
-        <name><![CDATA[CARNÚN]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
-      </artist>
-      <album id="10">
-        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
-      </album>
-      <albumartist id="16">
-        <name><![CDATA[CARNÚN]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
-      </albumartist>
-      <disk><![CDATA[1]]></disk>
-      <track>3</track>
-    </song>
-    <song id="99">
-      <title><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></title>
-      <name><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></name>
-      <artist id="16">
-        <name><![CDATA[CARNÚN]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
-      </artist>
-      <album id="10">
-        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
-      </album>
-      <albumartist id="16">
-        <name><![CDATA[CARNÚN]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
-      </albumartist>
-      <disk><![CDATA[1]]></disk>
-      <track>6</track>
-    </song>
-    <song id="103">
-      <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
-      <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
-      <artist id="16">
-        <name><![CDATA[CARNÚN]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
-      </artist>
-      <album id="10">
-        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
-      </album>
-      <albumartist id="16">
-        <name><![CDATA[CARNÚN]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
-      </albumartist>
-      <disk><![CDATA[1]]></disk>
-      <track>7</track>
-    </song>
     <album id="12">
       <name><![CDATA[Buried in Nausea]]></name>
       <prefix><![CDATA[]]></prefix>
@@ -169,18 +85,6 @@
       <owner><![CDATA[user]]></owner>
       <type><![CDATA[private]]></type>
     </playlist>
-    <podcast id="1">
-      <name><![CDATA[60-Second Science]]></name>
-      <description><![CDATA[Tune in every weekday for quick reports and commentaries on the world of science&mdash;it&#039;ll just take a minute]]></description>
-      <language><![CDATA[en-us]]></language>
-      <copyright><![CDATA[False]]></copyright>
-      <feed_url><![CDATA[http://rss.sciam.com/sciam/60secsciencepodcast]]></feed_url>
-      <generator><![CDATA[]]></generator>
-      <website><![CDATA[https://www.scientificamerican.com/podcast/60-second-science/]]></website>
-      <build_date><![CDATA[1970-01-01T00:00:00+00:00]]></build_date>
-      <sync_date><![CDATA[2022-08-17T05:07:11+00:00]]></sync_date>
-      <public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=1]]></public_url>
-    </podcast>
     <podcast_episode id="138">
       <title><![CDATA[S1 BONUS | A million-dollar reward]]></title>
       <name><![CDATA[S1 BONUS | A million-dollar reward]]></name>
@@ -198,7 +102,7 @@
       <state><![CDATA[pending]]></state>
       <filelength><![CDATA[00:15:36]]></filelength>
       <filesize><![CDATA[]]></filesize>
-      <filename><![CDATA[Trace - S1 BONUS | A million-dollar reward.]]></filename>
+      <filename><![CDATA[]]></filename>
       <mime><![CDATA[]]></mime>
       <time>936</time>
       <size>0</size>
@@ -208,7 +112,7 @@
       <mode><![CDATA[]]></mode>
       <channels/>
       <public_url><![CDATA[https://music.com.au/podcast_episode.php?action=show&podcast_episode=138]]></public_url>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=138&uid=4&format=raw&player=api&name=Trace%20-%20S1%20BONUS%20-%20A%20million-dollar%20reward.]]></url>
+      <url><![CDATA[]]></url>
       <catalog>3</catalog>
       <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=podcast]]></art>
       <has_art>0</has_art>
@@ -235,7 +139,7 @@
       <state><![CDATA[pending]]></state>
       <filelength><![CDATA[00:18:34]]></filelength>
       <filesize><![CDATA[]]></filesize>
-      <filename><![CDATA[Trace - S1 Bonus | Maria James inquest finding.]]></filename>
+      <filename><![CDATA[]]></filename>
       <mime><![CDATA[]]></mime>
       <time>1114</time>
       <size>0</size>
@@ -245,7 +149,7 @@
       <mode><![CDATA[]]></mode>
       <channels/>
       <public_url><![CDATA[https://music.com.au/podcast_episode.php?action=show&podcast_episode=139]]></public_url>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=139&uid=4&format=raw&player=api&name=Trace%20-%20S1%20Bonus%20-%20Maria%20James%20inquest%20finding.]]></url>
+      <url><![CDATA[]]></url>
       <catalog>3</catalog>
       <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=podcast]]></art>
       <has_art>0</has_art>
@@ -272,7 +176,7 @@
       <state><![CDATA[pending]]></state>
       <filelength><![CDATA[00:26:45]]></filelength>
       <filesize><![CDATA[]]></filesize>
-      <filename><![CDATA[Trace - S1 Bonus | Breakthrough in Maria James cold case.]]></filename>
+      <filename><![CDATA[]]></filename>
       <mime><![CDATA[]]></mime>
       <time>1605</time>
       <size>0</size>
@@ -282,7 +186,7 @@
       <mode><![CDATA[]]></mode>
       <channels/>
       <public_url><![CDATA[https://music.com.au/podcast_episode.php?action=show&podcast_episode=141]]></public_url>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=141&uid=4&format=raw&player=api&name=Trace%20-%20S1%20Bonus%20-%20Breakthrough%20in%20Maria%20James%20cold%20case.]]></url>
+      <url><![CDATA[]]></url>
       <catalog>3</catalog>
       <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=podcast]]></art>
       <has_art>0</has_art>
@@ -331,5 +235,101 @@
       <playcount>0</playcount>
       <played/>
     </podcast_episode>
+    <podcast id="1">
+      <name><![CDATA[60-Second Science]]></name>
+      <description><![CDATA[Tune in every weekday for quick reports and commentaries on the world of science&mdash;it&#039;ll just take a minute]]></description>
+      <language><![CDATA[en-us]]></language>
+      <copyright><![CDATA[False]]></copyright>
+      <feed_url><![CDATA[http://rss.sciam.com/sciam/60secsciencepodcast]]></feed_url>
+      <generator><![CDATA[]]></generator>
+      <website><![CDATA[https://www.scientificamerican.com/podcast/60-second-science/]]></website>
+      <build_date><![CDATA[1970-01-01T00:00:00+00:00]]></build_date>
+      <sync_date><![CDATA[2022-08-17T05:07:11+00:00]]></sync_date>
+      <public_url><![CDATA[https://music.com.au/podcast.php?action=show&podcast=1]]></public_url>
+    </podcast>
+    <song id="100">
+      <title><![CDATA[The Prophecies Of The Horned One]]></title>
+      <name><![CDATA[The Prophecies Of The Horned One]]></name>
+      <artist id="16">
+        <name><![CDATA[CARNÚN]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN]]></basename>
+      </artist>
+      <album id="10">
+        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+      </album>
+      <albumartist id="16">
+        <name><![CDATA[CARNÚN]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN]]></basename>
+      </albumartist>
+      <disk><![CDATA[1]]></disk>
+      <track>2</track>
+    </song>
+    <song id="98">
+      <title><![CDATA[In The Seven Woods]]></title>
+      <name><![CDATA[In The Seven Woods]]></name>
+      <artist id="16">
+        <name><![CDATA[CARNÚN]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN]]></basename>
+      </artist>
+      <album id="10">
+        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+      </album>
+      <albumartist id="16">
+        <name><![CDATA[CARNÚN]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN]]></basename>
+      </albumartist>
+      <disk><![CDATA[1]]></disk>
+      <track>3</track>
+    </song>
+    <song id="99">
+      <title><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></title>
+      <name><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></name>
+      <artist id="16">
+        <name><![CDATA[CARNÚN]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN]]></basename>
+      </artist>
+      <album id="10">
+        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+      </album>
+      <albumartist id="16">
+        <name><![CDATA[CARNÚN]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN]]></basename>
+      </albumartist>
+      <disk><![CDATA[1]]></disk>
+      <track>6</track>
+    </song>
+    <song id="103">
+      <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
+      <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
+      <artist id="16">
+        <name><![CDATA[CARNÚN]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN]]></basename>
+      </artist>
+      <album id="10">
+        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+      </album>
+      <albumartist id="16">
+        <name><![CDATA[CARNÚN]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[CARNÚN]]></basename>
+      </albumartist>
+      <disk><![CDATA[1]]></disk>
+      <track>7</track>
+    </song>
   </search>
 </root>

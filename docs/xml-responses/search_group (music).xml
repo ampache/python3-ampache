@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <search>
+    <album id="2">
+      <name><![CDATA[Colorsmoke EP]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Colorsmoke EP]]></basename>
+      <artist id="2">
+        <name><![CDATA[Synthetic]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Synthetic]]></basename>
+      </artist>
+    </album>
+    <artist id="2">
+      <name><![CDATA[Synthetic]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Synthetic]]></basename>
+    </artist>
     <song id="56">
       <title><![CDATA[Black&BlueSmoke]]></title>
       <name><![CDATA[Black&BlueSmoke]]></name>
@@ -85,20 +100,5 @@
       <disk><![CDATA[1]]></disk>
       <track>4</track>
     </song>
-    <album id="2">
-      <name><![CDATA[Colorsmoke EP]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Colorsmoke EP]]></basename>
-      <artist id="2">
-        <name><![CDATA[Synthetic]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[Synthetic]]></basename>
-      </artist>
-    </album>
-    <artist id="2">
-      <name><![CDATA[Synthetic]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Synthetic]]></basename>
-    </artist>
   </search>
 </root>
