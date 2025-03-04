@@ -1,8 +1,14 @@
 import ampache
+import os
 import sys
 import time
 
 from mutagen import File
+
+updatefile = "genre todo.txt"
+for arguments in sys.argv:
+    if arguments[:3] == '/f:':
+        updatefile = arguments[3:]
 
 # Function to process each line and update the genre tag
 def update_music_metadata(file_path):
@@ -12,7 +18,7 @@ def update_music_metadata(file_path):
     # load up previous config
     if not ampache_connection.get_config():
         # Set your details manually if we can't get anything
-        ampache_connection.set_version('6.6.1')
+        ampache_connection.set_version('6.6.6')
         ampache_connection.set_url('https://music.server')
         ampache_connection.set_key('mysuperapikey')
         ampache_connection.set_user('myusername')
@@ -49,15 +55,19 @@ def update_music_metadata(file_path):
                         # Open the audio file and set the genre
                         audio = File(music_file, easy=True)
                         if audio:
-                            print(genres)
-                            audio["genre"] = genres
-                            audio.save()
-                            print(f"Updated {music_file} -> Genre: {genres}")
+                            existing_genres = audio.get("genre", [])
+                            if not sorted(existing_genres) == sorted(genres):
+                                audio["genre"] = genres
+                                audio.save()
+                                print(f"{id} updated {music_file}\n    {existing_genres} => {genres}\n")
 
 # Example DOC
+#album	AlbumName	Artist	GenreList
 #202277	Solar Drifter	Waveshaper	Electronic;Electro;Nu-Disco;Synthwave
 #202276	Station Nova	Waveshaper	Electronic;Synthwave
 #202275	Endemic	We The North	Electronic;Electro;Synthpop
 #201772	Naga: Daemonum Praeteritum	Weapon	Rock;Death Metal;Black Metal
-update_music_metadata("genre todo.txt")
+
+if os.path.isfile(updatefile):
+    update_music_metadata(updatefile)
 
