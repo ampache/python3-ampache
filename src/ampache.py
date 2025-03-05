@@ -3010,6 +3010,28 @@ class API(object):
         open(destination, 'wb').write(result.content)
         return True
 
+    def get_external_metadata(self, filter_id, object_type):
+        """ get_external_metadata
+            MINIMUM_API_VERSION=400001
+
+            get data from metadata plugins
+
+            INPUTS
+            * filter_id   = (string) $song_id / $album_id / $artist_id
+            * object_type = (string) 'song', 'artist', 'album'
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'get_external_metadata',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'type': object_type}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'get_external_metadata')
+        if not ampache_response:
+            return False
+        return self.return_data(ampache_response)
+
     def get_art(self, object_id, object_type, destination):
         """ get_art
             MINIMUM_API_VERSION=400001
