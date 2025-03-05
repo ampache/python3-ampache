@@ -39,17 +39,26 @@ def update_music_metadata():
     if not ampache_session:
         sys.exit(ampache_connection.AMPACHE_VERSION + ' ERROR Failed to connect to ' + ampache_connection.AMPACHE_URL)
     
-    update_list = (ampache_connection.execute('search', {'object_type': 'album', 'operator': 'and', 'rules': [['id', 5, 196833]], 'limit': 0 } ))
-
+    update_list = (ampache_connection.execute('search', {'object_type': 'album', 'operator': 'and', 'rules': [['id', 5, 196786]], 'limit': 0 } ))
+    album_list = []
     for album in update_list['album']:
-        genres_tmp = (ampache_connection.get_external_metadata(album['id'], 'album'))
+        album_list.append(album['id'])
+        album_list = sorted(album_list, reverse=True)
+    for album in album_list:
+        id = album
+        genres_tmp = (ampache_connection.get_external_metadata(id, 'album'))
         if "plugin" in genres_tmp:
             genres = False
             for plugin in genres_tmp['plugin']:
                 if "genre" in genres_tmp['plugin'][plugin]:
                     genres = genres_tmp['plugin'][plugin]['genre']
+                    if isinstance(genres, dict):
+                        # Check if all keys are numeric (either int or string that can be cast to int)
+                        if all(isinstance(k, int) or (isinstance(k, str) and k.isdigit()) for k in genres.keys()):
+                            genres = [genres[key] for key in sorted(genres, key=int)]  # Sort keys numerically
+                        else:
+                            genres = list(genres.values())
             if not genres == False:
-                id = album['id']
                 album_songs = ampache_connection.execute('album_songs', {'filter_id': id } )
                 if "song" in album_songs:
                     #print(album_songs)
@@ -71,10 +80,10 @@ def update_music_metadata():
 
                     # update from tags to reflect the new changes
                     if change:
-                        print("update_from_tags " + id)
                         print(ampache_connection.execute('update_from_tags', {'object_type': 'album', 'object_id': id } ))
                     else:
                         print("No change " + id)
+        time.sleep(10)
 
 
 # Update using the API
