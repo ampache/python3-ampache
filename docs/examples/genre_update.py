@@ -39,7 +39,7 @@ def update_music_metadata():
     if not ampache_session:
         sys.exit(ampache_connection.AMPACHE_VERSION + ' ERROR Failed to connect to ' + ampache_connection.AMPACHE_URL)
     
-    update_list = (ampache_connection.execute('search', {'object_type': 'album', 'operator': 'and', 'rules': [['id', 5, 196786]], 'limit': 0 } ))
+    update_list = (ampache_connection.execute('albums'))
     album_list = []
     for album in update_list['album']:
         album_list.append(album['id'])
