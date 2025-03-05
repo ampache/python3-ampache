@@ -37,16 +37,19 @@ def update_music_metadata(file_path):
     if not ampache_session:
         sys.exit(ampache_connection.AMPACHE_VERSION + ' ERROR Failed to connect to ' + ampache_connection.AMPACHE_URL)
 
+    print("checking " + file_path)
     with open(file_path, "r", encoding="utf-8") as file:
         for line in file:
             parts = line.strip().split("\t")  # Split by tab
             if len(parts) != 4:
                 continue
             id, album, artist, genre = parts
-            genres = genre.split(";")
+            genre_tmp = genre.split(";")
+            genres = [item for item in genre_tmp if item != '']
             album_songs = ampache_connection.execute('album_songs', {'filter_id': id } )
             if "song" in album_songs:
                 #print(album_songs)
+                change = False
                 for song in album_songs['song']:
                     if "filename" in song:
                         #print(song['filename'])
@@ -60,6 +63,15 @@ def update_music_metadata(file_path):
                                 audio["genre"] = genres
                                 audio.save()
                                 print(f"{id} updated {music_file}\n    {existing_genres} => {genres}\n")
+                                change = True
+
+                # update from tags to reflect the new changes
+                if change:
+                    print("update_from_tags " + id)
+                    print(ampache_connection.execute('update_from_tags', {'object_type': 'album', 'object_id': id } ))
+                else:
+                    print("No change " + id)
+
 
 # Example DOC
 #album	AlbumName	Artist	GenreList
