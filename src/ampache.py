@@ -213,7 +213,7 @@ class API(object):
 
             INPUTS
             * result = The response from the request
-            * title = (string) generall the function name that was called
+            * title = (string) generally the function name that was called
         """
         if not result:
             print("ampache." + title + f": {self.FAIL}FAIL{self.ENDC}")
@@ -4369,6 +4369,8 @@ class API(object):
                     params["show_all"] = False
                 return self.get_bookmark(params["filter_id"], params["object_type"], params["include"],
                                          params["show_all"])
+            case 'get_external_metadata':
+                return self.get_external_metadata(params["filter_id"], params["object_type"])
             case 'get_indexes':
                 if not "filter_str" in params:
                     params["filter_str"] = False
