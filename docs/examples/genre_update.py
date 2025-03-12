@@ -10,81 +10,28 @@ for arguments in sys.argv:
         updatefile = arguments[3:]
 
 
-def update_music_metadata():
+def update_music_metadata(ampache_connection, update_list):
     """ update_music_metadata
 
         Function to process search results and update the genres
         using the api function get_external_metadata
     """
 
-    # Open Ampache library
-    ampache_connection = ampache.API()
-
-    #ampache_connection.set_debug(True)
-
-    # load up previous config
-    if not ampache_connection.get_config():
-        # Set your details manually if we can't get anything
-        ampache_connection.set_version('6.6.6')
-        ampache_connection.set_url('https://music.server')
-        ampache_connection.set_key('mysuperapikey')
-        ampache_connection.set_user('myusername')
-
-    """ Get a session key using the handshake
-
-        * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
-        * ampache_api = (string) encrypted apikey OR password if using password auth
-        * user        = (string) username //optional
-        * timestamp   = (integer) UNIXTIME() //optional
-        * version     = (string) API Version //optional
-    """
-    ampache_session = ampache_connection.execute('handshake')
-
-    # Fail if you didn't connect
-    if not ampache_session:
-        sys.exit(ampache_connection.AMPACHE_VERSION + ' ERROR Failed to connect to ' + ampache_connection.AMPACHE_URL)
-
-    """ SEARCH RULES
-
-        Define your own search rules here
-    """
-
-    ### Get ALL albums
-    update_list = (ampache_connection.execute('albums'))
-
-    ### Search by Album Artist = 'Green day'
-    #update_list = (ampache_connection.execute('search', {'object_type': 'album', 'operator': 'and', 'rules': [['album_artist', 4, 'Green day']], 'limit': 0 } ))
-
-    ### Search by Song Artist = 'newt
-    #update_list = (ampache_connection.execute('search', {'object_type': 'album', 'operator': 'and', 'rules': [['album_artist', 4, 'newt']], 'limit': 0 } ))
-
-    ### Album Id < 160304
-    #update_list = (ampache_connection.execute('search', {'object_type': 'album', 'operator': 'and', 'rules': [['id', 5, 160304]], 'limit': 0 } ))
-
-    ### Albums with NO genre
-    #update_list = (ampache_connection.execute('search', {'object_type': 'album', 'operator': 'and', 'rules': [['no_genre', 0, '']], 'limit': 0, 'random': 1 } ))
-
-    ### Album genre is "Rock" and also has genre like %metal%
-    #update_list.append(ampache_connection.execute('search', {'object_type': 'album', 'operator': 'and', 'rules': [['genre', 4, 'Rock'],['genre', 0, 'metal']], 'limit': 0 } ))
-
-    ### Albums with a genre that only has 1 album
-    #update_list = (ampache_connection.execute('search', {'object_type': 'album', 'operator': 'and', 'rules': [['genre_count_album', 2, 1]], 'limit': 0, 'random': 1 } ))
-
     album_list = []
     for album in update_list['album']:
         album_list.append(album['id'])
         #album_list = sorted(album_list, reverse=True)
     for album in album_list:
-        genres = get_external_genres(ampache_connection, album)
+        id = album
+        genres = get_external_genres(ampache_connection, id)
         if not genres == False:
-            # replace "rock" with metal if it's got a metal genre
-            if any("metal" in genre.lower() for genre in genres) and "rock" in [g.lower() for g in genres]:
-                genres = ["Metal" if genre.lower() == "rock" else genre for genre in genres]
+            # Found external metadata
+            print("Album found " + id)
 
             # Replacement dictionary (keys are terms to replace, values are the preferred replacements)
             genres = filter_genres(genres)
-            album_songs = ampache_connection.execute('album_songs', {'filter_id': album } )
-            if "song" in album_songs:
+            album_songs = ampache_connection.execute('album_songs', {'filter_id': id } )
+            if not album_songs == False and  "song" in album_songs:
                 #print(album_songs)
                 change = False
                 for song in album_songs['song']:
@@ -99,23 +46,76 @@ def update_music_metadata():
                             if not sorted(existing_genres) == sorted(genres):
                                 audio["genre"] = genres
                                 audio.save()
-                                print(f"{album} updated {music_file}\n    {existing_genres} => {genres}\n")
                                 change = True
 
-                # update from tags to reflect the new changes
-                if change:
-                    print(ampache_connection.execute('update_from_tags', {'object_type': 'album', 'object_id': album } ))
-                else:
-                    print("No change " + album)
-                    print(genres)
+                    # update from tags to reflect the new changes
+                    if change:
+                        print(f"{id} updated {music_file}\n    {existing_genres} => {genres}\n")
+                    else:
+                        print("No change " + id)
+                        print(genres)
         else:
-            print("No data found " + album)
-        time.sleep(10)
+            # Not found online, filter your existing genres anyway
+            print("No data found " + id + " filter existing genres")
+            album_songs = ampache_connection.execute('album_songs', {'filter_id': id } )
+            if not album_songs == False and  "song" in album_songs:
+                #print(album_songs)
+                change = False
+                for song in album_songs['song']:
+                    if "filename" in song:
+                        #print(song['filename'])
+                        music_file = f"{song['filename']}"
+
+                        # Open the audio file and set the genre
+                        audio = File(music_file, easy=True)
+                        if audio:
+                            existing_genres = audio.get("genre", [])
+                            genres = filter_genres(existing_genres)
+                            if not sorted(existing_genres) == sorted(genres):
+                                audio["genre"] = genres
+                                audio.save()
+                                change = True
+
+                    # update from tags to reflect the new changes
+                    if change:
+                        print(f"{id} updated {music_file}\n    {existing_genres} => {genres}\n")
+                    else:
+                        print("No change " + id)
+                        print(genres)
+        # Always update from tags to make sure other changes are set even if we didn't find anything now
+        print(ampache_connection.execute('update_from_tags', {'object_type': 'album', 'object_id': id } ))
+        time.sleep(5)
+        print()
+
+
+def get_external_genres(ampache_connection, album_id):
+    genres = False
+    genres_tmp = (ampache_connection.get_external_metadata(album_id, 'album'))
+    if not genres_tmp == False and "plugin" in genres_tmp:
+        #print("checking " + album_id)
+        genres = False
+        for plugin in genres_tmp['plugin']:
+            if "genre" in genres_tmp['plugin'][plugin]:
+                genres = genres_tmp['plugin'][plugin]['genre']
+                if isinstance(genres, dict):
+                    # Check if all keys are numeric (either int or string that can be cast to int)
+                    if all(isinstance(k, int) or (isinstance(k, str) and k.isdigit()) for k in genres.keys()):
+                        genres = [genres[key] for key in sorted(genres, key=int)]  # Sort keys numerically
+                    else:
+                        genres = list(genres.values())
+    return genres
+
 
 def filter_genres(genres: list):
     # replace "rock" with metal if it's got a metal genre
     if any("metal" in genre.lower() for genre in genres) and "rock" in [g.lower() for g in genres]:
         genres = ["Metal" if genre.lower() == "rock" else genre for genre in genres]
+    # remove "rock" if it's got Indie rock
+    if any("indie rock" in genre.lower() for genre in genres) and "rock" in [g.lower() for g in genres]:
+        genres = [genre for genre in genres if genre.lower() != "rock"]
+    # remove "rock" if it's got Alternative rock
+    if any("alternative rock" in genre.lower() for genre in genres) and "rock" in [g.lower() for g in genres]:
+        genres = [genre for genre in genres if genre.lower() != "rock"]
 
     # Replacement dictionary (keys are terms to replace, values are the preferred replacements)
     replacements = {
@@ -130,6 +130,7 @@ def filter_genres(genres: list):
         'Alt.Metal': ['Alternative Metal'],
         'Alt.Rock': ['Alternative Rock'],
         'Alter Rock': ['Alternative Rock'],
+        'Alternative': ['Alternative Rock'],
         'Alternatief': ['Alternative Rock'],
         'Alternatif et Indé': ['Alternative Rock','Indie Rock'],
         'Alternativa & Indie': ['Alternative Rock','Indie Rock'],
@@ -360,22 +361,106 @@ def filter_genres(genres: list):
     return list(dict.fromkeys(output_genres))
 
 
-def get_external_genres(ampache_connection, album_id):
-    genres_tmp = (ampache_connection.get_external_metadata(album_id, 'album'))
-    if "plugin" in genres_tmp:
-        #print("checking " + album_id)
-        genres = False
-        for plugin in genres_tmp['plugin']:
-            if "genre" in genres_tmp['plugin'][plugin]:
-                genres = genres_tmp['plugin'][plugin]['genre']
-                if isinstance(genres, dict):
-                    # Check if all keys are numeric (either int or string that can be cast to int)
-                    if all(isinstance(k, int) or (isinstance(k, str) and k.isdigit()) for k in genres.keys()):
-                        genres = [genres[key] for key in sorted(genres, key=int)]  # Sort keys numerically
-                    else:
-                        genres = list(genres.values())
-    return genres
+# Open Ampache library
+ampache_connection = ampache.API()
+
+#ampache_connection.set_debug(True)
+
+# load up previous config
+if not ampache_connection.get_config():
+    # Set your details manually if we can't get anything
+    ampache_connection.set_version('6.6.6')
+    ampache_connection.set_url('https://music.server')
+    ampache_connection.set_key('mysuperapikey')
+    ampache_connection.set_user('myusername')
+
+""" Get a session key using the handshake
+
+    * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+    * ampache_api = (string) encrypted apikey OR password if using password auth
+    * user        = (string) username //optional
+    * timestamp   = (integer) UNIXTIME() //optional
+    * version     = (string) API Version //optional
+"""
+ampache_session = ampache_connection.execute('handshake')
+
+# Fail if you didn't connect
+if not ampache_session:
+    sys.exit(ampache_connection.AMPACHE_VERSION + ' ERROR Failed to connect to ' + ampache_connection.AMPACHE_URL)
 
 # Update using the API
-update_music_metadata()
 
+""" SEARCH RULES
+
+    Define your own search rules here using the examples below
+    Check https://ampache.org/api/api-advanced-search/ for more rules and examples
+"""
+
+### Get ALL albums
+update_music_metadata(ampache_connection.execute('albums'))
+
+### Albums with a genre that only has 1 album
+#update_music_metadata(ampache_connection.execute('search', {
+#                      'object_type': 'album', 'operator': 'and', 'limit': 0, 'random': 1,
+#                      'rules': [
+#                           ['genre_count_album', 2, 1]
+#                      ] } ))
+
+### Genre = Rock but another genre is Indie Rock
+#update_music_metadata(ampache_connection, ampache_connection.execute('search', {
+#                      'object_type': 'album', 'operator': 'and', 'limit': 0, 'random': 1,
+#                      'rules': [
+#                          ['genre', 4, 'Rock'],
+#                          ['genre', 4, 'Indie Rock']
+#                      ] } ))
+
+### Genre = Rock but another genre contains metal
+update_music_metadata(ampache_connection, ampache_connection.execute('search', {
+                      'object_type': 'album', 'operator': 'and', 'limit': 0, 'random': 1,
+                      'rules': [
+                          ['genre', 4, 'Rock'],
+                          ['genre', 0, 'metal']
+                      ] } ))
+
+### Album genre count > 1 and < 5 
+update_music_metadata(ampache_connection, ampache_connection.execute('search', {
+                      'object_type': 'album', 'operator': 'and', 'limit': 0, 'random': 1,
+                      'rules': [
+                          ['genre_count_album', 4, 1],
+                          ['genre_count_album', 5, 5]
+                      ] } ))
+
+### Search by album; ID < 160304
+#update_music_metadata(ampache_connection, ampache_connection.execute('search', {
+#                      'object_type': 'album', 'operator': 'and', 'limit': 0, 'random': 1,
+#                      'rules': [
+#                          ['id', 5, 160304]
+#                      ] } ))
+
+### Search by album with no genre tags
+#update_music_metadata(ampache_connection, ampache_connection.execute('search', {
+#                      'object_type': 'album', 'operator': 'and', 'limit': 0,
+#                      'rules': [
+#                          ['no_genre', 0, '']
+#                      ] } ))
+
+### Search by Album Artist = 'Green day'
+#update_music_metadata(ampache_connection, ampache_connection.execute 'search', {
+#                      'object_type': 'album', 'operator': 'and', 'limit': 0,
+#                      'rules': [
+#                          ['album_artist', 4, 'Green day']
+#                      ] } ))
+
+### Search by Song Artist = 'newt'
+#update_music_metadata(ampache_connection.execute('search', {
+#                      'object_type': 'album', 'operator': 'and', 'limit': 0,
+#                      'rules': [
+#                         ['song_artist', 4, 'newt']
+#                      ] } ))
+
+### Album updated BEFORE 2024-01-11T00:00
+#update_music_metadata(ampache_connection, ampache_connection.execute('search', {
+#                      'object_type': 'album', 'operator': 'and', 'limit': 0, 'random': 1,
+#                      'rules': [
+#                          ['updated', 0, '2024-01-11T00:00']
+#                      ] } ))
