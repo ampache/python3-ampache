@@ -5,11 +5,6 @@ import time
 
 from mutagen import File
 
-updatefile = "genre todo.txt"
-for arguments in sys.argv:
-    if arguments[:3] == '/f:':
-        updatefile = arguments[3:]
-
 
 def update_music_metadata(ampache_connection, update_list):
     """ update_music_metadata
@@ -53,8 +48,9 @@ def update_music_metadata(ampache_connection, update_list):
                     if change:
                         print(f"{id} updated {music_file}\n    {existing_genres} => {genres}\n")
                     else:
-                        print("No change " + id)
+                        print(f"{id} NO CHANGE {music_file}")
                         print(genres)
+                        print()
         else:
             # Not found online, filter your existing genres anyway
             print("No data found " + id + " filter existing genres")
@@ -81,8 +77,9 @@ def update_music_metadata(ampache_connection, update_list):
                     if change:
                         print(f"{id} updated {music_file}\n    {existing_genres} => {genres}\n")
                     else:
-                        print("No change " + id)
+                        print(f"{id} NO CHANGE {music_file}")
                         print(genres)
+                        print()
         # Always update from tags to make sure other changes are set even if we didn't find anything now
         print(ampache_connection.execute('update_from_tags', {'object_type': 'album', 'object_id': id } ))
         time.sleep(5)
@@ -120,7 +117,7 @@ def get_external_genres(ampache_connection, album_id):
                         plugin_genres = [plugin_genres[key] for key in sorted(plugin_genres, key=int)]  # Sort keys numerically
                     else:
                         plugin_genres = list(plugin_genres.values())
-                genres.extend(plugin_genres)
+                genres.extend(filter_genres(plugin_genres))
     return genres if genres else False
 
 
