@@ -1,8 +1,10 @@
 import ampache
+import os
 import re
 import sys
 import time
 
+from datetime import datetime
 from mutagen import File
 
 
@@ -31,7 +33,7 @@ def update_music_metadata(ampache_connection, update_list):
                 #print(album_songs)
                 change = False
                 for song in album_songs['song']:
-                    if "filename" in song:
+                    if "filename" in song and not song["filename"].endswith(".wav") and os.path.isfile(song["filename"]):
                         #print(song['filename'])
                         music_file = f"{song['filename']}"
 
@@ -47,7 +49,7 @@ def update_music_metadata(ampache_connection, update_list):
                     # update from tags to reflect the new changes
                     if change:
                         print(f"{id} updated {music_file}\n    {existing_genres} => {genres}\n")
-                    else:
+                    elif not song["filename"].endswith(".wav"):
                         print(f"{id} NO CHANGE {music_file}")
                         print(genres)
                         print()
@@ -59,7 +61,7 @@ def update_music_metadata(ampache_connection, update_list):
                 #print(album_songs)
                 change = False
                 for song in album_songs['song']:
-                    if "filename" in song:
+                    if "filename" in song and os.path.isfile(song['filename']):
                         #print(song['filename'])
                         music_file = f"{song['filename']}"
 
@@ -89,7 +91,7 @@ def update_music_metadata(ampache_connection, update_list):
 def get_external_genres(ampache_connection, album_id):
     genres = []
     genres_tmp = ampache_connection.get_external_metadata(album_id, 'album')
-    if not genres_tmp == False and "plugin" in genres_tmp:
+    if genres_tmp and "plugin" in genres_tmp:
         for plugin in genres_tmp['plugin']:
             if "genre" in genres_tmp['plugin'][plugin]:
                 plugin_genres = genres_tmp['plugin'][plugin]['genre']
@@ -118,7 +120,10 @@ def get_external_genres(ampache_connection, album_id):
                     else:
                         plugin_genres = list(plugin_genres.values())
                 genres.extend(filter_genres(plugin_genres))
-    return genres if genres else False
+    if genres:
+        genres = replace_lowercase_duplicates(genres)
+        return genres
+    return False
 
 
 def filter_genres(genres: list):
@@ -163,6 +168,7 @@ def filter_genres(genres: list):
         'AlternRock': ['Alternative Rock'],
         'Altrnative Rock': ['Alternative Rock'],
         'Ambient Electronic': ['Electronic','Ambient'],
+        'Aor': ['AOR'],
         'Art-Pop': ['Art Pop'],
         'Art-Rock': ['Art Rock'],
         'Atmospheric Death': ['Atmospheric Death Metal'],
@@ -210,6 +216,7 @@ def filter_genres(genres: list):
         'Dreampop': ['Dream Pop'],
         'Drum & Bass': ['Drum n Bass'],
         'Drum and Bass': ['Drum n Bass'],
+        'Ebm': ['EBM'],
         'Electro Industrial': ['Electronic','Rock','Industrial'],
         'Electro Pop': ['Electropop'],
         'Electronica & Dance': ['Dance','Electronica'],
@@ -253,7 +260,9 @@ def filter_genres(genres: list):
         'Heavy-Metal': ['Heavy Metal'],
         'Hip-hop': ['Hip Hop'],
         'Idie-Pop': ['Indie Pop'],
+        'Idm': ['IDM'],
         'Imdustrial': ['Industrial'],
+        'Indie': ['Indie Rock'],
         'Indie / Folk Rock / Singer-Songwriter': ['Folk Rock','Indie Rock'],
         'Indie / Pop-Rock': ['Indie Rock','Pop Rock'],
         'Indie Pop / Electronic': ['Electronic','Indie Pop'],
@@ -324,6 +333,7 @@ def filter_genres(genres: list):
         'Raggae': ['Reggae'],
         'Retro Wave': ['Retrowave'],
         'rimental Black Metal': ['Experimental Black Metal'],
+        'Rio': ['RIO'],
         'Rock \'N\' Roll': ['Rock & Roll'],
         'Rock indé': ['Indie Rock'],
         'Rock progressif': ['Prog Rock'],
@@ -378,6 +388,16 @@ def filter_genres(genres: list):
 
 def validate_discogs_genre(genre):
     discogs_valid = [
+        'Alt-Pop',
+        'Bootleg',
+        'Club/Dance',
+        'Metal',
+        'Neue Deutsche Harte',
+        'Podcast',
+        'Punk Rock',
+        'Thrash Metal',
+        'Visual Kei',
+        'Vocaloid',
         'Rock',
         'Electronic',
         'Pop',
@@ -1061,6 +1081,20 @@ def validate_discogs_genre(genre):
     if genre_lower in discogs_valid_lower:
         return genre
     return None
+
+
+def replace_lowercase_duplicates(input_list):
+    seen = {}
+    result = []
+    for item in input_list:
+        lower_item = item.lower()
+        if lower_item not in seen:
+            seen[lower_item] = item  # Track the first occurrence
+            result.append(item)
+        else:
+            # Replace with the first occurrence (preserve original casing)
+            result.append(seen[lower_item])
+    return result
 
 
 # Open Ampache library
