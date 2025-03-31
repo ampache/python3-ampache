@@ -515,7 +515,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'handshake')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         # json format
         if self.AMPACHE_API == 'json':
@@ -565,7 +565,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'ping')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             self.AMPACHE_SESSION = False
             return False
         # json format
@@ -610,7 +610,7 @@ class API(object):
             INPUTS
             * username = (string) $username
             * fullname = (string) $fullname //optional
-            * password = (string) hash('sha256', $password))
+            * password = (string) hash('sha256', $password)
             * email    = (string) $email
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
@@ -622,7 +622,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'register')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -646,7 +646,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'goodbye')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -662,7 +662,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'goodbye')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -682,7 +682,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'url_to_song')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -708,12 +708,12 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'get_similar')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def list(self, object_type, filter_str: str = False,
-             exact: int = False, add: int = False, update: int = False, offset=0, limit=0):
+    def list(self, object_type, filter_str: str = False, exact: int = False, add: int = False, update: int = False,
+             offset=0, limit=0, sort: str = False, cond: str = False):
         """ list
             MINIMUM_API_VERSION=6.0.0
 
@@ -727,6 +727,8 @@ class API(object):
             * update      = (integer) UNIXTIME() //optional
             * offset      = (integer) //optional
             * limit       = (integer) //optional
+            * cond        = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'list',
@@ -737,7 +739,9 @@ class API(object):
                 'add': add,
                 'update': update,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
@@ -746,16 +750,20 @@ class API(object):
             data.pop('add')
         if not update:
             data.pop('update')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'list')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
     def browse(self, filter_str: str = False,
                object_type: str = False, catalog: int = False, add: int = False, update: int = False,
-               offset=0, limit=0):
+               offset=0, limit=0, sort: str = False, cond: str = False):
         """ browse
             MINIMUM_API_VERSION=6.0.0
 
@@ -765,11 +773,13 @@ class API(object):
             INPUTS
             * filter_str  = (string) object_id //optional
             * object_type = (string) 'root', 'catalog', 'artist', 'album', 'podcast' // optional
-            * catalog = (integer) catalog ID you are browsing
-            * add     = Api::set_filter(date) //optional
-            * update  = Api::set_filter(date) //optional
-            * offset  = (integer) //optional
-            * limit   = (integer) //optional
+            * catalog     = (integer) catalog ID you are browsing
+            * add         = Api::set_filter(date) //optional
+            * update      = Api::set_filter(date) //optional
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+            * cond        = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'browse',
@@ -780,7 +790,9 @@ class API(object):
                 'add': add,
                 'update': update,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not object_type:
@@ -791,15 +803,19 @@ class API(object):
             data.pop('add')
         if not update:
             data.pop('update')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'browse')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def index(self, object_type, filter_str: str = False, exact: int = False,
-              add: int = False, update: int = False, include: int = False, offset=0, limit=0, hide_search: int = False):
+    def index(self, object_type, filter_str: str = False, exact: int = False, add: int = False, update: int = False,
+              include: int = False, offset=0, limit=0, hide_search: int = False, sort: str = False, cond: str = False):
         """ index
             MINIMUM_API_VERSION=400001
 
@@ -816,6 +832,8 @@ class API(object):
             * offset      = (integer) //optional
             * limit       = (integer) //optional
             * hide_search = (integer) 0,1, if true do not include searches/smartlists in the result //optional
+            * cond        = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         if bool(include):
@@ -830,7 +848,9 @@ class API(object):
                 'include': include,
                 'offset': str(offset),
                 'limit': str(limit),
-                'hide_search': hide_search}
+                'hide_search': hide_search,
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
@@ -843,15 +863,19 @@ class API(object):
             data.pop('include')
         if not hide_search:
             data.pop('hide_search')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'index')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def get_indexes(self, object_type, filter_str: str = False,
-                    exact: int = False, add: int = False, update: int = False, include: int = False, offset=0, limit=0):
+    def get_indexes(self, object_type, filter_str: str = False, exact: int = False, add: int = False,
+                    update: int = False, include: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
         """ get_indexes
             MINIMUM_API_VERSION=400001
 
@@ -866,6 +890,8 @@ class API(object):
             * include     = (integer) 0,1 include songs if available for that object //optional
             * offset      = (integer) //optional
             * limit       = (integer) //optional
+            * cond        = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         if bool(include):
@@ -879,7 +905,9 @@ class API(object):
                 'update': update,
                 'include': include,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
@@ -890,15 +918,19 @@ class API(object):
             data.pop('update')
         if not include:
             data.pop('include')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'get_indexes')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def artists(self, filter_str: str = False,
-                add: int = False, update: int = False, offset=0, limit=0, include=False, album_artist: int = False):
+    def artists(self, filter_str: str = False, add: int = False, update: int = False,
+                offset=0, limit=0, include=False, album_artist: int = False, sort: str = False, cond: str = False):
         """ artists
             MINIMUM_API_VERSION=380001
 
@@ -912,6 +944,8 @@ class API(object):
             * limit        = (integer) //optional
             * include      = (string) 'albums', 'songs' //optional
             * album_artist = (boolean) 0,1 if true filter for album artists only //optional
+            * cond         = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort         = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         if bool(include) and not isinstance(include, str):
@@ -924,7 +958,9 @@ class API(object):
                 'offset': str(offset),
                 'limit': str(limit),
                 'include': include,
-                'album_artist': album_artist}
+                'album_artist': album_artist,
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not add:
@@ -935,10 +971,14 @@ class API(object):
             data.pop('include')
         if not album_artist:
             data.pop('album_artist')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'artists')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -964,21 +1004,24 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'artist')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def artist_albums(self, filter_id: int, offset=0, limit=0, album_artist=False):
+    def artist_albums(self, filter_id: int, offset=0, limit=0, album_artist=False,
+                      sort: str = False, cond: str = False):
         """ artist_albums
             MINIMUM_API_VERSION=380001
 
             This returns the albums of an artist
 
             INPUTS
-            * filter_id   = (integer) $artist_id
+            * filter_id    = (integer) $artist_id
             * offset       = (integer) //optional
             * limit        = (integer) //optional
             * album_artist = (integer) 0,1, if true return albums where the UID is an album_artist of the object //optional
+            * cond         = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort         = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'artist_albums',
@@ -986,17 +1029,23 @@ class API(object):
                 'filter': filter_id,
                 'offset': str(offset),
                 'limit': str(limit),
-                'album_artist': album_artist}
+                'album_artist': album_artist,
+                'sort': sort,
+                'cond': cond}
         if not album_artist:
             data.pop('album_artist')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'artist_albums')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def artist_songs(self, filter_id: int, offset=0, limit=0):
+    def artist_songs(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
         """ artist_songs
             MINIMUM_API_VERSION=380001
 
@@ -1006,36 +1055,46 @@ class API(object):
             * filter_id = (integer) $artist_id
             * offset    = (integer) //optional
             * limit     = (integer) //optional
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'artist_songs',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'artist_songs')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
     def albums(self, filter_str: str = False,
                exact: int = False, add: int = False, update: int = False, offset=0, limit=0,
-               include=False):
+               include=False, sort: str = False, cond: str = False):
         """ albums
             MINIMUM_API_VERSION=380001
 
             This returns albums based on the provided search filters
 
             INPUTS
-            * filter_str  = (string) search the name of an album //optional
-            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
-            * add         = (integer) UNIXTIME() //optional
-            * update      = (integer) UNIXTIME() //optional
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
-            * include     = (string) 'songs' //optional
+            * filter_str = (string) search the name of an album //optional
+            * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * add        = (integer) UNIXTIME() //optional
+            * update     = (integer) UNIXTIME() //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+            * include    = (string) 'songs' //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         if bool(include) and not isinstance(include, str):
@@ -1048,7 +1107,9 @@ class API(object):
                 'update': update,
                 'offset': str(offset),
                 'limit': str(limit),
-                'include': include}
+                'include': include,
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
@@ -1059,10 +1120,14 @@ class API(object):
             data.pop('update')
         if not include:
             data.pop('include')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'albums')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1088,12 +1153,12 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'album')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
     def album_songs(self, filter_id: int, offset=0, limit=0,
-                    exact: int = False):
+                    exact: int = False, sort: str = False, cond: str = False):
         """ album_songs
             MINIMUM_API_VERSION=380001
 
@@ -1104,6 +1169,8 @@ class API(object):
             * offset    = (integer) //optional
             * limit     = (integer) //optional
             * exact     = (integer) 0,1, if true don't group songs from different disks //optional (IGNORED IN API6)
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         if bool(exact):
@@ -1115,18 +1182,24 @@ class API(object):
                 'filter': filter_id,
                 'exact': exact,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not exact:
             data.pop('exact')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'album_songs')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
     def genres(self, filter_str: str = False,
-               exact: int = False, offset=0, limit=0):
+               exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
         """ genres
             MINIMUM_API_VERSION=380001
 
@@ -1137,6 +1210,8 @@ class API(object):
             * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
             * offset     = (integer) //optional
             * limit      = (integer) //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'genres',
@@ -1144,15 +1219,21 @@ class API(object):
                 'filter': filter_str,
                 'exact': exact,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'genres')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1172,35 +1253,43 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'genre')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def genre_artists(self, filter_id: int, offset=0, limit=0):
+    def genre_artists(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
         """ genre_artists
             MINIMUM_API_VERSION=380001
 
             This returns the artists associated with the genre in question as defined by the UID
 
             INPUTS
-            * filter_id   = (integer) $genre_id
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * filter_id = (integer) $genre_id
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'genre_artists',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'genre_artists')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def genre_albums(self, filter_id: int, offset=0, limit=0):
+    def genre_albums(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
         """ genre_albums
             MINIMUM_API_VERSION=380001
 
@@ -1210,21 +1299,29 @@ class API(object):
             * filter_id = (integer) $genre_id
             * offset    = (integer) //optional
             * limit     = (integer) //optional
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'genre_albums',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'genre_albums')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def genre_songs(self, filter_id: int, offset=0, limit=0):
+    def genre_songs(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
         """ genre_songs
             MINIMUM_API_VERSION=380001
 
@@ -1234,22 +1331,30 @@ class API(object):
             * filter_id = (integer) $genre_id
             * offset    = (integer) //optional
             * limit     = (integer) //optional
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'genre_songs',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'genre_songs')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def songs(self, filter_str: str = False,
-              exact: int = False, add: int = False, update: int = False, offset=0, limit=0):
+    def songs(self, filter_str: str = False, exact: int = False, add: int = False, update: int = False,
+              offset=0, limit=0, sort: str = False, cond: str = False):
         """ songs
             MINIMUM_API_VERSION=380001
 
@@ -1262,6 +1367,8 @@ class API(object):
             * update     = (integer) UNIXTIME() //optional
             * offset     = (integer) //optional
             * limit      = (integer) //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'songs',
@@ -1271,7 +1378,9 @@ class API(object):
                 'update': update,
                 'filter': filter_str,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
@@ -1280,10 +1389,14 @@ class API(object):
             data.pop('add')
         if not update:
             data.pop('update')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'songs')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1303,7 +1416,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'song')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1323,21 +1436,24 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'song')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def user_playlists(self, filter_str: str = False, exact: int = False, offset=0, limit=0):
+    def user_playlists(self, filter_str: str = False, exact: int = False, offset=0, limit=0,
+                       sort: str = False, cond: str = False):
         """ user_playlists
             MINIMUM_API_VERSION=6.3.0
 
             This returns playlists based on the specified filter (Does not include searches / smartlists)
 
             INPUTS
-            * filter_str  = (string) search the name of a playlist //optional
-            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * filter_str = (string) search the name of a playlist //optional
+            * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'user_playlists',
@@ -1345,29 +1461,38 @@ class API(object):
                 'filter': filter_str,
                 'exact': exact,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_playlists')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def user_smartlists(self, filter_str: str = False, exact: int = False, offset=0, limit=0):
+    def user_smartlists(self, filter_str: str = False, exact: int = False, offset=0, limit=0,
+                        sort: str = False, cond: str = False):
         """ user_smartlists
             MINIMUM_API_VERSION=6.3.0
 
             This returns smartlists (searches) based on the specified filter (Does not include playlists)
 
             INPUTS
-            * filter_str  = (string) search the name of a playlist //optional
-            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * filter_str = (string) search the name of a playlist //optional
+            * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'user_smartlists',
@@ -1375,20 +1500,26 @@ class API(object):
                 'filter': filter_str,
                 'exact': exact,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_smartlists')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def playlists(self, filter_str: str = False, exact: int = False,
-                  offset=0, limit=0, hide_search: int = False, show_dupes: int = False, include: int = False):
+    def playlists(self, filter_str: str = False, exact: int = False, offset=0, limit=0, hide_search: int = False,
+                  show_dupes: int = False, include: int = False, sort: str = False, cond: str = False):
         """ playlists
             MINIMUM_API_VERSION=380001
 
@@ -1402,6 +1533,8 @@ class API(object):
             * hide_search = (integer) 0,1, if true do not include searches/smartlists in the result //optional
             * show_dupes  = (integer) 0,1, if true ignore 'api_hide_dupe_searches' setting //optional
             * include     = (integer) 0,1, if true include the objects in the playlist //optional
+            * cond        = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'playlists',
@@ -1412,7 +1545,9 @@ class API(object):
                 'limit': str(limit),
                 'hide_search': hide_search,
                 'show_dupes': show_dupes,
-                'include': include}
+                'include': include,
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
@@ -1423,10 +1558,14 @@ class API(object):
             data.pop('show_dupes')
         if not include:
             data.pop('include')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlists')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1446,7 +1585,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1466,7 +1605,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_hash')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1494,7 +1633,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_songs')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1516,7 +1655,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_create')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1557,7 +1696,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_edit')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1577,7 +1716,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_delete')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1601,7 +1740,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_add')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1631,7 +1770,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_add_song')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1662,7 +1801,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_remove_song')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1710,20 +1849,22 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_generate')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
     def shares(self, filter_str: str = False,
-               exact: int = False, offset=0, limit=0):
+               exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
         """ shares
             MINIMUM_API_VERSION=420000
 
             INPUTS
-            * filter_str  = (string) search the name of a share //optional
-            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * filter_str = (string) search the name of a share //optional
+            * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'shares',
@@ -1731,15 +1872,21 @@ class API(object):
                 'filter': filter_str,
                 'exact': exact,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'shares')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1759,7 +1906,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'share')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1791,7 +1938,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'share_create')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1829,7 +1976,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'share_edit')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1849,31 +1996,39 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'share_delete')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def catalogs(self, filter_str: str = False, offset=0, limit=0):
+    def catalogs(self, filter_str: str = False, offset=0, limit=0, sort: str = False, cond: str = False):
         """ catalogs
             MINIMUM_API_VERSION=420000
 
             INPUTS
-            * filter_str  = (string) search the name of a catalog //optional
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * filter_str = (string) search the name of a catalog //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'catalogs',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalogs')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1895,7 +2050,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalog')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1942,7 +2097,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalog_action')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1962,7 +2117,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark_delete')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -1984,7 +2139,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalog_action')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2010,7 +2165,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalog_action')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2036,20 +2191,22 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalog_action')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
     def podcasts(self, filter_str: str = False,
-                 exact: int = False, offset=0, limit=0):
+                 exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
         """ podcasts
             MINIMUM_API_VERSION=420000
 
             INPUTS
-            * filter_str  = (string) search the name of a podcast //optional
-            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * filter_str = (string) search the name of a podcast //optional
+            * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'podcasts',
@@ -2057,15 +2214,21 @@ class API(object):
                 'filter': filter_str,
                 'exact': exact,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcasts')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2089,7 +2252,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2111,7 +2274,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast_create')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2158,7 +2321,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast_edit')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2178,29 +2341,37 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast_delete')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def podcast_episodes(self, filter_id: int, offset=0, limit=0):
+    def podcast_episodes(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
         """ podcast_episodes
             MINIMUM_API_VERSION=420000
 
             INPUTS
-            * filter_id   = (string) UID of podcast
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * filter_id = (string) UID of podcast
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'podcast_episodes',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast_episodes')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2220,7 +2391,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast_episode')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2240,7 +2411,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast_episode')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2260,7 +2431,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'update_podcast')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2284,7 +2455,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'search_songs')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2327,7 +2498,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'search')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2372,22 +2543,24 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'search_group')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
     def videos(self, filter_str: str = False,
-               exact: int = False, offset=0, limit=0):
+               exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
         """ videos
             MINIMUM_API_VERSION=380001
 
             This returns video objects!
 
             INPUTS
-            * filter_str  = (string) search the name of a video //optional
-            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * filter_str = (string) search the name of a video //optional
+            * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'videos',
@@ -2395,15 +2568,21 @@ class API(object):
                 'exact': exact,
                 'filter': filter_str,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'videos')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2423,7 +2602,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'video')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2458,7 +2637,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'localplay')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2474,7 +2653,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'localplay_songs')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2496,12 +2675,12 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'democratic')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
     def stats(self, object_type, filter_str='random',
-              username=False, user_id=False, offset=0, limit=0):
+              username=False, user_id=False, offset=0, limit=0, sort: str = False, cond: str = False):
         """ stats
             MINIMUM_API_VERSION=380001
             CHANGED_IN_API_VERSION=400001
@@ -2515,6 +2694,8 @@ class API(object):
             * limit       = (integer) //optional
             * user_id     = (integer) //optional
             * username    = (string) //optional
+            * cond        = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'stats',
@@ -2524,33 +2705,47 @@ class API(object):
                 'offset': offset,
                 'limit': limit,
                 'user_id': user_id,
-                'username': username}
+                'username': username,
+                'sort': sort,
+                'cond': cond}
         if not username:
             data.pop('username')
         if not user_id:
             data.pop('user_id')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'stats')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def users(self):
+    def users(self, sort: str = False, cond: str = False):
         """ users
             MINIMUM_API_VERSION=5.0.0
 
             Get ids and usernames for your site users
 
             INPUTS
+            * cond = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'users',
-                'auth': self.AMPACHE_SESSION}
+                'auth': self.AMPACHE_SESSION,
+                'sort': sort,
+                'cond': cond}
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2570,27 +2765,35 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def followers(self, username: str):
+    def followers(self, username: str, sort: str = False, cond: str = False):
         """ followers
             MINIMUM_API_VERSION=380001
 
             This get an user followers
 
             INPUTS
-            * username    =
+            * username =
+            * cond     = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort     = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'followers',
                 'auth': self.AMPACHE_SESSION,
-                'username': username}
+                'username': username,
+                'sort': sort,
+                'cond': cond}
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'followers')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2610,7 +2813,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'following')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2630,7 +2833,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'toggle_follow')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2652,7 +2855,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'last_shouts')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2680,7 +2883,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, action)
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2696,7 +2899,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'now_playing')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2723,7 +2926,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'rate')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2758,7 +2961,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'flag')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2789,7 +2992,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'record_play')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2832,7 +3035,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'scrobble')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2856,7 +3059,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'timeline')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2878,7 +3081,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'friends_timeline')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2900,7 +3103,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'update_from_tags')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2929,7 +3132,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'update_art')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -2950,7 +3153,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'update_artist_info')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3028,7 +3231,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'get_external_metadata')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3089,7 +3292,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_create')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3162,7 +3365,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_update')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3182,7 +3385,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_delete')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3200,7 +3403,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_preferences')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3220,7 +3423,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_preference')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3238,7 +3441,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'system_preferences')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3258,7 +3461,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'system_preference')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3276,7 +3479,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'system_update')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3313,7 +3516,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'preference_create')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3337,7 +3540,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'preference_edit')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3357,24 +3560,26 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'preference_delete')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def licenses(self, filter_str: str = False,
-                 exact: int = False, add: int = False, update: int = False, offset=0, limit=0):
+    def licenses(self, filter_str: str = False, exact: int = False, add: int = False, update: int = False,
+                 offset=0, limit=0, sort: str = False, cond: str = False):
         """ licenses
             MINIMUM_API_VERSION=420000
 
             Returns licenses based on the specified filter_str
 
             INPUTS
-            * filter_str  = (string) search the name of a license //optional
-            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
-            * add         = (integer) UNIXTIME() //optional
-            * update      = (integer) UNIXTIME() //optional
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * filter_str = (string) search the name of a license //optional
+            * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * add        = (integer) UNIXTIME() //optional
+            * update     = (integer) UNIXTIME() //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'licenses',
@@ -3384,7 +3589,9 @@ class API(object):
                 'update': update,
                 'filter': filter_str,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
@@ -3393,10 +3600,14 @@ class API(object):
             data.pop('add')
         if not update:
             data.pop('update')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'licenses')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3416,42 +3627,52 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'license')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def license_songs(self, filter_id: int):
+    def license_songs(self, filter_id: int, sort: str = False, cond: str = False):
         """ license_songs
             MINIMUM_API_VERSION=420000
 
             returns a songs for a single license ID
 
             INPUTS
-            * filter_id  = (integer) $license_id
+            * filter_id = (integer) $license_id
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'license_songs',
                 'auth': self.AMPACHE_SESSION,
-                'filter': filter_id}
+                'filter': filter_id,
+                'sort': sort,
+                'cond': cond}
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'license_songs')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
     def live_streams(self, filter_str: str = False,
-                     exact: int = False, offset=0, limit=0):
+                     exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
         """ live_streams
             MINIMUM_API_VERSION=5.1.0
 
             Returns live_streams based on the specified filter_str
 
             INPUTS
-            * filter_str  = (string) search the name of a live_stream //optional
-            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * filter_str = (string) search the name of a live_stream //optional
+            * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'live_streams',
@@ -3459,15 +3680,21 @@ class API(object):
                 'exact': exact,
                 'filter': filter_str,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_streams')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3487,7 +3714,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_stream')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3517,7 +3744,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_stream_create')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3558,7 +3785,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_stream_edit')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3578,22 +3805,24 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_stream_delete')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
     def labels(self, filter_str: str = False,
-               exact: int = False, offset=0, limit=0):
+               exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
         """ labels
             MINIMUM_API_VERSION=420000
 
             Returns labels based on the specified filter_str
 
             INPUTS
-            * filter_str  = (string) search the name of a label //optional
-            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * filter_str = (string) search the name of a label //optional
+            * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'labels',
@@ -3601,15 +3830,21 @@ class API(object):
                 'filter': filter_str,
                 'exact': exact,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'labels')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3629,27 +3864,35 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'label')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def label_artists(self, filter_id: int):
+    def label_artists(self, filter_id: int, sort: str = False, cond: str = False):
         """ label_artists
             MINIMUM_API_VERSION=420000
 
             returns a artists for a single label ID
 
             INPUTS
-            * filter_id  = (integer) $label_id
+            * filter_id = (integer) $label_id
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'label_artists',
                 'auth': self.AMPACHE_SESSION,
-                'filter': filter_id}
+                'filter': filter_id,
+                'sort': sort,
+                'cond': cond}
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'label_artists')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3679,7 +3922,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'get_bookmark')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3705,7 +3948,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmarks')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3729,7 +3972,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3755,7 +3998,8 @@ class API(object):
                 'type': object_type,
                 'position': position,
                 'client': client,
-                'date': date}
+                'date': date,
+                'include': include}
         if not client:
             data.pop('client')
         if not date:
@@ -3763,7 +4007,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark_create')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3800,7 +4044,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark_edit')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3822,7 +4066,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark_delete')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3844,7 +4088,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'deleted_songs')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3866,7 +4110,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'deleted_podcast_episodes')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3888,7 +4132,7 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'deleted_videos')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3938,12 +4182,12 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'advanced_search')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
     def tags(self, filter_str: str = False,
-             exact: int = False, offset=0, limit=0):
+             exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
         """ tags
             MINIMUM_API_VERSION=380001
 
@@ -3954,6 +4198,8 @@ class API(object):
             * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
             * offset     = (integer) //optional
             * limit      = (integer) //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'tags',
@@ -3961,15 +4207,21 @@ class API(object):
                 'exact': exact,
                 'filter': filter_str,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tags')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -3989,35 +4241,43 @@ class API(object):
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tag')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def tag_artists(self, filter_id: int, offset=0, limit=0):
+    def tag_artists(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
         """ tag_artists
             MINIMUM_API_VERSION=380001
 
             This returns the artists associated with the tag in question as defined by the UID
 
             INPUTS
-            * filter_id   = (integer) $tag_id
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
+            * filter_id = (integer) $tag_id
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'tag_artists',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tag_artists')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def tag_albums(self, filter_id: int, offset=0, limit=0):
+    def tag_albums(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
         """ tag_albums
             MINIMUM_API_VERSION=380001
 
@@ -4027,21 +4287,29 @@ class API(object):
             * filter_id = (integer) $tag_id
             * offset    = (integer) //optional
             * limit     = (integer) //optional
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'tag_albums',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tag_albums')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
-    def tag_songs(self, filter_id: int, offset=0, limit=0):
+    def tag_songs(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
         """ tag_songs
             MINIMUM_API_VERSION=380001
 
@@ -4051,17 +4319,25 @@ class API(object):
             * filter_id = (integer) $tag_id
             * offset    = (integer) //optional
             * limit     = (integer) //optional
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'tag_songs',
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tag_songs')
-        if not ampache_response:
+        if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
 
@@ -4173,8 +4449,12 @@ class API(object):
                     params["limit"] = 0
                 if not "include" in params:
                     params["include"] = False
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
                 return self.albums(params["filter_str"], params["include"], params["add"], params["update"],
-                                   params["offset"], params["limit"], params["include"])
+                                   params["offset"], params["limit"], params["include"], params["sort"], params["cond"])
             case 'album_songs':
                 if not "offset" in params:
                     params["offset"] = 0
@@ -4182,7 +4462,12 @@ class API(object):
                     params["limit"] = 0
                 if not "exact" in params:
                     params["exact"] = False
-                return self.album_songs(params["filter_id"], params["offset"], params["limit"], params["exact"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.album_songs(params["filter_id"], params["offset"], params["limit"], params["exact"],
+                                        params["sort"], params["cond"])
             case 'artist':
                 if not "include" in params:
                     params["include"] = False
@@ -4194,8 +4479,12 @@ class API(object):
                     params["limit"] = 0
                 if not "album_artist" in params:
                     params["album_artist"] = False
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
                 return self.artist_albums(params["filter_id"], params["offset"], params["limit"],
-                                          params["album_artist"])
+                                          params["album_artist"], params["sort"], params["cond"])
             case 'artists':
                 if not "filter_str" in params:
                     params["filter_str"] = False
@@ -4211,14 +4500,24 @@ class API(object):
                     params["include"] = False
                 if not "album_artist" in params:
                     params["album_artist"] = False
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
                 return self.artists(params["filter_str"], params["add"], params["update"], params["offset"],
-                                    params["limit"], params["include"], params["album_artist"])
+                                    params["limit"], params["include"], params["album_artist"],
+                                    params["sort"], params["cond"])
             case 'artist_songs':
                 if not "offset" in params:
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.artist_songs(params["filter_id"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.artist_songs(params["filter_id"], params["offset"], params["limit"],
+                                         params["sort"], params["cond"])
             case 'bookmark':
                 if not "include" in params:
                     params["include"] = False
@@ -4264,8 +4563,12 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
                 return self.browse(params["filter_str"], params["object_type"], params["catalog"], params["add"],
-                                   params["update"], params["offset"], params["limit"])
+                                   params["update"], params["offset"], params["limit"], params["sort"], params["cond"])
             case 'catalog':
                 if not "offset" in params:
                     params["offset"] = 0
@@ -4303,7 +4606,12 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.catalogs(params["filter_str"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.catalogs(params["filter_str"], params["offset"], params["limit"],
+                                     params["sort"], params["cond"])
             case 'deleted_podcast_episodes':
                 if not "offset" in params:
                     params["offset"] = 0
@@ -4337,7 +4645,11 @@ class API(object):
                     params["date"] = False
                 return self.flag(params["object_type"], params["object_id"], params["flagbool"], params["date"])
             case 'followers':
-                return self.followers(params["username"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.followers(params["username"], params["sort"], params["cond"])
             case 'following':
                 return self.following(params["username"])
             case 'friends_timeline':
@@ -4349,17 +4661,34 @@ class API(object):
             case 'genre':
                 return self.genre(params["filter_id"])
             case 'genre_albums':
-                return self.genre_albums(params["filter_id"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.genre_albums(params["filter_id"], params["sort"], params["cond"])
             case 'genre_artists':
-                return self.genre_artists(params["username"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.genre_artists(params["username"], params["sort"], params["cond"])
             case 'genres':
-                return self.genres(params["username"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.genres(params["username"], params["sort"], params["cond"])
             case 'genre_songs':
                 if not "offset" in params:
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.genre_songs(params["filter_id"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.genre_songs(params["filter_id"], params["offset"], params["limit"],
+                                        params["sort"], params["cond"])
             case 'get_art':
                 return self.get_art(params["object_id"], params["object_type"], params["destination"])
             case 'get_bookmark':
@@ -4386,8 +4715,13 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
                 return self.get_indexes(params["object_type"], params["filter_str"], params["exact"], params["add"],
-                                        params["update"], params["include"], params["offset"], params["limit"])
+                                        params["update"], params["include"], params["offset"], params["limit"],
+                                        params["sort"], params["cond"])
             case 'get_similar':
                 if not "offset" in params:
                     params["offset"] = 0
@@ -4411,13 +4745,21 @@ class API(object):
                     params["limit"] = 0
                 if not "hide_search" in params:
                     params["hide_search"] = False
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
                 return self.index(params["object_type"], params["filter_str"], params["exact"], params["add"],
                                   params["update"], params["include"], params["offset"], params["limit"],
-                                  params["hide_search"])
+                                  params["hide_search"], params["sort"], params["cond"])
             case 'label':
                 return self.label(params["filter_id"])
             case 'label_artists':
-                return self.label_artists(params["filter_id"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.label_artists(params["filter_id"], params["sort"], params["cond"])
             case 'labels':
                 if not "filter_str" in params:
                     params["filter_str"] = False
@@ -4427,7 +4769,12 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.labels(params["filter_str"], params["exact"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.labels(params["filter_str"], params["exact"], params["offset"], params["limit"],
+                                   params["sort"], params["cond"])
             case 'last_shouts':
                 if not "limit" in params:
                     params["limit"] = 0
@@ -4447,10 +4794,18 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
                 return self.licenses(params["filter_str"], params["exact"], params["add"], params["update"],
-                                     params["offset"], params["limit"])
+                                     params["offset"], params["limit"], params["sort"], params["cond"])
             case 'license_songs':
-                return self.license_songs(params["filter_id"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.license_songs(params["filter_id"], params["sort"], params["cond"])
             case 'list':
                 if not "filter_str" in params:
                     params["filter_str"] = False
@@ -4464,8 +4819,12 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
                 return self.list(params["object_type"], params["filter_str"], params["exact"], params["add"],
-                                 params["update"], params["offset"], params["limit"])
+                                 params["update"], params["offset"], params["limit"], params["sort"], params["cond"])
             case 'live_stream':
                 return self.live_stream(params["filter_id"])
             case 'live_stream_create':
@@ -4497,7 +4856,12 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.live_streams(params["filter_str"], params["exact"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.live_streams(params["filter_str"], params["exact"], params["offset"], params["limit"],
+                                         params["sort"], params["cond"])
             case 'localplay':
                 if not "oid" in params:
                     params["oid"] = False
@@ -4589,8 +4953,13 @@ class API(object):
                     params["show_dupes"] = False
                 if not "include" in params:
                     params["include"] = False
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
                 return self.playlists(params["filter_str"], params["exact"], params["offset"], params["limit"],
-                                      params["hide_search"], params["show_dupes"], params["include"])
+                                      params["hide_search"], params["show_dupes"], params["include"],
+                                      params["sort"], params["cond"])
             case 'playlist_songs':
                 if not "random" in params:
                     params["random"] = False
@@ -4631,7 +5000,12 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.podcast_episodes(params["filter_id"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.podcast_episodes(params["filter_id"], params["offset"], params["limit"],
+                                             params["sort"], params["cond"])
             case 'podcasts':
                 if not "exact" in params:
                     params["exact"] = 0
@@ -4639,7 +5013,12 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.podcasts(params["filter_id"], params["exact"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.podcasts(params["filter_id"], params["exact"], params["offset"], params["limit"],
+                                     params["sort"], params["cond"])
             case 'preference_create':
                 if not "description" in params:
                     params["description"] = False
@@ -4718,7 +5097,12 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.shares(params["filter_str"], params["exact"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.shares(params["filter_str"], params["exact"], params["offset"], params["limit"],
+                                   params["sort"], params["cond"])
             case 'song':
                 return self.song(params["filter_id"])
             case 'song_delete':
@@ -4736,8 +5120,12 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
                 return self.songs(params["filter_str"], params["exact"], params["add"], params["update"],
-                                  params["offset"], params["limit"])
+                                  params["offset"], params["limit"], params["sort"], params["cond"])
             case 'stats':
                 if not "filter_str" in params:
                     params["filter_str"] = 'random'
@@ -4749,8 +5137,13 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
                 return self.stats(params["object_type"], params["filter_str"], params["username"],
-                                  params["user_id"], params["offset"], params["limit"])
+                                  params["user_id"], params["offset"], params["limit"],
+                                  params["sort"], params["cond"])
             case 'stream':
                 if not "stats" in params:
                     params["stats"] = 1
@@ -4768,13 +5161,23 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.tag_albums(params["filter_id"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.tag_albums(params["filter_id"], params["offset"], params["limit"],
+                                       params["sort"], params["cond"])
             case 'tag_artists':
                 if not "offset" in params:
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.tag_artists(params["filter_id"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.tag_artists(params["filter_id"], params["offset"], params["limit"],
+                                        params["sort"], params["cond"])
             case 'tags':
                 if not "filter_str" in params:
                     params["filter_str"] = False
@@ -4784,13 +5187,23 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.tags(params["filter_str"], params["exact"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.tags(params["filter_str"], params["exact"], params["offset"], params["limit"],
+                                 params["sort"], params["cond"])
             case 'tag_songs':
                 if not "offset" in params:
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.tag_songs(params["filter_id"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.tag_songs(params["filter_id"], params["offset"], params["limit"],
+                                      params["sort"], params["cond"])
             case 'timeline':
                 if not "limit" in params:
                     params["limit"] = 0
@@ -4860,13 +5273,23 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.user_playlists(params["filter_str"], params["exact"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.user_playlists(params["filter_str"], params["exact"],
+                                           params["offset"], params["limit"],
+                                           params["sort"], params["cond"])
             case 'user_preference':
                 return self.user_preference(params["filter_str"])
             case 'user_preferences':
                 return self.user_preferences()
             case 'users':
-                return self.users()
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.users(params["sort"], params["cond"])
             case 'user_smartlists':
                 if not "filter_str" in params:
                     params["filter_str"] = False
@@ -4876,7 +5299,13 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.user_smartlists(params["filter_str"], params["exact"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.user_smartlists(params["filter_str"], params["exact"],
+                                            params["offset"], params["limit"],
+                                            params["sort"], params["cond"])
             case 'user_update':
                 if not "password" in params:
                     params["password"] = False
@@ -4915,4 +5344,9 @@ class API(object):
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.videos(params["filter_str"], params["exact"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.videos(params["filter_str"], params["exact"], params["offset"], params["limit"],
+                                   params["sort"], params["cond"])
