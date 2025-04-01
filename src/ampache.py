@@ -482,7 +482,7 @@ class API(object):
     -------------
     """
 
-    def handshake(self, ampache_url: str, ampache_api: str, ampache_user: str = False,
+    def handshake(self, ampache_url: str, ampache_api: str, ampache_user=False,
                   timestamp: int = 0, version: str = '6.6.0'):
         """ handshake
             MINIMUM_API_VERSION=380001
@@ -545,7 +545,7 @@ class API(object):
             self.AMPACHE_SESSION = token
             return token
 
-    def ping(self, ampache_url: str, ampache_api: str = False, version: str = '6.6.0'):
+    def ping(self, ampache_url: str, ampache_api=False, version: str = '6.6.0'):
         """ ping
             MINIMUM_API_VERSION=380001
 
@@ -712,8 +712,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def list(self, object_type, filter_str: str = False, exact: int = False, add: int = False, update: int = False,
-             offset=0, limit=0, sort: str = False, cond: str = False):
+    def list(self, object_type, filter_str=False, exact=False, add=False, update=False,
+             offset=0, limit=0, sort=False, cond=False):
         """ list
             MINIMUM_API_VERSION=6.0.0
 
@@ -761,9 +761,9 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def browse(self, filter_str: str = False,
-               object_type: str = False, catalog: int = False, add: int = False, update: int = False,
-               offset=0, limit=0, sort: str = False, cond: str = False):
+    def browse(self, filter_str=False,
+               object_type=False, catalog=False, add=False, update=False,
+               offset=0, limit=0, sort=False, cond=False):
         """ browse
             MINIMUM_API_VERSION=6.0.0
 
@@ -814,8 +814,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def index(self, object_type, filter_str: str = False, exact: int = False, add: int = False, update: int = False,
-              include: int = False, offset=0, limit=0, hide_search: int = False, sort: str = False, cond: str = False):
+    def index(self, object_type, filter_str=False, exact=False, add=False, update=False,
+              include=False, offset=0, limit=0, hide_search=False, sort=False, cond=False):
         """ index
             MINIMUM_API_VERSION=400001
 
@@ -874,8 +874,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def get_indexes(self, object_type, filter_str: str = False, exact: int = False, add: int = False,
-                    update: int = False, include: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
+    def get_indexes(self, object_type, filter_str=False, exact=False, add=False,
+                    update=False, include=False, offset=0, limit=0, sort=False, cond=False):
         """ get_indexes
             MINIMUM_API_VERSION=400001
 
@@ -929,8 +929,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def artists(self, filter_str: str = False, add: int = False, update: int = False,
-                offset=0, limit=0, include=False, album_artist: int = False, sort: str = False, cond: str = False):
+    def artists(self, filter_str=False, add=False, update=False,
+                offset=0, limit=0, include=False, album_artist=False, sort=False, cond=False):
         """ artists
             MINIMUM_API_VERSION=380001
 
@@ -1009,7 +1009,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def artist_albums(self, filter_id: int, offset=0, limit=0, album_artist=False,
-                      sort: str = False, cond: str = False):
+                      sort=False, cond=False):
         """ artist_albums
             MINIMUM_API_VERSION=380001
 
@@ -1045,7 +1045,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def artist_songs(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
+    def artist_songs(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
         """ artist_songs
             MINIMUM_API_VERSION=380001
 
@@ -1077,9 +1077,9 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def albums(self, filter_str: str = False,
-               exact: int = False, add: int = False, update: int = False, offset=0, limit=0,
-               include=False, sort: str = False, cond: str = False):
+    def albums(self, filter_str=False,
+               exact=False, add=False, update=False, offset=0, limit=0,
+               include=False, sort=False, cond=False):
         """ albums
             MINIMUM_API_VERSION=380001
 
@@ -1158,7 +1158,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def album_songs(self, filter_id: int, offset=0, limit=0,
-                    exact: int = False, sort: str = False, cond: str = False):
+                    exact=False, sort=False, cond=False):
         """ album_songs
             MINIMUM_API_VERSION=380001
 
@@ -1198,8 +1198,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def genres(self, filter_str: str = False,
-               exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
+    def genres(self, filter_str=False,
+               exact=False, offset=0, limit=0, sort=False, cond=False):
         """ genres
             MINIMUM_API_VERSION=380001
 
@@ -1257,7 +1257,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def genre_artists(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
+    def genre_artists(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
         """ genre_artists
             MINIMUM_API_VERSION=380001
 
@@ -1289,7 +1289,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def genre_albums(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
+    def genre_albums(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
         """ genre_albums
             MINIMUM_API_VERSION=380001
 
@@ -1321,7 +1321,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def genre_songs(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
+    def genre_songs(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
         """ genre_songs
             MINIMUM_API_VERSION=380001
 
@@ -1353,8 +1353,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def songs(self, filter_str: str = False, exact: int = False, add: int = False, update: int = False,
-              offset=0, limit=0, sort: str = False, cond: str = False):
+    def songs(self, filter_str=False, exact=False, add=False, update=False,
+              offset=0, limit=0, sort=False, cond=False):
         """ songs
             MINIMUM_API_VERSION=380001
 
@@ -1440,8 +1440,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def user_playlists(self, filter_str: str = False, exact: int = False, offset=0, limit=0,
-                       sort: str = False, cond: str = False):
+    def user_playlists(self, filter_str=False, exact=False, offset=0, limit=0,
+                       sort=False, cond=False):
         """ user_playlists
             MINIMUM_API_VERSION=6.3.0
 
@@ -1479,8 +1479,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def user_smartlists(self, filter_str: str = False, exact: int = False, offset=0, limit=0,
-                        sort: str = False, cond: str = False):
+    def user_smartlists(self, filter_str=False, exact=False, offset=0, limit=0,
+                        sort=False, cond=False):
         """ user_smartlists
             MINIMUM_API_VERSION=6.3.0
 
@@ -1518,8 +1518,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def playlists(self, filter_str: str = False, exact: int = False, offset=0, limit=0, hide_search: int = False,
-                  show_dupes: int = False, include: int = False, sort: str = False, cond: str = False):
+    def playlists(self, filter_str=False, exact=False, offset=0, limit=0, hide_search=False,
+                  show_dupes=False, include=False, sort=False, cond=False):
         """ playlists
             MINIMUM_API_VERSION=380001
 
@@ -1609,7 +1609,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def playlist_songs(self, filter_id: int, random: int = False, offset=0, limit=0):
+    def playlist_songs(self, filter_id: int, random=False, offset=0, limit=0):
         """ playlist_songs
             MINIMUM_API_VERSION=380001
 
@@ -1806,7 +1806,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def playlist_generate(self, mode='random',
-                          filter_str: str = False, album_id=False, artist_id=False, flagged=False,
+                          filter_str=False, album_id=False, artist_id=False, flagged=False,
                           list_format='song', offset=0, limit=0):
         """ playlist_generate
             MINIMUM_API_VERSION=400001
@@ -1853,8 +1853,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def shares(self, filter_str: str = False,
-               exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
+    def shares(self, filter_str=False,
+               exact=False, offset=0, limit=0, sort=False, cond=False):
         """ shares
             MINIMUM_API_VERSION=420000
 
@@ -1942,8 +1942,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def share_edit(self, filter_id: int, can_stream: int = False, can_download: int = False,
-                   expires: int = False, description=False):
+    def share_edit(self, filter_id: int, can_stream=False, can_download=False,
+                   expires=False, description=False):
         """ share_edit
             MINIMUM_API_VERSION=420000
 
@@ -2000,7 +2000,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def catalogs(self, filter_str: str = False, offset=0, limit=0, sort: str = False, cond: str = False):
+    def catalogs(self, filter_str=False, offset=0, limit=0, sort=False, cond=False):
         """ catalogs
             MINIMUM_API_VERSION=420000
 
@@ -2195,8 +2195,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def podcasts(self, filter_str: str = False,
-                 exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
+    def podcasts(self, filter_str=False,
+                 exact=False, offset=0, limit=0, sort=False, cond=False):
         """ podcasts
             MINIMUM_API_VERSION=420000
 
@@ -2345,7 +2345,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def podcast_episodes(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
+    def podcast_episodes(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
         """ podcast_episodes
             MINIMUM_API_VERSION=420000
 
@@ -2547,8 +2547,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def videos(self, filter_str: str = False,
-               exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
+    def videos(self, filter_str=False,
+               exact=False, offset=0, limit=0, sort=False, cond=False):
         """ videos
             MINIMUM_API_VERSION=380001
 
@@ -2606,7 +2606,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def localplay(self, command, oid: int = False, otype=False, clear: int = False):
+    def localplay(self, command, oid=False, otype=False, clear=False):
         """ localplay
             MINIMUM_API_VERSION=380001
             CHANGED_IN_API_VERSION=5.0.0
@@ -2680,7 +2680,7 @@ class API(object):
         return self.return_data(ampache_response)
 
     def stats(self, object_type, filter_str='random',
-              username=False, user_id=False, offset=0, limit=0, sort: str = False, cond: str = False):
+              username=False, user_id=False, offset=0, limit=0, sort=False, cond=False):
         """ stats
             MINIMUM_API_VERSION=380001
             CHANGED_IN_API_VERSION=400001
@@ -2723,7 +2723,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def users(self, sort: str = False, cond: str = False):
+    def users(self, sort=False, cond=False):
         """ users
             MINIMUM_API_VERSION=5.0.0
 
@@ -2769,7 +2769,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def followers(self, username: str, sort: str = False, cond: str = False):
+    def followers(self, username: str, sort=False, cond=False):
         """ followers
             MINIMUM_API_VERSION=380001
 
@@ -3260,7 +3260,7 @@ class API(object):
         return True
 
     def user_create(self, username: str, password: str, email: str,
-                    fullname: str = False, disable=False):
+                    fullname=False, disable=False):
         """ user_create
             MINIMUM_API_VERSION=400001
 
@@ -3564,8 +3564,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def licenses(self, filter_str: str = False, exact: int = False, add: int = False, update: int = False,
-                 offset=0, limit=0, sort: str = False, cond: str = False):
+    def licenses(self, filter_str=False, exact=False, add=False, update=False,
+                 offset=0, limit=0, sort=False, cond=False):
         """ licenses
             MINIMUM_API_VERSION=420000
 
@@ -3631,7 +3631,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def license_songs(self, filter_id: int, sort: str = False, cond: str = False):
+    def license_songs(self, filter_id: int, sort=False, cond=False):
         """ license_songs
             MINIMUM_API_VERSION=420000
 
@@ -3659,8 +3659,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def live_streams(self, filter_str: str = False,
-                     exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
+    def live_streams(self, filter_str=False,
+                     exact=False, offset=0, limit=0, sort=False, cond=False):
         """ live_streams
             MINIMUM_API_VERSION=5.1.0
 
@@ -3809,8 +3809,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def labels(self, filter_str: str = False,
-               exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
+    def labels(self, filter_str=False,
+               exact=False, offset=0, limit=0, sort=False, cond=False):
         """ labels
             MINIMUM_API_VERSION=420000
 
@@ -3868,7 +3868,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def label_artists(self, filter_id: int, sort: str = False, cond: str = False):
+    def label_artists(self, filter_id: int, sort=False, cond=False):
         """ label_artists
             MINIMUM_API_VERSION=420000
 
@@ -4186,8 +4186,8 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def tags(self, filter_str: str = False,
-             exact: int = False, offset=0, limit=0, sort: str = False, cond: str = False):
+    def tags(self, filter_str=False,
+             exact=False, offset=0, limit=0, sort=False, cond=False):
         """ tags
             MINIMUM_API_VERSION=380001
 
@@ -4245,7 +4245,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def tag_artists(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
+    def tag_artists(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
         """ tag_artists
             MINIMUM_API_VERSION=380001
 
@@ -4277,7 +4277,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def tag_albums(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
+    def tag_albums(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
         """ tag_albums
             MINIMUM_API_VERSION=380001
 
@@ -4309,7 +4309,7 @@ class API(object):
             return False
         return self.return_data(ampache_response)
 
-    def tag_songs(self, filter_id: int, offset=0, limit=0, sort: str = False, cond: str = False):
+    def tag_songs(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
         """ tag_songs
             MINIMUM_API_VERSION=380001
 
