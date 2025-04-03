@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.4" openSubsonic="1">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.7" openSubsonic="1">
   <shares>
     <share id="15" url="http://192.168.1.9:8989/share.php?id=15&amp;secret=2uTZSlzp" description="" username="user" created="2024-10-21T04:29:25+00:00" visitCount="0">
       <entry id="300000078" parent="200000018" title="inominavel p01" isDir="false" isVideo="false" type="music" albumId="200000018" album="Inominavel (live.v.01)" artistId="100000011" artist="structura" coverArt="200000018" duration="84" bitRate="187" track="1" year="2007" genre="Noise" size="2036632" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/media/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3"/>

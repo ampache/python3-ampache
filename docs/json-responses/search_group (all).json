@@ -1,285 +1,61 @@
 {
     "search": {
-        "song": [
+        "album_artist": [
             {
-                "id": "100",
-                "title": "The Prophecies Of The Horned One",
-                "name": "The Prophecies Of The Horned One",
-                "artist": {
-                    "id": "16",
-                    "name": "CARN\u00daN",
-                    "prefix": null,
-                    "basename": "CARN\u00daN"
-                },
-                "artists": [
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found.",
+                "albums": [],
+                "albumcount": 1,
+                "songs": [],
+                "songcount": 11,
+                "genre": [
                     {
-                        "id": "16",
-                        "name": "CARN\u00daN",
-                        "prefix": null,
-                        "basename": "CARN\u00daN"
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
                     }
                 ],
-                "album": {
-                    "id": "10",
-                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "prefix": null,
-                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
-                },
-                "albumartist": {
-                    "id": "16",
-                    "name": "CARN\u00daN",
-                    "prefix": null,
-                    "basename": "CARN\u00daN"
-                },
-                "disk": 1,
-                "disksubtitle": null,
-                "track": 2,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/02ThePropheciesOfTheHornedOne.ogg",
-                "genre": [],
-                "playlisttrack": 1,
-                "time": 378,
-                "year": 1996,
-                "format": "ogg",
-                "stream_format": "mp3",
-                "bitrate": 89965,
-                "stream_bitrate": 32000,
-                "rate": 44100,
-                "mode": "vbr",
-                "mime": "application\/ogg",
-                "stream_mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3",
-                "size": 4265791,
-                "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
-                "has_art": true,
+                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist",
+                "has_art": false,
                 "flag": false,
-                "rating": null,
+                "rating": 2,
                 "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 2,
-                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
-                "license": "",
-                "publisher": "archive.org",
-                "language": null,
-                "lyrics": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": -10.51,
-                "replaygain_track_peak": 1,
-                "r128_album_gain": null,
-                "r128_track_gain": null
+                "mbid": null,
+                "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
+                "time": 4423,
+                "yearformed": 0,
+                "placeformed": null
             },
             {
-                "id": "98",
-                "title": "In The Seven Woods",
-                "name": "In The Seven Woods",
-                "artist": {
-                    "id": "16",
-                    "name": "CARN\u00daN",
-                    "prefix": null,
-                    "basename": "CARN\u00daN"
-                },
-                "artists": [
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic",
+                "albums": [],
+                "albumcount": 1,
+                "songs": [],
+                "songcount": 12,
+                "genre": [
                     {
-                        "id": "16",
-                        "name": "CARN\u00daN",
-                        "prefix": null,
-                        "basename": "CARN\u00daN"
+                        "id": "1",
+                        "name": "Electronic"
                     }
                 ],
-                "album": {
-                    "id": "10",
-                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "prefix": null,
-                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
-                },
-                "albumartist": {
-                    "id": "16",
-                    "name": "CARN\u00daN",
-                    "prefix": null,
-                    "basename": "CARN\u00daN"
-                },
-                "disk": 1,
-                "disksubtitle": null,
-                "track": 3,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/03InTheSevenWoods.ogg",
-                "genre": [],
-                "playlisttrack": 2,
-                "time": 420,
-                "year": 1996,
-                "format": "ogg",
-                "stream_format": "mp3",
-                "bitrate": 84423,
-                "stream_bitrate": 32000,
-                "rate": 44100,
-                "mode": "vbr",
-                "mime": "application\/ogg",
-                "stream_mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3",
-                "size": 4444403,
-                "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=artist",
                 "has_art": true,
-                "flag": false,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 2,
-                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
-                "license": "",
-                "publisher": "archive.org",
-                "language": null,
-                "lyrics": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": -9.7,
-                "replaygain_track_peak": 1,
-                "r128_album_gain": null,
-                "r128_track_gain": null
-            },
-            {
-                "id": "99",
-                "title": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
-                "name": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
-                "artist": {
-                    "id": "16",
-                    "name": "CARN\u00daN",
-                    "prefix": null,
-                    "basename": "CARN\u00daN"
-                },
-                "artists": [
-                    {
-                        "id": "16",
-                        "name": "CARN\u00daN",
-                        "prefix": null,
-                        "basename": "CARN\u00daN"
-                    }
-                ],
-                "album": {
-                    "id": "10",
-                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "prefix": null,
-                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
-                },
-                "albumartist": {
-                    "id": "16",
-                    "name": "CARN\u00daN",
-                    "prefix": null,
-                    "basename": "CARN\u00daN"
-                },
-                "disk": 1,
-                "disksubtitle": null,
-                "track": 6,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg",
-                "genre": [],
-                "playlisttrack": 3,
-                "time": 427,
-                "year": 1996,
-                "format": "ogg",
-                "stream_format": "mp3",
-                "bitrate": 143788,
-                "stream_bitrate": 32000,
-                "rate": 44100,
-                "mode": "vbr",
-                "mime": "application\/ogg",
-                "stream_mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3",
-                "size": 7696008,
-                "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
-                "has_art": true,
-                "flag": false,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 2,
-                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
-                "license": "",
-                "publisher": "archive.org",
-                "language": null,
-                "lyrics": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": -12.66,
-                "replaygain_track_peak": 1,
-                "r128_album_gain": null,
-                "r128_track_gain": null
-            },
-            {
-                "id": "103",
-                "title": "In The Seven Woods (Instrumental Re-Recording)",
-                "name": "In The Seven Woods (Instrumental Re-Recording)",
-                "artist": {
-                    "id": "16",
-                    "name": "CARN\u00daN",
-                    "prefix": null,
-                    "basename": "CARN\u00daN"
-                },
-                "artists": [
-                    {
-                        "id": "16",
-                        "name": "CARN\u00daN",
-                        "prefix": null,
-                        "basename": "CARN\u00daN"
-                    }
-                ],
-                "album": {
-                    "id": "10",
-                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "prefix": null,
-                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
-                },
-                "albumartist": {
-                    "id": "16",
-                    "name": "CARN\u00daN",
-                    "prefix": null,
-                    "basename": "CARN\u00daN"
-                },
-                "disk": 1,
-                "disksubtitle": null,
-                "track": 7,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
-                "genre": [],
-                "playlisttrack": 4,
-                "time": 452,
-                "year": 1996,
-                "format": "ogg",
-                "stream_format": "mp3",
-                "bitrate": 138338,
-                "stream_bitrate": 32000,
-                "rate": 44100,
-                "mode": "vbr",
-                "mime": "application\/ogg",
-                "stream_mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
-                "size": 7826238,
-                "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
-                "has_art": true,
-                "flag": false,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 2,
-                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
-                "license": "",
-                "publisher": "archive.org",
-                "language": null,
-                "lyrics": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": -12.21,
-                "replaygain_track_peak": 1,
-                "r128_album_gain": null,
-                "r128_track_gain": null
+                "flag": true,
+                "rating": 5,
+                "averagerating": 3,
+                "mbid": "1",
+                "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
+                "time": 4568,
+                "yearformed": 0,
+                "placeformed": null
             }
         ],
         "album": [
@@ -511,164 +287,6 @@
                 "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2"
             }
         ],
-        "song_artist": [
-            {
-                "id": "34",
-                "name": "Comedown Kid",
-                "prefix": null,
-                "basename": "Comedown Kid",
-                "albums": [],
-                "albumcount": 0,
-                "songs": [],
-                "songcount": 1,
-                "genre": [],
-                "art": "https:\/\/music.com.au\/image.php?object_id=34&object_type=artist",
-                "has_art": true,
-                "flag": false,
-                "rating": null,
-                "averagerating": null,
-                "mbid": null,
-                "summary": null,
-                "time": 116,
-                "yearformed": 0,
-                "placeformed": null
-            },
-            {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found.",
-                "albums": [],
-                "albumcount": 1,
-                "songs": [],
-                "songcount": 11,
-                "genre": [
-                    {
-                        "id": "5",
-                        "name": "Electronica"
-                    },
-                    {
-                        "id": "6",
-                        "name": "Dance"
-                    }
-                ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist",
-                "has_art": false,
-                "flag": false,
-                "rating": 2,
-                "averagerating": null,
-                "mbid": null,
-                "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
-                "time": 4423,
-                "yearformed": 0,
-                "placeformed": null
-            },
-            {
-                "id": "26",
-                "name": "Stress Builds Character",
-                "prefix": null,
-                "basename": "Stress Builds Character",
-                "albums": [],
-                "albumcount": 0,
-                "songs": [],
-                "songcount": 1,
-                "genre": [],
-                "art": "https:\/\/music.com.au\/image.php?object_id=26&object_type=artist",
-                "has_art": true,
-                "flag": false,
-                "rating": null,
-                "averagerating": null,
-                "mbid": null,
-                "summary": "There are 2 artists with this name:\n1) A crust band\n2) A hardcore band from Toronto\n\n1) Started as \"Hands That Mold\" later changed to \"Stress Builds Character\". We play grindy, sludgy, crusty, melodic, apocalyptic punk with a twist of power violence. We had a few practices, got a new 2nd vocalist (after Teagan left) and recorded our original demo. Joe was one of the lead vocalists for the first 4 shows and original demo until right after the 4th show when he left the band. ",
-                "time": 233,
-                "yearformed": 0,
-                "placeformed": null
-            },
-            {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic",
-                "albums": [],
-                "albumcount": 1,
-                "songs": [],
-                "songcount": 12,
-                "genre": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=artist",
-                "has_art": true,
-                "flag": true,
-                "rating": 5,
-                "averagerating": 3,
-                "mbid": "1",
-                "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
-                "time": 4568,
-                "yearformed": 0,
-                "placeformed": null
-            }
-        ],
-        "album_artist": [
-            {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found.",
-                "albums": [],
-                "albumcount": 1,
-                "songs": [],
-                "songcount": 11,
-                "genre": [
-                    {
-                        "id": "5",
-                        "name": "Electronica"
-                    },
-                    {
-                        "id": "6",
-                        "name": "Dance"
-                    }
-                ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist",
-                "has_art": false,
-                "flag": false,
-                "rating": 2,
-                "averagerating": null,
-                "mbid": null,
-                "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
-                "time": 4423,
-                "yearformed": 0,
-                "placeformed": null
-            },
-            {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic",
-                "albums": [],
-                "albumcount": 1,
-                "songs": [],
-                "songcount": 12,
-                "genre": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=artist",
-                "has_art": true,
-                "flag": true,
-                "rating": 5,
-                "averagerating": 3,
-                "mbid": "1",
-                "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
-                "time": 4568,
-                "yearformed": 0,
-                "placeformed": null
-            }
-        ],
         "artist": [
             {
                 "id": "34",
@@ -769,6 +387,28 @@
                 "placeformed": null
             }
         ],
+        "genre": [
+            {
+                "id": "6",
+                "name": "Dance",
+                "albums": 1,
+                "artists": 1,
+                "songs": 11,
+                "videos": 0,
+                "playlists": 0,
+                "live_streams": 0
+            },
+            {
+                "id": "4",
+                "name": "Dark Ambient",
+                "albums": 1,
+                "artists": 1,
+                "songs": 4,
+                "videos": 0,
+                "playlists": 0,
+                "live_streams": 0
+            }
+        ],
         "label": [
             {
                 "id": "3",
@@ -862,28 +502,7 @@
                 "rating": null,
                 "averagerating": null,
                 "md5": null,
-                "last_update": 1729484872
-            }
-        ],
-        "podcast": [
-            {
-                "id": "1",
-                "name": "60-Second Science",
-                "description": "Tune in every weekday for quick reports and commentaries on the world of science&mdash;it&#039;ll just take a minute",
-                "language": "en-us",
-                "copyright": "False",
-                "feed_url": "http:\/\/rss.sciam.com\/sciam\/60secsciencepodcast",
-                "generator": "",
-                "website": "https:\/\/www.scientificamerican.com\/podcast\/60-second-science\/",
-                "build_date": "1970-01-01T00:00:00+00:00",
-                "sync_date": "2022-08-17T05:07:11+00:00",
-                "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=1",
-                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&name=art.jpg",
-                "has_art": true,
-                "flag": false,
-                "rating": null,
-                "averagerating": null,
-                "podcast_episode": []
+                "last_update": 1739770130
             }
         ],
         "podcast_episode": [
@@ -904,7 +523,7 @@
                 "state": "pending",
                 "filelength": "00:15:36",
                 "filesize": "",
-                "filename": "Trace - S1 BONUS | A million-dollar reward.",
+                "filename": "",
                 "mime": null,
                 "time": 936,
                 "size": 0,
@@ -914,7 +533,7 @@
                 "mode": null,
                 "channels": null,
                 "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=115",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=115&uid=4&format=raw&player=api&name=Trace%20-%20S1%20BONUS%20-%20A%20million-dollar%20reward.",
+                "url": "",
                 "catalog": "3",
                 "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=podcast",
                 "has_art": false,
@@ -941,7 +560,7 @@
                 "state": "pending",
                 "filelength": "00:18:34",
                 "filesize": "",
-                "filename": "Trace - S1 Bonus | Maria James inquest finding.",
+                "filename": "",
                 "mime": null,
                 "time": 1114,
                 "size": 0,
@@ -951,7 +570,7 @@
                 "mode": null,
                 "channels": null,
                 "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=116",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=116&uid=4&format=raw&player=api&name=Trace%20-%20S1%20Bonus%20-%20Maria%20James%20inquest%20finding.",
+                "url": "",
                 "catalog": "3",
                 "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=podcast",
                 "has_art": false,
@@ -978,7 +597,7 @@
                 "state": "pending",
                 "filelength": "00:26:45",
                 "filesize": "",
-                "filename": "Trace - S1 Bonus | Breakthrough in Maria James cold case.",
+                "filename": "",
                 "mime": null,
                 "time": 1605,
                 "size": 0,
@@ -988,7 +607,7 @@
                 "mode": null,
                 "channels": null,
                 "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=118",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=118&uid=4&format=raw&player=api&name=Trace%20-%20S1%20Bonus%20-%20Breakthrough%20in%20Maria%20James%20cold%20case.",
+                "url": "",
                 "catalog": "3",
                 "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=podcast",
                 "has_art": false,
@@ -1036,26 +655,407 @@
                 "played": ""
             }
         ],
-        "genre": [
+        "podcast": [
             {
-                "id": "6",
-                "name": "Dance",
-                "albums": 1,
-                "artists": 1,
-                "songs": 11,
-                "videos": 0,
-                "playlists": 0,
-                "live_streams": 0
+                "id": "1",
+                "name": "60-Second Science",
+                "description": "Tune in every weekday for quick reports and commentaries on the world of science&mdash;it&#039;ll just take a minute",
+                "language": "en-us",
+                "copyright": "False",
+                "feed_url": "http:\/\/rss.sciam.com\/sciam\/60secsciencepodcast",
+                "generator": "",
+                "website": "https:\/\/www.scientificamerican.com\/podcast\/60-second-science\/",
+                "build_date": "1970-01-01T00:00:00+00:00",
+                "sync_date": "2022-08-17T05:07:11+00:00",
+                "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "podcast_episode": []
+            }
+        ],
+        "song_artist": [
+            {
+                "id": "34",
+                "name": "Comedown Kid",
+                "prefix": null,
+                "basename": "Comedown Kid",
+                "albums": [],
+                "albumcount": 0,
+                "songs": [],
+                "songcount": 1,
+                "genre": [],
+                "art": "https:\/\/music.com.au\/image.php?object_id=34&object_type=artist",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null,
+                "summary": null,
+                "time": 116,
+                "yearformed": 0,
+                "placeformed": null
             },
             {
-                "id": "4",
-                "name": "Dark Ambient",
-                "albums": 1,
-                "artists": 1,
-                "songs": 4,
-                "videos": 0,
-                "playlists": 0,
-                "live_streams": 0
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found.",
+                "albums": [],
+                "albumcount": 1,
+                "songs": [],
+                "songcount": 11,
+                "genre": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist",
+                "has_art": false,
+                "flag": false,
+                "rating": 2,
+                "averagerating": null,
+                "mbid": null,
+                "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
+                "time": 4423,
+                "yearformed": 0,
+                "placeformed": null
+            },
+            {
+                "id": "26",
+                "name": "Stress Builds Character",
+                "prefix": null,
+                "basename": "Stress Builds Character",
+                "albums": [],
+                "albumcount": 0,
+                "songs": [],
+                "songcount": 1,
+                "genre": [],
+                "art": "https:\/\/music.com.au\/image.php?object_id=26&object_type=artist",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null,
+                "summary": "There are 2 artists with this name:\n1) A crust band\n2) A hardcore band from Toronto\n\n1) Started as \"Hands That Mold\" later changed to \"Stress Builds Character\". We play grindy, sludgy, crusty, melodic, apocalyptic punk with a twist of power violence. We had a few practices, got a new 2nd vocalist (after Teagan left) and recorded our original demo. Joe was one of the lead vocalists for the first 4 shows and original demo until right after the 4th show when he left the band. ",
+                "time": 233,
+                "yearformed": 0,
+                "placeformed": null
+            },
+            {
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic",
+                "albums": [],
+                "albumcount": 1,
+                "songs": [],
+                "songcount": 12,
+                "genre": [
+                    {
+                        "id": "1",
+                        "name": "Electronic"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=artist",
+                "has_art": true,
+                "flag": true,
+                "rating": 5,
+                "averagerating": 3,
+                "mbid": "1",
+                "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
+                "time": 4568,
+                "yearformed": 0,
+                "placeformed": null
+            }
+        ],
+        "song": [
+            {
+                "id": "100",
+                "title": "The Prophecies Of The Horned One",
+                "name": "The Prophecies Of The Horned One",
+                "artist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "artists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "album": {
+                    "id": "10",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "prefix": null,
+                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                },
+                "albumartist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "disk": 1,
+                "disksubtitle": null,
+                "track": 2,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/02ThePropheciesOfTheHornedOne.ogg",
+                "genre": [],
+                "playlisttrack": 1,
+                "time": 378,
+                "year": 1996,
+                "format": "ogg",
+                "stream_format": "mp3",
+                "bitrate": 89965,
+                "stream_bitrate": 32000,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "application\/ogg",
+                "stream_mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3",
+                "size": 4265791,
+                "mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "lyrics": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -10.51,
+                "replaygain_track_peak": 1,
+                "r128_album_gain": null,
+                "r128_track_gain": null
+            },
+            {
+                "id": "98",
+                "title": "In The Seven Woods",
+                "name": "In The Seven Woods",
+                "artist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "artists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "album": {
+                    "id": "10",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "prefix": null,
+                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                },
+                "albumartist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "disk": 1,
+                "disksubtitle": null,
+                "track": 3,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/03InTheSevenWoods.ogg",
+                "genre": [],
+                "playlisttrack": 2,
+                "time": 420,
+                "year": 1996,
+                "format": "ogg",
+                "stream_format": "mp3",
+                "bitrate": 84423,
+                "stream_bitrate": 32000,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "application\/ogg",
+                "stream_mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3",
+                "size": 4444403,
+                "mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "lyrics": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -9.7,
+                "replaygain_track_peak": 1,
+                "r128_album_gain": null,
+                "r128_track_gain": null
+            },
+            {
+                "id": "99",
+                "title": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
+                "name": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
+                "artist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "artists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "album": {
+                    "id": "10",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "prefix": null,
+                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                },
+                "albumartist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "disk": 1,
+                "disksubtitle": null,
+                "track": 6,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg",
+                "genre": [],
+                "playlisttrack": 3,
+                "time": 427,
+                "year": 1996,
+                "format": "ogg",
+                "stream_format": "mp3",
+                "bitrate": 143788,
+                "stream_bitrate": 32000,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "application\/ogg",
+                "stream_mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3",
+                "size": 7696008,
+                "mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "lyrics": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -12.66,
+                "replaygain_track_peak": 1,
+                "r128_album_gain": null,
+                "r128_track_gain": null
+            },
+            {
+                "id": "103",
+                "title": "In The Seven Woods (Instrumental Re-Recording)",
+                "name": "In The Seven Woods (Instrumental Re-Recording)",
+                "artist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "artists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "album": {
+                    "id": "10",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "prefix": null,
+                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                },
+                "albumartist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "disk": 1,
+                "disksubtitle": null,
+                "track": 7,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
+                "genre": [],
+                "playlisttrack": 4,
+                "time": 452,
+                "year": 1996,
+                "format": "ogg",
+                "stream_format": "mp3",
+                "bitrate": 138338,
+                "stream_bitrate": 32000,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "application\/ogg",
+                "stream_mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
+                "size": 7826238,
+                "mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "lyrics": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -12.21,
+                "replaygain_track_peak": 1,
+                "r128_album_gain": null,
+                "r128_track_gain": null
             }
         ],
         "user": [

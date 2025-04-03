@@ -1,11 +1,90 @@
 {
     "total_count": 4,
-    "md5": "f691eedfd29302ac9ea55d10a03e3fcd",
+    "md5": "51a6a1b3fe2354b722aa7bfe21fb4895",
     "song": [
         {
-            "id": "61",
-            "title": "Red&GreenSmoke",
-            "name": "Red&GreenSmoke",
+            "id": "85",
+            "title": "Beq Ultra Fat",
+            "name": "Beq Ultra Fat",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/04_Beq_Ultra_Fat.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 1,
+            "time": 413,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3",
+            "size": 9935896,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": 0.94,
+            "replaygain_track_peak": 0.989,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "58",
+            "title": "BrownSmoke",
+            "name": "BrownSmoke",
             "artist": {
                 "id": "2",
                 "name": "Synthetic",
@@ -34,27 +113,27 @@
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/05-Synthetic_-_RedGreenSmokePM20k44khM.wma",
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
             "genre": [
                 {
                     "id": "1",
                     "name": "Electronic"
                 }
             ],
-            "playlisttrack": 1,
-            "time": 400,
+            "playlisttrack": 2,
+            "time": 304,
             "year": 2007,
-            "format": "wma",
+            "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 20627,
+            "bitrate": 64000,
             "stream_bitrate": 32000,
-            "rate": 44100,
+            "rate": 22050,
             "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
+            "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-            "size": 1044851,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
+            "size": 2441886,
             "mbid": null,
             "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
             "has_art": true,
@@ -64,110 +143,35 @@
             "playcount": 0,
             "catalog": 1,
             "composer": null,
-            "channels": 1,
-            "comment": "Made with Sony ACID 5",
-            "license": "",
+            "channels": 2,
+            "comment": null,
+            "license": null,
             "publisher": "20kbps rec.",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
+            "replaygain_track_gain": 0.96,
+            "replaygain_track_peak": 0.912,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "74",
-            "title": "inominavel p03",
-            "name": "inominavel p03",
+            "id": "107",
+            "title": "Arrest Me",
+            "name": "Arrest Me",
             "artist": {
-                "id": "11",
-                "name": "structura",
+                "id": "20",
+                "name": "R\/B",
                 "prefix": null,
-                "basename": "structura"
+                "basename": "R\/B"
             },
             "artists": [
                 {
-                    "id": "11",
-                    "name": "structura",
+                    "id": "20",
+                    "name": "R\/B",
                     "prefix": null,
-                    "basename": "structura"
-                }
-            ],
-            "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)",
-                "prefix": null,
-                "basename": "Inominavel (live.v.01)"
-            },
-            "albumartist": {
-                "id": "11",
-                "name": "structura",
-                "prefix": null,
-                "basename": "structura"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/03_structura_-_inominavel_p03.mp3",
-            "genre": [
-                {
-                    "id": "3",
-                    "name": "Noise"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 143,
-            "year": 2007,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 192000,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=74&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p03.mp3",
-            "size": 3449255,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": null,
-            "channels": 2,
-            "comment": "http:\/\/enoughrecords.scene.org",
-            "license": "",
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": 0,
-            "replaygain_track_peak": 0,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "114",
-            "title": "He is the Master of War",
-            "name": "He is the Master of War",
-            "artist": {
-                "id": "26",
-                "name": "Stress Builds Character",
-                "prefix": null,
-                "basename": "Stress Builds Character"
-            },
-            "artists": [
-                {
-                    "id": "26",
-                    "name": "Stress Builds Character",
-                    "prefix": null,
-                    "basename": "Stress Builds Character"
+                    "basename": "R\/B"
                 }
             ],
             "album": {
@@ -184,22 +188,27 @@
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a",
-            "genre": [],
+            "track": 9,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/09R_b-ArrestMe.m4a",
+            "genre": [
+                {
+                    "id": "7",
+                    "name": "Punk"
+                }
+            ],
             "playlisttrack": 3,
-            "time": 233,
+            "time": 96,
             "year": 2012,
             "format": "m4a",
             "stream_format": "mp3",
-            "bitrate": 256245,
+            "bitrate": 252864,
             "stream_bitrate": 32000,
             "rate": 44100,
             "mode": "vbr",
             "mime": "audio\/mp4",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.mp3",
-            "size": 7535126,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=R-B%20-%20Arrest%20Me.mp3",
+            "size": 3091727,
             "mbid": null,
             "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
             "has_art": true,
@@ -211,84 +220,93 @@
             "composer": null,
             "channels": 2,
             "comment": null,
-            "license": "",
+            "license": null,
             "publisher": null,
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -10.74,
-            "replaygain_track_peak": 1.035,
+            "replaygain_track_gain": -1.35,
+            "replaygain_track_peak": 0.881,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "106",
-            "title": "Malkuth - Intro",
-            "name": "Malkuth - Intro",
+            "id": "91",
+            "title": "Home Capsules",
+            "name": "Home Capsules",
             "artist": {
-                "id": "16",
-                "name": "CARN\u00daN",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "CARN\u00daN"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "16",
-                    "name": "CARN\u00daN",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "CARN\u00daN"
+                    "basename": "Nofi\/found."
                 }
             ],
             "album": {
-                "id": "10",
-                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "id": "8",
+                "name": "Nofi Devices",
                 "prefix": null,
-                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                "basename": "Nofi Devices"
             },
             "albumartist": {
-                "id": "16",
-                "name": "CARN\u00daN",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "CARN\u00daN"
+                "basename": "Nofi\/found."
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/01Intro.ogg",
-            "genre": [],
+            "track": 9,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/09_Home_Capsules.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
             "playlisttrack": 4,
-            "time": 91,
-            "year": 1996,
-            "format": "ogg",
+            "time": 294,
+            "year": 0,
+            "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 80962,
+            "bitrate": 192000,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "vbr",
-            "mime": "application\/ogg",
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.mp3",
-            "size": 930226,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3",
+            "size": 7076428,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "playcount": 1,
+            "playcount": 0,
             "catalog": 1,
-            "composer": null,
+            "composer": "Jeffrey Melton",
             "channels": 2,
-            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
-            "license": "",
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": 1.98,
-            "replaygain_track_peak": 0.861,
+            "replaygain_track_gain": -2.97,
+            "replaygain_track_peak": 1,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

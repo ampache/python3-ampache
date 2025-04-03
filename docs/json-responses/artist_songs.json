@@ -1,82 +1,7 @@
 {
     "total_count": 12,
-    "md5": "c5bcef91943f8cc348a943980e9d5e43",
+    "md5": "3402fe5dd426264e904724b89e02bf97",
     "song": [
-        {
-            "id": "56",
-            "title": "Black&BlueSmoke",
-            "name": "Black&BlueSmoke",
-            "artist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "artists": [
-                {
-                    "id": "2",
-                    "name": "Synthetic",
-                    "prefix": null,
-                    "basename": "Synthetic"
-                }
-            ],
-            "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
-                "prefix": null,
-                "basename": "Colorsmoke EP"
-            },
-            "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "playlisttrack": 1,
-            "time": 500,
-            "year": 2007,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 64000,
-            "stream_bitrate": 32000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-            "size": 4010069,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": null,
-            "channels": 2,
-            "comment": null,
-            "license": "",
-            "publisher": "20kbps rec.",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": -5.11,
-            "replaygain_track_peak": 1,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
         {
             "id": "64",
             "title": "Black&BlueSmoke",
@@ -117,7 +42,7 @@
                     "name": "Electronic"
                 }
             ],
-            "playlisttrack": 2,
+            "playlisttrack": 1,
             "time": 500,
             "year": 2007,
             "format": "wma",
@@ -141,7 +66,7 @@
             "composer": null,
             "channels": 2,
             "comment": "Made with Sony ACID 5",
-            "license": "",
+            "license": null,
             "publisher": "20kbps rec.",
             "language": null,
             "lyrics": null,
@@ -149,6 +74,81 @@
             "replaygain_album_peak": null,
             "replaygain_track_gain": null,
             "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "56",
+            "title": "Black&BlueSmoke",
+            "name": "Black&BlueSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic"
+            },
+            "artists": [
+                {
+                    "id": "2",
+                    "name": "Synthetic",
+                    "prefix": null,
+                    "basename": "Synthetic"
+                }
+            ],
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP",
+                "prefix": null,
+                "basename": "Colorsmoke EP"
+            },
+            "albumartist": {
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": null,
+                "basename": "Synthetic"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 500,
+            "year": 2007,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 64000,
+            "stream_bitrate": 32000,
+            "rate": 22050,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+            "size": 4010069,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 2,
+            "comment": null,
+            "license": null,
+            "publisher": "20kbps rec.",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -5.11,
+            "replaygain_track_peak": 1,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
@@ -216,7 +216,7 @@
             "composer": null,
             "channels": 2,
             "comment": null,
-            "license": "",
+            "license": null,
             "publisher": "20kbps rec.",
             "language": null,
             "lyrics": null,
@@ -291,7 +291,7 @@
             "composer": null,
             "channels": 2,
             "comment": "Made with Sony ACID 5",
-            "license": "",
+            "license": null,
             "publisher": "20kbps rec.",
             "language": null,
             "lyrics": null,
