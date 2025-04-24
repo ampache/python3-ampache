@@ -45,12 +45,17 @@ def update_music_metadata(ampache_connection, update_list):
                                 audio["genre"] = genres
                                 audio.save()
                                 change = True
+                    else:
+                        if "filename" in song:
+                            music_file = song['filename']
+                        else:
+                            music_file = "No filename"
 
                     # update from tags to reflect the new changes
                     if change:
                         print(f"{id} updated {music_file}\n    {existing_genres} => {genres}\n")
                     elif not song["filename"].endswith(".wav"):
-                        print(f"{id} NO CHANGE {music_file}")
+                        print(f"{id} NO CHANGE .wav {music_file}")
                         print(genres)
                         print()
         else:
@@ -74,6 +79,11 @@ def update_music_metadata(ampache_connection, update_list):
                                 audio["genre"] = genres
                                 audio.save()
                                 change = True
+                    else:
+                        if "filename" in song:
+                            music_file = song['filename']
+                        else:
+                            music_file = "No filename"
 
                     # update from tags to reflect the new changes
                     if change:
