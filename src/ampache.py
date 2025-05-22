@@ -501,7 +501,8 @@ class API(object):
         if timestamp == 0:
             timestamp = int(time.time())
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'handshake',
+        api_method = 'handshake'
+        data = {'action': api_method,
                 'auth': ampache_api,
                 'user': ampache_user,
                 'timestamp': str(timestamp),
@@ -514,7 +515,7 @@ class API(object):
             data.pop('version')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'handshake')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         # json format
@@ -557,14 +558,15 @@ class API(object):
             * ampache_api = (string) encrypted apikey //optional
         """
         ampache_url = ampache_url + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'ping',
+        api_method = 'ping'
+        data = {'action': api_method,
                 'version': version,
                 'auth': ampache_api}
         if not ampache_api:
             data.pop('auth')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'ping')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             self.AMPACHE_SESSION = False
             return False
@@ -614,14 +616,15 @@ class API(object):
             * email    = (string) $email
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'register',
+        api_method = 'register'
+        data = {'action': api_method,
                 'username': username,
                 'fullname': fullname,
                 'password': password,
                 'email': email}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'register')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -641,11 +644,12 @@ class API(object):
               )
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'lost_password',
+        api_method = 'lost_password'
+        data = {'action': api_method,
                 'auth': auth}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'lost_password')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -657,11 +661,12 @@ class API(object):
             Destroy session for ampache_api auth key.
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'goodbye',
+        api_method = 'goodbye'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'goodbye')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -676,12 +681,13 @@ class API(object):
             * url = (string) Full Ampache URL from server, translates back into a song XML
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'url_to_song',
+        api_method = 'url_to_song'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'url': url}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'url_to_song')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -699,7 +705,8 @@ class API(object):
             * limit       = (integer) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'get_similar',
+        api_method = 'get_similar'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
                 'filter': filter_id,
@@ -707,7 +714,7 @@ class API(object):
                 'limit': str(limit)}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'get_similar')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -731,7 +738,8 @@ class API(object):
             * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'list',
+        api_method = 'list'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
                 'filter': filter_str,
@@ -756,7 +764,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'list')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -782,7 +790,8 @@ class API(object):
             * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'browse',
+        api_method = 'browse'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'type': object_type,
@@ -809,7 +818,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'browse')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -838,7 +847,8 @@ class API(object):
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         if bool(include):
             include = 1
-        data = {'action': 'index',
+        api_method = 'index'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
                 'filter': filter_str,
@@ -869,7 +879,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'index')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -894,9 +904,10 @@ class API(object):
             * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'get_indexes'
         if bool(include):
             include = 1
-        data = {'action': 'get_indexes',
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
                 'filter': filter_str,
@@ -924,7 +935,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'get_indexes')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -950,7 +961,8 @@ class API(object):
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         if bool(include) and not isinstance(include, str):
             include = 'albums,songs'
-        data = {'action': 'artists',
+        api_method = 'artists'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'add': add,
@@ -977,7 +989,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'artists')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -995,7 +1007,8 @@ class API(object):
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         if bool(include) and not isinstance(include, str):
             include = 'albums,songs'
-        data = {'action': 'artist',
+        api_method = 'artist'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'include': include}
@@ -1003,7 +1016,7 @@ class API(object):
             data.pop('include')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'artist')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1024,7 +1037,8 @@ class API(object):
             * sort         = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'artist_albums',
+        api_method = 'artist_albums'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
@@ -1040,7 +1054,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'artist_albums')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1059,7 +1073,8 @@ class API(object):
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'artist_songs',
+        api_method = 'artist_songs'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
@@ -1072,7 +1087,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'artist_songs')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1097,9 +1112,10 @@ class API(object):
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'albums'
         if bool(include) and not isinstance(include, str):
             include = 'songs'
-        data = {'action': 'albums',
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
@@ -1126,7 +1142,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'albums')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1142,9 +1158,10 @@ class API(object):
             * include     = (string) 'songs' //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'album'
         if bool(include) and not isinstance(include, str):
             include = 'songs'
-        data = {'action': 'album',
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'include': include}
@@ -1152,7 +1169,7 @@ class API(object):
             data.pop('include')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'album')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1173,11 +1190,12 @@ class API(object):
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'album_songs'
         if bool(exact):
             exact = 1
         else:
             exact = 0
-        data = {'action': 'album_songs',
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'exact': exact,
@@ -1193,7 +1211,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'album_songs')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1214,7 +1232,8 @@ class API(object):
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'genres',
+        api_method = 'genres'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
@@ -1232,7 +1251,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'genres')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1247,12 +1266,13 @@ class API(object):
             * filter_id = (integer) $genre_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'genre',
+        api_method = 'genre'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'genre')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1271,7 +1291,8 @@ class API(object):
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'genre_artists',
+        api_method = 'genre_artists'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
@@ -1284,7 +1305,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'genre_artists')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1303,7 +1324,8 @@ class API(object):
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'genre_albums',
+        api_method = 'genre_albums'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
@@ -1316,7 +1338,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'genre_albums')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1335,7 +1357,8 @@ class API(object):
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'genre_songs',
+        api_method = 'genre_songs'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
@@ -1348,7 +1371,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'genre_songs')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1371,7 +1394,8 @@ class API(object):
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'songs',
+        api_method = 'songs'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'exact': exact,
                 'add': add,
@@ -1395,7 +1419,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'songs')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1410,12 +1434,13 @@ class API(object):
             * filter_id  = (integer) $song_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'song',
+        api_method = 'song'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'song')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1430,12 +1455,13 @@ class API(object):
             * filter_id   = (string) UID of song to delete
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'song_delete',
+        api_method = 'song_delete'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'song_delete')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1451,12 +1477,13 @@ class API(object):
             * filter_id   = (string) UID of song to fetch
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'song_tags',
+        api_method = 'song_tags'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'song_tags')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1477,7 +1504,8 @@ class API(object):
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'user_playlists',
+        api_method = 'user_playlists'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
@@ -1495,7 +1523,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_playlists')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1516,7 +1544,8 @@ class API(object):
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'user_smartlists',
+        api_method = 'user_smartlists'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
@@ -1534,7 +1563,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_smartlists')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1558,7 +1587,8 @@ class API(object):
             * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'playlists',
+        api_method = 'playlists'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
@@ -1585,7 +1615,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlists')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1600,12 +1630,13 @@ class API(object):
             * filter_id  = (integer) $playlist_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'playlist',
+        api_method = 'playlist'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1620,12 +1651,13 @@ class API(object):
             filter_id = (string) UID of playlist
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'playlist_hash',
+        api_method = 'playlist_hash'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_hash')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1643,7 +1675,8 @@ class API(object):
             * limit       = (integer) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'playlist_songs',
+        api_method = 'playlist_songs'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'random': random,
@@ -1653,7 +1686,7 @@ class API(object):
             data.pop('random')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_songs')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1669,13 +1702,14 @@ class API(object):
             * playlist_type = (string) public | private
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'playlist_create',
+        api_method = 'playlist_create'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'name': playlist_name,
                 'type': playlist_type}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_create')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1696,7 +1730,8 @@ class API(object):
             * tracks        = (string) comma-separated playlisttrack numbers matched to 'items' in order //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'playlist_edit',
+        api_method = 'playlist_edit'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'name': playlist_name,
@@ -1716,7 +1751,7 @@ class API(object):
             data.pop('tracks')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_edit')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1731,12 +1766,13 @@ class API(object):
             * filter_id   = (integer) $playlist_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'playlist_delete',
+        api_method = 'playlist_delete'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_delete')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1753,14 +1789,15 @@ class API(object):
             * type   = (string) 'song', 'album', 'artist', 'playlist'
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'playlist_add',
+        api_method = 'playlist_add'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'id': object_id,
                 'type': object_type}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_add')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1779,18 +1816,19 @@ class API(object):
             * check       = (boolean|integer) (True,False | 0|1) Check for duplicates //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_add_song'
         if bool(check):
             check = 1
         else:
             check = 0
-        data = {'action': 'playlist_add_song',
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'song': song_id,
                 'filter': filter_id,
                 'check': check}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_add_song')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1809,8 +1847,8 @@ class API(object):
             * track       = (integer) $playlist_track number //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-
-        data = {'action': 'playlist_remove_song',
+        api_method = 'playlist_remove_song'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'song': song_id,
@@ -1821,7 +1859,7 @@ class API(object):
             data.pop('track')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_remove_song')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1849,7 +1887,8 @@ class API(object):
             * limit       = (integer) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'playlist_generate',
+        api_method = 'playlist_generate'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'mode': mode,
                 'filter': filter_str,
@@ -1869,7 +1908,7 @@ class API(object):
             data.pop('flag')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'playlist_generate')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1888,7 +1927,8 @@ class API(object):
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'shares',
+        api_method = 'shares'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
@@ -1906,7 +1946,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'shares')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1921,12 +1961,13 @@ class API(object):
             * filter_id   = (integer) UID of Share
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'share',
+        api_method = 'share'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'share')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1946,7 +1987,8 @@ class API(object):
             * expires     = (integer) days to keep active //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'share_create',
+        api_method = 'share_create'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'type': object_type,
@@ -1958,7 +2000,7 @@ class API(object):
             data.pop('expires')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'share_create')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1979,7 +2021,8 @@ class API(object):
             * description  = (string) update description //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'share_edit',
+        api_method = 'share_edit'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'stream': can_stream,
@@ -1996,7 +2039,7 @@ class API(object):
             data.pop('description')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'share_edit')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2011,12 +2054,13 @@ class API(object):
             * filter_id   = (integer) UID of Share to delete
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'share_delete',
+        api_method = 'share_delete'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'share_delete')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2033,7 +2077,8 @@ class API(object):
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'catalogs',
+        api_method = 'catalogs'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'offset': str(offset),
@@ -2048,7 +2093,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalogs')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2063,14 +2108,15 @@ class API(object):
             * filter_id   = (integer) UID of catalog
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'catalog',
+        api_method = 'catalog'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
                 'limit': str(limit)}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalog')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2093,7 +2139,8 @@ class API(object):
             * password       = (string) password to remote catalog ('remote', 'subsonic', 'seafile', 'beetsremote') //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'catalog_add',
+        api_method = 'catalog_add'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'name': cat_name,
                 'path': cat_path,
@@ -2117,7 +2164,7 @@ class API(object):
             data.pop('password')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalog_action')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2132,12 +2179,13 @@ class API(object):
             * filter = (string) catalog_id to delete
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'catalog_delete',
+        api_method = 'catalog_delete'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark_delete')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2153,13 +2201,14 @@ class API(object):
             * catalog_id  = (integer) $catalog_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'catalog_action',
+        api_method = 'catalog_action'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'task': task,
                 'catalog': catalog_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalog_action')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2178,14 +2227,15 @@ class API(object):
             * catalog_id  = (integer) $catalog_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'catalog_file',
+        api_method = 'catalog_file'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'file': file,
                 'task': task,
                 'catalog': catalog_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalog_action')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2204,14 +2254,15 @@ class API(object):
             * catalog_id  = (integer) $catalog_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'catalog_folder',
+        api_method = 'catalog_folder'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'folder': folder,
                 'task': task,
                 'catalog': catalog_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'catalog_action')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2230,7 +2281,8 @@ class API(object):
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'podcasts',
+        api_method = 'podcasts'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
@@ -2248,7 +2300,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcasts')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2264,7 +2316,8 @@ class API(object):
             * include     = (string) 'episodes' Include episodes with the response //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'podcast',
+        api_method = 'podcast'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'include': include}
@@ -2272,7 +2325,7 @@ class API(object):
             data.pop('include')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2288,13 +2341,14 @@ class API(object):
             * catalog_id  = (string) podcast catalog
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'podcast_create',
+        api_method = 'podcast_create'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'url': url,
                 'catalog': catalog_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast_create')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2318,7 +2372,8 @@ class API(object):
             * copyright_str = (string) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'podcast_edit',
+        api_method = 'podcast_edit'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'feed': feed,
@@ -2341,7 +2396,7 @@ class API(object):
             data.pop('copyright')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast_edit')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2356,12 +2411,13 @@ class API(object):
             * filter_id   = (integer) UID of podcast to delete
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'podcast_delete',
+        api_method = 'podcast_delete'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast_delete')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2378,7 +2434,8 @@ class API(object):
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'podcast_episodes',
+        api_method = 'podcast_episodes'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
@@ -2391,7 +2448,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast_episodes')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2406,12 +2463,13 @@ class API(object):
             * filter_id   = (integer) UID of Podcast
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'podcast_episode',
+        api_method = 'podcast_episode'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast_episode')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2426,12 +2484,13 @@ class API(object):
             * filter_id   = (integer) UID of podcast_episode to delete
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'podcast_episode_delete',
+        api_method = 'podcast_episode_delete'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'podcast_episode')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2446,12 +2505,13 @@ class API(object):
             * filter_id   = (integer) UID of Podcast
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'update_podcast',
+        api_method = 'update_podcast'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'update_podcast')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2468,14 +2528,15 @@ class API(object):
             * limit       = (integer) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'search_songs',
+        api_method = 'search_songs'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'offset': str(offset),
                 'limit': str(limit)}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'search_songs')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2499,7 +2560,8 @@ class API(object):
             * random      = (integer) 0|1' //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'search',
+        api_method = 'search'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'operator': operator,
                 'type': object_type,
@@ -2518,7 +2580,7 @@ class API(object):
                 data['rule_' + str(count) + '_subtype'] = item[3]
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'search')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2544,7 +2606,8 @@ class API(object):
             * random      = (integer) 0|1' //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'search_group',
+        api_method = 'search_group'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'operator': operator,
                 'type': object_type,
@@ -2563,7 +2626,7 @@ class API(object):
                 data['rule_' + str(count) + '_subtype'] = item[3]
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'search_group')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2584,7 +2647,8 @@ class API(object):
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'videos',
+        api_method = 'videos'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'exact': exact,
                 'filter': filter_str,
@@ -2602,7 +2666,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'videos')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2617,12 +2681,13 @@ class API(object):
             * filter_id   = (integer) $video_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'video',
+        api_method = 'video'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'video')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2643,7 +2708,8 @@ class API(object):
             * clear       = (integer) 0,1 Clear the current playlist before adding //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'localplay',
+        api_method = 'localplay'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'command': command,
                 'oid': oid,
@@ -2657,7 +2723,7 @@ class API(object):
             data.pop('clear')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'localplay')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2669,11 +2735,12 @@ class API(object):
             Get the list of songs in your localplay playlist
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'localplay_songs',
+        api_method = 'localplay_songs'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'localplay_songs')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2689,13 +2756,14 @@ class API(object):
             * method      = (string) 'vote'|'devote'|'playlist'|'play'
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'democratic',
+        api_method = 'democratic'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'oid': oid,
                 'method': method}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'democratic')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2719,7 +2787,8 @@ class API(object):
             * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'stats',
+        api_method = 'stats'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
                 'filter': filter_str,
@@ -2739,7 +2808,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'stats')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2755,7 +2824,8 @@ class API(object):
             * sort = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'users',
+        api_method = 'users'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'sort': sort,
                 'cond': cond}
@@ -2765,7 +2835,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2780,12 +2850,13 @@ class API(object):
             * username    =
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'user',
+        api_method = 'user'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2802,7 +2873,8 @@ class API(object):
             * sort     = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'followers',
+        api_method = 'followers'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username,
                 'sort': sort,
@@ -2813,7 +2885,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'followers')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2828,12 +2900,13 @@ class API(object):
             * username    =
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'following',
+        api_method = 'following'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'following')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2848,12 +2921,13 @@ class API(object):
             * username    =
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'toggle_follow',
+        api_method = 'toggle_follow'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'toggle_follow')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2869,13 +2943,14 @@ class API(object):
             * limit       = (integer) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'last_shouts',
+        api_method = 'last_shouts'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username,
                 'limit': limit}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'last_shouts')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2915,11 +2990,12 @@ class API(object):
              Get what is currently being played by all users.
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'now_playing',
+        api_method = 'now_playing'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'now_playing')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2939,14 +3015,15 @@ class API(object):
                 object_type == 'song' or object_type == 'album' or object_type == 'artist'):
             return False
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'rate',
+        api_method = 'rate'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
                 'id': object_id,
                 'rating': rating}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'rate')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2971,7 +3048,8 @@ class API(object):
         else:
             flag_state = 0
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'flag',
+        api_method = 'flag'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
                 'id': object_id,
@@ -2981,7 +3059,7 @@ class API(object):
             data.pop('date')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'flag')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3000,7 +3078,8 @@ class API(object):
             * date        = (integer) UNIXTIME() //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'record_play',
+        api_method = 'record_play'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'id': object_id,
                 'user': user_id,
@@ -3012,7 +3091,7 @@ class API(object):
             data.pop('date')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'record_play')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3037,7 +3116,8 @@ class API(object):
             * client      = (string) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'scrobble',
+        api_method = 'scrobble'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'client': client,
                 'date': str(stime),
@@ -3055,7 +3135,7 @@ class API(object):
             data.pop('artistmbid')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'scrobble')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3072,14 +3152,15 @@ class API(object):
             * since       = (integer) UNIXTIME() //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'timeline',
+        api_method = 'timeline'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username,
                 'limit': limit,
                 'since': since}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'timeline')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3095,13 +3176,14 @@ class API(object):
             * since       = (integer) UNIXTIME() //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'friends_timeline',
+        api_method = 'friends_timeline'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'limit': limit,
                 'since': since}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'friends_timeline')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3117,13 +3199,14 @@ class API(object):
             * object_id   = (integer) $artist_id, $album_id, $song_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'update_from_tags',
+        api_method = 'update_from_tags'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
                 'id': object_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'update_from_tags')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3141,18 +3224,19 @@ class API(object):
             * overwrite   = (boolean|integer) (True,False | 0|1) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'update_art'
         if bool(overwrite):
             overwrite = 1
         else:
             overwrite = 0
-        data = {'action': 'update_art',
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
                 'id': object_id,
                 'overwrite': overwrite}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'update_art')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3168,12 +3252,13 @@ class API(object):
             * filter_id   = (integer) $artist_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'update_artist_info',
+        api_method = 'update_artist_info'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'id': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'update_artist_info')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3192,7 +3277,8 @@ class API(object):
         if not os.path.isdir(os.path.dirname(destination)):
             return False
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'stream',
+        api_method = 'stream'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'id': object_id,
                 'type': object_type,
@@ -3219,7 +3305,8 @@ class API(object):
         """
         os.makedirs(os.path.dirname(destination), exist_ok=True)
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'download',
+        api_method = 'download'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'id': object_id,
                 'type': object_type,
@@ -3245,13 +3332,14 @@ class API(object):
             * object_type = (string) 'song', 'artist', 'album'
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'get_external_metadata',
+        api_method = 'get_external_metadata'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'type': object_type}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'get_external_metadata')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3270,7 +3358,8 @@ class API(object):
         if not os.path.isdir(os.path.dirname(destination)):
             return False
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'get_art',
+        api_method = 'get_art'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'id': object_id,
                 'type': object_type}
@@ -3295,13 +3384,14 @@ class API(object):
             * disable     = (boolean|integer) (True,False | 0|1) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'user_create'
         if bool(disable):
             disable = 1
         else:
             disable = 0
         if hashlib.sha256(password.encode()).hexdigest() != password:
             password = hashlib.sha256(password.encode()).hexdigest()
-        data = {'action': 'user_create',
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username,
                 'password': password,
@@ -3312,7 +3402,7 @@ class API(object):
             data.pop('fullname')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_create')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3342,9 +3432,10 @@ class API(object):
             * clear_stats       = (integer) 0,1 true reset all stats for this user //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'user_edit'
         if bool(disable):
             disable = 1
-        data = {'action': 'user_edit',
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username,
                 'password': password,
@@ -3385,7 +3476,7 @@ class API(object):
             data.pop('clear_stats')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_update')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3400,12 +3491,13 @@ class API(object):
             * username    = (string) $username
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'user_delete',
+        api_method = 'user_delete'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_delete')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3419,11 +3511,12 @@ class API(object):
             INPUTS
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'user_preferences',
+        api_method = 'user_preferences'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_preferences')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3438,12 +3531,13 @@ class API(object):
             * filter_str  = (string) search the name of a preference
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'user_preference',
+        api_method = 'user_preference'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'user_preference')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3457,11 +3551,12 @@ class API(object):
             INPUTS
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'system_preferences',
+        api_method = 'system_preferences'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'system_preferences')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3476,12 +3571,13 @@ class API(object):
             * filter_str  = (string) search the name of a preference
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'system_preference',
+        api_method = 'system_preference'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'system_preference')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3495,11 +3591,12 @@ class API(object):
             INPUTS
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'system_update',
+        api_method = 'system_update'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'system_update')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3521,7 +3618,8 @@ class API(object):
             * level       = (integer) access level required to change the value (default 100) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'preference_create',
+        api_method = 'preference_create'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'type': type_str,
@@ -3536,7 +3634,7 @@ class API(object):
             data.pop('subcategory')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'preference_create')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3553,14 +3651,15 @@ class API(object):
             * apply_all   = (boolean) apply to all users //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'preference_edit',
+        api_method = 'preference_edit'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'value': value,
                 'all': apply_all}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'preference_edit')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3575,12 +3674,13 @@ class API(object):
             * filter_str  = (string) search the name of a preference
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'preference_delete',
+        api_method = 'preference_delete'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'preference_delete')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3603,7 +3703,8 @@ class API(object):
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'licenses',
+        api_method = 'licenses'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'exact': exact,
                 'add': add,
@@ -3627,7 +3728,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'licenses')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3642,12 +3743,13 @@ class API(object):
             * filter_id   = (integer) $license_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'license',
+        api_method = 'license'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'license')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3664,7 +3766,8 @@ class API(object):
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'license_songs',
+        api_method = 'license_songs'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'sort': sort,
@@ -3675,7 +3778,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'license_songs')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3696,7 +3799,8 @@ class API(object):
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'live_streams',
+        api_method = 'live_streams'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'exact': exact,
                 'filter': filter_str,
@@ -3714,7 +3818,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_streams')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3729,12 +3833,13 @@ class API(object):
             * filter_id   = (integer) $live_stream_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'live_stream',
+        api_method = 'live_stream'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_stream')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3753,7 +3858,8 @@ class API(object):
             * site_url = (string) Homepage URL of the stream //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'live_stream_create',
+        api_method = 'live_stream_create'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'name': name,
                 'url': stream_url,
@@ -3764,7 +3870,7 @@ class API(object):
             data.pop('site_url')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_stream_create')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3785,7 +3891,8 @@ class API(object):
             * site_url = (string) Homepage URL of the stream //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'live_stream_edit',
+        api_method = 'live_stream_edit'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'name': name,
@@ -3805,7 +3912,7 @@ class API(object):
             data.pop('site_url')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_stream_edit')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3820,12 +3927,13 @@ class API(object):
             * filter_id = (integer) object_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'live_stream_delete',
+        api_method = 'live_stream_delete'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'live_stream_delete')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3846,7 +3954,8 @@ class API(object):
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'labels',
+        api_method = 'labels'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
@@ -3864,7 +3973,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'labels')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3879,12 +3988,13 @@ class API(object):
             * filter_id   = (integer) $label_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'label',
+        api_method = 'label'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'label')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3901,7 +4011,8 @@ class API(object):
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'label_artists',
+        api_method = 'label_artists'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'sort': sort,
@@ -3912,7 +4023,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'label_artists')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3930,7 +4041,8 @@ class API(object):
             * all         = (integer) 0,1, if true every bookmark related to the object //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'get_bookmark',
+        api_method = 'get_bookmark'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'type': object_type,
@@ -3942,7 +4054,7 @@ class API(object):
             data.pop('all')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'get_bookmark')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3958,7 +4070,8 @@ class API(object):
             * include = (integer) 0,1, if true include the object in the bookmark //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'bookmarks',
+        api_method = 'bookmarks'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'client': client,
                 'include': include}
@@ -3968,7 +4081,7 @@ class API(object):
             data.pop('include')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmarks')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3984,7 +4097,8 @@ class API(object):
             * include = (integer) 0,1, if true include the object in the bookmark //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'bookmark',
+        api_method = 'bookmark'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'include': include}
@@ -3992,7 +4106,7 @@ class API(object):
             data.pop('include')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4013,7 +4127,8 @@ class API(object):
             * include     = (integer) 0,1, if true include the object in the bookmark //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'bookmark_create',
+        api_method = 'bookmark_create'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'type': object_type,
@@ -4027,7 +4142,7 @@ class API(object):
             data.pop('date')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark_create')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4048,7 +4163,8 @@ class API(object):
             * include     = (integer) 0,1, if true include the object in the bookmark //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'bookmark_edit',
+        api_method = 'bookmark_edit'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'type': object_type,
@@ -4064,7 +4180,7 @@ class API(object):
             data.pop('include')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark_edit')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4080,13 +4196,14 @@ class API(object):
             * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'bookmark_delete',
+        api_method = 'bookmark_delete'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'type': object_type}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'bookmark_delete')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4102,13 +4219,14 @@ class API(object):
             * limit       = (integer) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'deleted_songs',
+        api_method = 'deleted_songs'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'offset': str(offset),
                 'limit': str(limit)}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'deleted_songs')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4124,13 +4242,14 @@ class API(object):
             * limit       = (integer) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'deleted_podcast_episodes',
+        api_method = 'deleted_podcast_episodes'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'offset': str(offset),
                 'limit': str(limit)}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'deleted_podcast_episodes')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4146,13 +4265,14 @@ class API(object):
             * limit       = (integer) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'deleted_videos',
+        api_method = 'deleted_videos'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'offset': str(offset),
                 'limit': str(limit)}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'deleted_videos')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4183,7 +4303,8 @@ class API(object):
             * random      = (integer) 0|1' //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'advanced_search',
+        api_method = 'advanced_search'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'operator': operator,
                 'type': object_type,
@@ -4202,7 +4323,7 @@ class API(object):
                 data['rule_' + str(count) + '_subtype'] = item[3]
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'advanced_search')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4223,7 +4344,8 @@ class API(object):
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'tags',
+        api_method = 'tags'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'exact': exact,
                 'filter': filter_str,
@@ -4241,7 +4363,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tags')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4256,12 +4378,13 @@ class API(object):
             * filter_id = (integer) $tag_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'tag',
+        api_method = 'tag'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tag')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4280,7 +4403,8 @@ class API(object):
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'tag_artists',
+        api_method = 'tag_artists'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
@@ -4293,7 +4417,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tag_artists')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4312,7 +4436,8 @@ class API(object):
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'tag_albums',
+        api_method = 'tag_albums'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
@@ -4325,7 +4450,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tag_albums')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4344,7 +4469,8 @@ class API(object):
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': 'tag_songs',
+        api_method = 'tag_songs'
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'offset': str(offset),
@@ -4357,7 +4483,7 @@ class API(object):
             data.pop('cond')
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'tag_songs')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
