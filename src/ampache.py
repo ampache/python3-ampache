@@ -5254,6 +5254,8 @@ class API(object):
                 return self.song(params["filter_id"])
             case 'song_delete':
                 return self.song_delete(params["filter_id"])
+            case 'song_tags':
+                return self.song_tags(params["filter_id"])
             case 'songs':
                 if not "filter_str" in params:
                     params["filter_str"] = False
