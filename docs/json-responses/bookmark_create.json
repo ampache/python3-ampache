@@ -6,5 +6,77 @@
     "position": 0,
     "client": "python3-ampache",
     "creation_date": 1670202706,
-    "update_date": 1739770130
+    "update_date": 1747878090,
+    "song": [
+        {
+            "id": "113",
+            "title": "Representin",
+            "name": "Representin",
+            "artist": {
+                "id": "32",
+                "name": "Shorty Mac",
+                "prefix": null,
+                "basename": "Shorty Mac"
+            },
+            "artists": [
+                {
+                    "id": "32",
+                    "name": "Shorty Mac",
+                    "prefix": null,
+                    "basename": "Shorty Mac"
+                }
+            ],
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": null,
+                "basename": "Various Artists"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
+            "genre": [],
+            "playlisttrack": 1,
+            "time": 234,
+            "year": 2012,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 123814,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
+            "size": 3628327,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 2,
+            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": 1.91,
+            "replaygain_track_peak": 0.851,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        }
+    ]
 }

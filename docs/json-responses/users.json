@@ -1,26 +1,20 @@
-[
-    {
-        "user": [
-            {
-                "id": "1",
-                "username": "user"
-            },
-            {
-                "id": "4",
-                "username": "generic"
-            },
-            {
-                "id": "10",
-                "username": "glen"
-            },
-            {
-                "id": "21",
-                "username": "shaun"
-            },
-            {
-                "id": "22",
-                "username": "jake"
-            }
-        ]
-    }
-]
+{
+    "user": [
+        {
+            "id": "2",
+            "username": "admin"
+        },
+        {
+            "id": "3",
+            "username": "demo"
+        },
+        {
+            "id": "4",
+            "username": "user"
+        },
+        {
+            "id": "10",
+            "username": "generic"
+        }
+    ]
+}
