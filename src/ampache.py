@@ -3011,6 +3011,10 @@ class API(object):
             * object_id   = (integer) $object_id
             * rating      = (integer) 0|1|2|3|4|5
         """
+        if rating.isdigit():
+            rating = int(rating)
+        else:
+            rating = 0
         if (rating < 0 or rating > 5) or not (
                 object_type == 'song' or object_type == 'album' or object_type == 'artist'):
             return False
