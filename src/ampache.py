@@ -4600,7 +4600,7 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.albums(params["filter_str"], params["include"], params["add"], params["update"],
+                return self.albums(params["filter_str"], params["exact"], params["add"], params["update"],
                                    params["offset"], params["limit"], params["include"], params["sort"], params["cond"])
             case 'album_songs':
                 if not "offset" in params:
