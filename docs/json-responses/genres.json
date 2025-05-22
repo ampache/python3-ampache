@@ -10,7 +10,9 @@
             "songs": 11,
             "videos": 0,
             "playlists": 0,
-            "live_streams": 0
+            "live_streams": 0,
+            "is_hidden": false,
+            "merge": []
         },
         {
             "id": "4",
@@ -20,7 +22,9 @@
             "songs": 4,
             "videos": 0,
             "playlists": 0,
-            "live_streams": 0
+            "live_streams": 0,
+            "is_hidden": false,
+            "merge": []
         }
     ]
 }

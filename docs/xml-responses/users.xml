@@ -1,30 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-<user id="1">
-	<username><![CDATA[admin]]></username>
-</user>
-<user id="2">
-	<username><![CDATA[user]]></username>
-</user>
-<user id="4">
-	<username><![CDATA[generic]]></username>
-</user>
-<user id="5">
-	<username><![CDATA[nyssa]]></username>
-</user>
-<user id="7">
-	<username><![CDATA[tom]]></username>
-</user>
-<user id="9">
-	<username><![CDATA[sam]]></username>
-</user>
-<user id="10">
-	<username><![CDATA[glen]]></username>
-</user>
-<user id="143">
-	<username><![CDATA[tdewa]]></username>
-</user>
-<user id="468">
-	<username><![CDATA[hudson]]></username>
-</user>
+  <user id="2">
+    <username><![CDATA[admin]]></username>
+  </user>
+  <user id="3">
+    <username><![CDATA[demo]]></username>
+  </user>
+  <user id="4">
+    <username><![CDATA[user]]></username>
+  </user>
+  <user id="10">
+    <username><![CDATA[generic]]></username>
+  </user>
 </root>
