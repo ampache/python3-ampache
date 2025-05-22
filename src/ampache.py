@@ -253,8 +253,8 @@ class API(object):
             return a list of id's from the data you've got from the api
 
             INPUTS
-            * data        = (mixed) XML or JSON from the API
-            * attribute   = (string) attribute you are searching for
+            * data      = (mixed) XML or JSON from the API
+            * attribute = (string) attribute you are searching for
         """
         id_list = list()
         if not data:
@@ -645,7 +645,7 @@ class API(object):
                 'auth': auth}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'goodbye')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'lost_password')
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -673,7 +673,7 @@ class API(object):
             This takes a url and returns the song object in question
 
             INPUTS
-            * url         = (string) Full Ampache URL from server, translates back into a song XML
+            * url = (string) Full Ampache URL from server, translates back into a song XML
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         data = {'action': 'url_to_song',
@@ -1435,7 +1435,28 @@ class API(object):
                 'filter': filter_id}
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'song')
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'song_delete')
+        if isinstance(ampache_response, bool):
+            return False
+        return self.return_data(ampache_response)
+
+    def song_tags(self, filter_id: int):
+        """ song_tags
+            MINIMUM_API_VERSION=7.5.0
+
+            Get the full song file tags using VaInfo
+            This is used to get tags for remote catalogs to allow maximum data to be returned
+
+            INPUTS
+            * filter_id   = (string) UID of song to fetch
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        data = {'action': 'song_tags',
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, 'song_tags')
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -5350,3 +5371,4 @@ class API(object):
                     params["cond"] = False
                 return self.videos(params["filter_str"], params["exact"], params["offset"], params["limit"],
                                    params["sort"], params["cond"])
+        return None
