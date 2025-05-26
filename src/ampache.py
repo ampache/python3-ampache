@@ -237,7 +237,10 @@ class API(object):
         """
         # json format
         if self.AMPACHE_API == 'json':
-            json_data = json.loads(data.decode('utf-8'))
+            try:
+                json_data = json.loads(data.decode('utf-8'))
+            except json.decoder.JSONDecodeError:
+                return False
             return json_data
         # xml format
         else:
