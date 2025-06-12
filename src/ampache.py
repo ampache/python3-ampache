@@ -260,7 +260,7 @@ class API(object):
         # xml format
         else:
             try:
-                tree = ElementTree.fromstring(data.decode('utf-8'))
+                tree = data if isinstance(data, ElementTree.Element) else ElementTree.fromstring(data.decode('utf-8') if isinstance(data, bytes) else data)
             except ElementTree.ParseError:
                 return False
             return tree
@@ -565,7 +565,7 @@ class API(object):
         # xml format
         else:
             try:
-                tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+                tree = ampache_response if isinstance(ampache_response, ElementTree.Element) else ElementTree.fromstring(ampache_response.decode('utf-8') if isinstance(ampache_response, bytes) else ampache_response)
             except ElementTree.ParseError:
                 return False
             try:
@@ -617,7 +617,7 @@ class API(object):
         # xml format
         else:
             try:
-                tree = ElementTree.fromstring(ampache_response.decode('utf-8'))
+                tree = ampache_response if isinstance(ampache_response, ElementTree.Element) else ElementTree.fromstring(ampache_response.decode('utf-8') if isinstance(ampache_response, bytes) else ampache_response)
             except ElementTree.ParseError:
                 return False
             try:
