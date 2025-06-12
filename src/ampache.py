@@ -253,7 +253,7 @@ class API(object):
         # json format
         if self.AMPACHE_API == 'json':
             try:
-                json_data = json.loads(data.decode('utf-8'))
+                json_data = data if isinstance(data, dict) else json.loads(data.decode('utf-8'))
             except json.decoder.JSONDecodeError:
                 return False
             return json_data
@@ -553,7 +553,7 @@ class API(object):
             return False
         # json format
         if self.AMPACHE_API == 'json':
-            json_data = json.loads(ampache_response.decode('utf-8'))
+            json_data = ampache_response if isinstance(ampache_response, dict) else json.loads(ampache_response.decode('utf-8'))
             if 'api' in json_data:
                 self.AMPACHE_SERVER = json_data['api']
             if 'auth' in json_data:
@@ -603,7 +603,7 @@ class API(object):
             return False
         # json format
         if self.AMPACHE_API == 'json':
-            json_data = json.loads(ampache_response.decode('utf-8'))
+            json_data = ampache_response if isinstance(ampache_response, dict) else json.loads(ampache_response.decode('utf-8'))
             if 'api' in json_data:
                 self.AMPACHE_SERVER = json_data['api']
             if 'session_expire' in json_data:
