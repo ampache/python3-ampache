@@ -49,6 +49,7 @@ class API(object):
         self.AMPACHE_SESSION = ''
         self.AMPACHE_USER = ''
         self.AMPACHE_KEY = ''
+        self.AMPACHE_BEARER_TOKEN = ''
         # Test colors for printing
         self.OKGREEN = '\033[92m'
         self.WARNING = '\033[93m'
@@ -140,6 +141,18 @@ class API(object):
             print('AMPACHE_KEY set to ' + mykey)
         self.AMPACHE_KEY = mykey
 
+    def set_bearer_token(self, bearer_token: str):
+        """ set_key
+
+            set AMPACHE_BEARER_TOKEN (used for header authentication)
+
+            INPUTS
+            * bearer_token = (string) ''
+        """
+        if self.AMPACHE_DEBUG:
+            print('AMPACHE_BEARER_TOKEN set to ' + bearer_token)
+        self.AMPACHE_BEARER_TOKEN = bearer_token
+
     def set_url(self, myurl: str):
         """ set_url
 
@@ -177,6 +190,7 @@ class API(object):
                 self.AMPACHE_URL = config["ampache_url"]
                 self.AMPACHE_USER = config["ampache_user"]
                 self.AMPACHE_KEY = config["ampache_apikey"]
+                self.AMPACHE_BEARER_TOKEN = config["ampache_bearer_token"]
                 self.AMPACHE_SESSION = config["ampache_session"]
                 self.AMPACHE_API = config["api_format"]
             except TypeError:
@@ -196,6 +210,7 @@ class API(object):
             "ampache_url": self.AMPACHE_URL,
             "ampache_user": self.AMPACHE_USER,
             "ampache_apikey": self.AMPACHE_KEY,
+            "ampache_bearer_token": self.AMPACHE_BEARER_TOKEN,
             "ampache_session": self.AMPACHE_SESSION,
             "api_format": self.AMPACHE_API
         }
@@ -443,7 +458,7 @@ class API(object):
         sha_signature = hashlib.sha256(passphrase.encode()).hexdigest()
         return sha_signature
 
-    def fetch_url(self, full_url: str, api_format: str, method: str):
+    def fetch_url(self, full_url: str, api_format: str, method: str, headers: dict = None):
         """ fetch_url
 
             This function is used to fetch the string results using urllib
@@ -452,9 +467,14 @@ class API(object):
             * full_url   = (string) url to fetch
             * api_format = (string) 'xml'|'json'
             * method     = (string)
+            * headers    = (dict) optional HTTP headers
         """
         try:
-            result = urllib.request.urlopen(full_url)
+            if not headers:
+                req = urllib.request.Request(full_url)
+            else:
+                req = urllib.request.Request(full_url, headers=headers)
+            result = urllib.request.urlopen(req)
         except urllib.error.HTTPError:
             return False
         except urllib.error.URLError:
@@ -516,9 +536,13 @@ class API(object):
             data.pop('timestamp')
         if not version:
             data.pop('version')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         # json format
@@ -567,9 +591,13 @@ class API(object):
                 'auth': ampache_api}
         if not ampache_api:
             data.pop('auth')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             self.AMPACHE_SESSION = False
             return False
@@ -625,9 +653,13 @@ class API(object):
                 'fullname': fullname,
                 'password': password,
                 'email': email}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -650,9 +682,13 @@ class API(object):
         api_method = 'lost_password'
         data = {'action': api_method,
                 'auth': auth}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -667,9 +703,13 @@ class API(object):
         api_method = 'goodbye'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -688,9 +728,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'url': url}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -715,9 +759,13 @@ class API(object):
                 'filter': filter_id,
                 'offset': str(offset),
                 'limit': str(limit)}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -765,9 +813,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -819,9 +871,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -880,9 +936,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -936,9 +996,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -990,9 +1054,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1017,9 +1085,13 @@ class API(object):
                 'include': include}
         if not include:
             data.pop('include')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1055,9 +1127,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1088,9 +1164,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1143,9 +1223,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1170,9 +1254,13 @@ class API(object):
                 'include': include}
         if not include:
             data.pop('include')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1212,9 +1300,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1252,9 +1344,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1273,9 +1369,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1306,9 +1406,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1339,9 +1443,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1372,9 +1480,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1420,9 +1532,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1441,9 +1557,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1462,9 +1582,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1484,9 +1608,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1524,9 +1652,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1564,9 +1696,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1616,9 +1752,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1637,9 +1777,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1658,9 +1802,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1687,9 +1835,13 @@ class API(object):
                 'limit': str(limit)}
         if not random:
             data.pop('random')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1710,9 +1862,13 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'name': playlist_name,
                 'type': playlist_type}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1752,9 +1908,13 @@ class API(object):
             data.pop('items')
         if not tracks:
             data.pop('tracks')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1773,9 +1933,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1798,9 +1962,13 @@ class API(object):
                 'filter': filter_id,
                 'id': object_id,
                 'type': object_type}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1829,9 +1997,13 @@ class API(object):
                 'song': song_id,
                 'filter': filter_id,
                 'check': check}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1860,9 +2032,13 @@ class API(object):
             data.pop('song')
         if not track:
             data.pop('track')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1909,9 +2085,13 @@ class API(object):
             data.pop('artist')
         if not flagged:
             data.pop('flag')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1947,9 +2127,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -1968,9 +2152,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2001,9 +2189,13 @@ class API(object):
             data.pop('description')
         if not expires:
             data.pop('expires')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2040,9 +2232,13 @@ class API(object):
             data.pop('expires')
         if not description:
             data.pop('description')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2061,9 +2257,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2094,9 +2294,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2117,9 +2321,13 @@ class API(object):
                 'filter': filter_id,
                 'offset': str(offset),
                 'limit': str(limit)}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2165,9 +2373,13 @@ class API(object):
             data.pop('username')
         if not password:
             data.pop('password')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2186,9 +2398,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2209,9 +2425,13 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'task': task,
                 'catalog': catalog_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2236,9 +2456,13 @@ class API(object):
                 'file': file,
                 'task': task,
                 'catalog': catalog_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2263,9 +2487,13 @@ class API(object):
                 'folder': folder,
                 'task': task,
                 'catalog': catalog_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2301,9 +2529,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2326,9 +2558,13 @@ class API(object):
                 'include': include}
         if not include:
             data.pop('include')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2349,9 +2585,13 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'url': url,
                 'catalog': catalog_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2397,9 +2637,13 @@ class API(object):
             data.pop('generator')
         if not copyright:
             data.pop('copyright')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2418,9 +2662,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2449,9 +2697,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2470,9 +2722,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2491,9 +2747,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2512,9 +2772,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2537,9 +2801,13 @@ class API(object):
                 'filter': filter_str,
                 'offset': str(offset),
                 'limit': str(limit)}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2581,9 +2849,13 @@ class API(object):
             data['rule_' + str(count) + '_input'] = item[2]
             if item[0] == 'metadata':
                 data['rule_' + str(count) + '_subtype'] = item[3]
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2627,9 +2899,13 @@ class API(object):
             data['rule_' + str(count) + '_input'] = item[2]
             if item[0] == 'metadata':
                 data['rule_' + str(count) + '_subtype'] = item[3]
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2667,9 +2943,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2688,9 +2968,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2724,9 +3008,13 @@ class API(object):
             data.pop('type')
         if not clear:
             data.pop('clear')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2741,9 +3029,13 @@ class API(object):
         api_method = 'localplay_songs'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2764,9 +3056,13 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'oid': oid,
                 'method': method}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2809,9 +3105,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2836,9 +3136,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2857,9 +3161,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2886,9 +3194,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2907,9 +3219,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2928,9 +3244,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2951,9 +3271,13 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'username': username,
                 'limit': limit}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -2979,6 +3303,10 @@ class API(object):
                 'state': state,
                 'time': play_time,
                 'client': client}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         ampache_response = self.fetch_url(full_url, self.AMPACHE_API, action)
@@ -2996,9 +3324,13 @@ class API(object):
         api_method = 'now_playing'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3028,9 +3360,13 @@ class API(object):
                 'type': object_type,
                 'id': object_id,
                 'rating': rating}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3064,9 +3400,13 @@ class API(object):
                 'date': date}
         if not date:
             data.pop('date')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3096,9 +3436,13 @@ class API(object):
             data.pop('user')
         if not date:
             data.pop('date')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3140,9 +3484,13 @@ class API(object):
             data.pop('albummbid')
         if not mbartist:
             data.pop('artistmbid')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3165,9 +3513,13 @@ class API(object):
                 'username': username,
                 'limit': limit,
                 'since': since}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3188,9 +3540,13 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'limit': limit,
                 'since': since}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3211,9 +3567,13 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
                 'id': object_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3241,9 +3601,13 @@ class API(object):
                 'type': object_type,
                 'id': object_id,
                 'overwrite': overwrite}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3256,16 +3620,20 @@ class API(object):
             Make sure lastfm_api_key is set in your configuration file
 
             INPUTS
-            * filter_id   = (integer) $artist_id
+            * filter_id = (integer) $artist_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'update_artist_info'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'id': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3290,6 +3658,10 @@ class API(object):
                 'id': object_id,
                 'type': object_type,
                 'stats': stats}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         result = requests.get(full_url, allow_redirects=True)
@@ -3322,6 +3694,10 @@ class API(object):
                 'stats': stats}
         if not bitrate:
             data.pop('bitrate')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         result = requests.get(full_url, allow_redirects=True)
@@ -3344,9 +3720,13 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'type': object_type}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3370,6 +3750,10 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'id': object_id,
                 'type': object_type}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
         result = requests.get(full_url, allow_redirects=True)
@@ -3407,9 +3791,13 @@ class API(object):
                 'disable': disable}
         if not fullname:
             data.pop('fullname')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3481,9 +3869,13 @@ class API(object):
             data.pop('reset_streamtoken')
         if not clear_stats:
             data.pop('clear_stats')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3502,9 +3894,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3521,9 +3917,13 @@ class API(object):
         api_method = 'user_preferences'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3542,9 +3942,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3561,9 +3965,13 @@ class API(object):
         api_method = 'system_preferences'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3582,9 +3990,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3601,9 +4013,13 @@ class API(object):
         api_method = 'system_update'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3639,9 +4055,13 @@ class API(object):
             data.pop('description')
         if not subcategory:
             data.pop('subcategory')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3664,9 +4084,13 @@ class API(object):
                 'filter': filter_str,
                 'value': value,
                 'all': apply_all}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3685,9 +4109,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3733,9 +4161,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3754,9 +4186,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3783,9 +4219,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3823,9 +4263,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3844,9 +4288,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3875,9 +4323,13 @@ class API(object):
                 'site_url': site_url}
         if not site_url:
             data.pop('site_url')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3917,9 +4369,13 @@ class API(object):
             data.pop('catalog')
         if not site_url:
             data.pop('site_url')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3938,9 +4394,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3978,9 +4438,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -3999,9 +4463,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4028,9 +4496,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4059,9 +4531,13 @@ class API(object):
             data.pop('include')
         if not show_all:
             data.pop('all')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4086,9 +4562,13 @@ class API(object):
             data.pop('client')
         if not include:
             data.pop('include')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4111,9 +4591,13 @@ class API(object):
                 'include': include}
         if not include:
             data.pop('include')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4147,9 +4631,13 @@ class API(object):
             data.pop('client')
         if not date:
             data.pop('date')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4185,9 +4673,13 @@ class API(object):
             data.pop('date')
         if not include:
             data.pop('include')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4208,9 +4700,13 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'type': object_type}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4231,9 +4727,13 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'offset': str(offset),
                 'limit': str(limit)}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4254,9 +4754,13 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'offset': str(offset),
                 'limit': str(limit)}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4277,9 +4781,13 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'offset': str(offset),
                 'limit': str(limit)}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4328,9 +4836,13 @@ class API(object):
             data['rule_' + str(count) + '_input'] = item[2]
             if item[0] == 'metadata':
                 data['rule_' + str(count) + '_subtype'] = item[3]
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4368,9 +4880,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4389,9 +4905,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4422,9 +4942,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4455,9 +4979,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4488,9 +5016,13 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method)
+        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, api_method, headers)
         if isinstance(ampache_response, bool):
             return False
         return self.return_data(ampache_response)
@@ -4688,6 +5220,8 @@ class API(object):
                 return self.bookmark_create(params["filter_id"], params["object_type"], params["position"],
                                             params["client"], params["date"], params["include"])
             case 'bookmark_delete':
+                if not "filter_id" in params or not "object_type" in params:
+                    return False
                 return self.bookmark_delete(params["filter_id"], params["object_type"])
             case 'bookmark_edit':
                 if not "position" in params:
@@ -4701,6 +5235,8 @@ class API(object):
                 return self.bookmark_edit(params["filter_id"], params["object_type"], params["position"],
                                           params["client"], params["date"], params["include"])
             case 'bookmarks':
+                if not "client" in params or not "include" in params:
+                    return False
                 return self.bookmarks(params["client"], params["include"])
             case 'browse':
                 if not "filter_str" in params:
@@ -4730,6 +5266,8 @@ class API(object):
                     params["limit"] = 0
                 return self.catalog(params["filter_id"], params["offset"], params["limit"])
             case 'catalog_action':
+                if not "task" in params or not "catalog_id" in params:
+                    return False
                 return self.catalog_action(params["task"], params["catalog_id"])
             case 'catalog_add':
                 if not "cat_type" in params:
@@ -4748,10 +5286,16 @@ class API(object):
                                         params["media_type"], params["file_pattern"], params["folder_pattern"],
                                         params["username"], params["password"])
             case 'catalog_delete':
+                if not "filter_id" in params:
+                    return False
                 return self.catalog_delete(params["filter_id"])
             case 'catalog_file':
+                if not "file" in params or not "task" in params or not "catalog_id" in params:
+                    return False
                 return self.catalog_file(params["file"], params["task"], params["catalog_id"])
             case 'catalog_folder':
+                if not "folder" in params or not "task" in params or not "catalog_id" in params:
+                    return False
                 return self.catalog_folder(params["folder"], params["task"], params["catalog_id"])
             case 'catalogs':
                 if not "filter_str" in params:
@@ -4785,6 +5329,8 @@ class API(object):
                     params["limit"] = 0
                 return self.deleted_videos(params["offset"], params["limit"])
             case 'democratic':
+                if not "method" in params or not "oid" in params:
+                    return False
                 return self.democratic(params["method"], params["oid"])
             case 'download':
                 if not "transcode" in params:
@@ -4805,6 +5351,8 @@ class API(object):
                     params["cond"] = False
                 return self.followers(params["username"], params["sort"], params["cond"])
             case 'following':
+                if not "username" in params:
+                    return False
                 return self.following(params["username"])
             case 'friends_timeline':
                 if not "limit" in params:
@@ -4813,6 +5361,8 @@ class API(object):
                     params["since"] = 0
                 return self.friends_timeline(params["limit"], params["since"])
             case 'genre':
+                if not "filter_id" in params:
+                    return False
                 return self.genre(params["filter_id"])
             case 'genre_albums':
                 if not "sort" in params:
@@ -4844,6 +5394,8 @@ class API(object):
                 return self.genre_songs(params["filter_id"], params["offset"], params["limit"],
                                         params["sort"], params["cond"])
             case 'get_art':
+                if not "object_id" in params or not "object_type" in params or not "destination" in params:
+                    return False
                 return self.get_art(params["object_id"], params["object_type"], params["destination"])
             case 'get_bookmark':
                 if not "include" in params:
@@ -4853,6 +5405,8 @@ class API(object):
                 return self.get_bookmark(params["filter_id"], params["object_type"], params["include"],
                                          params["show_all"])
             case 'get_external_metadata':
+                if not "filter_id" in params or not "object_type" in params:
+                    return False
                 return self.get_external_metadata(params["filter_id"], params["object_type"])
             case 'get_indexes':
                 if not "filter_str" in params:
@@ -4907,6 +5461,8 @@ class API(object):
                                   params["update"], params["include"], params["offset"], params["limit"],
                                   params["hide_search"], params["sort"], params["cond"])
             case 'label':
+                if not "filter_id" in params:
+                    return False
                 return self.label(params["filter_id"])
             case 'label_artists':
                 if not "sort" in params:
@@ -4934,6 +5490,8 @@ class API(object):
                     params["limit"] = 0
                 return self.last_shouts(params["username"], params["limit"])
             case 'license':
+                if not "filter_id" in params:
+                    return False
                 return self.license(params["filter_id"])
             case 'licenses':
                 if not "filter_str" in params:
@@ -4980,6 +5538,8 @@ class API(object):
                 return self.list(params["object_type"], params["filter_str"], params["exact"], params["add"],
                                  params["update"], params["offset"], params["limit"], params["sort"], params["cond"])
             case 'live_stream':
+                if not "filter_id" in params:
+                    return False
                 return self.live_stream(params["filter_id"])
             case 'live_stream_create':
                 if not "site_url" in params:
@@ -4987,6 +5547,8 @@ class API(object):
                 return self.live_stream_create(params["name"], params["stream_url"], params["codec"],
                                                params["catalog_id"], params["site_url"])
             case 'live_stream_delete':
+                if not "filter_id" in params:
+                    return False
                 return self.live_stream_delete(params["filter_id"])
             case 'live_stream_edit':
                 if not "name" in params:
@@ -5040,16 +5602,24 @@ class API(object):
                 return self.player(params["filter_str"], params["object_type"], params["state"],
                                    params["play_time"], params["client"])
             case 'playlist':
+                if not "filter_id" in params:
+                    return False
                 return self.playlist(params["filter_id"])
             case 'playlist_add':
+                if not "filter_id" in params or not "object_id" in params or not "object_type" in params:
+                    return False
                 return self.playlist_add(params["filter_id"], params["object_id"], params["object_type"])
             case 'playlist_add_song':
                 if not "check" in params:
                     params["check"] = False
                 return self.playlist_add_song(params["filter_id"], params["song_id"], params["check"])
             case 'playlist_create':
+                if not "playlist_name" in params or not "playlist_type" in params:
+                    return False
                 return self.playlist_create(params["playlist_name"], params["playlist_type"])
             case 'playlist_delete':
+                if not "filter_id" in params:
+                    return False
                 return self.playlist_delete(params["filter_id"])
             case 'playlist_edit':
                 if not "playlist_name" in params:
@@ -5085,6 +5655,8 @@ class API(object):
                                               params["artist_id"], params["flagged"], params["list_format"],
                                               params["offset"], params["limit"])
             case 'playlist_hash':
+                if not "filter_id" in params:
+                    return False
                 return self.playlist_hash(params["filter_id"])
             case 'playlist_remove_song':
                 if not "song_id" in params:
@@ -5127,8 +5699,12 @@ class API(object):
                     params["include"] = False
                 return self.podcast(params["filter_id"], params["include"])
             case 'podcast_create':
+                if not "url" in params or not "catalog_id" in params:
+                    return False
                 return self.podcast_create(params["url"], params["catalog_id"])
             case 'podcast_delete':
+                if not "filter_id" in params:
+                    return False
                 return self.podcast_delete(params["filter_id"])
             case 'podcast_edit':
                 if not "feed" in params:
@@ -5146,8 +5722,12 @@ class API(object):
                 return self.podcast_edit(params["filter_id"], params["feed"], params["title"], params["website"],
                                          params["description"], params["generator"], params["copyright_str"])
             case 'podcast_episode':
+                if not "filter_id" in params:
+                    return False
                 return self.podcast_episode(params["filter_id"])
             case 'podcast_episode_delete':
+                if not "filter_id" in params:
+                    return False
                 return self.podcast_episode_delete(params["filter_id"])
             case 'podcast_episodes':
                 if not "offset" in params:
@@ -5183,12 +5763,16 @@ class API(object):
                 return self.preference_create(params["filter_str"], params["type_str"], params["category"],
                                               params["description"], params["subcategory"], params["level"])
             case 'preference_delete':
+                if not "filter_str" in params:
+                    return False
                 return self.preference_delete(params["filter_str"])
             case 'preference_edit':
                 if not "apply_all" in params:
                     params["apply_all"] = 0
                 return self.preference_edit(params["filter_str"], params["value"], params["apply_all"])
             case 'rate':
+                if not "object_type" in params or not "object_id" in params or not "rating" in params:
+                    return False
                 return self.rate(params["object_type"], params["object_id"], params["rating"])
             case 'record_play':
                 if not "user_id" in params:
@@ -5199,6 +5783,8 @@ class API(object):
                     params["date"] = False
                 return self.record_play(params["object_id"], params["user_id"], params["client"], params["date"])
             case 'register':
+                if not "username" in params or not "fullname" in params or not "password" in params or not "email" in params:
+                    return False
                 return self.register(params["username"], params["fullname"], params["password"], params["email"])
             case 'scrobble':
                 if not "mbtitle" in params:
@@ -5221,6 +5807,8 @@ class API(object):
                     params["limit"] = 0
                 return self.search_songs(params["filter_str"], params["offset"], params["limit"])
             case 'share':
+                if not "filter_id" in params:
+                    return False
                 return self.share(params["filter_id"])
             case 'share_create':
                 if not "description" in params:
@@ -5230,6 +5818,8 @@ class API(object):
                 return self.share_create(params["filter_id"], params["object_type"],
                                          params["description"], params["expires"])
             case 'share_delete':
+                if not "filter_id" in params:
+                    return False
                 return self.share_delete(params["filter_id"])
             case 'share_edit':
                 if not "can_stream" in params:
@@ -5258,10 +5848,16 @@ class API(object):
                 return self.shares(params["filter_str"], params["exact"], params["offset"], params["limit"],
                                    params["sort"], params["cond"])
             case 'song':
+                if not "filter_id" in params:
+                    return False
                 return self.song(params["filter_id"])
             case 'song_delete':
+                if not "filter_id" in params:
+                    return False
                 return self.song_delete(params["filter_id"])
             case 'song_tags':
+                if not "filter_id" in params:
+                    return False
                 return self.song_tags(params["filter_id"])
             case 'songs':
                 if not "filter_str" in params:
@@ -5305,12 +5901,16 @@ class API(object):
                     params["stats"] = 1
                 return self.stream(params["object_id"], params["object_type"], params["destination"], params["stats"])
             case 'system_preference':
+                if not "filter_str" in params:
+                    return False
                 return self.system_preference(params["filter_str"])
             case 'system_preferences':
                 return self.system_preferences()
             case 'system_update':
                 return self.system_update()
             case 'tag':
+                if not "filter_id" in params:
+                    return False
                 return self.tag(params["filter_id"])
             case 'tag_albums':
                 if not "offset" in params:
@@ -5367,20 +5967,32 @@ class API(object):
                     params["since"] = 0
                 return self.timeline(params["username"], params["limit"], params["since"])
             case 'toggle_follow':
+                if not "username" in params:
+                    return False
                 return self.toggle_follow(params["username"])
             case 'update_art':
                 if not "overwrite" in params:
                     params["overwrite"] = False
                 return self.update_art(params["object_type"], params["object_id"], params["overwrite"])
             case 'update_artist_info':
+                if not "filter_id" in params:
+                    return False
                 return self.update_artist_info(params["filter_id"])
             case 'update_from_tags':
+                if not "object_type" in params or not "object_id" in params:
+                    return False
                 return self.update_from_tags(params["object_type"], params["object_id"], )
             case 'update_podcast':
+                if not "filter_id" in params:
+                    return False
                 return self.update_podcast(params["filter_id"])
             case 'url_to_song':
+                if not "url" in params:
+                    return False
                 return self.url_to_song(params["url"])
             case 'user':
+                if not "username" in params:
+                    return False
                 return self.user(params["username"])
             case 'user_create':
                 if not "fullname" in params:
@@ -5390,6 +6002,8 @@ class API(object):
                 return self.user_create(params["username"], params["password"], params["email"],
                                         params["fullname"], params["disable"])
             case 'user_delete':
+                if not "username" in params:
+                    return False
                 return self.user_delete(params["username"])
             case 'user_edit':
                 if not "password" in params:
@@ -5437,6 +6051,8 @@ class API(object):
                                            params["offset"], params["limit"],
                                            params["sort"], params["cond"])
             case 'user_preference':
+                if not "filter_str" in params:
+                    return False
                 return self.user_preference(params["filter_str"])
             case 'user_preferences':
                 return self.user_preferences()
@@ -5492,6 +6108,8 @@ class API(object):
                                         params["maxbitrate"], params["fullname_public"], params["reset_apikey"],
                                         params["reset_streamtoken"], params["clear_stats"])
             case 'video':
+                if not "filter_id" in params:
+                    return False
                 return self.video(params["filter_id"])
             case 'videos':
                 if not "exact" in params:
