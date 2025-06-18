@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.7" openSubsonic="1">
+  <artistInfo>
+    <musicBrainzId>1</musicBrainzId>
+    <smallImageUrl>http://192.168.1.9:8989/play/art/none/artist/2/thumb34.jpg</smallImageUrl>
+    <mediumImageUrl>http://192.168.1.9:8989/play/art/none/artist/2/thumb64.jpg</mediumImageUrl>
+    <largeImageUrl>http://192.168.1.9:8989/play/art/none/artist/2/thumb174.jpg</largeImageUrl>
+  </artistInfo>
+</subsonic-response>

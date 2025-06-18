@@ -1,0 +1,38 @@
+{
+    "subsonic-response": {
+        "status": "ok",
+        "version": "1.16.1",
+        "type": "ampache",
+        "serverVersion": "6.6.0",
+        "nowPlaying": {
+            "entry": [
+                {
+                    "id": "300000096",
+                    "parent": "200000009",
+                    "title": "Creeping Lawler 2",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "200000009",
+                    "album": "Creeping Lawler 2",
+                    "artistId": "100000015",
+                    "artist": "Warfare 3.0",
+                    "coverArt": "200000009",
+                    "duration": 296,
+                    "bitRate": 1378,
+                    "track": 1,
+                    "size": 52345628,
+                    "discNumber": 1,
+                    "suffix": "wav",
+                    "contentType": "audio/wav",
+                    "path": "/media/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.wav",
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg",
+                    "username": "user",
+                    "minutesAgo": 6079,
+                    "playerId": 0
+                }
+            ]
+        }
+    }
+}
