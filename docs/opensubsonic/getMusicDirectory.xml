@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
+  <directory id="mf-1" name="music">
+    <child id="ar-111" parent="1" isDir="true" title="Alaclair Ensemble" artist="Alaclair Ensemble" coverArt="ar-111"/>
+    <child id="ar-110" parent="1" isDir="true" title="Alex Figueira" artist="Alex Figueira" coverArt="ar-110"/>
+    <child id="ar-91" parent="1" isDir="true" title="Anitek" artist="Anitek" coverArt="ar-91"/>
+    <child id="ar-35" parent="1" isDir="true" title="Anji Bee" artist="Anji Bee"/>
+    <child id="ar-115" parent="1" isDir="true" title="Another Brick" artist="Another Brick" coverArt="ar-115"/>
+    <child id="ar-108" parent="1" isDir="true" title="Another Day" artist="Another Day" coverArt="ar-108"/>
+    <child id="ar-127" parent="1" isDir="true" title="Antony Raijekov" artist="Antony Raijekov" coverArt="ar-127"/>
+    <child id="ar-48" parent="1" isDir="true" title="Athuzela Brown" artist="Athuzela Brown" coverArt="ar-48"/>
+    <child id="ar-40" parent="1" isDir="true" title="Aydio" artist="Aydio" coverArt="ar-40"/>
+    <child id="ar-121" parent="1" isDir="true" title="Benjimanji" artist="Benjimanji" coverArt="ar-121"/>
+    <child id="ar-41" parent="1" isDir="true" title="Bnegão &amp; Os Seletores de Frequência" artist="Bnegão &amp; Os Seletores de Frequência" coverArt="ar-41"/>
+    <child id="ar-11" parent="1" isDir="true" title="Bonus" artist="Bonus" coverArt="ar-11"/>
+    <child id="ar-118" parent="1" isDir="true" title="Cambo" artist="Cambo" coverArt="ar-118"/>
+    <child id="ar-66" parent="1" isDir="true" title="Cartas a Felice" artist="Cartas a Felice" coverArt="ar-66"/>
+    <child id="ar-72" parent="1" isDir="true" title="Caslo" artist="Caslo" coverArt="ar-72"/>
+    <child id="ar-30" parent="1" isDir="true" title="Celestial Aeon Project" artist="Celestial Aeon Project" coverArt="ar-30"/>
+    <child id="ar-123" parent="1" isDir="true" title="Chris Zabriskie" artist="Chris Zabriskie" coverArt="ar-123"/>
+    <child id="ar-17" parent="1" isDir="true" title="Comfort Fit" artist="Comfort Fit" coverArt="ar-17"/>
+    <child id="ar-70" parent="1" isDir="true" title="Creative Commons" artist="Creative Commons"/>
+    <child id="ar-4" parent="1" isDir="true" title="Crust" artist="Crust" coverArt="ar-4"/>
+    <child id="ar-25" parent="1" isDir="true" title="Dad Rocks!" artist="Dad Rocks!" coverArt="ar-25"/>
+    <child id="ar-56" parent="1" isDir="true" title="Dead Combo" artist="Dead Combo" coverArt="ar-56"/>
+    <child id="ar-104" parent="1" isDir="true" title="Derek Clegg" artist="Derek Clegg" coverArt="ar-104"/>
+    <child id="ar-75" parent="1" isDir="true" title="Dieter van der Westen" artist="Dieter van der Westen" coverArt="ar-75"/>
+    <child id="ar-12" parent="1" isDir="true" title="DJ Crabees" artist="DJ Crabees"/>
+    <child id="ar-18" parent="1" isDir="true" title="Dot" artist="Dot" coverArt="ar-18"/>
+    <child id="ar-45" parent="1" isDir="true" title="DR SymfoniOrkestret" artist="DR SymfoniOrkestret"/>
+    <child id="ar-33" parent="1" isDir="true" title="Emerald Park" artist="Emerald Park" coverArt="ar-33"/>
+    <child id="ar-83" parent="1" isDir="true" title="Eric Van der Westen" artist="Eric Van der Westen" coverArt="ar-83"/>
+    <child id="ar-98" parent="1" isDir="true" title="Finn Anderson" artist="Finn Anderson" coverArt="ar-98"/>
+    <child id="ar-114" parent="1" isDir="true" title="Fog Lake" artist="Fog Lake" coverArt="ar-114"/>
+    <child id="ar-107" parent="1" isDir="true" title="Fotos del Otono" artist="Fotos del Otono" coverArt="ar-107"/>
+    <child id="ar-92" parent="1" isDir="true" title="Glad Rags" artist="Glad Rags" coverArt="ar-92"/>
+    <child id="ar-129" parent="1" isDir="true" title="Herrmutt Lobby" artist="Herrmutt Lobby" coverArt="ar-129"/>
+    <child id="ar-105" parent="1" isDir="true" title="HoliznaPATREON" artist="HoliznaPATREON" coverArt="ar-105"/>
+    <child id="ar-22" parent="1" isDir="true" title="Inch Chua" artist="Inch Chua" coverArt="ar-22"/>
+    <child id="ar-78" parent="1" isDir="true" title="Independent Music Licensing Collective (IMLC)" artist="Independent Music Licensing Collective (IMLC)" coverArt="ar-78"/>
+    <child id="ar-32" parent="1" isDir="true" title="Inje" artist="Inje" coverArt="ar-32"/>
+    <child id="ar-73" parent="1" isDir="true" title="James Pants" artist="James Pants" coverArt="ar-73"/>
+    <child id="ar-42" parent="1" isDir="true" title="Johann Sebastian Bach" artist="Johann Sebastian Bach" coverArt="ar-42"/>
+    <child id="ar-88" parent="1" isDir="true" title="Josh Woodward" artist="Josh Woodward" coverArt="ar-88"/>
+    <child id="ar-76" parent="1" isDir="true" title="Juanitos" artist="Juanitos" coverArt="ar-76"/>
+    <child id="ar-93" parent="1" isDir="true" title="Jules FK" artist="Jules FK" coverArt="ar-93"/>
+    <child id="ar-84" parent="1" isDir="true" title="Katy Kirby" artist="Katy Kirby" coverArt="ar-84"/>
+    <child id="ar-117" parent="1" isDir="true" title="Ketsa" artist="Ketsa" coverArt="ar-117"/>
+    <child id="ar-135" parent="1" isDir="true" title="Kimiko Douglass-Ishizaka" artist="Kimiko Douglass-Ishizaka"/>
+    <child id="ar-96" parent="1" isDir="true" title="Kirk Osamayo" artist="Kirk Osamayo" coverArt="ar-96"/>
+    <child id="ar-102" parent="1" isDir="true" title="Lame Drivers" artist="Lame Drivers" coverArt="ar-102"/>
+    <child id="ar-120" parent="1" isDir="true" title="Maarten Schellekens" artist="Maarten Schellekens" coverArt="ar-120"/>
+    <child id="ar-106" parent="1" isDir="true" title="Makaih Beats" artist="Makaih Beats" coverArt="ar-106"/>
+    <child id="ar-116" parent="1" isDir="true" title="Malaventura" artist="Malaventura" coverArt="ar-116"/>
+    <child id="ar-89" parent="1" isDir="true" title="Maybe Watson" artist="Maybe Watson" coverArt="ar-89"/>
+    <child id="ar-43" parent="1" isDir="true" title="Mc Norman" artist="Mc Norman" coverArt="ar-43"/>
+    <child id="ar-9" parent="1" isDir="true" title="Melodiesinfonie" artist="Melodiesinfonie" coverArt="ar-9"/>
+    <child id="ar-54" parent="1" isDir="true" title="Mendes Brothers" artist="Mendes Brothers" coverArt="ar-54"/>
+    <child id="ar-133" parent="1" isDir="true" title="Mezonom" artist="Mezonom" coverArt="ar-133"/>
+    <child id="ar-29" parent="1" isDir="true" title="Mistakemistake" artist="Mistakemistake"/>
+    <child id="ar-10" parent="1" isDir="true" title="Mister Colfer" artist="Mister Colfer"/>
+    <child id="ar-47" parent="1" isDir="true" title="Monk" artist="Monk" coverArt="ar-47"/>
+    <child id="ar-16" parent="1" isDir="true" title="Moon Reflecting" artist="Moon Reflecting"/>
+    <child id="ar-7" parent="1" isDir="true" title="Morsa" artist="Morsa" coverArt="ar-7"/>
+    <child id="ar-80" parent="1" isDir="true" title="Nangdo" artist="Nangdo" coverArt="ar-80"/>
+    <child id="ar-58" parent="1" isDir="true" title="Nero One" artist="Nero One" coverArt="ar-58"/>
+    <child id="ar-52" parent="1" isDir="true" title="NIM" artist="NIM" coverArt="ar-52"/>
+    <child id="ar-67" parent="1" isDir="true" title="Nofi/found." artist="Nofi/found." coverArt="ar-67"/>
+    <child id="ar-37" parent="1" isDir="true" title="One in a Googolplex" artist="One in a Googolplex" coverArt="ar-37"/>
+    <child id="ar-100" parent="1" isDir="true" title="One Man Book" artist="One Man Book" coverArt="ar-100"/>
+    <child id="ar-20" parent="1" isDir="true" title="Ortalio" artist="Ortalio" coverArt="ar-20"/>
+    <child id="ar-44" parent="1" isDir="true" title="Periskop" artist="Periskop" coverArt="ar-44"/>
+    <child id="ar-6" parent="1" isDir="true" title="ProleteR" artist="ProleteR" coverArt="ar-6"/>
+    <child id="ar-62" parent="1" isDir="true" title="Qina" artist="Qina" coverArt="ar-62"/>
+    <child id="ar-27" parent="1" isDir="true" title="Rey Nocivo" artist="Rey Nocivo" coverArt="ar-27"/>
+    <child id="ar-95" parent="1" isDir="true" title="Rocky Marsiano" artist="Rocky Marsiano" coverArt="ar-95"/>
+    <child id="ar-125" parent="1" isDir="true" title="Sci Fi Industries" artist="Sci Fi Industries" coverArt="ar-125"/>
+    <child id="ar-38" parent="1" isDir="true" title="Scott Buckley" artist="Scott Buckley" coverArt="ar-38"/>
+    <child id="ar-99" parent="1" isDir="true" title="Scott Jacobs" artist="Scott Jacobs" coverArt="ar-99"/>
+    <child id="ar-14" parent="1" isDir="true" title="Seba Lay" artist="Seba Lay" coverArt="ar-14"/>
+    <child id="ar-31" parent="1" isDir="true" title="Shoes and Socks Off" artist="Shoes and Socks Off" coverArt="ar-31"/>
+    <child id="ar-79" parent="1" isDir="true" title="Silva de Alegria" artist="Silva de Alegria" coverArt="ar-79"/>
+    <child id="ar-64" parent="1" isDir="true" title="Sly Collins" artist="Sly Collins" coverArt="ar-64"/>
+    <child id="ar-68" parent="1" isDir="true" title="Sofia Hershberger" artist="Sofia Hershberger" coverArt="ar-68"/>
+    <child id="ar-23" parent="1" isDir="true" title="Stormy Mondays" artist="Stormy Mondays" coverArt="ar-23"/>
+    <child id="ar-131" parent="1" isDir="true" title="StrangeZero" artist="StrangeZero" coverArt="ar-131"/>
+    <child id="ar-15" parent="1" isDir="true" title="structura" artist="structura" coverArt="ar-15"/>
+    <child id="ar-46" parent="1" isDir="true" title="TaaPet" artist="TaaPet" coverArt="ar-46"/>
+    <child id="ar-34" parent="1" isDir="true" title="Takeru Ishikawa" artist="Takeru Ishikawa" coverArt="ar-34"/>
+    <child id="ar-26" parent="1" isDir="true" title="Tamara Laurel" artist="Tamara Laurel" coverArt="ar-26"/>
+    <child id="ar-8" parent="1" isDir="true" title="Taskrok" artist="Taskrok"/>
+    <child id="ar-36" parent="1" isDir="true" title="The Black Atlantic" artist="The Black Atlantic" coverArt="ar-36"/>
+    <child id="ar-97" parent="1" isDir="true" title="The Freak Fandango Orchestra" artist="The Freak Fandango Orchestra" coverArt="ar-97"/>
+    <child id="ar-13" parent="1" isDir="true" title="The Global Optimistic" artist="The Global Optimistic" coverArt="ar-13"/>
+    <child id="ar-90" parent="1" isDir="true" title="The Joy Drops" artist="The Joy Drops" coverArt="ar-90"/>
+    <child id="ar-112" parent="1" isDir="true" title="The Kyoto Connection" artist="The Kyoto Connection" coverArt="ar-112"/>
+    <child id="ar-109" parent="1" isDir="true" title="The New Valleys" artist="The New Valleys" coverArt="ar-109"/>
+    <child id="ar-5" parent="1" isDir="true" title="Tone" artist="Tone" coverArt="ar-5"/>
+    <child id="ar-39" parent="1" isDir="true" title="Triolocria" artist="Triolocria" coverArt="ar-39"/>
+    <child id="ar-81" parent="1" isDir="true" title="Turku" artist="Turku" coverArt="ar-81"/>
+    <child id="ar-24" parent="1" isDir="true" title="Tvrdý / Havelka" artist="Tvrdý / Havelka" coverArt="ar-24"/>
+    <child id="ar-1" parent="1" isDir="true" title="Usta" artist="Usta" coverArt="ar-1"/>
+    <child id="ar-2" parent="1" isDir="true" title="Various Artists" artist="Various Artists" coverArt="ar-2"/>
+    <child id="ar-86" parent="1" isDir="true" title="Vienna Ditto" artist="Vienna Ditto" coverArt="ar-86"/>
+    <child id="ar-3" parent="1" isDir="true" title="Volfoniq" artist="Volfoniq" coverArt="ar-3"/>
+    <child id="ar-28" parent="1" isDir="true" title="Wikluh Sky" artist="Wikluh Sky" coverArt="ar-28"/>
+    <child id="ar-60" parent="1" isDir="true" title="YEIZON" artist="YEIZON" coverArt="ar-60"/>
+    <child id="ar-21" parent="1" isDir="true" title="Zimbalista" artist="Zimbalista" coverArt="ar-21"/>
+    <child id="ar-19" parent="1" isDir="true" title="Zoe.LeelA" artist="Zoe.LeelA" coverArt="ar-19"/>
+    <child id="ar-50" parent="1" isDir="true" title="Δημήτρης Μπάκουλης" artist="Δημήτρης Μπάκουλης" coverArt="ar-50"/>
+  </directory>
+</subsonic-response>

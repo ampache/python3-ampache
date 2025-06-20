@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
+  <playlists>
+    <playlist id="sp-14" name="Album 1*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="0" duration="0" coverArt="sp-14"/>
+    <playlist id="sp-13" name="Album 2*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="0" duration="0" coverArt="sp-13"/>
+    <playlist id="sp-12" name="Album 3*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="0" duration="0" coverArt="sp-12"/>
+    <playlist id="sp-11" name="Album 4*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="0" duration="0" coverArt="sp-11"/>
+    <playlist id="sp-10" name="Album 5*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="" duration="" coverArt="sp-10"/>
+    <playlist id="sp-9" name="Artist 1*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="" duration="" coverArt="sp-9"/>
+    <playlist id="sp-8" name="Artist 2*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="" duration="" coverArt="sp-8"/>
+    <playlist id="sp-7" name="Artist 3*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="" duration="" coverArt="sp-7"/>
+    <playlist id="sp-6" name="Artist 4*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="" duration="" coverArt="sp-6"/>
+    <playlist id="sp-5" name="Artist 5*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="" duration="" coverArt="sp-5"/>
+    <playlist id="pl-25" name="Example Playlist" owner="user" public="true" songCount="0" duration="0" created="2025-06-16T01:13:22+00:00" changed="2025-06-16T01:13:22+00:00"/>
+    <playlist id="pl-8" name="Example Playlist" owner="user" public="true" songCount="7" duration="2057" created="2025-06-14T00:50:16+00:00" changed="2025-06-14T00:50:16+00:00"/>
+    <playlist id="pl-348" name="Example Playlist_json" owner="user" public="true" songCount="0" duration="0" created="2025-06-18T03:40:38+00:00" changed="2025-06-18T03:40:39+00:00"/>
+    <playlist id="sp-19" name="Song 1*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="" duration="" coverArt="sp-19"/>
+    <playlist id="sp-18" name="Song 2*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="" duration="" coverArt="sp-18"/>
+    <playlist id="sp-17" name="Song 3*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="" duration="" coverArt="sp-17"/>
+    <playlist id="sp-16" name="Song 4*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="" duration="" coverArt="sp-16"/>
+    <playlist id="sp-15" name="Song 5*" owner="System" public="true" created="1970-01-01T00:00:00+00:00" changed="2025-06-20T04:11:35+00:00" songCount="" duration="" coverArt="sp-15"/>
+    <playlist id="sp-20" name="user - 6/19/25, 3:03 AM" owner="user" public="true" created="2025-06-19T03:03:41+00:00" changed="2025-06-20T04:11:35+00:00" songCount="6" duration="888" coverArt="sp-20"/>
+    <playlist id="sp-21" name="user - 6/19/25, 3:04 AM" owner="user" public="false" created="2025-06-19T03:04:23+00:00" changed="2025-06-20T04:11:35+00:00" songCount="269" duration="59103" coverArt="sp-21"/>
+  </playlists>
+</subsonic-response>

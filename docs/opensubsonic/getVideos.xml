@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
+  <videos>
+    <video id="vi-1" title="sample-webm-file.webm" isDir="false" isVideo="true" type="video" duration="126" size="12615807" suffix="webm" contentType="video/webm" path="sample-webm-file.webm"/>
+    <video id="vi-2" title="sample-mp4-file.mp4" isDir="false" isVideo="true" type="video" duration="125" size="10546620" suffix="mp4" contentType="video/mp4" path="sample-mp4-file.mp4"/>
+    <video id="vi-3" title="sample-ogv-file.ogv" isDir="false" isVideo="true" type="video" duration="0" size="5407067" suffix="ogv" contentType="video/ogg" path="sample-ogv-file.ogv"/>
+  </videos>
+</subsonic-response>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
+  <albumInfo>
+    <notes/>
+    <musicBrainzId>3217a180-b721-4f63-9fb5-7e9e1ee5a939</musicBrainzId>
+    <smallImageUrl>https://ampache.lachlandewaard.org/image.php?object_id=24&amp;object_type=album&amp;size=68x68&amp;name=art.jpg</smallImageUrl>
+    <mediumImageUrl>https://ampache.lachlandewaard.org/image.php?object_id=24&amp;object_type=album&amp;size=128x128&amp;name=art.jpg</mediumImageUrl>
+    <largeImageUrl>https://ampache.lachlandewaard.org/image.php?object_id=24&amp;object_type=album&amp;size=348x348&amp;name=art.jpg</largeImageUrl>
+  </albumInfo>
+</subsonic-response>

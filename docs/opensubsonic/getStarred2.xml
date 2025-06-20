@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
+  <starred2>
+    <artist id="ar-38" name="Scott Buckley" coverArt="ar-38" albumCount="1"/>
+    <album id="al-20" parent="ar-38" album="Monomyth" title="Monomyth" name="Monomyth" isDir="true" coverArt="al-20" songCount="12" created="2025-06-13T06:33:57+00:00" duration="3197" playCount="0" artistId="ar-38" artist="Scott Buckley" year="2019" genre="Soundtrack"/>
+    <song id="so-176" parent="al-10" title="Beq Ultra Fat" isDir="false" isVideo="false" type="music" albumId="al-10" album="Nofi Devices" artistId="ar-67" artist="Nofi/found." coverArt="al-10" duration="413" bitRate="187" userRating="5" starred="2025-06-20T00:32:42Z" track="4" year="1999" genre="Electronica,Dance" size="10138647" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/mnt/music/ampache/music/Nofi Devices LP/04_Beq_Ultra_Fat.mp3"/>
+    <song id="so-79" parent="al-22" title="Jos jedan od onih dana" isDir="false" isVideo="false" type="music" albumId="al-22" album="#CC-10 Birthday Mixtape" artistId="ar-28" artist="Wikluh Sky" coverArt="al-22" duration="263" bitRate="187" userRating="5" starred="2025-06-20T00:25:51Z" track="9" year="2012" size="6439196" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/mnt/music/ampache/music/nwscomp005/09JosJedanOdOnihDana.mp3"/>
+    <song id="so-93" parent="al-20" title="The Call" isDir="false" isVideo="false" type="music" albumId="al-20" album="Monomyth" artistId="ar-38" artist="Scott Buckley" coverArt="al-20" duration="236" bitRate="312" track="2" year="2019" genre="Soundtrack" size="9682253" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/mnt/music/ampache/music/Scott Buckley/sb_monomyth_2_thecall.mp3"/>
+  </starred2>
+</subsonic-response>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
+  <artistInfo>
+    <musicBrainzId>8d85c066-26ff-47a5-9c1c-4fd6787ddbae</musicBrainzId>
+    <smallImageUrl>https://ampache.lachlandewaard.org/image.php?object_id=133&amp;object_type=artist&amp;size=68x68&amp;name=art.png</smallImageUrl>
+    <mediumImageUrl>https://ampache.lachlandewaard.org/image.php?object_id=133&amp;object_type=artist&amp;size=128x128&amp;name=art.png</mediumImageUrl>
+    <largeImageUrl>https://ampache.lachlandewaard.org/image.php?object_id=133&amp;object_type=artist&amp;size=348x348&amp;name=art.png</largeImageUrl>
+  </artistInfo>
+</subsonic-response>
