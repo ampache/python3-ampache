@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.7" openSubsonic="1">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.7.3" openSubsonic="1">
   <users>
     <user username="admin" email="" scrobblingEnabled="true" adminRole="true" settingsRole="true" downloadRole="true" playlistRole="true" coverArtRole="true" commentRole="false" podcastRole="true" streamRole="true" jukeboxRole="true" shareRole="true" videoConversionRole="false"/>
     <user username="demo" email="demo@gmail.com" scrobblingEnabled="true" adminRole="false" settingsRole="true" downloadRole="true" playlistRole="true" coverArtRole="false" commentRole="false" podcastRole="true" streamRole="true" jukeboxRole="true" shareRole="true" videoConversionRole="false"/>
