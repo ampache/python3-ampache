@@ -1,0 +1,218 @@
+{
+    "rule": [
+        {
+            "name": "title",
+            "label": "Name",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Podcast"
+        },
+        {
+            "name": "episode_count",
+            "label": "Episode Count",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Podcast"
+        },
+        {
+            "name": "id",
+            "label": "Database ID",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Podcast"
+        },
+        {
+            "name": "podcast_episode",
+            "label": "Podcast Episode",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Podcast Episodes"
+        },
+        {
+            "name": "state",
+            "label": "Status",
+            "type": "boolean_numeric",
+            "widget": [
+                "select",
+                [
+                    "skipped",
+                    "pending",
+                    "completed"
+                ]
+            ],
+            "title": "Podcast Episodes"
+        },
+        {
+            "name": "time",
+            "label": "Length (in minutes)",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Podcast Episodes"
+        },
+        {
+            "name": "played_times",
+            "label": "# Played",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "skipped_times",
+            "label": "# Skipped",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "played_or_skipped_times",
+            "label": "# Played or Skipped",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_play",
+            "label": "My Last Play",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_skip",
+            "label": "My Last Skip",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_play_or_skip",
+            "label": "My Last Play or Skip",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "played",
+            "label": "Played",
+            "type": "boolean",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "myplayed",
+            "label": "Played by Me",
+            "type": "boolean",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "myplayed_times",
+            "label": "# Played by Me",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "myskipped_times",
+            "label": "# Skipped by Me",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "myplayed_or_skipped_times",
+            "label": "# Played or Skipped by Me",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "recent_played",
+            "label": "Recently played",
+            "type": "recent_played",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "file",
+            "label": "Filename",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "pubdate",
+            "label": "Publication Date",
+            "type": "date",
+            "widget": [
+                "input",
+                "datetime-local"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "added",
+            "label": "Added",
+            "type": "date",
+            "widget": [
+                "input",
+                "datetime-local"
+            ],
+            "title": "File Data"
+        }
+    ]
+}

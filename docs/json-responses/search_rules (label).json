@@ -1,0 +1,34 @@
+{
+    "rule": [
+        {
+            "name": "title",
+            "label": "Name",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Label"
+        },
+        {
+            "name": "category",
+            "label": "Category",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Label"
+        },
+        {
+            "name": "id",
+            "label": "Database ID",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Label"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "rule": [
+        {
+            "name": "file",
+            "label": "Filename",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": ""
+        }
+    ]
+}
