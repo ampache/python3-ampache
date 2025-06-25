@@ -39,7 +39,7 @@ class API(object):
 
     def __init__(self):
         self.AMPACHE_API = 'xml'
-        self.AMPACHE_VERSION = '6.7.0'
+        self.AMPACHE_VERSION = '6.7.3'
         self.AMPACHE_SERVER = ''
         self.AMPACHE_DEBUG = False
         self.DOCS_PATH = 'docs/'
