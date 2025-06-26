@@ -2671,7 +2671,7 @@ class API(object):
             * object_id   = (integer) $object_id
             * rating      = (integer) 0|1|2|3|4|5
         """
-        if rating.isdigit():
+        if isinstance(rating, str) and rating.isdigit():
             rating = int(rating)
         else:
             rating = 0
