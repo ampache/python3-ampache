@@ -3,51 +3,33 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "6.6.7",
         "openSubsonic": true,
         "videos": {
             "video": [
                 {
-                    "id": "vi-1",
-                    "parent": "mf-3",
-                    "title": "sample-webm-file.webm",
+                    "id": "500000001",
+                    "title": "SPACE   Magic Fly (1977) - https://archive.org/details/SPACE_Magic_Fly_1977.mp4",
                     "isDir": false,
                     "isVideo": true,
                     "type": "video",
-                    "duration": 126,
-                    "bitrate": 125,
-                    "size": 12615807,
-                    "suffix": "webm",
-                    "contentType": "video/webm",
-                    "path": "sample-webm-file.webm"
-                },
-                {
-                    "id": "vi-2",
-                    "parent": "mf-3",
-                    "title": "sample-mp4-file.mp4",
-                    "isDir": false,
-                    "isVideo": true,
-                    "type": "video",
-                    "duration": 125,
-                    "bitrate": 374,
-                    "size": 10546620,
+                    "duration": 193,
+                    "size": 20084777,
                     "suffix": "mp4",
                     "contentType": "video/mp4",
-                    "path": "sample-mp4-file.mp4"
+                    "path": "SPACE_Magic_Fly_1977.mp4"
                 },
                 {
-                    "id": "vi-3",
-                    "parent": "mf-3",
-                    "title": "sample-ogv-file.ogv",
+                    "id": "500000002",
+                    "title": "Magic Fly.ogv",
                     "isDir": false,
                     "isVideo": true,
                     "type": "video",
                     "duration": 0,
-                    "bitrate": 0,
-                    "size": 5407067,
+                    "size": 14950742,
                     "suffix": "ogv",
                     "contentType": "video/ogg",
-                    "path": "sample-ogv-file.ogv"
+                    "path": "SPACE - Magic Fly (1977).ogv"
                 }
             ]
         }

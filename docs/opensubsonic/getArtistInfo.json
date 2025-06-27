@@ -3,14 +3,13 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "6.6.7",
         "openSubsonic": true,
         "artistInfo": {
-            "musicBrainzId": "8d85c066-26ff-47a5-9c1c-4fd6787ddbae",
-            "smallImageUrl": "https://ampache.lachlandewaard.org/image.php?object_id=133&amp;object_type=artist&amp;size=68x68&amp;name=art.png",
-            "mediumImageUrl": "https://ampache.lachlandewaard.org/image.php?object_id=133&amp;object_type=artist&amp;size=128x128&amp;name=art.png",
-            "largeImageUrl": "https://ampache.lachlandewaard.org/image.php?object_id=133&amp;object_type=artist&amp;size=348x348&amp;name=art.png",
-            "similarArtist": []
+            "musicBrainzId": "1",
+            "smallImageUrl": "http://192.168.1.9:8989/play/art/none/artist/2/thumb34.jpg",
+            "mediumImageUrl": "http://192.168.1.9:8989/play/art/none/artist/2/thumb64.jpg",
+            "largeImageUrl": "http://192.168.1.9:8989/play/art/none/artist/2/thumb174.jpg"
         }
     }
 }

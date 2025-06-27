@@ -3,271 +3,38 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "6.6.7",
         "openSubsonic": true,
         "indexes": {
+            "lastModified": 1627949154000,
+            "ignoredArticles": "The An A Die Das Ein Eine Les Le La",
             "index": [
-                {
-                    "name": "A",
-                    "artist": [
-                        {
-                            "id": "ar-111",
-                            "name": "Alaclair Ensemble",
-                            "coverArt": "ar-111",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-110",
-                            "name": "Alex Figueira",
-                            "coverArt": "ar-110",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-91",
-                            "name": "Anitek",
-                            "coverArt": "ar-91",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-35",
-                            "name": "Anji Bee",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-115",
-                            "name": "Another Brick",
-                            "coverArt": "ar-115",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-108",
-                            "name": "Another Day",
-                            "coverArt": "ar-108",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-127",
-                            "name": "Antony Raijekov",
-                            "coverArt": "ar-127",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-48",
-                            "name": "Athuzela Brown",
-                            "coverArt": "ar-48",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-40",
-                            "name": "Aydio",
-                            "coverArt": "ar-40",
-                            "albumCount": 1
-                        }
-                    ]
-                },
-                {
-                    "name": "B",
-                    "artist": [
-                        {
-                            "id": "ar-121",
-                            "name": "Benjimanji",
-                            "coverArt": "ar-121",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-41",
-                            "name": "Bneg\u00e3o & Os Seletores de Frequ\u00eancia",
-                            "coverArt": "ar-41",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-11",
-                            "name": "Bonus",
-                            "coverArt": "ar-11",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-36",
-                            "name": "The Black Atlantic",
-                            "coverArt": "ar-36",
-                            "albumCount": 0
-                        }
-                    ]
-                },
                 {
                     "name": "C",
                     "artist": [
                         {
-                            "id": "ar-118",
-                            "name": "Cambo",
-                            "coverArt": "ar-118",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-66",
-                            "name": "Cartas a Felice",
-                            "coverArt": "ar-66",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-72",
-                            "name": "Caslo",
-                            "coverArt": "ar-72",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-30",
-                            "name": "Celestial Aeon Project",
-                            "coverArt": "ar-30",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-123",
-                            "name": "Chris Zabriskie",
-                            "coverArt": "ar-123",
+                            "id": "100000016",
+                            "name": "CARN\u00daN",
+                            "coverArt": "ar-100000016",
                             "albumCount": 1
                         },
                         {
-                            "id": "ar-17",
+                            "id": "100000027",
+                            "name": "Chi.Otic",
+                            "coverArt": "ar-100000027",
+                            "albumCount": 0
+                        },
+                        {
+                            "id": "100000034",
+                            "name": "Comedown Kid",
+                            "coverArt": "ar-100000034",
+                            "albumCount": 0
+                        },
+                        {
+                            "id": "100000036",
                             "name": "Comfort Fit",
-                            "coverArt": "ar-17",
+                            "coverArt": "ar-100000036",
                             "albumCount": 1
-                        },
-                        {
-                            "id": "ar-70",
-                            "name": "Creative Commons",
-                            "albumCount": 1
-                        },
-                        {
-                            "id": "ar-4",
-                            "name": "Crust",
-                            "coverArt": "ar-4",
-                            "albumCount": 1
-                        }
-                    ]
-                },
-                {
-                    "name": "D",
-                    "artist": [
-                        {
-                            "id": "ar-25",
-                            "name": "Dad Rocks!",
-                            "coverArt": "ar-25",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-56",
-                            "name": "Dead Combo",
-                            "coverArt": "ar-56",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-104",
-                            "name": "Derek Clegg",
-                            "coverArt": "ar-104",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-75",
-                            "name": "Dieter van der Westen",
-                            "coverArt": "ar-75",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-12",
-                            "name": "DJ Crabees",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-18",
-                            "name": "Dot",
-                            "coverArt": "ar-18",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-45",
-                            "name": "DR SymfoniOrkestret",
-                            "albumCount": 0
-                        }
-                    ]
-                },
-                {
-                    "name": "E",
-                    "artist": [
-                        {
-                            "id": "ar-33",
-                            "name": "Emerald Park",
-                            "coverArt": "ar-33",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-83",
-                            "name": "Eric Van der Westen",
-                            "coverArt": "ar-83",
-                            "albumCount": 0
-                        }
-                    ]
-                },
-                {
-                    "name": "F",
-                    "artist": [
-                        {
-                            "id": "ar-98",
-                            "name": "Finn Anderson",
-                            "coverArt": "ar-98",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-114",
-                            "name": "Fog Lake",
-                            "coverArt": "ar-114",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-107",
-                            "name": "Fotos del Otono",
-                            "coverArt": "ar-107",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-97",
-                            "name": "The Freak Fandango Orchestra",
-                            "coverArt": "ar-97",
-                            "albumCount": 0
-                        }
-                    ]
-                },
-                {
-                    "name": "G",
-                    "artist": [
-                        {
-                            "id": "ar-92",
-                            "name": "Glad Rags",
-                            "coverArt": "ar-92",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-13",
-                            "name": "The Global Optimistic",
-                            "coverArt": "ar-13",
-                            "albumCount": 0
-                        }
-                    ]
-                },
-                {
-                    "name": "H",
-                    "artist": [
-                        {
-                            "id": "ar-129",
-                            "name": "Herrmutt Lobby",
-                            "coverArt": "ar-129",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-105",
-                            "name": "HoliznaPATREON",
-                            "coverArt": "ar-105",
-                            "albumCount": 0
                         }
                     ]
                 },
@@ -275,108 +42,10 @@
                     "name": "I",
                     "artist": [
                         {
-                            "id": "ar-22",
-                            "name": "Inch Chua",
-                            "coverArt": "ar-22",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-78",
-                            "name": "Independent Music Licensing Collective (IMLC)",
-                            "coverArt": "ar-78",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-32",
-                            "name": "Inje",
-                            "coverArt": "ar-32",
-                            "albumCount": 0
-                        }
-                    ]
-                },
-                {
-                    "name": "J",
-                    "artist": [
-                        {
-                            "id": "ar-73",
-                            "name": "James Pants",
-                            "coverArt": "ar-73",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-42",
-                            "name": "Johann Sebastian Bach",
-                            "coverArt": "ar-42",
+                            "id": "100000013",
+                            "name": "IOK-1",
+                            "coverArt": "ar-100000013",
                             "albumCount": 1
-                        },
-                        {
-                            "id": "ar-88",
-                            "name": "Josh Woodward",
-                            "coverArt": "ar-88",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-76",
-                            "name": "Juanitos",
-                            "coverArt": "ar-76",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-93",
-                            "name": "Jules FK",
-                            "coverArt": "ar-93",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-90",
-                            "name": "The Joy Drops",
-                            "coverArt": "ar-90",
-                            "albumCount": 0
-                        }
-                    ]
-                },
-                {
-                    "name": "K",
-                    "artist": [
-                        {
-                            "id": "ar-84",
-                            "name": "Katy Kirby",
-                            "coverArt": "ar-84",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-117",
-                            "name": "Ketsa",
-                            "coverArt": "ar-117",
-                            "albumCount": 1
-                        },
-                        {
-                            "id": "ar-135",
-                            "name": "Kimiko Douglass-Ishizaka",
-                            "albumCount": 1
-                        },
-                        {
-                            "id": "ar-96",
-                            "name": "Kirk Osamayo",
-                            "coverArt": "ar-96",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-112",
-                            "name": "The Kyoto Connection",
-                            "coverArt": "ar-112",
-                            "albumCount": 0
-                        }
-                    ]
-                },
-                {
-                    "name": "L",
-                    "artist": [
-                        {
-                            "id": "ar-102",
-                            "name": "Lame Drivers",
-                            "coverArt": "ar-102",
-                            "albumCount": 0
                         }
                     ]
                 },
@@ -384,78 +53,15 @@
                     "name": "M",
                     "artist": [
                         {
-                            "id": "ar-120",
-                            "name": "Maarten Schellekens",
-                            "coverArt": "ar-120",
+                            "id": "100000023",
+                            "name": "Manic Notion",
+                            "coverArt": "ar-100000023",
                             "albumCount": 0
                         },
                         {
-                            "id": "ar-106",
-                            "name": "Makaih Beats",
-                            "coverArt": "ar-106",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-116",
-                            "name": "Malaventura",
-                            "coverArt": "ar-116",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-89",
-                            "name": "Maybe Watson",
-                            "coverArt": "ar-89",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-43",
-                            "name": "Mc Norman",
-                            "coverArt": "ar-43",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-9",
-                            "name": "Melodiesinfonie",
-                            "coverArt": "ar-9",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-54",
-                            "name": "Mendes Brothers",
-                            "coverArt": "ar-54",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-133",
-                            "name": "Mezonom",
-                            "coverArt": "ar-133",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-29",
-                            "name": "Mistakemistake",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-10",
-                            "name": "Mister Colfer",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-47",
-                            "name": "Monk",
-                            "coverArt": "ar-47",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-16",
-                            "name": "Moon Reflecting",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-7",
-                            "name": "Morsa",
-                            "coverArt": "ar-7",
+                            "id": "100000033",
+                            "name": "MxBxCx",
+                            "coverArt": "ar-100000033",
                             "albumCount": 0
                         }
                     ]
@@ -464,85 +70,9 @@
                     "name": "N",
                     "artist": [
                         {
-                            "id": "ar-80",
-                            "name": "Nangdo",
-                            "coverArt": "ar-80",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-58",
-                            "name": "Nero One",
-                            "coverArt": "ar-58",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-52",
-                            "name": "NIM",
-                            "coverArt": "ar-52",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-67",
+                            "id": "100000014",
                             "name": "Nofi/found.",
-                            "coverArt": "ar-67",
                             "albumCount": 1
-                        },
-                        {
-                            "id": "ar-109",
-                            "name": "The New Valleys",
-                            "coverArt": "ar-109",
-                            "albumCount": 0
-                        }
-                    ]
-                },
-                {
-                    "name": "O",
-                    "artist": [
-                        {
-                            "id": "ar-37",
-                            "name": "One in a Googolplex",
-                            "coverArt": "ar-37",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-100",
-                            "name": "One Man Book",
-                            "coverArt": "ar-100",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-20",
-                            "name": "Ortalio",
-                            "coverArt": "ar-20",
-                            "albumCount": 0
-                        }
-                    ]
-                },
-                {
-                    "name": "P",
-                    "artist": [
-                        {
-                            "id": "ar-44",
-                            "name": "Periskop",
-                            "coverArt": "ar-44",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-6",
-                            "name": "ProleteR",
-                            "coverArt": "ar-6",
-                            "albumCount": 1
-                        }
-                    ]
-                },
-                {
-                    "name": "Q",
-                    "artist": [
-                        {
-                            "id": "ar-62",
-                            "name": "Qina",
-                            "coverArt": "ar-62",
-                            "albumCount": 0
                         }
                     ]
                 },
@@ -550,15 +80,9 @@
                     "name": "R",
                     "artist": [
                         {
-                            "id": "ar-27",
-                            "name": "Rey Nocivo",
-                            "coverArt": "ar-27",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-95",
-                            "name": "Rocky Marsiano",
-                            "coverArt": "ar-95",
+                            "id": "100000020",
+                            "name": "R/B",
+                            "coverArt": "ar-100000020",
                             "albumCount": 0
                         }
                     ]
@@ -567,70 +91,29 @@
                     "name": "S",
                     "artist": [
                         {
-                            "id": "ar-125",
-                            "name": "Sci Fi Industries",
-                            "coverArt": "ar-125",
-                            "albumCount": 1
-                        },
-                        {
-                            "id": "ar-38",
-                            "name": "Scott Buckley",
-                            "coverArt": "ar-38",
-                            "albumCount": 1
-                        },
-                        {
-                            "id": "ar-99",
-                            "name": "Scott Jacobs",
-                            "coverArt": "ar-99",
+                            "id": "100000032",
+                            "name": "Shorty Mac",
+                            "coverArt": "ar-100000032",
                             "albumCount": 0
                         },
                         {
-                            "id": "ar-14",
-                            "name": "Seba Lay",
-                            "coverArt": "ar-14",
-                            "albumCount": 1
-                        },
-                        {
-                            "id": "ar-31",
-                            "name": "Shoes and Socks Off",
-                            "coverArt": "ar-31",
+                            "id": "100000026",
+                            "name": "Stress Builds Character",
+                            "coverArt": "ar-100000026",
                             "albumCount": 0
                         },
                         {
-                            "id": "ar-79",
-                            "name": "Silva de Alegria",
-                            "coverArt": "ar-79",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-64",
-                            "name": "Sly Collins",
-                            "coverArt": "ar-64",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-68",
-                            "name": "Sofia Hershberger",
-                            "coverArt": "ar-68",
-                            "albumCount": 1
-                        },
-                        {
-                            "id": "ar-23",
-                            "name": "Stormy Mondays",
-                            "coverArt": "ar-23",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-131",
-                            "name": "StrangeZero",
-                            "coverArt": "ar-131",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-15",
+                            "id": "100000011",
                             "name": "structura",
-                            "coverArt": "ar-15",
+                            "coverArt": "ar-100000011",
                             "albumCount": 1
+                        },
+                        {
+                            "id": "100000002",
+                            "name": "Synthetic",
+                            "coverArt": "ar-100000002",
+                            "albumCount": 1,
+                            "starred": "2021-02-22T05:54:18Z"
                         }
                     ]
                 },
@@ -638,61 +121,15 @@
                     "name": "T",
                     "artist": [
                         {
-                            "id": "ar-46",
-                            "name": "TaaPet",
-                            "coverArt": "ar-46",
+                            "id": "100000035",
+                            "name": "Tip-C",
+                            "coverArt": "ar-100000035",
                             "albumCount": 0
                         },
                         {
-                            "id": "ar-34",
-                            "name": "Takeru Ishikawa",
-                            "coverArt": "ar-34",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-26",
-                            "name": "Tamara Laurel",
-                            "coverArt": "ar-26",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-8",
-                            "name": "Taskrok",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-5",
-                            "name": "Tone",
-                            "coverArt": "ar-5",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-39",
-                            "name": "Triolocria",
-                            "coverArt": "ar-39",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-81",
-                            "name": "Turku",
-                            "coverArt": "ar-81",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-24",
-                            "name": "Tvrd\u00fd / Havelka",
-                            "coverArt": "ar-24",
-                            "albumCount": 0
-                        }
-                    ]
-                },
-                {
-                    "name": "U",
-                    "artist": [
-                        {
-                            "id": "ar-1",
-                            "name": "Usta",
-                            "coverArt": "ar-1",
+                            "id": "100000021",
+                            "name": "Tip-C (featuring Mike Beers)",
+                            "coverArt": "ar-100000021",
                             "albumCount": 0
                         }
                     ]
@@ -701,22 +138,10 @@
                     "name": "V",
                     "artist": [
                         {
-                            "id": "ar-2",
+                            "id": "100000019",
                             "name": "Various Artists",
-                            "coverArt": "ar-2",
-                            "albumCount": 2
-                        },
-                        {
-                            "id": "ar-86",
-                            "name": "Vienna Ditto",
-                            "coverArt": "ar-86",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-3",
-                            "name": "Volfoniq",
-                            "coverArt": "ar-3",
-                            "albumCount": 0
+                            "coverArt": "ar-100000019",
+                            "albumCount": 1
                         }
                     ]
                 },
@@ -724,33 +149,10 @@
                     "name": "W",
                     "artist": [
                         {
-                            "id": "ar-28",
-                            "name": "Wikluh Sky",
-                            "coverArt": "ar-28",
-                            "albumCount": 0
-                        }
-                    ]
-                },
-                {
-                    "name": "X-Z",
-                    "artist": [
-                        {
-                            "id": "ar-60",
-                            "name": "YEIZON",
-                            "coverArt": "ar-60",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-21",
-                            "name": "Zimbalista",
-                            "coverArt": "ar-21",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-19",
-                            "name": "Zoe.LeelA",
-                            "coverArt": "ar-19",
-                            "albumCount": 0
+                            "id": "100000015",
+                            "name": "Warfare 3.0",
+                            "coverArt": "ar-100000015",
+                            "albumCount": 1
                         }
                     ]
                 },
@@ -758,16 +160,14 @@
                     "name": "#",
                     "artist": [
                         {
-                            "id": "ar-50",
-                            "name": "\u0394\u03b7\u03bc\u03ae\u03c4\u03c1\u03b7\u03c2 \u039c\u03c0\u03ac\u03ba\u03bf\u03c5\u03bb\u03b7\u03c2",
-                            "coverArt": "ar-50",
-                            "albumCount": 0
+                            "id": "100000012",
+                            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                            "coverArt": "ar-100000012",
+                            "albumCount": 1
                         }
                     ]
                 }
-            ],
-            "lastModified": "1749797953000",
-            "ignoredArticles": "The An A Die Das Ein Eine Les Le La"
+            ]
         }
     }
 }

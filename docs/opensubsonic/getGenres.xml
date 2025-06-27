@@ -1,39 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.7" openSubsonic="1">
   <genres>
-    <genre songCount="189" albumCount="4">Classical</genre>
-    <genre songCount="184" albumCount="2">Baroque</genre>
-    <genre songCount="121" albumCount="7">Hip-Hop</genre>
-    <genre songCount="104" albumCount="15">Electronic</genre>
-    <genre songCount="48" albumCount="3">Hip Hop</genre>
-    <genre songCount="47" albumCount="2">Electronica</genre>
-    <genre songCount="47" albumCount="2">Dance</genre>
-    <genre songCount="36" albumCount="1">Jazz</genre>
-    <genre songCount="36" albumCount="1">Instrumental</genre>
-    <genre songCount="36" albumCount="1">Jazzy Hip-Hop</genre>
-    <genre songCount="36" albumCount="1">Swing</genre>
-    <genre songCount="30" albumCount="2">Noise</genre>
-    <genre songCount="24" albumCount="1">Soundtrack</genre>
-    <genre songCount="22" albumCount="7">Pop</genre>
-    <genre songCount="17" albumCount="5">Trip Hop</genre>
-    <genre songCount="13" albumCount="6">Folk</genre>
-    <genre songCount="12" albumCount="2">Dub</genre>
-    <genre songCount="12" albumCount="2">downtempo</genre>
-    <genre songCount="10" albumCount="3">International</genre>
-    <genre songCount="5" albumCount="3">Soul</genre>
-    <genre songCount="5" albumCount="3">Other</genre>
-    <genre songCount="4" albumCount="2">Old-Time</genre>
-    <genre songCount="4" albumCount="2">Historic</genre>
-    <genre songCount="4" albumCount="2">Acoustic</genre>
-    <genre songCount="4" albumCount="2">Funk</genre>
-    <genre songCount="4" albumCount="2">Country</genre>
-    <genre songCount="4" albumCount="2">Experimental</genre>
-    <genre songCount="4" albumCount="2">Electro</genre>
-    <genre songCount="4" albumCount="1">Instrumental Hip-Hop</genre>
-    <genre songCount="4" albumCount="2">Vocal</genre>
-    <genre songCount="4" albumCount="2">Soul-RnB</genre>
-    <genre songCount="3" albumCount="2">Experimental Pop</genre>
-    <genre songCount="3" albumCount="2">lounge</genre>
-    <genre songCount="2" albumCount="2">triphop</genre>
+    <genre songCount="1" albumCount="1">Punk</genre>
+    <genre songCount="4" albumCount="1">Dark Ambient</genre>
+    <genre songCount="6" albumCount="1">Noise</genre>
+    <genre songCount="11" albumCount="1">Electronica</genre>
+    <genre songCount="11" albumCount="1">Dance</genre>
+    <genre songCount="12" albumCount="1">Electronic</genre>
+    <genre songCount="20" albumCount="1">Hip-Hop</genre>
   </genres>
 </subsonic-response>

@@ -1,50 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.7" openSubsonic="1">
   <internetRadioStations>
-    <internetRadioStation id="li-1" name="HBR1.com - Dream Factory" streamUrl="http://ubuntu.hbr1.com:19800/ambient.aac" homepageUrl="http://www.hbr1.com/"/>
-    <internetRadioStation id="li-2" name="HBR1.com - I.D.M. Tranceponder" streamUrl="http://ubuntu.hbr1.com:19800/trance.ogg" homepageUrl="http://www.hbr1.com/"/>
-    <internetRadioStation id="li-10" name="HBR1.com - Tronic Lounge" streamUrl="http://ubuntu.hbr1.com:19800/tronic.ogg" homepageUrl="http://www.hbr1.com/"/>
-    <internetRadioStation id="li-15" name="HBR1.com - Tronic Lounge" streamUrl="http://ubuntu.hbr1.com:19800/tronic.ogg" homepageUrl="http://www.hbr1.com/"/>
-    <internetRadioStation id="li-20" name="HBR1.com - Tronic Lounge" streamUrl="http://ubuntu.hbr1.com:19800/tronic.ogg" homepageUrl="http://www.hbr1.com/"/>
-    <internetRadioStation id="li-23" name="HBR1.com - Tronic Lounge" streamUrl="http://ubuntu.hbr1.com:19800/tronic.ogg" homepageUrl="http://www.hbr1.com/"/>
-    <internetRadioStation id="li-28" name="HBR1.com - Tronic Lounge" streamUrl="http://ubuntu.hbr1.com:19800/tronic.ogg" homepageUrl="http://www.hbr1.com/"/>
-    <internetRadioStation id="li-32" name="HBR1.com - Tronic Lounge" streamUrl="http://ubuntu.hbr1.com:19800/tronic.ogg" homepageUrl="http://www.hbr1.com/"/>
-    <internetRadioStation id="li-58" name="HBR1.com - Tronic Lounge" streamUrl="http://ubuntu.hbr1.com:19800/tronic.ogg" homepageUrl="http://ampache.org"/>
-    <internetRadioStation id="li-61" name="HBR1.com - Tronic Lounge" streamUrl="http://ubuntu.hbr1.com:19800/tronic.ogg" homepageUrl="http://ampache.org"/>
-    <internetRadioStation id="li-62" name="HBR1.com - Tronic Lounge" streamUrl="http://ubuntu.hbr1.com:19800/tronic.ogg" homepageUrl="http://www.hbr1.com/"/>
-    <internetRadioStation id="li-96" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-97" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-98" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-105" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-106" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-107" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-110" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-111" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-112" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-113" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-114" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-115" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-116" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-117" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-118" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-119" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-120" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-123" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-124" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-125" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-126" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-127" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-128" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-129" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-130" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-131" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-132" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-133" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-134" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-135" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-136" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
-    <internetRadioStation id="li-143" name="HBR1.com - Tronic Lounge" streamUrl="http://ubuntu.hbr1.com:19800/tronic.ogg" homepageUrl="http://www.hbr1.com/"/>
-    <internetRadioStation id="li-287" name="HBR1.com - Tronic Lounge" streamUrl="http://ubuntu.hbr1.com:19800/tronic.ogg" homepageUrl=""/>
-    <internetRadioStation id="li-377" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
+    <internetRadioStation id="1" name="HBR1.com - Dream Factory" streamUrl="http://ubuntu.hbr1.com:19800/ambient.aac" homepageUrl="http://www.hbr1.com/"/>
+    <internetRadioStation id="2" name="HBR1.com - I.D.M. Tranceponder" streamUrl="http://ubuntu.hbr1.com:19800/trance.ogg" homepageUrl="http://www.hbr1.com/"/>
+    <internetRadioStation id="3" name="4ZZZ Community Radio" streamUrl="https://iheart.4zzz.org.au/4zzz" homepageUrl="https://4zzzfm.org.au"/>
   </internetRadioStations>
 </subsonic-response>

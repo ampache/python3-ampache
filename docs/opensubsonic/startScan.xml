@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<<< HEAD:docs/opensubsonic/getVideoInfo.xml
 <subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
-  <scanStatus scanning="false" count="2212"/>
+  <videoInfo id="vi-1"/>
+========
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.7" openSubsonic="1">
+  <scanStatus scanning="false" count="114"/>
+>>>>>>>> api6:docs/opensubsonic/startScan.xml
 </subsonic-response>

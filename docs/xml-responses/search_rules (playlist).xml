@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <rule id="">
+    <name><![CDATA[title]]></name>
+    <label><![CDATA[Name]]></label>
+    <type><![CDATA[text]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Playlist]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[type]]></name>
+    <label><![CDATA[Type]]></label>
+    <type><![CDATA[boolean_numeric]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Playlist]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[owner]]></name>
+    <label><![CDATA[Owner]]></label>
+    <type><![CDATA[user_numeric]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Playlist]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[id]]></name>
+    <label><![CDATA[Database ID]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Playlist]]></title>
+  </rule>
+</root>

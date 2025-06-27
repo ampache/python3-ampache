@@ -1,0 +1,502 @@
+{
+    "rule": [
+        {
+            "name": "title",
+            "label": "Name",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Artist Data"
+        },
+        {
+            "name": "album",
+            "label": "Album Title",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Artist Data"
+        },
+        {
+            "name": "song",
+            "label": "Song Title",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Artist Data"
+        },
+        {
+            "name": "summary",
+            "label": "Summary",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Artist Data"
+        },
+        {
+            "name": "yearformed",
+            "label": "Year Formed",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Artist Data"
+        },
+        {
+            "name": "placeformed",
+            "label": "Place Formed",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Artist Data"
+        },
+        {
+            "name": "time",
+            "label": "Length (in minutes)",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Artist Data"
+        },
+        {
+            "name": "album_count",
+            "label": "Album Count",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Artist Data"
+        },
+        {
+            "name": "song_count",
+            "label": "Song Count",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Artist Data"
+        },
+        {
+            "name": "id",
+            "label": "Database ID",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Artist Data"
+        },
+        {
+            "name": "myrating",
+            "label": "My Rating",
+            "type": "numeric",
+            "widget": [
+                "select",
+                [
+                    "0 Stars",
+                    "1 Star",
+                    "2 Stars",
+                    "3 Stars",
+                    "4 Stars",
+                    "5 Stars"
+                ]
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "rating",
+            "label": "Rating (Average)",
+            "type": "numeric",
+            "widget": [
+                "select",
+                [
+                    "0 Stars",
+                    "1 Star",
+                    "2 Stars",
+                    "3 Stars",
+                    "4 Stars",
+                    "5 Stars"
+                ]
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "songrating",
+            "label": "My Rating (Song)",
+            "type": "numeric",
+            "widget": [
+                "select",
+                [
+                    "0 Stars",
+                    "1 Star",
+                    "2 Stars",
+                    "3 Stars",
+                    "4 Stars",
+                    "5 Stars"
+                ]
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "albumrating",
+            "label": "My Rating (Album)",
+            "type": "numeric",
+            "widget": [
+                "select",
+                [
+                    "0 Stars",
+                    "1 Star",
+                    "2 Stars",
+                    "3 Stars",
+                    "4 Stars",
+                    "5 Stars"
+                ]
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "favorite",
+            "label": "Favorites",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "other_user",
+            "label": "Another User",
+            "type": "user_numeric",
+            "widget": [
+                "select",
+                {
+                    "1": "admin",
+                    "2": "user",
+                    "3": "demo"
+                }
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "played_times",
+            "label": "# Played",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "skipped_times",
+            "label": "# Skipped",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "played_or_skipped_times",
+            "label": "# Played or Skipped",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_play",
+            "label": "My Last Play",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_skip",
+            "label": "My Last Skip",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_play_or_skip",
+            "label": "My Last Play or Skip",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "played",
+            "label": "Played",
+            "type": "boolean",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "myplayed",
+            "label": "Played by Me",
+            "type": "boolean",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "myplayed_times",
+            "label": "# Played by Me",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "myskipped_times",
+            "label": "# Skipped by Me",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "myplayed_or_skipped_times",
+            "label": "# Played or Skipped by Me",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "recent_played",
+            "label": "Recently played",
+            "type": "recent_played",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "genre",
+            "label": "Genre",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Genre"
+        },
+        {
+            "name": "song_genre",
+            "label": "Song Genre",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Genre"
+        },
+        {
+            "name": "no_genre",
+            "label": "No Genre",
+            "type": "is_true",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "Genre"
+        },
+        {
+            "name": "genre_count_song",
+            "label": "Song Count",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Genre"
+        },
+        {
+            "name": "genre_count_album",
+            "label": "Album Count",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Genre"
+        },
+        {
+            "name": "genre_count_artist",
+            "label": "Artist Count",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Genre"
+        },
+        {
+            "name": "playlist",
+            "label": "Playlist",
+            "type": "boolean_subsearch",
+            "widget": [
+                "select",
+                {
+                    "8": "Example Playlist",
+                    "25": "Example Playlist",
+                    "348": "Example Playlist_json"
+                }
+            ],
+            "title": "Playlists"
+        },
+        {
+            "name": "playlist_name",
+            "label": "Playlist Name",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Playlists"
+        },
+        {
+            "name": "file",
+            "label": "Filename",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "has_image",
+            "label": "Local Image",
+            "type": "boolean",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "image_width",
+            "label": "Image Width",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "image_height",
+            "label": "Image Height",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "possible_duplicate",
+            "label": "Possible Duplicate",
+            "type": "is_true",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "possible_duplicate_album",
+            "label": "Possible Duplicate Albums",
+            "type": "is_true",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "catalog",
+            "label": "Catalog",
+            "type": "boolean_numeric",
+            "widget": [
+                "select",
+                {
+                    "1": "music"
+                }
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "mbid",
+            "label": "MusicBrainz ID",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "MusicBrainz"
+        },
+        {
+            "name": "mbid_album",
+            "label": "MusicBrainz ID (Album)",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "MusicBrainz"
+        },
+        {
+            "name": "mbid_song",
+            "label": "MusicBrainz ID (Song)",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "MusicBrainz"
+        }
+    ]
+}

@@ -1,2 +1,4 @@
-<?xml version="1.0"?>
-<song id="so-33" parent="al-3" title="Siempre" isDir="false" isVideo="false" type="music" albumId="al-3" album="Volando por la vida" artistId="ar-14" artist="Seba Lay" coverArt="al-3" duration="285" bitRate="238" userRating="5" track="15" year="2011" size="9245479" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/mnt/music/ampache/music/Seba Lay - Volando por la vida/115 Siempre.mp3"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.7" openSubsonic="1">
+  <song id="300000060" parent="200000002" title="BrownSmoke" isDir="false" isVideo="false" type="music" albumId="200000002" album="Colorsmoke EP" artistId="100000002" artist="Synthetic" coverArt="200000002" duration="304" bitRate="20" userRating="5" track="4" year="2007" genre="Electronic" size="792375" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+</subsonic-response>

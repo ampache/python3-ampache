@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <rule id="">
+    <name><![CDATA[title]]></name>
+    <label><![CDATA[Name]]></label>
+    <type><![CDATA[text]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Podcast Episode]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[podcast]]></name>
+    <label><![CDATA[Podcast]]></label>
+    <type><![CDATA[text]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Podcast Episode]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[state]]></name>
+    <label><![CDATA[Status]]></label>
+    <type><![CDATA[boolean_numeric]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Podcast Episode]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[time]]></name>
+    <label><![CDATA[Length (in minutes)]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Podcast Episode]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[id]]></name>
+    <label><![CDATA[Database ID]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Podcast Episode]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[played_times]]></name>
+    <label><![CDATA[# Played]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[skipped_times]]></name>
+    <label><![CDATA[# Skipped]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[played_or_skipped_times]]></name>
+    <label><![CDATA[# Played or Skipped]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[last_play]]></name>
+    <label><![CDATA[My Last Play]]></label>
+    <type><![CDATA[days]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[last_skip]]></name>
+    <label><![CDATA[My Last Skip]]></label>
+    <type><![CDATA[days]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[last_play_or_skip]]></name>
+    <label><![CDATA[My Last Play or Skip]]></label>
+    <type><![CDATA[days]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[played]]></name>
+    <label><![CDATA[Played]]></label>
+    <type><![CDATA[boolean]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[myplayed]]></name>
+    <label><![CDATA[Played by Me]]></label>
+    <type><![CDATA[boolean]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[myplayed_times]]></name>
+    <label><![CDATA[# Played by Me]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[myskipped_times]]></name>
+    <label><![CDATA[# Skipped by Me]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[myplayed_or_skipped_times]]></name>
+    <label><![CDATA[# Played or Skipped by Me]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[recent_played]]></name>
+    <label><![CDATA[Recently played]]></label>
+    <type><![CDATA[recent_played]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[file]]></name>
+    <label><![CDATA[Filename]]></label>
+    <type><![CDATA[text]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[File Data]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[pubdate]]></name>
+    <label><![CDATA[Publication Date]]></label>
+    <type><![CDATA[date]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[File Data]]></title>
+  </rule>
+  <rule id="">
+    <name><![CDATA[added]]></name>
+    <label><![CDATA[Added]]></label>
+    <type><![CDATA[date]]></type>
+    <widget><![CDATA[Array]]></widget>
+    <title><![CDATA[File Data]]></title>
+  </rule>
+</root>

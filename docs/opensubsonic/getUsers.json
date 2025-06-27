@@ -3,7 +3,7 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "6.6.7",
         "openSubsonic": true,
         "users": {
             "user": [
@@ -24,8 +24,24 @@
                     "videoConversionRole": false
                 },
                 {
+                    "username": "demo",
+                    "email": "demo@gmail.com",
+                    "scrobblingEnabled": true,
+                    "adminRole": false,
+                    "settingsRole": true,
+                    "downloadRole": true,
+                    "playlistRole": true,
+                    "coverArtRole": false,
+                    "commentRole": false,
+                    "podcastRole": true,
+                    "streamRole": true,
+                    "jukeboxRole": true,
+                    "shareRole": true,
+                    "videoConversionRole": false
+                },
+                {
                     "username": "user",
-                    "email": "user@ampache.dev",
+                    "email": "generic@gmail.com",
                     "scrobblingEnabled": true,
                     "adminRole": true,
                     "settingsRole": true,
@@ -40,8 +56,8 @@
                     "videoConversionRole": false
                 },
                 {
-                    "username": "demo",
-                    "email": "demo@ampache.dev",
+                    "username": "generic",
+                    "email": "generic@gmail.com",
                     "scrobblingEnabled": true,
                     "adminRole": false,
                     "settingsRole": true,

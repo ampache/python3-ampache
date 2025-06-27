@@ -3,10 +3,8 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "6.6.7",
         "openSubsonic": true,
-        "nowPlaying": {
-            "entry": []
-        }
+        "nowPlaying": {}
     }
 }

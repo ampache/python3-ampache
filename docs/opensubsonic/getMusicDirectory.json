@@ -3,858 +3,146 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "6.6.7",
         "openSubsonic": true,
         "directory": {
-            "id": "mf-1",
+            "id": "1",
             "name": "music",
             "child": [
                 {
-                    "id": "ar-111",
-                    "parent": "mf-1",
+                    "id": "100000016",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "Alaclair Ensemble",
-                    "artist": "Alaclair Ensemble",
-                    "coverArt": "ar-111"
+                    "title": "CARN\u00daN",
+                    "artist": "CARN\u00daN",
+                    "coverArt": "ar-100000016"
                 },
                 {
-                    "id": "ar-110",
-                    "parent": "mf-1",
+                    "id": "100000027",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "Alex Figueira",
-                    "artist": "Alex Figueira",
-                    "coverArt": "ar-110"
+                    "title": "Chi.Otic",
+                    "artist": "Chi.Otic",
+                    "coverArt": "ar-100000027"
                 },
                 {
-                    "id": "ar-91",
-                    "parent": "mf-1",
+                    "id": "100000034",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "Anitek",
-                    "artist": "Anitek",
-                    "coverArt": "ar-91"
+                    "title": "Comedown Kid",
+                    "artist": "Comedown Kid",
+                    "coverArt": "ar-100000034"
                 },
                 {
-                    "id": "ar-35",
-                    "parent": "mf-1",
+                    "id": "100000013",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "Anji Bee",
-                    "artist": "Anji Bee"
+                    "title": "IOK-1",
+                    "artist": "IOK-1",
+                    "coverArt": "ar-100000013"
                 },
                 {
-                    "id": "ar-115",
-                    "parent": "mf-1",
+                    "id": "100000023",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "Another Brick",
-                    "artist": "Another Brick",
-                    "coverArt": "ar-115"
+                    "title": "Manic Notion",
+                    "artist": "Manic Notion",
+                    "coverArt": "ar-100000023"
                 },
                 {
-                    "id": "ar-108",
-                    "parent": "mf-1",
+                    "id": "100000033",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "Another Day",
-                    "artist": "Another Day",
-                    "coverArt": "ar-108"
+                    "title": "MxBxCx",
+                    "artist": "MxBxCx",
+                    "coverArt": "ar-100000033"
                 },
                 {
-                    "id": "ar-127",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Antony Raijekov",
-                    "artist": "Antony Raijekov",
-                    "coverArt": "ar-127"
-                },
-                {
-                    "id": "ar-48",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Athuzela Brown",
-                    "artist": "Athuzela Brown",
-                    "coverArt": "ar-48"
-                },
-                {
-                    "id": "ar-40",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Aydio",
-                    "artist": "Aydio",
-                    "coverArt": "ar-40"
-                },
-                {
-                    "id": "ar-121",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Benjimanji",
-                    "artist": "Benjimanji",
-                    "coverArt": "ar-121"
-                },
-                {
-                    "id": "ar-41",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Bneg\u00e3o & Os Seletores de Frequ\u00eancia",
-                    "artist": "Bneg\u00e3o & Os Seletores de Frequ\u00eancia",
-                    "coverArt": "ar-41"
-                },
-                {
-                    "id": "ar-11",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Bonus",
-                    "artist": "Bonus",
-                    "coverArt": "ar-11"
-                },
-                {
-                    "id": "ar-118",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Cambo",
-                    "artist": "Cambo",
-                    "coverArt": "ar-118"
-                },
-                {
-                    "id": "ar-66",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Cartas a Felice",
-                    "artist": "Cartas a Felice",
-                    "coverArt": "ar-66"
-                },
-                {
-                    "id": "ar-72",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Caslo",
-                    "artist": "Caslo",
-                    "coverArt": "ar-72"
-                },
-                {
-                    "id": "ar-30",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Celestial Aeon Project",
-                    "artist": "Celestial Aeon Project",
-                    "coverArt": "ar-30"
-                },
-                {
-                    "id": "ar-123",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Chris Zabriskie",
-                    "artist": "Chris Zabriskie",
-                    "coverArt": "ar-123"
-                },
-                {
-                    "id": "ar-17",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Comfort Fit",
-                    "artist": "Comfort Fit",
-                    "coverArt": "ar-17"
-                },
-                {
-                    "id": "ar-70",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Creative Commons",
-                    "artist": "Creative Commons"
-                },
-                {
-                    "id": "ar-4",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Crust",
-                    "artist": "Crust",
-                    "coverArt": "ar-4"
-                },
-                {
-                    "id": "ar-25",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Dad Rocks!",
-                    "artist": "Dad Rocks!",
-                    "coverArt": "ar-25"
-                },
-                {
-                    "id": "ar-56",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Dead Combo",
-                    "artist": "Dead Combo",
-                    "coverArt": "ar-56"
-                },
-                {
-                    "id": "ar-104",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Derek Clegg",
-                    "artist": "Derek Clegg",
-                    "coverArt": "ar-104"
-                },
-                {
-                    "id": "ar-75",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Dieter van der Westen",
-                    "artist": "Dieter van der Westen",
-                    "coverArt": "ar-75"
-                },
-                {
-                    "id": "ar-12",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "DJ Crabees",
-                    "artist": "DJ Crabees"
-                },
-                {
-                    "id": "ar-18",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Dot",
-                    "artist": "Dot",
-                    "coverArt": "ar-18"
-                },
-                {
-                    "id": "ar-45",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "DR SymfoniOrkestret",
-                    "artist": "DR SymfoniOrkestret"
-                },
-                {
-                    "id": "ar-33",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Emerald Park",
-                    "artist": "Emerald Park",
-                    "coverArt": "ar-33"
-                },
-                {
-                    "id": "ar-83",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Eric Van der Westen",
-                    "artist": "Eric Van der Westen",
-                    "coverArt": "ar-83"
-                },
-                {
-                    "id": "ar-98",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Finn Anderson",
-                    "artist": "Finn Anderson",
-                    "coverArt": "ar-98"
-                },
-                {
-                    "id": "ar-114",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Fog Lake",
-                    "artist": "Fog Lake",
-                    "coverArt": "ar-114"
-                },
-                {
-                    "id": "ar-107",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Fotos del Otono",
-                    "artist": "Fotos del Otono",
-                    "coverArt": "ar-107"
-                },
-                {
-                    "id": "ar-92",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Glad Rags",
-                    "artist": "Glad Rags",
-                    "coverArt": "ar-92"
-                },
-                {
-                    "id": "ar-129",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Herrmutt Lobby",
-                    "artist": "Herrmutt Lobby",
-                    "coverArt": "ar-129"
-                },
-                {
-                    "id": "ar-105",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "HoliznaPATREON",
-                    "artist": "HoliznaPATREON",
-                    "coverArt": "ar-105"
-                },
-                {
-                    "id": "ar-22",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Inch Chua",
-                    "artist": "Inch Chua",
-                    "coverArt": "ar-22"
-                },
-                {
-                    "id": "ar-78",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Independent Music Licensing Collective (IMLC)",
-                    "artist": "Independent Music Licensing Collective (IMLC)",
-                    "coverArt": "ar-78"
-                },
-                {
-                    "id": "ar-32",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Inje",
-                    "artist": "Inje",
-                    "coverArt": "ar-32"
-                },
-                {
-                    "id": "ar-73",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "James Pants",
-                    "artist": "James Pants",
-                    "coverArt": "ar-73"
-                },
-                {
-                    "id": "ar-42",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Johann Sebastian Bach",
-                    "artist": "Johann Sebastian Bach",
-                    "coverArt": "ar-42"
-                },
-                {
-                    "id": "ar-88",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Josh Woodward",
-                    "artist": "Josh Woodward",
-                    "coverArt": "ar-88"
-                },
-                {
-                    "id": "ar-76",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Juanitos",
-                    "artist": "Juanitos",
-                    "coverArt": "ar-76"
-                },
-                {
-                    "id": "ar-93",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Jules FK",
-                    "artist": "Jules FK",
-                    "coverArt": "ar-93"
-                },
-                {
-                    "id": "ar-84",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Katy Kirby",
-                    "artist": "Katy Kirby",
-                    "coverArt": "ar-84"
-                },
-                {
-                    "id": "ar-117",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Ketsa",
-                    "artist": "Ketsa",
-                    "coverArt": "ar-117"
-                },
-                {
-                    "id": "ar-135",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Kimiko Douglass-Ishizaka",
-                    "artist": "Kimiko Douglass-Ishizaka"
-                },
-                {
-                    "id": "ar-96",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Kirk Osamayo",
-                    "artist": "Kirk Osamayo",
-                    "coverArt": "ar-96"
-                },
-                {
-                    "id": "ar-102",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Lame Drivers",
-                    "artist": "Lame Drivers",
-                    "coverArt": "ar-102"
-                },
-                {
-                    "id": "ar-120",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Maarten Schellekens",
-                    "artist": "Maarten Schellekens",
-                    "coverArt": "ar-120"
-                },
-                {
-                    "id": "ar-106",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Makaih Beats",
-                    "artist": "Makaih Beats",
-                    "coverArt": "ar-106"
-                },
-                {
-                    "id": "ar-116",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Malaventura",
-                    "artist": "Malaventura",
-                    "coverArt": "ar-116"
-                },
-                {
-                    "id": "ar-89",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Maybe Watson",
-                    "artist": "Maybe Watson",
-                    "coverArt": "ar-89"
-                },
-                {
-                    "id": "ar-43",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Mc Norman",
-                    "artist": "Mc Norman",
-                    "coverArt": "ar-43"
-                },
-                {
-                    "id": "ar-9",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Melodiesinfonie",
-                    "artist": "Melodiesinfonie",
-                    "coverArt": "ar-9"
-                },
-                {
-                    "id": "ar-54",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Mendes Brothers",
-                    "artist": "Mendes Brothers",
-                    "coverArt": "ar-54"
-                },
-                {
-                    "id": "ar-133",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Mezonom",
-                    "artist": "Mezonom",
-                    "coverArt": "ar-133"
-                },
-                {
-                    "id": "ar-29",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Mistakemistake",
-                    "artist": "Mistakemistake"
-                },
-                {
-                    "id": "ar-10",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Mister Colfer",
-                    "artist": "Mister Colfer"
-                },
-                {
-                    "id": "ar-47",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Monk",
-                    "artist": "Monk",
-                    "coverArt": "ar-47"
-                },
-                {
-                    "id": "ar-16",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Moon Reflecting",
-                    "artist": "Moon Reflecting"
-                },
-                {
-                    "id": "ar-7",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Morsa",
-                    "artist": "Morsa",
-                    "coverArt": "ar-7"
-                },
-                {
-                    "id": "ar-80",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Nangdo",
-                    "artist": "Nangdo",
-                    "coverArt": "ar-80"
-                },
-                {
-                    "id": "ar-58",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Nero One",
-                    "artist": "Nero One",
-                    "coverArt": "ar-58"
-                },
-                {
-                    "id": "ar-52",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "NIM",
-                    "artist": "NIM",
-                    "coverArt": "ar-52"
-                },
-                {
-                    "id": "ar-67",
-                    "parent": "mf-1",
+                    "id": "100000014",
+                    "parent": "1",
                     "isDir": true,
                     "title": "Nofi/found.",
-                    "artist": "Nofi/found.",
-                    "coverArt": "ar-67"
+                    "artist": "Nofi/found."
                 },
                 {
-                    "id": "ar-37",
-                    "parent": "mf-1",
+                    "id": "100000020",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "One in a Googolplex",
-                    "artist": "One in a Googolplex",
-                    "coverArt": "ar-37"
+                    "title": "R/B",
+                    "artist": "R/B",
+                    "coverArt": "ar-100000020"
                 },
                 {
-                    "id": "ar-100",
-                    "parent": "mf-1",
+                    "id": "100000032",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "One Man Book",
-                    "artist": "One Man Book",
-                    "coverArt": "ar-100"
+                    "title": "Shorty Mac",
+                    "artist": "Shorty Mac",
+                    "coverArt": "ar-100000032"
                 },
                 {
-                    "id": "ar-20",
-                    "parent": "mf-1",
+                    "id": "100000026",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "Ortalio",
-                    "artist": "Ortalio",
-                    "coverArt": "ar-20"
+                    "title": "Stress Builds Character",
+                    "artist": "Stress Builds Character",
+                    "coverArt": "ar-100000026"
                 },
                 {
-                    "id": "ar-44",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Periskop",
-                    "artist": "Periskop",
-                    "coverArt": "ar-44"
-                },
-                {
-                    "id": "ar-6",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "ProleteR",
-                    "artist": "ProleteR",
-                    "coverArt": "ar-6"
-                },
-                {
-                    "id": "ar-62",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Qina",
-                    "artist": "Qina",
-                    "coverArt": "ar-62"
-                },
-                {
-                    "id": "ar-27",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Rey Nocivo",
-                    "artist": "Rey Nocivo",
-                    "coverArt": "ar-27"
-                },
-                {
-                    "id": "ar-95",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Rocky Marsiano",
-                    "artist": "Rocky Marsiano",
-                    "coverArt": "ar-95"
-                },
-                {
-                    "id": "ar-125",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Sci Fi Industries",
-                    "artist": "Sci Fi Industries",
-                    "coverArt": "ar-125"
-                },
-                {
-                    "id": "ar-38",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Scott Buckley",
-                    "artist": "Scott Buckley",
-                    "coverArt": "ar-38"
-                },
-                {
-                    "id": "ar-99",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Scott Jacobs",
-                    "artist": "Scott Jacobs",
-                    "coverArt": "ar-99"
-                },
-                {
-                    "id": "ar-14",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Seba Lay",
-                    "artist": "Seba Lay",
-                    "coverArt": "ar-14"
-                },
-                {
-                    "id": "ar-31",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Shoes and Socks Off",
-                    "artist": "Shoes and Socks Off",
-                    "coverArt": "ar-31"
-                },
-                {
-                    "id": "ar-79",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Silva de Alegria",
-                    "artist": "Silva de Alegria",
-                    "coverArt": "ar-79"
-                },
-                {
-                    "id": "ar-64",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Sly Collins",
-                    "artist": "Sly Collins",
-                    "coverArt": "ar-64"
-                },
-                {
-                    "id": "ar-68",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Sofia Hershberger",
-                    "artist": "Sofia Hershberger",
-                    "coverArt": "ar-68"
-                },
-                {
-                    "id": "ar-23",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Stormy Mondays",
-                    "artist": "Stormy Mondays",
-                    "coverArt": "ar-23"
-                },
-                {
-                    "id": "ar-131",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "StrangeZero",
-                    "artist": "StrangeZero",
-                    "coverArt": "ar-131"
-                },
-                {
-                    "id": "ar-15",
-                    "parent": "mf-1",
+                    "id": "100000011",
+                    "parent": "1",
                     "isDir": true,
                     "title": "structura",
                     "artist": "structura",
-                    "coverArt": "ar-15"
+                    "coverArt": "ar-100000011"
                 },
                 {
-                    "id": "ar-46",
-                    "parent": "mf-1",
+                    "id": "100000002",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "TaaPet",
-                    "artist": "TaaPet",
-                    "coverArt": "ar-46"
+                    "title": "Synthetic",
+                    "artist": "Synthetic",
+                    "coverArt": "ar-100000002"
                 },
                 {
-                    "id": "ar-34",
-                    "parent": "mf-1",
+                    "id": "100000035",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "Takeru Ishikawa",
-                    "artist": "Takeru Ishikawa",
-                    "coverArt": "ar-34"
+                    "title": "Tip-C",
+                    "artist": "Tip-C",
+                    "coverArt": "ar-100000035"
                 },
                 {
-                    "id": "ar-26",
-                    "parent": "mf-1",
+                    "id": "100000021",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "Tamara Laurel",
-                    "artist": "Tamara Laurel",
-                    "coverArt": "ar-26"
+                    "title": "Tip-C (featuring Mike Beers)",
+                    "artist": "Tip-C (featuring Mike Beers)",
+                    "coverArt": "ar-100000021"
                 },
                 {
-                    "id": "ar-8",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Taskrok",
-                    "artist": "Taskrok"
-                },
-                {
-                    "id": "ar-36",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "The Black Atlantic",
-                    "artist": "The Black Atlantic",
-                    "coverArt": "ar-36"
-                },
-                {
-                    "id": "ar-97",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "The Freak Fandango Orchestra",
-                    "artist": "The Freak Fandango Orchestra",
-                    "coverArt": "ar-97"
-                },
-                {
-                    "id": "ar-13",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "The Global Optimistic",
-                    "artist": "The Global Optimistic",
-                    "coverArt": "ar-13"
-                },
-                {
-                    "id": "ar-90",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "The Joy Drops",
-                    "artist": "The Joy Drops",
-                    "coverArt": "ar-90"
-                },
-                {
-                    "id": "ar-112",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "The Kyoto Connection",
-                    "artist": "The Kyoto Connection",
-                    "coverArt": "ar-112"
-                },
-                {
-                    "id": "ar-109",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "The New Valleys",
-                    "artist": "The New Valleys",
-                    "coverArt": "ar-109"
-                },
-                {
-                    "id": "ar-5",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Tone",
-                    "artist": "Tone",
-                    "coverArt": "ar-5"
-                },
-                {
-                    "id": "ar-39",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Triolocria",
-                    "artist": "Triolocria",
-                    "coverArt": "ar-39"
-                },
-                {
-                    "id": "ar-81",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Turku",
-                    "artist": "Turku",
-                    "coverArt": "ar-81"
-                },
-                {
-                    "id": "ar-24",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Tvrd\u00fd / Havelka",
-                    "artist": "Tvrd\u00fd / Havelka",
-                    "coverArt": "ar-24"
-                },
-                {
-                    "id": "ar-1",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Usta",
-                    "artist": "Usta",
-                    "coverArt": "ar-1"
-                },
-                {
-                    "id": "ar-2",
-                    "parent": "mf-1",
+                    "id": "100000019",
+                    "parent": "1",
                     "isDir": true,
                     "title": "Various Artists",
                     "artist": "Various Artists",
-                    "coverArt": "ar-2"
+                    "coverArt": "ar-100000019"
                 },
                 {
-                    "id": "ar-86",
-                    "parent": "mf-1",
+                    "id": "100000015",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "Vienna Ditto",
-                    "artist": "Vienna Ditto",
-                    "coverArt": "ar-86"
+                    "title": "Warfare 3.0",
+                    "artist": "Warfare 3.0",
+                    "coverArt": "ar-100000015"
                 },
                 {
-                    "id": "ar-3",
-                    "parent": "mf-1",
+                    "id": "100000012",
+                    "parent": "1",
                     "isDir": true,
-                    "title": "Volfoniq",
-                    "artist": "Volfoniq",
-                    "coverArt": "ar-3"
-                },
-                {
-                    "id": "ar-28",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Wikluh Sky",
-                    "artist": "Wikluh Sky",
-                    "coverArt": "ar-28"
-                },
-                {
-                    "id": "ar-60",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "YEIZON",
-                    "artist": "YEIZON",
-                    "coverArt": "ar-60"
-                },
-                {
-                    "id": "ar-21",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Zimbalista",
-                    "artist": "Zimbalista",
-                    "coverArt": "ar-21"
-                },
-                {
-                    "id": "ar-19",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "Zoe.LeelA",
-                    "artist": "Zoe.LeelA",
-                    "coverArt": "ar-19"
-                },
-                {
-                    "id": "ar-50",
-                    "parent": "mf-1",
-                    "isDir": true,
-                    "title": "\u0394\u03b7\u03bc\u03ae\u03c4\u03c1\u03b7\u03c2 \u039c\u03c0\u03ac\u03ba\u03bf\u03c5\u03bb\u03b7\u03c2",
-                    "artist": "\u0394\u03b7\u03bc\u03ae\u03c4\u03c1\u03b7\u03c2 \u039c\u03c0\u03ac\u03ba\u03bf\u03c5\u03bb\u03b7\u03c2",
-                    "coverArt": "ar-50"
+                    "title": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                    "artist": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                    "coverArt": "ar-100000012"
                 }
             ]
         }

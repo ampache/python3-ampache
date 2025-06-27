@@ -1,9 +1,13 @@
 {
     "subsonic-response": {
-        "status": "ok",
+        "status": "failed",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
-        "openSubsonic": true
+        "serverVersion": "6.6.7",
+        "openSubsonic": true,
+        "error": {
+            "code": 50,
+            "message": "User is not authorized for the given operation."
+        }
     }
 }
