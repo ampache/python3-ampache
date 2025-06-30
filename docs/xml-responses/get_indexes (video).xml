@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <total_count>3</total_count>
+  <md5>de7bb46c5a98600c622f186fc0675bbc</md5>
+  <video id="2">
+    <name><![CDATA[sample-mp4-file]]></name>
+    <title><![CDATA[sample-mp4-file]]></title>
+    <mime><![CDATA[video/mp4]]></mime>
+    <resolution><![CDATA[320x240]]></resolution>
+    <size>10546620</size>
+    <time><![CDATA[125]]></time>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=video&oid=2&uid=2&player=api&name=sample-mp4-file.mp4]]></url>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=video&name=art.png]]></art>
+    <has_art>0</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+  </video>
+  <video id="3">
+    <name><![CDATA[sample-ogv-file]]></name>
+    <title><![CDATA[sample-ogv-file]]></title>
+    <mime><![CDATA[video/ogg]]></mime>
+    <resolution><![CDATA[320x240]]></resolution>
+    <size>5407067</size>
+    <time><![CDATA[0]]></time>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=video&oid=3&uid=2&player=api&name=sample-ogv-file.ogv]]></url>
+    <art><![CDATA[https://music.com.au/image.php?object_id=3&object_type=video&name=art.png]]></art>
+    <has_art>0</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+  </video>
+  <video id="1">
+    <name><![CDATA[sample-webm-file]]></name>
+    <title><![CDATA[sample-webm-file]]></title>
+    <mime><![CDATA[video/webm]]></mime>
+    <resolution><![CDATA[320x240]]></resolution>
+    <size>12615807</size>
+    <time><![CDATA[126]]></time>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=video&oid=1&uid=2&player=api&name=sample-webm-file.webm]]></url>
+    <art><![CDATA[https://music.com.au/image.php?object_id=1&object_type=video&name=art.png]]></art>
+    <has_art>0</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+  </video>
+</root>

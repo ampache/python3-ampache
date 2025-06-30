@@ -1,48 +1,8 @@
-[
-    {
-        "id": "65300",
-        "name": "Lords of Rephaim",
-        "artist": {
-            "id": "11725",
-            "name": "Pathology"
-        },
-        "year": 2013,
-        "tracks": 13,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "2750",
-                "name": "Slamming Brutal Death Metal"
-            }
-        ],
-        "art": "https://music.com.au\/image.php?object_id=65300&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "1070fe1e-8e44-490f-8a21-2c5fea1104fa"
-    },
-    {
-        "id": "65295",
-        "name": "Throne of Reign",
-        "artist": {
-            "id": "11725",
-            "name": "Pathology"
-        },
-        "year": 2014,
-        "tracks": 9,
-        "disk": 1,
-        "tag": [
-            {
-                "id": "2750",
-                "name": "Slamming Brutal Death Metal"
-            }
-        ],
-        "art": "https://music.com.au\/image.php?object_id=65295&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "05d5b9f0-9728-403a-becf-b21187eac334"
+{
+    "error": {
+        "errorCode": "4706",
+        "errorAction": "tag_albums",
+        "errorType": "removed",
+        "errorMessage": "Deprecated"
     }
-]
+}

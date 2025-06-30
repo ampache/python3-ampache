@@ -1,0 +1,2946 @@
+{
+    "total_count": 15,
+    "md5": "9947683d7b7cef7dcfd4267f1e3a2879",
+    "artist": [
+        {
+            "id": "40",
+            "name": "Aydio",
+            "prefix": null,
+            "basename": "Aydio",
+            "albums": [
+                {
+                    "id": "25",
+                    "name": "Deltitnu",
+                    "prefix": null,
+                    "basename": "Deltitnu",
+                    "artist": {
+                        "id": "40",
+                        "name": "Aydio",
+                        "prefix": null,
+                        "basename": "Aydio"
+                    },
+                    "artists": [
+                        {
+                            "id": "40",
+                            "name": "Aydio",
+                            "prefix": null,
+                            "basename": "Aydio"
+                        }
+                    ],
+                    "songartists": [
+                        {
+                            "id": "40",
+                            "name": "Aydio",
+                            "prefix": null,
+                            "basename": "Aydio"
+                        }
+                    ],
+                    "time": 1234,
+                    "year": 2009,
+                    "tracks": [],
+                    "songcount": 4,
+                    "diskcount": 1,
+                    "type": "ep",
+                    "genre": [
+                        {
+                            "id": "2",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Trip Hop"
+                        },
+                        {
+                            "id": "4",
+                            "name": "Hip Hop"
+                        },
+                        {
+                            "id": "32",
+                            "name": "Dub"
+                        },
+                        {
+                            "id": "33",
+                            "name": "downtempo"
+                        }
+                    ],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=25&object_type=album",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "mbid": "c7fa799d-eda2-411c-bce6-2d3ef3a3270b",
+                    "mbid_group": "829295d5-28e3-4214-9ddd-623d61a1f42e"
+                }
+            ],
+            "albumcount": 1,
+            "songs": [
+                {
+                    "id": "101",
+                    "title": "Track",
+                    "name": "Track",
+                    "artist": {
+                        "id": "40",
+                        "name": "Aydio",
+                        "prefix": null,
+                        "basename": "Aydio"
+                    },
+                    "artists": [
+                        {
+                            "id": "40",
+                            "name": "Aydio",
+                            "prefix": null,
+                            "basename": "Aydio"
+                        }
+                    ],
+                    "album": {
+                        "id": "25",
+                        "name": "Deltitnu",
+                        "prefix": null,
+                        "basename": "Deltitnu"
+                    },
+                    "albumartist": {
+                        "id": "40",
+                        "name": "Aydio",
+                        "prefix": null,
+                        "basename": "Aydio"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/music\/Deltitnu\/01 Track.mp3",
+                    "genre": [
+                        {
+                            "id": "2",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "4",
+                            "name": "Hip Hop"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Trip Hop"
+                        },
+                        {
+                            "id": "32",
+                            "name": "Dub"
+                        },
+                        {
+                            "id": "33",
+                            "name": "downtempo"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 360,
+                    "year": 2009,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 320000,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=101&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Aydio%20-%20Track.mp3",
+                    "size": 14531877,
+                    "mbid": "8159fcc5-a043-4a23-8b61-2dc86525cb50",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=25&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": "Aydio",
+                    "channels": 2,
+                    "comment": "[DWK031]",
+                    "license": null,
+                    "publisher": "Dusted Wax Kingdom",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "100",
+                    "title": "Deltitnu",
+                    "name": "Deltitnu",
+                    "artist": {
+                        "id": "40",
+                        "name": "Aydio",
+                        "prefix": null,
+                        "basename": "Aydio"
+                    },
+                    "artists": [
+                        {
+                            "id": "40",
+                            "name": "Aydio",
+                            "prefix": null,
+                            "basename": "Aydio"
+                        }
+                    ],
+                    "album": {
+                        "id": "25",
+                        "name": "Deltitnu",
+                        "prefix": null,
+                        "basename": "Deltitnu"
+                    },
+                    "albumartist": {
+                        "id": "40",
+                        "name": "Aydio",
+                        "prefix": null,
+                        "basename": "Aydio"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 2,
+                    "filename": "\/mnt\/music\/Deltitnu\/02 Deltitnu.mp3",
+                    "genre": [
+                        {
+                            "id": "2",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "4",
+                            "name": "Hip Hop"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Trip Hop"
+                        },
+                        {
+                            "id": "32",
+                            "name": "Dub"
+                        },
+                        {
+                            "id": "33",
+                            "name": "downtempo"
+                        }
+                    ],
+                    "playlisttrack": 2,
+                    "time": 264,
+                    "year": 2009,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 320000,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=100&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Aydio%20-%20Deltitnu.mp3",
+                    "size": 10695802,
+                    "mbid": "39f574aa-d1f9-48f6-b384-cd070ba05b78",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=25&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": true,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": "Aydio",
+                    "channels": 2,
+                    "comment": "[DWK031]",
+                    "license": null,
+                    "publisher": "Dusted Wax Kingdom",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "102",
+                    "title": "XHD",
+                    "name": "XHD",
+                    "artist": {
+                        "id": "40",
+                        "name": "Aydio",
+                        "prefix": null,
+                        "basename": "Aydio"
+                    },
+                    "artists": [
+                        {
+                            "id": "40",
+                            "name": "Aydio",
+                            "prefix": null,
+                            "basename": "Aydio"
+                        }
+                    ],
+                    "album": {
+                        "id": "25",
+                        "name": "Deltitnu",
+                        "prefix": null,
+                        "basename": "Deltitnu"
+                    },
+                    "albumartist": {
+                        "id": "40",
+                        "name": "Aydio",
+                        "prefix": null,
+                        "basename": "Aydio"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 3,
+                    "filename": "\/mnt\/music\/Deltitnu\/03 XHD.mp3",
+                    "genre": [
+                        {
+                            "id": "2",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "4",
+                            "name": "Hip Hop"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Trip Hop"
+                        },
+                        {
+                            "id": "32",
+                            "name": "Dub"
+                        },
+                        {
+                            "id": "33",
+                            "name": "downtempo"
+                        }
+                    ],
+                    "playlisttrack": 3,
+                    "time": 295,
+                    "year": 2009,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 320000,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=102&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Aydio%20-%20XHD.mp3",
+                    "size": 11944670,
+                    "mbid": "391c1d9f-0e06-47c1-8949-077054e45287",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=25&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 2,
+                    "catalog": 1,
+                    "composer": "Aydio",
+                    "channels": 2,
+                    "comment": "[DWK031]",
+                    "license": null,
+                    "publisher": "Dusted Wax Kingdom",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "103",
+                    "title": "Step One",
+                    "name": "Step One",
+                    "artist": {
+                        "id": "40",
+                        "name": "Aydio",
+                        "prefix": null,
+                        "basename": "Aydio"
+                    },
+                    "artists": [
+                        {
+                            "id": "40",
+                            "name": "Aydio",
+                            "prefix": null,
+                            "basename": "Aydio"
+                        }
+                    ],
+                    "album": {
+                        "id": "25",
+                        "name": "Deltitnu",
+                        "prefix": null,
+                        "basename": "Deltitnu"
+                    },
+                    "albumartist": {
+                        "id": "40",
+                        "name": "Aydio",
+                        "prefix": null,
+                        "basename": "Aydio"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 4,
+                    "filename": "\/mnt\/music\/Deltitnu\/04 Step One.mp3",
+                    "genre": [
+                        {
+                            "id": "2",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "4",
+                            "name": "Hip Hop"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Trip Hop"
+                        },
+                        {
+                            "id": "32",
+                            "name": "Dub"
+                        },
+                        {
+                            "id": "33",
+                            "name": "downtempo"
+                        }
+                    ],
+                    "playlisttrack": 4,
+                    "time": 315,
+                    "year": 2009,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 320000,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=103&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Aydio%20-%20Step%20One.mp3",
+                    "size": 12742756,
+                    "mbid": "9a26606c-018b-440d-a1a6-df553bca1acf",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=25&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": true,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": "Aydio",
+                    "channels": 2,
+                    "comment": "[DWK031]",
+                    "license": null,
+                    "publisher": "Dusted Wax Kingdom",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
+            "songcount": 4,
+            "genre": [
+                {
+                    "id": "2",
+                    "name": "Electronic"
+                },
+                {
+                    "id": "22",
+                    "name": "Trip Hop"
+                },
+                {
+                    "id": "4",
+                    "name": "Hip Hop"
+                },
+                {
+                    "id": "32",
+                    "name": "Dub"
+                },
+                {
+                    "id": "33",
+                    "name": "downtempo"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=40&object_type=artist",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "e61abad3-e61e-4187-b077-977d635ba267",
+            "summary": "http:\/\/www.aydio.net\n\nAydio is Adam Harper, a London-based musician, producer, DJ and visual artist. His music consists mainly of downtempo electronica, with hip-hop, dub, rock and jazz influences along with a variety of other forms of music. Since 2009 he has released 3 EPs on netlabels Dusted Wax Kingdom and KraaK Records, and in 2010, he released his debut full-length release, \u2018Nonentity\u2019.\n\nHis new LP, 'The Second', released in 2013, continues along the same lines ",
+            "time": 1234,
+            "yearformed": 0,
+            "placeformed": null
+        },
+        {
+            "id": "123",
+            "name": "Chris Zabriskie",
+            "prefix": null,
+            "basename": "Chris Zabriskie",
+            "albums": [
+                {
+                    "id": "19",
+                    "name": "I Made This While You Were Asleep",
+                    "prefix": null,
+                    "basename": "I Made This While You Were Asleep",
+                    "artist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "artists": [
+                        {
+                            "id": "123",
+                            "name": "Chris Zabriskie",
+                            "prefix": null,
+                            "basename": "Chris Zabriskie"
+                        }
+                    ],
+                    "songartists": [
+                        {
+                            "id": "123",
+                            "name": "Chris Zabriskie",
+                            "prefix": null,
+                            "basename": "Chris Zabriskie"
+                        }
+                    ],
+                    "time": 2674,
+                    "year": 2020,
+                    "tracks": [],
+                    "songcount": 7,
+                    "diskcount": 1,
+                    "type": "album",
+                    "genre": [],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=19&object_type=album",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "mbid": "fa034906-26a3-4680-b93b-8a4bd74b0594",
+                    "mbid_group": "d5d8140b-5bf9-48bf-97d9-04b920a68dd8"
+                }
+            ],
+            "albumcount": 1,
+            "songs": [
+                {
+                    "id": "253",
+                    "title": "I'm About to Do the Second Hardest Thing I've Ever Done",
+                    "name": "I'm About to Do the Second Hardest Thing I've Ever Done",
+                    "artist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "artists": [
+                        {
+                            "id": "123",
+                            "name": "Chris Zabriskie",
+                            "prefix": null,
+                            "basename": "Chris Zabriskie"
+                        }
+                    ],
+                    "album": {
+                        "id": "19",
+                        "name": "I Made This While You Were Asleep",
+                        "prefix": null,
+                        "basename": "I Made This While You Were Asleep"
+                    },
+                    "albumartist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/music\/Chris Zabriskie - I Made This While You Were Asleep\/101 I'm About to Do the Second Hardest Thing I've Ever Done.mp3",
+                    "genre": [],
+                    "playlisttrack": 1,
+                    "time": 400,
+                    "year": 2020,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 238459,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=253&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20I-m%20About%20to%20Do%20the%20Second%20Hardest%20Thing%20I-ve%20Ever%20Done.mp3",
+                    "size": 12154782,
+                    "mbid": "962d0fda-4659-4045-8c27-2673d86a21b1",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=19&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/chriszabriskie.bandcamp.com",
+                    "license": null,
+                    "publisher": null,
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "252",
+                    "title": "I Knew My Way Downtown and Walking Was Deluxe",
+                    "name": "I Knew My Way Downtown and Walking Was Deluxe",
+                    "artist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "artists": [
+                        {
+                            "id": "123",
+                            "name": "Chris Zabriskie",
+                            "prefix": null,
+                            "basename": "Chris Zabriskie"
+                        }
+                    ],
+                    "album": {
+                        "id": "19",
+                        "name": "I Made This While You Were Asleep",
+                        "prefix": null,
+                        "basename": "I Made This While You Were Asleep"
+                    },
+                    "albumartist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 2,
+                    "filename": "\/mnt\/music\/Chris Zabriskie - I Made This While You Were Asleep\/102 I Knew My Way Downtown and Walking Was Deluxe.mp3",
+                    "genre": [],
+                    "playlisttrack": 2,
+                    "time": 271,
+                    "year": 2020,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 239741,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=252&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20I%20Knew%20My%20Way%20Downtown%20and%20Walking%20Was%20Deluxe.mp3",
+                    "size": 8361951,
+                    "mbid": "70adddff-fae1-4afb-a4ef-57b4a2994794",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=19&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/chriszabriskie.bandcamp.com",
+                    "license": null,
+                    "publisher": null,
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "254",
+                    "title": "Editing Beyond the Door III Again",
+                    "name": "Editing Beyond the Door III Again",
+                    "artist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "artists": [
+                        {
+                            "id": "123",
+                            "name": "Chris Zabriskie",
+                            "prefix": null,
+                            "basename": "Chris Zabriskie"
+                        }
+                    ],
+                    "album": {
+                        "id": "19",
+                        "name": "I Made This While You Were Asleep",
+                        "prefix": null,
+                        "basename": "I Made This While You Were Asleep"
+                    },
+                    "albumartist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 3,
+                    "filename": "\/mnt\/music\/Chris Zabriskie - I Made This While You Were Asleep\/103 Editing Beyond the Door III Again.mp3",
+                    "genre": [],
+                    "playlisttrack": 3,
+                    "time": 390,
+                    "year": 2020,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 240416,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=254&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20Editing%20Beyond%20the%20Door%20III%20Again.mp3",
+                    "size": 11965131,
+                    "mbid": "5fb7fd49-be50-44fe-b4e1-876a717d1639",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=19&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": true,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/chriszabriskie.bandcamp.com",
+                    "license": null,
+                    "publisher": null,
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "249",
+                    "title": "Everyone Will Notice, No One Will Say Anything",
+                    "name": "Everyone Will Notice, No One Will Say Anything",
+                    "artist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "artists": [
+                        {
+                            "id": "123",
+                            "name": "Chris Zabriskie",
+                            "prefix": null,
+                            "basename": "Chris Zabriskie"
+                        }
+                    ],
+                    "album": {
+                        "id": "19",
+                        "name": "I Made This While You Were Asleep",
+                        "prefix": null,
+                        "basename": "I Made This While You Were Asleep"
+                    },
+                    "albumartist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 4,
+                    "filename": "\/mnt\/music\/Chris Zabriskie - I Made This While You Were Asleep\/104 Everyone Will Notice, No One Will Say Anything.mp3",
+                    "genre": [],
+                    "playlisttrack": 4,
+                    "time": 378,
+                    "year": 2020,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 236923,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=249&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20Everyone%20Will%20Notice-%20No%20One%20Will%20Say%20Anything.mp3",
+                    "size": 11452963,
+                    "mbid": "3a93bb6b-8b94-4442-a95b-fa3d9b0e388b",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=19&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/chriszabriskie.bandcamp.com",
+                    "license": null,
+                    "publisher": null,
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "251",
+                    "title": "Everyone Will Notice, No One Will Say Anything",
+                    "name": "Everyone Will Notice, No One Will Say Anything",
+                    "artist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "artists": [
+                        {
+                            "id": "123",
+                            "name": "Chris Zabriskie",
+                            "prefix": null,
+                            "basename": "Chris Zabriskie"
+                        }
+                    ],
+                    "album": {
+                        "id": "19",
+                        "name": "I Made This While You Were Asleep",
+                        "prefix": null,
+                        "basename": "I Made This While You Were Asleep"
+                    },
+                    "albumartist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 4,
+                    "filename": "\/mnt\/music\/Chris Zabriskie - I Made This While You Were Asleep\/104 Everyone Will Notice, No One Will Say Anything.mp3",
+                    "genre": [],
+                    "playlisttrack": 5,
+                    "time": 378,
+                    "year": 2020,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 236923,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=251&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20Everyone%20Will%20Notice-%20No%20One%20Will%20Say%20Anything.mp3",
+                    "size": 11452963,
+                    "mbid": "3a93bb6b-8b94-4442-a95b-fa3d9b0e388b",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=19&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/chriszabriskie.bandcamp.com",
+                    "license": null,
+                    "publisher": null,
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "255",
+                    "title": "You Fiddle, I'll Burn Rome",
+                    "name": "You Fiddle, I'll Burn Rome",
+                    "artist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "artists": [
+                        {
+                            "id": "123",
+                            "name": "Chris Zabriskie",
+                            "prefix": null,
+                            "basename": "Chris Zabriskie"
+                        }
+                    ],
+                    "album": {
+                        "id": "19",
+                        "name": "I Made This While You Were Asleep",
+                        "prefix": null,
+                        "basename": "I Made This While You Were Asleep"
+                    },
+                    "albumartist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 5,
+                    "filename": "\/mnt\/music\/Chris Zabriskie - I Made This While You Were Asleep\/105 You Fiddle, I'll Burn Rome.mp3",
+                    "genre": [],
+                    "playlisttrack": 6,
+                    "time": 318,
+                    "year": 2020,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 236287,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=255&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20You%20Fiddle-%20I-ll%20Burn%20Rome.mp3",
+                    "size": 9639211,
+                    "mbid": "5af0eac6-52fc-4111-a8a8-5a04c328eed0",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=19&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/chriszabriskie.bandcamp.com",
+                    "license": null,
+                    "publisher": null,
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "250",
+                    "title": "Keep Up the Momentum, Friend",
+                    "name": "Keep Up the Momentum, Friend",
+                    "artist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "artists": [
+                        {
+                            "id": "123",
+                            "name": "Chris Zabriskie",
+                            "prefix": null,
+                            "basename": "Chris Zabriskie"
+                        }
+                    ],
+                    "album": {
+                        "id": "19",
+                        "name": "I Made This While You Were Asleep",
+                        "prefix": null,
+                        "basename": "I Made This While You Were Asleep"
+                    },
+                    "albumartist": {
+                        "id": "123",
+                        "name": "Chris Zabriskie",
+                        "prefix": null,
+                        "basename": "Chris Zabriskie"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 6,
+                    "filename": "\/mnt\/music\/Chris Zabriskie - I Made This While You Were Asleep\/106 Keep Up the Momentum, Friend.mp3",
+                    "genre": [],
+                    "playlisttrack": 7,
+                    "time": 539,
+                    "year": 2020,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 238240,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=250&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20Keep%20Up%20the%20Momentum-%20Friend.mp3",
+                    "size": 16287117,
+                    "mbid": "d5f35ea6-f362-4b27-9bcc-3852381e7444",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=19&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/chriszabriskie.bandcamp.com",
+                    "license": null,
+                    "publisher": null,
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
+            "songcount": 7,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=123&object_type=artist",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "cd661c5c-c9ce-42ff-83f8-7b1dd1515d64",
+            "summary": "Chris Zabriskie is a musician and composer of \"mostly quiet\" ambient, piano, and electronic albums.\n\nZabriskie got his musical start in prolific noise band Struggleburger, but was forced into going solo one night after the rest of the group failed to show up for a live performance. After spending nearly six years on a concept album about the Disney sci-fi film The Black Hole, he abandoned the project and released it unfinished online. Two more acoustic-based solo records followed ",
+            "time": 2674,
+            "yearformed": 0,
+            "placeformed": null
+        },
+        {
+            "id": "17",
+            "name": "Comfort Fit",
+            "prefix": null,
+            "basename": "Comfort Fit",
+            "albums": [
+                {
+                    "id": "27",
+                    "name": "Forget and Remember",
+                    "prefix": null,
+                    "basename": "Forget and Remember",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "songartists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "time": 4248,
+                    "year": 2005,
+                    "tracks": [],
+                    "songcount": 20,
+                    "diskcount": 1,
+                    "type": "album",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+                    "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
+                }
+            ],
+            "albumcount": 1,
+            "songs": [
+                {
+                    "id": "52",
+                    "title": "Can I Help U?",
+                    "name": "Can I Help U?",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/music\/Comfort fit\/1 - Can I Help U?.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 103,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 216839,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=52&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Can%20I%20Help%20U-.mp3",
+                    "size": 3045291,
+                    "mbid": "51d0e252-f20c-414c-b169-8dcf18ef9d26",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-01-comfort_fit-can_i_help_u\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "60",
+                    "title": "Planetary Picknick",
+                    "name": "Planetary Picknick",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 2,
+                    "filename": "\/mnt\/music\/Comfort fit\/2 - Planetary Picknick.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 2,
+                    "time": 358,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 238812,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=60&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Planetary%20Picknick.mp3",
+                    "size": 10940872,
+                    "mbid": "6defae67-37da-4a85-90f6-80df5c27d88c",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-02-comfort_fit-planetary_picknick\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "68",
+                    "title": "Sorry",
+                    "name": "Sorry",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 3,
+                    "filename": "\/mnt\/music\/Comfort fit\/3 - Sorry.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 3,
+                    "time": 200,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 239161,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=68&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Sorry.mp3",
+                    "size": 6248613,
+                    "mbid": "261964a4-8062-426d-b88e-82c0097ca98c",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/03_Sorry\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: Creative Commons\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "59",
+                    "title": "Freeze the Cut",
+                    "name": "Freeze the Cut",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 4,
+                    "filename": "\/mnt\/music\/Comfort fit\/4 - Freeze The Cut.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 4,
+                    "time": 168,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 246979,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=59&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Freeze%20the%20Cut.mp3",
+                    "size": 5447729,
+                    "mbid": "d927db0b-7d3a-4fba-867c-d140cb19aeb9",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-04-comfort_fit-freeze_the_cut_feat_blaktroniks\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "55",
+                    "title": "Take a Look",
+                    "name": "Take a Look",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 5,
+                    "filename": "\/mnt\/music\/Comfort fit\/5 - Take a Look.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 5,
+                    "time": 230,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 243729,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=55&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Take%20a%20Look.mp3",
+                    "size": 7248363,
+                    "mbid": "8a3bdac5-f0bd-4197-9deb-d4880d6f3b6d",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-05-comfort_fit-take_a_look\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "54",
+                    "title": "True Form",
+                    "name": "True Form",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 6,
+                    "filename": "\/mnt\/music\/Comfort fit\/6 - True Form.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 6,
+                    "time": 192,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 243031,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=54&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20True%20Form.mp3",
+                    "size": 6079063,
+                    "mbid": "8bf3acd2-860b-4ece-896f-9b2de89e35fa",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-06-comfort_fit-true_form\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "57",
+                    "title": "Thursday Is Thursty",
+                    "name": "Thursday Is Thursty",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 7,
+                    "filename": "\/mnt\/music\/Comfort fit\/7 - Thursday is Thursdy.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 7,
+                    "time": 92,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 225219,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=57&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Thursday%20Is%20Thursty.mp3",
+                    "size": 2840969,
+                    "mbid": "36fa39a1-483d-49d9-907b-17c4e3d60b47",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": true,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-07-comfort_fit-thursday_is_thursty\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "67",
+                    "title": "Whenever You Wanna Call Me",
+                    "name": "Whenever You Wanna Call Me",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 8,
+                    "filename": "\/mnt\/music\/Comfort fit\/8 - Whenever You Wanna Call Me.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 8,
+                    "time": 188,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 250322,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=67&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Whenever%20You%20Wanna%20Call%20Me.mp3",
+                    "size": 6127686,
+                    "mbid": "0cc9456b-1750-4739-9346-90d9247da292",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-08-comfort_fit-whenever_you_wanna_call_me_feat_prymer\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "62",
+                    "title": "As Pure as Possible",
+                    "name": "As Pure as Possible",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 9,
+                    "filename": "\/mnt\/music\/Comfort fit\/9 - As Pure as Possible.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 9,
+                    "time": 128,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 234690,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=62&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20As%20Pure%20as%20Possible.mp3",
+                    "size": 4021858,
+                    "mbid": "7a3d740d-5546-4900-88af-b97b42c3344e",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-09-comfort_fit-as_pure_as_possible\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "51",
+                    "title": "She Knows Me Now",
+                    "name": "She Knows Me Now",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 10,
+                    "filename": "\/mnt\/music\/Comfort fit\/10 - She Knows Me Now (re-edit).mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 10,
+                    "time": 209,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 217167,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=51&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20She%20Knows%20Me%20Now.mp3",
+                    "size": 5921338,
+                    "mbid": "3845cef9-b874-449f-94a5-5c9acdead9df",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-10-comfort_fit-she_knows_me_now_feat_mercury_waters__prymer\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "50",
+                    "title": "Remember Something I Forgot",
+                    "name": "Remember Something I Forgot",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 11,
+                    "filename": "\/mnt\/music\/Comfort fit\/11 - Remember Something I Forgot.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 11,
+                    "time": 163,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 235109,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=50&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Remember%20Something%20I%20Forgot.mp3",
+                    "size": 5048158,
+                    "mbid": "ba784e10-e268-4c44-9c82-091167162c27",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": true,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-11-comfort_fit-remember_something_i_forgot\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "63",
+                    "title": "Don't Show This Message Again",
+                    "name": "Don't Show This Message Again",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 12,
+                    "filename": "\/mnt\/music\/Comfort fit\/12 - Don\u2019t Show This Message Again.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 12,
+                    "time": 197,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 232690,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=63&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3",
+                    "size": 5985591,
+                    "mbid": "6b582438-c034-47c2-86b0-61c63ec96b4b",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-12-comfort_fit-dont_show_this_message_again\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "65",
+                    "title": "Kurz Vor Danach Ganz '05",
+                    "name": "Kurz Vor Danach Ganz '05",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 13,
+                    "filename": "\/mnt\/music\/Comfort fit\/13 - Kurz Vor Danach Ganz \u201805.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 13,
+                    "time": 247,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 230429,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=65&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Kurz%20Vor%20Danach%20Ganz%20-05.mp3",
+                    "size": 7365729,
+                    "mbid": "60ca3461-5f2b-4d0d-9cc5-ce79b358de7b",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": true,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-13-comfort_fit-kurz_vor_danach_ganz_05\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "53",
+                    "title": "Emotional Draft",
+                    "name": "Emotional Draft",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 14,
+                    "filename": "\/mnt\/music\/Comfort fit\/14 - Emotional Draft.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 14,
+                    "time": 379,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 235925,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=53&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Emotional%20Draft.mp3",
+                    "size": 11442144,
+                    "mbid": "ab598f5a-4cbb-4ce0-a3ac-9de17026f528",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": true,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-14-comfort_fit-emotional_draft\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "64",
+                    "title": "Hairy Crushed Nuts",
+                    "name": "Hairy Crushed Nuts",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 15,
+                    "filename": "\/mnt\/music\/Comfort fit\/15 - Hairy Crushed Nuts.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 15,
+                    "time": 267,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 248806,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=64&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Hairy%20Crushed%20Nuts.mp3",
+                    "size": 8556451,
+                    "mbid": "db672da0-963b-45a4-b3d8-23efc9c1953d",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 5,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-15-comfort_fit-hairy_crushed_nuts\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "61",
+                    "title": "The Hunt",
+                    "name": "The Hunt",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 16,
+                    "filename": "\/mnt\/music\/Comfort fit\/16 - The Hunt.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 16,
+                    "time": 226,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 224425,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=61&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20The%20Hunt.mp3",
+                    "size": 6610912,
+                    "mbid": "8d22ccfd-38e9-42ca-9664-a236302ab8bf",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-16-comfort_fit-the_hunt\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "49",
+                    "title": "Something to Do",
+                    "name": "Something to Do",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 17,
+                    "filename": "\/mnt\/music\/Comfort fit\/17 - Something To Do.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 17,
+                    "time": 261,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 246373,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=49&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Something%20to%20Do.mp3",
+                    "size": 8301113,
+                    "mbid": "143eca6b-26d6-4b5d-a6b2-7e7cc9e05769",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 2,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-17-comfort_fit-something_to_do_feat_blaktroniks\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "66",
+                    "title": "Go on, Take It Further",
+                    "name": "Go on, Take It Further",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 18,
+                    "filename": "\/mnt\/music\/Comfort fit\/18 - Go On, Take It Further.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 18,
+                    "time": 69,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 206742,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=66&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Go%20on-%20Take%20It%20Further.mp3",
+                    "size": 2030357,
+                    "mbid": "64f731fb-da3f-41d0-a08b-47ecce55a3e4",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-18-comfort_fit-go_on_take_it_further\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "69",
+                    "title": "Swabian Sound System",
+                    "name": "Swabian Sound System",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 19,
+                    "filename": "\/mnt\/music\/Comfort fit\/19 - Swabian Sound System.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 19,
+                    "time": 281,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 244202,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=69&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Swabian%20Sound%20System.mp3",
+                    "size": 8822049,
+                    "mbid": "8e993e63-ddf9-4603-a2c0-5d2f18efebce",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": true,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-19-comfort_fit-swabian_sound_system\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "58",
+                    "title": "Miles of Smiles",
+                    "name": "Miles of Smiles",
+                    "artist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "17",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "27",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "17",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 20,
+                    "filename": "\/mnt\/music\/Comfort fit\/20 - Miles of Smiles.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 20,
+                    "time": 290,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 247925,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=58&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Miles%20of%20Smiles.mp3",
+                    "size": 9256086,
+                    "mbid": "ec160787-e0db-4f76-85b5-5a76f59f36f9",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-20-comfort_fit-miles_of_smiles\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
+            "songcount": 20,
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=17&object_type=artist",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
+            "summary": "Comfort Fit\u2019s(Boris Mezga) versatile influences range from early detroit techno and minimal electronica to jazz, broken beats and hip-hop. This makes it easy for him to invisibly switch between musical styles within a fingersnap, taking the listener onto long and exciting journies.\n\nWisely using music codes of genres such as hip-hop, dubstep and techno as a mere comic template, Comfort Fit has inspired hip-hop and techno artists around the world with his heavy beat techniques. ",
+            "time": 4248,
+            "yearformed": 0,
+            "placeformed": null
+        },
+        {
+            "id": "70",
+            "name": "Creative Commons",
+            "prefix": null,
+            "basename": "Creative Commons",
+            "albums": [
+                {
+                    "id": "13",
+                    "name": "CC 20th Anniversary Open Mix",
+                    "prefix": null,
+                    "basename": "CC 20th Anniversary Open Mix",
+                    "artist": {
+                        "id": "70",
+                        "name": "Creative Commons",
+                        "prefix": null,
+                        "basename": "Creative Commons"
+                    },
+                    "artists": [
+                        {
+                            "id": "70",
+                            "name": "Creative Commons",
+                            "prefix": null,
+                            "basename": "Creative Commons"
+                        }
+                    ],
+                    "songartists": [
+                        {
+                            "id": "72",
+                            "name": "Caslo",
+                            "prefix": null,
+                            "basename": "Caslo"
+                        },
+                        {
+                            "id": "73",
+                            "name": "James Pants",
+                            "prefix": null,
+                            "basename": "James Pants"
+                        },
+                        {
+                            "id": "75",
+                            "name": "Dieter van der Westen",
+                            "prefix": null,
+                            "basename": "Dieter van der Westen"
+                        },
+                        {
+                            "id": "76",
+                            "name": "Juanitos",
+                            "prefix": null,
+                            "basename": "Juanitos"
+                        },
+                        {
+                            "id": "78",
+                            "name": "Independent Music Licensing Collective (IMLC)",
+                            "prefix": null,
+                            "basename": "Independent Music Licensing Collective (IMLC)"
+                        },
+                        {
+                            "id": "79",
+                            "name": "Silva de Alegria",
+                            "prefix": null,
+                            "basename": "Silva de Alegria"
+                        },
+                        {
+                            "id": "80",
+                            "name": "Nangdo",
+                            "prefix": null,
+                            "basename": "Nangdo"
+                        },
+                        {
+                            "id": "81",
+                            "name": "Turku",
+                            "prefix": null,
+                            "basename": "Turku"
+                        },
+                        {
+                            "id": "83",
+                            "name": "Eric Van der Westen",
+                            "prefix": null,
+                            "basename": "Eric Van der Westen"
+                        },
+                        {
+                            "id": "84",
+                            "name": "Katy Kirby",
+                            "prefix": null,
+                            "basename": "Katy Kirby"
+                        },
+                        {
+                            "id": "86",
+                            "name": "Vienna Ditto",
+                            "prefix": null,
+                            "basename": "Vienna Ditto"
+                        },
+                        {
+                            "id": "88",
+                            "name": "Josh Woodward",
+                            "prefix": null,
+                            "basename": "Josh Woodward"
+                        },
+                        {
+                            "id": "89",
+                            "name": "Maybe Watson",
+                            "prefix": null,
+                            "basename": "Maybe Watson"
+                        },
+                        {
+                            "id": "90",
+                            "name": "The Joy Drops",
+                            "prefix": "The",
+                            "basename": "Joy Drops"
+                        },
+                        {
+                            "id": "91",
+                            "name": "Anitek",
+                            "prefix": null,
+                            "basename": "Anitek"
+                        },
+                        {
+                            "id": "92",
+                            "name": "Glad Rags",
+                            "prefix": null,
+                            "basename": "Glad Rags"
+                        },
+                        {
+                            "id": "93",
+                            "name": "Jules FK",
+                            "prefix": null,
+                            "basename": "Jules FK"
+                        },
+                        {
+                            "id": "95",
+                            "name": "Rocky Marsiano",
+                            "prefix": null,
+                            "basename": "Rocky Marsiano"
+                        },
+                        {
+                            "id": "96",
+                            "name": "Kirk Osamayo",
+                            "prefix": null,
+                            "basename": "Kirk Osamayo"
+                        },
+                        {
+                            "id": "97",
+                            "name": "The Freak Fandango Orchestra",
+                            "prefix": "The",
+                            "basename": "Freak Fandango Orchestra"
+                        },
+                        {
+                            "id": "98",
+                            "name": "Finn Anderson",
+                            "prefix": null,
+                            "basename": "Finn Anderson"
+                        },
+                        {
+                            "id": "99",
+                            "name": "Scott Jacobs",
+                            "prefix": null,
+                            "basename": "Scott Jacobs"
+                        },
+                        {
+                            "id": "100",
+                            "name": "One Man Book",
+                            "prefix": null,
+                            "basename": "One Man Book"
+                        },
+                        {
+                            "id": "102",
+                            "name": "Lame Drivers",
+                            "prefix": null,
+                            "basename": "Lame Drivers"
+                        },
+                        {
+                            "id": "104",
+                            "name": "Derek Clegg",
+                            "prefix": null,
+                            "basename": "Derek Clegg"
+                        },
+                        {
+                            "id": "105",
+                            "name": "HoliznaPATREON",
+                            "prefix": null,
+                            "basename": "HoliznaPATREON"
+                        },
+                        {
+                            "id": "106",
+                            "name": "Makaih Beats",
+                            "prefix": null,
+                            "basename": "Makaih Beats"
+                        },
+                        {
+                            "id": "107",
+                            "name": "Fotos del Otono",
+                            "prefix": null,
+                            "basename": "Fotos del Otono"
+                        },
+                        {
+                            "id": "108",
+                            "name": "Another Day",
+                            "prefix": null,
+                            "basename": "Another Day"
+                        },
+                        {
+                            "id": "109",
+                            "name": "The New Valleys",
+                            "prefix": "The",
+                            "basename": "New Valleys"
+                        },
+                        {
+                            "id": "110",
+                            "name": "Alex Figueira",
+                            "prefix": null,
+                            "basename": "Alex Figueira"
+                        },
+                        {
+                            "id": "111",
+                            "name": "Alaclair Ensemble",
+                            "prefix": null,
+                            "basename": "Alaclair Ensemble"
+                        },
+                        {
+                            "id": "112",
+                            "name": "The Kyoto Connection",
+                            "prefix": "The",
+                            "basename": "Kyoto Connection"
+                        },
+                        {
+                            "id": "114",
+                            "name": "Fog Lake",
+                            "prefix": null,
+                            "basename": "Fog Lake"
+                        },
+                        {
+                            "id": "115",
+                            "name": "Another Brick",
+                            "prefix": null,
+                            "basename": "Another Brick"
+                        },
+                        {
+                            "id": "116",
+                            "name": "Malaventura",
+                            "prefix": null,
+                            "basename": "Malaventura"
+                        },
+                        {
+                            "id": "117",
+                            "name": "Ketsa",
+                            "prefix": null,
+                            "basename": "Ketsa"
+                        },
+                        {
+                            "id": "118",
+                            "name": "Cambo",
+                            "prefix": null,
+                            "basename": "Cambo"
+                        },
+                        {
+                            "id": "120",
+                            "name": "Maarten Schellekens",
+                            "prefix": null,
+                            "basename": "Maarten Schellekens"
+                        },
+                        {
+                            "id": "121",
+                            "name": "Benjimanji",
+                            "prefix": null,
+                            "basename": "Benjimanji"
+                        }
+                    ],
+                    "time": 10829,
+                    "year": 2022,
+                    "tracks": [],
+                    "songcount": 58,
+                    "diskcount": 1,
+                    "type": null,
+                    "genre": [
+                        {
+                            "id": "2",
+                            "name": "Electronic"
+                        },
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        },
+                        {
+                            "id": "15",
+                            "name": "Pop"
+                        },
+                        {
+                            "id": "9",
+                            "name": "Folk"
+                        },
+                        {
+                            "id": "22",
+                            "name": "Trip Hop"
+                        },
+                        {
+                            "id": "19",
+                            "name": "Soul"
+                        },
+                        {
+                            "id": "20",
+                            "name": "Other"
+                        },
+                        {
+                            "id": "21",
+                            "name": "International"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Soul-RnB"
+                        },
+                        {
+                            "id": "24",
+                            "name": "Old-Time"
+                        }
+                    ],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "mbid": null,
+                    "mbid_group": null
+                }
+            ],
+            "albumcount": 1,
+            "songs": [],
+            "songcount": 0,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=70&object_type=artist",
+            "has_art": false,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "mbid": null,
+            "summary": null,
+            "time": 0,
+            "yearformed": 0,
+            "placeformed": null
+        }
+    ]
+}

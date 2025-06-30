@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "md5": "de7bb46c5a98600c622f186fc0675bbc",
+    "video": [
+        {
+            "id": "2",
+            "title": "sample-mp4-file",
+            "mime": "video\/mp4",
+            "resolution": "320x240",
+            "size": 10546620,
+            "genre": [],
+            "time": 125,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=video&oid=2&uid=2&player=api&name=sample-mp4-file.mp4",
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=video&name=art.png",
+            "has_art": false,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0
+        },
+        {
+            "id": "3",
+            "title": "sample-ogv-file",
+            "mime": "video\/ogg",
+            "resolution": "320x240",
+            "size": 5407067,
+            "genre": [],
+            "time": 0,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=video&oid=3&uid=2&player=api&name=sample-ogv-file.ogv",
+            "art": "https:\/\/music.com.au\/image.php?object_id=3&object_type=video&name=art.png",
+            "has_art": false,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0
+        },
+        {
+            "id": "1",
+            "title": "sample-webm-file",
+            "mime": "video\/webm",
+            "resolution": "320x240",
+            "size": 12615807,
+            "genre": [],
+            "time": 126,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=video&oid=1&uid=2&player=api&name=sample-webm-file.webm",
+            "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=video&name=art.png",
+            "has_art": false,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0
+        }
+    ]
+}
