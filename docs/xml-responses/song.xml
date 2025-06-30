@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>1</total_count>
-  <song id="57">
-    <title><![CDATA[PurpleSmoke]]></title>
-    <name><![CDATA[PurpleSmoke]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
-    <album id="2"><![CDATA[Colorsmoke EP]]></album>
-    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-    <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3]]></filename>
-    <track>3</track>
-    <time>390</time>
-    <year>2007</year>
-    <bitrate>64000</bitrate>
-    <rate>22050</rate>
-    <mode>cbr</mode>
+  <song id="112">
+    <title><![CDATA[Personal Truth]]></title>
+    <name><![CDATA[Personal Truth]]></name>
+    <artist id="33"><![CDATA[MxBxCx]]></artist>
+    <album id="12"><![CDATA[Buried in Nausea]]></album>
+    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/08Mxbxcx-PersonalTruth.mp3]]></filename>
+    <track>8</track>
+    <time>208</time>
+    <year>2012</year>
+    <bitrate>179860</bitrate>
+    <rate>44100</rate>
+    <mode>vbr</mode>
     <mime>audio/mpeg</mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
-    <size>3131519</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3]]></url>
+    <size>4693165</size>
     <mbid/>
     <album_mbid/>
-    <artist_mbid>1</artist_mbid>
-    <albumartist_mbid>1</albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
-    <preciserating>0</preciserating>
-    <rating>0</rating>
+    <artist_mbid/>
+    <albumartist_mbid/>
+    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+    <preciserating>5</preciserating>
+    <rating>5</rating>
     <averagerating>0</averagerating>
     <composer><![CDATA[]]></composer>
     <channels>2</channels>
-    <comment><![CDATA[]]></comment>
-    <publisher><![CDATA[20kbps rec.]]></publisher>
+    <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
+    <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-5.13</replaygain_track_gain>
-    <replaygain_track_peak>1</replaygain_track_peak>
-    <genre><![CDATA[Electronic]]></genre>
+    <replaygain_track_gain>-8.27</replaygain_track_gain>
+    <replaygain_track_peak>0.881</replaygain_track_peak>
   </song>
 </root>
