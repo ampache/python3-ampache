@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<error code="404"><![CDATA[podcast 58 was not found]]></error>
+  <error errorCode="4704">
+    <errorAction><![CDATA[podcast_delete]]></errorAction>
+    <errorType><![CDATA[filter]]></errorType>
+    <errorMessage><![CDATA[Not Found: 0]]></errorMessage>
+  </error>
 </root>

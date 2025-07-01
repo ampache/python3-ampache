@@ -1,6 +1,8 @@
 {
     "error": {
-        "code": "404",
-        "message": "podcast 58 was not found"
+        "errorCode": "4704",
+        "errorAction": "podcast_delete",
+        "errorType": "filter",
+        "errorMessage": "Not Found: 0"
     }
 }
