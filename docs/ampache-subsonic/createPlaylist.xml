@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.8.0" openSubsonic="1">
-  <playlist id="800000072" name="testcreate" owner="user" public="true" songCount="1" duration="304" created="2024-10-21T04:29:07+00:00" changed="2024-10-21T04:29:25+00:00">
-    <entry id="300000060" parent="200000002" title="BrownSmoke" isDir="false" isVideo="false" type="music" albumId="200000002" album="Colorsmoke EP" artistId="100000002" artist="Synthetic" coverArt="200000002" duration="304" bitRate="20" userRating="5" track="4" year="2007" genre="Electronic" size="792375" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+  <playlist id="800000146" name="testcreate" owner="user" public="true" songCount="1" duration="601" created="2025-07-01T05:51:15+00:00" changed="2025-07-01T05:51:15+00:00">
+    <entry id="300000088" parent="200000008" title="Netro" isDir="false" isVideo="false" type="music" albumId="200000008" album="Nofi Devices" artistId="100000014" artist="Nofi/found." coverArt="200000008" duration="601" bitRate="187" userRating="5" track="10" genre="Electronica,Dance" size="14445467" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/media/music/Nofi_found/Nofi Devices LP/10_Netro.mp3"/>
   </playlist>
 </subsonic-response>

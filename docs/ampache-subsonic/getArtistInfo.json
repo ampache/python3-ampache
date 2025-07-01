@@ -6,10 +6,12 @@
         "serverVersion": "6.8.0",
         "openSubsonic": true,
         "artistInfo": {
-            "musicBrainzId": "1",
-            "smallImageUrl": "http://192.168.1.9:8989/play/art/none/artist/2/thumb34.jpg",
-            "mediumImageUrl": "http://192.168.1.9:8989/play/art/none/artist/2/thumb64.jpg",
-            "largeImageUrl": "http://192.168.1.9:8989/play/art/none/artist/2/thumb174.jpg"
+            "biography": "Nofi/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019).",
+            "musicBrainzId": "",
+            "smallImageUrl": "https://music.com.au/play/art/none/artist/14/size68x68.jpg",
+            "mediumImageUrl": "https://music.com.au/play/art/none/artist/14/size128x128.jpg",
+            "largeImageUrl": "https://music.com.au/play/art/none/artist/14/size348x348.jpg",
+            "similarArtist": []
         }
     }
 }

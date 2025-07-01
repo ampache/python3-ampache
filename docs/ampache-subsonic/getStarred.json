@@ -8,57 +8,79 @@
         "starred": {
             "artist": [
                 {
+                    "id": "100000016",
+                    "name": "CARN\u00daN",
+                    "coverArt": "100000016",
+                    "albumCount": 1
+                },
+                {
                     "id": "100000002",
                     "name": "Synthetic",
-                    "coverArt": "ar-100000002"
+                    "coverArt": "100000002",
+                    "albumCount": 1,
+                    "starred": "2021-02-22T05:54:18Z",
+                    "userRating": 5,
+                    "averageRating": 3
                 }
             ],
             "album": [
                 {
+                    "id": "200000010",
+                    "parent": "100000016",
+                    "title": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "album": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "artistId": "100000016",
+                    "artist": "CARN\u00daN",
+                    "coverArt": "200000010",
+                    "duration": 3873,
+                    "year": 1996
+                },
+                {
                     "id": "200000002",
                     "parent": "100000002",
-                    "album": "Colorsmoke EP",
                     "title": "Colorsmoke EP",
-                    "name": "Colorsmoke EP",
-                    "isDir": true,
-                    "coverArt": "al-200000002",
-                    "songCount": 12,
-                    "created": "2021-02-23T04:24:48+00:00",
-                    "duration": 4568,
-                    "playCount": 1,
+                    "album": "Colorsmoke EP",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
                     "artistId": "100000002",
                     "artist": "Synthetic",
-                    "year": 2007,
-                    "genre": "Electronic",
+                    "coverArt": "200000002",
+                    "duration": 4568,
                     "userRating": 5,
                     "averageRating": 3,
-                    "starred": "2021-02-22T05:51:53Z"
+                    "starred": "2021-02-22T05:51:53Z",
+                    "year": 2007,
+                    "genre": "Electronic"
                 }
             ],
             "song": [
                 {
-                    "id": "300000093",
-                    "parent": "200000008",
-                    "title": "Scribnus 3",
+                    "id": "300000100",
+                    "parent": "200000010",
+                    "title": "The Prophecies Of The Horned One",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "200000008",
-                    "album": "Nofi Devices",
-                    "artistId": "100000014",
-                    "artist": "Nofi/found.",
-                    "coverArt": "200000008",
-                    "duration": 641,
-                    "bitRate": 187,
-                    "userRating": 5,
-                    "starred": "2024-10-21T04:28:53Z",
-                    "track": 3,
-                    "genre": "Electronica",
-                    "size": 15400002,
+                    "albumId": "200000010",
+                    "album": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "artistId": "100000016",
+                    "artist": "CARN\u00daN",
+                    "coverArt": "200000010",
+                    "duration": 378,
+                    "bitRate": 87,
+                    "track": 2,
+                    "year": 1996,
+                    "size": 4265791,
                     "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3"
+                    "suffix": "ogg",
+                    "contentType": "application/ogg",
+                    "path": "/media/music/Carn\u00fan/Malkuth (Demo1996)/02ThePropheciesOfTheHornedOne.ogg",
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
                 }
             ]
         }

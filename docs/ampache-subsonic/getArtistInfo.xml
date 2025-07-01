@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.8.0" openSubsonic="1">
   <artistInfo>
-    <musicBrainzId>1</musicBrainzId>
-    <smallImageUrl>http://192.168.1.9:8989/play/art/none/artist/2/thumb34.jpg</smallImageUrl>
-    <mediumImageUrl>http://192.168.1.9:8989/play/art/none/artist/2/thumb64.jpg</mediumImageUrl>
-    <largeImageUrl>http://192.168.1.9:8989/play/art/none/artist/2/thumb174.jpg</largeImageUrl>
+    <biography>Nofi/found. is the work of Jeffrey Melton released prior to 2005. From the website:
+Nofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. ’stateless’).</biography>
+    <musicBrainzId/>
+    <smallImageUrl>https://music.com.au/play/art/none/artist/14/size68x68.jpg</smallImageUrl>
+    <mediumImageUrl>https://music.com.au/play/art/none/artist/14/size128x128.jpg</mediumImageUrl>
+    <largeImageUrl>https://music.com.au/play/art/none/artist/14/size348x348.jpg</largeImageUrl>
   </artistInfo>
 </subsonic-response>

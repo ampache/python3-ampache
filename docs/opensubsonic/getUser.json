@@ -1,13 +1,25 @@
 {
     "subsonic-response": {
-        "status": "failed",
+        "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
         "serverVersion": "7.6.0",
         "openSubsonic": true,
-        "error": {
-            "code": 70,
-            "message": "The requested data was not found."
+        "user": {
+            "username": "user",
+            "email": "generic@gmail.com",
+            "scrobblingEnabled": true,
+            "adminRole": true,
+            "settingsRole": true,
+            "downloadRole": true,
+            "playlistRole": true,
+            "coverArtRole": true,
+            "commentRole": false,
+            "podcastRole": true,
+            "streamRole": true,
+            "jukeboxRole": true,
+            "shareRole": true,
+            "videoConversionRole": false
         }
     }
 }

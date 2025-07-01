@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
-  <directory id="1" name="music">
-    <child id="100000016" parent="1" isDir="true" title="CARNÚN" artist="CARNÚN" coverArt="ar-100000016"/>
-    <child id="100000027" parent="1" isDir="true" title="Chi.Otic" artist="Chi.Otic" coverArt="ar-100000027"/>
-    <child id="100000034" parent="1" isDir="true" title="Comedown Kid" artist="Comedown Kid" coverArt="ar-100000034"/>
-    <child id="100000013" parent="1" isDir="true" title="IOK-1" artist="IOK-1" coverArt="ar-100000013"/>
-    <child id="100000023" parent="1" isDir="true" title="Manic Notion" artist="Manic Notion" coverArt="ar-100000023"/>
-    <child id="100000033" parent="1" isDir="true" title="MxBxCx" artist="MxBxCx" coverArt="ar-100000033"/>
-    <child id="100000014" parent="1" isDir="true" title="Nofi/found." artist="Nofi/found."/>
-    <child id="100000020" parent="1" isDir="true" title="R/B" artist="R/B" coverArt="ar-100000020"/>
-    <child id="100000032" parent="1" isDir="true" title="Shorty Mac" artist="Shorty Mac" coverArt="ar-100000032"/>
-    <child id="100000026" parent="1" isDir="true" title="Stress Builds Character" artist="Stress Builds Character" coverArt="ar-100000026"/>
-    <child id="100000011" parent="1" isDir="true" title="structura" artist="structura" coverArt="ar-100000011"/>
-    <child id="100000002" parent="1" isDir="true" title="Synthetic" artist="Synthetic" coverArt="ar-100000002"/>
-    <child id="100000035" parent="1" isDir="true" title="Tip-C" artist="Tip-C" coverArt="ar-100000035"/>
-    <child id="100000021" parent="1" isDir="true" title="Tip-C (featuring Mike Beers)" artist="Tip-C (featuring Mike Beers)" coverArt="ar-100000021"/>
-    <child id="100000019" parent="1" isDir="true" title="Various Artists" artist="Various Artists" coverArt="ar-100000019"/>
-    <child id="100000015" parent="1" isDir="true" title="Warfare 3.0" artist="Warfare 3.0" coverArt="ar-100000015"/>
-    <child id="100000012" parent="1" isDir="true" title="К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь" artist="К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь" coverArt="ar-100000012"/>
+  <directory id="mf-1" name="music">
+    <child id="ar-16" parent="1" isDir="true" title="CARNÚN" artist="CARNÚN" coverArt="ar-16"/>
+    <child id="ar-27" parent="1" isDir="true" title="Chi.Otic" artist="Chi.Otic" coverArt="ar-27"/>
+    <child id="ar-34" parent="1" isDir="true" title="Comedown Kid" artist="Comedown Kid" coverArt="ar-34"/>
+    <child id="ar-13" parent="1" isDir="true" title="IOK-1" artist="IOK-1" coverArt="ar-13"/>
+    <child id="ar-23" parent="1" isDir="true" title="Manic Notion" artist="Manic Notion" coverArt="ar-23"/>
+    <child id="ar-33" parent="1" isDir="true" title="MxBxCx" artist="MxBxCx" coverArt="ar-33"/>
+    <child id="ar-14" parent="1" isDir="true" title="Nofi/found." artist="Nofi/found."/>
+    <child id="ar-20" parent="1" isDir="true" title="R/B" artist="R/B" coverArt="ar-20"/>
+    <child id="ar-32" parent="1" isDir="true" title="Shorty Mac" artist="Shorty Mac" coverArt="ar-32"/>
+    <child id="ar-26" parent="1" isDir="true" title="Stress Builds Character" artist="Stress Builds Character" coverArt="ar-26"/>
+    <child id="ar-11" parent="1" isDir="true" title="structura" artist="structura" coverArt="ar-11"/>
+    <child id="ar-2" parent="1" isDir="true" title="Synthetic" artist="Synthetic" coverArt="ar-2"/>
+    <child id="ar-35" parent="1" isDir="true" title="Tip-C" artist="Tip-C" coverArt="ar-35"/>
+    <child id="ar-21" parent="1" isDir="true" title="Tip-C (featuring Mike Beers)" artist="Tip-C (featuring Mike Beers)" coverArt="ar-21"/>
+    <child id="ar-19" parent="1" isDir="true" title="Various Artists" artist="Various Artists" coverArt="ar-19"/>
+    <child id="ar-15" parent="1" isDir="true" title="Warfare 3.0" artist="Warfare 3.0" coverArt="ar-15"/>
+    <child id="ar-12" parent="1" isDir="true" title="К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь" artist="К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь" coverArt="ar-12"/>
   </directory>
 </subsonic-response>

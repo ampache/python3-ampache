@@ -4,6 +4,53 @@
         "version": "1.16.1",
         "type": "ampache",
         "serverVersion": "7.6.0",
-        "openSubsonic": true
+        "openSubsonic": true,
+        "playQueue": {
+            "current": "so-88",
+            "position": "0",
+            "username": "user",
+            "changed": "2025-07-01T05:51:50+00:00",
+            "changedBy": "Ampache",
+            "entry": [
+                {
+                    "id": "so-88",
+                    "parent": "al-8",
+                    "title": "Netro",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-8",
+                    "album": "Nofi Devices",
+                    "artistId": "ar-14",
+                    "artist": "Nofi/found.",
+                    "coverArt": "al-8",
+                    "duration": 601,
+                    "bitRate": 187,
+                    "userRating": 5,
+                    "track": 10,
+                    "genre": "Electronica,Dance",
+                    "genres": [
+                        {
+                            "name": "Electronica"
+                        },
+                        {
+                            "name": "Dance"
+                        }
+                    ],
+                    "size": 14445467,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/music/Nofi_found/Nofi Devices LP/10_Netro.mp3",
+                    "artists": [],
+                    "albumArtists": [
+                        {
+                            "id": "ar-14",
+                            "name": "Nofi/found."
+                        }
+                    ]
+                }
+            ]
+        }
     }
 }

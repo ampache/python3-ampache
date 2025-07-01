@@ -8,128 +8,137 @@
         "playlists": {
             "playlist": [
                 {
-                    "id": "400000021",
+                    "id": "sp-21",
                     "name": "admin - 02/23/2021 14:36:44 (admin)",
                     "owner": "admin",
                     "public": true,
+                    "songCount": 0,
+                    "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
-                    "songCount": 1,
-                    "duration": 317,
-                    "coverArt": "400000021"
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000014",
+                    "id": "sp-14",
                     "name": "Album 1* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 2,
                     "duration": 600,
-                    "coverArt": "400000014"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000013",
+                    "id": "sp-13",
                     "name": "Album 2* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 11,
                     "duration": 4423,
-                    "coverArt": "400000013"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000012",
+                    "id": "sp-12",
                     "name": "Album 3* (System)",
                     "owner": "System",
                     "public": true,
+                    "songCount": 0,
+                    "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
-                    "songCount": 2,
-                    "duration": 592,
-                    "coverArt": "400000012"
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000011",
+                    "id": "sp-11",
                     "name": "Album 4* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 0,
                     "duration": 0,
-                    "coverArt": "400000011"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000010",
+                    "id": "sp-10",
                     "name": "Album 5* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 0,
                     "duration": 0,
-                    "coverArt": "400000010"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000009",
+                    "id": "sp-9",
                     "name": "Artist 1* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 0,
                     "duration": 0,
-                    "coverArt": "400000009"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000008",
+                    "id": "sp-8",
                     "name": "Artist 2* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 0,
                     "duration": 0,
-                    "coverArt": "400000008"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000007",
+                    "id": "sp-7",
                     "name": "Artist 3* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 0,
                     "duration": 0,
-                    "coverArt": "400000007"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000006",
+                    "id": "sp-6",
                     "name": "Artist 4* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 0,
                     "duration": 0,
-                    "coverArt": "400000006"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000005",
+                    "id": "sp-5",
                     "name": "Artist 5* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 0,
                     "duration": 0,
-                    "coverArt": "400000005"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "800000002",
+                    "id": "pl-65",
+                    "name": "Nofi",
+                    "owner": "user",
+                    "public": true,
+                    "songCount": 11,
+                    "duration": 4423,
+                    "created": "2025-06-30T06:42:39+00:00",
+                    "changed": "2025-06-30T06:42:39+00:00"
+                },
+                {
+                    "id": "pl-3",
+                    "name": "random - admin - private (admin)",
+                    "owner": "admin",
+                    "public": false,
+                    "songCount": 43,
+                    "duration": 17875,
+                    "created": "2021-02-23T04:35:38+00:00",
+                    "changed": "2021-02-23T04:35:38+00:00"
+                },
+                {
+                    "id": "pl-2",
                     "name": "random - admin - public (admin)",
                     "owner": "admin",
                     "public": true,
@@ -139,7 +148,7 @@
                     "changed": "2021-02-23T04:34:56+00:00"
                 },
                 {
-                    "id": "800000004",
+                    "id": "pl-4",
                     "name": "random - user - private",
                     "owner": "user",
                     "public": false,
@@ -149,81 +158,74 @@
                     "changed": "2021-02-23T04:35:38+00:00"
                 },
                 {
-                    "id": "400000019",
+                    "id": "sp-19",
                     "name": "Song 1* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 0,
                     "duration": 0,
-                    "coverArt": "400000019"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000018",
+                    "id": "sp-18",
                     "name": "Song 2* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 0,
                     "duration": 0,
-                    "coverArt": "400000018"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000017",
+                    "id": "sp-17",
                     "name": "Song 3* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 0,
                     "duration": 0,
-                    "coverArt": "400000017"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000016",
+                    "id": "sp-16",
                     "name": "Song 4* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 0,
                     "duration": 0,
-                    "coverArt": "400000016"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000015",
+                    "id": "sp-15",
                     "name": "Song 5* (System)",
                     "owner": "System",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 0,
                     "duration": 0,
-                    "coverArt": "400000015"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000020",
+                    "id": "sp-20",
                     "name": "Unplayed by me (demo)",
                     "owner": "demo",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 53,
                     "duration": 20669,
-                    "coverArt": "400000020"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 },
                 {
-                    "id": "400000022",
+                    "id": "sp-22",
                     "name": "user - 07/18/2024 11:54:12",
                     "owner": "user",
                     "public": true,
-                    "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2024-10-21T04:29:07+00:00",
                     "songCount": 0,
                     "duration": 0,
-                    "coverArt": "400000022"
+                    "created": "1970-01-01T00:00:00+00:00",
+                    "changed": "2025-07-01T05:51:53+00:00"
                 }
             ]
         }

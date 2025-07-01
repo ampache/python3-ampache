@@ -8,35 +8,44 @@
         "shares": {
             "share": [
                 {
-                    "id": "14",
-                    "url": "http://192.168.1.9:8989/share.php?id=14&secret=IlEIagF1",
+                    "id": "sh-78",
+                    "url": "https://music.com.au/share.php?id=78&secret=GJ7EzBPT",
                     "description": "",
                     "username": "user",
-                    "created": "2024-10-21T04:29:07+00:00",
+                    "created": "2025-07-01T05:51:52+00:00",
                     "visitCount": 0,
                     "entry": [
                         {
-                            "id": "300000078",
-                            "parent": "200000018",
-                            "title": "inominavel p01",
+                            "id": "so-108",
+                            "parent": "al-12",
+                            "title": "I've been down this road before",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000018",
-                            "album": "Inominavel (live.v.01)",
-                            "artistId": "100000011",
-                            "artist": "structura",
-                            "coverArt": "200000018",
-                            "duration": 84,
-                            "bitRate": 187,
-                            "track": 1,
-                            "year": 2007,
-                            "genre": "Noise",
-                            "size": 2036632,
+                            "albumId": "al-12",
+                            "album": "Buried in Nausea",
+                            "artistId": "ar-21",
+                            "artist": "Tip-C (featuring Mike Beers)",
+                            "coverArt": "al-12",
+                            "duration": 252,
+                            "bitRate": 31,
+                            "userRating": 5,
+                            "track": 6,
+                            "year": 2012,
+                            "size": 1035322,
                             "discNumber": 1,
-                            "suffix": "mp3",
-                            "contentType": "audio/mpeg",
-                            "path": "/media/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3"
+                            "suffix": "wma",
+                            "contentType": "audio/x-ms-wma",
+                            "path": "/media/music/Various Artists/Buried In Nausea/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-19",
+                                    "name": "Various Artists"
+                                }
+                            ],
+                            "transcodedSuffix": "mp3",
+                            "transcodedContentType": "audio/mpeg"
                         }
                     ]
                 }

@@ -4,6 +4,40 @@
         "version": "1.16.1",
         "type": "ampache",
         "serverVersion": "6.8.0",
-        "openSubsonic": true
+        "openSubsonic": true,
+        "playQueue": {
+            "current": "300000076",
+            "position": "0",
+            "username": "user",
+            "changed": "2025-07-01T05:33:32+00:00",
+            "changedBy": "Ampache",
+            "entry": [
+                {
+                    "id": "300000076",
+                    "parent": "200000018",
+                    "title": "inominavel p04",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "200000018",
+                    "album": "Inominavel (live.v.01)",
+                    "artistId": "100000011",
+                    "artist": "structura",
+                    "coverArt": "200000018",
+                    "duration": 317,
+                    "bitRate": 187,
+                    "userRating": 5,
+                    "averageRating": 4,
+                    "track": 4,
+                    "year": 2007,
+                    "genre": "Noise",
+                    "size": 7629821,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/music/Structura/Inominavel (live.v.01)/04_structura_-_inominavel_p04.mp3"
+                }
+            ]
+        }
     }
 }

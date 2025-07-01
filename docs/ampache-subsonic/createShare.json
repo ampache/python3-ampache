@@ -8,35 +8,34 @@
         "shares": {
             "share": [
                 {
-                    "id": "14",
-                    "url": "http://192.168.1.9:8989/share.php?id=14&secret=IlEIagF1",
+                    "id": "sh-76",
+                    "url": "https://music.com.au/share.php?id=76&secret=GJ7EzBPT",
                     "description": "",
                     "username": "user",
-                    "created": "2024-10-21T04:29:07+00:00",
+                    "created": "2025-07-01T05:50:57+00:00",
                     "visitCount": 0,
                     "entry": [
                         {
-                            "id": "300000078",
-                            "parent": "200000018",
-                            "title": "inominavel p01",
+                            "id": "300000113",
+                            "parent": "200000012",
+                            "title": "Representin",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000018",
-                            "album": "Inominavel (live.v.01)",
-                            "artistId": "100000011",
-                            "artist": "structura",
-                            "coverArt": "200000018",
-                            "duration": 84,
-                            "bitRate": 187,
-                            "track": 1,
-                            "year": 2007,
-                            "genre": "Noise",
-                            "size": 2036632,
+                            "albumId": "200000012",
+                            "album": "Buried in Nausea",
+                            "artistId": "100000032",
+                            "artist": "Shorty Mac",
+                            "coverArt": "200000012",
+                            "duration": 234,
+                            "bitRate": 120,
+                            "track": 4,
+                            "year": 2012,
+                            "size": 3628327,
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
-                            "path": "/media/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3"
+                            "path": "/media/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3"
                         }
                     ]
                 }

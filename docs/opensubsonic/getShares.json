@@ -8,485 +8,747 @@
         "shares": {
             "share": [
                 {
-                    "id": "2",
-                    "url": "https://music.com.au/share.php?id=2&secret=qq6SPPmy",
+                    "id": "sh-1",
+                    "url": "https://music.com.au/share.php?id=1&secret=GJ7EzBPT",
+                    "description": "Creeping Lawler 2 (Warfare 3.0)",
+                    "username": "user",
+                    "created": "2021-02-24T01:20:41+00:00",
+                    "lastVisited": "2021-02-24T01:20:43+00:00",
+                    "visitCount": 1,
+                    "entry": [
+                        {
+                            "id": "so-96",
+                            "parent": "al-9",
+                            "title": "Creeping Lawler 2",
+                            "isDir": false,
+                            "isVideo": false,
+                            "type": "music",
+                            "albumId": "al-9",
+                            "album": "Creeping Lawler 2",
+                            "artistId": "ar-15",
+                            "artist": "Warfare 3.0",
+                            "coverArt": "al-9",
+                            "duration": 296,
+                            "bitRate": 1378,
+                            "userRating": 5,
+                            "track": 1,
+                            "size": 52345628,
+                            "discNumber": 1,
+                            "suffix": "wav",
+                            "contentType": "audio/wav",
+                            "path": "/media/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.wav",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-15",
+                                    "name": "Warfare 3.0"
+                                }
+                            ],
+                            "transcodedSuffix": "mp3",
+                            "transcodedContentType": "audio/mpeg"
+                        },
+                        {
+                            "id": "so-97",
+                            "parent": "al-9",
+                            "title": "Creeping Lawler 2",
+                            "isDir": false,
+                            "isVideo": false,
+                            "type": "music",
+                            "albumId": "al-9",
+                            "album": "Creeping Lawler 2",
+                            "artistId": "ar-15",
+                            "artist": "Warfare 3.0",
+                            "coverArt": "al-9",
+                            "duration": 296,
+                            "bitRate": 173,
+                            "track": 1,
+                            "size": 6652448,
+                            "discNumber": 1,
+                            "suffix": "mp3",
+                            "contentType": "audio/mpeg",
+                            "path": "/media/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.mp3",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-15",
+                                    "name": "Warfare 3.0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "sh-2",
+                    "url": "https://music.com.au/share.php?id=2&secret=GJ7EzBPT",
                     "description": "Buried in Nausea (Various Artists)",
                     "username": "demo",
                     "created": "2021-02-24T01:21:12+00:00",
                     "visitCount": 0,
                     "entry": [
                         {
-                            "id": "300000078",
-                            "parent": "200000018",
+                            "id": "so-78",
+                            "parent": "al-18",
                             "title": "inominavel p01",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000018",
+                            "albumId": "al-18",
                             "album": "Inominavel (live.v.01)",
-                            "artistId": "100000011",
+                            "artistId": "ar-11",
                             "artist": "structura",
-                            "coverArt": "200000018",
+                            "coverArt": "al-18",
                             "duration": 84,
                             "bitRate": 187,
+                            "userRating": 5,
                             "track": 1,
                             "year": 2007,
                             "genre": "Noise",
+                            "genres": [
+                                {
+                                    "name": "Noise"
+                                }
+                            ],
                             "size": 2036632,
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
-                            "path": "/media/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3"
+                            "path": "/media/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-11",
+                                    "name": "structura"
+                                }
+                            ]
                         },
                         {
-                            "id": "300000077",
-                            "parent": "200000018",
+                            "id": "so-77",
+                            "parent": "al-18",
                             "title": "inominavel p02",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000018",
+                            "albumId": "al-18",
                             "album": "Inominavel (live.v.01)",
-                            "artistId": "100000011",
+                            "artistId": "ar-11",
                             "artist": "structura",
-                            "coverArt": "200000018",
+                            "coverArt": "al-18",
                             "duration": 237,
                             "bitRate": 187,
                             "track": 2,
                             "year": 2007,
                             "genre": "Noise",
+                            "genres": [
+                                {
+                                    "name": "Noise"
+                                }
+                            ],
                             "size": 5723290,
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
-                            "path": "/media/music/Structura/Inominavel (live.v.01)/02_structura_-_inominavel_p02.mp3"
+                            "path": "/media/music/Structura/Inominavel (live.v.01)/02_structura_-_inominavel_p02.mp3",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-11",
+                                    "name": "structura"
+                                }
+                            ]
                         },
                         {
-                            "id": "300000074",
-                            "parent": "200000018",
+                            "id": "so-74",
+                            "parent": "al-18",
                             "title": "inominavel p03",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000018",
+                            "albumId": "al-18",
                             "album": "Inominavel (live.v.01)",
-                            "artistId": "100000011",
+                            "artistId": "ar-11",
                             "artist": "structura",
-                            "coverArt": "200000018",
+                            "coverArt": "al-18",
                             "duration": 143,
                             "bitRate": 187,
                             "track": 3,
                             "year": 2007,
                             "genre": "Noise",
+                            "genres": [
+                                {
+                                    "name": "Noise"
+                                }
+                            ],
                             "size": 3449255,
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
-                            "path": "/media/music/Structura/Inominavel (live.v.01)/03_structura_-_inominavel_p03.mp3"
+                            "path": "/media/music/Structura/Inominavel (live.v.01)/03_structura_-_inominavel_p03.mp3",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-11",
+                                    "name": "structura"
+                                }
+                            ]
                         },
                         {
-                            "id": "300000076",
-                            "parent": "200000018",
+                            "id": "so-76",
+                            "parent": "al-18",
                             "title": "inominavel p04",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000018",
+                            "albumId": "al-18",
                             "album": "Inominavel (live.v.01)",
-                            "artistId": "100000011",
+                            "artistId": "ar-11",
                             "artist": "structura",
-                            "coverArt": "200000018",
+                            "coverArt": "al-18",
                             "duration": 317,
                             "bitRate": 187,
-                            "userRating": 3,
-                            "averageRating": 3,
+                            "userRating": 5,
+                            "averageRating": 4,
                             "track": 4,
                             "year": 2007,
                             "genre": "Noise",
+                            "genres": [
+                                {
+                                    "name": "Noise"
+                                }
+                            ],
                             "size": 7629821,
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
-                            "path": "/media/music/Structura/Inominavel (live.v.01)/04_structura_-_inominavel_p04.mp3"
+                            "path": "/media/music/Structura/Inominavel (live.v.01)/04_structura_-_inominavel_p04.mp3",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-11",
+                                    "name": "structura"
+                                }
+                            ]
                         },
                         {
-                            "id": "300000073",
-                            "parent": "200000018",
+                            "id": "so-73",
+                            "parent": "al-18",
                             "title": "inominavel p05",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000018",
+                            "albumId": "al-18",
                             "album": "Inominavel (live.v.01)",
-                            "artistId": "100000011",
+                            "artistId": "ar-11",
                             "artist": "structura",
-                            "coverArt": "200000018",
+                            "coverArt": "al-18",
                             "duration": 310,
                             "bitRate": 187,
                             "track": 5,
                             "year": 2007,
                             "genre": "Noise",
+                            "genres": [
+                                {
+                                    "name": "Noise"
+                                }
+                            ],
                             "size": 7463970,
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
-                            "path": "/media/music/Structura/Inominavel (live.v.01)/05_structura_-_inominavel_p05.mp3"
+                            "path": "/media/music/Structura/Inominavel (live.v.01)/05_structura_-_inominavel_p05.mp3",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-11",
+                                    "name": "structura"
+                                }
+                            ]
                         },
                         {
-                            "id": "300000075",
-                            "parent": "200000018",
+                            "id": "so-75",
+                            "parent": "al-18",
                             "title": "T - live",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000018",
+                            "albumId": "al-18",
                             "album": "Inominavel (live.v.01)",
-                            "artistId": "100000011",
+                            "artistId": "ar-11",
                             "artist": "structura",
-                            "coverArt": "200000018",
+                            "coverArt": "al-18",
                             "duration": 248,
                             "bitRate": 187,
+                            "userRating": 5,
+                            "averageRating": 3,
                             "track": 6,
                             "year": 2007,
                             "genre": "Noise",
+                            "genres": [
+                                {
+                                    "name": "Noise"
+                                }
+                            ],
                             "size": 5986451,
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
-                            "path": "/media/music/Structura/Inominavel (live.v.01)/06_structura_-_t_live.mp3"
+                            "path": "/media/music/Structura/Inominavel (live.v.01)/06_structura_-_t_live.mp3",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-11",
+                                    "name": "structura"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "id": "7",
-                    "url": "http://localhost:8989/share.php?id=7&secret=lcy47lmq",
+                    "id": "sh-7",
+                    "url": "https://music.com.au:8989/share.php?id=7&secret=GJ7EzBPT",
                     "description": "Colorsmoke EP (Synthetic)",
                     "username": "user",
                     "created": "2023-11-03T01:28:39+00:00",
                     "visitCount": 0,
                     "entry": [
                         {
-                            "id": "300000056",
-                            "parent": "200000002",
+                            "id": "so-56",
+                            "parent": "al-2",
                             "title": "Black&BlueSmoke",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000002",
+                            "albumId": "al-2",
                             "album": "Colorsmoke EP",
-                            "artistId": "100000002",
+                            "artistId": "ar-2",
                             "artist": "Synthetic",
-                            "coverArt": "200000002",
+                            "coverArt": "al-2",
                             "duration": 500,
                             "bitRate": 62,
+                            "userRating": 5,
                             "track": 1,
                             "year": 2007,
                             "genre": "Electronic",
+                            "genres": [
+                                {
+                                    "name": "Electronic"
+                                }
+                            ],
                             "size": 4010069,
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
-                            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3"
+                            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ]
                         },
                         {
-                            "id": "300000064",
-                            "parent": "200000002",
+                            "id": "so-64",
+                            "parent": "al-2",
                             "title": "Black&BlueSmoke",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000002",
+                            "albumId": "al-2",
                             "album": "Colorsmoke EP",
-                            "artistId": "100000002",
+                            "artistId": "ar-2",
                             "artist": "Synthetic",
-                            "coverArt": "200000002",
+                            "coverArt": "al-2",
                             "duration": 500,
                             "bitRate": 20,
                             "track": 1,
                             "year": 2007,
                             "genre": "Electronic",
+                            "genres": [
+                                {
+                                    "name": "Electronic"
+                                }
+                            ],
                             "size": 1298295,
                             "discNumber": 1,
                             "suffix": "wma",
                             "contentType": "audio/x-ms-wma",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "transcodedSuffix": "mp3",
                             "transcodedContentType": "audio/mpeg"
                         },
                         {
-                            "id": "300000059",
-                            "parent": "200000002",
+                            "id": "so-59",
+                            "parent": "al-2",
                             "title": "YellowSmoke",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000002",
+                            "albumId": "al-2",
                             "album": "Colorsmoke EP",
-                            "artistId": "100000002",
+                            "artistId": "ar-2",
                             "artist": "Synthetic",
-                            "coverArt": "200000002",
+                            "coverArt": "al-2",
                             "duration": 290,
                             "bitRate": 62,
+                            "userRating": 5,
                             "track": 2,
                             "year": 2007,
                             "genre": "Electronic",
+                            "genres": [
+                                {
+                                    "name": "Electronic"
+                                }
+                            ],
                             "size": 2325568,
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
-                            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3"
+                            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ]
                         },
                         {
-                            "id": "300000065",
-                            "parent": "200000002",
+                            "id": "so-65",
+                            "parent": "al-2",
                             "title": "YellowSmoke",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000002",
+                            "albumId": "al-2",
                             "album": "Colorsmoke EP",
-                            "artistId": "100000002",
+                            "artistId": "ar-2",
                             "artist": "Synthetic",
-                            "coverArt": "200000002",
+                            "coverArt": "al-2",
                             "duration": 290,
                             "bitRate": 20,
+                            "userRating": 5,
                             "track": 2,
                             "year": 2007,
                             "genre": "Electronic",
+                            "genres": [
+                                {
+                                    "name": "Electronic"
+                                }
+                            ],
                             "size": 754935,
                             "discNumber": 1,
                             "suffix": "wma",
                             "contentType": "audio/x-ms-wma",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/02-Synthetic_-_YellowSmoke20k22hS.wma",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "transcodedSuffix": "mp3",
                             "transcodedContentType": "audio/mpeg"
                         },
                         {
-                            "id": "300000057",
-                            "parent": "200000002",
+                            "id": "so-57",
+                            "parent": "al-2",
                             "title": "PurpleSmoke",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000002",
+                            "albumId": "al-2",
                             "album": "Colorsmoke EP",
-                            "artistId": "100000002",
+                            "artistId": "ar-2",
                             "artist": "Synthetic",
-                            "coverArt": "200000002",
+                            "coverArt": "al-2",
                             "duration": 390,
                             "bitRate": 62,
                             "track": 3,
                             "year": 2007,
                             "genre": "Electronic",
+                            "genres": [
+                                {
+                                    "name": "Electronic"
+                                }
+                            ],
                             "size": 3131519,
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
-                            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3"
+                            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ]
                         },
                         {
-                            "id": "300000062",
-                            "parent": "200000002",
+                            "id": "so-62",
+                            "parent": "al-2",
                             "title": "PurpleSmoke",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000002",
+                            "albumId": "al-2",
                             "album": "Colorsmoke EP",
-                            "artistId": "100000002",
+                            "artistId": "ar-2",
                             "artist": "Synthetic",
-                            "coverArt": "200000002",
+                            "coverArt": "al-2",
                             "duration": 390,
                             "bitRate": 20,
+                            "userRating": 5,
                             "track": 3,
                             "year": 2007,
                             "genre": "Electronic",
+                            "genres": [
+                                {
+                                    "name": "Electronic"
+                                }
+                            ],
                             "size": 1014135,
                             "discNumber": 1,
                             "suffix": "wma",
                             "contentType": "audio/x-ms-wma",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "transcodedSuffix": "mp3",
                             "transcodedContentType": "audio/mpeg"
                         },
                         {
-                            "id": "300000058",
-                            "parent": "200000002",
+                            "id": "so-58",
+                            "parent": "al-2",
                             "title": "BrownSmoke",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000002",
+                            "albumId": "al-2",
                             "album": "Colorsmoke EP",
-                            "artistId": "100000002",
+                            "artistId": "ar-2",
                             "artist": "Synthetic",
-                            "coverArt": "200000002",
+                            "coverArt": "al-2",
                             "duration": 304,
                             "bitRate": 62,
-                            "track": 4,
-                            "year": 2007,
-                            "genre": "Electronic",
-                            "size": 2441886,
-                            "discNumber": 1,
-                            "suffix": "mp3",
-                            "contentType": "audio/mpeg",
-                            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3"
-                        },
-                        {
-                            "id": "300000060",
-                            "parent": "200000002",
-                            "title": "BrownSmoke",
-                            "isDir": false,
-                            "isVideo": false,
-                            "type": "music",
-                            "albumId": "200000002",
-                            "album": "Colorsmoke EP",
-                            "artistId": "100000002",
-                            "artist": "Synthetic",
-                            "coverArt": "200000002",
-                            "duration": 304,
-                            "bitRate": 20,
                             "userRating": 5,
                             "track": 4,
                             "year": 2007,
                             "genre": "Electronic",
+                            "genres": [
+                                {
+                                    "name": "Electronic"
+                                }
+                            ],
+                            "size": 2441886,
+                            "discNumber": 1,
+                            "suffix": "mp3",
+                            "contentType": "audio/mpeg",
+                            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "so-60",
+                            "parent": "al-2",
+                            "title": "BrownSmoke",
+                            "isDir": false,
+                            "isVideo": false,
+                            "type": "music",
+                            "albumId": "al-2",
+                            "album": "Colorsmoke EP",
+                            "artistId": "ar-2",
+                            "artist": "Synthetic",
+                            "coverArt": "al-2",
+                            "duration": 304,
+                            "bitRate": 20,
+                            "track": 4,
+                            "year": 2007,
+                            "genre": "Electronic",
+                            "genres": [
+                                {
+                                    "name": "Electronic"
+                                }
+                            ],
                             "size": 792375,
                             "discNumber": 1,
                             "suffix": "wma",
                             "contentType": "audio/x-ms-wma",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "transcodedSuffix": "mp3",
                             "transcodedContentType": "audio/mpeg"
                         },
                         {
-                            "id": "300000054",
-                            "parent": "200000002",
+                            "id": "so-54",
+                            "parent": "al-2",
                             "title": "Red&GreenSmoke",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000002",
+                            "albumId": "al-2",
                             "album": "Colorsmoke EP",
-                            "artistId": "100000002",
+                            "artistId": "ar-2",
                             "artist": "Synthetic",
-                            "coverArt": "200000002",
+                            "coverArt": "al-2",
                             "duration": 400,
                             "bitRate": 62,
+                            "userRating": 5,
+                            "averageRating": 3,
                             "track": 5,
                             "year": 2007,
                             "genre": "Electronic",
+                            "genres": [
+                                {
+                                    "name": "Electronic"
+                                }
+                            ],
                             "size": 3209468,
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
-                            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3"
+                            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ]
                         },
                         {
-                            "id": "300000055",
-                            "parent": "200000002",
+                            "id": "so-55",
+                            "parent": "al-2",
                             "title": "Red&GreenSmoke",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000002",
+                            "albumId": "al-2",
                             "album": "Colorsmoke EP",
-                            "artistId": "100000002",
+                            "artistId": "ar-2",
                             "artist": "Synthetic",
-                            "coverArt": "200000002",
+                            "coverArt": "al-2",
                             "duration": 400,
                             "bitRate": 62,
                             "track": 5,
                             "year": 2007,
                             "genre": "Electronic",
+                            "genres": [
+                                {
+                                    "name": "Electronic"
+                                }
+                            ],
                             "size": 3209886,
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
-                            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3"
+                            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ]
                         },
                         {
-                            "id": "300000061",
-                            "parent": "200000002",
+                            "id": "so-61",
+                            "parent": "al-2",
                             "title": "Red&GreenSmoke",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000002",
+                            "albumId": "al-2",
                             "album": "Colorsmoke EP",
-                            "artistId": "100000002",
+                            "artistId": "ar-2",
                             "artist": "Synthetic",
-                            "coverArt": "200000002",
+                            "coverArt": "al-2",
                             "duration": 400,
                             "bitRate": 20,
                             "track": 5,
                             "year": 2007,
                             "genre": "Electronic",
+                            "genres": [
+                                {
+                                    "name": "Electronic"
+                                }
+                            ],
                             "size": 1044851,
                             "discNumber": 1,
                             "suffix": "wma",
                             "contentType": "audio/x-ms-wma",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k44khM.wma",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "transcodedSuffix": "mp3",
                             "transcodedContentType": "audio/mpeg"
                         },
                         {
-                            "id": "300000063",
-                            "parent": "200000002",
+                            "id": "so-63",
+                            "parent": "al-2",
                             "title": "Red&GreenSmoke",
                             "isDir": false,
                             "isVideo": false,
                             "type": "music",
-                            "albumId": "200000002",
+                            "albumId": "al-2",
                             "album": "Colorsmoke EP",
-                            "artistId": "100000002",
+                            "artistId": "ar-2",
                             "artist": "Synthetic",
-                            "coverArt": "200000002",
+                            "coverArt": "al-2",
                             "duration": 400,
                             "bitRate": 20,
+                            "userRating": 5,
                             "track": 5,
                             "year": 2007,
                             "genre": "Electronic",
+                            "genres": [
+                                {
+                                    "name": "Electronic"
+                                }
+                            ],
                             "size": 1041065,
                             "discNumber": 1,
                             "suffix": "wma",
                             "contentType": "audio/x-ms-wma",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k22khS.wma",
+                            "artists": [],
+                            "albumArtists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "transcodedSuffix": "mp3",
                             "transcodedContentType": "audio/mpeg"
-                        }
-                    ]
-                },
-                {
-                    "id": "13",
-                    "url": "http://192.168.1.9:8989/share.php?id=13&secret=neY5xXtM",
-                    "description": "",
-                    "username": "user",
-                    "created": "2024-10-21T04:28:54+00:00",
-                    "expires": "2024-10-28T04:28:54+00:00",
-                    "visitCount": 0,
-                    "entry": [
-                        {
-                            "id": "300000054",
-                            "parent": "200000002",
-                            "title": "Red&GreenSmoke",
-                            "isDir": false,
-                            "isVideo": false,
-                            "type": "music",
-                            "albumId": "200000002",
-                            "album": "Colorsmoke EP",
-                            "artistId": "100000002",
-                            "artist": "Synthetic",
-                            "coverArt": "200000002",
-                            "duration": 400,
-                            "bitRate": 62,
-                            "track": 5,
-                            "year": 2007,
-                            "genre": "Electronic",
-                            "size": 3209468,
-                            "discNumber": 1,
-                            "suffix": "mp3",
-                            "contentType": "audio/mpeg",
-                            "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3"
                         }
                     ]
                 }

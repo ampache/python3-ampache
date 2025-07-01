@@ -8,242 +8,358 @@
         "randomSongs": {
             "song": [
                 {
-                    "id": "300000083",
-                    "parent": "200000007",
-                    "title": "Sensorisk Deprivation",
+                    "id": "so-130",
+                    "parent": "al-21",
+                    "title": "Something to Do",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "200000007",
-                    "album": "Sensorisk Deprivation",
-                    "artistId": "100000013",
-                    "artist": "IOK-1",
-                    "coverArt": "200000007",
-                    "duration": 818,
-                    "bitRate": 376,
-                    "track": 1,
-                    "year": 2011,
-                    "genre": "Dark Ambient",
-                    "size": 39473388,
-                    "discNumber": 1,
-                    "suffix": "flac",
-                    "contentType": "audio/flac",
-                    "path": "/media/music/IOK-1/Sensorisk Deprivation/01_-_IOK-1_-_Sensorisk_Deprivation.flac",
-                    "transcodedSuffix": "mp3",
-                    "transcodedContentType": "audio/mpeg"
-                },
-                {
-                    "id": "300000111",
-                    "parent": "200000012",
-                    "title": "The art of free expression",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "200000012",
-                    "album": "Buried in Nausea",
-                    "artistId": "100000035",
-                    "artist": "Tip-C",
-                    "coverArt": "200000012",
-                    "duration": 110,
-                    "bitRate": 31,
-                    "track": 5,
-                    "year": 2012,
-                    "size": 460498,
-                    "discNumber": 1,
-                    "suffix": "wma",
-                    "contentType": "audio/x-ms-wma",
-                    "path": "/media/music/Various Artists/Buried In Nausea/05Tip-c-TheArtOfFreeExpression.wma",
-                    "transcodedSuffix": "mp3",
-                    "transcodedContentType": "audio/mpeg"
-                },
-                {
-                    "id": "300000134",
-                    "parent": "200000021",
-                    "title": "Swabian Sound System",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "200000021",
+                    "albumId": "al-21",
                     "album": "Forget and Remember",
-                    "artistId": "100000036",
+                    "artistId": "ar-36",
                     "artist": "Comfort Fit",
-                    "coverArt": "200000021",
-                    "duration": 281,
-                    "bitRate": 238,
-                    "track": 19,
+                    "coverArt": "al-21",
+                    "duration": 261,
+                    "bitRate": 240,
+                    "userRating": 5,
+                    "track": 17,
                     "year": 2005,
                     "genre": "Hip-Hop",
-                    "size": 8594721,
+                    "genres": [
+                        {
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "size": 8072761,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/19 - Swabian Sound System.mp3"
+                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/17 - Something To Do.mp3",
+                    "artists": [],
+                    "albumArtists": [
+                        {
+                            "id": "ar-36",
+                            "name": "Comfort Fit"
+                        }
+                    ]
                 },
                 {
-                    "id": "300000106",
-                    "parent": "200000010",
-                    "title": "Malkuth - Intro",
+                    "id": "so-101",
+                    "parent": "al-10",
+                    "title": "Rehearsal Tape (1996)",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "200000010",
+                    "albumId": "al-10",
                     "album": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "artistId": "100000016",
+                    "artistId": "ar-16",
                     "artist": "CARN\u00daN",
-                    "coverArt": "200000010",
-                    "duration": 91,
-                    "bitRate": 79,
-                    "track": 1,
+                    "coverArt": "al-10",
+                    "duration": 980,
+                    "bitRate": 65,
+                    "userRating": 5,
+                    "track": 9,
                     "year": 1996,
-                    "size": 932235,
+                    "size": 8219821,
                     "discNumber": 1,
                     "suffix": "ogg",
                     "contentType": "application/ogg",
-                    "path": "/media/music/Carn\u00fan/Malkuth (Demo1996)/01Intro.ogg",
+                    "path": "/media/music/Carn\u00fan/Malkuth (Demo1996)/09RehearsalTape1996.ogg",
+                    "artists": [],
+                    "albumArtists": [
+                        {
+                            "id": "ar-16",
+                            "name": "CARN\u00daN"
+                        }
+                    ],
                     "transcodedSuffix": "mp3",
                     "transcodedContentType": "audio/mpeg"
                 },
                 {
-                    "id": "300000082",
-                    "parent": "200000007",
-                    "title": "Vanvett",
+                    "id": "so-78",
+                    "parent": "al-18",
+                    "title": "inominavel p01",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "200000007",
-                    "album": "Sensorisk Deprivation",
-                    "artistId": "100000013",
-                    "artist": "IOK-1",
-                    "coverArt": "200000007",
-                    "duration": 825,
-                    "bitRate": 363,
-                    "track": 2,
-                    "year": 2011,
-                    "genre": "Dark Ambient",
-                    "size": 38389422,
-                    "discNumber": 1,
-                    "suffix": "flac",
-                    "contentType": "audio/flac",
-                    "path": "/media/music/IOK-1/Sensorisk Deprivation/02_-_IOK-1_-_Vanvett.flac",
-                    "transcodedSuffix": "mp3",
-                    "transcodedContentType": "audio/mpeg"
-                },
-                {
-                    "id": "300000100",
-                    "parent": "200000010",
-                    "title": "The Prophecies Of The Horned One",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "200000010",
-                    "album": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "artistId": "100000016",
-                    "artist": "CARN\u00daN",
-                    "coverArt": "200000010",
-                    "duration": 378,
-                    "bitRate": 87,
-                    "track": 2,
-                    "year": 1996,
-                    "size": 4271173,
-                    "discNumber": 1,
-                    "suffix": "ogg",
-                    "contentType": "application/ogg",
-                    "path": "/media/music/Carn\u00fan/Malkuth (Demo1996)/02ThePropheciesOfTheHornedOne.ogg",
-                    "transcodedSuffix": "mp3",
-                    "transcodedContentType": "audio/mpeg"
-                },
-                {
-                    "id": "300000093",
-                    "parent": "200000008",
-                    "title": "Scribnus 3",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "200000008",
-                    "album": "Nofi Devices",
-                    "artistId": "100000014",
-                    "artist": "Nofi/found.",
-                    "coverArt": "200000008",
-                    "duration": 641,
+                    "albumId": "al-18",
+                    "album": "Inominavel (live.v.01)",
+                    "artistId": "ar-11",
+                    "artist": "structura",
+                    "coverArt": "al-18",
+                    "duration": 84,
                     "bitRate": 187,
                     "userRating": 5,
-                    "starred": "2024-10-21T04:28:53Z",
-                    "track": 3,
-                    "genre": "Electronica",
-                    "size": 15400002,
+                    "track": 1,
+                    "year": 2007,
+                    "genre": "Noise",
+                    "genres": [
+                        {
+                            "name": "Noise"
+                        }
+                    ],
+                    "size": 2036632,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3"
+                    "path": "/media/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3",
+                    "artists": [],
+                    "albumArtists": [
+                        {
+                            "id": "ar-11",
+                            "name": "structura"
+                        }
+                    ]
                 },
                 {
-                    "id": "300000121",
-                    "parent": "200000021",
-                    "title": "Planetary Picknick",
+                    "id": "so-95",
+                    "parent": "al-8",
+                    "title": "Spirus Falls",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "200000021",
-                    "album": "Forget and Remember",
-                    "artistId": "100000036",
-                    "artist": "Comfort Fit",
-                    "coverArt": "200000021",
-                    "duration": 358,
-                    "bitRate": 233,
+                    "albumId": "al-8",
+                    "album": "Nofi Devices",
+                    "artistId": "ar-14",
+                    "artist": "Nofi/found.",
+                    "coverArt": "al-8",
+                    "duration": 327,
+                    "bitRate": 187,
+                    "userRating": 5,
                     "track": 2,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "size": 10715592,
+                    "genre": "Electronica,Dance",
+                    "genres": [
+                        {
+                            "name": "Electronica"
+                        },
+                        {
+                            "name": "Dance"
+                        }
+                    ],
+                    "size": 7875775,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/2 - Planetary Picknick.mp3"
+                    "path": "/media/music/Nofi_found/Nofi Devices LP/02_Spirus_Falls.mp3",
+                    "artists": [],
+                    "albumArtists": [
+                        {
+                            "id": "ar-14",
+                            "name": "Nofi/found."
+                        }
+                    ]
                 },
                 {
-                    "id": "300000132",
-                    "parent": "200000021",
-                    "title": "Hairy Crushed Nuts",
+                    "id": "so-74",
+                    "parent": "al-18",
+                    "title": "inominavel p03",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "200000021",
+                    "albumId": "al-18",
+                    "album": "Inominavel (live.v.01)",
+                    "artistId": "ar-11",
+                    "artist": "structura",
+                    "coverArt": "al-18",
+                    "duration": 143,
+                    "bitRate": 187,
+                    "track": 3,
+                    "year": 2007,
+                    "genre": "Noise",
+                    "genres": [
+                        {
+                            "name": "Noise"
+                        }
+                    ],
+                    "size": 3449255,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/music/Structura/Inominavel (live.v.01)/03_structura_-_inominavel_p03.mp3",
+                    "artists": [],
+                    "albumArtists": [
+                        {
+                            "id": "ar-11",
+                            "name": "structura"
+                        }
+                    ]
+                },
+                {
+                    "id": "so-124",
+                    "parent": "al-21",
+                    "title": "True Form",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-21",
                     "album": "Forget and Remember",
-                    "artistId": "100000036",
+                    "artistId": "ar-36",
                     "artist": "Comfort Fit",
-                    "coverArt": "200000021",
-                    "duration": 267,
-                    "bitRate": 242,
-                    "track": 15,
+                    "coverArt": "al-21",
+                    "duration": 192,
+                    "bitRate": 237,
+                    "track": 6,
                     "year": 2005,
                     "genre": "Hip-Hop",
-                    "size": 8328099,
+                    "genres": [
+                        {
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "size": 5848663,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/15 - Hairy Crushed Nuts.mp3"
+                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/6 - True Form.mp3",
+                    "artists": [],
+                    "albumArtists": [
+                        {
+                            "id": "ar-36",
+                            "name": "Comfort Fit"
+                        }
+                    ]
                 },
                 {
-                    "id": "300000055",
-                    "parent": "200000002",
-                    "title": "Red&GreenSmoke",
+                    "id": "so-77",
+                    "parent": "al-18",
+                    "title": "inominavel p02",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "200000002",
+                    "albumId": "al-18",
+                    "album": "Inominavel (live.v.01)",
+                    "artistId": "ar-11",
+                    "artist": "structura",
+                    "coverArt": "al-18",
+                    "duration": 237,
+                    "bitRate": 187,
+                    "track": 2,
+                    "year": 2007,
+                    "genre": "Noise",
+                    "genres": [
+                        {
+                            "name": "Noise"
+                        }
+                    ],
+                    "size": 5723290,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/music/Structura/Inominavel (live.v.01)/02_structura_-_inominavel_p02.mp3",
+                    "artists": [],
+                    "albumArtists": [
+                        {
+                            "id": "ar-11",
+                            "name": "structura"
+                        }
+                    ]
+                },
+                {
+                    "id": "so-76",
+                    "parent": "al-18",
+                    "title": "inominavel p04",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-18",
+                    "album": "Inominavel (live.v.01)",
+                    "artistId": "ar-11",
+                    "artist": "structura",
+                    "coverArt": "al-18",
+                    "duration": 317,
+                    "bitRate": 187,
+                    "userRating": 5,
+                    "averageRating": 4,
+                    "track": 4,
+                    "year": 2007,
+                    "genre": "Noise",
+                    "genres": [
+                        {
+                            "name": "Noise"
+                        }
+                    ],
+                    "size": 7629821,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/music/Structura/Inominavel (live.v.01)/04_structura_-_inominavel_p04.mp3",
+                    "artists": [],
+                    "albumArtists": [
+                        {
+                            "id": "ar-11",
+                            "name": "structura"
+                        }
+                    ]
+                },
+                {
+                    "id": "so-57",
+                    "parent": "al-2",
+                    "title": "PurpleSmoke",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-2",
                     "album": "Colorsmoke EP",
-                    "artistId": "100000002",
+                    "artistId": "ar-2",
                     "artist": "Synthetic",
-                    "coverArt": "200000002",
-                    "duration": 400,
+                    "coverArt": "al-2",
+                    "duration": 390,
                     "bitRate": 62,
-                    "track": 5,
+                    "track": 3,
                     "year": 2007,
                     "genre": "Electronic",
-                    "size": 3209886,
+                    "genres": [
+                        {
+                            "name": "Electronic"
+                        }
+                    ],
+                    "size": 3131519,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3"
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3",
+                    "artists": [],
+                    "albumArtists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ]
+                },
+                {
+                    "id": "so-116",
+                    "parent": "al-21",
+                    "title": "Can I Help U?",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-21",
+                    "album": "Forget and Remember",
+                    "artistId": "ar-36",
+                    "artist": "Comfort Fit",
+                    "coverArt": "al-21",
+                    "duration": 103,
+                    "bitRate": 211,
+                    "track": 1,
+                    "year": 2005,
+                    "genre": "Hip-Hop",
+                    "genres": [
+                        {
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "size": 2811819,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/1 - Can I Help U?.mp3",
+                    "artists": [],
+                    "albumArtists": [
+                        {
+                            "id": "ar-36",
+                            "name": "Comfort Fit"
+                        }
+                    ]
                 }
             ]
         }

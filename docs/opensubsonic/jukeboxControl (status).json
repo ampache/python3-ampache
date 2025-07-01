@@ -3,12 +3,12 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.6.5",
+        "serverVersion": "7.6.0",
         "openSubsonic": true,
         "jukeboxStatus": {
-            "currentIndex": 0,
+            "currentIndex": 1,
             "playing": false,
-            "gain": "41",
+            "gain": 100,
             "position": 0
         }
     }
