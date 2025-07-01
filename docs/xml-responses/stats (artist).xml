@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>2</total_count>
-  <album id="10">
-    <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
-    <artist id="16"><![CDATA[CARNÚN]]></artist>
-    <year>1996</year>
-    <tracks>9</tracks>
-    <disk>1</disk>
-    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
-    <preciserating>0</preciserating>
-    <rating>0</rating>
-    <averagerating/>
-    <mbid/>
-  </album>
   <album id="21">
     <name><![CDATA[Forget and Remember]]></name>
     <artist id="36"><![CDATA[Comfort Fit]]></artist>
@@ -25,5 +13,18 @@
     <rating>0</rating>
     <averagerating/>
     <mbid>6e1d48f7-717c-416e-af35-5d2454a13af2</mbid>
+  </album>
+  <album id="23">
+    <name><![CDATA[Buried in Nausea]]></name>
+    <artist id="38"><![CDATA[Various Artists]]></artist>
+    <year>2012</year>
+    <tracks>9</tracks>
+    <disk>1</disk>
+    <tag id="7" count="1"><![CDATA[Punk]]></tag>
+    <art><![CDATA[https://music.com.au/image.php?object_id=23&object_type=album]]></art>
+    <preciserating>0</preciserating>
+    <rating>0</rating>
+    <averagerating/>
+    <mbid/>
   </album>
 </root>

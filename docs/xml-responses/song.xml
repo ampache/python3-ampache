@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>1</total_count>
-  <song id="112">
-    <title><![CDATA[Personal Truth]]></title>
-    <name><![CDATA[Personal Truth]]></name>
-    <artist id="33"><![CDATA[MxBxCx]]></artist>
-    <album id="12"><![CDATA[Buried in Nausea]]></album>
-    <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/08Mxbxcx-PersonalTruth.mp3]]></filename>
-    <track>8</track>
-    <time>208</time>
-    <year>2012</year>
-    <bitrate>179860</bitrate>
+  <song id="93">
+    <title><![CDATA[Scribnus 3]]></title>
+    <name><![CDATA[Scribnus 3]]></name>
+    <artist id="14"><![CDATA[Nofi/found.]]></artist>
+    <album id="8"><![CDATA[Nofi Devices]]></album>
+    <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+    <tag id="5" count="1"><![CDATA[Electronica]]></tag>
+    <tag id="6" count="1"><![CDATA[Dance]]></tag>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3]]></filename>
+    <track>3</track>
+    <time>641</time>
+    <year>0</year>
+    <bitrate>192000</bitrate>
     <rate>44100</rate>
-    <mode>vbr</mode>
+    <mode>cbr</mode>
     <mime>audio/mpeg</mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3]]></url>
-    <size>4693165</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3]]></url>
+    <size>15400002</size>
     <mbid/>
     <album_mbid/>
     <artist_mbid/>
     <albumartist_mbid/>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
     <preciserating>5</preciserating>
     <rating>5</rating>
     <averagerating>0</averagerating>
-    <composer><![CDATA[]]></composer>
+    <composer><![CDATA[Jeffrey Melton]]></composer>
     <channels>2</channels>
-    <comment><![CDATA[http://archive.org/details/gt477BuriedInNausea]]></comment>
+    <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
     <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-8.27</replaygain_track_gain>
-    <replaygain_track_peak>0.881</replaygain_track_peak>
+    <replaygain_track_gain>1.53</replaygain_track_gain>
+    <replaygain_track_peak>0.989</replaygain_track_peak>
+    <genre><![CDATA[Electronica]]></genre>
+    <genre><![CDATA[Dance]]></genre>
   </song>
 </root>

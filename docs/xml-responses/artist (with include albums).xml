@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>1</total_count>
-  <artist id="16">
-    <name><![CDATA[CARNÚN]]></name>
+  <artist id="11">
+    <name><![CDATA[structura]]></name>
+    <tag id="3" count="1"><![CDATA[Noise]]></tag>
     <albums>
       <total_count>1</total_count>
-      <album id="10">
-        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <year>1996</year>
-        <tracks>9</tracks>
+      <album id="18">
+        <name><![CDATA[Inominavel (live.v.01)]]></name>
+        <artist id="11"><![CDATA[structura]]></artist>
+        <year>2007</year>
+        <tracks>6</tracks>
         <disk>1</disk>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating/>
+        <tag id="3" count="1"><![CDATA[Noise]]></tag>
+        <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album]]></art>
+        <preciserating>4</preciserating>
+        <rating>4</rating>
+        <averagerating>3.67</averagerating>
         <mbid/>
       </album>
     </albums>
-    <songs>9</songs>
-    <art><![CDATA[https://music.com.au/image.php?object_id=16&object_type=artist]]></art>
-    <preciserating>0</preciserating>
-    <rating>0</rating>
-    <averagerating>0</averagerating>
+    <songs>6</songs>
+    <art><![CDATA[https://music.com.au/image.php?object_id=11&object_type=artist]]></art>
+    <preciserating>4</preciserating>
+    <rating>4</rating>
+    <averagerating>4</averagerating>
     <mbid/>
-    <summary><![CDATA[]]></summary>
+    <summary><![CDATA[. Born in 2000 at Lisbon - Portugal, Structura is a sound exploration project using as main tools electronic composition, frequency modulation and effects, the cut-up (of texts), spoken word, DJing, samples, video and others.
+Structura works sounds normally associated with experimental electronica currents like Rhythmic-Noise, Power-Electronics, Break'n'Noise, IDM, Spoken-Word but freelly enough not to get to attached to them.
+The sound compositions in Structura are linked to concepts, images, literature, cinema and other arts.
+
+ ]]></summary>
     <yearformed/>
     <placeformed><![CDATA[]]></placeformed>
   </artist>

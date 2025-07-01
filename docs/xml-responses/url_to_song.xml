@@ -1,40 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>1</total_count>
-  <song id="60">
-    <title><![CDATA[BrownSmoke]]></title>
-    <name><![CDATA[BrownSmoke]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
-    <album id="2"><![CDATA[Colorsmoke EP]]></album>
-    <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-    <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma]]></filename>
-    <track>4</track>
-    <time>304</time>
-    <year>2007</year>
-    <bitrate>20627</bitrate>
-    <rate>22050</rate>
+  <song id="93">
+    <title><![CDATA[Scribnus 3]]></title>
+    <name><![CDATA[Scribnus 3]]></name>
+    <artist id="14"><![CDATA[Nofi/found.]]></artist>
+    <album id="8"><![CDATA[Nofi Devices]]></album>
+    <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+    <tag id="5" count="1"><![CDATA[Electronica]]></tag>
+    <tag id="6" count="1"><![CDATA[Dance]]></tag>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3]]></filename>
+    <track>3</track>
+    <time>641</time>
+    <year>0</year>
+    <bitrate>192000</bitrate>
+    <rate>44100</rate>
     <mode>cbr</mode>
-    <mime>audio/x-ms-wma</mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
-    <size>792375</size>
+    <mime>audio/mpeg</mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3]]></url>
+    <size>15400002</size>
     <mbid/>
     <album_mbid/>
-    <artist_mbid>1</artist_mbid>
-    <albumartist_mbid>1</albumartist_mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
-    <preciserating>0</preciserating>
-    <rating>0</rating>
+    <artist_mbid/>
+    <albumartist_mbid/>
+    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
+    <preciserating>5</preciserating>
+    <rating>5</rating>
     <averagerating>0</averagerating>
-    <composer><![CDATA[]]></composer>
+    <composer><![CDATA[Jeffrey Melton]]></composer>
     <channels>2</channels>
-    <comment><![CDATA[Made with Sony ACID 5]]></comment>
-    <publisher><![CDATA[20kbps rec.]]></publisher>
+    <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+    <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
-    <genre><![CDATA[Electronic]]></genre>
+    <replaygain_track_gain>1.53</replaygain_track_gain>
+    <replaygain_track_peak>0.989</replaygain_track_peak>
+    <genre><![CDATA[Electronica]]></genre>
+    <genre><![CDATA[Dance]]></genre>
   </song>
 </root>

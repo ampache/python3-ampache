@@ -1,324 +1,239 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>1</total_count>
-  <artist id="16">
-    <name><![CDATA[CARNÚN]]></name>
+  <artist id="11">
+    <name><![CDATA[structura]]></name>
+    <tag id="3" count="1"><![CDATA[Noise]]></tag>
     <albums>1</albums>
     <songs>
-      <total_count>9</total_count>
-      <song id="106">
-        <title><![CDATA[Malkuth - Intro]]></title>
-        <name><![CDATA[Malkuth - Intro]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/01Intro.ogg]]></filename>
+      <total_count>6</total_count>
+      <song id="78">
+        <title><![CDATA[inominavel p01]]></title>
+        <name><![CDATA[inominavel p01]]></name>
+        <artist id="11"><![CDATA[structura]]></artist>
+        <album id="18"><![CDATA[Inominavel (live.v.01)]]></album>
+        <albumartist id="11"><![CDATA[structura]]></albumartist>
+        <tag id="3" count="1"><![CDATA[Noise]]></tag>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3]]></filename>
         <track>1</track>
-        <time>91</time>
-        <year>1996</year>
-        <bitrate>81137</bitrate>
+        <time>84</time>
+        <year>2007</year>
+        <bitrate>192000</bitrate>
         <rate>44100</rate>
-        <mode>vbr</mode>
-        <mime>application/ogg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.mp3]]></url>
-        <size>932235</size>
+        <mode>cbr</mode>
+        <mime>audio/mpeg</mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p01.mp3]]></url>
+        <size>2036632</size>
         <mbid/>
         <album_mbid/>
         <artist_mbid/>
         <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&name=art.jpg]]></art>
         <preciserating>0</preciserating>
         <rating>0</rating>
         <averagerating>0</averagerating>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <comment><![CDATA[http://enoughrecords.scene.org]]></comment>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>1.98</replaygain_track_gain>
-        <replaygain_track_peak>0.861</replaygain_track_peak>
+        <replaygain_track_gain>0</replaygain_track_gain>
+        <replaygain_track_peak>0</replaygain_track_peak>
+        <genre><![CDATA[Noise]]></genre>
       </song>
-      <song id="100">
-        <title><![CDATA[The Prophecies Of The Horned One]]></title>
-        <name><![CDATA[The Prophecies Of The Horned One]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/02ThePropheciesOfTheHornedOne.ogg]]></filename>
+      <song id="77">
+        <title><![CDATA[inominavel p02]]></title>
+        <name><![CDATA[inominavel p02]]></name>
+        <artist id="11"><![CDATA[structura]]></artist>
+        <album id="18"><![CDATA[Inominavel (live.v.01)]]></album>
+        <albumartist id="11"><![CDATA[structura]]></albumartist>
+        <tag id="3" count="1"><![CDATA[Noise]]></tag>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/02_structura_-_inominavel_p02.mp3]]></filename>
         <track>2</track>
-        <time>378</time>
-        <year>1996</year>
-        <bitrate>90078</bitrate>
+        <time>237</time>
+        <year>2007</year>
+        <bitrate>192000</bitrate>
         <rate>44100</rate>
-        <mode>vbr</mode>
-        <mime>application/ogg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3]]></url>
-        <size>4271173</size>
+        <mode>cbr</mode>
+        <mime>audio/mpeg</mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=77&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p02.mp3]]></url>
+        <size>5723290</size>
         <mbid/>
         <album_mbid/>
         <artist_mbid/>
         <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&name=art.jpg]]></art>
         <preciserating>0</preciserating>
         <rating>0</rating>
         <averagerating>0</averagerating>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <comment><![CDATA[http://enoughrecords.scene.org]]></comment>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>-10.51</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
+        <replaygain_track_gain>0</replaygain_track_gain>
+        <replaygain_track_peak>0</replaygain_track_peak>
+        <genre><![CDATA[Noise]]></genre>
       </song>
-      <song id="98">
-        <title><![CDATA[In The Seven Woods]]></title>
-        <name><![CDATA[In The Seven Woods]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/03InTheSevenWoods.ogg]]></filename>
+      <song id="74">
+        <title><![CDATA[inominavel p03]]></title>
+        <name><![CDATA[inominavel p03]]></name>
+        <artist id="11"><![CDATA[structura]]></artist>
+        <album id="18"><![CDATA[Inominavel (live.v.01)]]></album>
+        <albumartist id="11"><![CDATA[structura]]></albumartist>
+        <tag id="3" count="1"><![CDATA[Noise]]></tag>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/03_structura_-_inominavel_p03.mp3]]></filename>
         <track>3</track>
-        <time>420</time>
-        <year>1996</year>
-        <bitrate>84528</bitrate>
+        <time>143</time>
+        <year>2007</year>
+        <bitrate>192000</bitrate>
         <rate>44100</rate>
-        <mode>vbr</mode>
-        <mime>application/ogg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3]]></url>
-        <size>4449963</size>
+        <mode>cbr</mode>
+        <mime>audio/mpeg</mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=74&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p03.mp3]]></url>
+        <size>3449255</size>
         <mbid/>
         <album_mbid/>
         <artist_mbid/>
         <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&name=art.jpg]]></art>
         <preciserating>0</preciserating>
         <rating>0</rating>
         <averagerating>0</averagerating>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <comment><![CDATA[http://enoughrecords.scene.org]]></comment>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>-9.7</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
+        <replaygain_track_gain>0</replaygain_track_gain>
+        <replaygain_track_peak>0</replaygain_track_peak>
+        <genre><![CDATA[Noise]]></genre>
       </song>
-      <song id="104">
-        <title><![CDATA[The Infernal Serpent]]></title>
-        <name><![CDATA[The Infernal Serpent]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/04TheInfernalSerpent.ogg]]></filename>
+      <song id="76">
+        <title><![CDATA[inominavel p04]]></title>
+        <name><![CDATA[inominavel p04]]></name>
+        <artist id="11"><![CDATA[structura]]></artist>
+        <album id="18"><![CDATA[Inominavel (live.v.01)]]></album>
+        <albumartist id="11"><![CDATA[structura]]></albumartist>
+        <tag id="3" count="1"><![CDATA[Noise]]></tag>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/04_structura_-_inominavel_p04.mp3]]></filename>
         <track>4</track>
-        <time>404</time>
-        <year>1996</year>
-        <bitrate>100174</bitrate>
+        <time>317</time>
+        <year>2007</year>
+        <bitrate>192000</bitrate>
         <rate>44100</rate>
-        <mode>vbr</mode>
-        <mime>application/ogg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3]]></url>
-        <size>5072883</size>
+        <mode>cbr</mode>
+        <mime>audio/mpeg</mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=76&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p04.mp3]]></url>
+        <size>7629821</size>
         <mbid/>
         <album_mbid/>
         <artist_mbid/>
         <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
+        <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&name=art.jpg]]></art>
+        <preciserating>3</preciserating>
+        <rating>3</rating>
+        <averagerating>3</averagerating>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <comment><![CDATA[http://enoughrecords.scene.org]]></comment>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>-11.26</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
+        <replaygain_track_gain>0</replaygain_track_gain>
+        <replaygain_track_peak>0</replaygain_track_peak>
+        <genre><![CDATA[Noise]]></genre>
       </song>
-      <song id="102">
-        <title><![CDATA[Moremque Sinistrum Sacrorum]]></title>
-        <name><![CDATA[Moremque Sinistrum Sacrorum]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/05MoremqueSinistrumSacrorum.ogg]]></filename>
+      <song id="73">
+        <title><![CDATA[inominavel p05]]></title>
+        <name><![CDATA[inominavel p05]]></name>
+        <artist id="11"><![CDATA[structura]]></artist>
+        <album id="18"><![CDATA[Inominavel (live.v.01)]]></album>
+        <albumartist id="11"><![CDATA[structura]]></albumartist>
+        <tag id="3" count="1"><![CDATA[Noise]]></tag>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/05_structura_-_inominavel_p05.mp3]]></filename>
         <track>5</track>
-        <time>164</time>
-        <year>1996</year>
-        <bitrate>106806</bitrate>
+        <time>310</time>
+        <year>2007</year>
+        <bitrate>192000</bitrate>
         <rate>44100</rate>
-        <mode>vbr</mode>
-        <mime>application/ogg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3]]></url>
-        <size>2206257</size>
+        <mode>cbr</mode>
+        <mime>audio/mpeg</mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=73&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p05.mp3]]></url>
+        <size>7463970</size>
         <mbid/>
         <album_mbid/>
         <artist_mbid/>
         <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&name=art.jpg]]></art>
         <preciserating>0</preciserating>
         <rating>0</rating>
         <averagerating>0</averagerating>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <comment><![CDATA[http://enoughrecords.scene.org]]></comment>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>-7.48</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
+        <replaygain_track_gain>0</replaygain_track_gain>
+        <replaygain_track_peak>0</replaygain_track_peak>
+        <genre><![CDATA[Noise]]></genre>
       </song>
-      <song id="99">
-        <title><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></title>
-        <name><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg]]></filename>
+      <song id="75">
+        <title><![CDATA[T - live]]></title>
+        <name><![CDATA[T - live]]></name>
+        <artist id="11"><![CDATA[structura]]></artist>
+        <album id="18"><![CDATA[Inominavel (live.v.01)]]></album>
+        <albumartist id="11"><![CDATA[structura]]></albumartist>
+        <tag id="3" count="1"><![CDATA[Noise]]></tag>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/06_structura_-_t_live.mp3]]></filename>
         <track>6</track>
-        <time>427</time>
-        <year>1996</year>
-        <bitrate>143953</bitrate>
+        <time>248</time>
+        <year>2007</year>
+        <bitrate>192000</bitrate>
         <rate>44100</rate>
-        <mode>vbr</mode>
-        <mime>application/ogg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3]]></url>
-        <size>7704860</size>
+        <mode>cbr</mode>
+        <mime>audio/mpeg</mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=75&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20T%20-%20live.mp3]]></url>
+        <size>5986451</size>
         <mbid/>
         <album_mbid/>
         <artist_mbid/>
         <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
+        <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&name=art.jpg]]></art>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
+        <averagerating>3</averagerating>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <comment><![CDATA[http://enoughrecords.scene.org]]></comment>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>-12.66</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
-      </song>
-      <song id="103">
-        <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
-        <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/07InTheSevenWoods_InstrumentalReRecording.ogg]]></filename>
-        <track>7</track>
-        <time>452</time>
-        <year>1996</year>
-        <bitrate>138496</bitrate>
-        <rate>44100</rate>
-        <mode>vbr</mode>
-        <mime>application/ogg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
-        <size>7835220</size>
-        <mbid/>
-        <album_mbid/>
-        <artist_mbid/>
-        <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
-        <publisher><![CDATA[archive.org]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-12.21</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
-      </song>
-      <song id="105">
-        <title><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></title>
-        <name><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/08TheInfernalSerpent_InstrumentalReRecording.ogg]]></filename>
-        <track>8</track>
-        <time>557</time>
-        <year>1996</year>
-        <bitrate>139609</bitrate>
-        <rate>44100</rate>
-        <mode>vbr</mode>
-        <mime>application/ogg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.mp3]]></url>
-        <size>9733002</size>
-        <mbid/>
-        <album_mbid/>
-        <artist_mbid/>
-        <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
-        <publisher><![CDATA[archive.org]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-12.24</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
-      </song>
-      <song id="101">
-        <title><![CDATA[Rehearsal Tape (1996)]]></title>
-        <name><![CDATA[Rehearsal Tape (1996)]]></name>
-        <artist id="16"><![CDATA[CARNÚN]]></artist>
-        <album id="10"><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></album>
-        <albumartist id="16"><![CDATA[CARNÚN]]></albumartist>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/09RehearsalTape1996.ogg]]></filename>
-        <track>9</track>
-        <time>980</time>
-        <year>1996</year>
-        <bitrate>66988</bitrate>
-        <rate>44100</rate>
-        <mode>vbr</mode>
-        <mime>application/ogg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.mp3]]></url>
-        <size>8229246</size>
-        <mbid/>
-        <album_mbid/>
-        <artist_mbid/>
-        <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
-        <publisher><![CDATA[archive.org]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-9.56</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
+        <replaygain_track_gain>0</replaygain_track_gain>
+        <replaygain_track_peak>0</replaygain_track_peak>
+        <genre><![CDATA[Noise]]></genre>
       </song>
     </songs>
-    <art><![CDATA[https://music.com.au/image.php?object_id=16&object_type=artist]]></art>
-    <preciserating>0</preciserating>
-    <rating>0</rating>
-    <averagerating>0</averagerating>
+    <art><![CDATA[https://music.com.au/image.php?object_id=11&object_type=artist]]></art>
+    <preciserating>4</preciserating>
+    <rating>4</rating>
+    <averagerating>4</averagerating>
     <mbid/>
-    <summary><![CDATA[]]></summary>
+    <summary><![CDATA[. Born in 2000 at Lisbon - Portugal, Structura is a sound exploration project using as main tools electronic composition, frequency modulation and effects, the cut-up (of texts), spoken word, DJing, samples, video and others.
+Structura works sounds normally associated with experimental electronica currents like Rhythmic-Noise, Power-Electronics, Break'n'Noise, IDM, Spoken-Word but freelly enough not to get to attached to them.
+The sound compositions in Structura are linked to concepts, images, literature, cinema and other arts.
+
+ ]]></summary>
     <yearformed/>
     <placeformed><![CDATA[]]></placeformed>
   </artist>
