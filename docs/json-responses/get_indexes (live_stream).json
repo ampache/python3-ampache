@@ -1,0 +1,20 @@
+{
+    "live_stream": [
+        {
+            "id": "1",
+            "name": "HBR1.com - Dream Factory",
+            "url": "http:\/\/ubuntu.hbr1.com:19800\/ambient.aac",
+            "codec": "mp4",
+            "catalog": "1",
+            "site_url": "http:\/\/www.hbr1.com\/"
+        },
+        {
+            "id": "2",
+            "name": "HBR1.com - I.D.M. Tranceponder",
+            "url": "http:\/\/ubuntu.hbr1.com:19800\/trance.ogg",
+            "codec": "ogg",
+            "catalog": "1",
+            "site_url": "http:\/\/www.hbr1.com\/"
+        }
+    ]
+}

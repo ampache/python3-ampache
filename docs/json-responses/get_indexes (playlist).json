@@ -1,18 +1,6 @@
 {
     "playlist": [
         {
-            "id": "2",
-            "name": "random - admin - public (admin)",
-            "owner": "admin",
-            "items": 43,
-            "type": "public",
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=playlist",
-            "flag": 1,
-            "preciserating": null,
-            "rating": null,
-            "averagerating": null
-        },
-        {
             "id": "smart_21",
             "name": "admin - 02\/23\/2021 14:36:44 (admin)",
             "owner": "admin",
@@ -43,6 +31,18 @@
             "items": 11,
             "type": "public",
             "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=search",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null
+        },
+        {
+            "id": "smart_12",
+            "name": "Album 3* (System)",
+            "owner": "System",
+            "items": 0,
+            "type": "public",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=search",
             "flag": 0,
             "preciserating": null,
             "rating": null,

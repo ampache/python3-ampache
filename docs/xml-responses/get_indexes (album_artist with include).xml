@@ -423,164 +423,6 @@
     <yearformed>0</yearformed>
     <placeformed><![CDATA[]]></placeformed>
   </artist>
-  <artist id="27">
-    <name><![CDATA[Chi.Otic]]></name>
-    <albums>
-      <album id="12">
-        <name><![CDATA[Buried in Nausea]]></name>
-        <artist id="19"><![CDATA[Various Artists]]></artist>
-        <time>1879</time>
-        <year>2012</year>
-        <tracks/>
-        <songcount>9</songcount>
-        <diskcount>1</diskcount>
-        <type>compilation</type>
-        <genre id="7"><![CDATA[Punk]]></genre>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album]]></art>
-        <flag>0</flag>
-        <preciserating/>
-        <rating/>
-        <averagerating/>
-        <mbid><![CDATA[]]></mbid>
-      </album>
-    </albums>
-    <albumcount>0</albumcount>
-    <songs>
-      <song id="115">
-        <title><![CDATA[Are we going Crazy]]></title>
-        <name><![CDATA[Are we going Crazy]]></name>
-        <artist id="27"><![CDATA[Chi.Otic]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-        <disk><![CDATA[1]]></disk>
-        <track>7</track>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
-        <playlisttrack>1</playlisttrack>
-        <time>433</time>
-        <year>2012</year>
-        <bitrate>32582</bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
-        <size>1776580</size>
-        <mbid><![CDATA[]]></mbid>
-        <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[7]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
-        <flag>0</flag>
-        <preciserating/>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>1</channels>
-        <comment><![CDATA[]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-    </songs>
-    <songcount>1</songcount>
-    <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=artist]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <mbid><![CDATA[7]]></mbid>
-    <summary><![CDATA[]]></summary>
-    <time><![CDATA[433]]></time>
-    <yearformed>0</yearformed>
-    <placeformed><![CDATA[]]></placeformed>
-  </artist>
-  <artist id="34">
-    <name><![CDATA[Comedown Kid]]></name>
-    <albums>
-      <album id="12">
-        <name><![CDATA[Buried in Nausea]]></name>
-        <artist id="19"><![CDATA[Various Artists]]></artist>
-        <time>1879</time>
-        <year>2012</year>
-        <tracks/>
-        <songcount>9</songcount>
-        <diskcount>1</diskcount>
-        <type>compilation</type>
-        <genre id="7"><![CDATA[Punk]]></genre>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album]]></art>
-        <flag>0</flag>
-        <preciserating/>
-        <rating/>
-        <averagerating/>
-        <mbid><![CDATA[]]></mbid>
-      </album>
-    </albums>
-    <albumcount>0</albumcount>
-    <songs>
-      <song id="109">
-        <title><![CDATA[Dance with the Devil]]></title>
-        <name><![CDATA[Dance with the Devil]]></name>
-        <artist id="34"><![CDATA[Comedown Kid]]></artist>
-        <album id="12"><![CDATA[Buried in Nausea]]></album>
-        <albumartist id="19"><![CDATA[Various Artists]]></albumartist>
-        <disk><![CDATA[1]]></disk>
-        <track>3</track>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
-        <playlisttrack>1</playlisttrack>
-        <time>116</time>
-        <year>2012</year>
-        <bitrate>32582</bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/x-ms-wma]]></mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3]]></url>
-        <size>483444</size>
-        <mbid><![CDATA[]]></mbid>
-        <album_mbid><![CDATA[]]></album_mbid>
-        <artist_mbid><![CDATA[]]></artist_mbid>
-        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
-        <flag>0</flag>
-        <preciserating/>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>1</channels>
-        <comment><![CDATA[]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-    </songs>
-    <songcount>1</songcount>
-    <art><![CDATA[https://music.com.au/image.php?object_id=34&object_type=artist]]></art>
-    <flag>0</flag>
-    <preciserating/>
-    <rating/>
-    <averagerating/>
-    <mbid><![CDATA[]]></mbid>
-    <summary><![CDATA[]]></summary>
-    <time><![CDATA[116]]></time>
-    <yearformed>0</yearformed>
-    <placeformed><![CDATA[]]></placeformed>
-  </artist>
   <artist id="36">
     <name><![CDATA[Comfort Fit]]></name>
     <genre id="8"><![CDATA[Hip-Hop]]></genre>
@@ -1555,6 +1397,766 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <mbid><![CDATA[e6e2b787-0b4c-4267-8161-310399b101a5]]></mbid>
     <summary><![CDATA[Comfort Fit’s(Boris Mezga) versatile influences range from early detroit techno and minimal electronica to jazz, broken beats and hip-hop. This makes it easy for him to invisibly switch between musical styles within a fingersnap, taking the listener onto long and exciting journies. Wisely using music codes of genres such as hip-hop, dubstep and techno as a mere comic template, Comfort Fit has inspired hip-hop and techno artists around the world with his heavy beat techniques. Besides his numerous remix requests, even major brands have discovered his outstanding production skills and request his music for advertisements regularly. Since 2000 he has ]]></summary>
     <time><![CDATA[4248]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
+  <artist id="13">
+    <name><![CDATA[IOK-1]]></name>
+    <genre id="4"><![CDATA[Dark Ambient]]></genre>
+    <albums>
+      <album id="7">
+        <name><![CDATA[Sensorisk Deprivation]]></name>
+        <artist id="13"><![CDATA[IOK-1]]></artist>
+        <time>3428</time>
+        <year>2011</year>
+        <tracks/>
+        <songcount>4</songcount>
+        <diskcount>1</diskcount>
+        <type/>
+        <genre id="4"><![CDATA[Dark Ambient]]></genre>
+        <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <mbid><![CDATA[]]></mbid>
+      </album>
+    </albums>
+    <albumcount>1</albumcount>
+    <songs>
+      <song id="83">
+        <title><![CDATA[Sensorisk Deprivation]]></title>
+        <name><![CDATA[Sensorisk Deprivation]]></name>
+        <artist id="13"><![CDATA[IOK-1]]></artist>
+        <album id="7"><![CDATA[Sensorisk Deprivation]]></album>
+        <albumartist id="13"><![CDATA[IOK-1]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>1</track>
+        <genre id="4"><![CDATA[Dark Ambient]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/01_-_IOK-1_-_Sensorisk_Deprivation.flac]]></filename>
+        <playlisttrack>1</playlisttrack>
+        <time>818</time>
+        <year>2011</year>
+        <bitrate>385823</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/flac]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=83&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Sensorisk%20Deprivation.mp3]]></url>
+        <size>39473388</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>13</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[DNA Production release
+Catalogue # DNA 119]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[DNA Production]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>1.11</replaygain_track_gain>
+        <replaygain_track_peak>0.977</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="82">
+        <title><![CDATA[Vanvett]]></title>
+        <name><![CDATA[Vanvett]]></name>
+        <artist id="13"><![CDATA[IOK-1]]></artist>
+        <album id="7"><![CDATA[Sensorisk Deprivation]]></album>
+        <albumartist id="13"><![CDATA[IOK-1]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>2</track>
+        <genre id="4"><![CDATA[Dark Ambient]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/02_-_IOK-1_-_Vanvett.flac]]></filename>
+        <playlisttrack>2</playlisttrack>
+        <time>825</time>
+        <year>2011</year>
+        <bitrate>371855</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/flac]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3]]></url>
+        <size>38389422</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[DNA Production release
+Catalogue # DNA 119]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[DNA Production]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-2.57</replaygain_track_gain>
+        <replaygain_track_peak>0.977</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="81">
+        <title><![CDATA[Galenskap]]></title>
+        <name><![CDATA[Galenskap]]></name>
+        <artist id="13"><![CDATA[IOK-1]]></artist>
+        <album id="7"><![CDATA[Sensorisk Deprivation]]></album>
+        <albumartist id="13"><![CDATA[IOK-1]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>3</track>
+        <genre id="4"><![CDATA[Dark Ambient]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/03_-_IOK-1_-_Galenskap.flac]]></filename>
+        <playlisttrack>3</playlisttrack>
+        <time>998</time>
+        <year>2011</year>
+        <bitrate>389683</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/flac]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Galenskap.mp3]]></url>
+        <size>48633049</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[DNA Production release
+Catalogue # DNA 119]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[DNA Production]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-5.33</replaygain_track_gain>
+        <replaygain_track_peak>0.977</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="84">
+        <title><![CDATA[Vansinne]]></title>
+        <name><![CDATA[Vansinne]]></name>
+        <artist id="13"><![CDATA[IOK-1]]></artist>
+        <album id="7"><![CDATA[Sensorisk Deprivation]]></album>
+        <albumartist id="13"><![CDATA[IOK-1]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>4</track>
+        <genre id="4"><![CDATA[Dark Ambient]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/04_-_IOK-1_-_Vansinne.flac]]></filename>
+        <playlisttrack>4</playlisttrack>
+        <time>787</time>
+        <year>2011</year>
+        <bitrate>713176</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/flac]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vansinne.mp3]]></url>
+        <size>70182824</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[DNA Production release
+Catalogue # DNA 119]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[DNA Production]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-5.35</replaygain_track_gain>
+        <replaygain_track_peak>0.7</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+    </songs>
+    <songcount>4</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=13&object_type=artist]]></art>
+    <flag>0</flag>
+    <preciserating/>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[IOK-1 was a side project of Tarmskrap, but it became his main project. 
+He creates ambient, dark ambient, drone something.
+
+IOK-1 soundcloud 
+ 
+Has released one 3" cdr on Witte Dood Records called "Rost",  appears on Public Spaces Lab's Ceci n’est pas une pipe and Public Spaces Lab's The Future Lab
+
+He released a full length called "Poems" on Deersound. 
+It is limited to 10 copies, 4 discs, clocks in at just over five hours. ]]></summary>
+    <time><![CDATA[3428]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
+  <artist id="14">
+    <name><![CDATA[Nofi/found.]]></name>
+    <genre id="5"><![CDATA[Electronica]]></genre>
+    <genre id="6"><![CDATA[Dance]]></genre>
+    <albums>
+      <album id="8">
+        <name><![CDATA[Nofi Devices]]></name>
+        <artist id="14"><![CDATA[Nofi/found.]]></artist>
+        <time>4423</time>
+        <year>0</year>
+        <tracks/>
+        <songcount>11</songcount>
+        <diskcount>1</diskcount>
+        <type/>
+        <genre id="5"><![CDATA[Electronica]]></genre>
+        <genre id="6"><![CDATA[Dance]]></genre>
+        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album]]></art>
+        <flag>0</flag>
+        <preciserating>2</preciserating>
+        <rating>2</rating>
+        <averagerating/>
+        <mbid><![CDATA[]]></mbid>
+      </album>
+    </albums>
+    <albumcount>1</albumcount>
+    <songs>
+      <song id="90">
+        <title><![CDATA[Invo]]></title>
+        <name><![CDATA[Invo]]></name>
+        <artist id="14"><![CDATA[Nofi/found.]]></artist>
+        <album id="8"><![CDATA[Nofi Devices]]></album>
+        <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>1</track>
+        <genre id="5"><![CDATA[Electronica]]></genre>
+        <genre id="6"><![CDATA[Dance]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/01_Invo.mp3]]></filename>
+        <playlisttrack>1</playlisttrack>
+        <time>47</time>
+        <year>0</year>
+        <bitrate>192000</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Invo.mp3]]></url>
+        <size>1140815</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-3.05</replaygain_track_gain>
+        <replaygain_track_peak>0.933</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="95">
+        <title><![CDATA[Spirus Falls]]></title>
+        <name><![CDATA[Spirus Falls]]></name>
+        <artist id="14"><![CDATA[Nofi/found.]]></artist>
+        <album id="8"><![CDATA[Nofi Devices]]></album>
+        <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>2</track>
+        <genre id="5"><![CDATA[Electronica]]></genre>
+        <genre id="6"><![CDATA[Dance]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/02_Spirus_Falls.mp3]]></filename>
+        <playlisttrack>2</playlisttrack>
+        <time>327</time>
+        <year>0</year>
+        <bitrate>192000</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3]]></url>
+        <size>7875775</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-1.53</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="93">
+        <title><![CDATA[Scribnus 3]]></title>
+        <name><![CDATA[Scribnus 3]]></name>
+        <artist id="14"><![CDATA[Nofi/found.]]></artist>
+        <album id="8"><![CDATA[Nofi Devices]]></album>
+        <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>3</track>
+        <genre id="5"><![CDATA[Electronica]]></genre>
+        <genre id="6"><![CDATA[Dance]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3]]></filename>
+        <playlisttrack>3</playlisttrack>
+        <time>641</time>
+        <year>0</year>
+        <bitrate>192000</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3]]></url>
+        <size>15400002</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>4</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>1.53</replaygain_track_gain>
+        <replaygain_track_peak>0.989</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="85">
+        <title><![CDATA[Beq Ultra Fat]]></title>
+        <name><![CDATA[Beq Ultra Fat]]></name>
+        <artist id="14"><![CDATA[Nofi/found.]]></artist>
+        <album id="8"><![CDATA[Nofi Devices]]></album>
+        <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>4</track>
+        <genre id="5"><![CDATA[Electronica]]></genre>
+        <genre id="6"><![CDATA[Dance]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/04_Beq_Ultra_Fat.mp3]]></filename>
+        <playlisttrack>4</playlisttrack>
+        <time>413</time>
+        <year>0</year>
+        <bitrate>192000</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3]]></url>
+        <size>9935896</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>0.94</replaygain_track_gain>
+        <replaygain_track_peak>0.989</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="86">
+        <title><![CDATA[Caloonashine]]></title>
+        <name><![CDATA[Caloonashine]]></name>
+        <artist id="14"><![CDATA[Nofi/found.]]></artist>
+        <album id="8"><![CDATA[Nofi Devices]]></album>
+        <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>5</track>
+        <genre id="5"><![CDATA[Electronica]]></genre>
+        <genre id="6"><![CDATA[Dance]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/05_Caloonashine.mp3]]></filename>
+        <playlisttrack>5</playlisttrack>
+        <time>330</time>
+        <year>0</year>
+        <bitrate>192000</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Caloonashine.mp3]]></url>
+        <size>7929692</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-0.35</replaygain_track_gain>
+        <replaygain_track_peak>0.955</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="87">
+        <title><![CDATA[Wonders of Nando]]></title>
+        <name><![CDATA[Wonders of Nando]]></name>
+        <artist id="14"><![CDATA[Nofi/found.]]></artist>
+        <album id="8"><![CDATA[Nofi Devices]]></album>
+        <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>6</track>
+        <genre id="5"><![CDATA[Electronica]]></genre>
+        <genre id="6"><![CDATA[Dance]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/06_Wonders_of_Nando.mp3]]></filename>
+        <playlisttrack>6</playlisttrack>
+        <time>319</time>
+        <year>0</year>
+        <bitrate>192000</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=87&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Wonders%20of%20Nando.mp3]]></url>
+        <size>7673901</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-1.44</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="94">
+        <title><![CDATA[Strangers Query]]></title>
+        <name><![CDATA[Strangers Query]]></name>
+        <artist id="14"><![CDATA[Nofi/found.]]></artist>
+        <album id="8"><![CDATA[Nofi Devices]]></album>
+        <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>7</track>
+        <genre id="5"><![CDATA[Electronica]]></genre>
+        <genre id="6"><![CDATA[Dance]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/07_Strangers_Query.mp3]]></filename>
+        <playlisttrack>7</playlisttrack>
+        <time>279</time>
+        <year>0</year>
+        <bitrate>192000</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=94&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Strangers%20Query.mp3]]></url>
+        <size>6719700</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-3.8</replaygain_track_gain>
+        <replaygain_track_peak>0.966</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="92">
+        <title><![CDATA[Stance]]></title>
+        <name><![CDATA[Stance]]></name>
+        <artist id="14"><![CDATA[Nofi/found.]]></artist>
+        <album id="8"><![CDATA[Nofi Devices]]></album>
+        <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>8</track>
+        <genre id="5"><![CDATA[Electronica]]></genre>
+        <genre id="6"><![CDATA[Dance]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/08_Stance.mp3]]></filename>
+        <playlisttrack>8</playlisttrack>
+        <time>544</time>
+        <year>0</year>
+        <bitrate>192000</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stance.mp3]]></url>
+        <size>13078740</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-2.38</replaygain_track_gain>
+        <replaygain_track_peak>0.989</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="91">
+        <title><![CDATA[Home Capsules]]></title>
+        <name><![CDATA[Home Capsules]]></name>
+        <artist id="14"><![CDATA[Nofi/found.]]></artist>
+        <album id="8"><![CDATA[Nofi Devices]]></album>
+        <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>9</track>
+        <genre id="5"><![CDATA[Electronica]]></genre>
+        <genre id="6"><![CDATA[Dance]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/09_Home_Capsules.mp3]]></filename>
+        <playlisttrack>9</playlisttrack>
+        <time>294</time>
+        <year>0</year>
+        <bitrate>192000</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3]]></url>
+        <size>7076428</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-2.97</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="88">
+        <title><![CDATA[Netro]]></title>
+        <name><![CDATA[Netro]]></name>
+        <artist id="14"><![CDATA[Nofi/found.]]></artist>
+        <album id="8"><![CDATA[Nofi Devices]]></album>
+        <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>10</track>
+        <genre id="5"><![CDATA[Electronica]]></genre>
+        <genre id="6"><![CDATA[Dance]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/10_Netro.mp3]]></filename>
+        <playlisttrack>10</playlisttrack>
+        <time>601</time>
+        <year>0</year>
+        <bitrate>192000</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=88&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Netro.mp3]]></url>
+        <size>14445467</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-1.28</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="89">
+        <title><![CDATA[Stolen]]></title>
+        <name><![CDATA[Stolen]]></name>
+        <artist id="14"><![CDATA[Nofi/found.]]></artist>
+        <album id="8"><![CDATA[Nofi Devices]]></album>
+        <albumartist id="14"><![CDATA[Nofi/found.]]></albumartist>
+        <disk><![CDATA[1]]></disk>
+        <track>11</track>
+        <genre id="5"><![CDATA[Electronica]]></genre>
+        <genre id="6"><![CDATA[Dance]]></genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/11_Stolen.mp3]]></filename>
+        <playlisttrack>11</playlisttrack>
+        <time>628</time>
+        <year>0</year>
+        <bitrate>192000</bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=89&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stolen.mp3]]></url>
+        <size>15100325</size>
+        <mbid><![CDATA[]]></mbid>
+        <album_mbid><![CDATA[]]></album_mbid>
+        <artist_mbid><![CDATA[]]></artist_mbid>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
+        <flag>0</flag>
+        <preciserating/>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>2.66</replaygain_track_gain>
+        <replaygain_track_peak>0.989</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+    </songs>
+    <songcount>11</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=14&object_type=artist]]></art>
+    <flag>0</flag>
+    <preciserating>2</preciserating>
+    <rating>2</rating>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[Nofi/found. is the work of Jeffrey Melton released prior to 2005. From the website:
+Nofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. ’stateless’). ]]></summary>
+    <time><![CDATA[4423]]></time>
     <yearformed>0</yearformed>
     <placeformed><![CDATA[]]></placeformed>
   </artist>

@@ -1,47 +1,47 @@
 {
     "activity": [
         {
-            "id": "31",
-            "date": 1614055275,
-            "object_type": "video",
-            "object_id": "1",
-            "action": "play",
-            "user": {
-                "id": "2",
-                "username": "admin"
-            }
-        },
-        {
-            "id": "30",
-            "date": 1614055252,
+            "id": "233",
+            "date": 1751332652,
             "object_type": "song",
-            "object_id": "79",
-            "action": "play",
-            "user": {
-                "id": "2",
-                "username": "admin"
-            }
-        },
-        {
-            "id": "26",
-            "date": 1614055014,
-            "object_type": "song",
-            "object_id": "76",
-            "action": "play",
-            "user": {
-                "id": "2",
-                "username": "admin"
-            }
-        },
-        {
-            "id": "25",
-            "date": 1614054865,
-            "object_type": "video",
-            "object_id": "1",
+            "object_id": "123",
             "action": "userflag",
             "user": {
-                "id": "2",
-                "username": "admin"
+                "id": "4",
+                "username": "user"
+            }
+        },
+        {
+            "id": "231",
+            "date": 1751326507,
+            "object_type": "song",
+            "object_id": "125",
+            "action": "rating",
+            "user": {
+                "id": "4",
+                "username": "user"
+            }
+        },
+        {
+            "id": "232",
+            "date": 1751326507,
+            "object_type": "user",
+            "object_id": "4",
+            "action": "follow",
+            "user": {
+                "id": "4",
+                "username": "user"
+            }
+        },
+        {
+            "id": "230",
+            "date": 1751326433,
+            "object_type": "song",
+            "object_id": "101",
+            "action": "rating",
+            "user": {
+                "id": "4",
+                "username": "user"
             }
         }
     ]

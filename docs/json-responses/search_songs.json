@@ -1,39 +1,103 @@
 {
     "song": [
         {
-            "id": "109",
-            "title": "Dance with the Devil",
-            "name": "Dance with the Devil",
+            "id": "83",
+            "title": "Sensorisk Deprivation",
+            "name": "Sensorisk Deprivation",
             "artist": {
-                "id": "34",
-                "name": "Comedown Kid"
+                "id": "13",
+                "name": "IOK-1"
             },
             "album": {
-                "id": "12",
-                "name": "Buried in Nausea"
+                "id": "7",
+                "name": "Sensorisk Deprivation"
             },
             "albumartist": {
-                "id": "19",
-                "name": "Various Artists"
+                "id": "13",
+                "name": "IOK-1"
             },
             "disk": 1,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
-            "genre": [],
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/01_-_IOK-1_-_Sensorisk_Deprivation.flac",
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Dark Ambient"
+                }
+            ],
             "playlisttrack": 1,
-            "time": 116,
-            "year": 2012,
-            "bitrate": 32582,
+            "time": 818,
+            "year": 2011,
+            "bitrate": 385823,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
-            "size": 483444,
+            "mode": "vbr",
+            "mime": "audio\/flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=83&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Sensorisk%20Deprivation.mp3",
+            "size": 39473388,
             "mbid": null,
             "album_mbid": null,
             "artist_mbid": null,
             "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 13,
+            "catalog": 1,
+            "composer": null,
+            "channels": 2,
+            "comment": "DNA Production release\r\nCatalogue # DNA 119",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": 1.11,
+            "replaygain_track_peak": 0.977,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "82",
+            "title": "Vanvett",
+            "name": "Vanvett",
+            "artist": {
+                "id": "13",
+                "name": "IOK-1"
+            },
+            "album": {
+                "id": "7",
+                "name": "Sensorisk Deprivation"
+            },
+            "albumartist": {
+                "id": "13",
+                "name": "IOK-1"
+            },
+            "disk": 1,
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/02_-_IOK-1_-_Vanvett.flac",
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Dark Ambient"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 825,
+            "year": 2011,
+            "bitrate": 371855,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3",
+            "size": 38389422,
+            "mbid": null,
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -41,16 +105,134 @@
             "playcount": 0,
             "catalog": 1,
             "composer": null,
-            "channels": 1,
-            "comment": null,
+            "channels": 2,
+            "comment": "DNA Production release\r\nCatalogue # DNA 119",
             "license": null,
-            "publisher": null,
+            "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
+            "replaygain_track_gain": -2.57,
+            "replaygain_track_peak": 0.977,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "81",
+            "title": "Galenskap",
+            "name": "Galenskap",
+            "artist": {
+                "id": "13",
+                "name": "IOK-1"
+            },
+            "album": {
+                "id": "7",
+                "name": "Sensorisk Deprivation"
+            },
+            "albumartist": {
+                "id": "13",
+                "name": "IOK-1"
+            },
+            "disk": 1,
+            "track": 3,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/03_-_IOK-1_-_Galenskap.flac",
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Dark Ambient"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 998,
+            "year": 2011,
+            "bitrate": 389683,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Galenskap.mp3",
+            "size": 48633049,
+            "mbid": null,
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 2,
+            "comment": "DNA Production release\r\nCatalogue # DNA 119",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -5.33,
+            "replaygain_track_peak": 0.977,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "84",
+            "title": "Vansinne",
+            "name": "Vansinne",
+            "artist": {
+                "id": "13",
+                "name": "IOK-1"
+            },
+            "album": {
+                "id": "7",
+                "name": "Sensorisk Deprivation"
+            },
+            "albumartist": {
+                "id": "13",
+                "name": "IOK-1"
+            },
+            "disk": 1,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/04_-_IOK-1_-_Vansinne.flac",
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Dark Ambient"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 787,
+            "year": 2011,
+            "bitrate": 713176,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/flac",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vansinne.mp3",
+            "size": 70182824,
+            "mbid": null,
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 2,
+            "comment": "DNA Production release\r\nCatalogue # DNA 119",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -5.35,
+            "replaygain_track_peak": 0.7,
             "r128_album_gain": null,
             "r128_track_gain": null
         }
