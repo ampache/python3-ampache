@@ -510,204 +510,6 @@
         "placeformed": null
     },
     {
-        "id": "27",
-        "name": "Chi.Otic",
-        "albums": [
-            {
-                "id": "12",
-                "name": "Buried in Nausea",
-                "artist": {
-                    "id": "19",
-                    "name": "Various Artists"
-                },
-                "time": 1879,
-                "year": 2012,
-                "tracks": 9,
-                "songcount": 9,
-                "type": "compilation",
-                "disk": 1,
-                "tag": [
-                    {
-                        "id": "7",
-                        "name": "Punk"
-                    }
-                ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "mbid": null
-            }
-        ],
-        "albumcount": 0,
-        "songs": [
-            {
-                "id": "115",
-                "title": "Are we going Crazy",
-                "name": "Are we going Crazy",
-                "artist": {
-                    "id": "27",
-                    "name": "Chi.Otic"
-                },
-                "album": {
-                    "id": "12",
-                    "name": "Buried in Nausea"
-                },
-                "albumartist": {
-                    "id": "19",
-                    "name": "Various Artists"
-                },
-                "disk": 1,
-                "track": 7,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
-                "tag": [],
-                "playlisttrack": 1,
-                "time": 433,
-                "year": 2012,
-                "bitrate": 32582,
-                "rate": 44100,
-                "mode": "cbr",
-                "mime": "audio\/x-ms-wma",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
-                "size": 1776580,
-                "mbid": null,
-                "album_mbid": null,
-                "artist_mbid": "7",
-                "albumartist_mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 1,
-                "comment": null,
-                "license": null,
-                "publisher": null,
-                "language": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": null,
-                "replaygain_track_peak": null,
-                "genre": []
-            }
-        ],
-        "songcount": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=artist",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": "7",
-        "summary": null,
-        "time": 433,
-        "yearformed": 0,
-        "placeformed": null
-    },
-    {
-        "id": "34",
-        "name": "Comedown Kid",
-        "albums": [
-            {
-                "id": "12",
-                "name": "Buried in Nausea",
-                "artist": {
-                    "id": "19",
-                    "name": "Various Artists"
-                },
-                "time": 1879,
-                "year": 2012,
-                "tracks": 9,
-                "songcount": 9,
-                "type": "compilation",
-                "disk": 1,
-                "tag": [
-                    {
-                        "id": "7",
-                        "name": "Punk"
-                    }
-                ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "mbid": null
-            }
-        ],
-        "albumcount": 0,
-        "songs": [
-            {
-                "id": "109",
-                "title": "Dance with the Devil",
-                "name": "Dance with the Devil",
-                "artist": {
-                    "id": "34",
-                    "name": "Comedown Kid"
-                },
-                "album": {
-                    "id": "12",
-                    "name": "Buried in Nausea"
-                },
-                "albumartist": {
-                    "id": "19",
-                    "name": "Various Artists"
-                },
-                "disk": 1,
-                "track": 3,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
-                "tag": [],
-                "playlisttrack": 1,
-                "time": 116,
-                "year": 2012,
-                "bitrate": 32582,
-                "rate": 44100,
-                "mode": "cbr",
-                "mime": "audio\/x-ms-wma",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
-                "size": 483444,
-                "mbid": null,
-                "album_mbid": null,
-                "artist_mbid": null,
-                "albumartist_mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 1,
-                "comment": null,
-                "license": null,
-                "publisher": null,
-                "language": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": null,
-                "replaygain_track_peak": null,
-                "genre": []
-            }
-        ],
-        "songcount": 1,
-        "tag": [],
-        "art": "https:\/\/music.com.au\/image.php?object_id=34&object_type=artist",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "mbid": null,
-        "summary": null,
-        "time": 116,
-        "yearformed": 0,
-        "placeformed": null
-    },
-    {
         "id": "36",
         "name": "Comfort Fit",
         "albums": [
@@ -1976,6 +1778,1110 @@
         "mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
         "summary": "Comfort Fit\u2019s(Boris Mezga) versatile influences range from early detroit techno and minimal electronica to jazz, broken beats and hip-hop. This makes it easy for him to invisibly switch between musical styles within a fingersnap, taking the listener onto long and exciting journies. Wisely using music codes of genres such as hip-hop, dubstep and techno as a mere comic template, Comfort Fit has inspired hip-hop and techno artists around the world with his heavy beat techniques. Besides his numerous remix requests, even major brands have discovered his outstanding production skills and request his music for advertisements regularly. Since 2000 he has ",
         "time": 4248,
+        "yearformed": 0,
+        "placeformed": null
+    },
+    {
+        "id": "13",
+        "name": "IOK-1",
+        "albums": [
+            {
+                "id": "7",
+                "name": "Sensorisk Deprivation",
+                "artist": {
+                    "id": "13",
+                    "name": "IOK-1"
+                },
+                "time": 3428,
+                "year": 2011,
+                "tracks": 4,
+                "songcount": 4,
+                "type": null,
+                "disk": 1,
+                "tag": [
+                    {
+                        "id": "4",
+                        "name": "Dark Ambient"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null
+            }
+        ],
+        "albumcount": 1,
+        "songs": [
+            {
+                "id": "83",
+                "title": "Sensorisk Deprivation",
+                "name": "Sensorisk Deprivation",
+                "artist": {
+                    "id": "13",
+                    "name": "IOK-1"
+                },
+                "album": {
+                    "id": "7",
+                    "name": "Sensorisk Deprivation"
+                },
+                "albumartist": {
+                    "id": "13",
+                    "name": "IOK-1"
+                },
+                "disk": 1,
+                "track": 1,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/01_-_IOK-1_-_Sensorisk_Deprivation.flac",
+                "tag": [
+                    {
+                        "id": "4",
+                        "name": "Dark Ambient"
+                    }
+                ],
+                "playlisttrack": 1,
+                "time": 818,
+                "year": 2011,
+                "bitrate": 385823,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "audio\/flac",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=83&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Sensorisk%20Deprivation.mp3",
+                "size": 39473388,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+                "flag": 1,
+                "preciserating": 5,
+                "rating": 5,
+                "averagerating": null,
+                "playcount": 1,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "DNA Production release\r\nCatalogue # DNA 119",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": 1.11,
+                "replaygain_track_peak": 0.977,
+                "genre": [
+                    {
+                        "name": "Dark Ambient"
+                    }
+                ]
+            },
+            {
+                "id": "82",
+                "title": "Vanvett",
+                "name": "Vanvett",
+                "artist": {
+                    "id": "13",
+                    "name": "IOK-1"
+                },
+                "album": {
+                    "id": "7",
+                    "name": "Sensorisk Deprivation"
+                },
+                "albumartist": {
+                    "id": "13",
+                    "name": "IOK-1"
+                },
+                "disk": 1,
+                "track": 2,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/02_-_IOK-1_-_Vanvett.flac",
+                "tag": [
+                    {
+                        "id": "4",
+                        "name": "Dark Ambient"
+                    }
+                ],
+                "playlisttrack": 2,
+                "time": 825,
+                "year": 2011,
+                "bitrate": 371855,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "audio\/flac",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3",
+                "size": 38389422,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "DNA Production release\r\nCatalogue # DNA 119",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -2.57,
+                "replaygain_track_peak": 0.977,
+                "genre": [
+                    {
+                        "name": "Dark Ambient"
+                    }
+                ]
+            },
+            {
+                "id": "81",
+                "title": "Galenskap",
+                "name": "Galenskap",
+                "artist": {
+                    "id": "13",
+                    "name": "IOK-1"
+                },
+                "album": {
+                    "id": "7",
+                    "name": "Sensorisk Deprivation"
+                },
+                "albumartist": {
+                    "id": "13",
+                    "name": "IOK-1"
+                },
+                "disk": 1,
+                "track": 3,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/03_-_IOK-1_-_Galenskap.flac",
+                "tag": [
+                    {
+                        "id": "4",
+                        "name": "Dark Ambient"
+                    }
+                ],
+                "playlisttrack": 3,
+                "time": 998,
+                "year": 2011,
+                "bitrate": 389683,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "audio\/flac",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Galenskap.mp3",
+                "size": 48633049,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "DNA Production release\r\nCatalogue # DNA 119",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -5.33,
+                "replaygain_track_peak": 0.977,
+                "genre": [
+                    {
+                        "name": "Dark Ambient"
+                    }
+                ]
+            },
+            {
+                "id": "84",
+                "title": "Vansinne",
+                "name": "Vansinne",
+                "artist": {
+                    "id": "13",
+                    "name": "IOK-1"
+                },
+                "album": {
+                    "id": "7",
+                    "name": "Sensorisk Deprivation"
+                },
+                "albumartist": {
+                    "id": "13",
+                    "name": "IOK-1"
+                },
+                "disk": 1,
+                "track": 4,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/04_-_IOK-1_-_Vansinne.flac",
+                "tag": [
+                    {
+                        "id": "4",
+                        "name": "Dark Ambient"
+                    }
+                ],
+                "playlisttrack": 4,
+                "time": 787,
+                "year": 2011,
+                "bitrate": 713176,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "audio\/flac",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vansinne.mp3",
+                "size": 70182824,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "DNA Production release\r\nCatalogue # DNA 119",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -5.35,
+                "replaygain_track_peak": 0.7,
+                "genre": [
+                    {
+                        "name": "Dark Ambient"
+                    }
+                ]
+            }
+        ],
+        "songcount": 4,
+        "tag": [
+            {
+                "id": "4",
+                "name": "Dark Ambient"
+            }
+        ],
+        "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=artist",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
+        "mbid": null,
+        "summary": "IOK-1 was a side project of Tarmskrap, but it became his main project. \nHe creates ambient, dark ambient, drone something.\n\nIOK-1 soundcloud \n \nHas released one 3\" cdr on Witte Dood Records called \"Rost\",  appears on Public Spaces Lab's Ceci n\u2019est pas une pipe and Public Spaces Lab's The Future Lab\n\nHe released a full length called \"Poems\" on Deersound. \nIt is limited to 10 copies, 4 discs, clocks in at just over five hours. ",
+        "time": 3428,
+        "yearformed": 0,
+        "placeformed": null
+    },
+    {
+        "id": "14",
+        "name": "Nofi\/found.",
+        "albums": [
+            {
+                "id": "8",
+                "name": "Nofi Devices",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "time": 4423,
+                "year": 0,
+                "tracks": 11,
+                "songcount": 11,
+                "type": null,
+                "disk": 1,
+                "tag": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album",
+                "flag": 0,
+                "preciserating": 2,
+                "rating": 2,
+                "averagerating": null,
+                "mbid": null
+            }
+        ],
+        "albumcount": 1,
+        "songs": [
+            {
+                "id": "90",
+                "title": "Invo",
+                "name": "Invo",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "album": {
+                    "id": "8",
+                    "name": "Nofi Devices"
+                },
+                "albumartist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "disk": 1,
+                "track": 1,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/01_Invo.mp3",
+                "tag": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "playlisttrack": 1,
+                "time": 47,
+                "year": 0,
+                "bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Invo.mp3",
+                "size": 1140815,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "Jeffrey Melton",
+                "channels": 2,
+                "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -3.05,
+                "replaygain_track_peak": 0.933,
+                "genre": [
+                    {
+                        "name": "Electronica"
+                    },
+                    {
+                        "name": "Dance"
+                    }
+                ]
+            },
+            {
+                "id": "95",
+                "title": "Spirus Falls",
+                "name": "Spirus Falls",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "album": {
+                    "id": "8",
+                    "name": "Nofi Devices"
+                },
+                "albumartist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "disk": 1,
+                "track": 2,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/02_Spirus_Falls.mp3",
+                "tag": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "playlisttrack": 2,
+                "time": 327,
+                "year": 0,
+                "bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3",
+                "size": 7875775,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+                "flag": 1,
+                "preciserating": 5,
+                "rating": 5,
+                "averagerating": null,
+                "playcount": 1,
+                "catalog": 1,
+                "composer": "Jeffrey Melton",
+                "channels": 2,
+                "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -1.53,
+                "replaygain_track_peak": 1,
+                "genre": [
+                    {
+                        "name": "Electronica"
+                    },
+                    {
+                        "name": "Dance"
+                    }
+                ]
+            },
+            {
+                "id": "93",
+                "title": "Scribnus 3",
+                "name": "Scribnus 3",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "album": {
+                    "id": "8",
+                    "name": "Nofi Devices"
+                },
+                "albumartist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "disk": 1,
+                "track": 3,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/03_Scribnus_3.mp3",
+                "tag": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "playlisttrack": 3,
+                "time": 641,
+                "year": 0,
+                "bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3",
+                "size": 15400002,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 1,
+                "catalog": 1,
+                "composer": "Jeffrey Melton",
+                "channels": 2,
+                "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": 1.53,
+                "replaygain_track_peak": 0.989,
+                "genre": [
+                    {
+                        "name": "Electronica"
+                    },
+                    {
+                        "name": "Dance"
+                    }
+                ]
+            },
+            {
+                "id": "85",
+                "title": "Beq Ultra Fat",
+                "name": "Beq Ultra Fat",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "album": {
+                    "id": "8",
+                    "name": "Nofi Devices"
+                },
+                "albumartist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "disk": 1,
+                "track": 4,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/04_Beq_Ultra_Fat.mp3",
+                "tag": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "playlisttrack": 4,
+                "time": 413,
+                "year": 0,
+                "bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3",
+                "size": 9935896,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "Jeffrey Melton",
+                "channels": 2,
+                "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": 0.94,
+                "replaygain_track_peak": 0.989,
+                "genre": [
+                    {
+                        "name": "Electronica"
+                    },
+                    {
+                        "name": "Dance"
+                    }
+                ]
+            },
+            {
+                "id": "86",
+                "title": "Caloonashine",
+                "name": "Caloonashine",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "album": {
+                    "id": "8",
+                    "name": "Nofi Devices"
+                },
+                "albumartist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "disk": 1,
+                "track": 5,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/05_Caloonashine.mp3",
+                "tag": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "playlisttrack": 5,
+                "time": 330,
+                "year": 0,
+                "bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Caloonashine.mp3",
+                "size": 7929692,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "Jeffrey Melton",
+                "channels": 2,
+                "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -0.35,
+                "replaygain_track_peak": 0.955,
+                "genre": [
+                    {
+                        "name": "Electronica"
+                    },
+                    {
+                        "name": "Dance"
+                    }
+                ]
+            },
+            {
+                "id": "87",
+                "title": "Wonders of Nando",
+                "name": "Wonders of Nando",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "album": {
+                    "id": "8",
+                    "name": "Nofi Devices"
+                },
+                "albumartist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "disk": 1,
+                "track": 6,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/06_Wonders_of_Nando.mp3",
+                "tag": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "playlisttrack": 6,
+                "time": 319,
+                "year": 0,
+                "bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=87&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Wonders%20of%20Nando.mp3",
+                "size": 7673901,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+                "flag": 0,
+                "preciserating": 5,
+                "rating": 5,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "Jeffrey Melton",
+                "channels": 2,
+                "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -1.44,
+                "replaygain_track_peak": 1,
+                "genre": [
+                    {
+                        "name": "Electronica"
+                    },
+                    {
+                        "name": "Dance"
+                    }
+                ]
+            },
+            {
+                "id": "94",
+                "title": "Strangers Query",
+                "name": "Strangers Query",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "album": {
+                    "id": "8",
+                    "name": "Nofi Devices"
+                },
+                "albumartist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "disk": 1,
+                "track": 7,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/07_Strangers_Query.mp3",
+                "tag": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "playlisttrack": 7,
+                "time": 279,
+                "year": 0,
+                "bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=94&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Strangers%20Query.mp3",
+                "size": 6719700,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "Jeffrey Melton",
+                "channels": 2,
+                "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -3.8,
+                "replaygain_track_peak": 0.966,
+                "genre": [
+                    {
+                        "name": "Electronica"
+                    },
+                    {
+                        "name": "Dance"
+                    }
+                ]
+            },
+            {
+                "id": "92",
+                "title": "Stance",
+                "name": "Stance",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "album": {
+                    "id": "8",
+                    "name": "Nofi Devices"
+                },
+                "albumartist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "disk": 1,
+                "track": 8,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/08_Stance.mp3",
+                "tag": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "playlisttrack": 8,
+                "time": 544,
+                "year": 0,
+                "bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stance.mp3",
+                "size": 13078740,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "Jeffrey Melton",
+                "channels": 2,
+                "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -2.38,
+                "replaygain_track_peak": 0.989,
+                "genre": [
+                    {
+                        "name": "Electronica"
+                    },
+                    {
+                        "name": "Dance"
+                    }
+                ]
+            },
+            {
+                "id": "91",
+                "title": "Home Capsules",
+                "name": "Home Capsules",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "album": {
+                    "id": "8",
+                    "name": "Nofi Devices"
+                },
+                "albumartist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "disk": 1,
+                "track": 9,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/09_Home_Capsules.mp3",
+                "tag": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "playlisttrack": 9,
+                "time": 294,
+                "year": 0,
+                "bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3",
+                "size": 7076428,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "Jeffrey Melton",
+                "channels": 2,
+                "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -2.97,
+                "replaygain_track_peak": 1,
+                "genre": [
+                    {
+                        "name": "Electronica"
+                    },
+                    {
+                        "name": "Dance"
+                    }
+                ]
+            },
+            {
+                "id": "88",
+                "title": "Netro",
+                "name": "Netro",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "album": {
+                    "id": "8",
+                    "name": "Nofi Devices"
+                },
+                "albumartist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "disk": 1,
+                "track": 10,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/10_Netro.mp3",
+                "tag": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "playlisttrack": 10,
+                "time": 601,
+                "year": 0,
+                "bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=88&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Netro.mp3",
+                "size": 14445467,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "Jeffrey Melton",
+                "channels": 2,
+                "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -1.28,
+                "replaygain_track_peak": 1,
+                "genre": [
+                    {
+                        "name": "Electronica"
+                    },
+                    {
+                        "name": "Dance"
+                    }
+                ]
+            },
+            {
+                "id": "89",
+                "title": "Stolen",
+                "name": "Stolen",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "album": {
+                    "id": "8",
+                    "name": "Nofi Devices"
+                },
+                "albumartist": {
+                    "id": "14",
+                    "name": "Nofi\/found."
+                },
+                "disk": 1,
+                "track": 11,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/11_Stolen.mp3",
+                "tag": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "playlisttrack": 11,
+                "time": 628,
+                "year": 0,
+                "bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=89&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stolen.mp3",
+                "size": 15100325,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+                "flag": 0,
+                "preciserating": null,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": "Jeffrey Melton",
+                "channels": 2,
+                "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": 2.66,
+                "replaygain_track_peak": 0.989,
+                "genre": [
+                    {
+                        "name": "Electronica"
+                    },
+                    {
+                        "name": "Dance"
+                    }
+                ]
+            }
+        ],
+        "songcount": 11,
+        "tag": [
+            {
+                "id": "5",
+                "name": "Electronica"
+            },
+            {
+                "id": "6",
+                "name": "Dance"
+            }
+        ],
+        "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist",
+        "flag": 0,
+        "preciserating": 2,
+        "rating": 2,
+        "averagerating": null,
+        "mbid": null,
+        "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
+        "time": 4423,
         "yearformed": 0,
         "placeformed": null
     }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<error code="400"><![CDATA[failed to create: temp_user]]></error>
+  <error code="400"><![CDATA[username already exists: temp_user_xml]]></error>
 </root>
