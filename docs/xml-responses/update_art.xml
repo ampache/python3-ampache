@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <success code="1">
-    <message><![CDATA[Gathered new art for: 21 (album)]]></message>
-  </success>
-  <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album]]></art>
+  <error errorCode="4704">
+    <errorAction><![CDATA[update_art]]></errorAction>
+    <errorType><![CDATA[id]]></errorType>
+    <errorMessage><![CDATA[Not Found: 8]]></errorMessage>
+  </error>
 </root>

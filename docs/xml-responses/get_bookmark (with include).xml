@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <bookmark id="14">
+  <bookmark id="88">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
-    <object_id>54</object_id>
+    <object_id>59</object_id>
     <position>10</position>
-    <client><![CDATA[client]]></client>
+    <client><![CDATA[python3-ampache]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1747878103]]></update_date>
-    <song id="54">
-      <name><![CDATA[Red&GreenSmoke]]></name>
-      <title><![CDATA[Red&GreenSmoke]]></title>
+    <update_date><![CDATA[1751350682]]></update_date>
+    <song id="59">
+      <name><![CDATA[YellowSmoke]]></name>
+      <title><![CDATA[YellowSmoke]]></title>
       <artist id="2">
         <name><![CDATA[Synthetic]]></name>
         <prefix><![CDATA[]]></prefix>
@@ -28,13 +28,13 @@
       </albumartist>
       <disk><![CDATA[1]]></disk>
       <disksubtitle><![CDATA[]]></disksubtitle>
-      <track>5</track>
+      <track>2</track>
       <genre id="1">
         <name><![CDATA[Electronic]]></name>
       </genre>
-      <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3]]></filename>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3]]></filename>
       <playlisttrack>1</playlisttrack>
-      <time>400</time>
+      <time>290</time>
       <year>2007</year>
       <format>mp3</format>
       <stream_format>mp3</stream_format>
@@ -44,18 +44,18 @@
       <mode><![CDATA[cbr]]></mode>
       <mime><![CDATA[audio/mpeg]]></mime>
       <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-      <size>3209468</size>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
+      <size>2325568</size>
       <mbid><![CDATA[]]></mbid>
       <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
       <has_art>1</has_art>
-      <flag>0</flag>
-      <rating/>
+      <flag>1</flag>
+      <rating>5</rating>
       <averagerating/>
       <playcount>0</playcount>
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
-      <channels>1</channels>
+      <channels>2</channels>
       <comment><![CDATA[]]></comment>
       <license><![CDATA[]]></license>
       <publisher><![CDATA[20kbps rec.]]></publisher>
@@ -63,8 +63,8 @@
       <lyrics><![CDATA[]]></lyrics>
       <replaygain_album_gain/>
       <replaygain_album_peak/>
-      <replaygain_track_gain>-2.88</replaygain_track_gain>
-      <replaygain_track_peak>0.977</replaygain_track_peak>
+      <replaygain_track_gain>2.75</replaygain_track_gain>
+      <replaygain_track_peak>0.716</replaygain_track_peak>
       <r128_album_gain/>
       <r128_track_gain/>
     </song>

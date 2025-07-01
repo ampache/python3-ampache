@@ -1,323 +1,48 @@
 {
-    "total_count": 104,
-    "md5": "af51bd162250a421d71bd21d008821fd",
+    "total_count": 17,
+    "md5": "09800b83c4602cbd8558d9069de8105e",
     "artist": [
         {
-            "id": "111",
-            "name": "Alaclair Ensemble",
+            "id": "16",
+            "name": "CARN\u00daN",
             "prefix": null,
-            "basename": "Alaclair Ensemble",
+            "basename": "CARN\u00daN",
             "albums": [
                 {
-                    "id": "13",
-                    "name": "CC 20th Anniversary Open Mix",
+                    "id": "10",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
                     "prefix": null,
-                    "basename": "CC 20th Anniversary Open Mix",
+                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)",
                     "artist": {
-                        "id": "70",
-                        "name": "Creative Commons",
+                        "id": "16",
+                        "name": "CARN\u00daN",
                         "prefix": null,
-                        "basename": "Creative Commons"
+                        "basename": "CARN\u00daN"
                     },
                     "artists": [
                         {
-                            "id": "70",
-                            "name": "Creative Commons",
+                            "id": "16",
+                            "name": "CARN\u00daN",
                             "prefix": null,
-                            "basename": "Creative Commons"
+                            "basename": "CARN\u00daN"
                         }
                     ],
                     "songartists": [
                         {
-                            "id": "72",
-                            "name": "Caslo",
+                            "id": "16",
+                            "name": "CARN\u00daN",
                             "prefix": null,
-                            "basename": "Caslo"
-                        },
-                        {
-                            "id": "73",
-                            "name": "James Pants",
-                            "prefix": null,
-                            "basename": "James Pants"
-                        },
-                        {
-                            "id": "75",
-                            "name": "Dieter van der Westen",
-                            "prefix": null,
-                            "basename": "Dieter van der Westen"
-                        },
-                        {
-                            "id": "76",
-                            "name": "Juanitos",
-                            "prefix": null,
-                            "basename": "Juanitos"
-                        },
-                        {
-                            "id": "78",
-                            "name": "Independent Music Licensing Collective (IMLC)",
-                            "prefix": null,
-                            "basename": "Independent Music Licensing Collective (IMLC)"
-                        },
-                        {
-                            "id": "79",
-                            "name": "Silva de Alegria",
-                            "prefix": null,
-                            "basename": "Silva de Alegria"
-                        },
-                        {
-                            "id": "80",
-                            "name": "Nangdo",
-                            "prefix": null,
-                            "basename": "Nangdo"
-                        },
-                        {
-                            "id": "81",
-                            "name": "Turku",
-                            "prefix": null,
-                            "basename": "Turku"
-                        },
-                        {
-                            "id": "83",
-                            "name": "Eric Van der Westen",
-                            "prefix": null,
-                            "basename": "Eric Van der Westen"
-                        },
-                        {
-                            "id": "84",
-                            "name": "Katy Kirby",
-                            "prefix": null,
-                            "basename": "Katy Kirby"
-                        },
-                        {
-                            "id": "86",
-                            "name": "Vienna Ditto",
-                            "prefix": null,
-                            "basename": "Vienna Ditto"
-                        },
-                        {
-                            "id": "88",
-                            "name": "Josh Woodward",
-                            "prefix": null,
-                            "basename": "Josh Woodward"
-                        },
-                        {
-                            "id": "89",
-                            "name": "Maybe Watson",
-                            "prefix": null,
-                            "basename": "Maybe Watson"
-                        },
-                        {
-                            "id": "90",
-                            "name": "The Joy Drops",
-                            "prefix": "The",
-                            "basename": "Joy Drops"
-                        },
-                        {
-                            "id": "91",
-                            "name": "Anitek",
-                            "prefix": null,
-                            "basename": "Anitek"
-                        },
-                        {
-                            "id": "92",
-                            "name": "Glad Rags",
-                            "prefix": null,
-                            "basename": "Glad Rags"
-                        },
-                        {
-                            "id": "93",
-                            "name": "Jules FK",
-                            "prefix": null,
-                            "basename": "Jules FK"
-                        },
-                        {
-                            "id": "95",
-                            "name": "Rocky Marsiano",
-                            "prefix": null,
-                            "basename": "Rocky Marsiano"
-                        },
-                        {
-                            "id": "96",
-                            "name": "Kirk Osamayo",
-                            "prefix": null,
-                            "basename": "Kirk Osamayo"
-                        },
-                        {
-                            "id": "97",
-                            "name": "The Freak Fandango Orchestra",
-                            "prefix": "The",
-                            "basename": "Freak Fandango Orchestra"
-                        },
-                        {
-                            "id": "98",
-                            "name": "Finn Anderson",
-                            "prefix": null,
-                            "basename": "Finn Anderson"
-                        },
-                        {
-                            "id": "99",
-                            "name": "Scott Jacobs",
-                            "prefix": null,
-                            "basename": "Scott Jacobs"
-                        },
-                        {
-                            "id": "100",
-                            "name": "One Man Book",
-                            "prefix": null,
-                            "basename": "One Man Book"
-                        },
-                        {
-                            "id": "102",
-                            "name": "Lame Drivers",
-                            "prefix": null,
-                            "basename": "Lame Drivers"
-                        },
-                        {
-                            "id": "104",
-                            "name": "Derek Clegg",
-                            "prefix": null,
-                            "basename": "Derek Clegg"
-                        },
-                        {
-                            "id": "105",
-                            "name": "HoliznaPATREON",
-                            "prefix": null,
-                            "basename": "HoliznaPATREON"
-                        },
-                        {
-                            "id": "106",
-                            "name": "Makaih Beats",
-                            "prefix": null,
-                            "basename": "Makaih Beats"
-                        },
-                        {
-                            "id": "107",
-                            "name": "Fotos del Otono",
-                            "prefix": null,
-                            "basename": "Fotos del Otono"
-                        },
-                        {
-                            "id": "108",
-                            "name": "Another Day",
-                            "prefix": null,
-                            "basename": "Another Day"
-                        },
-                        {
-                            "id": "109",
-                            "name": "The New Valleys",
-                            "prefix": "The",
-                            "basename": "New Valleys"
-                        },
-                        {
-                            "id": "110",
-                            "name": "Alex Figueira",
-                            "prefix": null,
-                            "basename": "Alex Figueira"
-                        },
-                        {
-                            "id": "111",
-                            "name": "Alaclair Ensemble",
-                            "prefix": null,
-                            "basename": "Alaclair Ensemble"
-                        },
-                        {
-                            "id": "112",
-                            "name": "The Kyoto Connection",
-                            "prefix": "The",
-                            "basename": "Kyoto Connection"
-                        },
-                        {
-                            "id": "114",
-                            "name": "Fog Lake",
-                            "prefix": null,
-                            "basename": "Fog Lake"
-                        },
-                        {
-                            "id": "115",
-                            "name": "Another Brick",
-                            "prefix": null,
-                            "basename": "Another Brick"
-                        },
-                        {
-                            "id": "116",
-                            "name": "Malaventura",
-                            "prefix": null,
-                            "basename": "Malaventura"
-                        },
-                        {
-                            "id": "117",
-                            "name": "Ketsa",
-                            "prefix": null,
-                            "basename": "Ketsa"
-                        },
-                        {
-                            "id": "118",
-                            "name": "Cambo",
-                            "prefix": null,
-                            "basename": "Cambo"
-                        },
-                        {
-                            "id": "120",
-                            "name": "Maarten Schellekens",
-                            "prefix": null,
-                            "basename": "Maarten Schellekens"
-                        },
-                        {
-                            "id": "121",
-                            "name": "Benjimanji",
-                            "prefix": null,
-                            "basename": "Benjimanji"
+                            "basename": "CARN\u00daN"
                         }
                     ],
-                    "time": 10829,
-                    "year": 2022,
+                    "time": 3873,
+                    "year": 1996,
                     "tracks": [],
-                    "songcount": 58,
+                    "songcount": 9,
                     "diskcount": 1,
                     "type": null,
-                    "genre": [
-                        {
-                            "id": "2",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "8",
-                            "name": "Hip-Hop"
-                        },
-                        {
-                            "id": "15",
-                            "name": "Pop"
-                        },
-                        {
-                            "id": "9",
-                            "name": "Folk"
-                        },
-                        {
-                            "id": "22",
-                            "name": "Trip Hop"
-                        },
-                        {
-                            "id": "19",
-                            "name": "Soul"
-                        },
-                        {
-                            "id": "20",
-                            "name": "Other"
-                        },
-                        {
-                            "id": "21",
-                            "name": "International"
-                        },
-                        {
-                            "id": "23",
-                            "name": "Soul-RnB"
-                        },
-                        {
-                            "id": "24",
-                            "name": "Old-Time"
-                        }
-                    ],
-                    "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album",
+                    "genre": [],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
@@ -326,63 +51,478 @@
                     "mbid_group": null
                 }
             ],
-            "albumcount": 0,
+            "albumcount": 1,
             "songs": [
                 {
-                    "id": "236",
-                    "title": "CHIEN",
-                    "name": "CHIEN",
+                    "id": "106",
+                    "title": "Malkuth - Intro",
+                    "name": "Malkuth - Intro",
                     "artist": {
-                        "id": "111",
-                        "name": "Alaclair Ensemble",
+                        "id": "16",
+                        "name": "CARN\u00daN",
                         "prefix": null,
-                        "basename": "Alaclair Ensemble"
+                        "basename": "CARN\u00daN"
                     },
                     "artists": [
                         {
-                            "id": "111",
-                            "name": "Alaclair Ensemble",
+                            "id": "16",
+                            "name": "CARN\u00daN",
                             "prefix": null,
-                            "basename": "Alaclair Ensemble"
+                            "basename": "CARN\u00daN"
                         }
                     ],
                     "album": {
-                        "id": "13",
-                        "name": "CC 20th Anniversary Open Mix",
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
                         "prefix": null,
-                        "basename": "CC 20th Anniversary Open Mix"
+                        "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
                     },
                     "albumartist": {
-                        "id": "70",
-                        "name": "Creative Commons",
+                        "id": "16",
+                        "name": "CARN\u00daN",
                         "prefix": null,
-                        "basename": "Creative Commons"
+                        "basename": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/01Intro.ogg",
+                    "genre": [],
+                    "playlisttrack": 1,
+                    "time": 91,
+                    "year": 1996,
+                    "format": "ogg",
+                    "stream_format": "mp3",
+                    "bitrate": 80962,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.mp3",
+                    "size": 930226,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": 1.98,
+                    "replaygain_track_peak": 0.861,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "100",
+                    "title": "The Prophecies Of The Horned One",
+                    "name": "The Prophecies Of The Horned One",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "artists": [
+                        {
+                            "id": "16",
+                            "name": "CARN\u00daN",
+                            "prefix": null,
+                            "basename": "CARN\u00daN"
+                        }
+                    ],
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                        "prefix": null,
+                        "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 2,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/02ThePropheciesOfTheHornedOne.ogg",
+                    "genre": [],
+                    "playlisttrack": 2,
+                    "time": 378,
+                    "year": 1996,
+                    "format": "ogg",
+                    "stream_format": "mp3",
+                    "bitrate": 89965,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3",
+                    "size": 4265791,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -10.51,
+                    "replaygain_track_peak": 1,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "98",
+                    "title": "In The Seven Woods",
+                    "name": "In The Seven Woods",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "artists": [
+                        {
+                            "id": "16",
+                            "name": "CARN\u00daN",
+                            "prefix": null,
+                            "basename": "CARN\u00daN"
+                        }
+                    ],
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                        "prefix": null,
+                        "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 3,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/03InTheSevenWoods.ogg",
+                    "genre": [],
+                    "playlisttrack": 3,
+                    "time": 420,
+                    "year": 1996,
+                    "format": "ogg",
+                    "stream_format": "mp3",
+                    "bitrate": 84423,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3",
+                    "size": 4444403,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -9.7,
+                    "replaygain_track_peak": 1,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "104",
+                    "title": "The Infernal Serpent",
+                    "name": "The Infernal Serpent",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "artists": [
+                        {
+                            "id": "16",
+                            "name": "CARN\u00daN",
+                            "prefix": null,
+                            "basename": "CARN\u00daN"
+                        }
+                    ],
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                        "prefix": null,
+                        "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 4,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/04TheInfernalSerpent.ogg",
+                    "genre": [],
+                    "playlisttrack": 4,
+                    "time": 404,
+                    "year": 1996,
+                    "format": "ogg",
+                    "stream_format": "mp3",
+                    "bitrate": 100053,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3",
+                    "size": 5066698,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": 4.5,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -11.26,
+                    "replaygain_track_peak": 1,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "102",
+                    "title": "Moremque Sinistrum Sacrorum",
+                    "name": "Moremque Sinistrum Sacrorum",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "artists": [
+                        {
+                            "id": "16",
+                            "name": "CARN\u00daN",
+                            "prefix": null,
+                            "basename": "CARN\u00daN"
+                        }
+                    ],
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                        "prefix": null,
+                        "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 5,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/05MoremqueSinistrumSacrorum.ogg",
+                    "genre": [],
+                    "playlisttrack": 5,
+                    "time": 164,
+                    "year": 1996,
+                    "format": "ogg",
+                    "stream_format": "mp3",
+                    "bitrate": 106647,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3",
+                    "size": 2202971,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -7.48,
+                    "replaygain_track_peak": 1,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "99",
+                    "title": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
+                    "name": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "artists": [
+                        {
+                            "id": "16",
+                            "name": "CARN\u00daN",
+                            "prefix": null,
+                            "basename": "CARN\u00daN"
+                        }
+                    ],
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                        "prefix": null,
+                        "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
                     },
                     "disk": 1,
                     "disksubtitle": null,
                     "track": 6,
-                    "filename": "\/mnt\/music\/FMA - CC 20th Anniversary Open Mix\/106-Alaclair Ensemble - CHIEN.mp3",
-                    "genre": [
-                        {
-                            "id": "8",
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "playlisttrack": 1,
-                    "time": 203,
-                    "year": 2022,
-                    "format": "mp3",
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg",
+                    "genre": [],
+                    "playlisttrack": 6,
+                    "time": 427,
+                    "year": 1996,
+                    "format": "ogg",
                     "stream_format": "mp3",
-                    "bitrate": 262092,
+                    "bitrate": 143788,
                     "stream_bitrate": 32000,
                     "rate": 44100,
                     "mode": "vbr",
-                    "mime": "audio\/mpeg",
+                    "mime": "application\/ogg",
                     "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=236&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Alaclair%20Ensemble%20-%20CHIEN.mp3",
-                    "size": 6850692,
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3",
+                    "size": 7696008,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 2,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -12.66,
+                    "replaygain_track_peak": 1,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "103",
+                    "title": "In The Seven Woods (Instrumental Re-Recording)",
+                    "name": "In The Seven Woods (Instrumental Re-Recording)",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "artists": [
+                        {
+                            "id": "16",
+                            "name": "CARN\u00daN",
+                            "prefix": null,
+                            "basename": "CARN\u00daN"
+                        }
+                    ],
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                        "prefix": null,
+                        "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 7,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
+                    "genre": [],
+                    "playlisttrack": 7,
+                    "time": 452,
+                    "year": 1996,
+                    "format": "ogg",
+                    "stream_format": "mp3",
+                    "bitrate": 138338,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
+                    "size": 7826238,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
                     "has_art": true,
                     "flag": false,
                     "rating": 5,
@@ -391,877 +531,192 @@
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
-                    "comment": "URL: http:\/\/freemusicarchive.",
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
                     "license": null,
-                    "publisher": null,
-                    "language": null,
-                    "lyrics": "M\u00eame quand tu rentres tard <br \/>\r\nJ'toujours content d'te voir<br \/>\r\nQuand t'es pas la parzemple <br \/>\r\nJ'ai des passes d'angoisse<br \/>\r\nJ'veux faire un tour de char <br \/>\r\n(Awaye) shorty p\u00e8se sul gaz<br \/>\r\nPeux-tu baisser la fen\u00eatre ? <br \/>\r\nJ'mets la t\u00eate dehors<br \/>\r\nQu'est-ce que tu fais ce soir ? <br \/>\r\nOoops ! mauvaise fen\u00eatre<br \/>\r\nPow wow                       <br \/>\r\n\u00c9coute les pas si y disent <br \/>\r\nTiens-toi pas aik lui y mord<br \/>\r\nC'est tu un bon d\u00e9part ? <br \/>\r\nEst-ce que \u00e7a marche encore ?<br \/>\r\nJ'ai toujours envie d'jouer <br \/>\r\nMais l\u00e0 j'ai full envie d'boire<br \/>\r\n<br \/>\r\nJ'toujours \u00e0 c\u00f4t\u00e9 de toi peu importe c'qui arrive<br \/>\r\nY'a pas un autre que moi qui te borde la nuit<br \/>\r\nJ'toujours \u00e0 c\u00f4t\u00e9 de toi peu importe c'qui arrive<br \/>\r\nY'a pas un autre que moi pour t'accompagner la nuit<br \/>\r\n<br \/>\r\nLaisse moi \u00eatre ton chien<br \/>\r\nLance-moi la balle c'est sur que j'te reviens<br \/>\r\nGirl, laisse moi \u00eatre ton chien<br \/>\r\nLance-moi la balle c'est sur que j'te reviens<br \/>\r\n<br \/>\r\nToute ma langue entre mes canines <br \/>\r\nMe veut su tes babines <br \/>\r\nAu milieu d'la cuisine vibin' <br \/>\r\nSu des morceaux pas trop poivr\u00e9s d'viande bovine <br \/>\r\nPour ton puppy, ton hobby <br \/>\r\nTs\u00e9 l\u00e0 l'achat sur lequel <br \/>\r\nTu fras jamais profit, girl <br \/>\r\nJ'ai beau briser d'la vaisselle <br \/>\r\nTu m'pardonnes pis on reset <br \/>\r\nTon bodyguard jusqu'au guichette <br \/>\r\nFou g\u00e9n\u00e9reux su\u00e9 lichettes <br \/>\r\nQui portera jamais d'costume <br \/>\r\n\u00c0 moins qu'c'tait toi qui l'voulait <br \/>\r\nVa jamais non plus ben ben loin <br \/>\r\nFeelin' almost bad when you unleash it <br \/>\r\nWoof! mami <br \/>\r\nIt's a bloggy blog world <br \/>\r\nMais les vrais dogs <br \/>\r\nSurveillent la porte d'entr\u00e9e <br \/>\r\nPendant qu'b\u00e9b\u00e9 dort, girl <br \/>\r\n<br \/>\r\nJ'toujours \u00e0 c\u00f4t\u00e9 de toi peu importe c'qui arrive<br \/>\r\nY'a pas un autre que moi qui te borde la nuit<br \/>\r\nJ'toujours \u00e0 c\u00f4t\u00e9 de toi peu importe c'qui arrive<br \/>\r\nY'a pas un autre que moi pour t'accompagner la nuit<br \/>\r\n<br \/>\r\nLance-moi la balle c'est sur que j'te reviens<br \/>\r\nPeu importe<br \/>\r\nGirl, laisse-moi \u00eatre ton chien <br \/>\r\nLance-moi la balle <br \/>\r\nMoi, viens<br \/>\r\nGirl, laisse-moi \u00eatre ton chien <br \/>\r\nJ'toujours \u00e0 c\u00f4t\u00e9 de toi<br \/>\r\nViens<br \/>\r\n<br \/>\r\nGirl, laisse moi \u00eatre ton chien<br \/>\r\nLance-moi la balle c'est sur que j'te reviens<br \/>\r\nGirl, laisse moi \u00eatre ton chien",
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": -8.51,
-                    "replaygain_track_peak": 1,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ],
-            "songcount": 1,
-            "genre": [
-                {
-                    "id": "8",
-                    "name": "Hip-Hop"
-                }
-            ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=111&object_type=artist",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "mbid": null,
-            "summary": "Hip-hop doesn\u2019t get much weirder than prolific deconstructionist crew Alaclair Ensemble. Just check out their impressive oeuvre of free mixtapes online if you don\u2019t believe they\u2019re virtually peerless when it comes to distorting sundry rap tropes to dada-like effect. For all their satirical prowess, they\u2019re also terrific MCs. \n\nThe members of Alaclair Ensemble include KNLO, Claude B\u00e9gin, Eman x Vlooper, Robert Nelson, Maybe Watson, Ogden and Mash ",
-            "time": 203,
-            "yearformed": 0,
-            "placeformed": null
-        },
-        {
-            "id": "110",
-            "name": "Alex Figueira",
-            "prefix": null,
-            "basename": "Alex Figueira",
-            "albums": [
-                {
-                    "id": "13",
-                    "name": "CC 20th Anniversary Open Mix",
-                    "prefix": null,
-                    "basename": "CC 20th Anniversary Open Mix",
-                    "artist": {
-                        "id": "70",
-                        "name": "Creative Commons",
-                        "prefix": null,
-                        "basename": "Creative Commons"
-                    },
-                    "artists": [
-                        {
-                            "id": "70",
-                            "name": "Creative Commons",
-                            "prefix": null,
-                            "basename": "Creative Commons"
-                        }
-                    ],
-                    "songartists": [
-                        {
-                            "id": "72",
-                            "name": "Caslo",
-                            "prefix": null,
-                            "basename": "Caslo"
-                        },
-                        {
-                            "id": "73",
-                            "name": "James Pants",
-                            "prefix": null,
-                            "basename": "James Pants"
-                        },
-                        {
-                            "id": "75",
-                            "name": "Dieter van der Westen",
-                            "prefix": null,
-                            "basename": "Dieter van der Westen"
-                        },
-                        {
-                            "id": "76",
-                            "name": "Juanitos",
-                            "prefix": null,
-                            "basename": "Juanitos"
-                        },
-                        {
-                            "id": "78",
-                            "name": "Independent Music Licensing Collective (IMLC)",
-                            "prefix": null,
-                            "basename": "Independent Music Licensing Collective (IMLC)"
-                        },
-                        {
-                            "id": "79",
-                            "name": "Silva de Alegria",
-                            "prefix": null,
-                            "basename": "Silva de Alegria"
-                        },
-                        {
-                            "id": "80",
-                            "name": "Nangdo",
-                            "prefix": null,
-                            "basename": "Nangdo"
-                        },
-                        {
-                            "id": "81",
-                            "name": "Turku",
-                            "prefix": null,
-                            "basename": "Turku"
-                        },
-                        {
-                            "id": "83",
-                            "name": "Eric Van der Westen",
-                            "prefix": null,
-                            "basename": "Eric Van der Westen"
-                        },
-                        {
-                            "id": "84",
-                            "name": "Katy Kirby",
-                            "prefix": null,
-                            "basename": "Katy Kirby"
-                        },
-                        {
-                            "id": "86",
-                            "name": "Vienna Ditto",
-                            "prefix": null,
-                            "basename": "Vienna Ditto"
-                        },
-                        {
-                            "id": "88",
-                            "name": "Josh Woodward",
-                            "prefix": null,
-                            "basename": "Josh Woodward"
-                        },
-                        {
-                            "id": "89",
-                            "name": "Maybe Watson",
-                            "prefix": null,
-                            "basename": "Maybe Watson"
-                        },
-                        {
-                            "id": "90",
-                            "name": "The Joy Drops",
-                            "prefix": "The",
-                            "basename": "Joy Drops"
-                        },
-                        {
-                            "id": "91",
-                            "name": "Anitek",
-                            "prefix": null,
-                            "basename": "Anitek"
-                        },
-                        {
-                            "id": "92",
-                            "name": "Glad Rags",
-                            "prefix": null,
-                            "basename": "Glad Rags"
-                        },
-                        {
-                            "id": "93",
-                            "name": "Jules FK",
-                            "prefix": null,
-                            "basename": "Jules FK"
-                        },
-                        {
-                            "id": "95",
-                            "name": "Rocky Marsiano",
-                            "prefix": null,
-                            "basename": "Rocky Marsiano"
-                        },
-                        {
-                            "id": "96",
-                            "name": "Kirk Osamayo",
-                            "prefix": null,
-                            "basename": "Kirk Osamayo"
-                        },
-                        {
-                            "id": "97",
-                            "name": "The Freak Fandango Orchestra",
-                            "prefix": "The",
-                            "basename": "Freak Fandango Orchestra"
-                        },
-                        {
-                            "id": "98",
-                            "name": "Finn Anderson",
-                            "prefix": null,
-                            "basename": "Finn Anderson"
-                        },
-                        {
-                            "id": "99",
-                            "name": "Scott Jacobs",
-                            "prefix": null,
-                            "basename": "Scott Jacobs"
-                        },
-                        {
-                            "id": "100",
-                            "name": "One Man Book",
-                            "prefix": null,
-                            "basename": "One Man Book"
-                        },
-                        {
-                            "id": "102",
-                            "name": "Lame Drivers",
-                            "prefix": null,
-                            "basename": "Lame Drivers"
-                        },
-                        {
-                            "id": "104",
-                            "name": "Derek Clegg",
-                            "prefix": null,
-                            "basename": "Derek Clegg"
-                        },
-                        {
-                            "id": "105",
-                            "name": "HoliznaPATREON",
-                            "prefix": null,
-                            "basename": "HoliznaPATREON"
-                        },
-                        {
-                            "id": "106",
-                            "name": "Makaih Beats",
-                            "prefix": null,
-                            "basename": "Makaih Beats"
-                        },
-                        {
-                            "id": "107",
-                            "name": "Fotos del Otono",
-                            "prefix": null,
-                            "basename": "Fotos del Otono"
-                        },
-                        {
-                            "id": "108",
-                            "name": "Another Day",
-                            "prefix": null,
-                            "basename": "Another Day"
-                        },
-                        {
-                            "id": "109",
-                            "name": "The New Valleys",
-                            "prefix": "The",
-                            "basename": "New Valleys"
-                        },
-                        {
-                            "id": "110",
-                            "name": "Alex Figueira",
-                            "prefix": null,
-                            "basename": "Alex Figueira"
-                        },
-                        {
-                            "id": "111",
-                            "name": "Alaclair Ensemble",
-                            "prefix": null,
-                            "basename": "Alaclair Ensemble"
-                        },
-                        {
-                            "id": "112",
-                            "name": "The Kyoto Connection",
-                            "prefix": "The",
-                            "basename": "Kyoto Connection"
-                        },
-                        {
-                            "id": "114",
-                            "name": "Fog Lake",
-                            "prefix": null,
-                            "basename": "Fog Lake"
-                        },
-                        {
-                            "id": "115",
-                            "name": "Another Brick",
-                            "prefix": null,
-                            "basename": "Another Brick"
-                        },
-                        {
-                            "id": "116",
-                            "name": "Malaventura",
-                            "prefix": null,
-                            "basename": "Malaventura"
-                        },
-                        {
-                            "id": "117",
-                            "name": "Ketsa",
-                            "prefix": null,
-                            "basename": "Ketsa"
-                        },
-                        {
-                            "id": "118",
-                            "name": "Cambo",
-                            "prefix": null,
-                            "basename": "Cambo"
-                        },
-                        {
-                            "id": "120",
-                            "name": "Maarten Schellekens",
-                            "prefix": null,
-                            "basename": "Maarten Schellekens"
-                        },
-                        {
-                            "id": "121",
-                            "name": "Benjimanji",
-                            "prefix": null,
-                            "basename": "Benjimanji"
-                        }
-                    ],
-                    "time": 10829,
-                    "year": 2022,
-                    "tracks": [],
-                    "songcount": 58,
-                    "diskcount": 1,
-                    "type": null,
-                    "genre": [
-                        {
-                            "id": "2",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "8",
-                            "name": "Hip-Hop"
-                        },
-                        {
-                            "id": "15",
-                            "name": "Pop"
-                        },
-                        {
-                            "id": "9",
-                            "name": "Folk"
-                        },
-                        {
-                            "id": "22",
-                            "name": "Trip Hop"
-                        },
-                        {
-                            "id": "19",
-                            "name": "Soul"
-                        },
-                        {
-                            "id": "20",
-                            "name": "Other"
-                        },
-                        {
-                            "id": "21",
-                            "name": "International"
-                        },
-                        {
-                            "id": "23",
-                            "name": "Soul-RnB"
-                        },
-                        {
-                            "id": "24",
-                            "name": "Old-Time"
-                        }
-                    ],
-                    "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album",
-                    "has_art": true,
-                    "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "mbid": null,
-                    "mbid_group": null
-                }
-            ],
-            "albumcount": 0,
-            "songs": [
-                {
-                    "id": "235",
-                    "title": "Serious",
-                    "name": "Serious",
-                    "artist": {
-                        "id": "110",
-                        "name": "Alex Figueira",
-                        "prefix": null,
-                        "basename": "Alex Figueira"
-                    },
-                    "artists": [
-                        {
-                            "id": "110",
-                            "name": "Alex Figueira",
-                            "prefix": null,
-                            "basename": "Alex Figueira"
-                        }
-                    ],
-                    "album": {
-                        "id": "13",
-                        "name": "CC 20th Anniversary Open Mix",
-                        "prefix": null,
-                        "basename": "CC 20th Anniversary Open Mix"
-                    },
-                    "albumartist": {
-                        "id": "70",
-                        "name": "Creative Commons",
-                        "prefix": null,
-                        "basename": "Creative Commons"
-                    },
-                    "disk": 1,
-                    "disksubtitle": null,
-                    "track": 29,
-                    "filename": "\/mnt\/music\/FMA - CC 20th Anniversary Open Mix\/129-Alex Figueira - Serious.mp3",
-                    "genre": [],
-                    "playlisttrack": 1,
-                    "time": 280,
-                    "year": 2022,
-                    "format": "mp3",
-                    "stream_format": "mp3",
-                    "bitrate": 320000,
-                    "stream_bitrate": 32000,
-                    "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=235&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Alex%20Figueira%20-%20Serious.mp3",
-                    "size": 11363119,
-                    "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album&name=art.jpg",
-                    "has_art": true,
-                    "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 1,
-                    "composer": null,
-                    "channels": 2,
-                    "comment": "000014B0 00001631 0000EA80 0000A6DC 0001807D 0001807D 00007A93 00007E87 0003F3D6 00035E0A",
-                    "license": null,
-                    "publisher": null,
+                    "publisher": "archive.org",
                     "language": null,
                     "lyrics": null,
                     "replaygain_album_gain": null,
                     "replaygain_album_peak": null,
-                    "replaygain_track_gain": -10.01,
-                    "replaygain_track_peak": 0.989,
+                    "replaygain_track_gain": -12.21,
+                    "replaygain_track_peak": 1,
                     "r128_album_gain": null,
                     "r128_track_gain": null
-                }
-            ],
-            "songcount": 1,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=110&object_type=artist",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "mbid": null,
-            "summary": "Alex Figueira is a Portuguese-Venezuelan percussionist, producer and DJ living in Amsterdam, The Netherlands. He is a member of various bands such as  Conjunto Papa Upa, Fuma\u00e7a Preta and Lola's Dice. ",
-            "time": 280,
-            "yearformed": 0,
-            "placeformed": null
-        },
-        {
-            "id": "91",
-            "name": "Anitek",
-            "prefix": null,
-            "basename": "Anitek",
-            "albums": [
+                },
                 {
-                    "id": "13",
-                    "name": "CC 20th Anniversary Open Mix",
-                    "prefix": null,
-                    "basename": "CC 20th Anniversary Open Mix",
+                    "id": "105",
+                    "title": "The Infernal Serpent (Instrumental Re-Recording)",
+                    "name": "The Infernal Serpent (Instrumental Re-Recording)",
                     "artist": {
-                        "id": "70",
-                        "name": "Creative Commons",
+                        "id": "16",
+                        "name": "CARN\u00daN",
                         "prefix": null,
-                        "basename": "Creative Commons"
+                        "basename": "CARN\u00daN"
                     },
                     "artists": [
                         {
-                            "id": "70",
-                            "name": "Creative Commons",
+                            "id": "16",
+                            "name": "CARN\u00daN",
                             "prefix": null,
-                            "basename": "Creative Commons"
-                        }
-                    ],
-                    "songartists": [
-                        {
-                            "id": "72",
-                            "name": "Caslo",
-                            "prefix": null,
-                            "basename": "Caslo"
-                        },
-                        {
-                            "id": "73",
-                            "name": "James Pants",
-                            "prefix": null,
-                            "basename": "James Pants"
-                        },
-                        {
-                            "id": "75",
-                            "name": "Dieter van der Westen",
-                            "prefix": null,
-                            "basename": "Dieter van der Westen"
-                        },
-                        {
-                            "id": "76",
-                            "name": "Juanitos",
-                            "prefix": null,
-                            "basename": "Juanitos"
-                        },
-                        {
-                            "id": "78",
-                            "name": "Independent Music Licensing Collective (IMLC)",
-                            "prefix": null,
-                            "basename": "Independent Music Licensing Collective (IMLC)"
-                        },
-                        {
-                            "id": "79",
-                            "name": "Silva de Alegria",
-                            "prefix": null,
-                            "basename": "Silva de Alegria"
-                        },
-                        {
-                            "id": "80",
-                            "name": "Nangdo",
-                            "prefix": null,
-                            "basename": "Nangdo"
-                        },
-                        {
-                            "id": "81",
-                            "name": "Turku",
-                            "prefix": null,
-                            "basename": "Turku"
-                        },
-                        {
-                            "id": "83",
-                            "name": "Eric Van der Westen",
-                            "prefix": null,
-                            "basename": "Eric Van der Westen"
-                        },
-                        {
-                            "id": "84",
-                            "name": "Katy Kirby",
-                            "prefix": null,
-                            "basename": "Katy Kirby"
-                        },
-                        {
-                            "id": "86",
-                            "name": "Vienna Ditto",
-                            "prefix": null,
-                            "basename": "Vienna Ditto"
-                        },
-                        {
-                            "id": "88",
-                            "name": "Josh Woodward",
-                            "prefix": null,
-                            "basename": "Josh Woodward"
-                        },
-                        {
-                            "id": "89",
-                            "name": "Maybe Watson",
-                            "prefix": null,
-                            "basename": "Maybe Watson"
-                        },
-                        {
-                            "id": "90",
-                            "name": "The Joy Drops",
-                            "prefix": "The",
-                            "basename": "Joy Drops"
-                        },
-                        {
-                            "id": "91",
-                            "name": "Anitek",
-                            "prefix": null,
-                            "basename": "Anitek"
-                        },
-                        {
-                            "id": "92",
-                            "name": "Glad Rags",
-                            "prefix": null,
-                            "basename": "Glad Rags"
-                        },
-                        {
-                            "id": "93",
-                            "name": "Jules FK",
-                            "prefix": null,
-                            "basename": "Jules FK"
-                        },
-                        {
-                            "id": "95",
-                            "name": "Rocky Marsiano",
-                            "prefix": null,
-                            "basename": "Rocky Marsiano"
-                        },
-                        {
-                            "id": "96",
-                            "name": "Kirk Osamayo",
-                            "prefix": null,
-                            "basename": "Kirk Osamayo"
-                        },
-                        {
-                            "id": "97",
-                            "name": "The Freak Fandango Orchestra",
-                            "prefix": "The",
-                            "basename": "Freak Fandango Orchestra"
-                        },
-                        {
-                            "id": "98",
-                            "name": "Finn Anderson",
-                            "prefix": null,
-                            "basename": "Finn Anderson"
-                        },
-                        {
-                            "id": "99",
-                            "name": "Scott Jacobs",
-                            "prefix": null,
-                            "basename": "Scott Jacobs"
-                        },
-                        {
-                            "id": "100",
-                            "name": "One Man Book",
-                            "prefix": null,
-                            "basename": "One Man Book"
-                        },
-                        {
-                            "id": "102",
-                            "name": "Lame Drivers",
-                            "prefix": null,
-                            "basename": "Lame Drivers"
-                        },
-                        {
-                            "id": "104",
-                            "name": "Derek Clegg",
-                            "prefix": null,
-                            "basename": "Derek Clegg"
-                        },
-                        {
-                            "id": "105",
-                            "name": "HoliznaPATREON",
-                            "prefix": null,
-                            "basename": "HoliznaPATREON"
-                        },
-                        {
-                            "id": "106",
-                            "name": "Makaih Beats",
-                            "prefix": null,
-                            "basename": "Makaih Beats"
-                        },
-                        {
-                            "id": "107",
-                            "name": "Fotos del Otono",
-                            "prefix": null,
-                            "basename": "Fotos del Otono"
-                        },
-                        {
-                            "id": "108",
-                            "name": "Another Day",
-                            "prefix": null,
-                            "basename": "Another Day"
-                        },
-                        {
-                            "id": "109",
-                            "name": "The New Valleys",
-                            "prefix": "The",
-                            "basename": "New Valleys"
-                        },
-                        {
-                            "id": "110",
-                            "name": "Alex Figueira",
-                            "prefix": null,
-                            "basename": "Alex Figueira"
-                        },
-                        {
-                            "id": "111",
-                            "name": "Alaclair Ensemble",
-                            "prefix": null,
-                            "basename": "Alaclair Ensemble"
-                        },
-                        {
-                            "id": "112",
-                            "name": "The Kyoto Connection",
-                            "prefix": "The",
-                            "basename": "Kyoto Connection"
-                        },
-                        {
-                            "id": "114",
-                            "name": "Fog Lake",
-                            "prefix": null,
-                            "basename": "Fog Lake"
-                        },
-                        {
-                            "id": "115",
-                            "name": "Another Brick",
-                            "prefix": null,
-                            "basename": "Another Brick"
-                        },
-                        {
-                            "id": "116",
-                            "name": "Malaventura",
-                            "prefix": null,
-                            "basename": "Malaventura"
-                        },
-                        {
-                            "id": "117",
-                            "name": "Ketsa",
-                            "prefix": null,
-                            "basename": "Ketsa"
-                        },
-                        {
-                            "id": "118",
-                            "name": "Cambo",
-                            "prefix": null,
-                            "basename": "Cambo"
-                        },
-                        {
-                            "id": "120",
-                            "name": "Maarten Schellekens",
-                            "prefix": null,
-                            "basename": "Maarten Schellekens"
-                        },
-                        {
-                            "id": "121",
-                            "name": "Benjimanji",
-                            "prefix": null,
-                            "basename": "Benjimanji"
-                        }
-                    ],
-                    "time": 10829,
-                    "year": 2022,
-                    "tracks": [],
-                    "songcount": 58,
-                    "diskcount": 1,
-                    "type": null,
-                    "genre": [
-                        {
-                            "id": "2",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "8",
-                            "name": "Hip-Hop"
-                        },
-                        {
-                            "id": "15",
-                            "name": "Pop"
-                        },
-                        {
-                            "id": "9",
-                            "name": "Folk"
-                        },
-                        {
-                            "id": "22",
-                            "name": "Trip Hop"
-                        },
-                        {
-                            "id": "19",
-                            "name": "Soul"
-                        },
-                        {
-                            "id": "20",
-                            "name": "Other"
-                        },
-                        {
-                            "id": "21",
-                            "name": "International"
-                        },
-                        {
-                            "id": "23",
-                            "name": "Soul-RnB"
-                        },
-                        {
-                            "id": "24",
-                            "name": "Old-Time"
-                        }
-                    ],
-                    "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album",
-                    "has_art": true,
-                    "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "mbid": null,
-                    "mbid_group": null
-                }
-            ],
-            "albumcount": 0,
-            "songs": [
-                {
-                    "id": "216",
-                    "title": "All That Jazz",
-                    "name": "All That Jazz",
-                    "artist": {
-                        "id": "91",
-                        "name": "Anitek",
-                        "prefix": null,
-                        "basename": "Anitek"
-                    },
-                    "artists": [
-                        {
-                            "id": "91",
-                            "name": "Anitek",
-                            "prefix": null,
-                            "basename": "Anitek"
+                            "basename": "CARN\u00daN"
                         }
                     ],
                     "album": {
-                        "id": "13",
-                        "name": "CC 20th Anniversary Open Mix",
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
                         "prefix": null,
-                        "basename": "CC 20th Anniversary Open Mix"
+                        "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
                     },
                     "albumartist": {
-                        "id": "70",
-                        "name": "Creative Commons",
+                        "id": "16",
+                        "name": "CARN\u00daN",
                         "prefix": null,
-                        "basename": "Creative Commons"
+                        "basename": "CARN\u00daN"
                     },
                     "disk": 1,
                     "disksubtitle": null,
-                    "track": 11,
-                    "filename": "\/mnt\/music\/FMA - CC 20th Anniversary Open Mix\/111-Anitek - All That Jazz.mp3.mp3",
+                    "track": 8,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/08TheInfernalSerpent_InstrumentalReRecording.ogg",
                     "genre": [],
-                    "playlisttrack": 1,
-                    "time": 173,
-                    "year": 2022,
-                    "format": "mp3",
+                    "playlisttrack": 8,
+                    "time": 557,
+                    "year": 1996,
+                    "format": "ogg",
                     "stream_format": "mp3",
-                    "bitrate": 320000,
+                    "bitrate": 139453,
                     "stream_bitrate": 32000,
                     "rate": 44100,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
                     "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=216&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Anitek%20-%20All%20That%20Jazz.mp3",
-                    "size": 7109727,
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.mp3",
+                    "size": 9722091,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
                     "playcount": 1,
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
-                    "comment": "00000285 000002AD 000037D4 000036FC 0001FABC 0001FABC 00007E87 00007E87 000011DB 000011DB",
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
                     "license": null,
-                    "publisher": null,
+                    "publisher": "archive.org",
                     "language": null,
                     "lyrics": null,
                     "replaygain_album_gain": null,
                     "replaygain_album_peak": null,
-                    "replaygain_track_gain": -6.83,
+                    "replaygain_track_gain": -12.24,
+                    "replaygain_track_peak": 1,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "101",
+                    "title": "Rehearsal Tape (1996)",
+                    "name": "Rehearsal Tape (1996)",
+                    "artist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "artists": [
+                        {
+                            "id": "16",
+                            "name": "CARN\u00daN",
+                            "prefix": null,
+                            "basename": "CARN\u00daN"
+                        }
+                    ],
+                    "album": {
+                        "id": "10",
+                        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                        "prefix": null,
+                        "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                    },
+                    "albumartist": {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 9,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/09RehearsalTape1996.ogg",
+                    "genre": [],
+                    "playlisttrack": 9,
+                    "time": 980,
+                    "year": 1996,
+                    "format": "ogg",
+                    "stream_format": "mp3",
+                    "bitrate": 66912,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "application\/ogg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.mp3",
+                    "size": 8219821,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -9.56,
                     "replaygain_track_peak": 1,
                     "r128_album_gain": null,
                     "r128_track_gain": null
                 }
             ],
-            "songcount": 1,
+            "songcount": 9,
             "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=91&object_type=artist",
+            "art": "https:\/\/music.com.au\/image.php?object_id=16&object_type=artist",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "mbid": null,
-            "summary": null,
-            "time": 173,
+            "summary": "Formerly called DEFY CHRIST. CARN\u00daN were formed in 1995. Incorporating a mix of Black, Doom and Death Metal, and influenced by bands like BURZUM, DARKTHRONE, BATHORY, THOU ART LORD, IN THE WOODS\u2026, early KATATONIA and PRIMORDIAL, who Mick would eventually go on to join full-time.\n\nThey released one demo, \u2018Malkuth\u2019, which was recorded in Connolly\u2019s Of Leap, 4th January 1996 by Paddy McNicholl. The line-up for this recording was Marc (Bard Nocturnus) on Vocals, Damien on keyboards and Mick playing guitars, bass and drums. ",
+            "time": 3873,
             "yearformed": 0,
             "placeformed": null
         },
         {
-            "id": "35",
-            "name": "Anji Bee",
+            "id": "27",
+            "name": "Chi.Otic",
             "prefix": null,
-            "basename": "Anji Bee",
+            "basename": "Chi.Otic",
             "albums": [
                 {
-                    "id": "21",
-                    "name": "CC Affiliates Mixtape #1",
+                    "id": "23",
+                    "name": "Buried in Nausea",
                     "prefix": null,
-                    "basename": "CC Affiliates Mixtape #1",
+                    "basename": "Buried in Nausea",
                     "artist": {
-                        "id": "2",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
                     },
                     "artists": [
                         {
-                            "id": "2",
+                            "id": "38",
                             "name": "Various Artists",
                             "prefix": null,
                             "basename": "Various Artists"
@@ -1269,259 +724,133 @@
                     ],
                     "songartists": [
                         {
-                            "id": "24",
-                            "name": "Tvrd\u00fd \/ Havelka",
+                            "id": "20",
+                            "name": "R\/B",
                             "prefix": null,
-                            "basename": "Tvrd\u00fd \/ Havelka"
+                            "basename": "R\/B"
                         },
                         {
-                            "id": "50",
-                            "name": "\u0394\u03b7\u03bc\u03ae\u03c4\u03c1\u03b7\u03c2 \u039c\u03c0\u03ac\u03ba\u03bf\u03c5\u03bb\u03b7\u03c2",
+                            "id": "21",
+                            "name": "Tip-C (featuring Mike Beers)",
                             "prefix": null,
-                            "basename": "\u0394\u03b7\u03bc\u03ae\u03c4\u03c1\u03b7\u03c2 \u039c\u03c0\u03ac\u03ba\u03bf\u03c5\u03bb\u03b7\u03c2"
+                            "basename": "Tip-C (featuring Mike Beers)"
                         },
                         {
-                            "id": "48",
-                            "name": "Athuzela Brown",
+                            "id": "23",
+                            "name": "Manic Notion",
                             "prefix": null,
-                            "basename": "Athuzela Brown"
-                        },
-                        {
-                            "id": "30",
-                            "name": "Celestial Aeon Project",
-                            "prefix": null,
-                            "basename": "Celestial Aeon Project"
-                        },
-                        {
-                            "id": "52",
-                            "name": "NIM",
-                            "prefix": null,
-                            "basename": "NIM"
-                        },
-                        {
-                            "id": "37",
-                            "name": "One in a Googolplex",
-                            "prefix": null,
-                            "basename": "One in a Googolplex"
+                            "basename": "Manic Notion"
                         },
                         {
                             "id": "26",
-                            "name": "Tamara Laurel",
+                            "name": "Stress Builds Character",
                             "prefix": null,
-                            "basename": "Tamara Laurel"
-                        },
-                        {
-                            "id": "22",
-                            "name": "Inch Chua",
-                            "prefix": null,
-                            "basename": "Inch Chua"
+                            "basename": "Stress Builds Character"
                         },
                         {
                             "id": "27",
-                            "name": "Rey Nocivo",
+                            "name": "Chi.Otic",
                             "prefix": null,
-                            "basename": "Rey Nocivo"
-                        },
-                        {
-                            "id": "20",
-                            "name": "Ortalio",
-                            "prefix": null,
-                            "basename": "Ortalio"
-                        },
-                        {
-                            "id": "47",
-                            "name": "Monk",
-                            "prefix": null,
-                            "basename": "Monk"
-                        },
-                        {
-                            "id": "34",
-                            "name": "Takeru Ishikawa",
-                            "prefix": null,
-                            "basename": "Takeru Ishikawa"
-                        },
-                        {
-                            "id": "35",
-                            "name": "Anji Bee",
-                            "prefix": null,
-                            "basename": "Anji Bee"
-                        },
-                        {
-                            "id": "62",
-                            "name": "Qina",
-                            "prefix": null,
-                            "basename": "Qina"
-                        },
-                        {
-                            "id": "41",
-                            "name": "Bneg\u00e3o & Os Seletores de Frequ\u00eancia",
-                            "prefix": null,
-                            "basename": "Bneg\u00e3o & Os Seletores de Frequ\u00eancia"
-                        },
-                        {
-                            "id": "46",
-                            "name": "TaaPet",
-                            "prefix": null,
-                            "basename": "TaaPet"
-                        },
-                        {
-                            "id": "58",
-                            "name": "Nero One",
-                            "prefix": null,
-                            "basename": "Nero One"
-                        },
-                        {
-                            "id": "44",
-                            "name": "Periskop",
-                            "prefix": null,
-                            "basename": "Periskop"
-                        },
-                        {
-                            "id": "45",
-                            "name": "DR SymfoniOrkestret",
-                            "prefix": null,
-                            "basename": "DR SymfoniOrkestret"
+                            "basename": "Chi.Otic"
                         },
                         {
                             "id": "32",
-                            "name": "Inje",
+                            "name": "Shorty Mac",
                             "prefix": null,
-                            "basename": "Inje"
+                            "basename": "Shorty Mac"
                         },
                         {
-                            "id": "60",
-                            "name": "YEIZON",
+                            "id": "33",
+                            "name": "MxBxCx",
                             "prefix": null,
-                            "basename": "YEIZON"
+                            "basename": "MxBxCx"
                         },
                         {
-                            "id": "43",
-                            "name": "Mc Norman",
+                            "id": "34",
+                            "name": "Comedown Kid",
                             "prefix": null,
-                            "basename": "Mc Norman"
+                            "basename": "Comedown Kid"
                         },
                         {
-                            "id": "64",
-                            "name": "Sly Collins",
+                            "id": "35",
+                            "name": "Tip-C",
                             "prefix": null,
-                            "basename": "Sly Collins"
-                        },
-                        {
-                            "id": "54",
-                            "name": "Mendes Brothers",
-                            "prefix": null,
-                            "basename": "Mendes Brothers"
-                        },
-                        {
-                            "id": "66",
-                            "name": "Cartas a Felice",
-                            "prefix": null,
-                            "basename": "Cartas a Felice"
-                        },
-                        {
-                            "id": "39",
-                            "name": "Triolocria",
-                            "prefix": null,
-                            "basename": "Triolocria"
-                        },
-                        {
-                            "id": "56",
-                            "name": "Dead Combo",
-                            "prefix": null,
-                            "basename": "Dead Combo"
+                            "basename": "Tip-C"
                         }
                     ],
-                    "time": 8527,
-                    "year": 2015,
+                    "time": 1879,
+                    "year": 2012,
                     "tracks": [],
-                    "songcount": 35,
+                    "songcount": 9,
                     "diskcount": 1,
-                    "type": "album, compilation",
+                    "type": "compilation",
                     "genre": [
                         {
-                            "id": "2",
-                            "name": "Electronic"
-                        },
-                        {
-                            "id": "8",
-                            "name": "Hip-Hop"
-                        },
-                        {
-                            "id": "9",
-                            "name": "Folk"
-                        },
-                        {
-                            "id": "12",
-                            "name": "Classical"
+                            "id": "7",
+                            "name": "Punk"
                         }
                     ],
-                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
-                    "mbid": "4ff00c1b-d9ee-40dc-aa1d-cd8ec4540667",
-                    "mbid_group": "fbd50d0e-282e-4a68-a450-a649a67ff515"
+                    "mbid": null,
+                    "mbid_group": null
                 }
             ],
             "albumcount": 0,
             "songs": [
                 {
-                    "id": "84",
-                    "title": "Favor Tweet",
-                    "name": "Favor Tweet",
+                    "id": "115",
+                    "title": "Are we going Crazy",
+                    "name": "Are we going Crazy",
                     "artist": {
-                        "id": "34",
-                        "name": "Takeru Ishikawa",
+                        "id": "27",
+                        "name": "Chi.Otic",
                         "prefix": null,
-                        "basename": "Takeru Ishikawa"
+                        "basename": "Chi.Otic"
                     },
                     "artists": [
                         {
-                            "id": "34",
-                            "name": "Takeru Ishikawa",
+                            "id": "27",
+                            "name": "Chi.Otic",
                             "prefix": null,
-                            "basename": "Takeru Ishikawa"
-                        },
-                        {
-                            "id": "35",
-                            "name": "Anji Bee",
-                            "prefix": null,
-                            "basename": "Anji Bee"
+                            "basename": "Chi.Otic"
                         }
                     ],
                     "album": {
-                        "id": "21",
-                        "name": "CC Affiliates Mixtape #1",
+                        "id": "23",
+                        "name": "Buried in Nausea",
                         "prefix": null,
-                        "basename": "CC Affiliates Mixtape #1"
+                        "basename": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "2",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
                     },
                     "disk": 1,
                     "disksubtitle": null,
-                    "track": 14,
-                    "filename": "\/mnt\/music\/nwscomp006\/14TakeruIshikawaAnjiBee-FavorTweet.mp3",
+                    "track": 7,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
                     "genre": [],
                     "playlisttrack": 1,
-                    "time": 221,
-                    "year": 2015,
-                    "format": "mp3",
+                    "time": 433,
+                    "year": 2012,
+                    "format": "wma",
                     "stream_format": "mp3",
-                    "bitrate": 188429,
+                    "bitrate": 32582,
                     "stream_bitrate": 32000,
                     "rate": 44100,
-                    "mode": "vbr",
-                    "mime": "audio\/mpeg",
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
                     "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=84&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Takeru%20Ishikawa%20-%20Favor%20Tweet.mp3",
-                    "size": 5583398,
-                    "mbid": "0f7c22b0-882a-432f-97bf-4b13bc7fbd47",
-                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
+                    "size": 1776580,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
@@ -1529,10 +858,10 @@
                     "playcount": 0,
                     "catalog": 1,
                     "composer": null,
-                    "channels": 2,
-                    "comment": "http:\/\/www.jamendo.com Attribution-Noncommercial-Share Alike 3.0",
+                    "channels": 1,
+                    "comment": null,
                     "license": null,
-                    "publisher": "Netwaves Records",
+                    "publisher": null,
                     "language": null,
                     "lyrics": null,
                     "replaygain_album_gain": null,
@@ -1545,14 +874,1777 @@
             ],
             "songcount": 1,
             "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=35&object_type=artist",
-            "has_art": false,
+            "art": "https:\/\/music.com.au\/image.php?object_id=27&object_type=artist",
+            "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "mbid": "c16ba400-99d5-46ed-a228-cde5ebef62fb",
+            "mbid": "7",
             "summary": null,
-            "time": 221,
+            "time": 433,
+            "yearformed": 0,
+            "placeformed": null
+        },
+        {
+            "id": "34",
+            "name": "Comedown Kid",
+            "prefix": null,
+            "basename": "Comedown Kid",
+            "albums": [
+                {
+                    "id": "23",
+                    "name": "Buried in Nausea",
+                    "prefix": null,
+                    "basename": "Buried in Nausea",
+                    "artist": {
+                        "id": "38",
+                        "name": "Various Artists",
+                        "prefix": null,
+                        "basename": "Various Artists"
+                    },
+                    "artists": [
+                        {
+                            "id": "38",
+                            "name": "Various Artists",
+                            "prefix": null,
+                            "basename": "Various Artists"
+                        }
+                    ],
+                    "songartists": [
+                        {
+                            "id": "20",
+                            "name": "R\/B",
+                            "prefix": null,
+                            "basename": "R\/B"
+                        },
+                        {
+                            "id": "21",
+                            "name": "Tip-C (featuring Mike Beers)",
+                            "prefix": null,
+                            "basename": "Tip-C (featuring Mike Beers)"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Manic Notion",
+                            "prefix": null,
+                            "basename": "Manic Notion"
+                        },
+                        {
+                            "id": "26",
+                            "name": "Stress Builds Character",
+                            "prefix": null,
+                            "basename": "Stress Builds Character"
+                        },
+                        {
+                            "id": "27",
+                            "name": "Chi.Otic",
+                            "prefix": null,
+                            "basename": "Chi.Otic"
+                        },
+                        {
+                            "id": "32",
+                            "name": "Shorty Mac",
+                            "prefix": null,
+                            "basename": "Shorty Mac"
+                        },
+                        {
+                            "id": "33",
+                            "name": "MxBxCx",
+                            "prefix": null,
+                            "basename": "MxBxCx"
+                        },
+                        {
+                            "id": "34",
+                            "name": "Comedown Kid",
+                            "prefix": null,
+                            "basename": "Comedown Kid"
+                        },
+                        {
+                            "id": "35",
+                            "name": "Tip-C",
+                            "prefix": null,
+                            "basename": "Tip-C"
+                        }
+                    ],
+                    "time": 1879,
+                    "year": 2012,
+                    "tracks": [],
+                    "songcount": 9,
+                    "diskcount": 1,
+                    "type": "compilation",
+                    "genre": [
+                        {
+                            "id": "7",
+                            "name": "Punk"
+                        }
+                    ],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "mbid": null,
+                    "mbid_group": null
+                }
+            ],
+            "albumcount": 0,
+            "songs": [
+                {
+                    "id": "109",
+                    "title": "Dance with the Devil",
+                    "name": "Dance with the Devil",
+                    "artist": {
+                        "id": "34",
+                        "name": "Comedown Kid",
+                        "prefix": null,
+                        "basename": "Comedown Kid"
+                    },
+                    "artists": [
+                        {
+                            "id": "34",
+                            "name": "Comedown Kid",
+                            "prefix": null,
+                            "basename": "Comedown Kid"
+                        }
+                    ],
+                    "album": {
+                        "id": "23",
+                        "name": "Buried in Nausea",
+                        "prefix": null,
+                        "basename": "Buried in Nausea"
+                    },
+                    "albumartist": {
+                        "id": "38",
+                        "name": "Various Artists",
+                        "prefix": null,
+                        "basename": "Various Artists"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 3,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
+                    "genre": [],
+                    "playlisttrack": 1,
+                    "time": 116,
+                    "year": 2012,
+                    "format": "wma",
+                    "stream_format": "mp3",
+                    "bitrate": 32582,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
+                    "size": 483444,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": true,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 1,
+                    "comment": null,
+                    "license": null,
+                    "publisher": null,
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
+            "songcount": 1,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=34&object_type=artist",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "mbid": null,
+            "summary": null,
+            "time": 116,
+            "yearformed": 0,
+            "placeformed": null
+        },
+        {
+            "id": "36",
+            "name": "Comfort Fit",
+            "prefix": null,
+            "basename": "Comfort Fit",
+            "albums": [
+                {
+                    "id": "21",
+                    "name": "Forget and Remember",
+                    "prefix": null,
+                    "basename": "Forget and Remember",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "songartists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "time": 4248,
+                    "year": 2005,
+                    "tracks": [],
+                    "songcount": 20,
+                    "diskcount": 1,
+                    "type": "album",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+                    "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
+                }
+            ],
+            "albumcount": 1,
+            "songs": [
+                {
+                    "id": "116",
+                    "title": "Can I Help U?",
+                    "name": "Can I Help U?",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/1 - Can I Help U?.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 103,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 216839,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=116&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Can%20I%20Help%20U-.mp3",
+                    "size": 2811819,
+                    "mbid": "51d0e252-f20c-414c-b169-8dcf18ef9d26",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-01-comfort_fit-can_i_help_u\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "121",
+                    "title": "Planetary Picknick",
+                    "name": "Planetary Picknick",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 2,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/2 - Planetary Picknick.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 2,
+                    "time": 358,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 238812,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=121&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Planetary%20Picknick.mp3",
+                    "size": 10715592,
+                    "mbid": "6defae67-37da-4a85-90f6-80df5c27d88c",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-02-comfort_fit-planetary_picknick\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "119",
+                    "title": "Sorry",
+                    "name": "Sorry",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 3,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/3 - Sorry.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 3,
+                    "time": 200,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 239161,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=119&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Sorry.mp3",
+                    "size": 6018213,
+                    "mbid": "261964a4-8062-426d-b88e-82c0097ca98c",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/03_Sorry\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: Creative Commons\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "120",
+                    "title": "Freeze the Cut",
+                    "name": "Freeze the Cut",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 4,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/4 - Freeze The Cut.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 4,
+                    "time": 168,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 246979,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=120&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Freeze%20the%20Cut.mp3",
+                    "size": 5216305,
+                    "mbid": "d927db0b-7d3a-4fba-867c-d140cb19aeb9",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-04-comfort_fit-freeze_the_cut_feat_blaktroniks\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "125",
+                    "title": "Take a Look",
+                    "name": "Take a Look",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 5,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/5 - Take a Look.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 5,
+                    "time": 230,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 243729,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=125&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Take%20a%20Look.mp3",
+                    "size": 7018987,
+                    "mbid": "8a3bdac5-f0bd-4197-9deb-d4880d6f3b6d",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-05-comfort_fit-take_a_look\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "124",
+                    "title": "True Form",
+                    "name": "True Form",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 6,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/6 - True Form.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 6,
+                    "time": 192,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 243031,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=124&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20True%20Form.mp3",
+                    "size": 5848663,
+                    "mbid": "8bf3acd2-860b-4ece-896f-9b2de89e35fa",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-06-comfort_fit-true_form\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "122",
+                    "title": "Thursday Is Thursty",
+                    "name": "Thursday Is Thursty",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 7,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/7 - Thursday is Thursdy.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 7,
+                    "time": 92,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 225219,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=122&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Thursday%20Is%20Thursty.mp3",
+                    "size": 2607497,
+                    "mbid": "36fa39a1-483d-49d9-907b-17c4e3d60b47",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-07-comfort_fit-thursday_is_thursty\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "128",
+                    "title": "Whenever You Wanna Call Me",
+                    "name": "Whenever You Wanna Call Me",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 8,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/8 - Whenever You Wanna Call Me.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 8,
+                    "time": 188,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 250322,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=128&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Whenever%20You%20Wanna%20Call%20Me.mp3",
+                    "size": 5897286,
+                    "mbid": "0cc9456b-1750-4739-9346-90d9247da292",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-08-comfort_fit-whenever_you_wanna_call_me_feat_prymer\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "118",
+                    "title": "As Pure as Possible",
+                    "name": "As Pure as Possible",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 9,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/9 - As Pure as Possible.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 9,
+                    "time": 128,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 234690,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=118&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20As%20Pure%20as%20Possible.mp3",
+                    "size": 3789410,
+                    "mbid": "7a3d740d-5546-4900-88af-b97b42c3344e",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-09-comfort_fit-as_pure_as_possible\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "127",
+                    "title": "She Knows Me Now",
+                    "name": "She Knows Me Now",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 10,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/10 - She Knows Me Now (re-edit).mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 10,
+                    "time": 209,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 217167,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=127&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20She%20Knows%20Me%20Now.mp3",
+                    "size": 5690938,
+                    "mbid": "3845cef9-b874-449f-94a5-5c9acdead9df",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-10-comfort_fit-she_knows_me_now_feat_mercury_waters__prymer\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "117",
+                    "title": "Remember Something I Forgot",
+                    "name": "Remember Something I Forgot",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 11,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/11 - Remember Something I Forgot.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 11,
+                    "time": 163,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 235109,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=117&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Remember%20Something%20I%20Forgot.mp3",
+                    "size": 4816734,
+                    "mbid": "ba784e10-e268-4c44-9c82-091167162c27",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-11-comfort_fit-remember_something_i_forgot\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "126",
+                    "title": "Don't Show This Message Again",
+                    "name": "Don't Show This Message Again",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 12,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/12 - Don\u2019t Show This Message Again.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 12,
+                    "time": 197,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 232690,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=126&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3",
+                    "size": 5755191,
+                    "mbid": "6b582438-c034-47c2-86b0-61c63ec96b4b",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-12-comfort_fit-dont_show_this_message_again\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "133",
+                    "title": "Kurz Vor Danach Ganz '05",
+                    "name": "Kurz Vor Danach Ganz '05",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 13,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/13 - Kurz Vor Danach Ganz \u201805.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 13,
+                    "time": 247,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 230429,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=133&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Kurz%20Vor%20Danach%20Ganz%20-05.mp3",
+                    "size": 7136353,
+                    "mbid": "60ca3461-5f2b-4d0d-9cc5-ce79b358de7b",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-13-comfort_fit-kurz_vor_danach_ganz_05\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "135",
+                    "title": "Emotional Draft",
+                    "name": "Emotional Draft",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 14,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/14 - Emotional Draft.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 14,
+                    "time": 379,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 235925,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=135&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Emotional%20Draft.mp3",
+                    "size": 11216864,
+                    "mbid": "ab598f5a-4cbb-4ce0-a3ac-9de17026f528",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-14-comfort_fit-emotional_draft\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "132",
+                    "title": "Hairy Crushed Nuts",
+                    "name": "Hairy Crushed Nuts",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 15,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/15 - Hairy Crushed Nuts.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 15,
+                    "time": 267,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 248806,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=132&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Hairy%20Crushed%20Nuts.mp3",
+                    "size": 8328099,
+                    "mbid": "db672da0-963b-45a4-b3d8-23efc9c1953d",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-15-comfort_fit-hairy_crushed_nuts\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "129",
+                    "title": "The Hunt",
+                    "name": "The Hunt",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 16,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/16 - The Hunt.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 16,
+                    "time": 226,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 224425,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=129&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20The%20Hunt.mp3",
+                    "size": 6373874,
+                    "mbid": "8d22ccfd-38e9-42ca-9664-a236302ab8bf",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-16-comfort_fit-the_hunt\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "130",
+                    "title": "Something to Do",
+                    "name": "Something to Do",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 17,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/17 - Something To Do.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 17,
+                    "time": 261,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 246373,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=130&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Something%20to%20Do.mp3",
+                    "size": 8072761,
+                    "mbid": "143eca6b-26d6-4b5d-a6b2-7e7cc9e05769",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-17-comfort_fit-something_to_do_feat_blaktroniks\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "123",
+                    "title": "Go on, Take It Further",
+                    "name": "Go on, Take It Further",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 18,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/18 - Go On, Take It Further.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 18,
+                    "time": 69,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 206742,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=123&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Go%20on-%20Take%20It%20Further.mp3",
+                    "size": 1795861,
+                    "mbid": "64f731fb-da3f-41d0-a08b-47ecce55a3e4",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-18-comfort_fit-go_on_take_it_further\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "134",
+                    "title": "Swabian Sound System",
+                    "name": "Swabian Sound System",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 19,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/19 - Swabian Sound System.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 19,
+                    "time": 281,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 244202,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=134&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Swabian%20Sound%20System.mp3",
+                    "size": 8594721,
+                    "mbid": "8e993e63-ddf9-4603-a2c0-5d2f18efebce",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-19-comfort_fit-swabian_sound_system\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "131",
+                    "title": "Miles of Smiles",
+                    "name": "Miles of Smiles",
+                    "artist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "artists": [
+                        {
+                            "id": "36",
+                            "name": "Comfort Fit",
+                            "prefix": null,
+                            "basename": "Comfort Fit"
+                        }
+                    ],
+                    "album": {
+                        "id": "21",
+                        "name": "Forget and Remember",
+                        "prefix": null,
+                        "basename": "Forget and Remember"
+                    },
+                    "albumartist": {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 20,
+                    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/20 - Miles of Smiles.mp3",
+                    "genre": [
+                        {
+                            "id": "8",
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "playlisttrack": 20,
+                    "time": 290,
+                    "year": 2005,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 247925,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=131&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Miles%20of%20Smiles.mp3",
+                    "size": 9028758,
+                    "mbid": "ec160787-e0db-4f76-85b5-5a76f59f36f9",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 4,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-20-comfort_fit-miles_of_smiles\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+                    "license": null,
+                    "publisher": "Tokyo Dawn Records",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
+            "songcount": 20,
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=36&object_type=artist",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
+            "summary": "Comfort Fit\u2019s(Boris Mezga) versatile influences range from early detroit techno and minimal electronica to jazz, broken beats and hip-hop. This makes it easy for him to invisibly switch between musical styles within a fingersnap, taking the listener onto long and exciting journies.\n\nWisely using music codes of genres such as hip-hop, dubstep and techno as a mere comic template, Comfort Fit has inspired hip-hop and techno artists around the world with his heavy beat techniques. ",
+            "time": 4248,
             "yearformed": 0,
             "placeformed": null
         }

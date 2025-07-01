@@ -1,6 +1,6 @@
 {
-    "total_count": 4,
-    "md5": "72b72ac125d3200622e8c6d402700ee7",
+    "total_count": 3,
+    "md5": "e379d826bb1b6ffbc4564d33021e908c",
     "share": [
         {
             "id": "1",
@@ -50,25 +50,8 @@
             "max_counter": 0,
             "counter": 0,
             "secret": "GJ7EzBPT",
-            "public_url": "http:\/\/localhost:8989\/share.php?id=7&secret=GJ7EzBPT",
+            "public_url": "https:\/\/music.com.au:8989\/share.php?id=7&secret=GJ7EzBPT",
             "description": "Colorsmoke EP (Synthetic)"
-        },
-        {
-            "id": "8",
-            "name": "Are we going Crazy",
-            "owner": "user",
-            "allow_stream": true,
-            "allow_download": true,
-            "creation_date": 1670202706,
-            "lastvisit_date": 0,
-            "object_type": "song",
-            "object_id": "115",
-            "expire_days": 7,
-            "max_counter": 0,
-            "counter": 0,
-            "secret": "GJ7EzBPT",
-            "public_url": "https:\/\/music.com.au\/share.php?id=8&secret=GJ7EzBPT",
-            "description": null
         }
     ]
 }

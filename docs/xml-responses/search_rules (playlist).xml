@@ -22,10 +22,10 @@
     <label><![CDATA[Owner]]></label>
     <type><![CDATA[user_numeric]]></type>
     <widget>
-      <select id="1"><![CDATA[admin]]></select>
-      <select id="2"><![CDATA[user]]></select>
+      <select id="2"><![CDATA[admin]]></select>
       <select id="3"><![CDATA[demo]]></select>
-      <select id="840"><![CDATA[generic]]></select>
+      <select id="4"><![CDATA[user]]></select>
+      <select id="10"><![CDATA[generic]]></select>
     </widget>
     <title><![CDATA[Playlist]]></title>
   </rule>

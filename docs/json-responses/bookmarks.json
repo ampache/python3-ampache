@@ -1,6 +1,6 @@
 {
-    "total_count": 12,
-    "md5": "af89980c50d4f6e4468fd5c6b621e29b",
+    "total_count": 8,
+    "md5": "747a586ba428c879b8b9157188da2702",
     "bookmark": [
         {
             "id": "1",
@@ -81,46 +81,6 @@
             "client": "client",
             "creation_date": 1670202706,
             "update_date": 1698974919
-        },
-        {
-            "id": "9",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "55",
-            "position": 0,
-            "client": "client1",
-            "creation_date": 1670202706,
-            "update_date": 1747878088
-        },
-        {
-            "id": "10",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "54",
-            "position": 10,
-            "client": "client",
-            "creation_date": 1670202706,
-            "update_date": 1747878088
-        },
-        {
-            "id": "11",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "113",
-            "position": 0,
-            "client": "python3-ampache",
-            "creation_date": 1670202706,
-            "update_date": 1747878088
-        },
-        {
-            "id": "12",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "113",
-            "position": 0,
-            "client": "python3-ampache",
-            "creation_date": 1670202706,
-            "update_date": 1747878090
         }
     ]
 }

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-    <error errorCode="4703">
-        <errorAction><![CDATA[podcasts]]></errorAction>
-        <errorType><![CDATA[system]]></errorType>
-        <errorMessage><![CDATA[Enable: podcast]]></errorMessage>
-    </error>
+  <error errorCode="4703">
+    <errorAction><![CDATA[video]]></errorAction>
+    <errorType><![CDATA[system]]></errorType>
+    <errorMessage><![CDATA[Enable: video]]></errorMessage>
+  </error>
 </root>

@@ -1,107 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <md5>2bc754458970c79ba13d81f2c7c948ab</md5>
-  <song id="93">
-    <name><![CDATA[Scribnus 3]]></name>
-    <title><![CDATA[Scribnus 3]]></title>
-    <artist id="14">
-      <name><![CDATA[Nofi/found.]]></name>
+  <md5>30c99159a069e64769e6cef998f2cdb1</md5>
+  <song id="106">
+    <name><![CDATA[Malkuth - Intro]]></name>
+    <title><![CDATA[Malkuth - Intro]]></title>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi/found.]]></basename>
+      <basename><![CDATA[CARNÚN]]></basename>
     </artist>
-    <album id="8">
-      <name><![CDATA[Nofi Devices]]></name>
+    <album id="10">
+      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi Devices]]></basename>
+      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
     </album>
-    <albumartist id="14">
-      <name><![CDATA[Nofi/found.]]></name>
+    <albumartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi/found.]]></basename>
+      <basename><![CDATA[CARNÚN]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>3</track>
-    <genre id="5">
-      <name><![CDATA[Electronica]]></name>
-    </genre>
-    <genre id="6">
-      <name><![CDATA[Dance]]></name>
-    </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3]]></filename>
+    <track>1</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/01Intro.ogg]]></filename>
     <playlisttrack>1</playlisttrack>
-    <time>641</time>
-    <year>0</year>
-    <format>mp3</format>
+    <time>91</time>
+    <year>1996</year>
+    <format>ogg</format>
     <stream_format>mp3</stream_format>
-    <bitrate>192000</bitrate>
+    <bitrate>80962</bitrate>
     <stream_bitrate>32000</stream_bitrate>
     <rate>44100</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[application/ogg]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3]]></url>
-    <size>15400002</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.mp3]]></url>
+    <size>930226</size>
     <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
     <has_art>1</has_art>
-    <flag>1</flag>
-    <rating>5</rating>
+    <flag>0</flag>
+    <rating/>
     <averagerating/>
-    <playcount>4</playcount>
+    <playcount>1</playcount>
     <catalog>1</catalog>
-    <composer><![CDATA[Jeffrey Melton]]></composer>
+    <composer><![CDATA[]]></composer>
     <channels>2</channels>
-    <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
     <license><![CDATA[]]></license>
     <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>1.53</replaygain_track_gain>
-    <replaygain_track_peak>0.989</replaygain_track_peak>
+    <replaygain_track_gain>1.98</replaygain_track_gain>
+    <replaygain_track_peak>0.861</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="109">
-    <name><![CDATA[Dance with the Devil]]></name>
-    <title><![CDATA[Dance with the Devil]]></title>
-    <artist id="34">
-      <name><![CDATA[Comedown Kid]]></name>
+  <song id="100">
+    <name><![CDATA[The Prophecies Of The Horned One]]></name>
+    <title><![CDATA[The Prophecies Of The Horned One]]></title>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Comedown Kid]]></basename>
+      <basename><![CDATA[CARNÚN]]></basename>
     </artist>
-    <album id="12">
-      <name><![CDATA[Buried in Nausea]]></name>
+    <album id="10">
+      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Buried in Nausea]]></basename>
+      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
     </album>
-    <albumartist id="19">
-      <name><![CDATA[Various Artists]]></name>
+    <albumartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Various Artists]]></basename>
+      <basename><![CDATA[CARNÚN]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>3</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
+    <track>2</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/02ThePropheciesOfTheHornedOne.ogg]]></filename>
     <playlisttrack>2</playlisttrack>
-    <time>116</time>
-    <year>2012</year>
-    <format>wma</format>
+    <time>378</time>
+    <year>1996</year>
+    <format>ogg</format>
     <stream_format>mp3</stream_format>
-    <bitrate>32582</bitrate>
+    <bitrate>89965</bitrate>
     <stream_bitrate>32000</stream_bitrate>
     <rate>44100</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/x-ms-wma]]></mime>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[application/ogg]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3]]></url>
-    <size>483444</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3]]></url>
+    <size>4265791</size>
     <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating/>
@@ -109,79 +103,130 @@
     <playcount>0</playcount>
     <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
-    <channels>1</channels>
-    <comment><![CDATA[]]></comment>
+    <channels>2</channels>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
+    <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
+    <replaygain_track_gain>-10.51</replaygain_track_gain>
+    <replaygain_track_peak>1</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="126">
-    <name><![CDATA[Don't Show This Message Again]]></name>
-    <title><![CDATA[Don't Show This Message Again]]></title>
-    <artist id="36">
-      <name><![CDATA[Comfort Fit]]></name>
+  <song id="98">
+    <name><![CDATA[In The Seven Woods]]></name>
+    <title><![CDATA[In The Seven Woods]]></title>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Comfort Fit]]></basename>
+      <basename><![CDATA[CARNÚN]]></basename>
     </artist>
-    <album id="21">
-      <name><![CDATA[Forget and Remember]]></name>
+    <album id="10">
+      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Forget and Remember]]></basename>
+      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
     </album>
-    <albumartist id="36">
-      <name><![CDATA[Comfort Fit]]></name>
+    <albumartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Comfort Fit]]></basename>
+      <basename><![CDATA[CARNÚN]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>12</track>
-    <genre id="8">
-      <name><![CDATA[Hip-Hop]]></name>
-    </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/12 - Don’t Show This Message Again.mp3]]></filename>
+    <track>3</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/03InTheSevenWoods.ogg]]></filename>
     <playlisttrack>3</playlisttrack>
-    <time>197</time>
-    <year>2005</year>
-    <format>mp3</format>
+    <time>420</time>
+    <year>1996</year>
+    <format>ogg</format>
     <stream_format>mp3</stream_format>
-    <bitrate>232690</bitrate>
+    <bitrate>84423</bitrate>
     <stream_bitrate>32000</stream_bitrate>
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
+    <mime><![CDATA[application/ogg]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=126&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3]]></url>
-    <size>5755191</size>
-    <mbid><![CDATA[6b582438-c034-47c2-86b0-61c63ec96b4b]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3]]></url>
+    <size>4444403</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating/>
     <averagerating/>
     <playcount>0</playcount>
-    <catalog>4</catalog>
+    <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
     <channels>2</channels>
-    <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-12-comfort_fit-dont_show_this_message_again
-Comments: http://freemusicarchive.org/
-Curator: WFMU
-Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://creativecommons.org/licenses/by-nc-nd/3.0/de/]]></comment>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[Tokyo Dawn Records]]></publisher>
+    <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
+    <replaygain_track_gain>-9.7</replaygain_track_gain>
+    <replaygain_track_peak>1</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="104">
+    <name><![CDATA[The Infernal Serpent]]></name>
+    <title><![CDATA[The Infernal Serpent]]></title>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </artist>
+    <album id="10">
+      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+    </album>
+    <albumartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <track>4</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/04TheInfernalSerpent.ogg]]></filename>
+    <playlisttrack>4</playlisttrack>
+    <time>404</time>
+    <year>1996</year>
+    <format>ogg</format>
+    <stream_format>mp3</stream_format>
+    <bitrate>100053</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[application/ogg]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3]]></url>
+    <size>5066698</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating>5</rating>
+    <averagerating>4.5</averagerating>
+    <playcount>1</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels>2</channels>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[archive.org]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>-11.26</replaygain_track_gain>
+    <replaygain_track_peak>1</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

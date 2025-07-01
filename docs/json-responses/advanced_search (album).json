@@ -1,52 +1,95 @@
 {
-    "total_count": 1,
-    "md5": "a5f5d7a5fc80600513c623db108873af",
+    "total_count": 2,
+    "md5": "764cd2edd79a8adb606b9d6e77cf82a1",
     "album": [
         {
-            "id": "2",
-            "name": "Colorsmoke EP",
+            "id": "10",
+            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
             "prefix": null,
-            "basename": "Colorsmoke EP",
+            "basename": "CARN\u00daN - MALKUTH (Demo 1996)",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "16",
+                "name": "CARN\u00daN",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "CARN\u00daN"
             },
             "artists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "16",
+                    "name": "CARN\u00daN",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "CARN\u00daN"
                 }
             ],
             "songartists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "16",
+                    "name": "CARN\u00daN",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "CARN\u00daN"
                 }
             ],
-            "time": 4568,
-            "year": 2007,
+            "time": 3873,
+            "year": 1996,
             "tracks": [],
-            "songcount": 12,
+            "songcount": 9,
             "diskcount": 1,
             "type": null,
-            "genre": [
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "mbid": null,
+            "mbid_group": null
+        },
+        {
+            "id": "21",
+            "name": "Forget and Remember",
+            "prefix": null,
+            "basename": "Forget and Remember",
+            "artist": {
+                "id": "36",
+                "name": "Comfort Fit",
+                "prefix": null,
+                "basename": "Comfort Fit"
+            },
+            "artists": [
                 {
-                    "id": "1",
-                    "name": "Electronic"
+                    "id": "36",
+                    "name": "Comfort Fit",
+                    "prefix": null,
+                    "basename": "Comfort Fit"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album",
+            "songartists": [
+                {
+                    "id": "36",
+                    "name": "Comfort Fit",
+                    "prefix": null,
+                    "basename": "Comfort Fit"
+                }
+            ],
+            "time": 4248,
+            "year": 2005,
+            "tracks": [],
+            "songcount": 20,
+            "diskcount": 1,
+            "type": "album",
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album",
             "has_art": true,
-            "flag": true,
-            "rating": 5,
-            "averagerating": 3,
-            "mbid": null
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+            "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
         }
     ]
 }

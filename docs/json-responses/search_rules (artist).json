@@ -185,9 +185,10 @@
             "widget": [
                 "select",
                 {
-                    "1": "admin",
-                    "2": "user",
-                    "3": "demo"
+                    "2": "admin",
+                    "3": "demo",
+                    "4": "user",
+                    "10": "generic"
                 }
             ],
             "title": "Ratings"
@@ -379,9 +380,10 @@
             "widget": [
                 "select",
                 {
-                    "8": "Example Playlist",
-                    "25": "Example Playlist",
-                    "348": "Example Playlist_json"
+                    "65": "Nofi",
+                    "3": "random - admin - private (admin)",
+                    "2": "random - admin - public (admin)",
+                    "4": "random - user - private"
                 }
             ],
             "title": "Playlists"
@@ -463,7 +465,8 @@
             "widget": [
                 "select",
                 {
-                    "1": "music"
+                    "1": "music",
+                    "4": "upload"
                 }
             ],
             "title": "File Data"

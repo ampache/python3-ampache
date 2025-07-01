@@ -1,31 +1,278 @@
 {
     "song": [
         {
-            "id": "123246",
-            "title": "Two Souls (Fisherman & Hawkins remix)",
+            "id": "110",
+            "title": "I wanna walk through the fire",
             "artist": {
-                "id": "7011",
-                "name": "Jes"
+                "id": "23",
+                "name": "Manic Notion",
+                "prefix": null,
+                "basename": "Manic Notion"
             },
             "album": {
-                "id": "95409",
-                "name": "Black Hole Recordings: Best of 2015"
+                "id": "23",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "genre": [],
+            "track": 1,
+            "time": 197,
+            "format": "m4a",
+            "bitrate": 256000,
+            "mime": "audio\/mp4",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.mp3",
+            "size": 6651911,
+            "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
+            "has_art": true,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 2,
+            "vote": 0
+        },
+        {
+            "id": "114",
+            "title": "He is the Master of War",
+            "artist": {
+                "id": "26",
+                "name": "Stress Builds Character",
+                "prefix": null,
+                "basename": "Stress Builds Character"
+            },
+            "album": {
+                "id": "23",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "genre": [],
+            "track": 2,
+            "time": 233,
+            "format": "m4a",
+            "bitrate": 256000,
+            "mime": "audio\/mp4",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.mp3",
+            "size": 7535126,
+            "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
+            "has_art": true,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "vote": 0
+        },
+        {
+            "id": "109",
+            "title": "Dance with the Devil",
+            "artist": {
+                "id": "34",
+                "name": "Comedown Kid",
+                "prefix": null,
+                "basename": "Comedown Kid"
+            },
+            "album": {
+                "id": "23",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "genre": [],
+            "track": 3,
+            "time": 116,
+            "format": "wma",
+            "bitrate": 32582,
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
+            "size": 483444,
+            "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
+            "has_art": true,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 0,
+            "vote": 0
+        },
+        {
+            "id": "113",
+            "title": "Representin",
+            "artist": {
+                "id": "32",
+                "name": "Shorty Mac",
+                "prefix": null,
+                "basename": "Shorty Mac"
+            },
+            "album": {
+                "id": "23",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "genre": [],
+            "track": 4,
+            "time": 234,
+            "format": "mp3",
+            "bitrate": 123814,
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
+            "size": 3628199,
+            "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
+            "has_art": true,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "vote": 0
+        },
+        {
+            "id": "111",
+            "title": "The art of free expression",
+            "artist": {
+                "id": "35",
+                "name": "Tip-C",
+                "prefix": null,
+                "basename": "Tip-C"
+            },
+            "album": {
+                "id": "23",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "genre": [],
+            "track": 5,
+            "time": 110,
+            "format": "wma",
+            "bitrate": 32582,
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.mp3",
+            "size": 460498,
+            "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
+            "has_art": true,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "vote": 0
+        },
+        {
+            "id": "108",
+            "title": "I've been down this road before",
+            "artist": {
+                "id": "21",
+                "name": "Tip-C (featuring Mike Beers)",
+                "prefix": null,
+                "basename": "Tip-C (featuring Mike Beers)"
+            },
+            "album": {
+                "id": "23",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "genre": [],
+            "track": 6,
+            "time": 252,
+            "format": "wma",
+            "bitrate": 32582,
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.mp3",
+            "size": 1035322,
+            "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
+            "has_art": true,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 1,
+            "vote": 0
+        },
+        {
+            "id": "115",
+            "title": "Are we going Crazy",
+            "artist": {
+                "id": "27",
+                "name": "Chi.Otic",
+                "prefix": null,
+                "basename": "Chi.Otic"
+            },
+            "album": {
+                "id": "23",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "genre": [],
+            "track": 7,
+            "time": 433,
+            "format": "wma",
+            "bitrate": 32582,
+            "mime": "audio\/x-ms-wma",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
+            "size": 1776580,
+            "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
+            "has_art": true,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "vote": 0
+        },
+        {
+            "id": "112",
+            "title": "Personal Truth",
+            "artist": {
+                "id": "33",
+                "name": "MxBxCx",
+                "prefix": null,
+                "basename": "MxBxCx"
+            },
+            "album": {
+                "id": "23",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "genre": [],
+            "track": 8,
+            "time": 208,
+            "format": "mp3",
+            "bitrate": 179860,
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3",
+            "size": 4693037,
+            "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
+            "has_art": true,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 1,
+            "vote": 0
+        },
+        {
+            "id": "107",
+            "title": "Arrest Me",
+            "artist": {
+                "id": "20",
+                "name": "R\/B",
+                "prefix": null,
+                "basename": "R\/B"
+            },
+            "album": {
+                "id": "23",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
             },
             "genre": [
                 {
-                    "id": "80",
-                    "name": "Trance"
+                    "id": "7",
+                    "name": "Punk"
                 }
             ],
-            "track": 13,
-            "time": 352,
-            "mime": "audio\/mpeg",
-            "url": "https://music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=123246&uid=2&player=api&name=Jes%20-%20Two%20Souls%20-Fisherman%20-%20Hawkins%20remix-.mp3",
-            "size": 14165432,
-            "art": "https://music.com.au\/image.php?object_id=95409&object_type=album&auth=eeb9f1b6056246a7d563f479f518bb34&name=art.jpg",
-            "preciserating": null,
+            "track": 9,
+            "time": 96,
+            "format": "m4a",
+            "bitrate": 256000,
+            "mime": "audio\/mp4",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=R-B%20-%20Arrest%20Me.mp3",
+            "size": 3091727,
+            "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
+            "has_art": true,
             "rating": null,
             "averagerating": null,
+            "playcount": 0,
             "vote": 0
         }
     ]

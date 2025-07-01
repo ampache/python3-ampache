@@ -138,10 +138,10 @@
     <label><![CDATA[Another User]]></label>
     <type><![CDATA[user_numeric]]></type>
     <widget>
-      <select id="1"><![CDATA[admin]]></select>
-      <select id="2"><![CDATA[user]]></select>
+      <select id="2"><![CDATA[admin]]></select>
       <select id="3"><![CDATA[demo]]></select>
-      <select id="840"><![CDATA[generic]]></select>
+      <select id="4"><![CDATA[user]]></select>
+      <select id="10"><![CDATA[generic]]></select>
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
@@ -276,9 +276,10 @@
     <label><![CDATA[Playlist]]></label>
     <type><![CDATA[boolean_subsearch]]></type>
     <widget>
-      <select id="8"><![CDATA[Example Playlist]]></select>
-      <select id="25"><![CDATA[Example Playlist]]></select>
-      <select id="348"><![CDATA[Example Playlist_json]]></select>
+      <select id="65"><![CDATA[Nofi]]></select>
+      <select id="3"><![CDATA[random - admin - private (admin)]]></select>
+      <select id="2"><![CDATA[random - admin - public (admin)]]></select>
+      <select id="4"><![CDATA[random - user - private]]></select>
     </widget>
     <title><![CDATA[Playlists]]></title>
   </rule>
@@ -337,6 +338,7 @@
     <type><![CDATA[boolean_numeric]]></type>
     <widget>
       <select id="1"><![CDATA[music]]></select>
+      <select id="4"><![CDATA[upload]]></select>
     </widget>
     <title><![CDATA[File Data]]></title>
   </rule>

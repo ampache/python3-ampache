@@ -1,284 +1,320 @@
 {
-    "total_count": 45,
-    "md5": "225b08f23e5c7e868de1fad03c6d0e46",
+    "total_count": 11,
+    "md5": "b6d12c071f022b176a4c2496e2e533ce",
     "song": [
         {
-            "id": "115",
-            "title": "Are we going Crazy",
-            "name": "Are we going Crazy",
+            "id": "95",
+            "title": "Spirus Falls",
+            "name": "Spirus Falls",
             "artist": {
-                "id": "27",
-                "name": "Chi.Otic",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Chi.Otic"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "27",
-                    "name": "Chi.Otic",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "Chi.Otic"
+                    "basename": "Nofi\/found."
                 }
             ],
             "album": {
-                "id": "12",
-                "name": "Buried in Nausea",
+                "id": "8",
+                "name": "Nofi Devices",
                 "prefix": null,
-                "basename": "Buried in Nausea"
+                "basename": "Nofi Devices"
             },
             "albumartist": {
-                "id": "19",
-                "name": "Various Artists",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Various Artists"
+                "basename": "Nofi\/found."
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 7,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
-            "genre": [],
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/02_Spirus_Falls.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
             "playlisttrack": 1,
-            "time": 433,
-            "year": 2012,
-            "format": "wma",
+            "time": 327,
+            "year": 0,
+            "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 32582,
+            "bitrate": 192000,
             "stream_bitrate": 32000,
             "rate": 44100,
             "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
+            "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
-            "size": 1776580,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3",
+            "size": 7875775,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
-            "rating": null,
+            "rating": 5,
             "averagerating": null,
-            "playcount": 0,
+            "playcount": 1,
             "catalog": 1,
-            "composer": null,
-            "channels": 1,
-            "comment": null,
-            "license": null,
-            "publisher": null,
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "115",
-            "title": "Are we going Crazy",
-            "name": "Are we going Crazy",
-            "artist": {
-                "id": "27",
-                "name": "Chi.Otic",
-                "prefix": null,
-                "basename": "Chi.Otic"
-            },
-            "artists": [
-                {
-                    "id": "27",
-                    "name": "Chi.Otic",
-                    "prefix": null,
-                    "basename": "Chi.Otic"
-                }
-            ],
-            "album": {
-                "id": "12",
-                "name": "Buried in Nausea",
-                "prefix": null,
-                "basename": "Buried in Nausea"
-            },
-            "albumartist": {
-                "id": "19",
-                "name": "Various Artists",
-                "prefix": null,
-                "basename": "Various Artists"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 7,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
-            "genre": [],
-            "playlisttrack": 2,
-            "time": 433,
-            "year": 2012,
-            "format": "wma",
-            "stream_format": "mp3",
-            "bitrate": 32582,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
-            "size": 1776580,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": null,
-            "channels": 1,
-            "comment": null,
-            "license": null,
-            "publisher": null,
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "102",
-            "title": "Moremque Sinistrum Sacrorum",
-            "name": "Moremque Sinistrum Sacrorum",
-            "artist": {
-                "id": "16",
-                "name": "CARN\u00daN",
-                "prefix": null,
-                "basename": "CARN\u00daN"
-            },
-            "artists": [
-                {
-                    "id": "16",
-                    "name": "CARN\u00daN",
-                    "prefix": null,
-                    "basename": "CARN\u00daN"
-                }
-            ],
-            "album": {
-                "id": "10",
-                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
-                "prefix": null,
-                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
-            },
-            "albumartist": {
-                "id": "16",
-                "name": "CARN\u00daN",
-                "prefix": null,
-                "basename": "CARN\u00daN"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/05MoremqueSinistrumSacrorum.ogg",
-            "genre": [],
-            "playlisttrack": 3,
-            "time": 164,
-            "year": 1996,
-            "format": "ogg",
-            "stream_format": "mp3",
-            "bitrate": 106647,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "application\/ogg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3",
-            "size": 2202971,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": null,
+            "composer": "Jeffrey Melton",
             "channels": 2,
-            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -7.48,
+            "replaygain_track_gain": -1.53,
             "replaygain_track_peak": 1,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "98",
-            "title": "In The Seven Woods",
-            "name": "In The Seven Woods",
+            "id": "93",
+            "title": "Scribnus 3",
+            "name": "Scribnus 3",
             "artist": {
-                "id": "16",
-                "name": "CARN\u00daN",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "CARN\u00daN"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "16",
-                    "name": "CARN\u00daN",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "CARN\u00daN"
+                    "basename": "Nofi\/found."
                 }
             ],
             "album": {
-                "id": "10",
-                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "id": "8",
+                "name": "Nofi Devices",
                 "prefix": null,
-                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                "basename": "Nofi Devices"
             },
             "albumartist": {
-                "id": "16",
-                "name": "CARN\u00daN",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "CARN\u00daN"
+                "basename": "Nofi\/found."
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/03InTheSevenWoods.ogg",
-            "genre": [],
-            "playlisttrack": 4,
-            "time": 420,
-            "year": 1996,
-            "format": "ogg",
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/03_Scribnus_3.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 641,
+            "year": 0,
+            "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 84423,
+            "bitrate": 192000,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "vbr",
-            "mime": "application\/ogg",
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3",
-            "size": 4444403,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3",
+            "size": 15400002,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "playcount": 0,
+            "playcount": 4,
             "catalog": 1,
-            "composer": null,
+            "composer": "Jeffrey Melton",
             "channels": 2,
-            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -9.7,
-            "replaygain_track_peak": 1,
+            "replaygain_track_gain": 1.53,
+            "replaygain_track_peak": 0.989,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "85",
+            "title": "Beq Ultra Fat",
+            "name": "Beq Ultra Fat",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/04_Beq_Ultra_Fat.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 413,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3",
+            "size": 9935896,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": 0.94,
+            "replaygain_track_peak": 0.989,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "86",
+            "title": "Caloonashine",
+            "name": "Caloonashine",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/05_Caloonashine.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 330,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Caloonashine.mp3",
+            "size": 7929692,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 2,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -0.35,
+            "replaygain_track_peak": 0.955,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

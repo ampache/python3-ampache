@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<error errorCode="4706">
-		<errorAction><![CDATA[tag_songs]]></errorAction>
-		<errorType><![CDATA[removed]]></errorType>
-		<errorMessage><![CDATA[Depreciated]]></errorMessage>
-	</error>
+  <error errorCode="4706">
+    <errorAction><![CDATA[tags]]></errorAction>
+    <errorType><![CDATA[removed]]></errorType>
+    <errorMessage><![CDATA[Deprecated]]></errorMessage>
+  </error>
 </root>

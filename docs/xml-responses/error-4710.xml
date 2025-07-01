@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<error errorCode="4710">
-		<errorAction><![CDATA[user_create]]></errorAction>
-		<errorType><![CDATA[username]]></errorType>
-		<errorMessage><![CDATA[Bad Request: temp_user]]></errorMessage>
-	</error>
+  <error errorCode="4710">
+    <errorAction><![CDATA[catalog_action]]></errorAction>
+    <errorType><![CDATA[task]]></errorType>
+    <errorMessage><![CDATA[Bad Request: clean]]></errorMessage>
+  </error>
 </root>

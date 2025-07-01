@@ -1,793 +1,308 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>0</total_count>
-  <md5>9947683d7b7cef7dcfd4267f1e3a2879</md5>
-  <artist id="40">
-    <name><![CDATA[Aydio]]></name>
+  <md5>8b3bab3cbd9d25b31b7bb061a5477ef9</md5>
+  <artist id="16">
+    <name><![CDATA[CARNÚN]]></name>
     <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[Aydio]]></basename>
-    <genre id="2">
-      <name><![CDATA[Electronic]]></name>
-    </genre>
-    <genre id="22">
-      <name><![CDATA[Trip Hop]]></name>
-    </genre>
-    <genre id="4">
-      <name><![CDATA[Hip Hop]]></name>
-    </genre>
-    <genre id="32">
-      <name><![CDATA[Dub]]></name>
-    </genre>
-    <genre id="33">
-      <name><![CDATA[downtempo]]></name>
-    </genre>
+    <basename><![CDATA[CARNÚN]]></basename>
     <albums>
-      <album id="25">
-        <name><![CDATA[Deltitnu]]></name>
+      <album id="10">
+        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[Deltitnu]]></basename>
-        <artist id="40">
-          <name><![CDATA[Aydio]]></name>
+        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Aydio]]></basename>
+          <basename><![CDATA[CARNÚN]]></basename>
         </artist>
-        <songartist id="40">
-          <name><![CDATA[Aydio]]></name>
+        <songartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Aydio]]></basename>
+          <basename><![CDATA[CARNÚN]]></basename>
         </songartist>
-        <time>1234</time>
-        <year>2009</year>
+        <time>3873</time>
+        <year>1996</year>
         <tracks/>
-        <songcount>4</songcount>
+        <songcount>9</songcount>
         <diskcount>1</diskcount>
-        <type>ep</type>
-        <genre id="2">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <genre id="22">
-          <name><![CDATA[Trip Hop]]></name>
-        </genre>
-        <genre id="4">
-          <name><![CDATA[Hip Hop]]></name>
-        </genre>
-        <genre id="32">
-          <name><![CDATA[Dub]]></name>
-        </genre>
-        <genre id="33">
-          <name><![CDATA[downtempo]]></name>
-        </genre>
-        <art><![CDATA[https://music.com.au/image.php?object_id=25&object_type=album]]></art>
+        <type/>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
-        <mbid><![CDATA[c7fa799d-eda2-411c-bce6-2d3ef3a3270b]]></mbid>
-        <mbid_group><![CDATA[829295d5-28e3-4214-9ddd-623d61a1f42e]]></mbid_group>
+        <mbid><![CDATA[]]></mbid>
+        <mbid_group><![CDATA[]]></mbid_group>
       </album>
     </albums>
     <albumcount>1</albumcount>
     <songs>
-      <song id="101">
-        <name><![CDATA[Track]]></name>
-        <title><![CDATA[Track]]></title>
-        <artist id="40">
-          <name><![CDATA[Aydio]]></name>
+      <song id="106">
+        <name><![CDATA[Malkuth - Intro]]></name>
+        <title><![CDATA[Malkuth - Intro]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Aydio]]></basename>
+          <basename><![CDATA[CARNÚN]]></basename>
         </artist>
-        <album id="25">
-          <name><![CDATA[Deltitnu]]></name>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Deltitnu]]></basename>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
         </album>
-        <albumartist id="40">
-          <name><![CDATA[Aydio]]></name>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Aydio]]></basename>
+          <basename><![CDATA[CARNÚN]]></basename>
         </albumartist>
         <disk><![CDATA[1]]></disk>
         <disksubtitle><![CDATA[]]></disksubtitle>
         <track>1</track>
-        <genre id="2">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <genre id="4">
-          <name><![CDATA[Hip Hop]]></name>
-        </genre>
-        <genre id="22">
-          <name><![CDATA[Trip Hop]]></name>
-        </genre>
-        <genre id="32">
-          <name><![CDATA[Dub]]></name>
-        </genre>
-        <genre id="33">
-          <name><![CDATA[downtempo]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/music/Deltitnu/01 Track.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/01Intro.ogg]]></filename>
         <playlisttrack>1</playlisttrack>
-        <time>360</time>
-        <year>2009</year>
-        <format>mp3</format>
+        <time>91</time>
+        <year>1996</year>
+        <format>ogg</format>
         <stream_format>mp3</stream_format>
-        <bitrate>320000</bitrate>
+        <bitrate>80962</bitrate>
         <stream_bitrate>32000</stream_bitrate>
         <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=101&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Aydio%20-%20Track.mp3]]></url>
-        <size>14531877</size>
-        <mbid><![CDATA[8159fcc5-a043-4a23-8b61-2dc86525cb50]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=25&object_type=album&name=art.jpg]]></art>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.mp3]]></url>
+        <size>930226</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <playcount>1</playcount>
         <catalog>1</catalog>
-        <composer><![CDATA[Aydio]]></composer>
+        <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[[DWK031]]]></comment>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[Dusted Wax Kingdom]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>1.98</replaygain_track_gain>
+        <replaygain_track_peak>0.861</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
       <song id="100">
-        <name><![CDATA[Deltitnu]]></name>
-        <title><![CDATA[Deltitnu]]></title>
-        <artist id="40">
-          <name><![CDATA[Aydio]]></name>
+        <name><![CDATA[The Prophecies Of The Horned One]]></name>
+        <title><![CDATA[The Prophecies Of The Horned One]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Aydio]]></basename>
+          <basename><![CDATA[CARNÚN]]></basename>
         </artist>
-        <album id="25">
-          <name><![CDATA[Deltitnu]]></name>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Deltitnu]]></basename>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
         </album>
-        <albumartist id="40">
-          <name><![CDATA[Aydio]]></name>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Aydio]]></basename>
+          <basename><![CDATA[CARNÚN]]></basename>
         </albumartist>
         <disk><![CDATA[1]]></disk>
         <disksubtitle><![CDATA[]]></disksubtitle>
         <track>2</track>
-        <genre id="2">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <genre id="4">
-          <name><![CDATA[Hip Hop]]></name>
-        </genre>
-        <genre id="22">
-          <name><![CDATA[Trip Hop]]></name>
-        </genre>
-        <genre id="32">
-          <name><![CDATA[Dub]]></name>
-        </genre>
-        <genre id="33">
-          <name><![CDATA[downtempo]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/music/Deltitnu/02 Deltitnu.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/02ThePropheciesOfTheHornedOne.ogg]]></filename>
         <playlisttrack>2</playlisttrack>
-        <time>264</time>
-        <year>2009</year>
-        <format>mp3</format>
+        <time>378</time>
+        <year>1996</year>
+        <format>ogg</format>
         <stream_format>mp3</stream_format>
-        <bitrate>320000</bitrate>
+        <bitrate>89965</bitrate>
         <stream_bitrate>32000</stream_bitrate>
         <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=100&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Aydio%20-%20Deltitnu.mp3]]></url>
-        <size>10695802</size>
-        <mbid><![CDATA[39f574aa-d1f9-48f6-b384-cd070ba05b78]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=25&object_type=album&name=art.jpg]]></art>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3]]></url>
+        <size>4265791</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
         <has_art>1</has_art>
-        <flag>1</flag>
-        <rating>5</rating>
+        <flag>0</flag>
+        <rating/>
         <averagerating/>
-        <playcount>1</playcount>
+        <playcount>0</playcount>
         <catalog>1</catalog>
-        <composer><![CDATA[Aydio]]></composer>
+        <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[[DWK031]]]></comment>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[Dusted Wax Kingdom]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-10.51</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="98">
+        <name><![CDATA[In The Seven Woods]]></name>
+        <title><![CDATA[In The Seven Woods]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>3</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/03InTheSevenWoods.ogg]]></filename>
+        <playlisttrack>3</playlisttrack>
+        <time>420</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>84423</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3]]></url>
+        <size>4444403</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-9.7</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="104">
+        <name><![CDATA[The Infernal Serpent]]></name>
+        <title><![CDATA[The Infernal Serpent]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>4</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/04TheInfernalSerpent.ogg]]></filename>
+        <playlisttrack>4</playlisttrack>
+        <time>404</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>100053</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3]]></url>
+        <size>5066698</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating>5</rating>
+        <averagerating>4.5</averagerating>
+        <playcount>1</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-11.26</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
       <song id="102">
-        <name><![CDATA[XHD]]></name>
-        <title><![CDATA[XHD]]></title>
-        <artist id="40">
-          <name><![CDATA[Aydio]]></name>
+        <name><![CDATA[Moremque Sinistrum Sacrorum]]></name>
+        <title><![CDATA[Moremque Sinistrum Sacrorum]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Aydio]]></basename>
+          <basename><![CDATA[CARNÚN]]></basename>
         </artist>
-        <album id="25">
-          <name><![CDATA[Deltitnu]]></name>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Deltitnu]]></basename>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
         </album>
-        <albumartist id="40">
-          <name><![CDATA[Aydio]]></name>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Aydio]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>3</track>
-        <genre id="2">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <genre id="4">
-          <name><![CDATA[Hip Hop]]></name>
-        </genre>
-        <genre id="22">
-          <name><![CDATA[Trip Hop]]></name>
-        </genre>
-        <genre id="32">
-          <name><![CDATA[Dub]]></name>
-        </genre>
-        <genre id="33">
-          <name><![CDATA[downtempo]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/music/Deltitnu/03 XHD.mp3]]></filename>
-        <playlisttrack>3</playlisttrack>
-        <time>295</time>
-        <year>2009</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>320000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=102&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Aydio%20-%20XHD.mp3]]></url>
-        <size>11944670</size>
-        <mbid><![CDATA[391c1d9f-0e06-47c1-8949-077054e45287]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=25&object_type=album&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>2</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[Aydio]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[[DWK031]]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[Dusted Wax Kingdom]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="103">
-        <name><![CDATA[Step One]]></name>
-        <title><![CDATA[Step One]]></title>
-        <artist id="40">
-          <name><![CDATA[Aydio]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Aydio]]></basename>
-        </artist>
-        <album id="25">
-          <name><![CDATA[Deltitnu]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Deltitnu]]></basename>
-        </album>
-        <albumartist id="40">
-          <name><![CDATA[Aydio]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Aydio]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>4</track>
-        <genre id="2">
-          <name><![CDATA[Electronic]]></name>
-        </genre>
-        <genre id="4">
-          <name><![CDATA[Hip Hop]]></name>
-        </genre>
-        <genre id="22">
-          <name><![CDATA[Trip Hop]]></name>
-        </genre>
-        <genre id="32">
-          <name><![CDATA[Dub]]></name>
-        </genre>
-        <genre id="33">
-          <name><![CDATA[downtempo]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/music/Deltitnu/04 Step One.mp3]]></filename>
-        <playlisttrack>4</playlisttrack>
-        <time>315</time>
-        <year>2009</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>320000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=103&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Aydio%20-%20Step%20One.mp3]]></url>
-        <size>12742756</size>
-        <mbid><![CDATA[9a26606c-018b-440d-a1a6-df553bca1acf]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=25&object_type=album&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>1</flag>
-        <rating>5</rating>
-        <averagerating/>
-        <playcount>1</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[Aydio]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[[DWK031]]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[Dusted Wax Kingdom]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-    </songs>
-    <songcount>4</songcount>
-    <art><![CDATA[https://music.com.au/image.php?object_id=40&object_type=artist]]></art>
-    <has_art>1</has_art>
-    <flag>0</flag>
-    <rating/>
-    <averagerating/>
-    <mbid><![CDATA[e61abad3-e61e-4187-b077-977d635ba267]]></mbid>
-    <summary><![CDATA[http://www.aydio.net
-
-Aydio is Adam Harper, a London-based musician, producer, DJ and visual artist. His music consists mainly of downtempo electronica, with hip-hop, dub, rock and jazz influences along with a variety of other forms of music. Since 2009 he has released 3 EPs on netlabels Dusted Wax Kingdom and KraaK Records, and in 2010, he released his debut full-length release, ‘Nonentity’.
-
-His new LP, 'The Second', released in 2013, continues along the same lines ]]></summary>
-    <time><![CDATA[1234]]></time>
-    <yearformed>0</yearformed>
-    <placeformed><![CDATA[]]></placeformed>
-  </artist>
-  <artist id="123">
-    <name><![CDATA[Chris Zabriskie]]></name>
-    <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[Chris Zabriskie]]></basename>
-    <albums>
-      <album id="19">
-        <name><![CDATA[I Made This While You Were Asleep]]></name>
-        <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[I Made This While You Were Asleep]]></basename>
-        <artist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </artist>
-        <songartist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </songartist>
-        <time>2674</time>
-        <year>2020</year>
-        <tracks/>
-        <songcount>7</songcount>
-        <diskcount>1</diskcount>
-        <type>album</type>
-        <art><![CDATA[https://music.com.au/image.php?object_id=19&object_type=album]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <mbid><![CDATA[fa034906-26a3-4680-b93b-8a4bd74b0594]]></mbid>
-        <mbid_group><![CDATA[d5d8140b-5bf9-48bf-97d9-04b920a68dd8]]></mbid_group>
-      </album>
-    </albums>
-    <albumcount>1</albumcount>
-    <songs>
-      <song id="253">
-        <name><![CDATA[I'm About to Do the Second Hardest Thing I've Ever Done]]></name>
-        <title><![CDATA[I'm About to Do the Second Hardest Thing I've Ever Done]]></title>
-        <artist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </artist>
-        <album id="19">
-          <name><![CDATA[I Made This While You Were Asleep]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[I Made This While You Were Asleep]]></basename>
-        </album>
-        <albumartist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>1</track>
-        <filename><![CDATA[/mnt/music/Chris Zabriskie - I Made This While You Were Asleep/101 I'm About to Do the Second Hardest Thing I've Ever Done.mp3]]></filename>
-        <playlisttrack>1</playlisttrack>
-        <time>400</time>
-        <year>2020</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>238459</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[vbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=253&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20I-m%20About%20to%20Do%20the%20Second%20Hardest%20Thing%20I-ve%20Ever%20Done.mp3]]></url>
-        <size>12154782</size>
-        <mbid><![CDATA[962d0fda-4659-4045-8c27-2673d86a21b1]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=19&object_type=album&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Visit http://chriszabriskie.bandcamp.com]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="252">
-        <name><![CDATA[I Knew My Way Downtown and Walking Was Deluxe]]></name>
-        <title><![CDATA[I Knew My Way Downtown and Walking Was Deluxe]]></title>
-        <artist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </artist>
-        <album id="19">
-          <name><![CDATA[I Made This While You Were Asleep]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[I Made This While You Were Asleep]]></basename>
-        </album>
-        <albumartist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>2</track>
-        <filename><![CDATA[/mnt/music/Chris Zabriskie - I Made This While You Were Asleep/102 I Knew My Way Downtown and Walking Was Deluxe.mp3]]></filename>
-        <playlisttrack>2</playlisttrack>
-        <time>271</time>
-        <year>2020</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>239741</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[vbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=252&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20I%20Knew%20My%20Way%20Downtown%20and%20Walking%20Was%20Deluxe.mp3]]></url>
-        <size>8361951</size>
-        <mbid><![CDATA[70adddff-fae1-4afb-a4ef-57b4a2994794]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=19&object_type=album&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Visit http://chriszabriskie.bandcamp.com]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="254">
-        <name><![CDATA[Editing Beyond the Door III Again]]></name>
-        <title><![CDATA[Editing Beyond the Door III Again]]></title>
-        <artist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </artist>
-        <album id="19">
-          <name><![CDATA[I Made This While You Were Asleep]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[I Made This While You Were Asleep]]></basename>
-        </album>
-        <albumartist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>3</track>
-        <filename><![CDATA[/mnt/music/Chris Zabriskie - I Made This While You Were Asleep/103 Editing Beyond the Door III Again.mp3]]></filename>
-        <playlisttrack>3</playlisttrack>
-        <time>390</time>
-        <year>2020</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>240416</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[vbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=254&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20Editing%20Beyond%20the%20Door%20III%20Again.mp3]]></url>
-        <size>11965131</size>
-        <mbid><![CDATA[5fb7fd49-be50-44fe-b4e1-876a717d1639]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=19&object_type=album&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>1</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Visit http://chriszabriskie.bandcamp.com]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="249">
-        <name><![CDATA[Everyone Will Notice, No One Will Say Anything]]></name>
-        <title><![CDATA[Everyone Will Notice, No One Will Say Anything]]></title>
-        <artist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </artist>
-        <album id="19">
-          <name><![CDATA[I Made This While You Were Asleep]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[I Made This While You Were Asleep]]></basename>
-        </album>
-        <albumartist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>4</track>
-        <filename><![CDATA[/mnt/music/Chris Zabriskie - I Made This While You Were Asleep/104 Everyone Will Notice, No One Will Say Anything.mp3]]></filename>
-        <playlisttrack>4</playlisttrack>
-        <time>378</time>
-        <year>2020</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>236923</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[vbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=249&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20Everyone%20Will%20Notice-%20No%20One%20Will%20Say%20Anything.mp3]]></url>
-        <size>11452963</size>
-        <mbid><![CDATA[3a93bb6b-8b94-4442-a95b-fa3d9b0e388b]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=19&object_type=album&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Visit http://chriszabriskie.bandcamp.com]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="251">
-        <name><![CDATA[Everyone Will Notice, No One Will Say Anything]]></name>
-        <title><![CDATA[Everyone Will Notice, No One Will Say Anything]]></title>
-        <artist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </artist>
-        <album id="19">
-          <name><![CDATA[I Made This While You Were Asleep]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[I Made This While You Were Asleep]]></basename>
-        </album>
-        <albumartist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>4</track>
-        <filename><![CDATA[/mnt/music/Chris Zabriskie - I Made This While You Were Asleep/104 Everyone Will Notice, No One Will Say Anything.mp3]]></filename>
-        <playlisttrack>5</playlisttrack>
-        <time>378</time>
-        <year>2020</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>236923</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[vbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=251&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20Everyone%20Will%20Notice-%20No%20One%20Will%20Say%20Anything.mp3]]></url>
-        <size>11452963</size>
-        <mbid><![CDATA[3a93bb6b-8b94-4442-a95b-fa3d9b0e388b]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=19&object_type=album&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Visit http://chriszabriskie.bandcamp.com]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="255">
-        <name><![CDATA[You Fiddle, I'll Burn Rome]]></name>
-        <title><![CDATA[You Fiddle, I'll Burn Rome]]></title>
-        <artist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </artist>
-        <album id="19">
-          <name><![CDATA[I Made This While You Were Asleep]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[I Made This While You Were Asleep]]></basename>
-        </album>
-        <albumartist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
+          <basename><![CDATA[CARNÚN]]></basename>
         </albumartist>
         <disk><![CDATA[1]]></disk>
         <disksubtitle><![CDATA[]]></disksubtitle>
         <track>5</track>
-        <filename><![CDATA[/mnt/music/Chris Zabriskie - I Made This While You Were Asleep/105 You Fiddle, I'll Burn Rome.mp3]]></filename>
-        <playlisttrack>6</playlisttrack>
-        <time>318</time>
-        <year>2020</year>
-        <format>mp3</format>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/05MoremqueSinistrumSacrorum.ogg]]></filename>
+        <playlisttrack>5</playlisttrack>
+        <time>164</time>
+        <year>1996</year>
+        <format>ogg</format>
         <stream_format>mp3</stream_format>
-        <bitrate>236287</bitrate>
+        <bitrate>106647</bitrate>
         <stream_bitrate>32000</stream_bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
+        <mime><![CDATA[application/ogg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=255&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20You%20Fiddle-%20I-ll%20Burn%20Rome.mp3]]></url>
-        <size>9639211</size>
-        <mbid><![CDATA[5af0eac6-52fc-4111-a8a8-5a04c328eed0]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=19&object_type=album&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>1</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Visit http://chriszabriskie.bandcamp.com]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="250">
-        <name><![CDATA[Keep Up the Momentum, Friend]]></name>
-        <title><![CDATA[Keep Up the Momentum, Friend]]></title>
-        <artist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </artist>
-        <album id="19">
-          <name><![CDATA[I Made This While You Were Asleep]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[I Made This While You Were Asleep]]></basename>
-        </album>
-        <albumartist id="123">
-          <name><![CDATA[Chris Zabriskie]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chris Zabriskie]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>6</track>
-        <filename><![CDATA[/mnt/music/Chris Zabriskie - I Made This While You Were Asleep/106 Keep Up the Momentum, Friend.mp3]]></filename>
-        <playlisttrack>7</playlisttrack>
-        <time>539</time>
-        <year>2020</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>238240</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[vbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=250&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Chris%20Zabriskie%20-%20Keep%20Up%20the%20Momentum-%20Friend.mp3]]></url>
-        <size>16287117</size>
-        <mbid><![CDATA[d5f35ea6-f362-4b27-9bcc-3852381e7444]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=19&object_type=album&name=art.jpg]]></art>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3]]></url>
+        <size>2202971</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -796,34 +311,262 @@ His new LP, 'The Second', released in 2013, continues along the same lines ]]></
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[Visit http://chriszabriskie.bandcamp.com]]></comment>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
         <license><![CDATA[]]></license>
-        <publisher><![CDATA[]]></publisher>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
+        <replaygain_track_gain>-7.48</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="99">
+        <name><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></name>
+        <title><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>6</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg]]></filename>
+        <playlisttrack>6</playlisttrack>
+        <time>427</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>143788</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3]]></url>
+        <size>7696008</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating>5</rating>
+        <averagerating/>
+        <playcount>2</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-12.66</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="103">
+        <name><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></name>
+        <title><![CDATA[In The Seven Woods (Instrumental Re-Recording)]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>7</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/07InTheSevenWoods_InstrumentalReRecording.ogg]]></filename>
+        <playlisttrack>7</playlisttrack>
+        <time>452</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>138338</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
+        <size>7826238</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating>5</rating>
+        <averagerating/>
+        <playcount>1</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-12.21</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="105">
+        <name><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></name>
+        <title><![CDATA[The Infernal Serpent (Instrumental Re-Recording)]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>8</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/08TheInfernalSerpent_InstrumentalReRecording.ogg]]></filename>
+        <playlisttrack>8</playlisttrack>
+        <time>557</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>139453</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.mp3]]></url>
+        <size>9722091</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating>5</rating>
+        <averagerating/>
+        <playcount>1</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-12.24</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="101">
+        <name><![CDATA[Rehearsal Tape (1996)]]></name>
+        <title><![CDATA[Rehearsal Tape (1996)]]></title>
+        <artist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </artist>
+        <album id="10">
+          <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        </album>
+        <albumartist id="16">
+          <name><![CDATA[CARNÚN]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[CARNÚN]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>9</track>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/09RehearsalTape1996.ogg]]></filename>
+        <playlisttrack>9</playlisttrack>
+        <time>980</time>
+        <year>1996</year>
+        <format>ogg</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>66912</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[application/ogg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.mp3]]></url>
+        <size>8219821</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating>5</rating>
+        <averagerating/>
+        <playcount>1</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-9.56</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
     </songs>
-    <songcount>7</songcount>
-    <art><![CDATA[https://music.com.au/image.php?object_id=123&object_type=artist]]></art>
+    <songcount>9</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=16&object_type=artist]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating/>
     <averagerating/>
-    <mbid><![CDATA[cd661c5c-c9ce-42ff-83f8-7b1dd1515d64]]></mbid>
-    <summary><![CDATA[Chris Zabriskie is a musician and composer of "mostly quiet" ambient, piano, and electronic albums.
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[Formerly called DEFY CHRIST. CARNÚN were formed in 1995. Incorporating a mix of Black, Doom and Death Metal, and influenced by bands like BURZUM, DARKTHRONE, BATHORY, THOU ART LORD, IN THE WOODS…, early KATATONIA and PRIMORDIAL, who Mick would eventually go on to join full-time.
 
-Zabriskie got his musical start in prolific noise band Struggleburger, but was forced into going solo one night after the rest of the group failed to show up for a live performance. After spending nearly six years on a concept album about the Disney sci-fi film The Black Hole, he abandoned the project and released it unfinished online. Two more acoustic-based solo records followed ]]></summary>
-    <time><![CDATA[2674]]></time>
+They released one demo, ‘Malkuth’, which was recorded in Connolly’s Of Leap, 4th January 1996 by Paddy McNicholl. The line-up for this recording was Marc (Bard Nocturnus) on Vocals, Damien on keyboards and Mick playing guitars, bass and drums. ]]></summary>
+    <time><![CDATA[3873]]></time>
     <yearformed>0</yearformed>
     <placeformed><![CDATA[]]></placeformed>
   </artist>
-  <artist id="17">
+  <artist id="36">
     <name><![CDATA[Comfort Fit]]></name>
     <prefix><![CDATA[]]></prefix>
     <basename><![CDATA[Comfort Fit]]></basename>
@@ -831,16 +574,16 @@ Zabriskie got his musical start in prolific noise band Struggleburger, but was f
       <name><![CDATA[Hip-Hop]]></name>
     </genre>
     <albums>
-      <album id="27">
+      <album id="21">
         <name><![CDATA[Forget and Remember]]></name>
         <prefix><![CDATA[]]></prefix>
         <basename><![CDATA[Forget and Remember]]></basename>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <songartist id="17">
+        <songartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -854,7 +597,7 @@ Zabriskie got his musical start in prolific noise band Struggleburger, but was f
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -865,20 +608,20 @@ Zabriskie got his musical start in prolific noise band Struggleburger, but was f
     </albums>
     <albumcount>1</albumcount>
     <songs>
-      <song id="52">
+      <song id="116">
         <name><![CDATA[Can I Help U?]]></name>
         <title><![CDATA[Can I Help U?]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -889,7 +632,7 @@ Zabriskie got his musical start in prolific noise band Struggleburger, but was f
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/1 - Can I Help U?.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/1 - Can I Help U?.mp3]]></filename>
         <playlisttrack>1</playlisttrack>
         <time>103</time>
         <year>2005</year>
@@ -901,16 +644,16 @@ Zabriskie got his musical start in prolific noise band Struggleburger, but was f
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=52&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Can%20I%20Help%20U-.mp3]]></url>
-        <size>3045291</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=116&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Can%20I%20Help%20U-.mp3]]></url>
+        <size>2811819</size>
         <mbid><![CDATA[51d0e252-f20c-414c-b169-8dcf18ef9d26]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <playcount>0</playcount>
-        <catalog>1</catalog>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-01-comfort_fit-can_i_help_u
@@ -928,20 +671,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="60">
+      <song id="121">
         <name><![CDATA[Planetary Picknick]]></name>
         <title><![CDATA[Planetary Picknick]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -952,7 +695,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/2 - Planetary Picknick.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/2 - Planetary Picknick.mp3]]></filename>
         <playlisttrack>2</playlisttrack>
         <time>358</time>
         <year>2005</year>
@@ -964,16 +707,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=60&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Planetary%20Picknick.mp3]]></url>
-        <size>10940872</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=121&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Planetary%20Picknick.mp3]]></url>
+        <size>10715592</size>
         <mbid><![CDATA[6defae67-37da-4a85-90f6-80df5c27d88c]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
-        <rating/>
+        <rating>5</rating>
         <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
+        <playcount>1</playcount>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-02-comfort_fit-planetary_picknick
@@ -991,20 +734,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="68">
+      <song id="119">
         <name><![CDATA[Sorry]]></name>
         <title><![CDATA[Sorry]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1015,7 +758,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/3 - Sorry.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/3 - Sorry.mp3]]></filename>
         <playlisttrack>3</playlisttrack>
         <time>200</time>
         <year>2005</year>
@@ -1027,16 +770,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=68&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Sorry.mp3]]></url>
-        <size>6248613</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=119&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Sorry.mp3]]></url>
+        <size>6018213</size>
         <mbid><![CDATA[261964a4-8062-426d-b88e-82c0097ca98c]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <playcount>0</playcount>
-        <catalog>1</catalog>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/03_Sorry
@@ -1054,20 +797,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="59">
+      <song id="120">
         <name><![CDATA[Freeze the Cut]]></name>
         <title><![CDATA[Freeze the Cut]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1078,7 +821,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/4 - Freeze The Cut.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/4 - Freeze The Cut.mp3]]></filename>
         <playlisttrack>4</playlisttrack>
         <time>168</time>
         <year>2005</year>
@@ -1090,16 +833,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=59&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Freeze%20the%20Cut.mp3]]></url>
-        <size>5447729</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=120&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Freeze%20the%20Cut.mp3]]></url>
+        <size>5216305</size>
         <mbid><![CDATA[d927db0b-7d3a-4fba-867c-d140cb19aeb9]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <playcount>0</playcount>
-        <catalog>1</catalog>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-04-comfort_fit-freeze_the_cut_feat_blaktroniks
@@ -1117,20 +860,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="55">
+      <song id="125">
         <name><![CDATA[Take a Look]]></name>
         <title><![CDATA[Take a Look]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1141,7 +884,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/5 - Take a Look.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/5 - Take a Look.mp3]]></filename>
         <playlisttrack>5</playlisttrack>
         <time>230</time>
         <year>2005</year>
@@ -1153,16 +896,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=55&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Take%20a%20Look.mp3]]></url>
-        <size>7248363</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=125&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Take%20a%20Look.mp3]]></url>
+        <size>7018987</size>
         <mbid><![CDATA[8a3bdac5-f0bd-4197-9deb-d4880d6f3b6d]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
-        <rating/>
+        <rating>5</rating>
         <averagerating/>
         <playcount>0</playcount>
-        <catalog>1</catalog>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-05-comfort_fit-take_a_look
@@ -1180,20 +923,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="54">
+      <song id="124">
         <name><![CDATA[True Form]]></name>
         <title><![CDATA[True Form]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1204,7 +947,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/6 - True Form.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/6 - True Form.mp3]]></filename>
         <playlisttrack>6</playlisttrack>
         <time>192</time>
         <year>2005</year>
@@ -1216,16 +959,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=54&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20True%20Form.mp3]]></url>
-        <size>6079063</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=124&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20True%20Form.mp3]]></url>
+        <size>5848663</size>
         <mbid><![CDATA[8bf3acd2-860b-4ece-896f-9b2de89e35fa]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <playcount>0</playcount>
-        <catalog>1</catalog>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-06-comfort_fit-true_form
@@ -1243,20 +986,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="57">
+      <song id="122">
         <name><![CDATA[Thursday Is Thursty]]></name>
         <title><![CDATA[Thursday Is Thursty]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1267,7 +1010,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/7 - Thursday is Thursdy.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/7 - Thursday is Thursdy.mp3]]></filename>
         <playlisttrack>7</playlisttrack>
         <time>92</time>
         <year>2005</year>
@@ -1279,16 +1022,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=57&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Thursday%20Is%20Thursty.mp3]]></url>
-        <size>2840969</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=122&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Thursday%20Is%20Thursty.mp3]]></url>
+        <size>2607497</size>
         <mbid><![CDATA[36fa39a1-483d-49d9-907b-17c4e3d60b47]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
-        <flag>1</flag>
-        <rating>5</rating>
+        <flag>0</flag>
+        <rating/>
         <averagerating/>
-        <playcount>1</playcount>
-        <catalog>1</catalog>
+        <playcount>0</playcount>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-07-comfort_fit-thursday_is_thursty
@@ -1306,20 +1049,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="67">
+      <song id="128">
         <name><![CDATA[Whenever You Wanna Call Me]]></name>
         <title><![CDATA[Whenever You Wanna Call Me]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1330,7 +1073,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/8 - Whenever You Wanna Call Me.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/8 - Whenever You Wanna Call Me.mp3]]></filename>
         <playlisttrack>8</playlisttrack>
         <time>188</time>
         <year>2005</year>
@@ -1342,16 +1085,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=67&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Whenever%20You%20Wanna%20Call%20Me.mp3]]></url>
-        <size>6127686</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=128&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Whenever%20You%20Wanna%20Call%20Me.mp3]]></url>
+        <size>5897286</size>
         <mbid><![CDATA[0cc9456b-1750-4739-9346-90d9247da292]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <playcount>0</playcount>
-        <catalog>1</catalog>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-08-comfort_fit-whenever_you_wanna_call_me_feat_prymer
@@ -1369,20 +1112,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="62">
+      <song id="118">
         <name><![CDATA[As Pure as Possible]]></name>
         <title><![CDATA[As Pure as Possible]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1393,7 +1136,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/9 - As Pure as Possible.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/9 - As Pure as Possible.mp3]]></filename>
         <playlisttrack>9</playlisttrack>
         <time>128</time>
         <year>2005</year>
@@ -1405,16 +1148,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=62&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20As%20Pure%20as%20Possible.mp3]]></url>
-        <size>4021858</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=118&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20As%20Pure%20as%20Possible.mp3]]></url>
+        <size>3789410</size>
         <mbid><![CDATA[7a3d740d-5546-4900-88af-b97b42c3344e]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <playcount>0</playcount>
-        <catalog>1</catalog>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-09-comfort_fit-as_pure_as_possible
@@ -1432,20 +1175,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="51">
+      <song id="127">
         <name><![CDATA[She Knows Me Now]]></name>
         <title><![CDATA[She Knows Me Now]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1456,7 +1199,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/10 - She Knows Me Now (re-edit).mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/10 - She Knows Me Now (re-edit).mp3]]></filename>
         <playlisttrack>10</playlisttrack>
         <time>209</time>
         <year>2005</year>
@@ -1468,16 +1211,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=51&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20She%20Knows%20Me%20Now.mp3]]></url>
-        <size>5921338</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=127&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20She%20Knows%20Me%20Now.mp3]]></url>
+        <size>5690938</size>
         <mbid><![CDATA[3845cef9-b874-449f-94a5-5c9acdead9df]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <playcount>0</playcount>
-        <catalog>1</catalog>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-10-comfort_fit-she_knows_me_now_feat_mercury_waters__prymer
@@ -1495,20 +1238,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="50">
+      <song id="117">
         <name><![CDATA[Remember Something I Forgot]]></name>
         <title><![CDATA[Remember Something I Forgot]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1519,7 +1262,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/11 - Remember Something I Forgot.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/11 - Remember Something I Forgot.mp3]]></filename>
         <playlisttrack>11</playlisttrack>
         <time>163</time>
         <year>2005</year>
@@ -1531,16 +1274,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=50&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Remember%20Something%20I%20Forgot.mp3]]></url>
-        <size>5048158</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=117&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Remember%20Something%20I%20Forgot.mp3]]></url>
+        <size>4816734</size>
         <mbid><![CDATA[ba784e10-e268-4c44-9c82-091167162c27]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
-        <flag>1</flag>
+        <flag>0</flag>
         <rating>5</rating>
         <averagerating/>
-        <playcount>1</playcount>
-        <catalog>1</catalog>
+        <playcount>0</playcount>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-11-comfort_fit-remember_something_i_forgot
@@ -1558,20 +1301,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="63">
+      <song id="126">
         <name><![CDATA[Don't Show This Message Again]]></name>
         <title><![CDATA[Don't Show This Message Again]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1582,7 +1325,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/12 - Don’t Show This Message Again.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/12 - Don’t Show This Message Again.mp3]]></filename>
         <playlisttrack>12</playlisttrack>
         <time>197</time>
         <year>2005</year>
@@ -1594,16 +1337,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=63&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3]]></url>
-        <size>5985591</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=126&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Don-t%20Show%20This%20Message%20Again.mp3]]></url>
+        <size>5755191</size>
         <mbid><![CDATA[6b582438-c034-47c2-86b0-61c63ec96b4b]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <playcount>0</playcount>
-        <catalog>1</catalog>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-12-comfort_fit-dont_show_this_message_again
@@ -1621,20 +1364,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="65">
+      <song id="133">
         <name><![CDATA[Kurz Vor Danach Ganz '05]]></name>
         <title><![CDATA[Kurz Vor Danach Ganz '05]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1645,7 +1388,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/13 - Kurz Vor Danach Ganz ‘05.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/13 - Kurz Vor Danach Ganz ‘05.mp3]]></filename>
         <playlisttrack>13</playlisttrack>
         <time>247</time>
         <year>2005</year>
@@ -1657,16 +1400,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=65&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Kurz%20Vor%20Danach%20Ganz%20-05.mp3]]></url>
-        <size>7365729</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=133&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Kurz%20Vor%20Danach%20Ganz%20-05.mp3]]></url>
+        <size>7136353</size>
         <mbid><![CDATA[60ca3461-5f2b-4d0d-9cc5-ce79b358de7b]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
-        <flag>1</flag>
-        <rating>5</rating>
+        <flag>0</flag>
+        <rating/>
         <averagerating/>
-        <playcount>1</playcount>
-        <catalog>1</catalog>
+        <playcount>0</playcount>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-13-comfort_fit-kurz_vor_danach_ganz_05
@@ -1684,20 +1427,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="53">
+      <song id="135">
         <name><![CDATA[Emotional Draft]]></name>
         <title><![CDATA[Emotional Draft]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1708,7 +1451,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/14 - Emotional Draft.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/14 - Emotional Draft.mp3]]></filename>
         <playlisttrack>14</playlisttrack>
         <time>379</time>
         <year>2005</year>
@@ -1720,16 +1463,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=53&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Emotional%20Draft.mp3]]></url>
-        <size>11442144</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=135&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Emotional%20Draft.mp3]]></url>
+        <size>11216864</size>
         <mbid><![CDATA[ab598f5a-4cbb-4ce0-a3ac-9de17026f528]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
-        <flag>1</flag>
+        <flag>0</flag>
         <rating>5</rating>
         <averagerating/>
-        <playcount>1</playcount>
-        <catalog>1</catalog>
+        <playcount>0</playcount>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-14-comfort_fit-emotional_draft
@@ -1747,20 +1490,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="64">
+      <song id="132">
         <name><![CDATA[Hairy Crushed Nuts]]></name>
         <title><![CDATA[Hairy Crushed Nuts]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1771,7 +1514,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/15 - Hairy Crushed Nuts.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/15 - Hairy Crushed Nuts.mp3]]></filename>
         <playlisttrack>15</playlisttrack>
         <time>267</time>
         <year>2005</year>
@@ -1783,16 +1526,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=64&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Hairy%20Crushed%20Nuts.mp3]]></url>
-        <size>8556451</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=132&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Hairy%20Crushed%20Nuts.mp3]]></url>
+        <size>8328099</size>
         <mbid><![CDATA[db672da0-963b-45a4-b3d8-23efc9c1953d]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
-        <rating>5</rating>
+        <rating/>
         <averagerating/>
-        <playcount>5</playcount>
-        <catalog>1</catalog>
+        <playcount>0</playcount>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-15-comfort_fit-hairy_crushed_nuts
@@ -1810,20 +1553,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="61">
+      <song id="129">
         <name><![CDATA[The Hunt]]></name>
         <title><![CDATA[The Hunt]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1834,7 +1577,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/16 - The Hunt.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/16 - The Hunt.mp3]]></filename>
         <playlisttrack>16</playlisttrack>
         <time>226</time>
         <year>2005</year>
@@ -1846,16 +1589,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=61&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20The%20Hunt.mp3]]></url>
-        <size>6610912</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=129&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20The%20Hunt.mp3]]></url>
+        <size>6373874</size>
         <mbid><![CDATA[8d22ccfd-38e9-42ca-9664-a236302ab8bf]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <playcount>0</playcount>
-        <catalog>1</catalog>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-16-comfort_fit-the_hunt
@@ -1873,20 +1616,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="49">
+      <song id="130">
         <name><![CDATA[Something to Do]]></name>
         <title><![CDATA[Something to Do]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1897,7 +1640,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/17 - Something To Do.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/17 - Something To Do.mp3]]></filename>
         <playlisttrack>17</playlisttrack>
         <time>261</time>
         <year>2005</year>
@@ -1909,16 +1652,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=49&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Something%20to%20Do.mp3]]></url>
-        <size>8301113</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=130&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Something%20to%20Do.mp3]]></url>
+        <size>8072761</size>
         <mbid><![CDATA[143eca6b-26d6-4b5d-a6b2-7e7cc9e05769]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
-        <rating/>
+        <rating>5</rating>
         <averagerating/>
-        <playcount>2</playcount>
-        <catalog>1</catalog>
+        <playcount>1</playcount>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-17-comfort_fit-something_to_do_feat_blaktroniks
@@ -1936,20 +1679,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="66">
+      <song id="123">
         <name><![CDATA[Go on, Take It Further]]></name>
         <title><![CDATA[Go on, Take It Further]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -1960,7 +1703,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/18 - Go On, Take It Further.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/18 - Go On, Take It Further.mp3]]></filename>
         <playlisttrack>18</playlisttrack>
         <time>69</time>
         <year>2005</year>
@@ -1972,16 +1715,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=66&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Go%20on-%20Take%20It%20Further.mp3]]></url>
-        <size>2030357</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=123&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Go%20on-%20Take%20It%20Further.mp3]]></url>
+        <size>1795861</size>
         <mbid><![CDATA[64f731fb-da3f-41d0-a08b-47ecce55a3e4]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <playcount>0</playcount>
-        <catalog>1</catalog>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-18-comfort_fit-go_on_take_it_further
@@ -1999,20 +1742,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="69">
+      <song id="134">
         <name><![CDATA[Swabian Sound System]]></name>
         <title><![CDATA[Swabian Sound System]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -2023,7 +1766,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/19 - Swabian Sound System.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/19 - Swabian Sound System.mp3]]></filename>
         <playlisttrack>19</playlisttrack>
         <time>281</time>
         <year>2005</year>
@@ -2035,16 +1778,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=69&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Swabian%20Sound%20System.mp3]]></url>
-        <size>8822049</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=134&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Swabian%20Sound%20System.mp3]]></url>
+        <size>8594721</size>
         <mbid><![CDATA[8e993e63-ddf9-4603-a2c0-5d2f18efebce]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
-        <flag>1</flag>
-        <rating>5</rating>
+        <flag>0</flag>
+        <rating/>
         <averagerating/>
-        <playcount>1</playcount>
-        <catalog>1</catalog>
+        <playcount>0</playcount>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-19-comfort_fit-swabian_sound_system
@@ -2062,20 +1805,20 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="58">
+      <song id="131">
         <name><![CDATA[Miles of Smiles]]></name>
         <title><![CDATA[Miles of Smiles]]></title>
-        <artist id="17">
+        <artist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
         </artist>
-        <album id="27">
+        <album id="21">
           <name><![CDATA[Forget and Remember]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Forget and Remember]]></basename>
         </album>
-        <albumartist id="17">
+        <albumartist id="36">
           <name><![CDATA[Comfort Fit]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Comfort Fit]]></basename>
@@ -2086,7 +1829,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <filename><![CDATA[/mnt/music/Comfort fit/20 - Miles of Smiles.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/upload/user/Comfort Fit/Forget And Remember/20 - Miles of Smiles.mp3]]></filename>
         <playlisttrack>20</playlisttrack>
         <time>290</time>
         <year>2005</year>
@@ -2098,16 +1841,16 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=song&oid=58&uid=2&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Miles%20of%20Smiles.mp3]]></url>
-        <size>9256086</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=131&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Miles%20of%20Smiles.mp3]]></url>
+        <size>9028758</size>
         <mbid><![CDATA[ec160787-e0db-4f76-85b5-5a76f59f36f9]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
-        <rating/>
+        <rating>5</rating>
         <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
+        <playcount>1</playcount>
+        <catalog>4</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
         <comment><![CDATA[URL: http://freemusicarchive.org/music/Comfort_Fit/Forget_And_Remember/tdrlp02-20-comfort_fit-miles_of_smiles
@@ -2127,7 +1870,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
       </song>
     </songs>
     <songcount>20</songcount>
-    <art><![CDATA[https://music.com.au/image.php?object_id=17&object_type=artist]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=36&object_type=artist]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating/>
@@ -2140,257 +1883,38 @@ Wisely using music codes of genres such as hip-hop, dubstep and techno as a mere
     <yearformed>0</yearformed>
     <placeformed><![CDATA[]]></placeformed>
   </artist>
-  <artist id="70">
-    <name><![CDATA[Creative Commons]]></name>
+  <artist id="13">
+    <name><![CDATA[IOK-1]]></name>
     <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[Creative Commons]]></basename>
+    <basename><![CDATA[IOK-1]]></basename>
+    <genre id="4">
+      <name><![CDATA[Dark Ambient]]></name>
+    </genre>
     <albums>
-      <album id="13">
-        <name><![CDATA[CC 20th Anniversary Open Mix]]></name>
+      <album id="7">
+        <name><![CDATA[Sensorisk Deprivation]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CC 20th Anniversary Open Mix]]></basename>
-        <artist id="70">
-          <name><![CDATA[Creative Commons]]></name>
+        <basename><![CDATA[Sensorisk Deprivation]]></basename>
+        <artist id="13">
+          <name><![CDATA[IOK-1]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Creative Commons]]></basename>
+          <basename><![CDATA[IOK-1]]></basename>
         </artist>
-        <songartist id="72">
-          <name><![CDATA[Caslo]]></name>
+        <songartist id="13">
+          <name><![CDATA[IOK-1]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Caslo]]></basename>
+          <basename><![CDATA[IOK-1]]></basename>
         </songartist>
-        <songartist id="73">
-          <name><![CDATA[James Pants]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[James Pants]]></basename>
-        </songartist>
-        <songartist id="75">
-          <name><![CDATA[Dieter van der Westen]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Dieter van der Westen]]></basename>
-        </songartist>
-        <songartist id="76">
-          <name><![CDATA[Juanitos]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Juanitos]]></basename>
-        </songartist>
-        <songartist id="78">
-          <name><![CDATA[Independent Music Licensing Collective (IMLC)]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Independent Music Licensing Collective (IMLC)]]></basename>
-        </songartist>
-        <songartist id="79">
-          <name><![CDATA[Silva de Alegria]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Silva de Alegria]]></basename>
-        </songartist>
-        <songartist id="80">
-          <name><![CDATA[Nangdo]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nangdo]]></basename>
-        </songartist>
-        <songartist id="81">
-          <name><![CDATA[Turku]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Turku]]></basename>
-        </songartist>
-        <songartist id="83">
-          <name><![CDATA[Eric Van der Westen]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Eric Van der Westen]]></basename>
-        </songartist>
-        <songartist id="84">
-          <name><![CDATA[Katy Kirby]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Katy Kirby]]></basename>
-        </songartist>
-        <songartist id="86">
-          <name><![CDATA[Vienna Ditto]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Vienna Ditto]]></basename>
-        </songartist>
-        <songartist id="88">
-          <name><![CDATA[Josh Woodward]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Josh Woodward]]></basename>
-        </songartist>
-        <songartist id="89">
-          <name><![CDATA[Maybe Watson]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Maybe Watson]]></basename>
-        </songartist>
-        <songartist id="90">
-          <name><![CDATA[The Joy Drops]]></name>
-          <prefix><![CDATA[The]]></prefix>
-          <basename><![CDATA[Joy Drops]]></basename>
-        </songartist>
-        <songartist id="91">
-          <name><![CDATA[Anitek]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Anitek]]></basename>
-        </songartist>
-        <songartist id="92">
-          <name><![CDATA[Glad Rags]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Glad Rags]]></basename>
-        </songartist>
-        <songartist id="93">
-          <name><![CDATA[Jules FK]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Jules FK]]></basename>
-        </songartist>
-        <songartist id="95">
-          <name><![CDATA[Rocky Marsiano]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Rocky Marsiano]]></basename>
-        </songartist>
-        <songartist id="96">
-          <name><![CDATA[Kirk Osamayo]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Kirk Osamayo]]></basename>
-        </songartist>
-        <songartist id="97">
-          <name><![CDATA[The Freak Fandango Orchestra]]></name>
-          <prefix><![CDATA[The]]></prefix>
-          <basename><![CDATA[Freak Fandango Orchestra]]></basename>
-        </songartist>
-        <songartist id="98">
-          <name><![CDATA[Finn Anderson]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Finn Anderson]]></basename>
-        </songartist>
-        <songartist id="99">
-          <name><![CDATA[Scott Jacobs]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Scott Jacobs]]></basename>
-        </songartist>
-        <songartist id="100">
-          <name><![CDATA[One Man Book]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[One Man Book]]></basename>
-        </songartist>
-        <songartist id="102">
-          <name><![CDATA[Lame Drivers]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Lame Drivers]]></basename>
-        </songartist>
-        <songartist id="104">
-          <name><![CDATA[Derek Clegg]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Derek Clegg]]></basename>
-        </songartist>
-        <songartist id="105">
-          <name><![CDATA[HoliznaPATREON]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[HoliznaPATREON]]></basename>
-        </songartist>
-        <songartist id="106">
-          <name><![CDATA[Makaih Beats]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Makaih Beats]]></basename>
-        </songartist>
-        <songartist id="107">
-          <name><![CDATA[Fotos del Otono]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Fotos del Otono]]></basename>
-        </songartist>
-        <songartist id="108">
-          <name><![CDATA[Another Day]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Another Day]]></basename>
-        </songartist>
-        <songartist id="109">
-          <name><![CDATA[The New Valleys]]></name>
-          <prefix><![CDATA[The]]></prefix>
-          <basename><![CDATA[New Valleys]]></basename>
-        </songartist>
-        <songartist id="110">
-          <name><![CDATA[Alex Figueira]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Alex Figueira]]></basename>
-        </songartist>
-        <songartist id="111">
-          <name><![CDATA[Alaclair Ensemble]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Alaclair Ensemble]]></basename>
-        </songartist>
-        <songartist id="112">
-          <name><![CDATA[The Kyoto Connection]]></name>
-          <prefix><![CDATA[The]]></prefix>
-          <basename><![CDATA[Kyoto Connection]]></basename>
-        </songartist>
-        <songartist id="114">
-          <name><![CDATA[Fog Lake]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Fog Lake]]></basename>
-        </songartist>
-        <songartist id="115">
-          <name><![CDATA[Another Brick]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Another Brick]]></basename>
-        </songartist>
-        <songartist id="116">
-          <name><![CDATA[Malaventura]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Malaventura]]></basename>
-        </songartist>
-        <songartist id="117">
-          <name><![CDATA[Ketsa]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Ketsa]]></basename>
-        </songartist>
-        <songartist id="118">
-          <name><![CDATA[Cambo]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Cambo]]></basename>
-        </songartist>
-        <songartist id="120">
-          <name><![CDATA[Maarten Schellekens]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Maarten Schellekens]]></basename>
-        </songartist>
-        <songartist id="121">
-          <name><![CDATA[Benjimanji]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Benjimanji]]></basename>
-        </songartist>
-        <time>10829</time>
-        <year>2022</year>
+        <time>3428</time>
+        <year>2011</year>
         <tracks/>
-        <songcount>58</songcount>
+        <songcount>4</songcount>
         <diskcount>1</diskcount>
         <type/>
-        <genre id="2">
-          <name><![CDATA[Electronic]]></name>
+        <genre id="4">
+          <name><![CDATA[Dark Ambient]]></name>
         </genre>
-        <genre id="8">
-          <name><![CDATA[Hip-Hop]]></name>
-        </genre>
-        <genre id="15">
-          <name><![CDATA[Pop]]></name>
-        </genre>
-        <genre id="9">
-          <name><![CDATA[Folk]]></name>
-        </genre>
-        <genre id="22">
-          <name><![CDATA[Trip Hop]]></name>
-        </genre>
-        <genre id="21">
-          <name><![CDATA[International]]></name>
-        </genre>
-        <genre id="19">
-          <name><![CDATA[Soul]]></name>
-        </genre>
-        <genre id="20">
-          <name><![CDATA[Other]]></name>
-        </genre>
-        <genre id="23">
-          <name><![CDATA[Soul-RnB]]></name>
-        </genre>
-        <genre id="24">
-          <name><![CDATA[Old-Time]]></name>
-        </genre>
-        <art><![CDATA[https://music.com.au/image.php?object_id=13&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -2400,16 +1924,1024 @@ Wisely using music codes of genres such as hip-hop, dubstep and techno as a mere
       </album>
     </albums>
     <albumcount>1</albumcount>
-    <songs/>
-    <songcount>0</songcount>
-    <art><![CDATA[https://music.com.au/image.php?object_id=70&object_type=artist]]></art>
-    <has_art>0</has_art>
+    <songs>
+      <song id="83">
+        <name><![CDATA[Sensorisk Deprivation]]></name>
+        <title><![CDATA[Sensorisk Deprivation]]></title>
+        <artist id="13">
+          <name><![CDATA[IOK-1]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[IOK-1]]></basename>
+        </artist>
+        <album id="7">
+          <name><![CDATA[Sensorisk Deprivation]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Sensorisk Deprivation]]></basename>
+        </album>
+        <albumartist id="13">
+          <name><![CDATA[IOK-1]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[IOK-1]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>1</track>
+        <genre id="4">
+          <name><![CDATA[Dark Ambient]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/01_-_IOK-1_-_Sensorisk_Deprivation.flac]]></filename>
+        <playlisttrack>1</playlisttrack>
+        <time>818</time>
+        <year>2011</year>
+        <format>flac</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>385823</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/flac]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=83&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Sensorisk%20Deprivation.mp3]]></url>
+        <size>39473388</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>13</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[DNA Production release
+Catalogue # DNA 119]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>1.11</replaygain_track_gain>
+        <replaygain_track_peak>0.977</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="82">
+        <name><![CDATA[Vanvett]]></name>
+        <title><![CDATA[Vanvett]]></title>
+        <artist id="13">
+          <name><![CDATA[IOK-1]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[IOK-1]]></basename>
+        </artist>
+        <album id="7">
+          <name><![CDATA[Sensorisk Deprivation]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Sensorisk Deprivation]]></basename>
+        </album>
+        <albumartist id="13">
+          <name><![CDATA[IOK-1]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[IOK-1]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>2</track>
+        <genre id="4">
+          <name><![CDATA[Dark Ambient]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/02_-_IOK-1_-_Vanvett.flac]]></filename>
+        <playlisttrack>2</playlisttrack>
+        <time>825</time>
+        <year>2011</year>
+        <format>flac</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>371855</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/flac]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3]]></url>
+        <size>38389422</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[DNA Production release
+Catalogue # DNA 119]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-2.57</replaygain_track_gain>
+        <replaygain_track_peak>0.977</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="81">
+        <name><![CDATA[Galenskap]]></name>
+        <title><![CDATA[Galenskap]]></title>
+        <artist id="13">
+          <name><![CDATA[IOK-1]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[IOK-1]]></basename>
+        </artist>
+        <album id="7">
+          <name><![CDATA[Sensorisk Deprivation]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Sensorisk Deprivation]]></basename>
+        </album>
+        <albumartist id="13">
+          <name><![CDATA[IOK-1]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[IOK-1]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>3</track>
+        <genre id="4">
+          <name><![CDATA[Dark Ambient]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/03_-_IOK-1_-_Galenskap.flac]]></filename>
+        <playlisttrack>3</playlisttrack>
+        <time>998</time>
+        <year>2011</year>
+        <format>flac</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>389683</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/flac]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Galenskap.mp3]]></url>
+        <size>48633049</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[DNA Production release
+Catalogue # DNA 119]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-5.33</replaygain_track_gain>
+        <replaygain_track_peak>0.977</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="84">
+        <name><![CDATA[Vansinne]]></name>
+        <title><![CDATA[Vansinne]]></title>
+        <artist id="13">
+          <name><![CDATA[IOK-1]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[IOK-1]]></basename>
+        </artist>
+        <album id="7">
+          <name><![CDATA[Sensorisk Deprivation]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Sensorisk Deprivation]]></basename>
+        </album>
+        <albumartist id="13">
+          <name><![CDATA[IOK-1]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[IOK-1]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>4</track>
+        <genre id="4">
+          <name><![CDATA[Dark Ambient]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/04_-_IOK-1_-_Vansinne.flac]]></filename>
+        <playlisttrack>4</playlisttrack>
+        <time>787</time>
+        <year>2011</year>
+        <format>flac</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>713176</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[vbr]]></mode>
+        <mime><![CDATA[audio/flac]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vansinne.mp3]]></url>
+        <size>70182824</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[DNA Production release
+Catalogue # DNA 119]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-5.35</replaygain_track_gain>
+        <replaygain_track_peak>0.7</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+    </songs>
+    <songcount>4</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=13&object_type=artist]]></art>
+    <has_art>1</has_art>
     <flag>0</flag>
     <rating/>
     <averagerating/>
     <mbid><![CDATA[]]></mbid>
-    <summary><![CDATA[]]></summary>
-    <time><![CDATA[0]]></time>
+    <summary><![CDATA[IOK-1 was a side project of Tarmskrap, but it became his main project. 
+He creates ambient, dark ambient, drone something.
+
+IOK-1 soundcloud 
+ 
+Has released one 3" cdr on Witte Dood Records called "Rost",  appears on Public Spaces Lab's Ceci n’est pas une pipe and Public Spaces Lab's The Future Lab
+
+He released a full length called "Poems" on Deersound. 
+It is limited to 10 copies, 4 discs, clocks in at just over five hours. ]]></summary>
+    <time><![CDATA[3428]]></time>
+    <yearformed>0</yearformed>
+    <placeformed><![CDATA[]]></placeformed>
+  </artist>
+  <artist id="14">
+    <name><![CDATA[Nofi/found.]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Nofi/found.]]></basename>
+    <genre id="5">
+      <name><![CDATA[Electronica]]></name>
+    </genre>
+    <genre id="6">
+      <name><![CDATA[Dance]]></name>
+    </genre>
+    <albums>
+      <album id="24">
+        <name><![CDATA[Nofi Devices]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Nofi Devices]]></basename>
+        <artist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </artist>
+        <songartist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </songartist>
+        <time>4423</time>
+        <year>1999</year>
+        <tracks/>
+        <songcount>11</songcount>
+        <diskcount>1</diskcount>
+        <type/>
+        <genre id="5">
+          <name><![CDATA[Electronica]]></name>
+        </genre>
+        <genre id="6">
+          <name><![CDATA[Dance]]></name>
+        </genre>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating>2</rating>
+        <averagerating/>
+        <mbid><![CDATA[]]></mbid>
+        <mbid_group><![CDATA[]]></mbid_group>
+      </album>
+    </albums>
+    <albumcount>1</albumcount>
+    <songs>
+      <song id="90">
+        <name><![CDATA[Invo]]></name>
+        <title><![CDATA[Invo]]></title>
+        <artist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </artist>
+        <album id="24">
+          <name><![CDATA[Nofi Devices]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi Devices]]></basename>
+        </album>
+        <albumartist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>1</track>
+        <genre id="5">
+          <name><![CDATA[Electronica]]></name>
+        </genre>
+        <genre id="6">
+          <name><![CDATA[Dance]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/01_Invo.mp3]]></filename>
+        <playlisttrack>1</playlisttrack>
+        <time>47</time>
+        <year>1999</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Invo.mp3]]></url>
+        <size>1140687</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating>5</rating>
+        <averagerating/>
+        <playcount>1</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[1]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-3.05</replaygain_track_gain>
+        <replaygain_track_peak>0.933</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="95">
+        <name><![CDATA[Spirus Falls]]></name>
+        <title><![CDATA[Spirus Falls]]></title>
+        <artist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </artist>
+        <album id="24">
+          <name><![CDATA[Nofi Devices]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi Devices]]></basename>
+        </album>
+        <albumartist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>2</track>
+        <genre id="5">
+          <name><![CDATA[Electronica]]></name>
+        </genre>
+        <genre id="6">
+          <name><![CDATA[Dance]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/02_Spirus_Falls.mp3]]></filename>
+        <playlisttrack>2</playlisttrack>
+        <time>327</time>
+        <year>1999</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3]]></url>
+        <size>7875647</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating>5</rating>
+        <averagerating/>
+        <playcount>1</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[2]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-1.53</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="93">
+        <name><![CDATA[Scribnus 3]]></name>
+        <title><![CDATA[Scribnus 3]]></title>
+        <artist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </artist>
+        <album id="24">
+          <name><![CDATA[Nofi Devices]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi Devices]]></basename>
+        </album>
+        <albumartist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>3</track>
+        <genre id="5">
+          <name><![CDATA[Electronica]]></name>
+        </genre>
+        <genre id="6">
+          <name><![CDATA[Dance]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3]]></filename>
+        <playlisttrack>3</playlisttrack>
+        <time>641</time>
+        <year>1999</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3]]></url>
+        <size>15399874</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>4</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[3]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>1.53</replaygain_track_gain>
+        <replaygain_track_peak>0.989</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="85">
+        <name><![CDATA[Beq Ultra Fat]]></name>
+        <title><![CDATA[Beq Ultra Fat]]></title>
+        <artist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </artist>
+        <album id="24">
+          <name><![CDATA[Nofi Devices]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi Devices]]></basename>
+        </album>
+        <albumartist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>4</track>
+        <genre id="5">
+          <name><![CDATA[Electronica]]></name>
+        </genre>
+        <genre id="6">
+          <name><![CDATA[Dance]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/04_Beq_Ultra_Fat.mp3]]></filename>
+        <playlisttrack>4</playlisttrack>
+        <time>413</time>
+        <year>1999</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3]]></url>
+        <size>9935768</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[4]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>0.94</replaygain_track_gain>
+        <replaygain_track_peak>0.989</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="86">
+        <name><![CDATA[Caloonashine]]></name>
+        <title><![CDATA[Caloonashine]]></title>
+        <artist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </artist>
+        <album id="24">
+          <name><![CDATA[Nofi Devices]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi Devices]]></basename>
+        </album>
+        <albumartist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>5</track>
+        <genre id="5">
+          <name><![CDATA[Electronica]]></name>
+        </genre>
+        <genre id="6">
+          <name><![CDATA[Dance]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/05_Caloonashine.mp3]]></filename>
+        <playlisttrack>5</playlisttrack>
+        <time>330</time>
+        <year>1999</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Caloonashine.mp3]]></url>
+        <size>7929564</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating>5</rating>
+        <averagerating/>
+        <playcount>2</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[5]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-0.35</replaygain_track_gain>
+        <replaygain_track_peak>0.955</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="87">
+        <name><![CDATA[Wonders of Nando]]></name>
+        <title><![CDATA[Wonders of Nando]]></title>
+        <artist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </artist>
+        <album id="24">
+          <name><![CDATA[Nofi Devices]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi Devices]]></basename>
+        </album>
+        <albumartist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>6</track>
+        <genre id="5">
+          <name><![CDATA[Electronica]]></name>
+        </genre>
+        <genre id="6">
+          <name><![CDATA[Dance]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/06_Wonders_of_Nando.mp3]]></filename>
+        <playlisttrack>6</playlisttrack>
+        <time>319</time>
+        <year>1999</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=87&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Wonders%20of%20Nando.mp3]]></url>
+        <size>7673773</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating>5</rating>
+        <averagerating/>
+        <playcount>2</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[6]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-1.44</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="94">
+        <name><![CDATA[Strangers Query]]></name>
+        <title><![CDATA[Strangers Query]]></title>
+        <artist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </artist>
+        <album id="24">
+          <name><![CDATA[Nofi Devices]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi Devices]]></basename>
+        </album>
+        <albumartist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>7</track>
+        <genre id="5">
+          <name><![CDATA[Electronica]]></name>
+        </genre>
+        <genre id="6">
+          <name><![CDATA[Dance]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/07_Strangers_Query.mp3]]></filename>
+        <playlisttrack>7</playlisttrack>
+        <time>279</time>
+        <year>1999</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=94&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Strangers%20Query.mp3]]></url>
+        <size>6719572</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating>5</rating>
+        <averagerating/>
+        <playcount>2</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[7]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-3.8</replaygain_track_gain>
+        <replaygain_track_peak>0.966</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="92">
+        <name><![CDATA[Stance]]></name>
+        <title><![CDATA[Stance]]></title>
+        <artist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </artist>
+        <album id="24">
+          <name><![CDATA[Nofi Devices]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi Devices]]></basename>
+        </album>
+        <albumartist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>8</track>
+        <genre id="5">
+          <name><![CDATA[Electronica]]></name>
+        </genre>
+        <genre id="6">
+          <name><![CDATA[Dance]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/08_Stance.mp3]]></filename>
+        <playlisttrack>8</playlisttrack>
+        <time>544</time>
+        <year>1999</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stance.mp3]]></url>
+        <size>13078612</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[8]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-2.38</replaygain_track_gain>
+        <replaygain_track_peak>0.989</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="91">
+        <name><![CDATA[Home Capsules]]></name>
+        <title><![CDATA[Home Capsules]]></title>
+        <artist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </artist>
+        <album id="24">
+          <name><![CDATA[Nofi Devices]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi Devices]]></basename>
+        </album>
+        <albumartist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>9</track>
+        <genre id="5">
+          <name><![CDATA[Electronica]]></name>
+        </genre>
+        <genre id="6">
+          <name><![CDATA[Dance]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/09_Home_Capsules.mp3]]></filename>
+        <playlisttrack>9</playlisttrack>
+        <time>294</time>
+        <year>1999</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3]]></url>
+        <size>7076300</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[9]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-2.97</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="88">
+        <name><![CDATA[Netro]]></name>
+        <title><![CDATA[Netro]]></title>
+        <artist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </artist>
+        <album id="24">
+          <name><![CDATA[Nofi Devices]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi Devices]]></basename>
+        </album>
+        <albumartist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>10</track>
+        <genre id="5">
+          <name><![CDATA[Electronica]]></name>
+        </genre>
+        <genre id="6">
+          <name><![CDATA[Dance]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/10_Netro.mp3]]></filename>
+        <playlisttrack>10</playlisttrack>
+        <time>601</time>
+        <year>1999</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=88&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Netro.mp3]]></url>
+        <size>14445339</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating>5</rating>
+        <averagerating/>
+        <playcount>1</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[10]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>-1.28</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="89">
+        <name><![CDATA[Stolen]]></name>
+        <title><![CDATA[Stolen]]></title>
+        <artist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </artist>
+        <album id="24">
+          <name><![CDATA[Nofi Devices]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi Devices]]></basename>
+        </album>
+        <albumartist id="14">
+          <name><![CDATA[Nofi/found.]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Nofi/found.]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>11</track>
+        <genre id="5">
+          <name><![CDATA[Electronica]]></name>
+        </genre>
+        <genre id="6">
+          <name><![CDATA[Dance]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/11_Stolen.mp3]]></filename>
+        <playlisttrack>11</playlisttrack>
+        <time>628</time>
+        <year>1999</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=89&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stolen.mp3]]></url>
+        <size>15100197</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[11]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>2.66</replaygain_track_gain>
+        <replaygain_track_peak>0.989</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+    </songs>
+    <songcount>11</songcount>
+    <art><![CDATA[https://music.com.au/image.php?object_id=14&object_type=artist]]></art>
+    <has_art>0</has_art>
+    <flag>0</flag>
+    <rating>2</rating>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <summary><![CDATA[Nofi/found. is the work of Jeffrey Melton released prior to 2005. From the website:
+Nofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. ’stateless’). ]]></summary>
+    <time><![CDATA[4423]]></time>
     <yearformed>0</yearformed>
     <placeformed><![CDATA[]]></placeformed>
   </artist>

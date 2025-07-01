@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>3</total_count>
-  <md5>de7bb46c5a98600c622f186fc0675bbc</md5>
-  <video id="2">
-    <name><![CDATA[sample-mp4-file]]></name>
-    <title><![CDATA[sample-mp4-file]]></title>
+  <total_count>2</total_count>
+  <md5>e0f2b57f7886bad0b1a33447e187fae7</md5>
+  <video id="5">
+    <name><![CDATA[Lisa Simpson playing a Beer Jug as her new instrument-fTGVV_4DNYI]]></name>
+    <title><![CDATA[Lisa Simpson playing a Beer Jug as her new instrument-fTGVV_4DNYI]]></title>
     <mime><![CDATA[video/mp4]]></mime>
-    <resolution><![CDATA[320x240]]></resolution>
-    <size>10546620</size>
-    <time><![CDATA[125]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=video&oid=2&uid=2&player=api&name=sample-mp4-file.mp4]]></url>
+    <resolution><![CDATA[1920x1080]]></resolution>
+    <size>16967352</size>
+    <time><![CDATA[32]]></time>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=5&uid=4&player=api&name=Lisa%20Simpson%20playing%20a%20Beer%20Jug%20as%20her%20new%20instrument-fTGVV-4DNYI.mp4]]></url>
+    <art><![CDATA[https://music.com.au/image.php?object_id=5&object_type=video&name=art.png]]></art>
+    <has_art>0</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+  </video>
+  <video id="2">
+    <name><![CDATA[Magic Fly]]></name>
+    <title><![CDATA[Magic Fly]]></title>
+    <mime><![CDATA[video/ogg]]></mime>
+    <resolution><![CDATA[400x300]]></resolution>
+    <size>14950742</size>
+    <time><![CDATA[0]]></time>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=2&uid=4&player=api&name=Magic%20Fly.ogv]]></url>
     <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=video&name=art.png]]></art>
     <has_art>0</has_art>
     <flag>0</flag>
     <rating/>
     <averagerating/>
-    <playcount>0</playcount>
-  </video>
-  <video id="3">
-    <name><![CDATA[sample-ogv-file]]></name>
-    <title><![CDATA[sample-ogv-file]]></title>
-    <mime><![CDATA[video/ogg]]></mime>
-    <resolution><![CDATA[320x240]]></resolution>
-    <size>5407067</size>
-    <time><![CDATA[0]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=video&oid=3&uid=2&player=api&name=sample-ogv-file.ogv]]></url>
-    <art><![CDATA[https://music.com.au/image.php?object_id=3&object_type=video&name=art.png]]></art>
-    <has_art>0</has_art>
-    <flag>0</flag>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
+    <playcount>1</playcount>
   </video>
   <video id="1">
-    <name><![CDATA[sample-webm-file]]></name>
-    <title><![CDATA[sample-webm-file]]></title>
-    <mime><![CDATA[video/webm]]></mime>
-    <resolution><![CDATA[320x240]]></resolution>
-    <size>12615807</size>
-    <time><![CDATA[126]]></time>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=786d90843a2d32e607c879d6b474886a3879717b&type=video&oid=1&uid=2&player=api&name=sample-webm-file.webm]]></url>
+    <name><![CDATA[SPACE   Magic Fly (1977) - https://archive.org/details/SPACE_Magic_Fly_1977]]></name>
+    <title><![CDATA[SPACE   Magic Fly (1977) - https://archive.org/details/SPACE_Magic_Fly_1977]]></title>
+    <mime><![CDATA[video/mp4]]></mime>
+    <resolution><![CDATA[640x480]]></resolution>
+    <size>20084777</size>
+    <time><![CDATA[193]]></time>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=video&oid=1&uid=4&player=api&name=SPACE%20%20%20Magic%20Fly%20-1977-%20-%20https-archive.org-details-SPACE-Magic-Fly-1977.mp4]]></url>
     <art><![CDATA[https://music.com.au/image.php?object_id=1&object_type=video&name=art.png]]></art>
     <has_art>0</has_art>
     <flag>0</flag>
     <rating/>
     <averagerating/>
-    <playcount>0</playcount>
+    <playcount>3</playcount>
   </video>
 </root>

@@ -1,21 +1,21 @@
 {
     "total_count": 9,
-    "md5": "56b9dbda97055de3f4c18b575499fc5e",
+    "md5": "ea22fb7cee876495ff91c6b941a08af7",
     "album": [
         {
-            "id": "12",
+            "id": "23",
             "name": "Buried in Nausea",
             "prefix": null,
             "basename": "Buried in Nausea",
             "artist": {
-                "id": "19",
+                "id": "38",
                 "name": "Various Artists",
                 "prefix": null,
                 "basename": "Various Artists"
             },
             "artists": [
                 {
-                    "id": "19",
+                    "id": "38",
                     "name": "Various Artists",
                     "prefix": null,
                     "basename": "Various Artists"
@@ -99,13 +99,13 @@
                         }
                     ],
                     "album": {
-                        "id": "12",
+                        "id": "23",
                         "name": "Buried in Nausea",
                         "prefix": null,
                         "basename": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -120,7 +120,7 @@
                     "year": 2012,
                     "format": "m4a",
                     "stream_format": "mp3",
-                    "bitrate": 267320,
+                    "bitrate": 256000,
                     "stream_bitrate": 32000,
                     "rate": 44100,
                     "mode": "vbr",
@@ -129,12 +129,12 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.mp3",
                     "size": 6651911,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
-                    "playcount": 0,
+                    "playcount": 2,
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
@@ -169,13 +169,13 @@
                         }
                     ],
                     "album": {
-                        "id": "12",
+                        "id": "23",
                         "name": "Buried in Nausea",
                         "prefix": null,
                         "basename": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -190,7 +190,7 @@
                     "year": 2012,
                     "format": "m4a",
                     "stream_format": "mp3",
-                    "bitrate": 256245,
+                    "bitrate": 256000,
                     "stream_bitrate": 32000,
                     "rate": 44100,
                     "mode": "vbr",
@@ -199,7 +199,7 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.mp3",
                     "size": 7535126,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
@@ -239,13 +239,13 @@
                         }
                     ],
                     "album": {
-                        "id": "12",
+                        "id": "23",
                         "name": "Buried in Nausea",
                         "prefix": null,
                         "basename": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -269,10 +269,10 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
                     "size": 483444,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
                     "has_art": true,
-                    "flag": false,
-                    "rating": null,
+                    "flag": true,
+                    "rating": 5,
                     "averagerating": null,
                     "playcount": 0,
                     "catalog": 1,
@@ -309,13 +309,13 @@
                         }
                     ],
                     "album": {
-                        "id": "12",
+                        "id": "23",
                         "name": "Buried in Nausea",
                         "prefix": null,
                         "basename": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -337,9 +337,9 @@
                     "mime": "audio\/mpeg",
                     "stream_mime": "audio\/mpeg",
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
-                    "size": 3628327,
+                    "size": 3628199,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
@@ -348,7 +348,7 @@
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
-                    "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+                    "comment": "http:\/\/archive.org\/details\/gt",
                     "license": null,
                     "publisher": "archive.org",
                     "language": null,
@@ -379,13 +379,13 @@
                         }
                     ],
                     "album": {
-                        "id": "12",
+                        "id": "23",
                         "name": "Buried in Nausea",
                         "prefix": null,
                         "basename": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -409,7 +409,7 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.mp3",
                     "size": 460498,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
@@ -449,13 +449,13 @@
                         }
                     ],
                     "album": {
-                        "id": "12",
+                        "id": "23",
                         "name": "Buried in Nausea",
                         "prefix": null,
                         "basename": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -479,12 +479,12 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.mp3",
                     "size": 1035322,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
-                    "playcount": 0,
+                    "playcount": 1,
                     "catalog": 1,
                     "composer": null,
                     "channels": 1,
@@ -519,13 +519,13 @@
                         }
                     ],
                     "album": {
-                        "id": "12",
+                        "id": "23",
                         "name": "Buried in Nausea",
                         "prefix": null,
                         "basename": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -549,7 +549,7 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
                     "size": 1776580,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
@@ -589,13 +589,13 @@
                         }
                     ],
                     "album": {
-                        "id": "12",
+                        "id": "23",
                         "name": "Buried in Nausea",
                         "prefix": null,
                         "basename": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -617,18 +617,18 @@
                     "mime": "audio\/mpeg",
                     "stream_mime": "audio\/mpeg",
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3",
-                    "size": 4693165,
+                    "size": 4693037,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
-                    "playcount": 0,
+                    "playcount": 1,
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
-                    "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+                    "comment": "http:\/\/archive.org\/details\/gt",
                     "license": null,
                     "publisher": "archive.org",
                     "language": null,
@@ -659,13 +659,13 @@
                         }
                     ],
                     "album": {
-                        "id": "12",
+                        "id": "23",
                         "name": "Buried in Nausea",
                         "prefix": null,
                         "basename": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -685,7 +685,7 @@
                     "year": 2012,
                     "format": "m4a",
                     "stream_format": "mp3",
-                    "bitrate": 252864,
+                    "bitrate": 256000,
                     "stream_bitrate": 32000,
                     "rate": 44100,
                     "mode": "vbr",
@@ -694,7 +694,7 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=R-B%20-%20Arrest%20Me.mp3",
                     "size": 3091727,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
@@ -725,12 +725,13 @@
                     "name": "Punk"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "mbid": null
+            "mbid": null,
+            "mbid_group": null
         },
         {
             "id": "10",
@@ -1024,9 +1025,9 @@
                     "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
+                    "rating": 5,
+                    "averagerating": 4.5,
+                    "playcount": 1,
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
@@ -1164,9 +1165,9 @@
                     "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
-                    "playcount": 0,
+                    "playcount": 2,
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
@@ -1234,9 +1235,9 @@
                     "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
-                    "playcount": 0,
+                    "playcount": 1,
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
@@ -1304,9 +1305,9 @@
                     "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
-                    "playcount": 0,
+                    "playcount": 1,
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
@@ -1374,9 +1375,9 @@
                     "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
-                    "playcount": 0,
+                    "playcount": 1,
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
@@ -1402,7 +1403,8 @@
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "mbid": null
+            "mbid": null,
+            "mbid_group": null
         },
         {
             "id": "2",
@@ -1491,9 +1493,9 @@
                     "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
-                    "playcount": 0,
+                    "playcount": 2,
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
@@ -1640,8 +1642,8 @@
                     "mbid": null,
                     "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
                     "has_art": true,
-                    "flag": false,
-                    "rating": null,
+                    "flag": true,
+                    "rating": 5,
                     "averagerating": null,
                     "playcount": 0,
                     "catalog": 1,
@@ -1716,9 +1718,9 @@
                     "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
-                    "playcount": 0,
+                    "playcount": 2,
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
@@ -1866,9 +1868,9 @@
                     "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
-                    "playcount": 0,
+                    "playcount": 2,
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
@@ -1941,9 +1943,9 @@
                     "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
-                    "playcount": 0,
+                    "playcount": 1,
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
@@ -1951,7 +1953,7 @@
                     "license": null,
                     "publisher": "20kbps rec.",
                     "language": null,
-                    "lyrics": null,
+                    "lyrics": "Do you have the time<br \/>\nTo listen to me whine<br \/>\nAbout nothing and everything all at once?<br \/>\nI am one of those<br \/>\nMelodramatic fools<br \/>\nNeurotic to the bone, no doubt about it<br \/>\n<br \/>\nSometimes, I give myself the creeps<br \/>\nSometimes, my mind plays tricks on me<br \/>\n<br \/>\nIt all keeps adding up<br \/>\nI think I'm cracking up<br \/>\nAm I just paranoid?<br \/>\nAm I just stoned?<br \/>\n<br \/>\nAnd I went to a shrink<br \/>\nTo analyze my dreams<br \/>\nShe says it's lack of sex that's bringing me down<br \/>\nAnd I went to a whore<br \/>\nHe said my life's a bore<br \/>\nSo quit my whining 'cause it's bringing her down<br \/>\n<br \/>\nSometimes, I give myself the creeps<br \/>\nSometimes, my mind plays tricks on me<br \/>\n<br \/>\nIt all keeps adding up<br \/>\nI think I'm cracking up<br \/>\nAm I just paranoid?<br \/>\nHuh yeah, yeah, yeah (Ooh, ooh)<br \/>\n<br \/>\nGrasping to control<br \/>\nSo I better hold on<br \/>\n<br \/>\nSometimes, I give myself the creeps<br \/>\nSometimes, my mind plays tricks on me<br \/>\n<br \/>\nIt all keeps adding up<br \/>\nI think I'm cracking up<br \/>\nAm I just paranoid?<br \/>\nAm I just stoned?",
                     "replaygain_album_gain": null,
                     "replaygain_album_peak": null,
                     "replaygain_track_gain": 0.96,
@@ -2091,9 +2093,9 @@
                     "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
+                    "rating": 5,
+                    "averagerating": 3,
+                    "playcount": 1,
                     "catalog": 1,
                     "composer": null,
                     "channels": 1,
@@ -2316,7 +2318,7 @@
                     "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
                     "playcount": 0,
                     "catalog": 1,
@@ -2349,7 +2351,8 @@
             "flag": true,
             "rating": 5,
             "averagerating": 3,
-            "mbid": null
+            "mbid": null,
+            "mbid_group": null
         },
         {
             "id": "9",
@@ -2433,9 +2436,9 @@
                     "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
-                    "rating": null,
+                    "rating": 5,
                     "averagerating": null,
-                    "playcount": 3,
+                    "playcount": 5,
                     "catalog": 1,
                     "composer": null,
                     "channels": 2,
@@ -2531,7 +2534,8 @@
             "flag": false,
             "rating": 3,
             "averagerating": null,
-            "mbid": null
+            "mbid": null,
+            "mbid_group": null
         }
     ]
 }

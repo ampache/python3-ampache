@@ -3,7 +3,50 @@
     "name": "CARN\u00daN",
     "prefix": null,
     "basename": "CARN\u00daN",
-    "albums": [],
+    "albums": [
+        {
+            "id": "10",
+            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "prefix": null,
+            "basename": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "artist": {
+                "id": "16",
+                "name": "CARN\u00daN",
+                "prefix": null,
+                "basename": "CARN\u00daN"
+            },
+            "artists": [
+                {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                }
+            ],
+            "songartists": [
+                {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                }
+            ],
+            "time": 3873,
+            "year": 1996,
+            "tracks": [],
+            "songcount": 9,
+            "diskcount": 1,
+            "type": null,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "mbid": null,
+            "mbid_group": null
+        }
+    ],
     "albumcount": 1,
     "songs": [
         {

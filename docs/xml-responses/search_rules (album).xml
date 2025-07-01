@@ -173,10 +173,10 @@
     <label><![CDATA[Another User]]></label>
     <type><![CDATA[user_numeric]]></type>
     <widget>
-      <select id="1"><![CDATA[admin]]></select>
-      <select id="2"><![CDATA[user]]></select>
+      <select id="2"><![CDATA[admin]]></select>
       <select id="3"><![CDATA[demo]]></select>
-      <select id="840"><![CDATA[generic]]></select>
+      <select id="4"><![CDATA[user]]></select>
+      <select id="10"><![CDATA[generic]]></select>
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
@@ -318,9 +318,10 @@
     <label><![CDATA[Playlist]]></label>
     <type><![CDATA[boolean_subsearch]]></type>
     <widget>
-      <select id="8"><![CDATA[Example Playlist]]></select>
-      <select id="25"><![CDATA[Example Playlist]]></select>
-      <select id="348"><![CDATA[Example Playlist_json]]></select>
+      <select id="65"><![CDATA[Nofi]]></select>
+      <select id="3"><![CDATA[random - admin - private (admin)]]></select>
+      <select id="2"><![CDATA[random - admin - public (admin)]]></select>
+      <select id="4"><![CDATA[random - user - private]]></select>
     </widget>
     <title><![CDATA[Playlists]]></title>
   </rule>
@@ -329,6 +330,7 @@
     <label><![CDATA[Smart Playlist]]></label>
     <type><![CDATA[boolean_subsearch]]></type>
     <widget>
+      <select id="21"><![CDATA[admin - 02/23/2021 14:36:44 (admin)]]></select>
       <select id="14"><![CDATA[Album 1* (System)]]></select>
       <select id="13"><![CDATA[Album 2* (System)]]></select>
       <select id="12"><![CDATA[Album 3* (System)]]></select>
@@ -344,8 +346,8 @@
       <select id="17"><![CDATA[Song 3* (System)]]></select>
       <select id="16"><![CDATA[Song 4* (System)]]></select>
       <select id="15"><![CDATA[Song 5* (System)]]></select>
-      <select id="20"><![CDATA[user - 6/19/25, 3:03 AM]]></select>
-      <select id="21"><![CDATA[user - 6/19/25, 3:04 AM]]></select>
+      <select id="20"><![CDATA[Unplayed by me (demo)]]></select>
+      <select id="22"><![CDATA[user - 07/18/2024 11:54:12]]></select>
     </widget>
     <title><![CDATA[Playlists]]></title>
   </rule>
@@ -432,6 +434,7 @@
     <type><![CDATA[boolean_numeric]]></type>
     <widget>
       <select id="1"><![CDATA[music]]></select>
+      <select id="4"><![CDATA[upload]]></select>
     </widget>
     <title><![CDATA[File Data]]></title>
   </rule>

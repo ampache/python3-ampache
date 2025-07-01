@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>2</total_count>
-  <md5>164b5ae18f519010c5d44ea03747e258</md5>
+  <total_count>3</total_count>
+  <md5>e379d826bb1b6ffbc4564d33021e908c</md5>
   <share id="1">
     <name><![CDATA[Creeping Lawler 2]]></name>
     <user><![CDATA[user]]></user>
@@ -47,23 +47,7 @@
     <max_counter>0</max_counter>
     <counter>0</counter>
     <secret><![CDATA[GJ7EzBPT]]></secret>
-    <public_url><![CDATA[http://localhost:8989/share.php?id=7&secret=GJ7EzBPT]]></public_url>
+    <public_url><![CDATA[https://music.com.au:8989/share.php?id=7&secret=GJ7EzBPT]]></public_url>
     <description><![CDATA[Colorsmoke EP (Synthetic)]]></description>
-  </share>
-  <share id="9">
-    <name><![CDATA[Are we going Crazy]]></name>
-    <user><![CDATA[user]]></user>
-    <allow_stream>1</allow_stream>
-    <allow_download>1</allow_download>
-    <creation_date>1670202706</creation_date>
-    <lastvisit_date>0</lastvisit_date>
-    <object_type><![CDATA[song]]></object_type>
-    <object_id>115</object_id>
-    <expire_days>7</expire_days>
-    <max_counter>0</max_counter>
-    <counter>0</counter>
-    <secret><![CDATA[GJ7EzBPT]]></secret>
-    <public_url><![CDATA[https://music.com.au/share.php?id=9&secret=GJ7EzBPT]]></public_url>
-    <description><![CDATA[]]></description>
   </share>
 </root>

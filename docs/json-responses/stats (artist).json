@@ -1,25 +1,30 @@
 {
     "total_count": 2,
-    "md5": "3b559aa6bf9c39b10b30a55058b121d2",
+    "md5": "ee5163982df0eb85bbc4aa2ff891ddb1",
     "artist": [
         {
-            "id": "32",
-            "name": "Shorty Mac",
+            "id": "36",
+            "name": "Comfort Fit",
             "prefix": null,
-            "basename": "Shorty Mac",
+            "basename": "Comfort Fit",
             "albums": [],
-            "albumcount": 0,
+            "albumcount": 1,
             "songs": [],
-            "songcount": 1,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=32&object_type=artist",
+            "songcount": 20,
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=36&object_type=artist",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "mbid": null,
-            "summary": null,
-            "time": 234,
+            "mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
+            "summary": "Comfort Fit\u2019s(Boris Mezga) versatile influences range from early detroit techno and minimal electronica to jazz, broken beats and hip-hop. This makes it easy for him to invisibly switch between musical styles within a fingersnap, taking the listener onto long and exciting journies.\n\nWisely using music codes of genres such as hip-hop, dubstep and techno as a mere comic template, Comfort Fit has inspired hip-hop and techno artists around the world with his heavy beat techniques. ",
+            "time": 4248,
             "yearformed": 0,
             "placeformed": null
         },
