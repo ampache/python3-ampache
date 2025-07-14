@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[update_from_tags]]></errorAction>
-    <errorType><![CDATA[id]]></errorType>
-    <errorMessage><![CDATA[Not Found: 8]]></errorMessage>
-  </error>
+  <success code="1">
+    <message><![CDATA[Updated tags for: 4 (album)]]></message>
+  </success>
 </root>
