@@ -2967,6 +2967,26 @@ class API(object):
                 'type': object_type}
         return self.get_request(ampache_url, data, api_method)
 
+    def get_lyrics(self, filter_id, plugins=False):
+        """ get_lyrics
+            MINIMUM_API_VERSION=6.9.0
+
+            Return Database lyrics or search with plugins by Song id
+
+            INPUTS
+            * filter_id = (string) $song_id / $album_id / $artist_id
+            * plugins   = (int) 0,1, if false disable plugin lookup (Default: 1)
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'get_lyrics'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'plugins': plugins}
+        if not plugins:
+            data.pop('plugins')
+        return self.get_request(ampache_url, data, api_method)
+
     def get_art(self, object_id, object_type, destination):
         """ get_art
             MINIMUM_API_VERSION=400001
