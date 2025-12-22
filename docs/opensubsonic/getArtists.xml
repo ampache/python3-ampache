@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.7" openSubsonic="1">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
   <artists ignoredArticles="The An A Die Das Ein Eine Les Le La">
     <index name="C">
-      <artist id="100000016" name="CARNÚN" coverArt="ar-100000016" albumCount="1"/>
-      <artist id="100000027" name="Chi.Otic" coverArt="ar-100000027" albumCount="0"/>
-      <artist id="100000034" name="Comedown Kid" coverArt="ar-100000034" albumCount="0"/>
-      <artist id="100000036" name="Comfort Fit" coverArt="ar-100000036" albumCount="1"/>
+      <artist id="ar-16" name="CARNÚN" coverArt="ar-16" albumCount="1"/>
+      <artist id="ar-27" name="Chi.Otic" coverArt="ar-27" albumCount="0"/>
+      <artist id="ar-34" name="Comedown Kid" coverArt="ar-34" albumCount="0"/>
+      <artist id="ar-36" name="Comfort Fit" coverArt="ar-36" albumCount="1"/>
     </index>
     <index name="I">
-      <artist id="100000013" name="IOK-1" coverArt="ar-100000013" albumCount="1"/>
+      <artist id="ar-13" name="IOK-1" coverArt="ar-13" albumCount="1"/>
     </index>
     <index name="M">
-      <artist id="100000023" name="Manic Notion" coverArt="ar-100000023" albumCount="0"/>
-      <artist id="100000033" name="MxBxCx" coverArt="ar-100000033" albumCount="0"/>
+      <artist id="ar-23" name="Manic Notion" coverArt="ar-23" albumCount="0"/>
+      <artist id="ar-33" name="MxBxCx" coverArt="ar-33" albumCount="0"/>
     </index>
     <index name="N">
-      <artist id="100000014" name="Nofi/found." albumCount="1"/>
+      <artist id="ar-14" name="Nofi/found." albumCount="1"/>
     </index>
     <index name="R">
-      <artist id="100000020" name="R/B" coverArt="ar-100000020" albumCount="0"/>
+      <artist id="ar-20" name="R/B" coverArt="ar-20" albumCount="0"/>
     </index>
     <index name="S">
-      <artist id="100000032" name="Shorty Mac" coverArt="ar-100000032" albumCount="0"/>
-      <artist id="100000018" name="SPACE" albumCount="0"/>
-      <artist id="100000026" name="Stress Builds Character" coverArt="ar-100000026" albumCount="0"/>
-      <artist id="100000011" name="structura" coverArt="ar-100000011" albumCount="1"/>
-      <artist id="100000002" name="Synthetic" coverArt="ar-100000002" albumCount="1" starred="2021-02-22T05:54:18Z"/>
+      <artist id="ar-32" name="Shorty Mac" coverArt="ar-32" albumCount="0"/>
+      <artist id="ar-18" name="SPACE" albumCount="0"/>
+      <artist id="ar-26" name="Stress Builds Character" coverArt="ar-26" albumCount="0"/>
+      <artist id="ar-11" name="structura" coverArt="ar-11" albumCount="1"/>
+      <artist id="ar-2" name="Synthetic" coverArt="ar-2" albumCount="1" starred="2021-02-22T05:54:18Z"/>
     </index>
     <index name="T">
-      <artist id="100000035" name="Tip-C" coverArt="ar-100000035" albumCount="0"/>
-      <artist id="100000021" name="Tip-C (featuring Mike Beers)" coverArt="ar-100000021" albumCount="0"/>
+      <artist id="ar-35" name="Tip-C" coverArt="ar-35" albumCount="0"/>
+      <artist id="ar-21" name="Tip-C (featuring Mike Beers)" coverArt="ar-21" albumCount="0"/>
     </index>
     <index name="V">
-      <artist id="100000019" name="Various Artists" coverArt="ar-100000019" albumCount="1"/>
+      <artist id="ar-19" name="Various Artists" coverArt="ar-19" albumCount="1"/>
     </index>
     <index name="W">
-      <artist id="100000015" name="Warfare 3.0" coverArt="ar-100000015" albumCount="1"/>
+      <artist id="ar-15" name="Warfare 3.0" coverArt="ar-15" albumCount="1"/>
     </index>
     <index name="#">
-      <artist id="100000012" name="К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь" coverArt="ar-100000012" albumCount="1"/>
+      <artist id="ar-12" name="К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь" coverArt="ar-12" albumCount="1"/>
     </index>
   </artists>
 </subsonic-response>

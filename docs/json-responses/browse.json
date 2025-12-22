@@ -1,28 +1,34 @@
 {
-    "total_count": 3,
-    "md5": "247915852400d7e282039d32106a4c62",
+    "total_count": 8,
+    "md5": "3d55e22a823c28714b71cf10c55fd1c0",
     "catalog_id": "",
-    "parent_id": "",
-    "parent_type": "root",
-    "child_type": "catalog",
+    "parent_id": "1",
+    "parent_type": "catalog",
+    "child_type": "artist",
     "browse": [
         {
-            "id": "1",
-            "name": "music",
+            "id": "16",
+            "name": "CARN\u00daN",
             "prefix": null,
-            "basename": "music"
+            "basename": "CARN\u00daN"
         },
         {
-            "id": "3",
-            "name": "podcast",
+            "id": "13",
+            "name": "IOK-1",
             "prefix": null,
-            "basename": "podcast"
+            "basename": "IOK-1"
         },
         {
-            "id": "4",
-            "name": "upload",
+            "id": "14",
+            "name": "Nofi\/found.",
             "prefix": null,
-            "basename": "upload"
+            "basename": "Nofi\/found."
+        },
+        {
+            "id": "11",
+            "name": "structura",
+            "prefix": null,
+            "basename": "structura"
         }
     ]
 }

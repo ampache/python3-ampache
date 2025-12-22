@@ -1,100 +1,48 @@
 {
     "total_count": 1,
-    "md5": "25117f4b9fd9bb6384d0eb8ea708c8b9",
+    "md5": "c8bde69a9f79ca24059e3807f9a3bcf8",
     "album": [
         {
-            "id": "12",
-            "name": "Buried in Nausea",
+            "id": "10",
+            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
             "prefix": null,
-            "basename": "Buried in Nausea",
+            "basename": "CARN\u00daN - MALKUTH (Demo 1996)",
             "artist": {
-                "id": "19",
-                "name": "Various Artists",
+                "id": "16",
+                "name": "CARN\u00daN",
                 "prefix": null,
-                "basename": "Various Artists"
+                "basename": "CARN\u00daN"
             },
             "artists": [
                 {
-                    "id": "19",
-                    "name": "Various Artists",
+                    "id": "16",
+                    "name": "CARN\u00daN",
                     "prefix": null,
-                    "basename": "Various Artists"
+                    "basename": "CARN\u00daN"
                 }
             ],
             "songartists": [
                 {
-                    "id": "20",
-                    "name": "R\/B",
+                    "id": "16",
+                    "name": "CARN\u00daN",
                     "prefix": null,
-                    "basename": "R\/B"
-                },
-                {
-                    "id": "21",
-                    "name": "Tip-C (featuring Mike Beers)",
-                    "prefix": null,
-                    "basename": "Tip-C (featuring Mike Beers)"
-                },
-                {
-                    "id": "23",
-                    "name": "Manic Notion",
-                    "prefix": null,
-                    "basename": "Manic Notion"
-                },
-                {
-                    "id": "26",
-                    "name": "Stress Builds Character",
-                    "prefix": null,
-                    "basename": "Stress Builds Character"
-                },
-                {
-                    "id": "27",
-                    "name": "Chi.Otic",
-                    "prefix": null,
-                    "basename": "Chi.Otic"
-                },
-                {
-                    "id": "32",
-                    "name": "Shorty Mac",
-                    "prefix": null,
-                    "basename": "Shorty Mac"
-                },
-                {
-                    "id": "33",
-                    "name": "MxBxCx",
-                    "prefix": null,
-                    "basename": "MxBxCx"
-                },
-                {
-                    "id": "34",
-                    "name": "Comedown Kid",
-                    "prefix": null,
-                    "basename": "Comedown Kid"
-                },
-                {
-                    "id": "35",
-                    "name": "Tip-C",
-                    "prefix": null,
-                    "basename": "Tip-C"
+                    "basename": "CARN\u00daN"
                 }
             ],
-            "time": 1879,
-            "year": 2012,
+            "time": 3873,
+            "year": 1996,
             "tracks": [],
             "songcount": 9,
             "diskcount": 1,
-            "type": "compilation",
-            "genre": [
-                {
-                    "id": "7",
-                    "name": "Punk"
-                }
-            ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album",
+            "type": null,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "mbid": null
+            "mbid": null,
+            "mbid_group": null
         }
     ]
 }

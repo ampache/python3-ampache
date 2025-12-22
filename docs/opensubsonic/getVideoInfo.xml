@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<<< HEAD:docs/opensubsonic/getSimilarSongs2.xml
 <subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
-  <similarSongs2/>
-========
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.7" openSubsonic="1">
-  <videoinfo id="500000001"/>
->>>>>>>> api6:docs/opensubsonic/getVideoInfo.xml
+  <videoInfo id="vi-1"/>
 </subsonic-response>

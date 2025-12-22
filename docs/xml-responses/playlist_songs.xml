@@ -1,232 +1,256 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <md5>225b08f23e5c7e868de1fad03c6d0e46</md5>
-  <song id="115">
-    <name><![CDATA[Are we going Crazy]]></name>
-    <title><![CDATA[Are we going Crazy]]></title>
-    <artist id="27">
-      <name><![CDATA[Chi.Otic]]></name>
+  <md5>b6d12c071f022b176a4c2496e2e533ce</md5>
+  <song id="95">
+    <name><![CDATA[Spirus Falls]]></name>
+    <title><![CDATA[Spirus Falls]]></title>
+    <artist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Chi.Otic]]></basename>
+      <basename><![CDATA[Nofi/found.]]></basename>
     </artist>
-    <album id="12">
-      <name><![CDATA[Buried in Nausea]]></name>
+    <album id="24">
+      <name><![CDATA[Nofi Devices]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Buried in Nausea]]></basename>
+      <basename><![CDATA[Nofi Devices]]></basename>
     </album>
-    <albumartist id="19">
-      <name><![CDATA[Various Artists]]></name>
+    <albumartist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Various Artists]]></basename>
+      <basename><![CDATA[Nofi/found.]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>7</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
+    <track>2</track>
+    <genre id="5">
+      <name><![CDATA[Electronica]]></name>
+    </genre>
+    <genre id="6">
+      <name><![CDATA[Dance]]></name>
+    </genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/02_Spirus_Falls.mp3]]></filename>
     <playlisttrack>1</playlisttrack>
-    <time>433</time>
-    <year>2012</year>
-    <format>wma</format>
+    <time>327</time>
+    <year>1999</year>
+    <format>mp3</format>
     <stream_format>mp3</stream_format>
-    <bitrate>32582</bitrate>
+    <bitrate>192000</bitrate>
     <stream_bitrate>32000</stream_bitrate>
     <rate>44100</rate>
     <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/x-ms-wma]]></mime>
+    <mime><![CDATA[audio/mpeg]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
-    <size>1776580</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3]]></url>
+    <size>7875647</size>
     <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
-    <rating/>
+    <rating>5</rating>
     <averagerating/>
-    <playcount>0</playcount>
+    <playcount>1</playcount>
     <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels>1</channels>
-    <comment><![CDATA[]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
-    <language/>
-    <lyrics><![CDATA[]]></lyrics>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="115">
-    <name><![CDATA[Are we going Crazy]]></name>
-    <title><![CDATA[Are we going Crazy]]></title>
-    <artist id="27">
-      <name><![CDATA[Chi.Otic]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Chi.Otic]]></basename>
-    </artist>
-    <album id="12">
-      <name><![CDATA[Buried in Nausea]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Buried in Nausea]]></basename>
-    </album>
-    <albumartist id="19">
-      <name><![CDATA[Various Artists]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Various Artists]]></basename>
-    </albumartist>
-    <disk><![CDATA[1]]></disk>
-    <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>7</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma]]></filename>
-    <playlisttrack>2</playlisttrack>
-    <time>433</time>
-    <year>2012</year>
-    <format>wma</format>
-    <stream_format>mp3</stream_format>
-    <bitrate>32582</bitrate>
-    <stream_bitrate>32000</stream_bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/x-ms-wma]]></mime>
-    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
-    <size>1776580</size>
-    <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
-    <has_art>1</has_art>
-    <flag>0</flag>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
-    <channels>1</channels>
-    <comment><![CDATA[]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
-    <language/>
-    <lyrics><![CDATA[]]></lyrics>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="102">
-    <name><![CDATA[Moremque Sinistrum Sacrorum]]></name>
-    <title><![CDATA[Moremque Sinistrum Sacrorum]]></title>
-    <artist id="16">
-      <name><![CDATA[CARNÚN]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN]]></basename>
-    </artist>
-    <album id="10">
-      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
-    </album>
-    <albumartist id="16">
-      <name><![CDATA[CARNÚN]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN]]></basename>
-    </albumartist>
-    <disk><![CDATA[1]]></disk>
-    <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>5</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/05MoremqueSinistrumSacrorum.ogg]]></filename>
-    <playlisttrack>3</playlisttrack>
-    <time>164</time>
-    <year>1996</year>
-    <format>ogg</format>
-    <stream_format>mp3</stream_format>
-    <bitrate>106806</bitrate>
-    <stream_bitrate>32000</stream_bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[application/ogg]]></mime>
-    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3]]></url>
-    <size>2206257</size>
-    <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
-    <has_art>1</has_art>
-    <flag>0</flag>
-    <rating/>
-    <averagerating/>
-    <playcount>0</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
+    <composer><![CDATA[Jeffrey Melton]]></composer>
     <channels>2</channels>
-    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+    <comment><![CDATA[2]]></comment>
     <license><![CDATA[]]></license>
     <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-7.48</replaygain_track_gain>
+    <replaygain_track_gain>-1.53</replaygain_track_gain>
     <replaygain_track_peak>1</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="98">
-    <name><![CDATA[In The Seven Woods]]></name>
-    <title><![CDATA[In The Seven Woods]]></title>
-    <artist id="16">
-      <name><![CDATA[CARNÚN]]></name>
+  <song id="93">
+    <name><![CDATA[Scribnus 3]]></name>
+    <title><![CDATA[Scribnus 3]]></title>
+    <artist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN]]></basename>
+      <basename><![CDATA[Nofi/found.]]></basename>
     </artist>
-    <album id="10">
-      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+    <album id="24">
+      <name><![CDATA[Nofi Devices]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+      <basename><![CDATA[Nofi Devices]]></basename>
     </album>
-    <albumartist id="16">
-      <name><![CDATA[CARNÚN]]></name>
+    <albumartist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[CARNÚN]]></basename>
+      <basename><![CDATA[Nofi/found.]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
     <track>3</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/03InTheSevenWoods.ogg]]></filename>
-    <playlisttrack>4</playlisttrack>
-    <time>420</time>
-    <year>1996</year>
-    <format>ogg</format>
+    <genre id="5">
+      <name><![CDATA[Electronica]]></name>
+    </genre>
+    <genre id="6">
+      <name><![CDATA[Dance]]></name>
+    </genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3]]></filename>
+    <playlisttrack>2</playlisttrack>
+    <time>641</time>
+    <year>1999</year>
+    <format>mp3</format>
     <stream_format>mp3</stream_format>
-    <bitrate>84528</bitrate>
+    <bitrate>192000</bitrate>
     <stream_bitrate>32000</stream_bitrate>
     <rate>44100</rate>
-    <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[application/ogg]]></mime>
+    <mode><![CDATA[cbr]]></mode>
+    <mime><![CDATA[audio/mpeg]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3]]></url>
-    <size>4449963</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3]]></url>
+    <size>15399874</size>
     <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating/>
     <averagerating/>
-    <playcount>0</playcount>
+    <playcount>4</playcount>
     <catalog>1</catalog>
-    <composer><![CDATA[]]></composer>
+    <composer><![CDATA[Jeffrey Melton]]></composer>
     <channels>2</channels>
-    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+    <comment><![CDATA[3]]></comment>
     <license><![CDATA[]]></license>
     <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-9.7</replaygain_track_gain>
-    <replaygain_track_peak>1</replaygain_track_peak>
+    <replaygain_track_gain>1.53</replaygain_track_gain>
+    <replaygain_track_peak>0.989</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="85">
+    <name><![CDATA[Beq Ultra Fat]]></name>
+    <title><![CDATA[Beq Ultra Fat]]></title>
+    <artist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Nofi/found.]]></basename>
+    </artist>
+    <album id="24">
+      <name><![CDATA[Nofi Devices]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Nofi Devices]]></basename>
+    </album>
+    <albumartist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Nofi/found.]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <track>4</track>
+    <genre id="5">
+      <name><![CDATA[Electronica]]></name>
+    </genre>
+    <genre id="6">
+      <name><![CDATA[Dance]]></name>
+    </genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/04_Beq_Ultra_Fat.mp3]]></filename>
+    <playlisttrack>3</playlisttrack>
+    <time>413</time>
+    <year>1999</year>
+    <format>mp3</format>
+    <stream_format>mp3</stream_format>
+    <bitrate>192000</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[cbr]]></mode>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3]]></url>
+    <size>9935768</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[Jeffrey Melton]]></composer>
+    <channels>2</channels>
+    <comment><![CDATA[4]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[archive.org]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>0.94</replaygain_track_gain>
+    <replaygain_track_peak>0.989</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="86">
+    <name><![CDATA[Caloonashine]]></name>
+    <title><![CDATA[Caloonashine]]></title>
+    <artist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Nofi/found.]]></basename>
+    </artist>
+    <album id="24">
+      <name><![CDATA[Nofi Devices]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Nofi Devices]]></basename>
+    </album>
+    <albumartist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Nofi/found.]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <track>5</track>
+    <genre id="5">
+      <name><![CDATA[Electronica]]></name>
+    </genre>
+    <genre id="6">
+      <name><![CDATA[Dance]]></name>
+    </genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/05_Caloonashine.mp3]]></filename>
+    <playlisttrack>4</playlisttrack>
+    <time>330</time>
+    <year>1999</year>
+    <format>mp3</format>
+    <stream_format>mp3</stream_format>
+    <bitrate>192000</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[cbr]]></mode>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Caloonashine.mp3]]></url>
+    <size>7929564</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating>5</rating>
+    <averagerating/>
+    <playcount>2</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[Jeffrey Melton]]></composer>
+    <channels>2</channels>
+    <comment><![CDATA[5]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[archive.org]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>-0.35</replaygain_track_gain>
+    <replaygain_track_peak>0.955</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

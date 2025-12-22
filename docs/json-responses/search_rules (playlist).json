@@ -30,9 +30,10 @@
             "widget": [
                 "select",
                 {
-                    "1": "admin",
-                    "2": "user",
-                    "3": "demo"
+                    "2": "admin",
+                    "3": "demo",
+                    "4": "user",
+                    "10": "generic"
                 }
             ],
             "title": "Playlist"

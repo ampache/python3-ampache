@@ -1,6 +1,6 @@
 {
-    "total_count": 12,
-    "md5": "af89980c50d4f6e4468fd5c6b621e29b",
+    "total_count": 8,
+    "md5": "747a586ba428c879b8b9157188da2702",
     "bookmark": [
         {
             "id": "1",
@@ -53,13 +53,13 @@
                         }
                     ],
                     "album": {
-                        "id": "12",
+                        "id": "23",
                         "name": "Buried in Nausea",
                         "prefix": null,
                         "basename": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -83,7 +83,7 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
                     "size": 1776580,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
@@ -222,13 +222,13 @@
                         }
                     ],
                     "album": {
-                        "id": "12",
+                        "id": "23",
                         "name": "Buried in Nausea",
                         "prefix": null,
                         "basename": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -252,7 +252,7 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
                     "size": 1776580,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
@@ -391,13 +391,13 @@
                         }
                     ],
                     "album": {
-                        "id": "12",
+                        "id": "23",
                         "name": "Buried in Nausea",
                         "prefix": null,
                         "basename": "Buried in Nausea"
                     },
                     "albumartist": {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -421,7 +421,7 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
                     "size": 1776580,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
@@ -526,344 +526,6 @@
                     "replaygain_album_peak": null,
                     "replaygain_track_gain": null,
                     "replaygain_track_peak": null,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ]
-        },
-        {
-            "id": "9",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "55",
-            "position": 0,
-            "client": "client1",
-            "creation_date": 1670202706,
-            "update_date": 1747878088,
-            "song": [
-                {
-                    "id": "55",
-                    "title": "Red&GreenSmoke",
-                    "name": "Red&GreenSmoke",
-                    "artist": {
-                        "id": "2",
-                        "name": "Synthetic",
-                        "prefix": null,
-                        "basename": "Synthetic"
-                    },
-                    "artists": [
-                        {
-                            "id": "2",
-                            "name": "Synthetic",
-                            "prefix": null,
-                            "basename": "Synthetic"
-                        }
-                    ],
-                    "album": {
-                        "id": "2",
-                        "name": "Colorsmoke EP",
-                        "prefix": null,
-                        "basename": "Colorsmoke EP"
-                    },
-                    "albumartist": {
-                        "id": "2",
-                        "name": "Synthetic",
-                        "prefix": null,
-                        "basename": "Synthetic"
-                    },
-                    "disk": 1,
-                    "disksubtitle": null,
-                    "track": 5,
-                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
-                    "genre": [
-                        {
-                            "id": "1",
-                            "name": "Electronic"
-                        }
-                    ],
-                    "playlisttrack": 1,
-                    "time": 400,
-                    "year": 2007,
-                    "format": "mp3",
-                    "stream_format": "mp3",
-                    "bitrate": 64000,
-                    "stream_bitrate": 32000,
-                    "rate": 22050,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-                    "size": 3209886,
-                    "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                    "has_art": true,
-                    "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 1,
-                    "composer": null,
-                    "channels": 2,
-                    "comment": null,
-                    "license": null,
-                    "publisher": "20kbps rec.",
-                    "language": null,
-                    "lyrics": null,
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": -4.06,
-                    "replaygain_track_peak": 1,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ]
-        },
-        {
-            "id": "10",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "54",
-            "position": 10,
-            "client": "client",
-            "creation_date": 1670202706,
-            "update_date": 1747878088,
-            "song": [
-                {
-                    "id": "54",
-                    "title": "Red&GreenSmoke",
-                    "name": "Red&GreenSmoke",
-                    "artist": {
-                        "id": "2",
-                        "name": "Synthetic",
-                        "prefix": null,
-                        "basename": "Synthetic"
-                    },
-                    "artists": [
-                        {
-                            "id": "2",
-                            "name": "Synthetic",
-                            "prefix": null,
-                            "basename": "Synthetic"
-                        }
-                    ],
-                    "album": {
-                        "id": "2",
-                        "name": "Colorsmoke EP",
-                        "prefix": null,
-                        "basename": "Colorsmoke EP"
-                    },
-                    "albumartist": {
-                        "id": "2",
-                        "name": "Synthetic",
-                        "prefix": null,
-                        "basename": "Synthetic"
-                    },
-                    "disk": 1,
-                    "disksubtitle": null,
-                    "track": 5,
-                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
-                    "genre": [
-                        {
-                            "id": "1",
-                            "name": "Electronic"
-                        }
-                    ],
-                    "playlisttrack": 1,
-                    "time": 400,
-                    "year": 2007,
-                    "format": "mp3",
-                    "stream_format": "mp3",
-                    "bitrate": 64000,
-                    "stream_bitrate": 32000,
-                    "rate": 22050,
-                    "mode": "cbr",
-                    "mime": "audio\/mpeg",
-                    "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-                    "size": 3209468,
-                    "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                    "has_art": true,
-                    "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 1,
-                    "composer": null,
-                    "channels": 1,
-                    "comment": null,
-                    "license": null,
-                    "publisher": "20kbps rec.",
-                    "language": null,
-                    "lyrics": null,
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": -2.88,
-                    "replaygain_track_peak": 0.977,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ]
-        },
-        {
-            "id": "11",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "113",
-            "position": 0,
-            "client": "python3-ampache",
-            "creation_date": 1670202706,
-            "update_date": 1747878088,
-            "song": [
-                {
-                    "id": "113",
-                    "title": "Representin",
-                    "name": "Representin",
-                    "artist": {
-                        "id": "32",
-                        "name": "Shorty Mac",
-                        "prefix": null,
-                        "basename": "Shorty Mac"
-                    },
-                    "artists": [
-                        {
-                            "id": "32",
-                            "name": "Shorty Mac",
-                            "prefix": null,
-                            "basename": "Shorty Mac"
-                        }
-                    ],
-                    "album": {
-                        "id": "12",
-                        "name": "Buried in Nausea",
-                        "prefix": null,
-                        "basename": "Buried in Nausea"
-                    },
-                    "albumartist": {
-                        "id": "19",
-                        "name": "Various Artists",
-                        "prefix": null,
-                        "basename": "Various Artists"
-                    },
-                    "disk": 1,
-                    "disksubtitle": null,
-                    "track": 4,
-                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
-                    "genre": [],
-                    "playlisttrack": 1,
-                    "time": 234,
-                    "year": 2012,
-                    "format": "mp3",
-                    "stream_format": "mp3",
-                    "bitrate": 123814,
-                    "stream_bitrate": 32000,
-                    "rate": 44100,
-                    "mode": "vbr",
-                    "mime": "audio\/mpeg",
-                    "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
-                    "size": 3628327,
-                    "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
-                    "has_art": true,
-                    "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 1,
-                    "composer": null,
-                    "channels": 2,
-                    "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
-                    "license": null,
-                    "publisher": "archive.org",
-                    "language": null,
-                    "lyrics": null,
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": 1.91,
-                    "replaygain_track_peak": 0.851,
-                    "r128_album_gain": null,
-                    "r128_track_gain": null
-                }
-            ]
-        },
-        {
-            "id": "12",
-            "owner": "user",
-            "object_type": "song",
-            "object_id": "113",
-            "position": 0,
-            "client": "python3-ampache",
-            "creation_date": 1670202706,
-            "update_date": 1747878090,
-            "song": [
-                {
-                    "id": "113",
-                    "title": "Representin",
-                    "name": "Representin",
-                    "artist": {
-                        "id": "32",
-                        "name": "Shorty Mac",
-                        "prefix": null,
-                        "basename": "Shorty Mac"
-                    },
-                    "artists": [
-                        {
-                            "id": "32",
-                            "name": "Shorty Mac",
-                            "prefix": null,
-                            "basename": "Shorty Mac"
-                        }
-                    ],
-                    "album": {
-                        "id": "12",
-                        "name": "Buried in Nausea",
-                        "prefix": null,
-                        "basename": "Buried in Nausea"
-                    },
-                    "albumartist": {
-                        "id": "19",
-                        "name": "Various Artists",
-                        "prefix": null,
-                        "basename": "Various Artists"
-                    },
-                    "disk": 1,
-                    "disksubtitle": null,
-                    "track": 4,
-                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
-                    "genre": [],
-                    "playlisttrack": 1,
-                    "time": 234,
-                    "year": 2012,
-                    "format": "mp3",
-                    "stream_format": "mp3",
-                    "bitrate": 123814,
-                    "stream_bitrate": 32000,
-                    "rate": 44100,
-                    "mode": "vbr",
-                    "mime": "audio\/mpeg",
-                    "stream_mime": "audio\/mpeg",
-                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
-                    "size": 3628327,
-                    "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
-                    "has_art": true,
-                    "flag": false,
-                    "rating": null,
-                    "averagerating": null,
-                    "playcount": 0,
-                    "catalog": 1,
-                    "composer": null,
-                    "channels": 2,
-                    "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
-                    "license": null,
-                    "publisher": "archive.org",
-                    "language": null,
-                    "lyrics": null,
-                    "replaygain_album_gain": null,
-                    "replaygain_album_peak": null,
-                    "replaygain_track_gain": 1.91,
-                    "replaygain_track_peak": 0.851,
                     "r128_album_gain": null,
                     "r128_track_gain": null
                 }

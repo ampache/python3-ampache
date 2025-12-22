@@ -3,44 +3,44 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.6.7",
+        "serverVersion": "7.6.0",
         "openSubsonic": true,
         "genres": {
             "genre": [
                 {
-                    "songCount": 1,
-                    "albumCount": 1,
-                    "value": "Punk"
+                    "songCount": 20,
+                    "albumCount": 20,
+                    "value": "Hip-Hop"
                 },
                 {
-                    "songCount": 4,
-                    "albumCount": 1,
-                    "value": "Dark Ambient"
-                },
-                {
-                    "songCount": 6,
-                    "albumCount": 1,
-                    "value": "Noise"
+                    "songCount": 12,
+                    "albumCount": 12,
+                    "value": "Electronic"
                 },
                 {
                     "songCount": 11,
-                    "albumCount": 1,
+                    "albumCount": 11,
                     "value": "Electronica"
                 },
                 {
                     "songCount": 11,
-                    "albumCount": 1,
+                    "albumCount": 11,
                     "value": "Dance"
                 },
                 {
-                    "songCount": 12,
-                    "albumCount": 1,
-                    "value": "Electronic"
+                    "songCount": 6,
+                    "albumCount": 6,
+                    "value": "Noise"
                 },
                 {
-                    "songCount": 20,
+                    "songCount": 4,
+                    "albumCount": 4,
+                    "value": "Dark Ambient"
+                },
+                {
+                    "songCount": 1,
                     "albumCount": 1,
-                    "value": "Hip-Hop"
+                    "value": "Punk"
                 }
             ]
         }

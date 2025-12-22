@@ -39,7 +39,7 @@ class API(object):
 
     def __init__(self):
         self.AMPACHE_API = 'xml'
-        self.AMPACHE_VERSION = '6.7.3'
+        self.AMPACHE_VERSION = '6.9.0'
         self.AMPACHE_SERVER = ''
         self.AMPACHE_DEBUG = False
         self.DOCS_PATH = 'docs/'
@@ -1395,7 +1395,7 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def user_playlists(self, filter_str=False, exact=False, offset=0, limit=0,
-                       sort=False, cond=False):
+                       sort=False, cond=False, include=False):
         """ user_playlists
             MINIMUM_API_VERSION=6.3.0
 
@@ -1408,6 +1408,7 @@ class API(object):
             * limit      = (integer) //optional
             * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * include    = (integer) 0,1, if true include playlist contents
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'user_playlists'
@@ -1418,7 +1419,8 @@ class API(object):
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
-                'cond': cond}
+                'cond': cond,
+                'include': include}
         if not filter_str:
             data.pop('filter')
         if not exact:
@@ -1427,10 +1429,12 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        if not include:
+            data.pop('include')
         return self.get_request(ampache_url, data, api_method)
 
     def user_smartlists(self, filter_str=False, exact=False, offset=0, limit=0,
-                        sort=False, cond=False):
+                        sort=False, cond=False, include=False):
         """ user_smartlists
             MINIMUM_API_VERSION=6.3.0
 
@@ -1443,6 +1447,7 @@ class API(object):
             * limit      = (integer) //optional
             * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * include    = (integer) 0,1, if true include playlist contents
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'user_smartlists'
@@ -1453,7 +1458,8 @@ class API(object):
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
-                'cond': cond}
+                'cond': cond,
+                'include': include}
         if not filter_str:
             data.pop('filter')
         if not exact:
@@ -1462,6 +1468,8 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        if not include:
+            data.pop('include')
         return self.get_request(ampache_url, data, api_method)
 
     def playlists(self, filter_str=False, exact=False, offset=0, limit=0, hide_search=False,
@@ -2272,6 +2280,22 @@ class API(object):
                 'limit': str(limit)}
         return self.get_request(ampache_url, data, api_method)
 
+    def search_rules(self, filter_str):
+        """ search_rules
+            MINIMUM_API_VERSION=6.8.0
+
+            Print a list of valid search rules for your search type
+
+            INPUTS
+            * filter_str = (string) 'song', 'album', 'song_artist', 'album_artist', 'artist', 'label', 'playlist', 'podcast', 'podcast_episode', 'genre', 'user', 'video'
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'search_rules'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str}
+        return self.get_request(ampache_url, data, api_method)
+
     def search(self, rules, operator='and', object_type='song', offset=0, limit=0, random=0):
         """ search
             MINIMUM_API_VERSION=380001
@@ -2671,10 +2695,11 @@ class API(object):
             * object_id   = (integer) $object_id
             * rating      = (integer) 0|1|2|3|4|5
         """
-        if isinstance(rating, str) and rating.isdigit():
-            rating = int(rating)
-        else:
-            rating = 0
+        if isinstance(rating, str):
+            if rating.isdigit():
+                rating = int(rating)
+            else:
+                rating = -1
         if (rating < 0 or rating > 5) or not (
                 object_type == 'song' or object_type == 'album' or object_type == 'artist'):
             return False
@@ -2964,6 +2989,26 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'type': object_type}
+        return self.get_request(ampache_url, data, api_method)
+
+    def get_lyrics(self, filter_id, plugins=False):
+        """ get_lyrics
+            MINIMUM_API_VERSION=6.9.0
+
+            Return Database lyrics or search with plugins by Song id
+
+            INPUTS
+            * filter_id = (string) $song_id / $album_id / $artist_id
+            * plugins   = (int) 0,1, if false disable plugin lookup (Default: 1)
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'get_lyrics'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'plugins': plugins}
+        if not plugins:
+            data.pop('plugins')
         return self.get_request(ampache_url, data, api_method)
 
     def get_art(self, object_id, object_type, destination):
@@ -3973,6 +4018,10 @@ class API(object):
                 if not "ampache_api" in params:
                     params["ampache_api"] = self.AMPACHE_SESSION
                 return self.ping(params["ampache_url"], params["ampache_api"])
+            case 'search_rules':
+                if not "filter_str" in params:
+                    return False
+                return self.search_rules(params["filter_str"])
             case 'advanced_search':
                 if not "rules" in params:
                     params["rules"] = list()
@@ -4310,6 +4359,12 @@ class API(object):
                 if not "filter_id" in params or not "object_type" in params:
                     return False
                 return self.get_external_metadata(params["filter_id"], params["object_type"])
+            case 'get_lyrics':
+                if not "filter_id" in params:
+                    return False
+                if not "plugins" in params:
+                    params["plugins"] = False
+                return self.get_lyrics(params["filter_id"], params["plugins"])
             case 'get_indexes':
                 if not "filter_str" in params:
                     params["filter_str"] = False

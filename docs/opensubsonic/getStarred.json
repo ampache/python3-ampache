@@ -3,62 +3,96 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.6.7",
+        "serverVersion": "7.6.0",
         "openSubsonic": true,
         "starred": {
             "artist": [
                 {
-                    "id": "100000002",
+                    "id": "ar-16",
+                    "name": "CARN\u00daN",
+                    "coverArt": "ar-16",
+                    "albumCount": 1
+                },
+                {
+                    "id": "ar-2",
                     "name": "Synthetic",
-                    "coverArt": "ar-100000002"
+                    "coverArt": "ar-2",
+                    "albumCount": 1,
+                    "starred": "2021-02-22T05:54:18Z",
+                    "userRating": 5,
+                    "averageRating": 3
                 }
             ],
             "album": [
                 {
-                    "id": "200000002",
-                    "parent": "100000002",
-                    "album": "Colorsmoke EP",
+                    "id": "al-10",
+                    "parent": "ar-16",
+                    "title": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "album": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "artistId": "ar-16",
+                    "artist": "CARN\u00daN",
+                    "coverArt": "al-10",
+                    "duration": 3873,
+                    "year": 1996
+                },
+                {
+                    "id": "al-2",
+                    "parent": "ar-2",
                     "title": "Colorsmoke EP",
-                    "name": "Colorsmoke EP",
-                    "isDir": true,
-                    "coverArt": "al-200000002",
-                    "songCount": 12,
-                    "created": "2021-02-23T04:24:48+00:00",
-                    "duration": 4568,
-                    "playCount": 1,
-                    "artistId": "100000002",
+                    "album": "Colorsmoke EP",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "artistId": "ar-2",
                     "artist": "Synthetic",
-                    "year": 2007,
-                    "genre": "Electronic",
+                    "coverArt": "al-2",
+                    "duration": 4568,
                     "userRating": 5,
                     "averageRating": 3,
-                    "starred": "2021-02-22T05:51:53Z"
+                    "starred": "2021-02-22T05:51:53Z",
+                    "year": 2007,
+                    "genre": "Electronic",
+                    "genres": [
+                        {
+                            "name": "Electronic"
+                        }
+                    ]
                 }
             ],
             "song": [
                 {
-                    "id": "300000093",
-                    "parent": "200000008",
-                    "title": "Scribnus 3",
+                    "id": "so-100",
+                    "parent": "al-10",
+                    "title": "The Prophecies Of The Horned One",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "200000008",
-                    "album": "Nofi Devices",
-                    "artistId": "100000014",
-                    "artist": "Nofi/found.",
-                    "coverArt": "200000008",
-                    "duration": 641,
-                    "bitRate": 187,
-                    "userRating": 5,
-                    "starred": "2024-10-21T04:28:53Z",
-                    "track": 3,
-                    "genre": "Electronica",
-                    "size": 15400002,
+                    "albumId": "al-10",
+                    "album": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "artistId": "ar-16",
+                    "artist": "CARN\u00daN",
+                    "coverArt": "al-10",
+                    "duration": 378,
+                    "bitRate": 87,
+                    "track": 2,
+                    "year": 1996,
+                    "size": 4265791,
                     "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3"
+                    "suffix": "ogg",
+                    "contentType": "application/ogg",
+                    "path": "/media/music/Carn\u00fan/Malkuth (Demo1996)/02ThePropheciesOfTheHornedOne.ogg",
+                    "artists": [],
+                    "albumArtists": [
+                        {
+                            "id": "ar-16",
+                            "name": "CARN\u00daN"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
                 }
             ]
         }

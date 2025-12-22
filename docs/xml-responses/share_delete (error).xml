@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<error code="404"><![CDATA[share 107 was not found]]></error>
+  <error errorCode="4704">
+    <errorAction><![CDATA[share_delete]]></errorAction>
+    <errorType><![CDATA[filter]]></errorType>
+    <errorMessage><![CDATA[Not Found: 87]]></errorMessage>
+  </error>
 </root>

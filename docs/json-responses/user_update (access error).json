@@ -1,6 +1,8 @@
 {
     "error": {
-        "code": "400",
-        "message": "User does not have access to this function"
+        "errorCode": "4742",
+        "errorAction": "user_edit",
+        "errorType": "account",
+        "errorMessage": "Require: 100"
     }
 }

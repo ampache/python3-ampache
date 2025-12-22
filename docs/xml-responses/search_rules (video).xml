@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <rule id="">
+  <rule id="file">
     <name><![CDATA[file]]></name>
     <label><![CDATA[Filename]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[]]></title>
   </rule>
 </root>

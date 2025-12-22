@@ -30,49 +30,23 @@
                 "time": 4423,
                 "yearformed": 0,
                 "placeformed": null
-            },
-            {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic",
-                "albums": [],
-                "albumcount": 1,
-                "songs": [],
-                "songcount": 12,
-                "genre": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=artist",
-                "has_art": true,
-                "flag": true,
-                "rating": 5,
-                "averagerating": 3,
-                "mbid": "1",
-                "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
-                "time": 4568,
-                "yearformed": 0,
-                "placeformed": null
             }
         ],
         "album": [
             {
-                "id": "12",
+                "id": "23",
                 "name": "Buried in Nausea",
                 "prefix": null,
                 "basename": "Buried in Nausea",
                 "artist": {
-                    "id": "19",
+                    "id": "38",
                     "name": "Various Artists",
                     "prefix": null,
                     "basename": "Various Artists"
                 },
                 "artists": [
                     {
-                        "id": "19",
+                        "id": "38",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -146,12 +120,13 @@
                         "name": "Punk"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album",
+                "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
-                "mbid": null
+                "mbid": null,
+                "mbid_group": null
             },
             {
                 "id": "10",
@@ -192,53 +167,8 @@
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
-                "mbid": null
-            },
-            {
-                "id": "2",
-                "name": "Colorsmoke EP",
-                "prefix": null,
-                "basename": "Colorsmoke EP",
-                "artist": {
-                    "id": "2",
-                    "name": "Synthetic",
-                    "prefix": null,
-                    "basename": "Synthetic"
-                },
-                "artists": [
-                    {
-                        "id": "2",
-                        "name": "Synthetic",
-                        "prefix": null,
-                        "basename": "Synthetic"
-                    }
-                ],
-                "songartists": [
-                    {
-                        "id": "2",
-                        "name": "Synthetic",
-                        "prefix": null,
-                        "basename": "Synthetic"
-                    }
-                ],
-                "time": 4568,
-                "year": 2007,
-                "tracks": [],
-                "songcount": 12,
-                "diskcount": 1,
-                "type": null,
-                "genre": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album",
-                "has_art": true,
-                "flag": true,
-                "rating": 5,
-                "averagerating": 3,
-                "mbid": null
+                "mbid": null,
+                "mbid_group": null
             },
             {
                 "id": "21",
@@ -284,7 +214,59 @@
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
-                "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2"
+                "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+                "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
+            },
+            {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                },
+                "artists": [
+                    {
+                        "id": "14",
+                        "name": "Nofi\/found.",
+                        "prefix": null,
+                        "basename": "Nofi\/found."
+                    }
+                ],
+                "songartists": [
+                    {
+                        "id": "14",
+                        "name": "Nofi\/found.",
+                        "prefix": null,
+                        "basename": "Nofi\/found."
+                    }
+                ],
+                "time": 4423,
+                "year": 0,
+                "tracks": [],
+                "songcount": 11,
+                "diskcount": 1,
+                "type": null,
+                "genre": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album",
+                "has_art": true,
+                "flag": false,
+                "rating": 2,
+                "averagerating": null,
+                "mbid": null,
+                "mbid_group": null
             }
         ],
         "artist": [
@@ -359,32 +341,6 @@
                 "time": 233,
                 "yearformed": 0,
                 "placeformed": null
-            },
-            {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic",
-                "albums": [],
-                "albumcount": 1,
-                "songs": [],
-                "songcount": 12,
-                "genre": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=artist",
-                "has_art": true,
-                "flag": true,
-                "rating": 5,
-                "averagerating": 3,
-                "mbid": "1",
-                "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
-                "time": 4568,
-                "yearformed": 0,
-                "placeformed": null
             }
         ],
         "genre": [
@@ -428,6 +384,26 @@
             }
         ],
         "playlist": [
+            {
+                "id": "65",
+                "name": "Nofi",
+                "owner": "user",
+                "user": {
+                    "id": "4",
+                    "username": "user"
+                },
+                "items": 11,
+                "type": "public",
+                "art": "https:\/\/music.com.au\/image.php?object_id=65&object_type=playlist",
+                "has_access": true,
+                "has_collaborate": true,
+                "has_art": false,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "md5": null,
+                "last_update": 1751265759
+            },
             {
                 "id": "3",
                 "name": "random - admin - private (admin)",
@@ -487,168 +463,148 @@
                 "averagerating": null,
                 "md5": null,
                 "last_update": 1614054938
-            },
-            {
-                "id": "65",
-                "name": "renamejson",
-                "owner": "user",
-                "user": {
-                    "id": "4",
-                    "username": "user"
-                },
-                "items": 0,
-                "type": "private",
-                "art": "https:\/\/music.com.au\/image.php?object_id=65&object_type=playlist",
-                "has_access": true,
-                "has_collaborate": true,
-                "has_art": false,
-                "flag": false,
-                "rating": null,
-                "averagerating": null,
-                "md5": null,
-                "last_update": 1747878090
             }
         ],
         "podcast_episode": [
             {
-                "id": "115",
-                "title": "S1 BONUS | A million-dollar reward",
-                "name": "S1 BONUS | A million-dollar reward",
-                "podcast": {
-                    "id": 6,
-                    "name": "Trace"
-                },
-                "description": "\n                 &lt;p&gt;Victoria Police is set to announce a one million dollar reward for information that finally solves the case of Maria James, who was murdered in the back of her bookshop 44 years ago. And for the first time in seven years of investigating this case, police grant an interview to Rachael Brown.&lt;\/p&gt; \n            ",
-                "category": "",
-                "author": "",
-                "author_full": "",
-                "website": "https:\/\/www.abc.net.au\/listen\/programs\/trace\/a-million-dollar-reward-maria-james-bookshop-murder\/103975122",
-                "pubdate": "2024-06-13T17:00:00+00:00",
-                "state": "pending",
-                "filelength": "00:15:36",
-                "filesize": "",
-                "filename": "",
-                "mime": null,
-                "time": 936,
-                "size": 0,
-                "bitrate": 0,
-                "stream_bitrate": 0,
-                "rate": 0,
-                "mode": null,
-                "channels": null,
-                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=115",
-                "url": "",
-                "catalog": "3",
-                "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=podcast",
-                "has_art": false,
-                "flag": false,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "played": ""
-            },
-            {
-                "id": "116",
-                "title": "S1 Bonus | Maria James inquest finding",
-                "name": "S1 Bonus | Maria James inquest finding",
-                "podcast": {
-                    "id": 6,
-                    "name": "Trace"
-                },
-                "description": "\n                 &lt;p&gt;A Victorian Coroner has failed to name a killer in the 1980 cold case of Maria James. Her sons are devastated. But there&#039;s still hope, in leads yet to be chased by police.&lt;\/p&gt; \n            ",
-                "category": "",
-                "author": "",
-                "author_full": "",
-                "website": "https:\/\/www.abc.net.au\/listen\/programs\/trace\/maria-james-inquest-finding\/8660872",
-                "pubdate": "2022-04-01T02:30:00+00:00",
-                "state": "pending",
-                "filelength": "00:18:34",
-                "filesize": "",
-                "filename": "",
-                "mime": null,
-                "time": 1114,
-                "size": 0,
-                "bitrate": 0,
-                "stream_bitrate": 0,
-                "rate": 0,
-                "mode": null,
-                "channels": null,
-                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=116",
-                "url": "",
-                "catalog": "3",
-                "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=podcast",
-                "has_art": false,
-                "flag": false,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "played": ""
-            },
-            {
-                "id": "118",
-                "title": "S1 Bonus | Breakthrough in Maria James cold case",
-                "name": "S1 Bonus | Breakthrough in Maria James cold case",
-                "podcast": {
-                    "id": 6,
-                    "name": "Trace"
-                },
-                "description": "\n                 &lt;p&gt;The discovery of a police exhibit - thought to be missing for around three decades - could finally help unmask the killer in the 1980 cold case of Maria James.&lt;\/p&gt; \n            ",
-                "category": "",
-                "author": "",
-                "author_full": "",
-                "website": "https:\/\/www.abc.net.au\/listen\/programs\/trace\/breakthrough-in-maria-james-cold-case\/13494722",
-                "pubdate": "2021-08-12T15:00:00+00:00",
-                "state": "pending",
-                "filelength": "00:26:45",
-                "filesize": "",
-                "filename": "",
-                "mime": null,
-                "time": 1605,
-                "size": 0,
-                "bitrate": 0,
-                "stream_bitrate": 0,
-                "rate": 0,
-                "mode": null,
-                "channels": null,
-                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=118",
-                "url": "",
-                "catalog": "3",
-                "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=podcast",
-                "has_art": false,
-                "flag": false,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "played": ""
-            },
-            {
-                "id": "93",
-                "title": "COVID, Quickly, Episode 12: Masking Up Again and Why People Refuse Shots",
-                "name": "COVID, Quickly, Episode 12: Masking Up Again and Why People Refuse Shots",
+                "id": "3715",
+                "title": "Talking to the Host of Drilled about the Legal Battles around Standing Rock",
+                "name": "Talking to the Host of Drilled about the Legal Battles around Standing Rock",
                 "podcast": {
                     "id": 1,
                     "name": "60-Second Science"
                 },
-                "description": "Today we bring you a new episode in our podcast series&nbsp;COVID, Quickly. Every two weeks, Scientific American&rsquo;s senior health editors Tanya Lewis and Josh Fischman catch you up on the...&lt;br\/&gt;\n&lt;br\/&gt;\n-- Read more on ScientificAmerican.com&lt;div class=&quot;feedflare&quot;&gt;\n&lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:yIl2AUoC8zA&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=yIl2AUoC8zA&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:qj6IDK7rITs&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=qj6IDK7rITs&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:l6gmwiTKsz0&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=l6gmwiTKsz0&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:gIN9vFwOqvQ&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?i=Jyx10yeCC4w:4dxFuClQTT0:gIN9vFwOqvQ&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:ZC7T4KBF6Nw&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=ZC7T4KBF6Nw&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:I9og5sOYxJI&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=I9og5sOYxJI&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt; &lt;a href=&quot;http:\/\/rss.sciam.com\/~ff\/sciam\/60secsciencepodcast?a=Jyx10yeCC4w:4dxFuClQTT0:xQlvkV3S7Ew&quot;&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~ff\/sciam\/60secsciencepodcast?d=xQlvkV3S7Ew&quot; border=&quot;0&quot;&gt;&lt;\/img&gt;&lt;\/a&gt;\n&lt;\/div&gt;&lt;img src=&quot;http:\/\/feeds.feedburner.com\/~r\/sciam\/60secsciencepodcast\/~4\/Jyx10yeCC4w&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;\/&gt;",
-                "category": "Health",
+                "description": "Protests around the construction of the now complete Dakota Access Pipeline brought national attention to Energy Transfer, the company that built and owns the pipeline and funded private security against the protestors. Energy Transfer sued the nonprofit Greenpeace for hundreds of millions of dollars. The company claimed that the Standing Rock movement was not Indigenous-led environmental activism but a conspiratorial effort by Greenpeace. Reporter Alleen Brown is spending this season of her podcast, Drilled, looking into the lawsuit and the message that legal actions like this send to activists.&nbsp;\n\nRecommended reading:\n\nListen to Drilled\n\nRead Alleen Brown&rsquo;s newsletter\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\nDiscover something new every day: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.&nbsp;\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Kelso Harper, Naeem Amarsy and Jeff DelViscio. This episode was hosted by Rachel Feltman. Our show is edited by Alex Sugiura with fact-checking by Shayna Posses and Aaron Shattuck.&nbsp;\n\nThe theme music was composed by Dominic Smith.\n\n\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
+                "category": "",
                 "author": "",
                 "author_full": "",
-                "website": "http:\/\/rss.sciam.com\/~r\/sciam\/60secsciencepodcast\/~3\/Jyx10yeCC4w\/",
-                "pubdate": "2021-07-30T17:00:00+00:00",
+                "website": "",
+                "pubdate": "2025-06-30T09:55:00+00:00",
                 "state": "completed",
-                "filelength": "00:06:18",
-                "filesize": "6.28 MB",
-                "filename": "60-Second Science - COVID, Quickly, Episode 12: Masking Up Again and Why People Refuse Shots.mp3",
+                "filelength": "00:12:06",
+                "filesize": "17 MB",
+                "filename": "60-Second Science - Talking to the Host of Drilled about the Legal Battles around Standing Rock.mp3",
                 "mime": "audio\/mpeg",
-                "time": 378,
-                "size": 6589487,
-                "bitrate": 0,
-                "stream_bitrate": 0,
-                "rate": 0,
-                "mode": null,
-                "channels": null,
-                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=93",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=93&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20COVID-%20Quickly-%20Episode%2012-%20Masking%20Up%20Again%20and%20Why%20People%20Refuse%20Shots.mp3",
+                "time": 726,
+                "size": 17827745,
+                "bitrate": 192000,
+                "stream_bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "channels": 2,
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=3715",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=3715&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20Talking%20to%20the%20Host%20of%20Drilled%20about%20the%20Legal%20Battles%20around%20Standing%20Rock.mp3",
+                "catalog": "3",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "played": ""
+            },
+            {
+                "id": "127",
+                "title": "How to Fight Bird Flu If It Becomes the Next Human Pandemic (Part 3)",
+                "name": "How to Fight Bird Flu If It Becomes the Next Human Pandemic (Part 3)",
+                "podcast": {
+                    "id": 1,
+                    "name": "60-Second Science"
+                },
+                "description": "Creating a bird flu vaccine requires several layers of bioprotective clothing and typically a whole lot of eggs. H5N1 avian influenza infections have gone from flocks of chickens to herds of cattle and humans. Scientists at the Texas Biomedical Research Institute are taking their best guess at the strains of the virus that could spread and are creating critical vaccine candidates.\n\nMultimedia journalist and Scientific American multimedia intern Naeem Amarsy suited up and went to San Antonio, Tex., to visit a &ldquo;biosafety level three&rdquo; (BSL-3) lab at the institute.&nbsp;\n\nThis is the third and final episode of our series about bird flu.\n\nYou can listen to episode one:\n\nhttps:\/\/www.scientificamerican.com\/podcast\/episode\/how-h5n1-went-from-an-illness-in-wild-birds-to-a-global-pandemic-threat\/&nbsp;\n\nAnd episode two:\n\nhttps:\/\/www.scientificamerican.com\/podcast\/episode\/how-bird-flu-went-from-devastating-poultry-farms-to-infecting-dairy-herds\/&nbsp;\n\nAnd read more of our health coverage:\n\nhttps:\/\/www.scientificamerican.com\/health\/&nbsp;\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\nDiscover something new every day: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.&nbsp;\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Kelso Harper, Naeem Amarsy and Jeff DelViscio. This episode was hosted and reported by Naeem Amarsy. This series was reported and produced by Lauren Young, Meghan Bartels, Fonda Mwangi and Jeff DelViscio. Special thanks to Laura Petersen and Catie Corcoran at the Texas Biomedical Research Institute, Jane Deng and Elizabeth Dowling at the Icahn School of Medicine at Mount Sinai, and Kimberly Lau, Dean Visser and Jeanna Bryner at Scientific American. Our show is edited by Alex Sugiura with fact-checking by Shayna Posses and Aaron Shattuck. The theme music was composed by Dominic Smith.\n\n\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
+                "category": "",
+                "author": "",
+                "author_full": "",
+                "website": "",
+                "pubdate": "2025-06-27T09:55:00+00:00",
+                "state": "completed",
+                "filelength": "00:32:06",
+                "filesize": "44.48 MB",
+                "filename": "60-Second Science - How to Fight Bird Flu If It Becomes the Next Human Pandemic (Part 3).mp3",
+                "mime": "audio\/mpeg",
+                "time": 1926,
+                "size": 46635577,
+                "bitrate": 192000,
+                "stream_bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "channels": 2,
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=127",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=127&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20How%20to%20Fight%20Bird%20Flu%20If%20It%20Becomes%20the%20Next%20Human%20Pandemic%20-Part%203-.mp3",
+                "catalog": "3",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "played": ""
+            },
+            {
+                "id": "128",
+                "title": " Bird Flu\u2019s Jump to Cattle Took Dairy Farmers by Surprise (Part 2)",
+                "name": " Bird Flu\u2019s Jump to Cattle Took Dairy Farmers by Surprise (Part 2)",
+                "podcast": {
+                    "id": 1,
+                    "name": "60-Second Science"
+                },
+                "description": "Dairy cattle have become an intermediary between avian influenza found in wild birds and the handful of recorded H5N1 bird flu cases in humans. Senior news reporter Meghan Bartels took a trip upstate to Cornell University&rsquo;s Teaching Dairy Barn. Early last year Texas dairy farmers noticed lethargic cows producing off-color milk. One of them sent Cornell researchers a sample, which genetic sequencing determined to contain a strain of H5N1. That strain traces its roots to the H5N1 virus that emerged in China in the late 1990s&mdash;which spread around the world thanks to migrating wild birds, such as those found on the beach that associate health and medicine editor Lauren Young visited in episode one of our three-part series about bird flu. And outbreak of H5N1 has been running through poultry farms since the early 2020s. Poultry farmers have been forced to cull flocks, reinforce biosecurity protocols and change the prices of eggs as a result. Dairy farms were less prepared for the spillover and its unexpected transition into raw-milk-drinking barn cats. While pasteurization makes milk safe for human consumption, there&rsquo;s no easy way to prevent the spread between herds of cattle. In the next episode, multimedia intern and producer Naeem Amarsy looks at how the virus made yet another hop&mdash;this time into humans.\n\n\n\nRecommended reading:\n\nHow the U.S. Lost Control of Bird Flu, Setting the Stage for Another Pandemic\n\nhttps:\/\/www.scientificamerican.com\/article\/bird-flu-has-spread-out-of-control-after-mistakes-by-u-s-government-and\/&nbsp;\n\nBird Flu Vaccine for Cows Passes Early Test\n\nhttps:\/\/www.scientificamerican.com\/article\/bird-flu-vaccine-for-cows-passes-early-test\/&nbsp;\n\n\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\nDiscover something new every day: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.&nbsp;\n\n\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Kelso Harper, Naeem Amarsy and Jeff DelViscio. This episode was reported and hosted by Meghan Bartels. This series is reported and produced by Lauren Young, Meghan Bartels, Naeem Amarsy, Fonda Mwangi and Jeff DelViscio. Special thanks to Becka Bowyer and Kaitlyn Serrao at Cornell University and to Kimberly Lau, Dean Visser and Jeanna Bryner at Scientific American. Our show is edited by Alex Sugiura with fact-checking by Shayna Posses and Aaron Shattuck. The theme music was composed by Dominic Smith.\n\n\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
+                "category": "",
+                "author": "",
+                "author_full": "",
+                "website": "",
+                "pubdate": "2025-06-25T09:50:00+00:00",
+                "state": "completed",
+                "filelength": "00:22:13",
+                "filesize": "30.9 MB",
+                "filename": "60-Second Science -  Bird Flu\u2019s Jump to Cattle Took Dairy Farmers by Surprise (Part 2).mp3",
+                "mime": "audio\/mpeg",
+                "time": 1333,
+                "size": 32403851,
+                "bitrate": 192000,
+                "stream_bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "channels": 2,
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=128",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=128&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20%20Bird%20Flu-s%20Jump%20to%20Cattle%20Took%20Dairy%20Farmers%20by%20Surprise%20-Part%202-.mp3",
+                "catalog": "3",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "played": ""
+            },
+            {
+                "id": "129",
+                "title": "How Bird Flu Went from an Isolated Avian Illness to a Human Pandemic Threat (Part 1)",
+                "name": "How Bird Flu Went from an Isolated Avian Illness to a Human Pandemic Threat (Part 1)",
+                "podcast": {
+                    "id": 1,
+                    "name": "60-Second Science"
+                },
+                "description": "Bird flu outbreaks in poultry and cattle have caused concern for public health officials. There have been few reported cases of human transmission, but the growing risks of H5N1 avian influenza have virologists on alert.\n\n\n\nResearchers at the St. Jude Center of Excellence for Influenza Research and Response take an annual visit to Delaware Bay to collect samples of bird poop for analysis. These samples give the researchers a look at emerging avian illnesses. While spillover of H5N1 into domestic birds has been known for a while, the first case of spillover into humans was only identified during a 1997 outbreak in Hong Kong. Since then H5N1 has gone global and moved from transmitting from bird to bird to spreading from bird to mammal and from mammal to mammal.\n\n\n\nAssociate health and medicine editor Lauren Young takes a sample collection walk on the beach and speaks with virus detectives about how H5N1 evolved in episode one of our three-part series about bird flu.\n\nJoin us on Wednesday to learn how bird flu jumped from poultry to cattle.\n\n\n\nRecommended reading:\n\nRFK, Jr., Wants to Let Bird Flu Spread on Poultry Farms. Why Experts Are Concerned https:\/\/www.scientificamerican.com\/article\/rfk-jr-wants-to-let-bird-flu-spread-on-poultry-farms-why-experts-are\/&nbsp;\n\nBird Flu Detected in Humans in the U.S.: What We Know So Far https:\/\/www.scientificamerican.com\/article\/bird-flu-detected-in-a-person-in-texas-what-we-know-so-far\/&nbsp;\n\n\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\nDiscover something new every day: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.&nbsp;\n\n\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Kelso Harper, Naeem Amarsy and Jeff DelViscio. This episode was hosted by Rachel Feltman with guest Lauren Young. This series was reported and produced by Lauren Young, Meghan Bartels, Naeem Amarsy, Fonda Mwangi and Jeff DelViscio. And special thanks to Kimberly Lau and Dean Visser at Scientific American for making it possible and to Michael Sheffield at St. Jude for assistance in the field. Our show is edited by Alex Sugiura with fact-checking by Shayna Posses and Aaron Shattuck. The theme music was composed by Dominic Smith.\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
+                "category": "",
+                "author": "",
+                "author_full": "",
+                "website": "",
+                "pubdate": "2025-06-23T09:50:00+00:00",
+                "state": "completed",
+                "filelength": "00:30:17",
+                "filesize": "41.98 MB",
+                "filename": "60-Second Science - How Bird Flu Went from an Isolated Avian Illness to a Human Pandemic Threat (Part 1).mp3",
+                "mime": "audio\/mpeg",
+                "time": 1817,
+                "size": 44015861,
+                "bitrate": 192000,
+                "stream_bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "channels": 2,
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=129",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=129&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20How%20Bird%20Flu%20Went%20from%20an%20Isolated%20Avian%20Illness%20to%20a%20Human%20Pandemic%20Threat%20-Part%201-.mp3",
                 "catalog": "3",
                 "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&name=art.jpg",
                 "has_art": true,
@@ -750,32 +706,6 @@
                 "mbid": null,
                 "summary": "There are 2 artists with this name:\n1) A crust band\n2) A hardcore band from Toronto\n\n1) Started as \"Hands That Mold\" later changed to \"Stress Builds Character\". We play grindy, sludgy, crusty, melodic, apocalyptic punk with a twist of power violence. We had a few practices, got a new 2nd vocalist (after Teagan left) and recorded our original demo. Joe was one of the lead vocalists for the first 4 shows and original demo until right after the 4th show when he left the band. ",
                 "time": 233,
-                "yearformed": 0,
-                "placeformed": null
-            },
-            {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic",
-                "albums": [],
-                "albumcount": 1,
-                "songs": [],
-                "songcount": 12,
-                "genre": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=artist",
-                "has_art": true,
-                "flag": true,
-                "rating": 5,
-                "averagerating": 3,
-                "mbid": "1",
-                "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
-                "time": 4568,
                 "yearformed": 0,
                 "placeformed": null
             }
@@ -973,9 +903,9 @@
                 "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
                 "has_art": true,
                 "flag": false,
-                "rating": null,
+                "rating": 5,
                 "averagerating": null,
-                "playcount": 0,
+                "playcount": 2,
                 "catalog": 1,
                 "composer": null,
                 "channels": 2,
@@ -1043,9 +973,9 @@
                 "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
                 "has_art": true,
                 "flag": false,
-                "rating": null,
+                "rating": 5,
                 "averagerating": null,
-                "playcount": 0,
+                "playcount": 1,
                 "catalog": 1,
                 "composer": null,
                 "channels": 2,
@@ -1076,8 +1006,8 @@
                 "username": "generic"
             },
             {
-                "id": "4",
-                "username": "user"
+                "id": "61",
+                "username": "otheruser"
             }
         ]
     }

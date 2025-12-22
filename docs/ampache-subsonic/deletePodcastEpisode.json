@@ -1,13 +1,9 @@
 {
     "subsonic-response": {
-        "status": "failed",
+        "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.7.3",
-        "openSubsonic": true,
-        "error": {
-            "code": 70,
-            "message": "The requested data was not found."
-        }
+        "serverVersion": "6.8.0",
+        "openSubsonic": true
     }
 }

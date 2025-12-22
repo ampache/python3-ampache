@@ -3,16 +3,16 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.6.7",
+        "serverVersion": "7.6.0",
         "openSubsonic": true,
         "musicFolders": {
             "musicFolder": [
                 {
-                    "id": "1",
+                    "id": "mf-1",
                     "name": "music"
                 },
                 {
-                    "id": "4",
+                    "id": "mf-4",
                     "name": "upload"
                 }
             ]

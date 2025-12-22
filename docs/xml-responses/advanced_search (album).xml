@@ -1,35 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>9</total_count>
-  <md5>a5f5d7a5fc80600513c623db108873af</md5>
-  <album id="2">
-    <name><![CDATA[Colorsmoke EP]]></name>
+  <md5>764cd2edd79a8adb606b9d6e77cf82a1</md5>
+  <album id="10">
+    <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
     <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[Colorsmoke EP]]></basename>
-    <artist id="2">
-      <name><![CDATA[Synthetic]]></name>
+    <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Synthetic]]></basename>
+      <basename><![CDATA[CARNÚN]]></basename>
     </artist>
-    <songartist id="2">
-      <name><![CDATA[Synthetic]]></name>
+    <songartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Synthetic]]></basename>
+      <basename><![CDATA[CARNÚN]]></basename>
     </songartist>
-    <time>4568</time>
-    <year>2007</year>
+    <time>3873</time>
+    <year>1996</year>
     <tracks/>
-    <songcount>12</songcount>
+    <songcount>9</songcount>
     <diskcount>1</diskcount>
     <type/>
-    <genre id="1">
-      <name><![CDATA[Electronic]]></name>
-    </genre>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
     <has_art>1</has_art>
-    <flag>1</flag>
-    <rating>5</rating>
-    <averagerating>3</averagerating>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
     <mbid><![CDATA[]]></mbid>
+    <mbid_group><![CDATA[]]></mbid_group>
+  </album>
+  <album id="21">
+    <name><![CDATA[Forget and Remember]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Forget and Remember]]></basename>
+    <artist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Comfort Fit]]></basename>
+    </artist>
+    <songartist id="36">
+      <name><![CDATA[Comfort Fit]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Comfort Fit]]></basename>
+    </songartist>
+    <time>4248</time>
+    <year>2005</year>
+    <tracks/>
+    <songcount>20</songcount>
+    <diskcount>1</diskcount>
+    <type>album</type>
+    <genre id="8">
+      <name><![CDATA[Hip-Hop]]></name>
+    </genre>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[6e1d48f7-717c-416e-af35-5d2454a13af2]]></mbid>
+    <mbid_group><![CDATA[1501fe8a-f060-3b6f-8cb0-7babfc65192a]]></mbid_group>
   </album>
 </root>

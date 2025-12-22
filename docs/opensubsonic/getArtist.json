@@ -3,34 +3,46 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "6.6.7",
+        "serverVersion": "7.6.0",
         "openSubsonic": true,
         "artist": {
-            "id": "100000002",
-            "name": "Synthetic",
-            "coverArt": "ar-100000002",
+            "id": "ar-11",
+            "name": "structura",
+            "coverArt": "ar-11",
             "albumCount": 1,
-            "starred": "2021-02-22T05:54:18Z",
+            "userRating": 4,
+            "averageRating": 4,
             "album": [
                 {
-                    "id": "200000002",
-                    "parent": "100000002",
-                    "album": "Colorsmoke EP",
-                    "title": "Colorsmoke EP",
-                    "name": "Colorsmoke EP",
+                    "id": "al-18",
+                    "parent": "ar-11",
+                    "album": "Inominavel (live.v.01)",
+                    "title": "Inominavel (live.v.01)",
+                    "name": "Inominavel (live.v.01)",
+                    "version": "",
                     "isDir": true,
-                    "coverArt": "al-200000002",
-                    "songCount": 12,
-                    "created": "2021-02-23T04:24:48+00:00",
-                    "duration": 4568,
-                    "playCount": 1,
-                    "artistId": "100000002",
-                    "artist": "Synthetic",
+                    "coverArt": "al-18",
+                    "songCount": 6,
+                    "created": "2021-02-23T04:24:50+00:00",
+                    "duration": 1339,
+                    "playCount": 4,
+                    "artistId": "ar-11",
+                    "artist": "structura",
                     "year": 2007,
-                    "genre": "Electronic",
-                    "userRating": 5,
-                    "averageRating": 3,
-                    "starred": "2021-02-22T05:51:53Z"
+                    "genre": "Noise",
+                    "genres": [
+                        {
+                            "name": "Noise"
+                        }
+                    ],
+                    "userRating": 4,
+                    "averageRating": 3.67,
+                    "artists": [
+                        {
+                            "id": "ar-11",
+                            "name": "structura"
+                        }
+                    ]
                 }
             ]
         }

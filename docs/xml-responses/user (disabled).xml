@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <user id="62">
-    <username><![CDATA[temp_user]]></username>
+  <user id="61">
+    <username><![CDATA[otheruser]]></username>
     <auth><![CDATA[]]></auth>
-    <email><![CDATA[email@gmail.com]]></email>
+    <email><![CDATA[otheruser@ampache.dev]]></email>
     <access>25</access>
-    <streamtoken>b60cde758539750f6b41e4e134cf2fbfafcd7c1a</streamtoken>
+    <streamtoken>b944cfc60c55e3bcd67486f3f35e197719fea9a0</streamtoken>
     <fullname_public>0</fullname_public>
     <validation><![CDATA[]]></validation>
     <disabled>1</disabled>
     <create_date>1670202701</create_date>
     <last_seen>0</last_seen>
-    <link><![CDATA[https://music.com.au/stats.php?action=show_user&user_id=62]]></link>
+    <link><![CDATA[https://music.com.au/stats.php?action=show_user&user_id=61]]></link>
     <website><![CDATA[]]></website>
     <state><![CDATA[]]></state>
     <city><![CDATA[]]></city>
-    <art><![CDATA[https://music.com.au/image.php?action=show_user_avatar&object_id=62&object_type=user]]></art>
+    <art><![CDATA[https://music.com.au/image.php?action=show_user_avatar&object_id=61&object_type=user]]></art>
     <has_art><![CDATA[]]></has_art>
-    <fullname><![CDATA[temp_user]]></fullname>
+    <fullname><![CDATA[otheruser]]></fullname>
   </user>
 </root>

@@ -1,44 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <md5>779824090289b105333c6256857f48cf</md5>
-  <song id="109">
-    <name><![CDATA[Dance with the Devil]]></name>
-    <title><![CDATA[Dance with the Devil]]></title>
-    <artist id="34">
-      <name><![CDATA[Comedown Kid]]></name>
+  <md5>20dac9f341b8fd684316ca071daa6a67</md5>
+  <song id="83">
+    <name><![CDATA[Sensorisk Deprivation]]></name>
+    <title><![CDATA[Sensorisk Deprivation]]></title>
+    <artist id="13">
+      <name><![CDATA[IOK-1]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Comedown Kid]]></basename>
+      <basename><![CDATA[IOK-1]]></basename>
     </artist>
-    <album id="12">
-      <name><![CDATA[Buried in Nausea]]></name>
+    <album id="7">
+      <name><![CDATA[Sensorisk Deprivation]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Buried in Nausea]]></basename>
+      <basename><![CDATA[Sensorisk Deprivation]]></basename>
     </album>
-    <albumartist id="19">
-      <name><![CDATA[Various Artists]]></name>
+    <albumartist id="13">
+      <name><![CDATA[IOK-1]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Various Artists]]></basename>
+      <basename><![CDATA[IOK-1]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>3</track>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma]]></filename>
+    <track>1</track>
+    <genre id="4">
+      <name><![CDATA[Dark Ambient]]></name>
+    </genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/01_-_IOK-1_-_Sensorisk_Deprivation.flac]]></filename>
     <playlisttrack>1</playlisttrack>
-    <time>116</time>
-    <year>2012</year>
-    <format>wma</format>
+    <time>818</time>
+    <year>2011</year>
+    <format>flac</format>
     <stream_format>mp3</stream_format>
-    <bitrate>32582</bitrate>
+    <bitrate>385823</bitrate>
     <stream_bitrate>32000</stream_bitrate>
     <rate>44100</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/x-ms-wma]]></mime>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[audio/flac]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3]]></url>
-    <size>483444</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=83&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Sensorisk%20Deprivation.mp3]]></url>
+    <size>39473388</size>
     <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <playcount>13</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels>2</channels>
+    <comment><![CDATA[DNA Production release
+Catalogue # DNA 119]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[archive.org]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>1.11</replaygain_track_gain>
+    <replaygain_track_peak>0.977</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="82">
+    <name><![CDATA[Vanvett]]></name>
+    <title><![CDATA[Vanvett]]></title>
+    <artist id="13">
+      <name><![CDATA[IOK-1]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[IOK-1]]></basename>
+    </artist>
+    <album id="7">
+      <name><![CDATA[Sensorisk Deprivation]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Sensorisk Deprivation]]></basename>
+    </album>
+    <albumartist id="13">
+      <name><![CDATA[IOK-1]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[IOK-1]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <track>2</track>
+    <genre id="4">
+      <name><![CDATA[Dark Ambient]]></name>
+    </genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/02_-_IOK-1_-_Vanvett.flac]]></filename>
+    <playlisttrack>2</playlisttrack>
+    <time>825</time>
+    <year>2011</year>
+    <format>flac</format>
+    <stream_format>mp3</stream_format>
+    <bitrate>371855</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[audio/flac]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3]]></url>
+    <size>38389422</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating/>
@@ -46,16 +110,139 @@
     <playcount>0</playcount>
     <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
-    <channels>1</channels>
-    <comment><![CDATA[]]></comment>
+    <channels>2</channels>
+    <comment><![CDATA[DNA Production release
+Catalogue # DNA 119]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
+    <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain/>
-    <replaygain_track_peak/>
+    <replaygain_track_gain>-2.57</replaygain_track_gain>
+    <replaygain_track_peak>0.977</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="81">
+    <name><![CDATA[Galenskap]]></name>
+    <title><![CDATA[Galenskap]]></title>
+    <artist id="13">
+      <name><![CDATA[IOK-1]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[IOK-1]]></basename>
+    </artist>
+    <album id="7">
+      <name><![CDATA[Sensorisk Deprivation]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Sensorisk Deprivation]]></basename>
+    </album>
+    <albumartist id="13">
+      <name><![CDATA[IOK-1]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[IOK-1]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <track>3</track>
+    <genre id="4">
+      <name><![CDATA[Dark Ambient]]></name>
+    </genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/03_-_IOK-1_-_Galenskap.flac]]></filename>
+    <playlisttrack>3</playlisttrack>
+    <time>998</time>
+    <year>2011</year>
+    <format>flac</format>
+    <stream_format>mp3</stream_format>
+    <bitrate>389683</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[audio/flac]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Galenskap.mp3]]></url>
+    <size>48633049</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels>2</channels>
+    <comment><![CDATA[DNA Production release
+Catalogue # DNA 119]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[archive.org]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>-5.33</replaygain_track_gain>
+    <replaygain_track_peak>0.977</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="84">
+    <name><![CDATA[Vansinne]]></name>
+    <title><![CDATA[Vansinne]]></title>
+    <artist id="13">
+      <name><![CDATA[IOK-1]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[IOK-1]]></basename>
+    </artist>
+    <album id="7">
+      <name><![CDATA[Sensorisk Deprivation]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Sensorisk Deprivation]]></basename>
+    </album>
+    <albumartist id="13">
+      <name><![CDATA[IOK-1]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[IOK-1]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <track>4</track>
+    <genre id="4">
+      <name><![CDATA[Dark Ambient]]></name>
+    </genre>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/IOK-1/Sensorisk Deprivation/04_-_IOK-1_-_Vansinne.flac]]></filename>
+    <playlisttrack>4</playlisttrack>
+    <time>787</time>
+    <year>2011</year>
+    <format>flac</format>
+    <stream_format>mp3</stream_format>
+    <bitrate>713176</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[audio/flac]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vansinne.mp3]]></url>
+    <size>70182824</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels>2</channels>
+    <comment><![CDATA[DNA Production release
+Catalogue # DNA 119]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[archive.org]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>-5.35</replaygain_track_gain>
+    <replaygain_track_peak>0.7</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

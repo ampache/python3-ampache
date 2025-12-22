@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.6.7" openSubsonic="1">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
   <artistInfo2>
-    <musicBrainzId>1</musicBrainzId>
-    <smallImageUrl>http://192.168.1.9:8989/play/art/none/artist/2/thumb34.jpg</smallImageUrl>
-    <mediumImageUrl>http://192.168.1.9:8989/play/art/none/artist/2/thumb64.jpg</mediumImageUrl>
-    <largeImageUrl>http://192.168.1.9:8989/play/art/none/artist/2/thumb174.jpg</largeImageUrl>
+    <biography>. Born in 2000 at Lisbon - Portugal, Structura is a sound exploration project using as main tools electronic composition, frequency modulation and effects, the cut-up (of texts), spoken word, DJing, samples, video and others.
+Structura works sounds normally associated with experimental electronica currents like Rhythmic-Noise, Power-Electronics, Break'n'Noise, IDM, Spoken-Word but freelly enough not to get to attached to them.
+The sound compositions in Structura are linked to concepts, images, literature, cinema and other arts.</biography>
+    <musicBrainzId/>
+    <smallImageUrl>https://music.com.au/play/art/none/artist/11/size68x68.jpg</smallImageUrl>
+    <mediumImageUrl>https://music.com.au/play/art/none/artist/11/size128x128.jpg</mediumImageUrl>
+    <largeImageUrl>https://music.com.au/play/art/none/artist/11/size348x348.jpg</largeImageUrl>
   </artistInfo2>
 </subsonic-response>

@@ -1,486 +1,588 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <rule id="">
+  <rule id="anywhere">
     <name><![CDATA[anywhere]]></name>
     <label><![CDATA[Any searchable text]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[]]></title>
   </rule>
-  <rule id="">
+  <rule id="none">
     <name><![CDATA[none]]></name>
     <label><![CDATA[None]]></label>
     <type><![CDATA[is_true]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[]]></title>
   </rule>
-  <rule id="">
+  <rule id="title">
     <name><![CDATA[title]]></name>
     <label><![CDATA[Title]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="album">
     <name><![CDATA[album]]></name>
     <label><![CDATA[Album]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="artist">
     <name><![CDATA[artist]]></name>
     <label><![CDATA[Song Artist]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="album_artist">
     <name><![CDATA[album_artist]]></name>
     <label><![CDATA[Album Artist]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="composer">
     <name><![CDATA[composer]]></name>
     <label><![CDATA[Composer]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="track">
     <name><![CDATA[track]]></name>
     <label><![CDATA[Track]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="year">
     <name><![CDATA[year]]></name>
     <label><![CDATA[Year]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="time">
     <name><![CDATA[time]]></name>
     <label><![CDATA[Length (in minutes)]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="label">
     <name><![CDATA[label]]></name>
     <label><![CDATA[Label]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="comment">
     <name><![CDATA[comment]]></name>
     <label><![CDATA[Comment]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="lyrics">
     <name><![CDATA[lyrics]]></name>
     <label><![CDATA[Lyrics]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="id">
     <name><![CDATA[id]]></name>
     <label><![CDATA[Database ID]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="myrating">
     <name><![CDATA[myrating]]></name>
     <label><![CDATA[My Rating]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget>
+      <select id="0"><![CDATA[0 Stars]]></select>
+      <select id="1"><![CDATA[1 Star]]></select>
+      <select id="2"><![CDATA[2 Stars]]></select>
+      <select id="3"><![CDATA[3 Stars]]></select>
+      <select id="4"><![CDATA[4 Stars]]></select>
+      <select id="5"><![CDATA[5 Stars]]></select>
+    </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="">
+  <rule id="rating">
     <name><![CDATA[rating]]></name>
     <label><![CDATA[Rating (Average)]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget>
+      <select id="0"><![CDATA[0 Stars]]></select>
+      <select id="1"><![CDATA[1 Star]]></select>
+      <select id="2"><![CDATA[2 Stars]]></select>
+      <select id="3"><![CDATA[3 Stars]]></select>
+      <select id="4"><![CDATA[4 Stars]]></select>
+      <select id="5"><![CDATA[5 Stars]]></select>
+    </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="">
+  <rule id="albumrating">
     <name><![CDATA[albumrating]]></name>
     <label><![CDATA[My Rating (Album)]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget>
+      <select id="0"><![CDATA[0 Stars]]></select>
+      <select id="1"><![CDATA[1 Star]]></select>
+      <select id="2"><![CDATA[2 Stars]]></select>
+      <select id="3"><![CDATA[3 Stars]]></select>
+      <select id="4"><![CDATA[4 Stars]]></select>
+      <select id="5"><![CDATA[5 Stars]]></select>
+    </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="">
+  <rule id="artistrating">
     <name><![CDATA[artistrating]]></name>
     <label><![CDATA[My Rating (Artist)]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget>
+      <select id="0"><![CDATA[0 Stars]]></select>
+      <select id="1"><![CDATA[1 Star]]></select>
+      <select id="2"><![CDATA[2 Stars]]></select>
+      <select id="3"><![CDATA[3 Stars]]></select>
+      <select id="4"><![CDATA[4 Stars]]></select>
+      <select id="5"><![CDATA[5 Stars]]></select>
+    </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="">
+  <rule id="my_flagged">
     <name><![CDATA[my_flagged]]></name>
     <label><![CDATA[My Favorite Songs]]></label>
     <type><![CDATA[boolean]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="">
+  <rule id="my_flagged_album">
     <name><![CDATA[my_flagged_album]]></name>
     <label><![CDATA[My Favorite Albums]]></label>
     <type><![CDATA[boolean]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="">
+  <rule id="my_flagged_artist">
     <name><![CDATA[my_flagged_artist]]></name>
     <label><![CDATA[My Favorite Artists]]></label>
     <type><![CDATA[boolean]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="">
+  <rule id="favorite">
     <name><![CDATA[favorite]]></name>
     <label><![CDATA[Favorites]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="">
+  <rule id="favorite_album">
     <name><![CDATA[favorite_album]]></name>
     <label><![CDATA[Favorites (Album)]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="">
+  <rule id="favorite_artist">
     <name><![CDATA[favorite_artist]]></name>
     <label><![CDATA[Favorites (Artist)]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="">
+  <rule id="other_user">
     <name><![CDATA[other_user]]></name>
     <label><![CDATA[Another User]]></label>
     <type><![CDATA[user_numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget>
+      <select id="2"><![CDATA[admin]]></select>
+      <select id="3"><![CDATA[demo]]></select>
+      <select id="4"><![CDATA[user]]></select>
+      <select id="10"><![CDATA[generic]]></select>
+    </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="">
+  <rule id="other_user_album">
     <name><![CDATA[other_user_album]]></name>
     <label><![CDATA[Another User (Album)]]></label>
     <type><![CDATA[user_numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget>
+      <select id="2"><![CDATA[admin]]></select>
+      <select id="3"><![CDATA[demo]]></select>
+      <select id="4"><![CDATA[user]]></select>
+      <select id="10"><![CDATA[generic]]></select>
+    </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="">
+  <rule id="other_user_artist">
     <name><![CDATA[other_user_artist]]></name>
     <label><![CDATA[Another User (Artist)]]></label>
     <type><![CDATA[user_numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget>
+      <select id="2"><![CDATA[admin]]></select>
+      <select id="3"><![CDATA[demo]]></select>
+      <select id="4"><![CDATA[user]]></select>
+      <select id="10"><![CDATA[generic]]></select>
+    </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="">
+  <rule id="played_times">
     <name><![CDATA[played_times]]></name>
     <label><![CDATA[# Played]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="skipped_times">
     <name><![CDATA[skipped_times]]></name>
     <label><![CDATA[# Skipped]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="played_or_skipped_times">
     <name><![CDATA[played_or_skipped_times]]></name>
     <label><![CDATA[# Played or Skipped]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="play_skip_ratio">
     <name><![CDATA[play_skip_ratio]]></name>
     <label><![CDATA[Played/Skipped ratio]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="last_play">
     <name><![CDATA[last_play]]></name>
     <label><![CDATA[My Last Play]]></label>
     <type><![CDATA[days]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="last_skip">
     <name><![CDATA[last_skip]]></name>
     <label><![CDATA[My Last Skip]]></label>
     <type><![CDATA[days]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="last_play_or_skip">
     <name><![CDATA[last_play_or_skip]]></name>
     <label><![CDATA[My Last Play or Skip]]></label>
     <type><![CDATA[days]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="played">
     <name><![CDATA[played]]></name>
     <label><![CDATA[Played]]></label>
     <type><![CDATA[boolean]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="myplayed">
     <name><![CDATA[myplayed]]></name>
     <label><![CDATA[Played by Me]]></label>
     <type><![CDATA[boolean]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="myplayedalbum">
     <name><![CDATA[myplayedalbum]]></name>
     <label><![CDATA[Played by Me (Album)]]></label>
     <type><![CDATA[boolean]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="myplayedartist">
     <name><![CDATA[myplayedartist]]></name>
     <label><![CDATA[Played by Me (Artist)]]></label>
     <type><![CDATA[boolean]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="myplayed_times">
     <name><![CDATA[myplayed_times]]></name>
     <label><![CDATA[# Played by Me]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="myskipped_times">
     <name><![CDATA[myskipped_times]]></name>
     <label><![CDATA[# Skipped by Me]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="myplayed_or_skipped_times">
     <name><![CDATA[myplayed_or_skipped_times]]></name>
     <label><![CDATA[# Played or Skipped by Me]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="recent_played">
     <name><![CDATA[recent_played]]></name>
     <label><![CDATA[Recently played]]></label>
     <type><![CDATA[recent_played]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Play History]]></title>
   </rule>
-  <rule id="">
+  <rule id="genre">
     <name><![CDATA[genre]]></name>
     <label><![CDATA[Genre]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Genre]]></title>
   </rule>
-  <rule id="">
+  <rule id="album_genre">
     <name><![CDATA[album_genre]]></name>
     <label><![CDATA[Album Genre]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Genre]]></title>
   </rule>
-  <rule id="">
+  <rule id="artist_genre">
     <name><![CDATA[artist_genre]]></name>
     <label><![CDATA[Artist Genre]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Genre]]></title>
   </rule>
-  <rule id="">
+  <rule id="no_genre">
     <name><![CDATA[no_genre]]></name>
     <label><![CDATA[No Genre]]></label>
     <type><![CDATA[is_true]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Genre]]></title>
   </rule>
-  <rule id="">
+  <rule id="genre_count_song">
     <name><![CDATA[genre_count_song]]></name>
     <label><![CDATA[Song Count]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Genre]]></title>
   </rule>
-  <rule id="">
+  <rule id="genre_count_album">
     <name><![CDATA[genre_count_album]]></name>
     <label><![CDATA[Album Count]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Genre]]></title>
   </rule>
-  <rule id="">
+  <rule id="genre_count_artist">
     <name><![CDATA[genre_count_artist]]></name>
     <label><![CDATA[Artist Count]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Genre]]></title>
   </rule>
-  <rule id="">
+  <rule id="playlist">
     <name><![CDATA[playlist]]></name>
     <label><![CDATA[Playlist]]></label>
     <type><![CDATA[boolean_subsearch]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget>
+      <select id="65"><![CDATA[Nofi]]></select>
+      <select id="3"><![CDATA[random - admin - private (admin)]]></select>
+      <select id="2"><![CDATA[random - admin - public (admin)]]></select>
+      <select id="4"><![CDATA[random - user - private]]></select>
+    </widget>
     <title><![CDATA[Playlists]]></title>
   </rule>
-  <rule id="">
+  <rule id="smartplaylist">
     <name><![CDATA[smartplaylist]]></name>
     <label><![CDATA[Smart Playlist]]></label>
     <type><![CDATA[boolean_subsearch]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget>
+      <select id="21"><![CDATA[admin - 02/23/2021 14:36:44 (admin)]]></select>
+      <select id="14"><![CDATA[Album 1* (System)]]></select>
+      <select id="13"><![CDATA[Album 2* (System)]]></select>
+      <select id="12"><![CDATA[Album 3* (System)]]></select>
+      <select id="11"><![CDATA[Album 4* (System)]]></select>
+      <select id="10"><![CDATA[Album 5* (System)]]></select>
+      <select id="9"><![CDATA[Artist 1* (System)]]></select>
+      <select id="8"><![CDATA[Artist 2* (System)]]></select>
+      <select id="7"><![CDATA[Artist 3* (System)]]></select>
+      <select id="6"><![CDATA[Artist 4* (System)]]></select>
+      <select id="5"><![CDATA[Artist 5* (System)]]></select>
+      <select id="19"><![CDATA[Song 1* (System)]]></select>
+      <select id="18"><![CDATA[Song 2* (System)]]></select>
+      <select id="17"><![CDATA[Song 3* (System)]]></select>
+      <select id="16"><![CDATA[Song 4* (System)]]></select>
+      <select id="15"><![CDATA[Song 5* (System)]]></select>
+      <select id="20"><![CDATA[Unplayed by me (demo)]]></select>
+      <select id="22"><![CDATA[user - 07/18/2024 11:54:12]]></select>
+    </widget>
     <title><![CDATA[Playlists]]></title>
   </rule>
-  <rule id="">
+  <rule id="playlist_name">
     <name><![CDATA[playlist_name]]></name>
     <label><![CDATA[Playlist Name]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[Playlists]]></title>
   </rule>
-  <rule id="">
+  <rule id="file">
     <name><![CDATA[file]]></name>
     <label><![CDATA[Filename]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="bitrate">
     <name><![CDATA[bitrate]]></name>
     <label><![CDATA[Bitrate]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget>
+      <select id="32"><![CDATA[32]]></select>
+      <select id="40"><![CDATA[40]]></select>
+      <select id="48"><![CDATA[48]]></select>
+      <select id="56"><![CDATA[56]]></select>
+      <select id="64"><![CDATA[64]]></select>
+      <select id="80"><![CDATA[80]]></select>
+      <select id="96"><![CDATA[96]]></select>
+      <select id="112"><![CDATA[112]]></select>
+      <select id="128"><![CDATA[128]]></select>
+      <select id="160"><![CDATA[160]]></select>
+      <select id="192"><![CDATA[192]]></select>
+      <select id="224"><![CDATA[224]]></select>
+      <select id="256"><![CDATA[256]]></select>
+      <select id="320"><![CDATA[320]]></select>
+      <select id="640"><![CDATA[640]]></select>
+      <select id="1280"><![CDATA[1280]]></select>
+    </widget>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="added">
     <name><![CDATA[added]]></name>
     <label><![CDATA[Added]]></label>
     <type><![CDATA[date]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="updated">
     <name><![CDATA[updated]]></name>
     <label><![CDATA[Updated]]></label>
     <type><![CDATA[date]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="license">
     <name><![CDATA[license]]></name>
     <label><![CDATA[Music License]]></label>
     <type><![CDATA[boolean_numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget>
+      <select id="1"><![CDATA[0 - default]]></select>
+      <select id="2"><![CDATA[CC BY 3.0]]></select>
+      <select id="3"><![CDATA[CC BY NC 3.0]]></select>
+      <select id="4"><![CDATA[CC BY NC ND 3.0]]></select>
+      <select id="5"><![CDATA[CC BY NC SA 3.0]]></select>
+      <select id="6"><![CDATA[CC BY ND 3.0]]></select>
+      <select id="7"><![CDATA[CC BY SA 3.0]]></select>
+      <select id="8"><![CDATA[Licence Art Libre]]></select>
+      <select id="9"><![CDATA[Yellow OpenMusic]]></select>
+      <select id="10"><![CDATA[Green OpenMusic]]></select>
+      <select id="11"><![CDATA[Gnu GPL Art]]></select>
+      <select id="12"><![CDATA[WTFPL]]></select>
+      <select id="13"><![CDATA[FMPL]]></select>
+      <select id="14"><![CDATA[C Reaction]]></select>
+    </widget>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="no_license">
     <name><![CDATA[no_license]]></name>
     <label><![CDATA[No Music License]]></label>
     <type><![CDATA[is_true]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="recent_added">
     <name><![CDATA[recent_added]]></name>
     <label><![CDATA[Recently added]]></label>
     <type><![CDATA[recent_added]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="recent_updated">
     <name><![CDATA[recent_updated]]></name>
     <label><![CDATA[Recently updated]]></label>
     <type><![CDATA[recent_updated]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="possible_duplicate">
     <name><![CDATA[possible_duplicate]]></name>
     <label><![CDATA[Possible Duplicate]]></label>
     <type><![CDATA[is_true]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="duplicate_tracks">
     <name><![CDATA[duplicate_tracks]]></name>
     <label><![CDATA[Duplicate Album Tracks]]></label>
     <type><![CDATA[is_true]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="possible_duplicate_album">
     <name><![CDATA[possible_duplicate_album]]></name>
     <label><![CDATA[Possible Duplicate Albums]]></label>
     <type><![CDATA[is_true]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="orphaned_album">
     <name><![CDATA[orphaned_album]]></name>
     <label><![CDATA[Orphaned Album]]></label>
     <type><![CDATA[is_true]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="catalog">
     <name><![CDATA[catalog]]></name>
     <label><![CDATA[Catalog]]></label>
     <type><![CDATA[boolean_numeric]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget>
+      <select id="1"><![CDATA[music]]></select>
+      <select id="4"><![CDATA[upload]]></select>
+    </widget>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="waveform">
     <name><![CDATA[waveform]]></name>
     <label><![CDATA[Waveform]]></label>
     <type><![CDATA[boolean]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>
-  <rule id="">
+  <rule id="mbid">
     <name><![CDATA[mbid]]></name>
     <label><![CDATA[MusicBrainz ID]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[MusicBrainz]]></title>
   </rule>
-  <rule id="">
+  <rule id="mbid_album">
     <name><![CDATA[mbid_album]]></name>
     <label><![CDATA[MusicBrainz ID (Album)]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[MusicBrainz]]></title>
   </rule>
-  <rule id="">
+  <rule id="mbid_artist">
     <name><![CDATA[mbid_artist]]></name>
     <label><![CDATA[MusicBrainz ID (Artist)]]></label>
     <type><![CDATA[text]]></type>
-    <widget><![CDATA[Array]]></widget>
+    <widget/>
     <title><![CDATA[MusicBrainz]]></title>
   </rule>
 </root>

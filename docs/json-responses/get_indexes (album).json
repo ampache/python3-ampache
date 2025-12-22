@@ -1,21 +1,21 @@
 {
     "total_count": 9,
-    "md5": "56b9dbda97055de3f4c18b575499fc5e",
+    "md5": "ea22fb7cee876495ff91c6b941a08af7",
     "album": [
         {
-            "id": "12",
+            "id": "23",
             "name": "Buried in Nausea",
             "prefix": null,
             "basename": "Buried in Nausea",
             "artist": {
-                "id": "19",
+                "id": "38",
                 "name": "Various Artists",
                 "prefix": null,
                 "basename": "Various Artists"
             },
             "artists": [
                 {
-                    "id": "19",
+                    "id": "38",
                     "name": "Various Artists",
                     "prefix": null,
                     "basename": "Various Artists"
@@ -89,12 +89,13 @@
                     "name": "Punk"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "mbid": null
+            "mbid": null,
+            "mbid_group": null
         },
         {
             "id": "10",
@@ -135,7 +136,8 @@
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "mbid": null
+            "mbid": null,
+            "mbid_group": null
         },
         {
             "id": "2",
@@ -181,7 +183,8 @@
             "flag": true,
             "rating": 5,
             "averagerating": 3,
-            "mbid": null
+            "mbid": null,
+            "mbid_group": null
         },
         {
             "id": "9",
@@ -222,7 +225,8 @@
             "flag": false,
             "rating": 3,
             "averagerating": null,
-            "mbid": null
+            "mbid": null,
+            "mbid_group": null
         }
     ]
 }

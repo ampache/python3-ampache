@@ -1,18 +1,18 @@
 {
     "total_count": 1,
-    "md5": "527ae43fbb62bf30a4735548489175dd",
+    "md5": "944a9f4dea178d87e8cc3bd19b9fecc6",
     "playlist": [
         {
-            "id": "65",
-            "name": "documentation json",
+            "id": "4",
+            "name": "random - user - private",
             "owner": "user",
             "user": {
                 "id": "4",
                 "username": "user"
             },
-            "items": 0,
-            "type": "public",
-            "art": "https:\/\/music.com.au\/image.php?object_id=65&object_type=playlist",
+            "items": 43,
+            "type": "private",
+            "art": "https:\/\/music.com.au\/image.php?object_id=4&object_type=playlist",
             "has_access": true,
             "has_collaborate": true,
             "has_art": false,
@@ -20,7 +20,7 @@
             "rating": null,
             "averagerating": null,
             "md5": null,
-            "last_update": 1747878090
+            "last_update": 1614054938
         }
     ]
 }
