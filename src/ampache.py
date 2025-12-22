@@ -2673,8 +2673,6 @@ class API(object):
         """
         if isinstance(rating, str) and rating.isdigit():
             rating = int(rating)
-        else:
-            rating = 0
         if (rating < 0 or rating > 5) or not (
                 object_type == 'song' or object_type == 'album' or object_type == 'artist'):
             return False
