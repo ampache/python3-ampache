@@ -39,7 +39,7 @@ class API(object):
 
     def __init__(self):
         self.AMPACHE_API = 'xml'
-        self.AMPACHE_VERSION = '6.7.3'
+        self.AMPACHE_VERSION = '6.9.0'
         self.AMPACHE_SERVER = ''
         self.AMPACHE_DEBUG = False
         self.DOCS_PATH = 'docs/'
@@ -2272,6 +2272,22 @@ class API(object):
                 'limit': str(limit)}
         return self.get_request(ampache_url, data, api_method)
 
+    def search_rules(self, filter_str):
+        """ search_rules
+            MINIMUM_API_VERSION=6.8.0
+
+            Print a list of valid search rules for your search type
+
+            INPUTS
+            * filter_str = (string) 'song', 'album', 'song_artist', 'album_artist', 'artist', 'label', 'playlist', 'podcast', 'podcast_episode', 'genre', 'user', 'video'
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'search_rules'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str}
+        return self.get_request(ampache_url, data, api_method)
+
     def search(self, rules, operator='and', object_type='song', offset=0, limit=0, random=0):
         """ search
             MINIMUM_API_VERSION=380001
@@ -3994,6 +4010,10 @@ class API(object):
                 if not "ampache_api" in params:
                     params["ampache_api"] = self.AMPACHE_SESSION
                 return self.ping(params["ampache_url"], params["ampache_api"])
+            case 'search_rules':
+                if not "filter_str" in params:
+                    return False
+                return self.search_rules(params["filter_str"])
             case 'advanced_search':
                 if not "rules" in params:
                     params["rules"] = list()
@@ -4331,6 +4351,12 @@ class API(object):
                 if not "filter_id" in params or not "object_type" in params:
                     return False
                 return self.get_external_metadata(params["filter_id"], params["object_type"])
+            case 'get_lyrics':
+                if not "filter_id" in params:
+                    return False
+                if not "plugins" in params:
+                    params["plugins"] = False
+                return self.get_lyrics(params["filter_id"], params["plugins"])
             case 'get_indexes':
                 if not "filter_str" in params:
                     params["filter_str"] = False
