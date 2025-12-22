@@ -1395,7 +1395,7 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def user_playlists(self, filter_str=False, exact=False, offset=0, limit=0,
-                       sort=False, cond=False):
+                       sort=False, cond=False, include=False):
         """ user_playlists
             MINIMUM_API_VERSION=6.3.0
 
@@ -1408,6 +1408,7 @@ class API(object):
             * limit      = (integer) //optional
             * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * include    = (integer) 0,1, if true include playlist contents
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'user_playlists'
@@ -1418,7 +1419,8 @@ class API(object):
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
-                'cond': cond}
+                'cond': cond,
+                'include': include}
         if not filter_str:
             data.pop('filter')
         if not exact:
@@ -1427,10 +1429,12 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        if not include:
+            data.pop('include')
         return self.get_request(ampache_url, data, api_method)
 
     def user_smartlists(self, filter_str=False, exact=False, offset=0, limit=0,
-                        sort=False, cond=False):
+                        sort=False, cond=False, include=False):
         """ user_smartlists
             MINIMUM_API_VERSION=6.3.0
 
@@ -1443,6 +1447,7 @@ class API(object):
             * limit      = (integer) //optional
             * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * include    = (integer) 0,1, if true include playlist contents
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'user_smartlists'
@@ -1453,7 +1458,8 @@ class API(object):
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
-                'cond': cond}
+                'cond': cond,
+                'include': include}
         if not filter_str:
             data.pop('filter')
         if not exact:
@@ -1462,6 +1468,8 @@ class API(object):
             data.pop('sort')
         if not cond:
             data.pop('cond')
+        if not include:
+            data.pop('include')
         return self.get_request(ampache_url, data, api_method)
 
     def playlists(self, filter_str=False, exact=False, offset=0, limit=0, hide_search=False,
