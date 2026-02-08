@@ -3,7 +3,7 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "7.9.0",
         "openSubsonic": true,
         "albumList": {
             "album": [
@@ -19,6 +19,8 @@
                     "artist": "Comfort Fit",
                     "coverArt": "al-21",
                     "duration": 4248,
+                    "playCount": 3,
+                    "created": "2021-07-22T02:09:31Z",
                     "year": 2005,
                     "genre": "Hip-Hop",
                     "genres": [
@@ -39,6 +41,8 @@
                     "artist": "Various Artists",
                     "coverArt": "al-12",
                     "duration": 1879,
+                    "playCount": 1,
+                    "created": "2021-02-24T01:44:21Z",
                     "year": 2012,
                     "genre": "Punk",
                     "genres": [
@@ -59,6 +63,8 @@
                     "artist": "IOK-1",
                     "coverArt": "al-7",
                     "duration": 3428,
+                    "playCount": 13,
+                    "created": "2021-02-23T04:24:51Z",
                     "year": 2011,
                     "genre": "Dark Ambient",
                     "genres": [
@@ -80,6 +86,8 @@
                     "coverArt": "al-8",
                     "duration": 4423,
                     "userRating": 2,
+                    "playCount": 9,
+                    "created": "2021-02-23T04:24:51Z",
                     "genre": "Electronica,Dance",
                     "genres": [
                         {
@@ -102,7 +110,9 @@
                     "artist": "Warfare 3.0",
                     "coverArt": "al-9",
                     "duration": 592,
-                    "userRating": 3
+                    "userRating": 3,
+                    "playCount": 4,
+                    "created": "2021-02-23T04:24:51Z"
                 },
                 {
                     "id": "al-10",
@@ -116,22 +126,9 @@
                     "artist": "CARN\u00daN",
                     "coverArt": "al-10",
                     "duration": 3873,
+                    "playCount": 6,
+                    "created": "2021-02-23T04:24:51Z",
                     "year": 1996
-                },
-                {
-                    "id": "al-6",
-                    "parent": "ar-12",
-                    "title": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
-                    "album": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "artistId": "ar-12",
-                    "artist": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
-                    "coverArt": "al-6",
-                    "duration": 600,
-                    "userRating": 1,
-                    "averageRating": 1
                 },
                 {
                     "id": "al-18",
@@ -147,6 +144,8 @@
                     "duration": 1339,
                     "userRating": 4,
                     "averageRating": 3.67,
+                    "playCount": 3,
+                    "created": "2021-02-23T04:24:50Z",
                     "year": 2007,
                     "genre": "Noise",
                     "genres": [
@@ -154,6 +153,23 @@
                             "name": "Noise"
                         }
                     ]
+                },
+                {
+                    "id": "al-6",
+                    "parent": "ar-12",
+                    "title": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
+                    "album": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "artistId": "ar-12",
+                    "artist": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                    "coverArt": "al-6",
+                    "duration": 600,
+                    "userRating": 1,
+                    "averageRating": 1,
+                    "playCount": 2,
+                    "created": "2021-02-23T04:24:50Z"
                 },
                 {
                     "id": "al-2",
@@ -169,6 +185,8 @@
                     "duration": 4568,
                     "userRating": 5,
                     "averageRating": 3,
+                    "playCount": 7,
+                    "created": "2021-02-23T04:24:48Z",
                     "starred": "2021-02-22T05:51:53Z",
                     "year": 2007,
                     "genre": "Electronic",
