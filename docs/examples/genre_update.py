@@ -77,8 +77,11 @@ def update_music_metadata(ampache_connection, update_list):
                             genres = filter_genres(existing_genres)
                             if not sorted(existing_genres) == sorted(genres):
                                 audio["genre"] = genres
-                                audio.save()
-                                change = True
+                                try:
+                                    audio.save()
+                                    change = True
+                                except:
+                                    pass
                     else:
                         if "filename" in song:
                             music_file = song['filename']
