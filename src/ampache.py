@@ -2398,7 +2398,7 @@ class API(object):
             the rules can occur multiple times and are joined by the operator item.
 
             Refer to the wiki for further information
-            http://ampache.org/api/api-advanced-search
+            https://ampache.org/api/api-advanced-search
 
             INPUTS
             * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
@@ -3902,7 +3902,7 @@ class API(object):
             the rules can occur multiple times and are joined by the operator item.
 
             Refer to the wiki for further information
-            http://ampache.org/api/api-advanced-search
+            https://ampache.org/api/api-advanced-search
 
             INPUTS
             * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
