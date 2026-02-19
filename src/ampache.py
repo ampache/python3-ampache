@@ -3359,16 +3359,17 @@ class API(object):
             data.pop('subcategory')
         return self.get_request(ampache_url, data, api_method)
 
-    def preference_edit(self, filter_str, value, apply_all=0):
+    def preference_edit(self, filter_str, value, apply_all=0, default=0):
         """ preference_edit
             MINIMUM_API_VERSION=5.0.0
 
             Returns preference based on the specified filter_str
 
             INPUTS
-            * filter_str  = (string) search the name of a preference
-            * value       = (string|integer) Preference value
-            * apply_all   = (boolean) apply to all users //optional
+            * filter_str = (string) search the name of a preference
+            * value      = (string|integer) Preference value
+            * apply_all  = (boolean) apply to all users //optional
+            * default    = (boolean) if true set as system default (New and public users) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'preference_edit'
@@ -3376,7 +3377,8 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'value': value,
-                'all': apply_all}
+                'all': apply_all,
+                'default': default}
         return self.get_request(ampache_url, data, api_method)
 
     def preference_delete(self, filter_str):
