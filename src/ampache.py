@@ -1762,6 +1762,100 @@ class API(object):
             data.pop('flag')
         return self.get_request(ampache_url, data, api_method)
 
+    def smartlists(self, filter_str=False, exact=False, offset=0, limit=0, include=False, sort=False, cond=False):
+        """ smartlists
+            MINIMUM_API_VERSION=380001
+
+            This returns smartlists based on the specified filter
+
+            INPUTS
+            * filter_str  = (string) search the name of a smartlist //optional
+            * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+            * include     = (integer) 0,1, if true include the objects in the smartlist //optional
+            * cond        = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'smartlists'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str,
+                'exact': exact,
+                'offset': str(offset),
+                'limit': str(limit),
+                'include': include,
+                'sort': sort,
+                'cond': cond}
+        if not filter_str:
+            data.pop('filter')
+        if not exact:
+            data.pop('exact')
+        if not include:
+            data.pop('include')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
+        return self.get_request(ampache_url, data, api_method)
+
+    def smartlist(self, filter_id: int):
+        """ smartlist
+            MINIMUM_API_VERSION=380001
+
+            This returns a single smartlist
+
+            INPUTS
+            * filter_id  = (integer) $smartlist_id
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'smartlist'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        return self.get_request(ampache_url, data, api_method)
+
+    def smartlist_songs(self, filter_id: int, random=False, offset=0, limit=0):
+        """ smartlist_songs
+            MINIMUM_API_VERSION=380001
+
+            This returns the songs for a smartlist
+
+            INPUTS
+            * filter_id   = (integer) $smartlist_id
+            * random      = (integer) 0,1, if true get random songs using limit //optional
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'smartlist_songs'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'random': random,
+                'offset': str(offset),
+                'limit': str(limit)}
+        if not random:
+            data.pop('random')
+        return self.get_request(ampache_url, data, api_method)
+
+    def smartlist_delete(self, filter_id: int):
+        """ smartlist_delete
+            MINIMUM_API_VERSION=380001
+
+            This deletes a smartlist
+
+            INPUTS
+            * filter_id   = (integer) $smartlist_id
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'smartlist_delete'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        return self.get_request(ampache_url, data, api_method)
+
     def shares(self, filter_str=False,
                exact=False, offset=0, limit=0, sort=False, cond=False):
         """ shares
@@ -4558,10 +4652,40 @@ class API(object):
                     params["client"] = CLIENT_NAME
                 return self.player(params["filter_str"], params["object_type"], params["state"],
                                    params["play_time"], params["client"])
+            case 'playlists':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "hide_search" in params:
+                    params["hide_search"] = False
+                if not "show_dupes" in params:
+                    params["show_dupes"] = False
+                if not "include" in params:
+                    params["include"] = False
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.playlists(params["filter_str"], params["exact"], params["offset"], params["limit"],
+                                      params["hide_search"], params["show_dupes"], params["include"],
+                                      params["sort"], params["cond"])
             case 'playlist':
                 if not "filter_id" in params:
                     return False
                 return self.playlist(params["filter_id"])
+            case 'playlist_songs':
+                if not "random" in params:
+                    params["random"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.playlist_songs(params["filter_id"], params["random"], params["offset"], params["limit"])
             case 'playlist_add':
                 if not "filter_id" in params or not "object_id" in params or not "object_type" in params:
                     return False
@@ -4621,36 +4745,6 @@ class API(object):
                 if not "track" in params:
                     params["track"] = False
                 return self.playlist_remove_song(params["filter_id"])
-            case 'playlists':
-                if not "filter_str" in params:
-                    params["filter_str"] = False
-                if not "exact" in params:
-                    params["exact"] = False
-                if not "offset" in params:
-                    params["offset"] = 0
-                if not "limit" in params:
-                    params["limit"] = 0
-                if not "hide_search" in params:
-                    params["hide_search"] = False
-                if not "show_dupes" in params:
-                    params["show_dupes"] = False
-                if not "include" in params:
-                    params["include"] = False
-                if not "sort" in params:
-                    params["sort"] = False
-                if not "cond" in params:
-                    params["cond"] = False
-                return self.playlists(params["filter_str"], params["exact"], params["offset"], params["limit"],
-                                      params["hide_search"], params["show_dupes"], params["include"],
-                                      params["sort"], params["cond"])
-            case 'playlist_songs':
-                if not "random" in params:
-                    params["random"] = False
-                if not "offset" in params:
-                    params["offset"] = 0
-                if not "limit" in params:
-                    params["limit"] = 0
-                return self.playlist_songs(params["filter_id"], params["random"], params["offset"], params["limit"])
             case 'podcast':
                 if not "include" in params:
                     params["include"] = False
@@ -4804,6 +4898,43 @@ class API(object):
                     params["cond"] = False
                 return self.shares(params["filter_str"], params["exact"], params["offset"], params["limit"],
                                    params["sort"], params["cond"])
+            case 'smartlists':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "hide_search" in params:
+                    params["hide_search"] = False
+                if not "show_dupes" in params:
+                    params["show_dupes"] = False
+                if not "include" in params:
+                    params["include"] = False
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.smartlists(params["filter_str"], params["exact"], params["offset"], params["limit"],
+                                      params["include"], params["sort"], params["cond"])
+            case 'smartlist':
+                if not "filter_id" in params:
+                    return False
+                return self.smartlist(params["filter_id"])
+            case 'smartlist_songs':
+                if not "random" in params:
+                    params["random"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.smartlist_songs(params["filter_id"], params["random"], params["offset"], params["limit"])
+            case 'smartlist_delete':
+                if not "filter_id" in params:
+                    return False
+                return self.smartlist_delete(params["filter_id"])
             case 'song':
                 if not "filter_id" in params:
                     return False
