@@ -1,51 +1,47 @@
 {
-    "id": "8",
-    "name": "Nofi Devices",
+    "id": "2",
+    "name": "Colorsmoke EP",
     "prefix": null,
-    "basename": "Nofi Devices",
+    "basename": "Colorsmoke EP",
     "artist": {
-        "id": "14",
-        "name": "Nofi\/found.",
+        "id": "2",
+        "name": "Synthetic",
         "prefix": null,
-        "basename": "Nofi\/found."
+        "basename": "Synthetic"
     },
     "artists": [
         {
-            "id": "14",
-            "name": "Nofi\/found.",
+            "id": "2",
+            "name": "Synthetic",
             "prefix": null,
-            "basename": "Nofi\/found."
+            "basename": "Synthetic"
         }
     ],
     "songartists": [
         {
-            "id": "14",
-            "name": "Nofi\/found.",
+            "id": "2",
+            "name": "Synthetic",
             "prefix": null,
-            "basename": "Nofi\/found."
+            "basename": "Synthetic"
         }
     ],
-    "time": 4423,
-    "year": 0,
+    "time": 4568,
+    "year": 2007,
     "tracks": [],
-    "songcount": 11,
+    "songcount": 12,
     "diskcount": 1,
     "type": null,
     "genre": [
         {
-            "id": "5",
-            "name": "Electronica"
-        },
-        {
-            "id": "6",
-            "name": "Dance"
+            "id": "1",
+            "name": "Electronic"
         }
     ],
-    "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album",
+    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
     "has_art": true,
-    "flag": false,
-    "rating": 2,
-    "averagerating": null,
+    "flag": true,
+    "rating": 5,
+    "averagerating": 3,
     "mbid": null,
     "mbid_group": null
 }

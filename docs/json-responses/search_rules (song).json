@@ -455,7 +455,7 @@
         },
         {
             "name": "recent_played",
-            "label": "Recently played",
+            "label": "Recently Played",
             "type": "recent_played",
             "widget": [
                 "input",
@@ -626,7 +626,7 @@
         },
         {
             "name": "added",
-            "label": "Added",
+            "label": "Date Added",
             "type": "date",
             "widget": [
                 "input",
@@ -636,7 +636,7 @@
         },
         {
             "name": "updated",
-            "label": "Updated",
+            "label": "Date Updated",
             "type": "date",
             "widget": [
                 "input",
@@ -681,7 +681,7 @@
         },
         {
             "name": "recent_added",
-            "label": "Recently added",
+            "label": "Recently Added",
             "type": "recent_added",
             "widget": [
                 "input",
@@ -691,8 +691,28 @@
         },
         {
             "name": "recent_updated",
-            "label": "Recently updated",
+            "label": "Recently Updated",
             "type": "recent_updated",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "days_added",
+            "label": "Added",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "days_updated",
+            "label": "Updated",
+            "type": "days",
             "widget": [
                 "input",
                 "number"

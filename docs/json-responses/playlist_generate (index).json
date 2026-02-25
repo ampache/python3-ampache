@@ -1,235 +1,11 @@
 {
     "total_count": 4,
-    "md5": "f7da795c7960e1dae53dfc926ebc6e27",
+    "md5": "4156e2465f81e4d67c807de1905e6138",
     "song": [
         {
-            "id": "127",
-            "title": "She Knows Me Now",
-            "name": "She Knows Me Now",
-            "artist": {
-                "id": "36",
-                "name": "Comfort Fit",
-                "prefix": null,
-                "basename": "Comfort Fit"
-            },
-            "artists": [
-                {
-                    "id": "36",
-                    "name": "Comfort Fit",
-                    "prefix": null,
-                    "basename": "Comfort Fit"
-                }
-            ],
-            "album": {
-                "id": "21",
-                "name": "Forget and Remember",
-                "prefix": null,
-                "basename": "Forget and Remember"
-            },
-            "albumartist": {
-                "id": "36",
-                "name": "Comfort Fit",
-                "prefix": null,
-                "basename": "Comfort Fit"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 10,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/10 - She Knows Me Now (re-edit).mp3",
-            "genre": [
-                {
-                    "id": "8",
-                    "name": "Hip-Hop"
-                }
-            ],
-            "playlisttrack": 1,
-            "time": 209,
-            "year": 2005,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 217167,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=127&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20She%20Knows%20Me%20Now.mp3",
-            "size": 5690938,
-            "mbid": "3845cef9-b874-449f-94a5-5c9acdead9df",
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 4,
-            "composer": null,
-            "channels": 2,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-10-comfort_fit-she_knows_me_now_feat_mercury_waters__prymer\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
-            "license": null,
-            "publisher": "Tokyo Dawn Records",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "91",
-            "title": "Home Capsules",
-            "name": "Home Capsules",
-            "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "artists": [
-                {
-                    "id": "14",
-                    "name": "Nofi\/found.",
-                    "prefix": null,
-                    "basename": "Nofi\/found."
-                }
-            ],
-            "album": {
-                "id": "8",
-                "name": "Nofi Devices",
-                "prefix": null,
-                "basename": "Nofi Devices"
-            },
-            "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 9,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/09_Home_Capsules.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 294,
-            "year": 0,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 192000,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3",
-            "size": 7076428,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
-            "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
-            "license": null,
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": -2.97,
-            "replaygain_track_peak": 1,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "96",
-            "title": "Creeping Lawler 2",
-            "name": "Creeping Lawler 2",
-            "artist": {
-                "id": "15",
-                "name": "Warfare 3.0",
-                "prefix": null,
-                "basename": "Warfare 3.0"
-            },
-            "artists": [
-                {
-                    "id": "15",
-                    "name": "Warfare 3.0",
-                    "prefix": null,
-                    "basename": "Warfare 3.0"
-                }
-            ],
-            "album": {
-                "id": "9",
-                "name": "Creeping Lawler 2",
-                "prefix": null,
-                "basename": "Creeping Lawler 2"
-            },
-            "albumartist": {
-                "id": "15",
-                "name": "Warfare 3.0",
-                "prefix": null,
-                "basename": "Warfare 3.0"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.wav",
-            "genre": [],
-            "playlisttrack": 3,
-            "time": 296,
-            "year": 0,
-            "format": "wav",
-            "stream_format": "mp3",
-            "bitrate": 1411200,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/wav",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
-            "size": 52345628,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 5,
-            "catalog": 1,
-            "composer": null,
-            "channels": 2,
-            "comment": null,
-            "license": null,
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": -4.31,
-            "replaygain_track_peak": 0.989,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "84",
-            "title": "Vansinne",
-            "name": "Vansinne",
+            "id": "83",
+            "title": "Sensorisk Deprivation",
+            "name": "Sensorisk Deprivation",
             "artist": {
                 "id": "13",
                 "name": "IOK-1",
@@ -258,34 +34,34 @@
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/04_-_IOK-1_-_Vansinne.flac",
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/01_-_IOK-1_-_Sensorisk_Deprivation.flac",
             "genre": [
                 {
                     "id": "4",
                     "name": "Dark Ambient"
                 }
             ],
-            "playlisttrack": 4,
-            "time": 787,
+            "playlisttrack": 1,
+            "time": 818,
             "year": 2011,
             "format": "flac",
             "stream_format": "mp3",
-            "bitrate": 713176,
+            "bitrate": 385823,
             "stream_bitrate": 32000,
             "rate": 44100,
             "mode": "vbr",
             "mime": "audio\/flac",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vansinne.mp3",
-            "size": 70182824,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=83&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Sensorisk%20Deprivation.mp3",
+            "size": 39473388,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=3&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "playcount": 0,
+            "playcount": 13,
             "catalog": 1,
             "composer": null,
             "channels": 2,
@@ -296,8 +72,228 @@
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -5.35,
-            "replaygain_track_peak": 0.7,
+            "replaygain_track_gain": 1.11,
+            "replaygain_track_peak": 0.977,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "108",
+            "title": "I've been down this road before",
+            "name": "I've been down this road before",
+            "artist": {
+                "id": "21",
+                "name": "Tip-C (featuring Mike Beers)",
+                "prefix": null,
+                "basename": "Tip-C (featuring Mike Beers)"
+            },
+            "artists": [
+                {
+                    "id": "21",
+                    "name": "Tip-C (featuring Mike Beers)",
+                    "prefix": null,
+                    "basename": "Tip-C (featuring Mike Beers)"
+                }
+            ],
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": null,
+                "basename": "Various Artists"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 6,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
+            "genre": [],
+            "playlisttrack": 2,
+            "time": 252,
+            "year": 2012,
+            "format": "wma",
+            "stream_format": "mp3",
+            "bitrate": 32582,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.mp3",
+            "size": 1035322,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": 1,
+            "comment": null,
+            "license": null,
+            "publisher": null,
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "122",
+            "title": "Thursday Is Thursty",
+            "name": "Thursday Is Thursty",
+            "artist": {
+                "id": "36",
+                "name": "Comfort Fit",
+                "prefix": null,
+                "basename": "Comfort Fit"
+            },
+            "artists": [
+                {
+                    "id": "36",
+                    "name": "Comfort Fit",
+                    "prefix": null,
+                    "basename": "Comfort Fit"
+                }
+            ],
+            "album": {
+                "id": "21",
+                "name": "Forget and Remember",
+                "prefix": null,
+                "basename": "Forget and Remember"
+            },
+            "albumartist": {
+                "id": "36",
+                "name": "Comfort Fit",
+                "prefix": null,
+                "basename": "Comfort Fit"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 7,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/7 - Thursday is Thursdy.mp3",
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 92,
+            "year": 2005,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 225219,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=122&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Thursday%20Is%20Thursty.mp3",
+            "size": 2607497,
+            "mbid": "36fa39a1-483d-49d9-907b-17c4e3d60b47",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=334&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 4,
+            "composer": null,
+            "channels": 2,
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-07-comfort_fit-thursday_is_thursty\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+            "license": null,
+            "publisher": "Tokyo Dawn Records",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "133",
+            "title": "Kurz Vor Danach Ganz '05",
+            "name": "Kurz Vor Danach Ganz '05",
+            "artist": {
+                "id": "36",
+                "name": "Comfort Fit",
+                "prefix": null,
+                "basename": "Comfort Fit"
+            },
+            "artists": [
+                {
+                    "id": "36",
+                    "name": "Comfort Fit",
+                    "prefix": null,
+                    "basename": "Comfort Fit"
+                }
+            ],
+            "album": {
+                "id": "21",
+                "name": "Forget and Remember",
+                "prefix": null,
+                "basename": "Forget and Remember"
+            },
+            "albumartist": {
+                "id": "36",
+                "name": "Comfort Fit",
+                "prefix": null,
+                "basename": "Comfort Fit"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 13,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/13 - Kurz Vor Danach Ganz \u201805.mp3",
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 247,
+            "year": 2005,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 230429,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=133&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Kurz%20Vor%20Danach%20Ganz%20-05.mp3",
+            "size": 7136353,
+            "mbid": "60ca3461-5f2b-4d0d-9cc5-ce79b358de7b",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=334&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 4,
+            "composer": null,
+            "channels": 2,
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-13-comfort_fit-kurz_vor_danach_ganz_05\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+            "license": null,
+            "publisher": "Tokyo Dawn Records",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

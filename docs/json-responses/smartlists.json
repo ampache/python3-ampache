@@ -1,18 +1,18 @@
 {
-    "total_count": 1,
-    "md5": "944a9f4dea178d87e8cc3bd19b9fecc6",
+    "total_count": 18,
+    "md5": "1be86703f3041143eac23a8a6a30b176",
     "playlist": [
         {
-            "id": "smart_4",
-            "name": "random - user - private",
-            "owner": "user",
+            "id": "smart_21",
+            "name": "admin - 02\/23\/2021 14:36:44 (admin)",
+            "owner": "admin",
             "user": {
-                "id": "4",
-                "username": "user"
+                "id": "2",
+                "username": "admin"
             },
-            "items": 43,
-            "type": "private",
-            "art": "https:\/\/music.com.au\/image.php?object_id=4&object_type=search",
+            "items": 1,
+            "type": "public",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=search&name=art.jpg",
             "has_access": true,
             "has_collaborate": true,
             "has_art": false,
@@ -20,7 +20,67 @@
             "rating": null,
             "averagerating": null,
             "md5": null,
-            "last_update": 1614054938
+            "last_update": 0
+        },
+        {
+            "id": "smart_14",
+            "name": "Album 1* (System)",
+            "owner": "System",
+            "user": {
+                "id": "-1",
+                "username": "System"
+            },
+            "items": 2,
+            "type": "public",
+            "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=search&name=art.jpg",
+            "has_access": true,
+            "has_collaborate": true,
+            "has_art": false,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "md5": null,
+            "last_update": 0
+        },
+        {
+            "id": "smart_13",
+            "name": "Album 2* (System)",
+            "owner": "System",
+            "user": {
+                "id": "-1",
+                "username": "System"
+            },
+            "items": 11,
+            "type": "public",
+            "art": "https:\/\/music.com.au\/image.php?object_id=13&object_type=search&name=art.jpg",
+            "has_access": true,
+            "has_collaborate": true,
+            "has_art": false,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "md5": null,
+            "last_update": 0
+        },
+        {
+            "id": "smart_12",
+            "name": "Album 3* (System)",
+            "owner": "System",
+            "user": {
+                "id": "-1",
+                "username": "System"
+            },
+            "items": 2,
+            "type": "public",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=search&name=art.jpg",
+            "has_access": true,
+            "has_collaborate": true,
+            "has_art": false,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "md5": null,
+            "last_update": 0
         }
     ]
 }

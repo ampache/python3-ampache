@@ -320,6 +320,28 @@
             "has_access": true
         },
         {
+            "id": 224,
+            "name": "subsonic_force_album_artist",
+            "level": 25,
+            "description": "Only select Album Artists when making Subsonic Artist calls",
+            "value": "0",
+            "type": "boolean",
+            "category": "options",
+            "subcategory": "api",
+            "has_access": true
+        },
+        {
+            "id": 225,
+            "name": "subsonic_single_user_data",
+            "level": 25,
+            "description": "Only show my data when making Subsonic list calls",
+            "value": "1",
+            "type": "boolean",
+            "category": "options",
+            "subcategory": "api",
+            "has_access": true
+        },
+        {
             "id": 185,
             "name": "perpetual_api_session",
             "level": 100,
@@ -661,39 +683,6 @@
             "has_access": true
         },
         {
-            "id": 137,
-            "name": "custom_favicon",
-            "level": 75,
-            "description": "Custom URL - Favicon",
-            "value": "",
-            "type": "string",
-            "category": "interface",
-            "subcategory": "custom",
-            "has_access": true
-        },
-        {
-            "id": 159,
-            "name": "custom_login_background",
-            "level": 75,
-            "description": "Custom URL - Login page background",
-            "value": "",
-            "type": "string",
-            "category": "interface",
-            "subcategory": "custom",
-            "has_access": true
-        },
-        {
-            "id": 136,
-            "name": "custom_login_logo",
-            "level": 75,
-            "description": "Custom URL - Login page logo",
-            "value": "",
-            "type": "string",
-            "category": "interface",
-            "subcategory": "custom",
-            "has_access": true
-        },
-        {
             "id": 129,
             "name": "custom_logo",
             "level": 25,
@@ -874,6 +863,39 @@
             "name": "custom_text_footer",
             "level": 75,
             "description": "Custom text footer",
+            "value": "",
+            "type": "string",
+            "category": "system",
+            "subcategory": "interface",
+            "has_access": true
+        },
+        {
+            "id": 137,
+            "name": "custom_favicon",
+            "level": 75,
+            "description": "Custom URL - Favicon",
+            "value": "",
+            "type": "string",
+            "category": "system",
+            "subcategory": "interface",
+            "has_access": true
+        },
+        {
+            "id": 159,
+            "name": "custom_login_background",
+            "level": 75,
+            "description": "Custom URL - Login page background",
+            "value": "",
+            "type": "string",
+            "category": "system",
+            "subcategory": "interface",
+            "has_access": true
+        },
+        {
+            "id": 136,
+            "name": "custom_login_logo",
+            "level": 75,
+            "description": "Custom URL - Login page logo",
             "value": "",
             "type": "string",
             "category": "system",

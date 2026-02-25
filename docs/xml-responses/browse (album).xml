@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[browse]]></errorAction>
-    <errorType><![CDATA[filter]]></errorType>
-    <errorMessage><![CDATA[Not Found: 8]]></errorMessage>
-  </error>
+  <total_count>12</total_count>
+  <md5>875e32d0f6b4fd47ddb46863f224c972</md5>
+  <catalog_id>1</catalog_id>
+  <parent_id>2</parent_id>
+  <parent_type>album</parent_type>
+  <child_type>song</child_type>
+  <browse id="54">
+    <name><![CDATA[Red&GreenSmoke]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Red&GreenSmoke]]></basename>
+  </browse>
+  <browse id="64">
+    <name><![CDATA[Black&BlueSmoke]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Black&BlueSmoke]]></basename>
+  </browse>
+  <browse id="63">
+    <name><![CDATA[Red&GreenSmoke]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Red&GreenSmoke]]></basename>
+  </browse>
+  <browse id="62">
+    <name><![CDATA[PurpleSmoke]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[PurpleSmoke]]></basename>
+  </browse>
 </root>

@@ -1,21 +1,21 @@
 {
     "total_count": 9,
-    "md5": "ea22fb7cee876495ff91c6b941a08af7",
+    "md5": "56b9dbda97055de3f4c18b575499fc5e",
     "album": [
         {
-            "id": "23",
+            "id": "12",
             "name": "Buried in Nausea",
             "prefix": null,
             "basename": "Buried in Nausea",
             "artist": {
-                "id": "38",
+                "id": "19",
                 "name": "Various Artists",
                 "prefix": null,
                 "basename": "Various Artists"
             },
             "artists": [
                 {
-                    "id": "38",
+                    "id": "19",
                     "name": "Various Artists",
                     "prefix": null,
                     "basename": "Various Artists"
@@ -89,7 +89,7 @@
                     "name": "Punk"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -131,7 +131,7 @@
             "diskcount": 1,
             "type": null,
             "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -178,7 +178,7 @@
                     "name": "Electronic"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
             "has_art": true,
             "flag": true,
             "rating": 5,
@@ -220,7 +220,7 @@
             "diskcount": 1,
             "type": null,
             "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=23&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 3,
