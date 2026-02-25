@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <session_expire><![CDATA[2022-08-17T04:34:55+00:00]]></session_expire>
-  <server><![CDATA[7.6.0]]></server>
-  <version><![CDATA[6.8.0]]></version>
+  <server><![CDATA[7.9.1]]></server>
+  <version><![CDATA[6.9.1]]></version>
   <compatible><![CDATA[350001]]></compatible>
-  <auth><![CDATA[8b9b474142569ee4e29a1f4c738c61db]]></auth>
-  <api><![CDATA[6.8.0]]></api>
+  <auth><![CDATA[9667937169b35ecaed3674b504996ae0]]></auth>
+  <streamtoken><![CDATA[]]></streamtoken>
+  <api><![CDATA[6.9.1]]></api>
   <update><![CDATA[2023-05-18T07:13:57+00:00]]></update>
-  <add><![CDATA[2025-07-01T06:09:08+00:00]]></add>
+  <add><![CDATA[2026-02-25T03:29:32+00:00]]></add>
   <clean><![CDATA[2021-08-03T00:05:54+00:00]]></clean>
   <max_song><![CDATA[135]]></max_song>
-  <max_album><![CDATA[24]]></max_album>
-  <max_artist><![CDATA[38]]></max_artist>
+  <max_album><![CDATA[21]]></max_album>
+  <max_artist><![CDATA[36]]></max_artist>
   <max_video><![CDATA[5]]></max_video>
   <max_podcast><![CDATA[2]]></max_podcast>
   <max_podcast_episode><![CDATA[3715]]></max_podcast_episode>

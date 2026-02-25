@@ -332,7 +332,7 @@
   </rule>
   <rule id="recent_played">
     <name><![CDATA[recent_played]]></name>
-    <label><![CDATA[Recently played]]></label>
+    <label><![CDATA[Recently Played]]></label>
     <type><![CDATA[recent_played]]></type>
     <widget/>
     <title><![CDATA[Play History]]></title>
@@ -464,14 +464,14 @@
   </rule>
   <rule id="added">
     <name><![CDATA[added]]></name>
-    <label><![CDATA[Added]]></label>
+    <label><![CDATA[Date Added]]></label>
     <type><![CDATA[date]]></type>
     <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>
   <rule id="updated">
     <name><![CDATA[updated]]></name>
-    <label><![CDATA[Updated]]></label>
+    <label><![CDATA[Date Updated]]></label>
     <type><![CDATA[date]]></type>
     <widget/>
     <title><![CDATA[File Data]]></title>
@@ -507,15 +507,29 @@
   </rule>
   <rule id="recent_added">
     <name><![CDATA[recent_added]]></name>
-    <label><![CDATA[Recently added]]></label>
+    <label><![CDATA[Recently Added]]></label>
     <type><![CDATA[recent_added]]></type>
     <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>
   <rule id="recent_updated">
     <name><![CDATA[recent_updated]]></name>
-    <label><![CDATA[Recently updated]]></label>
+    <label><![CDATA[Recently Updated]]></label>
     <type><![CDATA[recent_updated]]></type>
+    <widget/>
+    <title><![CDATA[File Data]]></title>
+  </rule>
+  <rule id="days_added">
+    <name><![CDATA[days_added]]></name>
+    <label><![CDATA[Added]]></label>
+    <type><![CDATA[days]]></type>
+    <widget/>
+    <title><![CDATA[File Data]]></title>
+  </rule>
+  <rule id="days_updated">
+    <name><![CDATA[days_updated]]></name>
+    <label><![CDATA[Updated]]></label>
+    <type><![CDATA[days]]></type>
     <widget/>
     <title><![CDATA[File Data]]></title>
   </rule>

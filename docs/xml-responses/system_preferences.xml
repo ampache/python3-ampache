@@ -295,6 +295,26 @@
     <subcategory><![CDATA[api]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
+  <preference id="224">
+    <name><![CDATA[subsonic_force_album_artist]]></name>
+    <level>25</level>
+    <description><![CDATA[Only select Album Artists when making Subsonic Artist calls]]></description>
+    <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[options]]></category>
+    <subcategory><![CDATA[api]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="225">
+    <name><![CDATA[subsonic_single_user_data]]></name>
+    <level>25</level>
+    <description><![CDATA[Only show my data when making Subsonic list calls]]></description>
+    <value>1</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[options]]></category>
+    <subcategory><![CDATA[api]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
   <preference id="185">
     <name><![CDATA[perpetual_api_session]]></name>
     <level>100</level>
@@ -605,36 +625,6 @@
     <subcategory><![CDATA[custom]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
-  <preference id="137">
-    <name><![CDATA[custom_favicon]]></name>
-    <level>75</level>
-    <description><![CDATA[Custom URL - Favicon]]></description>
-    <value><![CDATA[]]></value>
-    <type><![CDATA[string]]></type>
-    <category><![CDATA[interface]]></category>
-    <subcategory><![CDATA[custom]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
-  <preference id="159">
-    <name><![CDATA[custom_login_background]]></name>
-    <level>75</level>
-    <description><![CDATA[Custom URL - Login page background]]></description>
-    <value><![CDATA[]]></value>
-    <type><![CDATA[string]]></type>
-    <category><![CDATA[interface]]></category>
-    <subcategory><![CDATA[custom]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
-  <preference id="136">
-    <name><![CDATA[custom_login_logo]]></name>
-    <level>75</level>
-    <description><![CDATA[Custom URL - Login page logo]]></description>
-    <value><![CDATA[]]></value>
-    <type><![CDATA[string]]></type>
-    <category><![CDATA[interface]]></category>
-    <subcategory><![CDATA[custom]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
   <preference id="129">
     <name><![CDATA[custom_logo]]></name>
     <level>25</level>
@@ -799,6 +789,36 @@
     <name><![CDATA[custom_text_footer]]></name>
     <level>75</level>
     <description><![CDATA[Custom text footer]]></description>
+    <value><![CDATA[]]></value>
+    <type><![CDATA[string]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[interface]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="137">
+    <name><![CDATA[custom_favicon]]></name>
+    <level>75</level>
+    <description><![CDATA[Custom URL - Favicon]]></description>
+    <value><![CDATA[]]></value>
+    <type><![CDATA[string]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[interface]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="159">
+    <name><![CDATA[custom_login_background]]></name>
+    <level>75</level>
+    <description><![CDATA[Custom URL - Login page background]]></description>
+    <value><![CDATA[]]></value>
+    <type><![CDATA[string]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[interface]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="136">
+    <name><![CDATA[custom_login_logo]]></name>
+    <level>75</level>
+    <description><![CDATA[Custom URL - Login page logo]]></description>
     <value><![CDATA[]]></value>
     <type><![CDATA[string]]></type>
     <category><![CDATA[system]]></category>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <md5>b6d12c071f022b176a4c2496e2e533ce</md5>
-  <song id="95">
-    <name><![CDATA[Spirus Falls]]></name>
-    <title><![CDATA[Spirus Falls]]></title>
+  <md5>c2fead86409c9b06139feb621688cf6d</md5>
+  <song id="91">
+    <name><![CDATA[Home Capsules]]></name>
+    <title><![CDATA[Home Capsules]]></title>
     <artist id="14">
       <name><![CDATA[Nofi/found.]]></name>
       <prefix><![CDATA[]]></prefix>
       <basename><![CDATA[Nofi/found.]]></basename>
     </artist>
-    <album id="24">
+    <album id="8">
       <name><![CDATA[Nofi Devices]]></name>
       <prefix><![CDATA[]]></prefix>
       <basename><![CDATA[Nofi Devices]]></basename>
@@ -22,17 +22,17 @@
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>2</track>
+    <track>9</track>
     <genre id="5">
       <name><![CDATA[Electronica]]></name>
     </genre>
     <genre id="6">
       <name><![CDATA[Dance]]></name>
     </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/02_Spirus_Falls.mp3]]></filename>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/09_Home_Capsules.mp3]]></filename>
     <playlisttrack>1</playlisttrack>
-    <time>327</time>
-    <year>1999</year>
+    <time>294</time>
+    <year>0</year>
     <format>mp3</format>
     <stream_format>mp3</stream_format>
     <bitrate>192000</bitrate>
@@ -41,102 +41,156 @@
     <mode><![CDATA[cbr]]></mode>
     <mime><![CDATA[audio/mpeg]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3]]></url>
-    <size>7875647</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3]]></url>
+    <size>7076428</size>
     <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=70&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <flag>1</flag>
+    <rating>5</rating>
+    <averagerating/>
+    <playcount>0</playcount>
+    <catalog>1</catalog>
+    <composer><![CDATA[Jeffrey Melton]]></composer>
+    <channels>2</channels>
+    <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[archive.org]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>-2.97</replaygain_track_gain>
+    <replaygain_track_peak>1</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="101">
+    <name><![CDATA[Rehearsal Tape (1996)]]></name>
+    <title><![CDATA[Rehearsal Tape (1996)]]></title>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </artist>
+    <album id="10">
+      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+    </album>
+    <albumartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <track>9</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/09RehearsalTape1996.ogg]]></filename>
+    <playlisttrack>2</playlisttrack>
+    <time>980</time>
+    <year>1996</year>
+    <format>ogg</format>
+    <stream_format>mp3</stream_format>
+    <bitrate>66912</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[application/ogg]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.mp3]]></url>
+    <size>8219821</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating>5</rating>
     <averagerating/>
     <playcount>1</playcount>
     <catalog>1</catalog>
-    <composer><![CDATA[Jeffrey Melton]]></composer>
+    <composer><![CDATA[]]></composer>
     <channels>2</channels>
-    <comment><![CDATA[2]]></comment>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
     <license><![CDATA[]]></license>
     <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-1.53</replaygain_track_gain>
+    <replaygain_track_gain>-9.56</replaygain_track_gain>
     <replaygain_track_peak>1</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="93">
-    <name><![CDATA[Scribnus 3]]></name>
-    <title><![CDATA[Scribnus 3]]></title>
-    <artist id="14">
-      <name><![CDATA[Nofi/found.]]></name>
+  <song id="62">
+    <name><![CDATA[PurpleSmoke]]></name>
+    <title><![CDATA[PurpleSmoke]]></title>
+    <artist id="2">
+      <name><![CDATA[Synthetic]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi/found.]]></basename>
+      <basename><![CDATA[Synthetic]]></basename>
     </artist>
-    <album id="24">
-      <name><![CDATA[Nofi Devices]]></name>
+    <album id="2">
+      <name><![CDATA[Colorsmoke EP]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi Devices]]></basename>
+      <basename><![CDATA[Colorsmoke EP]]></basename>
     </album>
-    <albumartist id="14">
-      <name><![CDATA[Nofi/found.]]></name>
+    <albumartist id="2">
+      <name><![CDATA[Synthetic]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi/found.]]></basename>
+      <basename><![CDATA[Synthetic]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
     <track>3</track>
-    <genre id="5">
-      <name><![CDATA[Electronica]]></name>
+    <genre id="1">
+      <name><![CDATA[Electronic]]></name>
     </genre>
-    <genre id="6">
-      <name><![CDATA[Dance]]></name>
-    </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3]]></filename>
-    <playlisttrack>2</playlisttrack>
-    <time>641</time>
-    <year>1999</year>
-    <format>mp3</format>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma]]></filename>
+    <playlisttrack>3</playlisttrack>
+    <time>390</time>
+    <year>2007</year>
+    <format>wma</format>
     <stream_format>mp3</stream_format>
-    <bitrate>192000</bitrate>
+    <bitrate>20627</bitrate>
     <stream_bitrate>32000</stream_bitrate>
-    <rate>44100</rate>
+    <rate>22050</rate>
     <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
+    <mime><![CDATA[audio/x-ms-wma]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3]]></url>
-    <size>15399874</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
+    <size>1014135</size>
     <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=415&name=art.jpg]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
-    <rating/>
+    <rating>5</rating>
     <averagerating/>
-    <playcount>4</playcount>
+    <playcount>1</playcount>
     <catalog>1</catalog>
-    <composer><![CDATA[Jeffrey Melton]]></composer>
+    <composer><![CDATA[]]></composer>
     <channels>2</channels>
-    <comment><![CDATA[3]]></comment>
+    <comment><![CDATA[Made with Sony ACID 5]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[archive.org]]></publisher>
+    <publisher><![CDATA[20kbps rec.]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>1.53</replaygain_track_gain>
-    <replaygain_track_peak>0.989</replaygain_track_peak>
+    <replaygain_track_gain/>
+    <replaygain_track_peak/>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>
-  <song id="85">
-    <name><![CDATA[Beq Ultra Fat]]></name>
-    <title><![CDATA[Beq Ultra Fat]]></title>
+  <song id="89">
+    <name><![CDATA[Stolen]]></name>
+    <title><![CDATA[Stolen]]></title>
     <artist id="14">
       <name><![CDATA[Nofi/found.]]></name>
       <prefix><![CDATA[]]></prefix>
       <basename><![CDATA[Nofi/found.]]></basename>
     </artist>
-    <album id="24">
+    <album id="8">
       <name><![CDATA[Nofi Devices]]></name>
       <prefix><![CDATA[]]></prefix>
       <basename><![CDATA[Nofi Devices]]></basename>
@@ -148,17 +202,17 @@
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>4</track>
+    <track>11</track>
     <genre id="5">
       <name><![CDATA[Electronica]]></name>
     </genre>
     <genre id="6">
       <name><![CDATA[Dance]]></name>
     </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/04_Beq_Ultra_Fat.mp3]]></filename>
-    <playlisttrack>3</playlisttrack>
-    <time>413</time>
-    <year>1999</year>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/11_Stolen.mp3]]></filename>
+    <playlisttrack>4</playlisttrack>
+    <time>628</time>
+    <year>0</year>
     <format>mp3</format>
     <stream_format>mp3</stream_format>
     <bitrate>192000</bitrate>
@@ -167,10 +221,10 @@
     <mode><![CDATA[cbr]]></mode>
     <mime><![CDATA[audio/mpeg]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3]]></url>
-    <size>9935768</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=89&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stolen.mp3]]></url>
+    <size>15100325</size>
     <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=70&name=art.jpg]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating/>
@@ -179,78 +233,15 @@
     <catalog>1</catalog>
     <composer><![CDATA[Jeffrey Melton]]></composer>
     <channels>2</channels>
-    <comment><![CDATA[4]]></comment>
+    <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
     <license><![CDATA[]]></license>
     <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>0.94</replaygain_track_gain>
+    <replaygain_track_gain>2.66</replaygain_track_gain>
     <replaygain_track_peak>0.989</replaygain_track_peak>
-    <r128_album_gain/>
-    <r128_track_gain/>
-  </song>
-  <song id="86">
-    <name><![CDATA[Caloonashine]]></name>
-    <title><![CDATA[Caloonashine]]></title>
-    <artist id="14">
-      <name><![CDATA[Nofi/found.]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi/found.]]></basename>
-    </artist>
-    <album id="24">
-      <name><![CDATA[Nofi Devices]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi Devices]]></basename>
-    </album>
-    <albumartist id="14">
-      <name><![CDATA[Nofi/found.]]></name>
-      <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi/found.]]></basename>
-    </albumartist>
-    <disk><![CDATA[1]]></disk>
-    <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>5</track>
-    <genre id="5">
-      <name><![CDATA[Electronica]]></name>
-    </genre>
-    <genre id="6">
-      <name><![CDATA[Dance]]></name>
-    </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/05_Caloonashine.mp3]]></filename>
-    <playlisttrack>4</playlisttrack>
-    <time>330</time>
-    <year>1999</year>
-    <format>mp3</format>
-    <stream_format>mp3</stream_format>
-    <bitrate>192000</bitrate>
-    <stream_bitrate>32000</stream_bitrate>
-    <rate>44100</rate>
-    <mode><![CDATA[cbr]]></mode>
-    <mime><![CDATA[audio/mpeg]]></mime>
-    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Caloonashine.mp3]]></url>
-    <size>7929564</size>
-    <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=24&object_type=album&name=art.jpg]]></art>
-    <has_art>1</has_art>
-    <flag>0</flag>
-    <rating>5</rating>
-    <averagerating/>
-    <playcount>2</playcount>
-    <catalog>1</catalog>
-    <composer><![CDATA[Jeffrey Melton]]></composer>
-    <channels>2</channels>
-    <comment><![CDATA[5]]></comment>
-    <license><![CDATA[]]></license>
-    <publisher><![CDATA[archive.org]]></publisher>
-    <language/>
-    <lyrics><![CDATA[]]></lyrics>
-    <replaygain_album_gain/>
-    <replaygain_album_peak/>
-    <replaygain_track_gain>-0.35</replaygain_track_gain>
-    <replaygain_track_peak>0.955</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

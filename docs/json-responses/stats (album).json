@@ -1,6 +1,6 @@
 {
     "total_count": 2,
-    "md5": "183b58fc83b4ef2474291949a9a05047",
+    "md5": "94e14f164c95aa0ab6a40a2563d07c3f",
     "album": [
         {
             "id": "21",
@@ -41,7 +41,7 @@
                     "name": "Hip-Hop"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=334&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -50,19 +50,19 @@
             "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
         },
         {
-            "id": "23",
+            "id": "12",
             "name": "Buried in Nausea",
             "prefix": null,
             "basename": "Buried in Nausea",
             "artist": {
-                "id": "38",
+                "id": "19",
                 "name": "Various Artists",
                 "prefix": null,
                 "basename": "Various Artists"
             },
             "artists": [
                 {
-                    "id": "38",
+                    "id": "19",
                     "name": "Various Artists",
                     "prefix": null,
                     "basename": "Various Artists"
@@ -136,7 +136,7 @@
                     "name": "Punk"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,

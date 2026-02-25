@@ -1,48 +1,53 @@
 {
     "total_count": 1,
-    "md5": "c8bde69a9f79ca24059e3807f9a3bcf8",
+    "md5": "c4b66550e50f6ae8347c6592ebc1a4d1",
     "album": [
         {
-            "id": "10",
-            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "id": "21",
+            "name": "Forget and Remember",
             "prefix": null,
-            "basename": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "basename": "Forget and Remember",
             "artist": {
-                "id": "16",
-                "name": "CARN\u00daN",
+                "id": "36",
+                "name": "Comfort Fit",
                 "prefix": null,
-                "basename": "CARN\u00daN"
+                "basename": "Comfort Fit"
             },
             "artists": [
                 {
-                    "id": "16",
-                    "name": "CARN\u00daN",
+                    "id": "36",
+                    "name": "Comfort Fit",
                     "prefix": null,
-                    "basename": "CARN\u00daN"
+                    "basename": "Comfort Fit"
                 }
             ],
             "songartists": [
                 {
-                    "id": "16",
-                    "name": "CARN\u00daN",
+                    "id": "36",
+                    "name": "Comfort Fit",
                     "prefix": null,
-                    "basename": "CARN\u00daN"
+                    "basename": "Comfort Fit"
                 }
             ],
-            "time": 3873,
-            "year": 1996,
+            "time": 4248,
+            "year": 2005,
             "tracks": [],
-            "songcount": 9,
+            "songcount": 20,
             "diskcount": 1,
-            "type": null,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "type": "album",
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=334&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "mbid": null,
-            "mbid_group": null
+            "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+            "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
         }
     ]
 }

@@ -1,6 +1,6 @@
 {
     "total_count": 2,
-    "md5": "ee5163982df0eb85bbc4aa2ff891ddb1",
+    "md5": "583f85f01a975f2d99d825e41de11ffd",
     "artist": [
         {
             "id": "36",
@@ -17,7 +17,7 @@
                     "name": "Hip-Hop"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=36&object_type=artist",
+            "art": "https:\/\/music.com.au\/image.php?object_id=36&object_type=artist&id=320&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -29,23 +29,23 @@
             "placeformed": null
         },
         {
-            "id": "21",
-            "name": "Tip-C (featuring Mike Beers)",
+            "id": "19",
+            "name": "Various Artists",
             "prefix": null,
-            "basename": "Tip-C (featuring Mike Beers)",
+            "basename": "Various Artists",
             "albums": [],
-            "albumcount": 0,
+            "albumcount": 1,
             "songs": [],
-            "songcount": 1,
+            "songcount": 0,
             "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=artist",
+            "art": "https:\/\/music.com.au\/image.php?object_id=19&object_type=artist&id=152&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "mbid": "6",
-            "summary": null,
-            "time": 252,
+            "mbid": null,
+            "summary": "Warning! Deleting this artist may remove other artists and scrobbles from your library - please handle with caution!  Note: You can view albums tagged as 'Various Artists' in your library here. \n\nThe term Various Artists is used in the record industry when numerous singers and musicians collaborate on a song or collection of songs. Most often on Last.fm, compilation album tracks appear under the name of Various Artists erroneously because the individual artist is not listed in the album's ID3 information. ",
+            "time": 1437,
             "yearformed": 0,
             "placeformed": null
         }

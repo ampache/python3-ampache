@@ -2,19 +2,19 @@
     "search": {
         "album": [
             {
-                "id": "23",
+                "id": "12",
                 "name": "Buried in Nausea",
                 "prefix": null,
                 "basename": "Buried in Nausea",
                 "artist": {
-                    "id": "38",
+                    "id": "19",
                     "name": "Various Artists",
                     "prefix": null,
                     "basename": "Various Artists"
                 },
                 "artists": [
                     {
-                        "id": "38",
+                        "id": "19",
                         "name": "Various Artists",
                         "prefix": null,
                         "basename": "Various Artists"
@@ -88,7 +88,7 @@
                         "name": "Punk"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=23&object_type=album",
+                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
@@ -130,7 +130,7 @@
                 "diskcount": 1,
                 "type": null,
                 "genre": [],
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
@@ -177,7 +177,7 @@
                         "name": "Hip-Hop"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album",
+                "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=334&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
@@ -228,7 +228,7 @@
                         "name": "Dance"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album",
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": 2,
@@ -248,7 +248,7 @@
                 "songs": [],
                 "songcount": 1,
                 "genre": [],
-                "art": "https:\/\/music.com.au\/image.php?object_id=34&object_type=artist",
+                "art": "https:\/\/music.com.au\/image.php?object_id=34&object_type=artist&id=288&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
@@ -278,7 +278,7 @@
                         "name": "Dance"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist",
+                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist&name=art.jpg",
                 "has_art": false,
                 "flag": false,
                 "rating": 2,
@@ -299,7 +299,7 @@
                 "songs": [],
                 "songcount": 1,
                 "genre": [],
-                "art": "https:\/\/music.com.au\/image.php?object_id=26&object_type=artist",
+                "art": "https:\/\/music.com.au\/image.php?object_id=26&object_type=artist&id=341&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
@@ -361,7 +361,7 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3",
                 "size": 4265791,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
@@ -431,7 +431,7 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3",
                 "size": 4444403,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
@@ -501,7 +501,7 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3",
                 "size": 7696008,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": 5,
@@ -571,12 +571,12 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
                 "size": 7826238,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
                 "has_art": true,
                 "flag": false,
-                "rating": 5,
+                "rating": null,
                 "averagerating": null,
-                "playcount": 1,
+                "playcount": 0,
                 "catalog": 1,
                 "composer": null,
                 "channels": 2,

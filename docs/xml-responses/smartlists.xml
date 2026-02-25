@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>4</total_count>
-  <md5>944a9f4dea178d87e8cc3bd19b9fecc6</md5>
-  <playlist id="smart_4">
-    <name><![CDATA[random - user - private]]></name>
-    <owner><![CDATA[user]]></owner>
-    <user id="4">
-      <username><![CDATA[user]]></username>
+  <md5>1be86703f3041143eac23a8a6a30b176</md5>
+  <playlist id="smart_21">
+    <name><![CDATA[admin - 02/23/2021 14:36:44 (admin)]]></name>
+    <owner><![CDATA[admin]]></owner>
+    <user id="2">
+      <username><![CDATA[admin]]></username>
     </user>
-    <items>43</items>
-    <type>private</type>
-    <art><![CDATA[https://music.com.au/image.php?object_id=4&object_type=search]]></art>
+    <items>1</items>
+    <type>public</type>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=search&name=art.jpg]]></art>
     <has_access>1</has_access>
     <has_collaborate>1</has_collaborate>
     <has_art>0</has_art>
@@ -18,6 +18,60 @@
     <rating/>
     <averagerating/>
     <md5/>
-    <last_update>1614054938</last_update>
+    <last_update>0</last_update>
+  </playlist>
+  <playlist id="smart_14">
+    <name><![CDATA[Album 1* (System)]]></name>
+    <owner><![CDATA[System]]></owner>
+    <user id="-1">
+      <username><![CDATA[System]]></username>
+    </user>
+    <items>2</items>
+    <type>public</type>
+    <art><![CDATA[https://music.com.au/image.php?object_id=14&object_type=search&name=art.jpg]]></art>
+    <has_access>1</has_access>
+    <has_collaborate>1</has_collaborate>
+    <has_art>0</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <md5/>
+    <last_update>0</last_update>
+  </playlist>
+  <playlist id="smart_13">
+    <name><![CDATA[Album 2* (System)]]></name>
+    <owner><![CDATA[System]]></owner>
+    <user id="-1">
+      <username><![CDATA[System]]></username>
+    </user>
+    <items>11</items>
+    <type>public</type>
+    <art><![CDATA[https://music.com.au/image.php?object_id=13&object_type=search&name=art.jpg]]></art>
+    <has_access>1</has_access>
+    <has_collaborate>1</has_collaborate>
+    <has_art>0</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <md5/>
+    <last_update>0</last_update>
+  </playlist>
+  <playlist id="smart_12">
+    <name><![CDATA[Album 3* (System)]]></name>
+    <owner><![CDATA[System]]></owner>
+    <user id="-1">
+      <username><![CDATA[System]]></username>
+    </user>
+    <items>2</items>
+    <type>public</type>
+    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=search&name=art.jpg]]></art>
+    <has_access>1</has_access>
+    <has_collaborate>1</has_collaborate>
+    <has_art>0</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <md5/>
+    <last_update>0</last_update>
   </playlist>
 </root>

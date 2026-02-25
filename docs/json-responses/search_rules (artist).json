@@ -305,7 +305,7 @@
         },
         {
             "name": "recent_played",
-            "label": "Recently played",
+            "label": "Recently Played",
             "type": "recent_played",
             "widget": [
                 "input",
@@ -432,6 +432,16 @@
             "name": "image_height",
             "label": "Image Height",
             "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "days_added",
+            "label": "Added",
+            "type": "days",
             "widget": [
                 "input",
                 "number"
