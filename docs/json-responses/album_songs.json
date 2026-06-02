@@ -1,137 +1,127 @@
 {
-    "total_count": 12,
-    "md5": "cfcbb18761e99376ff8a95c56b7922d3",
+    "total_count": 2,
+    "md5": "9c2c0e8d49075cfc0ae2ac7e39bc7de9",
     "song": [
         {
-            "id": "56",
-            "title": "Black&BlueSmoke",
-            "name": "Black&BlueSmoke",
+            "id": "96",
+            "title": "Creeping Lawler 2",
+            "name": "Creeping Lawler 2",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "15",
+                "name": "Warfare 3.0",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Warfare 3.0"
             },
             "artists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "15",
+                    "name": "Warfare 3.0",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "Warfare 3.0"
                 }
             ],
             "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
+                "id": "9",
+                "name": "Creeping Lawler 2",
                 "prefix": null,
-                "basename": "Colorsmoke EP"
+                "basename": "Creeping Lawler 2"
             },
             "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "15",
+                "name": "Warfare 3.0",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Warfare 3.0"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.wav",
+            "genre": [],
             "playlisttrack": 1,
-            "time": 500,
-            "year": 2007,
-            "format": "mp3",
+            "time": 296,
+            "year": 0,
+            "format": "wav",
             "stream_format": "mp3",
-            "bitrate": 64000,
+            "bitrate": 1411200,
             "stream_bitrate": 32000,
-            "rate": 22050,
+            "rate": 44100,
             "mode": "cbr",
-            "mime": "audio\/mpeg",
+            "mime": "audio\/wav",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-            "size": 4010069,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
+            "size": 52345628,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=23&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 5,
             "averagerating": null,
-            "playcount": 2,
+            "playcount": 4,
             "catalog": 1,
             "composer": null,
             "channels": 2,
             "comment": null,
             "license": null,
-            "publisher": "20kbps rec.",
+            "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -5.11,
-            "replaygain_track_peak": 1,
+            "replaygain_track_gain": -4.31,
+            "replaygain_track_peak": 0.989,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "64",
-            "title": "Black&BlueSmoke",
-            "name": "Black&BlueSmoke",
+            "id": "97",
+            "title": "Creeping Lawler 2",
+            "name": "Creeping Lawler 2",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "15",
+                "name": "Warfare 3.0",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Warfare 3.0"
             },
             "artists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "15",
+                    "name": "Warfare 3.0",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "Warfare 3.0"
                 }
             ],
             "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
+                "id": "9",
+                "name": "Creeping Lawler 2",
                 "prefix": null,
-                "basename": "Colorsmoke EP"
+                "basename": "Creeping Lawler 2"
             },
             "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "15",
+                "name": "Warfare 3.0",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Warfare 3.0"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
+            "genre": [],
             "playlisttrack": 2,
-            "time": 500,
-            "year": 2007,
-            "format": "wma",
+            "time": 296,
+            "year": 0,
+            "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 20627,
+            "bitrate": 177349,
             "stream_bitrate": 32000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-            "size": 1298295,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
+            "size": 6652448,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=23&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -140,165 +130,15 @@
             "catalog": 1,
             "composer": null,
             "channels": 2,
-            "comment": "Made with Sony ACID 5",
+            "comment": "https:\/\/archive.org\/details\/Creeping_Lawler_2",
             "license": null,
-            "publisher": "20kbps rec.",
+            "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "59",
-            "title": "YellowSmoke",
-            "name": "YellowSmoke",
-            "artist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "artists": [
-                {
-                    "id": "2",
-                    "name": "Synthetic",
-                    "prefix": null,
-                    "basename": "Synthetic"
-                }
-            ],
-            "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
-                "prefix": null,
-                "basename": "Colorsmoke EP"
-            },
-            "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 290,
-            "year": 2007,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 64000,
-            "stream_bitrate": 32000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
-            "size": 2325568,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
-            "has_art": true,
-            "flag": false,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": null,
-            "channels": 2,
-            "comment": null,
-            "license": null,
-            "publisher": "20kbps rec.",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": 2.75,
-            "replaygain_track_peak": 0.716,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "65",
-            "title": "YellowSmoke",
-            "name": "YellowSmoke",
-            "artist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "artists": [
-                {
-                    "id": "2",
-                    "name": "Synthetic",
-                    "prefix": null,
-                    "basename": "Synthetic"
-                }
-            ],
-            "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
-                "prefix": null,
-                "basename": "Colorsmoke EP"
-            },
-            "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/02-Synthetic_-_YellowSmoke20k22hS.wma",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "playlisttrack": 4,
-            "time": 290,
-            "year": 2007,
-            "format": "wma",
-            "stream_format": "mp3",
-            "bitrate": 20627,
-            "stream_bitrate": 32000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
-            "size": 754935,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
-            "has_art": true,
-            "flag": false,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 2,
-            "catalog": 1,
-            "composer": null,
-            "channels": 2,
-            "comment": "Made with Sony ACID 5",
-            "license": null,
-            "publisher": "20kbps rec.",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
+            "replaygain_track_gain": -4.32,
+            "replaygain_track_peak": 0.977,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

@@ -23,13 +23,13 @@
   </rule>
   <rule id="album">
     <name><![CDATA[album]]></name>
-    <label><![CDATA[Album]]></label>
+    <label><![CDATA[Album Title]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="artist">
-    <name><![CDATA[artist]]></name>
+  <rule id="song_artist">
+    <name><![CDATA[song_artist]]></name>
     <label><![CDATA[Song Artist]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
@@ -154,8 +154,8 @@
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="my_flagged">
-    <name><![CDATA[my_flagged]]></name>
+  <rule id="my_flagged_song">
+    <name><![CDATA[my_flagged_song]]></name>
     <label><![CDATA[My Favorite Songs]]></label>
     <type><![CDATA[boolean]]></type>
     <widget/>
@@ -193,6 +193,27 @@
     <name><![CDATA[favorite_artist]]></name>
     <label><![CDATA[Favorites (Artist)]]></label>
     <type><![CDATA[text]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="weight_song">
+    <name><![CDATA[weight_song]]></name>
+    <label><![CDATA[Song popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="weight_album">
+    <name><![CDATA[weight_album]]></name>
+    <label><![CDATA[Album popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="weight_artist">
+    <name><![CDATA[weight_artist]]></name>
+    <label><![CDATA[Artist popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
     <widget/>
     <title><![CDATA[Ratings]]></title>
   </rule>

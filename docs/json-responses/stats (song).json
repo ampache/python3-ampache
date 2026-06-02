@@ -1,7 +1,82 @@
 {
     "total_count": 2,
-    "md5": "181527a45569d3859054838c062b6d68",
+    "md5": "ebf6a1c353d8d6490cc93b9cc2f7ba86",
     "song": [
+        {
+            "id": "125",
+            "title": "Take a Look",
+            "name": "Take a Look",
+            "artist": {
+                "id": "36",
+                "name": "Comfort Fit",
+                "prefix": null,
+                "basename": "Comfort Fit"
+            },
+            "artists": [
+                {
+                    "id": "36",
+                    "name": "Comfort Fit",
+                    "prefix": null,
+                    "basename": "Comfort Fit"
+                }
+            ],
+            "album": {
+                "id": "21",
+                "name": "Forget and Remember",
+                "prefix": null,
+                "basename": "Forget and Remember"
+            },
+            "albumartist": {
+                "id": "36",
+                "name": "Comfort Fit",
+                "prefix": null,
+                "basename": "Comfort Fit"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/5 - Take a Look.mp3",
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "playlisttrack": 1,
+            "time": 230,
+            "year": 2005,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 243729,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=125&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Take%20a%20Look.mp3",
+            "size": 7018987,
+            "mbid": "8a3bdac5-f0bd-4197-9deb-d4880d6f3b6d",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=334&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 4,
+            "composer": null,
+            "channels": 2,
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-05-comfort_fit-take_a_look\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+            "license": null,
+            "publisher": "Tokyo Dawn Records",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
         {
             "id": "126",
             "title": "Don't Show This Message Again",
@@ -42,7 +117,7 @@
                     "name": "Hip-Hop"
                 }
             ],
-            "playlisttrack": 1,
+            "playlisttrack": 2,
             "time": 197,
             "year": 2005,
             "format": "mp3",
@@ -66,81 +141,6 @@
             "composer": null,
             "channels": 2,
             "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-12-comfort_fit-dont_show_this_message_again\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
-            "license": null,
-            "publisher": "Tokyo Dawn Records",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "127",
-            "title": "She Knows Me Now",
-            "name": "She Knows Me Now",
-            "artist": {
-                "id": "36",
-                "name": "Comfort Fit",
-                "prefix": null,
-                "basename": "Comfort Fit"
-            },
-            "artists": [
-                {
-                    "id": "36",
-                    "name": "Comfort Fit",
-                    "prefix": null,
-                    "basename": "Comfort Fit"
-                }
-            ],
-            "album": {
-                "id": "21",
-                "name": "Forget and Remember",
-                "prefix": null,
-                "basename": "Forget and Remember"
-            },
-            "albumartist": {
-                "id": "36",
-                "name": "Comfort Fit",
-                "prefix": null,
-                "basename": "Comfort Fit"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 10,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/10 - She Knows Me Now (re-edit).mp3",
-            "genre": [
-                {
-                    "id": "8",
-                    "name": "Hip-Hop"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 209,
-            "year": 2005,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 217167,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=127&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20She%20Knows%20Me%20Now.mp3",
-            "size": 5690938,
-            "mbid": "3845cef9-b874-449f-94a5-5c9acdead9df",
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=334&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 4,
-            "composer": null,
-            "channels": 2,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-10-comfort_fit-she_knows_me_now_feat_mercury_waters__prymer\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
             "license": null,
             "publisher": "Tokyo Dawn Records",
             "language": null,

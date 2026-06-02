@@ -169,6 +169,66 @@
             "title": "Ratings"
         },
         {
+            "name": "my_flagged_song",
+            "label": "My Favorite Songs",
+            "type": "boolean",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "my_flagged_album",
+            "label": "My Favorite Albums",
+            "type": "boolean",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "my_flagged_artist",
+            "label": "My Favorite Artists",
+            "type": "boolean",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "weight_song",
+            "label": "Song popularity score",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "weight_album",
+            "label": "Album popularity score",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "weight_artist",
+            "label": "Artist popularity score",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Ratings"
+        },
+        {
             "name": "favorite",
             "label": "Favorites",
             "type": "text",

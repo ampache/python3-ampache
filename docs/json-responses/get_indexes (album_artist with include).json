@@ -3399,7 +3399,7 @@
                     "mbid": null,
                     "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
                     "has_art": true,
-                    "flag": true,
+                    "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
@@ -3596,6 +3596,2033 @@
             "mbid": null,
             "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
             "time": 4423,
+            "yearformed": 0,
+            "placeformed": null
+        },
+        {
+            "id": "11",
+            "name": "structura",
+            "prefix": null,
+            "basename": "structura",
+            "albums": [
+                {
+                    "id": "18",
+                    "name": "Inominavel (live.v.01)",
+                    "prefix": null,
+                    "basename": "Inominavel (live.v.01)",
+                    "artist": {
+                        "id": "11",
+                        "name": "structura",
+                        "prefix": null,
+                        "basename": "structura"
+                    },
+                    "artists": [
+                        {
+                            "id": "11",
+                            "name": "structura",
+                            "prefix": null,
+                            "basename": "structura"
+                        }
+                    ],
+                    "songartists": [
+                        {
+                            "id": "11",
+                            "name": "structura",
+                            "prefix": null,
+                            "basename": "structura"
+                        }
+                    ],
+                    "time": 1339,
+                    "year": 2007,
+                    "tracks": [],
+                    "songcount": 6,
+                    "diskcount": 1,
+                    "type": null,
+                    "genre": [
+                        {
+                            "id": "3",
+                            "name": "Noise"
+                        }
+                    ],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 4,
+                    "averagerating": 3.67,
+                    "mbid": null,
+                    "mbid_group": null
+                }
+            ],
+            "albumcount": 1,
+            "songs": [
+                {
+                    "id": "78",
+                    "title": "inominavel p01",
+                    "name": "inominavel p01",
+                    "artist": {
+                        "id": "11",
+                        "name": "structura",
+                        "prefix": null,
+                        "basename": "structura"
+                    },
+                    "artists": [
+                        {
+                            "id": "11",
+                            "name": "structura",
+                            "prefix": null,
+                            "basename": "structura"
+                        }
+                    ],
+                    "album": {
+                        "id": "18",
+                        "name": "Inominavel (live.v.01)",
+                        "prefix": null,
+                        "basename": "Inominavel (live.v.01)"
+                    },
+                    "albumartist": {
+                        "id": "11",
+                        "name": "structura",
+                        "prefix": null,
+                        "basename": "structura"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/01_structura_-_inominavel_p01.mp3",
+                    "genre": [
+                        {
+                            "id": "3",
+                            "name": "Noise"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 84,
+                    "year": 2007,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 192000,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p01.mp3",
+                    "size": 2036632,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "http:\/\/enoughrecords.scene.org",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": 0,
+                    "replaygain_track_peak": 0,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "77",
+                    "title": "inominavel p02",
+                    "name": "inominavel p02",
+                    "artist": {
+                        "id": "11",
+                        "name": "structura",
+                        "prefix": null,
+                        "basename": "structura"
+                    },
+                    "artists": [
+                        {
+                            "id": "11",
+                            "name": "structura",
+                            "prefix": null,
+                            "basename": "structura"
+                        }
+                    ],
+                    "album": {
+                        "id": "18",
+                        "name": "Inominavel (live.v.01)",
+                        "prefix": null,
+                        "basename": "Inominavel (live.v.01)"
+                    },
+                    "albumartist": {
+                        "id": "11",
+                        "name": "structura",
+                        "prefix": null,
+                        "basename": "structura"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 2,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/02_structura_-_inominavel_p02.mp3",
+                    "genre": [
+                        {
+                            "id": "3",
+                            "name": "Noise"
+                        }
+                    ],
+                    "playlisttrack": 2,
+                    "time": 237,
+                    "year": 2007,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 192000,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=77&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p02.mp3",
+                    "size": 5723290,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "http:\/\/enoughrecords.scene.org",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": 0,
+                    "replaygain_track_peak": 0,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "74",
+                    "title": "inominavel p03",
+                    "name": "inominavel p03",
+                    "artist": {
+                        "id": "11",
+                        "name": "structura",
+                        "prefix": null,
+                        "basename": "structura"
+                    },
+                    "artists": [
+                        {
+                            "id": "11",
+                            "name": "structura",
+                            "prefix": null,
+                            "basename": "structura"
+                        }
+                    ],
+                    "album": {
+                        "id": "18",
+                        "name": "Inominavel (live.v.01)",
+                        "prefix": null,
+                        "basename": "Inominavel (live.v.01)"
+                    },
+                    "albumartist": {
+                        "id": "11",
+                        "name": "structura",
+                        "prefix": null,
+                        "basename": "structura"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 3,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/03_structura_-_inominavel_p03.mp3",
+                    "genre": [
+                        {
+                            "id": "3",
+                            "name": "Noise"
+                        }
+                    ],
+                    "playlisttrack": 3,
+                    "time": 143,
+                    "year": 2007,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 192000,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=74&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p03.mp3",
+                    "size": 3449255,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "http:\/\/enoughrecords.scene.org",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": 0,
+                    "replaygain_track_peak": 0,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "76",
+                    "title": "inominavel p04",
+                    "name": "inominavel p04",
+                    "artist": {
+                        "id": "11",
+                        "name": "structura",
+                        "prefix": null,
+                        "basename": "structura"
+                    },
+                    "artists": [
+                        {
+                            "id": "11",
+                            "name": "structura",
+                            "prefix": null,
+                            "basename": "structura"
+                        }
+                    ],
+                    "album": {
+                        "id": "18",
+                        "name": "Inominavel (live.v.01)",
+                        "prefix": null,
+                        "basename": "Inominavel (live.v.01)"
+                    },
+                    "albumartist": {
+                        "id": "11",
+                        "name": "structura",
+                        "prefix": null,
+                        "basename": "structura"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 4,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/04_structura_-_inominavel_p04.mp3",
+                    "genre": [
+                        {
+                            "id": "3",
+                            "name": "Noise"
+                        }
+                    ],
+                    "playlisttrack": 4,
+                    "time": 317,
+                    "year": 2007,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 192000,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=76&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p04.mp3",
+                    "size": 7629821,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 3,
+                    "averagerating": 3,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "http:\/\/enoughrecords.scene.org",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": 0,
+                    "replaygain_track_peak": 0,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "73",
+                    "title": "inominavel p05",
+                    "name": "inominavel p05",
+                    "artist": {
+                        "id": "11",
+                        "name": "structura",
+                        "prefix": null,
+                        "basename": "structura"
+                    },
+                    "artists": [
+                        {
+                            "id": "11",
+                            "name": "structura",
+                            "prefix": null,
+                            "basename": "structura"
+                        }
+                    ],
+                    "album": {
+                        "id": "18",
+                        "name": "Inominavel (live.v.01)",
+                        "prefix": null,
+                        "basename": "Inominavel (live.v.01)"
+                    },
+                    "albumartist": {
+                        "id": "11",
+                        "name": "structura",
+                        "prefix": null,
+                        "basename": "structura"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 5,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/05_structura_-_inominavel_p05.mp3",
+                    "genre": [
+                        {
+                            "id": "3",
+                            "name": "Noise"
+                        }
+                    ],
+                    "playlisttrack": 5,
+                    "time": 310,
+                    "year": 2007,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 192000,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=73&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p05.mp3",
+                    "size": 7463970,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "http:\/\/enoughrecords.scene.org",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": 0,
+                    "replaygain_track_peak": 0,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "75",
+                    "title": "T - live",
+                    "name": "T - live",
+                    "artist": {
+                        "id": "11",
+                        "name": "structura",
+                        "prefix": null,
+                        "basename": "structura"
+                    },
+                    "artists": [
+                        {
+                            "id": "11",
+                            "name": "structura",
+                            "prefix": null,
+                            "basename": "structura"
+                        }
+                    ],
+                    "album": {
+                        "id": "18",
+                        "name": "Inominavel (live.v.01)",
+                        "prefix": null,
+                        "basename": "Inominavel (live.v.01)"
+                    },
+                    "albumartist": {
+                        "id": "11",
+                        "name": "structura",
+                        "prefix": null,
+                        "basename": "structura"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 6,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/06_structura_-_t_live.mp3",
+                    "genre": [
+                        {
+                            "id": "3",
+                            "name": "Noise"
+                        }
+                    ],
+                    "playlisttrack": 6,
+                    "time": 248,
+                    "year": 2007,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 192000,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=75&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20T%20-%20live.mp3",
+                    "size": 5986451,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": 3,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "http:\/\/enoughrecords.scene.org",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": 0,
+                    "replaygain_track_peak": 0,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
+            "songcount": 6,
+            "genre": [
+                {
+                    "id": "3",
+                    "name": "Noise"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=11&object_type=artist&id=148&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 4,
+            "averagerating": 4,
+            "mbid": null,
+            "summary": ". Born in 2000 at Lisbon - Portugal, Structura is a sound exploration project using as main tools electronic composition, frequency modulation and effects, the cut-up (of texts), spoken word, DJing, samples, video and others.\nStructura works sounds normally associated with experimental electronica currents like Rhythmic-Noise, Power-Electronics, Break'n'Noise, IDM, Spoken-Word but freelly enough not to get to attached to them.\nThe sound compositions in Structura are linked to concepts, images, literature, cinema and other arts.\n\n ",
+            "time": 1339,
+            "yearformed": 0,
+            "placeformed": null
+        },
+        {
+            "id": "2",
+            "name": "Synthetic",
+            "prefix": null,
+            "basename": "Synthetic",
+            "albums": [
+                {
+                    "id": "2",
+                    "name": "Colorsmoke EP",
+                    "prefix": null,
+                    "basename": "Colorsmoke EP",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "songartists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "time": 4568,
+                    "year": 2007,
+                    "tracks": [],
+                    "songcount": 12,
+                    "diskcount": 1,
+                    "type": null,
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "has_art": true,
+                    "flag": true,
+                    "rating": 5,
+                    "averagerating": 3,
+                    "mbid": null,
+                    "mbid_group": null
+                }
+            ],
+            "albumcount": 1,
+            "songs": [
+                {
+                    "id": "64",
+                    "title": "Black&BlueSmoke",
+                    "name": "Black&BlueSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 500,
+                    "year": 2007,
+                    "format": "wma",
+                    "stream_format": "mp3",
+                    "bitrate": 20627,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+                    "size": 1298295,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "56",
+                    "title": "Black&BlueSmoke",
+                    "name": "Black&BlueSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 2,
+                    "time": 500,
+                    "year": 2007,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 64000,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
+                    "size": 4010069,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 2,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": null,
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -5.11,
+                    "replaygain_track_peak": 1,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "59",
+                    "title": "YellowSmoke",
+                    "name": "YellowSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 2,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 3,
+                    "time": 290,
+                    "year": 2007,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 64000,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
+                    "size": 2325568,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "has_art": true,
+                    "flag": true,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": null,
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": 2.75,
+                    "replaygain_track_peak": 0.716,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "65",
+                    "title": "YellowSmoke",
+                    "name": "YellowSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 2,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/02-Synthetic_-_YellowSmoke20k22hS.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 4,
+                    "time": 290,
+                    "year": 2007,
+                    "format": "wma",
+                    "stream_format": "mp3",
+                    "bitrate": 20627,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
+                    "size": 754935,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 2,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "62",
+                    "title": "PurpleSmoke",
+                    "name": "PurpleSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 3,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 5,
+                    "time": 390,
+                    "year": 2007,
+                    "format": "wma",
+                    "stream_format": "mp3",
+                    "bitrate": 20627,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3",
+                    "size": 1014135,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "57",
+                    "title": "PurpleSmoke",
+                    "name": "PurpleSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 3,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 6,
+                    "time": 390,
+                    "year": 2007,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 64000,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3",
+                    "size": 3131519,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": null,
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -5.13,
+                    "replaygain_track_peak": 1,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "58",
+                    "title": "BrownSmoke",
+                    "name": "BrownSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 4,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 7,
+                    "time": 304,
+                    "year": 2007,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 64000,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
+                    "size": 2441886,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": null,
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": "Do you have the time<br \/>\nTo listen to me whine<br \/>\nAbout nothing and everything all at once?<br \/>\nI am one of those<br \/>\nMelodramatic fools<br \/>\nNeurotic to the bone, no doubt about it<br \/>\n<br \/>\nSometimes, I give myself the creeps<br \/>\nSometimes, my mind plays tricks on me<br \/>\n<br \/>\nIt all keeps adding up<br \/>\nI think I'm cracking up<br \/>\nAm I just paranoid?<br \/>\nAm I just stoned?<br \/>\n<br \/>\nAnd I went to a shrink<br \/>\nTo analyze my dreams<br \/>\nShe says it's lack of sex that's bringing me down<br \/>\nAnd I went to a whore<br \/>\nHe said my life's a bore<br \/>\nSo quit my whining 'cause it's bringing her down<br \/>\n<br \/>\nSometimes, I give myself the creeps<br \/>\nSometimes, my mind plays tricks on me<br \/>\n<br \/>\nIt all keeps adding up<br \/>\nI think I'm cracking up<br \/>\nAm I just paranoid?<br \/>\nHuh yeah, yeah, yeah (Ooh, ooh)<br \/>\n<br \/>\nGrasping to control<br \/>\nSo I better hold on<br \/>\n<br \/>\nSometimes, I give myself the creeps<br \/>\nSometimes, my mind plays tricks on me<br \/>\n<br \/>\nIt all keeps adding up<br \/>\nI think I'm cracking up<br \/>\nAm I just paranoid?<br \/>\nAm I just stoned?",
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": 0.96,
+                    "replaygain_track_peak": 0.912,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "60",
+                    "title": "BrownSmoke",
+                    "name": "BrownSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 4,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 8,
+                    "time": 304,
+                    "year": 2007,
+                    "format": "wma",
+                    "stream_format": "mp3",
+                    "bitrate": 20627,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
+                    "size": 792375,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "61",
+                    "title": "Red&GreenSmoke",
+                    "name": "Red&GreenSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 5,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/05-Synthetic_-_RedGreenSmokePM20k44khM.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 9,
+                    "time": 400,
+                    "year": 2007,
+                    "format": "wma",
+                    "stream_format": "mp3",
+                    "bitrate": 20627,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+                    "size": 1044851,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 1,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "63",
+                    "title": "Red&GreenSmoke",
+                    "name": "Red&GreenSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 5,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/05-Synthetic_-_RedGreenSmokePM20k22khS.wma",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 10,
+                    "time": 400,
+                    "year": 2007,
+                    "format": "wma",
+                    "stream_format": "mp3",
+                    "bitrate": 20627,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/x-ms-wma",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=63&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+                    "size": 1041065,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "Made with Sony ACID 5",
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "54",
+                    "title": "Red&GreenSmoke",
+                    "name": "Red&GreenSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 5,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 11,
+                    "time": 400,
+                    "year": 2007,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 64000,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+                    "size": 3209468,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": 3,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 1,
+                    "comment": null,
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -2.88,
+                    "replaygain_track_peak": 0.977,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "55",
+                    "title": "Red&GreenSmoke",
+                    "name": "Red&GreenSmoke",
+                    "artist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "artists": [
+                        {
+                            "id": "2",
+                            "name": "Synthetic",
+                            "prefix": null,
+                            "basename": "Synthetic"
+                        }
+                    ],
+                    "album": {
+                        "id": "2",
+                        "name": "Colorsmoke EP",
+                        "prefix": null,
+                        "basename": "Colorsmoke EP"
+                    },
+                    "albumartist": {
+                        "id": "2",
+                        "name": "Synthetic",
+                        "prefix": null,
+                        "basename": "Synthetic"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 5,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
+                    "genre": [
+                        {
+                            "id": "1",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 12,
+                    "time": 400,
+                    "year": 2007,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 64000,
+                    "stream_bitrate": 32000,
+                    "rate": 22050,
+                    "mode": "cbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
+                    "size": 3209886,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": null,
+                    "license": null,
+                    "publisher": "20kbps rec.",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -4.06,
+                    "replaygain_track_peak": 1,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
+            "songcount": 12,
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=artist&id=256&name=art.jpg",
+            "has_art": true,
+            "flag": true,
+            "rating": 5,
+            "averagerating": 3,
+            "mbid": "1",
+            "summary": "Synthetic was formed in the late 90's by Steve Engler (formerly of Primitive Modern, Twitch Revolt & Domestic Violence), Synthetic is an eclectic act. Influences range from Aphex Twin to Frank Zappa and everything in between. Currently has 3 remixes on Bush-of-ghosts.com under artist names: AAASYNTHETIC and STEVEEDENVER. Has several remixes on RealWorldRemixed.com (Peter Gabriel's Label). Also is he represented on mp3unsigned.com as Synthetic. Synthetic has completed 5 LPs and 8-10 EPs. ",
+            "time": 4568,
+            "yearformed": 0,
+            "placeformed": null
+        },
+        {
+            "id": "19",
+            "name": "Various Artists",
+            "prefix": null,
+            "basename": "Various Artists",
+            "albums": [
+                {
+                    "id": "12",
+                    "name": "Buried in Nausea",
+                    "prefix": null,
+                    "basename": "Buried in Nausea",
+                    "artist": {
+                        "id": "19",
+                        "name": "Various Artists",
+                        "prefix": null,
+                        "basename": "Various Artists"
+                    },
+                    "artists": [
+                        {
+                            "id": "19",
+                            "name": "Various Artists",
+                            "prefix": null,
+                            "basename": "Various Artists"
+                        }
+                    ],
+                    "songartists": [
+                        {
+                            "id": "20",
+                            "name": "R\/B",
+                            "prefix": null,
+                            "basename": "R\/B"
+                        },
+                        {
+                            "id": "21",
+                            "name": "Tip-C (featuring Mike Beers)",
+                            "prefix": null,
+                            "basename": "Tip-C (featuring Mike Beers)"
+                        },
+                        {
+                            "id": "23",
+                            "name": "Manic Notion",
+                            "prefix": null,
+                            "basename": "Manic Notion"
+                        },
+                        {
+                            "id": "26",
+                            "name": "Stress Builds Character",
+                            "prefix": null,
+                            "basename": "Stress Builds Character"
+                        },
+                        {
+                            "id": "27",
+                            "name": "Chi.Otic",
+                            "prefix": null,
+                            "basename": "Chi.Otic"
+                        },
+                        {
+                            "id": "32",
+                            "name": "Shorty Mac",
+                            "prefix": null,
+                            "basename": "Shorty Mac"
+                        },
+                        {
+                            "id": "33",
+                            "name": "MxBxCx",
+                            "prefix": null,
+                            "basename": "MxBxCx"
+                        },
+                        {
+                            "id": "34",
+                            "name": "Comedown Kid",
+                            "prefix": null,
+                            "basename": "Comedown Kid"
+                        },
+                        {
+                            "id": "35",
+                            "name": "Tip-C",
+                            "prefix": null,
+                            "basename": "Tip-C"
+                        }
+                    ],
+                    "time": 1879,
+                    "year": 2012,
+                    "tracks": [],
+                    "songcount": 9,
+                    "diskcount": 1,
+                    "type": "compilation",
+                    "genre": [
+                        {
+                            "id": "7",
+                            "name": "Punk"
+                        }
+                    ],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "mbid": null,
+                    "mbid_group": null
+                }
+            ],
+            "albumcount": 1,
+            "songs": [],
+            "songcount": 0,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=19&object_type=artist&id=152&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "mbid": null,
+            "summary": "Warning! Deleting this artist may remove other artists and scrobbles from your library - please handle with caution!  Note: You can view albums tagged as 'Various Artists' in your library here. \n\nThe term Various Artists is used in the record industry when numerous singers and musicians collaborate on a song or collection of songs. Most often on Last.fm, compilation album tracks appear under the name of Various Artists erroneously because the individual artist is not listed in the album's ID3 information. ",
+            "time": 1437,
+            "yearformed": 0,
+            "placeformed": null
+        },
+        {
+            "id": "15",
+            "name": "Warfare 3.0",
+            "prefix": null,
+            "basename": "Warfare 3.0",
+            "albums": [
+                {
+                    "id": "9",
+                    "name": "Creeping Lawler 2",
+                    "prefix": null,
+                    "basename": "Creeping Lawler 2",
+                    "artist": {
+                        "id": "15",
+                        "name": "Warfare 3.0",
+                        "prefix": null,
+                        "basename": "Warfare 3.0"
+                    },
+                    "artists": [
+                        {
+                            "id": "15",
+                            "name": "Warfare 3.0",
+                            "prefix": null,
+                            "basename": "Warfare 3.0"
+                        }
+                    ],
+                    "songartists": [
+                        {
+                            "id": "15",
+                            "name": "Warfare 3.0",
+                            "prefix": null,
+                            "basename": "Warfare 3.0"
+                        }
+                    ],
+                    "time": 592,
+                    "year": 0,
+                    "tracks": [],
+                    "songcount": 2,
+                    "diskcount": 1,
+                    "type": null,
+                    "genre": [],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=23&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 3,
+                    "averagerating": null,
+                    "mbid": null,
+                    "mbid_group": null
+                }
+            ],
+            "albumcount": 1,
+            "songs": [
+                {
+                    "id": "96",
+                    "title": "Creeping Lawler 2",
+                    "name": "Creeping Lawler 2",
+                    "artist": {
+                        "id": "15",
+                        "name": "Warfare 3.0",
+                        "prefix": null,
+                        "basename": "Warfare 3.0"
+                    },
+                    "artists": [
+                        {
+                            "id": "15",
+                            "name": "Warfare 3.0",
+                            "prefix": null,
+                            "basename": "Warfare 3.0"
+                        }
+                    ],
+                    "album": {
+                        "id": "9",
+                        "name": "Creeping Lawler 2",
+                        "prefix": null,
+                        "basename": "Creeping Lawler 2"
+                    },
+                    "albumartist": {
+                        "id": "15",
+                        "name": "Warfare 3.0",
+                        "prefix": null,
+                        "basename": "Warfare 3.0"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.wav",
+                    "genre": [],
+                    "playlisttrack": 1,
+                    "time": 296,
+                    "year": 0,
+                    "format": "wav",
+                    "stream_format": "mp3",
+                    "bitrate": 1411200,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/wav",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
+                    "size": 52345628,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=23&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": null,
+                    "playcount": 4,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": null,
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -4.31,
+                    "replaygain_track_peak": 0.989,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "97",
+                    "title": "Creeping Lawler 2",
+                    "name": "Creeping Lawler 2",
+                    "artist": {
+                        "id": "15",
+                        "name": "Warfare 3.0",
+                        "prefix": null,
+                        "basename": "Warfare 3.0"
+                    },
+                    "artists": [
+                        {
+                            "id": "15",
+                            "name": "Warfare 3.0",
+                            "prefix": null,
+                            "basename": "Warfare 3.0"
+                        }
+                    ],
+                    "album": {
+                        "id": "9",
+                        "name": "Creeping Lawler 2",
+                        "prefix": null,
+                        "basename": "Creeping Lawler 2"
+                    },
+                    "albumartist": {
+                        "id": "15",
+                        "name": "Warfare 3.0",
+                        "prefix": null,
+                        "basename": "Warfare 3.0"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
+                    "genre": [],
+                    "playlisttrack": 2,
+                    "time": 296,
+                    "year": 0,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 177349,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
+                    "size": 6652448,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=23&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 0,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "https:\/\/archive.org\/details\/Creeping_Lawler_2",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -4.32,
+                    "replaygain_track_peak": 0.977,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
+            "songcount": 2,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=15&object_type=artist&id=78&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 3,
+            "averagerating": null,
+            "mbid": null,
+            "summary": null,
+            "time": 592,
+            "yearformed": 0,
+            "placeformed": null
+        },
+        {
+            "id": "12",
+            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+            "prefix": null,
+            "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+            "albums": [
+                {
+                    "id": "6",
+                    "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
+                    "prefix": null,
+                    "basename": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
+                    "artist": {
+                        "id": "12",
+                        "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                        "prefix": null,
+                        "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+                    },
+                    "artists": [
+                        {
+                            "id": "12",
+                            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                            "prefix": null,
+                            "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+                        }
+                    ],
+                    "songartists": [
+                        {
+                            "id": "12",
+                            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                            "prefix": null,
+                            "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+                        }
+                    ],
+                    "time": 600,
+                    "year": 0,
+                    "tracks": [],
+                    "songcount": 2,
+                    "diskcount": 1,
+                    "type": null,
+                    "genre": [],
+                    "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=album&id=22&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 1,
+                    "averagerating": 1,
+                    "mbid": null,
+                    "mbid_group": null
+                }
+            ],
+            "albumcount": 1,
+            "songs": [
+                {
+                    "id": "79",
+                    "title": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
+                    "name": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
+                    "artist": {
+                        "id": "12",
+                        "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                        "prefix": null,
+                        "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+                    },
+                    "artists": [
+                        {
+                            "id": "12",
+                            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                            "prefix": null,
+                            "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+                        }
+                    ],
+                    "album": {
+                        "id": "6",
+                        "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
+                        "prefix": null,
+                        "basename": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)"
+                    },
+                    "albumartist": {
+                        "id": "12",
+                        "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                        "prefix": null,
+                        "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c\/\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)\/01 - \u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d.mp3",
+                    "genre": [],
+                    "playlisttrack": 1,
+                    "time": 300,
+                    "year": 0,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 175202,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "vbr",
+                    "mime": "audio\/mpeg",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=79&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=-%20-%20-%20-%20-%20-%20-.mp3",
+                    "size": 6664157,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=album&id=22&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 1,
+                    "averagerating": 1,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "https:\/\/archive.org\/details\/IBR_385",
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -21.28,
+                    "replaygain_track_peak": 1,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                },
+                {
+                    "id": "80",
+                    "title": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
+                    "name": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
+                    "artist": {
+                        "id": "12",
+                        "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                        "prefix": null,
+                        "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+                    },
+                    "artists": [
+                        {
+                            "id": "12",
+                            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                            "prefix": null,
+                            "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+                        }
+                    ],
+                    "album": {
+                        "id": "6",
+                        "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
+                        "prefix": null,
+                        "basename": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)"
+                    },
+                    "albumartist": {
+                        "id": "12",
+                        "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                        "prefix": null,
+                        "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 1,
+                    "filename": "\/mnt\/files-music\/ampache-test\/music\/\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c\/\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)\/01 - \u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d.wav",
+                    "genre": [],
+                    "playlisttrack": 2,
+                    "time": 300,
+                    "year": 0,
+                    "format": "wav",
+                    "stream_format": "mp3",
+                    "bitrate": 1411200,
+                    "stream_bitrate": 32000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio\/wav",
+                    "stream_mime": "audio\/mpeg",
+                    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=80&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=-%20-%20-%20-%20-%20-%20-.mp3",
+                    "size": 53026998,
+                    "mbid": null,
+                    "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=album&id=22&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": 5,
+                    "averagerating": 3,
+                    "playcount": 1,
+                    "catalog": 1,
+                    "composer": null,
+                    "channels": 2,
+                    "comment": null,
+                    "license": null,
+                    "publisher": "archive.org",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": -21.75,
+                    "replaygain_track_peak": 1,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            ],
+            "songcount": 2,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=artist&id=87&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 1,
+            "averagerating": null,
+            "mbid": null,
+            "summary": null,
+            "time": 600,
             "yearformed": 0,
             "placeformed": null
         }

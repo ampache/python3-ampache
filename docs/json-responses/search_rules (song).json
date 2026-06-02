@@ -32,7 +32,7 @@
         },
         {
             "name": "album",
-            "label": "Album",
+            "label": "Album Title",
             "type": "text",
             "widget": [
                 "input",
@@ -41,7 +41,7 @@
             "title": "Song Data"
         },
         {
-            "name": "artist",
+            "name": "song_artist",
             "label": "Song Artist",
             "type": "text",
             "widget": [
@@ -209,7 +209,7 @@
             "title": "Ratings"
         },
         {
-            "name": "my_flagged",
+            "name": "my_flagged_song",
             "label": "My Favorite Songs",
             "type": "boolean",
             "widget": [
@@ -265,6 +265,36 @@
             "widget": [
                 "input",
                 "text"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "weight_song",
+            "label": "Song popularity score",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "weight_album",
+            "label": "Album popularity score",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "weight_artist",
+            "label": "Artist popularity score",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
             ],
             "title": "Ratings"
         },

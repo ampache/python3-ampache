@@ -46,6 +46,109 @@
     <widget/>
     <title><![CDATA[Podcast Episodes]]></title>
   </rule>
+  <rule id="myrating">
+    <name><![CDATA[myrating]]></name>
+    <label><![CDATA[My Rating]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget>
+      <select id="0"><![CDATA[0 Stars]]></select>
+      <select id="1"><![CDATA[1 Star]]></select>
+      <select id="2"><![CDATA[2 Stars]]></select>
+      <select id="3"><![CDATA[3 Stars]]></select>
+      <select id="4"><![CDATA[4 Stars]]></select>
+      <select id="5"><![CDATA[5 Stars]]></select>
+    </widget>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="rating">
+    <name><![CDATA[rating]]></name>
+    <label><![CDATA[Rating (Average)]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget>
+      <select id="0"><![CDATA[0 Stars]]></select>
+      <select id="1"><![CDATA[1 Star]]></select>
+      <select id="2"><![CDATA[2 Stars]]></select>
+      <select id="3"><![CDATA[3 Stars]]></select>
+      <select id="4"><![CDATA[4 Stars]]></select>
+      <select id="5"><![CDATA[5 Stars]]></select>
+    </widget>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="podcastrating">
+    <name><![CDATA[podcastrating]]></name>
+    <label><![CDATA[My Rating (Podcast)]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget>
+      <select id="0"><![CDATA[0 Stars]]></select>
+      <select id="1"><![CDATA[1 Star]]></select>
+      <select id="2"><![CDATA[2 Stars]]></select>
+      <select id="3"><![CDATA[3 Stars]]></select>
+      <select id="4"><![CDATA[4 Stars]]></select>
+      <select id="5"><![CDATA[5 Stars]]></select>
+    </widget>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="podcast_episoderating">
+    <name><![CDATA[podcast_episoderating]]></name>
+    <label><![CDATA[My Rating (Podcast Episode)]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget>
+      <select id="0"><![CDATA[0 Stars]]></select>
+      <select id="1"><![CDATA[1 Star]]></select>
+      <select id="2"><![CDATA[2 Stars]]></select>
+      <select id="3"><![CDATA[3 Stars]]></select>
+      <select id="4"><![CDATA[4 Stars]]></select>
+      <select id="5"><![CDATA[5 Stars]]></select>
+    </widget>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="my_flagged_podcast">
+    <name><![CDATA[my_flagged_podcast]]></name>
+    <label><![CDATA[My Favorite Podcasts]]></label>
+    <type><![CDATA[boolean]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="my_flagged_podcast_episode">
+    <name><![CDATA[my_flagged_podcast_episode]]></name>
+    <label><![CDATA[My Favorite Podcast Episodes]]></label>
+    <type><![CDATA[boolean]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="weight_podcast">
+    <name><![CDATA[weight_podcast]]></name>
+    <label><![CDATA[Podcast popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="weight_podcast_episode">
+    <name><![CDATA[weight_podcast_episode]]></name>
+    <label><![CDATA[Podcast Episode popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="favorite">
+    <name><![CDATA[favorite]]></name>
+    <label><![CDATA[Favorites]]></label>
+    <type><![CDATA[text]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="other_user">
+    <name><![CDATA[other_user]]></name>
+    <label><![CDATA[Another User]]></label>
+    <type><![CDATA[user_numeric]]></type>
+    <widget>
+      <select id="2"><![CDATA[admin]]></select>
+      <select id="3"><![CDATA[demo]]></select>
+      <select id="4"><![CDATA[user]]></select>
+      <select id="10"><![CDATA[generic]]></select>
+    </widget>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
   <rule id="played_times">
     <name><![CDATA[played_times]]></name>
     <label><![CDATA[# Played]]></label>
