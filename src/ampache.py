@@ -188,15 +188,40 @@ class API(object):
                 config = json.load(file)
             try:
                 self.AMPACHE_URL = config["ampache_url"]
+            except (TypeError, IndexError):
+                return False
+            except KeyError:
+                pass
+            try:
                 self.AMPACHE_USER = config["ampache_user"]
+            except (TypeError, IndexError):
+                return False
+            except KeyError:
+                pass
+            try:
                 self.AMPACHE_KEY = config["ampache_apikey"]
+            except (TypeError, IndexError):
+                return False
+            except KeyError:
+                pass
+            try:
                 self.AMPACHE_BEARER_TOKEN = config["ampache_bearer_token"]
+            except (TypeError, IndexError):
+                return False
+            except KeyError:
+                pass
+            try:
                 self.AMPACHE_SESSION = config["ampache_session"]
+            except (TypeError, IndexError):
+                return False
+            except KeyError:
+                pass
+            try:
                 self.AMPACHE_API = config["api_format"]
-            except TypeError:
+            except (TypeError, IndexError):
                 return False
-            except IndexError:
-                return False
+            except KeyError:
+                pass
 
             return True
         return False
@@ -475,8 +500,8 @@ class API(object):
             else:
                 req = urllib.request.Request(full_url, headers=headers)
             result = urllib.request.urlopen(req)
-        except urllib.error.HTTPError:
-            return False
+        except urllib.error.HTTPError as error:
+            result = error
         except urllib.error.URLError:
             return False
         except ValueError:
