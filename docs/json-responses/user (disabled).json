@@ -1,18 +1,8 @@
 {
-    "id": "61",
-    "username": "otheruser",
-    "auth": null,
-    "email": "otheruser@ampache.dev",
-    "access": 25,
-    "streamtoken": "b944cfc60c55e3bcd67486f3f35e197719fea9a0",
-    "fullname_public": false,
-    "validation": null,
-    "disabled": true,
-    "create_date": 1670202701,
-    "last_seen": 0,
-    "website": null,
-    "state": null,
-    "city": null,
-    "art": "https:\/\/music.com.au\/image.php?action=show_user_avatar&object_id=61&object_type=user&name=art.jpg",
-    "has_art": false
+    "error": {
+        "errorCode": "4704",
+        "errorAction": "user",
+        "errorType": "username",
+        "errorMessage": "Not Found: otheruser"
+    }
 }

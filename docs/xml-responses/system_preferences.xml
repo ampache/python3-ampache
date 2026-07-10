@@ -228,6 +228,16 @@
     <subcategory><![CDATA[api]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
+  <preference id="226">
+    <name><![CDATA[api_enable_8]]></name>
+    <level>25</level>
+    <description><![CDATA[Allow Ampache API8 responses]]></description>
+    <value>1</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[options]]></category>
+    <subcategory><![CDATA[api]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
   <preference id="223">
     <name><![CDATA[subsonic_legacy]]></name>
     <level>25</level>
@@ -254,6 +264,16 @@
       <value id="3"><![CDATA[5]]></value>
       <value id="4"><![CDATA[6]]></value>
     </values>
+  </preference>
+  <preference id="224">
+    <name><![CDATA[subsonic_force_album_artist]]></name>
+    <level>25</level>
+    <description><![CDATA[Force Album Artist for Subsonic API responses]]></description>
+    <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[options]]></category>
+    <subcategory><![CDATA[api]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
   </preference>
   <preference id="204">
     <name><![CDATA[api_always_download]]></name>
@@ -295,20 +315,10 @@
     <subcategory><![CDATA[api]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
-  <preference id="224">
-    <name><![CDATA[subsonic_force_album_artist]]></name>
-    <level>25</level>
-    <description><![CDATA[Only select Album Artists when making Subsonic Artist calls]]></description>
-    <value>0</value>
-    <type><![CDATA[boolean]]></type>
-    <category><![CDATA[options]]></category>
-    <subcategory><![CDATA[api]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
   <preference id="225">
     <name><![CDATA[subsonic_single_user_data]]></name>
     <level>25</level>
-    <description><![CDATA[Only show my data when making Subsonic list calls]]></description>
+    <description><![CDATA[Use single user data for Subsonic API responses]]></description>
     <value>1</value>
     <type><![CDATA[boolean]]></type>
     <category><![CDATA[options]]></category>
@@ -1104,7 +1114,7 @@
     <name><![CDATA[direct_play_limit]]></name>
     <level>25</level>
     <description><![CDATA[Limit direct play to maximum media count]]></description>
-    <value>0</value>
+    <value>500</value>
     <type><![CDATA[integer]]></type>
     <category><![CDATA[interface]]></category>
     <subcategory><![CDATA[player]]></subcategory>
@@ -1424,6 +1434,16 @@
     <level>25</level>
     <description><![CDATA[Show 'Artists' link in the main sidebar]]></description>
     <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[interface]]></category>
+    <subcategory><![CDATA[sidebar]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="227">
+    <name><![CDATA[show_folder]]></name>
+    <level>25</level>
+    <description><![CDATA[Show 'Folders' link in the main sidebar]]></description>
+    <value>1</value>
     <type><![CDATA[boolean]]></type>
     <category><![CDATA[interface]]></category>
     <subcategory><![CDATA[sidebar]]></subcategory>

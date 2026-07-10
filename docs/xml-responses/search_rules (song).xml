@@ -225,7 +225,6 @@
       <select id="2"><![CDATA[admin]]></select>
       <select id="3"><![CDATA[demo]]></select>
       <select id="4"><![CDATA[user]]></select>
-      <select id="10"><![CDATA[generic]]></select>
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
@@ -237,7 +236,6 @@
       <select id="2"><![CDATA[admin]]></select>
       <select id="3"><![CDATA[demo]]></select>
       <select id="4"><![CDATA[user]]></select>
-      <select id="10"><![CDATA[generic]]></select>
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
@@ -249,7 +247,6 @@
       <select id="2"><![CDATA[admin]]></select>
       <select id="3"><![CDATA[demo]]></select>
       <select id="4"><![CDATA[user]]></select>
-      <select id="10"><![CDATA[generic]]></select>
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
@@ -604,20 +601,20 @@
     <label><![CDATA[MusicBrainz ID]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
-    <title><![CDATA[MusicBrainz]]></title>
+    <title><![CDATA[Musicbrainz]]></title>
   </rule>
   <rule id="mbid_album">
     <name><![CDATA[mbid_album]]></name>
     <label><![CDATA[MusicBrainz ID (Album)]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
-    <title><![CDATA[MusicBrainz]]></title>
+    <title><![CDATA[Musicbrainz]]></title>
   </rule>
   <rule id="mbid_artist">
     <name><![CDATA[mbid_artist]]></name>
     <label><![CDATA[MusicBrainz ID (Artist)]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
-    <title><![CDATA[MusicBrainz]]></title>
+    <title><![CDATA[Musicbrainz]]></title>
   </rule>
 </root>

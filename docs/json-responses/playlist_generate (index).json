@@ -1,312 +1,284 @@
 {
     "total_count": 4,
-    "md5": "559910902822f5dc670b374b7ce71323",
+    "md5": "f9741418fb57946cddfc4bf7f651cf70",
     "song": [
         {
-            "id": "95",
-            "title": "Spirus Falls",
-            "name": "Spirus Falls",
+            "id": "114",
+            "title": "He is the Master of War",
+            "name": "He is the Master of War",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "26",
+                "name": "Stress Builds Character",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "Stress Builds Character"
             },
             "artists": [
                 {
-                    "id": "14",
-                    "name": "Nofi\/found.",
+                    "id": "26",
+                    "name": "Stress Builds Character",
                     "prefix": null,
-                    "basename": "Nofi\/found."
+                    "basename": "Stress Builds Character"
                 }
             ],
             "album": {
-                "id": "8",
-                "name": "Nofi Devices",
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "Nofi Devices"
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "19",
+                "name": "Various Artists",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "Various Artists"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/02_Spirus_Falls.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a",
+            "genre": [],
             "playlisttrack": 1,
-            "time": 327,
-            "year": 0,
-            "format": "mp3",
+            "time": 233,
+            "year": 2012,
+            "format": "m4a",
             "stream_format": "mp3",
-            "bitrate": 192000,
+            "bitrate": 256245,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
+            "mode": "vbr",
+            "mime": "audio\/mp4",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3",
-            "size": 7875775,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.mp3",
+            "size": 7535126,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 1,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
-            "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
-            "license": null,
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": -1.53,
-            "replaygain_track_peak": 1,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "59",
-            "title": "YellowSmoke",
-            "name": "YellowSmoke",
-            "artist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "artists": [
-                {
-                    "id": "2",
-                    "name": "Synthetic",
-                    "prefix": null,
-                    "basename": "Synthetic"
-                }
-            ],
-            "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
-                "prefix": null,
-                "basename": "Colorsmoke EP"
-            },
-            "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
-                "prefix": null,
-                "basename": "Synthetic"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 290,
-            "year": 2007,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 64000,
-            "stream_bitrate": 32000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
-            "size": 2325568,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
-            "has_art": true,
-            "flag": true,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
-            "composer": null,
-            "channels": 2,
-            "comment": null,
-            "license": null,
-            "publisher": "20kbps rec.",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": 2.75,
-            "replaygain_track_peak": 0.716,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "89",
-            "title": "Stolen",
-            "name": "Stolen",
-            "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "artists": [
-                {
-                    "id": "14",
-                    "name": "Nofi\/found.",
-                    "prefix": null,
-                    "basename": "Nofi\/found."
-                }
-            ],
-            "album": {
-                "id": "8",
-                "name": "Nofi Devices",
-                "prefix": null,
-                "basename": "Nofi Devices"
-            },
-            "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 11,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/11_Stolen.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 628,
-            "year": 0,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 192000,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=89&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stolen.mp3",
-            "size": 15100325,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
+            "catalog": "1",
+            "composer": null,
             "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "comment": null,
+            "license": null,
+            "publisher": null,
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -10.74,
+            "replaygain_track_peak": 1.035,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "101",
+            "title": "Rehearsal Tape (1996)",
+            "name": "Rehearsal Tape (1996)",
+            "artist": {
+                "id": "16",
+                "name": "CARN\u00daN",
+                "prefix": null,
+                "basename": "CARN\u00daN"
+            },
+            "artists": [
+                {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                }
+            ],
+            "album": {
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "prefix": null,
+                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+            },
+            "albumartist": {
+                "id": "16",
+                "name": "CARN\u00daN",
+                "prefix": null,
+                "basename": "CARN\u00daN"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 9,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/09RehearsalTape1996.ogg",
+            "genre": [],
+            "playlisttrack": 2,
+            "time": 980,
+            "year": 1996,
+            "format": "ogg",
+            "stream_format": "mp3",
+            "bitrate": 66912,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "application\/ogg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.mp3",
+            "size": 8219821,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": "1",
+            "composer": null,
+            "channels": 2,
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": 2.66,
+            "replaygain_track_gain": -9.56,
+            "replaygain_track_peak": 1,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "110",
+            "title": "I wanna walk through the fire",
+            "name": "I wanna walk through the fire",
+            "artist": {
+                "id": "23",
+                "name": "Manic Notion",
+                "prefix": null,
+                "basename": "Manic Notion"
+            },
+            "artists": [
+                {
+                    "id": "23",
+                    "name": "Manic Notion",
+                    "prefix": null,
+                    "basename": "Manic Notion"
+                }
+            ],
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": null,
+                "basename": "Various Artists"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/01ManicNotion-IWannaWalkThroughTheFire.m4a",
+            "genre": [],
+            "playlisttrack": 3,
+            "time": 197,
+            "year": 2012,
+            "format": "m4a",
+            "stream_format": "mp3",
+            "bitrate": 267320,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mp4",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.mp3",
+            "size": 6651911,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": "1",
+            "composer": null,
+            "channels": 2,
+            "comment": null,
+            "license": null,
+            "publisher": null,
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -5.15,
             "replaygain_track_peak": 0.989,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "56",
-            "title": "Black&BlueSmoke",
-            "name": "Black&BlueSmoke",
+            "id": "97",
+            "title": "Creeping Lawler 2",
+            "name": "Creeping Lawler 2",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "15",
+                "name": "Warfare 3.0",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Warfare 3.0"
             },
             "artists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "15",
+                    "name": "Warfare 3.0",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "Warfare 3.0"
                 }
             ],
             "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
+                "id": "9",
+                "name": "Creeping Lawler 2",
                 "prefix": null,
-                "basename": "Colorsmoke EP"
+                "basename": "Creeping Lawler 2"
             },
             "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "15",
+                "name": "Warfare 3.0",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Warfare 3.0"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
-            "genre": [
-                {
-                    "id": "1",
-                    "name": "Electronic"
-                }
-            ],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
+            "genre": [],
             "playlisttrack": 4,
-            "time": 500,
-            "year": 2007,
+            "time": 296,
+            "year": 0,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 64000,
+            "bitrate": 177349,
             "stream_bitrate": 32000,
-            "rate": 22050,
-            "mode": "cbr",
+            "rate": 44100,
+            "mode": "vbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-            "size": 4010069,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
+            "size": 6652448,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=455&name=art.jpg",
             "has_art": true,
             "flag": false,
-            "rating": 5,
+            "rating": null,
             "averagerating": null,
-            "playcount": 2,
-            "catalog": 1,
+            "playcount": 0,
+            "catalog": "1",
             "composer": null,
             "channels": 2,
-            "comment": null,
+            "comment": "https:\/\/archive.org\/details\/Creeping_Lawler_2",
             "license": null,
-            "publisher": "20kbps rec.",
+            "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -5.11,
-            "replaygain_track_peak": 1,
+            "replaygain_track_gain": -4.32,
+            "replaygain_track_peak": 0.977,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

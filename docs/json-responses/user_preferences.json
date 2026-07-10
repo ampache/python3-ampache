@@ -214,6 +214,17 @@
             "has_access": true
         },
         {
+            "id": 226,
+            "name": "api_enable_8",
+            "level": 25,
+            "description": "Allow Ampache API8 responses",
+            "value": "1",
+            "type": "boolean",
+            "category": "options",
+            "subcategory": "api",
+            "has_access": true
+        },
+        {
             "id": 223,
             "name": "subsonic_legacy",
             "level": 25,
@@ -241,6 +252,17 @@
                 5,
                 6
             ]
+        },
+        {
+            "id": 224,
+            "name": "subsonic_force_album_artist",
+            "level": 25,
+            "description": "Force Album Artist for Subsonic API responses",
+            "value": "0",
+            "type": "boolean",
+            "category": "options",
+            "subcategory": "api",
+            "has_access": true
         },
         {
             "id": 204,
@@ -287,21 +309,10 @@
             "has_access": true
         },
         {
-            "id": 224,
-            "name": "subsonic_force_album_artist",
-            "level": 25,
-            "description": "Only select Album Artists when making Subsonic Artist calls",
-            "value": "0",
-            "type": "boolean",
-            "category": "options",
-            "subcategory": "api",
-            "has_access": true
-        },
-        {
             "id": 225,
             "name": "subsonic_single_user_data",
             "level": 25,
-            "description": "Only show my data when making Subsonic list calls",
+            "description": "Use single user data for Subsonic API responses",
             "value": "1",
             "type": "boolean",
             "category": "options",
@@ -1021,7 +1032,7 @@
             "name": "direct_play_limit",
             "level": 25,
             "description": "Limit direct play to maximum media count",
-            "value": "0",
+            "value": "500",
             "type": "integer",
             "category": "interface",
             "subcategory": "player",
@@ -1339,6 +1350,17 @@
             "level": 25,
             "description": "Show 'Artists' link in the main sidebar",
             "value": "0",
+            "type": "boolean",
+            "category": "interface",
+            "subcategory": "sidebar",
+            "has_access": true
+        },
+        {
+            "id": 227,
+            "name": "show_folder",
+            "level": 25,
+            "description": "Show 'Folders' link in the main sidebar",
+            "value": "1",
             "type": "boolean",
             "category": "interface",
             "subcategory": "sidebar",
