@@ -1,29 +1,7 @@
 {
-    "total_count": 8,
-    "md5": "747a586ba428c879b8b9157188da2702",
+    "total_count": 6,
+    "md5": "8bfb77a606c708e933b6e030dc738d32",
     "bookmark": [
-        {
-            "id": "1",
-            "owner": "user",
-            "object_type": "podcast_episode",
-            "object_id": "2",
-            "position": 0,
-            "client": "AmpacheAPI",
-            "creation_date": 1670202706,
-            "update_date": 1698974919,
-            "podcast_episode": []
-        },
-        {
-            "id": "2",
-            "owner": "user",
-            "object_type": "podcast_episode",
-            "object_id": "2",
-            "position": 0,
-            "client": "AmpacheAPI",
-            "creation_date": 1670202706,
-            "update_date": 1698974919,
-            "podcast_episode": []
-        },
         {
             "id": "3",
             "owner": "user",
@@ -114,7 +92,9 @@
             "position": 10,
             "client": "client",
             "creation_date": 1670202706,
-            "update_date": 1698974919,
+            "update_date": 1698974919
+        },
+        {
             "song": [
                 {
                     "id": "64",
@@ -170,7 +150,7 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
                     "size": 1298295,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=427&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
@@ -339,7 +319,7 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
                     "size": 1298295,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=427&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
@@ -508,7 +488,7 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
                     "size": 1298295,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=427&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,

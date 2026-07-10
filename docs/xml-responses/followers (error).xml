@@ -1,3 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
+  <error errorCode="4704">
+    <errorAction><![CDATA[followers]]></errorAction>
+    <errorType><![CDATA[username]]></errorType>
+    <errorMessage><![CDATA[Not Found: otheruser]]></errorMessage>
+  </error>
 </root>

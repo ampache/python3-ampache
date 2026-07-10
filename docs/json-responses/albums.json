@@ -1,51 +1,51 @@
 {
     "total_count": 1,
-    "md5": "a5f5d7a5fc80600513c623db108873af",
+    "md5": "d63aca0b7e6237c7964320bd7fc95644",
     "album": [
         {
-            "id": "2",
-            "name": "Colorsmoke EP",
+            "id": "7",
+            "name": "Sensorisk Deprivation",
             "prefix": null,
-            "basename": "Colorsmoke EP",
+            "basename": "Sensorisk Deprivation",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "13",
+                "name": "IOK-1",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "IOK-1"
             },
             "artists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "13",
+                    "name": "IOK-1",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "IOK-1"
                 }
             ],
             "songartists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "13",
+                    "name": "IOK-1",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "IOK-1"
                 }
             ],
-            "time": 4568,
-            "year": 2007,
+            "time": 3428,
+            "year": 2011,
             "tracks": [],
-            "songcount": 12,
+            "songcount": 4,
             "diskcount": 1,
             "type": null,
             "genre": [
                 {
-                    "id": "1",
-                    "name": "Electronic"
+                    "id": "4",
+                    "name": "Dark Ambient"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
             "has_art": true,
-            "flag": true,
-            "rating": 5,
-            "averagerating": 3,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
             "mbid": null,
             "mbid_group": null
         }

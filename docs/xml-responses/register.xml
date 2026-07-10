@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <success code="1">
-    <message><![CDATA[Please wait for an administrator to activate your account]]></message>
-  </success>
+  <error errorCode="4710">
+    <errorAction><![CDATA[register]]></errorAction>
+    <errorType><![CDATA[username]]></errorType>
+    <errorMessage><![CDATA[Bad Request: register_xml]]></errorMessage>
+  </error>
 </root>

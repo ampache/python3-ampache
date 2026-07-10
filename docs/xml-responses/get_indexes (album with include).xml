@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>9</total_count>
-  <md5>8d47e7510b393ed3f62dea338db36914</md5>
+  <md5>6f3f750a2b7456c59c805325e8dd8f76</md5>
   <album id="12">
     <name><![CDATA[Buried in Nausea]]></name>
     <prefix><![CDATA[]]></prefix>
@@ -325,10 +325,10 @@
         <mbid><![CDATA[]]></mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
         <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
+        <flag>1</flag>
+        <rating>5</rating>
         <averagerating/>
-        <playcount>0</playcount>
+        <playcount>1</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>1</channels>
@@ -816,7 +816,7 @@
         <mbid><![CDATA[]]></mbid>
         <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
         <has_art>1</has_art>
-        <flag>0</flag>
+        <flag>1</flag>
         <rating>5</rating>
         <averagerating>4.5</averagerating>
         <playcount>1</playcount>
@@ -1188,7 +1188,7 @@
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
         <size>4010069</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating>5</rating>
@@ -1248,7 +1248,7 @@
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
         <size>1298295</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -1308,9 +1308,9 @@
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
         <size>2325568</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
         <has_art>1</has_art>
-        <flag>1</flag>
+        <flag>0</flag>
         <rating>5</rating>
         <averagerating/>
         <playcount>0</playcount>
@@ -1368,7 +1368,7 @@
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
         <size>754935</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating>5</rating>
@@ -1428,7 +1428,7 @@
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
         <size>3131519</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -1488,7 +1488,7 @@
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
         <size>1014135</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating>5</rating>
@@ -1548,7 +1548,7 @@
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
         <size>2441886</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -1647,7 +1647,7 @@ Am I just stoned?]]></lyrics>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
         <size>792375</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -1707,7 +1707,7 @@ Am I just stoned?]]></lyrics>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
         <size>3209468</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating>5</rating>
@@ -1767,7 +1767,7 @@ Am I just stoned?]]></lyrics>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
         <size>3209886</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -1827,7 +1827,7 @@ Am I just stoned?]]></lyrics>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
         <size>1044851</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -1887,7 +1887,7 @@ Am I just stoned?]]></lyrics>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=63&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
         <size>1041065</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating>5</rating>
@@ -1915,7 +1915,7 @@ Am I just stoned?]]></lyrics>
     <genre id="1">
       <name><![CDATA[Electronic]]></name>
     </genre>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
     <has_art>1</has_art>
     <flag>1</flag>
     <rating>5</rating>
@@ -1923,7 +1923,7 @@ Am I just stoned?]]></lyrics>
     <mbid><![CDATA[]]></mbid>
     <mbid_group><![CDATA[]]></mbid_group>
   </album>
-  <album id="23">
+  <album id="9">
     <name><![CDATA[Creeping Lawler 2]]></name>
     <prefix><![CDATA[]]></prefix>
     <basename><![CDATA[Creeping Lawler 2]]></basename>
@@ -1938,7 +1938,7 @@ Am I just stoned?]]></lyrics>
       <basename><![CDATA[Warfare 3.0]]></basename>
     </songartist>
     <time>592</time>
-    <year>2006</year>
+    <year>0</year>
     <tracks>
       <song id="96">
         <name><![CDATA[Creeping Lawler 2]]></name>
@@ -1948,7 +1948,7 @@ Am I just stoned?]]></lyrics>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Warfare 3.0]]></basename>
         </artist>
-        <album id="23">
+        <album id="9">
           <name><![CDATA[Creeping Lawler 2]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Creeping Lawler 2]]></basename>
@@ -1964,7 +1964,7 @@ Am I just stoned?]]></lyrics>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.wav]]></filename>
         <playlisttrack>1</playlisttrack>
         <time>296</time>
-        <year>2006</year>
+        <year>0</year>
         <format>wav</format>
         <stream_format>mp3</stream_format>
         <bitrate>1411200</bitrate>
@@ -1974,14 +1974,14 @@ Am I just stoned?]]></lyrics>
         <mime><![CDATA[audio/wav]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
-        <size>52346808</size>
+        <size>52345628</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=23&object_type=album&id=416&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&id=455&name=art.jpg]]></art>
         <has_art>1</has_art>
-        <flag>0</flag>
+        <flag>1</flag>
         <rating>5</rating>
         <averagerating/>
-        <playcount>4</playcount>
+        <playcount>5</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
@@ -2005,7 +2005,7 @@ Am I just stoned?]]></lyrics>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Warfare 3.0]]></basename>
         </artist>
-        <album id="23">
+        <album id="9">
           <name><![CDATA[Creeping Lawler 2]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Creeping Lawler 2]]></basename>
@@ -2021,7 +2021,7 @@ Am I just stoned?]]></lyrics>
         <filename><![CDATA[/mnt/files-music/ampache-test/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.mp3]]></filename>
         <playlisttrack>2</playlisttrack>
         <time>296</time>
-        <year>2006</year>
+        <year>0</year>
         <format>mp3</format>
         <stream_format>mp3</stream_format>
         <bitrate>177349</bitrate>
@@ -2031,9 +2031,9 @@ Am I just stoned?]]></lyrics>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
-        <size>6652320</size>
+        <size>6652448</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=23&object_type=album&id=416&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&id=455&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
@@ -2042,7 +2042,7 @@ Am I just stoned?]]></lyrics>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[https://archive.org/details/]]></comment>
+        <comment><![CDATA[https://archive.org/details/Creeping_Lawler_2]]></comment>
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
@@ -2058,7 +2058,7 @@ Am I just stoned?]]></lyrics>
     <songcount>2</songcount>
     <diskcount>1</diskcount>
     <type/>
-    <art><![CDATA[https://music.com.au/image.php?object_id=23&object_type=album&id=416&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&id=455&name=art.jpg]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating>3</rating>

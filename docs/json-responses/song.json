@@ -1,75 +1,70 @@
 {
-    "id": "59",
-    "title": "YellowSmoke",
-    "name": "YellowSmoke",
+    "id": "104",
+    "title": "The Infernal Serpent",
+    "name": "The Infernal Serpent",
     "artist": {
-        "id": "2",
-        "name": "Synthetic",
+        "id": "16",
+        "name": "CARN\u00daN",
         "prefix": null,
-        "basename": "Synthetic"
+        "basename": "CARN\u00daN"
     },
     "artists": [
         {
-            "id": "2",
-            "name": "Synthetic",
+            "id": "16",
+            "name": "CARN\u00daN",
             "prefix": null,
-            "basename": "Synthetic"
+            "basename": "CARN\u00daN"
         }
     ],
     "album": {
-        "id": "2",
-        "name": "Colorsmoke EP",
+        "id": "10",
+        "name": "CARN\u00daN - MALKUTH (Demo 1996)",
         "prefix": null,
-        "basename": "Colorsmoke EP"
+        "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
     },
     "albumartist": {
-        "id": "2",
-        "name": "Synthetic",
+        "id": "16",
+        "name": "CARN\u00daN",
         "prefix": null,
-        "basename": "Synthetic"
+        "basename": "CARN\u00daN"
     },
     "disk": 1,
     "disksubtitle": null,
-    "track": 2,
-    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
-    "genre": [
-        {
-            "id": "1",
-            "name": "Electronic"
-        }
-    ],
+    "track": 4,
+    "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/04TheInfernalSerpent.ogg",
+    "genre": [],
     "playlisttrack": 1,
-    "time": 290,
-    "year": 2007,
-    "format": "mp3",
+    "time": 404,
+    "year": 1996,
+    "format": "ogg",
     "stream_format": "mp3",
-    "bitrate": 64000,
+    "bitrate": 100053,
     "stream_bitrate": 32000,
-    "rate": 22050,
-    "mode": "cbr",
-    "mime": "audio\/mpeg",
+    "rate": 44100,
+    "mode": "vbr",
+    "mime": "application\/ogg",
     "stream_mime": "audio\/mpeg",
-    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
-    "size": 2325568,
+    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3",
+    "size": 5066698,
     "mbid": null,
-    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
     "has_art": true,
     "flag": true,
     "rating": 5,
-    "averagerating": null,
-    "playcount": 0,
+    "averagerating": 4.5,
+    "playcount": 1,
     "catalog": 1,
     "composer": null,
     "channels": 2,
-    "comment": null,
+    "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
     "license": null,
-    "publisher": "20kbps rec.",
+    "publisher": "archive.org",
     "language": null,
     "lyrics": null,
     "replaygain_album_gain": null,
     "replaygain_album_peak": null,
-    "replaygain_track_gain": 2.75,
-    "replaygain_track_peak": 0.716,
+    "replaygain_track_gain": -11.26,
+    "replaygain_track_peak": 1,
     "r128_album_gain": null,
     "r128_track_gain": null
 }

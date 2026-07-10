@@ -1,48 +1,53 @@
 {
     "total_count": 1,
-    "md5": "b4b17768ecd6a3369b716a0ce3abb8f6",
+    "md5": "c4b66550e50f6ae8347c6592ebc1a4d1",
     "album": [
         {
-            "id": "9",
-            "name": "Creeping Lawler 2",
+            "id": "21",
+            "name": "Forget and Remember",
             "prefix": null,
-            "basename": "Creeping Lawler 2",
+            "basename": "Forget and Remember",
             "artist": {
-                "id": "15",
-                "name": "Warfare 3.0",
+                "id": "36",
+                "name": "Comfort Fit",
                 "prefix": null,
-                "basename": "Warfare 3.0"
+                "basename": "Comfort Fit"
             },
             "artists": [
                 {
-                    "id": "15",
-                    "name": "Warfare 3.0",
+                    "id": "36",
+                    "name": "Comfort Fit",
                     "prefix": null,
-                    "basename": "Warfare 3.0"
+                    "basename": "Comfort Fit"
                 }
             ],
             "songartists": [
                 {
-                    "id": "15",
-                    "name": "Warfare 3.0",
+                    "id": "36",
+                    "name": "Comfort Fit",
                     "prefix": null,
-                    "basename": "Warfare 3.0"
+                    "basename": "Comfort Fit"
                 }
             ],
-            "time": 592,
-            "year": 0,
+            "time": 4248,
+            "year": 2005,
             "tracks": [],
-            "songcount": 2,
+            "songcount": 20,
             "diskcount": 1,
-            "type": null,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=23&name=art.jpg",
+            "type": "album",
+            "genre": [
+                {
+                    "id": "8",
+                    "name": "Hip-Hop"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
             "has_art": true,
             "flag": false,
-            "rating": 3,
+            "rating": null,
             "averagerating": null,
-            "mbid": null,
-            "mbid_group": null
+            "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+            "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
         }
     ]
 }

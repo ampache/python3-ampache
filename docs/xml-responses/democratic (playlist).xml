@@ -145,9 +145,9 @@
     <size>460498</size>
     <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
     <has_art>1</has_art>
-    <rating/>
+    <rating>5</rating>
     <averagerating/>
-    <playcount>0</playcount>
+    <playcount>1</playcount>
     <vote>0</vote>
   </song>
   <song id="108">
@@ -273,37 +273,271 @@
     <playcount>0</playcount>
     <vote>0</vote>
   </song>
-  <song id="59">
-    <name><![CDATA[YellowSmoke]]></name>
-    <title><![CDATA[YellowSmoke]]></title>
-    <artist id="2">
-      <name><![CDATA[Synthetic]]></name>
+  <song id="88">
+    <name><![CDATA[Netro]]></name>
+    <title><![CDATA[Netro]]></title>
+    <artist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Synthetic]]></basename>
+      <basename><![CDATA[Nofi/found.]]></basename>
     </artist>
-    <album id="2">
-      <name><![CDATA[Colorsmoke EP]]></name>
+    <album id="8">
+      <name><![CDATA[Nofi Devices]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Colorsmoke EP]]></basename>
+      <basename><![CDATA[Nofi Devices]]></basename>
     </album>
-    <genre id="1">
-      <name><![CDATA[Electronic]]></name>
+    <genre id="5">
+      <name><![CDATA[Electronica]]></name>
     </genre>
-    <genre id="1">
-      <name><![CDATA[Electronic]]></name>
+    <genre id="5">
+      <name><![CDATA[Electronica]]></name>
     </genre>
-    <track>2</track>
-    <time><![CDATA[290]]></time>
+    <genre id="6">
+      <name><![CDATA[Dance]]></name>
+    </genre>
+    <track>10</track>
+    <time><![CDATA[601]]></time>
     <format>mp3</format>
-    <bitrate>64000</bitrate>
+    <bitrate>192000</bitrate>
     <mime><![CDATA[audio/mpeg]]></mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
-    <size>2325568</size>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=84&name=art.png]]></art>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=88&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Netro.mp3]]></url>
+    <size>14445467</size>
+    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=450&name=art.jpg]]></art>
     <has_art>1</has_art>
     <rating>5</rating>
     <averagerating/>
-    <playcount>0</playcount>
+    <playcount>1</playcount>
+    <vote>0</vote>
+  </song>
+  <song id="96">
+    <name><![CDATA[Creeping Lawler 2]]></name>
+    <title><![CDATA[Creeping Lawler 2]]></title>
+    <artist id="15">
+      <name><![CDATA[Warfare 3.0]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Warfare 3.0]]></basename>
+    </artist>
+    <album id="9">
+      <name><![CDATA[Creeping Lawler 2]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Creeping Lawler 2]]></basename>
+    </album>
+    <genre id="">
+      <name><![CDATA[]]></name>
+    </genre>
+    <track>1</track>
+    <time><![CDATA[296]]></time>
+    <format>wav</format>
+    <bitrate>1411200</bitrate>
+    <mime><![CDATA[audio/wav]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
+    <size>52345628</size>
+    <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&id=455&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <rating>5</rating>
+    <averagerating/>
+    <playcount>5</playcount>
+    <vote>0</vote>
+  </song>
+  <song id="90">
+    <name><![CDATA[Invo]]></name>
+    <title><![CDATA[Invo]]></title>
+    <artist id="14">
+      <name><![CDATA[Nofi/found.]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Nofi/found.]]></basename>
+    </artist>
+    <album id="8">
+      <name><![CDATA[Nofi Devices]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Nofi Devices]]></basename>
+    </album>
+    <genre id="5">
+      <name><![CDATA[Electronica]]></name>
+    </genre>
+    <genre id="5">
+      <name><![CDATA[Electronica]]></name>
+    </genre>
+    <genre id="6">
+      <name><![CDATA[Dance]]></name>
+    </genre>
+    <track>1</track>
+    <time><![CDATA[47]]></time>
+    <format>mp3</format>
+    <bitrate>192000</bitrate>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Invo.mp3]]></url>
+    <size>1140815</size>
+    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=450&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <rating>5</rating>
+    <averagerating/>
+    <playcount>1</playcount>
+    <vote>0</vote>
+  </song>
+  <song id="82">
+    <name><![CDATA[Vanvett]]></name>
+    <title><![CDATA[Vanvett]]></title>
+    <artist id="13">
+      <name><![CDATA[IOK-1]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[IOK-1]]></basename>
+    </artist>
+    <album id="7">
+      <name><![CDATA[Sensorisk Deprivation]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Sensorisk Deprivation]]></basename>
+    </album>
+    <genre id="4">
+      <name><![CDATA[Dark Ambient]]></name>
+    </genre>
+    <genre id="4">
+      <name><![CDATA[Dark Ambient]]></name>
+    </genre>
+    <track>2</track>
+    <time><![CDATA[825]]></time>
+    <format>flac</format>
+    <bitrate>371855</bitrate>
+    <mime><![CDATA[audio/flac]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3]]></url>
+    <size>38389422</size>
+    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&id=431&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <rating>5</rating>
+    <averagerating/>
+    <playcount>1</playcount>
+    <vote>0</vote>
+  </song>
+  <song id="81">
+    <name><![CDATA[Galenskap]]></name>
+    <title><![CDATA[Galenskap]]></title>
+    <artist id="13">
+      <name><![CDATA[IOK-1]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[IOK-1]]></basename>
+    </artist>
+    <album id="7">
+      <name><![CDATA[Sensorisk Deprivation]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Sensorisk Deprivation]]></basename>
+    </album>
+    <genre id="4">
+      <name><![CDATA[Dark Ambient]]></name>
+    </genre>
+    <genre id="4">
+      <name><![CDATA[Dark Ambient]]></name>
+    </genre>
+    <track>3</track>
+    <time><![CDATA[998]]></time>
+    <format>flac</format>
+    <bitrate>389683</bitrate>
+    <mime><![CDATA[audio/flac]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Galenskap.mp3]]></url>
+    <size>48633049</size>
+    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album&id=431&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <rating>5</rating>
+    <averagerating/>
+    <playcount>1</playcount>
+    <vote>0</vote>
+  </song>
+  <song id="78">
+    <name><![CDATA[inominavel p01]]></name>
+    <title><![CDATA[inominavel p01]]></title>
+    <artist id="11">
+      <name><![CDATA[structura]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[structura]]></basename>
+    </artist>
+    <album id="18">
+      <name><![CDATA[Inominavel (live.v.01)]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Inominavel (live.v.01)]]></basename>
+    </album>
+    <genre id="3">
+      <name><![CDATA[Noise]]></name>
+    </genre>
+    <genre id="3">
+      <name><![CDATA[Noise]]></name>
+    </genre>
+    <track>1</track>
+    <time><![CDATA[84]]></time>
+    <format>mp3</format>
+    <bitrate>192000</bitrate>
+    <mime><![CDATA[audio/mpeg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p01.mp3]]></url>
+    <size>2036632</size>
+    <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&id=278&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <rating>5</rating>
+    <averagerating/>
+    <playcount>2</playcount>
+    <vote>0</vote>
+  </song>
+  <song id="80">
+    <name><![CDATA[Хикки найди свою Тян]]></name>
+    <title><![CDATA[Хикки найди свою Тян]]></title>
+    <artist id="12">
+      <name><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></basename>
+    </artist>
+    <album id="27">
+      <name><![CDATA[Хикки Найди Свою Тян (Single)]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[Хикки Найди Свою Тян (Single)]]></basename>
+    </album>
+    <genre id="9">
+      <name><![CDATA[Harsh Noise Wall]]></name>
+    </genre>
+    <genre id="9">
+      <name><![CDATA[Harsh Noise Wall]]></name>
+    </genre>
+    <genre id="10">
+      <name><![CDATA[Shit Noise Wall]]></name>
+    </genre>
+    <track>1</track>
+    <time><![CDATA[300]]></time>
+    <format>wav</format>
+    <bitrate>1411200</bitrate>
+    <mime><![CDATA[audio/wav]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=80&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=-%20-%20-%20-%20-%20-%20-.mp3]]></url>
+    <size>53027174</size>
+    <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&id=458&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <rating>5</rating>
+    <averagerating>3</averagerating>
+    <playcount>2</playcount>
+    <vote>0</vote>
+  </song>
+  <song id="104">
+    <name><![CDATA[The Infernal Serpent]]></name>
+    <title><![CDATA[The Infernal Serpent]]></title>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </artist>
+    <album id="10">
+      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+    </album>
+    <genre id="">
+      <name><![CDATA[]]></name>
+    </genre>
+    <track>4</track>
+    <time><![CDATA[404]]></time>
+    <format>ogg</format>
+    <bitrate>100053</bitrate>
+    <mime><![CDATA[application/ogg]]></mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3]]></url>
+    <size>5066698</size>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <rating>5</rating>
+    <averagerating>4.5</averagerating>
+    <playcount>1</playcount>
     <vote>0</vote>
   </song>
 </root>

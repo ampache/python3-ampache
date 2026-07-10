@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <user id="61">
-    <username><![CDATA[otheruser]]></username>
-    <auth><![CDATA[]]></auth>
-    <email><![CDATA[otheruser@ampache.dev]]></email>
-    <access>25</access>
-    <streamtoken>b944cfc60c55e3bcd67486f3f35e197719fea9a0</streamtoken>
-    <fullname_public>0</fullname_public>
-    <validation><![CDATA[]]></validation>
-    <disabled>1</disabled>
-    <create_date>1670202701</create_date>
-    <last_seen>0</last_seen>
-    <link><![CDATA[https://music.com.au/stats.php?action=show_user&user_id=61]]></link>
-    <website><![CDATA[]]></website>
-    <state><![CDATA[]]></state>
-    <city><![CDATA[]]></city>
-    <art><![CDATA[https://music.com.au/image.php?action=show_user_avatar&object_id=61&object_type=user&name=art.jpg]]></art>
-    <has_art><![CDATA[]]></has_art>
-    <fullname><![CDATA[otheruser]]></fullname>
-  </user>
+  <error errorCode="4704">
+    <errorAction><![CDATA[user]]></errorAction>
+    <errorType><![CDATA[username]]></errorType>
+    <errorMessage><![CDATA[Not Found: otheruser]]></errorMessage>
+  </error>
 </root>
