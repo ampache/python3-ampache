@@ -188,15 +188,40 @@ class API(object):
                 config = json.load(file)
             try:
                 self.AMPACHE_URL = config["ampache_url"]
+            except (TypeError, IndexError):
+                return False
+            except KeyError:
+                pass
+            try:
                 self.AMPACHE_USER = config["ampache_user"]
+            except (TypeError, IndexError):
+                return False
+            except KeyError:
+                pass
+            try:
                 self.AMPACHE_KEY = config["ampache_apikey"]
+            except (TypeError, IndexError):
+                return False
+            except KeyError:
+                pass
+            try:
                 self.AMPACHE_BEARER_TOKEN = config["ampache_bearer_token"]
+            except (TypeError, IndexError):
+                return False
+            except KeyError:
+                pass
+            try:
                 self.AMPACHE_SESSION = config["ampache_session"]
+            except (TypeError, IndexError):
+                return False
+            except KeyError:
+                pass
+            try:
                 self.AMPACHE_API = config["api_format"]
-            except TypeError:
+            except (TypeError, IndexError):
                 return False
-            except IndexError:
-                return False
+            except KeyError:
+                pass
 
             return True
         return False
@@ -458,22 +483,23 @@ class API(object):
         sha_signature = hashlib.sha256(passphrase.encode()).hexdigest()
         return sha_signature
 
-    def fetch_url(self, full_url: str, api_format: str, method: str, headers: dict = None):
+    def fetch_url(self, full_url: str, api_format: str, method: str, headers: dict = None, http_method: str = 'GET'):
         """ fetch_url
 
             This function is used to fetch the string results using urllib
 
             INPUTS
-            * full_url   = (string) url to fetch
-            * api_format = (string) 'xml'|'json'
-            * method     = (string)
-            * headers    = (dict) optional HTTP headers
+            * full_url    = (string) url to fetch
+            * api_format  = (string) 'xml'|'json'
+            * method      = (string) label used for debug/doc capture, NOT the HTTP verb
+            * headers     = (dict) optional HTTP headers
+            * http_method = (string) HTTP verb to use, e.g. 'GET'|'POST'|'PUT'|'PATCH'|'DELETE' //optional, default 'GET'
         """
         try:
             if not headers:
-                req = urllib.request.Request(full_url)
+                req = urllib.request.Request(full_url, method=http_method)
             else:
-                req = urllib.request.Request(full_url, headers=headers)
+                req = urllib.request.Request(full_url, headers=headers, method=http_method)
             result = urllib.request.urlopen(req)
         except urllib.error.HTTPError:
             return False
@@ -2398,7 +2424,7 @@ class API(object):
             the rules can occur multiple times and are joined by the operator item.
 
             Refer to the wiki for further information
-            https://ampache.org/api/api-advanced-search
+            http://ampache.org/api/api-advanced-search
 
             INPUTS
             * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
@@ -3359,17 +3385,16 @@ class API(object):
             data.pop('subcategory')
         return self.get_request(ampache_url, data, api_method)
 
-    def preference_edit(self, filter_str, value, apply_all=0, default=0):
+    def preference_edit(self, filter_str, value, apply_all=0):
         """ preference_edit
             MINIMUM_API_VERSION=5.0.0
 
             Returns preference based on the specified filter_str
 
             INPUTS
-            * filter_str = (string) search the name of a preference
-            * value      = (string|integer) Preference value
-            * apply_all  = (boolean) apply to all users //optional
-            * default    = (boolean) if true set as system default (New and public users) //optional
+            * filter_str  = (string) search the name of a preference
+            * value       = (string|integer) Preference value
+            * apply_all   = (boolean) apply to all users //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'preference_edit'
@@ -3377,8 +3402,7 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'value': value,
-                'all': apply_all,
-                'default': default}
+                'all': apply_all}
         return self.get_request(ampache_url, data, api_method)
 
     def preference_delete(self, filter_str):
@@ -3904,7 +3928,7 @@ class API(object):
             the rules can occur multiple times and are joined by the operator item.
 
             Refer to the wiki for further information
-            https://ampache.org/api/api-advanced-search
+            http://ampache.org/api/api-advanced-search
 
             INPUTS
             * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
