@@ -1,5 +1,270 @@
 {
-    "total_count": 0,
-    "md5": "40cd750bba9870f18aada2478b24840a",
-    "album": []
+    "object_id": 214905,
+    "object_type": "album",
+    "plugin": {
+        "discogs": {
+            "art": "https:\/\/i.discogs.com\/vfO1Bh1iMOBZeJCtwC2XF7pE-WSDARQYyt1SQ5X6ES8\/rs:fit\/g:sm\/q:90\/h:600\/w:599\/czM6Ly9kaXNjb2dz\/LWRhdGFiYXNlLWlt\/YWdlcy9SLTM3ODU5\/MzQzLTE3ODM4MTg0\/MjQtNjYxMi5qcGVn.jpeg",
+            "genre": [
+                "Rock",
+                "Metalcore",
+                "Post-Hardcore"
+            ],
+            "data": {
+                "id": 37859343,
+                "status": "Accepted",
+                "year": 2026,
+                "resource_url": "https:\/\/api.discogs.com\/releases\/37859343",
+                "uri": "https:\/\/www.discogs.com\/release\/37859343-Take-The-Name-Limerence",
+                "artists": [
+                    {
+                        "name": "Take The Name",
+                        "anv": "",
+                        "join": "",
+                        "role": "",
+                        "tracks": "",
+                        "id": 17982828,
+                        "resource_url": "https:\/\/api.discogs.com\/artists\/17982828"
+                    }
+                ],
+                "artists_sort": "Take The Name",
+                "labels": [
+                    {
+                        "name": "Theoria Records",
+                        "catno": "none",
+                        "entity_type": "1",
+                        "entity_type_name": "Label",
+                        "id": 2397430,
+                        "resource_url": "https:\/\/api.discogs.com\/labels\/2397430"
+                    }
+                ],
+                "series": [],
+                "companies": [],
+                "formats": [
+                    {
+                        "name": "CD",
+                        "qty": "1",
+                        "descriptions": [
+                            "Album"
+                        ]
+                    }
+                ],
+                "data_quality": "Needs Vote",
+                "community": {
+                    "have": 1,
+                    "want": 0,
+                    "rating": {
+                        "count": 0,
+                        "average": 0
+                    },
+                    "submitter": {
+                        "username": "ihtlbsay",
+                        "resource_url": "https:\/\/api.discogs.com\/users\/ihtlbsay"
+                    },
+                    "contributors": [
+                        {
+                            "username": "ihtlbsay",
+                            "resource_url": "https:\/\/api.discogs.com\/users\/ihtlbsay"
+                        }
+                    ],
+                    "data_quality": "Needs Vote",
+                    "status": "Accepted"
+                },
+                "format_quantity": 1,
+                "date_added": "2026-07-11T18:07:03-07:00",
+                "date_changed": "2026-07-11T18:13:13-07:00",
+                "num_for_sale": 0,
+                "lowest_price": null,
+                "title": "Limerence",
+                "country": "Worldwide",
+                "released": "2026-06-19",
+                "released_formatted": "19 Jun 2026",
+                "identifiers": [
+                    {
+                        "type": "Barcode",
+                        "value": "755491377734"
+                    }
+                ],
+                "videos": [],
+                "genres": [
+                    "Rock"
+                ],
+                "styles": [
+                    "Metalcore",
+                    "Post-Hardcore"
+                ],
+                "tracklist": [
+                    {
+                        "position": "1",
+                        "type_": "track",
+                        "title": "Brick By Brick",
+                        "extraartists": [
+                            {
+                                "name": "Hawk (43)",
+                                "anv": "",
+                                "join": "",
+                                "role": "Featuring",
+                                "tracks": "",
+                                "id": 7299505,
+                                "resource_url": "https:\/\/api.discogs.com\/artists\/7299505"
+                            }
+                        ],
+                        "duration": ""
+                    },
+                    {
+                        "position": "2",
+                        "type_": "track",
+                        "title": "Blackest Void",
+                        "extraartists": [
+                            {
+                                "name": "What Lies Below (2)",
+                                "anv": "",
+                                "join": "",
+                                "role": "Featuring",
+                                "tracks": "",
+                                "id": 13959649,
+                                "resource_url": "https:\/\/api.discogs.com\/artists\/13959649"
+                            }
+                        ],
+                        "duration": ""
+                    },
+                    {
+                        "position": "3",
+                        "type_": "track",
+                        "title": "Limerence",
+                        "duration": ""
+                    },
+                    {
+                        "position": "4",
+                        "type_": "track",
+                        "title": "My Shadow",
+                        "extraartists": [
+                            {
+                                "name": "Softspoken (2)",
+                                "anv": "",
+                                "join": "",
+                                "role": "Featuring",
+                                "tracks": "",
+                                "id": 7345895,
+                                "resource_url": "https:\/\/api.discogs.com\/artists\/7345895"
+                            }
+                        ],
+                        "duration": ""
+                    },
+                    {
+                        "position": "5",
+                        "type_": "track",
+                        "title": "i don't wanna die like this.",
+                        "duration": ""
+                    },
+                    {
+                        "position": "6",
+                        "type_": "track",
+                        "title": "Hurt You",
+                        "duration": ""
+                    },
+                    {
+                        "position": "7",
+                        "type_": "track",
+                        "title": "Why Won't You Go",
+                        "duration": ""
+                    },
+                    {
+                        "position": "8",
+                        "type_": "track",
+                        "title": "Your Confession",
+                        "duration": ""
+                    },
+                    {
+                        "position": "9",
+                        "type_": "track",
+                        "title": "Out of My Control",
+                        "duration": ""
+                    },
+                    {
+                        "position": "10",
+                        "type_": "track",
+                        "title": "Shattered It",
+                        "duration": ""
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "secondary",
+                        "uri": "https:\/\/i.discogs.com\/vfO1Bh1iMOBZeJCtwC2XF7pE-WSDARQYyt1SQ5X6ES8\/rs:fit\/g:sm\/q:90\/h:600\/w:599\/czM6Ly9kaXNjb2dz\/LWRhdGFiYXNlLWlt\/YWdlcy9SLTM3ODU5\/MzQzLTE3ODM4MTg0\/MjQtNjYxMi5qcGVn.jpeg",
+                        "resource_url": "https:\/\/i.discogs.com\/vfO1Bh1iMOBZeJCtwC2XF7pE-WSDARQYyt1SQ5X6ES8\/rs:fit\/g:sm\/q:90\/h:600\/w:599\/czM6Ly9kaXNjb2dz\/LWRhdGFiYXNlLWlt\/YWdlcy9SLTM3ODU5\/MzQzLTE3ODM4MTg0\/MjQtNjYxMi5qcGVn.jpeg",
+                        "uri150": "https:\/\/i.discogs.com\/L5lf334NpuXulcG3xIQI-3xKIa9WWf5J-wAsR5Xv3ig\/rs:fit\/g:sm\/q:40\/h:150\/w:150\/czM6Ly9kaXNjb2dz\/LWRhdGFiYXNlLWlt\/YWdlcy9SLTM3ODU5\/MzQzLTE3ODM4MTg0\/MjQtNjYxMi5qcGVn.jpeg",
+                        "width": 599,
+                        "height": 600
+                    },
+                    {
+                        "type": "secondary",
+                        "uri": "https:\/\/i.discogs.com\/sN3Oh-Yco09nny9zNwkaV5wPG4UthtOwjgqUmwUetkc\/rs:fit\/g:sm\/q:90\/h:587\/w:600\/czM6Ly9kaXNjb2dz\/LWRhdGFiYXNlLWlt\/YWdlcy9SLTM3ODU5\/MzQzLTE3ODM4MTg0\/MjQtNDY2My5qcGVn.jpeg",
+                        "resource_url": "https:\/\/i.discogs.com\/sN3Oh-Yco09nny9zNwkaV5wPG4UthtOwjgqUmwUetkc\/rs:fit\/g:sm\/q:90\/h:587\/w:600\/czM6Ly9kaXNjb2dz\/LWRhdGFiYXNlLWlt\/YWdlcy9SLTM3ODU5\/MzQzLTE3ODM4MTg0\/MjQtNDY2My5qcGVn.jpeg",
+                        "uri150": "https:\/\/i.discogs.com\/M0FwgIAzaXGkwRZHQITUBtyByRTYu0u-NjvSTQiSQHc\/rs:fit\/g:sm\/q:40\/h:150\/w:150\/czM6Ly9kaXNjb2dz\/LWRhdGFiYXNlLWlt\/YWdlcy9SLTM3ODU5\/MzQzLTE3ODM4MTg0\/MjQtNDY2My5qcGVn.jpeg",
+                        "width": 600,
+                        "height": 587
+                    }
+                ],
+                "thumb": "https:\/\/i.discogs.com\/L5lf334NpuXulcG3xIQI-3xKIa9WWf5J-wAsR5Xv3ig\/rs:fit\/g:sm\/q:40\/h:150\/w:150\/czM6Ly9kaXNjb2dz\/LWRhdGFiYXNlLWlt\/YWdlcy9SLTM3ODU5\/MzQzLTE3ODM4MTg0\/MjQtNjYxMi5qcGVn.jpeg",
+                "estimated_weight": 85,
+                "blocked_from_sale": false,
+                "is_offensive": false
+            }
+        },
+        "musicbrainz": {
+            "id": "5f1e3561-ca6a-4546-8aa5-2f547852edd7",
+            "title": "Limerence",
+            "score": 0,
+            "data": {
+                "first-release-date": "2026-06-19",
+                "genres": [],
+                "primary-type": "Album",
+                "primary-type-id": "f529b476-6e62-324f-b0aa-1f3e33d313fc",
+                "secondary-type-ids": [],
+                "disambiguation": "",
+                "id": "5f1e3561-ca6a-4546-8aa5-2f547852edd7",
+                "secondary-types": [],
+                "tags": [],
+                "title": "Limerence",
+                "releases": [
+                    {
+                        "title": "Limerence",
+                        "packaging-id": "119eba76-b343-3e02-a292-f0f00644bb9b",
+                        "quality": "normal",
+                        "text-representation": {
+                            "language": "eng",
+                            "script": "Latn"
+                        },
+                        "status": "Official",
+                        "date": "2026-06-19",
+                        "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+                        "release-events": [
+                            {
+                                "area": {
+                                    "id": "525d4e18-3d00-31b9-a58b-a146a916de8f",
+                                    "disambiguation": "",
+                                    "type-id": null,
+                                    "iso-3166-1-codes": [
+                                        "XW"
+                                    ],
+                                    "sort-name": "[Worldwide]",
+                                    "name": "[Worldwide]",
+                                    "type": null
+                                },
+                                "date": "2026-06-19"
+                            }
+                        ],
+                        "tags": [],
+                        "id": "3e936196-8a88-4501-a9ae-5311c5efc25e",
+                        "disambiguation": "",
+                        "country": "XW",
+                        "barcode": "199891938056",
+                        "packaging": "None",
+                        "genres": []
+                    }
+                ]
+            },
+            "album": "Limerence"
+        }
+    }
 }
