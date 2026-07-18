@@ -1,0 +1,111 @@
+{
+    "id": "20",
+    "name": "R\/B",
+    "albums": [
+        {
+            "id": "12",
+            "name": "Buried in Nausea",
+            "artist": {
+                "id": "19",
+                "name": "Various Artists"
+            },
+            "time": 0,
+            "year": 2012,
+            "tracks": [],
+            "songcount": 7,
+            "diskcount": 1,
+            "type": null,
+            "genre": [
+                {
+                    "id": "7",
+                    "name": "Punk"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "mbid": null
+        }
+    ],
+    "albumcount": 1,
+    "songs": [
+        {
+            "id": "107",
+            "title": "Arrest Me",
+            "name": "Arrest Me",
+            "artist": {
+                "id": "20",
+                "name": "R\/B"
+            },
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists"
+            },
+            "disk": 1,
+            "track": 10,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/09R_b-ArrestMe.m4a",
+            "genre": [
+                {
+                    "id": "7",
+                    "name": "Punk"
+                }
+            ],
+            "playlisttrack": 1,
+            "time": 96,
+            "year": 2012,
+            "bitrate": 252864,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mp4",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&player=api&name=R-B%20-%20Arrest%20Me.m4a",
+            "size": 3089501,
+            "mbid": null,
+            "album_mbid": null,
+            "artist_mbid": null,
+            "albumartist_mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "flag": 0,
+            "preciserating": null,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": 1,
+            "composer": null,
+            "channels": null,
+            "comment": null,
+            "license": null,
+            "publisher": null,
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        }
+    ],
+    "songcount": 1,
+    "genre": [
+        {
+            "id": "7",
+            "name": "Punk"
+        }
+    ],
+    "art": "https:\/\/music.com.au\/image.php?object_id=20&object_type=artist",
+    "flag": 0,
+    "preciserating": null,
+    "rating": null,
+    "averagerating": null,
+    "mbid": null,
+    "summary": null,
+    "time": 96,
+    "yearformed": 0,
+    "placeformed": null
+}
