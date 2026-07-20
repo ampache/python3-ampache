@@ -3,64 +3,64 @@
   <bookmark id="82">
     <user><![CDATA[user]]></user>
     <object_type><![CDATA[song]]></object_type>
-    <object_id>104</object_id>
+    <object_id>80</object_id>
     <position>10</position>
     <client><![CDATA[python3-ampache]]></client>
     <creation_date>1670202706</creation_date>
-    <update_date><![CDATA[1783659952]]></update_date>
-    <song id="104">
-      <name><![CDATA[The Infernal Serpent]]></name>
-      <title><![CDATA[The Infernal Serpent]]></title>
-      <artist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+    <update_date><![CDATA[1784539984]]></update_date>
+    <song id="80">
+      <name><![CDATA[Хикки найди свою Тян]]></name>
+      <title><![CDATA[Хикки найди свою Тян]]></title>
+      <artist id="12">
+        <name><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></basename>
       </artist>
-      <album id="10">
-        <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <album id="6">
+        <name><![CDATA[Хикки Найди Свою Тян (Single)]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+        <basename><![CDATA[Хикки Найди Свою Тян (Single)]]></basename>
       </album>
-      <albumartist id="16">
-        <name><![CDATA[CARNÚN]]></name>
+      <albumartist id="12">
+        <name><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></name>
         <prefix><![CDATA[]]></prefix>
-        <basename><![CDATA[CARNÚN]]></basename>
+        <basename><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></basename>
       </albumartist>
       <disk><![CDATA[1]]></disk>
       <disksubtitle><![CDATA[]]></disksubtitle>
-      <track>4</track>
-      <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/04TheInfernalSerpent.ogg]]></filename>
+      <track>1</track>
+      <filename><![CDATA[/mnt/files-music/ampache-test/music/К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь/Хикки Найди Свою Тян (Single)/01 - Хикки найди свою Тян.wav]]></filename>
       <playlisttrack>1</playlisttrack>
-      <time>404</time>
-      <year>1996</year>
-      <format>ogg</format>
+      <time>300</time>
+      <year>0</year>
+      <format>wav</format>
       <stream_format>mp3</stream_format>
-      <bitrate>100053</bitrate>
+      <bitrate>1411200</bitrate>
       <stream_bitrate>32000</stream_bitrate>
       <rate>44100</rate>
-      <mode><![CDATA[vbr]]></mode>
-      <mime><![CDATA[application/ogg]]></mime>
+      <mode><![CDATA[cbr]]></mode>
+      <mime><![CDATA[audio/wav]]></mime>
       <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3]]></url>
-      <size>5066698</size>
+      <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=80&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=-%20-%20-%20-%20-%20-%20-.mp3]]></url>
+      <size>53026998</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=6&object_type=album&id=445&name=art.jpg]]></art>
       <has_art>1</has_art>
       <flag>1</flag>
       <rating>5</rating>
-      <averagerating>4.5</averagerating>
-      <playcount>1</playcount>
+      <averagerating>3</averagerating>
+      <playcount>2</playcount>
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
       <channels>2</channels>
-      <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+      <comment><![CDATA[]]></comment>
       <license><![CDATA[]]></license>
       <publisher><![CDATA[archive.org]]></publisher>
       <language/>
       <lyrics><![CDATA[]]></lyrics>
       <replaygain_album_gain/>
       <replaygain_album_peak/>
-      <replaygain_track_gain>-11.26</replaygain_track_gain>
+      <replaygain_track_gain>-21.75</replaygain_track_gain>
       <replaygain_track_peak>1</replaygain_track_peak>
       <r128_album_gain/>
       <r128_track_gain/>

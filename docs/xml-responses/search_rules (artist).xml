@@ -395,20 +395,20 @@
     <label><![CDATA[MusicBrainz ID]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
-    <title><![CDATA[MusicBrainz]]></title>
+    <title><![CDATA[Musicbrainz]]></title>
   </rule>
   <rule id="mbid_album">
     <name><![CDATA[mbid_album]]></name>
     <label><![CDATA[MusicBrainz ID (Album)]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
-    <title><![CDATA[MusicBrainz]]></title>
+    <title><![CDATA[Musicbrainz]]></title>
   </rule>
   <rule id="mbid_song">
     <name><![CDATA[mbid_song]]></name>
     <label><![CDATA[MusicBrainz ID (Song)]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
-    <title><![CDATA[MusicBrainz]]></title>
+    <title><![CDATA[Musicbrainz]]></title>
   </rule>
 </root>

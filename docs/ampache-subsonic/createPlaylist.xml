@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.8.0" openSubsonic="1">
-  <playlist id="800000146" name="testcreate" owner="user" public="true" songCount="1" duration="601" created="2025-07-01T05:51:15+00:00" changed="2025-07-01T05:51:15+00:00">
-    <entry id="300000088" parent="200000008" title="Netro" isDir="false" isVideo="false" type="music" albumId="200000008" album="Nofi Devices" artistId="100000014" artist="Nofi/found." coverArt="200000008" duration="601" bitRate="187" userRating="5" track="10" genre="Electronica,Dance" size="14445467" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/media/music/Nofi_found/Nofi Devices LP/10_Netro.mp3"/>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1">
+  <playlist id="800000150" name="testcreate" owner="user" public="true" songCount="1" duration="192" created="2026-07-20T09:34:06+00:00" changed="2026-07-20T09:34:06+00:00">
+    <entry id="300000124" parent="200000021" title="True Form" isDir="false" isVideo="false" type="music" albumId="200000021" album="Forget and Remember" artistId="100000036" artist="Comfort Fit" coverArt="200000021" duration="192" bitRate="237" userRating="5" track="6" year="2005" genre="Hip-Hop" size="5848663" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/media/upload/user/Comfort Fit/Forget And Remember/6 - True Form.mp3"/>
   </playlist>
 </subsonic-response>

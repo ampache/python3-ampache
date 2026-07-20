@@ -40,7 +40,7 @@
     <mbid><![CDATA[]]></mbid>
     <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
     <has_art>1</has_art>
-    <flag>1</flag>
+    <flag>0</flag>
     <rating>5</rating>
     <averagerating>4.5</averagerating>
     <playcount>1</playcount>
@@ -1449,7 +1449,7 @@ Catalogue # DNA 119]]></comment>
       <prefix><![CDATA[]]></prefix>
       <basename><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></basename>
     </artist>
-    <album id="27">
+    <album id="6">
       <name><![CDATA[Хикки Найди Свою Тян (Single)]]></name>
       <prefix><![CDATA[]]></prefix>
       <basename><![CDATA[Хикки Найди Свою Тян (Single)]]></basename>
@@ -1462,16 +1462,10 @@ Catalogue # DNA 119]]></comment>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
     <track>1</track>
-    <genre id="9">
-      <name><![CDATA[Harsh Noise Wall]]></name>
-    </genre>
-    <genre id="10">
-      <name><![CDATA[Shit Noise Wall]]></name>
-    </genre>
     <filename><![CDATA[/mnt/files-music/ampache-test/music/К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь/Хикки Найди Свою Тян (Single)/01 - Хикки найди свою Тян.wav]]></filename>
     <playlisttrack>25</playlisttrack>
     <time>300</time>
-    <year>2018</year>
+    <year>0</year>
     <format>wav</format>
     <stream_format>mp3</stream_format>
     <bitrate>1411200</bitrate>
@@ -1481,9 +1475,9 @@ Catalogue # DNA 119]]></comment>
     <mime><![CDATA[audio/wav]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
     <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=80&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=-%20-%20-%20-%20-%20-%20-.mp3]]></url>
-    <size>53027174</size>
+    <size>53026998</size>
     <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=27&object_type=album&id=458&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=6&object_type=album&id=445&name=art.jpg]]></art>
     <has_art>1</has_art>
     <flag>1</flag>
     <rating>5</rating>
@@ -1543,7 +1537,7 @@ Catalogue # DNA 119]]></comment>
     <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=117&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Remember%20Something%20I%20Forgot.mp3]]></url>
     <size>4816734</size>
     <mbid><![CDATA[ba784e10-e268-4c44-9c82-091167162c27]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=435&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=457&name=art.png]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating>5</rating>
@@ -1606,7 +1600,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=135&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Emotional%20Draft.mp3]]></url>
     <size>11216864</size>
     <mbid><![CDATA[ab598f5a-4cbb-4ce0-a3ac-9de17026f528]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=435&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=457&name=art.png]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating>5</rating>
@@ -1669,7 +1663,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=130&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Something%20to%20Do.mp3]]></url>
     <size>8072761</size>
     <mbid><![CDATA[143eca6b-26d6-4b5d-a6b2-7e7cc9e05769]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=435&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=457&name=art.png]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating>5</rating>
@@ -1732,7 +1726,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=121&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Planetary%20Picknick.mp3]]></url>
     <size>10715592</size>
     <mbid><![CDATA[6defae67-37da-4a85-90f6-80df5c27d88c]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=435&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=457&name=art.png]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating>5</rating>
@@ -1795,7 +1789,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=131&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Miles%20of%20Smiles.mp3]]></url>
     <size>9028758</size>
     <mbid><![CDATA[ec160787-e0db-4f76-85b5-5a76f59f36f9]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=435&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=457&name=art.png]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating>5</rating>
@@ -1858,7 +1852,7 @@ Copyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http://cre
     <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=125&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Take%20a%20Look.mp3]]></url>
     <size>7018987</size>
     <mbid><![CDATA[8a3bdac5-f0bd-4197-9deb-d4880d6f3b6d]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=435&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=457&name=art.png]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
     <rating>5</rating>

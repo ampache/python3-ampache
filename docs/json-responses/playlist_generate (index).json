@@ -1,288 +1,310 @@
 {
     "total_count": 4,
-    "md5": "eb8aa62725a5eddcc325c6076bbf330c",
+    "md5": "47c58bd154c2796f54228eeaa7c44379",
     "song": [
         {
-            "id": "98",
-            "title": "In The Seven Woods",
-            "name": "In The Seven Woods",
+            "id": "92",
+            "title": "Stance",
+            "name": "Stance",
             "artist": {
-                "id": "16",
-                "name": "CARN\u00daN",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "CARN\u00daN"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "16",
-                    "name": "CARN\u00daN",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "CARN\u00daN"
+                    "basename": "Nofi\/found."
                 }
             ],
             "album": {
-                "id": "10",
-                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "id": "8",
+                "name": "Nofi Devices",
                 "prefix": null,
-                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                "basename": "Nofi Devices"
             },
             "albumartist": {
-                "id": "16",
-                "name": "CARN\u00daN",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "CARN\u00daN"
+                "basename": "Nofi\/found."
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/03InTheSevenWoods.ogg",
-            "genre": [],
+            "track": 8,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/08_Stance.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
             "playlisttrack": 1,
-            "time": 420,
-            "year": 1996,
-            "format": "ogg",
+            "time": 544,
+            "year": 0,
+            "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 84423,
+            "bitrate": 192000,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "vbr",
-            "mime": "application\/ogg",
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3",
-            "size": 4444403,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stance.mp3",
+            "size": 13078740,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 1,
-            "composer": null,
+            "composer": "Jeffrey Melton",
             "channels": 2,
-            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -9.7,
+            "replaygain_track_gain": -2.38,
+            "replaygain_track_peak": 0.989,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "87",
+            "title": "Wonders of Nando",
+            "name": "Wonders of Nando",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 6,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/06_Wonders_of_Nando.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 319,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=87&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Wonders%20of%20Nando.mp3",
+            "size": 7673901,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 2,
+            "catalog": 1,
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -1.44,
             "replaygain_track_peak": 1,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "84",
-            "title": "Vansinne",
-            "name": "Vansinne",
+            "id": "91",
+            "title": "Home Capsules",
+            "name": "Home Capsules",
             "artist": {
-                "id": "13",
-                "name": "IOK-1",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "IOK-1"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "13",
-                    "name": "IOK-1",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "IOK-1"
+                    "basename": "Nofi\/found."
                 }
             ],
             "album": {
-                "id": "7",
-                "name": "Sensorisk Deprivation",
+                "id": "8",
+                "name": "Nofi Devices",
                 "prefix": null,
-                "basename": "Sensorisk Deprivation"
+                "basename": "Nofi Devices"
             },
             "albumartist": {
-                "id": "13",
-                "name": "IOK-1",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "IOK-1"
+                "basename": "Nofi\/found."
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/04_-_IOK-1_-_Vansinne.flac",
+            "track": 9,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/09_Home_Capsules.mp3",
             "genre": [
                 {
-                    "id": "4",
-                    "name": "Dark Ambient"
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
                 }
             ],
-            "playlisttrack": 2,
-            "time": 787,
-            "year": 2011,
-            "format": "flac",
+            "playlisttrack": 3,
+            "time": 294,
+            "year": 0,
+            "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 713176,
+            "bitrate": 192000,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "vbr",
-            "mime": "audio\/flac",
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vansinne.mp3",
-            "size": 70182824,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3",
+            "size": 7076428,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": 1,
-            "composer": null,
+            "composer": "Jeffrey Melton",
             "channels": 2,
-            "comment": "DNA Production release\r\nCatalogue # DNA 119",
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -5.35,
-            "replaygain_track_peak": 0.7,
+            "replaygain_track_gain": -2.97,
+            "replaygain_track_peak": 1,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "62",
-            "title": "PurpleSmoke",
-            "name": "PurpleSmoke",
+            "id": "132",
+            "title": "Hairy Crushed Nuts",
+            "name": "Hairy Crushed Nuts",
             "artist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "36",
+                "name": "Comfort Fit",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Comfort Fit"
             },
             "artists": [
                 {
-                    "id": "2",
-                    "name": "Synthetic",
+                    "id": "36",
+                    "name": "Comfort Fit",
                     "prefix": null,
-                    "basename": "Synthetic"
+                    "basename": "Comfort Fit"
                 }
             ],
             "album": {
-                "id": "2",
-                "name": "Colorsmoke EP",
+                "id": "21",
+                "name": "Forget and Remember",
                 "prefix": null,
-                "basename": "Colorsmoke EP"
+                "basename": "Forget and Remember"
             },
             "albumartist": {
-                "id": "2",
-                "name": "Synthetic",
+                "id": "36",
+                "name": "Comfort Fit",
                 "prefix": null,
-                "basename": "Synthetic"
+                "basename": "Comfort Fit"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma",
+            "track": 15,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/15 - Hairy Crushed Nuts.mp3",
             "genre": [
                 {
-                    "id": "1",
-                    "name": "Electronic"
+                    "id": "8",
+                    "name": "Hip-Hop"
                 }
             ],
-            "playlisttrack": 3,
-            "time": 390,
-            "year": 2007,
-            "format": "wma",
-            "stream_format": "mp3",
-            "bitrate": 20627,
-            "stream_bitrate": 32000,
-            "rate": 22050,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3",
-            "size": 1014135,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=427&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 1,
-            "catalog": 1,
-            "composer": null,
-            "channels": 2,
-            "comment": "Made with Sony ACID 5",
-            "license": null,
-            "publisher": "20kbps rec.",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "115",
-            "title": "Are we going Crazy",
-            "name": "Are we going Crazy",
-            "artist": {
-                "id": "27",
-                "name": "Chi.Otic",
-                "prefix": null,
-                "basename": "Chi.Otic"
-            },
-            "artists": [
-                {
-                    "id": "27",
-                    "name": "Chi.Otic",
-                    "prefix": null,
-                    "basename": "Chi.Otic"
-                }
-            ],
-            "album": {
-                "id": "12",
-                "name": "Buried in Nausea",
-                "prefix": null,
-                "basename": "Buried in Nausea"
-            },
-            "albumartist": {
-                "id": "19",
-                "name": "Various Artists",
-                "prefix": null,
-                "basename": "Various Artists"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 7,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
-            "genre": [],
             "playlisttrack": 4,
-            "time": 433,
-            "year": 2012,
-            "format": "wma",
+            "time": 267,
+            "year": 2005,
+            "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 32582,
+            "bitrate": 248806,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
-            "size": 1776580,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=132&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Hairy%20Crushed%20Nuts.mp3",
+            "size": 8328099,
+            "mbid": "db672da0-963b-45a4-b3d8-23efc9c1953d",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 1,
+            "catalog": 4,
             "composer": null,
-            "channels": 1,
-            "comment": null,
+            "channels": 2,
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-15-comfort_fit-hairy_crushed_nuts\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
             "license": null,
-            "publisher": null,
+            "publisher": "Tokyo Dawn Records",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,

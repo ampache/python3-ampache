@@ -3,7 +3,7 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "8.0.0",
         "openSubsonic": true,
         "searchResult": {
             "offset": 0,
@@ -23,6 +23,8 @@
                     "coverArt": "al-10",
                     "duration": 378,
                     "bitRate": 87,
+                    "playCount": 0,
+                    "created": "2021-02-23T04:24:51Z",
                     "track": 2,
                     "year": 1996,
                     "size": 4265791,
@@ -30,7 +32,12 @@
                     "suffix": "ogg",
                     "contentType": "application/ogg",
                     "path": "/media/music/Carn\u00fan/Malkuth (Demo1996)/02ThePropheciesOfTheHornedOne.ogg",
-                    "artists": [],
+                    "artists": [
+                        {
+                            "id": "ar-16",
+                            "name": "CARN\u00daN"
+                        }
+                    ],
                     "albumArtists": [
                         {
                             "id": "ar-16",
@@ -56,6 +63,8 @@
                     "bitRate": 97,
                     "userRating": 5,
                     "averageRating": 4.5,
+                    "playCount": 1,
+                    "created": "2021-02-23T04:24:51Z",
                     "track": 4,
                     "year": 1996,
                     "size": 5066698,
@@ -63,7 +72,12 @@
                     "suffix": "ogg",
                     "contentType": "application/ogg",
                     "path": "/media/music/Carn\u00fan/Malkuth (Demo1996)/04TheInfernalSerpent.ogg",
-                    "artists": [],
+                    "artists": [
+                        {
+                            "id": "ar-16",
+                            "name": "CARN\u00daN"
+                        }
+                    ],
                     "albumArtists": [
                         {
                             "id": "ar-16",
@@ -88,6 +102,8 @@
                     "duration": 427,
                     "bitRate": 140,
                     "userRating": 5,
+                    "playCount": 2,
+                    "created": "2021-02-23T04:24:51Z",
                     "track": 6,
                     "year": 1996,
                     "size": 7696008,
@@ -95,7 +111,12 @@
                     "suffix": "ogg",
                     "contentType": "application/ogg",
                     "path": "/media/music/Carn\u00fan/Malkuth (Demo1996)/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg",
-                    "artists": [],
+                    "artists": [
+                        {
+                            "id": "ar-16",
+                            "name": "CARN\u00daN"
+                        }
+                    ],
                     "albumArtists": [
                         {
                             "id": "ar-16",
@@ -119,7 +140,8 @@
                     "coverArt": "al-10",
                     "duration": 557,
                     "bitRate": 136,
-                    "userRating": 5,
+                    "playCount": 0,
+                    "created": "2021-02-23T04:24:51Z",
                     "track": 8,
                     "year": 1996,
                     "size": 9722091,
@@ -127,7 +149,12 @@
                     "suffix": "ogg",
                     "contentType": "application/ogg",
                     "path": "/media/music/Carn\u00fan/Malkuth (Demo1996)/08TheInfernalSerpent_InstrumentalReRecording.ogg",
-                    "artists": [],
+                    "artists": [
+                        {
+                            "id": "ar-16",
+                            "name": "CARN\u00daN"
+                        }
+                    ],
                     "albumArtists": [
                         {
                             "id": "ar-16",
@@ -151,6 +178,10 @@
                     "coverArt": "al-12",
                     "duration": 110,
                     "bitRate": 31,
+                    "userRating": 5,
+                    "playCount": 1,
+                    "created": "2021-02-24T01:44:21Z",
+                    "starred": "2026-07-10T01:02:49Z",
                     "track": 5,
                     "year": 2012,
                     "size": 460498,
@@ -158,7 +189,12 @@
                     "suffix": "wma",
                     "contentType": "audio/x-ms-wma",
                     "path": "/media/music/Various Artists/Buried In Nausea/05Tip-c-TheArtOfFreeExpression.wma",
-                    "artists": [],
+                    "artists": [
+                        {
+                            "id": "ar-35",
+                            "name": "Tip-C"
+                        }
+                    ],
                     "albumArtists": [
                         {
                             "id": "ar-19",
@@ -182,6 +218,8 @@
                     "coverArt": "al-21",
                     "duration": 226,
                     "bitRate": 219,
+                    "playCount": 0,
+                    "created": "2021-07-22T02:09:47Z",
                     "track": 16,
                     "year": 2005,
                     "genre": "Hip-Hop",
@@ -195,7 +233,12 @@
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
                     "path": "/media/upload/user/Comfort Fit/Forget And Remember/16 - The Hunt.mp3",
-                    "artists": [],
+                    "artists": [
+                        {
+                            "id": "ar-36",
+                            "name": "Comfort Fit"
+                        }
+                    ],
                     "albumArtists": [
                         {
                             "id": "ar-36",

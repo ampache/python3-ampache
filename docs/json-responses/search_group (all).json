@@ -1,8 +1,1026 @@
 {
-    "error": {
-        "errorCode": "4702",
-        "errorAction": "search_group",
-        "errorType": "system",
-        "errorMessage": "Generic error"
+    "search": {
+        "album_artist": [
+            {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found.",
+                "albums": [],
+                "albumcount": 1,
+                "songs": [],
+                "songcount": 11,
+                "genre": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist&name=art.jpg",
+                "has_art": false,
+                "flag": false,
+                "rating": 2,
+                "averagerating": null,
+                "mbid": null,
+                "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
+                "time": 4423,
+                "yearformed": 0,
+                "placeformed": null
+            }
+        ],
+        "album": [
+            {
+                "id": "12",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea",
+                "artist": {
+                    "id": "19",
+                    "name": "Various Artists",
+                    "prefix": null,
+                    "basename": "Various Artists"
+                },
+                "artists": [
+                    {
+                        "id": "19",
+                        "name": "Various Artists",
+                        "prefix": null,
+                        "basename": "Various Artists"
+                    }
+                ],
+                "songartists": [
+                    {
+                        "id": "20",
+                        "name": "R\/B",
+                        "prefix": null,
+                        "basename": "R\/B"
+                    },
+                    {
+                        "id": "21",
+                        "name": "Tip-C (featuring Mike Beers)",
+                        "prefix": null,
+                        "basename": "Tip-C (featuring Mike Beers)"
+                    },
+                    {
+                        "id": "23",
+                        "name": "Manic Notion",
+                        "prefix": null,
+                        "basename": "Manic Notion"
+                    },
+                    {
+                        "id": "26",
+                        "name": "Stress Builds Character",
+                        "prefix": null,
+                        "basename": "Stress Builds Character"
+                    },
+                    {
+                        "id": "27",
+                        "name": "Chi.Otic",
+                        "prefix": null,
+                        "basename": "Chi.Otic"
+                    },
+                    {
+                        "id": "32",
+                        "name": "Shorty Mac",
+                        "prefix": null,
+                        "basename": "Shorty Mac"
+                    },
+                    {
+                        "id": "33",
+                        "name": "MxBxCx",
+                        "prefix": null,
+                        "basename": "MxBxCx"
+                    },
+                    {
+                        "id": "34",
+                        "name": "Comedown Kid",
+                        "prefix": null,
+                        "basename": "Comedown Kid"
+                    },
+                    {
+                        "id": "35",
+                        "name": "Tip-C",
+                        "prefix": null,
+                        "basename": "Tip-C"
+                    }
+                ],
+                "time": 1879,
+                "year": 2012,
+                "tracks": [],
+                "songcount": 9,
+                "diskcount": 1,
+                "type": "compilation",
+                "genre": [
+                    {
+                        "id": "7",
+                        "name": "Punk"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null,
+                "mbid_group": null
+            },
+            {
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "prefix": null,
+                "basename": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "artist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "artists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "songartists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "time": 3873,
+                "year": 1996,
+                "tracks": [],
+                "songcount": 9,
+                "diskcount": 1,
+                "type": null,
+                "genre": [],
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null,
+                "mbid_group": null
+            },
+            {
+                "id": "21",
+                "name": "Forget and Remember",
+                "prefix": null,
+                "basename": "Forget and Remember",
+                "artist": {
+                    "id": "36",
+                    "name": "Comfort Fit",
+                    "prefix": null,
+                    "basename": "Comfort Fit"
+                },
+                "artists": [
+                    {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    }
+                ],
+                "songartists": [
+                    {
+                        "id": "36",
+                        "name": "Comfort Fit",
+                        "prefix": null,
+                        "basename": "Comfort Fit"
+                    }
+                ],
+                "time": 4248,
+                "year": 2005,
+                "tracks": [],
+                "songcount": 20,
+                "diskcount": 1,
+                "type": "album",
+                "genre": [
+                    {
+                        "id": "8",
+                        "name": "Hip-Hop"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+                "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
+            },
+            {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices",
+                "artist": {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                },
+                "artists": [
+                    {
+                        "id": "14",
+                        "name": "Nofi\/found.",
+                        "prefix": null,
+                        "basename": "Nofi\/found."
+                    }
+                ],
+                "songartists": [
+                    {
+                        "id": "14",
+                        "name": "Nofi\/found.",
+                        "prefix": null,
+                        "basename": "Nofi\/found."
+                    }
+                ],
+                "time": 4423,
+                "year": 0,
+                "tracks": [],
+                "songcount": 11,
+                "diskcount": 1,
+                "type": null,
+                "genre": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": 2,
+                "averagerating": null,
+                "mbid": null,
+                "mbid_group": null
+            }
+        ],
+        "artist": [
+            {
+                "id": "34",
+                "name": "Comedown Kid",
+                "prefix": null,
+                "basename": "Comedown Kid",
+                "albums": [],
+                "albumcount": 0,
+                "songs": [],
+                "songcount": 1,
+                "genre": [],
+                "art": "https:\/\/music.com.au\/image.php?object_id=34&object_type=artist&id=288&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null,
+                "summary": null,
+                "time": 116,
+                "yearformed": 0,
+                "placeformed": null
+            },
+            {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found.",
+                "albums": [],
+                "albumcount": 1,
+                "songs": [],
+                "songcount": 11,
+                "genre": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist&name=art.jpg",
+                "has_art": false,
+                "flag": false,
+                "rating": 2,
+                "averagerating": null,
+                "mbid": null,
+                "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
+                "time": 4423,
+                "yearformed": 0,
+                "placeformed": null
+            },
+            {
+                "id": "26",
+                "name": "Stress Builds Character",
+                "prefix": null,
+                "basename": "Stress Builds Character",
+                "albums": [],
+                "albumcount": 0,
+                "songs": [],
+                "songcount": 1,
+                "genre": [],
+                "art": "https:\/\/music.com.au\/image.php?object_id=26&object_type=artist&id=341&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null,
+                "summary": "There are 2 artists with this name:\n1) A crust band\n2) A hardcore band from Toronto\n\n1) Started as \"Hands That Mold\" later changed to \"Stress Builds Character\". We play grindy, sludgy, crusty, melodic, apocalyptic punk with a twist of power violence. We had a few practices, got a new 2nd vocalist (after Teagan left) and recorded our original demo. Joe was one of the lead vocalists for the first 4 shows and original demo until right after the 4th show when he left the band. ",
+                "time": 233,
+                "yearformed": 0,
+                "placeformed": null
+            }
+        ],
+        "genre": [
+            {
+                "id": "6",
+                "name": "Dance",
+                "albums": 1,
+                "artists": 1,
+                "songs": 11,
+                "videos": 0,
+                "playlists": 0,
+                "live_streams": 0,
+                "is_hidden": false,
+                "merge": []
+            },
+            {
+                "id": "4",
+                "name": "Dark Ambient",
+                "albums": 1,
+                "artists": 1,
+                "songs": 4,
+                "videos": 0,
+                "playlists": 0,
+                "live_streams": 0,
+                "is_hidden": false,
+                "merge": []
+            }
+        ],
+        "label": [
+            {
+                "id": "3",
+                "name": "DNA Production",
+                "artists": 1,
+                "summary": null,
+                "external_link": "https:\/\/music.com.au\/labels.php?action=show&label=3",
+                "address": null,
+                "category": "tag_generated",
+                "email": null,
+                "website": null,
+                "user": "4"
+            },
+            {
+                "id": "4",
+                "name": "Tokyo Dawn Records",
+                "artists": 1,
+                "summary": null,
+                "external_link": "https:\/\/music.com.au\/labels.php?action=show&label=4",
+                "address": null,
+                "category": "tag_generated",
+                "email": null,
+                "website": null,
+                "user": ""
+            }
+        ],
+        "playlist": [
+            {
+                "id": "65",
+                "name": "Nofi",
+                "owner": "user",
+                "user": {
+                    "id": "4",
+                    "username": "user"
+                },
+                "items": 11,
+                "type": "public",
+                "art": "https:\/\/music.com.au\/image.php?object_id=65&object_type=playlist&name=art.jpg",
+                "has_access": true,
+                "has_collaborate": true,
+                "has_art": false,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "md5": null,
+                "last_update": 1751265759,
+                "time": 4423
+            },
+            {
+                "id": "3",
+                "name": "random - admin - private (admin)",
+                "owner": "admin",
+                "user": {
+                    "id": "2",
+                    "username": "admin"
+                },
+                "items": 43,
+                "type": "private",
+                "art": "https:\/\/music.com.au\/image.php?object_id=3&object_type=playlist&name=art.jpg",
+                "has_access": true,
+                "has_collaborate": true,
+                "has_art": false,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "md5": null,
+                "last_update": 1614054938,
+                "time": 19721
+            },
+            {
+                "id": "2",
+                "name": "random - admin - public (admin)",
+                "owner": "admin",
+                "user": {
+                    "id": "2",
+                    "username": "admin"
+                },
+                "items": 43,
+                "type": "public",
+                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=playlist&name=art.jpg",
+                "has_access": true,
+                "has_collaborate": true,
+                "has_art": false,
+                "flag": true,
+                "rating": null,
+                "averagerating": null,
+                "md5": null,
+                "last_update": 1614054896,
+                "time": 19632
+            },
+            {
+                "id": "4",
+                "name": "random - user - private",
+                "owner": "user",
+                "user": {
+                    "id": "4",
+                    "username": "user"
+                },
+                "items": 43,
+                "type": "private",
+                "art": "https:\/\/music.com.au\/image.php?object_id=4&object_type=playlist&name=art.jpg",
+                "has_access": true,
+                "has_collaborate": true,
+                "has_art": false,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "md5": null,
+                "last_update": 1614054938,
+                "time": 19721
+            }
+        ],
+        "podcast_episode": [
+            {
+                "id": "82857",
+                "title": "Ebola update, World Cup heat risks, dad brains",
+                "name": "Ebola update, World Cup heat risks, dad brains",
+                "podcast": {
+                    "id": "1",
+                    "name": "60-Second Science"
+                },
+                "description": "In this episode of Science Quickly, we start with a quick update on the Ebola outbreak surging in parts of Africa. Host Rachel Feltman is then joined by Scientific American&rsquo;s senior desk editor for life science Andrea Thompson to discuss what rising temperatures mean for the FIFA World Cup currently underway in North America. And finally, in honor of Father&rsquo;s Day, SciAm&rsquo;s senior desk editor for health and medicine Tanya Lewis gives us a glimpse into the often overlooked science of how fatherhood changes the brain.\n\n\n\nRecommended Reading:\n\n\n\nJust how big is the new Ebola outbreak?\n\n\n\nThe World Cup is battling extreme heat. Which cooling methods really work?\n\n\n\nThe Science of the 2026 World Cup\n\n\n\nHow becoming a dad changes men&rsquo;s brains\n\n\n\nJoin our Summer Reading Challenge&nbsp;\n\n\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\n\n\nDiscover something new everyday: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.\n\n\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Sushmita Pathak and Jeff DelViscio. This episode was edited by Alex Sugiura, with fact-checking by Marielle Issa and Aaron Shattuck. Our theme music was composed by Dominic Smith.\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
+                "category": "",
+                "author": "",
+                "author_full": "",
+                "website": "",
+                "pubdate": "2026-06-22T09:50:00+00:00",
+                "state": "completed",
+                "filelength": "00:12:25",
+                "filesize": "17.33 MB",
+                "filename": "60-Second Science - Ebola update, World Cup heat risks, dad brains.mp3",
+                "mime": "audio\/mpeg",
+                "time": 745,
+                "size": 18170164,
+                "bitrate": 192000,
+                "stream_bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "channels": 2,
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=82857",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=82857&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20Ebola%20update-%20World%20Cup%20heat%20risks-%20dad%20brains.mp3",
+                "catalog": "3",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&id=42&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "played": ""
+            },
+            {
+                "id": "82858",
+                "title": "How common viruses could quietly raise your cancer risk",
+                "name": "How common viruses could quietly raise your cancer risk",
+                "podcast": {
+                    "id": "1",
+                    "name": "60-Second Science"
+                },
+                "description": "In this episode of Science Quickly, one of SciAm&rsquo;s Young American Scientists, biologist Jaye Gardiner, explores how common viral infections may raise cancer risk&mdash;not just through genetic mutations but by reshaping the body&rsquo;s &ldquo;extracellular matrix&rdquo; of molecules that support cells and tissues. She explains how viruses can alter the extracellular matrix, potentially creating conditions that allow tumors to grow, and why this emerging view could change how we think about everything from colds to long COVID.\n\n\n\nRecommended Reading:\n\nJaye Gardiner&rsquo;s Young American Scientists profile\n\nJoin our Summer Reading Challenge&nbsp;\n\n\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\n\n\nDiscover something new everyday: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.\n\n\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Sushmita Pathak and Jeff DelViscio. This episode was edited by Alex Sugiura, with fact-checking by Marielle Issa and Aaron Shattuck. Our theme music was composed by Dominic Smith.\n\n\n\nThis episode is part of &ldquo;The Young American Scientists,&rdquo; an editorially independent project that was produced with financial support from Regeneron.&nbsp;\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
+                "category": "",
+                "author": "",
+                "author_full": "",
+                "website": "",
+                "pubdate": "2026-06-19T09:50:00+00:00",
+                "state": "completed",
+                "filelength": "00:14:49",
+                "filesize": "20.62 MB",
+                "filename": "60-Second Science - How common viruses could quietly raise your cancer risk.mp3",
+                "mime": "audio\/mpeg",
+                "time": 889,
+                "size": 21621015,
+                "bitrate": 192000,
+                "stream_bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "channels": 2,
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=82858",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=82858&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20How%20common%20viruses%20could%20quietly%20raise%20your%20cancer%20risk.mp3",
+                "catalog": "3",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&id=42&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "played": ""
+            },
+            {
+                "id": "82859",
+                "title": "The neuroscientist decoding how the brain learns",
+                "name": "The neuroscientist decoding how the brain learns",
+                "podcast": {
+                    "id": "1",
+                    "name": "60-Second Science"
+                },
+                "description": "In this episode, host Rachel Feltman interviews neuroscientist Kau&ecirc; M. Costa, who is among Scientific American&rsquo;s inaugural cohort of Young American Scientists honorees. Costa shares how being surprised by experiments has led him to new ways of thinking about learning in the brain. He explains how dopamine does more than signal reward, how there are two big frameworks of how the brain learns and how his findings could help us better understand&mdash;and treat&mdash;mental illness.\n\n\n\nRecommended Reading:\n\n\n\nThe Young American Scientists\n\n\n\nKau&ecirc; M. Costa&rsquo;s Young American Scientists profile\n\n\n\nJoin our Summer Reading Challenge&nbsp;\n\n\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\n\n\nDiscover something new everyday: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.\n\n\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Sushmita Pathak and Jeff DelViscio. This episode was edited by Alex Sugiura, with fact-checking by Aaron Shattuck. Our theme music was composed by Dominic Smith.\n\n\n\nThis episode is part of &ldquo;The Young American Scientists,&rdquo; an editorially independent project that was produced with financial support from Regeneron.\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
+                "category": "",
+                "author": "",
+                "author_full": "",
+                "website": "",
+                "pubdate": "2026-06-17T09:50:00+00:00",
+                "state": "completed",
+                "filelength": "00:18:38",
+                "filesize": "25.85 MB",
+                "filename": "60-Second Science - The neuroscientist decoding how the brain learns.mp3",
+                "mime": "audio\/mpeg",
+                "time": 1118,
+                "size": 27104993,
+                "bitrate": 192000,
+                "stream_bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "channels": 2,
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=82859",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=82859&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20The%20neuroscientist%20decoding%20how%20the%20brain%20learns.mp3",
+                "catalog": "3",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&id=42&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "played": ""
+            },
+            {
+                "id": "82861",
+                "title": "Disclosure Day and the science of alien language",
+                "name": "Disclosure Day and the science of alien language",
+                "podcast": {
+                    "id": "1",
+                    "name": "60-Second Science"
+                },
+                "description": "In the new movie Disclosure Day, aliens communicate through a series of strange clicks and pops. But what could an alien language actually be like? In this episode of Science Quickly, host Rachel Feltman puts that question to linguist Jeffrey Punske. We explore why fictional aliens in Hollywood and beyond tend to sound the way they do, what real human languages can teach us about communication and why math could be humanity&rsquo;s best shot at first contact.\n\n\n\nRecommended Reading:\n\n\n\nSteven Spielberg shares his favorite sci-fi story ever\n\n\n\nWhat Disclosure Day gets wrong about the search for aliens\n\n\n\nJoin our Summer Reading Challenge&nbsp;\n\n\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\n\n\nDiscover something new everyday: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.\n\n\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Sushmita Pathak and Jeff DelViscio. This episode was edited by Alex Sugiura, with fact-checking by Marielle Issa and Aaron Shattuck. Our theme music was composed by Dominic Smith.\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
+                "category": "",
+                "author": "",
+                "author_full": "",
+                "website": "",
+                "pubdate": "2026-06-12T09:50:00+00:00",
+                "state": "completed",
+                "filelength": "00:15:03",
+                "filesize": "20.92 MB",
+                "filename": "60-Second Science - Disclosure Day and the science of alien language.mp3",
+                "mime": "audio\/mpeg",
+                "time": 903,
+                "size": 21940757,
+                "bitrate": 192000,
+                "stream_bitrate": 192000,
+                "rate": 44100,
+                "mode": "cbr",
+                "channels": 2,
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=82861",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=82861&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20Disclosure%20Day%20and%20the%20science%20of%20alien%20language.mp3",
+                "catalog": "3",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&id=42&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "played": ""
+            }
+        ],
+        "podcast": [
+            {
+                "id": "1",
+                "name": "60-Second Science",
+                "description": "Tune in every weekday for quick reports and commentaries on the world of science&mdash;it&#039;ll just take a minute",
+                "language": "en-us",
+                "copyright": "False",
+                "feed_url": "http:\/\/rss.sciam.com\/sciam\/60secsciencepodcast",
+                "generator": "",
+                "website": "https:\/\/www.scientificamerican.com\/podcast\/60-second-science\/",
+                "build_date": "1970-01-01T00:00:00+00:00",
+                "sync_date": "2022-08-17T05:07:11+00:00",
+                "public_url": "https:\/\/music.com.au\/podcast.php?action=show&podcast=1",
+                "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&id=42&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "podcast_episode": []
+            }
+        ],
+        "song_artist": [
+            {
+                "id": "34",
+                "name": "Comedown Kid",
+                "prefix": null,
+                "basename": "Comedown Kid",
+                "albums": [],
+                "albumcount": 0,
+                "songs": [],
+                "songcount": 1,
+                "genre": [],
+                "art": "https:\/\/music.com.au\/image.php?object_id=34&object_type=artist&id=288&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null,
+                "summary": null,
+                "time": 116,
+                "yearformed": 0,
+                "placeformed": null
+            },
+            {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found.",
+                "albums": [],
+                "albumcount": 1,
+                "songs": [],
+                "songcount": 11,
+                "genre": [
+                    {
+                        "id": "5",
+                        "name": "Electronica"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Dance"
+                    }
+                ],
+                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist&name=art.jpg",
+                "has_art": false,
+                "flag": false,
+                "rating": 2,
+                "averagerating": null,
+                "mbid": null,
+                "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
+                "time": 4423,
+                "yearformed": 0,
+                "placeformed": null
+            },
+            {
+                "id": "26",
+                "name": "Stress Builds Character",
+                "prefix": null,
+                "basename": "Stress Builds Character",
+                "albums": [],
+                "albumcount": 0,
+                "songs": [],
+                "songcount": 1,
+                "genre": [],
+                "art": "https:\/\/music.com.au\/image.php?object_id=26&object_type=artist&id=341&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "mbid": null,
+                "summary": "There are 2 artists with this name:\n1) A crust band\n2) A hardcore band from Toronto\n\n1) Started as \"Hands That Mold\" later changed to \"Stress Builds Character\". We play grindy, sludgy, crusty, melodic, apocalyptic punk with a twist of power violence. We had a few practices, got a new 2nd vocalist (after Teagan left) and recorded our original demo. Joe was one of the lead vocalists for the first 4 shows and original demo until right after the 4th show when he left the band. ",
+                "time": 233,
+                "yearformed": 0,
+                "placeformed": null
+            }
+        ],
+        "song": [
+            {
+                "id": "100",
+                "title": "The Prophecies Of The Horned One",
+                "name": "The Prophecies Of The Horned One",
+                "artist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "artists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "album": {
+                    "id": "10",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "prefix": null,
+                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                },
+                "albumartist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "disk": 1,
+                "disksubtitle": null,
+                "track": 2,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/02ThePropheciesOfTheHornedOne.ogg",
+                "genre": [],
+                "playlisttrack": 1,
+                "time": 378,
+                "year": 1996,
+                "format": "ogg",
+                "stream_format": "mp3",
+                "bitrate": 89965,
+                "stream_bitrate": 32000,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "application\/ogg",
+                "stream_mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3",
+                "size": 4265791,
+                "mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "lyrics": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -10.51,
+                "replaygain_track_peak": 1,
+                "r128_album_gain": null,
+                "r128_track_gain": null
+            },
+            {
+                "id": "98",
+                "title": "In The Seven Woods",
+                "name": "In The Seven Woods",
+                "artist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "artists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "album": {
+                    "id": "10",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "prefix": null,
+                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                },
+                "albumartist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "disk": 1,
+                "disksubtitle": null,
+                "track": 3,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/03InTheSevenWoods.ogg",
+                "genre": [],
+                "playlisttrack": 2,
+                "time": 420,
+                "year": 1996,
+                "format": "ogg",
+                "stream_format": "mp3",
+                "bitrate": 84423,
+                "stream_bitrate": 32000,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "application\/ogg",
+                "stream_mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3",
+                "size": 4444403,
+                "mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "lyrics": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -9.7,
+                "replaygain_track_peak": 1,
+                "r128_album_gain": null,
+                "r128_track_gain": null
+            },
+            {
+                "id": "99",
+                "title": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
+                "name": "The Prophecies Of The Horned One (Instrumental Re-Recording)",
+                "artist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "artists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "album": {
+                    "id": "10",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "prefix": null,
+                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                },
+                "albumartist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "disk": 1,
+                "disksubtitle": null,
+                "track": 6,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg",
+                "genre": [],
+                "playlisttrack": 3,
+                "time": 427,
+                "year": 1996,
+                "format": "ogg",
+                "stream_format": "mp3",
+                "bitrate": 143788,
+                "stream_bitrate": 32000,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "application\/ogg",
+                "stream_mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3",
+                "size": 7696008,
+                "mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": 5,
+                "averagerating": null,
+                "playcount": 2,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "lyrics": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -12.66,
+                "replaygain_track_peak": 1,
+                "r128_album_gain": null,
+                "r128_track_gain": null
+            },
+            {
+                "id": "103",
+                "title": "In The Seven Woods (Instrumental Re-Recording)",
+                "name": "In The Seven Woods (Instrumental Re-Recording)",
+                "artist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "artists": [
+                    {
+                        "id": "16",
+                        "name": "CARN\u00daN",
+                        "prefix": null,
+                        "basename": "CARN\u00daN"
+                    }
+                ],
+                "album": {
+                    "id": "10",
+                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "prefix": null,
+                    "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+                },
+                "albumartist": {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                },
+                "disk": 1,
+                "disksubtitle": null,
+                "track": 7,
+                "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
+                "genre": [],
+                "playlisttrack": 4,
+                "time": 452,
+                "year": 1996,
+                "format": "ogg",
+                "stream_format": "mp3",
+                "bitrate": 138338,
+                "stream_bitrate": 32000,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "application\/ogg",
+                "stream_mime": "audio\/mpeg",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
+                "size": 7826238,
+                "mbid": null,
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                "has_art": true,
+                "flag": false,
+                "rating": null,
+                "averagerating": null,
+                "playcount": 0,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "lyrics": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -12.21,
+                "replaygain_track_peak": 1,
+                "r128_album_gain": null,
+                "r128_track_gain": null
+            }
+        ],
+        "user": [
+            {
+                "id": "2",
+                "username": "admin"
+            },
+            {
+                "id": "3",
+                "username": "demo"
+            },
+            {
+                "id": "4",
+                "username": "user"
+            }
+        ]
     }
 }

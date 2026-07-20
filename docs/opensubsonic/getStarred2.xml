@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="8.0.0" openSubsonic="1">
   <starred2>
-    <artist id="ar-16" name="CARNÚN" coverArt="ar-16" albumCount="1"/>
     <artist id="ar-2" name="Synthetic" coverArt="ar-2" albumCount="1" starred="2021-02-22T05:54:18Z"/>
-    <album id="al-10" parent="ar-16" album="CARNÚN - MALKUTH (Demo 1996)" title="CARNÚN - MALKUTH (Demo 1996)" name="CARNÚN - MALKUTH (Demo 1996)" isDir="true" coverArt="al-10" songCount="9" created="2021-02-23T04:24:51+00:00" duration="3873" playCount="7" artistId="ar-16" artist="CARNÚN" year="1996"/>
-    <album id="al-2" parent="ar-2" album="Colorsmoke EP" title="Colorsmoke EP" name="Colorsmoke EP" isDir="true" coverArt="al-2" songCount="12" created="2021-02-23T04:24:48+00:00" duration="4568" playCount="9" artistId="ar-2" artist="Synthetic" year="2007" genre="Electronic" userRating="5" averageRating="3" starred="2021-02-22T05:51:53Z"/>
-    <song id="so-100" parent="al-10" title="The Prophecies Of The Horned One" isDir="false" isVideo="false" type="music" albumId="al-10" album="CARNÚN - MALKUTH (Demo 1996)" artistId="ar-16" artist="CARNÚN" coverArt="al-10" duration="378" bitRate="87" track="2" year="1996" size="4265791" discNumber="1" suffix="ogg" contentType="application/ogg" path="/media/music/Carnún/Malkuth (Demo1996)/02ThePropheciesOfTheHornedOne.ogg" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+    <album id="al-2" name="Colorsmoke EP" coverArt="al-2" songCount="12" created="2021-02-23T04:24:48+00:00" duration="4568" artistId="ar-2" artist="Synthetic" year="2007" genre="Electronic" userRating="5" playCount="7" starred="2021-02-22T05:51:53Z">
+      <genres name="Electronic"/>
+    </album>
+    <song id="so-80" parent="al-6" title="Хикки найди свою Тян" isDir="false" isVideo="false" type="music" albumId="al-6" album="Хикки Найди Свою Тян (Single)" artistId="ar-12" artist="К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь" coverArt="al-6" duration="300" bitRate="1378" userRating="5" averageRating="3" playCount="2" starred="2026-07-10T01:52:39Z" track="1" size="53026998" discNumber="1" suffix="wav" contentType="audio/wav" path="/media/music/К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь/Хикки Найди Свою Тян (Single)/01 - Хикки найди свою Тян.wav" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+    <song id="so-78" parent="al-18" title="inominavel p01" isDir="false" isVideo="false" type="music" albumId="al-18" album="Inominavel (live.v.01)" artistId="ar-11" artist="structura" coverArt="al-18" duration="84" bitRate="187" userRating="5" playCount="2" starred="2026-07-10T01:46:39Z" track="1" year="2007" genre="Noise" size="2036632" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/media/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3">
+      <genres name="Noise"/>
+    </song>
+    <song id="so-81" parent="al-7" title="Galenskap" isDir="false" isVideo="false" type="music" albumId="al-7" album="Sensorisk Deprivation" artistId="ar-13" artist="IOK-1" coverArt="al-7" duration="998" bitRate="380" userRating="5" playCount="1" starred="2026-07-10T01:37:48Z" track="3" year="2011" genre="Dark Ambient" size="48633049" discNumber="1" suffix="flac" contentType="audio/flac" path="/media/music/IOK-1/Sensorisk Deprivation/03_-_IOK-1_-_Galenskap.flac" transcodedSuffix="mp3" transcodedContentType="audio/mpeg">
+      <genres name="Dark Ambient"/>
+    </song>
+    <song id="so-82" parent="al-7" title="Vanvett" isDir="false" isVideo="false" type="music" albumId="al-7" album="Sensorisk Deprivation" artistId="ar-13" artist="IOK-1" coverArt="al-7" duration="825" bitRate="363" userRating="5" playCount="1" starred="2026-07-10T01:32:28Z" track="2" year="2011" genre="Dark Ambient" size="38389422" discNumber="1" suffix="flac" contentType="audio/flac" path="/media/music/IOK-1/Sensorisk Deprivation/02_-_IOK-1_-_Vanvett.flac" transcodedSuffix="mp3" transcodedContentType="audio/mpeg">
+      <genres name="Dark Ambient"/>
+    </song>
+    <song id="so-111" parent="al-12" title="The art of free expression" isDir="false" isVideo="false" type="music" albumId="al-12" album="Buried in Nausea" artistId="ar-35" artist="Tip-C" coverArt="al-12" duration="110" bitRate="31" userRating="5" playCount="1" starred="2026-07-10T01:02:49Z" track="5" year="2012" size="460498" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Various Artists/Buried In Nausea/05Tip-c-TheArtOfFreeExpression.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+    <song id="so-90" parent="al-8" title="Invo" isDir="false" isVideo="false" type="music" albumId="al-8" album="Nofi Devices" artistId="ar-14" artist="Nofi/found." coverArt="al-8" duration="47" bitRate="187" userRating="5" playCount="1" starred="2026-07-10T00:40:36Z" track="1" genre="Electronica,Dance" size="1140815" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/media/music/Nofi_found/Nofi Devices LP/01_Invo.mp3">
+      <genres name="Electronica"/>
+      <genres name="Dance"/>
+    </song>
+    <song id="so-96" parent="al-9" title="Creeping Lawler 2" isDir="false" isVideo="false" type="music" albumId="al-9" album="Creeping Lawler 2" artistId="ar-15" artist="Warfare 3.0" coverArt="al-9" duration="296" bitRate="1378" userRating="5" playCount="5" starred="2026-07-10T00:31:06Z" track="1" size="52345628" discNumber="1" suffix="wav" contentType="audio/wav" path="/media/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.wav" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+    <song id="so-88" parent="al-8" title="Netro" isDir="false" isVideo="false" type="music" albumId="al-8" album="Nofi Devices" artistId="ar-14" artist="Nofi/found." coverArt="al-8" duration="601" bitRate="187" userRating="5" playCount="1" starred="2026-07-10T00:29:14Z" track="10" genre="Electronica,Dance" size="14445467" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/media/music/Nofi_found/Nofi Devices LP/10_Netro.mp3">
+      <genres name="Electronica"/>
+      <genres name="Dance"/>
+    </song>
   </starred2>
 </subsonic-response>

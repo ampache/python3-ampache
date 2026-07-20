@@ -3,14 +3,14 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "8.0.0",
         "openSubsonic": true,
         "randomSongs": {
             "song": [
                 {
-                    "id": "so-130",
+                    "id": "so-128",
                     "parent": "al-21",
-                    "title": "Something to Do",
+                    "title": "Whenever You Wanna Call Me",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
@@ -19,10 +19,11 @@
                     "artistId": "ar-36",
                     "artist": "Comfort Fit",
                     "coverArt": "al-21",
-                    "duration": 261,
-                    "bitRate": 240,
-                    "userRating": 5,
-                    "track": 17,
+                    "duration": 188,
+                    "bitRate": 244,
+                    "playCount": 1,
+                    "created": "2021-07-22T02:09:47Z",
+                    "track": 8,
                     "year": 2005,
                     "genre": "Hip-Hop",
                     "genres": [
@@ -30,188 +31,17 @@
                             "name": "Hip-Hop"
                         }
                     ],
-                    "size": 8072761,
+                    "size": 5897286,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/17 - Something To Do.mp3",
-                    "artists": [],
-                    "albumArtists": [
+                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/8 - Whenever You Wanna Call Me.mp3",
+                    "artists": [
                         {
                             "id": "ar-36",
                             "name": "Comfort Fit"
                         }
-                    ]
-                },
-                {
-                    "id": "so-101",
-                    "parent": "al-10",
-                    "title": "Rehearsal Tape (1996)",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-10",
-                    "album": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "artistId": "ar-16",
-                    "artist": "CARN\u00daN",
-                    "coverArt": "al-10",
-                    "duration": 980,
-                    "bitRate": 65,
-                    "userRating": 5,
-                    "track": 9,
-                    "year": 1996,
-                    "size": 8219821,
-                    "discNumber": 1,
-                    "suffix": "ogg",
-                    "contentType": "application/ogg",
-                    "path": "/media/music/Carn\u00fan/Malkuth (Demo1996)/09RehearsalTape1996.ogg",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-16",
-                            "name": "CARN\u00daN"
-                        }
                     ],
-                    "transcodedSuffix": "mp3",
-                    "transcodedContentType": "audio/mpeg"
-                },
-                {
-                    "id": "so-78",
-                    "parent": "al-18",
-                    "title": "inominavel p01",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-18",
-                    "album": "Inominavel (live.v.01)",
-                    "artistId": "ar-11",
-                    "artist": "structura",
-                    "coverArt": "al-18",
-                    "duration": 84,
-                    "bitRate": 187,
-                    "userRating": 5,
-                    "track": 1,
-                    "year": 2007,
-                    "genre": "Noise",
-                    "genres": [
-                        {
-                            "name": "Noise"
-                        }
-                    ],
-                    "size": 2036632,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-11",
-                            "name": "structura"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-95",
-                    "parent": "al-8",
-                    "title": "Spirus Falls",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-8",
-                    "album": "Nofi Devices",
-                    "artistId": "ar-14",
-                    "artist": "Nofi/found.",
-                    "coverArt": "al-8",
-                    "duration": 327,
-                    "bitRate": 187,
-                    "userRating": 5,
-                    "track": 2,
-                    "genre": "Electronica,Dance",
-                    "genres": [
-                        {
-                            "name": "Electronica"
-                        },
-                        {
-                            "name": "Dance"
-                        }
-                    ],
-                    "size": 7875775,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/music/Nofi_found/Nofi Devices LP/02_Spirus_Falls.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-14",
-                            "name": "Nofi/found."
-                        }
-                    ]
-                },
-                {
-                    "id": "so-74",
-                    "parent": "al-18",
-                    "title": "inominavel p03",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-18",
-                    "album": "Inominavel (live.v.01)",
-                    "artistId": "ar-11",
-                    "artist": "structura",
-                    "coverArt": "al-18",
-                    "duration": 143,
-                    "bitRate": 187,
-                    "track": 3,
-                    "year": 2007,
-                    "genre": "Noise",
-                    "genres": [
-                        {
-                            "name": "Noise"
-                        }
-                    ],
-                    "size": 3449255,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/music/Structura/Inominavel (live.v.01)/03_structura_-_inominavel_p03.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-11",
-                            "name": "structura"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-124",
-                    "parent": "al-21",
-                    "title": "True Form",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 192,
-                    "bitRate": 237,
-                    "track": 6,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 5848663,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/6 - True Form.mp3",
-                    "artists": [],
                     "albumArtists": [
                         {
                             "id": "ar-36",
@@ -233,6 +63,8 @@
                     "coverArt": "al-18",
                     "duration": 237,
                     "bitRate": 187,
+                    "playCount": 0,
+                    "created": "2021-02-23T04:24:50Z",
                     "track": 2,
                     "year": 2007,
                     "genre": "Noise",
@@ -246,7 +78,12 @@
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
                     "path": "/media/music/Structura/Inominavel (live.v.01)/02_structura_-_inominavel_p02.mp3",
-                    "artists": [],
+                    "artists": [
+                        {
+                            "id": "ar-11",
+                            "name": "structura"
+                        }
+                    ],
                     "albumArtists": [
                         {
                             "id": "ar-11",
@@ -255,44 +92,134 @@
                     ]
                 },
                 {
-                    "id": "so-76",
-                    "parent": "al-18",
-                    "title": "inominavel p04",
+                    "id": "so-123",
+                    "parent": "al-21",
+                    "title": "Go on, Take It Further",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "al-18",
-                    "album": "Inominavel (live.v.01)",
-                    "artistId": "ar-11",
-                    "artist": "structura",
-                    "coverArt": "al-18",
-                    "duration": 317,
-                    "bitRate": 187,
-                    "userRating": 5,
-                    "averageRating": 4,
-                    "track": 4,
-                    "year": 2007,
-                    "genre": "Noise",
+                    "albumId": "al-21",
+                    "album": "Forget and Remember",
+                    "artistId": "ar-36",
+                    "artist": "Comfort Fit",
+                    "coverArt": "al-21",
+                    "duration": 69,
+                    "bitRate": 201,
+                    "playCount": 0,
+                    "created": "2021-07-22T02:09:43Z",
+                    "track": 18,
+                    "year": 2005,
+                    "genre": "Hip-Hop",
                     "genres": [
                         {
-                            "name": "Noise"
+                            "name": "Hip-Hop"
                         }
                     ],
-                    "size": 7629821,
+                    "size": 1795861,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/music/Structura/Inominavel (live.v.01)/04_structura_-_inominavel_p04.mp3",
-                    "artists": [],
+                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/18 - Go On, Take It Further.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-36",
+                            "name": "Comfort Fit"
+                        }
+                    ],
                     "albumArtists": [
                         {
-                            "id": "ar-11",
-                            "name": "structura"
+                            "id": "ar-36",
+                            "name": "Comfort Fit"
                         }
                     ]
                 },
                 {
-                    "id": "so-57",
+                    "id": "so-81",
+                    "parent": "al-7",
+                    "title": "Galenskap",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-7",
+                    "album": "Sensorisk Deprivation",
+                    "artistId": "ar-13",
+                    "artist": "IOK-1",
+                    "coverArt": "al-7",
+                    "duration": 998,
+                    "bitRate": 380,
+                    "userRating": 5,
+                    "playCount": 1,
+                    "created": "2021-02-23T04:24:51Z",
+                    "starred": "2026-07-10T01:37:48Z",
+                    "track": 3,
+                    "year": 2011,
+                    "genre": "Dark Ambient",
+                    "genres": [
+                        {
+                            "name": "Dark Ambient"
+                        }
+                    ],
+                    "size": 48633049,
+                    "discNumber": 1,
+                    "suffix": "flac",
+                    "contentType": "audio/flac",
+                    "path": "/media/music/IOK-1/Sensorisk Deprivation/03_-_IOK-1_-_Galenskap.flac",
+                    "artists": [
+                        {
+                            "id": "ar-13",
+                            "name": "IOK-1"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-13",
+                            "name": "IOK-1"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-101",
+                    "parent": "al-10",
+                    "title": "Rehearsal Tape (1996)",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-10",
+                    "album": "CARN\u00daN - MALKUTH (Demo 1996)",
+                    "artistId": "ar-16",
+                    "artist": "CARN\u00daN",
+                    "coverArt": "al-10",
+                    "duration": 980,
+                    "bitRate": 65,
+                    "userRating": 5,
+                    "playCount": 1,
+                    "created": "2021-02-23T04:24:51Z",
+                    "track": 9,
+                    "year": 1996,
+                    "size": 8219821,
+                    "discNumber": 1,
+                    "suffix": "ogg",
+                    "contentType": "application/ogg",
+                    "path": "/media/music/Carn\u00fan/Malkuth (Demo1996)/09RehearsalTape1996.ogg",
+                    "artists": [
+                        {
+                            "id": "ar-16",
+                            "name": "CARN\u00daN"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-16",
+                            "name": "CARN\u00daN"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-62",
                     "parent": "al-2",
                     "title": "PurpleSmoke",
                     "isDir": false,
@@ -304,7 +231,10 @@
                     "artist": "Synthetic",
                     "coverArt": "al-2",
                     "duration": 390,
-                    "bitRate": 62,
+                    "bitRate": 20,
+                    "userRating": 5,
+                    "playCount": 1,
+                    "created": "2021-02-23T04:24:48Z",
                     "track": 3,
                     "year": 2007,
                     "genre": "Electronic",
@@ -313,12 +243,61 @@
                             "name": "Electronic"
                         }
                     ],
-                    "size": 3131519,
+                    "size": 1014135,
+                    "discNumber": 1,
+                    "suffix": "wma",
+                    "contentType": "audio/x-ms-wma",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-55",
+                    "parent": "al-2",
+                    "title": "Red&GreenSmoke",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
+                    "duration": 400,
+                    "bitRate": 62,
+                    "playCount": 1,
+                    "created": "2021-02-23T04:24:48Z",
+                    "track": 5,
+                    "year": 2007,
+                    "genre": "Electronic",
+                    "genres": [
+                        {
+                            "name": "Electronic"
+                        }
+                    ],
+                    "size": 3209886,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3",
-                    "artists": [],
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
                     "albumArtists": [
                         {
                             "id": "ar-2",
@@ -327,9 +306,53 @@
                     ]
                 },
                 {
-                    "id": "so-116",
+                    "id": "so-107",
+                    "parent": "al-12",
+                    "title": "Arrest Me",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-12",
+                    "album": "Buried in Nausea",
+                    "artistId": "ar-20",
+                    "artist": "R/B",
+                    "coverArt": "al-12",
+                    "duration": 96,
+                    "bitRate": 246,
+                    "playCount": 0,
+                    "created": "2021-02-24T01:44:21Z",
+                    "track": 9,
+                    "year": 2012,
+                    "genre": "Punk",
+                    "genres": [
+                        {
+                            "name": "Punk"
+                        }
+                    ],
+                    "size": 3091727,
+                    "discNumber": 1,
+                    "suffix": "m4a",
+                    "contentType": "audio/mp4",
+                    "path": "/media/music/Various Artists/Buried In Nausea/09R_b-ArrestMe.m4a",
+                    "artists": [
+                        {
+                            "id": "ar-20",
+                            "name": "R/B"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-19",
+                            "name": "Various Artists"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-125",
                     "parent": "al-21",
-                    "title": "Can I Help U?",
+                    "title": "Take a Look",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
@@ -338,9 +361,12 @@
                     "artistId": "ar-36",
                     "artist": "Comfort Fit",
                     "coverArt": "al-21",
-                    "duration": 103,
-                    "bitRate": 211,
-                    "track": 1,
+                    "duration": 230,
+                    "bitRate": 238,
+                    "userRating": 5,
+                    "playCount": 0,
+                    "created": "2021-07-22T02:09:47Z",
+                    "track": 5,
                     "year": 2005,
                     "genre": "Hip-Hop",
                     "genres": [
@@ -348,12 +374,59 @@
                             "name": "Hip-Hop"
                         }
                     ],
-                    "size": 2811819,
+                    "size": 7018987,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/1 - Can I Help U?.mp3",
-                    "artists": [],
+                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/5 - Take a Look.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-36",
+                            "name": "Comfort Fit"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-36",
+                            "name": "Comfort Fit"
+                        }
+                    ]
+                },
+                {
+                    "id": "so-127",
+                    "parent": "al-21",
+                    "title": "She Knows Me Now",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-21",
+                    "album": "Forget and Remember",
+                    "artistId": "ar-36",
+                    "artist": "Comfort Fit",
+                    "coverArt": "al-21",
+                    "duration": 209,
+                    "bitRate": 212,
+                    "playCount": 0,
+                    "created": "2021-07-22T02:09:47Z",
+                    "track": 10,
+                    "year": 2005,
+                    "genre": "Hip-Hop",
+                    "genres": [
+                        {
+                            "name": "Hip-Hop"
+                        }
+                    ],
+                    "size": 5690938,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/10 - She Knows Me Now (re-edit).mp3",
+                    "artists": [
+                        {
+                            "id": "ar-36",
+                            "name": "Comfort Fit"
+                        }
+                    ],
                     "albumArtists": [
                         {
                             "id": "ar-36",

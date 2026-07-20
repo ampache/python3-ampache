@@ -2,9 +2,6 @@
     "subsonic-response": {
         "status": "ok",
         "version": "1.16.1",
-        "type": "ampache",
-        "serverVersion": "6.8.0",
-        "openSubsonic": true,
         "shares": {
             "share": [
                 {
@@ -31,6 +28,7 @@
                             "duration": 296,
                             "bitRate": 1378,
                             "userRating": 5,
+                            "starred": "2026-07-10T00:31:06Z",
                             "track": 1,
                             "size": 52345628,
                             "discNumber": 1,
@@ -86,6 +84,7 @@
                             "duration": 84,
                             "bitRate": 187,
                             "userRating": 5,
+                            "starred": "2026-07-10T01:46:39Z",
                             "track": 1,
                             "year": 2007,
                             "genre": "Noise",
@@ -155,8 +154,8 @@
                             "coverArt": "200000018",
                             "duration": 317,
                             "bitRate": 187,
-                            "userRating": 5,
-                            "averageRating": 4,
+                            "userRating": 3,
+                            "averageRating": 3,
                             "track": 4,
                             "year": 2007,
                             "genre": "Noise",
@@ -218,7 +217,7 @@
                 },
                 {
                     "id": "sh-7",
-                    "url": "https://music.com.au:8989/share.php?id=7&secret=GJ7EzBPT",
+                    "url": "https://music.com.au/share.php?id=7&secret=GJ7EzBPT",
                     "description": "Colorsmoke EP (Synthetic)",
                     "username": "user",
                     "created": "2023-11-03T01:28:39+00:00",
@@ -386,7 +385,6 @@
                             "coverArt": "200000002",
                             "duration": 304,
                             "bitRate": 62,
-                            "userRating": 5,
                             "track": 4,
                             "year": 2007,
                             "genre": "Electronic",

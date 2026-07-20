@@ -3,14 +3,14 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "8.0.0",
         "openSubsonic": true,
         "albumInfo": {
             "notes": "",
             "musicBrainzId": null,
-            "smallImageUrl": "https://music.com.au/play/art/none/album/7/size68x68.jpg",
-            "mediumImageUrl": "https://music.com.au/play/art/none/album/7/size128x128.jpg",
-            "largeImageUrl": "https://music.com.au/play/art/none/album/7/size348x348.jpg"
+            "smallImageUrl": "",
+            "mediumImageUrl": "",
+            "largeImageUrl": ""
         }
     }
 }

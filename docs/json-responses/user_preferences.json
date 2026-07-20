@@ -214,6 +214,17 @@
             "has_access": true
         },
         {
+            "id": 226,
+            "name": "api_enable_8",
+            "level": 25,
+            "description": "Allow Ampache API8 responses",
+            "value": "1",
+            "type": "boolean",
+            "category": "options",
+            "subcategory": "api",
+            "has_access": true
+        },
+        {
             "id": 223,
             "name": "subsonic_legacy",
             "level": 25,
@@ -951,32 +962,10 @@
             "has_access": true
         },
         {
-            "id": 88,
-            "name": "webplayer_flash",
-            "level": 25,
-            "description": "Authorize Flash Web Player",
-            "value": "1",
-            "type": "boolean",
-            "category": "streaming",
-            "subcategory": "player",
-            "has_access": true
-        },
-        {
             "id": 89,
             "name": "webplayer_html5",
             "level": 25,
             "description": "Authorize HTML5 Web Player",
-            "value": "1",
-            "type": "boolean",
-            "category": "streaming",
-            "subcategory": "player",
-            "has_access": true
-        },
-        {
-            "id": 134,
-            "name": "webplayer_aurora",
-            "level": 25,
-            "description": "Authorize JavaScript decoder (Aurora.js) in Web Player",
             "value": "1",
             "type": "boolean",
             "category": "streaming",
@@ -1066,17 +1055,6 @@
             "value": "0",
             "type": "boolean",
             "category": "interface",
-            "subcategory": "player",
-            "has_access": true
-        },
-        {
-            "id": 181,
-            "name": "use_play2",
-            "level": 25,
-            "description": "Use an alternative playback action for streaming if you have issues with playing music",
-            "value": "0",
-            "type": "boolean",
-            "category": "streaming",
             "subcategory": "player",
             "has_access": true
         },
@@ -1339,6 +1317,17 @@
             "level": 25,
             "description": "Show 'Artists' link in the main sidebar",
             "value": "0",
+            "type": "boolean",
+            "category": "interface",
+            "subcategory": "sidebar",
+            "has_access": true
+        },
+        {
+            "id": 227,
+            "name": "show_folder",
+            "level": 25,
+            "description": "Show 'Folders' link in the main sidebar",
+            "value": "1",
             "type": "boolean",
             "category": "interface",
             "subcategory": "sidebar",

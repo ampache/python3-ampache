@@ -3,7 +3,7 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "8.0.0",
         "openSubsonic": true,
         "artists": {
             "ignoredArticles": "The An A Die Das Ein Eine Les Le La",
@@ -93,11 +93,6 @@
                             "id": "ar-32",
                             "name": "Shorty Mac",
                             "coverArt": "ar-32",
-                            "albumCount": 0
-                        },
-                        {
-                            "id": "ar-18",
-                            "name": "SPACE",
                             "albumCount": 0
                         },
                         {

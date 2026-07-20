@@ -3,16 +3,10 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "8.0.0",
         "openSubsonic": true,
         "starred2": {
             "artist": [
-                {
-                    "id": "ar-16",
-                    "name": "CARN\u00daN",
-                    "coverArt": "ar-16",
-                    "albumCount": 1
-                },
                 {
                     "id": "ar-2",
                     "name": "Synthetic",
@@ -23,41 +17,14 @@
             ],
             "album": [
                 {
-                    "id": "al-10",
-                    "parent": "ar-16",
-                    "album": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "title": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "name": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "version": "",
-                    "isDir": true,
-                    "coverArt": "al-10",
-                    "songCount": 9,
-                    "created": "2021-02-23T04:24:51+00:00",
-                    "duration": 3873,
-                    "playCount": 7,
-                    "artistId": "ar-16",
-                    "artist": "CARN\u00daN",
-                    "year": 1996,
-                    "artists": [
-                        {
-                            "id": "ar-16",
-                            "name": "CARN\u00daN"
-                        }
-                    ]
-                },
-                {
                     "id": "al-2",
-                    "parent": "ar-2",
-                    "album": "Colorsmoke EP",
-                    "title": "Colorsmoke EP",
                     "name": "Colorsmoke EP",
                     "version": "",
-                    "isDir": true,
                     "coverArt": "al-2",
                     "songCount": 12,
                     "created": "2021-02-23T04:24:48+00:00",
                     "duration": 4568,
-                    "playCount": 9,
+                    "playCount": 7,
                     "artistId": "ar-2",
                     "artist": "Synthetic",
                     "year": 2007,
@@ -68,7 +35,6 @@
                         }
                     ],
                     "userRating": 5,
-                    "averageRating": 3,
                     "starred": "2021-02-22T05:51:53Z",
                     "artists": [
                         {
@@ -80,35 +46,351 @@
             ],
             "song": [
                 {
-                    "id": "so-100",
-                    "parent": "al-10",
-                    "title": "The Prophecies Of The Horned One",
+                    "id": "so-80",
+                    "parent": "al-6",
+                    "title": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "al-10",
-                    "album": "CARN\u00daN - MALKUTH (Demo 1996)",
-                    "artistId": "ar-16",
-                    "artist": "CARN\u00daN",
-                    "coverArt": "al-10",
-                    "duration": 378,
-                    "bitRate": 87,
-                    "track": 2,
-                    "year": 1996,
-                    "size": 4265791,
+                    "albumId": "al-6",
+                    "album": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
+                    "artistId": "ar-12",
+                    "artist": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
+                    "coverArt": "al-6",
+                    "duration": 300,
+                    "bitRate": 1378,
+                    "userRating": 5,
+                    "averageRating": 3,
+                    "playCount": 2,
+                    "created": "2021-02-23T04:24:50Z",
+                    "starred": "2026-07-10T01:52:39Z",
+                    "track": 1,
+                    "size": 53026998,
                     "discNumber": 1,
-                    "suffix": "ogg",
-                    "contentType": "application/ogg",
-                    "path": "/media/music/Carn\u00fan/Malkuth (Demo1996)/02ThePropheciesOfTheHornedOne.ogg",
-                    "artists": [],
+                    "suffix": "wav",
+                    "contentType": "audio/wav",
+                    "path": "/media/music/\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c/\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)/01 - \u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d.wav",
+                    "artists": [
+                        {
+                            "id": "ar-12",
+                            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
+                        }
+                    ],
                     "albumArtists": [
                         {
-                            "id": "ar-16",
-                            "name": "CARN\u00daN"
+                            "id": "ar-12",
+                            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
                         }
                     ],
                     "transcodedSuffix": "mp3",
                     "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-78",
+                    "parent": "al-18",
+                    "title": "inominavel p01",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-18",
+                    "album": "Inominavel (live.v.01)",
+                    "artistId": "ar-11",
+                    "artist": "structura",
+                    "coverArt": "al-18",
+                    "duration": 84,
+                    "bitRate": 187,
+                    "userRating": 5,
+                    "playCount": 2,
+                    "created": "2021-02-23T04:24:50Z",
+                    "starred": "2026-07-10T01:46:39Z",
+                    "track": 1,
+                    "year": 2007,
+                    "genre": "Noise",
+                    "genres": [
+                        {
+                            "name": "Noise"
+                        }
+                    ],
+                    "size": 2036632,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-11",
+                            "name": "structura"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-11",
+                            "name": "structura"
+                        }
+                    ]
+                },
+                {
+                    "id": "so-81",
+                    "parent": "al-7",
+                    "title": "Galenskap",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-7",
+                    "album": "Sensorisk Deprivation",
+                    "artistId": "ar-13",
+                    "artist": "IOK-1",
+                    "coverArt": "al-7",
+                    "duration": 998,
+                    "bitRate": 380,
+                    "userRating": 5,
+                    "playCount": 1,
+                    "created": "2021-02-23T04:24:51Z",
+                    "starred": "2026-07-10T01:37:48Z",
+                    "track": 3,
+                    "year": 2011,
+                    "genre": "Dark Ambient",
+                    "genres": [
+                        {
+                            "name": "Dark Ambient"
+                        }
+                    ],
+                    "size": 48633049,
+                    "discNumber": 1,
+                    "suffix": "flac",
+                    "contentType": "audio/flac",
+                    "path": "/media/music/IOK-1/Sensorisk Deprivation/03_-_IOK-1_-_Galenskap.flac",
+                    "artists": [
+                        {
+                            "id": "ar-13",
+                            "name": "IOK-1"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-13",
+                            "name": "IOK-1"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-82",
+                    "parent": "al-7",
+                    "title": "Vanvett",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-7",
+                    "album": "Sensorisk Deprivation",
+                    "artistId": "ar-13",
+                    "artist": "IOK-1",
+                    "coverArt": "al-7",
+                    "duration": 825,
+                    "bitRate": 363,
+                    "userRating": 5,
+                    "playCount": 1,
+                    "created": "2021-02-23T04:24:51Z",
+                    "starred": "2026-07-10T01:32:28Z",
+                    "track": 2,
+                    "year": 2011,
+                    "genre": "Dark Ambient",
+                    "genres": [
+                        {
+                            "name": "Dark Ambient"
+                        }
+                    ],
+                    "size": 38389422,
+                    "discNumber": 1,
+                    "suffix": "flac",
+                    "contentType": "audio/flac",
+                    "path": "/media/music/IOK-1/Sensorisk Deprivation/02_-_IOK-1_-_Vanvett.flac",
+                    "artists": [
+                        {
+                            "id": "ar-13",
+                            "name": "IOK-1"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-13",
+                            "name": "IOK-1"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-111",
+                    "parent": "al-12",
+                    "title": "The art of free expression",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-12",
+                    "album": "Buried in Nausea",
+                    "artistId": "ar-35",
+                    "artist": "Tip-C",
+                    "coverArt": "al-12",
+                    "duration": 110,
+                    "bitRate": 31,
+                    "userRating": 5,
+                    "playCount": 1,
+                    "created": "2021-02-24T01:44:21Z",
+                    "starred": "2026-07-10T01:02:49Z",
+                    "track": 5,
+                    "year": 2012,
+                    "size": 460498,
+                    "discNumber": 1,
+                    "suffix": "wma",
+                    "contentType": "audio/x-ms-wma",
+                    "path": "/media/music/Various Artists/Buried In Nausea/05Tip-c-TheArtOfFreeExpression.wma",
+                    "artists": [
+                        {
+                            "id": "ar-35",
+                            "name": "Tip-C"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-19",
+                            "name": "Various Artists"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-90",
+                    "parent": "al-8",
+                    "title": "Invo",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-8",
+                    "album": "Nofi Devices",
+                    "artistId": "ar-14",
+                    "artist": "Nofi/found.",
+                    "coverArt": "al-8",
+                    "duration": 47,
+                    "bitRate": 187,
+                    "userRating": 5,
+                    "playCount": 1,
+                    "created": "2021-02-23T04:24:51Z",
+                    "starred": "2026-07-10T00:40:36Z",
+                    "track": 1,
+                    "genre": "Electronica,Dance",
+                    "genres": [
+                        {
+                            "name": "Electronica"
+                        },
+                        {
+                            "name": "Dance"
+                        }
+                    ],
+                    "size": 1140815,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/music/Nofi_found/Nofi Devices LP/01_Invo.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-14",
+                            "name": "Nofi/found."
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-14",
+                            "name": "Nofi/found."
+                        }
+                    ]
+                },
+                {
+                    "id": "so-96",
+                    "parent": "al-9",
+                    "title": "Creeping Lawler 2",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-9",
+                    "album": "Creeping Lawler 2",
+                    "artistId": "ar-15",
+                    "artist": "Warfare 3.0",
+                    "coverArt": "al-9",
+                    "duration": 296,
+                    "bitRate": 1378,
+                    "userRating": 5,
+                    "playCount": 5,
+                    "created": "2021-02-23T04:24:51Z",
+                    "starred": "2026-07-10T00:31:06Z",
+                    "track": 1,
+                    "size": 52345628,
+                    "discNumber": 1,
+                    "suffix": "wav",
+                    "contentType": "audio/wav",
+                    "path": "/media/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.wav",
+                    "artists": [
+                        {
+                            "id": "ar-15",
+                            "name": "Warfare 3.0"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-15",
+                            "name": "Warfare 3.0"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-88",
+                    "parent": "al-8",
+                    "title": "Netro",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-8",
+                    "album": "Nofi Devices",
+                    "artistId": "ar-14",
+                    "artist": "Nofi/found.",
+                    "coverArt": "al-8",
+                    "duration": 601,
+                    "bitRate": 187,
+                    "userRating": 5,
+                    "playCount": 1,
+                    "created": "2021-02-23T04:24:51Z",
+                    "starred": "2026-07-10T00:29:14Z",
+                    "track": 10,
+                    "genre": "Electronica,Dance",
+                    "genres": [
+                        {
+                            "name": "Electronica"
+                        },
+                        {
+                            "name": "Dance"
+                        }
+                    ],
+                    "size": 14445467,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/music/Nofi_found/Nofi Devices LP/10_Netro.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-14",
+                            "name": "Nofi/found."
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-14",
+                            "name": "Nofi/found."
+                        }
+                    ]
                 }
             ]
         }

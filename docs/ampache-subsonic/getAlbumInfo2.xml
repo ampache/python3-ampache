@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.8.0" openSubsonic="1">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1">
   <albumInfo>
     <notes/>
     <musicBrainzId/>
-    <smallImageUrl>https://music.com.au/play/art/none/album/2/size68x68.png</smallImageUrl>
-    <mediumImageUrl>https://music.com.au/play/art/none/album/2/size128x128.png</mediumImageUrl>
-    <largeImageUrl>https://music.com.au/play/art/none/album/2/size348x348.png</largeImageUrl>
+    <smallImageUrl/>
+    <mediumImageUrl/>
+    <largeImageUrl/>
   </albumInfo>
 </subsonic-response>

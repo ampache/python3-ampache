@@ -3,19 +3,21 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "8.0.0",
         "openSubsonic": true,
         "videos": {
             "video": [
                 {
                     "id": "vi-1",
-                    "parent": "mf-2",
+                    "parent": "2",
                     "title": "SPACE   Magic Fly (1977) - https://archive.org/details/SPACE_Magic_Fly_1977.mp4",
                     "isDir": false,
                     "isVideo": true,
                     "type": "video",
                     "duration": 193,
                     "bitRate": 0,
+                    "playCount": 3,
+                    "created": "2021-02-23T04:28:42Z",
                     "size": 20084777,
                     "suffix": "mp4",
                     "contentType": "video/mp4",
@@ -23,17 +25,35 @@
                 },
                 {
                     "id": "vi-2",
-                    "parent": "mf-2",
+                    "parent": "2",
                     "title": "Magic Fly.ogv",
                     "isDir": false,
                     "isVideo": true,
                     "type": "video",
                     "duration": 0,
                     "bitRate": 0,
+                    "playCount": 1,
+                    "created": "2021-02-23T04:28:42Z",
                     "size": 14950742,
                     "suffix": "ogv",
                     "contentType": "video/ogg",
                     "path": "SPACE - Magic Fly (1977).ogv"
+                },
+                {
+                    "id": "vi-5",
+                    "parent": "2",
+                    "title": "Lisa Simpson playing a Beer Jug as her new instrument-fTGVV_4DNYI.mp4",
+                    "isDir": false,
+                    "isVideo": true,
+                    "type": "video",
+                    "duration": 32,
+                    "bitRate": 124,
+                    "playCount": 0,
+                    "created": "2026-07-10T00:29:13Z",
+                    "size": 16967352,
+                    "suffix": "mp4",
+                    "contentType": "video/mp4",
+                    "path": "Lisa Simpson playing a Beer Jug as her new instrument-fTGVV_4DNYI.mp4"
                 }
             ]
         }

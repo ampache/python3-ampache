@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
-  <playlist id="pl-148" name="testcreate" owner="user" public="true" songCount="1" duration="252" created="2025-07-01T05:52:09+00:00" changed="2025-07-01T05:52:09+00:00">
-    <entry id="so-108" parent="al-12" title="I've been down this road before" isDir="false" isVideo="false" type="music" albumId="al-12" album="Buried in Nausea" artistId="ar-21" artist="Tip-C (featuring Mike Beers)" coverArt="al-12" duration="252" bitRate="31" userRating="5" track="6" year="2012" size="1035322" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Various Artists/Buried In Nausea/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="8.0.0" openSubsonic="1">
+  <playlist id="pl-150" name="testcreate" owner="user" public="true" songCount="1" duration="188" created="2026-07-20T09:34:30+00:00" changed="2026-07-20T09:34:30+00:00" readonly="1" validUntil="2026-07-20T09:39:30+00:00">
+    <entry id="so-128" parent="al-21" title="Whenever You Wanna Call Me" isDir="false" isVideo="false" type="music" albumId="al-21" album="Forget and Remember" artistId="ar-36" artist="Comfort Fit" coverArt="al-21" duration="188" bitRate="244" userRating="5" playCount="1" track="8" year="2005" genre="Hip-Hop" size="5897286" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/media/upload/user/Comfort Fit/Forget And Remember/8 - Whenever You Wanna Call Me.mp3">
+      <genres name="Hip-Hop"/>
+    </entry>
   </playlist>
 </subsonic-response>
