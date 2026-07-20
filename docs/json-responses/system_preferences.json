@@ -1,7 +1,7 @@
 {
     "preference": [
         {
-            "id": 123,
+            "id": "123",
             "name": "ajax_load",
             "level": 25,
             "description": "Ajax page load",
@@ -12,7 +12,7 @@
             "has_access": true
         },
         {
-            "id": 140,
+            "id": "140",
             "name": "notify_email",
             "level": 25,
             "description": "Allow E-mail notifications",
@@ -23,7 +23,7 @@
             "has_access": true
         },
         {
-            "id": 110,
+            "id": "110",
             "name": "demo_clear_sessions",
             "level": 25,
             "description": "Democratic - Clear votes for expired user sessions",
@@ -34,7 +34,7 @@
             "has_access": true
         },
         {
-            "id": 174,
+            "id": "174",
             "name": "demo_use_search",
             "level": 100,
             "description": "Democratic - Use smartlists for base playlist",
@@ -45,7 +45,7 @@
             "has_access": true
         },
         {
-            "id": 101,
+            "id": "101",
             "name": "stream_beautiful_url",
             "level": 100,
             "description": "Enable URL Rewriting",
@@ -56,7 +56,7 @@
             "has_access": true
         },
         {
-            "id": 24,
+            "id": "24",
             "name": "force_http_play",
             "level": 100,
             "description": "Force HTTP playback regardless of port",
@@ -67,7 +67,7 @@
             "has_access": true
         },
         {
-            "id": 31,
+            "id": "31",
             "name": "lang",
             "level": 100,
             "description": "Language",
@@ -118,7 +118,7 @@
             ]
         },
         {
-            "id": 23,
+            "id": "23",
             "name": "lock_songs",
             "level": 100,
             "description": "Lock Songs",
@@ -129,7 +129,7 @@
             "has_access": true
         },
         {
-            "id": 157,
+            "id": "157",
             "name": "unique_playlist",
             "level": 25,
             "description": "Only add unique items to playlists",
@@ -140,7 +140,7 @@
             "has_access": true
         },
         {
-            "id": 183,
+            "id": "183",
             "name": "bookmark_latest",
             "level": 25,
             "description": "Only keep the latest media bookmark",
@@ -151,7 +151,7 @@
             "has_access": true
         },
         {
-            "id": 32,
+            "id": "32",
             "name": "playlist_type",
             "level": 100,
             "description": "Playlist Type",
@@ -170,7 +170,7 @@
             ]
         },
         {
-            "id": 222,
+            "id": "222",
             "name": "show_playlist_media_parent",
             "level": 25,
             "description": "Show Artist column on playlist media rows",
@@ -181,7 +181,7 @@
             "has_access": true
         },
         {
-            "id": 111,
+            "id": "111",
             "name": "show_donate",
             "level": 25,
             "description": "Show donate button in footer",
@@ -192,7 +192,7 @@
             "has_access": true
         },
         {
-            "id": 211,
+            "id": "211",
             "name": "extended_playlist_links",
             "level": 25,
             "description": "Show extended links for playlist media",
@@ -203,7 +203,7 @@
             "has_access": true
         },
         {
-            "id": 165,
+            "id": "165",
             "name": "api_enable_3",
             "level": 25,
             "description": "Allow Ampache API3 responses",
@@ -214,7 +214,7 @@
             "has_access": true
         },
         {
-            "id": 166,
+            "id": "166",
             "name": "api_enable_4",
             "level": 25,
             "description": "Allow Ampache API4 responses",
@@ -225,7 +225,7 @@
             "has_access": true
         },
         {
-            "id": 167,
+            "id": "167",
             "name": "api_enable_5",
             "level": 25,
             "description": "Allow Ampache API5 responses",
@@ -236,7 +236,7 @@
             "has_access": true
         },
         {
-            "id": 176,
+            "id": "176",
             "name": "api_enable_6",
             "level": 25,
             "description": "Allow Ampache API6 responses",
@@ -247,7 +247,7 @@
             "has_access": true
         },
         {
-            "id": 226,
+            "id": "226",
             "name": "api_enable_8",
             "level": 25,
             "description": "Allow Ampache API8 responses",
@@ -258,7 +258,7 @@
             "has_access": true
         },
         {
-            "id": 223,
+            "id": "223",
             "name": "subsonic_legacy",
             "level": 25,
             "description": "Enable legacy Subsonic API responses for compatibility issues",
@@ -269,7 +269,7 @@
             "has_access": true
         },
         {
-            "id": 168,
+            "id": "168",
             "name": "api_force_version",
             "level": 25,
             "description": "Force a specific API response no matter what version you send",
@@ -287,7 +287,7 @@
             ]
         },
         {
-            "id": 224,
+            "id": "224",
             "name": "subsonic_force_album_artist",
             "level": 25,
             "description": "Force Album Artist for Subsonic API responses",
@@ -298,7 +298,7 @@
             "has_access": true
         },
         {
-            "id": 204,
+            "id": "204",
             "name": "api_always_download",
             "level": 25,
             "description": "Force API streams to download. (Enable scrobble in your client to record stats)",
@@ -309,7 +309,7 @@
             "has_access": true
         },
         {
-            "id": 164,
+            "id": "164",
             "name": "subsonic_always_download",
             "level": 25,
             "description": "Force Subsonic streams to download. (Enable scrobble in your client to record stats)",
@@ -320,7 +320,7 @@
             "has_access": true
         },
         {
-            "id": 170,
+            "id": "170",
             "name": "api_hidden_playlists",
             "level": 25,
             "description": "Hide playlists in Subsonic and API clients that start with this string",
@@ -331,7 +331,7 @@
             "has_access": true
         },
         {
-            "id": 171,
+            "id": "171",
             "name": "api_hide_dupe_searches",
             "level": 25,
             "description": "Hide smartlists that match playlist names in Subsonic and API clients",
@@ -342,7 +342,7 @@
             "has_access": true
         },
         {
-            "id": 225,
+            "id": "225",
             "name": "subsonic_single_user_data",
             "level": 25,
             "description": "Use single user data for Subsonic API responses",
@@ -353,7 +353,7 @@
             "has_access": true
         },
         {
-            "id": 185,
+            "id": "185",
             "name": "perpetual_api_session",
             "level": 100,
             "description": "API sessions do not expire",
@@ -364,7 +364,7 @@
             "has_access": true
         },
         {
-            "id": 119,
+            "id": "119",
             "name": "daap_pass",
             "level": 100,
             "description": "DAAP backend password",
@@ -375,7 +375,7 @@
             "has_access": true
         },
         {
-            "id": 118,
+            "id": "118",
             "name": "daap_backend",
             "level": 100,
             "description": "Use DAAP backend",
@@ -386,7 +386,7 @@
             "has_access": true
         },
         {
-            "id": 86,
+            "id": "86",
             "name": "subsonic_backend",
             "level": 100,
             "description": "Use Subsonic backend",
@@ -397,7 +397,7 @@
             "has_access": true
         },
         {
-            "id": 120,
+            "id": "120",
             "name": "upnp_backend",
             "level": 100,
             "description": "Use UPnP backend",
@@ -408,7 +408,7 @@
             "has_access": true
         },
         {
-            "id": 139,
+            "id": "139",
             "name": "webdav_backend",
             "level": 100,
             "description": "Use WebDAV backend",
@@ -419,7 +419,7 @@
             "has_access": true
         },
         {
-            "id": 153,
+            "id": "153",
             "name": "libitem_browse_alpha",
             "level": 75,
             "description": "Alphabet browsing by default for following library items (album,artist,...)",
@@ -430,7 +430,7 @@
             "has_access": true
         },
         {
-            "id": 161,
+            "id": "161",
             "name": "use_original_year",
             "level": 25,
             "description": "Browse by Original Year for albums (falls back to Year)",
@@ -441,7 +441,7 @@
             "has_access": true
         },
         {
-            "id": 163,
+            "id": "163",
             "name": "hide_genres",
             "level": 25,
             "description": "Hide the Genre column in browse table rows",
@@ -452,7 +452,7 @@
             "has_access": true
         },
         {
-            "id": 162,
+            "id": "162",
             "name": "hide_single_artist",
             "level": 25,
             "description": "Hide the Song Artist column for Albums with one Artist",
@@ -463,7 +463,7 @@
             "has_access": true
         },
         {
-            "id": 84,
+            "id": "84",
             "name": "show_played_times",
             "level": 25,
             "description": "Show # played",
@@ -474,7 +474,7 @@
             "has_access": true
         },
         {
-            "id": 154,
+            "id": "154",
             "name": "show_skipped_times",
             "level": 25,
             "description": "Show # skipped",
@@ -485,7 +485,7 @@
             "has_access": true
         },
         {
-            "id": 179,
+            "id": "179",
             "name": "show_original_year",
             "level": 25,
             "description": "Show Album original year on links (if available)",
@@ -496,7 +496,7 @@
             "has_access": true
         },
         {
-            "id": 178,
+            "id": "178",
             "name": "show_subtitle",
             "level": 25,
             "description": "Show Album subtitle on links (if available)",
@@ -507,7 +507,7 @@
             "has_access": true
         },
         {
-            "id": 149,
+            "id": "149",
             "name": "browse_filter",
             "level": 25,
             "description": "Show filter box on browse",
@@ -518,7 +518,7 @@
             "has_access": true
         },
         {
-            "id": 160,
+            "id": "160",
             "name": "show_license",
             "level": 25,
             "description": "Show License",
@@ -529,7 +529,7 @@
             "has_access": true
         },
         {
-            "id": 169,
+            "id": "169",
             "name": "show_playlist_username",
             "level": 25,
             "description": "Show playlist owner username in titles",
@@ -540,7 +540,7 @@
             "has_access": true
         },
         {
-            "id": 156,
+            "id": "156",
             "name": "cron_cache",
             "level": 100,
             "description": "Cache computed SQL data (eg. media hits stats) using a cron",
@@ -551,7 +551,7 @@
             "has_access": true
         },
         {
-            "id": 148,
+            "id": "148",
             "name": "catalog_check_duplicate",
             "level": 100,
             "description": "Check library item at import time and disable duplicates",
@@ -562,7 +562,7 @@
             "has_access": true
         },
         {
-            "id": 214,
+            "id": "214",
             "name": "browse_album_grid_view",
             "level": 25,
             "description": "Force Grid View on Album browse",
@@ -573,7 +573,7 @@
             "has_access": true
         },
         {
-            "id": 215,
+            "id": "215",
             "name": "browse_album_disk_grid_view",
             "level": 25,
             "description": "Force Grid View on Album Disk browse",
@@ -584,7 +584,7 @@
             "has_access": true
         },
         {
-            "id": 216,
+            "id": "216",
             "name": "browse_artist_grid_view",
             "level": 25,
             "description": "Force Grid View on Artist browse",
@@ -595,7 +595,7 @@
             "has_access": true
         },
         {
-            "id": 218,
+            "id": "218",
             "name": "browse_playlist_grid_view",
             "level": 25,
             "description": "Force Grid View on Playlist browse",
@@ -606,7 +606,7 @@
             "has_access": true
         },
         {
-            "id": 220,
+            "id": "220",
             "name": "browse_podcast_grid_view",
             "level": 25,
             "description": "Force Grid View on Podcast browse",
@@ -617,7 +617,7 @@
             "has_access": true
         },
         {
-            "id": 221,
+            "id": "221",
             "name": "browse_podcast_episode_grid_view",
             "level": 25,
             "description": "Force Grid View on Podcast Episode browse",
@@ -628,7 +628,7 @@
             "has_access": true
         },
         {
-            "id": 217,
+            "id": "217",
             "name": "browse_live_stream_grid_view",
             "level": 25,
             "description": "Force Grid View on Radio Station browse",
@@ -639,7 +639,7 @@
             "has_access": true
         },
         {
-            "id": 213,
+            "id": "213",
             "name": "browse_song_grid_view",
             "level": 25,
             "description": "Force Grid View on Song browse",
@@ -650,7 +650,7 @@
             "has_access": true
         },
         {
-            "id": 219,
+            "id": "219",
             "name": "browse_video_grid_view",
             "level": 25,
             "description": "Force Grid View on Video browse",
@@ -661,7 +661,7 @@
             "has_access": true
         },
         {
-            "id": 151,
+            "id": "151",
             "name": "custom_blankalbum",
             "level": 75,
             "description": "Custom blank album default image",
@@ -672,7 +672,7 @@
             "has_access": true
         },
         {
-            "id": 155,
+            "id": "155",
             "name": "custom_datetime",
             "level": 25,
             "description": "Custom datetime",
@@ -683,7 +683,7 @@
             "has_access": true
         },
         {
-            "id": 182,
+            "id": "182",
             "name": "custom_timezone",
             "level": 25,
             "description": "Custom timezone (Override PHP date.timezone)",
@@ -694,7 +694,7 @@
             "has_access": true
         },
         {
-            "id": 129,
+            "id": "129",
             "name": "custom_logo",
             "level": 25,
             "description": "Custom URL - Logo",
@@ -705,7 +705,7 @@
             "has_access": true
         },
         {
-            "id": 196,
+            "id": "196",
             "name": "custom_logo_user",
             "level": 25,
             "description": "Custom URL - Use your avatar for header logo",
@@ -716,7 +716,7 @@
             "has_access": true
         },
         {
-            "id": 22,
+            "id": "22",
             "name": "site_title",
             "level": 100,
             "description": "Website Title",
@@ -727,7 +727,7 @@
             "has_access": true
         },
         {
-            "id": 45,
+            "id": "45",
             "name": "allow_democratic_playback",
             "level": 100,
             "description": "Allow Democratic Play",
@@ -738,7 +738,7 @@
             "has_access": true
         },
         {
-            "id": 1,
+            "id": "1",
             "name": "download",
             "level": 100,
             "description": "Allow Downloads",
@@ -749,7 +749,7 @@
             "has_access": true
         },
         {
-            "id": 102,
+            "id": "102",
             "name": "share",
             "level": 100,
             "description": "Allow Share",
@@ -760,7 +760,7 @@
             "has_access": true
         },
         {
-            "id": 44,
+            "id": "44",
             "name": "allow_stream_playback",
             "level": 100,
             "description": "Allow Streaming",
@@ -771,7 +771,7 @@
             "has_access": true
         },
         {
-            "id": 121,
+            "id": "121",
             "name": "allow_video",
             "level": 75,
             "description": "Allow Video Features",
@@ -782,7 +782,7 @@
             "has_access": true
         },
         {
-            "id": 82,
+            "id": "82",
             "name": "now_playing_per_user",
             "level": 50,
             "description": "Now Playing filtered per user",
@@ -793,7 +793,7 @@
             "has_access": true
         },
         {
-            "id": 158,
+            "id": "158",
             "name": "of_the_moment",
             "level": 25,
             "description": "Set the amount of items Album\/Video of the Moment will display",
@@ -804,7 +804,7 @@
             "has_access": true
         },
         {
-            "id": 125,
+            "id": "125",
             "name": "home_moment_albums",
             "level": 25,
             "description": "Show Albums of the Moment",
@@ -815,7 +815,7 @@
             "has_access": true
         },
         {
-            "id": 186,
+            "id": "186",
             "name": "home_recently_played_all",
             "level": 25,
             "description": "Show all media types in Recently Played",
@@ -826,7 +826,7 @@
             "has_access": true
         },
         {
-            "id": 128,
+            "id": "128",
             "name": "home_now_playing",
             "level": 25,
             "description": "Show Now Playing",
@@ -837,7 +837,7 @@
             "has_access": true
         },
         {
-            "id": 127,
+            "id": "127",
             "name": "home_recently_played",
             "level": 25,
             "description": "Show Recently Played",
@@ -848,7 +848,7 @@
             "has_access": true
         },
         {
-            "id": 126,
+            "id": "126",
             "name": "home_moment_videos",
             "level": 25,
             "description": "Show Videos of the Moment",
@@ -859,7 +859,7 @@
             "has_access": true
         },
         {
-            "id": 197,
+            "id": "197",
             "name": "index_dashboard_form",
             "level": 25,
             "description": "Use Dashboard links for the index page header",
@@ -870,7 +870,7 @@
             "has_access": true
         },
         {
-            "id": 138,
+            "id": "138",
             "name": "custom_text_footer",
             "level": 75,
             "description": "Custom text footer",
@@ -881,7 +881,7 @@
             "has_access": true
         },
         {
-            "id": 137,
+            "id": "137",
             "name": "custom_favicon",
             "level": 75,
             "description": "Custom URL - Favicon",
@@ -892,7 +892,7 @@
             "has_access": true
         },
         {
-            "id": 159,
+            "id": "159",
             "name": "custom_login_background",
             "level": 75,
             "description": "Custom URL - Login page background",
@@ -903,7 +903,7 @@
             "has_access": true
         },
         {
-            "id": 136,
+            "id": "136",
             "name": "custom_login_logo",
             "level": 75,
             "description": "Custom URL - Login page logo",
@@ -914,7 +914,7 @@
             "has_access": true
         },
         {
-            "id": 180,
+            "id": "180",
             "name": "show_header_login",
             "level": 100,
             "description": "Show the login \/ registration links in the site header",
@@ -925,7 +925,7 @@
             "has_access": true
         },
         {
-            "id": 83,
+            "id": "83",
             "name": "album_sort",
             "level": 25,
             "description": "Album - Default sort",
@@ -936,7 +936,7 @@
             "has_access": true
         },
         {
-            "id": 108,
+            "id": "108",
             "name": "album_group",
             "level": 25,
             "description": "Album - Group multiple disks",
@@ -947,7 +947,7 @@
             "has_access": true
         },
         {
-            "id": 122,
+            "id": "122",
             "name": "album_release_type",
             "level": 25,
             "description": "Album - Group per release type",
@@ -958,7 +958,7 @@
             "has_access": true
         },
         {
-            "id": 130,
+            "id": "130",
             "name": "album_release_type_sort",
             "level": 25,
             "description": "Album - Group per release type sort",
@@ -969,7 +969,7 @@
             "has_access": true
         },
         {
-            "id": 146,
+            "id": "146",
             "name": "libitem_contextmenu",
             "level": 0,
             "description": "Library item context menu",
@@ -980,7 +980,7 @@
             "has_access": true
         },
         {
-            "id": 209,
+            "id": "209",
             "name": "external_links_bandcamp",
             "level": 25,
             "description": "Show Bandcamp search icon on library items",
@@ -991,7 +991,7 @@
             "has_access": true
         },
         {
-            "id": 212,
+            "id": "212",
             "name": "external_links_discogs",
             "level": 25,
             "description": "Show Discogs search icon on library items",
@@ -1002,7 +1002,7 @@
             "has_access": true
         },
         {
-            "id": 206,
+            "id": "206",
             "name": "external_links_duckduckgo",
             "level": 25,
             "description": "Show DuckDuckGo search icon on library items",
@@ -1013,7 +1013,7 @@
             "has_access": true
         },
         {
-            "id": 205,
+            "id": "205",
             "name": "external_links_google",
             "level": 25,
             "description": "Show Google search icon on library items",
@@ -1024,7 +1024,7 @@
             "has_access": true
         },
         {
-            "id": 208,
+            "id": "208",
             "name": "external_links_lastfm",
             "level": 25,
             "description": "Show Last.fm search icon on library items",
@@ -1035,7 +1035,7 @@
             "has_access": true
         },
         {
-            "id": 210,
+            "id": "210",
             "name": "external_links_musicbrainz",
             "level": 25,
             "description": "Show MusicBrainz search icon on library items",
@@ -1046,7 +1046,7 @@
             "has_access": true
         },
         {
-            "id": 207,
+            "id": "207",
             "name": "external_links_wikipedia",
             "level": 25,
             "description": "Show Wikipedia search icon on library items",
@@ -1057,7 +1057,7 @@
             "has_access": true
         },
         {
-            "id": 46,
+            "id": "46",
             "name": "allow_localplay_playback",
             "level": 100,
             "description": "Allow Localplay Play",
@@ -1068,7 +1068,7 @@
             "has_access": true
         },
         {
-            "id": 40,
+            "id": "40",
             "name": "localplay_level",
             "level": 100,
             "description": "Localplay Access",
@@ -1087,7 +1087,7 @@
             ]
         },
         {
-            "id": 41,
+            "id": "41",
             "name": "localplay_controller",
             "level": 100,
             "description": "Localplay Type",
@@ -1105,7 +1105,7 @@
             ]
         },
         {
-            "id": 143,
+            "id": "143",
             "name": "disabled_custom_metadata_fields_input",
             "level": 100,
             "description": "Custom metadata - Define field list",
@@ -1116,7 +1116,7 @@
             "has_access": true
         },
         {
-            "id": 131,
+            "id": "131",
             "name": "browser_notify",
             "level": 25,
             "description": "Web Player browser notifications",
@@ -1127,7 +1127,7 @@
             "has_access": true
         },
         {
-            "id": 132,
+            "id": "132",
             "name": "browser_notify_timeout",
             "level": 25,
             "description": "Web Player browser notifications timeout (seconds)",
@@ -1138,7 +1138,7 @@
             "has_access": true
         },
         {
-            "id": 104,
+            "id": "104",
             "name": "slideshow_time",
             "level": 25,
             "description": "Artist slideshow inactivity time",
@@ -1149,7 +1149,7 @@
             "has_access": true
         },
         {
-            "id": 89,
+            "id": "89",
             "name": "webplayer_html5",
             "level": 25,
             "description": "Authorize HTML5 Web Player",
@@ -1160,7 +1160,7 @@
             "has_access": true
         },
         {
-            "id": 100,
+            "id": "100",
             "name": "webplayer_pausetabs",
             "level": 25,
             "description": "Auto-pause between tabs",
@@ -1171,7 +1171,7 @@
             "has_access": true
         },
         {
-            "id": 105,
+            "id": "105",
             "name": "broadcast_by_default",
             "level": 25,
             "description": "Broadcast web player by default",
@@ -1182,7 +1182,7 @@
             "has_access": true
         },
         {
-            "id": 99,
+            "id": "99",
             "name": "webplayer_confirmclose",
             "level": 25,
             "description": "Confirmation when closing current playing window",
@@ -1193,7 +1193,7 @@
             "has_access": true
         },
         {
-            "id": 124,
+            "id": "124",
             "name": "direct_play_limit",
             "level": 25,
             "description": "Limit direct play to maximum media count",
@@ -1204,7 +1204,7 @@
             "has_access": true
         },
         {
-            "id": 175,
+            "id": "175",
             "name": "webplayer_removeplayed",
             "level": 25,
             "description": "Remove tracks before the current playlist item in the webplayer when played",
@@ -1224,7 +1224,7 @@
             ]
         },
         {
-            "id": 85,
+            "id": "85",
             "name": "song_page_title",
             "level": 25,
             "description": "Show current song in Web Player page title",
@@ -1235,7 +1235,7 @@
             "has_access": true
         },
         {
-            "id": 69,
+            "id": "69",
             "name": "show_lyrics",
             "level": 0,
             "description": "Show lyrics",
@@ -1246,7 +1246,7 @@
             "has_access": true
         },
         {
-            "id": 145,
+            "id": "145",
             "name": "podcast_new_download",
             "level": 100,
             "description": "# episodes to download when new episodes are available",
@@ -1257,7 +1257,7 @@
             "has_access": true
         },
         {
-            "id": 144,
+            "id": "144",
             "name": "podcast_keep",
             "level": 100,
             "description": "# latest episodes to keep",
@@ -1268,7 +1268,7 @@
             "has_access": true
         },
         {
-            "id": 187,
+            "id": "187",
             "name": "show_wrapped",
             "level": 25,
             "description": "Enable access to your personal \"Spotify Wrapped\" from your user page",
@@ -1279,7 +1279,7 @@
             "has_access": true
         },
         {
-            "id": 90,
+            "id": "90",
             "name": "allow_personal_info_now",
             "level": 25,
             "description": "Share Now Playing information",
@@ -1290,7 +1290,7 @@
             "has_access": true
         },
         {
-            "id": 91,
+            "id": "91",
             "name": "allow_personal_info_recent",
             "level": 25,
             "description": "Share Recently Played information",
@@ -1301,7 +1301,7 @@
             "has_access": true
         },
         {
-            "id": 93,
+            "id": "93",
             "name": "allow_personal_info_agent",
             "level": 25,
             "description": "Share Recently Played information - Allow access to streaming agent",
@@ -1312,7 +1312,7 @@
             "has_access": true
         },
         {
-            "id": 92,
+            "id": "92",
             "name": "allow_personal_info_time",
             "level": 25,
             "description": "Share Recently Played information - Allow access to streaming date\/time",
@@ -1323,7 +1323,7 @@
             "has_access": true
         },
         {
-            "id": 51,
+            "id": "51",
             "name": "offset_limit",
             "level": 5,
             "description": "Offset Limit",
@@ -1334,7 +1334,7 @@
             "has_access": true
         },
         {
-            "id": 4,
+            "id": "4",
             "name": "popular_threshold",
             "level": 25,
             "description": "Popular Threshold",
@@ -1345,7 +1345,7 @@
             "has_access": true
         },
         {
-            "id": 47,
+            "id": "47",
             "name": "stats_threshold",
             "level": 75,
             "description": "Statistics Day Threshold",
@@ -1356,7 +1356,7 @@
             "has_access": true
         },
         {
-            "id": 103,
+            "id": "103",
             "name": "share_expire",
             "level": 100,
             "description": "Share links default expiration days (0=never)",
@@ -1367,7 +1367,7 @@
             "has_access": true
         },
         {
-            "id": 198,
+            "id": "198",
             "name": "sidebar_order_browse",
             "level": 25,
             "description": "Custom CSS Order - Browse",
@@ -1378,7 +1378,7 @@
             "has_access": true
         },
         {
-            "id": 199,
+            "id": "199",
             "name": "sidebar_order_dashboard",
             "level": 25,
             "description": "Custom CSS Order - Dashboard",
@@ -1389,7 +1389,7 @@
             "has_access": true
         },
         {
-            "id": 203,
+            "id": "203",
             "name": "sidebar_order_information",
             "level": 25,
             "description": "Custom CSS Order - Information",
@@ -1400,7 +1400,7 @@
             "has_access": true
         },
         {
-            "id": 201,
+            "id": "201",
             "name": "sidebar_order_playlist",
             "level": 25,
             "description": "Custom CSS Order - Playlist",
@@ -1411,7 +1411,7 @@
             "has_access": true
         },
         {
-            "id": 202,
+            "id": "202",
             "name": "sidebar_order_search",
             "level": 25,
             "description": "Custom CSS Order - Search",
@@ -1422,7 +1422,7 @@
             "has_access": true
         },
         {
-            "id": 200,
+            "id": "200",
             "name": "sidebar_order_video",
             "level": 25,
             "description": "Custom CSS Order - Video",
@@ -1433,7 +1433,7 @@
             "has_access": true
         },
         {
-            "id": 188,
+            "id": "188",
             "name": "sidebar_hide_switcher",
             "level": 25,
             "description": "Hide sidebar switcher arrows",
@@ -1444,7 +1444,7 @@
             "has_access": true
         },
         {
-            "id": 189,
+            "id": "189",
             "name": "sidebar_hide_browse",
             "level": 25,
             "description": "Hide the Browse menu in the sidebar",
@@ -1455,7 +1455,7 @@
             "has_access": true
         },
         {
-            "id": 190,
+            "id": "190",
             "name": "sidebar_hide_dashboard",
             "level": 25,
             "description": "Hide the Dashboard menu in the sidebar",
@@ -1466,7 +1466,7 @@
             "has_access": true
         },
         {
-            "id": 194,
+            "id": "194",
             "name": "sidebar_hide_information",
             "level": 25,
             "description": "Hide the Information menu in the sidebar",
@@ -1477,7 +1477,7 @@
             "has_access": true
         },
         {
-            "id": 193,
+            "id": "193",
             "name": "sidebar_hide_playlist",
             "level": 25,
             "description": "Hide the Playlist menu in the sidebar",
@@ -1488,7 +1488,7 @@
             "has_access": true
         },
         {
-            "id": 192,
+            "id": "192",
             "name": "sidebar_hide_search",
             "level": 25,
             "description": "Hide the Search menu in the sidebar",
@@ -1499,7 +1499,7 @@
             "has_access": true
         },
         {
-            "id": 191,
+            "id": "191",
             "name": "sidebar_hide_video",
             "level": 25,
             "description": "Hide the Video menu in the sidebar",
@@ -1510,7 +1510,7 @@
             "has_access": true
         },
         {
-            "id": 150,
+            "id": "150",
             "name": "sidebar_light",
             "level": 25,
             "description": "Light sidebar by default",
@@ -1521,7 +1521,7 @@
             "has_access": true
         },
         {
-            "id": 172,
+            "id": "172",
             "name": "show_album_artist",
             "level": 25,
             "description": "Show 'Album Artists' link in the main sidebar",
@@ -1532,7 +1532,7 @@
             "has_access": true
         },
         {
-            "id": 173,
+            "id": "173",
             "name": "show_artist",
             "level": 25,
             "description": "Show 'Artists' link in the main sidebar",
@@ -1543,7 +1543,7 @@
             "has_access": true
         },
         {
-            "id": 227,
+            "id": "227",
             "name": "show_folder",
             "level": 25,
             "description": "Show 'Folders' link in the main sidebar",
@@ -1554,7 +1554,7 @@
             "has_access": true
         },
         {
-            "id": 94,
+            "id": "94",
             "name": "ui_fixed",
             "level": 25,
             "description": "Fix header position on compatible themes",
@@ -1565,7 +1565,7 @@
             "has_access": true
         },
         {
-            "id": 109,
+            "id": "109",
             "name": "topmenu",
             "level": 25,
             "description": "Top menu",
@@ -1576,7 +1576,7 @@
             "has_access": true
         },
         {
-            "id": 55,
+            "id": "55",
             "name": "transcode",
             "level": 25,
             "description": "Allow Transcoding",
@@ -1587,7 +1587,7 @@
             "has_access": true
         },
         {
-            "id": 52,
+            "id": "52",
             "name": "rate_limit",
             "level": 100,
             "description": "Rate Limit",
@@ -1598,7 +1598,7 @@
             "has_access": true
         },
         {
-            "id": 19,
+            "id": "19",
             "name": "transcode_bitrate",
             "level": 25,
             "description": "Transcode Bitrate",
@@ -1609,7 +1609,7 @@
             "has_access": true
         },
         {
-            "id": 95,
+            "id": "95",
             "name": "autoupdate",
             "level": 100,
             "description": "Check for Ampache updates automatically",
@@ -1620,7 +1620,7 @@
             "has_access": true
         },
         {
-            "id": 113,
+            "id": "113",
             "name": "allow_upload",
             "level": 100,
             "description": "Allow user uploads",
@@ -1631,7 +1631,7 @@
             "has_access": true
         },
         {
-            "id": 117,
+            "id": "117",
             "name": "upload_allow_edit",
             "level": 100,
             "description": "Allow users to edit uploaded songs",
@@ -1642,7 +1642,7 @@
             "has_access": true
         },
         {
-            "id": 135,
+            "id": "135",
             "name": "upload_allow_remove",
             "level": 100,
             "description": "Allow users to remove uploaded songs",
@@ -1653,7 +1653,7 @@
             "has_access": true
         },
         {
-            "id": 115,
+            "id": "115",
             "name": "upload_user_artist",
             "level": 100,
             "description": "Consider the user sender as the track's artist",
@@ -1664,7 +1664,7 @@
             "has_access": true
         },
         {
-            "id": 114,
+            "id": "114",
             "name": "upload_subdir",
             "level": 100,
             "description": "Create a subdirectory per user",
@@ -1675,7 +1675,7 @@
             "has_access": true
         },
         {
-            "id": 116,
+            "id": "116",
             "name": "upload_script",
             "level": 100,
             "description": "Post-upload script (current directory = upload target directory)",
@@ -1686,7 +1686,7 @@
             "has_access": true
         },
         {
-            "id": 147,
+            "id": "147",
             "name": "upload_catalog_pattern",
             "level": 100,
             "description": "Rename uploaded file according to catalog pattern",
@@ -1697,7 +1697,7 @@
             "has_access": true
         },
         {
-            "id": 177,
+            "id": "177",
             "name": "upload_access_level",
             "level": 100,
             "description": "Upload Access Level",
