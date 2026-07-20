@@ -1,59 +1,59 @@
 {
-    "id": "60",
-    "title": "BrownSmoke",
-    "name": "BrownSmoke",
+    "id": "77",
+    "title": "inominavel p02",
+    "name": "inominavel p02",
     "artist": {
-        "id": "2",
-        "name": "Synthetic"
+        "id": "11",
+        "name": "structura"
     },
     "album": {
-        "id": "2",
-        "name": "Colorsmoke EP"
+        "id": "18",
+        "name": "Inominavel (live.v.01)"
     },
     "albumartist": {
-        "id": "2",
-        "name": "Synthetic"
+        "id": "11",
+        "name": "structura"
     },
     "disk": 1,
-    "track": 4,
-    "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
+    "track": 2,
+    "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/02_structura_-_inominavel_p02.mp3",
     "genre": [
         {
-            "id": "1",
-            "name": "Electronic"
+            "id": "3",
+            "name": "Noise"
         }
     ],
     "playlisttrack": 1,
-    "time": 304,
+    "time": 237,
     "year": 2007,
-    "bitrate": 20627,
-    "rate": 22050,
+    "bitrate": 192000,
+    "rate": 44100,
     "mode": "cbr",
-    "mime": "audio\/x-ms-wma",
-    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&transcode_to=mp3&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
-    "size": 792375,
+    "mime": "audio\/mpeg",
+    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=77&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p02.mp3",
+    "size": 5723290,
     "mbid": null,
     "album_mbid": null,
-    "artist_mbid": "1",
-    "albumartist_mbid": "1",
-    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-    "flag": 0,
-    "preciserating": null,
-    "rating": null,
-    "averagerating": null,
+    "artist_mbid": null,
+    "albumartist_mbid": null,
+    "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+    "flag": 1,
+    "preciserating": 5,
+    "rating": 5,
+    "averagerating": 4.5,
     "playcount": 0,
     "catalog": 1,
     "composer": null,
     "channels": 2,
-    "comment": "Made with Sony ACID 5",
+    "comment": "http:\/\/enoughrecords.scene.org",
     "license": null,
-    "publisher": "20kbps rec.",
+    "publisher": "archive.org",
     "language": null,
     "lyrics": null,
     "replaygain_album_gain": null,
     "replaygain_album_peak": null,
-    "replaygain_track_gain": null,
-    "replaygain_track_peak": null,
+    "replaygain_track_gain": 0,
+    "replaygain_track_peak": 0,
     "r128_album_gain": null,
     "r128_track_gain": null
 }

@@ -1,41 +1,59 @@
 {
-    "id": "16",
-    "name": "CARN\u00daN",
+    "id": "14",
+    "name": "Nofi\/found.",
     "albums": [
         {
-            "id": "10",
-            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "id": "8",
+            "name": "Nofi Devices",
             "artist": {
-                "id": "16",
-                "name": "CARN\u00daN"
+                "id": "14",
+                "name": "Nofi\/found."
             },
-            "time": 3873,
-            "year": 1996,
+            "time": 4423,
+            "year": 0,
             "tracks": [],
-            "songcount": 9,
+            "songcount": 11,
             "diskcount": 1,
             "type": null,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
             "flag": 0,
-            "preciserating": null,
-            "rating": null,
+            "preciserating": 2,
+            "rating": 2,
             "averagerating": null,
             "mbid": null
         }
     ],
     "albumcount": 1,
     "songs": [],
-    "songcount": 9,
-    "genre": [],
-    "art": "https:\/\/music.com.au\/image.php?object_id=16&object_type=artist",
+    "songcount": 11,
+    "genre": [
+        {
+            "id": "5",
+            "name": "Electronica"
+        },
+        {
+            "id": "6",
+            "name": "Dance"
+        }
+    ],
+    "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist&name=art.jpg",
     "flag": 0,
-    "preciserating": null,
-    "rating": null,
+    "preciserating": 2,
+    "rating": 2,
     "averagerating": null,
     "mbid": null,
-    "summary": null,
-    "time": 3873,
+    "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
+    "time": 4423,
     "yearformed": 0,
     "placeformed": null
 }

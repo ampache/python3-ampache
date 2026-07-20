@@ -1,9 +1,9 @@
 {
     "song": [
         {
-            "id": "116",
-            "title": "Can I Help U?",
-            "name": "Can I Help U?",
+            "id": "127",
+            "title": "She Knows Me Now",
+            "name": "She Knows Me Now",
             "artist": {
                 "id": "36",
                 "name": "Comfort Fit"
@@ -17,8 +17,8 @@
                 "name": "Comfort Fit"
             },
             "disk": 1,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/1 - Can I Help U?.mp3",
+            "track": 10,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/10 - She Knows Me Now (re-edit).mp3",
             "genre": [
                 {
                     "id": "8",
@@ -26,19 +26,19 @@
                 }
             ],
             "playlisttrack": 1,
-            "time": 103,
+            "time": 209,
             "year": 2005,
-            "bitrate": 216839,
+            "bitrate": 217167,
             "rate": 44100,
             "mode": "vbr",
             "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=116&uid=4&player=api&name=Comfort%20Fit%20-%20Can%20I%20Help%20U-.mp3",
-            "size": 2811819,
-            "mbid": "51d0e252-f20c-414c-b169-8dcf18ef9d26",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=127&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20She%20Knows%20Me%20Now.mp3",
+            "size": 5690938,
+            "mbid": "3845cef9-b874-449f-94a5-5c9acdead9df",
             "album_mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
             "artist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
-            "albumartist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
+            "albumartist_mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
@@ -47,7 +47,7 @@
             "catalog": 4,
             "composer": null,
             "channels": 2,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-01-comfort_fit-can_i_help_u\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-10-comfort_fit-she_knows_me_now_feat_mercury_waters__prymer\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
             "license": null,
             "publisher": "Tokyo Dawn Records",
             "language": null,
@@ -60,61 +60,61 @@
             "r128_track_gain": null
         },
         {
-            "id": "84",
-            "title": "Vansinne",
-            "name": "Vansinne",
+            "id": "128",
+            "title": "Whenever You Wanna Call Me",
+            "name": "Whenever You Wanna Call Me",
             "artist": {
-                "id": "13",
-                "name": "IOK-1"
+                "id": "36",
+                "name": "Comfort Fit"
             },
             "album": {
-                "id": "7",
-                "name": "Sensorisk Deprivation"
+                "id": "21",
+                "name": "Forget and Remember"
             },
             "albumartist": {
-                "id": "13",
-                "name": "IOK-1"
+                "id": "36",
+                "name": "Comfort Fit"
             },
             "disk": 1,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/04_-_IOK-1_-_Vansinne.flac",
+            "track": 8,
+            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/8 - Whenever You Wanna Call Me.mp3",
             "genre": [
                 {
-                    "id": "4",
-                    "name": "Dark Ambient"
+                    "id": "8",
+                    "name": "Hip-Hop"
                 }
             ],
             "playlisttrack": 2,
-            "time": 787,
-            "year": 2011,
-            "bitrate": 713176,
+            "time": 188,
+            "year": 2005,
+            "bitrate": 250322,
             "rate": 44100,
             "mode": "vbr",
-            "mime": "audio\/flac",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&transcode_to=mp3&player=api&name=IOK-1%20-%20Vansinne.mp3",
-            "size": 70182824,
-            "mbid": null,
-            "album_mbid": null,
-            "artist_mbid": null,
-            "albumartist_mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album",
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=128&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Whenever%20You%20Wanna%20Call%20Me.mp3",
+            "size": 5897286,
+            "mbid": "0cc9456b-1750-4739-9346-90d9247da292",
+            "album_mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+            "artist_mbid": "e6e2b787-0b4c-4267-8161-310399b101a5",
+            "albumartist_mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
             "flag": 0,
             "preciserating": null,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 1,
+            "catalog": 4,
             "composer": null,
             "channels": 2,
-            "comment": "DNA Production release\r\nCatalogue # DNA 119",
+            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-08-comfort_fit-whenever_you_wanna_call_me_feat_prymer\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
             "license": null,
-            "publisher": "archive.org",
+            "publisher": "Tokyo Dawn Records",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -5.35,
-            "replaygain_track_peak": 0.7,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

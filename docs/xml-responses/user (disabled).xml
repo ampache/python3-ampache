@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <user id="60">
-    <username><![CDATA[temp_user]]></username>
-    <auth><![CDATA[]]></auth>
-    <email><![CDATA[email@gmail.com]]></email>
-    <access>25</access>
-    <fullname_public>0</fullname_public>
-    <validation><![CDATA[]]></validation>
-    <disabled>0</disabled>
-    <create_date>1670202701</create_date>
-    <last_seen>0</last_seen>
-    <link><![CDATA[https://music.com.au/stats.php?action=show_user&user_id=60]]></link>
-    <website><![CDATA[]]></website>
-    <state><![CDATA[]]></state>
-    <city><![CDATA[]]></city>
-    <fullname><![CDATA[temp_user]]></fullname>
-  </user>
+  <error errorCode="4704">
+    <errorAction><![CDATA[user]]></errorAction>
+    <errorType><![CDATA[username]]></errorType>
+    <errorMessage><![CDATA[Not Found: otheruser]]></errorMessage>
+  </error>
 </root>

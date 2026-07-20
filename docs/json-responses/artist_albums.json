@@ -1,28 +1,32 @@
 {
     "album": [
         {
-            "id": "12",
-            "name": "Buried in Nausea",
+            "id": "8",
+            "name": "Nofi Devices",
             "artist": {
-                "id": "19",
-                "name": "Various Artists"
+                "id": "14",
+                "name": "Nofi\/found."
             },
-            "time": 1879,
-            "year": 2012,
+            "time": 4423,
+            "year": 0,
             "tracks": [],
-            "songcount": 9,
+            "songcount": 11,
             "diskcount": 1,
-            "type": "compilation",
+            "type": null,
             "genre": [
                 {
-                    "id": "7",
-                    "name": "Punk"
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
             "flag": 0,
-            "preciserating": null,
-            "rating": null,
+            "preciserating": 2,
+            "rating": 2,
             "averagerating": null,
             "mbid": null
         }

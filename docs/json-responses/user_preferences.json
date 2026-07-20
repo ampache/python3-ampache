@@ -219,6 +219,16 @@
             "subcategory": "api"
         },
         {
+            "id": 226,
+            "name": "api_enable_8",
+            "level": 25,
+            "description": "Allow Ampache API8 responses",
+            "value": "1",
+            "type": "boolean",
+            "category": "options",
+            "subcategory": "api"
+        },
+        {
             "id": 223,
             "name": "subsonic_legacy",
             "level": 25,
@@ -244,6 +254,16 @@
                 5,
                 6
             ]
+        },
+        {
+            "id": 224,
+            "name": "subsonic_force_album_artist",
+            "level": 25,
+            "description": "Force Album Artist for Subsonic API responses",
+            "value": "0",
+            "type": "boolean",
+            "category": "options",
+            "subcategory": "api"
         },
         {
             "id": 204,
@@ -281,6 +301,16 @@
             "level": 25,
             "description": "Hide smartlists that match playlist names in Subsonic and API clients",
             "value": "0",
+            "type": "boolean",
+            "category": "options",
+            "subcategory": "api"
+        },
+        {
+            "id": 225,
+            "name": "subsonic_single_user_data",
+            "level": 25,
+            "description": "Use single user data for Subsonic API responses",
+            "value": "1",
             "type": "boolean",
             "category": "options",
             "subcategory": "api"
@@ -510,36 +540,6 @@
             "name": "custom_timezone",
             "level": 25,
             "description": "Custom timezone (Override PHP date.timezone)",
-            "value": "",
-            "type": "string",
-            "category": "interface",
-            "subcategory": "custom"
-        },
-        {
-            "id": 137,
-            "name": "custom_favicon",
-            "level": 75,
-            "description": "Custom URL - Favicon",
-            "value": "",
-            "type": "string",
-            "category": "interface",
-            "subcategory": "custom"
-        },
-        {
-            "id": 159,
-            "name": "custom_login_background",
-            "level": 75,
-            "description": "Custom URL - Login page background",
-            "value": "",
-            "type": "string",
-            "category": "interface",
-            "subcategory": "custom"
-        },
-        {
-            "id": 136,
-            "name": "custom_login_logo",
-            "level": 75,
-            "description": "Custom URL - Login page logo",
             "value": "",
             "type": "string",
             "category": "interface",
@@ -921,30 +921,10 @@
             "subcategory": "player"
         },
         {
-            "id": 88,
-            "name": "webplayer_flash",
-            "level": 25,
-            "description": "Authorize Flash Web Player",
-            "value": "1",
-            "type": "boolean",
-            "category": "streaming",
-            "subcategory": "player"
-        },
-        {
             "id": 89,
             "name": "webplayer_html5",
             "level": 25,
             "description": "Authorize HTML5 Web Player",
-            "value": "1",
-            "type": "boolean",
-            "category": "streaming",
-            "subcategory": "player"
-        },
-        {
-            "id": 134,
-            "name": "webplayer_aurora",
-            "level": 25,
-            "description": "Authorize JavaScript decoder (Aurora.js) in Web Player",
             "value": "1",
             "type": "boolean",
             "category": "streaming",
@@ -995,7 +975,7 @@
             "name": "direct_play_limit",
             "level": 25,
             "description": "Limit direct play to maximum media count",
-            "value": "0",
+            "value": "500",
             "type": "integer",
             "category": "interface",
             "subcategory": "player"
@@ -1037,16 +1017,6 @@
             "value": "0",
             "type": "boolean",
             "category": "interface",
-            "subcategory": "player"
-        },
-        {
-            "id": 181,
-            "name": "use_play2",
-            "level": 25,
-            "description": "Use an alternative playback action for streaming if you have issues with playing music",
-            "value": "0",
-            "type": "boolean",
-            "category": "streaming",
             "subcategory": "player"
         },
         {
@@ -1285,6 +1255,16 @@
             "level": 25,
             "description": "Show 'Artists' link in the main sidebar",
             "value": "0",
+            "type": "boolean",
+            "category": "interface",
+            "subcategory": "sidebar"
+        },
+        {
+            "id": 227,
+            "name": "show_folder",
+            "level": 25,
+            "description": "Show 'Folders' link in the main sidebar",
+            "value": "1",
             "type": "boolean",
             "category": "interface",
             "subcategory": "sidebar"
