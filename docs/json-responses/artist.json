@@ -1,21 +1,30 @@
 {
-    "id": "15",
-    "name": "Warfare 3.0",
+    "id": "14",
+    "name": "Nofi\/found.",
     "prefix": null,
-    "basename": "Warfare 3.0",
+    "basename": "Nofi\/found.",
     "albums": [],
     "albumcount": 1,
     "songs": [],
-    "songcount": 2,
-    "genre": [],
-    "art": "https:\/\/music.com.au\/image.php?object_id=15&object_type=artist&id=78&name=art.jpg",
-    "has_art": true,
+    "songcount": 11,
+    "genre": [
+        {
+            "id": "5",
+            "name": "Electronica"
+        },
+        {
+            "id": "6",
+            "name": "Dance"
+        }
+    ],
+    "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist&name=art.jpg",
+    "has_art": false,
     "flag": false,
-    "rating": 3,
+    "rating": 2,
     "averagerating": null,
     "mbid": null,
-    "summary": null,
-    "time": 592,
+    "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
+    "time": 4423,
     "yearformed": 0,
     "placeformed": null
 }

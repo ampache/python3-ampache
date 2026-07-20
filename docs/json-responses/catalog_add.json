@@ -1,19 +1,8 @@
 {
-    "total_count": 1,
-    "md5": "e3b0c44298fc1c149afbf4c8996fb924",
-    "catalog": [
-        {
-            "id": "5",
-            "name": "ZZZ_DELETE_ME_TEST_CATALOG_json",
-            "type": "local",
-            "gather_types": "music",
-            "enabled": true,
-            "last_add": 0,
-            "last_clean": 0,
-            "last_update": 0,
-            "path": "/mnt/files-music/ampache-test/music",
-            "rename_pattern": "%T - %t",
-            "sort_pattern": "%a\/%A"
-        }
-    ]
+    "error": {
+        "errorCode": "4710",
+        "errorAction": "catalog_add",
+        "errorType": "path",
+        "errorMessage": "Bad Request: \/mnt\/files-music\/ampache-test\/music"
+    }
 }

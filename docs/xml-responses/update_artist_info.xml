@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4702">
-    <errorAction><![CDATA[update_artist_info]]></errorAction>
-    <errorType><![CDATA[system]]></errorType>
-    <errorMessage><![CDATA[Generic error]]></errorMessage>
-  </error>
+  <success code="1">
+    <message><![CDATA[Updated artist info: 14]]></message>
+  </success>
 </root>

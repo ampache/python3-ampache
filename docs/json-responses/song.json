@@ -1,58 +1,53 @@
 {
-    "id": "107",
-    "title": "Arrest Me",
-    "name": "Arrest Me",
+    "id": "97",
+    "title": "Creeping Lawler 2",
+    "name": "Creeping Lawler 2",
     "artist": {
-        "id": "20",
-        "name": "R\/B",
+        "id": "15",
+        "name": "Warfare 3.0",
         "prefix": null,
-        "basename": "R\/B"
+        "basename": "Warfare 3.0"
     },
     "artists": [
         {
-            "id": "20",
-            "name": "R\/B",
+            "id": "15",
+            "name": "Warfare 3.0",
             "prefix": null,
-            "basename": "R\/B"
+            "basename": "Warfare 3.0"
         }
     ],
     "album": {
-        "id": "12",
-        "name": "Buried in Nausea",
+        "id": "9",
+        "name": "Creeping Lawler 2",
         "prefix": null,
-        "basename": "Buried in Nausea"
+        "basename": "Creeping Lawler 2"
     },
     "albumartist": {
-        "id": "19",
-        "name": "Various Artists",
+        "id": "15",
+        "name": "Warfare 3.0",
         "prefix": null,
-        "basename": "Various Artists"
+        "basename": "Warfare 3.0"
     },
     "disk": 1,
     "disksubtitle": null,
-    "track": 9,
-    "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/09R_b-ArrestMe.m4a",
-    "genre": [
-        {
-            "id": "7",
-            "name": "Punk"
-        }
-    ],
+    "track": 1,
+    "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
+    "genre": [],
     "playlisttrack": 1,
-    "time": 96,
-    "year": 2012,
-    "format": "m4a",
+    "time": 296,
+    "year": 0,
+    "format": "mp3",
     "stream_format": "mp3",
-    "bitrate": 252864,
+    "bitrate": 177349,
     "stream_bitrate": 32000,
     "rate": 44100,
     "mode": "vbr",
-    "mime": "audio\/mp4",
+    "mime": "audio\/mpeg",
     "stream_mime": "audio\/mpeg",
-    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=R-B%20-%20Arrest%20Me.mp3",
-    "size": 3091727,
+    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
+    "size": 6652448,
     "mbid": null,
-    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
+    "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=455&name=art.jpg",
     "has_art": true,
     "flag": true,
     "rating": 5,
@@ -61,15 +56,15 @@
     "catalog": "1",
     "composer": null,
     "channels": 2,
-    "comment": null,
+    "comment": "https:\/\/archive.org\/details\/Creeping_Lawler_2",
     "license": null,
-    "publisher": null,
+    "publisher": "archive.org",
     "language": null,
     "lyrics": null,
     "replaygain_album_gain": null,
     "replaygain_album_peak": null,
-    "replaygain_track_gain": -1.35,
-    "replaygain_track_peak": 0.881,
+    "replaygain_track_gain": -4.32,
+    "replaygain_track_peak": 0.977,
     "r128_album_gain": null,
     "r128_track_gain": null
 }

@@ -1,55 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>9</total_count>
-  <md5>60fda3b54003017dc64a0c492471bbfe</md5>
-  <album id="8">
-    <name><![CDATA[Nofi Devices]]></name>
+  <md5>bad9df8a7c3fa92d28999d03f4ccb29e</md5>
+  <album id="18">
+    <name><![CDATA[Inominavel (live.v.01)]]></name>
     <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[Nofi Devices]]></basename>
-    <artist id="14">
-      <name><![CDATA[Nofi/found.]]></name>
+    <basename><![CDATA[Inominavel (live.v.01)]]></basename>
+    <artist id="11">
+      <name><![CDATA[structura]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi/found.]]></basename>
+      <basename><![CDATA[structura]]></basename>
     </artist>
-    <songartist id="14">
-      <name><![CDATA[Nofi/found.]]></name>
+    <songartist id="11">
+      <name><![CDATA[structura]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Nofi/found.]]></basename>
+      <basename><![CDATA[structura]]></basename>
     </songartist>
-    <time>4423</time>
-    <year>0</year>
+    <time>1339</time>
+    <year>2007</year>
     <tracks>
-      <song id="90">
-        <name><![CDATA[Invo]]></name>
-        <title><![CDATA[Invo]]></title>
-        <artist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
+      <song id="78">
+        <name><![CDATA[inominavel p01]]></name>
+        <title><![CDATA[inominavel p01]]></title>
+        <artist id="11">
+          <name><![CDATA[structura]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
+          <basename><![CDATA[structura]]></basename>
         </artist>
-        <album id="8">
-          <name><![CDATA[Nofi Devices]]></name>
+        <album id="18">
+          <name><![CDATA[Inominavel (live.v.01)]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi Devices]]></basename>
+          <basename><![CDATA[Inominavel (live.v.01)]]></basename>
         </album>
-        <albumartist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
+        <albumartist id="11">
+          <name><![CDATA[structura]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
+          <basename><![CDATA[structura]]></basename>
         </albumartist>
         <disk><![CDATA[1]]></disk>
         <disksubtitle><![CDATA[]]></disksubtitle>
         <track>1</track>
-        <genre id="5">
-          <name><![CDATA[Electronica]]></name>
+        <genre id="3">
+          <name><![CDATA[Noise]]></name>
         </genre>
-        <genre id="6">
-          <name><![CDATA[Dance]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/01_Invo.mp3]]></filename>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3]]></filename>
         <playlisttrack>1</playlisttrack>
-        <time>47</time>
-        <year>0</year>
+        <time>84</time>
+        <year>2007</year>
         <format>mp3</format>
         <stream_format>mp3</stream_format>
         <bitrate>192000</bitrate>
@@ -58,376 +55,58 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Invo.mp3]]></url>
-        <size>1140815</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p01.mp3]]></url>
+        <size>2036632</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=457&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&id=457&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>1</flag>
-        <rating>5</rating>
-        <averagerating/>
-        <playcount>1</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[Jeffrey Melton]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[archive.org]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-3.05</replaygain_track_gain>
-        <replaygain_track_peak>0.933</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="95">
-        <name><![CDATA[Spirus Falls]]></name>
-        <title><![CDATA[Spirus Falls]]></title>
-        <artist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </artist>
-        <album id="8">
-          <name><![CDATA[Nofi Devices]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi Devices]]></basename>
-        </album>
-        <albumartist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>2</track>
-        <genre id="5">
-          <name><![CDATA[Electronica]]></name>
-        </genre>
-        <genre id="6">
-          <name><![CDATA[Dance]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/02_Spirus_Falls.mp3]]></filename>
-        <playlisttrack>2</playlisttrack>
-        <time>327</time>
-        <year>0</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>192000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3]]></url>
-        <size>7875775</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=457&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating>5</rating>
-        <averagerating/>
-        <playcount>1</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[Jeffrey Melton]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[archive.org]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-1.53</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="93">
-        <name><![CDATA[Scribnus 3]]></name>
-        <title><![CDATA[Scribnus 3]]></title>
-        <artist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </artist>
-        <album id="8">
-          <name><![CDATA[Nofi Devices]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi Devices]]></basename>
-        </album>
-        <albumartist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>3</track>
-        <genre id="5">
-          <name><![CDATA[Electronica]]></name>
-        </genre>
-        <genre id="6">
-          <name><![CDATA[Dance]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/03_Scribnus_3.mp3]]></filename>
-        <playlisttrack>3</playlisttrack>
-        <time>641</time>
-        <year>0</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>192000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3]]></url>
-        <size>15400002</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=457&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>4</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[Jeffrey Melton]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[archive.org]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>1.53</replaygain_track_gain>
-        <replaygain_track_peak>0.989</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="85">
-        <name><![CDATA[Beq Ultra Fat]]></name>
-        <title><![CDATA[Beq Ultra Fat]]></title>
-        <artist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </artist>
-        <album id="8">
-          <name><![CDATA[Nofi Devices]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi Devices]]></basename>
-        </album>
-        <albumartist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>4</track>
-        <genre id="5">
-          <name><![CDATA[Electronica]]></name>
-        </genre>
-        <genre id="6">
-          <name><![CDATA[Dance]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/04_Beq_Ultra_Fat.mp3]]></filename>
-        <playlisttrack>4</playlisttrack>
-        <time>413</time>
-        <year>0</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>192000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3]]></url>
-        <size>9935896</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=457&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[Jeffrey Melton]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[archive.org]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>0.94</replaygain_track_gain>
-        <replaygain_track_peak>0.989</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="86">
-        <name><![CDATA[Caloonashine]]></name>
-        <title><![CDATA[Caloonashine]]></title>
-        <artist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </artist>
-        <album id="8">
-          <name><![CDATA[Nofi Devices]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi Devices]]></basename>
-        </album>
-        <albumartist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>5</track>
-        <genre id="5">
-          <name><![CDATA[Electronica]]></name>
-        </genre>
-        <genre id="6">
-          <name><![CDATA[Dance]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/05_Caloonashine.mp3]]></filename>
-        <playlisttrack>5</playlisttrack>
-        <time>330</time>
-        <year>0</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>192000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Caloonashine.mp3]]></url>
-        <size>7929692</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=457&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating>5</rating>
-        <averagerating/>
-        <playcount>1</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[Jeffrey Melton]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[archive.org]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-0.35</replaygain_track_gain>
-        <replaygain_track_peak>0.955</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="87">
-        <name><![CDATA[Wonders of Nando]]></name>
-        <title><![CDATA[Wonders of Nando]]></title>
-        <artist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </artist>
-        <album id="8">
-          <name><![CDATA[Nofi Devices]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi Devices]]></basename>
-        </album>
-        <albumartist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>6</track>
-        <genre id="5">
-          <name><![CDATA[Electronica]]></name>
-        </genre>
-        <genre id="6">
-          <name><![CDATA[Dance]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/06_Wonders_of_Nando.mp3]]></filename>
-        <playlisttrack>6</playlisttrack>
-        <time>319</time>
-        <year>0</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>192000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=87&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Wonders%20of%20Nando.mp3]]></url>
-        <size>7673901</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=457&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
         <rating>5</rating>
         <averagerating/>
         <playcount>2</playcount>
         <catalog>1</catalog>
-        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+        <comment><![CDATA[http://enoughrecords.scene.org]]></comment>
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>-1.44</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
+        <replaygain_track_gain>0</replaygain_track_gain>
+        <replaygain_track_peak>0</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
-      <song id="94">
-        <name><![CDATA[Strangers Query]]></name>
-        <title><![CDATA[Strangers Query]]></title>
-        <artist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
+      <song id="77">
+        <name><![CDATA[inominavel p02]]></name>
+        <title><![CDATA[inominavel p02]]></title>
+        <artist id="11">
+          <name><![CDATA[structura]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
+          <basename><![CDATA[structura]]></basename>
         </artist>
-        <album id="8">
-          <name><![CDATA[Nofi Devices]]></name>
+        <album id="18">
+          <name><![CDATA[Inominavel (live.v.01)]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi Devices]]></basename>
+          <basename><![CDATA[Inominavel (live.v.01)]]></basename>
         </album>
-        <albumartist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
+        <albumartist id="11">
+          <name><![CDATA[structura]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
+          <basename><![CDATA[structura]]></basename>
         </albumartist>
         <disk><![CDATA[1]]></disk>
         <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>7</track>
-        <genre id="5">
-          <name><![CDATA[Electronica]]></name>
+        <track>2</track>
+        <genre id="3">
+          <name><![CDATA[Noise]]></name>
         </genre>
-        <genre id="6">
-          <name><![CDATA[Dance]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/07_Strangers_Query.mp3]]></filename>
-        <playlisttrack>7</playlisttrack>
-        <time>279</time>
-        <year>0</year>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/02_structura_-_inominavel_p02.mp3]]></filename>
+        <playlisttrack>2</playlisttrack>
+        <time>237</time>
+        <year>2007</year>
         <format>mp3</format>
         <stream_format>mp3</stream_format>
         <bitrate>192000</bitrate>
@@ -436,297 +115,282 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=94&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Strangers%20Query.mp3]]></url>
-        <size>6719700</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=77&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p02.mp3]]></url>
+        <size>5723290</size>
         <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=457&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&id=457&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[http://enoughrecords.scene.org]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>0</replaygain_track_gain>
+        <replaygain_track_peak>0</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="74">
+        <name><![CDATA[inominavel p03]]></name>
+        <title><![CDATA[inominavel p03]]></title>
+        <artist id="11">
+          <name><![CDATA[structura]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[structura]]></basename>
+        </artist>
+        <album id="18">
+          <name><![CDATA[Inominavel (live.v.01)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Inominavel (live.v.01)]]></basename>
+        </album>
+        <albumartist id="11">
+          <name><![CDATA[structura]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[structura]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>3</track>
+        <genre id="3">
+          <name><![CDATA[Noise]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/03_structura_-_inominavel_p03.mp3]]></filename>
+        <playlisttrack>3</playlisttrack>
+        <time>143</time>
+        <year>2007</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=74&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p03.mp3]]></url>
+        <size>3449255</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&id=457&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[http://enoughrecords.scene.org]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>0</replaygain_track_gain>
+        <replaygain_track_peak>0</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="76">
+        <name><![CDATA[inominavel p04]]></name>
+        <title><![CDATA[inominavel p04]]></title>
+        <artist id="11">
+          <name><![CDATA[structura]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[structura]]></basename>
+        </artist>
+        <album id="18">
+          <name><![CDATA[Inominavel (live.v.01)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Inominavel (live.v.01)]]></basename>
+        </album>
+        <albumartist id="11">
+          <name><![CDATA[structura]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[structura]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>4</track>
+        <genre id="3">
+          <name><![CDATA[Noise]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/04_structura_-_inominavel_p04.mp3]]></filename>
+        <playlisttrack>4</playlisttrack>
+        <time>317</time>
+        <year>2007</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=76&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p04.mp3]]></url>
+        <size>7629821</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&id=457&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating>3</rating>
+        <averagerating>3</averagerating>
+        <playcount>1</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[http://enoughrecords.scene.org]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>0</replaygain_track_gain>
+        <replaygain_track_peak>0</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="73">
+        <name><![CDATA[inominavel p05]]></name>
+        <title><![CDATA[inominavel p05]]></title>
+        <artist id="11">
+          <name><![CDATA[structura]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[structura]]></basename>
+        </artist>
+        <album id="18">
+          <name><![CDATA[Inominavel (live.v.01)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Inominavel (live.v.01)]]></basename>
+        </album>
+        <albumartist id="11">
+          <name><![CDATA[structura]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[structura]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>5</track>
+        <genre id="3">
+          <name><![CDATA[Noise]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/05_structura_-_inominavel_p05.mp3]]></filename>
+        <playlisttrack>5</playlisttrack>
+        <time>310</time>
+        <year>2007</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=73&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p05.mp3]]></url>
+        <size>7463970</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&id=457&name=art.jpg]]></art>
+        <has_art>1</has_art>
+        <flag>0</flag>
+        <rating/>
+        <averagerating/>
+        <playcount>0</playcount>
+        <catalog>1</catalog>
+        <composer><![CDATA[]]></composer>
+        <channels>2</channels>
+        <comment><![CDATA[http://enoughrecords.scene.org]]></comment>
+        <license><![CDATA[]]></license>
+        <publisher><![CDATA[archive.org]]></publisher>
+        <language/>
+        <lyrics><![CDATA[]]></lyrics>
+        <replaygain_album_gain/>
+        <replaygain_album_peak/>
+        <replaygain_track_gain>0</replaygain_track_gain>
+        <replaygain_track_peak>0</replaygain_track_peak>
+        <r128_album_gain/>
+        <r128_track_gain/>
+      </song>
+      <song id="75">
+        <name><![CDATA[T - live]]></name>
+        <title><![CDATA[T - live]]></title>
+        <artist id="11">
+          <name><![CDATA[structura]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[structura]]></basename>
+        </artist>
+        <album id="18">
+          <name><![CDATA[Inominavel (live.v.01)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Inominavel (live.v.01)]]></basename>
+        </album>
+        <albumartist id="11">
+          <name><![CDATA[structura]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[structura]]></basename>
+        </albumartist>
+        <disk><![CDATA[1]]></disk>
+        <disksubtitle><![CDATA[]]></disksubtitle>
+        <track>6</track>
+        <genre id="3">
+          <name><![CDATA[Noise]]></name>
+        </genre>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/Structura/Inominavel (live.v.01)/06_structura_-_t_live.mp3]]></filename>
+        <playlisttrack>6</playlisttrack>
+        <time>248</time>
+        <year>2007</year>
+        <format>mp3</format>
+        <stream_format>mp3</stream_format>
+        <bitrate>192000</bitrate>
+        <stream_bitrate>32000</stream_bitrate>
+        <rate>44100</rate>
+        <mode><![CDATA[cbr]]></mode>
+        <mime><![CDATA[audio/mpeg]]></mime>
+        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=75&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20T%20-%20live.mp3]]></url>
+        <size>5986451</size>
+        <mbid><![CDATA[]]></mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&id=457&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating>5</rating>
-        <averagerating/>
+        <averagerating>3</averagerating>
         <playcount>1</playcount>
         <catalog>1</catalog>
-        <composer><![CDATA[Jeffrey Melton]]></composer>
+        <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
+        <comment><![CDATA[http://enoughrecords.scene.org]]></comment>
         <license><![CDATA[]]></license>
         <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <lyrics><![CDATA[]]></lyrics>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>-3.8</replaygain_track_gain>
-        <replaygain_track_peak>0.966</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="92">
-        <name><![CDATA[Stance]]></name>
-        <title><![CDATA[Stance]]></title>
-        <artist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </artist>
-        <album id="8">
-          <name><![CDATA[Nofi Devices]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi Devices]]></basename>
-        </album>
-        <albumartist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>8</track>
-        <genre id="5">
-          <name><![CDATA[Electronica]]></name>
-        </genre>
-        <genre id="6">
-          <name><![CDATA[Dance]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/08_Stance.mp3]]></filename>
-        <playlisttrack>8</playlisttrack>
-        <time>544</time>
-        <year>0</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>192000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stance.mp3]]></url>
-        <size>13078740</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=457&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[Jeffrey Melton]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[archive.org]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-2.38</replaygain_track_gain>
-        <replaygain_track_peak>0.989</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="91">
-        <name><![CDATA[Home Capsules]]></name>
-        <title><![CDATA[Home Capsules]]></title>
-        <artist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </artist>
-        <album id="8">
-          <name><![CDATA[Nofi Devices]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi Devices]]></basename>
-        </album>
-        <albumartist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>9</track>
-        <genre id="5">
-          <name><![CDATA[Electronica]]></name>
-        </genre>
-        <genre id="6">
-          <name><![CDATA[Dance]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/09_Home_Capsules.mp3]]></filename>
-        <playlisttrack>9</playlisttrack>
-        <time>294</time>
-        <year>0</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>192000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3]]></url>
-        <size>7076428</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=457&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[Jeffrey Melton]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[archive.org]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-2.97</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="88">
-        <name><![CDATA[Netro]]></name>
-        <title><![CDATA[Netro]]></title>
-        <artist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </artist>
-        <album id="8">
-          <name><![CDATA[Nofi Devices]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi Devices]]></basename>
-        </album>
-        <albumartist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>10</track>
-        <genre id="5">
-          <name><![CDATA[Electronica]]></name>
-        </genre>
-        <genre id="6">
-          <name><![CDATA[Dance]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/10_Netro.mp3]]></filename>
-        <playlisttrack>10</playlisttrack>
-        <time>601</time>
-        <year>0</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>192000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=88&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Netro.mp3]]></url>
-        <size>14445467</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=457&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>1</flag>
-        <rating>5</rating>
-        <averagerating/>
-        <playcount>1</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[Jeffrey Melton]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[archive.org]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-1.28</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
-        <r128_album_gain/>
-        <r128_track_gain/>
-      </song>
-      <song id="89">
-        <name><![CDATA[Stolen]]></name>
-        <title><![CDATA[Stolen]]></title>
-        <artist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </artist>
-        <album id="8">
-          <name><![CDATA[Nofi Devices]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi Devices]]></basename>
-        </album>
-        <albumartist id="14">
-          <name><![CDATA[Nofi/found.]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Nofi/found.]]></basename>
-        </albumartist>
-        <disk><![CDATA[1]]></disk>
-        <disksubtitle><![CDATA[]]></disksubtitle>
-        <track>11</track>
-        <genre id="5">
-          <name><![CDATA[Electronica]]></name>
-        </genre>
-        <genre id="6">
-          <name><![CDATA[Dance]]></name>
-        </genre>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Nofi_found/Nofi Devices LP/11_Stolen.mp3]]></filename>
-        <playlisttrack>11</playlisttrack>
-        <time>628</time>
-        <year>0</year>
-        <format>mp3</format>
-        <stream_format>mp3</stream_format>
-        <bitrate>192000</bitrate>
-        <stream_bitrate>32000</stream_bitrate>
-        <rate>44100</rate>
-        <mode><![CDATA[cbr]]></mode>
-        <mime><![CDATA[audio/mpeg]]></mime>
-        <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=89&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stolen.mp3]]></url>
-        <size>15100325</size>
-        <mbid><![CDATA[]]></mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=457&name=art.jpg]]></art>
-        <has_art>1</has_art>
-        <flag>0</flag>
-        <rating/>
-        <averagerating/>
-        <playcount>0</playcount>
-        <catalog>1</catalog>
-        <composer><![CDATA[Jeffrey Melton]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087]]></comment>
-        <license><![CDATA[]]></license>
-        <publisher><![CDATA[archive.org]]></publisher>
-        <language/>
-        <lyrics><![CDATA[]]></lyrics>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>2.66</replaygain_track_gain>
-        <replaygain_track_peak>0.989</replaygain_track_peak>
+        <replaygain_track_gain>0</replaygain_track_gain>
+        <replaygain_track_peak>0</replaygain_track_peak>
         <r128_album_gain/>
         <r128_track_gain/>
       </song>
     </tracks>
-    <songcount>11</songcount>
+    <songcount>6</songcount>
     <diskcount>1</diskcount>
     <type/>
-    <genre id="5">
-      <name><![CDATA[Electronica]]></name>
+    <genre id="3">
+      <name><![CDATA[Noise]]></name>
     </genre>
-    <genre id="6">
-      <name><![CDATA[Dance]]></name>
-    </genre>
-    <art><![CDATA[https://music.com.au/image.php?object_id=8&object_type=album&id=457&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=18&object_type=album&id=457&name=art.jpg]]></art>
     <has_art>1</has_art>
     <flag>0</flag>
-    <rating>2</rating>
-    <averagerating/>
+    <rating>4</rating>
+    <averagerating>3.67</averagerating>
     <mbid><![CDATA[]]></mbid>
     <mbid_group><![CDATA[]]></mbid_group>
   </album>

@@ -1,45 +1,54 @@
 {
     "total_count": 1,
-    "md5": "b4b17768ecd6a3369b716a0ce3abb8f6",
+    "md5": "60fda3b54003017dc64a0c492471bbfe",
     "album": [
         {
-            "id": "9",
-            "name": "Creeping Lawler 2",
+            "id": "8",
+            "name": "Nofi Devices",
             "prefix": null,
-            "basename": "Creeping Lawler 2",
+            "basename": "Nofi Devices",
             "artist": {
-                "id": "15",
-                "name": "Warfare 3.0",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Warfare 3.0"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "15",
-                    "name": "Warfare 3.0",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "Warfare 3.0"
+                    "basename": "Nofi\/found."
                 }
             ],
             "songartists": [
                 {
-                    "id": "15",
-                    "name": "Warfare 3.0",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "Warfare 3.0"
+                    "basename": "Nofi\/found."
                 }
             ],
-            "time": 592,
+            "time": 4423,
             "year": 0,
             "tracks": [],
-            "songcount": 2,
+            "songcount": 11,
             "diskcount": 1,
             "type": null,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=455&name=art.jpg",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
             "has_art": true,
             "flag": false,
-            "rating": 3,
+            "rating": 2,
             "averagerating": null,
             "mbid": null,
             "mbid_group": null

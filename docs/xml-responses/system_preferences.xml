@@ -1050,30 +1050,10 @@
     <subcategory><![CDATA[player]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
-  <preference id="88">
-    <name><![CDATA[webplayer_flash]]></name>
-    <level>25</level>
-    <description><![CDATA[Authorize Flash Web Player]]></description>
-    <value>1</value>
-    <type><![CDATA[boolean]]></type>
-    <category><![CDATA[streaming]]></category>
-    <subcategory><![CDATA[player]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
   <preference id="89">
     <name><![CDATA[webplayer_html5]]></name>
     <level>25</level>
     <description><![CDATA[Authorize HTML5 Web Player]]></description>
-    <value>1</value>
-    <type><![CDATA[boolean]]></type>
-    <category><![CDATA[streaming]]></category>
-    <subcategory><![CDATA[player]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
-  <preference id="134">
-    <name><![CDATA[webplayer_aurora]]></name>
-    <level>25</level>
-    <description><![CDATA[Authorize JavaScript decoder (Aurora.js) in Web Player]]></description>
     <value>1</value>
     <type><![CDATA[boolean]]></type>
     <category><![CDATA[streaming]]></category>
@@ -1156,16 +1136,6 @@
     <value>0</value>
     <type><![CDATA[boolean]]></type>
     <category><![CDATA[interface]]></category>
-    <subcategory><![CDATA[player]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
-  <preference id="181">
-    <name><![CDATA[use_play2]]></name>
-    <level>25</level>
-    <description><![CDATA[Use an alternative playback action for streaming if you have issues with playing music]]></description>
-    <value>0</value>
-    <type><![CDATA[boolean]]></type>
-    <category><![CDATA[streaming]]></category>
     <subcategory><![CDATA[player]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>

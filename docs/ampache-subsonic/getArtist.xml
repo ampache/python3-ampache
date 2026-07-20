@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.8.0" openSubsonic="1">
-  <artist id="100000014" name="Nofi/found." albumCount="1">
-    <album id="200000008" parent="100000014" album="Nofi Devices" title="Nofi Devices" name="Nofi Devices" isDir="true" coverArt="200000008" songCount="11" created="2021-02-23T04:24:51+00:00" duration="4423" playCount="12" artistId="100000014" artist="Nofi/found." genre="Electronica,Dance" userRating="2"/>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1">
+  <artist id="100000011" name="structura" coverArt="100000011" albumCount="1">
+    <album id="200000018" name="Inominavel (live.v.01)" coverArt="200000018" songCount="6" created="2021-02-23T04:24:50+00:00" duration="1339" playCount="4" artistId="100000011" artist="structura" year="2007" genre="Noise"/>
   </artist>
 </subsonic-response>

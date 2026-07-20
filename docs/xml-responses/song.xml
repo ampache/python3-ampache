@@ -1,47 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>75</total_count>
-  <md5>5fbe77f86993e36afbeb1074fddcb9da</md5>
-  <song id="107">
-    <name><![CDATA[Arrest Me]]></name>
-    <title><![CDATA[Arrest Me]]></title>
-    <artist id="20">
-      <name><![CDATA[R/B]]></name>
+  <md5>0890eb47e933786c705def661562337a</md5>
+  <song id="97">
+    <name><![CDATA[Creeping Lawler 2]]></name>
+    <title><![CDATA[Creeping Lawler 2]]></title>
+    <artist id="15">
+      <name><![CDATA[Warfare 3.0]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[R/B]]></basename>
+      <basename><![CDATA[Warfare 3.0]]></basename>
     </artist>
-    <album id="12">
-      <name><![CDATA[Buried in Nausea]]></name>
+    <album id="9">
+      <name><![CDATA[Creeping Lawler 2]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Buried in Nausea]]></basename>
+      <basename><![CDATA[Creeping Lawler 2]]></basename>
     </album>
-    <albumartist id="19">
-      <name><![CDATA[Various Artists]]></name>
+    <albumartist id="15">
+      <name><![CDATA[Warfare 3.0]]></name>
       <prefix><![CDATA[]]></prefix>
-      <basename><![CDATA[Various Artists]]></basename>
+      <basename><![CDATA[Warfare 3.0]]></basename>
     </albumartist>
     <disk><![CDATA[1]]></disk>
     <disksubtitle><![CDATA[]]></disksubtitle>
-    <track>9</track>
-    <genre id="7">
-      <name><![CDATA[Punk]]></name>
-    </genre>
-    <filename><![CDATA[/mnt/files-music/ampache-test/music/Various Artists/Buried In Nausea/09R_b-ArrestMe.m4a]]></filename>
+    <track>1</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.mp3]]></filename>
     <playlisttrack>1</playlisttrack>
-    <time>96</time>
-    <year>2012</year>
-    <format>m4a</format>
+    <time>296</time>
+    <year>0</year>
+    <format>mp3</format>
     <stream_format>mp3</stream_format>
-    <bitrate>252864</bitrate>
+    <bitrate>177349</bitrate>
     <stream_bitrate>32000</stream_bitrate>
     <rate>44100</rate>
     <mode><![CDATA[vbr]]></mode>
-    <mime><![CDATA[audio/mp4]]></mime>
+    <mime><![CDATA[audio/mpeg]]></mime>
     <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
-    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=R-B%20-%20Arrest%20Me.mp3]]></url>
-    <size>3091727</size>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3]]></url>
+    <size>6652448</size>
     <mbid><![CDATA[]]></mbid>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&id=455&name=art.jpg]]></art>
     <has_art>1</has_art>
     <flag>1</flag>
     <rating>5</rating>
@@ -50,15 +47,15 @@
     <catalog>1</catalog>
     <composer><![CDATA[]]></composer>
     <channels>2</channels>
-    <comment><![CDATA[]]></comment>
+    <comment><![CDATA[https://archive.org/details/Creeping_Lawler_2]]></comment>
     <license><![CDATA[]]></license>
-    <publisher><![CDATA[]]></publisher>
+    <publisher><![CDATA[archive.org]]></publisher>
     <language/>
     <lyrics><![CDATA[]]></lyrics>
     <replaygain_album_gain/>
     <replaygain_album_peak/>
-    <replaygain_track_gain>-1.35</replaygain_track_gain>
-    <replaygain_track_peak>0.881</replaygain_track_peak>
+    <replaygain_track_gain>-4.32</replaygain_track_gain>
+    <replaygain_track_peak>0.977</replaygain_track_peak>
     <r128_album_gain/>
     <r128_track_gain/>
   </song>

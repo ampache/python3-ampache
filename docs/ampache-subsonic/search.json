@@ -2,9 +2,6 @@
     "subsonic-response": {
         "status": "ok",
         "version": "1.16.1",
-        "type": "ampache",
-        "serverVersion": "6.8.0",
-        "openSubsonic": true,
         "searchResult": {
             "offset": 0,
             "totalHits": 6,
@@ -98,7 +95,6 @@
                     "coverArt": "200000010",
                     "duration": 557,
                     "bitRate": 136,
-                    "userRating": 5,
                     "track": 8,
                     "year": 1996,
                     "size": 9722091,
@@ -123,6 +119,8 @@
                     "coverArt": "200000012",
                     "duration": 110,
                     "bitRate": 31,
+                    "userRating": 5,
+                    "starred": "2026-07-10T01:02:49Z",
                     "track": 5,
                     "year": 2012,
                     "size": 460498,

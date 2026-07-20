@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.8.0" openSubsonic="1">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1">
   <shares>
-    <share id="sh-77" url="https://music.com.au/share.php?id=77&amp;secret=g6C8BNDs" description="" username="user" created="2025-07-01T05:51:32+00:00" visitCount="0">
-      <entry id="300000113" parent="200000012" title="Representin" isDir="false" isVideo="false" type="music" albumId="200000012" album="Buried in Nausea" artistId="100000032" artist="Shorty Mac" coverArt="200000012" duration="234" bitRate="120" track="4" year="2012" size="3628327" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/media/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3"/>
+    <share id="sh-75" url="https://music.com.au/share.php?id=75&amp;secret=DS12Oblv" description="" username="user" created="2026-07-20T09:34:07+00:00" visitCount="0">
+      <entry id="300000079" parent="200000006" title="Хикки найди свою Тян" isDir="false" isVideo="false" type="music" albumId="200000006" album="Хикки Найди Свою Тян (Single)" artistId="100000012" artist="К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь" coverArt="200000006" duration="300" bitRate="171" userRating="1" averageRating="1" track="1" size="6664157" discNumber="1" suffix="mp3" contentType="audio/mpeg" path="/media/music/К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь/Хикки Найди Свою Тян (Single)/01 - Хикки найди свою Тян.mp3"/>
     </share>
   </shares>
 </subsonic-response>

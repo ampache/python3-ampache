@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
-  <directory id="mf-1" name="music">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="8.0.0" openSubsonic="1">
+  <directory id="1" name="music">
     <child id="ar-16" parent="1" isDir="true" title="CARNÚN" artist="CARNÚN" coverArt="ar-16"/>
     <child id="ar-27" parent="1" isDir="true" title="Chi.Otic" artist="Chi.Otic" coverArt="ar-27"/>
     <child id="ar-34" parent="1" isDir="true" title="Comedown Kid" artist="Comedown Kid" coverArt="ar-34"/>

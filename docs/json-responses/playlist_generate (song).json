@@ -1,57 +1,57 @@
 {
     "total_count": 4,
-    "md5": "03abc0472ba163467889268f55990b26",
+    "md5": "fbd1ff3b3abfd26054629cc0781681c0",
     "song": [
         {
-            "id": "109",
-            "title": "Dance with the Devil",
-            "name": "Dance with the Devil",
+            "id": "102",
+            "title": "Moremque Sinistrum Sacrorum",
+            "name": "Moremque Sinistrum Sacrorum",
             "artist": {
-                "id": "34",
-                "name": "Comedown Kid",
+                "id": "16",
+                "name": "CARN\u00daN",
                 "prefix": null,
-                "basename": "Comedown Kid"
+                "basename": "CARN\u00daN"
             },
             "artists": [
                 {
-                    "id": "34",
-                    "name": "Comedown Kid",
+                    "id": "16",
+                    "name": "CARN\u00daN",
                     "prefix": null,
-                    "basename": "Comedown Kid"
+                    "basename": "CARN\u00daN"
                 }
             ],
             "album": {
-                "id": "12",
-                "name": "Buried in Nausea",
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
                 "prefix": null,
-                "basename": "Buried in Nausea"
+                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
             },
             "albumartist": {
-                "id": "19",
-                "name": "Various Artists",
+                "id": "16",
+                "name": "CARN\u00daN",
                 "prefix": null,
-                "basename": "Various Artists"
+                "basename": "CARN\u00daN"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/05MoremqueSinistrumSacrorum.ogg",
             "genre": [],
             "playlisttrack": 1,
-            "time": 116,
-            "year": 2012,
-            "format": "wma",
+            "time": 164,
+            "year": 1996,
+            "format": "ogg",
             "stream_format": "mp3",
-            "bitrate": 32582,
+            "bitrate": 106647,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/x-ms-wma",
+            "mode": "vbr",
+            "mime": "application\/ogg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
-            "size": 483444,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3",
+            "size": 2202971,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -59,102 +59,93 @@
             "playcount": 0,
             "catalog": "1",
             "composer": null,
-            "channels": 1,
-            "comment": null,
-            "license": null,
-            "publisher": null,
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "95",
-            "title": "Spirus Falls",
-            "name": "Spirus Falls",
-            "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "artists": [
-                {
-                    "id": "14",
-                    "name": "Nofi\/found.",
-                    "prefix": null,
-                    "basename": "Nofi\/found."
-                }
-            ],
-            "album": {
-                "id": "8",
-                "name": "Nofi Devices",
-                "prefix": null,
-                "basename": "Nofi Devices"
-            },
-            "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/02_Spirus_Falls.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "playlisttrack": 2,
-            "time": 327,
-            "year": 0,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 192000,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3",
-            "size": 7875775,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 1,
-            "catalog": "1",
-            "composer": "Jeffrey Melton",
             "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -1.53,
+            "replaygain_track_gain": -7.48,
             "replaygain_track_peak": 1,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "94",
-            "title": "Strangers Query",
-            "name": "Strangers Query",
+            "id": "103",
+            "title": "In The Seven Woods (Instrumental Re-Recording)",
+            "name": "In The Seven Woods (Instrumental Re-Recording)",
+            "artist": {
+                "id": "16",
+                "name": "CARN\u00daN",
+                "prefix": null,
+                "basename": "CARN\u00daN"
+            },
+            "artists": [
+                {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": null,
+                    "basename": "CARN\u00daN"
+                }
+            ],
+            "album": {
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "prefix": null,
+                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+            },
+            "albumartist": {
+                "id": "16",
+                "name": "CARN\u00daN",
+                "prefix": null,
+                "basename": "CARN\u00daN"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 7,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
+            "genre": [],
+            "playlisttrack": 2,
+            "time": 452,
+            "year": 1996,
+            "format": "ogg",
+            "stream_format": "mp3",
+            "bitrate": 138338,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "application\/ogg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
+            "size": 7826238,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": "1",
+            "composer": null,
+            "channels": 2,
+            "comment": "Visit http:\/\/irish-metal.bandcamp.com;http:\/\/archive.org\/details\/Carnn_-_Malkuth_Demo1996",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -12.21,
+            "replaygain_track_peak": 1,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "90",
+            "title": "Invo",
+            "name": "Invo",
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
@@ -183,8 +174,8 @@
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 7,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/07_Strangers_Query.mp3",
+            "track": 1,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/01_Invo.mp3",
             "genre": [
                 {
                     "id": "5",
@@ -196,7 +187,7 @@
                 }
             ],
             "playlisttrack": 3,
-            "time": 279,
+            "time": 47,
             "year": 0,
             "format": "mp3",
             "stream_format": "mp3",
@@ -206,12 +197,12 @@
             "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=94&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Strangers%20Query.mp3",
-            "size": 6719700,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Invo.mp3",
+            "size": 1140815,
             "mbid": null,
             "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
             "has_art": true,
-            "flag": false,
+            "flag": true,
             "rating": 5,
             "averagerating": null,
             "playcount": 1,
@@ -225,78 +216,87 @@
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -3.8,
-            "replaygain_track_peak": 0.966,
+            "replaygain_track_gain": -3.05,
+            "replaygain_track_peak": 0.933,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "113",
-            "title": "Representin",
-            "name": "Representin",
+            "id": "91",
+            "title": "Home Capsules",
+            "name": "Home Capsules",
             "artist": {
-                "id": "32",
-                "name": "Shorty Mac",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Shorty Mac"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "32",
-                    "name": "Shorty Mac",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "Shorty Mac"
+                    "basename": "Nofi\/found."
                 }
             ],
             "album": {
-                "id": "12",
-                "name": "Buried in Nausea",
+                "id": "8",
+                "name": "Nofi Devices",
                 "prefix": null,
-                "basename": "Buried in Nausea"
+                "basename": "Nofi Devices"
             },
             "albumartist": {
-                "id": "19",
-                "name": "Various Artists",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Various Artists"
+                "basename": "Nofi\/found."
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
-            "genre": [],
+            "track": 9,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/09_Home_Capsules.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
             "playlisttrack": 4,
-            "time": 234,
-            "year": 2012,
+            "time": 294,
+            "year": 0,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 123814,
+            "bitrate": 192000,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "vbr",
+            "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
-            "size": 3628327,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3",
+            "size": 7076428,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": "1",
-            "composer": null,
+            "composer": "Jeffrey Melton",
             "channels": 2,
-            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": 1.91,
-            "replaygain_track_peak": 0.851,
+            "replaygain_track_gain": -2.97,
+            "replaygain_track_peak": 1,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

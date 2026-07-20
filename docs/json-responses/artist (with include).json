@@ -1,47 +1,56 @@
 {
-    "id": "15",
-    "name": "Warfare 3.0",
+    "id": "14",
+    "name": "Nofi\/found.",
     "prefix": null,
-    "basename": "Warfare 3.0",
+    "basename": "Nofi\/found.",
     "albums": [
         {
-            "id": "9",
-            "name": "Creeping Lawler 2",
+            "id": "8",
+            "name": "Nofi Devices",
             "prefix": null,
-            "basename": "Creeping Lawler 2",
+            "basename": "Nofi Devices",
             "artist": {
-                "id": "15",
-                "name": "Warfare 3.0",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Warfare 3.0"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "15",
-                    "name": "Warfare 3.0",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "Warfare 3.0"
+                    "basename": "Nofi\/found."
                 }
             ],
             "songartists": [
                 {
-                    "id": "15",
-                    "name": "Warfare 3.0",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "Warfare 3.0"
+                    "basename": "Nofi\/found."
                 }
             ],
-            "time": 592,
+            "time": 4423,
             "year": 0,
             "tracks": [],
-            "songcount": 2,
+            "songcount": 11,
             "diskcount": 1,
             "type": null,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=455&name=art.jpg",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
             "has_art": true,
             "flag": false,
-            "rating": 3,
+            "rating": 2,
             "averagerating": null,
             "mbid": null,
             "mbid_group": null
@@ -50,156 +59,894 @@
     "albumcount": 1,
     "songs": [
         {
-            "id": "96",
-            "title": "Creeping Lawler 2",
-            "name": "Creeping Lawler 2",
+            "id": "90",
+            "title": "Invo",
+            "name": "Invo",
             "artist": {
-                "id": "15",
-                "name": "Warfare 3.0",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Warfare 3.0"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "15",
-                    "name": "Warfare 3.0",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "Warfare 3.0"
+                    "basename": "Nofi\/found."
                 }
             ],
             "album": {
-                "id": "9",
-                "name": "Creeping Lawler 2",
+                "id": "8",
+                "name": "Nofi Devices",
                 "prefix": null,
-                "basename": "Creeping Lawler 2"
+                "basename": "Nofi Devices"
             },
             "albumartist": {
-                "id": "15",
-                "name": "Warfare 3.0",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Warfare 3.0"
+                "basename": "Nofi\/found."
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.wav",
-            "genre": [],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/01_Invo.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
             "playlisttrack": 1,
-            "time": 296,
+            "time": 47,
             "year": 0,
-            "format": "wav",
+            "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 1411200,
+            "bitrate": 192000,
             "stream_bitrate": 32000,
             "rate": 44100,
             "mode": "cbr",
-            "mime": "audio\/wav",
+            "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
-            "size": 52345628,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Invo.mp3",
+            "size": 1140815,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=455&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
             "has_art": true,
             "flag": true,
             "rating": 5,
             "averagerating": null,
-            "playcount": 5,
+            "playcount": 1,
             "catalog": "1",
-            "composer": null,
+            "composer": "Jeffrey Melton",
             "channels": 2,
-            "comment": null,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -4.31,
+            "replaygain_track_gain": -3.05,
+            "replaygain_track_peak": 0.933,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "95",
+            "title": "Spirus Falls",
+            "name": "Spirus Falls",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 2,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/02_Spirus_Falls.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 2,
+            "time": 327,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3",
+            "size": 7875775,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": "1",
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -1.53,
+            "replaygain_track_peak": 1,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "93",
+            "title": "Scribnus 3",
+            "name": "Scribnus 3",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 3,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/03_Scribnus_3.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 641,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3",
+            "size": 15400002,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 4,
+            "catalog": "1",
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": 1.53,
             "replaygain_track_peak": 0.989,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "97",
-            "title": "Creeping Lawler 2",
-            "name": "Creeping Lawler 2",
+            "id": "85",
+            "title": "Beq Ultra Fat",
+            "name": "Beq Ultra Fat",
             "artist": {
-                "id": "15",
-                "name": "Warfare 3.0",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Warfare 3.0"
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "15",
-                    "name": "Warfare 3.0",
+                    "id": "14",
+                    "name": "Nofi\/found.",
                     "prefix": null,
-                    "basename": "Warfare 3.0"
+                    "basename": "Nofi\/found."
                 }
             ],
             "album": {
-                "id": "9",
-                "name": "Creeping Lawler 2",
+                "id": "8",
+                "name": "Nofi Devices",
                 "prefix": null,
-                "basename": "Creeping Lawler 2"
+                "basename": "Nofi Devices"
             },
             "albumartist": {
-                "id": "15",
-                "name": "Warfare 3.0",
+                "id": "14",
+                "name": "Nofi\/found.",
                 "prefix": null,
-                "basename": "Warfare 3.0"
+                "basename": "Nofi\/found."
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
-            "genre": [],
-            "playlisttrack": 2,
-            "time": 296,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/04_Beq_Ultra_Fat.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 413,
             "year": 0,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 177349,
+            "bitrate": 192000,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "vbr",
+            "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
-            "size": 6652448,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3",
+            "size": 9935896,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=455&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": "1",
-            "composer": null,
+            "composer": "Jeffrey Melton",
             "channels": 2,
-            "comment": "https:\/\/archive.org\/details\/Creeping_Lawler_2",
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -4.32,
-            "replaygain_track_peak": 0.977,
+            "replaygain_track_gain": 0.94,
+            "replaygain_track_peak": 0.989,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "86",
+            "title": "Caloonashine",
+            "name": "Caloonashine",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/05_Caloonashine.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 5,
+            "time": 330,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Caloonashine.mp3",
+            "size": 7929692,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": "1",
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -0.35,
+            "replaygain_track_peak": 0.955,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "87",
+            "title": "Wonders of Nando",
+            "name": "Wonders of Nando",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 6,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/06_Wonders_of_Nando.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 6,
+            "time": 319,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=87&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Wonders%20of%20Nando.mp3",
+            "size": 7673901,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 2,
+            "catalog": "1",
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -1.44,
+            "replaygain_track_peak": 1,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "94",
+            "title": "Strangers Query",
+            "name": "Strangers Query",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 7,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/07_Strangers_Query.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 7,
+            "time": 279,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=94&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Strangers%20Query.mp3",
+            "size": 6719700,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": "1",
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -3.8,
+            "replaygain_track_peak": 0.966,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "92",
+            "title": "Stance",
+            "name": "Stance",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 8,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/08_Stance.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 8,
+            "time": 544,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stance.mp3",
+            "size": 13078740,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": "1",
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -2.38,
+            "replaygain_track_peak": 0.989,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "91",
+            "title": "Home Capsules",
+            "name": "Home Capsules",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 9,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/09_Home_Capsules.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 9,
+            "time": 294,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3",
+            "size": 7076428,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": "1",
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -2.97,
+            "replaygain_track_peak": 1,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "88",
+            "title": "Netro",
+            "name": "Netro",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 10,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/10_Netro.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 10,
+            "time": 601,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=88&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Netro.mp3",
+            "size": 14445467,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "has_art": true,
+            "flag": true,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 1,
+            "catalog": "1",
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -1.28,
+            "replaygain_track_peak": 1,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "89",
+            "title": "Stolen",
+            "name": "Stolen",
+            "artist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "artists": [
+                {
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": null,
+                    "basename": "Nofi\/found."
+                }
+            ],
+            "album": {
+                "id": "8",
+                "name": "Nofi Devices",
+                "prefix": null,
+                "basename": "Nofi Devices"
+            },
+            "albumartist": {
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": null,
+                "basename": "Nofi\/found."
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 11,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/11_Stolen.mp3",
+            "genre": [
+                {
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
+                }
+            ],
+            "playlisttrack": 11,
+            "time": 628,
+            "year": 0,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=89&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stolen.mp3",
+            "size": 15100325,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": "1",
+            "composer": "Jeffrey Melton",
+            "channels": 2,
+            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": 2.66,
+            "replaygain_track_peak": 0.989,
             "r128_album_gain": null,
             "r128_track_gain": null
         }
     ],
-    "songcount": 2,
-    "genre": [],
-    "art": "https:\/\/music.com.au\/image.php?object_id=15&object_type=artist&id=78&name=art.jpg",
-    "has_art": true,
+    "songcount": 11,
+    "genre": [
+        {
+            "id": "5",
+            "name": "Electronica"
+        },
+        {
+            "id": "6",
+            "name": "Dance"
+        }
+    ],
+    "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist&name=art.jpg",
+    "has_art": false,
     "flag": false,
-    "rating": 3,
+    "rating": 2,
     "averagerating": null,
     "mbid": null,
-    "summary": null,
-    "time": 592,
+    "summary": "Nofi\/found. is the work of Jeffrey Melton released prior to 2005. From the website:\nNofi is neither hi-fi nor lo-fi, but a state of being-without-boundaries (i.e. \u2019stateless\u2019). ",
+    "time": 4423,
     "yearformed": 0,
     "placeformed": null
 }

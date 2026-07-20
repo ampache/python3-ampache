@@ -3,7 +3,7 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "8.0.0",
         "openSubsonic": true,
         "playlists": {
             "playlist": [
@@ -12,10 +12,12 @@
                     "name": "admin - 02/23/2021 14:36:44 (admin)",
                     "owner": "admin",
                     "public": true,
-                    "songCount": 0,
-                    "duration": 0,
+                    "songCount": 1,
+                    "duration": 317,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-14",
@@ -25,7 +27,9 @@
                     "songCount": 2,
                     "duration": 600,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-13",
@@ -35,17 +39,21 @@
                     "songCount": 11,
                     "duration": 4423,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-12",
                     "name": "Album 3* (System)",
                     "owner": "System",
                     "public": true,
-                    "songCount": 0,
-                    "duration": 0,
+                    "songCount": 2,
+                    "duration": 592,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-11",
@@ -55,7 +63,9 @@
                     "songCount": 0,
                     "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-10",
@@ -65,7 +75,9 @@
                     "songCount": 0,
                     "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-9",
@@ -75,7 +87,9 @@
                     "songCount": 0,
                     "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-8",
@@ -85,7 +99,9 @@
                     "songCount": 0,
                     "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-7",
@@ -95,7 +111,9 @@
                     "songCount": 0,
                     "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-6",
@@ -105,7 +123,9 @@
                     "songCount": 0,
                     "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-5",
@@ -115,7 +135,9 @@
                     "songCount": 0,
                     "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "pl-65",
@@ -125,7 +147,9 @@
                     "songCount": 11,
                     "duration": 4423,
                     "created": "2025-06-30T06:42:39+00:00",
-                    "changed": "2025-06-30T06:42:39+00:00"
+                    "changed": "2025-06-30T06:42:39+00:00",
+                    "readonly": true,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "pl-3",
@@ -135,7 +159,9 @@
                     "songCount": 43,
                     "duration": 17875,
                     "created": "2021-02-23T04:35:38+00:00",
-                    "changed": "2021-02-23T04:35:38+00:00"
+                    "changed": "2021-02-23T04:35:38+00:00",
+                    "readonly": true,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "pl-2",
@@ -145,7 +171,9 @@
                     "songCount": 43,
                     "duration": 17786,
                     "created": "2021-02-23T04:34:56+00:00",
-                    "changed": "2021-02-23T04:34:56+00:00"
+                    "changed": "2021-02-23T04:34:56+00:00",
+                    "readonly": true,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "pl-4",
@@ -155,7 +183,9 @@
                     "songCount": 43,
                     "duration": 17875,
                     "created": "2021-02-23T04:35:38+00:00",
-                    "changed": "2021-02-23T04:35:38+00:00"
+                    "changed": "2021-02-23T04:35:38+00:00",
+                    "readonly": true,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-19",
@@ -165,7 +195,9 @@
                     "songCount": 0,
                     "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-18",
@@ -175,7 +207,9 @@
                     "songCount": 0,
                     "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-17",
@@ -185,7 +219,9 @@
                     "songCount": 0,
                     "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-16",
@@ -195,7 +231,9 @@
                     "songCount": 0,
                     "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-15",
@@ -205,7 +243,9 @@
                     "songCount": 0,
                     "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-20",
@@ -215,7 +255,9 @@
                     "songCount": 53,
                     "duration": 20669,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 },
                 {
                     "id": "sp-22",
@@ -225,7 +267,9 @@
                     "songCount": 0,
                     "duration": 0,
                     "created": "1970-01-01T00:00:00+00:00",
-                    "changed": "2025-07-01T05:51:53+00:00"
+                    "changed": "2026-07-20T09:34:19+00:00",
+                    "readonly": false,
+                    "validUntil": "2026-07-20T09:39:19+00:00"
                 }
             ]
         }

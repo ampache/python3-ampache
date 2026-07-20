@@ -2,9 +2,6 @@
     "subsonic-response": {
         "status": "ok",
         "version": "1.16.1",
-        "type": "ampache",
-        "serverVersion": "6.8.0",
-        "openSubsonic": true,
         "indexes": {
             "index": [
                 {
@@ -12,27 +9,19 @@
                     "artist": [
                         {
                             "id": "100000016",
-                            "name": "CARN\u00daN",
-                            "coverArt": "100000016",
-                            "albumCount": 1
+                            "name": "CARN\u00daN"
                         },
                         {
                             "id": "100000027",
-                            "name": "Chi.Otic",
-                            "coverArt": "100000027",
-                            "albumCount": 0
+                            "name": "Chi.Otic"
                         },
                         {
                             "id": "100000034",
-                            "name": "Comedown Kid",
-                            "coverArt": "100000034",
-                            "albumCount": 0
+                            "name": "Comedown Kid"
                         },
                         {
                             "id": "100000036",
-                            "name": "Comfort Fit",
-                            "coverArt": "100000036",
-                            "albumCount": 1
+                            "name": "Comfort Fit"
                         }
                     ]
                 },
@@ -41,9 +30,7 @@
                     "artist": [
                         {
                             "id": "100000013",
-                            "name": "IOK-1",
-                            "coverArt": "100000013",
-                            "albumCount": 1
+                            "name": "IOK-1"
                         }
                     ]
                 },
@@ -52,15 +39,11 @@
                     "artist": [
                         {
                             "id": "100000023",
-                            "name": "Manic Notion",
-                            "coverArt": "100000023",
-                            "albumCount": 0
+                            "name": "Manic Notion"
                         },
                         {
                             "id": "100000033",
-                            "name": "MxBxCx",
-                            "coverArt": "100000033",
-                            "albumCount": 0
+                            "name": "MxBxCx"
                         }
                     ]
                 },
@@ -69,8 +52,7 @@
                     "artist": [
                         {
                             "id": "100000014",
-                            "name": "Nofi/found.",
-                            "albumCount": 1
+                            "name": "Nofi/found."
                         }
                     ]
                 },
@@ -79,9 +61,7 @@
                     "artist": [
                         {
                             "id": "100000020",
-                            "name": "R/B",
-                            "coverArt": "100000020",
-                            "albumCount": 0
+                            "name": "R/B"
                         }
                     ]
                 },
@@ -90,27 +70,19 @@
                     "artist": [
                         {
                             "id": "100000032",
-                            "name": "Shorty Mac",
-                            "coverArt": "100000032",
-                            "albumCount": 0
+                            "name": "Shorty Mac"
                         },
                         {
                             "id": "100000026",
-                            "name": "Stress Builds Character",
-                            "coverArt": "100000026",
-                            "albumCount": 0
+                            "name": "Stress Builds Character"
                         },
                         {
                             "id": "100000011",
-                            "name": "structura",
-                            "coverArt": "100000011",
-                            "albumCount": 1
+                            "name": "structura"
                         },
                         {
                             "id": "100000002",
                             "name": "Synthetic",
-                            "coverArt": "100000002",
-                            "albumCount": 1,
                             "starred": "2021-02-22T05:54:18Z"
                         }
                     ]
@@ -120,15 +92,11 @@
                     "artist": [
                         {
                             "id": "100000035",
-                            "name": "Tip-C",
-                            "coverArt": "100000035",
-                            "albumCount": 0
+                            "name": "Tip-C"
                         },
                         {
                             "id": "100000021",
-                            "name": "Tip-C (featuring Mike Beers)",
-                            "coverArt": "100000021",
-                            "albumCount": 0
+                            "name": "Tip-C (featuring Mike Beers)"
                         }
                     ]
                 },
@@ -137,9 +105,7 @@
                     "artist": [
                         {
                             "id": "100000019",
-                            "name": "Various Artists",
-                            "coverArt": "100000019",
-                            "albumCount": 1
+                            "name": "Various Artists"
                         }
                     ]
                 },
@@ -148,9 +114,7 @@
                     "artist": [
                         {
                             "id": "100000015",
-                            "name": "Warfare 3.0",
-                            "coverArt": "100000015",
-                            "albumCount": 1
+                            "name": "Warfare 3.0"
                         }
                     ]
                 },
@@ -159,14 +123,12 @@
                     "artist": [
                         {
                             "id": "100000012",
-                            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
-                            "coverArt": "100000012",
-                            "albumCount": 1
+                            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
                         }
                     ]
                 }
             ],
-            "lastModified": "1627949154000",
+            "lastModified": 1627949154000,
             "ignoredArticles": "The An A Die Das Ein Eine Les Le La"
         }
     }

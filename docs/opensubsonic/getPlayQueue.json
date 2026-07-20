@@ -3,50 +3,55 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "8.0.0",
         "openSubsonic": true,
         "playQueue": {
-            "current": "so-88",
+            "current": "so-56",
             "position": "0",
             "username": "user",
-            "changed": "2025-07-01T05:51:50+00:00",
+            "changed": "2025-07-01T04:24:12+00:00",
             "changedBy": "Ampache",
             "entry": [
                 {
-                    "id": "so-88",
-                    "parent": "al-8",
-                    "title": "Netro",
+                    "id": "so-56",
+                    "parent": "al-2",
+                    "title": "Black&BlueSmoke",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "al-8",
-                    "album": "Nofi Devices",
-                    "artistId": "ar-14",
-                    "artist": "Nofi/found.",
-                    "coverArt": "al-8",
-                    "duration": 601,
-                    "bitRate": 187,
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
+                    "duration": 500,
+                    "bitRate": 62,
                     "userRating": 5,
-                    "track": 10,
-                    "genre": "Electronica,Dance",
+                    "playCount": 2,
+                    "created": "2021-02-23T04:24:48Z",
+                    "track": 1,
+                    "year": 2007,
+                    "genre": "Electronic",
                     "genres": [
                         {
-                            "name": "Electronica"
-                        },
-                        {
-                            "name": "Dance"
+                            "name": "Electronic"
                         }
                     ],
-                    "size": 14445467,
+                    "size": 4010069,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/music/Nofi_found/Nofi Devices LP/10_Netro.mp3",
-                    "artists": [],
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
                     "albumArtists": [
                         {
-                            "id": "ar-14",
-                            "name": "Nofi/found."
+                            "id": "ar-2",
+                            "name": "Synthetic"
                         }
                     ]
                 }

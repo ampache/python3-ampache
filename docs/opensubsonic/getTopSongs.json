@@ -3,715 +3,532 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "8.0.0",
         "openSubsonic": true,
         "topSongs": {
             "song": [
                 {
-                    "id": "so-121",
-                    "parent": "al-21",
-                    "title": "Planetary Picknick",
+                    "id": "so-65",
+                    "parent": "al-2",
+                    "title": "YellowSmoke",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 358,
-                    "bitRate": 233,
-                    "userRating": 5,
-                    "track": 2,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 10715592,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/2 - Planetary Picknick.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-130",
-                    "parent": "al-21",
-                    "title": "Something to Do",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 261,
-                    "bitRate": 240,
-                    "userRating": 5,
-                    "track": 17,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 8072761,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/17 - Something To Do.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-131",
-                    "parent": "al-21",
-                    "title": "Miles of Smiles",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
                     "duration": 290,
-                    "bitRate": 242,
+                    "bitRate": 20,
                     "userRating": 5,
-                    "track": 20,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
+                    "playCount": 2,
+                    "created": "2021-02-23T04:24:49Z",
+                    "track": 2,
+                    "year": 2007,
+                    "genre": "Electronic",
                     "genres": [
                         {
-                            "name": "Hip-Hop"
+                            "name": "Electronic"
                         }
                     ],
-                    "size": 9028758,
+                    "size": 754935,
                     "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/20 - Miles of Smiles.mp3",
-                    "artists": [],
+                    "suffix": "wma",
+                    "contentType": "audio/x-ms-wma",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/02-Synthetic_-_YellowSmoke20k22hS.wma",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
                     "albumArtists": [
                         {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
+                            "id": "ar-2",
+                            "name": "Synthetic"
                         }
-                    ]
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
                 },
                 {
-                    "id": "so-132",
-                    "parent": "al-21",
-                    "title": "Hairy Crushed Nuts",
+                    "id": "so-56",
+                    "parent": "al-2",
+                    "title": "Black&BlueSmoke",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 267,
-                    "bitRate": 242,
-                    "track": 15,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 8328099,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/15 - Hairy Crushed Nuts.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-122",
-                    "parent": "al-21",
-                    "title": "Thursday Is Thursty",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 92,
-                    "bitRate": 219,
-                    "track": 7,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 2607497,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/7 - Thursday is Thursdy.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-133",
-                    "parent": "al-21",
-                    "title": "Kurz Vor Danach Ganz '05",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 247,
-                    "bitRate": 225,
-                    "track": 13,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 7136353,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/13 - Kurz Vor Danach Ganz \u201805.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-123",
-                    "parent": "al-21",
-                    "title": "Go on, Take It Further",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 69,
-                    "bitRate": 201,
-                    "track": 18,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 1795861,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/18 - Go On, Take It Further.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-134",
-                    "parent": "al-21",
-                    "title": "Swabian Sound System",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 281,
-                    "bitRate": 238,
-                    "track": 19,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 8594721,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/19 - Swabian Sound System.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-124",
-                    "parent": "al-21",
-                    "title": "True Form",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 192,
-                    "bitRate": 237,
-                    "track": 6,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 5848663,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/6 - True Form.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-135",
-                    "parent": "al-21",
-                    "title": "Emotional Draft",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 379,
-                    "bitRate": 230,
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
+                    "duration": 500,
+                    "bitRate": 62,
                     "userRating": 5,
-                    "track": 14,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 11216864,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/14 - Emotional Draft.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-125",
-                    "parent": "al-21",
-                    "title": "Take a Look",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 230,
-                    "bitRate": 238,
-                    "userRating": 5,
-                    "track": 5,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 7018987,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/5 - Take a Look.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-126",
-                    "parent": "al-21",
-                    "title": "Don't Show This Message Again",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 197,
-                    "bitRate": 227,
-                    "track": 12,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 5755191,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/12 - Don\u2019t Show This Message Again.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-116",
-                    "parent": "al-21",
-                    "title": "Can I Help U?",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 103,
-                    "bitRate": 211,
+                    "playCount": 2,
+                    "created": "2021-02-23T04:24:48Z",
                     "track": 1,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
+                    "year": 2007,
+                    "genre": "Electronic",
                     "genres": [
                         {
-                            "name": "Hip-Hop"
+                            "name": "Electronic"
                         }
                     ],
-                    "size": 2811819,
+                    "size": 4010069,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/1 - Can I Help U?.mp3",
-                    "artists": [],
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
                     "albumArtists": [
                         {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
+                            "id": "ar-2",
+                            "name": "Synthetic"
                         }
                     ]
                 },
                 {
-                    "id": "so-127",
-                    "parent": "al-21",
-                    "title": "She Knows Me Now",
+                    "id": "so-54",
+                    "parent": "al-2",
+                    "title": "Red&GreenSmoke",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 209,
-                    "bitRate": 212,
-                    "track": 10,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 5690938,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/10 - She Knows Me Now (re-edit).mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-117",
-                    "parent": "al-21",
-                    "title": "Remember Something I Forgot",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 163,
-                    "bitRate": 229,
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
+                    "duration": 400,
+                    "bitRate": 62,
                     "userRating": 5,
-                    "track": 11,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
+                    "averageRating": 3,
+                    "playCount": 1,
+                    "created": "2021-02-23T04:24:48Z",
+                    "track": 5,
+                    "year": 2007,
+                    "genre": "Electronic",
                     "genres": [
                         {
-                            "name": "Hip-Hop"
+                            "name": "Electronic"
                         }
                     ],
-                    "size": 4816734,
+                    "size": 3209468,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/11 - Remember Something I Forgot.mp3",
-                    "artists": [],
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
                     "albumArtists": [
                         {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
+                            "id": "ar-2",
+                            "name": "Synthetic"
                         }
                     ]
                 },
                 {
-                    "id": "so-128",
-                    "parent": "al-21",
-                    "title": "Whenever You Wanna Call Me",
+                    "id": "so-55",
+                    "parent": "al-2",
+                    "title": "Red&GreenSmoke",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 188,
-                    "bitRate": 244,
-                    "track": 8,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
+                    "duration": 400,
+                    "bitRate": 62,
+                    "playCount": 1,
+                    "created": "2021-02-23T04:24:48Z",
+                    "track": 5,
+                    "year": 2007,
+                    "genre": "Electronic",
                     "genres": [
                         {
-                            "name": "Hip-Hop"
+                            "name": "Electronic"
                         }
                     ],
-                    "size": 5897286,
+                    "size": 3209886,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/8 - Whenever You Wanna Call Me.mp3",
-                    "artists": [],
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
                     "albumArtists": [
                         {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
+                            "id": "ar-2",
+                            "name": "Synthetic"
                         }
                     ]
                 },
                 {
-                    "id": "so-118",
-                    "parent": "al-21",
-                    "title": "As Pure as Possible",
+                    "id": "so-62",
+                    "parent": "al-2",
+                    "title": "PurpleSmoke",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 128,
-                    "bitRate": 229,
-                    "track": 9,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 3789410,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/9 - As Pure as Possible.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-129",
-                    "parent": "al-21",
-                    "title": "The Hunt",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 226,
-                    "bitRate": 219,
-                    "track": 16,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
-                    "genres": [
-                        {
-                            "name": "Hip-Hop"
-                        }
-                    ],
-                    "size": 6373874,
-                    "discNumber": 1,
-                    "suffix": "mp3",
-                    "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/16 - The Hunt.mp3",
-                    "artists": [],
-                    "albumArtists": [
-                        {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
-                        }
-                    ]
-                },
-                {
-                    "id": "so-119",
-                    "parent": "al-21",
-                    "title": "Sorry",
-                    "isDir": false,
-                    "isVideo": false,
-                    "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 200,
-                    "bitRate": 233,
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
+                    "duration": 390,
+                    "bitRate": 20,
+                    "userRating": 5,
+                    "playCount": 1,
+                    "created": "2021-02-23T04:24:48Z",
                     "track": 3,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
+                    "year": 2007,
+                    "genre": "Electronic",
                     "genres": [
                         {
-                            "name": "Hip-Hop"
+                            "name": "Electronic"
                         }
                     ],
-                    "size": 6018213,
+                    "size": 1014135,
+                    "discNumber": 1,
+                    "suffix": "wma",
+                    "contentType": "audio/x-ms-wma",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-63",
+                    "parent": "al-2",
+                    "title": "Red&GreenSmoke",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
+                    "duration": 400,
+                    "bitRate": 20,
+                    "userRating": 5,
+                    "playCount": 0,
+                    "created": "2021-02-23T04:24:48Z",
+                    "track": 5,
+                    "year": 2007,
+                    "genre": "Electronic",
+                    "genres": [
+                        {
+                            "name": "Electronic"
+                        }
+                    ],
+                    "size": 1041065,
+                    "discNumber": 1,
+                    "suffix": "wma",
+                    "contentType": "audio/x-ms-wma",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k22khS.wma",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-64",
+                    "parent": "al-2",
+                    "title": "Black&BlueSmoke",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
+                    "duration": 500,
+                    "bitRate": 20,
+                    "playCount": 0,
+                    "created": "2021-02-23T04:24:48Z",
+                    "track": 1,
+                    "year": 2007,
+                    "genre": "Electronic",
+                    "genres": [
+                        {
+                            "name": "Electronic"
+                        }
+                    ],
+                    "size": 1298295,
+                    "discNumber": 1,
+                    "suffix": "wma",
+                    "contentType": "audio/x-ms-wma",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-57",
+                    "parent": "al-2",
+                    "title": "PurpleSmoke",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
+                    "duration": 390,
+                    "bitRate": 62,
+                    "playCount": 0,
+                    "created": "2021-02-23T04:24:48Z",
+                    "track": 3,
+                    "year": 2007,
+                    "genre": "Electronic",
+                    "genres": [
+                        {
+                            "name": "Electronic"
+                        }
+                    ],
+                    "size": 3131519,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/3 - Sorry.mp3",
-                    "artists": [],
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
                     "albumArtists": [
                         {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
+                            "id": "ar-2",
+                            "name": "Synthetic"
                         }
                     ]
                 },
                 {
-                    "id": "so-120",
-                    "parent": "al-21",
-                    "title": "Freeze the Cut",
+                    "id": "so-58",
+                    "parent": "al-2",
+                    "title": "BrownSmoke",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "al-21",
-                    "album": "Forget and Remember",
-                    "artistId": "ar-36",
-                    "artist": "Comfort Fit",
-                    "coverArt": "al-21",
-                    "duration": 168,
-                    "bitRate": 241,
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
+                    "duration": 304,
+                    "bitRate": 62,
+                    "playCount": 0,
+                    "created": "2021-02-23T04:24:48Z",
                     "track": 4,
-                    "year": 2005,
-                    "genre": "Hip-Hop",
+                    "year": 2007,
+                    "genre": "Electronic",
                     "genres": [
                         {
-                            "name": "Hip-Hop"
+                            "name": "Electronic"
                         }
                     ],
-                    "size": 5216305,
+                    "size": 2441886,
                     "discNumber": 1,
                     "suffix": "mp3",
                     "contentType": "audio/mpeg",
-                    "path": "/media/upload/user/Comfort Fit/Forget And Remember/4 - Freeze The Cut.mp3",
-                    "artists": [],
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
                     "albumArtists": [
                         {
-                            "id": "ar-36",
-                            "name": "Comfort Fit"
+                            "id": "ar-2",
+                            "name": "Synthetic"
                         }
                     ]
+                },
+                {
+                    "id": "so-59",
+                    "parent": "al-2",
+                    "title": "YellowSmoke",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
+                    "duration": 290,
+                    "bitRate": 62,
+                    "userRating": 5,
+                    "playCount": 0,
+                    "created": "2021-02-23T04:24:48Z",
+                    "track": 2,
+                    "year": 2007,
+                    "genre": "Electronic",
+                    "genres": [
+                        {
+                            "name": "Electronic"
+                        }
+                    ],
+                    "size": 2325568,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ]
+                },
+                {
+                    "id": "so-60",
+                    "parent": "al-2",
+                    "title": "BrownSmoke",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
+                    "duration": 304,
+                    "bitRate": 20,
+                    "playCount": 0,
+                    "created": "2021-02-23T04:24:48Z",
+                    "track": 4,
+                    "year": 2007,
+                    "genre": "Electronic",
+                    "genres": [
+                        {
+                            "name": "Electronic"
+                        }
+                    ],
+                    "size": 792375,
+                    "discNumber": 1,
+                    "suffix": "wma",
+                    "contentType": "audio/x-ms-wma",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-61",
+                    "parent": "al-2",
+                    "title": "Red&GreenSmoke",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-2",
+                    "album": "Colorsmoke EP",
+                    "artistId": "ar-2",
+                    "artist": "Synthetic",
+                    "coverArt": "al-2",
+                    "duration": 400,
+                    "bitRate": 20,
+                    "playCount": 0,
+                    "created": "2021-02-23T04:24:48Z",
+                    "track": 5,
+                    "year": 2007,
+                    "genre": "Electronic",
+                    "genres": [
+                        {
+                            "name": "Electronic"
+                        }
+                    ],
+                    "size": 1044851,
+                    "discNumber": 1,
+                    "suffix": "wma",
+                    "contentType": "audio/x-ms-wma",
+                    "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k44khM.wma",
+                    "artists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-2",
+                            "name": "Synthetic"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
                 }
             ]
         }

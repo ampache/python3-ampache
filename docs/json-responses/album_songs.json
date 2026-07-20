@@ -1,54 +1,50 @@
 {
-    "total_count": 11,
-    "md5": "a348e002a9897aa6cab7b38c7dc147af",
+    "total_count": 6,
+    "md5": "00b72b7a8d7b621f7ceccff51fc7842a",
     "song": [
         {
-            "id": "90",
-            "title": "Invo",
-            "name": "Invo",
+            "id": "78",
+            "title": "inominavel p01",
+            "name": "inominavel p01",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "11",
+                "name": "structura",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "structura"
             },
             "artists": [
                 {
-                    "id": "14",
-                    "name": "Nofi\/found.",
+                    "id": "11",
+                    "name": "structura",
                     "prefix": null,
-                    "basename": "Nofi\/found."
+                    "basename": "structura"
                 }
             ],
             "album": {
-                "id": "8",
-                "name": "Nofi Devices",
+                "id": "18",
+                "name": "Inominavel (live.v.01)",
                 "prefix": null,
-                "basename": "Nofi Devices"
+                "basename": "Inominavel (live.v.01)"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "11",
+                "name": "structura",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "structura"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/01_Invo.mp3",
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/01_structura_-_inominavel_p01.mp3",
             "genre": [
                 {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
+                    "id": "3",
+                    "name": "Noise"
                 }
             ],
             "playlisttrack": 1,
-            "time": 47,
-            "year": 0,
+            "time": 84,
+            "year": 2007,
             "format": "mp3",
             "stream_format": "mp3",
             "bitrate": 192000,
@@ -57,77 +53,73 @@
             "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Invo.mp3",
-            "size": 1140815,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p01.mp3",
+            "size": 2036632,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
             "has_art": true,
             "flag": true,
             "rating": 5,
             "averagerating": null,
-            "playcount": 1,
+            "playcount": 2,
             "catalog": "1",
-            "composer": "Jeffrey Melton",
+            "composer": null,
             "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "comment": "http:\/\/enoughrecords.scene.org",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -3.05,
-            "replaygain_track_peak": 0.933,
+            "replaygain_track_gain": 0,
+            "replaygain_track_peak": 0,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "95",
-            "title": "Spirus Falls",
-            "name": "Spirus Falls",
+            "id": "77",
+            "title": "inominavel p02",
+            "name": "inominavel p02",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "11",
+                "name": "structura",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "structura"
             },
             "artists": [
                 {
-                    "id": "14",
-                    "name": "Nofi\/found.",
+                    "id": "11",
+                    "name": "structura",
                     "prefix": null,
-                    "basename": "Nofi\/found."
+                    "basename": "structura"
                 }
             ],
             "album": {
-                "id": "8",
-                "name": "Nofi Devices",
+                "id": "18",
+                "name": "Inominavel (live.v.01)",
                 "prefix": null,
-                "basename": "Nofi Devices"
+                "basename": "Inominavel (live.v.01)"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
+                "id": "11",
+                "name": "structura",
                 "prefix": null,
-                "basename": "Nofi\/found."
+                "basename": "structura"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/02_Spirus_Falls.mp3",
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/02_structura_-_inominavel_p02.mp3",
             "genre": [
                 {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
+                    "id": "3",
+                    "name": "Noise"
                 }
             ],
             "playlisttrack": 2,
-            "time": 327,
-            "year": 0,
+            "time": 237,
+            "year": 2007,
             "format": "mp3",
             "stream_format": "mp3",
             "bitrate": 192000,
@@ -136,185 +128,177 @@
             "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3",
-            "size": 7875775,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=77&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p02.mp3",
+            "size": 5723290,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 1,
-            "catalog": "1",
-            "composer": "Jeffrey Melton",
-            "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
-            "license": null,
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": -1.53,
-            "replaygain_track_peak": 1,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "93",
-            "title": "Scribnus 3",
-            "name": "Scribnus 3",
-            "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "artists": [
-                {
-                    "id": "14",
-                    "name": "Nofi\/found.",
-                    "prefix": null,
-                    "basename": "Nofi\/found."
-                }
-            ],
-            "album": {
-                "id": "8",
-                "name": "Nofi Devices",
-                "prefix": null,
-                "basename": "Nofi Devices"
-            },
-            "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/03_Scribnus_3.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "playlisttrack": 3,
-            "time": 641,
-            "year": 0,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 192000,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3",
-            "size": 15400002,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": null,
-            "averagerating": null,
-            "playcount": 4,
-            "catalog": "1",
-            "composer": "Jeffrey Melton",
-            "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
-            "license": null,
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": 1.53,
-            "replaygain_track_peak": 0.989,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "85",
-            "title": "Beq Ultra Fat",
-            "name": "Beq Ultra Fat",
-            "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "artists": [
-                {
-                    "id": "14",
-                    "name": "Nofi\/found.",
-                    "prefix": null,
-                    "basename": "Nofi\/found."
-                }
-            ],
-            "album": {
-                "id": "8",
-                "name": "Nofi Devices",
-                "prefix": null,
-                "basename": "Nofi Devices"
-            },
-            "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/04_Beq_Ultra_Fat.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "playlisttrack": 4,
-            "time": 413,
-            "year": 0,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 192000,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3",
-            "size": 9935896,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
             "catalog": "1",
-            "composer": "Jeffrey Melton",
+            "composer": null,
             "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "comment": "http:\/\/enoughrecords.scene.org",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": 0.94,
-            "replaygain_track_peak": 0.989,
+            "replaygain_track_gain": 0,
+            "replaygain_track_peak": 0,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "74",
+            "title": "inominavel p03",
+            "name": "inominavel p03",
+            "artist": {
+                "id": "11",
+                "name": "structura",
+                "prefix": null,
+                "basename": "structura"
+            },
+            "artists": [
+                {
+                    "id": "11",
+                    "name": "structura",
+                    "prefix": null,
+                    "basename": "structura"
+                }
+            ],
+            "album": {
+                "id": "18",
+                "name": "Inominavel (live.v.01)",
+                "prefix": null,
+                "basename": "Inominavel (live.v.01)"
+            },
+            "albumartist": {
+                "id": "11",
+                "name": "structura",
+                "prefix": null,
+                "basename": "structura"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 3,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/03_structura_-_inominavel_p03.mp3",
+            "genre": [
+                {
+                    "id": "3",
+                    "name": "Noise"
+                }
+            ],
+            "playlisttrack": 3,
+            "time": 143,
+            "year": 2007,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=74&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p03.mp3",
+            "size": 3449255,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "catalog": "1",
+            "composer": null,
+            "channels": 2,
+            "comment": "http:\/\/enoughrecords.scene.org",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": 0,
+            "replaygain_track_peak": 0,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "76",
+            "title": "inominavel p04",
+            "name": "inominavel p04",
+            "artist": {
+                "id": "11",
+                "name": "structura",
+                "prefix": null,
+                "basename": "structura"
+            },
+            "artists": [
+                {
+                    "id": "11",
+                    "name": "structura",
+                    "prefix": null,
+                    "basename": "structura"
+                }
+            ],
+            "album": {
+                "id": "18",
+                "name": "Inominavel (live.v.01)",
+                "prefix": null,
+                "basename": "Inominavel (live.v.01)"
+            },
+            "albumartist": {
+                "id": "11",
+                "name": "structura",
+                "prefix": null,
+                "basename": "structura"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/04_structura_-_inominavel_p04.mp3",
+            "genre": [
+                {
+                    "id": "3",
+                    "name": "Noise"
+                }
+            ],
+            "playlisttrack": 4,
+            "time": 317,
+            "year": 2007,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 192000,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=76&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p04.mp3",
+            "size": 7629821,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": 3,
+            "averagerating": 3,
+            "playcount": 1,
+            "catalog": "1",
+            "composer": null,
+            "channels": 2,
+            "comment": "http:\/\/enoughrecords.scene.org",
+            "license": null,
+            "publisher": "archive.org",
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": 0,
+            "replaygain_track_peak": 0,
             "r128_album_gain": null,
             "r128_track_gain": null
         }
