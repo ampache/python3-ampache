@@ -29,12 +29,12 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
         <flag>0</flag>
-        <preciserating/>
-        <rating/>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
         <averagerating/>
-        <playcount/>
+        <playcount>1</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
@@ -69,7 +69,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -109,12 +109,12 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
         <averagerating/>
-        <playcount>1</playcount>
+        <playcount/>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>1</channels>
@@ -149,7 +149,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -189,7 +189,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -229,10 +229,10 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[6]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
         <flag>0</flag>
-        <preciserating/>
-        <rating/>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
         <averagerating/>
         <playcount/>
         <catalog>1</catalog>
@@ -269,7 +269,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[7]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -309,7 +309,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -350,7 +350,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -374,7 +374,7 @@
     <type>compilation</type>
     <disk>1</disk>
     <tag id="7" count="1"><![CDATA[Punk]]></tag>
-    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
@@ -399,17 +399,17 @@
         <playlisttrack>1</playlisttrack>
         <time>91</time>
         <year>1996</year>
-        <bitrate>81137</bitrate>
+        <bitrate>80962</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.mp3]]></url>
-        <size>932235</size>
+        <size>930226</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -439,17 +439,17 @@
         <playlisttrack>2</playlisttrack>
         <time>378</time>
         <year>1996</year>
-        <bitrate>90078</bitrate>
+        <bitrate>89965</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3]]></url>
-        <size>4271173</size>
+        <size>4265791</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -479,17 +479,17 @@
         <playlisttrack>3</playlisttrack>
         <time>420</time>
         <year>1996</year>
-        <bitrate>84528</bitrate>
+        <bitrate>84423</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3]]></url>
-        <size>4449963</size>
+        <size>4444403</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -519,22 +519,22 @@
         <playlisttrack>4</playlisttrack>
         <time>404</time>
         <year>1996</year>
-        <bitrate>100174</bitrate>
+        <bitrate>100053</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3]]></url>
-        <size>5072883</size>
+        <size>5066698</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
         <flag>0</flag>
-        <preciserating/>
-        <rating/>
-        <averagerating/>
-        <playcount/>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
+        <averagerating>4.5</averagerating>
+        <playcount>1</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
@@ -559,17 +559,17 @@
         <playlisttrack>5</playlisttrack>
         <time>164</time>
         <year>1996</year>
-        <bitrate>106806</bitrate>
+        <bitrate>106647</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=102&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Moremque%20Sinistrum%20Sacrorum.mp3]]></url>
-        <size>2206257</size>
+        <size>2202971</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -599,22 +599,22 @@
         <playlisttrack>6</playlisttrack>
         <time>427</time>
         <year>1996</year>
-        <bitrate>143953</bitrate>
+        <bitrate>143788</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3]]></url>
-        <size>7704860</size>
+        <size>7696008</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
         <flag>0</flag>
-        <preciserating/>
-        <rating/>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
         <averagerating/>
-        <playcount/>
+        <playcount>1</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
@@ -639,17 +639,17 @@
         <playlisttrack>7</playlisttrack>
         <time>452</time>
         <year>1996</year>
-        <bitrate>138496</bitrate>
+        <bitrate>138338</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3]]></url>
-        <size>7835220</size>
+        <size>7826238</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -679,17 +679,17 @@
         <playlisttrack>8</playlisttrack>
         <time>557</time>
         <year>1996</year>
-        <bitrate>139609</bitrate>
+        <bitrate>139453</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=105&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent%20-Instrumental%20Re-Recording-.mp3]]></url>
-        <size>9733002</size>
+        <size>9722091</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -719,22 +719,22 @@
         <playlisttrack>9</playlisttrack>
         <time>980</time>
         <year>1996</year>
-        <bitrate>66988</bitrate>
+        <bitrate>66912</bitrate>
         <rate>44100</rate>
         <mode><![CDATA[vbr]]></mode>
         <mime><![CDATA[application/ogg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.mp3]]></url>
-        <size>8229246</size>
+        <size>8219821</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
         <flag>0</flag>
-        <preciserating/>
-        <rating/>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
         <averagerating/>
-        <playcount/>
+        <playcount>1</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
@@ -751,7 +751,7 @@
     <songcount>9</songcount>
     <type/>
     <disk>1</disk>
-    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=63&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating/>
     <rating/>
@@ -782,17 +782,17 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
-        <size>4010069</size>
+        <size>4009941</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=423&name=art.jpg]]></art>
         <flag>0</flag>
-        <preciserating/>
-        <rating/>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
         <averagerating/>
-        <playcount/>
+        <playcount>1</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
@@ -828,8 +828,8 @@
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=423&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -866,15 +866,15 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
-        <size>2325568</size>
+        <size>2325440</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=423&name=art.jpg]]></art>
         <flag>0</flag>
-        <preciserating/>
-        <rating/>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
         <averagerating/>
         <playcount/>
         <catalog>1</catalog>
@@ -912,13 +912,13 @@
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=423&name=art.jpg]]></art>
         <flag>0</flag>
-        <preciserating/>
-        <rating/>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
         <averagerating/>
-        <playcount/>
+        <playcount>1</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
@@ -950,12 +950,12 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
-        <size>3131519</size>
+        <size>3131391</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=423&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -996,13 +996,13 @@
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=423&name=art.jpg]]></art>
         <flag>0</flag>
-        <preciserating/>
-        <rating/>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
         <averagerating/>
-        <playcount/>
+        <playcount>1</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
@@ -1034,12 +1034,12 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
-        <size>2441886</size>
+        <size>2441758</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=423&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -1080,8 +1080,8 @@
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=423&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -1118,17 +1118,17 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-        <size>3209468</size>
+        <size>3209340</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=423&name=art.jpg]]></art>
         <flag>0</flag>
-        <preciserating/>
-        <rating/>
-        <averagerating/>
-        <playcount/>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
+        <averagerating>3</averagerating>
+        <playcount>1</playcount>
         <catalog>1</catalog>
         <composer><![CDATA[]]></composer>
         <channels>1</channels>
@@ -1160,12 +1160,12 @@
         <mode><![CDATA[cbr]]></mode>
         <mime><![CDATA[audio/mpeg]]></mime>
         <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-        <size>3209886</size>
+        <size>3209758</size>
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=423&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -1206,8 +1206,8 @@
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=423&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -1248,11 +1248,11 @@
         <mbid><![CDATA[]]></mbid>
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[1]]></artist_mbid>
-        <albumartist_mbid><![CDATA[1]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
+        <albumartist_mbid><![CDATA[]]></albumartist_mbid>
+        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=423&name=art.jpg]]></art>
         <flag>0</flag>
-        <preciserating/>
-        <rating/>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
         <averagerating/>
         <playcount/>
         <catalog>1</catalog>
@@ -1273,7 +1273,7 @@
     <type/>
     <disk>1</disk>
     <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=423&name=art.jpg]]></art>
     <flag>1</flag>
     <preciserating>5</preciserating>
     <rating>5</rating>
@@ -1308,10 +1308,10 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&id=23&name=art.jpg]]></art>
         <flag>0</flag>
-        <preciserating/>
-        <rating/>
+        <preciserating>5</preciserating>
+        <rating>5</rating>
         <averagerating/>
         <playcount>1</playcount>
         <catalog>1</catalog>
@@ -1348,7 +1348,7 @@
         <album_mbid><![CDATA[]]></album_mbid>
         <artist_mbid><![CDATA[]]></artist_mbid>
         <albumartist_mbid><![CDATA[]]></albumartist_mbid>
-        <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&id=23&name=art.jpg]]></art>
         <flag>0</flag>
         <preciserating/>
         <rating/>
@@ -1370,7 +1370,7 @@
     <songcount>2</songcount>
     <type/>
     <disk>1</disk>
-    <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album]]></art>
+    <art><![CDATA[https://music.com.au/image.php?object_id=9&object_type=album&id=23&name=art.jpg]]></art>
     <flag>0</flag>
     <preciserating>3</preciserating>
     <rating>3</rating>

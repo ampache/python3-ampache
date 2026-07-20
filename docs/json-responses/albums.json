@@ -1,28 +1,32 @@
 [
     {
-        "id": "2",
-        "name": "Colorsmoke EP",
+        "id": "8",
+        "name": "Nofi Devices",
         "artist": {
-            "id": "2",
-            "name": "Synthetic"
+            "id": "14",
+            "name": "Nofi\/found."
         },
-        "time": 4568,
-        "year": 2007,
-        "tracks": 12,
-        "songcount": 12,
+        "time": 4423,
+        "year": 0,
+        "tracks": 11,
+        "songcount": 11,
         "type": null,
         "disk": 1,
         "tag": [
             {
-                "id": "1",
-                "name": "Electronic"
+                "id": "5",
+                "name": "Electronica"
+            },
+            {
+                "id": "6",
+                "name": "Dance"
             }
         ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": 3,
+        "art": "http:\/\/localhost:8989\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+        "flag": 0,
+        "preciserating": 2,
+        "rating": 2,
+        "averagerating": null,
         "mbid": null
     }
 ]

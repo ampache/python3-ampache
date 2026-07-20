@@ -1,28 +1,28 @@
 [
     {
-        "id": "2",
-        "name": "Colorsmoke EP",
+        "id": "7",
+        "name": "Sensorisk Deprivation",
         "artist": {
-            "id": "2",
-            "name": "Synthetic"
+            "id": "13",
+            "name": "IOK-1"
         },
-        "time": 4568,
-        "year": 2007,
-        "tracks": 12,
-        "songcount": 12,
+        "time": 3428,
+        "year": 2011,
+        "tracks": 4,
+        "songcount": 4,
         "type": null,
         "disk": 1,
         "tag": [
             {
-                "id": "1",
-                "name": "Electronic"
+                "id": "4",
+                "name": "Dark Ambient"
             }
         ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": 3,
+        "art": "http:\/\/localhost:8989\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
         "mbid": null
     }
 ]

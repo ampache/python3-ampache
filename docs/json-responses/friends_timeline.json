@@ -1,10 +1,10 @@
 {
     "timeline": [
         {
-            "id": "227",
-            "date": 1739510302,
+            "id": "364",
+            "date": 1784540015,
             "object_type": "song",
-            "object_id": "93",
+            "object_id": "57",
             "action": "userflag",
             "user": [
                 {
@@ -14,23 +14,10 @@
             ]
         },
         {
-            "id": "228",
-            "date": 1739510302,
-            "object_type": "song",
-            "object_id": "93",
-            "action": "rating",
-            "user": [
-                {
-                    "id": "4",
-                    "username": "user"
-                }
-            ]
-        },
-        {
-            "id": "226",
-            "date": 1739510297,
+            "id": "363",
+            "date": 1783648366,
             "object_type": "user",
-            "object_id": "10",
+            "object_id": "4",
             "action": "follow",
             "user": [
                 {
@@ -40,11 +27,24 @@
             ]
         },
         {
-            "id": "224",
-            "date": 1739510293,
+            "id": "362",
+            "date": 1783648359,
             "object_type": "song",
-            "object_id": "93",
+            "object_id": "80",
             "action": "userflag",
+            "user": [
+                {
+                    "id": "4",
+                    "username": "user"
+                }
+            ]
+        },
+        {
+            "id": "361",
+            "date": 1783648005,
+            "object_type": "user",
+            "object_id": "4",
+            "action": "follow",
             "user": [
                 {
                     "id": "4",

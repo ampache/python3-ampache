@@ -1,142 +1,43 @@
 [
     {
-        "id": "110",
-        "title": "I wanna walk through the fire",
-        "name": "I wanna walk through the fire",
+        "id": "83",
+        "title": "Sensorisk Deprivation",
+        "name": "Sensorisk Deprivation",
         "artist": {
-            "id": "23",
-            "name": "Manic Notion"
+            "id": "13",
+            "name": "IOK-1"
         },
         "album": {
-            "id": "12",
-            "name": "Buried in Nausea"
+            "id": "7",
+            "name": "Sensorisk Deprivation"
         },
         "albumartist": {
-            "id": "19",
-            "name": "Various Artists"
+            "id": "13",
+            "name": "IOK-1"
         },
         "disk": 1,
         "track": 1,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/01ManicNotion-IWannaWalkThroughTheFire.m4a",
-        "tag": [],
+        "filename": "\/media\/music\/IOK-1\/Sensorisk Deprivation\/01_-_IOK-1_-_Sensorisk_Deprivation.flac",
+        "tag": [
+            {
+                "id": "4",
+                "name": "Dark Ambient"
+            }
+        ],
         "playlisttrack": 1,
-        "time": 197,
-        "year": 2012,
-        "bitrate": 267320,
+        "time": 818,
+        "year": 2011,
+        "bitrate": 385823,
         "rate": 44100,
         "mode": "vbr",
-        "mime": "audio\/mp4",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.mp3",
-        "size": 6651911,
+        "mime": "audio\/flac",
+        "url": "http:\/\/localhost:8989\/play\/index.php?ssid=ee11cbb19052e40b07aac0ca060c23ee&type=song&oid=83&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Sensorisk%20Deprivation.mp3",
+        "size": 39473388,
         "mbid": null,
         "album_mbid": null,
         "artist_mbid": null,
         "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": null,
-        "channels": 2,
-        "comment": null,
-        "license": null,
-        "publisher": null,
-        "language": null,
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": -5.15,
-        "replaygain_track_peak": 0.989,
-        "genre": []
-    },
-    {
-        "id": "114",
-        "title": "He is the Master of War",
-        "name": "He is the Master of War",
-        "artist": {
-            "id": "26",
-            "name": "Stress Builds Character"
-        },
-        "album": {
-            "id": "12",
-            "name": "Buried in Nausea"
-        },
-        "albumartist": {
-            "id": "19",
-            "name": "Various Artists"
-        },
-        "disk": 1,
-        "track": 2,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a",
-        "tag": [],
-        "playlisttrack": 2,
-        "time": 233,
-        "year": 2012,
-        "bitrate": 256245,
-        "rate": 44100,
-        "mode": "vbr",
-        "mime": "audio\/mp4",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.mp3",
-        "size": 7535126,
-        "mbid": null,
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": null,
-        "channels": 2,
-        "comment": null,
-        "license": null,
-        "publisher": null,
-        "language": null,
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": -10.74,
-        "replaygain_track_peak": 1.035,
-        "genre": []
-    },
-    {
-        "id": "109",
-        "title": "Dance with the Devil",
-        "name": "Dance with the Devil",
-        "artist": {
-            "id": "34",
-            "name": "Comedown Kid"
-        },
-        "album": {
-            "id": "12",
-            "name": "Buried in Nausea"
-        },
-        "albumartist": {
-            "id": "19",
-            "name": "Various Artists"
-        },
-        "disk": 1,
-        "track": 3,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
-        "tag": [],
-        "playlisttrack": 3,
-        "time": 116,
-        "year": 2012,
-        "bitrate": 32582,
-        "rate": 44100,
-        "mode": "cbr",
-        "mime": "audio\/x-ms-wma",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
-        "size": 483444,
-        "mbid": null,
-        "album_mbid": null,
-        "artist_mbid": null,
-        "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+        "art": "http:\/\/localhost:8989\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -144,51 +45,182 @@
         "playcount": 1,
         "catalog": 1,
         "composer": null,
-        "channels": 1,
-        "comment": null,
+        "channels": 2,
+        "comment": "DNA Production release\r\nCatalogue # DNA 119",
         "license": null,
-        "publisher": null,
+        "publisher": "archive.org",
         "language": null,
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": null,
-        "replaygain_track_peak": null,
-        "genre": []
+        "replaygain_track_gain": 1.11,
+        "replaygain_track_peak": 0.977,
+        "genre": [
+            {
+                "name": "Dark Ambient"
+            }
+        ]
     },
     {
-        "id": "113",
-        "title": "Representin",
-        "name": "Representin",
+        "id": "82",
+        "title": "Vanvett",
+        "name": "Vanvett",
         "artist": {
-            "id": "32",
-            "name": "Shorty Mac"
+            "id": "13",
+            "name": "IOK-1"
         },
         "album": {
-            "id": "12",
-            "name": "Buried in Nausea"
+            "id": "7",
+            "name": "Sensorisk Deprivation"
         },
         "albumartist": {
-            "id": "19",
-            "name": "Various Artists"
+            "id": "13",
+            "name": "IOK-1"
         },
         "disk": 1,
-        "track": 4,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
-        "tag": [],
-        "playlisttrack": 4,
-        "time": 234,
-        "year": 2012,
-        "bitrate": 123814,
+        "track": 2,
+        "filename": "\/media\/music\/IOK-1\/Sensorisk Deprivation\/02_-_IOK-1_-_Vanvett.flac",
+        "tag": [
+            {
+                "id": "4",
+                "name": "Dark Ambient"
+            }
+        ],
+        "playlisttrack": 2,
+        "time": 825,
+        "year": 2011,
+        "bitrate": 371855,
         "rate": 44100,
         "mode": "vbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
-        "size": 3628327,
+        "mime": "audio\/flac",
+        "url": "http:\/\/localhost:8989\/play\/index.php?ssid=ee11cbb19052e40b07aac0ca060c23ee&type=song&oid=82&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3",
+        "size": 38389422,
         "mbid": null,
         "album_mbid": null,
         "artist_mbid": null,
         "albumartist_mbid": null,
-        "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+        "art": "http:\/\/localhost:8989\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
+        "flag": 1,
+        "preciserating": 5,
+        "rating": 5,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 1,
+        "composer": null,
+        "channels": 2,
+        "comment": "DNA Production release\r\nCatalogue # DNA 119",
+        "license": null,
+        "publisher": "archive.org",
+        "language": null,
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": -2.57,
+        "replaygain_track_peak": 0.977,
+        "genre": [
+            {
+                "name": "Dark Ambient"
+            }
+        ]
+    },
+    {
+        "id": "81",
+        "title": "Galenskap",
+        "name": "Galenskap",
+        "artist": {
+            "id": "13",
+            "name": "IOK-1"
+        },
+        "album": {
+            "id": "7",
+            "name": "Sensorisk Deprivation"
+        },
+        "albumartist": {
+            "id": "13",
+            "name": "IOK-1"
+        },
+        "disk": 1,
+        "track": 3,
+        "filename": "\/media\/music\/IOK-1\/Sensorisk Deprivation\/03_-_IOK-1_-_Galenskap.flac",
+        "tag": [
+            {
+                "id": "4",
+                "name": "Dark Ambient"
+            }
+        ],
+        "playlisttrack": 3,
+        "time": 998,
+        "year": 2011,
+        "bitrate": 389683,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/flac",
+        "url": "http:\/\/localhost:8989\/play\/index.php?ssid=ee11cbb19052e40b07aac0ca060c23ee&type=song&oid=81&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Galenskap.mp3",
+        "size": 48633049,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "http:\/\/localhost:8989\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
+        "flag": 1,
+        "preciserating": 5,
+        "rating": 5,
+        "averagerating": null,
+        "playcount": 1,
+        "catalog": 1,
+        "composer": null,
+        "channels": 2,
+        "comment": "DNA Production release\r\nCatalogue # DNA 119",
+        "license": null,
+        "publisher": "archive.org",
+        "language": null,
+        "replaygain_album_gain": null,
+        "replaygain_album_peak": null,
+        "replaygain_track_gain": -5.33,
+        "replaygain_track_peak": 0.977,
+        "genre": [
+            {
+                "name": "Dark Ambient"
+            }
+        ]
+    },
+    {
+        "id": "84",
+        "title": "Vansinne",
+        "name": "Vansinne",
+        "artist": {
+            "id": "13",
+            "name": "IOK-1"
+        },
+        "album": {
+            "id": "7",
+            "name": "Sensorisk Deprivation"
+        },
+        "albumartist": {
+            "id": "13",
+            "name": "IOK-1"
+        },
+        "disk": 1,
+        "track": 4,
+        "filename": "\/media\/music\/IOK-1\/Sensorisk Deprivation\/04_-_IOK-1_-_Vansinne.flac",
+        "tag": [
+            {
+                "id": "4",
+                "name": "Dark Ambient"
+            }
+        ],
+        "playlisttrack": 4,
+        "time": 787,
+        "year": 2011,
+        "bitrate": 713176,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/flac",
+        "url": "http:\/\/localhost:8989\/play\/index.php?ssid=ee11cbb19052e40b07aac0ca060c23ee&type=song&oid=84&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vansinne.mp3",
+        "size": 70182824,
+        "mbid": null,
+        "album_mbid": null,
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "http:\/\/localhost:8989\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -197,14 +229,18 @@
         "catalog": 1,
         "composer": null,
         "channels": 2,
-        "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
+        "comment": "DNA Production release\r\nCatalogue # DNA 119",
         "license": null,
         "publisher": "archive.org",
         "language": null,
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": 1.91,
-        "replaygain_track_peak": 0.851,
-        "genre": []
+        "replaygain_track_gain": -5.35,
+        "replaygain_track_peak": 0.7,
+        "genre": [
+            {
+                "name": "Dark Ambient"
+            }
+        ]
     }
 ]

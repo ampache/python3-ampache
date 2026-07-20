@@ -8,7 +8,7 @@
         "last_add": "8\/3\/21, 12:04\u202fAM",
         "last_clean": "8\/3\/21, 12:05\u202fAM",
         "last_update": "7\/21\/21, 2:51\u202fAM",
-        "path": "\/mnt\/files-music\/ampache-test\/music",
+        "path": "\/media\/music",
         "rename_pattern": "%T - %t",
         "sort_pattern": "%a\/%A"
     },
@@ -21,7 +21,7 @@
         "last_add": "4\/1\/21, 7:03\u202fAM",
         "last_clean": "4\/1\/21, 7:03\u202fAM",
         "last_update": "5\/18\/23, 7:13\u202fAM",
-        "path": "\/mnt\/files-music\/ampache-test\/podcast",
+        "path": "\/media\/podcast",
         "rename_pattern": "%T - %t",
         "sort_pattern": "%a\/%A"
     },
@@ -34,7 +34,7 @@
         "last_add": "4\/1\/21, 7:03\u202fAM",
         "last_clean": "4\/1\/21, 7:03\u202fAM",
         "last_update": "Never",
-        "path": "\/mnt\/files-music\/ampache-test\/upload",
+        "path": "\/media\/upload",
         "rename_pattern": "%T - %t",
         "sort_pattern": "%a\/%A"
     },
@@ -44,10 +44,10 @@
         "type": "local",
         "gather_types": "video",
         "enabled": true,
-        "last_add": "8\/3\/21, 12:04\u202fAM",
+        "last_add": "7\/10\/26, 12:29\u202fAM",
         "last_clean": "8\/3\/21, 12:05\u202fAM",
         "last_update": "Never",
-        "path": "\/mnt\/files-music\/ampache-test\/video",
+        "path": "\/media\/video",
         "rename_pattern": "%a - %t (%y)",
         "sort_pattern": ""
     }

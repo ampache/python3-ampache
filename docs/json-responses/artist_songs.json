@@ -1,43 +1,38 @@
 [
     {
-        "id": "56",
-        "title": "Black&BlueSmoke",
-        "name": "Black&BlueSmoke",
+        "id": "114",
+        "title": "He is the Master of War",
+        "name": "He is the Master of War",
         "artist": {
-            "id": "2",
-            "name": "Synthetic"
+            "id": "26",
+            "name": "Stress Builds Character"
         },
         "album": {
-            "id": "2",
-            "name": "Colorsmoke EP"
+            "id": "12",
+            "name": "Buried in Nausea"
         },
         "albumartist": {
-            "id": "2",
-            "name": "Synthetic"
+            "id": "19",
+            "name": "Various Artists"
         },
         "disk": 1,
-        "track": 1,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
-        "tag": [
-            {
-                "id": "1",
-                "name": "Electronic"
-            }
-        ],
+        "track": 2,
+        "filename": "\/media\/music\/Various Artists\/Buried In Nausea\/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a",
+        "tag": [],
         "playlisttrack": 1,
-        "time": 500,
-        "year": 2007,
-        "bitrate": 64000,
-        "rate": 22050,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-        "size": 4010069,
+        "time": 233,
+        "year": 2012,
+        "bitrate": 256245,
+        "rate": 44100,
+        "mode": "vbr",
+        "mime": "audio\/mp4",
+        "url": "http:\/\/localhost:8989\/play\/index.php?ssid=ee11cbb19052e40b07aac0ca060c23ee&type=song&oid=114&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.mp3",
+        "size": 7535126,
         "mbid": null,
         "album_mbid": null,
-        "artist_mbid": "1",
-        "albumartist_mbid": "1",
-        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+        "artist_mbid": null,
+        "albumartist_mbid": null,
+        "art": "http:\/\/localhost:8989\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
         "flag": 0,
         "preciserating": null,
         "rating": null,
@@ -48,199 +43,12 @@
         "channels": 2,
         "comment": null,
         "license": null,
-        "publisher": "20kbps rec.",
+        "publisher": null,
         "language": null,
         "replaygain_album_gain": null,
         "replaygain_album_peak": null,
-        "replaygain_track_gain": -5.11,
-        "replaygain_track_peak": 1,
-        "genre": [
-            {
-                "name": "Electronic"
-            }
-        ]
-    },
-    {
-        "id": "64",
-        "title": "Black&BlueSmoke",
-        "name": "Black&BlueSmoke",
-        "artist": {
-            "id": "2",
-            "name": "Synthetic"
-        },
-        "album": {
-            "id": "2",
-            "name": "Colorsmoke EP"
-        },
-        "albumartist": {
-            "id": "2",
-            "name": "Synthetic"
-        },
-        "disk": 1,
-        "track": 1,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
-        "tag": [
-            {
-                "id": "1",
-                "name": "Electronic"
-            }
-        ],
-        "playlisttrack": 2,
-        "time": 500,
-        "year": 2007,
-        "bitrate": 20627,
-        "rate": 22050,
-        "mode": "cbr",
-        "mime": "audio\/x-ms-wma",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-        "size": 1298295,
-        "mbid": null,
-        "album_mbid": null,
-        "artist_mbid": "1",
-        "albumartist_mbid": "1",
-        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": null,
-        "channels": 2,
-        "comment": "Made with Sony ACID 5",
-        "license": null,
-        "publisher": "20kbps rec.",
-        "language": null,
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": null,
-        "replaygain_track_peak": null,
-        "genre": [
-            {
-                "name": "Electronic"
-            }
-        ]
-    },
-    {
-        "id": "65",
-        "title": "YellowSmoke",
-        "name": "YellowSmoke",
-        "artist": {
-            "id": "2",
-            "name": "Synthetic"
-        },
-        "album": {
-            "id": "2",
-            "name": "Colorsmoke EP"
-        },
-        "albumartist": {
-            "id": "2",
-            "name": "Synthetic"
-        },
-        "disk": 1,
-        "track": 2,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/02-Synthetic_-_YellowSmoke20k22hS.wma",
-        "tag": [
-            {
-                "id": "1",
-                "name": "Electronic"
-            }
-        ],
-        "playlisttrack": 3,
-        "time": 290,
-        "year": 2007,
-        "bitrate": 20627,
-        "rate": 22050,
-        "mode": "cbr",
-        "mime": "audio\/x-ms-wma",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
-        "size": 754935,
-        "mbid": null,
-        "album_mbid": null,
-        "artist_mbid": "1",
-        "albumartist_mbid": "1",
-        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": null,
-        "channels": 2,
-        "comment": "Made with Sony ACID 5",
-        "license": null,
-        "publisher": "20kbps rec.",
-        "language": null,
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": null,
-        "replaygain_track_peak": null,
-        "genre": [
-            {
-                "name": "Electronic"
-            }
-        ]
-    },
-    {
-        "id": "59",
-        "title": "YellowSmoke",
-        "name": "YellowSmoke",
-        "artist": {
-            "id": "2",
-            "name": "Synthetic"
-        },
-        "album": {
-            "id": "2",
-            "name": "Colorsmoke EP"
-        },
-        "albumartist": {
-            "id": "2",
-            "name": "Synthetic"
-        },
-        "disk": 1,
-        "track": 2,
-        "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
-        "tag": [
-            {
-                "id": "1",
-                "name": "Electronic"
-            }
-        ],
-        "playlisttrack": 4,
-        "time": 290,
-        "year": 2007,
-        "bitrate": 64000,
-        "rate": 22050,
-        "mode": "cbr",
-        "mime": "audio\/mpeg",
-        "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
-        "size": 2325568,
-        "mbid": null,
-        "album_mbid": null,
-        "artist_mbid": "1",
-        "albumartist_mbid": "1",
-        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-        "flag": 0,
-        "preciserating": null,
-        "rating": null,
-        "averagerating": null,
-        "playcount": 0,
-        "catalog": 1,
-        "composer": null,
-        "channels": 2,
-        "comment": null,
-        "license": null,
-        "publisher": "20kbps rec.",
-        "language": null,
-        "replaygain_album_gain": null,
-        "replaygain_album_peak": null,
-        "replaygain_track_gain": 2.75,
-        "replaygain_track_peak": 0.716,
-        "genre": [
-            {
-                "name": "Electronic"
-            }
-        ]
+        "replaygain_track_gain": -10.74,
+        "replaygain_track_peak": 1.035,
+        "genre": []
     }
 ]

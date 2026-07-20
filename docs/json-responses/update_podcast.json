@@ -1,3 +1,6 @@
 {
-    "success": "Synced episodes for podcast: 10"
+    "error": {
+        "code": "400",
+        "message": "Failed to sync episodes for podcast: 78"
+    }
 }

@@ -1,602 +1,53 @@
 [
     {
-        "id": "2",
-        "name": "Colorsmoke EP",
+        "id": "7",
+        "name": "Sensorisk Deprivation",
         "artist": {
-            "id": "2",
-            "name": "Synthetic"
+            "id": "13",
+            "name": "IOK-1"
         },
-        "time": 4568,
-        "year": 2007,
+        "time": 3428,
+        "year": 2011,
         "tracks": [
             {
-                "id": "56",
-                "title": "Black&BlueSmoke",
-                "name": "Black&BlueSmoke",
+                "id": "83",
+                "title": "Sensorisk Deprivation",
+                "name": "Sensorisk Deprivation",
                 "artist": {
-                    "id": "2",
-                    "name": "Synthetic"
+                    "id": "13",
+                    "name": "IOK-1"
                 },
                 "album": {
-                    "id": "2",
-                    "name": "Colorsmoke EP"
+                    "id": "7",
+                    "name": "Sensorisk Deprivation"
                 },
                 "albumartist": {
-                    "id": "2",
-                    "name": "Synthetic"
+                    "id": "13",
+                    "name": "IOK-1"
                 },
                 "disk": 1,
                 "track": 1,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
+                "filename": "\/media\/music\/IOK-1\/Sensorisk Deprivation\/01_-_IOK-1_-_Sensorisk_Deprivation.flac",
                 "tag": [
                     {
-                        "id": "1",
-                        "name": "Electronic"
+                        "id": "4",
+                        "name": "Dark Ambient"
                     }
                 ],
                 "playlisttrack": 1,
-                "time": 500,
-                "year": 2007,
-                "bitrate": 64000,
-                "rate": 22050,
-                "mode": "cbr",
-                "mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-                "size": 4010069,
+                "time": 818,
+                "year": 2011,
+                "bitrate": 385823,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "audio\/flac",
+                "url": "http:\/\/localhost:8989\/play\/index.php?ssid=ee11cbb19052e40b07aac0ca060c23ee&type=song&oid=83&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Sensorisk%20Deprivation.mp3",
+                "size": 39473388,
                 "mbid": null,
                 "album_mbid": null,
-                "artist_mbid": "1",
-                "albumartist_mbid": "1",
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 2,
-                "comment": null,
-                "license": null,
-                "publisher": "20kbps rec.",
-                "language": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": -5.11,
-                "replaygain_track_peak": 1,
-                "genre": [
-                    {
-                        "name": "Electronic"
-                    }
-                ]
-            },
-            {
-                "id": "64",
-                "title": "Black&BlueSmoke",
-                "name": "Black&BlueSmoke",
-                "artist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "album": {
-                    "id": "2",
-                    "name": "Colorsmoke EP"
-                },
-                "albumartist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "disk": 1,
-                "track": 1,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
-                "tag": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "playlisttrack": 2,
-                "time": 500,
-                "year": 2007,
-                "bitrate": 20627,
-                "rate": 22050,
-                "mode": "cbr",
-                "mime": "audio\/x-ms-wma",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3",
-                "size": 1298295,
-                "mbid": null,
-                "album_mbid": null,
-                "artist_mbid": "1",
-                "albumartist_mbid": "1",
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 2,
-                "comment": "Made with Sony ACID 5",
-                "license": null,
-                "publisher": "20kbps rec.",
-                "language": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": null,
-                "replaygain_track_peak": null,
-                "genre": [
-                    {
-                        "name": "Electronic"
-                    }
-                ]
-            },
-            {
-                "id": "59",
-                "title": "YellowSmoke",
-                "name": "YellowSmoke",
-                "artist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "album": {
-                    "id": "2",
-                    "name": "Colorsmoke EP"
-                },
-                "albumartist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "disk": 1,
-                "track": 2,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
-                "tag": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "playlisttrack": 3,
-                "time": 290,
-                "year": 2007,
-                "bitrate": 64000,
-                "rate": 22050,
-                "mode": "cbr",
-                "mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
-                "size": 2325568,
-                "mbid": null,
-                "album_mbid": null,
-                "artist_mbid": "1",
-                "albumartist_mbid": "1",
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 2,
-                "comment": null,
-                "license": null,
-                "publisher": "20kbps rec.",
-                "language": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": 2.75,
-                "replaygain_track_peak": 0.716,
-                "genre": [
-                    {
-                        "name": "Electronic"
-                    }
-                ]
-            },
-            {
-                "id": "65",
-                "title": "YellowSmoke",
-                "name": "YellowSmoke",
-                "artist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "album": {
-                    "id": "2",
-                    "name": "Colorsmoke EP"
-                },
-                "albumartist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "disk": 1,
-                "track": 2,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/02-Synthetic_-_YellowSmoke20k22hS.wma",
-                "tag": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "playlisttrack": 4,
-                "time": 290,
-                "year": 2007,
-                "bitrate": 20627,
-                "rate": 22050,
-                "mode": "cbr",
-                "mime": "audio\/x-ms-wma",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
-                "size": 754935,
-                "mbid": null,
-                "album_mbid": null,
-                "artist_mbid": "1",
-                "albumartist_mbid": "1",
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 2,
-                "comment": "Made with Sony ACID 5",
-                "license": null,
-                "publisher": "20kbps rec.",
-                "language": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": null,
-                "replaygain_track_peak": null,
-                "genre": [
-                    {
-                        "name": "Electronic"
-                    }
-                ]
-            },
-            {
-                "id": "57",
-                "title": "PurpleSmoke",
-                "name": "PurpleSmoke",
-                "artist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "album": {
-                    "id": "2",
-                    "name": "Colorsmoke EP"
-                },
-                "albumartist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "disk": 1,
-                "track": 3,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3",
-                "tag": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "playlisttrack": 5,
-                "time": 390,
-                "year": 2007,
-                "bitrate": 64000,
-                "rate": 22050,
-                "mode": "cbr",
-                "mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3",
-                "size": 3131519,
-                "mbid": null,
-                "album_mbid": null,
-                "artist_mbid": "1",
-                "albumartist_mbid": "1",
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 2,
-                "comment": null,
-                "license": null,
-                "publisher": "20kbps rec.",
-                "language": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": -5.13,
-                "replaygain_track_peak": 1,
-                "genre": [
-                    {
-                        "name": "Electronic"
-                    }
-                ]
-            },
-            {
-                "id": "62",
-                "title": "PurpleSmoke",
-                "name": "PurpleSmoke",
-                "artist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "album": {
-                    "id": "2",
-                    "name": "Colorsmoke EP"
-                },
-                "albumartist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "disk": 1,
-                "track": 3,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma",
-                "tag": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "playlisttrack": 6,
-                "time": 390,
-                "year": 2007,
-                "bitrate": 20627,
-                "rate": 22050,
-                "mode": "cbr",
-                "mime": "audio\/x-ms-wma",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3",
-                "size": 1014135,
-                "mbid": null,
-                "album_mbid": null,
-                "artist_mbid": "1",
-                "albumartist_mbid": "1",
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 2,
-                "comment": "Made with Sony ACID 5",
-                "license": null,
-                "publisher": "20kbps rec.",
-                "language": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": null,
-                "replaygain_track_peak": null,
-                "genre": [
-                    {
-                        "name": "Electronic"
-                    }
-                ]
-            },
-            {
-                "id": "58",
-                "title": "BrownSmoke",
-                "name": "BrownSmoke",
-                "artist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "album": {
-                    "id": "2",
-                    "name": "Colorsmoke EP"
-                },
-                "albumartist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "disk": 1,
-                "track": 4,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
-                "tag": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "playlisttrack": 7,
-                "time": 304,
-                "year": 2007,
-                "bitrate": 64000,
-                "rate": 22050,
-                "mode": "cbr",
-                "mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
-                "size": 2441886,
-                "mbid": null,
-                "album_mbid": null,
-                "artist_mbid": "1",
-                "albumartist_mbid": "1",
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 2,
-                "comment": null,
-                "license": null,
-                "publisher": "20kbps rec.",
-                "language": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": 0.96,
-                "replaygain_track_peak": 0.912,
-                "genre": [
-                    {
-                        "name": "Electronic"
-                    }
-                ]
-            },
-            {
-                "id": "60",
-                "title": "BrownSmoke",
-                "name": "BrownSmoke",
-                "artist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "album": {
-                    "id": "2",
-                    "name": "Colorsmoke EP"
-                },
-                "albumartist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "disk": 1,
-                "track": 4,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
-                "tag": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "playlisttrack": 8,
-                "time": 304,
-                "year": 2007,
-                "bitrate": 20627,
-                "rate": 22050,
-                "mode": "cbr",
-                "mime": "audio\/x-ms-wma",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3",
-                "size": 792375,
-                "mbid": null,
-                "album_mbid": null,
-                "artist_mbid": "1",
-                "albumartist_mbid": "1",
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 2,
-                "comment": "Made with Sony ACID 5",
-                "license": null,
-                "publisher": "20kbps rec.",
-                "language": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": null,
-                "replaygain_track_peak": null,
-                "genre": [
-                    {
-                        "name": "Electronic"
-                    }
-                ]
-            },
-            {
-                "id": "54",
-                "title": "Red&GreenSmoke",
-                "name": "Red&GreenSmoke",
-                "artist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "album": {
-                    "id": "2",
-                    "name": "Colorsmoke EP"
-                },
-                "albumartist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "disk": 1,
-                "track": 5,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
-                "tag": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "playlisttrack": 9,
-                "time": 400,
-                "year": 2007,
-                "bitrate": 64000,
-                "rate": 22050,
-                "mode": "cbr",
-                "mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-                "size": 3209468,
-                "mbid": null,
-                "album_mbid": null,
-                "artist_mbid": "1",
-                "albumartist_mbid": "1",
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
-                "averagerating": null,
-                "playcount": 0,
-                "catalog": 1,
-                "composer": null,
-                "channels": 1,
-                "comment": null,
-                "license": null,
-                "publisher": "20kbps rec.",
-                "language": null,
-                "replaygain_album_gain": null,
-                "replaygain_album_peak": null,
-                "replaygain_track_gain": -2.88,
-                "replaygain_track_peak": 0.977,
-                "genre": [
-                    {
-                        "name": "Electronic"
-                    }
-                ]
-            },
-            {
-                "id": "55",
-                "title": "Red&GreenSmoke",
-                "name": "Red&GreenSmoke",
-                "artist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "album": {
-                    "id": "2",
-                    "name": "Colorsmoke EP"
-                },
-                "albumartist": {
-                    "id": "2",
-                    "name": "Synthetic"
-                },
-                "disk": 1,
-                "track": 5,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
-                "tag": [
-                    {
-                        "id": "1",
-                        "name": "Electronic"
-                    }
-                ],
-                "playlisttrack": 10,
-                "time": 400,
-                "year": 2007,
-                "bitrate": 64000,
-                "rate": 22050,
-                "mode": "cbr",
-                "mime": "audio\/mpeg",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-                "size": 3209886,
-                "mbid": null,
-                "album_mbid": null,
-                "artist_mbid": "1",
-                "albumartist_mbid": "1",
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "http:\/\/localhost:8989\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
                 "flag": 0,
                 "preciserating": null,
                 "rating": null,
@@ -605,120 +56,181 @@
                 "catalog": 1,
                 "composer": null,
                 "channels": 2,
-                "comment": null,
+                "comment": "DNA Production release\r\nCatalogue # DNA 119",
                 "license": null,
-                "publisher": "20kbps rec.",
+                "publisher": "archive.org",
                 "language": null,
                 "replaygain_album_gain": null,
                 "replaygain_album_peak": null,
-                "replaygain_track_gain": -4.06,
-                "replaygain_track_peak": 1,
+                "replaygain_track_gain": 1.11,
+                "replaygain_track_peak": 0.977,
                 "genre": [
                     {
-                        "name": "Electronic"
+                        "name": "Dark Ambient"
                     }
                 ]
             },
             {
-                "id": "61",
-                "title": "Red&GreenSmoke",
-                "name": "Red&GreenSmoke",
+                "id": "82",
+                "title": "Vanvett",
+                "name": "Vanvett",
                 "artist": {
-                    "id": "2",
-                    "name": "Synthetic"
+                    "id": "13",
+                    "name": "IOK-1"
                 },
                 "album": {
-                    "id": "2",
-                    "name": "Colorsmoke EP"
+                    "id": "7",
+                    "name": "Sensorisk Deprivation"
                 },
                 "albumartist": {
-                    "id": "2",
-                    "name": "Synthetic"
+                    "id": "13",
+                    "name": "IOK-1"
                 },
                 "disk": 1,
-                "track": 5,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/05-Synthetic_-_RedGreenSmokePM20k44khM.wma",
+                "track": 2,
+                "filename": "\/media\/music\/IOK-1\/Sensorisk Deprivation\/02_-_IOK-1_-_Vanvett.flac",
                 "tag": [
                     {
-                        "id": "1",
-                        "name": "Electronic"
+                        "id": "4",
+                        "name": "Dark Ambient"
                     }
                 ],
-                "playlisttrack": 11,
-                "time": 400,
-                "year": 2007,
-                "bitrate": 20627,
+                "playlisttrack": 2,
+                "time": 825,
+                "year": 2011,
+                "bitrate": 371855,
                 "rate": 44100,
-                "mode": "cbr",
-                "mime": "audio\/x-ms-wma",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-                "size": 1044851,
+                "mode": "vbr",
+                "mime": "audio\/flac",
+                "url": "http:\/\/localhost:8989\/play\/index.php?ssid=ee11cbb19052e40b07aac0ca060c23ee&type=song&oid=82&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3",
+                "size": 38389422,
                 "mbid": null,
                 "album_mbid": null,
-                "artist_mbid": "1",
-                "albumartist_mbid": "1",
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
-                "flag": 0,
-                "preciserating": null,
-                "rating": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "http:\/\/localhost:8989\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
+                "flag": 1,
+                "preciserating": 5,
+                "rating": 5,
                 "averagerating": null,
-                "playcount": 0,
+                "playcount": 1,
                 "catalog": 1,
                 "composer": null,
-                "channels": 1,
-                "comment": "Made with Sony ACID 5",
+                "channels": 2,
+                "comment": "DNA Production release\r\nCatalogue # DNA 119",
                 "license": null,
-                "publisher": "20kbps rec.",
+                "publisher": "archive.org",
                 "language": null,
                 "replaygain_album_gain": null,
                 "replaygain_album_peak": null,
-                "replaygain_track_gain": null,
-                "replaygain_track_peak": null,
+                "replaygain_track_gain": -2.57,
+                "replaygain_track_peak": 0.977,
                 "genre": [
                     {
-                        "name": "Electronic"
+                        "name": "Dark Ambient"
                     }
                 ]
             },
             {
-                "id": "63",
-                "title": "Red&GreenSmoke",
-                "name": "Red&GreenSmoke",
+                "id": "81",
+                "title": "Galenskap",
+                "name": "Galenskap",
                 "artist": {
-                    "id": "2",
-                    "name": "Synthetic"
+                    "id": "13",
+                    "name": "IOK-1"
                 },
                 "album": {
-                    "id": "2",
-                    "name": "Colorsmoke EP"
+                    "id": "7",
+                    "name": "Sensorisk Deprivation"
                 },
                 "albumartist": {
-                    "id": "2",
-                    "name": "Synthetic"
+                    "id": "13",
+                    "name": "IOK-1"
                 },
                 "disk": 1,
-                "track": 5,
-                "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007\/05-Synthetic_-_RedGreenSmokePM20k22khS.wma",
+                "track": 3,
+                "filename": "\/media\/music\/IOK-1\/Sensorisk Deprivation\/03_-_IOK-1_-_Galenskap.flac",
                 "tag": [
                     {
-                        "id": "1",
-                        "name": "Electronic"
+                        "id": "4",
+                        "name": "Dark Ambient"
                     }
                 ],
-                "playlisttrack": 12,
-                "time": 400,
-                "year": 2007,
-                "bitrate": 20627,
-                "rate": 22050,
-                "mode": "cbr",
-                "mime": "audio\/x-ms-wma",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=63&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3",
-                "size": 1041065,
+                "playlisttrack": 3,
+                "time": 998,
+                "year": 2011,
+                "bitrate": 389683,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "audio\/flac",
+                "url": "http:\/\/localhost:8989\/play\/index.php?ssid=ee11cbb19052e40b07aac0ca060c23ee&type=song&oid=81&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Galenskap.mp3",
+                "size": 48633049,
                 "mbid": null,
                 "album_mbid": null,
-                "artist_mbid": "1",
-                "albumartist_mbid": "1",
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "http:\/\/localhost:8989\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
+                "flag": 1,
+                "preciserating": 5,
+                "rating": 5,
+                "averagerating": null,
+                "playcount": 1,
+                "catalog": 1,
+                "composer": null,
+                "channels": 2,
+                "comment": "DNA Production release\r\nCatalogue # DNA 119",
+                "license": null,
+                "publisher": "archive.org",
+                "language": null,
+                "replaygain_album_gain": null,
+                "replaygain_album_peak": null,
+                "replaygain_track_gain": -5.33,
+                "replaygain_track_peak": 0.977,
+                "genre": [
+                    {
+                        "name": "Dark Ambient"
+                    }
+                ]
+            },
+            {
+                "id": "84",
+                "title": "Vansinne",
+                "name": "Vansinne",
+                "artist": {
+                    "id": "13",
+                    "name": "IOK-1"
+                },
+                "album": {
+                    "id": "7",
+                    "name": "Sensorisk Deprivation"
+                },
+                "albumartist": {
+                    "id": "13",
+                    "name": "IOK-1"
+                },
+                "disk": 1,
+                "track": 4,
+                "filename": "\/media\/music\/IOK-1\/Sensorisk Deprivation\/04_-_IOK-1_-_Vansinne.flac",
+                "tag": [
+                    {
+                        "id": "4",
+                        "name": "Dark Ambient"
+                    }
+                ],
+                "playlisttrack": 4,
+                "time": 787,
+                "year": 2011,
+                "bitrate": 713176,
+                "rate": 44100,
+                "mode": "vbr",
+                "mime": "audio\/flac",
+                "url": "http:\/\/localhost:8989\/play\/index.php?ssid=ee11cbb19052e40b07aac0ca060c23ee&type=song&oid=84&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vansinne.mp3",
+                "size": 70182824,
+                "mbid": null,
+                "album_mbid": null,
+                "artist_mbid": null,
+                "albumartist_mbid": null,
+                "art": "http:\/\/localhost:8989\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
                 "flag": 0,
                 "preciserating": null,
                 "rating": null,
@@ -727,35 +239,35 @@
                 "catalog": 1,
                 "composer": null,
                 "channels": 2,
-                "comment": "Made with Sony ACID 5",
+                "comment": "DNA Production release\r\nCatalogue # DNA 119",
                 "license": null,
-                "publisher": "20kbps rec.",
+                "publisher": "archive.org",
                 "language": null,
                 "replaygain_album_gain": null,
                 "replaygain_album_peak": null,
-                "replaygain_track_gain": null,
-                "replaygain_track_peak": null,
+                "replaygain_track_gain": -5.35,
+                "replaygain_track_peak": 0.7,
                 "genre": [
                     {
-                        "name": "Electronic"
+                        "name": "Dark Ambient"
                     }
                 ]
             }
         ],
-        "songcount": 12,
+        "songcount": 4,
         "type": null,
         "disk": 1,
         "tag": [
             {
-                "id": "1",
-                "name": "Electronic"
+                "id": "4",
+                "name": "Dark Ambient"
             }
         ],
-        "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album",
-        "flag": 1,
-        "preciserating": 5,
-        "rating": 5,
-        "averagerating": 3,
+        "art": "http:\/\/localhost:8989\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
+        "flag": 0,
+        "preciserating": null,
+        "rating": null,
+        "averagerating": null,
         "mbid": null
     }
 ]

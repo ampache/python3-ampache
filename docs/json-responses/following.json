@@ -1,14 +1,12 @@
-[
-    {
-        "user": [
-            {
-                "id": "2",
-                "username": "admin"
-            },
-            {
-                "id": "10",
-                "username": "generic"
-            }
-        ]
-    }
-]
+{
+    "user": [
+        {
+            "id": "2",
+            "username": "admin"
+        },
+        {
+            "id": "4",
+            "username": "user"
+        }
+    ]
+}
