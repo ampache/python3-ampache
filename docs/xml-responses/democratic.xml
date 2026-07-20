@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <method><![CDATA[vote]]></method>
-  <result><![CDATA[1]]></result>
+  <error code="405"><![CDATA[Invalid Request]]></error>
 </root>

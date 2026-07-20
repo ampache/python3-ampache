@@ -1,0 +1,10 @@
+{
+    "id": 223,
+    "name": "subsonic_legacy",
+    "level": 25,
+    "description": "Enable legacy Subsonic API responses for compatibility issues",
+    "value": "0",
+    "type": "boolean",
+    "category": "options",
+    "subcategory": "api"
+}

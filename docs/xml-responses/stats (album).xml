@@ -1,29 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>2</total_count>
-  <album id="6">
-    <name><![CDATA[Хикки Найди Свою Тян (Single)]]></name>
-    <artist id="12"><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></artist>
-    <year>0</year>
-    <tracks>2</tracks>
-    <disk>1</disk>
-    <art><![CDATA[https://music.com.au/image.php?object_id=6&object_type=album]]></art>
-    <preciserating>1</preciserating>
-    <rating>1</rating>
-    <averagerating>1</averagerating>
-    <mbid/>
-  </album>
-  <album id="7">
-    <name><![CDATA[Sensorisk Deprivation]]></name>
-    <artist id="13"><![CDATA[IOK-1]]></artist>
-    <year>2011</year>
-    <tracks>4</tracks>
-    <disk>1</disk>
-    <tag id="4" count="1"><![CDATA[Dark Ambient]]></tag>
-    <art><![CDATA[https://music.com.au/image.php?object_id=7&object_type=album]]></art>
-    <preciserating>0</preciserating>
-    <rating>0</rating>
-    <averagerating/>
-    <mbid/>
-  </album>
+  <error code="405"><![CDATA[Invalid Request]]></error>
 </root>

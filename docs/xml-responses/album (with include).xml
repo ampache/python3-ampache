@@ -1,451 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>1</total_count>
-  <album id="2">
-    <name><![CDATA[Colorsmoke EP]]></name>
-    <artist id="2"><![CDATA[Synthetic]]></artist>
-    <year>2007</year>
+  <album id="6">
+    <name><![CDATA[Хикки Найди Свою Тян (Single)]]></name>
+    <artist id="12"><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></artist>
+    <year>0</year>
     <tracks>
-      <total_count>12</total_count>
-      <song id="56">
-        <title><![CDATA[Black&BlueSmoke]]></title>
-        <name><![CDATA[Black&BlueSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-        <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3]]></filename>
+      <total_count>1</total_count>
+      <song id="79">
+        <title><![CDATA[Хикки найди свою Тян]]></title>
+        <name><![CDATA[Хикки найди свою Тян]]></name>
+        <artist id="12"><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></artist>
+        <album id="6"><![CDATA[Хикки Найди Свою Тян (Single)]]></album>
+        <albumartist id="12"><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></albumartist>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь/Хикки Найди Свою Тян (Single)/01 - Хикки найди свою Тян.mp3]]></filename>
         <track>1</track>
-        <time>500</time>
-        <year>2007</year>
-        <bitrate>64000</bitrate>
-        <rate>22050</rate>
-        <mode>cbr</mode>
+        <time>300</time>
+        <year>0</year>
+        <bitrate>175202</bitrate>
+        <rate>44100</rate>
+        <mode>vbr</mode>
         <mime>audio/mpeg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=56&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
-        <size>4009941</size>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=79&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=-%20-%20-%20-%20-%20-%20-.mp3]]></url>
+        <size>6664157</size>
         <mbid/>
         <album_mbid/>
-        <artist_mbid>1</artist_mbid>
+        <artist_mbid/>
         <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
+        <art><![CDATA[https://music.com.au/image.php?object_id=6&object_type=album&id=445&name=art.jpg]]></art>
+        <preciserating>1</preciserating>
+        <rating>1</rating>
+        <averagerating>1</averagerating>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[]]></comment>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
+        <comment><![CDATA[https://archive.org/details/IBR_385]]></comment>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain>-5.11</replaygain_track_gain>
+        <replaygain_track_gain>-21.28</replaygain_track_gain>
         <replaygain_track_peak>1</replaygain_track_peak>
-        <genre><![CDATA[Electronic]]></genre>
       </song>
-      <song id="64">
-        <title><![CDATA[Black&BlueSmoke]]></title>
-        <name><![CDATA[Black&BlueSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-        <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma]]></filename>
+      <song id="80">
+        <title><![CDATA[Хикки найди свою Тян]]></title>
+        <name><![CDATA[Хикки найди свою Тян]]></name>
+        <artist id="12"><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></artist>
+        <album id="6"><![CDATA[Хикки Найди Свою Тян (Single)]]></album>
+        <albumartist id="12"><![CDATA[К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь]]></albumartist>
+        <filename><![CDATA[/mnt/files-music/ampache-test/music/К-А-Л-Л-О-В-Ы-Й- С-Т-Е-Р-Ж-Е-Н-Ь/Хикки Найди Свою Тян (Single)/01 - Хикки найди свою Тян.wav]]></filename>
         <track>1</track>
-        <time>500</time>
-        <year>2007</year>
-        <bitrate>20627</bitrate>
-        <rate>22050</rate>
-        <mode>cbr</mode>
-        <mime>audio/x-ms-wma</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
-        <size>1298295</size>
-        <mbid/>
-        <album_mbid/>
-        <artist_mbid>1</artist_mbid>
-        <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Made with Sony ACID 5]]></comment>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <genre><![CDATA[Electronic]]></genre>
-      </song>
-      <song id="59">
-        <title><![CDATA[YellowSmoke]]></title>
-        <name><![CDATA[YellowSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-        <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3]]></filename>
-        <track>2</track>
-        <time>290</time>
-        <year>2007</year>
-        <bitrate>64000</bitrate>
-        <rate>22050</rate>
-        <mode>cbr</mode>
-        <mime>audio/mpeg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
-        <size>2325440</size>
-        <mbid/>
-        <album_mbid/>
-        <artist_mbid>1</artist_mbid>
-        <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
-        <preciserating>5</preciserating>
-        <rating>5</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[]]></comment>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>2.75</replaygain_track_gain>
-        <replaygain_track_peak>0.716</replaygain_track_peak>
-        <genre><![CDATA[Electronic]]></genre>
-      </song>
-      <song id="65">
-        <title><![CDATA[YellowSmoke]]></title>
-        <name><![CDATA[YellowSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-        <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/02-Synthetic_-_YellowSmoke20k22hS.wma]]></filename>
-        <track>2</track>
-        <time>290</time>
-        <year>2007</year>
-        <bitrate>20627</bitrate>
-        <rate>22050</rate>
-        <mode>cbr</mode>
-        <mime>audio/x-ms-wma</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=65&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3]]></url>
-        <size>754935</size>
-        <mbid/>
-        <album_mbid/>
-        <artist_mbid>1</artist_mbid>
-        <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
-        <preciserating>5</preciserating>
-        <rating>5</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Made with Sony ACID 5]]></comment>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <genre><![CDATA[Electronic]]></genre>
-      </song>
-      <song id="57">
-        <title><![CDATA[PurpleSmoke]]></title>
-        <name><![CDATA[PurpleSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-        <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3]]></filename>
-        <track>3</track>
-        <time>390</time>
-        <year>2007</year>
-        <bitrate>64000</bitrate>
-        <rate>22050</rate>
-        <mode>cbr</mode>
-        <mime>audio/mpeg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
-        <size>3131391</size>
-        <mbid/>
-        <album_mbid/>
-        <artist_mbid>1</artist_mbid>
-        <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[]]></comment>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-5.13</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
-        <genre><![CDATA[Electronic]]></genre>
-      </song>
-      <song id="62">
-        <title><![CDATA[PurpleSmoke]]></title>
-        <name><![CDATA[PurpleSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-        <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma]]></filename>
-        <track>3</track>
-        <time>390</time>
-        <year>2007</year>
-        <bitrate>20627</bitrate>
-        <rate>22050</rate>
-        <mode>cbr</mode>
-        <mime>audio/x-ms-wma</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3]]></url>
-        <size>1014135</size>
-        <mbid/>
-        <album_mbid/>
-        <artist_mbid>1</artist_mbid>
-        <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Made with Sony ACID 5]]></comment>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <genre><![CDATA[Electronic]]></genre>
-      </song>
-      <song id="58">
-        <title><![CDATA[BrownSmoke]]></title>
-        <name><![CDATA[BrownSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-        <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3]]></filename>
-        <track>4</track>
-        <time>304</time>
-        <year>2007</year>
-        <bitrate>64000</bitrate>
-        <rate>22050</rate>
-        <mode>cbr</mode>
-        <mime>audio/mpeg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=58&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
-        <size>2441758</size>
-        <mbid/>
-        <album_mbid/>
-        <artist_mbid>1</artist_mbid>
-        <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[]]></comment>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>0.96</replaygain_track_gain>
-        <replaygain_track_peak>0.912</replaygain_track_peak>
-        <genre><![CDATA[Electronic]]></genre>
-      </song>
-      <song id="60">
-        <title><![CDATA[BrownSmoke]]></title>
-        <name><![CDATA[BrownSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-        <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma]]></filename>
-        <track>4</track>
-        <time>304</time>
-        <year>2007</year>
-        <bitrate>20627</bitrate>
-        <rate>22050</rate>
-        <mode>cbr</mode>
-        <mime>audio/x-ms-wma</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=60&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20BrownSmoke.mp3]]></url>
-        <size>792375</size>
-        <mbid/>
-        <album_mbid/>
-        <artist_mbid>1</artist_mbid>
-        <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[Made with Sony ACID 5]]></comment>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <genre><![CDATA[Electronic]]></genre>
-      </song>
-      <song id="54">
-        <title><![CDATA[Red&GreenSmoke]]></title>
-        <name><![CDATA[Red&GreenSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-        <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3]]></filename>
-        <track>5</track>
-        <time>400</time>
-        <year>2007</year>
-        <bitrate>64000</bitrate>
-        <rate>22050</rate>
-        <mode>cbr</mode>
-        <mime>audio/mpeg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=54&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-        <size>3209340</size>
-        <mbid/>
-        <album_mbid/>
-        <artist_mbid>1</artist_mbid>
-        <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels>1</channels>
-        <comment><![CDATA[]]></comment>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-2.88</replaygain_track_gain>
-        <replaygain_track_peak>0.977</replaygain_track_peak>
-        <genre><![CDATA[Electronic]]></genre>
-      </song>
-      <song id="55">
-        <title><![CDATA[Red&GreenSmoke]]></title>
-        <name><![CDATA[Red&GreenSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-        <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3]]></filename>
-        <track>5</track>
-        <time>400</time>
-        <year>2007</year>
-        <bitrate>64000</bitrate>
-        <rate>22050</rate>
-        <mode>cbr</mode>
-        <mime>audio/mpeg</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=55&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-        <size>3209758</size>
-        <mbid/>
-        <album_mbid/>
-        <artist_mbid>1</artist_mbid>
-        <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels>2</channels>
-        <comment><![CDATA[]]></comment>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain>-4.06</replaygain_track_gain>
-        <replaygain_track_peak>1</replaygain_track_peak>
-        <genre><![CDATA[Electronic]]></genre>
-      </song>
-      <song id="61">
-        <title><![CDATA[Red&GreenSmoke]]></title>
-        <name><![CDATA[Red&GreenSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-        <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k44khM.wma]]></filename>
-        <track>5</track>
-        <time>400</time>
-        <year>2007</year>
-        <bitrate>20627</bitrate>
+        <time>300</time>
+        <year>0</year>
+        <bitrate>1411200</bitrate>
         <rate>44100</rate>
         <mode>cbr</mode>
-        <mime>audio/x-ms-wma</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=61&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-        <size>1044851</size>
+        <mime>audio/wav</mime>
+        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=80&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=-%20-%20-%20-%20-%20-%20-.mp3]]></url>
+        <size>53026998</size>
         <mbid/>
         <album_mbid/>
-        <artist_mbid>1</artist_mbid>
+        <artist_mbid/>
         <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
-        <preciserating>0</preciserating>
-        <rating>0</rating>
-        <averagerating>0</averagerating>
-        <composer><![CDATA[]]></composer>
-        <channels>1</channels>
-        <comment><![CDATA[Made with Sony ACID 5]]></comment>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
-        <language/>
-        <replaygain_album_gain/>
-        <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <genre><![CDATA[Electronic]]></genre>
-      </song>
-      <song id="63">
-        <title><![CDATA[Red&GreenSmoke]]></title>
-        <name><![CDATA[Red&GreenSmoke]]></name>
-        <artist id="2"><![CDATA[Synthetic]]></artist>
-        <album id="2"><![CDATA[Colorsmoke EP]]></album>
-        <albumartist id="2"><![CDATA[Synthetic]]></albumartist>
-        <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-        <filename><![CDATA[/mnt/files-music/ampache-test/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k22khS.wma]]></filename>
-        <track>5</track>
-        <time>400</time>
-        <year>2007</year>
-        <bitrate>20627</bitrate>
-        <rate>22050</rate>
-        <mode>cbr</mode>
-        <mime>audio/x-ms-wma</mime>
-        <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=63&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Red-GreenSmoke.mp3]]></url>
-        <size>1041065</size>
-        <mbid/>
-        <album_mbid/>
-        <artist_mbid>1</artist_mbid>
-        <albumartist_mbid/>
-        <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=6&object_type=album&id=445&name=art.jpg]]></art>
         <preciserating>5</preciserating>
         <rating>5</rating>
-        <averagerating>0</averagerating>
+        <averagerating>3</averagerating>
         <composer><![CDATA[]]></composer>
         <channels>2</channels>
-        <comment><![CDATA[Made with Sony ACID 5]]></comment>
-        <publisher><![CDATA[20kbps rec.]]></publisher>
+        <comment><![CDATA[]]></comment>
+        <publisher><![CDATA[archive.org]]></publisher>
         <language/>
         <replaygain_album_gain/>
         <replaygain_album_peak/>
-        <replaygain_track_gain/>
-        <replaygain_track_peak/>
-        <genre><![CDATA[Electronic]]></genre>
+        <replaygain_track_gain>-21.75</replaygain_track_gain>
+        <replaygain_track_peak>1</replaygain_track_peak>
       </song>
     </tracks>
     <disk>1</disk>
-    <tag id="1" count="1"><![CDATA[Electronic]]></tag>
-    <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album]]></art>
-    <preciserating>5</preciserating>
-    <rating>5</rating>
-    <averagerating>3</averagerating>
+    <art><![CDATA[https://music.com.au/image.php?object_id=6&object_type=album&id=445&name=art.jpg]]></art>
+    <preciserating>1</preciserating>
+    <rating>1</rating>
+    <averagerating>1</averagerating>
     <mbid/>
   </album>
 </root>
