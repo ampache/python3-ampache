@@ -4954,23 +4954,42 @@ class API(object):
                     return False
                 return self.genre(params["filter_id"])
             case 'genre_albums':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
                 if not "sort" in params:
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.genre_albums(params["filter_id"], params["sort"], params["cond"])
+                return self.genre_albums(params["filter_id"], params["offset"], params["limit"],
+                                         params["sort"], params["cond"])
             case 'genre_artists':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
                 if not "sort" in params:
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.genre_artists(params["username"], params["sort"], params["cond"])
+                return self.genre_artists(params["filter_id"], params["offset"], params["limit"],
+                                          params["sort"], params["cond"])
             case 'genres':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
                 if not "sort" in params:
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.genres(params["username"], params["sort"], params["cond"])
+                return self.genres(params["filter_str"], params["exact"], params["offset"], params["limit"],
+                                   params["sort"], params["cond"])
             case 'genre_songs':
                 if not "offset" in params:
                     params["offset"] = 0
@@ -5362,14 +5381,17 @@ class API(object):
                 return self.podcasts(filter_str=params["filter_id"], exact=params["exact"], offset=params["offset"], limit=params["limit"],
                                      sort=params["sort"], cond=params["cond"], include=params.get("include", False))
             case 'preference_create':
+                if not "default" in params:
+                    params["default"] = False
                 if not "description" in params:
                     params["description"] = False
                 if not "subcategory" in params:
                     params["subcategory"] = False
                 if not "level" in params:
                     params["level"] = 100
-                return self.preference_create(params["filter_str"], params["type_str"], params["category"],
-                                              params["description"], params["subcategory"], params["level"])
+                return self.preference_create(params["filter_str"], params["type_str"], params["default"],
+                                              params["category"], params["description"], params["subcategory"],
+                                              params["level"])
             case 'preference_delete':
                 if not "filter_str" in params:
                     return False
