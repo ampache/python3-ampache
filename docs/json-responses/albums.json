@@ -1,42 +1,47 @@
 {
     "total_count": 1,
-    "md5": "c8bde69a9f79ca24059e3807f9a3bcf8",
+    "md5": "d63aca0b7e6237c7964320bd7fc95644",
     "album": [
         {
-            "id": "10",
-            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "id": "7",
+            "name": "Sensorisk Deprivation",
             "prefix": null,
-            "basename": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "basename": "Sensorisk Deprivation",
             "artist": {
-                "id": "16",
-                "name": "CARN\u00daN",
+                "id": "13",
+                "name": "IOK-1",
                 "prefix": null,
-                "basename": "CARN\u00daN"
+                "basename": "IOK-1"
             },
             "artists": [
                 {
-                    "id": "16",
-                    "name": "CARN\u00daN",
+                    "id": "13",
+                    "name": "IOK-1",
                     "prefix": null,
-                    "basename": "CARN\u00daN"
+                    "basename": "IOK-1"
                 }
             ],
             "songartists": [
                 {
-                    "id": "16",
-                    "name": "CARN\u00daN",
+                    "id": "13",
+                    "name": "IOK-1",
                     "prefix": null,
-                    "basename": "CARN\u00daN"
+                    "basename": "IOK-1"
                 }
             ],
-            "time": 3873,
-            "year": 1996,
+            "time": 3428,
+            "year": 2011,
             "tracks": [],
-            "songcount": 9,
+            "songcount": 4,
             "diskcount": 1,
             "type": null,
-            "genre": [],
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+            "genre": [
+                {
+                    "id": "4",
+                    "name": "Dark Ambient"
+                }
+            ],
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,

@@ -23,13 +23,13 @@
   </rule>
   <rule id="album">
     <name><![CDATA[album]]></name>
-    <label><![CDATA[Album]]></label>
+    <label><![CDATA[Album Title]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
     <title><![CDATA[Song Data]]></title>
   </rule>
-  <rule id="artist">
-    <name><![CDATA[artist]]></name>
+  <rule id="song_artist">
+    <name><![CDATA[song_artist]]></name>
     <label><![CDATA[Song Artist]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
@@ -154,8 +154,8 @@
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
-  <rule id="my_flagged">
-    <name><![CDATA[my_flagged]]></name>
+  <rule id="my_flagged_song">
+    <name><![CDATA[my_flagged_song]]></name>
     <label><![CDATA[My Favorite Songs]]></label>
     <type><![CDATA[boolean]]></type>
     <widget/>
@@ -196,6 +196,27 @@
     <widget/>
     <title><![CDATA[Ratings]]></title>
   </rule>
+  <rule id="weight_song">
+    <name><![CDATA[weight_song]]></name>
+    <label><![CDATA[Song popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="weight_album">
+    <name><![CDATA[weight_album]]></name>
+    <label><![CDATA[Album popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="weight_artist">
+    <name><![CDATA[weight_artist]]></name>
+    <label><![CDATA[Artist popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
   <rule id="other_user">
     <name><![CDATA[other_user]]></name>
     <label><![CDATA[Another User]]></label>
@@ -204,7 +225,6 @@
       <select id="2"><![CDATA[admin]]></select>
       <select id="3"><![CDATA[demo]]></select>
       <select id="4"><![CDATA[user]]></select>
-      <select id="10"><![CDATA[generic]]></select>
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
@@ -216,7 +236,6 @@
       <select id="2"><![CDATA[admin]]></select>
       <select id="3"><![CDATA[demo]]></select>
       <select id="4"><![CDATA[user]]></select>
-      <select id="10"><![CDATA[generic]]></select>
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
@@ -228,7 +247,6 @@
       <select id="2"><![CDATA[admin]]></select>
       <select id="3"><![CDATA[demo]]></select>
       <select id="4"><![CDATA[user]]></select>
-      <select id="10"><![CDATA[generic]]></select>
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
@@ -583,20 +601,20 @@
     <label><![CDATA[MusicBrainz ID]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
-    <title><![CDATA[MusicBrainz]]></title>
+    <title><![CDATA[Musicbrainz]]></title>
   </rule>
   <rule id="mbid_album">
     <name><![CDATA[mbid_album]]></name>
     <label><![CDATA[MusicBrainz ID (Album)]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
-    <title><![CDATA[MusicBrainz]]></title>
+    <title><![CDATA[Musicbrainz]]></title>
   </rule>
   <rule id="mbid_artist">
     <name><![CDATA[mbid_artist]]></name>
     <label><![CDATA[MusicBrainz ID (Artist)]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
-    <title><![CDATA[MusicBrainz]]></title>
+    <title><![CDATA[Musicbrainz]]></title>
   </rule>
 </root>

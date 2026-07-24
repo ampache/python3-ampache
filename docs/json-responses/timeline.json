@@ -1,21 +1,21 @@
 {
     "activity": [
         {
-            "id": "344",
-            "date": 1771990173,
-            "object_type": "song",
-            "object_id": "91",
-            "action": "rating",
+            "id": "363",
+            "date": 1783648366,
+            "object_type": "user",
+            "object_id": "4",
+            "action": "follow",
             "user": {
                 "id": "4",
                 "username": "user"
             }
         },
         {
-            "id": "343",
-            "date": 1771990172,
+            "id": "362",
+            "date": 1783648359,
             "object_type": "song",
-            "object_id": "91",
+            "object_id": "80",
             "action": "userflag",
             "user": {
                 "id": "4",
@@ -23,21 +23,21 @@
             }
         },
         {
-            "id": "341",
-            "date": 1751343852,
-            "object_type": "song",
-            "object_id": "56",
-            "action": "rating",
+            "id": "361",
+            "date": 1783648005,
+            "object_type": "user",
+            "object_id": "4",
+            "action": "follow",
             "user": {
                 "id": "4",
                 "username": "user"
             }
         },
         {
-            "id": "342",
-            "date": 1751343852,
+            "id": "360",
+            "date": 1783647999,
             "object_type": "song",
-            "object_id": "56",
+            "object_id": "78",
             "action": "userflag",
             "user": {
                 "id": "4",
@@ -45,10 +45,21 @@
             }
         },
         {
-            "id": "339",
-            "date": 1751343837,
+            "id": "359",
+            "date": 1783647482,
+            "object_type": "user",
+            "object_id": "4",
+            "action": "follow",
+            "user": {
+                "id": "4",
+                "username": "user"
+            }
+        },
+        {
+            "id": "358",
+            "date": 1783647468,
             "object_type": "song",
-            "object_id": "56",
+            "object_id": "81",
             "action": "rating",
             "user": {
                 "id": "4",
@@ -56,10 +67,10 @@
             }
         },
         {
-            "id": "340",
-            "date": 1751343837,
+            "id": "357",
+            "date": 1783647468,
             "object_type": "song",
-            "object_id": "56",
+            "object_id": "81",
             "action": "userflag",
             "user": {
                 "id": "4",
@@ -67,21 +78,21 @@
             }
         },
         {
-            "id": "338",
-            "date": 1751343826,
-            "object_type": "song",
-            "object_id": "56",
-            "action": "play",
+            "id": "356",
+            "date": 1783647154,
+            "object_type": "user",
+            "object_id": "4",
+            "action": "follow",
             "user": {
                 "id": "4",
                 "username": "user"
             }
         },
         {
-            "id": "336",
-            "date": 1751343818,
+            "id": "355",
+            "date": 1783647149,
             "object_type": "song",
-            "object_id": "99",
+            "object_id": "82",
             "action": "rating",
             "user": {
                 "id": "4",
@@ -89,22 +100,11 @@
             }
         },
         {
-            "id": "337",
-            "date": 1751343818,
+            "id": "354",
+            "date": 1783647148,
             "object_type": "song",
-            "object_id": "99",
+            "object_id": "82",
             "action": "userflag",
-            "user": {
-                "id": "4",
-                "username": "user"
-            }
-        },
-        {
-            "id": "334",
-            "date": 1751343795,
-            "object_type": "song",
-            "object_id": "99",
-            "action": "rating",
             "user": {
                 "id": "4",
                 "username": "user"

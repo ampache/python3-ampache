@@ -126,6 +126,48 @@
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
+  <rule id="my_flagged_song">
+    <name><![CDATA[my_flagged_song]]></name>
+    <label><![CDATA[My Favorite Songs]]></label>
+    <type><![CDATA[boolean]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="my_flagged_album">
+    <name><![CDATA[my_flagged_album]]></name>
+    <label><![CDATA[My Favorite Albums]]></label>
+    <type><![CDATA[boolean]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="my_flagged_artist">
+    <name><![CDATA[my_flagged_artist]]></name>
+    <label><![CDATA[My Favorite Artists]]></label>
+    <type><![CDATA[boolean]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="weight_song">
+    <name><![CDATA[weight_song]]></name>
+    <label><![CDATA[Song popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="weight_album">
+    <name><![CDATA[weight_album]]></name>
+    <label><![CDATA[Album popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="weight_artist">
+    <name><![CDATA[weight_artist]]></name>
+    <label><![CDATA[Artist popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
   <rule id="favorite">
     <name><![CDATA[favorite]]></name>
     <label><![CDATA[Favorites]]></label>
@@ -141,7 +183,6 @@
       <select id="2"><![CDATA[admin]]></select>
       <select id="3"><![CDATA[demo]]></select>
       <select id="4"><![CDATA[user]]></select>
-      <select id="10"><![CDATA[generic]]></select>
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
@@ -354,20 +395,20 @@
     <label><![CDATA[MusicBrainz ID]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
-    <title><![CDATA[MusicBrainz]]></title>
+    <title><![CDATA[Musicbrainz]]></title>
   </rule>
   <rule id="mbid_album">
     <name><![CDATA[mbid_album]]></name>
     <label><![CDATA[MusicBrainz ID (Album)]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
-    <title><![CDATA[MusicBrainz]]></title>
+    <title><![CDATA[Musicbrainz]]></title>
   </rule>
   <rule id="mbid_song">
     <name><![CDATA[mbid_song]]></name>
     <label><![CDATA[MusicBrainz ID (Song)]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
-    <title><![CDATA[MusicBrainz]]></title>
+    <title><![CDATA[Musicbrainz]]></title>
   </rule>
 </root>

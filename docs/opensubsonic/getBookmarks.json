@@ -3,29 +3,13 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "8.0.0",
         "openSubsonic": true,
         "bookmarks": {
             "bookmark": [
                 {
                     "position": 0,
                     "username": "user",
-                    "comment": "AmpacheAPI",
-                    "created": "2023-11-03T01:28:39+00:00",
-                    "changed": "2023-11-03T01:28:39+00:00",
-                    "entry": []
-                },
-                {
-                    "position": 0,
-                    "username": "user",
-                    "comment": "AmpacheAPI",
-                    "created": "2023-11-03T01:28:39+00:00",
-                    "changed": "2023-11-03T01:28:39+00:00",
-                    "entry": []
-                },
-                {
-                    "position": 0,
-                    "username": "user",
                     "comment": "client1",
                     "created": "2023-11-03T01:28:39+00:00",
                     "changed": "2023-11-03T01:28:39+00:00",
@@ -43,6 +27,8 @@
                         "coverArt": "al-12",
                         "duration": 433,
                         "bitRate": 31,
+                        "playCount": 0,
+                        "created": "2021-02-24T01:44:21Z",
                         "track": 7,
                         "year": 2012,
                         "size": 1776580,
@@ -50,7 +36,12 @@
                         "suffix": "wma",
                         "contentType": "audio/x-ms-wma",
                         "path": "/media/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma",
-                        "artists": [],
+                        "artists": [
+                            {
+                                "id": "ar-27",
+                                "name": "Chi.Otic"
+                            }
+                        ],
                         "albumArtists": [
                             {
                                 "id": "ar-19",
@@ -81,6 +72,8 @@
                         "coverArt": "al-2",
                         "duration": 500,
                         "bitRate": 20,
+                        "playCount": 0,
+                        "created": "2021-02-23T04:24:48Z",
                         "track": 1,
                         "year": 2007,
                         "genre": "Electronic",
@@ -94,7 +87,12 @@
                         "suffix": "wma",
                         "contentType": "audio/x-ms-wma",
                         "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
-                        "artists": [],
+                        "artists": [
+                            {
+                                "id": "ar-2",
+                                "name": "Synthetic"
+                            }
+                        ],
                         "albumArtists": [
                             {
                                 "id": "ar-2",
@@ -125,6 +123,8 @@
                         "coverArt": "al-12",
                         "duration": 433,
                         "bitRate": 31,
+                        "playCount": 0,
+                        "created": "2021-02-24T01:44:21Z",
                         "track": 7,
                         "year": 2012,
                         "size": 1776580,
@@ -132,7 +132,12 @@
                         "suffix": "wma",
                         "contentType": "audio/x-ms-wma",
                         "path": "/media/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma",
-                        "artists": [],
+                        "artists": [
+                            {
+                                "id": "ar-27",
+                                "name": "Chi.Otic"
+                            }
+                        ],
                         "albumArtists": [
                             {
                                 "id": "ar-19",
@@ -163,6 +168,8 @@
                         "coverArt": "al-2",
                         "duration": 500,
                         "bitRate": 20,
+                        "playCount": 0,
+                        "created": "2021-02-23T04:24:48Z",
                         "track": 1,
                         "year": 2007,
                         "genre": "Electronic",
@@ -176,7 +183,12 @@
                         "suffix": "wma",
                         "contentType": "audio/x-ms-wma",
                         "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
-                        "artists": [],
+                        "artists": [
+                            {
+                                "id": "ar-2",
+                                "name": "Synthetic"
+                            }
+                        ],
                         "albumArtists": [
                             {
                                 "id": "ar-2",
@@ -207,6 +219,8 @@
                         "coverArt": "al-12",
                         "duration": 433,
                         "bitRate": 31,
+                        "playCount": 0,
+                        "created": "2021-02-24T01:44:21Z",
                         "track": 7,
                         "year": 2012,
                         "size": 1776580,
@@ -214,7 +228,12 @@
                         "suffix": "wma",
                         "contentType": "audio/x-ms-wma",
                         "path": "/media/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma",
-                        "artists": [],
+                        "artists": [
+                            {
+                                "id": "ar-27",
+                                "name": "Chi.Otic"
+                            }
+                        ],
                         "albumArtists": [
                             {
                                 "id": "ar-19",
@@ -245,6 +264,8 @@
                         "coverArt": "al-2",
                         "duration": 500,
                         "bitRate": 20,
+                        "playCount": 0,
+                        "created": "2021-02-23T04:24:48Z",
                         "track": 1,
                         "year": 2007,
                         "genre": "Electronic",
@@ -258,7 +279,12 @@
                         "suffix": "wma",
                         "contentType": "audio/x-ms-wma",
                         "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
-                        "artists": [],
+                        "artists": [
+                            {
+                                "id": "ar-2",
+                                "name": "Synthetic"
+                            }
+                        ],
                         "albumArtists": [
                             {
                                 "id": "ar-2",

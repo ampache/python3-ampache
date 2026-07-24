@@ -1,8 +1,8 @@
 {
     "error": {
-        "errorCode": "4706",
-        "errorAction": "tags",
-        "errorType": "removed",
-        "errorMessage": "Deprecated"
+        "errorCode": "4710",
+        "errorAction": "get_indexes",
+        "errorType": "system",
+        "errorMessage": "Bad Request: type"
     }
 }

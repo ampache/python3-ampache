@@ -3,7 +3,7 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "8.0.0",
         "openSubsonic": true,
         "shares": {
             "share": [
@@ -31,13 +31,21 @@
                             "duration": 296,
                             "bitRate": 1378,
                             "userRating": 5,
+                            "playCount": 5,
+                            "created": "2021-02-23T04:24:51Z",
+                            "starred": "2026-07-10T00:31:06Z",
                             "track": 1,
                             "size": 52345628,
                             "discNumber": 1,
                             "suffix": "wav",
                             "contentType": "audio/wav",
                             "path": "/media/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.wav",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-15",
+                                    "name": "Warfare 3.0"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-15",
@@ -61,13 +69,20 @@
                             "coverArt": "al-9",
                             "duration": 296,
                             "bitRate": 173,
+                            "playCount": 0,
+                            "created": "2021-02-23T04:24:51Z",
                             "track": 1,
                             "size": 6652448,
                             "discNumber": 1,
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
                             "path": "/media/music/Warfare 3.0/Creeping Lawler 2/01 - Creeping Lawler 2.mp3",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-15",
+                                    "name": "Warfare 3.0"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-15",
@@ -100,6 +115,9 @@
                             "duration": 84,
                             "bitRate": 187,
                             "userRating": 5,
+                            "playCount": 2,
+                            "created": "2021-02-23T04:24:50Z",
+                            "starred": "2026-07-10T01:46:39Z",
                             "track": 1,
                             "year": 2007,
                             "genre": "Noise",
@@ -113,7 +131,12 @@
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
                             "path": "/media/music/Structura/Inominavel (live.v.01)/01_structura_-_inominavel_p01.mp3",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-11",
+                                    "name": "structura"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-11",
@@ -135,6 +158,8 @@
                             "coverArt": "al-18",
                             "duration": 237,
                             "bitRate": 187,
+                            "playCount": 0,
+                            "created": "2021-02-23T04:24:50Z",
                             "track": 2,
                             "year": 2007,
                             "genre": "Noise",
@@ -148,7 +173,12 @@
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
                             "path": "/media/music/Structura/Inominavel (live.v.01)/02_structura_-_inominavel_p02.mp3",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-11",
+                                    "name": "structura"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-11",
@@ -170,6 +200,8 @@
                             "coverArt": "al-18",
                             "duration": 143,
                             "bitRate": 187,
+                            "playCount": 0,
+                            "created": "2021-02-23T04:24:50Z",
                             "track": 3,
                             "year": 2007,
                             "genre": "Noise",
@@ -183,7 +215,12 @@
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
                             "path": "/media/music/Structura/Inominavel (live.v.01)/03_structura_-_inominavel_p03.mp3",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-11",
+                                    "name": "structura"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-11",
@@ -205,8 +242,10 @@
                             "coverArt": "al-18",
                             "duration": 317,
                             "bitRate": 187,
-                            "userRating": 5,
-                            "averageRating": 4,
+                            "userRating": 3,
+                            "averageRating": 3,
+                            "playCount": 1,
+                            "created": "2021-02-23T04:24:50Z",
                             "track": 4,
                             "year": 2007,
                             "genre": "Noise",
@@ -220,7 +259,12 @@
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
                             "path": "/media/music/Structura/Inominavel (live.v.01)/04_structura_-_inominavel_p04.mp3",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-11",
+                                    "name": "structura"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-11",
@@ -242,6 +286,8 @@
                             "coverArt": "al-18",
                             "duration": 310,
                             "bitRate": 187,
+                            "playCount": 0,
+                            "created": "2021-02-23T04:24:50Z",
                             "track": 5,
                             "year": 2007,
                             "genre": "Noise",
@@ -255,7 +301,12 @@
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
                             "path": "/media/music/Structura/Inominavel (live.v.01)/05_structura_-_inominavel_p05.mp3",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-11",
+                                    "name": "structura"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-11",
@@ -279,6 +330,8 @@
                             "bitRate": 187,
                             "userRating": 5,
                             "averageRating": 3,
+                            "playCount": 1,
+                            "created": "2021-02-23T04:24:50Z",
                             "track": 6,
                             "year": 2007,
                             "genre": "Noise",
@@ -292,7 +345,12 @@
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
                             "path": "/media/music/Structura/Inominavel (live.v.01)/06_structura_-_t_live.mp3",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-11",
+                                    "name": "structura"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-11",
@@ -304,7 +362,7 @@
                 },
                 {
                     "id": "sh-7",
-                    "url": "https://music.com.au:8989/share.php?id=7&secret=GJ7EzBPT",
+                    "url": "https://music.com.au/share.php?id=7&secret=GJ7EzBPT",
                     "description": "Colorsmoke EP (Synthetic)",
                     "username": "user",
                     "created": "2023-11-03T01:28:39+00:00",
@@ -325,6 +383,8 @@
                             "duration": 500,
                             "bitRate": 62,
                             "userRating": 5,
+                            "playCount": 2,
+                            "created": "2021-02-23T04:24:48Z",
                             "track": 1,
                             "year": 2007,
                             "genre": "Electronic",
@@ -338,7 +398,12 @@
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/01-Synthetic_-_BlackBlueSmokeDM20k22kh_64kb.mp3",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-2",
@@ -360,6 +425,8 @@
                             "coverArt": "al-2",
                             "duration": 500,
                             "bitRate": 20,
+                            "playCount": 0,
+                            "created": "2021-02-23T04:24:48Z",
                             "track": 1,
                             "year": 2007,
                             "genre": "Electronic",
@@ -373,7 +440,12 @@
                             "suffix": "wma",
                             "contentType": "audio/x-ms-wma",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-2",
@@ -398,6 +470,8 @@
                             "duration": 290,
                             "bitRate": 62,
                             "userRating": 5,
+                            "playCount": 0,
+                            "created": "2021-02-23T04:24:48Z",
                             "track": 2,
                             "year": 2007,
                             "genre": "Electronic",
@@ -411,7 +485,12 @@
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/02-Synthetic_-_YellowSmoke20k22hS_64kb.mp3",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-2",
@@ -434,6 +513,8 @@
                             "duration": 290,
                             "bitRate": 20,
                             "userRating": 5,
+                            "playCount": 2,
+                            "created": "2021-02-23T04:24:49Z",
                             "track": 2,
                             "year": 2007,
                             "genre": "Electronic",
@@ -447,7 +528,12 @@
                             "suffix": "wma",
                             "contentType": "audio/x-ms-wma",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/02-Synthetic_-_YellowSmoke20k22hS.wma",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-2",
@@ -471,6 +557,8 @@
                             "coverArt": "al-2",
                             "duration": 390,
                             "bitRate": 62,
+                            "playCount": 0,
+                            "created": "2021-02-23T04:24:48Z",
                             "track": 3,
                             "year": 2007,
                             "genre": "Electronic",
@@ -484,7 +572,12 @@
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-2",
@@ -507,6 +600,8 @@
                             "duration": 390,
                             "bitRate": 20,
                             "userRating": 5,
+                            "playCount": 1,
+                            "created": "2021-02-23T04:24:48Z",
                             "track": 3,
                             "year": 2007,
                             "genre": "Electronic",
@@ -520,7 +615,12 @@
                             "suffix": "wma",
                             "contentType": "audio/x-ms-wma",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/03-Synthetic_-_PurpleSmokeVMix20k22khS2.wma",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-2",
@@ -544,7 +644,8 @@
                             "coverArt": "al-2",
                             "duration": 304,
                             "bitRate": 62,
-                            "userRating": 5,
+                            "playCount": 0,
+                            "created": "2021-02-23T04:24:48Z",
                             "track": 4,
                             "year": 2007,
                             "genre": "Electronic",
@@ -558,7 +659,12 @@
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/04-Synthetic_-_BrownSmokeYSBM20k22khS_64kb.mp3",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-2",
@@ -580,6 +686,8 @@
                             "coverArt": "al-2",
                             "duration": 304,
                             "bitRate": 20,
+                            "playCount": 0,
+                            "created": "2021-02-23T04:24:48Z",
                             "track": 4,
                             "year": 2007,
                             "genre": "Electronic",
@@ -593,7 +701,12 @@
                             "suffix": "wma",
                             "contentType": "audio/x-ms-wma",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/04-Synthetic_-_BrownSmokeYSBM20k22khS.wma",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-2",
@@ -619,6 +732,8 @@
                             "bitRate": 62,
                             "userRating": 5,
                             "averageRating": 3,
+                            "playCount": 1,
+                            "created": "2021-02-23T04:24:48Z",
                             "track": 5,
                             "year": 2007,
                             "genre": "Electronic",
@@ -632,7 +747,12 @@
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k44khM_64kb.mp3",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-2",
@@ -654,6 +774,8 @@
                             "coverArt": "al-2",
                             "duration": 400,
                             "bitRate": 62,
+                            "playCount": 1,
+                            "created": "2021-02-23T04:24:48Z",
                             "track": 5,
                             "year": 2007,
                             "genre": "Electronic",
@@ -667,7 +789,12 @@
                             "suffix": "mp3",
                             "contentType": "audio/mpeg",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007(1)/05-Synthetic_-_RedGreenSmokePM20k22khS_64kb.mp3",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-2",
@@ -689,6 +816,8 @@
                             "coverArt": "al-2",
                             "duration": 400,
                             "bitRate": 20,
+                            "playCount": 0,
+                            "created": "2021-02-23T04:24:48Z",
                             "track": 5,
                             "year": 2007,
                             "genre": "Electronic",
@@ -702,7 +831,12 @@
                             "suffix": "wma",
                             "contentType": "audio/x-ms-wma",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k44khM.wma",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-2",
@@ -727,6 +861,8 @@
                             "duration": 400,
                             "bitRate": 20,
                             "userRating": 5,
+                            "playCount": 0,
+                            "created": "2021-02-23T04:24:48Z",
                             "track": 5,
                             "year": 2007,
                             "genre": "Electronic",
@@ -740,7 +876,12 @@
                             "suffix": "wma",
                             "contentType": "audio/x-ms-wma",
                             "path": "/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/05-Synthetic_-_RedGreenSmokePM20k22khS.wma",
-                            "artists": [],
+                            "artists": [
+                                {
+                                    "id": "ar-2",
+                                    "name": "Synthetic"
+                                }
+                            ],
                             "albumArtists": [
                                 {
                                     "id": "ar-2",

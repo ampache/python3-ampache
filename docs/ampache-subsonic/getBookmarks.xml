@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="6.8.0" openSubsonic="1">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1">
   <bookmarks>
-    <bookmark position="0" username="user" comment="AmpacheAPI" created="2023-11-03T01:28:39+00:00" changed="2023-11-03T01:28:39+00:00"/>
-    <bookmark position="0" username="user" comment="AmpacheAPI" created="2023-11-03T01:28:39+00:00" changed="2023-11-03T01:28:39+00:00"/>
     <bookmark position="0" username="user" comment="client1" created="2023-11-03T01:28:39+00:00" changed="2023-11-03T01:28:39+00:00">
       <entry id="300000115" parent="200000012" title="Are we going Crazy" isDir="false" isVideo="false" type="music" albumId="200000012" album="Buried in Nausea" artistId="100000027" artist="Chi.Otic" coverArt="200000012" duration="433" bitRate="31" track="7" year="2012" size="1776580" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
     </bookmark>

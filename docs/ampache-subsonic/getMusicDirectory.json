@@ -2,16 +2,13 @@
     "subsonic-response": {
         "status": "ok",
         "version": "1.16.1",
-        "type": "ampache",
-        "serverVersion": "6.8.0",
-        "openSubsonic": true,
         "directory": {
-            "id": "mf-1",
+            "id": "1",
             "name": "music",
             "child": [
                 {
                     "id": "100000016",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "CARN\u00daN",
                     "artist": "CARN\u00daN",
@@ -19,7 +16,7 @@
                 },
                 {
                     "id": "100000027",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "Chi.Otic",
                     "artist": "Chi.Otic",
@@ -27,7 +24,7 @@
                 },
                 {
                     "id": "100000034",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "Comedown Kid",
                     "artist": "Comedown Kid",
@@ -35,7 +32,7 @@
                 },
                 {
                     "id": "100000013",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "IOK-1",
                     "artist": "IOK-1",
@@ -43,7 +40,7 @@
                 },
                 {
                     "id": "100000023",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "Manic Notion",
                     "artist": "Manic Notion",
@@ -51,7 +48,7 @@
                 },
                 {
                     "id": "100000033",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "MxBxCx",
                     "artist": "MxBxCx",
@@ -59,14 +56,14 @@
                 },
                 {
                     "id": "100000014",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "Nofi/found.",
                     "artist": "Nofi/found."
                 },
                 {
                     "id": "100000020",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "R/B",
                     "artist": "R/B",
@@ -74,7 +71,7 @@
                 },
                 {
                     "id": "100000032",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "Shorty Mac",
                     "artist": "Shorty Mac",
@@ -82,7 +79,7 @@
                 },
                 {
                     "id": "100000026",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "Stress Builds Character",
                     "artist": "Stress Builds Character",
@@ -90,7 +87,7 @@
                 },
                 {
                     "id": "100000011",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "structura",
                     "artist": "structura",
@@ -98,7 +95,7 @@
                 },
                 {
                     "id": "100000002",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "Synthetic",
                     "artist": "Synthetic",
@@ -106,7 +103,7 @@
                 },
                 {
                     "id": "100000035",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "Tip-C",
                     "artist": "Tip-C",
@@ -114,7 +111,7 @@
                 },
                 {
                     "id": "100000021",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "Tip-C (featuring Mike Beers)",
                     "artist": "Tip-C (featuring Mike Beers)",
@@ -122,7 +119,7 @@
                 },
                 {
                     "id": "100000019",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "Various Artists",
                     "artist": "Various Artists",
@@ -130,7 +127,7 @@
                 },
                 {
                     "id": "100000015",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "Warfare 3.0",
                     "artist": "Warfare 3.0",
@@ -138,7 +135,7 @@
                 },
                 {
                     "id": "100000012",
-                    "parent": "mf-1",
+                    "parent": "1",
                     "isDir": true,
                     "title": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
                     "artist": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <error errorCode="4742">
-    <errorAction><![CDATA[user_edit]]></errorAction>
+    <errorAction><![CDATA[user_update]]></errorAction>
     <errorType><![CDATA[account]]></errorType>
     <errorMessage><![CDATA[Require: 100]]></errorMessage>
   </error>

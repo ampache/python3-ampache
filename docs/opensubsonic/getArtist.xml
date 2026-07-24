@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
-  <artist id="ar-11" name="structura" coverArt="ar-11" albumCount="1">
-    <album id="al-18" parent="ar-11" album="Inominavel (live.v.01)" title="Inominavel (live.v.01)" name="Inominavel (live.v.01)" isDir="true" coverArt="al-18" songCount="6" created="2021-02-23T04:24:50+00:00" duration="1339" playCount="4" artistId="ar-11" artist="structura" year="2007" genre="Noise" userRating="4" averageRating="3.67"/>
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="8.0.0" openSubsonic="1">
+  <artist id="ar-36" name="Comfort Fit" coverArt="ar-36" albumCount="1">
+    <album id="al-21" name="Forget and Remember" coverArt="al-21" songCount="20" created="2021-07-22T02:09:31+00:00" duration="4248" artistId="ar-36" artist="Comfort Fit" year="2005" genre="Hip-Hop" playCount="4">
+      <genres name="Hip-Hop"/>
+    </album>
   </artist>
 </subsonic-response>

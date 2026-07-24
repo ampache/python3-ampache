@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="8.0.0" openSubsonic="1">
   <bookmarks>
-    <bookmark position="0" username="user" comment="AmpacheAPI" created="2023-11-03T01:28:39+00:00" changed="2023-11-03T01:28:39+00:00"/>
-    <bookmark position="0" username="user" comment="AmpacheAPI" created="2023-11-03T01:28:39+00:00" changed="2023-11-03T01:28:39+00:00"/>
     <bookmark position="0" username="user" comment="client1" created="2023-11-03T01:28:39+00:00" changed="2023-11-03T01:28:39+00:00">
-      <entry id="so-115" parent="al-12" title="Are we going Crazy" isDir="false" isVideo="false" type="music" albumId="al-12" album="Buried in Nausea" artistId="ar-27" artist="Chi.Otic" coverArt="al-12" duration="433" bitRate="31" track="7" year="2012" size="1776580" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+      <entry id="so-115" parent="al-12" title="Are we going Crazy" isDir="false" isVideo="false" type="music" albumId="al-12" album="Buried in Nausea" artistId="ar-27" artist="Chi.Otic" coverArt="al-12" duration="433" bitRate="31" playCount="0" track="7" year="2012" size="1776580" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
     </bookmark>
     <bookmark position="10" username="user" comment="client" created="2023-11-03T01:28:39+00:00" changed="2023-11-03T01:28:39+00:00">
-      <entry id="so-64" parent="al-2" title="Black&amp;BlueSmoke" isDir="false" isVideo="false" type="music" albumId="al-2" album="Colorsmoke EP" artistId="ar-2" artist="Synthetic" coverArt="al-2" duration="500" bitRate="20" track="1" year="2007" genre="Electronic" size="1298295" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+      <entry id="so-64" parent="al-2" title="Black&amp;BlueSmoke" isDir="false" isVideo="false" type="music" albumId="al-2" album="Colorsmoke EP" artistId="ar-2" artist="Synthetic" coverArt="al-2" duration="500" bitRate="20" playCount="0" track="1" year="2007" genre="Electronic" size="1298295" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg">
+        <genres name="Electronic"/>
+      </entry>
     </bookmark>
     <bookmark position="0" username="user" comment="client1" created="2023-11-03T01:28:39+00:00" changed="2023-11-03T01:28:39+00:00">
-      <entry id="so-115" parent="al-12" title="Are we going Crazy" isDir="false" isVideo="false" type="music" albumId="al-12" album="Buried in Nausea" artistId="ar-27" artist="Chi.Otic" coverArt="al-12" duration="433" bitRate="31" track="7" year="2012" size="1776580" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+      <entry id="so-115" parent="al-12" title="Are we going Crazy" isDir="false" isVideo="false" type="music" albumId="al-12" album="Buried in Nausea" artistId="ar-27" artist="Chi.Otic" coverArt="al-12" duration="433" bitRate="31" playCount="0" track="7" year="2012" size="1776580" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
     </bookmark>
     <bookmark position="10" username="user" comment="client" created="2023-11-03T01:28:39+00:00" changed="2023-11-03T01:28:39+00:00">
-      <entry id="so-64" parent="al-2" title="Black&amp;BlueSmoke" isDir="false" isVideo="false" type="music" albumId="al-2" album="Colorsmoke EP" artistId="ar-2" artist="Synthetic" coverArt="al-2" duration="500" bitRate="20" track="1" year="2007" genre="Electronic" size="1298295" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+      <entry id="so-64" parent="al-2" title="Black&amp;BlueSmoke" isDir="false" isVideo="false" type="music" albumId="al-2" album="Colorsmoke EP" artistId="ar-2" artist="Synthetic" coverArt="al-2" duration="500" bitRate="20" playCount="0" track="1" year="2007" genre="Electronic" size="1298295" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg">
+        <genres name="Electronic"/>
+      </entry>
     </bookmark>
     <bookmark position="0" username="user" comment="client1" created="2023-11-03T01:28:39+00:00" changed="2023-11-03T01:28:39+00:00">
-      <entry id="so-115" parent="al-12" title="Are we going Crazy" isDir="false" isVideo="false" type="music" albumId="al-12" album="Buried in Nausea" artistId="ar-27" artist="Chi.Otic" coverArt="al-12" duration="433" bitRate="31" track="7" year="2012" size="1776580" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+      <entry id="so-115" parent="al-12" title="Are we going Crazy" isDir="false" isVideo="false" type="music" albumId="al-12" album="Buried in Nausea" artistId="ar-27" artist="Chi.Otic" coverArt="al-12" duration="433" bitRate="31" playCount="0" track="7" year="2012" size="1776580" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
     </bookmark>
     <bookmark position="10" username="user" comment="client" created="2023-11-03T01:28:39+00:00" changed="2023-11-03T01:28:39+00:00">
-      <entry id="so-64" parent="al-2" title="Black&amp;BlueSmoke" isDir="false" isVideo="false" type="music" albumId="al-2" album="Colorsmoke EP" artistId="ar-2" artist="Synthetic" coverArt="al-2" duration="500" bitRate="20" track="1" year="2007" genre="Electronic" size="1298295" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg"/>
+      <entry id="so-64" parent="al-2" title="Black&amp;BlueSmoke" isDir="false" isVideo="false" type="music" albumId="al-2" album="Colorsmoke EP" artistId="ar-2" artist="Synthetic" coverArt="al-2" duration="500" bitRate="20" playCount="0" track="1" year="2007" genre="Electronic" size="1298295" discNumber="1" suffix="wma" contentType="audio/x-ms-wma" path="/media/music/Synthetic/Synthetic_-_Colorsmoke_EP-20k217-2007/01-Synthetic_-_BlackBlueSmokeDM20k22kh.wma" transcodedSuffix="mp3" transcodedContentType="audio/mpeg">
+        <genres name="Electronic"/>
+      </entry>
     </bookmark>
   </bookmarks>
 </subsonic-response>

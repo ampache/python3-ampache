@@ -7,8 +7,8 @@
     <widget/>
     <title><![CDATA[Album Data]]></title>
   </rule>
-  <rule id="artist">
-    <name><![CDATA[artist]]></name>
+  <rule id="album_artist">
+    <name><![CDATA[album_artist]]></name>
     <label><![CDATA[Album Artist]]></label>
     <type><![CDATA[text]]></type>
     <widget/>
@@ -161,6 +161,48 @@
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>
+  <rule id="my_flagged_song">
+    <name><![CDATA[my_flagged_song]]></name>
+    <label><![CDATA[My Favorite Songs]]></label>
+    <type><![CDATA[boolean]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="my_flagged_album">
+    <name><![CDATA[my_flagged_album]]></name>
+    <label><![CDATA[My Favorite Albums]]></label>
+    <type><![CDATA[boolean]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="my_flagged_artist">
+    <name><![CDATA[my_flagged_artist]]></name>
+    <label><![CDATA[My Favorite Artists]]></label>
+    <type><![CDATA[boolean]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="weight_song">
+    <name><![CDATA[weight_song]]></name>
+    <label><![CDATA[Song popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="weight_album">
+    <name><![CDATA[weight_album]]></name>
+    <label><![CDATA[Album popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
+  <rule id="weight_artist">
+    <name><![CDATA[weight_artist]]></name>
+    <label><![CDATA[Artist popularity score]]></label>
+    <type><![CDATA[numeric]]></type>
+    <widget/>
+    <title><![CDATA[Ratings]]></title>
+  </rule>
   <rule id="favorite">
     <name><![CDATA[favorite]]></name>
     <label><![CDATA[Favorites]]></label>
@@ -176,7 +218,6 @@
       <select id="2"><![CDATA[admin]]></select>
       <select id="3"><![CDATA[demo]]></select>
       <select id="4"><![CDATA[user]]></select>
-      <select id="10"><![CDATA[generic]]></select>
     </widget>
     <title><![CDATA[Ratings]]></title>
   </rule>

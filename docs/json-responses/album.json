@@ -1,47 +1,47 @@
 {
-    "id": "2",
-    "name": "Colorsmoke EP",
+    "id": "21",
+    "name": "Forget and Remember",
     "prefix": null,
-    "basename": "Colorsmoke EP",
+    "basename": "Forget and Remember",
     "artist": {
-        "id": "2",
-        "name": "Synthetic",
+        "id": "36",
+        "name": "Comfort Fit",
         "prefix": null,
-        "basename": "Synthetic"
+        "basename": "Comfort Fit"
     },
     "artists": [
         {
-            "id": "2",
-            "name": "Synthetic",
+            "id": "36",
+            "name": "Comfort Fit",
             "prefix": null,
-            "basename": "Synthetic"
+            "basename": "Comfort Fit"
         }
     ],
     "songartists": [
         {
-            "id": "2",
-            "name": "Synthetic",
+            "id": "36",
+            "name": "Comfort Fit",
             "prefix": null,
-            "basename": "Synthetic"
+            "basename": "Comfort Fit"
         }
     ],
-    "time": 4568,
-    "year": 2007,
+    "time": 4248,
+    "year": 2005,
     "tracks": [],
-    "songcount": 12,
+    "songcount": 20,
     "diskcount": 1,
-    "type": null,
+    "type": "album",
     "genre": [
         {
-            "id": "1",
-            "name": "Electronic"
+            "id": "8",
+            "name": "Hip-Hop"
         }
     ],
-    "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
     "has_art": true,
-    "flag": true,
-    "rating": 5,
-    "averagerating": 3,
-    "mbid": null,
-    "mbid_group": null
+    "flag": false,
+    "rating": null,
+    "averagerating": null,
+    "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
+    "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
 }

@@ -1,5 +1,8 @@
 {
-    "total_count": 0,
-    "md5": "40cd750bba9870f18aada2478b24840a",
-    "user": []
+    "error": {
+        "errorCode": "4704",
+        "errorAction": "following",
+        "errorType": "username",
+        "errorMessage": "Not Found: generic"
+    }
 }

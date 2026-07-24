@@ -1,78 +1,69 @@
 {
-    "id": "91",
-    "title": "Home Capsules",
-    "name": "Home Capsules",
+    "id": "80",
+    "title": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
+    "name": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
     "artist": {
-        "id": "14",
-        "name": "Nofi\/found.",
+        "id": "12",
+        "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
         "prefix": null,
-        "basename": "Nofi\/found."
+        "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
     },
     "artists": [
         {
-            "id": "14",
-            "name": "Nofi\/found.",
+            "id": "12",
+            "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
             "prefix": null,
-            "basename": "Nofi\/found."
+            "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
         }
     ],
     "album": {
-        "id": "8",
-        "name": "Nofi Devices",
+        "id": "6",
+        "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
         "prefix": null,
-        "basename": "Nofi Devices"
+        "basename": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)"
     },
     "albumartist": {
-        "id": "14",
-        "name": "Nofi\/found.",
+        "id": "12",
+        "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
         "prefix": null,
-        "basename": "Nofi\/found."
+        "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
     },
     "disk": 1,
     "disksubtitle": null,
-    "track": 9,
-    "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/09_Home_Capsules.mp3",
-    "genre": [
-        {
-            "id": "5",
-            "name": "Electronica"
-        },
-        {
-            "id": "6",
-            "name": "Dance"
-        }
-    ],
+    "track": 1,
+    "filename": "\/mnt\/files-music\/ampache-test\/music\/\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c\/\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)\/01 - \u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d.wav",
+    "genre": [],
     "playlisttrack": 1,
-    "time": 294,
+    "time": 300,
     "year": 0,
-    "format": "mp3",
+    "format": "wav",
     "stream_format": "mp3",
-    "bitrate": 192000,
+    "bitrate": 1411200,
     "stream_bitrate": 32000,
     "rate": 44100,
     "mode": "cbr",
-    "mime": "audio\/mpeg",
+    "mime": "audio\/wav",
     "stream_mime": "audio\/mpeg",
-    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3",
-    "size": 7076428,
+    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=80&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=-%20-%20-%20-%20-%20-%20-.mp3",
+    "size": 53026998,
     "mbid": null,
-    "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
+    "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=album&id=445&name=art.jpg",
     "has_art": true,
     "flag": true,
     "rating": 5,
-    "averagerating": null,
-    "playcount": 0,
+    "averagerating": 3,
+    "playcount": 2,
     "catalog": 1,
-    "composer": "Jeffrey Melton",
+    "composer": null,
     "channels": 2,
-    "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+    "comment": null,
     "license": null,
     "publisher": "archive.org",
     "language": null,
     "lyrics": null,
     "replaygain_album_gain": null,
     "replaygain_album_peak": null,
-    "replaygain_track_gain": -2.97,
+    "replaygain_track_gain": -21.75,
     "replaygain_track_peak": 1,
     "r128_album_gain": null,
     "r128_track_gain": null

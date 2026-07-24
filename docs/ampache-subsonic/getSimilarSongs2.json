@@ -1,10 +1,10 @@
 {
     "subsonic-response": {
-        "status": "ok",
+        "status": "failed",
         "version": "1.16.1",
-        "type": "ampache",
-        "serverVersion": "6.8.0",
-        "openSubsonic": true,
-        "similarSongs2": []
+        "error": {
+            "code": 0,
+            "message": "Error creating response."
+        }
     }
 }

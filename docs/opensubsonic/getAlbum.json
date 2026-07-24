@@ -3,180 +3,376 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "8.0.0",
         "openSubsonic": true,
         "album": {
-            "id": "al-7",
-            "parent": "ar-13",
-            "album": "Sensorisk Deprivation",
-            "title": "Sensorisk Deprivation",
-            "name": "Sensorisk Deprivation",
+            "id": "al-12",
+            "name": "Buried in Nausea",
             "version": "",
-            "isDir": true,
-            "coverArt": "al-7",
-            "songCount": 4,
-            "created": "2021-02-23T04:24:51+00:00",
-            "duration": 3428,
-            "playCount": 13,
-            "artistId": "ar-13",
-            "artist": "IOK-1",
-            "year": 2011,
-            "genre": "Dark Ambient",
+            "coverArt": "al-12",
+            "songCount": 9,
+            "created": "2021-02-24T01:44:21+00:00",
+            "duration": 1879,
+            "playCount": 2,
+            "artistId": "ar-19",
+            "artist": "Various Artists",
+            "year": 2012,
+            "genre": "Punk",
             "genres": [
                 {
-                    "name": "Dark Ambient"
+                    "name": "Punk"
                 }
             ],
             "artists": [
                 {
-                    "id": "ar-13",
-                    "name": "IOK-1"
+                    "id": "ar-19",
+                    "name": "Various Artists"
                 }
             ],
             "song": [
                 {
-                    "id": "so-83",
-                    "parent": "al-7",
-                    "title": "Sensorisk Deprivation",
+                    "id": "so-110",
+                    "parent": "al-12",
+                    "title": "I wanna walk through the fire",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "al-7",
-                    "album": "Sensorisk Deprivation",
-                    "artistId": "ar-13",
-                    "artist": "IOK-1",
-                    "coverArt": "al-7",
-                    "duration": 818,
-                    "bitRate": 376,
+                    "albumId": "al-12",
+                    "album": "Buried in Nausea",
+                    "artistId": "ar-23",
+                    "artist": "Manic Notion",
+                    "coverArt": "al-12",
+                    "duration": 197,
+                    "bitRate": 261,
+                    "userRating": 5,
+                    "playCount": 1,
+                    "created": "2021-02-24T01:44:21Z",
                     "track": 1,
-                    "year": 2011,
-                    "genre": "Dark Ambient",
-                    "genres": [
+                    "year": 2012,
+                    "size": 6651911,
+                    "discNumber": 1,
+                    "suffix": "m4a",
+                    "contentType": "audio/mp4",
+                    "path": "/media/music/Various Artists/Buried In Nausea/01ManicNotion-IWannaWalkThroughTheFire.m4a",
+                    "artists": [
                         {
-                            "name": "Dark Ambient"
+                            "id": "ar-23",
+                            "name": "Manic Notion"
                         }
                     ],
-                    "size": 39473388,
-                    "discNumber": 1,
-                    "suffix": "flac",
-                    "contentType": "audio/flac",
-                    "path": "/media/music/IOK-1/Sensorisk Deprivation/01_-_IOK-1_-_Sensorisk_Deprivation.flac",
-                    "artists": [],
                     "albumArtists": [
                         {
-                            "id": "ar-13",
-                            "name": "IOK-1"
+                            "id": "ar-19",
+                            "name": "Various Artists"
                         }
                     ],
                     "transcodedSuffix": "mp3",
                     "transcodedContentType": "audio/mpeg"
                 },
                 {
-                    "id": "so-82",
-                    "parent": "al-7",
-                    "title": "Vanvett",
+                    "id": "so-114",
+                    "parent": "al-12",
+                    "title": "He is the Master of War",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "al-7",
-                    "album": "Sensorisk Deprivation",
-                    "artistId": "ar-13",
-                    "artist": "IOK-1",
-                    "coverArt": "al-7",
-                    "duration": 825,
-                    "bitRate": 363,
+                    "albumId": "al-12",
+                    "album": "Buried in Nausea",
+                    "artistId": "ar-26",
+                    "artist": "Stress Builds Character",
+                    "coverArt": "al-12",
+                    "duration": 233,
+                    "bitRate": 250,
+                    "playCount": 0,
+                    "created": "2021-02-24T01:44:21Z",
                     "track": 2,
-                    "year": 2011,
-                    "genre": "Dark Ambient",
-                    "genres": [
+                    "year": 2012,
+                    "size": 7535126,
+                    "discNumber": 1,
+                    "suffix": "m4a",
+                    "contentType": "audio/mp4",
+                    "path": "/media/music/Various Artists/Buried In Nausea/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a",
+                    "artists": [
                         {
-                            "name": "Dark Ambient"
+                            "id": "ar-26",
+                            "name": "Stress Builds Character"
                         }
                     ],
-                    "size": 38389422,
-                    "discNumber": 1,
-                    "suffix": "flac",
-                    "contentType": "audio/flac",
-                    "path": "/media/music/IOK-1/Sensorisk Deprivation/02_-_IOK-1_-_Vanvett.flac",
-                    "artists": [],
                     "albumArtists": [
                         {
-                            "id": "ar-13",
-                            "name": "IOK-1"
+                            "id": "ar-19",
+                            "name": "Various Artists"
                         }
                     ],
                     "transcodedSuffix": "mp3",
                     "transcodedContentType": "audio/mpeg"
                 },
                 {
-                    "id": "so-81",
-                    "parent": "al-7",
-                    "title": "Galenskap",
+                    "id": "so-109",
+                    "parent": "al-12",
+                    "title": "Dance with the Devil",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "al-7",
-                    "album": "Sensorisk Deprivation",
-                    "artistId": "ar-13",
-                    "artist": "IOK-1",
-                    "coverArt": "al-7",
-                    "duration": 998,
-                    "bitRate": 380,
+                    "albumId": "al-12",
+                    "album": "Buried in Nausea",
+                    "artistId": "ar-34",
+                    "artist": "Comedown Kid",
+                    "coverArt": "al-12",
+                    "duration": 116,
+                    "bitRate": 31,
+                    "playCount": 0,
+                    "created": "2021-02-24T01:44:21Z",
                     "track": 3,
-                    "year": 2011,
-                    "genre": "Dark Ambient",
-                    "genres": [
+                    "year": 2012,
+                    "size": 483444,
+                    "discNumber": 1,
+                    "suffix": "wma",
+                    "contentType": "audio/x-ms-wma",
+                    "path": "/media/music/Various Artists/Buried In Nausea/03ComedownKid-DanceWithTheDevil.wma",
+                    "artists": [
                         {
-                            "name": "Dark Ambient"
+                            "id": "ar-34",
+                            "name": "Comedown Kid"
                         }
                     ],
-                    "size": 48633049,
-                    "discNumber": 1,
-                    "suffix": "flac",
-                    "contentType": "audio/flac",
-                    "path": "/media/music/IOK-1/Sensorisk Deprivation/03_-_IOK-1_-_Galenskap.flac",
-                    "artists": [],
                     "albumArtists": [
                         {
-                            "id": "ar-13",
-                            "name": "IOK-1"
+                            "id": "ar-19",
+                            "name": "Various Artists"
                         }
                     ],
                     "transcodedSuffix": "mp3",
                     "transcodedContentType": "audio/mpeg"
                 },
                 {
-                    "id": "so-84",
-                    "parent": "al-7",
-                    "title": "Vansinne",
+                    "id": "so-113",
+                    "parent": "al-12",
+                    "title": "Representin",
                     "isDir": false,
                     "isVideo": false,
                     "type": "music",
-                    "albumId": "al-7",
-                    "album": "Sensorisk Deprivation",
-                    "artistId": "ar-13",
-                    "artist": "IOK-1",
-                    "coverArt": "al-7",
-                    "duration": 787,
-                    "bitRate": 696,
+                    "albumId": "al-12",
+                    "album": "Buried in Nausea",
+                    "artistId": "ar-32",
+                    "artist": "Shorty Mac",
+                    "coverArt": "al-12",
+                    "duration": 234,
+                    "bitRate": 120,
+                    "playCount": 0,
+                    "created": "2021-02-24T01:44:21Z",
                     "track": 4,
-                    "year": 2011,
-                    "genre": "Dark Ambient",
-                    "genres": [
+                    "year": 2012,
+                    "size": 3628327,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/music/Various Artists/Buried In Nausea/04ShortyMac-Representin.mp3",
+                    "artists": [
                         {
-                            "name": "Dark Ambient"
+                            "id": "ar-32",
+                            "name": "Shorty Mac"
                         }
                     ],
-                    "size": 70182824,
-                    "discNumber": 1,
-                    "suffix": "flac",
-                    "contentType": "audio/flac",
-                    "path": "/media/music/IOK-1/Sensorisk Deprivation/04_-_IOK-1_-_Vansinne.flac",
-                    "artists": [],
                     "albumArtists": [
                         {
-                            "id": "ar-13",
-                            "name": "IOK-1"
+                            "id": "ar-19",
+                            "name": "Various Artists"
+                        }
+                    ]
+                },
+                {
+                    "id": "so-111",
+                    "parent": "al-12",
+                    "title": "The art of free expression",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-12",
+                    "album": "Buried in Nausea",
+                    "artistId": "ar-35",
+                    "artist": "Tip-C",
+                    "coverArt": "al-12",
+                    "duration": 110,
+                    "bitRate": 31,
+                    "userRating": 5,
+                    "playCount": 1,
+                    "created": "2021-02-24T01:44:21Z",
+                    "starred": "2026-07-10T01:02:49Z",
+                    "track": 5,
+                    "year": 2012,
+                    "size": 460498,
+                    "discNumber": 1,
+                    "suffix": "wma",
+                    "contentType": "audio/x-ms-wma",
+                    "path": "/media/music/Various Artists/Buried In Nausea/05Tip-c-TheArtOfFreeExpression.wma",
+                    "artists": [
+                        {
+                            "id": "ar-35",
+                            "name": "Tip-C"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-19",
+                            "name": "Various Artists"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-108",
+                    "parent": "al-12",
+                    "title": "I've been down this road before",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-12",
+                    "album": "Buried in Nausea",
+                    "artistId": "ar-21",
+                    "artist": "Tip-C (featuring Mike Beers)",
+                    "coverArt": "al-12",
+                    "duration": 252,
+                    "bitRate": 31,
+                    "userRating": 5,
+                    "playCount": 0,
+                    "created": "2021-02-24T01:44:21Z",
+                    "track": 6,
+                    "year": 2012,
+                    "size": 1035322,
+                    "discNumber": 1,
+                    "suffix": "wma",
+                    "contentType": "audio/x-ms-wma",
+                    "path": "/media/music/Various Artists/Buried In Nausea/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
+                    "artists": [
+                        {
+                            "id": "ar-21",
+                            "name": "Tip-C (featuring Mike Beers)"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-19",
+                            "name": "Various Artists"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-115",
+                    "parent": "al-12",
+                    "title": "Are we going Crazy",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-12",
+                    "album": "Buried in Nausea",
+                    "artistId": "ar-27",
+                    "artist": "Chi.Otic",
+                    "coverArt": "al-12",
+                    "duration": 433,
+                    "bitRate": 31,
+                    "playCount": 0,
+                    "created": "2021-02-24T01:44:21Z",
+                    "track": 7,
+                    "year": 2012,
+                    "size": 1776580,
+                    "discNumber": 1,
+                    "suffix": "wma",
+                    "contentType": "audio/x-ms-wma",
+                    "path": "/media/music/Various Artists/Buried In Nausea/07Chi.otic-AreWeGoingCrazy.wma",
+                    "artists": [
+                        {
+                            "id": "ar-27",
+                            "name": "Chi.Otic"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-19",
+                            "name": "Various Artists"
+                        }
+                    ],
+                    "transcodedSuffix": "mp3",
+                    "transcodedContentType": "audio/mpeg"
+                },
+                {
+                    "id": "so-112",
+                    "parent": "al-12",
+                    "title": "Personal Truth",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-12",
+                    "album": "Buried in Nausea",
+                    "artistId": "ar-33",
+                    "artist": "MxBxCx",
+                    "coverArt": "al-12",
+                    "duration": 208,
+                    "bitRate": 175,
+                    "playCount": 0,
+                    "created": "2021-02-24T01:44:21Z",
+                    "track": 8,
+                    "year": 2012,
+                    "size": 4693165,
+                    "discNumber": 1,
+                    "suffix": "mp3",
+                    "contentType": "audio/mpeg",
+                    "path": "/media/music/Various Artists/Buried In Nausea/08Mxbxcx-PersonalTruth.mp3",
+                    "artists": [
+                        {
+                            "id": "ar-33",
+                            "name": "MxBxCx"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-19",
+                            "name": "Various Artists"
+                        }
+                    ]
+                },
+                {
+                    "id": "so-107",
+                    "parent": "al-12",
+                    "title": "Arrest Me",
+                    "isDir": false,
+                    "isVideo": false,
+                    "type": "music",
+                    "albumId": "al-12",
+                    "album": "Buried in Nausea",
+                    "artistId": "ar-20",
+                    "artist": "R/B",
+                    "coverArt": "al-12",
+                    "duration": 96,
+                    "bitRate": 246,
+                    "playCount": 0,
+                    "created": "2021-02-24T01:44:21Z",
+                    "track": 9,
+                    "year": 2012,
+                    "genre": "Punk",
+                    "genres": [
+                        {
+                            "name": "Punk"
+                        }
+                    ],
+                    "size": 3091727,
+                    "discNumber": 1,
+                    "suffix": "m4a",
+                    "contentType": "audio/mp4",
+                    "path": "/media/music/Various Artists/Buried In Nausea/09R_b-ArrestMe.m4a",
+                    "artists": [
+                        {
+                            "id": "ar-20",
+                            "name": "R/B"
+                        }
+                    ],
+                    "albumArtists": [
+                        {
+                            "id": "ar-19",
+                            "name": "Various Artists"
                         }
                     ],
                     "transcodedSuffix": "mp3",

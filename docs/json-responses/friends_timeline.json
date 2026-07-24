@@ -1,10 +1,21 @@
 {
     "activity": [
         {
-            "id": "343",
-            "date": 1771990172,
+            "id": "363",
+            "date": 1783648366,
+            "object_type": "user",
+            "object_id": "4",
+            "action": "follow",
+            "user": {
+                "id": "4",
+                "username": "user"
+            }
+        },
+        {
+            "id": "362",
+            "date": 1783648359,
             "object_type": "song",
-            "object_id": "91",
+            "object_id": "80",
             "action": "userflag",
             "user": {
                 "id": "4",
@@ -12,33 +23,22 @@
             }
         },
         {
-            "id": "341",
-            "date": 1751343852,
-            "object_type": "song",
-            "object_id": "56",
-            "action": "rating",
+            "id": "361",
+            "date": 1783648005,
+            "object_type": "user",
+            "object_id": "4",
+            "action": "follow",
             "user": {
                 "id": "4",
                 "username": "user"
             }
         },
         {
-            "id": "342",
-            "date": 1751343852,
+            "id": "360",
+            "date": 1783647999,
             "object_type": "song",
-            "object_id": "56",
+            "object_id": "78",
             "action": "userflag",
-            "user": {
-                "id": "4",
-                "username": "user"
-            }
-        },
-        {
-            "id": "339",
-            "date": 1751343837,
-            "object_type": "song",
-            "object_id": "56",
-            "action": "rating",
             "user": {
                 "id": "4",
                 "username": "user"

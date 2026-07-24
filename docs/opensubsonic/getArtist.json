@@ -3,44 +3,36 @@
         "status": "ok",
         "version": "1.16.1",
         "type": "ampache",
-        "serverVersion": "7.6.0",
+        "serverVersion": "8.0.0",
         "openSubsonic": true,
         "artist": {
-            "id": "ar-11",
-            "name": "structura",
-            "coverArt": "ar-11",
+            "id": "ar-36",
+            "name": "Comfort Fit",
+            "coverArt": "ar-36",
             "albumCount": 1,
-            "userRating": 4,
-            "averageRating": 4,
             "album": [
                 {
-                    "id": "al-18",
-                    "parent": "ar-11",
-                    "album": "Inominavel (live.v.01)",
-                    "title": "Inominavel (live.v.01)",
-                    "name": "Inominavel (live.v.01)",
+                    "id": "al-21",
+                    "name": "Forget and Remember",
                     "version": "",
-                    "isDir": true,
-                    "coverArt": "al-18",
-                    "songCount": 6,
-                    "created": "2021-02-23T04:24:50+00:00",
-                    "duration": 1339,
-                    "playCount": 4,
-                    "artistId": "ar-11",
-                    "artist": "structura",
-                    "year": 2007,
-                    "genre": "Noise",
+                    "coverArt": "al-21",
+                    "songCount": 20,
+                    "created": "2021-07-22T02:09:31+00:00",
+                    "duration": 4248,
+                    "playCount": 3,
+                    "artistId": "ar-36",
+                    "artist": "Comfort Fit",
+                    "year": 2005,
+                    "genre": "Hip-Hop",
                     "genres": [
                         {
-                            "name": "Noise"
+                            "name": "Hip-Hop"
                         }
                     ],
-                    "userRating": 4,
-                    "averageRating": 3.67,
                     "artists": [
                         {
-                            "id": "ar-11",
-                            "name": "structura"
+                            "id": "ar-36",
+                            "name": "Comfort Fit"
                         }
                     ]
                 }

@@ -55,6 +55,138 @@
             "title": "Podcast Episode"
         },
         {
+            "name": "myrating",
+            "label": "My Rating",
+            "type": "numeric",
+            "widget": [
+                "select",
+                [
+                    "0 Stars",
+                    "1 Star",
+                    "2 Stars",
+                    "3 Stars",
+                    "4 Stars",
+                    "5 Stars"
+                ]
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "rating",
+            "label": "Rating (Average)",
+            "type": "numeric",
+            "widget": [
+                "select",
+                [
+                    "0 Stars",
+                    "1 Star",
+                    "2 Stars",
+                    "3 Stars",
+                    "4 Stars",
+                    "5 Stars"
+                ]
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "podcastrating",
+            "label": "My Rating (Podcast)",
+            "type": "numeric",
+            "widget": [
+                "select",
+                [
+                    "0 Stars",
+                    "1 Star",
+                    "2 Stars",
+                    "3 Stars",
+                    "4 Stars",
+                    "5 Stars"
+                ]
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "podcast_episoderating",
+            "label": "My Rating (Podcast Episode)",
+            "type": "numeric",
+            "widget": [
+                "select",
+                [
+                    "0 Stars",
+                    "1 Star",
+                    "2 Stars",
+                    "3 Stars",
+                    "4 Stars",
+                    "5 Stars"
+                ]
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "my_flagged_podcast",
+            "label": "My Favorite Podcasts",
+            "type": "boolean",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "my_flagged_podcast_episode",
+            "label": "My Favorite Podcast Episodes",
+            "type": "boolean",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "weight_podcast",
+            "label": "Podcast popularity score",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "weight_podcast_episode",
+            "label": "Podcast Episode popularity score",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "favorite",
+            "label": "Favorites",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "other_user",
+            "label": "Another User",
+            "type": "user_numeric",
+            "widget": [
+                "select",
+                {
+                    "2": "admin",
+                    "3": "demo",
+                    "4": "user"
+                }
+            ],
+            "title": "Ratings"
+        },
+        {
             "name": "played_times",
             "label": "# Played",
             "type": "numeric",

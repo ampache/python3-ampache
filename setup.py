@@ -41,5 +41,5 @@ setup(
         "Intended Audience :: Developers",
     ],
     keywords="",
-    install_requires=[""],
+    install_requires=["requests>=2.28.1"],
 )

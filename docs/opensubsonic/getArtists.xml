@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="7.6.0" openSubsonic="1">
+<subsonic-response xmlns="http://subsonic.org/restapi" status="ok" version="1.16.1" type="ampache" serverVersion="8.0.0" openSubsonic="1">
   <artists ignoredArticles="The An A Die Das Ein Eine Les Le La">
     <index name="C">
       <artist id="ar-16" name="CARNÚN" coverArt="ar-16" albumCount="1"/>
@@ -22,7 +22,6 @@
     </index>
     <index name="S">
       <artist id="ar-32" name="Shorty Mac" coverArt="ar-32" albumCount="0"/>
-      <artist id="ar-18" name="SPACE" albumCount="0"/>
       <artist id="ar-26" name="Stress Builds Character" coverArt="ar-26" albumCount="0"/>
       <artist id="ar-11" name="structura" coverArt="ar-11" albumCount="1"/>
       <artist id="ar-2" name="Synthetic" coverArt="ar-2" albumCount="1" starred="2021-02-22T05:54:18Z"/>

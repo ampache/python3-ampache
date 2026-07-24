@@ -32,7 +32,7 @@
         },
         {
             "name": "album",
-            "label": "Album",
+            "label": "Album Title",
             "type": "text",
             "widget": [
                 "input",
@@ -41,7 +41,7 @@
             "title": "Song Data"
         },
         {
-            "name": "artist",
+            "name": "song_artist",
             "label": "Song Artist",
             "type": "text",
             "widget": [
@@ -209,7 +209,7 @@
             "title": "Ratings"
         },
         {
-            "name": "my_flagged",
+            "name": "my_flagged_song",
             "label": "My Favorite Songs",
             "type": "boolean",
             "widget": [
@@ -269,6 +269,36 @@
             "title": "Ratings"
         },
         {
+            "name": "weight_song",
+            "label": "Song popularity score",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "weight_album",
+            "label": "Album popularity score",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Ratings"
+        },
+        {
+            "name": "weight_artist",
+            "label": "Artist popularity score",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Ratings"
+        },
+        {
             "name": "other_user",
             "label": "Another User",
             "type": "user_numeric",
@@ -277,8 +307,7 @@
                 {
                     "2": "admin",
                     "3": "demo",
-                    "4": "user",
-                    "10": "generic"
+                    "4": "user"
                 }
             ],
             "title": "Ratings"
@@ -292,8 +321,7 @@
                 {
                     "2": "admin",
                     "3": "demo",
-                    "4": "user",
-                    "10": "generic"
+                    "4": "user"
                 }
             ],
             "title": "Ratings"
@@ -307,8 +335,7 @@
                 {
                     "2": "admin",
                     "3": "demo",
-                    "4": "user",
-                    "10": "generic"
+                    "4": "user"
                 }
             ],
             "title": "Ratings"
@@ -790,7 +817,7 @@
                 "input",
                 "text"
             ],
-            "title": "MusicBrainz"
+            "title": "Musicbrainz"
         },
         {
             "name": "mbid_album",
@@ -800,7 +827,7 @@
                 "input",
                 "text"
             ],
-            "title": "MusicBrainz"
+            "title": "Musicbrainz"
         },
         {
             "name": "mbid_artist",
@@ -810,7 +837,7 @@
                 "input",
                 "text"
             ],
-            "title": "MusicBrainz"
+            "title": "Musicbrainz"
         }
     ]
 }

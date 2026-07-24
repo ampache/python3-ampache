@@ -501,8 +501,8 @@ class API(object):
             else:
                 req = urllib.request.Request(full_url, headers=headers, method=http_method)
             result = urllib.request.urlopen(req)
-        except urllib.error.HTTPError:
-            return False
+        except urllib.error.HTTPError as error:
+            result = error
         except urllib.error.URLError:
             return False
         except ValueError:
@@ -752,7 +752,7 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def list(self, object_type, filter_str=False, exact=False, add=False, update=False,
-             offset=0, limit=0, sort=False, cond=False):
+             offset=0, limit=0, sort=False, cond=False, hide_search=False):
         """ list
             MINIMUM_API_VERSION=6.0.0
 
@@ -768,6 +768,7 @@ class API(object):
             * limit       = (integer) //optional
             * cond        = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * hide_search = (integer) 0,1, if true do not include searches/smartlists in the result //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'list'
@@ -781,11 +782,14 @@ class API(object):
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
-                'cond': cond}
+                'cond': cond,
+                'hide_search': hide_search}
         if not filter_str:
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not hide_search:
+            data.pop('hide_search')
         if not add:
             data.pop('add')
         if not update:
@@ -953,7 +957,7 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def artists(self, filter_str=False, add=False, update=False,
-                offset=0, limit=0, include=False, album_artist=False, sort=False, cond=False):
+                offset=0, limit=0, include=False, album_artist=False, sort=False, cond=False, exact=False):
         """ artists
             MINIMUM_API_VERSION=380001
 
@@ -969,6 +973,7 @@ class API(object):
             * album_artist = (boolean) 0,1 if true filter for album artists only //optional
             * cond         = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort         = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * exact        = (integer) 0,1, if true filter is exact rather then fuzzy //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         if bool(include) and not isinstance(include, str):
@@ -984,9 +989,12 @@ class API(object):
                 'include': include,
                 'album_artist': album_artist,
                 'sort': sort,
-                'cond': cond}
+                'cond': cond,
+                'exact': exact}
         if not filter_str:
             data.pop('filter')
+        if not exact:
+            data.pop('exact')
         if not add:
             data.pop('add')
         if not update:
@@ -2177,7 +2185,7 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def podcasts(self, filter_str=False,
-                 exact=False, offset=0, limit=0, sort=False, cond=False):
+                 exact=False, offset=0, limit=0, sort=False, cond=False, include=False):
         """ podcasts
             MINIMUM_API_VERSION=420000
 
@@ -2188,6 +2196,7 @@ class API(object):
             * limit      = (integer) //optional
             * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * include    = (string) 'episodes' (include episodes in the response) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'podcasts'
@@ -2198,11 +2207,14 @@ class API(object):
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
-                'cond': cond}
+                'cond': cond,
+                'include': include}
         if not filter_str:
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not include:
+            data.pop('include')
         if not sort:
             data.pop('sort')
         if not cond:
@@ -2648,22 +2660,26 @@ class API(object):
             data.pop('cond')
         return self.get_request(ampache_url, data, api_method)
 
-    def users(self, sort=False, cond=False):
+    def users(self, sort=False, cond=False, offset=0, limit=0):
         """ users
             MINIMUM_API_VERSION=5.0.0
 
             Get ids and usernames for your site users
 
             INPUTS
-            * cond = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
-            * sort = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * cond   = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort   = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * offset = (integer) //optional
+            * limit  = (integer) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'users'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'sort': sort,
-                'cond': cond}
+                'cond': cond,
+                'offset': str(offset),
+                'limit': str(limit)}
         if not sort:
             data.pop('sort')
         if not cond:
@@ -4261,9 +4277,11 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
+                if not "exact" in params:
+                    params["exact"] = False
                 return self.artists(params["filter_str"], params["add"], params["update"], params["offset"],
                                     params["limit"], params["include"], params["album_artist"],
-                                    params["sort"], params["cond"])
+                                    params["sort"], params["cond"], params["exact"])
             case 'artist_songs':
                 if not "offset" in params:
                     params["offset"] = 0
@@ -4612,8 +4630,11 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
+                if not "hide_search" in params:
+                    params["hide_search"] = False
                 return self.list(params["object_type"], params["filter_str"], params["exact"], params["add"],
-                                 params["update"], params["offset"], params["limit"], params["sort"], params["cond"])
+                                 params["update"], params["offset"], params["limit"], params["sort"], params["cond"],
+                                 params["hide_search"])
             case 'live_stream':
                 if not "filter_id" in params:
                     return False
@@ -4828,8 +4849,10 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
+                if not "include" in params:
+                    params["include"] = False
                 return self.podcasts(params["filter_id"], params["exact"], params["offset"], params["limit"],
-                                     params["sort"], params["cond"])
+                                     params["sort"], params["cond"], params["include"])
             case 'preference_create':
                 if not "description" in params:
                     params["description"] = False
@@ -5175,7 +5198,11 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.users(params["sort"], params["cond"])
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.users(params["sort"], params["cond"], params["offset"], params["limit"])
             case 'user_smartlists':
                 if not "filter_str" in params:
                     params["filter_str"] = False
