@@ -23,6 +23,7 @@ Ampache XML and JSON Api library for python3
 
 import hashlib
 import json
+import mimetypes
 import os
 import requests
 import time
@@ -54,6 +55,11 @@ class API(object):
         self.AMPACHE_USER = ''
         self.AMPACHE_KEY = ''
         self.AMPACHE_BEARER_TOKEN = ''
+        # Send secrets (a password, or the handshake auth key) in a POST body instead of the
+        # query string. API8 deprecates the query string for these because query values leak
+        # into server/proxy logs and browser history; support for them is removed in API9.
+        # Off by default because a server older than Ampache 8 only reads the query string.
+        self.AMPACHE_POST_SECRETS = False
         # Test colors for printing
         self.OKGREEN = '\033[92m'
         self.WARNING = '\033[93m'
@@ -159,6 +165,28 @@ class API(object):
         if self.AMPACHE_DEBUG:
             print('AMPACHE_BEARER_TOKEN set to ' + bearer_token)
         self.AMPACHE_BEARER_TOKEN = bearer_token
+
+    def set_post_secrets(self, mybool: bool):
+        """ set_post_secrets
+            MINIMUM_API_VERSION=8.0.0
+
+            Send secrets in a POST body instead of the query string.
+
+            API8 deprecates the query string for the password on register, user_create, user_edit
+            and catalog_add, and for the handshake auth key, because query values end up in
+            server/proxy logs and browser history. Query string support for them is removed in
+            API9, but a server older than Ampache 8 doesn't read a request body, so this is off
+            by default.
+
+            INPUTS
+            * mybool = (boolean) Enable/disable posting secrets
+        """
+        if self.AMPACHE_DEBUG:
+            if mybool:
+                print('AMPACHE_POST_SECRETS' + f": {self.OKGREEN}enabled{self.ENDC}")
+            else:
+                print('AMPACHE_POST_SECRETS' + f": {self.WARNING}disabled{self.ENDC}")
+        self.AMPACHE_POST_SECRETS = mybool
 
     def set_url(self, myurl: str):
         """ set_url
@@ -519,23 +547,48 @@ class API(object):
         self.AMPACHE_HTTP_CODE = getattr(result, 'status', 0) or getattr(result, 'code', 0)
         ampache_response = result.read()
         result.close()
-        if self.AMPACHE_DEBUG:
-            if self.DOCS_PATH == "docs/":
-                self.DOCS_PATH = self.DOCS_PATH + api_format + "-responses/"
-            url_response = ampache_response.decode('utf-8')
-            print(url_response)
-            print(full_url)
-            try:
-                if not os.path.isdir(self.DOCS_PATH):
-                    os.makedirs(self.DOCS_PATH)
-                text_file = open(self.DOCS_PATH + method + "." + api_format, "w", encoding="utf-8")
-                text_file.write(url_response)
-                text_file.close()
-            except FileNotFoundError:
-                pass
+        self.debug_response(ampache_response, full_url, api_format, method)
         return ampache_response
 
+    def debug_response(self, ampache_response, full_url: str, api_format: str, method: str):
+        """ debug_response
+
+            Print and save a response when debugging has been enabled
+
+            INPUTS
+            * ampache_response = (bytes) raw response body
+            * full_url         = (string) url that was called
+            * api_format       = (string) 'xml'|'json'
+            * method           = (string) api method name used for the file name
+        """
+        if not self.AMPACHE_DEBUG:
+            return
+        if self.DOCS_PATH == "docs/":
+            self.DOCS_PATH = self.DOCS_PATH + api_format + "-responses/"
+        try:
+            url_response = ampache_response.decode('utf-8')
+        except (AttributeError, UnicodeDecodeError):
+            return
+        print(url_response)
+        print(full_url)
+        try:
+            if not os.path.isdir(self.DOCS_PATH):
+                os.makedirs(self.DOCS_PATH)
+            text_file = open(self.DOCS_PATH + method + "." + api_format, "w", encoding="utf-8")
+            text_file.write(url_response)
+            text_file.close()
+        except FileNotFoundError:
+            pass
+
     def get_request(self, ampache_url, data, api_method):
+        if getattr(self, 'AMPACHE_POST_SECRETS', False):
+            # API8 asks for these in a request body; everything else stays in the query string
+            secret_keys = {'password'}
+            if api_method in ('handshake', 'lost_password'):
+                secret_keys.add('auth')
+            body = {key: data.pop(key) for key in list(data) if key in secret_keys}
+            if body:
+                return self.post_request(ampache_url, data, api_method, body=body)
         headers = {}
         if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
             headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
@@ -546,6 +599,43 @@ class API(object):
         if isinstance(request_response, bool):
             return False
         return self.return_data(request_response)
+
+    def post_request(self, ampache_url, data, api_method, files=None, body=None, content_type=None):
+        """ post_request
+            MINIMUM_API_VERSION=8.0.0
+
+            Send a POST request instead of putting everything in the query string.
+
+            API8 accepts parameters for POST/PUT/PATCH/DELETE in a JSON body
+            (Content-Type: application/json) as well as in the query string or a form encoded
+            body, and keeping secrets (passwords, the handshake auth key) out of the query
+            string is the reason to use this; a file is sent as the multipart field 'upl' or
+            as the raw request body.
+
+            INPUTS
+            * ampache_url  = (string) server url
+            * data         = (dict) query parameters
+            * api_method   = (string) api method being called
+            * files        = (dict) optional multipart files e.g. {'upl': (name, handle)}
+            * body         = (mixed) optional raw request body
+            * content_type = (string) optional Content-Type for a raw body
+        """
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
+        if content_type:
+            headers['Content-Type'] = content_type
+        self.AMPACHE_HTTP_CODE = 0
+        try:
+            result = requests.post(ampache_url, params=data, files=files, data=body, headers=headers)
+        except requests.exceptions.RequestException:
+            return False
+        # API8 sets a real status code for errors and empty results but the body is still a
+        # valid API document, so it's always worth reading
+        self.AMPACHE_HTTP_CODE = result.status_code
+        self.debug_response(result.content, result.url, self.AMPACHE_API, api_method)
+        return self.return_data(result.content)
 
     """
     -------------
@@ -769,7 +859,9 @@ class API(object):
             This takes a named array of objects and returning `id`, `name`, `prefix` and `basename`
 
             INPUTS
-            * object_type = (string) 'song'|'album'|'artist'|'album_artist'|'playlist'
+            * object_type = (string) 'song', 'album', 'artist', 'album_artist', 'song_artist', 'playlist',
+                            'podcast', 'podcast_episode', 'share', 'video', 'live_stream', 'catalog'
+                            ('album_disk' is API8 and higher)
             * filter_str  = (string) search the name of the object_type //optional
             * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
             * add         = (integer) UNIXTIME() //optional
@@ -815,14 +907,20 @@ class API(object):
                offset=0, limit=0, sort=False, cond=False):
         """ browse
             MINIMUM_API_VERSION=6.0.0
+            CHANGED_IN_API_VERSION=8.0.0
 
             Return children of a parent object in a folder traversal/browse style
             If you don't send any parameters you'll get a catalog list (the 'root' path)
 
+            NOTE from API8 the catalog is optional on 'album_artist', 'artist', 'album',
+            'album_disk' and 'podcast'. Send it to restrict the children to a single catalog, or
+            leave it out to get them from every catalog you can see. API6 still requires it
+
             INPUTS
             * filter_str  = (string) object_id //optional
-            * object_type = (string) 'root', 'catalog', 'artist', 'album', 'podcast' // optional
-            * catalog     = (integer) catalog ID you are browsing
+            * object_type = (string) 'root', 'catalog', 'album_artist', 'artist', 'album', 'podcast' //optional
+                            ('album_disk' is API8 and higher)
+            * catalog     = (integer) catalog ID you are browsing //optional
             * add         = Api::set_filter(date) //optional
             * update      = Api::set_filter(date) //optional
             * offset      = (integer) //optional
@@ -866,6 +964,9 @@ class API(object):
 
             Return children of a parent folder object by ID
 
+            There is no separate 'folder' action in API8; 'folders' takes either a folder id or
+            a path name in filter, so this is a convenience wrapper that sends the id.
+
             INPUTS
             * filter_id = (integer) UID of the folder object (Default: -1, the root folder) //optional
             * add       = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
@@ -876,7 +977,7 @@ class API(object):
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        api_method = 'folder'
+        api_method = 'folders'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': str(filter_id),
@@ -949,6 +1050,7 @@ class API(object):
 
             INPUTS
             * object_type = (string) 'catalog', 'song', 'album', 'artist', 'album_artist', 'song_artist', 'playlist', 'podcast', 'podcast_episode', 'share', 'video', 'live_stream'
+                            ('album_disk' is API8 and higher)
             * filter_str  = (string) search the name of the object_type //optional
             * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
             * add         = (integer) UNIXTIME() //optional
@@ -1616,6 +1718,34 @@ class API(object):
                 'filter': filter_id}
         return self.get_request(ampache_url, data, api_method)
 
+    def sonic_match(self, filter_id: int, offset=0, limit=0):
+        """ sonic_match
+            MINIMUM_API_VERSION=8.0.0
+
+            Songs that sound like the given song, most similar first.
+
+            Each entry carries the full song plus 'similarity', a 0.0-1.0 score where 1.0 is the
+            same recording; a backend that gives no comparable score reports -1. This shares the
+            OpenSubsonic sonicMatch scale.
+
+            NOTE similarity comes from analysing the audio, so this needs a sonic analysis plugin
+            (e.g. AudioMuse) enabled for the user. With no plugin enabled the request is refused
+            (error 4703) rather than answered with an empty list
+
+            INPUTS
+            * filter_id = (integer) UID of Song
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'sonic_match'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'offset': str(offset),
+                'limit': str(limit)}
+        return self.get_request(ampache_url, data, api_method)
+
     def user_playlists(self, filter_str=False, exact=False, offset=0, limit=0,
                        sort=False, cond=False, include=False, add=False, update=False):
         """ user_playlists
@@ -1917,6 +2047,8 @@ class API(object):
             MINIMUM_API_VERSION=380001
             CHANGED_IN_API_VERSION=400003
 
+            DEPRECATED API8 uses the `playlist_add` action instead of `playlist_add_song`
+
             This adds a song to a playlist.
             Added duplicate checks in 400003
 
@@ -2145,6 +2277,234 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        return self.get_request(ampache_url, data, api_method)
+
+    def collections(self, object_type=False, offset=0, limit=0):
+        """ collections
+            MINIMUM_API_VERSION=8.0.0
+
+            A collection is a hand-curated list of objects of any type; the static counterpart to
+            a search and the non-media counterpart to a playlist.
+
+            This returns every collection you own, plus every public collection on the server.
+
+            INPUTS
+            * object_type = (string) only return collections pinned to this object_type //optional
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collections'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'type': object_type,
+                'offset': str(offset),
+                'limit': str(limit)}
+        if not object_type:
+            data.pop('type')
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection(self, filter_id: int):
+        """ collection
+            MINIMUM_API_VERSION=8.0.0
+
+            Return a collection by UID, without its contents.
+
+            A collection you can't see reports 'not found' rather than 'access denied'
+
+            INPUTS
+            * filter_id = (integer) UID of Collection
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection_items(self, filter_id: int, offset=0, limit=0):
+        """ collection_items
+            MINIMUM_API_VERSION=8.0.0
+
+            A collection's members, in curated order.
+
+            The members come back as one flat list under 'contents' and each entry carries its
+            'track' (the 1-based position), its 'track_id' (the membership row) and its
+            'object_type', with that type's own object nested under a property of the same name.
+
+            NOTE offset and limit page the list without changing the order. The 'items' count on
+            the collection stays the total member count, so it isn't reduced by paging
+
+            INPUTS
+            * filter_id = (integer) UID of Collection
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection_items'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'offset': str(offset),
+                'limit': str(limit)}
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection_create(self, collection_name, collection_type=False, object_type=False):
+        """ collection_create
+            MINIMUM_API_VERSION=8.0.0
+
+            Create a new, empty collection.
+
+            Leave object_type out for a mixed collection, or set it to pin the collection to a
+            single type so collection_add refuses anything else.
+
+            INPUTS
+            * collection_name = (string) Collection name
+            * collection_type = (string) 'public'|'private' (Default: 'private') //optional
+            * object_type     = (string) pin the collection to a single object_type //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection_create'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'name': collection_name,
+                'type': collection_type,
+                'object_type': object_type}
+        if not collection_type:
+            data.pop('type')
+        if not object_type:
+            data.pop('object_type')
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection_edit(self, filter_id: int, collection_name=False, collection_type=False,
+                        object_type=None, collaborate=False, items=False, tracks=False):
+        """ collection_edit
+            MINIMUM_API_VERSION=8.0.0
+
+            Change a collection's name, visibility, pinned type, collaborators or member order.
+
+            Only the values you send are changed. Send an empty string as object_type to un-pin a
+            collection back to mixed; pinning is refused while the collection still holds a
+            different type.
+
+            items and tracks reorder the members the same way playlist_edit does; the two lists
+            are paired in order and each pair puts one member at one position. Because a
+            collection is heterogeneous each entry in items carries its type as
+            'object_type:object_id' (e.g. 'album:21,song:60,album:44' with tracks '1,2,3')
+
+            INPUTS
+            * filter_id       = (integer) UID of Collection
+            * collection_name = (string) Collection name //optional
+            * collection_type = (string) 'public'|'private' //optional
+            * object_type     = (string) pinned object_type, or an empty string to un-pin //optional
+            * collaborate     = (string) comma-separated user id's allowed to curate the contents //optional
+            * items           = (string) comma-separated 'object_type:object_id' pairs //optional
+            * tracks          = (string) comma-separated positions matched to 'items' in order //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection_edit'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'name': collection_name,
+                'type': collection_type,
+                'object_type': object_type,
+                'collaborate': collaborate,
+                'items': items,
+                'tracks': tracks}
+        if not collection_name:
+            data.pop('name')
+        if not collection_type:
+            data.pop('type')
+        # an empty string un-pins the collection, so only an unset object_type is dropped
+        if object_type is None or object_type is False:
+            data.pop('object_type')
+        if not collaborate:
+            data.pop('collaborate')
+        if not items:
+            data.pop('items')
+        if not tracks:
+            data.pop('tracks')
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection_delete(self, filter_id: int):
+        """ collection_delete
+            MINIMUM_API_VERSION=8.0.0
+
+            Delete a collection and its membership rows. The objects it referenced are untouched.
+
+            ACCESS REQUIRED: collection owner or admin. A collaborator may curate the contents
+            but not destroy the list
+
+            INPUTS
+            * filter_id = (integer) UID of Collection
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection_delete'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection_add(self, filter_id: int, object_id, object_type: str):
+        """ collection_add
+            MINIMUM_API_VERSION=8.0.0
+
+            Add one object to the end of a collection, so an add never disturbs the order of what
+            is already there.
+
+            NOTE duplicates are governed by the user's 'unique_playlist' preference, which is off
+            by default, so a collection may hold the same object twice. With it on a repeat is
+            refused with an error
+
+            INPUTS
+            * filter_id   = (integer) UID of Collection
+            * object_id   = (integer) UID of the object to add
+            * object_type = (string) type of the object to add
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection_add'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'id': object_id,
+                'object_type': object_type}
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection_remove(self, filter_id: int, object_id=False, object_type=False, track=False):
+        """ collection_remove
+            MINIMUM_API_VERSION=8.0.0
+
+            Remove members from a collection. The objects themselves are untouched and removing
+            something that was never a member is not an error.
+
+            Name either a position or an object:
+            * track removes exactly the one member holding that position
+            * object_id with object_type removes every member pointing at that object
+
+            track takes precedence. Without it, both object_id and object_type are required.
+            The remaining positions close up, so anything you read before the call is stale.
+
+            INPUTS
+            * filter_id   = (integer) UID of Collection
+            * object_id   = (integer) UID of the object to remove //optional
+            * object_type = (string) type of the object to remove //optional
+            * track       = (integer) position of the member to remove //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection_remove'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'id': object_id,
+                'object_type': object_type,
+                'track': track}
+        if not object_id:
+            data.pop('id')
+        if not object_type:
+            data.pop('object_type')
+        if not track:
+            data.pop('track')
         return self.get_request(ampache_url, data, api_method)
 
     def shares(self, filter_str=False,
@@ -2483,6 +2843,74 @@ class API(object):
                 'task': task,
                 'filter': catalog_id}
         return self.get_request(ampache_url, data, api_method)
+
+    def upload(self, file_path, filename=False, license_id=False, artist_id=False,
+               artist_name=False, album_id=False, album_name=False, raw_body=False,
+               content_type=False):
+        """ upload
+            MINIMUM_API_VERSION=8.0.0
+
+            Add a media file to the catalog named by the 'upload_catalog' preference.
+
+            The file is sent as a multipart form field named 'upl' or, with raw_body, as the raw
+            request body with 'filename' naming it.
+
+            ACCESS REQUIRED: the 'allow_upload' preference, at the access level set by
+            'upload_access_level'
+
+            NOTE an artist or album owned by another user is refused, and a file that fails to be
+            added is removed from the catalog directory again. A name already present in the
+            catalog is refused rather than renamed and only the file name is used (any path in it
+            is ignored)
+
+            INPUTS
+            * file_path    = (string) full path to the local file being sent
+            * filename     = (string) name to store it as (Default: the name of file_path) //optional
+            * license_id   = (integer) $license_id, required when 'licensing' is enabled //optional
+            * artist_id    = (integer) $artist_id //optional
+            * artist_name  = (string) create or reuse an artist you own //optional
+            * album_id     = (integer) $album_id //optional
+            * album_name   = (string) create or reuse an album you own //optional
+            * raw_body     = (boolean) 0,1, send the file as the raw request body //optional
+            * content_type = (string) media type of the file (Default: guessed from the name) //optional
+        """
+        if not os.path.isfile(file_path):
+            return False
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'upload'
+        if not filename:
+            filename = os.path.basename(file_path)
+        # a form encoded content type makes PHP parse the file as request variables, so always
+        # send a real media type with the file
+        if not content_type:
+            content_type = mimetypes.guess_type(filename)[0]
+        if not content_type:
+            content_type = 'application/octet-stream'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filename': filename,
+                'license': license_id,
+                'artist_id': artist_id,
+                'artist_name': artist_name,
+                'album_id': album_id,
+                'album_name': album_name}
+        if not license_id:
+            data.pop('license')
+        if not artist_id:
+            data.pop('artist_id')
+        if not artist_name:
+            data.pop('artist_name')
+        if not album_id:
+            data.pop('album_id')
+        if not album_name:
+            data.pop('album_name')
+        if raw_body:
+            with open(file_path, 'rb') as media_file:
+                return self.post_request(ampache_url, data, api_method,
+                                         body=media_file.read(), content_type=content_type)
+        with open(file_path, 'rb') as media_file:
+            return self.post_request(ampache_url, data, api_method,
+                                     files={'upl': (filename, media_file, content_type)})
 
     def podcasts(self, filter_str=False, include=False,
                  exact=False, offset=0, limit=0, sort=False, cond=False):
@@ -2935,7 +3363,8 @@ class API(object):
             This gets library stats for different object types. When filter is null get some random items instead
 
             INPUTS
-            * object_type = (string) 'song'|'album'|'artist'
+            * object_type = (string) 'song', 'album', 'artist', 'video', 'playlist', 'podcast', 'podcast_episode'
+                            ('album_disk' is API8 and higher)
             * filter_str  = (string) 'newest'|'highest'|'frequent'|'recent'|'flagged'|'random'
             * offset      = (integer) //optional
             * limit       = (integer) //optional
@@ -3353,22 +3782,31 @@ class API(object):
                 'filter': filter_id}
         return self.get_request(ampache_url, data, api_method)
 
-    def random(self, destination, object_type='song', stats=1,
+    def random(self, destination, object_type='song', filter_id=False, stats=1,
                transcode=False, bitrate=False, offset=0):
         """ random
             MINIMUM_API_VERSION=8.0.0
 
-            Pick a random song, podcast_episode or video from the whole library and stream it.
+            Pick a random object and stream it.
             The server responds with a 302 redirect to the stream url, which is followed here.
 
-            Unlike stream, this takes no object id.
+            Unlike stream, an object id is optional; a container type resolves to a random song
+            from within that container.
 
             INPUTS
             * destination = (string) full file path
-            * object_type = (string) 'song', 'podcast_episode', 'video', DEFAULT 'song' //optional
+            * object_type = (string) 'album', 'album_artist', 'album_disk', 'artist', 'catalog',
+                            'favorite', 'genre', 'label', 'playlist', 'podcast_episode', 'rating',
+                            'search', 'song', 'song_artist', 'video', DEFAULT 'song' //optional
+            * filter_id   = (string) $object_id of the container to pick from //optional
+                            NOTE 'favorite' reads this as a flag value (1, or unset, for flagged; 0 for not flagged)
+                            and 'rating' as a star value (1-5 for that many stars or more, 0 for unrated,
+                            unset for any rated song) rather than as an object id
+                            NOTE filter is read against the table named by object_type and those id spaces
+                            overlap, so an album id and an album_disk id of the same number are different objects
             * stats       = (integer) 0,1, if false disable stat recording //optional SONG ONLY
-            * transcode   = (string) 'mp3', 'ogg', etc. (sent as `format`) //optional
-            * bitrate     = (integer) max bitrate for transcoding, '128', '256' //optional
+            * transcode   = (string) 'mp3', 'ogg', etc. (sent as `format`) //optional SONG ONLY
+            * bitrate     = (integer) max bitrate for transcoding in bytes (e.g. 192000=192Kb) //optional SONG ONLY
             * offset      = (integer) start streaming from this time offset in seconds //optional
         """
         if not os.path.isdir(os.path.dirname(destination)):
@@ -3378,10 +3816,13 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
+                'filter': filter_id,
                 'format': transcode,
                 'bitrate': bitrate,
                 'offset': str(offset),
                 'stats': stats}
+        if filter_id is False or filter_id is None or filter_id == '':
+            data.pop('filter')
         if not transcode:
             data.pop('format')
         if not bitrate:
@@ -3408,11 +3849,11 @@ class API(object):
 
             INPUTS
             * object_id   = (string) $song_id / $podcast_episode_id
-            * object_type = (string) 'song'|'podcast'
+            * object_type = (string) 'song'|'podcast_episode'|'search'|'playlist'
             * destination = (string) full file path
             * stats       = (integer) 0,1, if false disable stat recording //optional
-            * transcode   = (string) 'mp3', 'ogg', etc. (sent as `format`) //optional SONG ONLY
-            * bitrate     = (integer) max bitrate for transcoding, '128', '256' //optional SONG ONLY
+            * transcode   = (string) 'mp3', 'ogg', etc. (sent as `format`, 'raw' keeps the original) //optional SONG ONLY
+            * bitrate     = (integer) max bitrate for transcoding in bytes (e.g. 192000=192Kb) //optional SONG ONLY
             * offset      = (integer) start streaming from this time offset in seconds //optional
             * length      = (boolean) 0,1, send the file length in the response //optional
         """
@@ -3457,10 +3898,10 @@ class API(object):
 
             INPUTS
             * object_id     = (string) $song_id / $podcast_episode_id / $search_id / $playlist_id
-            * object_type   = (string) 'song'|'podcast'|'search'|'playlist'|'album'|'artist'|'podcast'
+            * object_type   = (string) 'song'|'podcast_episode'|'search'|'playlist'|'album'|'artist'|'podcast'
             * destination   = (string) full file path
-            * transcode     = (string) 'mp3', 'ogg', etc. ('raw' / original by default) //optional SONG ONLY
-            * bitrate       = (integer) max bitrate for transcoding, '128', '256' //optional SONG ONLY
+            * transcode     = (string) 'mp3', 'ogg', etc. (sent as `format`, 'raw' / original by default) //optional SONG ONLY
+            * bitrate       = (integer) max bitrate for transcoding in bytes (e.g. 192000=192Kb) //optional SONG ONLY
             * zip_container = (boolean) 0,1, MINIMUM_API_VERSION=8.0.0 //optional
                               when object_type is a container ('album', 'artist', 'playlist', 'podcast')
                               and zipping is enabled on the server, download the whole container as a zip
@@ -3538,6 +3979,7 @@ class API(object):
             INPUTS
             * object_id   = (string) $song_id / $podcast_episode_id
             * object_type = (string) 'song', 'artist', 'album', 'playlist', 'search', 'podcast'
+                            ('album_disk' is API8 and higher)
             * destination = (string) output file path
             * size        = (string) 'width'x'height' of the art to return (e.g. '300x300') //optional
             * fallback    = (boolean) 0,1, return a blank image instead of an error if art is missing //optional
@@ -3610,8 +4052,12 @@ class API(object):
                   reset_streamtoken=False, clear_stats=False):
         """ user_edit
             MINIMUM_API_VERSION=6.0.0
+            CHANGED_IN_API_VERSION=8.0.0
 
             Update an existing user. @param array $input
+
+            NOTE maxbitrate is bits per second from API8 onwards (e.g. 320000), matching every
+            other rate argument in the API. API6 and older take kbps (e.g. 320)
 
             INPUTS
             * username          = (string) $username
@@ -3623,7 +4069,7 @@ class API(object):
             * city              = (string) $city //optional
             * disable           = (integer) 0,1 true to disable the user (if enabled) //optional
             * group             = (integer) Catalog filter group for the new user //optional, default = 0
-            * maxbitrate        = (integer) $maxbitrate //optional
+            * maxbitrate        = (integer) $maxbitrate in bits per second (e.g. 320000) //optional
             * fullname_public   = (integer) 0,1 true to enable, false to disable using fullname in public display //optional
             * reset_apikey      = (integer) 0,1 true to reset a user Api Key //optional
             * reset_streamtoken = (integer) 0,1 true to reset a user Stream Token //optional
@@ -4885,6 +5331,57 @@ class API(object):
                     params["cond"] = False
                 return self.catalogs(params["filter_str"], params["offset"], params["limit"],
                                      params["sort"], params["cond"])
+            case 'collection':
+                if not "filter_id" in params:
+                    return False
+                return self.collection(params["filter_id"])
+            case 'collections':
+                for key, value in {"object_type": False, "offset": 0, "limit": 0}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.collections(params["object_type"], params["offset"], params["limit"])
+            case 'collection_items':
+                if not "filter_id" in params:
+                    return False
+                for key, value in {"offset": 0, "limit": 0}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.collection_items(params["filter_id"], params["offset"], params["limit"])
+            case 'collection_create':
+                if not "collection_name" in params:
+                    return False
+                for key, value in {"collection_type": False, "object_type": False}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.collection_create(params["collection_name"], params["collection_type"],
+                                              params["object_type"])
+            case 'collection_edit':
+                if not "filter_id" in params:
+                    return False
+                for key, value in {"collection_name": False, "collection_type": False,
+                                   "object_type": None, "collaborate": False, "items": False,
+                                   "tracks": False}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.collection_edit(params["filter_id"], params["collection_name"],
+                                            params["collection_type"], params["object_type"],
+                                            params["collaborate"], params["items"], params["tracks"])
+            case 'collection_delete':
+                if not "filter_id" in params:
+                    return False
+                return self.collection_delete(params["filter_id"])
+            case 'collection_add':
+                if not "filter_id" in params or not "object_id" in params or not "object_type" in params:
+                    return False
+                return self.collection_add(params["filter_id"], params["object_id"], params["object_type"])
+            case 'collection_remove':
+                if not "filter_id" in params:
+                    return False
+                for key, value in {"object_id": False, "object_type": False, "track": False}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.collection_remove(params["filter_id"], params["object_id"],
+                                              params["object_type"], params["track"])
             case 'deleted_podcast_episodes':
                 if not "offset" in params:
                     params["offset"] = 0
@@ -5403,12 +5900,13 @@ class API(object):
             case 'random':
                 if not "destination" in params:
                     return False
-                for key, value in {"object_type": 'song', "stats": 1, "transcode": False,
-                                   "bitrate": False, "offset": 0}.items():
+                for key, value in {"object_type": 'song', "filter_id": False, "stats": 1,
+                                   "transcode": False, "bitrate": False, "offset": 0}.items():
                     if key not in params:
                         params[key] = value
-                return self.random(params["destination"], params["object_type"], params["stats"],
-                                   params["transcode"], params["bitrate"], params["offset"])
+                return self.random(params["destination"], params["object_type"], params["filter_id"],
+                                   params["stats"], params["transcode"], params["bitrate"],
+                                   params["offset"])
             case 'rate':
                 if not "object_type" in params or not "object_id" in params or not "rating" in params:
                     return False
@@ -5536,6 +6034,13 @@ class API(object):
                 if not "filter_id" in params:
                     return False
                 return self.song_tags(params["filter_id"])
+            case 'sonic_match':
+                if not "filter_id" in params:
+                    return False
+                for key, value in {"offset": 0, "limit": 0}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.sonic_match(params["filter_id"], params["offset"], params["limit"])
             case 'songs':
                 if not "filter_str" in params:
                     params["filter_str"] = False
@@ -5663,6 +6168,17 @@ class API(object):
                 if not "filter_id" in params:
                     return False
                 return self.update_podcast(params["filter_id"])
+            case 'upload':
+                if not "file_path" in params:
+                    return False
+                for key, value in {"filename": False, "license_id": False, "artist_id": False,
+                                   "artist_name": False, "album_id": False, "album_name": False,
+                                   "raw_body": False, "content_type": False}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.upload(params["file_path"], params["filename"], params["license_id"],
+                                   params["artist_id"], params["artist_name"], params["album_id"],
+                                   params["album_name"], params["raw_body"], params["content_type"])
             case 'url_to_song':
                 if not "url" in params:
                     return False
