@@ -26,13 +26,14 @@
         {
             "name": "owner",
             "label": "Owner",
-            "type": "user_numeric",
+            "type": "boolean_numeric",
             "widget": [
                 "select",
                 {
                     "2": "admin",
                     "3": "demo",
-                    "4": "user"
+                    "4": "user",
+                    "10": "generic"
                 }
             ],
             "title": "Playlist"

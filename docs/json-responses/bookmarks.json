@@ -1,7 +1,27 @@
 {
-    "total_count": 6,
-    "md5": "8bfb77a606c708e933b6e030dc738d32",
+    "total_count": 8,
+    "md5": "747a586ba428c879b8b9157188da2702",
     "bookmark": [
+        {
+            "id": "1",
+            "owner": "user",
+            "object_type": "podcast_episode",
+            "object_id": "2",
+            "position": 0,
+            "client": "AmpacheAPI",
+            "creation_date": 1670202706,
+            "update_date": 1698974919
+        },
+        {
+            "id": "2",
+            "owner": "user",
+            "object_type": "podcast_episode",
+            "object_id": "2",
+            "position": 0,
+            "client": "AmpacheAPI",
+            "creation_date": 1670202706,
+            "update_date": 1698974919
+        },
         {
             "id": "3",
             "owner": "user",

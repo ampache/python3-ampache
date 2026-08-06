@@ -20,7 +20,7 @@
                         "name": "Dance"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist&name=art.jpg",
+                "art": "https:\/\/music.com.au\/images\/blankalbum_128x128.png",
                 "has_art": false,
                 "flag": false,
                 "rating": 2,
@@ -41,14 +41,14 @@
                 "artist": {
                     "id": "19",
                     "name": "Various Artists",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Various Artists"
                 },
                 "artists": [
                     {
                         "id": "19",
                         "name": "Various Artists",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Various Artists"
                     }
                 ],
@@ -56,56 +56,56 @@
                     {
                         "id": "20",
                         "name": "R\/B",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "R\/B"
                     },
                     {
                         "id": "21",
                         "name": "Tip-C (featuring Mike Beers)",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Tip-C (featuring Mike Beers)"
+                    },
+                    {
+                        "id": "34",
+                        "name": "Comedown Kid",
+                        "prefix": "",
+                        "basename": "Comedown Kid"
                     },
                     {
                         "id": "23",
                         "name": "Manic Notion",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Manic Notion"
+                    },
+                    {
+                        "id": "35",
+                        "name": "Tip-C",
+                        "prefix": "",
+                        "basename": "Tip-C"
+                    },
+                    {
+                        "id": "33",
+                        "name": "MxBxCx",
+                        "prefix": "",
+                        "basename": "MxBxCx"
+                    },
+                    {
+                        "id": "32",
+                        "name": "Shorty Mac",
+                        "prefix": "",
+                        "basename": "Shorty Mac"
                     },
                     {
                         "id": "26",
                         "name": "Stress Builds Character",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Stress Builds Character"
                     },
                     {
                         "id": "27",
                         "name": "Chi.Otic",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Chi.Otic"
-                    },
-                    {
-                        "id": "32",
-                        "name": "Shorty Mac",
-                        "prefix": null,
-                        "basename": "Shorty Mac"
-                    },
-                    {
-                        "id": "33",
-                        "name": "MxBxCx",
-                        "prefix": null,
-                        "basename": "MxBxCx"
-                    },
-                    {
-                        "id": "34",
-                        "name": "Comedown Kid",
-                        "prefix": null,
-                        "basename": "Comedown Kid"
-                    },
-                    {
-                        "id": "35",
-                        "name": "Tip-C",
-                        "prefix": null,
-                        "basename": "Tip-C"
                     }
                 ],
                 "time": 1879,
@@ -126,7 +126,8 @@
                 "rating": null,
                 "averagerating": null,
                 "mbid": null,
-                "mbid_group": null
+                "mbid_group": null,
+                "catalog": "1"
             },
             {
                 "id": "10",
@@ -136,14 +137,14 @@
                 "artist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "artists": [
                     {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     }
                 ],
@@ -151,7 +152,7 @@
                     {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     }
                 ],
@@ -168,7 +169,8 @@
                 "rating": null,
                 "averagerating": null,
                 "mbid": null,
-                "mbid_group": null
+                "mbid_group": null,
+                "catalog": "1"
             },
             {
                 "id": "21",
@@ -178,14 +180,14 @@
                 "artist": {
                     "id": "36",
                     "name": "Comfort Fit",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Comfort Fit"
                 },
                 "artists": [
                     {
                         "id": "36",
                         "name": "Comfort Fit",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comfort Fit"
                     }
                 ],
@@ -193,7 +195,7 @@
                     {
                         "id": "36",
                         "name": "Comfort Fit",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comfort Fit"
                     }
                 ],
@@ -209,13 +211,14 @@
                         "name": "Hip-Hop"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=334&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
                 "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
-                "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
+                "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a",
+                "catalog": "4"
             },
             {
                 "id": "8",
@@ -225,14 +228,14 @@
                 "artist": {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 },
                 "artists": [
                     {
                         "id": "14",
                         "name": "Nofi\/found.",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Nofi\/found."
                     }
                 ],
@@ -240,7 +243,7 @@
                     {
                         "id": "14",
                         "name": "Nofi\/found.",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Nofi\/found."
                     }
                 ],
@@ -260,13 +263,14 @@
                         "name": "Dance"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": 2,
                 "averagerating": null,
                 "mbid": null,
-                "mbid_group": null
+                "mbid_group": null,
+                "catalog": "1"
             }
         ],
         "artist": [
@@ -310,7 +314,7 @@
                         "name": "Dance"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist&name=art.jpg",
+                "art": "https:\/\/music.com.au\/images\/blankalbum_128x128.png",
                 "has_art": false,
                 "flag": false,
                 "rating": 2,
@@ -381,18 +385,6 @@
                 "email": null,
                 "website": null,
                 "user": "4"
-            },
-            {
-                "id": "4",
-                "name": "Tokyo Dawn Records",
-                "artists": 1,
-                "summary": null,
-                "external_link": "https:\/\/music.com.au\/labels.php?action=show&label=4",
-                "address": null,
-                "category": "tag_generated",
-                "email": null,
-                "website": null,
-                "user": ""
             }
         ],
         "playlist": [
@@ -406,7 +398,7 @@
                 },
                 "items": 11,
                 "type": "public",
-                "art": "https:\/\/music.com.au\/image.php?object_id=65&object_type=playlist&name=art.jpg",
+                "art": "https:\/\/music.com.au\/images\/blankalbum_128x128.png",
                 "has_access": true,
                 "has_collaborate": true,
                 "has_art": false,
@@ -427,7 +419,7 @@
                 },
                 "items": 43,
                 "type": "private",
-                "art": "https:\/\/music.com.au\/image.php?object_id=3&object_type=playlist&name=art.jpg",
+                "art": "https:\/\/music.com.au\/images\/blankalbum_128x128.png",
                 "has_access": true,
                 "has_collaborate": true,
                 "has_art": false,
@@ -448,7 +440,7 @@
                 },
                 "items": 43,
                 "type": "public",
-                "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=playlist&name=art.jpg",
+                "art": "https:\/\/music.com.au\/images\/blankalbum_128x128.png",
                 "has_access": true,
                 "has_collaborate": true,
                 "has_art": false,
@@ -469,7 +461,7 @@
                 },
                 "items": 43,
                 "type": "private",
-                "art": "https:\/\/music.com.au\/image.php?object_id=4&object_type=playlist&name=art.jpg",
+                "art": "https:\/\/music.com.au\/images\/blankalbum_128x128.png",
                 "has_access": true,
                 "has_collaborate": true,
                 "has_art": false,
@@ -483,33 +475,33 @@
         ],
         "podcast_episode": [
             {
-                "id": "82857",
-                "title": "Ebola update, World Cup heat risks, dad brains",
-                "name": "Ebola update, World Cup heat risks, dad brains",
+                "id": "3715",
+                "title": "Talking to the Host of Drilled about the Legal Battles around Standing Rock",
+                "name": "Talking to the Host of Drilled about the Legal Battles around Standing Rock",
                 "podcast": {
                     "id": "1",
                     "name": "60-Second Science"
                 },
-                "description": "In this episode of Science Quickly, we start with a quick update on the Ebola outbreak surging in parts of Africa. Host Rachel Feltman is then joined by Scientific American&rsquo;s senior desk editor for life science Andrea Thompson to discuss what rising temperatures mean for the FIFA World Cup currently underway in North America. And finally, in honor of Father&rsquo;s Day, SciAm&rsquo;s senior desk editor for health and medicine Tanya Lewis gives us a glimpse into the often overlooked science of how fatherhood changes the brain.\n\n\n\nRecommended Reading:\n\n\n\nJust how big is the new Ebola outbreak?\n\n\n\nThe World Cup is battling extreme heat. Which cooling methods really work?\n\n\n\nThe Science of the 2026 World Cup\n\n\n\nHow becoming a dad changes men&rsquo;s brains\n\n\n\nJoin our Summer Reading Challenge&nbsp;\n\n\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\n\n\nDiscover something new everyday: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.\n\n\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Sushmita Pathak and Jeff DelViscio. This episode was edited by Alex Sugiura, with fact-checking by Marielle Issa and Aaron Shattuck. Our theme music was composed by Dominic Smith.\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
+                "description": "Protests around the construction of the now complete Dakota Access Pipeline brought national attention to Energy Transfer, the company that built and owns the pipeline and funded private security against the protestors. Energy Transfer sued the nonprofit Greenpeace for hundreds of millions of dollars. The company claimed that the Standing Rock movement was not Indigenous-led environmental activism but a conspiratorial effort by Greenpeace. Reporter Alleen Brown is spending this season of her podcast, Drilled, looking into the lawsuit and the message that legal actions like this send to activists.&nbsp;\n\nRecommended reading:\n\nListen to Drilled\n\nRead Alleen Brown&rsquo;s newsletter\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\nDiscover something new every day: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.&nbsp;\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Kelso Harper, Naeem Amarsy and Jeff DelViscio. This episode was hosted by Rachel Feltman. Our show is edited by Alex Sugiura with fact-checking by Shayna Posses and Aaron Shattuck.&nbsp;\n\nThe theme music was composed by Dominic Smith.\n\n\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
                 "category": "",
                 "author": "",
                 "author_full": "",
                 "website": "",
-                "pubdate": "2026-06-22T09:50:00+00:00",
+                "pubdate": "2025-06-30T09:55:00+00:00",
                 "state": "completed",
-                "filelength": "00:12:25",
-                "filesize": "17.33 MB",
-                "filename": "60-Second Science - Ebola update, World Cup heat risks, dad brains.mp3",
+                "filelength": "00:12:06",
+                "filesize": "17 MB",
+                "filename": "60-Second Science - Talking to the Host of Drilled about the Legal Battles around Standing Rock.mp3",
                 "mime": "audio\/mpeg",
-                "time": 745,
-                "size": 18170164,
+                "time": 726,
+                "size": 17827745,
                 "bitrate": 192000,
                 "stream_bitrate": 192000,
                 "rate": 44100,
                 "mode": "cbr",
                 "channels": 2,
-                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=82857",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=82857&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20Ebola%20update-%20World%20Cup%20heat%20risks-%20dad%20brains.mp3",
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=3715",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=3715&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20Talking%20to%20the%20Host%20of%20Drilled%20about%20the%20Legal%20Battles%20around%20Standing%20Rock.mp3",
                 "catalog": "3",
                 "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&id=42&name=art.jpg",
                 "has_art": true,
@@ -517,36 +509,37 @@
                 "rating": null,
                 "averagerating": null,
                 "playcount": 0,
+                "last_played": null,
                 "played": ""
             },
             {
-                "id": "82858",
-                "title": "How common viruses could quietly raise your cancer risk",
-                "name": "How common viruses could quietly raise your cancer risk",
+                "id": "127",
+                "title": "How to Fight Bird Flu If It Becomes the Next Human Pandemic (Part 3)",
+                "name": "How to Fight Bird Flu If It Becomes the Next Human Pandemic (Part 3)",
                 "podcast": {
                     "id": "1",
                     "name": "60-Second Science"
                 },
-                "description": "In this episode of Science Quickly, one of SciAm&rsquo;s Young American Scientists, biologist Jaye Gardiner, explores how common viral infections may raise cancer risk&mdash;not just through genetic mutations but by reshaping the body&rsquo;s &ldquo;extracellular matrix&rdquo; of molecules that support cells and tissues. She explains how viruses can alter the extracellular matrix, potentially creating conditions that allow tumors to grow, and why this emerging view could change how we think about everything from colds to long COVID.\n\n\n\nRecommended Reading:\n\nJaye Gardiner&rsquo;s Young American Scientists profile\n\nJoin our Summer Reading Challenge&nbsp;\n\n\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\n\n\nDiscover something new everyday: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.\n\n\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Sushmita Pathak and Jeff DelViscio. This episode was edited by Alex Sugiura, with fact-checking by Marielle Issa and Aaron Shattuck. Our theme music was composed by Dominic Smith.\n\n\n\nThis episode is part of &ldquo;The Young American Scientists,&rdquo; an editorially independent project that was produced with financial support from Regeneron.&nbsp;\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
+                "description": "Creating a bird flu vaccine requires several layers of bioprotective clothing and typically a whole lot of eggs. H5N1 avian influenza infections have gone from flocks of chickens to herds of cattle and humans. Scientists at the Texas Biomedical Research Institute are taking their best guess at the strains of the virus that could spread and are creating critical vaccine candidates.\n\nMultimedia journalist and Scientific American multimedia intern Naeem Amarsy suited up and went to San Antonio, Tex., to visit a &ldquo;biosafety level three&rdquo; (BSL-3) lab at the institute.&nbsp;\n\nThis is the third and final episode of our series about bird flu.\n\nYou can listen to episode one:\n\nhttps:\/\/www.scientificamerican.com\/podcast\/episode\/how-h5n1-went-from-an-illness-in-wild-birds-to-a-global-pandemic-threat\/&nbsp;\n\nAnd episode two:\n\nhttps:\/\/www.scientificamerican.com\/podcast\/episode\/how-bird-flu-went-from-devastating-poultry-farms-to-infecting-dairy-herds\/&nbsp;\n\nAnd read more of our health coverage:\n\nhttps:\/\/www.scientificamerican.com\/health\/&nbsp;\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\nDiscover something new every day: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.&nbsp;\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Kelso Harper, Naeem Amarsy and Jeff DelViscio. This episode was hosted and reported by Naeem Amarsy. This series was reported and produced by Lauren Young, Meghan Bartels, Fonda Mwangi and Jeff DelViscio. Special thanks to Laura Petersen and Catie Corcoran at the Texas Biomedical Research Institute, Jane Deng and Elizabeth Dowling at the Icahn School of Medicine at Mount Sinai, and Kimberly Lau, Dean Visser and Jeanna Bryner at Scientific American. Our show is edited by Alex Sugiura with fact-checking by Shayna Posses and Aaron Shattuck. The theme music was composed by Dominic Smith.\n\n\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
                 "category": "",
                 "author": "",
                 "author_full": "",
                 "website": "",
-                "pubdate": "2026-06-19T09:50:00+00:00",
+                "pubdate": "2025-06-27T09:55:00+00:00",
                 "state": "completed",
-                "filelength": "00:14:49",
-                "filesize": "20.62 MB",
-                "filename": "60-Second Science - How common viruses could quietly raise your cancer risk.mp3",
+                "filelength": "00:32:06",
+                "filesize": "44.48 MB",
+                "filename": "60-Second Science - How to Fight Bird Flu If It Becomes the Next Human Pandemic (Part 3).mp3",
                 "mime": "audio\/mpeg",
-                "time": 889,
-                "size": 21621015,
+                "time": 1926,
+                "size": 46635577,
                 "bitrate": 192000,
                 "stream_bitrate": 192000,
                 "rate": 44100,
                 "mode": "cbr",
                 "channels": 2,
-                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=82858",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=82858&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20How%20common%20viruses%20could%20quietly%20raise%20your%20cancer%20risk.mp3",
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=127",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=127&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20How%20to%20Fight%20Bird%20Flu%20If%20It%20Becomes%20the%20Next%20Human%20Pandemic%20-Part%203-.mp3",
                 "catalog": "3",
                 "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&id=42&name=art.jpg",
                 "has_art": true,
@@ -554,36 +547,37 @@
                 "rating": null,
                 "averagerating": null,
                 "playcount": 0,
+                "last_played": null,
                 "played": ""
             },
             {
-                "id": "82859",
-                "title": "The neuroscientist decoding how the brain learns",
-                "name": "The neuroscientist decoding how the brain learns",
+                "id": "128",
+                "title": " Bird Flu\u2019s Jump to Cattle Took Dairy Farmers by Surprise (Part 2)",
+                "name": " Bird Flu\u2019s Jump to Cattle Took Dairy Farmers by Surprise (Part 2)",
                 "podcast": {
                     "id": "1",
                     "name": "60-Second Science"
                 },
-                "description": "In this episode, host Rachel Feltman interviews neuroscientist Kau&ecirc; M. Costa, who is among Scientific American&rsquo;s inaugural cohort of Young American Scientists honorees. Costa shares how being surprised by experiments has led him to new ways of thinking about learning in the brain. He explains how dopamine does more than signal reward, how there are two big frameworks of how the brain learns and how his findings could help us better understand&mdash;and treat&mdash;mental illness.\n\n\n\nRecommended Reading:\n\n\n\nThe Young American Scientists\n\n\n\nKau&ecirc; M. Costa&rsquo;s Young American Scientists profile\n\n\n\nJoin our Summer Reading Challenge&nbsp;\n\n\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\n\n\nDiscover something new everyday: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.\n\n\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Sushmita Pathak and Jeff DelViscio. This episode was edited by Alex Sugiura, with fact-checking by Aaron Shattuck. Our theme music was composed by Dominic Smith.\n\n\n\nThis episode is part of &ldquo;The Young American Scientists,&rdquo; an editorially independent project that was produced with financial support from Regeneron.\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
+                "description": "Dairy cattle have become an intermediary between avian influenza found in wild birds and the handful of recorded H5N1 bird flu cases in humans. Senior news reporter Meghan Bartels took a trip upstate to Cornell University&rsquo;s Teaching Dairy Barn. Early last year Texas dairy farmers noticed lethargic cows producing off-color milk. One of them sent Cornell researchers a sample, which genetic sequencing determined to contain a strain of H5N1. That strain traces its roots to the H5N1 virus that emerged in China in the late 1990s&mdash;which spread around the world thanks to migrating wild birds, such as those found on the beach that associate health and medicine editor Lauren Young visited in episode one of our three-part series about bird flu. And outbreak of H5N1 has been running through poultry farms since the early 2020s. Poultry farmers have been forced to cull flocks, reinforce biosecurity protocols and change the prices of eggs as a result. Dairy farms were less prepared for the spillover and its unexpected transition into raw-milk-drinking barn cats. While pasteurization makes milk safe for human consumption, there&rsquo;s no easy way to prevent the spread between herds of cattle. In the next episode, multimedia intern and producer Naeem Amarsy looks at how the virus made yet another hop&mdash;this time into humans.\n\n\n\nRecommended reading:\n\nHow the U.S. Lost Control of Bird Flu, Setting the Stage for Another Pandemic\n\nhttps:\/\/www.scientificamerican.com\/article\/bird-flu-has-spread-out-of-control-after-mistakes-by-u-s-government-and\/&nbsp;\n\nBird Flu Vaccine for Cows Passes Early Test\n\nhttps:\/\/www.scientificamerican.com\/article\/bird-flu-vaccine-for-cows-passes-early-test\/&nbsp;\n\n\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\nDiscover something new every day: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.&nbsp;\n\n\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Kelso Harper, Naeem Amarsy and Jeff DelViscio. This episode was reported and hosted by Meghan Bartels. This series is reported and produced by Lauren Young, Meghan Bartels, Naeem Amarsy, Fonda Mwangi and Jeff DelViscio. Special thanks to Becka Bowyer and Kaitlyn Serrao at Cornell University and to Kimberly Lau, Dean Visser and Jeanna Bryner at Scientific American. Our show is edited by Alex Sugiura with fact-checking by Shayna Posses and Aaron Shattuck. The theme music was composed by Dominic Smith.\n\n\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
                 "category": "",
                 "author": "",
                 "author_full": "",
                 "website": "",
-                "pubdate": "2026-06-17T09:50:00+00:00",
+                "pubdate": "2025-06-25T09:50:00+00:00",
                 "state": "completed",
-                "filelength": "00:18:38",
-                "filesize": "25.85 MB",
-                "filename": "60-Second Science - The neuroscientist decoding how the brain learns.mp3",
+                "filelength": "00:22:13",
+                "filesize": "30.9 MB",
+                "filename": "60-Second Science -  Bird Flu\u2019s Jump to Cattle Took Dairy Farmers by Surprise (Part 2).mp3",
                 "mime": "audio\/mpeg",
-                "time": 1118,
-                "size": 27104993,
+                "time": 1333,
+                "size": 32403851,
                 "bitrate": 192000,
                 "stream_bitrate": 192000,
                 "rate": 44100,
                 "mode": "cbr",
                 "channels": 2,
-                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=82859",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=82859&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20The%20neuroscientist%20decoding%20how%20the%20brain%20learns.mp3",
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=128",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=128&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20%20Bird%20Flu-s%20Jump%20to%20Cattle%20Took%20Dairy%20Farmers%20by%20Surprise%20-Part%202-.mp3",
                 "catalog": "3",
                 "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&id=42&name=art.jpg",
                 "has_art": true,
@@ -591,36 +585,37 @@
                 "rating": null,
                 "averagerating": null,
                 "playcount": 0,
+                "last_played": null,
                 "played": ""
             },
             {
-                "id": "82861",
-                "title": "Disclosure Day and the science of alien language",
-                "name": "Disclosure Day and the science of alien language",
+                "id": "129",
+                "title": "How Bird Flu Went from an Isolated Avian Illness to a Human Pandemic Threat (Part 1)",
+                "name": "How Bird Flu Went from an Isolated Avian Illness to a Human Pandemic Threat (Part 1)",
                 "podcast": {
                     "id": "1",
                     "name": "60-Second Science"
                 },
-                "description": "In the new movie Disclosure Day, aliens communicate through a series of strange clicks and pops. But what could an alien language actually be like? In this episode of Science Quickly, host Rachel Feltman puts that question to linguist Jeffrey Punske. We explore why fictional aliens in Hollywood and beyond tend to sound the way they do, what real human languages can teach us about communication and why math could be humanity&rsquo;s best shot at first contact.\n\n\n\nRecommended Reading:\n\n\n\nSteven Spielberg shares his favorite sci-fi story ever\n\n\n\nWhat Disclosure Day gets wrong about the search for aliens\n\n\n\nJoin our Summer Reading Challenge&nbsp;\n\n\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\n\n\nDiscover something new everyday: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.\n\n\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Sushmita Pathak and Jeff DelViscio. This episode was edited by Alex Sugiura, with fact-checking by Marielle Issa and Aaron Shattuck. Our theme music was composed by Dominic Smith.\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
+                "description": "Bird flu outbreaks in poultry and cattle have caused concern for public health officials. There have been few reported cases of human transmission, but the growing risks of H5N1 avian influenza have virologists on alert.\n\n\n\nResearchers at the St. Jude Center of Excellence for Influenza Research and Response take an annual visit to Delaware Bay to collect samples of bird poop for analysis. These samples give the researchers a look at emerging avian illnesses. While spillover of H5N1 into domestic birds has been known for a while, the first case of spillover into humans was only identified during a 1997 outbreak in Hong Kong. Since then H5N1 has gone global and moved from transmitting from bird to bird to spreading from bird to mammal and from mammal to mammal.\n\n\n\nAssociate health and medicine editor Lauren Young takes a sample collection walk on the beach and speaks with virus detectives about how H5N1 evolved in episode one of our three-part series about bird flu.\n\nJoin us on Wednesday to learn how bird flu jumped from poultry to cattle.\n\n\n\nRecommended reading:\n\nRFK, Jr., Wants to Let Bird Flu Spread on Poultry Farms. Why Experts Are Concerned https:\/\/www.scientificamerican.com\/article\/rfk-jr-wants-to-let-bird-flu-spread-on-poultry-farms-why-experts-are\/&nbsp;\n\nBird Flu Detected in Humans in the U.S.: What We Know So Far https:\/\/www.scientificamerican.com\/article\/bird-flu-detected-in-a-person-in-texas-what-we-know-so-far\/&nbsp;\n\n\n\nE-mail us at sciencequickly@sciam.com if you have any questions, comments or ideas for stories we should cover!\n\nDiscover something new every day: subscribe to Scientific American and sign up for Today in Science, our daily newsletter.&nbsp;\n\n\n\nScience Quickly is produced by Rachel Feltman, Fonda Mwangi, Kelso Harper, Naeem Amarsy and Jeff DelViscio. This episode was hosted by Rachel Feltman with guest Lauren Young. This series was reported and produced by Lauren Young, Meghan Bartels, Naeem Amarsy, Fonda Mwangi and Jeff DelViscio. And special thanks to Kimberly Lau and Dean Visser at Scientific American for making it possible and to Michael Sheffield at St. Jude for assistance in the field. Our show is edited by Alex Sugiura with fact-checking by Shayna Posses and Aaron Shattuck. The theme music was composed by Dominic Smith.\nLearn more about your ad choices. Visit megaphone.fm\/adchoices",
                 "category": "",
                 "author": "",
                 "author_full": "",
                 "website": "",
-                "pubdate": "2026-06-12T09:50:00+00:00",
+                "pubdate": "2025-06-23T09:50:00+00:00",
                 "state": "completed",
-                "filelength": "00:15:03",
-                "filesize": "20.92 MB",
-                "filename": "60-Second Science - Disclosure Day and the science of alien language.mp3",
+                "filelength": "00:30:17",
+                "filesize": "41.98 MB",
+                "filename": "60-Second Science - How Bird Flu Went from an Isolated Avian Illness to a Human Pandemic Threat (Part 1).mp3",
                 "mime": "audio\/mpeg",
-                "time": 903,
-                "size": 21940757,
+                "time": 1817,
+                "size": 44015861,
                 "bitrate": 192000,
                 "stream_bitrate": 192000,
                 "rate": 44100,
                 "mode": "cbr",
                 "channels": 2,
-                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=82861",
-                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=82861&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20Disclosure%20Day%20and%20the%20science%20of%20alien%20language.mp3",
+                "public_url": "https:\/\/music.com.au\/podcast_episode.php?action=show&podcast_episode=129",
+                "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=podcast_episode&oid=129&uid=4&format=raw&player=api&name=60-Second%20Science%20-%20How%20Bird%20Flu%20Went%20from%20an%20Isolated%20Avian%20Illness%20to%20a%20Human%20Pandemic%20Threat%20-Part%201-.mp3",
                 "catalog": "3",
                 "art": "https:\/\/music.com.au\/image.php?object_id=1&object_type=podcast&id=42&name=art.jpg",
                 "has_art": true,
@@ -628,6 +623,7 @@
                 "rating": null,
                 "averagerating": null,
                 "playcount": 0,
+                "last_played": null,
                 "played": ""
             }
         ],
@@ -649,6 +645,7 @@
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
+                "catalog": "3",
                 "podcast_episode": []
             }
         ],
@@ -693,7 +690,7 @@
                         "name": "Dance"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist&name=art.jpg",
+                "art": "https:\/\/music.com.au\/images\/blankalbum_128x128.png",
                 "has_art": false,
                 "flag": false,
                 "rating": 2,
@@ -734,14 +731,14 @@
                 "artist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "artists": [
                     {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     }
                 ],
@@ -754,7 +751,7 @@
                 "albumartist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "disk": 1,
@@ -776,12 +773,13 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3",
                 "size": 4265791,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
                 "playcount": 0,
+                "last_played": null,
                 "catalog": "1",
                 "composer": null,
                 "channels": 2,
@@ -804,14 +802,14 @@
                 "artist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "artists": [
                     {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     }
                 ],
@@ -824,7 +822,7 @@
                 "albumartist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "disk": 1,
@@ -846,12 +844,13 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3",
                 "size": 4444403,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
                 "playcount": 0,
+                "last_played": null,
                 "catalog": "1",
                 "composer": null,
                 "channels": 2,
@@ -874,14 +873,14 @@
                 "artist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "artists": [
                     {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     }
                 ],
@@ -894,7 +893,7 @@
                 "albumartist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "disk": 1,
@@ -916,12 +915,13 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3",
                 "size": 7696008,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": 5,
                 "averagerating": null,
                 "playcount": 2,
+                "last_played": "2025-07-01T04:23:04+00:00",
                 "catalog": "1",
                 "composer": null,
                 "channels": 2,
@@ -944,14 +944,14 @@
                 "artist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "artists": [
                     {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     }
                 ],
@@ -964,7 +964,7 @@
                 "albumartist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "disk": 1,
@@ -986,12 +986,13 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
                 "size": 7826238,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
                 "playcount": 0,
+                "last_played": null,
                 "catalog": "1",
                 "composer": null,
                 "channels": 2,
@@ -1018,8 +1019,12 @@
                 "username": "demo"
             },
             {
-                "id": "4",
-                "username": "user"
+                "id": "10",
+                "username": "generic"
+            },
+            {
+                "id": "61",
+                "username": "otheruser"
             }
         ]
     }

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4710">
-    <errorAction><![CDATA[update_podcast]]></errorAction>
-    <errorType><![CDATA[podcast]]></errorType>
-    <errorMessage><![CDATA[Bad Request: 79]]></errorMessage>
-  </error>
+  <success code="1">
+    <message><![CDATA[Synced episodes for podcast: 57]]></message>
+  </success>
 </root>

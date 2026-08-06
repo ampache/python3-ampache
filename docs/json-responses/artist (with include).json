@@ -12,14 +12,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -27,7 +27,7 @@
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -47,13 +47,14 @@
                     "name": "Dance"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 2,
             "averagerating": null,
             "mbid": null,
-            "mbid_group": null
+            "mbid_group": null,
+            "catalog": "1"
         }
     ],
     "albumcount": 1,
@@ -65,14 +66,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -85,7 +86,7 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
@@ -116,12 +117,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Invo.mp3",
             "size": 1140815,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
-            "flag": true,
-            "rating": 5,
+            "flag": false,
+            "rating": null,
             "averagerating": null,
-            "playcount": 1,
+            "playcount": 0,
+            "last_played": null,
             "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,
@@ -144,14 +146,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -164,7 +166,7 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
@@ -195,12 +197,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3",
             "size": 7875775,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 5,
             "averagerating": null,
             "playcount": 1,
+            "last_played": "2025-07-01T04:07:00+00:00",
             "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,
@@ -223,14 +226,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -243,7 +246,7 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
@@ -274,12 +277,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3",
             "size": 15400002,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 4,
+            "last_played": "2021-08-02T23:55:23+00:00",
             "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,
@@ -302,14 +306,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -322,7 +326,7 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
@@ -353,12 +357,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3",
             "size": 9935896,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
+            "last_played": null,
             "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,
@@ -381,14 +386,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -401,7 +406,7 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
@@ -432,12 +437,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Caloonashine.mp3",
             "size": 7929692,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 5,
             "averagerating": null,
             "playcount": 1,
+            "last_played": "2025-07-01T03:58:45+00:00",
             "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,
@@ -460,14 +466,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -480,7 +486,7 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
@@ -511,12 +517,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=87&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Wonders%20of%20Nando.mp3",
             "size": 7673901,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 5,
             "averagerating": null,
             "playcount": 2,
+            "last_played": "2025-07-01T03:39:40+00:00",
             "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,
@@ -539,14 +546,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -559,7 +566,7 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
@@ -590,12 +597,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=94&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Strangers%20Query.mp3",
             "size": 6719700,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 5,
             "averagerating": null,
             "playcount": 1,
+            "last_played": "2025-07-01T04:04:58+00:00",
             "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,
@@ -618,14 +626,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -638,7 +646,7 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
@@ -669,12 +677,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stance.mp3",
             "size": 13078740,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
+            "last_played": null,
             "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,
@@ -697,14 +706,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -717,7 +726,7 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
@@ -748,12 +757,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3",
             "size": 7076428,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
+            "last_played": null,
             "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,
@@ -776,14 +786,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -796,7 +806,7 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
@@ -827,12 +837,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=88&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Netro.mp3",
             "size": 14445467,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
-            "flag": true,
-            "rating": 5,
+            "flag": false,
+            "rating": null,
             "averagerating": null,
-            "playcount": 1,
+            "playcount": 0,
+            "last_played": null,
             "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,
@@ -855,14 +866,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -875,7 +886,7 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
@@ -906,12 +917,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=89&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stolen.mp3",
             "size": 15100325,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
+            "last_played": null,
             "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,
@@ -939,7 +951,7 @@
             "name": "Dance"
         }
     ],
-    "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist&name=art.jpg",
+    "art": "https:\/\/music.com.au\/images\/blankalbum_128x128.png",
     "has_art": false,
     "flag": false,
     "rating": 2,

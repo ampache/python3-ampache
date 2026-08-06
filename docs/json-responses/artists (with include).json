@@ -1,6 +1,6 @@
 {
-    "total_count": 18,
-    "md5": "2d3fc4f09bcaf62b4f5db0821edd5b1f",
+    "total_count": 19,
+    "md5": "8aabc723b14c64e990f0c5bce2459d9e",
     "artist": [
         {
             "id": "16",
@@ -16,14 +16,14 @@
                     "artist": {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     },
                     "artists": [
                         {
                             "id": "16",
                             "name": "CARN\u00daN",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "CARN\u00daN"
                         }
                     ],
@@ -31,7 +31,7 @@
                         {
                             "id": "16",
                             "name": "CARN\u00daN",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "CARN\u00daN"
                         }
                     ],
@@ -48,7 +48,8 @@
                     "rating": null,
                     "averagerating": null,
                     "mbid": null,
-                    "mbid_group": null
+                    "mbid_group": null,
+                    "catalog": "1"
                 }
             ],
             "albumcount": 1,
@@ -60,14 +61,14 @@
                     "artist": {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     },
                     "artists": [
                         {
                             "id": "16",
                             "name": "CARN\u00daN",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "CARN\u00daN"
                         }
                     ],
@@ -80,7 +81,7 @@
                     "albumartist": {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     },
                     "disk": 1,
@@ -102,12 +103,13 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.mp3",
                     "size": 930226,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 1,
+                    "last_played": "2021-02-24T05:43:54+00:00",
                     "catalog": "1",
                     "composer": null,
                     "channels": 2,
@@ -130,14 +132,14 @@
                     "artist": {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     },
                     "artists": [
                         {
                             "id": "16",
                             "name": "CARN\u00daN",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "CARN\u00daN"
                         }
                     ],
@@ -150,7 +152,7 @@
                     "albumartist": {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     },
                     "disk": 1,
@@ -172,12 +174,13 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3",
                     "size": 4265791,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
+                    "last_played": null,
                     "catalog": "1",
                     "composer": null,
                     "channels": 2,
@@ -200,14 +203,14 @@
                     "artist": {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     },
                     "artists": [
                         {
                             "id": "16",
                             "name": "CARN\u00daN",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "CARN\u00daN"
                         }
                     ],
@@ -220,7 +223,7 @@
                     "albumartist": {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     },
                     "disk": 1,
@@ -242,12 +245,13 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3",
                     "size": 4444403,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
+                    "last_played": null,
                     "catalog": "1",
                     "composer": null,
                     "channels": 2,
@@ -270,14 +274,14 @@
                     "artist": {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     },
                     "artists": [
                         {
                             "id": "16",
                             "name": "CARN\u00daN",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "CARN\u00daN"
                         }
                     ],
@@ -290,7 +294,7 @@
                     "albumartist": {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     },
                     "disk": 1,
@@ -312,12 +316,13 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3",
                     "size": 5066698,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": 5,
                     "averagerating": 4.5,
                     "playcount": 1,
+                    "last_played": "2025-07-01T03:19:18+00:00",
                     "catalog": "1",
                     "composer": null,
                     "channels": 2,
@@ -361,14 +366,14 @@
                     "artist": {
                         "id": "19",
                         "name": "Various Artists",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Various Artists"
                     },
                     "artists": [
                         {
                             "id": "19",
                             "name": "Various Artists",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Various Artists"
                         }
                     ],
@@ -376,56 +381,56 @@
                         {
                             "id": "20",
                             "name": "R\/B",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "R\/B"
                         },
                         {
                             "id": "21",
                             "name": "Tip-C (featuring Mike Beers)",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Tip-C (featuring Mike Beers)"
+                        },
+                        {
+                            "id": "34",
+                            "name": "Comedown Kid",
+                            "prefix": "",
+                            "basename": "Comedown Kid"
                         },
                         {
                             "id": "23",
                             "name": "Manic Notion",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Manic Notion"
+                        },
+                        {
+                            "id": "35",
+                            "name": "Tip-C",
+                            "prefix": "",
+                            "basename": "Tip-C"
+                        },
+                        {
+                            "id": "33",
+                            "name": "MxBxCx",
+                            "prefix": "",
+                            "basename": "MxBxCx"
+                        },
+                        {
+                            "id": "32",
+                            "name": "Shorty Mac",
+                            "prefix": "",
+                            "basename": "Shorty Mac"
                         },
                         {
                             "id": "26",
                             "name": "Stress Builds Character",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Stress Builds Character"
                         },
                         {
                             "id": "27",
                             "name": "Chi.Otic",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Chi.Otic"
-                        },
-                        {
-                            "id": "32",
-                            "name": "Shorty Mac",
-                            "prefix": null,
-                            "basename": "Shorty Mac"
-                        },
-                        {
-                            "id": "33",
-                            "name": "MxBxCx",
-                            "prefix": null,
-                            "basename": "MxBxCx"
-                        },
-                        {
-                            "id": "34",
-                            "name": "Comedown Kid",
-                            "prefix": null,
-                            "basename": "Comedown Kid"
-                        },
-                        {
-                            "id": "35",
-                            "name": "Tip-C",
-                            "prefix": null,
-                            "basename": "Tip-C"
                         }
                     ],
                     "time": 1879,
@@ -446,7 +451,8 @@
                     "rating": null,
                     "averagerating": null,
                     "mbid": null,
-                    "mbid_group": null
+                    "mbid_group": null,
+                    "catalog": "1"
                 }
             ],
             "albumcount": 0,
@@ -458,14 +464,14 @@
                     "artist": {
                         "id": "27",
                         "name": "Chi.Otic",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Chi.Otic"
                     },
                     "artists": [
                         {
                             "id": "27",
                             "name": "Chi.Otic",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Chi.Otic"
                         }
                     ],
@@ -478,7 +484,7 @@
                     "albumartist": {
                         "id": "19",
                         "name": "Various Artists",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Various Artists"
                     },
                     "disk": 1,
@@ -500,12 +506,13 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
                     "size": 1776580,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
+                    "last_played": null,
                     "catalog": "1",
                     "composer": null,
                     "channels": 1,
@@ -549,14 +556,14 @@
                     "artist": {
                         "id": "19",
                         "name": "Various Artists",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Various Artists"
                     },
                     "artists": [
                         {
                             "id": "19",
                             "name": "Various Artists",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Various Artists"
                         }
                     ],
@@ -564,56 +571,56 @@
                         {
                             "id": "20",
                             "name": "R\/B",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "R\/B"
                         },
                         {
                             "id": "21",
                             "name": "Tip-C (featuring Mike Beers)",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Tip-C (featuring Mike Beers)"
+                        },
+                        {
+                            "id": "34",
+                            "name": "Comedown Kid",
+                            "prefix": "",
+                            "basename": "Comedown Kid"
                         },
                         {
                             "id": "23",
                             "name": "Manic Notion",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Manic Notion"
+                        },
+                        {
+                            "id": "35",
+                            "name": "Tip-C",
+                            "prefix": "",
+                            "basename": "Tip-C"
+                        },
+                        {
+                            "id": "33",
+                            "name": "MxBxCx",
+                            "prefix": "",
+                            "basename": "MxBxCx"
+                        },
+                        {
+                            "id": "32",
+                            "name": "Shorty Mac",
+                            "prefix": "",
+                            "basename": "Shorty Mac"
                         },
                         {
                             "id": "26",
                             "name": "Stress Builds Character",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Stress Builds Character"
                         },
                         {
                             "id": "27",
                             "name": "Chi.Otic",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Chi.Otic"
-                        },
-                        {
-                            "id": "32",
-                            "name": "Shorty Mac",
-                            "prefix": null,
-                            "basename": "Shorty Mac"
-                        },
-                        {
-                            "id": "33",
-                            "name": "MxBxCx",
-                            "prefix": null,
-                            "basename": "MxBxCx"
-                        },
-                        {
-                            "id": "34",
-                            "name": "Comedown Kid",
-                            "prefix": null,
-                            "basename": "Comedown Kid"
-                        },
-                        {
-                            "id": "35",
-                            "name": "Tip-C",
-                            "prefix": null,
-                            "basename": "Tip-C"
                         }
                     ],
                     "time": 1879,
@@ -628,13 +635,14 @@
                             "name": "Punk"
                         }
                     ],
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "mbid": null,
-                    "mbid_group": null
+                    "mbid_group": null,
+                    "catalog": "1"
                 }
             ],
             "albumcount": 0,
@@ -646,14 +654,14 @@
                     "artist": {
                         "id": "34",
                         "name": "Comedown Kid",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comedown Kid"
                     },
                     "artists": [
                         {
                             "id": "34",
                             "name": "Comedown Kid",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Comedown Kid"
                         }
                     ],
@@ -666,7 +674,7 @@
                     "albumartist": {
                         "id": "19",
                         "name": "Various Artists",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Various Artists"
                     },
                     "disk": 1,
@@ -688,12 +696,13 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
                     "size": 483444,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
+                    "last_played": null,
                     "catalog": "1",
                     "composer": null,
                     "channels": 1,
@@ -737,14 +746,14 @@
                     "artist": {
                         "id": "36",
                         "name": "Comfort Fit",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comfort Fit"
                     },
                     "artists": [
                         {
                             "id": "36",
                             "name": "Comfort Fit",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Comfort Fit"
                         }
                     ],
@@ -752,7 +761,7 @@
                         {
                             "id": "36",
                             "name": "Comfort Fit",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Comfort Fit"
                         }
                     ],
@@ -768,13 +777,14 @@
                             "name": "Hip-Hop"
                         }
                     ],
-                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=334&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
-                    "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
+                    "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a",
+                    "catalog": "4"
                 }
             ],
             "albumcount": 1,
@@ -786,14 +796,14 @@
                     "artist": {
                         "id": "36",
                         "name": "Comfort Fit",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comfort Fit"
                     },
                     "artists": [
                         {
                             "id": "36",
                             "name": "Comfort Fit",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Comfort Fit"
                         }
                     ],
@@ -806,7 +816,7 @@
                     "albumartist": {
                         "id": "36",
                         "name": "Comfort Fit",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comfort Fit"
                     },
                     "disk": 1,
@@ -833,12 +843,13 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=116&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Can%20I%20Help%20U-.mp3",
                     "size": 2811819,
                     "mbid": "51d0e252-f20c-414c-b169-8dcf18ef9d26",
-                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
+                    "last_played": null,
                     "catalog": "4",
                     "composer": null,
                     "channels": 2,
@@ -861,14 +872,14 @@
                     "artist": {
                         "id": "36",
                         "name": "Comfort Fit",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comfort Fit"
                     },
                     "artists": [
                         {
                             "id": "36",
                             "name": "Comfort Fit",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Comfort Fit"
                         }
                     ],
@@ -881,7 +892,7 @@
                     "albumartist": {
                         "id": "36",
                         "name": "Comfort Fit",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comfort Fit"
                     },
                     "disk": 1,
@@ -908,12 +919,13 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=121&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Planetary%20Picknick.mp3",
                     "size": 10715592,
                     "mbid": "6defae67-37da-4a85-90f6-80df5c27d88c",
-                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": 5,
                     "averagerating": null,
                     "playcount": 1,
+                    "last_played": "2025-07-01T03:57:37+00:00",
                     "catalog": "4",
                     "composer": null,
                     "channels": 2,
@@ -936,14 +948,14 @@
                     "artist": {
                         "id": "36",
                         "name": "Comfort Fit",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comfort Fit"
                     },
                     "artists": [
                         {
                             "id": "36",
                             "name": "Comfort Fit",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Comfort Fit"
                         }
                     ],
@@ -956,7 +968,7 @@
                     "albumartist": {
                         "id": "36",
                         "name": "Comfort Fit",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comfort Fit"
                     },
                     "disk": 1,
@@ -983,12 +995,13 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=119&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Sorry.mp3",
                     "size": 6018213,
                     "mbid": "261964a4-8062-426d-b88e-82c0097ca98c",
-                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
+                    "last_played": null,
                     "catalog": "4",
                     "composer": null,
                     "channels": 2,
@@ -1011,14 +1024,14 @@
                     "artist": {
                         "id": "36",
                         "name": "Comfort Fit",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comfort Fit"
                     },
                     "artists": [
                         {
                             "id": "36",
                             "name": "Comfort Fit",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "Comfort Fit"
                         }
                     ],
@@ -1031,7 +1044,7 @@
                     "albumartist": {
                         "id": "36",
                         "name": "Comfort Fit",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comfort Fit"
                     },
                     "disk": 1,
@@ -1058,12 +1071,13 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=120&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Freeze%20the%20Cut.mp3",
                     "size": 5216305,
                     "mbid": "d927db0b-7d3a-4fba-867c-d140cb19aeb9",
-                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
+                    "last_played": null,
                     "catalog": "4",
                     "composer": null,
                     "channels": 2,

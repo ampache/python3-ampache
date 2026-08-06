@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[playlist_remove]]></errorAction>
-    <errorType><![CDATA[song]]></errorType>
-    <errorMessage><![CDATA[Not Found]]></errorMessage>
-  </error>
+  <success code="1">
+    <message><![CDATA[song removed from playlist]]></message>
+  </success>
 </root>

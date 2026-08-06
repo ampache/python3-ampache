@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <preference id="123">
-    <name><![CDATA[ajax_load]]></name>
-    <level>25</level>
-    <description><![CDATA[Ajax page load]]></description>
-    <value>1</value>
-    <type><![CDATA[boolean]]></type>
-    <category><![CDATA[interface]]></category>
-    <subcategory><![CDATA[]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
   <preference id="140">
     <name><![CDATA[notify_email]]></name>
     <level>25</level>
@@ -185,6 +175,26 @@
     <value>0</value>
     <type><![CDATA[boolean]]></type>
     <category><![CDATA[playlist]]></category>
+    <subcategory><![CDATA[]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="240">
+    <name><![CDATA[temp_pref_json]]></name>
+    <level>100</level>
+    <description><![CDATA[]]></description>
+    <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[interface]]></category>
+    <subcategory><![CDATA[]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="241">
+    <name><![CDATA[temp_pref_xml]]></name>
+    <level>100</level>
+    <description><![CDATA[]]></description>
+    <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[interface]]></category>
     <subcategory><![CDATA[]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
@@ -493,6 +503,16 @@
     <type><![CDATA[boolean]]></type>
     <category><![CDATA[interface]]></category>
     <subcategory><![CDATA[browse]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="235">
+    <name><![CDATA[cron_cache_live_count]]></name>
+    <level>100</level>
+    <description><![CDATA[Add live plays to the cached count for accurate stats (Require: Cron Cache)]]></description>
+    <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[catalog]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
   <preference id="156">
@@ -1013,7 +1033,7 @@
   <preference id="143">
     <name><![CDATA[disabled_custom_metadata_fields_input]]></name>
     <level>100</level>
-    <description><![CDATA[Custom metadata - Define field list]]></description>
+    <description><![CDATA[Custom metadata - Additional fields to disable]]></description>
     <value><![CDATA[]]></value>
     <type><![CDATA[string]]></type>
     <category><![CDATA[system]]></category>
@@ -1047,16 +1067,6 @@
     <value>0</value>
     <type><![CDATA[integer]]></type>
     <category><![CDATA[interface]]></category>
-    <subcategory><![CDATA[player]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
-  <preference id="89">
-    <name><![CDATA[webplayer_html5]]></name>
-    <level>25</level>
-    <description><![CDATA[Authorize HTML5 Web Player]]></description>
-    <value>1</value>
-    <type><![CDATA[boolean]]></type>
-    <category><![CDATA[streaming]]></category>
     <subcategory><![CDATA[player]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
@@ -1118,6 +1128,16 @@
       <value id="5"><![CDATA[10]]></value>
       <value id="6"><![CDATA[999]]></value>
     </values>
+  </preference>
+  <preference id="239">
+    <name><![CDATA[broadcast_private]]></name>
+    <level>25</level>
+    <description><![CDATA[Require a session to listen to my broadcasts]]></description>
+    <value>1</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[streaming]]></category>
+    <subcategory><![CDATA[player]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
   </preference>
   <preference id="85">
     <name><![CDATA[song_page_title]]></name>
@@ -1409,6 +1429,16 @@
     <subcategory><![CDATA[sidebar]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
+  <preference id="238">
+    <name><![CDATA[show_collection]]></name>
+    <level>25</level>
+    <description><![CDATA[Show 'Collections' link in the main sidebar]]></description>
+    <value>1</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[interface]]></category>
+    <subcategory><![CDATA[sidebar]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
   <preference id="227">
     <name><![CDATA[show_folder]]></name>
     <level>25</level>
@@ -1423,6 +1453,16 @@
     <name><![CDATA[ui_fixed]]></name>
     <level>25</level>
     <description><![CDATA[Fix header position on compatible themes]]></description>
+    <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[interface]]></category>
+    <subcategory><![CDATA[theme]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="234">
+    <name><![CDATA[mini_player]]></name>
+    <level>100</level>
+    <description><![CDATA[Lock this user into the mini player interface]]></description>
     <value>0</value>
     <type><![CDATA[boolean]]></type>
     <category><![CDATA[interface]]></category>
@@ -1452,8 +1492,38 @@
   <preference id="52">
     <name><![CDATA[rate_limit]]></name>
     <level>100</level>
-    <description><![CDATA[Rate Limit]]></description>
+    <description><![CDATA[Download Rate Limit]]></description>
     <value>8192</value>
+    <type><![CDATA[integer]]></type>
+    <category><![CDATA[streaming]]></category>
+    <subcategory><![CDATA[transcoding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="232">
+    <name><![CDATA[max_bit_rate]]></name>
+    <level>25</level>
+    <description><![CDATA[Maximum transcode bitrate for dynamic downsampling in bps (0 = disabled)]]></description>
+    <value>0</value>
+    <type><![CDATA[integer]]></type>
+    <category><![CDATA[streaming]]></category>
+    <subcategory><![CDATA[transcoding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="233">
+    <name><![CDATA[min_bit_rate]]></name>
+    <level>25</level>
+    <description><![CDATA[Minimum transcode bitrate for dynamic downsampling in bps]]></description>
+    <value>8000</value>
+    <type><![CDATA[integer]]></type>
+    <category><![CDATA[streaming]]></category>
+    <subcategory><![CDATA[transcoding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="237">
+    <name><![CDATA[transcode_bitrate_api]]></name>
+    <level>25</level>
+    <description><![CDATA[Transcode bitrate - API (overrides default)]]></description>
+    <value>0</value>
     <type><![CDATA[integer]]></type>
     <category><![CDATA[streaming]]></category>
     <subcategory><![CDATA[transcoding]]></subcategory>
@@ -1462,12 +1532,93 @@
   <preference id="19">
     <name><![CDATA[transcode_bitrate]]></name>
     <level>25</level>
-    <description><![CDATA[Transcode Bitrate]]></description>
-    <value>32</value>
-    <type><![CDATA[string]]></type>
+    <description><![CDATA[Transcode bitrate - Default]]></description>
+    <value>32000</value>
+    <type><![CDATA[integer]]></type>
     <category><![CDATA[streaming]]></category>
     <subcategory><![CDATA[transcoding]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="236">
+    <name><![CDATA[transcode_bitrate_webplayer]]></name>
+    <level>25</level>
+    <description><![CDATA[Transcode bitrate - Web Player (overrides default)]]></description>
+    <value>0</value>
+    <type><![CDATA[integer]]></type>
+    <category><![CDATA[streaming]]></category>
+    <subcategory><![CDATA[transcoding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="231">
+    <name><![CDATA[encode_player_api_target]]></name>
+    <level>25</level>
+    <description><![CDATA[Transcode output format - API (overrides default)]]></description>
+    <value><![CDATA[]]></value>
+    <type><![CDATA[transcoding]]></type>
+    <category><![CDATA[streaming]]></category>
+    <subcategory><![CDATA[transcoding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+    <values>
+      <value id="0"><![CDATA[]]></value>
+      <value id="1"><![CDATA[mp3]]></value>
+      <value id="2"><![CDATA[ogg]]></value>
+      <value id="3"><![CDATA[opus]]></value>
+      <value id="4"><![CDATA[m4a]]></value>
+      <value id="5"><![CDATA[wav]]></value>
+    </values>
+  </preference>
+  <preference id="228">
+    <name><![CDATA[encode_target]]></name>
+    <level>25</level>
+    <description><![CDATA[Transcode output format - Audio Default]]></description>
+    <value><![CDATA[mp3]]></value>
+    <type><![CDATA[transcoding]]></type>
+    <category><![CDATA[streaming]]></category>
+    <subcategory><![CDATA[transcoding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+    <values>
+      <value id="0"><![CDATA[]]></value>
+      <value id="1"><![CDATA[mp3]]></value>
+      <value id="2"><![CDATA[ogg]]></value>
+      <value id="3"><![CDATA[opus]]></value>
+      <value id="4"><![CDATA[m4a]]></value>
+      <value id="5"><![CDATA[wav]]></value>
+    </values>
+  </preference>
+  <preference id="229">
+    <name><![CDATA[encode_video_target]]></name>
+    <level>25</level>
+    <description><![CDATA[Transcode output format - Video Default]]></description>
+    <value><![CDATA[webm]]></value>
+    <type><![CDATA[transcoding]]></type>
+    <category><![CDATA[streaming]]></category>
+    <subcategory><![CDATA[transcoding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+    <values>
+      <value id="0"><![CDATA[]]></value>
+      <value id="1"><![CDATA[flv]]></value>
+      <value id="2"><![CDATA[webm]]></value>
+      <value id="3"><![CDATA[ts]]></value>
+      <value id="4"><![CDATA[ogv]]></value>
+    </values>
+  </preference>
+  <preference id="230">
+    <name><![CDATA[encode_player_webplayer_target]]></name>
+    <level>25</level>
+    <description><![CDATA[Transcode output format - Web Player (overrides default)]]></description>
+    <value><![CDATA[]]></value>
+    <type><![CDATA[transcoding]]></type>
+    <category><![CDATA[streaming]]></category>
+    <subcategory><![CDATA[transcoding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+    <values>
+      <value id="0"><![CDATA[]]></value>
+      <value id="1"><![CDATA[mp3]]></value>
+      <value id="2"><![CDATA[ogg]]></value>
+      <value id="3"><![CDATA[opus]]></value>
+      <value id="4"><![CDATA[m4a]]></value>
+      <value id="5"><![CDATA[wav]]></value>
+    </values>
   </preference>
   <preference id="95">
     <name><![CDATA[autoupdate]]></name>

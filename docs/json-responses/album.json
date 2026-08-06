@@ -1,47 +1,96 @@
 {
-    "id": "18",
-    "name": "Inominavel (live.v.01)",
+    "id": "12",
+    "name": "Buried in Nausea",
     "prefix": null,
-    "basename": "Inominavel (live.v.01)",
+    "basename": "Buried in Nausea",
     "artist": {
-        "id": "11",
-        "name": "structura",
-        "prefix": null,
-        "basename": "structura"
+        "id": "19",
+        "name": "Various Artists",
+        "prefix": "",
+        "basename": "Various Artists"
     },
     "artists": [
         {
-            "id": "11",
-            "name": "structura",
-            "prefix": null,
-            "basename": "structura"
+            "id": "19",
+            "name": "Various Artists",
+            "prefix": "",
+            "basename": "Various Artists"
         }
     ],
     "songartists": [
         {
-            "id": "11",
-            "name": "structura",
-            "prefix": null,
-            "basename": "structura"
+            "id": "20",
+            "name": "R\/B",
+            "prefix": "",
+            "basename": "R\/B"
+        },
+        {
+            "id": "21",
+            "name": "Tip-C (featuring Mike Beers)",
+            "prefix": "",
+            "basename": "Tip-C (featuring Mike Beers)"
+        },
+        {
+            "id": "34",
+            "name": "Comedown Kid",
+            "prefix": "",
+            "basename": "Comedown Kid"
+        },
+        {
+            "id": "23",
+            "name": "Manic Notion",
+            "prefix": "",
+            "basename": "Manic Notion"
+        },
+        {
+            "id": "35",
+            "name": "Tip-C",
+            "prefix": "",
+            "basename": "Tip-C"
+        },
+        {
+            "id": "33",
+            "name": "MxBxCx",
+            "prefix": "",
+            "basename": "MxBxCx"
+        },
+        {
+            "id": "32",
+            "name": "Shorty Mac",
+            "prefix": "",
+            "basename": "Shorty Mac"
+        },
+        {
+            "id": "26",
+            "name": "Stress Builds Character",
+            "prefix": "",
+            "basename": "Stress Builds Character"
+        },
+        {
+            "id": "27",
+            "name": "Chi.Otic",
+            "prefix": "",
+            "basename": "Chi.Otic"
         }
     ],
-    "time": 1339,
-    "year": 2007,
+    "time": 1879,
+    "year": 2012,
     "tracks": [],
-    "songcount": 6,
+    "songcount": 9,
     "diskcount": 1,
-    "type": null,
+    "type": "compilation",
     "genre": [
         {
-            "id": "3",
-            "name": "Noise"
+            "id": "7",
+            "name": "Punk"
         }
     ],
-    "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
     "has_art": true,
     "flag": false,
-    "rating": 4,
-    "averagerating": 3.67,
+    "rating": null,
+    "averagerating": null,
     "mbid": null,
-    "mbid_group": null
+    "mbid_group": null,
+    "catalog": "1"
 }

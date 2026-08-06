@@ -297,7 +297,8 @@
                 {
                     "2": "admin",
                     "3": "demo",
-                    "4": "user"
+                    "4": "user",
+                    "10": "generic"
                 }
             ],
             "title": "Ratings"
@@ -464,7 +465,7 @@
         },
         {
             "name": "genre_count_song",
-            "label": "Song Count",
+            "label": "Song Count (Genre)",
             "type": "numeric",
             "widget": [
                 "input",
@@ -474,7 +475,7 @@
         },
         {
             "name": "genre_count_album",
-            "label": "Album Count",
+            "label": "Album Count (Genre)",
             "type": "numeric",
             "widget": [
                 "input",
@@ -484,7 +485,7 @@
         },
         {
             "name": "genre_count_artist",
-            "label": "Artist Count",
+            "label": "Artist Count (Genre)",
             "type": "numeric",
             "widget": [
                 "input",

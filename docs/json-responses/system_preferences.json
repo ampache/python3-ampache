@@ -1,17 +1,6 @@
 {
     "preference": [
         {
-            "id": "123",
-            "name": "ajax_load",
-            "level": 25,
-            "description": "Ajax page load",
-            "value": "1",
-            "type": "boolean",
-            "category": "interface",
-            "subcategory": null,
-            "has_access": true
-        },
-        {
             "id": "140",
             "name": "notify_email",
             "level": 25,
@@ -200,6 +189,17 @@
             "type": "boolean",
             "category": "playlist",
             "subcategory": null,
+            "has_access": true
+        },
+        {
+            "id": "240",
+            "name": "temp_pref_json",
+            "level": 100,
+            "description": "",
+            "value": "0",
+            "type": "boolean",
+            "category": "interface",
+            "subcategory": "",
             "has_access": true
         },
         {
@@ -537,6 +537,17 @@
             "type": "boolean",
             "category": "interface",
             "subcategory": "browse",
+            "has_access": true
+        },
+        {
+            "id": "235",
+            "name": "cron_cache_live_count",
+            "level": 100,
+            "description": "Add live plays to the cached count for accurate stats (Require: Cron Cache)",
+            "value": "0",
+            "type": "boolean",
+            "category": "system",
+            "subcategory": "catalog",
             "has_access": true
         },
         {
@@ -1108,7 +1119,7 @@
             "id": "143",
             "name": "disabled_custom_metadata_fields_input",
             "level": 100,
-            "description": "Custom metadata - Define field list",
+            "description": "Custom metadata - Additional fields to disable",
             "value": "",
             "type": "string",
             "category": "system",
@@ -1145,17 +1156,6 @@
             "value": "0",
             "type": "integer",
             "category": "interface",
-            "subcategory": "player",
-            "has_access": true
-        },
-        {
-            "id": "89",
-            "name": "webplayer_html5",
-            "level": 25,
-            "description": "Authorize HTML5 Web Player",
-            "value": "1",
-            "type": "boolean",
-            "category": "streaming",
             "subcategory": "player",
             "has_access": true
         },
@@ -1222,6 +1222,17 @@
                 "10",
                 "999"
             ]
+        },
+        {
+            "id": "239",
+            "name": "broadcast_private",
+            "level": 25,
+            "description": "Require a session to listen to my broadcasts",
+            "value": "1",
+            "type": "boolean",
+            "category": "streaming",
+            "subcategory": "player",
+            "has_access": true
         },
         {
             "id": "85",
@@ -1543,6 +1554,17 @@
             "has_access": true
         },
         {
+            "id": "238",
+            "name": "show_collection",
+            "level": 25,
+            "description": "Show 'Collections' link in the main sidebar",
+            "value": "1",
+            "type": "boolean",
+            "category": "interface",
+            "subcategory": "sidebar",
+            "has_access": true
+        },
+        {
             "id": "227",
             "name": "show_folder",
             "level": 25,
@@ -1558,6 +1580,17 @@
             "name": "ui_fixed",
             "level": 25,
             "description": "Fix header position on compatible themes",
+            "value": "0",
+            "type": "boolean",
+            "category": "interface",
+            "subcategory": "theme",
+            "has_access": true
+        },
+        {
+            "id": "234",
+            "name": "mini_player",
+            "level": 100,
+            "description": "Lock this user into the mini player interface",
             "value": "0",
             "type": "boolean",
             "category": "interface",
@@ -1590,8 +1623,41 @@
             "id": "52",
             "name": "rate_limit",
             "level": 100,
-            "description": "Rate Limit",
+            "description": "Download Rate Limit",
             "value": "8192",
+            "type": "integer",
+            "category": "streaming",
+            "subcategory": "transcoding",
+            "has_access": true
+        },
+        {
+            "id": "232",
+            "name": "max_bit_rate",
+            "level": 25,
+            "description": "Maximum transcode bitrate for dynamic downsampling in bps (0 = disabled)",
+            "value": "0",
+            "type": "integer",
+            "category": "streaming",
+            "subcategory": "transcoding",
+            "has_access": true
+        },
+        {
+            "id": "233",
+            "name": "min_bit_rate",
+            "level": 25,
+            "description": "Minimum transcode bitrate for dynamic downsampling in bps",
+            "value": "8000",
+            "type": "integer",
+            "category": "streaming",
+            "subcategory": "transcoding",
+            "has_access": true
+        },
+        {
+            "id": "237",
+            "name": "transcode_bitrate_api",
+            "level": 25,
+            "description": "Transcode bitrate - API (overrides default)",
+            "value": "0",
             "type": "integer",
             "category": "streaming",
             "subcategory": "transcoding",
@@ -1601,12 +1667,98 @@
             "id": "19",
             "name": "transcode_bitrate",
             "level": 25,
-            "description": "Transcode Bitrate",
-            "value": "32",
-            "type": "string",
+            "description": "Transcode bitrate - Default",
+            "value": "32000",
+            "type": "integer",
             "category": "streaming",
             "subcategory": "transcoding",
             "has_access": true
+        },
+        {
+            "id": "236",
+            "name": "transcode_bitrate_webplayer",
+            "level": 25,
+            "description": "Transcode bitrate - Web Player (overrides default)",
+            "value": "0",
+            "type": "integer",
+            "category": "streaming",
+            "subcategory": "transcoding",
+            "has_access": true
+        },
+        {
+            "id": "231",
+            "name": "encode_player_api_target",
+            "level": 25,
+            "description": "Transcode output format - API (overrides default)",
+            "value": "",
+            "type": "transcoding",
+            "category": "streaming",
+            "subcategory": "transcoding",
+            "has_access": true,
+            "values": [
+                "",
+                "mp3",
+                "ogg",
+                "opus",
+                "m4a",
+                "wav"
+            ]
+        },
+        {
+            "id": "228",
+            "name": "encode_target",
+            "level": 25,
+            "description": "Transcode output format - Audio Default",
+            "value": "mp3",
+            "type": "transcoding",
+            "category": "streaming",
+            "subcategory": "transcoding",
+            "has_access": true,
+            "values": [
+                "",
+                "mp3",
+                "ogg",
+                "opus",
+                "m4a",
+                "wav"
+            ]
+        },
+        {
+            "id": "229",
+            "name": "encode_video_target",
+            "level": 25,
+            "description": "Transcode output format - Video Default",
+            "value": "webm",
+            "type": "transcoding",
+            "category": "streaming",
+            "subcategory": "transcoding",
+            "has_access": true,
+            "values": [
+                "",
+                "flv",
+                "webm",
+                "ts",
+                "ogv"
+            ]
+        },
+        {
+            "id": "230",
+            "name": "encode_player_webplayer_target",
+            "level": 25,
+            "description": "Transcode output format - Web Player (overrides default)",
+            "value": "",
+            "type": "transcoding",
+            "category": "streaming",
+            "subcategory": "transcoding",
+            "has_access": true,
+            "values": [
+                "",
+                "mp3",
+                "ogg",
+                "opus",
+                "m4a",
+                "wav"
+            ]
         },
         {
             "id": "95",

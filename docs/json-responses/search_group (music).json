@@ -9,14 +9,14 @@
                 "artist": {
                     "id": "19",
                     "name": "Various Artists",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Various Artists"
                 },
                 "artists": [
                     {
                         "id": "19",
                         "name": "Various Artists",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Various Artists"
                     }
                 ],
@@ -24,56 +24,56 @@
                     {
                         "id": "20",
                         "name": "R\/B",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "R\/B"
                     },
                     {
                         "id": "21",
                         "name": "Tip-C (featuring Mike Beers)",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Tip-C (featuring Mike Beers)"
+                    },
+                    {
+                        "id": "34",
+                        "name": "Comedown Kid",
+                        "prefix": "",
+                        "basename": "Comedown Kid"
                     },
                     {
                         "id": "23",
                         "name": "Manic Notion",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Manic Notion"
+                    },
+                    {
+                        "id": "35",
+                        "name": "Tip-C",
+                        "prefix": "",
+                        "basename": "Tip-C"
+                    },
+                    {
+                        "id": "33",
+                        "name": "MxBxCx",
+                        "prefix": "",
+                        "basename": "MxBxCx"
+                    },
+                    {
+                        "id": "32",
+                        "name": "Shorty Mac",
+                        "prefix": "",
+                        "basename": "Shorty Mac"
                     },
                     {
                         "id": "26",
                         "name": "Stress Builds Character",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Stress Builds Character"
                     },
                     {
                         "id": "27",
                         "name": "Chi.Otic",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Chi.Otic"
-                    },
-                    {
-                        "id": "32",
-                        "name": "Shorty Mac",
-                        "prefix": null,
-                        "basename": "Shorty Mac"
-                    },
-                    {
-                        "id": "33",
-                        "name": "MxBxCx",
-                        "prefix": null,
-                        "basename": "MxBxCx"
-                    },
-                    {
-                        "id": "34",
-                        "name": "Comedown Kid",
-                        "prefix": null,
-                        "basename": "Comedown Kid"
-                    },
-                    {
-                        "id": "35",
-                        "name": "Tip-C",
-                        "prefix": null,
-                        "basename": "Tip-C"
                     }
                 ],
                 "time": 1879,
@@ -94,7 +94,8 @@
                 "rating": null,
                 "averagerating": null,
                 "mbid": null,
-                "mbid_group": null
+                "mbid_group": null,
+                "catalog": "1"
             },
             {
                 "id": "10",
@@ -104,14 +105,14 @@
                 "artist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "artists": [
                     {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     }
                 ],
@@ -119,7 +120,7 @@
                     {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     }
                 ],
@@ -136,7 +137,8 @@
                 "rating": null,
                 "averagerating": null,
                 "mbid": null,
-                "mbid_group": null
+                "mbid_group": null,
+                "catalog": "1"
             },
             {
                 "id": "21",
@@ -146,14 +148,14 @@
                 "artist": {
                     "id": "36",
                     "name": "Comfort Fit",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Comfort Fit"
                 },
                 "artists": [
                     {
                         "id": "36",
                         "name": "Comfort Fit",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comfort Fit"
                     }
                 ],
@@ -161,7 +163,7 @@
                     {
                         "id": "36",
                         "name": "Comfort Fit",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Comfort Fit"
                     }
                 ],
@@ -177,13 +179,14 @@
                         "name": "Hip-Hop"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=334&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
                 "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
-                "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
+                "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a",
+                "catalog": "4"
             },
             {
                 "id": "8",
@@ -193,14 +196,14 @@
                 "artist": {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 },
                 "artists": [
                     {
                         "id": "14",
                         "name": "Nofi\/found.",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Nofi\/found."
                     }
                 ],
@@ -208,7 +211,7 @@
                     {
                         "id": "14",
                         "name": "Nofi\/found.",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "Nofi\/found."
                     }
                 ],
@@ -228,13 +231,14 @@
                         "name": "Dance"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": 2,
                 "averagerating": null,
                 "mbid": null,
-                "mbid_group": null
+                "mbid_group": null,
+                "catalog": "1"
             }
         ],
         "artist": [
@@ -278,7 +282,7 @@
                         "name": "Dance"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/image.php?object_id=14&object_type=artist&name=art.jpg",
+                "art": "https:\/\/music.com.au\/images\/blankalbum_128x128.png",
                 "has_art": false,
                 "flag": false,
                 "rating": 2,
@@ -319,14 +323,14 @@
                 "artist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "artists": [
                     {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     }
                 ],
@@ -339,7 +343,7 @@
                 "albumartist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "disk": 1,
@@ -361,12 +365,13 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3",
                 "size": 4265791,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
                 "playcount": 0,
+                "last_played": null,
                 "catalog": "1",
                 "composer": null,
                 "channels": 2,
@@ -389,14 +394,14 @@
                 "artist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "artists": [
                     {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     }
                 ],
@@ -409,7 +414,7 @@
                 "albumartist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "disk": 1,
@@ -431,12 +436,13 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3",
                 "size": 4444403,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
                 "playcount": 0,
+                "last_played": null,
                 "catalog": "1",
                 "composer": null,
                 "channels": 2,
@@ -459,14 +465,14 @@
                 "artist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "artists": [
                     {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     }
                 ],
@@ -479,7 +485,7 @@
                 "albumartist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "disk": 1,
@@ -501,12 +507,13 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3",
                 "size": 7696008,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": 5,
                 "averagerating": null,
                 "playcount": 2,
+                "last_played": "2025-07-01T04:23:04+00:00",
                 "catalog": "1",
                 "composer": null,
                 "channels": 2,
@@ -529,14 +536,14 @@
                 "artist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "artists": [
                     {
                         "id": "16",
                         "name": "CARN\u00daN",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "CARN\u00daN"
                     }
                 ],
@@ -549,7 +556,7 @@
                 "albumartist": {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 },
                 "disk": 1,
@@ -571,12 +578,13 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
                 "size": 7826238,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
                 "averagerating": null,
                 "playcount": 0,
+                "last_played": null,
                 "catalog": "1",
                 "composer": null,
                 "channels": 2,

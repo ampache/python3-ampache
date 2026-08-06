@@ -1,498 +1,741 @@
 {
-    "id": "18",
-    "name": "Inominavel (live.v.01)",
+    "id": "12",
+    "name": "Buried in Nausea",
     "prefix": null,
-    "basename": "Inominavel (live.v.01)",
+    "basename": "Buried in Nausea",
     "artist": {
-        "id": "11",
-        "name": "structura",
-        "prefix": null,
-        "basename": "structura"
+        "id": "19",
+        "name": "Various Artists",
+        "prefix": "",
+        "basename": "Various Artists"
     },
     "artists": [
         {
-            "id": "11",
-            "name": "structura",
-            "prefix": null,
-            "basename": "structura"
+            "id": "19",
+            "name": "Various Artists",
+            "prefix": "",
+            "basename": "Various Artists"
         }
     ],
     "songartists": [
         {
-            "id": "11",
-            "name": "structura",
-            "prefix": null,
-            "basename": "structura"
+            "id": "20",
+            "name": "R\/B",
+            "prefix": "",
+            "basename": "R\/B"
+        },
+        {
+            "id": "21",
+            "name": "Tip-C (featuring Mike Beers)",
+            "prefix": "",
+            "basename": "Tip-C (featuring Mike Beers)"
+        },
+        {
+            "id": "34",
+            "name": "Comedown Kid",
+            "prefix": "",
+            "basename": "Comedown Kid"
+        },
+        {
+            "id": "23",
+            "name": "Manic Notion",
+            "prefix": "",
+            "basename": "Manic Notion"
+        },
+        {
+            "id": "35",
+            "name": "Tip-C",
+            "prefix": "",
+            "basename": "Tip-C"
+        },
+        {
+            "id": "33",
+            "name": "MxBxCx",
+            "prefix": "",
+            "basename": "MxBxCx"
+        },
+        {
+            "id": "32",
+            "name": "Shorty Mac",
+            "prefix": "",
+            "basename": "Shorty Mac"
+        },
+        {
+            "id": "26",
+            "name": "Stress Builds Character",
+            "prefix": "",
+            "basename": "Stress Builds Character"
+        },
+        {
+            "id": "27",
+            "name": "Chi.Otic",
+            "prefix": "",
+            "basename": "Chi.Otic"
         }
     ],
-    "time": 1339,
-    "year": 2007,
+    "time": 1879,
+    "year": 2012,
     "tracks": [
         {
-            "id": "78",
-            "title": "inominavel p01",
-            "name": "inominavel p01",
+            "id": "110",
+            "title": "I wanna walk through the fire",
+            "name": "I wanna walk through the fire",
             "artist": {
-                "id": "11",
-                "name": "structura",
-                "prefix": null,
-                "basename": "structura"
+                "id": "23",
+                "name": "Manic Notion",
+                "prefix": "",
+                "basename": "Manic Notion"
             },
             "artists": [
                 {
-                    "id": "11",
-                    "name": "structura",
-                    "prefix": null,
-                    "basename": "structura"
+                    "id": "23",
+                    "name": "Manic Notion",
+                    "prefix": "",
+                    "basename": "Manic Notion"
                 }
             ],
             "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)",
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "Inominavel (live.v.01)"
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "11",
-                "name": "structura",
-                "prefix": null,
-                "basename": "structura"
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": "",
+                "basename": "Various Artists"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 1,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/01_structura_-_inominavel_p01.mp3",
-            "genre": [
-                {
-                    "id": "3",
-                    "name": "Noise"
-                }
-            ],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/01ManicNotion-IWannaWalkThroughTheFire.m4a",
+            "genre": [],
             "playlisttrack": 1,
-            "time": 84,
-            "year": 2007,
-            "format": "mp3",
+            "time": 197,
+            "year": 2012,
+            "format": "m4a",
             "stream_format": "mp3",
-            "bitrate": 192000,
+            "bitrate": 267320,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
+            "mode": "vbr",
+            "mime": "audio\/mp4",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p01.mp3",
-            "size": 2036632,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=110&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Manic%20Notion%20-%20I%20wanna%20walk%20through%20the%20fire.mp3",
+            "size": 6651911,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
             "has_art": true,
-            "flag": true,
+            "flag": false,
             "rating": 5,
             "averagerating": null,
-            "playcount": 2,
+            "playcount": 1,
+            "last_played": "2025-07-01T04:01:04+00:00",
             "catalog": "1",
             "composer": null,
             "channels": 2,
-            "comment": "http:\/\/enoughrecords.scene.org",
+            "comment": null,
             "license": null,
-            "publisher": "archive.org",
+            "publisher": null,
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": 0,
-            "replaygain_track_peak": 0,
+            "replaygain_track_gain": -5.15,
+            "replaygain_track_peak": 0.989,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "77",
-            "title": "inominavel p02",
-            "name": "inominavel p02",
+            "id": "114",
+            "title": "He is the Master of War",
+            "name": "He is the Master of War",
             "artist": {
-                "id": "11",
-                "name": "structura",
-                "prefix": null,
-                "basename": "structura"
+                "id": "26",
+                "name": "Stress Builds Character",
+                "prefix": "",
+                "basename": "Stress Builds Character"
             },
             "artists": [
                 {
-                    "id": "11",
-                    "name": "structura",
-                    "prefix": null,
-                    "basename": "structura"
+                    "id": "26",
+                    "name": "Stress Builds Character",
+                    "prefix": "",
+                    "basename": "Stress Builds Character"
                 }
             ],
             "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)",
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "Inominavel (live.v.01)"
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "11",
-                "name": "structura",
-                "prefix": null,
-                "basename": "structura"
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": "",
+                "basename": "Various Artists"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 2,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/02_structura_-_inominavel_p02.mp3",
-            "genre": [
-                {
-                    "id": "3",
-                    "name": "Noise"
-                }
-            ],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/02StressBuildsCharacter-HeIsTheMasterOfWar.m4a",
+            "genre": [],
             "playlisttrack": 2,
-            "time": 237,
-            "year": 2007,
-            "format": "mp3",
+            "time": 233,
+            "year": 2012,
+            "format": "m4a",
             "stream_format": "mp3",
-            "bitrate": 192000,
+            "bitrate": 256245,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
+            "mode": "vbr",
+            "mime": "audio\/mp4",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=77&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p02.mp3",
-            "size": 5723290,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=114&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Stress%20Builds%20Character%20-%20He%20is%20the%20Master%20of%20War.mp3",
+            "size": 7535126,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
+            "last_played": null,
             "catalog": "1",
             "composer": null,
             "channels": 2,
-            "comment": "http:\/\/enoughrecords.scene.org",
+            "comment": null,
             "license": null,
-            "publisher": "archive.org",
+            "publisher": null,
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": 0,
-            "replaygain_track_peak": 0,
+            "replaygain_track_gain": -10.74,
+            "replaygain_track_peak": 1.035,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "74",
-            "title": "inominavel p03",
-            "name": "inominavel p03",
+            "id": "109",
+            "title": "Dance with the Devil",
+            "name": "Dance with the Devil",
             "artist": {
-                "id": "11",
-                "name": "structura",
-                "prefix": null,
-                "basename": "structura"
+                "id": "34",
+                "name": "Comedown Kid",
+                "prefix": "",
+                "basename": "Comedown Kid"
             },
             "artists": [
                 {
-                    "id": "11",
-                    "name": "structura",
-                    "prefix": null,
-                    "basename": "structura"
+                    "id": "34",
+                    "name": "Comedown Kid",
+                    "prefix": "",
+                    "basename": "Comedown Kid"
                 }
             ],
             "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)",
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "Inominavel (live.v.01)"
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "11",
-                "name": "structura",
-                "prefix": null,
-                "basename": "structura"
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": "",
+                "basename": "Various Artists"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 3,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/03_structura_-_inominavel_p03.mp3",
-            "genre": [
-                {
-                    "id": "3",
-                    "name": "Noise"
-                }
-            ],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/03ComedownKid-DanceWithTheDevil.wma",
+            "genre": [],
             "playlisttrack": 3,
-            "time": 143,
-            "year": 2007,
-            "format": "mp3",
+            "time": 116,
+            "year": 2012,
+            "format": "wma",
             "stream_format": "mp3",
-            "bitrate": 192000,
+            "bitrate": 32582,
             "stream_bitrate": 32000,
             "rate": 44100,
             "mode": "cbr",
-            "mime": "audio\/mpeg",
+            "mime": "audio\/x-ms-wma",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=74&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p03.mp3",
-            "size": 3449255,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=109&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comedown%20Kid%20-%20Dance%20with%20the%20Devil.mp3",
+            "size": 483444,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
+            "last_played": null,
             "catalog": "1",
             "composer": null,
-            "channels": 2,
-            "comment": "http:\/\/enoughrecords.scene.org",
+            "channels": 1,
+            "comment": null,
             "license": null,
-            "publisher": "archive.org",
+            "publisher": null,
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": 0,
-            "replaygain_track_peak": 0,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "76",
-            "title": "inominavel p04",
-            "name": "inominavel p04",
+            "id": "113",
+            "title": "Representin",
+            "name": "Representin",
             "artist": {
-                "id": "11",
-                "name": "structura",
-                "prefix": null,
-                "basename": "structura"
+                "id": "32",
+                "name": "Shorty Mac",
+                "prefix": "",
+                "basename": "Shorty Mac"
             },
             "artists": [
                 {
-                    "id": "11",
-                    "name": "structura",
-                    "prefix": null,
-                    "basename": "structura"
+                    "id": "32",
+                    "name": "Shorty Mac",
+                    "prefix": "",
+                    "basename": "Shorty Mac"
                 }
             ],
             "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)",
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "Inominavel (live.v.01)"
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "11",
-                "name": "structura",
-                "prefix": null,
-                "basename": "structura"
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": "",
+                "basename": "Various Artists"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 4,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/04_structura_-_inominavel_p04.mp3",
-            "genre": [
-                {
-                    "id": "3",
-                    "name": "Noise"
-                }
-            ],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/04ShortyMac-Representin.mp3",
+            "genre": [],
             "playlisttrack": 4,
-            "time": 317,
-            "year": 2007,
+            "time": 234,
+            "year": 2012,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 192000,
+            "bitrate": 123814,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "cbr",
+            "mode": "vbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=76&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p04.mp3",
-            "size": 7629821,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=113&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Shorty%20Mac%20-%20Representin.mp3",
+            "size": 3628327,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
-            "has_art": true,
-            "flag": false,
-            "rating": 3,
-            "averagerating": 3,
-            "playcount": 1,
-            "catalog": "1",
-            "composer": null,
-            "channels": 2,
-            "comment": "http:\/\/enoughrecords.scene.org",
-            "license": null,
-            "publisher": "archive.org",
-            "language": null,
-            "lyrics": null,
-            "replaygain_album_gain": null,
-            "replaygain_album_peak": null,
-            "replaygain_track_gain": 0,
-            "replaygain_track_peak": 0,
-            "r128_album_gain": null,
-            "r128_track_gain": null
-        },
-        {
-            "id": "73",
-            "title": "inominavel p05",
-            "name": "inominavel p05",
-            "artist": {
-                "id": "11",
-                "name": "structura",
-                "prefix": null,
-                "basename": "structura"
-            },
-            "artists": [
-                {
-                    "id": "11",
-                    "name": "structura",
-                    "prefix": null,
-                    "basename": "structura"
-                }
-            ],
-            "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)",
-                "prefix": null,
-                "basename": "Inominavel (live.v.01)"
-            },
-            "albumartist": {
-                "id": "11",
-                "name": "structura",
-                "prefix": null,
-                "basename": "structura"
-            },
-            "disk": 1,
-            "disksubtitle": null,
-            "track": 5,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/05_structura_-_inominavel_p05.mp3",
-            "genre": [
-                {
-                    "id": "3",
-                    "name": "Noise"
-                }
-            ],
-            "playlisttrack": 5,
-            "time": 310,
-            "year": 2007,
-            "format": "mp3",
-            "stream_format": "mp3",
-            "bitrate": 192000,
-            "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "cbr",
-            "mime": "audio\/mpeg",
-            "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=73&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p05.mp3",
-            "size": 7463970,
-            "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
+            "last_played": null,
             "catalog": "1",
             "composer": null,
             "channels": 2,
-            "comment": "http:\/\/enoughrecords.scene.org",
+            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": 0,
-            "replaygain_track_peak": 0,
+            "replaygain_track_gain": 1.91,
+            "replaygain_track_peak": 0.851,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "75",
-            "title": "T - live",
-            "name": "T - live",
+            "id": "111",
+            "title": "The art of free expression",
+            "name": "The art of free expression",
             "artist": {
-                "id": "11",
-                "name": "structura",
-                "prefix": null,
-                "basename": "structura"
+                "id": "35",
+                "name": "Tip-C",
+                "prefix": "",
+                "basename": "Tip-C"
             },
             "artists": [
                 {
-                    "id": "11",
-                    "name": "structura",
-                    "prefix": null,
-                    "basename": "structura"
+                    "id": "35",
+                    "name": "Tip-C",
+                    "prefix": "",
+                    "basename": "Tip-C"
                 }
             ],
             "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)",
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "Inominavel (live.v.01)"
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "11",
-                "name": "structura",
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": "",
+                "basename": "Various Artists"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/05Tip-c-TheArtOfFreeExpression.wma",
+            "genre": [],
+            "playlisttrack": 5,
+            "time": 110,
+            "year": 2012,
+            "format": "wma",
+            "stream_format": "mp3",
+            "bitrate": 32582,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=111&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-%20The%20art%20of%20free%20expression.mp3",
+            "size": 460498,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "last_played": null,
+            "catalog": "1",
+            "composer": null,
+            "channels": 1,
+            "comment": null,
+            "license": null,
+            "publisher": null,
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "108",
+            "title": "I've been down this road before",
+            "name": "I've been down this road before",
+            "artist": {
+                "id": "21",
+                "name": "Tip-C (featuring Mike Beers)",
+                "prefix": "",
+                "basename": "Tip-C (featuring Mike Beers)"
+            },
+            "artists": [
+                {
+                    "id": "21",
+                    "name": "Tip-C (featuring Mike Beers)",
+                    "prefix": "",
+                    "basename": "Tip-C (featuring Mike Beers)"
+                }
+            ],
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "structura"
+                "basename": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": "",
+                "basename": "Various Artists"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 6,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/06_structura_-_t_live.mp3",
-            "genre": [
-                {
-                    "id": "3",
-                    "name": "Noise"
-                }
-            ],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/06Tip-cfeaturingMikeBeers-IveBeenDownThisRoadBefore.wma",
+            "genre": [],
             "playlisttrack": 6,
-            "time": 248,
-            "year": 2007,
-            "format": "mp3",
+            "time": 252,
+            "year": 2012,
+            "format": "wma",
             "stream_format": "mp3",
-            "bitrate": 192000,
+            "bitrate": 32582,
             "stream_bitrate": 32000,
             "rate": 44100,
             "mode": "cbr",
-            "mime": "audio\/mpeg",
+            "mime": "audio\/x-ms-wma",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=75&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20T%20-%20live.mp3",
-            "size": 5986451,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=108&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Tip-C%20-featuring%20Mike%20Beers-%20-%20I-ve%20been%20down%20this%20road%20before.mp3",
+            "size": 1035322,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 5,
-            "averagerating": 3,
-            "playcount": 1,
+            "averagerating": null,
+            "playcount": 0,
+            "last_played": null,
+            "catalog": "1",
+            "composer": null,
+            "channels": 1,
+            "comment": null,
+            "license": null,
+            "publisher": null,
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "115",
+            "title": "Are we going Crazy",
+            "name": "Are we going Crazy",
+            "artist": {
+                "id": "27",
+                "name": "Chi.Otic",
+                "prefix": "",
+                "basename": "Chi.Otic"
+            },
+            "artists": [
+                {
+                    "id": "27",
+                    "name": "Chi.Otic",
+                    "prefix": "",
+                    "basename": "Chi.Otic"
+                }
+            ],
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": "",
+                "basename": "Various Artists"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 7,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/07Chi.otic-AreWeGoingCrazy.wma",
+            "genre": [],
+            "playlisttrack": 7,
+            "time": 433,
+            "year": 2012,
+            "format": "wma",
+            "stream_format": "mp3",
+            "bitrate": 32582,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "cbr",
+            "mime": "audio\/x-ms-wma",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3",
+            "size": 1776580,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "last_played": null,
+            "catalog": "1",
+            "composer": null,
+            "channels": 1,
+            "comment": null,
+            "license": null,
+            "publisher": null,
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": null,
+            "replaygain_track_peak": null,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "112",
+            "title": "Personal Truth",
+            "name": "Personal Truth",
+            "artist": {
+                "id": "33",
+                "name": "MxBxCx",
+                "prefix": "",
+                "basename": "MxBxCx"
+            },
+            "artists": [
+                {
+                    "id": "33",
+                    "name": "MxBxCx",
+                    "prefix": "",
+                    "basename": "MxBxCx"
+                }
+            ],
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": "",
+                "basename": "Various Artists"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 8,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/08Mxbxcx-PersonalTruth.mp3",
+            "genre": [],
+            "playlisttrack": 8,
+            "time": 208,
+            "year": 2012,
+            "format": "mp3",
+            "stream_format": "mp3",
+            "bitrate": 179860,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mpeg",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3",
+            "size": 4693165,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "last_played": null,
             "catalog": "1",
             "composer": null,
             "channels": 2,
-            "comment": "http:\/\/enoughrecords.scene.org",
+            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": 0,
-            "replaygain_track_peak": 0,
+            "replaygain_track_gain": -8.27,
+            "replaygain_track_peak": 0.881,
+            "r128_album_gain": null,
+            "r128_track_gain": null
+        },
+        {
+            "id": "107",
+            "title": "Arrest Me",
+            "name": "Arrest Me",
+            "artist": {
+                "id": "20",
+                "name": "R\/B",
+                "prefix": "",
+                "basename": "R\/B"
+            },
+            "artists": [
+                {
+                    "id": "20",
+                    "name": "R\/B",
+                    "prefix": "",
+                    "basename": "R\/B"
+                }
+            ],
+            "album": {
+                "id": "12",
+                "name": "Buried in Nausea",
+                "prefix": null,
+                "basename": "Buried in Nausea"
+            },
+            "albumartist": {
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": "",
+                "basename": "Various Artists"
+            },
+            "disk": 1,
+            "disksubtitle": null,
+            "track": 9,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/09R_b-ArrestMe.m4a",
+            "genre": [
+                {
+                    "id": "7",
+                    "name": "Punk"
+                }
+            ],
+            "playlisttrack": 9,
+            "time": 96,
+            "year": 2012,
+            "format": "m4a",
+            "stream_format": "mp3",
+            "bitrate": 252864,
+            "stream_bitrate": 32000,
+            "rate": 44100,
+            "mode": "vbr",
+            "mime": "audio\/mp4",
+            "stream_mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=107&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=R-B%20-%20Arrest%20Me.mp3",
+            "size": 3091727,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "playcount": 0,
+            "last_played": null,
+            "catalog": "1",
+            "composer": null,
+            "channels": 2,
+            "comment": null,
+            "license": null,
+            "publisher": null,
+            "language": null,
+            "lyrics": null,
+            "replaygain_album_gain": null,
+            "replaygain_album_peak": null,
+            "replaygain_track_gain": -1.35,
+            "replaygain_track_peak": 0.881,
             "r128_album_gain": null,
             "r128_track_gain": null
         }
     ],
-    "songcount": 6,
+    "songcount": 9,
     "diskcount": 1,
-    "type": null,
+    "type": "compilation",
     "genre": [
         {
-            "id": "3",
-            "name": "Noise"
+            "id": "7",
+            "name": "Punk"
         }
     ],
-    "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
+    "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
     "has_art": true,
     "flag": false,
-    "rating": 4,
-    "averagerating": 3.67,
+    "rating": null,
+    "averagerating": null,
     "mbid": null,
-    "mbid_group": null
+    "mbid_group": null,
+    "catalog": "1"
 }

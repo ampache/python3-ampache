@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>1</total_count>
-  <md5>786f74db2d226647e413a61fc7c696dc</md5>
-  <catalog_id>1</catalog_id>
-  <parent_id>11</parent_id>
-  <parent_type>artist</parent_type>
-  <child_type>album</child_type>
-  <browse id="18">
-    <name><![CDATA[Inominavel (live.v.01)]]></name>
-    <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[Inominavel (live.v.01)]]></basename>
-  </browse>
+  <error errorCode="4704">
+    <errorAction><![CDATA[browse]]></errorAction>
+    <errorType><![CDATA[filter]]></errorType>
+    <errorMessage><![CDATA[Not Found: 19]]></errorMessage>
+  </error>
 </root>

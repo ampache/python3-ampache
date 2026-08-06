@@ -10,14 +10,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -25,7 +25,7 @@
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -45,13 +45,14 @@
                     "name": "Dance"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 2,
             "averagerating": null,
             "mbid": null,
-            "mbid_group": null
+            "mbid_group": null,
+            "catalog": "1"
         }
     ]
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>18</total_count>
-  <md5>2d3fc4f09bcaf62b4f5db0821edd5b1f</md5>
+  <total_count>19</total_count>
+  <md5>b0f32c59fdafcd35cc6af79e2da261b5</md5>
   <artist id="16">
     <name><![CDATA[CARNÚN]]></name>
     <prefix><![CDATA[]]></prefix>
@@ -34,6 +34,7 @@
         <averagerating/>
         <mbid><![CDATA[]]></mbid>
         <mbid_group><![CDATA[]]></mbid_group>
+        <catalog>1</catalog>
       </album>
     </albums>
     <albumcount>1</albumcount>
@@ -57,25 +58,15 @@ They released one demo, ‘Malkuth’, which was recorded in Connolly’s Of Lea
     <prefix><![CDATA[]]></prefix>
     <basename><![CDATA[Chi.Otic]]></basename>
     <albums>
-      <album id="12">
+      <album id="23">
         <name><![CDATA[Buried in Nausea]]></name>
         <prefix><![CDATA[]]></prefix>
         <basename><![CDATA[Buried in Nausea]]></basename>
-        <artist id="19">
+        <artist id="38">
           <name><![CDATA[Various Artists]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Various Artists]]></basename>
         </artist>
-        <songartist id="20">
-          <name><![CDATA[R/B]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[R/B]]></basename>
-        </songartist>
-        <songartist id="21">
-          <name><![CDATA[Tip-C (featuring Mike Beers)]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Tip-C (featuring Mike Beers)]]></basename>
-        </songartist>
         <songartist id="23">
           <name><![CDATA[Manic Notion]]></name>
           <prefix><![CDATA[]]></prefix>
@@ -86,30 +77,40 @@ They released one demo, ‘Malkuth’, which was recorded in Connolly’s Of Lea
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Stress Builds Character]]></basename>
         </songartist>
-        <songartist id="27">
-          <name><![CDATA[Chi.Otic]]></name>
+        <songartist id="34">
+          <name><![CDATA[Comedown Kid]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chi.Otic]]></basename>
+          <basename><![CDATA[Comedown Kid]]></basename>
         </songartist>
         <songartist id="32">
           <name><![CDATA[Shorty Mac]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Shorty Mac]]></basename>
         </songartist>
+        <songartist id="35">
+          <name><![CDATA[Tip-C]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Tip-C]]></basename>
+        </songartist>
+        <songartist id="21">
+          <name><![CDATA[Tip-C (featuring Mike Beers)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Tip-C (featuring Mike Beers)]]></basename>
+        </songartist>
+        <songartist id="27">
+          <name><![CDATA[Chi.Otic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Chi.Otic]]></basename>
+        </songartist>
         <songartist id="33">
           <name><![CDATA[MxBxCx]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[MxBxCx]]></basename>
         </songartist>
-        <songartist id="34">
-          <name><![CDATA[Comedown Kid]]></name>
+        <songartist id="20">
+          <name><![CDATA[R/B]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Comedown Kid]]></basename>
-        </songartist>
-        <songartist id="35">
-          <name><![CDATA[Tip-C]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Tip-C]]></basename>
+          <basename><![CDATA[R/B]]></basename>
         </songartist>
         <time>1879</time>
         <year>2012</year>
@@ -120,13 +121,14 @@ They released one demo, ‘Malkuth’, which was recorded in Connolly’s Of Lea
         <genre id="7">
           <name><![CDATA[Punk]]></name>
         </genre>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=23&object_type=album&id=421&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <mbid><![CDATA[]]></mbid>
         <mbid_group><![CDATA[]]></mbid_group>
+        <catalog>1</catalog>
       </album>
     </albums>
     <albumcount>0</albumcount>
@@ -148,25 +150,15 @@ They released one demo, ‘Malkuth’, which was recorded in Connolly’s Of Lea
     <prefix><![CDATA[]]></prefix>
     <basename><![CDATA[Comedown Kid]]></basename>
     <albums>
-      <album id="12">
+      <album id="23">
         <name><![CDATA[Buried in Nausea]]></name>
         <prefix><![CDATA[]]></prefix>
         <basename><![CDATA[Buried in Nausea]]></basename>
-        <artist id="19">
+        <artist id="38">
           <name><![CDATA[Various Artists]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Various Artists]]></basename>
         </artist>
-        <songartist id="20">
-          <name><![CDATA[R/B]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[R/B]]></basename>
-        </songartist>
-        <songartist id="21">
-          <name><![CDATA[Tip-C (featuring Mike Beers)]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Tip-C (featuring Mike Beers)]]></basename>
-        </songartist>
         <songartist id="23">
           <name><![CDATA[Manic Notion]]></name>
           <prefix><![CDATA[]]></prefix>
@@ -177,30 +169,40 @@ They released one demo, ‘Malkuth’, which was recorded in Connolly’s Of Lea
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Stress Builds Character]]></basename>
         </songartist>
-        <songartist id="27">
-          <name><![CDATA[Chi.Otic]]></name>
+        <songartist id="34">
+          <name><![CDATA[Comedown Kid]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Chi.Otic]]></basename>
+          <basename><![CDATA[Comedown Kid]]></basename>
         </songartist>
         <songartist id="32">
           <name><![CDATA[Shorty Mac]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[Shorty Mac]]></basename>
         </songartist>
+        <songartist id="35">
+          <name><![CDATA[Tip-C]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Tip-C]]></basename>
+        </songartist>
+        <songartist id="21">
+          <name><![CDATA[Tip-C (featuring Mike Beers)]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Tip-C (featuring Mike Beers)]]></basename>
+        </songartist>
+        <songartist id="27">
+          <name><![CDATA[Chi.Otic]]></name>
+          <prefix><![CDATA[]]></prefix>
+          <basename><![CDATA[Chi.Otic]]></basename>
+        </songartist>
         <songartist id="33">
           <name><![CDATA[MxBxCx]]></name>
           <prefix><![CDATA[]]></prefix>
           <basename><![CDATA[MxBxCx]]></basename>
         </songartist>
-        <songartist id="34">
-          <name><![CDATA[Comedown Kid]]></name>
+        <songartist id="20">
+          <name><![CDATA[R/B]]></name>
           <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Comedown Kid]]></basename>
-        </songartist>
-        <songartist id="35">
-          <name><![CDATA[Tip-C]]></name>
-          <prefix><![CDATA[]]></prefix>
-          <basename><![CDATA[Tip-C]]></basename>
+          <basename><![CDATA[R/B]]></basename>
         </songartist>
         <time>1879</time>
         <year>2012</year>
@@ -211,13 +213,14 @@ They released one demo, ‘Malkuth’, which was recorded in Connolly’s Of Lea
         <genre id="7">
           <name><![CDATA[Punk]]></name>
         </genre>
-        <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=23&object_type=album&id=421&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <mbid><![CDATA[]]></mbid>
         <mbid_group><![CDATA[]]></mbid_group>
+        <catalog>1</catalog>
       </album>
     </albums>
     <albumcount>0</albumcount>
@@ -265,13 +268,14 @@ They released one demo, ‘Malkuth’, which was recorded in Connolly’s Of Lea
         <genre id="8">
           <name><![CDATA[Hip-Hop]]></name>
         </genre>
-        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=435&name=art.jpg]]></art>
+        <art><![CDATA[https://music.com.au/image.php?object_id=21&object_type=album&id=334&name=art.jpg]]></art>
         <has_art>1</has_art>
         <flag>0</flag>
         <rating/>
         <averagerating/>
         <mbid><![CDATA[6e1d48f7-717c-416e-af35-5d2454a13af2]]></mbid>
         <mbid_group><![CDATA[1501fe8a-f060-3b6f-8cb0-7babfc65192a]]></mbid_group>
+        <catalog>4</catalog>
       </album>
     </albums>
     <albumcount>1</albumcount>

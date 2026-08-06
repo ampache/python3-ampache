@@ -1,53 +1,54 @@
 {
     "total_count": 1,
-    "md5": "c4b66550e50f6ae8347c6592ebc1a4d1",
+    "md5": "d63aca0b7e6237c7964320bd7fc95644",
     "album": [
         {
-            "id": "21",
-            "name": "Forget and Remember",
+            "id": "7",
+            "name": "Sensorisk Deprivation",
             "prefix": null,
-            "basename": "Forget and Remember",
+            "basename": "Sensorisk Deprivation",
             "artist": {
-                "id": "36",
-                "name": "Comfort Fit",
-                "prefix": null,
-                "basename": "Comfort Fit"
+                "id": "13",
+                "name": "IOK-1",
+                "prefix": "",
+                "basename": "IOK-1"
             },
             "artists": [
                 {
-                    "id": "36",
-                    "name": "Comfort Fit",
-                    "prefix": null,
-                    "basename": "Comfort Fit"
+                    "id": "13",
+                    "name": "IOK-1",
+                    "prefix": "",
+                    "basename": "IOK-1"
                 }
             ],
             "songartists": [
                 {
-                    "id": "36",
-                    "name": "Comfort Fit",
-                    "prefix": null,
-                    "basename": "Comfort Fit"
+                    "id": "13",
+                    "name": "IOK-1",
+                    "prefix": "",
+                    "basename": "IOK-1"
                 }
             ],
-            "time": 4248,
-            "year": 2005,
+            "time": 3428,
+            "year": 2011,
             "tracks": [],
-            "songcount": 20,
+            "songcount": 4,
             "diskcount": 1,
-            "type": "album",
+            "type": null,
             "genre": [
                 {
-                    "id": "8",
-                    "name": "Hip-Hop"
+                    "id": "4",
+                    "name": "Dark Ambient"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=3&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
-            "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
-            "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
+            "mbid": null,
+            "mbid_group": null,
+            "catalog": "1"
         }
     ]
 }

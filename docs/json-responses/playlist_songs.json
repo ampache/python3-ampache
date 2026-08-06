@@ -1,6 +1,6 @@
 {
-    "total_count": 42,
-    "md5": "cd07bc5fbb32fcaafd5c675ae26651b2",
+    "total_count": 41,
+    "md5": "914b71ab2986574fdae678ad9aa18b39",
     "song": [
         {
             "id": "91",
@@ -9,14 +9,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -29,7 +29,7 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
@@ -60,12 +60,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3",
             "size": 7076428,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
+            "last_played": null,
             "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,
@@ -88,14 +89,14 @@
             "artist": {
                 "id": "16",
                 "name": "CARN\u00daN",
-                "prefix": null,
+                "prefix": "",
                 "basename": "CARN\u00daN"
             },
             "artists": [
                 {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 }
             ],
@@ -108,7 +109,7 @@
             "albumartist": {
                 "id": "16",
                 "name": "CARN\u00daN",
-                "prefix": null,
+                "prefix": "",
                 "basename": "CARN\u00daN"
             },
             "disk": 1,
@@ -130,12 +131,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=101&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Rehearsal%20Tape%20-1996-.mp3",
             "size": 8219821,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 5,
             "averagerating": null,
             "playcount": 1,
+            "last_played": "2025-07-01T04:04:05+00:00",
             "catalog": "1",
             "composer": null,
             "channels": 2,
@@ -158,14 +160,14 @@
             "artist": {
                 "id": "2",
                 "name": "Synthetic",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Synthetic"
             },
             "artists": [
                 {
                     "id": "2",
                     "name": "Synthetic",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Synthetic"
                 }
             ],
@@ -178,7 +180,7 @@
             "albumartist": {
                 "id": "2",
                 "name": "Synthetic",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Synthetic"
             },
             "disk": 1,
@@ -205,12 +207,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=62&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3",
             "size": 1014135,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=427&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
             "has_art": true,
             "flag": false,
             "rating": 5,
             "averagerating": null,
             "playcount": 1,
+            "last_played": "2025-07-01T03:49:25+00:00",
             "catalog": "1",
             "composer": null,
             "channels": 2,
@@ -233,14 +236,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -253,7 +256,7 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
@@ -284,12 +287,13 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=89&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stolen.mp3",
             "size": 15100325,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
+            "last_played": null,
             "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,

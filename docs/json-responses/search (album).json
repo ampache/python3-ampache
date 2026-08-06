@@ -10,14 +10,14 @@
             "artist": {
                 "id": "16",
                 "name": "CARN\u00daN",
-                "prefix": null,
+                "prefix": "",
                 "basename": "CARN\u00daN"
             },
             "artists": [
                 {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 }
             ],
@@ -25,7 +25,7 @@
                 {
                     "id": "16",
                     "name": "CARN\u00daN",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "CARN\u00daN"
                 }
             ],
@@ -42,7 +42,8 @@
             "rating": null,
             "averagerating": null,
             "mbid": null,
-            "mbid_group": null
+            "mbid_group": null,
+            "catalog": "1"
         },
         {
             "id": "21",
@@ -52,14 +53,14 @@
             "artist": {
                 "id": "36",
                 "name": "Comfort Fit",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Comfort Fit"
             },
             "artists": [
                 {
                     "id": "36",
                     "name": "Comfort Fit",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Comfort Fit"
                 }
             ],
@@ -67,7 +68,7 @@
                 {
                     "id": "36",
                     "name": "Comfort Fit",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Comfort Fit"
                 }
             ],
@@ -83,13 +84,14 @@
                     "name": "Hip-Hop"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=334&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
-            "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
+            "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a",
+            "catalog": "4"
         }
     ]
 }

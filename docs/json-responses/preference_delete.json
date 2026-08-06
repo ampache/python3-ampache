@@ -1,3 +1,8 @@
 {
-    "success": "Deleted: temp_pref_json"
+    "error": {
+        "errorCode": "4704",
+        "errorAction": "preference_delete",
+        "errorType": "filter",
+        "errorMessage": "Not Found: temp_pref_json"
+    }
 }

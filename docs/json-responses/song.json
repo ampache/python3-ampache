@@ -1,70 +1,76 @@
 {
-    "id": "97",
-    "title": "Creeping Lawler 2",
-    "name": "Creeping Lawler 2",
+    "id": "132",
+    "title": "Hairy Crushed Nuts",
+    "name": "Hairy Crushed Nuts",
     "artist": {
-        "id": "15",
-        "name": "Warfare 3.0",
-        "prefix": null,
-        "basename": "Warfare 3.0"
+        "id": "36",
+        "name": "Comfort Fit",
+        "prefix": "",
+        "basename": "Comfort Fit"
     },
     "artists": [
         {
-            "id": "15",
-            "name": "Warfare 3.0",
-            "prefix": null,
-            "basename": "Warfare 3.0"
+            "id": "36",
+            "name": "Comfort Fit",
+            "prefix": "",
+            "basename": "Comfort Fit"
         }
     ],
     "album": {
-        "id": "9",
-        "name": "Creeping Lawler 2",
+        "id": "21",
+        "name": "Forget and Remember",
         "prefix": null,
-        "basename": "Creeping Lawler 2"
+        "basename": "Forget and Remember"
     },
     "albumartist": {
-        "id": "15",
-        "name": "Warfare 3.0",
-        "prefix": null,
-        "basename": "Warfare 3.0"
+        "id": "36",
+        "name": "Comfort Fit",
+        "prefix": "",
+        "basename": "Comfort Fit"
     },
     "disk": 1,
     "disksubtitle": null,
-    "track": 1,
-    "filename": "\/mnt\/files-music\/ampache-test\/music\/Warfare 3.0\/Creeping Lawler 2\/01 - Creeping Lawler 2.mp3",
-    "genre": [],
+    "track": 15,
+    "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/15 - Hairy Crushed Nuts.mp3",
+    "genre": [
+        {
+            "id": "8",
+            "name": "Hip-Hop"
+        }
+    ],
     "playlisttrack": 1,
-    "time": 296,
-    "year": 0,
+    "time": 267,
+    "year": 2005,
     "format": "mp3",
     "stream_format": "mp3",
-    "bitrate": 177349,
+    "bitrate": 248806,
     "stream_bitrate": 32000,
     "rate": 44100,
     "mode": "vbr",
     "mime": "audio\/mpeg",
     "stream_mime": "audio\/mpeg",
-    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=97&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
-    "size": 6652448,
-    "mbid": null,
-    "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=455&name=art.jpg",
+    "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=132&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Hairy%20Crushed%20Nuts.mp3",
+    "size": 8328099,
+    "mbid": "db672da0-963b-45a4-b3d8-23efc9c1953d",
+    "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&name=art.jpg",
     "has_art": true,
     "flag": true,
     "rating": 5,
     "averagerating": null,
     "playcount": 0,
-    "catalog": "1",
+    "last_played": null,
+    "catalog": "4",
     "composer": null,
     "channels": 2,
-    "comment": "https:\/\/archive.org\/details\/Creeping_Lawler_2",
+    "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-15-comfort_fit-hairy_crushed_nuts\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
     "license": null,
-    "publisher": "archive.org",
+    "publisher": "Tokyo Dawn Records",
     "language": null,
     "lyrics": null,
     "replaygain_album_gain": null,
     "replaygain_album_peak": null,
-    "replaygain_track_gain": -4.32,
-    "replaygain_track_peak": 0.977,
+    "replaygain_track_gain": null,
+    "replaygain_track_peak": null,
     "r128_album_gain": null,
     "r128_track_gain": null
 }

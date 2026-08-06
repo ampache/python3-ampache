@@ -6,7 +6,7 @@
             "artist": {
                 "id": "23",
                 "name": "Manic Notion",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Manic Notion"
             },
             "album": {
@@ -28,7 +28,7 @@
             "rating": 5,
             "averagerating": null,
             "playcount": 1,
-            "vote": 0
+            "vote": 1
         },
         {
             "id": "114",
@@ -36,7 +36,7 @@
             "artist": {
                 "id": "26",
                 "name": "Stress Builds Character",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Stress Builds Character"
             },
             "album": {
@@ -58,7 +58,7 @@
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "vote": 0
+            "vote": 1
         },
         {
             "id": "109",
@@ -66,7 +66,7 @@
             "artist": {
                 "id": "34",
                 "name": "Comedown Kid",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Comedown Kid"
             },
             "album": {
@@ -88,7 +88,7 @@
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "vote": 0
+            "vote": 1
         },
         {
             "id": "113",
@@ -96,7 +96,7 @@
             "artist": {
                 "id": "32",
                 "name": "Shorty Mac",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Shorty Mac"
             },
             "album": {
@@ -118,7 +118,7 @@
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "vote": 0
+            "vote": 1
         },
         {
             "id": "111",
@@ -126,7 +126,7 @@
             "artist": {
                 "id": "35",
                 "name": "Tip-C",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Tip-C"
             },
             "album": {
@@ -145,10 +145,10 @@
             "size": 460498,
             "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&id=66&name=art.jpg",
             "has_art": true,
-            "rating": 5,
+            "rating": null,
             "averagerating": null,
-            "playcount": 1,
-            "vote": 0
+            "playcount": 0,
+            "vote": 1
         },
         {
             "id": "108",
@@ -156,7 +156,7 @@
             "artist": {
                 "id": "21",
                 "name": "Tip-C (featuring Mike Beers)",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Tip-C (featuring Mike Beers)"
             },
             "album": {
@@ -178,7 +178,7 @@
             "rating": 5,
             "averagerating": null,
             "playcount": 0,
-            "vote": 0
+            "vote": 1
         },
         {
             "id": "115",
@@ -186,7 +186,7 @@
             "artist": {
                 "id": "27",
                 "name": "Chi.Otic",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Chi.Otic"
             },
             "album": {
@@ -208,7 +208,7 @@
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "vote": 0
+            "vote": 1
         },
         {
             "id": "112",
@@ -216,7 +216,7 @@
             "artist": {
                 "id": "33",
                 "name": "MxBxCx",
-                "prefix": null,
+                "prefix": "",
                 "basename": "MxBxCx"
             },
             "album": {
@@ -238,7 +238,7 @@
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "vote": 0
+            "vote": 1
         },
         {
             "id": "107",
@@ -246,7 +246,7 @@
             "artist": {
                 "id": "20",
                 "name": "R\/B",
-                "prefix": null,
+                "prefix": "",
                 "basename": "R\/B"
             },
             "album": {
@@ -273,250 +273,7 @@
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "vote": 0
-        },
-        {
-            "id": "88",
-            "title": "Netro",
-            "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "album": {
-                "id": "8",
-                "name": "Nofi Devices",
-                "prefix": null,
-                "basename": "Nofi Devices"
-            },
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "track": 10,
-            "time": 601,
-            "format": "mp3",
-            "bitrate": 192000,
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=88&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Netro.mp3",
-            "size": 14445467,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
-            "has_art": true,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 1,
-            "vote": 0
-        },
-        {
-            "id": "96",
-            "title": "Creeping Lawler 2",
-            "artist": {
-                "id": "15",
-                "name": "Warfare 3.0",
-                "prefix": null,
-                "basename": "Warfare 3.0"
-            },
-            "album": {
-                "id": "9",
-                "name": "Creeping Lawler 2",
-                "prefix": null,
-                "basename": "Creeping Lawler 2"
-            },
-            "genre": [],
-            "track": 1,
-            "time": 296,
-            "format": "wav",
-            "bitrate": 1411200,
-            "mime": "audio\/wav",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=96&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Warfare%203.0%20-%20Creeping%20Lawler%202.mp3",
-            "size": 52345628,
-            "art": "https:\/\/music.com.au\/image.php?object_id=9&object_type=album&id=455&name=art.jpg",
-            "has_art": true,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 5,
-            "vote": 0
-        },
-        {
-            "id": "90",
-            "title": "Invo",
-            "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
-            },
-            "album": {
-                "id": "8",
-                "name": "Nofi Devices",
-                "prefix": null,
-                "basename": "Nofi Devices"
-            },
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
-            "track": 1,
-            "time": 47,
-            "format": "mp3",
-            "bitrate": 192000,
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Invo.mp3",
-            "size": 1140815,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
-            "has_art": true,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 1,
-            "vote": 0
-        },
-        {
-            "id": "82",
-            "title": "Vanvett",
-            "artist": {
-                "id": "13",
-                "name": "IOK-1",
-                "prefix": null,
-                "basename": "IOK-1"
-            },
-            "album": {
-                "id": "7",
-                "name": "Sensorisk Deprivation",
-                "prefix": null,
-                "basename": "Sensorisk Deprivation"
-            },
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Dark Ambient"
-                }
-            ],
-            "track": 2,
-            "time": 825,
-            "format": "flac",
-            "bitrate": 371855,
-            "mime": "audio\/flac",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3",
-            "size": 38389422,
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
-            "has_art": true,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 1,
-            "vote": 0
-        },
-        {
-            "id": "81",
-            "title": "Galenskap",
-            "artist": {
-                "id": "13",
-                "name": "IOK-1",
-                "prefix": null,
-                "basename": "IOK-1"
-            },
-            "album": {
-                "id": "7",
-                "name": "Sensorisk Deprivation",
-                "prefix": null,
-                "basename": "Sensorisk Deprivation"
-            },
-            "genre": [
-                {
-                    "id": "4",
-                    "name": "Dark Ambient"
-                }
-            ],
-            "track": 3,
-            "time": 998,
-            "format": "flac",
-            "bitrate": 389683,
-            "mime": "audio\/flac",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Galenskap.mp3",
-            "size": 48633049,
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
-            "has_art": true,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 1,
-            "vote": 0
-        },
-        {
-            "id": "78",
-            "title": "inominavel p01",
-            "artist": {
-                "id": "11",
-                "name": "structura",
-                "prefix": null,
-                "basename": "structura"
-            },
-            "album": {
-                "id": "18",
-                "name": "Inominavel (live.v.01)",
-                "prefix": null,
-                "basename": "Inominavel (live.v.01)"
-            },
-            "genre": [
-                {
-                    "id": "3",
-                    "name": "Noise"
-                }
-            ],
-            "track": 1,
-            "time": 84,
-            "format": "mp3",
-            "bitrate": 192000,
-            "mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=78&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p01.mp3",
-            "size": 2036632,
-            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&id=278&name=art.jpg",
-            "has_art": true,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 2,
-            "vote": 0
-        },
-        {
-            "id": "80",
-            "title": "\u0425\u0438\u043a\u043a\u0438 \u043d\u0430\u0439\u0434\u0438 \u0441\u0432\u043e\u044e \u0422\u044f\u043d",
-            "artist": {
-                "id": "12",
-                "name": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c",
-                "prefix": null,
-                "basename": "\u041a-\u0410-\u041b-\u041b-\u041e-\u0412-\u042b-\u0419- \u0421-\u0422-\u0415-\u0420-\u0416-\u0415-\u041d-\u042c"
-            },
-            "album": {
-                "id": "6",
-                "name": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)",
-                "prefix": null,
-                "basename": "\u0425\u0438\u043a\u043a\u0438 \u041d\u0430\u0439\u0434\u0438 \u0421\u0432\u043e\u044e \u0422\u044f\u043d (Single)"
-            },
-            "genre": [],
-            "track": 1,
-            "time": 300,
-            "format": "wav",
-            "bitrate": 1411200,
-            "mime": "audio\/wav",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=80&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=-%20-%20-%20-%20-%20-%20-.mp3",
-            "size": 53026998,
-            "art": "https:\/\/music.com.au\/image.php?object_id=6&object_type=album&id=445&name=art.jpg",
-            "has_art": true,
-            "rating": 5,
-            "averagerating": 3,
-            "playcount": 2,
-            "vote": 0
+            "vote": 1
         }
     ]
 }

@@ -10,14 +10,14 @@
             "artist": {
                 "id": "36",
                 "name": "Comfort Fit",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Comfort Fit"
             },
             "artists": [
                 {
                     "id": "36",
                     "name": "Comfort Fit",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Comfort Fit"
                 }
             ],
@@ -25,7 +25,7 @@
                 {
                     "id": "36",
                     "name": "Comfort Fit",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Comfort Fit"
                 }
             ],
@@ -41,13 +41,14 @@
                     "name": "Hip-Hop"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=334&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
-            "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
+            "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a",
+            "catalog": "4"
         },
         {
             "id": "12",
@@ -57,14 +58,14 @@
             "artist": {
                 "id": "19",
                 "name": "Various Artists",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Various Artists"
             },
             "artists": [
                 {
                     "id": "19",
                     "name": "Various Artists",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Various Artists"
                 }
             ],
@@ -72,56 +73,56 @@
                 {
                     "id": "20",
                     "name": "R\/B",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "R\/B"
                 },
                 {
                     "id": "21",
                     "name": "Tip-C (featuring Mike Beers)",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Tip-C (featuring Mike Beers)"
+                },
+                {
+                    "id": "34",
+                    "name": "Comedown Kid",
+                    "prefix": "",
+                    "basename": "Comedown Kid"
                 },
                 {
                     "id": "23",
                     "name": "Manic Notion",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Manic Notion"
+                },
+                {
+                    "id": "35",
+                    "name": "Tip-C",
+                    "prefix": "",
+                    "basename": "Tip-C"
+                },
+                {
+                    "id": "33",
+                    "name": "MxBxCx",
+                    "prefix": "",
+                    "basename": "MxBxCx"
+                },
+                {
+                    "id": "32",
+                    "name": "Shorty Mac",
+                    "prefix": "",
+                    "basename": "Shorty Mac"
                 },
                 {
                     "id": "26",
                     "name": "Stress Builds Character",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Stress Builds Character"
                 },
                 {
                     "id": "27",
                     "name": "Chi.Otic",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Chi.Otic"
-                },
-                {
-                    "id": "32",
-                    "name": "Shorty Mac",
-                    "prefix": null,
-                    "basename": "Shorty Mac"
-                },
-                {
-                    "id": "33",
-                    "name": "MxBxCx",
-                    "prefix": null,
-                    "basename": "MxBxCx"
-                },
-                {
-                    "id": "34",
-                    "name": "Comedown Kid",
-                    "prefix": null,
-                    "basename": "Comedown Kid"
-                },
-                {
-                    "id": "35",
-                    "name": "Tip-C",
-                    "prefix": null,
-                    "basename": "Tip-C"
                 }
             ],
             "time": 1879,
@@ -142,7 +143,8 @@
             "rating": null,
             "averagerating": null,
             "mbid": null,
-            "mbid_group": null
+            "mbid_group": null,
+            "catalog": "1"
         }
     ]
 }

@@ -4,7 +4,9 @@
     <name><![CDATA[title]]></name>
     <label><![CDATA[Name]]></label>
     <type><![CDATA[text]]></type>
-    <widget/>
+    <widget>
+      <input><![CDATA[text]]></input>
+    </widget>
     <title><![CDATA[Playlist]]></title>
   </rule>
   <rule id="type">
@@ -20,11 +22,12 @@
   <rule id="owner">
     <name><![CDATA[owner]]></name>
     <label><![CDATA[Owner]]></label>
-    <type><![CDATA[user_numeric]]></type>
+    <type><![CDATA[boolean_numeric]]></type>
     <widget>
       <select id="2"><![CDATA[admin]]></select>
       <select id="3"><![CDATA[demo]]></select>
       <select id="4"><![CDATA[user]]></select>
+      <select id="10"><![CDATA[generic]]></select>
     </widget>
     <title><![CDATA[Playlist]]></title>
   </rule>
@@ -32,7 +35,9 @@
     <name><![CDATA[id]]></name>
     <label><![CDATA[Database ID]]></label>
     <type><![CDATA[numeric]]></type>
-    <widget/>
+    <widget>
+      <input><![CDATA[number]]></input>
+    </widget>
     <title><![CDATA[Playlist]]></title>
   </rule>
 </root>

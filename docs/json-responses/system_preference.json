@@ -1,11 +1,8 @@
 {
-    "id": "123",
-    "name": "ajax_load",
-    "level": 25,
-    "description": "Ajax page load",
-    "value": "1",
-    "type": "boolean",
-    "category": "interface",
-    "subcategory": null,
-    "has_access": true
+    "error": {
+        "errorCode": "4704",
+        "errorAction": "system_preference",
+        "errorType": "filter",
+        "errorMessage": "Not Found: ajax_load"
+    }
 }
