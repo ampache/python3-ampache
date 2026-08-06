@@ -117,7 +117,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def label_songs(filter, api_format = 'xml'):
     """
-    ampacheConnection.label_artists(1677)
+    ampacheConnection.label_artists(filter_id=1677)
 
     """ def url_to_song(url, api_format = 'xml'):
     """
@@ -131,7 +131,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def user_edit(username, password = False, fullname = False, email = False, website = False, state = False, city = False, disable = False, maxbitrate = False, api_format = 'xml'):
     """
-    ampacheConnection.user_edit(tempusername, False, False, False, False, False, False, True, False)
+    ampacheConnection.user_edit(username=tempusername, password=False, fullname=False, email=False, website=False, state=False, city=False, disable=True, maxbitrate=False)
     ampacheConnection.user(tempusername)
     if os.path.isfile("docs/" + api_format + "-responses/user." + api_format):
         shutil.move("docs/" + api_format + "-responses/user." + api_format,
@@ -160,59 +160,59 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     'song'|'album'|'artist'|'playlist'
     """
-    songs = ampacheConnection.get_indexes('song', False, False, False, False, False, offset, limit)
+    songs = ampacheConnection.get_indexes(object_type='song', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (song)." + api_format)
     single_song = ampacheConnection.get_id_list(songs, 'song')[0]
 
-    ampacheConnection.get_indexes('song', False, False, False, False, True, offset, limit)
+    ampacheConnection.get_indexes(object_type='song', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=limit)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (song with include)." + api_format)
 
-    albums = ampacheConnection.get_indexes('album', False, False, False, False, False, offset, limit)
+    albums = ampacheConnection.get_indexes(object_type='album', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (album)." + api_format)
     single_album = ampacheConnection.get_id_list(albums, 'album')[0]
 
-    ampacheConnection.get_indexes('album', False, False, False, False, True, offset, limit)
+    ampacheConnection.get_indexes(object_type='album', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=limit)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (album with include)." + api_format)
     single_album = ampacheConnection.get_id_list(albums, 'album')[0]
     single_album = 12
 
-    artists = ampacheConnection.get_indexes('artist', False, False, False, False, False, offset, limit)
+    artists = ampacheConnection.get_indexes(object_type='artist', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (artist)." + api_format)
     single_artist = ampacheConnection.get_id_list(artists, 'artist')[0]
 
-    ampacheConnection.get_indexes('artist', False, False, False, False, True, offset, limit)
+    ampacheConnection.get_indexes(object_type='artist', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=limit)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (artist with include)." + api_format)
     single_artist = ampacheConnection.get_id_list(artists, 'artist')[0]
 
-    playlists = ampacheConnection.get_indexes('playlist', False, False, False, False, False, offset, limit)
+    playlists = ampacheConnection.get_indexes(object_type='playlist', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (playlist)." + api_format)
     single_playlist = ampacheConnection.get_id_list(playlists, 'playlist')[0]
 
-    ampacheConnection.get_indexes('playlist', False, False, False, False, True, offset, 1)
+    ampacheConnection.get_indexes(object_type='playlist', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=1)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (playlist with include)." + api_format)
 
-    ampacheConnection.get_indexes('podcast', False, False, False, False, False, offset, limit)
+    ampacheConnection.get_indexes(object_type='podcast', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (podcast)." + api_format)
 
-    ampacheConnection.get_indexes('podcast', False, False, False, False, True, offset, limit)
+    ampacheConnection.get_indexes(object_type='podcast', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=limit)
     if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
         shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
                     "docs/" + api_format + "-responses/get_indexes (podcast with include)." + api_format)
@@ -384,23 +384,23 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def artist_songs(filter, offset = 0, limit = 0, api_format = 'xml'):
     """
-    ampacheConnection.artist_songs(single_artist, offset, limit)
+    ampacheConnection.artist_songs(filter_id=single_artist, offset=offset, limit=limit)
 
     """ def artists(filter = False, add = False, update = False, offset = 0, limit = 0, include = False, api_format = 'xml'):
     """
-    ampacheConnection.artists(False, False, False, offset, limit, True)
+    ampacheConnection.artists(filter_str=False, add=False, update=False, offset=offset, limit=limit, include=True)
     if os.path.isfile("docs/" + api_format + "-responses/artists." + api_format):
         shutil.move("docs/" + api_format + "-responses/artists." + api_format,
                     "docs/" + api_format + "-responses/artists (with include songs,albums)." + api_format)
-    ampacheConnection.artists(False, False, False, offset, limit, 'songs')
+    ampacheConnection.artists(filter_str=False, add=False, update=False, offset=offset, limit=limit, include='songs')
     if os.path.isfile("docs/" + api_format + "-responses/artists." + api_format):
         shutil.move("docs/" + api_format + "-responses/artists." + api_format,
                     "docs/" + api_format + "-responses/artists (with include songs)." + api_format)
-    ampacheConnection.artists(False, False, False, offset, limit, 'albums')
+    ampacheConnection.artists(filter_str=False, add=False, update=False, offset=offset, limit=limit, include='albums')
     if os.path.isfile("docs/" + api_format + "-responses/artists." + api_format):
         shutil.move("docs/" + api_format + "-responses/artists." + api_format,
                     "docs/" + api_format + "-responses/artists (with include albums)." + api_format)
-    ampacheConnection.artists(False, False, False, offset, limit, False)
+    ampacheConnection.artists(filter_str=False, add=False, update=False, offset=offset, limit=limit, include=False)
 
     """ def catalog_action(task, catalog, api_format = 'xml'):
     """
@@ -467,7 +467,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def followers(username, api_format = 'xml'):
     """
-    ampacheConnection.followers(ampache_user)
+    ampacheConnection.followers(username=ampache_user)
 
     """ def following(username, api_format = 'xml'):
     """
@@ -655,7 +655,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def license_songs(filter, api_format = 'xml'):
     """
-    ampacheConnection.license_songs(1)
+    ampacheConnection.license_songs(filter_id=1)
 
     """ def labels(filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
@@ -667,7 +667,7 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def label_songs(filter, api_format = 'xml'):
     """
-    ampacheConnection.label_artists(2)
+    ampacheConnection.label_artists(filter_id=2)
 
 
     """ def podcast(filter_str, api_format = 'xml'):
@@ -697,13 +697,13 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     """ def podcast_delete
     """
-    podcasts = ampacheConnection.podcasts('Trace', 1)
+    podcasts = ampacheConnection.podcasts(filter_str='Trace', exact=1)
     podcast_id = ampacheConnection.get_id_list(podcasts, 'podcast')[0]
     ampacheConnection.podcast_delete(3)
 
     """ def podcasts(filter_str = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
-    ampacheConnection.podcasts(False, False, 0, 4)
+    ampacheConnection.podcasts(filter_str=False, exact=False, offset=0, limit=4)
 
     """ def update_podcast(filter_str, api_format = 'xml'):
     """
