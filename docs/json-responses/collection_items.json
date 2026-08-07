@@ -1,0 +1,94 @@
+{
+    "collection": {
+        "id": "4",
+        "name": "Example Collection",
+        "owner": "user",
+        "type": "private",
+        "object_type": null,
+        "items": 1,
+        "has_art": false,
+        "contents": [
+            {
+                "track": 1,
+                "track_id": 108,
+                "object_type": "song",
+                "song": {
+                    "id": "377",
+                    "title": "(#27) let's go let's bounce let's roll",
+                    "name": "(#27) let's go let's bounce let's roll",
+                    "artist": {
+                        "id": "185",
+                        "name": "JFrank",
+                        "prefix": "",
+                        "basename": "JFrank"
+                    },
+                    "artists": [
+                        {
+                            "id": "185",
+                            "name": "JFrank",
+                            "prefix": "",
+                            "basename": "JFrank"
+                        }
+                    ],
+                    "album": {
+                        "id": "48",
+                        "name": "Crazy Compilation #4",
+                        "prefix": null,
+                        "basename": "Crazy Compilation #4"
+                    },
+                    "albumartist": {
+                        "id": "43",
+                        "name": "Various Artists",
+                        "prefix": "",
+                        "basename": "Various Artists"
+                    },
+                    "disk": 1,
+                    "disksubtitle": null,
+                    "track": 7,
+                    "filename": "/mnt/music/demo/music/Cl-030VariousArtists-CrazyCompilation4/cl030_07_Jfrank_-_27_lets_go_lets_bounce_lets_roll.mp3",
+                    "genre": [
+                        {
+                            "id": "31",
+                            "name": "Electronic"
+                        }
+                    ],
+                    "playlisttrack": 1,
+                    "time": 281,
+                    "year": 2009,
+                    "format": "mp3",
+                    "stream_format": "mp3",
+                    "bitrate": 320000,
+                    "stream_bitrate": 128000,
+                    "rate": 44100,
+                    "mode": "cbr",
+                    "mime": "audio/mpeg",
+                    "stream_mime": "audio/mpeg",
+                    "url": "music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=377&uid=1&transcode_to=mp3&bitrate=128000&player=api&name=JFrank%20-%20-27-%20let-s%20go%20let-s%20bounce%20let-s%20roll.mp3",
+                    "size": 11403133,
+                    "mbid": "ef328fa5-53e5-4e53-b055-ea2ba33e6b24",
+                    "art": "music.com.au/image.php?object_id=48&object_type=album&name=art.jpg",
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "playcount": 44,
+                    "last_played": "2026-08-07T18:04:57+10:00",
+                    "catalog": "1",
+                    "composer": null,
+                    "channels": 2,
+                    "comment": "www.crazy-language.de",
+                    "license": null,
+                    "publisher": "Crazy Language",
+                    "language": null,
+                    "lyrics": null,
+                    "replaygain_album_gain": null,
+                    "replaygain_album_peak": null,
+                    "replaygain_track_gain": null,
+                    "replaygain_track_peak": null,
+                    "r128_album_gain": null,
+                    "r128_track_gain": null
+                }
+            }
+        ]
+    }
+}
