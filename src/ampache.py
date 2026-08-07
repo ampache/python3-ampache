@@ -345,6 +345,11 @@ class API(object):
             except KeyError:
                 id_list.append(data['id'])
         else:
+            # an 'index' response holds bare id strings rather than objects
+            if isinstance(data, dict) and isinstance(data.get(attribute), list):
+                items = data[attribute]
+                if items and all(isinstance(item, (str, int)) for item in items):
+                    return [str(item) for item in items]
             try:
                 if data[attribute]:
                     try:

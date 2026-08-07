@@ -15,7 +15,7 @@ api = 'demo'
 user = 'demodemo'
 limit = 4
 offset = 0
-api_version = '6.3.0'
+api_version = '8.0.0'
 song_url = 'https://music.com.au/play/index.php?ssid=eeb9f1b6056246a7d563f479f518bb34&type=song&oid=60&uid=4&player=api&name=Synthetic%20-%20BrownSmoke.wma'
 try:
     if sys.argv[1]:
@@ -47,11 +47,15 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """TODO
     def stream(id, type, destination, api_format = 'xml'):
     def download(id, type, destination, format = 'raw', api_format = 'xml'):
-    get_similar: send artist or song id to get related objects from last.fm
+    def random(destination, type, filter_id, ...): streams a random object, needs a writable destination
+    def upload(file_path, ...): needs a real media file and the allow_upload preference
     podcast_episode_delete: delete an existing podcast_episode
-    catalogs: get all the catalogs
-    catalog: get a catalog by id
     catalog_file: clean, add, verify using the file path (good for scripting)
+    catalog_folder: clean, add, verify using the folder path
+    catalog_create: creates a real catalog, so it is left to run_tests.py
+    sonic_match: answers 4703 unless a sonic analysis plugin is enabled for the user
+    preference_create/preference_delete: both answer 4704 on API8, and create still writes the
+        row, so running them leaves a preference behind that delete can not remove
     """
 
     """ def set_debug(boolean):
@@ -156,66 +160,66 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     else:
         user_id = myuser['id']
 
-    """ def get_indexes(object_type, filter_str, exact, add, update, include, offset, limit)):
+    """ def index(object_type, filter_str, exact, add, update, include, offset, limit)):
 
     'song'|'album'|'artist'|'playlist'
     """
-    songs = ampacheConnection.get_indexes(object_type='song', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
-    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
-        shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                    "docs/" + api_format + "-responses/get_indexes (song)." + api_format)
+    songs = ampacheConnection.index(object_type='song', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
+    if os.path.isfile("docs/" + api_format + "-responses/index." + api_format):
+        shutil.move("docs/" + api_format + "-responses/index." + api_format,
+                    "docs/" + api_format + "-responses/index (song)." + api_format)
     single_song = ampacheConnection.get_id_list(songs, 'song')[0]
 
-    ampacheConnection.get_indexes(object_type='song', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=limit)
-    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
-        shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                    "docs/" + api_format + "-responses/get_indexes (song with include)." + api_format)
+    ampacheConnection.index(object_type='song', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=limit)
+    if os.path.isfile("docs/" + api_format + "-responses/index." + api_format):
+        shutil.move("docs/" + api_format + "-responses/index." + api_format,
+                    "docs/" + api_format + "-responses/index (song with include)." + api_format)
 
-    albums = ampacheConnection.get_indexes(object_type='album', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
-    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
-        shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                    "docs/" + api_format + "-responses/get_indexes (album)." + api_format)
+    albums = ampacheConnection.index(object_type='album', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
+    if os.path.isfile("docs/" + api_format + "-responses/index." + api_format):
+        shutil.move("docs/" + api_format + "-responses/index." + api_format,
+                    "docs/" + api_format + "-responses/index (album)." + api_format)
     single_album = ampacheConnection.get_id_list(albums, 'album')[0]
 
-    ampacheConnection.get_indexes(object_type='album', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=limit)
-    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
-        shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                    "docs/" + api_format + "-responses/get_indexes (album with include)." + api_format)
+    ampacheConnection.index(object_type='album', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=limit)
+    if os.path.isfile("docs/" + api_format + "-responses/index." + api_format):
+        shutil.move("docs/" + api_format + "-responses/index." + api_format,
+                    "docs/" + api_format + "-responses/index (album with include)." + api_format)
     single_album = ampacheConnection.get_id_list(albums, 'album')[0]
     single_album = 12
 
-    artists = ampacheConnection.get_indexes(object_type='artist', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
-    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
-        shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                    "docs/" + api_format + "-responses/get_indexes (artist)." + api_format)
+    artists = ampacheConnection.index(object_type='artist', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
+    if os.path.isfile("docs/" + api_format + "-responses/index." + api_format):
+        shutil.move("docs/" + api_format + "-responses/index." + api_format,
+                    "docs/" + api_format + "-responses/index (artist)." + api_format)
     single_artist = ampacheConnection.get_id_list(artists, 'artist')[0]
 
-    ampacheConnection.get_indexes(object_type='artist', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=limit)
-    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
-        shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                    "docs/" + api_format + "-responses/get_indexes (artist with include)." + api_format)
+    ampacheConnection.index(object_type='artist', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=limit)
+    if os.path.isfile("docs/" + api_format + "-responses/index." + api_format):
+        shutil.move("docs/" + api_format + "-responses/index." + api_format,
+                    "docs/" + api_format + "-responses/index (artist with include)." + api_format)
     single_artist = ampacheConnection.get_id_list(artists, 'artist')[0]
 
-    playlists = ampacheConnection.get_indexes(object_type='playlist', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
-    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
-        shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                    "docs/" + api_format + "-responses/get_indexes (playlist)." + api_format)
+    playlists = ampacheConnection.index(object_type='playlist', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
+    if os.path.isfile("docs/" + api_format + "-responses/index." + api_format):
+        shutil.move("docs/" + api_format + "-responses/index." + api_format,
+                    "docs/" + api_format + "-responses/index (playlist)." + api_format)
     single_playlist = ampacheConnection.get_id_list(playlists, 'playlist')[0]
 
-    ampacheConnection.get_indexes(object_type='playlist', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=1)
-    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
-        shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                    "docs/" + api_format + "-responses/get_indexes (playlist with include)." + api_format)
+    ampacheConnection.index(object_type='playlist', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=1)
+    if os.path.isfile("docs/" + api_format + "-responses/index." + api_format):
+        shutil.move("docs/" + api_format + "-responses/index." + api_format,
+                    "docs/" + api_format + "-responses/index (playlist with include)." + api_format)
 
-    ampacheConnection.get_indexes(object_type='podcast', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
-    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
-        shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                    "docs/" + api_format + "-responses/get_indexes (podcast)." + api_format)
+    ampacheConnection.index(object_type='podcast', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
+    if os.path.isfile("docs/" + api_format + "-responses/index." + api_format):
+        shutil.move("docs/" + api_format + "-responses/index." + api_format,
+                    "docs/" + api_format + "-responses/index (podcast)." + api_format)
 
-    ampacheConnection.get_indexes(object_type='podcast', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=limit)
-    if os.path.isfile("docs/" + api_format + "-responses/get_indexes." + api_format):
-        shutil.move("docs/" + api_format + "-responses/get_indexes." + api_format,
-                    "docs/" + api_format + "-responses/get_indexes (podcast with include)." + api_format)
+    ampacheConnection.index(object_type='podcast', filter_str=False, exact=False, add=False, update=False, include=True, offset=offset, limit=limit)
+    if os.path.isfile("docs/" + api_format + "-responses/index." + api_format):
+        shutil.move("docs/" + api_format + "-responses/index." + api_format,
+                    "docs/" + api_format + "-responses/index (podcast with include)." + api_format)
 
     """ def videos(filter = False, exact = False, offset = 0, limit = 0, api_format = 'xml'):
     """
@@ -768,6 +772,10 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
 
     ampacheConnection.localplay('stop', False, False, 0)
 
+    """ def localplay_songs():
+    """
+    ampacheConnection.localplay_songs()
+
     """ catalogs: get all the catalogs
     """ 
     ampacheConnection.catalogs()
@@ -790,6 +798,210 @@ def build_docs(ampache_url, ampache_api, ampache_user, api_format):
     """ def democratic(method, action, oid, api_format = 'xml'):
     """
     # ampacheConnection.democratic()
+
+    """ def index(object_type, filter_str, exact, add, update, include, offset, limit, hide_search, sort, cond):
+    MINIMUM_API_VERSION=8.0.0 for the album_disk type
+    """
+    ampacheConnection.index(object_type='album_disk', offset=offset, limit=limit)
+    if os.path.isfile("docs/" + api_format + "-responses/index." + api_format):
+        shutil.move("docs/" + api_format + "-responses/index." + api_format,
+                    "docs/" + api_format + "-responses/index (album_disk)." + api_format)
+
+    """ def list(object_type, filter_str, exact, add, update, offset, limit):
+    """
+    ampacheConnection.list(object_type='album', offset=offset, limit=limit)
+
+    """ def browse(filter_str, object_type, catalog, add, update, offset, limit):
+    """
+    ampacheConnection.browse()
+
+    """ def get_similar(object_type, filter_id, offset, limit):
+    """
+    ampacheConnection.get_similar('song', single_song, offset, limit)
+
+    """ def album_disks(filter_id, include, offset, limit, sort, cond):
+    MINIMUM_API_VERSION=8.0.0
+    """
+    album_disks = ampacheConnection.album_disks(single_album, False, offset, limit)
+    disk_list = ampacheConnection.get_id_list(album_disks, 'album_disk')
+
+    """ def album_disk(filter_id, include):
+    MINIMUM_API_VERSION=8.0.0
+    """
+    if disk_list:
+        single_disk = disk_list[0]
+        ampacheConnection.album_disk(single_disk, False)
+
+        ampacheConnection.album_disk(single_disk, True)
+        if os.path.isfile("docs/" + api_format + "-responses/album_disk." + api_format):
+            shutil.move("docs/" + api_format + "-responses/album_disk." + api_format,
+                        "docs/" + api_format + "-responses/album_disk (with include)." + api_format)
+
+        """ def album_disk_songs(filter_id, offset, limit, sort, cond):
+        MINIMUM_API_VERSION=8.0.0
+        """
+        ampacheConnection.album_disk_songs(single_disk, offset, limit)
+
+    """ def folders(filter_str, exact, add, update, offset, limit, sort, cond):
+    MINIMUM_API_VERSION=8.0.0
+    """
+    ampacheConnection.folders('/', False, False, False, offset, limit)
+
+    """ def folder(filter_id, add, update, offset, limit, sort, cond):
+    MINIMUM_API_VERSION=8.0.0
+    """
+    ampacheConnection.folder(-1, False, False, offset, limit)
+
+    """ def song_tags(filter_id):
+    """
+    ampacheConnection.song_tags(single_song)
+
+    """ def get_lyrics(filter_id, plugins):
+    """
+    ampacheConnection.get_lyrics(single_song)
+
+    """ def get_external_metadata(filter_id, object_type):
+    """
+    ampacheConnection.get_external_metadata(single_artist, 'artist')
+
+    """ def now_playing():
+    """
+    ampacheConnection.now_playing()
+
+    """ def player(filter_str, object_type, state, play_time, client, offset, limit):
+    """
+    ampacheConnection.player(single_song, 'song', 'play', 0)
+    ampacheConnection.player(single_song, 'song', 'stop', 0)
+
+    """ def search(rules, operator, object_type, offset, limit, random):
+    """
+    ampacheConnection.search([['title', 2, 'D']], 'or', 'song', offset, limit, 0)
+
+    """ def search_group(rules, operator, object_type, offset, limit, random):
+    """
+    ampacheConnection.search_group([['title', 2, 'D']], 'or', 'all', offset, limit, 0)
+
+    """ def search_rules(filter_str):
+    """
+    ampacheConnection.search_rules('song')
+
+    """ def smartlists(filter_str, exact, offset, limit, include, sort, cond, add, update):
+    """
+    smartlists = ampacheConnection.smartlists(False, False, offset, limit)
+    # smartlists come back under the 'playlist' key with 'smart_' prefixed ids
+    smartlist_ids = ampacheConnection.get_id_list(smartlists, 'playlist')
+
+    """ def smartlist(filter_id):
+    """
+    if smartlist_ids:
+        ampacheConnection.smartlist(smartlist_ids[0])
+
+        """ def smartlist_songs(filter_id, random, offset, limit):
+        """
+        ampacheConnection.smartlist_songs(smartlist_ids[0], False, offset, limit)
+
+    """ def user_playlists(filter_str, exact, offset, limit, sort, cond, include, add, update):
+    """
+    ampacheConnection.user_playlists(False, False, offset, limit)
+
+    """ def user_smartlists(filter_str, exact, offset, limit, sort, cond, include, add, update):
+    """
+    ampacheConnection.user_smartlists(False, False, offset, limit)
+
+    """ a real playlist id, since the playlist index also carries smartlists as 'smart_<id>'
+    """
+    real_playlists = ampacheConnection.get_id_list(
+        ampacheConnection.user_playlists(False, False, offset, limit), 'playlist')
+    real_playlist = real_playlists[0] if real_playlists else single_playlist
+
+    """ def playlist_hash(filter_id):
+    """
+    ampacheConnection.playlist_hash(real_playlist)
+
+    """ def playlist_add(filter_id, object_id, object_type):
+    MINIMUM_API_VERSION=6.3.0
+    """
+    ampacheConnection.playlist_add(real_playlist, single_album, 'album')
+
+    """ def playlist_remove(filter_id, object_id, object_type, track, clear):
+    MINIMUM_API_VERSION=8.0.0
+    Replaces playlist_remove_song and is object_type aware
+    """
+    ampacheConnection.playlist_remove(real_playlist, single_song, 'song')
+
+    """ def users():
+    """
+    ampacheConnection.users()
+
+    """ def user_preferences():
+    """
+    ampacheConnection.user_preferences()
+
+    """ def user_preference(filter_str):
+    """
+    ampacheConnection.user_preference('play_type')
+
+    """ def system_preferences():
+    """
+    ampacheConnection.system_preferences()
+
+    """ def system_preference(filter_str):
+    """
+    ampacheConnection.system_preference('lock_songs')
+
+
+    """ collections
+    MINIMUM_API_VERSION=8.0.0
+    A collection curates objects of any type, so the whole lifecycle is exercised here
+    """
+    collection_create = ampacheConnection.collection_create('Example Collection', 'private')
+    collection_new = ampacheConnection.get_id_list(collection_create, 'collection')[0]
+
+    ampacheConnection.collections()
+
+    ampacheConnection.collections('album')
+    if os.path.isfile("docs/" + api_format + "-responses/collections." + api_format):
+        shutil.move("docs/" + api_format + "-responses/collections." + api_format,
+                    "docs/" + api_format + "-responses/collections (album)." + api_format)
+
+    ampacheConnection.collection(collection_new)
+
+    ampacheConnection.collection_add(collection_new, single_album, 'album')
+    ampacheConnection.collection_add(collection_new, single_song, 'song')
+
+    ampacheConnection.collection_items(collection_new, offset, limit)
+
+    ampacheConnection.collection_edit(collection_new, 'Example Collection (edited)', 'public')
+
+    ampacheConnection.collection_remove(collection_new, single_song, 'song')
+
+    ampacheConnection.collection_delete(collection_new)
+
+    """ playlist folders
+    MINIMUM_API_VERSION=8.0.0
+    A playlist folder files playlists, smartlists and collections into a tree
+    """
+    folder_create = ampacheConnection.playlist_folder_create('Example Folder')
+    folder_new = ampacheConnection.get_id_list(folder_create, 'playlist_folder')[0]
+
+    ampacheConnection.playlist_folders(offset, limit)
+
+    ampacheConnection.playlist_folder(folder_new)
+
+    ampacheConnection.playlist_folder_add(real_playlist, 'playlist', folder_new)
+
+    ampacheConnection.playlist_folder_items(folder_new, offset, limit)
+
+    ampacheConnection.playlist_folder_items('/', offset, limit)
+    if os.path.isfile("docs/" + api_format + "-responses/playlist_folder_items." + api_format):
+        shutil.move("docs/" + api_format + "-responses/playlist_folder_items." + api_format,
+                    "docs/" + api_format + "-responses/playlist_folder_items (root)." + api_format)
+
+    ampacheConnection.playlist_folder_edit(folder_new, 'Example Folder (edited)')
+
+    ampacheConnection.playlist_folder_remove(real_playlist, 'playlist')
+
+    ampacheConnection.playlist_folder_delete(folder_new)
 
     """ def goodbye(api_format = 'xml'):
     Close your session when you're done

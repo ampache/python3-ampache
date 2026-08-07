@@ -293,6 +293,60 @@ This takes a collection of inputs and returns ID + name for the object type
 * offset      = (integer) //optional
 * limit       = (integer) //optional
 
+### index
+
+index(object_type, filter_str: str = False, exact=False, add=False, update=False, include=False, offset=0, limit=0, hide_search=False, sort=False, cond=False)
+
+This takes a collection of inputs and return ID's for the object type
+Add 'include' to include child objects
+
+* object_type = (string) 'catalog', 'song', 'album', 'artist', 'album_artist', 'song_artist', 'playlist', 'podcast', 'podcast_episode', 'share', 'video', 'live_stream' ('album_disk' is API8 and higher)
+* filter_str  = (string) search the name of the object_type //optional
+* exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+* add         = (integer) UNIXTIME() //optional
+* update      = (integer) UNIXTIME() //optional
+* include     = (integer) 0,1 include songs if available for that object //optional
+* offset      = (integer) //optional
+* limit       = (integer) //optional
+* hide_search = (integer) 0,1, if true do not include searches/smartlists in the result //optional
+* cond        = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+* sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+
+### folders
+
+folders(filter_str='/', exact=False, add=False, update=False, offset=0, limit=0, sort=False, cond=False)
+
+MINIMUM_API_VERSION=8.0.0
+
+Return children of a parent object in a folder traversal style
+
+* filter_str = (string) Path name filter (Default: '/', the root folder) //optional
+* exact      = (boolean) 0,1, if true filter is exact rather than fuzzy (default: 1) //optional
+* add        = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
+* update     = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'update' time newer than the specified date //optional
+* offset     = (integer) //optional
+* limit      = (integer) //optional
+* cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+* sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+
+### folder
+
+folder(filter_id=-1, add=False, update=False, offset=0, limit=0, sort=False, cond=False)
+
+MINIMUM_API_VERSION=8.0.0
+
+Return children of a parent folder object by ID
+
+There is no separate 'folder' action in API8; 'folders' takes either a folder id or a path name in filter, so this is a convenience wrapper that sends the id.
+
+* filter_id = (integer) UID of the folder object (Default: -1, the root folder) //optional
+* add       = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
+* update    = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'update' time newer than the specified date //optional
+* offset    = (integer) //optional
+* limit     = (integer) //optional
+* cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+* sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+
 ### artists
 
 artists(filter_str: str = False, add: int = False, update: int = False, offset=0, limit=0, include=False)
@@ -368,6 +422,46 @@ This returns the songs of a specified album
 * filter_id = (integer) $album_id
 * offset    = (integer) //optional
 * limit     = (integer) //optional
+
+### album_disks
+
+album_disks(filter_id: int, include=False, offset=0, limit=0, sort=False, cond=False)
+
+MINIMUM_API_VERSION=8.0.0
+
+This returns the album_disks of a specified album
+
+* filter_id = (integer) $album_id
+* include   = (string) 'songs' //optional
+* offset    = (integer) //optional
+* limit     = (integer) //optional
+* cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+* sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+
+### album_disk
+
+album_disk(filter_id: int, include=False)
+
+MINIMUM_API_VERSION=8.0.0
+
+This returns a single album_disk based on the UID provided
+
+* filter_id = (integer) $album_disk_id
+* include   = (string) 'songs' //optional
+
+### album_disk_songs
+
+album_disk_songs(filter_id: int, offset=0, limit=0, sort=False, cond=False)
+
+MINIMUM_API_VERSION=8.0.0
+
+This returns the songs of a specified album_disk
+
+* filter_id = (integer) $album_disk_id
+* offset    = (integer) //optional
+* limit     = (integer) //optional
+* cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+* sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
 
 ### genres
 
@@ -447,6 +541,33 @@ Delete an existing song.
 
 * filter_id   = (string) UID of song to delete
 
+### song_tags
+
+song_tags(filter_id: int)
+
+MINIMUM_API_VERSION=7.5.0
+
+Get the full song file tags using VaInfo
+This is used to get tags for remote catalogs to allow maximum data to be returned
+
+* filter_id = (string) UID of song to fetch
+
+### sonic_match
+
+sonic_match(filter_id: int, offset=0, limit=0)
+
+MINIMUM_API_VERSION=8.0.0
+
+Songs that sound like the given song, most similar first.
+
+Each entry carries the full song plus 'similarity', a 0.0-1.0 score where 1.0 is the same recording; a backend that gives no comparable score reports -1. This shares the OpenSubsonic sonicMatch scale.
+
+NOTE similarity comes from analysing the audio, so this needs a sonic analysis plugin (e.g. AudioMuse) enabled for the user. With no plugin enabled the request is refused (error 4703) rather than answered with an empty list
+
+* filter_id = (integer) UID of Song
+* offset    = (integer) //optional
+* limit     = (integer) //optional
+
 ### playlists
 
 playlists(filter_str: str = False, exact: int = False, offset=0, limit=0)
@@ -525,6 +646,43 @@ This removes a song from a playlist. Previous versions required 'track' instead 
 * song_id   = (integer) $song_id //optional
 * track     = (integer) $playlist_track number //optional
 
+### playlist_add
+
+playlist_add(filter_id: int, object_id: int, object_type: str)
+
+MINIMUM_API_VERSION=6.3.0
+
+This adds an object to a playlist, allowing different song parent types
+
+* filter_id   = (integer) UID of playlist
+* object_id   = (integer) $object_id
+* object_type = (string) 'song', 'album', 'artist', 'playlist'
+
+### playlist_remove
+
+playlist_remove(filter_id: int, object_id=False, object_type='song', track=False, clear=False)
+
+MINIMUM_API_VERSION=8.0.0
+
+Removes an object from a playlist by object id and type, or by track number.
+This replaces playlist_remove_song and is type aware.
+
+* filter_id   = (integer) $playlist_id
+* object_id   = (integer) $object_id //optional
+* object_type = (string) 'song', 'podcast_episode', 'video', DEFAULT 'song' //optional
+* track       = (integer) $playlist_track number //optional
+* clear       = (integer) 0,1, if true remove all items from the playlist //optional
+
+### playlist_hash
+
+playlist_hash(filter_id: int)
+
+MINIMUM_API_VERSION=6.6.0
+
+This returns the md5 hash for the songs in a playlist
+
+* filter_id = (string) UID of playlist
+
 ### playlist_generate
 
 playlist_generate(mode='random', filter_str: str = False, album_id=False, artist_id=False, flagged=False, list_format='song', offset=0, limit=0)
@@ -545,6 +703,314 @@ Get a list of song XML, indexes or id's based on some simple search criteria
 * list_format = (string) 'song', 'index','id' (default = 'song') //optional
 * offset      = (integer) //optional
 * limit       = (integer) //optional
+
+### smartlists
+
+smartlists(filter_str=False, exact=False, offset=0, limit=0, include=False, sort=False, cond=False, add=False, update=False)
+
+This returns smartlists based on the specified filter
+
+* filter_str = (string) search the name of a smartlist //optional
+* exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+* offset     = (integer) //optional
+* limit      = (integer) //optional
+* include    = (integer) 0,1, if true include the objects in the smartlist //optional
+* cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+* sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+* add        = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
+* update     = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'update' time newer than the specified date //optional
+
+### smartlist
+
+smartlist(filter_id: int)
+
+This returns a single smartlist
+
+* filter_id = (integer) $smartlist_id
+
+### smartlist_songs
+
+smartlist_songs(filter_id: int, random=False, offset=0, limit=0)
+
+This returns the songs for a smartlist
+
+* filter_id = (integer) $smartlist_id
+* random    = (integer) 0,1, if true get random songs using limit //optional
+* offset    = (integer) //optional
+* limit     = (integer) //optional
+
+### smartlist_delete
+
+smartlist_delete(filter_id: int)
+
+This deletes a smartlist
+
+* filter_id = (integer) $smartlist_id
+
+### user_playlists
+
+user_playlists(filter_str=False, exact=False, offset=0, limit=0, sort=False, cond=False, include=False, add=False, update=False)
+
+MINIMUM_API_VERSION=6.3.0
+
+This returns playlists based on the specified filter (Does not include searches / smartlists)
+
+* filter_str = (string) search the name of a playlist //optional
+* exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+* offset     = (integer) //optional
+* limit      = (integer) //optional
+* cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+* sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+* include    = (integer) 0,1, if true include playlist contents //optional
+* add        = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
+* update     = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'update' time newer than the specified date //optional
+
+### user_smartlists
+
+user_smartlists(filter_str=False, exact=False, offset=0, limit=0, sort=False, cond=False, include=False, add=False, update=False)
+
+MINIMUM_API_VERSION=6.3.0
+
+This returns smartlists (searches) based on the specified filter (Does not include playlists)
+
+* filter_str = (string) search the name of a smartlist //optional
+* exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+* offset     = (integer) //optional
+* limit      = (integer) //optional
+* cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+* sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+* include    = (integer) 0,1, if true include playlist contents //optional
+* add        = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
+* update     = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'update' time newer than the specified date //optional
+
+### playlist_folders
+
+playlist_folders(offset=0, limit=0)
+
+MINIMUM_API_VERSION=8.0.0
+
+A playlist folder files your playlists, smartlists and collections into a tree.
+
+This returns the whole tree as a flat list; rebuild the hierarchy from each folder's 'parent'. The root is not a stored folder so it never appears here.
+
+* offset = (integer) //optional
+* limit  = (integer) //optional
+
+### playlist_folder
+
+playlist_folder(filter_str)
+
+MINIMUM_API_VERSION=8.0.0
+
+One folder's metadata, without its contents.
+
+NOTE a folder that isn't yours reports 'not found' rather than 'access denied', so a tree can't be probed from outside
+
+* filter_str = (string) UID of the folder, or a name path (e.g. '/Rock/Live')
+
+### playlist_folder_items
+
+playlist_folder_items(filter_str='/', offset=0, limit=0)
+
+MINIMUM_API_VERSION=8.0.0
+
+The playlists, smartlists and collections filed in one folder.
+
+NOTE the root is not a stored folder. It holds every list you can see that hasn't been filed elsewhere, so a list appears there without anything ever having been written for it
+
+* filter_str = (string) UID of the folder, or a name path; 0 or '/' for the root (Default: '/') //optional
+* offset     = (integer) //optional
+* limit      = (integer) //optional
+
+### playlist_folder_create
+
+playlist_folder_create(folder_name, parent=None, sort_order=None)
+
+MINIMUM_API_VERSION=8.0.0
+
+Create a folder in your tree.
+
+* folder_name = (string) folder name; may not contain a '/' and must be unique among its siblings
+* parent      = (string) parent folder as a UID or a name path (Default: the root) //optional
+* sort_order  = (integer) position among its siblings (Default: appended) //optional
+
+### playlist_folder_edit
+
+playlist_folder_edit(filter_str, folder_name=False, parent=None, sort_order=None)
+
+MINIMUM_API_VERSION=8.0.0
+
+Change a folder's name, parent or position. Anything you don't send is left as it is, so send at least one of folder_name, parent or sort_order.
+
+NOTE a rename onto a name a sibling already holds, or a move into the folder's own subtree, is refused
+
+* filter_str  = (string) UID of the folder, or a name path (e.g. '/Rock/Live')
+* folder_name = (string) new folder name //optional
+* parent      = (string) new parent as a UID or a name path, or 0 for the root //optional
+* sort_order  = (integer) new position among its siblings //optional
+
+### playlist_folder_delete
+
+playlist_folder_delete(filter_str)
+
+MINIMUM_API_VERSION=8.0.0
+
+Delete a folder. It must hold neither a child folder nor a filed list.
+
+NOTE the lists themselves are never touched, so emptying a folder means moving its contents out first
+
+* filter_str = (string) UID of the folder, or a name path (e.g. '/Rock/Live')
+
+### playlist_folder_add
+
+playlist_folder_add(object_id: int, object_type: str, filter_str='/', sort_order=None)
+
+MINIMUM_API_VERSION=8.0.0
+
+File a playlist, smartlist or collection into a folder.
+
+NOTE a list already filed is moved rather than duplicated; it is in exactly one of your folders at a time
+
+* object_id   = (integer) UID of the list to file
+* object_type = (string) 'playlist'|'smartlist'|'collection'
+* filter_str  = (string) UID of the folder, or a name path; 0 or '/' returns the list to the root (Default: '/') //optional
+* sort_order  = (integer) position among its siblings (Default: appended) //optional
+
+### playlist_folder_remove
+
+playlist_folder_remove(object_id: int, object_type: str)
+
+MINIMUM_API_VERSION=8.0.0
+
+Take a list out of its folder.
+
+NOTE the list itself is untouched and reappears at the root, because an unfiled list has no placement row at all
+
+* object_id   = (integer) UID of the list
+* object_type = (string) 'playlist'|'smartlist'|'collection'
+
+### collections
+
+collections(object_type=False, offset=0, limit=0)
+
+MINIMUM_API_VERSION=8.0.0
+
+A collection is a hand-curated list of objects of any type; the static counterpart to a search and the non-media counterpart to a playlist.
+
+This returns every collection you own, plus every public collection on the server.
+
+* object_type = (string) only return collections pinned to this object_type //optional
+* offset      = (integer) //optional
+* limit       = (integer) //optional
+
+### collection
+
+collection(filter_id: int)
+
+MINIMUM_API_VERSION=8.0.0
+
+Return a collection by UID, without its contents.
+
+A collection you can't see reports 'not found' rather than 'access denied'
+
+* filter_id = (integer) UID of Collection
+
+### collection_items
+
+collection_items(filter_id: int, offset=0, limit=0)
+
+MINIMUM_API_VERSION=8.0.0
+
+A collection's members, in curated order.
+
+The members come back as one flat list under 'contents' and each entry carries its 'track' (the 1-based position), its 'track_id' (the membership row) and its 'object_type', with that type's own object nested under a property of the same name.
+
+NOTE offset and limit page the list without changing the order. The 'items' count on the collection stays the total member count, so it isn't reduced by paging
+
+* filter_id = (integer) UID of Collection
+* offset    = (integer) //optional
+* limit     = (integer) //optional
+
+### collection_create
+
+collection_create(collection_name, collection_type=False, object_type=False)
+
+MINIMUM_API_VERSION=8.0.0
+
+Create a new, empty collection.
+
+Leave object_type out for a mixed collection, or set it to pin the collection to a single type so collection_add refuses anything else.
+
+* collection_name = (string) Collection name
+* collection_type = (string) 'public'|'private' (Default: 'private') //optional
+* object_type     = (string) pin the collection to a single object_type //optional
+
+### collection_edit
+
+collection_edit(filter_id: int, collection_name=False, collection_type=False, object_type=None, collaborate=False, items=False, tracks=False)
+
+MINIMUM_API_VERSION=8.0.0
+
+Change a collection's name, visibility, pinned type, collaborators or member order.
+
+Only the values you send are changed. Send an empty string as object_type to un-pin a collection back to mixed; pinning is refused while the collection still holds a different type.
+
+items and tracks reorder the members the same way playlist_edit does; the two lists are paired in order and each pair puts one member at one position. Because a collection is heterogeneous each entry in items carries its type as 'object_type:object_id' (e.g. 'album:21,song:60,album:44' with tracks '1,2,3')
+
+* filter_id       = (integer) UID of Collection
+* collection_name = (string) Collection name //optional
+* collection_type = (string) 'public'|'private' //optional
+* object_type     = (string) pinned object_type, or an empty string to un-pin //optional
+* collaborate     = (string) comma-separated user id's allowed to curate the contents //optional
+* items           = (string) comma-separated 'object_type:object_id' pairs //optional
+* tracks          = (string) comma-separated positions matched to 'items' in order //optional
+
+### collection_delete
+
+collection_delete(filter_id: int)
+
+MINIMUM_API_VERSION=8.0.0
+
+Delete a collection and its membership rows. The objects it referenced are untouched.
+
+ACCESS REQUIRED: collection owner or admin. A collaborator may curate the contents but not destroy the list
+
+* filter_id = (integer) UID of Collection
+
+### collection_add
+
+collection_add(filter_id: int, object_id, object_type: str)
+
+MINIMUM_API_VERSION=8.0.0
+
+Add one object to the end of a collection, so an add never disturbs the order of what is already there.
+
+NOTE duplicates are governed by the user's 'unique_playlist' preference, which is off by default, so a collection may hold the same object twice. With it on a repeat is refused with an error
+
+* filter_id   = (integer) UID of Collection
+* object_id   = (integer) UID of the object to add
+* object_type = (string) type of the object to add
+
+### collection_remove
+
+collection_remove(filter_id: int, object_id=False, object_type=False, track=False)
+
+MINIMUM_API_VERSION=8.0.0
+
+Remove members from a collection. The objects themselves are untouched and removing something that was never a member is not an error.
+
+Name either a position or an object:
+
+* track removes exactly the one member holding that position
+* object_id with object_type removes every member pointing at that object
+
+track takes precedence. Without it, both object_id and object_type are required.
+The remaining positions close up, so anything you read before the call is stale.
+
+* filter_id   = (integer) UID of Collection
+* object_id   = (integer) UID of the object to remove //optional
+* object_type = (string) type of the object to remove //optional
+* track       = (integer) position of the member to remove //optional
 
 ### shares
 
@@ -619,6 +1085,23 @@ Return catalogs by UID
 catalog_add(cat_name, cat_path, cat_type=False, media_type=False, file_pattern=False, folder_pattern=False, username=False, password=False)
 
 Create a new catalog
+
+* name           = (string) catalog_name
+* path           = (string) URL or folder path for your catalog
+* type           = (string) catalog_type default: local ('local', 'beets', 'remote', 'subsonic', 'seafile', 'beetsremote') //optional
+* media_type     = (string) Default: 'music' ('music', 'podcast', 'clip', 'tvshow', 'movie', 'personal_video') //optional
+* file_pattern   = (string) Pattern used identify tags from the file name. Default '%T - %t' //optional
+* folder_pattern = (string) Pattern used identify tags from the folder name. Default '%a/%A' //optional
+* username       = (string) login to remote catalog ('remote', 'subsonic', 'seafile') //optional
+* password       = (string) password to remote catalog ('remote', 'subsonic', 'seafile', 'beetsremote') //optional
+
+### catalog_create
+
+catalog_create(cat_name, cat_path, cat_type=False, media_type=False, file_pattern=False, folder_pattern=False, username=False, password=False)
+
+MINIMUM_API_VERSION=8.0.0
+
+Create a new catalog. (the canonical name for catalog_add)
 
 * name           = (string) catalog_name
 * path           = (string) URL or folder path for your catalog
@@ -779,6 +1262,49 @@ http://ampache.org/api/api-advanced-search
 * limit       = (integer) //optional
 * random      = (integer) 0|1' //optional
 
+### search
+
+search(rules, operator='and', object_type='song', offset=0, limit=0, random=0)
+
+Perform an advanced search given passed rules. (the canonical name for advanced_search)
+The rules can occur multiple times and are joined by the operator item.
+
+Refer to the wiki for further information
+https://ampache.org/api/api-advanced-search
+
+* rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
+* operator    = (string) 'and'|'or' (whether to match one rule or all) //optional
+* object_type = (string) //optional
+* offset      = (integer) //optional
+* limit       = (integer) //optional
+* random      = (integer) 0|1 //optional
+
+### search_group
+
+search_group(rules, operator='and', object_type='all', offset=0, limit=0, random=0)
+
+MINIMUM_API_VERSION=6.3.0
+
+Perform a search given passed rules and return matching objects in a group.
+If the rules do not exist for the object type, or would return the entire table, they will not return objects
+
+* rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
+* operator    = (string) 'and'|'or' (whether to match one rule or all) //optional
+* object_type = (string) //optional
+* offset      = (integer) //optional
+* limit       = (integer) //optional
+* random      = (integer) 0|1 //optional
+
+### search_rules
+
+search_rules(filter_str)
+
+MINIMUM_API_VERSION=6.8.0
+
+Print a list of valid search rules for your search type
+
+* filter_str = (string) 'song', 'album', 'song_artist', 'album_artist', 'artist', 'label', 'playlist', 'podcast', 'podcast_episode', 'genre', 'user', 'video'
+
 ### videos
 
 videos(filter_str: str = False, exact: int = False, offset=0, limit=0)
@@ -836,6 +1362,30 @@ This gets library stats for different object types. When filter is null get some
 * limit       = (integer) //optional
 * user_id     = (integer) //optional
 * username    = (string) //optional
+
+### now_playing
+
+now_playing()
+
+MINIMUM_API_VERSION=6.3.1
+
+Get what is currently being played by all users.
+
+### player
+
+player(filter_str, object_type='song', state='play', play_time=0, client='python3-ampache', offset=0, limit=0)
+
+MINIMUM_API_VERSION=6.4.0
+
+Inform the server about the state of your client. (Song you are playing, Play/Pause state, etc.)
+
+* filter_str  = (integer) $object_id
+* object_type = (string) 'song', 'podcast_episode', 'video', DEFAULT 'song' //optional
+* state       = (string) 'play', 'stop', DEFAULT 'play' //optional
+* play_time   = (integer) current song time in whole seconds, DEFAULT 0 //optional
+* client      = (string) $agent, DEFAULT 'python3-ampache' //optional
+* offset      = (integer) //optional
+* limit       = (integer) //optional
 
 ### users
 
@@ -984,6 +1534,50 @@ Make sure lastfm_api_key is set in your configuration file
 
 * object_id = (integer) $artist_id
 
+### get_external_metadata
+
+get_external_metadata(filter_id, object_type)
+
+get data from metadata plugins
+
+* filter_id   = (string) $song_id / $album_id / $artist_id
+* object_type = (string) 'song', 'artist', 'album'
+
+### get_lyrics
+
+get_lyrics(filter_id, plugins=False)
+
+MINIMUM_API_VERSION=6.9.0
+
+Return database lyrics, or search with plugins, by song id
+
+* filter_id = (string) $song_id
+* plugins   = (integer) 0,1, if false disable plugin lookup (Default: 1) //optional
+
+### upload
+
+upload(file_path, filename=False, license_id=False, artist_id=False, artist_name=False, album_id=False, album_name=False, raw_body=False, content_type=False)
+
+MINIMUM_API_VERSION=8.0.0
+
+Add a media file to the catalog named by the 'upload_catalog' preference.
+
+The file is sent as a multipart form field named 'upl' or, with raw_body, as the raw request body with 'filename' naming it.
+
+ACCESS REQUIRED: the 'allow_upload' preference, at the access level set by 'upload_access_level'
+
+NOTE an artist or album owned by another user is refused, and a file that fails to be added is removed from the catalog directory again. A name already present in the catalog is refused rather than renamed and only the file name is used (any path in it is ignored)
+
+* file_path    = (string) full path to the local file being sent
+* filename     = (string) name to store it as (Default: the name of file_path) //optional
+* license_id   = (integer) $license_id, required when 'licensing' is enabled //optional
+* artist_id    = (integer) $artist_id //optional
+* artist_name  = (string) create or reuse an artist you own //optional
+* album_id     = (integer) $album_id //optional
+* album_name   = (string) create or reuse an album you own //optional
+* raw_body     = (boolean) 0,1, send the file as the raw request body //optional
+* content_type = (string) media type of the file (Default: guessed from the name) //optional
+
 ### stream
 
 stream(object_id, object_type, destination)
@@ -1004,6 +1598,29 @@ download a song or podcast episode
 * object_type = (string) 'song'|'podcast'
 * destination = (string) full file path
 * transcode   = (string) 'mp3', 'ogg', etc. ('raw' / original by default) //optional
+
+### random
+
+random(destination, object_type='song', filter_id=False, stats=1, transcode=False, bitrate=False, offset=0)
+
+MINIMUM_API_VERSION=8.0.0
+
+Pick a random object and stream it.
+The server responds with a 302 redirect to the stream url, which is followed here.
+
+Unlike stream, an object id is optional; a container type resolves to a random song from within that container.
+
+* destination = (string) full file path
+* object_type = (string) 'album', 'album_artist', 'album_disk', 'artist', 'catalog', 'favorite', 'genre', 'label', 'playlist', 'podcast_episode', 'rating', 'search', 'song', 'song_artist', 'video', DEFAULT 'song' //optional
+* filter_id   = (string) $object_id of the container to pick from //optional
+* stats       = (integer) 0,1, if false disable stat recording //optional SONG ONLY
+* transcode   = (string) 'mp3', 'ogg', etc. (sent as `format`) //optional SONG ONLY
+* bitrate     = (integer) max bitrate for transcoding in bytes (e.g. 192000=192Kb) //optional SONG ONLY
+* offset      = (integer) start streaming from this time offset in seconds //optional
+
+NOTE 'favorite' reads filter_id as a flag value (1, or unset, for flagged; 0 for not flagged) and 'rating' as a star value (1-5 for that many stars or more, 0 for unrated, unset for any rated song) rather than as an object id
+
+NOTE filter_id is read against the table named by object_type and those id spaces overlap, so an album id and an album_disk id of the same number are different objects
 
 ### get_art
 
