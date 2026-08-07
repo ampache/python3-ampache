@@ -57,7 +57,7 @@ class API(object):
         self.AMPACHE_BEARER_TOKEN = ''
         # Send secrets (a password, or the handshake auth key) in a POST body instead of the
         # query string. API8 deprecates the query string for these because query values leak
-        # into server/proxy logs and browser history; support for them is removed in API9.
+        # into server/proxy logs and browser history, but still accepts them for compatibility.
         # Off by default because a server older than Ampache 8 only reads the query string.
         self.AMPACHE_POST_SECRETS = False
         # Test colors for printing
@@ -174,9 +174,9 @@ class API(object):
 
             API8 deprecates the query string for the password on register, user_create, user_edit
             and catalog_add, and for the handshake auth key, because query values end up in
-            server/proxy logs and browser history. Query string support for them is removed in
-            API9, but a server older than Ampache 8 doesn't read a request body, so this is off
-            by default.
+            server/proxy logs and browser history. The query string still works and stays
+            supported, but a server older than Ampache 8 doesn't read a request body, so this
+            is off by default.
 
             INPUTS
             * mybool = (boolean) Enable/disable posting secrets
@@ -2277,6 +2277,197 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folders(self, offset=0, limit=0):
+        """ playlist_folders
+            MINIMUM_API_VERSION=8.0.0
+
+            A playlist folder files your playlists, smartlists and collections into a tree.
+
+            This returns the whole tree as a flat list; rebuild the hierarchy from each folder's
+            'parent'. The root is not a stored folder so it never appears here.
+
+            INPUTS
+            * offset = (integer) //optional
+            * limit  = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folders'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'offset': str(offset),
+                'limit': str(limit)}
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder(self, filter_str):
+        """ playlist_folder
+            MINIMUM_API_VERSION=8.0.0
+
+            One folder's metadata, without its contents.
+
+            NOTE a folder that isn't yours reports 'not found' rather than 'access denied', so a
+            tree can't be probed from outside
+
+            INPUTS
+            * filter_str = (string) UID of the folder, or a name path (e.g. '/Rock/Live')
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str}
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder_items(self, filter_str='/', offset=0, limit=0):
+        """ playlist_folder_items
+            MINIMUM_API_VERSION=8.0.0
+
+            The playlists, smartlists and collections filed in one folder.
+
+            NOTE the root is not a stored folder. It holds every list you can see that hasn't been
+            filed elsewhere, so a list appears there without anything ever having been written for it
+
+            INPUTS
+            * filter_str = (string) UID of the folder, or a name path; 0 or '/' for the root (Default: '/') //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder_items'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str,
+                'offset': str(offset),
+                'limit': str(limit)}
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder_create(self, folder_name, parent=None, sort_order=None):
+        """ playlist_folder_create
+            MINIMUM_API_VERSION=8.0.0
+
+            Create a folder in your tree.
+
+            INPUTS
+            * folder_name = (string) folder name; may not contain a '/' and must be unique among its siblings
+            * parent      = (string) parent folder as a UID or a name path (Default: the root) //optional
+            * sort_order  = (integer) position among its siblings (Default: appended) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder_create'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'name': folder_name,
+                'parent': parent,
+                'sort_order': sort_order}
+        # 0 is the root, so only an unset parent is dropped
+        if parent is None or parent is False:
+            data.pop('parent')
+        # 0 is a valid position, so only an unset sort_order is dropped
+        if sort_order is None or sort_order is False:
+            data.pop('sort_order')
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder_edit(self, filter_str, folder_name=False, parent=None, sort_order=None):
+        """ playlist_folder_edit
+            MINIMUM_API_VERSION=8.0.0
+
+            Change a folder's name, parent or position. Anything you don't send is left as it is,
+            so send at least one of folder_name, parent or sort_order.
+
+            NOTE a rename onto a name a sibling already holds, or a move into the folder's own
+            subtree, is refused
+
+            INPUTS
+            * filter_str  = (string) UID of the folder, or a name path (e.g. '/Rock/Live')
+            * folder_name = (string) new folder name //optional
+            * parent      = (string) new parent as a UID or a name path, or 0 for the root //optional
+            * sort_order  = (integer) new position among its siblings //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder_edit'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str,
+                'name': folder_name,
+                'parent': parent,
+                'sort_order': sort_order}
+        if not folder_name:
+            data.pop('name')
+        # 0 moves the folder to the root, so only an unset parent is dropped
+        if parent is None or parent is False:
+            data.pop('parent')
+        # 0 is a valid position, so only an unset sort_order is dropped
+        if sort_order is None or sort_order is False:
+            data.pop('sort_order')
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder_delete(self, filter_str):
+        """ playlist_folder_delete
+            MINIMUM_API_VERSION=8.0.0
+
+            Delete a folder. It must hold neither a child folder nor a filed list.
+
+            NOTE the lists themselves are never touched, so emptying a folder means moving its
+            contents out first
+
+            INPUTS
+            * filter_str = (string) UID of the folder, or a name path (e.g. '/Rock/Live')
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder_delete'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str}
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder_add(self, object_id: int, object_type: str, filter_str='/', sort_order=None):
+        """ playlist_folder_add
+            MINIMUM_API_VERSION=8.0.0
+
+            File a playlist, smartlist or collection into a folder.
+
+            NOTE a list already filed is moved rather than duplicated; it is in exactly one of your
+            folders at a time
+
+            INPUTS
+            * object_id   = (integer) UID of the list to file
+            * object_type = (string) 'playlist'|'smartlist'|'collection'
+            * filter_str  = (string) UID of the folder, or a name path; 0 or '/' returns the list to the root (Default: '/') //optional
+            * sort_order  = (integer) position among its siblings (Default: appended) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder_add'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str,
+                'id': object_id,
+                'type': object_type,
+                'sort_order': sort_order}
+        # 0 is a valid position, so only an unset sort_order is dropped
+        if sort_order is None or sort_order is False:
+            data.pop('sort_order')
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder_remove(self, object_id: int, object_type: str):
+        """ playlist_folder_remove
+            MINIMUM_API_VERSION=8.0.0
+
+            Take a list out of its folder.
+
+            NOTE the list itself is untouched and reappears at the root, because an unfiled list
+            has no placement row at all
+
+            INPUTS
+            * object_id   = (integer) UID of the list
+            * object_type = (string) 'playlist'|'smartlist'|'collection'
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder_remove'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'id': object_id,
+                'type': object_type}
         return self.get_request(ampache_url, data, api_method)
 
     def collections(self, object_type=False, offset=0, limit=0):
