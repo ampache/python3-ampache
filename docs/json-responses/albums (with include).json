@@ -10,14 +10,14 @@
             "artist": {
                 "id": "13",
                 "name": "IOK-1",
-                "prefix": null,
+                "prefix": "",
                 "basename": "IOK-1"
             },
             "artists": [
                 {
                     "id": "13",
                     "name": "IOK-1",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "IOK-1"
                 }
             ],
@@ -25,7 +25,7 @@
                 {
                     "id": "13",
                     "name": "IOK-1",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "IOK-1"
                 }
             ],
@@ -39,14 +39,14 @@
                     "artist": {
                         "id": "13",
                         "name": "IOK-1",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "IOK-1"
                     },
                     "artists": [
                         {
                             "id": "13",
                             "name": "IOK-1",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "IOK-1"
                         }
                     ],
@@ -59,7 +59,7 @@
                     "albumartist": {
                         "id": "13",
                         "name": "IOK-1",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "IOK-1"
                     },
                     "disk": 1,
@@ -86,13 +86,14 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=83&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Sensorisk%20Deprivation.mp3",
                     "size": 39473388,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 13,
-                    "catalog": 1,
+                    "last_played": "2021-02-24T05:31:26+00:00",
+                    "catalog": "1",
                     "composer": null,
                     "channels": 2,
                     "comment": "DNA Production release\r\nCatalogue # DNA 119",
@@ -114,14 +115,14 @@
                     "artist": {
                         "id": "13",
                         "name": "IOK-1",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "IOK-1"
                     },
                     "artists": [
                         {
                             "id": "13",
                             "name": "IOK-1",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "IOK-1"
                         }
                     ],
@@ -134,7 +135,7 @@
                     "albumartist": {
                         "id": "13",
                         "name": "IOK-1",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "IOK-1"
                     },
                     "disk": 1,
@@ -161,13 +162,14 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3",
                     "size": 38389422,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&name=art.jpg",
                     "has_art": true,
-                    "flag": true,
-                    "rating": 5,
+                    "flag": false,
+                    "rating": null,
                     "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 1,
+                    "playcount": 0,
+                    "last_played": null,
+                    "catalog": "1",
                     "composer": null,
                     "channels": 2,
                     "comment": "DNA Production release\r\nCatalogue # DNA 119",
@@ -189,14 +191,14 @@
                     "artist": {
                         "id": "13",
                         "name": "IOK-1",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "IOK-1"
                     },
                     "artists": [
                         {
                             "id": "13",
                             "name": "IOK-1",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "IOK-1"
                         }
                     ],
@@ -209,7 +211,7 @@
                     "albumartist": {
                         "id": "13",
                         "name": "IOK-1",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "IOK-1"
                     },
                     "disk": 1,
@@ -236,13 +238,14 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Galenskap.mp3",
                     "size": 48633049,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&name=art.jpg",
                     "has_art": true,
-                    "flag": true,
-                    "rating": 5,
+                    "flag": false,
+                    "rating": null,
                     "averagerating": null,
-                    "playcount": 1,
-                    "catalog": 1,
+                    "playcount": 0,
+                    "last_played": null,
+                    "catalog": "1",
                     "composer": null,
                     "channels": 2,
                     "comment": "DNA Production release\r\nCatalogue # DNA 119",
@@ -264,14 +267,14 @@
                     "artist": {
                         "id": "13",
                         "name": "IOK-1",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "IOK-1"
                     },
                     "artists": [
                         {
                             "id": "13",
                             "name": "IOK-1",
-                            "prefix": null,
+                            "prefix": "",
                             "basename": "IOK-1"
                         }
                     ],
@@ -284,7 +287,7 @@
                     "albumartist": {
                         "id": "13",
                         "name": "IOK-1",
-                        "prefix": null,
+                        "prefix": "",
                         "basename": "IOK-1"
                     },
                     "disk": 1,
@@ -311,13 +314,14 @@
                     "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vansinne.mp3",
                     "size": 70182824,
                     "mbid": null,
-                    "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
+                    "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&name=art.jpg",
                     "has_art": true,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "playcount": 0,
-                    "catalog": 1,
+                    "last_played": null,
+                    "catalog": "1",
                     "composer": null,
                     "channels": 2,
                     "comment": "DNA Production release\r\nCatalogue # DNA 119",
@@ -342,13 +346,14 @@
                     "name": "Dark Ambient"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=3&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "mbid": null,
-            "mbid_group": null
+            "mbid_group": null,
+            "catalog": "1"
         }
     ]
 }

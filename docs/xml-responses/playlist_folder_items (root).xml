@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <total_count>54</total_count>
+  <md5>441674bb8229b52fa6477c1bd779ea68</md5>
+  <playlist_folder id="0">
+    <name><![CDATA[]]></name>
+    <parent>0</parent>
+    <sort_order>0</sort_order>
+    <items>4</items>
+    <contents>
+      <item sort_order="0" object_type="collection">
+        <collection id="1">
+          <name><![CDATA[mixed collection]]></name>
+          <owner><![CDATA[user]]></owner>
+          <type>public</type>
+          <object_type/>
+          <items>103</items>
+          <has_art>1</has_art>
+        </collection>
+      </item>
+      <item sort_order="0" object_type="playlist">
+        <playlist id="1">
+          <name><![CDATA[some guys playlist]]></name>
+          <owner><![CDATA[user]]></owner>
+          <user id="1">
+            <username><![CDATA[user]]></username>
+          </user>
+          <items>25</items>
+          <type>public</type>
+          <art><![CDATA[music.com.au/image.php?object_id=1&object_type=playlist&id=877&name=art.jpg]]></art>
+          <has_access>1</has_access>
+          <has_collaborate>1</has_collaborate>
+          <has_art>1</has_art>
+          <flag>1</flag>
+          <rating>5</rating>
+          <averagerating>4</averagerating>
+          <md5/>
+          <last_update>1623920450</last_update>
+          <time>5802</time>
+        </playlist>
+      </item>
+      <item sort_order="0" object_type="playlist">
+        <playlist id="113">
+          <name><![CDATA[my playlist is good (generic)]]></name>
+          <owner><![CDATA[generic]]></owner>
+          <user id="2">
+            <username><![CDATA[generic]]></username>
+          </user>
+          <items>7</items>
+          <type>public</type>
+          <art><![CDATA[music.com.au/image.php?object_id=113&object_type=playlist&id=862&name=art.jpg]]></art>
+          <has_access>1</has_access>
+          <has_collaborate>1</has_collaborate>
+          <has_art>1</has_art>
+          <flag>0</flag>
+          <rating/>
+          <averagerating/>
+          <md5/>
+          <last_update>1622758760</last_update>
+          <time>2057</time>
+        </playlist>
+      </item>
+      <item sort_order="0" object_type="playlist">
+        <playlist id="114">
+          <name><![CDATA[my second nice playlist (generic)]]></name>
+          <owner><![CDATA[generic]]></owner>
+          <user id="2">
+            <username><![CDATA[generic]]></username>
+          </user>
+          <items>16</items>
+          <type>public</type>
+          <art><![CDATA[music.com.au/image.php?object_id=114&object_type=playlist&id=847&name=art.jpg]]></art>
+          <has_access>1</has_access>
+          <has_collaborate>1</has_collaborate>
+          <has_art>1</has_art>
+          <flag>0</flag>
+          <rating/>
+          <averagerating/>
+          <md5/>
+          <last_update>1622759167</last_update>
+          <time>3132</time>
+        </playlist>
+      </item>
+    </contents>
+  </playlist_folder>
+</root>

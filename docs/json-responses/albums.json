@@ -10,14 +10,14 @@
             "artist": {
                 "id": "13",
                 "name": "IOK-1",
-                "prefix": null,
+                "prefix": "",
                 "basename": "IOK-1"
             },
             "artists": [
                 {
                     "id": "13",
                     "name": "IOK-1",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "IOK-1"
                 }
             ],
@@ -25,7 +25,7 @@
                 {
                     "id": "13",
                     "name": "IOK-1",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "IOK-1"
                 }
             ],
@@ -41,13 +41,14 @@
                     "name": "Dark Ambient"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=431&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=3&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "mbid": null,
-            "mbid_group": null
+            "mbid_group": null,
+            "catalog": "1"
         }
     ]
 }

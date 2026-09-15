@@ -4,7 +4,9 @@
     <name><![CDATA[file]]></name>
     <label><![CDATA[Filename]]></label>
     <type><![CDATA[text]]></type>
-    <widget/>
+    <widget>
+      <input><![CDATA[text]]></input>
+    </widget>
     <title><![CDATA[]]></title>
   </rule>
 </root>

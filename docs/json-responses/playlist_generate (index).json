@@ -1,133 +1,121 @@
 {
     "total_count": 4,
-    "md5": "47c58bd154c2796f54228eeaa7c44379",
+    "md5": "d713e21f4d0ab3a0483af9d6f77f623b",
     "song": [
         {
-            "id": "92",
-            "title": "Stance",
-            "name": "Stance",
+            "id": "112",
+            "title": "Personal Truth",
+            "name": "Personal Truth",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
+                "id": "33",
+                "name": "MxBxCx",
+                "prefix": "",
+                "basename": "MxBxCx"
             },
             "artists": [
                 {
-                    "id": "14",
-                    "name": "Nofi\/found.",
-                    "prefix": null,
-                    "basename": "Nofi\/found."
+                    "id": "33",
+                    "name": "MxBxCx",
+                    "prefix": "",
+                    "basename": "MxBxCx"
                 }
             ],
             "album": {
-                "id": "8",
-                "name": "Nofi Devices",
+                "id": "12",
+                "name": "Buried in Nausea",
                 "prefix": null,
-                "basename": "Nofi Devices"
+                "basename": "Buried in Nausea"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
+                "id": "19",
+                "name": "Various Artists",
+                "prefix": "",
+                "basename": "Various Artists"
             },
             "disk": 1,
             "disksubtitle": null,
             "track": 8,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/08_Stance.mp3",
-            "genre": [
-                {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
-                }
-            ],
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Various Artists\/Buried In Nausea\/08Mxbxcx-PersonalTruth.mp3",
+            "genre": [],
             "playlisttrack": 1,
-            "time": 544,
-            "year": 0,
+            "time": 208,
+            "year": 2012,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 192000,
+            "bitrate": 179860,
             "stream_bitrate": 32000,
             "rate": 44100,
-            "mode": "cbr",
+            "mode": "vbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stance.mp3",
-            "size": 13078740,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=112&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=MxBxCx%20-%20Personal%20Truth.mp3",
+            "size": 4693165,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=12&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
+            "last_played": null,
+            "catalog": "1",
+            "composer": null,
             "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "comment": "http:\/\/archive.org\/details\/gt477BuriedInNausea",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -2.38,
-            "replaygain_track_peak": 0.989,
+            "replaygain_track_gain": -8.27,
+            "replaygain_track_peak": 0.881,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "87",
-            "title": "Wonders of Nando",
-            "name": "Wonders of Nando",
+            "id": "76",
+            "title": "inominavel p04",
+            "name": "inominavel p04",
             "artist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
+                "id": "11",
+                "name": "structura",
+                "prefix": "",
+                "basename": "structura"
             },
             "artists": [
                 {
-                    "id": "14",
-                    "name": "Nofi\/found.",
-                    "prefix": null,
-                    "basename": "Nofi\/found."
+                    "id": "11",
+                    "name": "structura",
+                    "prefix": "",
+                    "basename": "structura"
                 }
             ],
             "album": {
-                "id": "8",
-                "name": "Nofi Devices",
+                "id": "18",
+                "name": "Inominavel (live.v.01)",
                 "prefix": null,
-                "basename": "Nofi Devices"
+                "basename": "Inominavel (live.v.01)"
             },
             "albumartist": {
-                "id": "14",
-                "name": "Nofi\/found.",
-                "prefix": null,
-                "basename": "Nofi\/found."
+                "id": "11",
+                "name": "structura",
+                "prefix": "",
+                "basename": "structura"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 6,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/06_Wonders_of_Nando.mp3",
+            "track": 4,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Structura\/Inominavel (live.v.01)\/04_structura_-_inominavel_p04.mp3",
             "genre": [
                 {
-                    "id": "5",
-                    "name": "Electronica"
-                },
-                {
-                    "id": "6",
-                    "name": "Dance"
+                    "id": "3",
+                    "name": "Noise"
                 }
             ],
             "playlisttrack": 2,
-            "time": 319,
-            "year": 0,
+            "time": 317,
+            "year": 2007,
             "format": "mp3",
             "stream_format": "mp3",
             "bitrate": 192000,
@@ -136,45 +124,46 @@
             "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=87&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Wonders%20of%20Nando.mp3",
-            "size": 7673901,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=76&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=structura%20-%20inominavel%20p04.mp3",
+            "size": 7629821,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=18&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
-            "rating": 5,
-            "averagerating": null,
-            "playcount": 2,
-            "catalog": 1,
-            "composer": "Jeffrey Melton",
+            "rating": 3,
+            "averagerating": 3,
+            "playcount": 1,
+            "last_played": "2021-02-23T04:36:54+00:00",
+            "catalog": "1",
+            "composer": null,
             "channels": 2,
-            "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
+            "comment": "http:\/\/enoughrecords.scene.org",
             "license": null,
             "publisher": "archive.org",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -1.44,
-            "replaygain_track_peak": 1,
+            "replaygain_track_gain": 0,
+            "replaygain_track_peak": 0,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "91",
-            "title": "Home Capsules",
-            "name": "Home Capsules",
+            "id": "86",
+            "title": "Caloonashine",
+            "name": "Caloonashine",
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -187,13 +176,13 @@
             "albumartist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 9,
-            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/09_Home_Capsules.mp3",
+            "track": 5,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/05_Caloonashine.mp3",
             "genre": [
                 {
                     "id": "5",
@@ -205,7 +194,7 @@
                 }
             ],
             "playlisttrack": 3,
-            "time": 294,
+            "time": 330,
             "year": 0,
             "format": "mp3",
             "stream_format": "mp3",
@@ -215,16 +204,17 @@
             "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3",
-            "size": 7076428,
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Caloonashine.mp3",
+            "size": 7929692,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=450&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
             "has_art": true,
             "flag": false,
-            "rating": null,
+            "rating": 5,
             "averagerating": null,
-            "playcount": 0,
-            "catalog": 1,
+            "playcount": 1,
+            "last_played": "2025-07-01T03:58:45+00:00",
+            "catalog": "1",
             "composer": "Jeffrey Melton",
             "channels": 2,
             "comment": "8A114B0B+332232+11+150+3703+28283+76364+107382+132131+156082+177051+217892+239975+285087",
@@ -234,83 +224,84 @@
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": -2.97,
-            "replaygain_track_peak": 1,
+            "replaygain_track_gain": -0.35,
+            "replaygain_track_peak": 0.955,
             "r128_album_gain": null,
             "r128_track_gain": null
         },
         {
-            "id": "132",
-            "title": "Hairy Crushed Nuts",
-            "name": "Hairy Crushed Nuts",
+            "id": "57",
+            "title": "PurpleSmoke",
+            "name": "PurpleSmoke",
             "artist": {
-                "id": "36",
-                "name": "Comfort Fit",
-                "prefix": null,
-                "basename": "Comfort Fit"
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": "",
+                "basename": "Synthetic"
             },
             "artists": [
                 {
-                    "id": "36",
-                    "name": "Comfort Fit",
-                    "prefix": null,
-                    "basename": "Comfort Fit"
+                    "id": "2",
+                    "name": "Synthetic",
+                    "prefix": "",
+                    "basename": "Synthetic"
                 }
             ],
             "album": {
-                "id": "21",
-                "name": "Forget and Remember",
+                "id": "2",
+                "name": "Colorsmoke EP",
                 "prefix": null,
-                "basename": "Forget and Remember"
+                "basename": "Colorsmoke EP"
             },
             "albumartist": {
-                "id": "36",
-                "name": "Comfort Fit",
-                "prefix": null,
-                "basename": "Comfort Fit"
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": "",
+                "basename": "Synthetic"
             },
             "disk": 1,
             "disksubtitle": null,
-            "track": 15,
-            "filename": "\/mnt\/files-music\/ampache-test\/upload\/user\/Comfort Fit\/Forget And Remember\/15 - Hairy Crushed Nuts.mp3",
+            "track": 3,
+            "filename": "\/mnt\/files-music\/ampache-test\/music\/Synthetic\/Synthetic_-_Colorsmoke_EP-20k217-2007(1)\/03-Synthetic_-_PurpleSmokeVMix20k22khS2_64kb.mp3",
             "genre": [
                 {
-                    "id": "8",
-                    "name": "Hip-Hop"
+                    "id": "1",
+                    "name": "Electronic"
                 }
             ],
             "playlisttrack": 4,
-            "time": 267,
-            "year": 2005,
+            "time": 390,
+            "year": 2007,
             "format": "mp3",
             "stream_format": "mp3",
-            "bitrate": 248806,
+            "bitrate": 64000,
             "stream_bitrate": 32000,
-            "rate": 44100,
-            "mode": "vbr",
+            "rate": 22050,
+            "mode": "cbr",
             "mime": "audio\/mpeg",
             "stream_mime": "audio\/mpeg",
-            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=132&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Comfort%20Fit%20-%20Hairy%20Crushed%20Nuts.mp3",
-            "size": 8328099,
-            "mbid": "db672da0-963b-45a4-b3d8-23efc9c1953d",
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=57&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20PurpleSmoke.mp3",
+            "size": 3131519,
+            "mbid": null,
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&name=art.png",
             "has_art": true,
             "flag": false,
             "rating": null,
             "averagerating": null,
             "playcount": 0,
-            "catalog": 4,
+            "last_played": null,
+            "catalog": "1",
             "composer": null,
             "channels": 2,
-            "comment": "URL: http:\/\/freemusicarchive.org\/music\/Comfort_Fit\/Forget_And_Remember\/tdrlp02-15-comfort_fit-hairy_crushed_nuts\r\nComments: http:\/\/freemusicarchive.org\/\r\nCurator: WFMU\r\nCopyright: Attribution-Noncommercial-No Derivative Works 3.0 Germany: http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/de\/",
+            "comment": null,
             "license": null,
-            "publisher": "Tokyo Dawn Records",
+            "publisher": "20kbps rec.",
             "language": null,
             "lyrics": null,
             "replaygain_album_gain": null,
             "replaygain_album_peak": null,
-            "replaygain_track_gain": null,
-            "replaygain_track_peak": null,
+            "replaygain_track_gain": -5.13,
+            "replaygain_track_peak": 1,
             "r128_album_gain": null,
             "r128_track_gain": null
         }

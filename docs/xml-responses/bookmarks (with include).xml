@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
+  <bookmark id="1">
+    <owner><![CDATA[user]]></owner>
+    <object_type><![CDATA[podcast_episode]]></object_type>
+    <object_id>2</object_id>
+    <position>0</position>
+    <client><![CDATA[AmpacheAPI]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1698974919]]></update_date>
+  </bookmark>
+  <bookmark id="2">
+    <owner><![CDATA[user]]></owner>
+    <object_type><![CDATA[podcast_episode]]></object_type>
+    <object_id>2</object_id>
+    <position>0</position>
+    <client><![CDATA[AmpacheAPI]]></client>
+    <creation_date>1670202706</creation_date>
+    <update_date><![CDATA[1698974919]]></update_date>
+  </bookmark>
   <bookmark id="3">
-    <user><![CDATA[user]]></user>
+    <owner><![CDATA[user]]></owner>
     <object_type><![CDATA[song]]></object_type>
     <object_id>115</object_id>
     <position>0</position>
@@ -16,12 +34,12 @@
         <prefix><![CDATA[]]></prefix>
         <basename><![CDATA[Chi.Otic]]></basename>
       </artist>
-      <album id="12">
+      <album id="23">
         <name><![CDATA[Buried in Nausea]]></name>
         <prefix><![CDATA[]]></prefix>
         <basename><![CDATA[Buried in Nausea]]></basename>
       </album>
-      <albumartist id="19">
+      <albumartist id="38">
         <name><![CDATA[Various Artists]]></name>
         <prefix><![CDATA[]]></prefix>
         <basename><![CDATA[Various Artists]]></basename>
@@ -44,12 +62,13 @@
       <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
       <size>1776580</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=23&object_type=album&name=art.jpg]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
       <averagerating/>
       <playcount>0</playcount>
+      <last_played><![CDATA[]]></last_played>
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
       <channels>1</channels>
@@ -67,7 +86,7 @@
     </song>
   </bookmark>
   <bookmark id="4">
-    <user><![CDATA[user]]></user>
+    <owner><![CDATA[user]]></owner>
     <object_type><![CDATA[song]]></object_type>
     <object_id>64</object_id>
     <position>10</position>
@@ -113,12 +132,13 @@
       <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
       <size>1298295</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
       <averagerating/>
       <playcount>0</playcount>
+      <last_played><![CDATA[]]></last_played>
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
       <channels>2</channels>
@@ -136,7 +156,7 @@
     </song>
   </bookmark>
   <bookmark id="5">
-    <user><![CDATA[user]]></user>
+    <owner><![CDATA[user]]></owner>
     <object_type><![CDATA[song]]></object_type>
     <object_id>115</object_id>
     <position>0</position>
@@ -151,12 +171,12 @@
         <prefix><![CDATA[]]></prefix>
         <basename><![CDATA[Chi.Otic]]></basename>
       </artist>
-      <album id="12">
+      <album id="23">
         <name><![CDATA[Buried in Nausea]]></name>
         <prefix><![CDATA[]]></prefix>
         <basename><![CDATA[Buried in Nausea]]></basename>
       </album>
-      <albumartist id="19">
+      <albumartist id="38">
         <name><![CDATA[Various Artists]]></name>
         <prefix><![CDATA[]]></prefix>
         <basename><![CDATA[Various Artists]]></basename>
@@ -179,12 +199,13 @@
       <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
       <size>1776580</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=23&object_type=album&name=art.jpg]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
       <averagerating/>
       <playcount>0</playcount>
+      <last_played><![CDATA[]]></last_played>
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
       <channels>1</channels>
@@ -202,7 +223,7 @@
     </song>
   </bookmark>
   <bookmark id="6">
-    <user><![CDATA[user]]></user>
+    <owner><![CDATA[user]]></owner>
     <object_type><![CDATA[song]]></object_type>
     <object_id>64</object_id>
     <position>10</position>
@@ -248,12 +269,13 @@
       <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
       <size>1298295</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
       <averagerating/>
       <playcount>0</playcount>
+      <last_played><![CDATA[]]></last_played>
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
       <channels>2</channels>
@@ -271,7 +293,7 @@
     </song>
   </bookmark>
   <bookmark id="7">
-    <user><![CDATA[user]]></user>
+    <owner><![CDATA[user]]></owner>
     <object_type><![CDATA[song]]></object_type>
     <object_id>115</object_id>
     <position>0</position>
@@ -286,12 +308,12 @@
         <prefix><![CDATA[]]></prefix>
         <basename><![CDATA[Chi.Otic]]></basename>
       </artist>
-      <album id="12">
+      <album id="23">
         <name><![CDATA[Buried in Nausea]]></name>
         <prefix><![CDATA[]]></prefix>
         <basename><![CDATA[Buried in Nausea]]></basename>
       </album>
-      <albumartist id="19">
+      <albumartist id="38">
         <name><![CDATA[Various Artists]]></name>
         <prefix><![CDATA[]]></prefix>
         <basename><![CDATA[Various Artists]]></basename>
@@ -314,12 +336,13 @@
       <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=115&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Chi.Otic%20-%20Are%20we%20going%20Crazy.mp3]]></url>
       <size>1776580</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=12&object_type=album&id=66&name=art.jpg]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=23&object_type=album&name=art.jpg]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
       <averagerating/>
       <playcount>0</playcount>
+      <last_played><![CDATA[]]></last_played>
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
       <channels>1</channels>
@@ -337,7 +360,7 @@
     </song>
   </bookmark>
   <bookmark id="8">
-    <user><![CDATA[user]]></user>
+    <owner><![CDATA[user]]></owner>
     <object_type><![CDATA[song]]></object_type>
     <object_id>64</object_id>
     <position>10</position>
@@ -383,12 +406,13 @@
       <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=64&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20Black-BlueSmoke.mp3]]></url>
       <size>1298295</size>
       <mbid><![CDATA[]]></mbid>
-      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&id=427&name=art.jpg]]></art>
+      <art><![CDATA[https://music.com.au/image.php?object_id=2&object_type=album&name=art.png]]></art>
       <has_art>1</has_art>
       <flag>0</flag>
       <rating/>
       <averagerating/>
       <playcount>0</playcount>
+      <last_played><![CDATA[]]></last_played>
       <catalog>1</catalog>
       <composer><![CDATA[]]></composer>
       <channels>2</channels>

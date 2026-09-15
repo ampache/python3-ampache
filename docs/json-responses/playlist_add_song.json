@@ -1,3 +1,8 @@
 {
-    "success": "song added to playlist"
+    "error": {
+        "errorCode": "4706",
+        "errorAction": "playlist_add_song",
+        "errorType": "removed",
+        "errorMessage": "Deprecated"
+    }
 }

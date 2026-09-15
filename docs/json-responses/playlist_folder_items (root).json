@@ -1,0 +1,99 @@
+{
+    "playlist_folder": {
+        "id": "0",
+        "name": "",
+        "parent": "0",
+        "sort_order": 0,
+        "items": 4,
+        "contents": [
+            {
+                "sort_order": 0,
+                "object_type": "collection",
+                "collection": {
+                    "id": "1",
+                    "name": "mixed collection",
+                    "owner": "user",
+                    "type": "public",
+                    "object_type": null,
+                    "items": 103,
+                    "has_art": true
+                }
+            },
+            {
+                "sort_order": 0,
+                "object_type": "playlist",
+                "playlist": {
+                    "id": "1",
+                    "name": "some guys playlist",
+                    "owner": "user",
+                    "user": {
+                        "id": "1",
+                        "username": "user"
+                    },
+                    "items": 25,
+                    "type": "public",
+                    "art": "music.com.au/image.php?object_id=1&object_type=playlist&id=877&name=art.jpg",
+                    "has_access": true,
+                    "has_collaborate": true,
+                    "has_art": true,
+                    "flag": true,
+                    "rating": 5,
+                    "averagerating": 4,
+                    "md5": null,
+                    "last_update": 1623920450,
+                    "time": 5802
+                }
+            },
+            {
+                "sort_order": 0,
+                "object_type": "playlist",
+                "playlist": {
+                    "id": "113",
+                    "name": "my playlist is good (generic)",
+                    "owner": "generic",
+                    "user": {
+                        "id": "2",
+                        "username": "generic"
+                    },
+                    "items": 7,
+                    "type": "public",
+                    "art": "music.com.au/image.php?object_id=113&object_type=playlist&id=862&name=art.jpg",
+                    "has_access": true,
+                    "has_collaborate": true,
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "md5": null,
+                    "last_update": 1622758760,
+                    "time": 2057
+                }
+            },
+            {
+                "sort_order": 0,
+                "object_type": "playlist",
+                "playlist": {
+                    "id": "114",
+                    "name": "my second nice playlist (generic)",
+                    "owner": "generic",
+                    "user": {
+                        "id": "2",
+                        "username": "generic"
+                    },
+                    "items": 16,
+                    "type": "public",
+                    "art": "music.com.au/image.php?object_id=114&object_type=playlist&id=847&name=art.jpg",
+                    "has_access": true,
+                    "has_collaborate": true,
+                    "has_art": true,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "md5": null,
+                    "last_update": 1622759167,
+                    "time": 3132
+                }
+            }
+        ]
+    }
+}

@@ -23,6 +23,7 @@ Ampache XML and JSON Api library for python3
 
 import hashlib
 import json
+import mimetypes
 import os
 import requests
 import time
@@ -39,8 +40,12 @@ class API(object):
 
     def __init__(self):
         self.AMPACHE_API = 'xml'
-        self.AMPACHE_VERSION = '6.9.0'
+        self.AMPACHE_VERSION = '8.1.1'
         self.AMPACHE_SERVER = ''
+        # HTTP status of the last response. API8 sets real status codes where
+        # API3-6 always returned 200: 404 for an empty result set, and
+        # Api::getHttpCode() mapped codes for errors (400/401/403/404/410/500)
+        self.AMPACHE_HTTP_CODE = 0
         self.AMPACHE_DEBUG = False
         self.DOCS_PATH = 'docs/'
         self.CONFIG_FILE = 'ampache.json'
@@ -50,6 +55,11 @@ class API(object):
         self.AMPACHE_USER = ''
         self.AMPACHE_KEY = ''
         self.AMPACHE_BEARER_TOKEN = ''
+        # Send secrets (a password, or the handshake auth key) in a POST body instead of the
+        # query string. API8 deprecates the query string for these because query values leak
+        # into server/proxy logs and browser history, but still accepts them for compatibility.
+        # Off by default because a server older than Ampache 8 only reads the query string.
+        self.AMPACHE_POST_SECRETS = False
         # Test colors for printing
         self.OKGREEN = '\033[92m'
         self.WARNING = '\033[93m'
@@ -109,9 +119,12 @@ class API(object):
             api4 = '443000'
             api5 = '5.5.6'
             api6 = '6.6.0'
+            api8 = '8.1.1'
+
+            NOTE api7 is unused/unsupported and is rejected by the server
 
             INPUTS
-            * myversion = (string) '6.6.0'|'390001'
+            * myversion = (string) '8.1.1'|'390001'
         """
         if self.AMPACHE_DEBUG:
             print('AMPACHE_VERSION set to ' + myversion)
@@ -152,6 +165,28 @@ class API(object):
         if self.AMPACHE_DEBUG:
             print('AMPACHE_BEARER_TOKEN set to ' + bearer_token)
         self.AMPACHE_BEARER_TOKEN = bearer_token
+
+    def set_post_secrets(self, mybool: bool):
+        """ set_post_secrets
+            MINIMUM_API_VERSION=8.0.0
+
+            Send secrets in a POST body instead of the query string.
+
+            API8 deprecates the query string for the password on register, user_create, user_edit
+            and catalog_add, and for the handshake auth key, because query values end up in
+            server/proxy logs and browser history. The query string still works and stays
+            supported, but a server older than Ampache 8 doesn't read a request body, so this
+            is off by default.
+
+            INPUTS
+            * mybool = (boolean) Enable/disable posting secrets
+        """
+        if self.AMPACHE_DEBUG:
+            if mybool:
+                print('AMPACHE_POST_SECRETS' + f": {self.OKGREEN}enabled{self.ENDC}")
+            else:
+                print('AMPACHE_POST_SECRETS' + f": {self.WARNING}disabled{self.ENDC}")
+        self.AMPACHE_POST_SECRETS = mybool
 
     def set_url(self, myurl: str):
         """ set_url
@@ -310,6 +345,11 @@ class API(object):
             except KeyError:
                 id_list.append(data['id'])
         else:
+            # an 'index' response holds bare id strings rather than objects
+            if isinstance(data, dict) and isinstance(data.get(attribute), list):
+                items = data[attribute]
+                if items and all(isinstance(item, (str, int)) for item in items):
+                    return [str(item) for item in items]
             try:
                 if data[attribute]:
                     try:
@@ -483,49 +523,77 @@ class API(object):
         sha_signature = hashlib.sha256(passphrase.encode()).hexdigest()
         return sha_signature
 
-    def fetch_url(self, full_url: str, api_format: str, method: str, headers: dict = None, http_method: str = 'GET'):
+    def fetch_url(self, full_url: str, api_format: str, method: str, headers: dict = None):
         """ fetch_url
 
             This function is used to fetch the string results using urllib
 
             INPUTS
-            * full_url    = (string) url to fetch
-            * api_format  = (string) 'xml'|'json'
-            * method      = (string) label used for debug/doc capture, NOT the HTTP verb
-            * headers     = (dict) optional HTTP headers
-            * http_method = (string) HTTP verb to use, e.g. 'GET'|'POST'|'PUT'|'PATCH'|'DELETE' //optional, default 'GET'
+            * full_url   = (string) url to fetch
+            * api_format = (string) 'xml'|'json'
+            * method     = (string)
+            * headers    = (dict) optional HTTP headers
         """
+        self.AMPACHE_HTTP_CODE = 0
         try:
             if not headers:
-                req = urllib.request.Request(full_url, method=http_method)
+                req = urllib.request.Request(full_url)
             else:
-                req = urllib.request.Request(full_url, headers=headers, method=http_method)
+                req = urllib.request.Request(full_url, headers=headers)
             result = urllib.request.urlopen(req)
         except urllib.error.HTTPError as error:
+            # API8 returns 404 for empty results and mapped 4xx/5xx for errors.
+            # The body is still a valid API document, so keep reading it.
             result = error
         except urllib.error.URLError:
             return False
         except ValueError:
             return False
+        self.AMPACHE_HTTP_CODE = getattr(result, 'status', 0) or getattr(result, 'code', 0)
         ampache_response = result.read()
         result.close()
-        if self.AMPACHE_DEBUG:
-            if self.DOCS_PATH == "docs/":
-                self.DOCS_PATH = self.DOCS_PATH + api_format + "-responses/"
-            url_response = ampache_response.decode('utf-8')
-            print(url_response)
-            print(full_url)
-            try:
-                if not os.path.isdir(self.DOCS_PATH):
-                    os.makedirs(self.DOCS_PATH)
-                text_file = open(self.DOCS_PATH + method + "." + api_format, "w", encoding="utf-8")
-                text_file.write(url_response)
-                text_file.close()
-            except FileNotFoundError:
-                pass
+        self.debug_response(ampache_response, full_url, api_format, method)
         return ampache_response
 
+    def debug_response(self, ampache_response, full_url: str, api_format: str, method: str):
+        """ debug_response
+
+            Print and save a response when debugging has been enabled
+
+            INPUTS
+            * ampache_response = (bytes) raw response body
+            * full_url         = (string) url that was called
+            * api_format       = (string) 'xml'|'json'
+            * method           = (string) api method name used for the file name
+        """
+        if not self.AMPACHE_DEBUG:
+            return
+        if self.DOCS_PATH == "docs/":
+            self.DOCS_PATH = self.DOCS_PATH + api_format + "-responses/"
+        try:
+            url_response = ampache_response.decode('utf-8')
+        except (AttributeError, UnicodeDecodeError):
+            return
+        print(url_response)
+        print(full_url)
+        try:
+            if not os.path.isdir(self.DOCS_PATH):
+                os.makedirs(self.DOCS_PATH)
+            text_file = open(self.DOCS_PATH + method + "." + api_format, "w", encoding="utf-8")
+            text_file.write(url_response)
+            text_file.close()
+        except FileNotFoundError:
+            pass
+
     def get_request(self, ampache_url, data, api_method):
+        if getattr(self, 'AMPACHE_POST_SECRETS', False):
+            # API8 asks for these in a request body; everything else stays in the query string
+            secret_keys = {'password'}
+            if api_method in ('handshake', 'lost_password'):
+                secret_keys.add('auth')
+            body = {key: data.pop(key) for key in list(data) if key in secret_keys}
+            if body:
+                return self.post_request(ampache_url, data, api_method, body=body)
         headers = {}
         if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
             headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
@@ -537,6 +605,43 @@ class API(object):
             return False
         return self.return_data(request_response)
 
+    def post_request(self, ampache_url, data, api_method, files=None, body=None, content_type=None):
+        """ post_request
+            MINIMUM_API_VERSION=8.0.0
+
+            Send a POST request instead of putting everything in the query string.
+
+            API8 accepts parameters for POST/PUT/PATCH/DELETE in a JSON body
+            (Content-Type: application/json) as well as in the query string or a form encoded
+            body, and keeping secrets (passwords, the handshake auth key) out of the query
+            string is the reason to use this; a file is sent as the multipart field 'upl' or
+            as the raw request body.
+
+            INPUTS
+            * ampache_url  = (string) server url
+            * data         = (dict) query parameters
+            * api_method   = (string) api method being called
+            * files        = (dict) optional multipart files e.g. {'upl': (name, handle)}
+            * body         = (mixed) optional raw request body
+            * content_type = (string) optional Content-Type for a raw body
+        """
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
+        if content_type:
+            headers['Content-Type'] = content_type
+        self.AMPACHE_HTTP_CODE = 0
+        try:
+            result = requests.post(ampache_url, params=data, files=files, data=body, headers=headers)
+        except requests.exceptions.RequestException:
+            return False
+        # API8 sets a real status code for errors and empty results but the body is still a
+        # valid API document, so it's always worth reading
+        self.AMPACHE_HTTP_CODE = result.status_code
+        self.debug_response(result.content, result.url, self.AMPACHE_API, api_method)
+        return self.return_data(result.content)
+
     """
     -------------
     API FUNCTIONS
@@ -544,7 +649,7 @@ class API(object):
     """
 
     def handshake(self, ampache_url: str, ampache_api: str, ampache_user=False,
-                  timestamp: int = 0, version: str = '6.6.0'):
+                  timestamp: int = 0, version: str = '8.1.1'):
         """ handshake
             MINIMUM_API_VERSION=380001
 
@@ -605,7 +710,7 @@ class API(object):
             self.AMPACHE_SESSION = token
             return token
 
-    def ping(self, ampache_url: str, ampache_api=False, version: str = '6.6.0'):
+    def ping(self, ampache_url: str, ampache_api=False, version: str = '8.1.1'):
         """ ping
             MINIMUM_API_VERSION=380001
 
@@ -726,7 +831,7 @@ class API(object):
         api_method = 'url_to_song'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
-                'url': url}
+                'filter': url}
         return self.get_request(ampache_url, data, api_method)
 
     def get_similar(self, object_type, filter_id: int, offset=0, limit=0):
@@ -751,15 +856,17 @@ class API(object):
                 'limit': str(limit)}
         return self.get_request(ampache_url, data, api_method)
 
-    def list(self, object_type, filter_str=False, exact=False, add=False, update=False,
-             offset=0, limit=0, sort=False, cond=False, hide_search=False):
+    def list(self, object_type, filter_str=False, hide_search=False, exact=False, add=False,
+             update=False, offset=0, limit=0, sort=False, cond=False):
         """ list
             MINIMUM_API_VERSION=6.0.0
 
             This takes a named array of objects and returning `id`, `name`, `prefix` and `basename`
 
             INPUTS
-            * object_type = (string) 'song'|'album'|'artist'|'album_artist'|'playlist'
+            * object_type = (string) 'song', 'album', 'artist', 'album_artist', 'song_artist', 'playlist',
+                            'podcast', 'podcast_episode', 'share', 'video', 'live_stream', 'catalog'
+                            ('album_disk' is API8 and higher)
             * filter_str  = (string) search the name of the object_type //optional
             * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
             * add         = (integer) UNIXTIME() //optional
@@ -768,7 +875,7 @@ class API(object):
             * limit       = (integer) //optional
             * cond        = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
-            * hide_search = (integer) 0,1, if true do not include searches/smartlists in the result //optional
+            * hide_search = (integer) 0,1, if true hide smartlists in playlist results //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'list'
@@ -805,14 +912,20 @@ class API(object):
                offset=0, limit=0, sort=False, cond=False):
         """ browse
             MINIMUM_API_VERSION=6.0.0
+            CHANGED_IN_API_VERSION=8.0.0
 
             Return children of a parent object in a folder traversal/browse style
             If you don't send any parameters you'll get a catalog list (the 'root' path)
 
+            NOTE from API8 the catalog is optional on 'album_artist', 'artist', 'album',
+            'album_disk' and 'podcast'. Send it to restrict the children to a single catalog, or
+            leave it out to get them from every catalog you can see. API6 still requires it
+
             INPUTS
             * filter_str  = (string) object_id //optional
-            * object_type = (string) 'root', 'catalog', 'artist', 'album', 'podcast' // optional
-            * catalog     = (integer) catalog ID you are browsing
+            * object_type = (string) 'root', 'catalog', 'album_artist', 'artist', 'album', 'podcast' //optional
+                            ('album_disk' is API8 and higher)
+            * catalog     = (integer) catalog ID you are browsing //optional
             * add         = Api::set_filter(date) //optional
             * update      = Api::set_filter(date) //optional
             * offset      = (integer) //optional
@@ -849,6 +962,89 @@ class API(object):
             data.pop('cond')
         return self.get_request(ampache_url, data, api_method)
 
+    def folder(self, filter_id=-1, add=False, update=False,
+               offset=0, limit=0, sort=False, cond=False):
+        """ folder
+            MINIMUM_API_VERSION=8.0.0
+
+            Return children of a parent folder object by ID
+
+            There is no separate 'folder' action in API8; 'folders' takes either a folder id or
+            a path name in filter, so this is a convenience wrapper that sends the id.
+
+            INPUTS
+            * filter_id = (integer) UID of the folder object (Default: -1, the root folder) //optional
+            * add       = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
+            * update    = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'update' time newer than the specified date //optional
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'folders'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': str(filter_id),
+                'add': add,
+                'update': update,
+                'offset': str(offset),
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
+        if not add:
+            data.pop('add')
+        if not update:
+            data.pop('update')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
+        return self.get_request(ampache_url, data, api_method)
+
+    def folders(self, filter_str='/', exact=False, add=False, update=False,
+                offset=0, limit=0, sort=False, cond=False):
+        """ folders
+            MINIMUM_API_VERSION=8.0.0
+
+            Return children of a parent object in a folder traversal style
+
+            INPUTS
+            * filter_str = (string) Path name filter (Default: '/', the root folder) //optional
+            * exact      = (boolean) 0,1, if true filter is exact rather than fuzzy (default: 1) //optional
+            * add        = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
+            * update     = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'update' time newer than the specified date //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+            * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'folders'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str,
+                'exact': exact,
+                'add': add,
+                'update': update,
+                'offset': str(offset),
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
+        if not filter_str:
+            data.pop('filter')
+        if not exact:
+            data.pop('exact')
+        if not add:
+            data.pop('add')
+        if not update:
+            data.pop('update')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
+        return self.get_request(ampache_url, data, api_method)
+
     def index(self, object_type, filter_str=False, exact=False, add=False, update=False,
               include=False, offset=0, limit=0, hide_search=False, sort=False, cond=False):
         """ index
@@ -859,6 +1055,7 @@ class API(object):
 
             INPUTS
             * object_type = (string) 'catalog', 'song', 'album', 'artist', 'album_artist', 'song_artist', 'playlist', 'podcast', 'podcast_episode', 'share', 'video', 'live_stream'
+                            ('album_disk' is API8 and higher)
             * filter_str  = (string) search the name of the object_type //optional
             * exact       = (integer) 0,1, if true filter is exact rather then fuzzy //optional
             * add         = (integer) UNIXTIME() //optional
@@ -905,10 +1102,13 @@ class API(object):
             data.pop('cond')
         return self.get_request(ampache_url, data, api_method)
 
-    def get_indexes(self, object_type, filter_str=False, exact=False, add=False,
-                    update=False, include=False, offset=0, limit=0, sort=False, cond=False):
+    def get_indexes(self, object_type, filter_str=False, hide_search=False, exact=False,
+                    add=False, update=False, include=False, offset=0, limit=0, sort=False,
+                    cond=False):
         """ get_indexes
             MINIMUM_API_VERSION=400001
+
+            DEPRECATED API8 uses the `index` action instead of `get_indexes`
 
             This takes a collection of inputs and returns ID + name for the object type
 
@@ -939,11 +1139,14 @@ class API(object):
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
-                'cond': cond}
+                'cond': cond,
+                'hide_search': hide_search}
         if not filter_str:
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not hide_search:
+            data.pop('hide_search')
         if not add:
             data.pop('add')
         if not update:
@@ -956,8 +1159,8 @@ class API(object):
             data.pop('cond')
         return self.get_request(ampache_url, data, api_method)
 
-    def artists(self, filter_str=False, add=False, update=False,
-                offset=0, limit=0, include=False, album_artist=False, sort=False, cond=False, exact=False):
+    def artists(self, filter_str=False, exact=False, add=False, update=False,
+                offset=0, limit=0, include=False, album_artist=False, sort=False, cond=False):
         """ artists
             MINIMUM_API_VERSION=380001
 
@@ -965,6 +1168,7 @@ class API(object):
 
             INPUTS
             * filter_str   = (string) search the name of an artist //optional
+            * exact        = (boolean) 0, 1, if true filter is exact rather than fuzzy //optional
             * add          = (integer) UNIXTIME() //optional
             * update       = (integer) UNIXTIME() //optional
             * offset       = (integer) //optional
@@ -973,7 +1177,6 @@ class API(object):
             * album_artist = (boolean) 0,1 if true filter for album artists only //optional
             * cond         = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort         = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
-            * exact        = (integer) 0,1, if true filter is exact rather then fuzzy //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         if bool(include) and not isinstance(include, str):
@@ -982,6 +1185,7 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
+                'exact': exact,
                 'add': add,
                 'update': update,
                 'offset': str(offset),
@@ -989,8 +1193,7 @@ class API(object):
                 'include': include,
                 'album_artist': album_artist,
                 'sort': sort,
-                'cond': cond,
-                'exact': exact}
+                'cond': cond}
         if not filter_str:
             data.pop('filter')
         if not exact:
@@ -1064,7 +1267,7 @@ class API(object):
             data.pop('cond')
         return self.get_request(ampache_url, data, api_method)
 
-    def artist_songs(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
+    def artist_songs(self, filter_id: int, top50=False, offset=0, limit=0, sort=False, cond=False):
         """ artist_songs
             MINIMUM_API_VERSION=380001
 
@@ -1076,6 +1279,7 @@ class API(object):
             * limit     = (integer) //optional
             * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * top50     = (boolean) 0, 1, if true only return the artist's top 50 songs //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'artist_songs'
@@ -1085,7 +1289,10 @@ class API(object):
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
-                'cond': cond}
+                'cond': cond,
+                'top50': top50}
+        if not top50:
+            data.pop('top50')
         if not sort:
             data.pop('sort')
         if not cond:
@@ -1165,7 +1372,7 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def album_songs(self, filter_id: int, offset=0, limit=0,
-                    exact=False, sort=False, cond=False):
+                    exact=False, sort=False, cond=False, top50=False):
         """ album_songs
             MINIMUM_API_VERSION=380001
 
@@ -1178,6 +1385,7 @@ class API(object):
             * exact     = (integer) 0,1, if true don't group songs from different disks //optional (IGNORED IN API6)
             * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * top50     = (boolean) 0, 1, if true only return the album's top 50 songs //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'album_songs'
@@ -1192,9 +1400,96 @@ class API(object):
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
-                'cond': cond}
+                'cond': cond,
+                'top50': top50}
         if not exact:
             data.pop('exact')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
+        if not top50:
+            data.pop('top50')
+        return self.get_request(ampache_url, data, api_method)
+
+    def album_disks(self, filter_id: int, include=False, offset=0, limit=0, sort=False, cond=False):
+        """ album_disks
+            MINIMUM_API_VERSION=8.0.0
+
+            This returns the album_disks of a specified album
+
+            INPUTS
+            * filter_id = (integer) $album_id
+            * include   = (string) 'songs' //optional
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'album_disks'
+        if bool(include) and not isinstance(include, str):
+            include = 'songs'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'include': include,
+                'offset': str(offset),
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
+        if not include:
+            data.pop('include')
+        if not sort:
+            data.pop('sort')
+        if not cond:
+            data.pop('cond')
+        return self.get_request(ampache_url, data, api_method)
+
+    def album_disk(self, filter_id: int, include=False):
+        """ album_disk
+            MINIMUM_API_VERSION=8.0.0
+
+            This returns a single album_disk based on the UID provided
+
+            INPUTS
+            * filter_id = (integer) $album_disk_id
+            * include   = (string) 'songs' //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'album_disk'
+        if bool(include) and not isinstance(include, str):
+            include = 'songs'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'include': include}
+        if not include:
+            data.pop('include')
+        return self.get_request(ampache_url, data, api_method)
+
+    def album_disk_songs(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
+        """ album_disk_songs
+            MINIMUM_API_VERSION=8.0.0
+
+            This returns the songs of a specified album_disk
+
+            INPUTS
+            * filter_id = (integer) $album_disk_id
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
+            * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'album_disk_songs'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'offset': str(offset),
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
         if not sort:
             data.pop('sort')
         if not cond:
@@ -1428,8 +1723,36 @@ class API(object):
                 'filter': filter_id}
         return self.get_request(ampache_url, data, api_method)
 
+    def sonic_match(self, filter_id: int, offset=0, limit=0):
+        """ sonic_match
+            MINIMUM_API_VERSION=8.0.0
+
+            Songs that sound like the given song, most similar first.
+
+            Each entry carries the full song plus 'similarity', a 0.0-1.0 score where 1.0 is the
+            same recording; a backend that gives no comparable score reports -1. This shares the
+            OpenSubsonic sonicMatch scale.
+
+            NOTE similarity comes from analysing the audio, so this needs a sonic analysis plugin
+            (e.g. AudioMuse) enabled for the user. With no plugin enabled the request is refused
+            (error 4703) rather than answered with an empty list
+
+            INPUTS
+            * filter_id = (integer) UID of Song
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'sonic_match'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'offset': str(offset),
+                'limit': str(limit)}
+        return self.get_request(ampache_url, data, api_method)
+
     def user_playlists(self, filter_str=False, exact=False, offset=0, limit=0,
-                       sort=False, cond=False, include=False):
+                       sort=False, cond=False, include=False, add=False, update=False):
         """ user_playlists
             MINIMUM_API_VERSION=6.3.0
 
@@ -1443,6 +1766,8 @@ class API(object):
             * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
             * include    = (integer) 0,1, if true include playlist contents
+            * add        = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
+            * update     = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'update' time newer than the specified date //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'user_playlists'
@@ -1450,6 +1775,8 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
+                'add': add,
+                'update': update,
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
@@ -1459,6 +1786,10 @@ class API(object):
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not add:
+            data.pop('add')
+        if not update:
+            data.pop('update')
         if not sort:
             data.pop('sort')
         if not cond:
@@ -1468,7 +1799,7 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def user_smartlists(self, filter_str=False, exact=False, offset=0, limit=0,
-                        sort=False, cond=False, include=False):
+                        sort=False, cond=False, include=False, add=False, update=False):
         """ user_smartlists
             MINIMUM_API_VERSION=6.3.0
 
@@ -1482,6 +1813,8 @@ class API(object):
             * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
             * include    = (integer) 0,1, if true include playlist contents
+            * add        = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
+            * update     = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'update' time newer than the specified date //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'user_smartlists'
@@ -1489,6 +1822,8 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
+                'add': add,
+                'update': update,
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
@@ -1498,6 +1833,10 @@ class API(object):
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not add:
+            data.pop('add')
+        if not update:
+            data.pop('update')
         if not sort:
             data.pop('sort')
         if not cond:
@@ -1507,7 +1846,7 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def playlists(self, filter_str=False, exact=False, offset=0, limit=0, hide_search=False,
-                  show_dupes=False, include=False, sort=False, cond=False):
+                  show_dupes=False, include=False, sort=False, cond=False, add=False, update=False):
         """ playlists
             MINIMUM_API_VERSION=380001
 
@@ -1523,6 +1862,8 @@ class API(object):
             * include     = (integer) 0,1, if true include the objects in the playlist //optional
             * cond        = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * add         = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
+            * update      = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'update' time newer than the specified date //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'playlists'
@@ -1530,6 +1871,8 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
+                'add': add,
+                'update': update,
                 'offset': str(offset),
                 'limit': str(limit),
                 'hide_search': hide_search,
@@ -1541,6 +1884,10 @@ class API(object):
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not add:
+            data.pop('add')
+        if not update:
+            data.pop('update')
         if not hide_search:
             data.pop('hide_search')
         if not show_dupes:
@@ -1683,13 +2030,14 @@ class API(object):
     def playlist_add(self, filter_id: int, object_id: int, object_type: str):
         """ playlist_add
             MINIMUM_API_VERSION=6.3.0
+            CHANGED_IN_API_VERSION=8.0.1
 
             This adds a song to a playlist, allowing different song parent types
 
             INPUTS
-            * filter = (int) UID of playlist
-            * id     = (int) $object_id
-            * type   = (string) 'song', 'album', 'artist', 'playlist'
+            * filter      = (int) UID of playlist
+            * id          = (int) $object_id
+            * object_type = (string) 'song', 'album', 'artist', 'playlist'
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'playlist_add'
@@ -1697,13 +2045,15 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'id': object_id,
-                'type': object_type}
+                'object_type': object_type}
         return self.get_request(ampache_url, data, api_method)
 
     def playlist_add_song(self, filter_id: int, song_id, check=False):
         """ playlist_add_song
             MINIMUM_API_VERSION=380001
             CHANGED_IN_API_VERSION=400003
+
+            DEPRECATED API8 uses the `playlist_add` action instead of `playlist_add_song`
 
             This adds a song to a playlist.
             Added duplicate checks in 400003
@@ -1726,11 +2076,48 @@ class API(object):
                 'check': check}
         return self.get_request(ampache_url, data, api_method)
 
+    def playlist_remove(self, filter_id: int,
+                        object_id=False, object_type='song', track=False, clear=False):
+        """ playlist_remove
+            MINIMUM_API_VERSION=8.0.0
+            CHANGED_IN_API_VERSION=8.0.1
+
+            Removes an object from a playlist by object id and type, or by track number.
+            This replaces playlist_remove_song and is type aware.
+
+            INPUTS
+            * filter_id   = (integer) $playlist_id
+            * object_id   = (integer) $object_id //optional
+            * object_type = (string) 'song', 'podcast_episode', 'video', DEFAULT 'song' //optional
+            * track       = (integer) $playlist_track number //optional
+            * clear       = (integer) 0,1, if true remove all items from the playlist //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_remove'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'id': object_id,
+                'object_type': object_type,
+                'track': track,
+                'clear': clear}
+        if not object_id:
+            data.pop('id')
+        if not object_type:
+            data.pop('object_type')
+        if not track:
+            data.pop('track')
+        if not clear:
+            data.pop('clear')
+        return self.get_request(ampache_url, data, api_method)
+
     def playlist_remove_song(self, filter_id: int,
                              song_id=False, track=False):
         """ playlist_remove_song
             MINIMUM_API_VERSION=380001
             CHANGED_IN_API_VERSION=400001
+
+            DEPRECATED in API8, removed in API9. Use playlist_remove instead.
 
             This removes a song from a playlist. Previous versions required 'track' instead of 'song'.
 
@@ -1796,7 +2183,8 @@ class API(object):
             data.pop('flag')
         return self.get_request(ampache_url, data, api_method)
 
-    def smartlists(self, filter_str=False, exact=False, offset=0, limit=0, include=False, sort=False, cond=False):
+    def smartlists(self, filter_str=False, exact=False, offset=0, limit=0, include=False, sort=False, cond=False,
+                   add=False, update=False):
         """ smartlists
             MINIMUM_API_VERSION=380001
 
@@ -1810,6 +2198,8 @@ class API(object):
             * include     = (integer) 0,1, if true include the objects in the smartlist //optional
             * cond        = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort        = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * add         = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
+            * update      = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'update' time newer than the specified date //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'smartlists'
@@ -1817,6 +2207,8 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
+                'add': add,
+                'update': update,
                 'offset': str(offset),
                 'limit': str(limit),
                 'include': include,
@@ -1826,6 +2218,10 @@ class API(object):
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not add:
+            data.pop('add')
+        if not update:
+            data.pop('update')
         if not include:
             data.pop('include')
         if not sort:
@@ -1888,6 +2284,425 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folders(self, offset=0, limit=0):
+        """ playlist_folders
+            MINIMUM_API_VERSION=8.0.0
+
+            A playlist folder files your playlists, smartlists and collections into a tree.
+
+            This returns the whole tree as a flat list; rebuild the hierarchy from each folder's
+            'parent'. The root is not a stored folder so it never appears here.
+
+            INPUTS
+            * offset = (integer) //optional
+            * limit  = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folders'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'offset': str(offset),
+                'limit': str(limit)}
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder(self, filter_str):
+        """ playlist_folder
+            MINIMUM_API_VERSION=8.0.0
+
+            One folder's metadata, without its contents.
+
+            NOTE a folder that isn't yours reports 'not found' rather than 'access denied', so a
+            tree can't be probed from outside
+
+            INPUTS
+            * filter_str = (string) UID of the folder, or a name path (e.g. '/Rock/Live')
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str}
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder_items(self, filter_str='/', offset=0, limit=0):
+        """ playlist_folder_items
+            MINIMUM_API_VERSION=8.0.0
+
+            The playlists, smartlists and collections filed in one folder.
+
+            NOTE the root is not a stored folder. It holds every list you can see that hasn't been
+            filed elsewhere, so a list appears there without anything ever having been written for it
+
+            INPUTS
+            * filter_str = (string) UID of the folder, or a name path; 0 or '/' for the root (Default: '/') //optional
+            * offset     = (integer) //optional
+            * limit      = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder_items'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str,
+                'offset': str(offset),
+                'limit': str(limit)}
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder_create(self, folder_name, parent=None, sort_order=None):
+        """ playlist_folder_create
+            MINIMUM_API_VERSION=8.0.0
+
+            Create a folder in your tree.
+
+            INPUTS
+            * folder_name = (string) folder name; may not contain a '/' and must be unique among its siblings
+            * parent      = (string) parent folder as a UID or a name path (Default: the root) //optional
+            * sort_order  = (integer) position among its siblings (Default: appended) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder_create'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'name': folder_name,
+                'parent': parent,
+                'sort_order': sort_order}
+        # 0 is the root, so only an unset parent is dropped
+        if parent is None or parent is False:
+            data.pop('parent')
+        # 0 is a valid position, so only an unset sort_order is dropped
+        if sort_order is None or sort_order is False:
+            data.pop('sort_order')
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder_edit(self, filter_str, folder_name=False, parent=None, sort_order=None):
+        """ playlist_folder_edit
+            MINIMUM_API_VERSION=8.0.0
+
+            Change a folder's name, parent or position. Anything you don't send is left as it is,
+            so send at least one of folder_name, parent or sort_order.
+
+            NOTE a rename onto a name a sibling already holds, or a move into the folder's own
+            subtree, is refused
+
+            INPUTS
+            * filter_str  = (string) UID of the folder, or a name path (e.g. '/Rock/Live')
+            * folder_name = (string) new folder name //optional
+            * parent      = (string) new parent as a UID or a name path, or 0 for the root //optional
+            * sort_order  = (integer) new position among its siblings //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder_edit'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str,
+                'name': folder_name,
+                'parent': parent,
+                'sort_order': sort_order}
+        if not folder_name:
+            data.pop('name')
+        # 0 moves the folder to the root, so only an unset parent is dropped
+        if parent is None or parent is False:
+            data.pop('parent')
+        # 0 is a valid position, so only an unset sort_order is dropped
+        if sort_order is None or sort_order is False:
+            data.pop('sort_order')
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder_delete(self, filter_str):
+        """ playlist_folder_delete
+            MINIMUM_API_VERSION=8.0.0
+
+            Delete a folder. It must hold neither a child folder nor a filed list.
+
+            NOTE the lists themselves are never touched, so emptying a folder means moving its
+            contents out first
+
+            INPUTS
+            * filter_str = (string) UID of the folder, or a name path (e.g. '/Rock/Live')
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder_delete'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str}
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder_add(self, object_id: int, object_type: str, filter_str='/', sort_order=None):
+        """ playlist_folder_add
+            MINIMUM_API_VERSION=8.0.0
+
+            File a playlist, smartlist or collection into a folder.
+
+            NOTE a list already filed is moved rather than duplicated; it is in exactly one of your
+            folders at a time
+
+            INPUTS
+            * object_id   = (integer) UID of the list to file
+            * object_type = (string) 'playlist'|'smartlist'|'collection'
+            * filter_str  = (string) UID of the folder, or a name path; 0 or '/' returns the list to the root (Default: '/') //optional
+            * sort_order  = (integer) position among its siblings (Default: appended) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder_add'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_str,
+                'id': object_id,
+                'type': object_type,
+                'sort_order': sort_order}
+        # 0 is a valid position, so only an unset sort_order is dropped
+        if sort_order is None or sort_order is False:
+            data.pop('sort_order')
+        return self.get_request(ampache_url, data, api_method)
+
+    def playlist_folder_remove(self, object_id: int, object_type: str):
+        """ playlist_folder_remove
+            MINIMUM_API_VERSION=8.0.0
+
+            Take a list out of its folder.
+
+            NOTE the list itself is untouched and reappears at the root, because an unfiled list
+            has no placement row at all
+
+            INPUTS
+            * object_id   = (integer) UID of the list
+            * object_type = (string) 'playlist'|'smartlist'|'collection'
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'playlist_folder_remove'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'id': object_id,
+                'type': object_type}
+        return self.get_request(ampache_url, data, api_method)
+
+    def collections(self, object_type=False, offset=0, limit=0):
+        """ collections
+            MINIMUM_API_VERSION=8.0.0
+
+            A collection is a hand-curated list of objects of any type; the static counterpart to
+            a search and the non-media counterpart to a playlist.
+
+            This returns every collection you own, plus every public collection on the server.
+
+            INPUTS
+            * object_type = (string) only return collections pinned to this object_type //optional
+            * offset      = (integer) //optional
+            * limit       = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collections'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'type': object_type,
+                'offset': str(offset),
+                'limit': str(limit)}
+        if not object_type:
+            data.pop('type')
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection(self, filter_id: int):
+        """ collection
+            MINIMUM_API_VERSION=8.0.0
+
+            Return a collection by UID, without its contents.
+
+            A collection you can't see reports 'not found' rather than 'access denied'
+
+            INPUTS
+            * filter_id = (integer) UID of Collection
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection_items(self, filter_id: int, offset=0, limit=0):
+        """ collection_items
+            MINIMUM_API_VERSION=8.0.0
+
+            A collection's members, in curated order.
+
+            The members come back as one flat list under 'contents' and each entry carries its
+            'track' (the 1-based position), its 'track_id' (the membership row) and its
+            'object_type', with that type's own object nested under a property of the same name.
+
+            NOTE offset and limit page the list without changing the order. The 'items' count on
+            the collection stays the total member count, so it isn't reduced by paging
+
+            INPUTS
+            * filter_id = (integer) UID of Collection
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection_items'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'offset': str(offset),
+                'limit': str(limit)}
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection_create(self, collection_name, collection_type=False, object_type=False):
+        """ collection_create
+            MINIMUM_API_VERSION=8.0.0
+
+            Create a new, empty collection.
+
+            Leave object_type out for a mixed collection, or set it to pin the collection to a
+            single type so collection_add refuses anything else.
+
+            INPUTS
+            * collection_name = (string) Collection name
+            * collection_type = (string) 'public'|'private' (Default: 'private') //optional
+            * object_type     = (string) pin the collection to a single object_type //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection_create'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'name': collection_name,
+                'type': collection_type,
+                'object_type': object_type}
+        if not collection_type:
+            data.pop('type')
+        if not object_type:
+            data.pop('object_type')
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection_edit(self, filter_id: int, collection_name=False, collection_type=False,
+                        object_type=None, collaborate=False, items=False, tracks=False):
+        """ collection_edit
+            MINIMUM_API_VERSION=8.0.0
+
+            Change a collection's name, visibility, pinned type, collaborators or member order.
+
+            Only the values you send are changed. Send an empty string as object_type to un-pin a
+            collection back to mixed; pinning is refused while the collection still holds a
+            different type.
+
+            items and tracks reorder the members the same way playlist_edit does; the two lists
+            are paired in order and each pair puts one member at one position. Because a
+            collection is heterogeneous each entry in items carries its type as
+            'object_type:object_id' (e.g. 'album:21,song:60,album:44' with tracks '1,2,3')
+
+            INPUTS
+            * filter_id       = (integer) UID of Collection
+            * collection_name = (string) Collection name //optional
+            * collection_type = (string) 'public'|'private' //optional
+            * object_type     = (string) pinned object_type, or an empty string to un-pin //optional
+            * collaborate     = (string) comma-separated user id's allowed to curate the contents //optional
+            * items           = (string) comma-separated 'object_type:object_id' pairs //optional
+            * tracks          = (string) comma-separated positions matched to 'items' in order //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection_edit'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'name': collection_name,
+                'type': collection_type,
+                'object_type': object_type,
+                'collaborate': collaborate,
+                'items': items,
+                'tracks': tracks}
+        if not collection_name:
+            data.pop('name')
+        if not collection_type:
+            data.pop('type')
+        # an empty string un-pins the collection, so only an unset object_type is dropped
+        if object_type is None or object_type is False:
+            data.pop('object_type')
+        if not collaborate:
+            data.pop('collaborate')
+        if not items:
+            data.pop('items')
+        if not tracks:
+            data.pop('tracks')
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection_delete(self, filter_id: int):
+        """ collection_delete
+            MINIMUM_API_VERSION=8.0.0
+
+            Delete a collection and its membership rows. The objects it referenced are untouched.
+
+            ACCESS REQUIRED: collection owner or admin. A collaborator may curate the contents
+            but not destroy the list
+
+            INPUTS
+            * filter_id = (integer) UID of Collection
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection_delete'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection_add(self, filter_id: int, object_id, object_type: str):
+        """ collection_add
+            MINIMUM_API_VERSION=8.0.0
+
+            Add one object to the end of a collection, so an add never disturbs the order of what
+            is already there.
+
+            NOTE duplicates are governed by the user's 'unique_playlist' preference, which is off
+            by default, so a collection may hold the same object twice. With it on a repeat is
+            refused with an error
+
+            INPUTS
+            * filter_id   = (integer) UID of Collection
+            * object_id   = (integer) UID of the object to add
+            * object_type = (string) type of the object to add
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection_add'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'id': object_id,
+                'object_type': object_type}
+        return self.get_request(ampache_url, data, api_method)
+
+    def collection_remove(self, filter_id: int, object_id=False, object_type=False, track=False):
+        """ collection_remove
+            MINIMUM_API_VERSION=8.0.0
+
+            Remove members from a collection. The objects themselves are untouched and removing
+            something that was never a member is not an error.
+
+            Name either a position or an object:
+            * track removes exactly the one member holding that position
+            * object_id with object_type removes every member pointing at that object
+
+            track takes precedence. Without it, both object_id and object_type are required.
+            The remaining positions close up, so anything you read before the call is stale.
+
+            INPUTS
+            * filter_id   = (integer) UID of Collection
+            * object_id   = (integer) UID of the object to remove //optional
+            * object_type = (string) type of the object to remove //optional
+            * track       = (integer) position of the member to remove //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'collection_remove'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id,
+                'id': object_id,
+                'object_type': object_type,
+                'track': track}
+        if not object_id:
+            data.pop('id')
+        if not object_type:
+            data.pop('object_type')
+        if not track:
+            data.pop('track')
         return self.get_request(ampache_url, data, api_method)
 
     def shares(self, filter_str=False,
@@ -2106,6 +2921,49 @@ class API(object):
             data.pop('password')
         return self.get_request(ampache_url, data, api_method)
 
+    def catalog_create(self, cat_name, cat_path, cat_type=False, media_type=False, file_pattern=False,
+                       folder_pattern=False, username=False, password=False):
+        """ catalog_create
+            MINIMUM_API_VERSION=8.0.0
+
+            Create a new catalog (canonical name for catalog_add)
+
+            INPUTS
+            * name           = (string) catalog_name
+            * path           = (string) URL or folder path for your catalog
+            * type           = (string) catalog_type default: local ('local', 'beets', 'remote', 'subsonic', 'seafile', 'beetsremote') //optional
+            * media_type     = (string) Default: 'music' ('music', 'podcast', 'clip', 'tvshow', 'movie', 'personal_video') //optional
+            * file_pattern   = (string) Pattern used identify tags from the file name. Default '%T - %t' //optional
+            * folder_pattern = (string) Pattern used identify tags from the folder name. Default '%a/%A' //optional
+            * username       = (string) login to remote catalog ('remote', 'subsonic', 'seafile') //optional
+            * password       = (string) password to remote catalog ('remote', 'subsonic', 'seafile', 'beetsremote') //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'catalog_create'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'name': cat_name,
+                'path': cat_path,
+                'type': cat_type,
+                'media_type': media_type,
+                'file_pattern': file_pattern,
+                'folder_pattern': folder_pattern,
+                'username': username,
+                'password': password}
+        if not cat_type:
+            data.pop('type')
+        if not media_type:
+            data.pop('media_type')
+        if not file_pattern:
+            data.pop('file_pattern')
+        if not folder_pattern:
+            data.pop('folder_pattern')
+        if not username:
+            data.pop('username')
+        if not password:
+            data.pop('password')
+        return self.get_request(ampache_url, data, api_method)
+
     def catalog_delete(self, filter_id: int):
         """ catalog_delete
             MINIMUM_API_VERSION=6.0.0
@@ -2125,11 +2983,13 @@ class API(object):
     def catalog_action(self, task, catalog_id):
         """ catalog_action
             MINIMUM_API_VERSION=400001
+            CHANGED_IN_API_VERSION=8.1.0
 
             Kick off a catalog update or clean for the selected catalog
 
             INPUTS
-            * task        = (string) 'add_to_catalog'|'clean_catalog'|'verify_catalog'|'gather_art'
+            * task        = (string) 'add_to_catalog'|'clean_catalog'|'verify_catalog'|'update_catalog'|
+                                      'gather_art'|'garbage_collect'|'scan_catalog_folders'
             * catalog_id  = (integer) $catalog_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
@@ -2137,7 +2997,7 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'task': task,
-                'catalog': catalog_id}
+                'filter': catalog_id}
         return self.get_request(ampache_url, data, api_method)
 
     def catalog_file(self, file, task, catalog_id):
@@ -2159,7 +3019,7 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'file': file,
                 'task': task,
-                'catalog': catalog_id}
+                'filter': catalog_id}
         return self.get_request(ampache_url, data, api_method)
 
     def catalog_folder(self, folder, task, catalog_id):
@@ -2181,11 +3041,79 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'folder': folder,
                 'task': task,
-                'catalog': catalog_id}
+                'filter': catalog_id}
         return self.get_request(ampache_url, data, api_method)
 
-    def podcasts(self, filter_str=False,
-                 exact=False, offset=0, limit=0, sort=False, cond=False, include=False):
+    def upload(self, file_path, filename=False, license_id=False, artist_id=False,
+               artist_name=False, album_id=False, album_name=False, raw_body=False,
+               content_type=False):
+        """ upload
+            MINIMUM_API_VERSION=8.0.0
+
+            Add a media file to the catalog named by the 'upload_catalog' preference.
+
+            The file is sent as a multipart form field named 'upl' or, with raw_body, as the raw
+            request body with 'filename' naming it.
+
+            ACCESS REQUIRED: the 'allow_upload' preference, at the access level set by
+            'upload_access_level'
+
+            NOTE an artist or album owned by another user is refused, and a file that fails to be
+            added is removed from the catalog directory again. A name already present in the
+            catalog is refused rather than renamed and only the file name is used (any path in it
+            is ignored)
+
+            INPUTS
+            * file_path    = (string) full path to the local file being sent
+            * filename     = (string) name to store it as (Default: the name of file_path) //optional
+            * license_id   = (integer) $license_id, required when 'licensing' is enabled //optional
+            * artist_id    = (integer) $artist_id //optional
+            * artist_name  = (string) create or reuse an artist you own //optional
+            * album_id     = (integer) $album_id //optional
+            * album_name   = (string) create or reuse an album you own //optional
+            * raw_body     = (boolean) 0,1, send the file as the raw request body //optional
+            * content_type = (string) media type of the file (Default: guessed from the name) //optional
+        """
+        if not os.path.isfile(file_path):
+            return False
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'upload'
+        if not filename:
+            filename = os.path.basename(file_path)
+        # a form encoded content type makes PHP parse the file as request variables, so always
+        # send a real media type with the file
+        if not content_type:
+            content_type = mimetypes.guess_type(filename)[0]
+        if not content_type:
+            content_type = 'application/octet-stream'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filename': filename,
+                'license': license_id,
+                'artist_id': artist_id,
+                'artist_name': artist_name,
+                'album_id': album_id,
+                'album_name': album_name}
+        if not license_id:
+            data.pop('license')
+        if not artist_id:
+            data.pop('artist_id')
+        if not artist_name:
+            data.pop('artist_name')
+        if not album_id:
+            data.pop('album_id')
+        if not album_name:
+            data.pop('album_name')
+        if raw_body:
+            with open(file_path, 'rb') as media_file:
+                return self.post_request(ampache_url, data, api_method,
+                                         body=media_file.read(), content_type=content_type)
+        with open(file_path, 'rb') as media_file:
+            return self.post_request(ampache_url, data, api_method,
+                                     files={'upl': (filename, media_file, content_type)})
+
+    def podcasts(self, filter_str=False, include=False,
+                 exact=False, offset=0, limit=0, sort=False, cond=False):
         """ podcasts
             MINIMUM_API_VERSION=420000
 
@@ -2196,10 +3124,12 @@ class API(object):
             * limit      = (integer) //optional
             * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
-            * include    = (string) 'episodes' (include episodes in the response) //optional
+            * include    = (string) 'episodes' include the episodes with the podcast //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'podcasts'
+        if bool(include) and not isinstance(include, str):
+            include = 'episodes'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
@@ -2392,6 +3322,22 @@ class API(object):
                 'filter': filter_id}
         return self.get_request(ampache_url, data, api_method)
 
+    def podcast_update(self, filter_id: int):
+        """ podcast_update
+            MINIMUM_API_VERSION=420000
+
+            Sync and download new podcast episodes (alias of update_podcast)
+
+            INPUTS
+            * filter_id   = (integer) UID of Podcast
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'podcast_update'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        return self.get_request(ampache_url, data, api_method)
+
     def search_songs(self, filter_str, offset=0, limit=0):
         """ search_songs
             MINIMUM_API_VERSION=380001
@@ -2436,7 +3382,7 @@ class API(object):
             the rules can occur multiple times and are joined by the operator item.
 
             Refer to the wiki for further information
-            http://ampache.org/api/api-advanced-search
+            https://ampache.org/api/api-advanced-search
 
             INPUTS
             * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
@@ -2559,7 +3505,7 @@ class API(object):
                 'filter': filter_id}
         return self.get_request(ampache_url, data, api_method)
 
-    def localplay(self, command, oid=False, otype=False, clear=False):
+    def localplay(self, command, oid=False, otype=False, clear=False, track=False):
         """ localplay
             MINIMUM_API_VERSION=380001
             CHANGED_IN_API_VERSION=5.0.0
@@ -2573,21 +3519,25 @@ class API(object):
             * otype       = (string) 'Song', 'Video', 'Podcast_Episode', 'Channel',
                                      'Broadcast', 'Democratic', 'Live_Stream' //optional
             * clear       = (integer) 0,1 Clear the current playlist before adding //optional
+            * track       = (integer) used in conjunction with the skip command to skip to a track //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'localplay'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'command': command,
-                'oid': oid,
+                'filter': oid,
                 'type': otype,
-                'clear': clear}
+                'clear': clear,
+                'track': track}
         if not oid:
-            data.pop('oid')
+            data.pop('filter')
         if not otype:
             data.pop('type')
         if not clear:
             data.pop('clear')
+        if not track:
+            data.pop('track')
         return self.get_request(ampache_url, data, api_method)
 
     def localplay_songs(self):
@@ -2629,7 +3579,8 @@ class API(object):
             This gets library stats for different object types. When filter is null get some random items instead
 
             INPUTS
-            * object_type = (string) 'song'|'album'|'artist'
+            * object_type = (string) 'song', 'album', 'artist', 'video', 'playlist', 'podcast', 'podcast_episode'
+                            ('album_disk' is API8 and higher)
             * filter_str  = (string) 'newest'|'highest'|'frequent'|'recent'|'flagged'|'random'
             * offset      = (integer) //optional
             * limit       = (integer) //optional
@@ -2660,26 +3611,30 @@ class API(object):
             data.pop('cond')
         return self.get_request(ampache_url, data, api_method)
 
-    def users(self, sort=False, cond=False, offset=0, limit=0):
+    def users(self, offset=0, limit=0, sort=False, cond=False):
         """ users
             MINIMUM_API_VERSION=5.0.0
 
             Get ids and usernames for your site users
 
             INPUTS
-            * cond   = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
-            * sort   = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
             * offset = (integer) //optional
             * limit  = (integer) //optional
+            * cond   = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
+            * sort   = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'users'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
-                'sort': sort,
-                'cond': cond,
                 'offset': str(offset),
-                'limit': str(limit)}
+                'limit': str(limit),
+                'sort': sort,
+                'cond': cond}
+        if not offset:
+            data.pop('offset')
+        if not limit:
+            data.pop('limit')
         if not sort:
             data.pop('sort')
         if not cond:
@@ -2702,7 +3657,7 @@ class API(object):
                 'username': username}
         return self.get_request(ampache_url, data, api_method)
 
-    def followers(self, username: str, sort=False, cond=False):
+    def followers(self, username: str, offset=0, limit=0, sort=False, cond=False):
         """ followers
             MINIMUM_API_VERSION=380001
 
@@ -2710,6 +3665,8 @@ class API(object):
 
             INPUTS
             * username =
+            * offset   = (integer) //optional
+            * limit    = (integer) //optional
             * cond     = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort     = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
@@ -2718,6 +3675,8 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'username': username,
+                'offset': str(offset),
+                'limit': str(limit),
                 'sort': sort,
                 'cond': cond}
         if not sort:
@@ -2755,7 +3714,7 @@ class API(object):
         api_method = 'toggle_follow'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
-                'username': username}
+                'filter': username}
         return self.get_request(ampache_url, data, api_method)
 
     def last_shouts(self, username, limit=0):
@@ -2772,11 +3731,12 @@ class API(object):
         api_method = 'last_shouts'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
-                'username': username,
+                'filter': username,
                 'limit': limit}
         return self.get_request(ampache_url, data, api_method)
 
-    def player(self, filter_str, object_type='song', state='play', play_time=0, client=CLIENT_NAME):
+    def player(self, filter_str, object_type='song', state='play', play_time=0, client=CLIENT_NAME,
+               offset=0, limit=0):
         """ player
             MINIMUM_API_VERSION=6.4.0
 
@@ -2787,26 +3747,21 @@ class API(object):
             state       = (string)  'play', 'stop', DEFAULT 'play' //optional
             play_time   = (integer) current song time in whole seconds, DEFAULT 0 //optional
             client      = (string)  $agent, DEFAULT 'python3-ampache' //optional
+            offset      = (integer) //optional
+            limit       = (integer) //optional
         """
-        action = self.player.__name__
+        api_method = 'player'
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
-        data = {'action': action,
+        data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'type': object_type,
                 'state': state,
                 'time': play_time,
-                'client': client}
-        headers = {}
-        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
-            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
-            data.pop('auth', None)
-        data = urllib.parse.urlencode(data)
-        full_url = ampache_url + '?' + data
-        ampache_response = self.fetch_url(full_url, self.AMPACHE_API, action)
-        if isinstance(ampache_response, bool):
-            return False
-        return self.return_data(ampache_response)
+                'client': client,
+                'offset': str(offset),
+                'limit': str(limit)}
+        return self.get_request(ampache_url, data, api_method)
 
     def now_playing(self):
         """  now_playing
@@ -2844,7 +3799,7 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
-                'id': object_id,
+                'filter': object_id,
                 'rating': rating}
         return self.get_request(ampache_url, data, api_method)
 
@@ -2872,7 +3827,7 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
-                'id': object_id,
+                'filter': object_id,
                 'flag': flag_state,
                 'date': date}
         if not date:
@@ -2896,7 +3851,7 @@ class API(object):
         api_method = 'record_play'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
-                'id': object_id,
+                'filter': object_id,
                 'user': user_id,
                 'client': client,
                 'date': date}
@@ -2960,7 +3915,7 @@ class API(object):
         api_method = 'timeline'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
-                'username': username,
+                'filter': username,
                 'limit': limit,
                 'since': since}
         return self.get_request(ampache_url, data, api_method)
@@ -2998,7 +3953,7 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
-                'id': object_id}
+                'filter': object_id}
         return self.get_request(ampache_url, data, api_method)
 
     def update_art(self, object_type, object_id, overwrite=False):
@@ -3022,7 +3977,7 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'type': object_type,
-                'id': object_id,
+                'filter': object_id,
                 'overwrite': overwrite}
         return self.get_request(ampache_url, data, api_method)
 
@@ -3040,10 +3995,69 @@ class API(object):
         api_method = 'update_artist_info'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
-                'id': filter_id}
+                'filter': filter_id}
         return self.get_request(ampache_url, data, api_method)
 
-    def stream(self, object_id, object_type, destination, stats=1):
+    def random(self, destination, object_type='song', filter_id=False, stats=1,
+               transcode=False, bitrate=False, offset=0):
+        """ random
+            MINIMUM_API_VERSION=8.0.0
+
+            Pick a random object and stream it.
+            The server responds with a 302 redirect to the stream url, which is followed here.
+
+            Unlike stream, an object id is optional; a container type resolves to a random song
+            from within that container.
+
+            INPUTS
+            * destination = (string) full file path
+            * object_type = (string) 'album', 'album_artist', 'album_disk', 'artist', 'catalog',
+                            'favorite', 'genre', 'label', 'playlist', 'podcast_episode', 'rating',
+                            'search', 'song', 'song_artist', 'video', DEFAULT 'song' //optional
+            * filter_id   = (string) $object_id of the container to pick from //optional
+                            NOTE 'favorite' reads this as a flag value (1, or unset, for flagged; 0 for not flagged)
+                            and 'rating' as a star value (1-5 for that many stars or more, 0 for unrated,
+                            unset for any rated song) rather than as an object id
+                            NOTE filter is read against the table named by object_type and those id spaces
+                            overlap, so an album id and an album_disk id of the same number are different objects
+            * stats       = (integer) 0,1, if false disable stat recording //optional SONG ONLY
+            * transcode   = (string) 'mp3', 'ogg', etc. (sent as `format`) //optional SONG ONLY
+            * bitrate     = (integer) max bitrate for transcoding in bytes (e.g. 192000=192Kb) //optional SONG ONLY
+            * offset      = (integer) start streaming from this time offset in seconds //optional
+        """
+        if not os.path.isdir(os.path.dirname(destination)):
+            return False
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'random'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'type': object_type,
+                'filter': filter_id,
+                'format': transcode,
+                'bitrate': bitrate,
+                'offset': str(offset),
+                'stats': stats}
+        if filter_id is False or filter_id is None or filter_id == '':
+            data.pop('filter')
+        if not transcode:
+            data.pop('format')
+        if not bitrate:
+            data.pop('bitrate')
+        if not offset:
+            data.pop('offset')
+        headers = {}
+        if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
+            headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
+            data.pop('auth', None)
+        data = urllib.parse.urlencode(data)
+        full_url = ampache_url + '?' + data
+        result = requests.get(full_url, allow_redirects=True, headers=headers)
+        self.AMPACHE_HTTP_CODE = result.status_code
+        open(destination, 'wb').write(result.content)
+        return True
+
+    def stream(self, object_id, object_type, destination, bitrate=False, transcode=False,
+               offset=0, length=False, stats=1):
         """ stream
             MINIMUM_API_VERSION=400001
 
@@ -3051,8 +4065,13 @@ class API(object):
 
             INPUTS
             * object_id   = (string) $song_id / $podcast_episode_id
-            * object_type = (string) 'song'|'podcast'
+            * object_type = (string) 'song'|'podcast_episode'|'search'|'playlist'
             * destination = (string) full file path
+            * stats       = (integer) 0,1, if false disable stat recording //optional
+            * transcode   = (string) 'mp3', 'ogg', etc. (sent as `format`, 'raw' keeps the original) //optional SONG ONLY
+            * bitrate     = (integer) max bitrate for transcoding in bytes (e.g. 192000=192Kb) //optional SONG ONLY
+            * offset      = (integer) start streaming from this time offset in seconds //optional
+            * length      = (boolean) 0,1, send the file length in the response //optional
         """
         if not os.path.isdir(os.path.dirname(destination)):
             return False
@@ -3060,52 +4079,72 @@ class API(object):
         api_method = 'stream'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
-                'id': object_id,
+                'filter': object_id,
                 'type': object_type,
+                'format': transcode,
+                'bitrate': bitrate,
+                'offset': str(offset),
+                'length': length,
                 'stats': stats}
+        if not transcode:
+            data.pop('format')
+        if not bitrate:
+            data.pop('bitrate')
+        if not offset:
+            data.pop('offset')
+        if not length:
+            data.pop('length')
         headers = {}
         if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
             headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
             data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        result = requests.get(full_url, allow_redirects=True)
+        result = requests.get(full_url, allow_redirects=True, headers=headers)
+        self.AMPACHE_HTTP_CODE = result.status_code
         open(destination, 'wb').write(result.content)
         return True
 
-    def download(self, object_id, object_type, destination,
-                 transcode='raw', bitrate=False, stats=1):
+    def download(self, object_id, object_type, destination, bitrate=False,
+                 transcode='raw', stats=1, zip_container=False):
         """ download
             MINIMUM_API_VERSION=400001
 
             download a song or podcast episode
 
             INPUTS
-            * object_id   = (string) $song_id / $podcast_episode_id / $search_id / $playlist_id
-            * object_type = (string) 'song'|'podcast'|'search'|'playlist'
-            * destination = (string) full file path
-            * transcode   = (string) 'mp3', 'ogg', etc. ('raw' / original by default) //optional SONG ONLY
-            * bitrate     = (integer) max bitrate for transcoding, '128', '256' //optional SONG ONLY
+            * object_id     = (string) $song_id / $podcast_episode_id / $search_id / $playlist_id
+            * object_type   = (string) 'song'|'podcast_episode'|'search'|'playlist'|'album'|'artist'|'podcast'
+            * destination   = (string) full file path
+            * transcode     = (string) 'mp3', 'ogg', etc. (sent as `format`, 'raw' / original by default) //optional SONG ONLY
+            * bitrate       = (integer) max bitrate for transcoding in bytes (e.g. 192000=192Kb) //optional SONG ONLY
+            * zip_container = (boolean) 0,1, MINIMUM_API_VERSION=8.0.0 //optional
+                              when object_type is a container ('album', 'artist', 'playlist', 'podcast')
+                              and zipping is enabled on the server, download the whole container as a zip
         """
         os.makedirs(os.path.dirname(destination), exist_ok=True)
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'download'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
-                'id': object_id,
+                'filter': object_id,
                 'type': object_type,
                 'format': transcode,
                 'bitrate': bitrate,
-                'stats': stats}
+                'stats': stats,
+                'zip': zip_container}
         if not bitrate:
             data.pop('bitrate')
+        if not zip_container:
+            data.pop('zip')
         headers = {}
         if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
             headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
             data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        result = requests.get(full_url, allow_redirects=True)
+        result = requests.get(full_url, allow_redirects=True, headers=headers)
+        self.AMPACHE_HTTP_CODE = result.status_code
         open(destination, 'wb').write(result.content)
         return True
 
@@ -3147,7 +4186,7 @@ class API(object):
             data.pop('plugins')
         return self.get_request(ampache_url, data, api_method)
 
-    def get_art(self, object_id, object_type, destination):
+    def get_art(self, object_id, object_type, destination, size=False, fallback=False):
         """ get_art
             MINIMUM_API_VERSION=400001
 
@@ -3156,7 +4195,10 @@ class API(object):
             INPUTS
             * object_id   = (string) $song_id / $podcast_episode_id
             * object_type = (string) 'song', 'artist', 'album', 'playlist', 'search', 'podcast'
+                            ('album_disk' is API8 and higher)
             * destination = (string) output file path
+            * size        = (string) 'width'x'height' of the art to return (e.g. '300x300') //optional
+            * fallback    = (boolean) 0,1, return a blank image instead of an error if art is missing //optional
         """
         if not os.path.isdir(os.path.dirname(destination)):
             return False
@@ -3164,20 +4206,27 @@ class API(object):
         api_method = 'get_art'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
-                'id': object_id,
-                'type': object_type}
+                'filter': object_id,
+                'type': object_type,
+                'size': size,
+                'fallback': fallback}
+        if not size:
+            data.pop('size')
+        if not fallback:
+            data.pop('fallback')
         headers = {}
         if hasattr(self, 'AMPACHE_BEARER_TOKEN') and self.AMPACHE_BEARER_TOKEN:
             headers['Authorization'] = f'Bearer {self.AMPACHE_BEARER_TOKEN}'
             data.pop('auth', None)
         data = urllib.parse.urlencode(data)
         full_url = ampache_url + '?' + data
-        result = requests.get(full_url, allow_redirects=True)
+        result = requests.get(full_url, allow_redirects=True, headers=headers)
+        self.AMPACHE_HTTP_CODE = result.status_code
         open(destination, 'wb').write(result.content)
         return True
 
     def user_create(self, username: str, password: str, email: str,
-                    fullname=False, disable=False):
+                    fullname=False, disable=False, group=False):
         """ user_create
             MINIMUM_API_VERSION=400001
 
@@ -3189,6 +4238,7 @@ class API(object):
             * email       = (string) 'user@gmail.com'
             * fullname    = (string) //optional
             * disable     = (boolean|integer) (True,False | 0|1) //optional
+            * group       = (integer) Catalog filter group for the new user //optional, default = 0
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'user_create'
@@ -3204,18 +4254,26 @@ class API(object):
                 'password': password,
                 'email': email,
                 'fullname': fullname,
-                'disable': disable}
+                'disable': disable,
+                'group': group}
         if not fullname:
             data.pop('fullname')
+        if not group:
+            data.pop('group')
         return self.get_request(ampache_url, data, api_method)
 
     def user_edit(self, username, password=False, fullname=False, email=False,
-                  website=False, state=False, city=False, disable=False, maxbitrate=False,
-                  fullname_public=False, reset_apikey=False, reset_streamtoken=False, clear_stats=False):
+                  website=False, state=False, city=False, disable=False, group=False,
+                  maxbitrate=False, fullname_public=False, reset_apikey=False,
+                  reset_streamtoken=False, clear_stats=False):
         """ user_edit
             MINIMUM_API_VERSION=6.0.0
+            CHANGED_IN_API_VERSION=8.0.0
 
             Update an existing user. @param array $input
+
+            NOTE maxbitrate is bits per second from API8 onwards (e.g. 320000), matching every
+            other rate argument in the API. API6 and older take kbps (e.g. 320)
 
             INPUTS
             * username          = (string) $username
@@ -3227,7 +4285,7 @@ class API(object):
             * city              = (string) $city //optional
             * disable           = (integer) 0,1 true to disable the user (if enabled) //optional
             * group             = (integer) Catalog filter group for the new user //optional, default = 0
-            * maxbitrate        = (integer) $maxbitrate //optional
+            * maxbitrate        = (integer) $maxbitrate in bits per second (e.g. 320000) //optional
             * fullname_public   = (integer) 0,1 true to enable, false to disable using fullname in public display //optional
             * reset_apikey      = (integer) 0,1 true to reset a user Api Key //optional
             * reset_streamtoken = (integer) 0,1 true to reset a user Stream Token //optional
@@ -3239,7 +4297,7 @@ class API(object):
             disable = 1
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
-                'username': username,
+                'filter': username,
                 'password': password,
                 'fullname': fullname,
                 'email': email,
@@ -3247,11 +4305,14 @@ class API(object):
                 'state': state,
                 'city': city,
                 'disable': disable,
+                'group': group,
                 'maxbitrate': maxbitrate,
                 'fullname_public': fullname_public,
                 'reset_apikey': reset_apikey,
                 'reset_streamtoken': reset_streamtoken,
                 'clear_stats': clear_stats}
+        if not group:
+            data.pop('group')
         if not password:
             data.pop('password')
         if not fullname:
@@ -3291,7 +4352,7 @@ class API(object):
         api_method = 'user_delete'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
-                'username': username}
+                'filter': username}
         return self.get_request(ampache_url, data, api_method)
 
     def user_preferences(self):
@@ -3401,16 +4462,17 @@ class API(object):
             data.pop('subcategory')
         return self.get_request(ampache_url, data, api_method)
 
-    def preference_edit(self, filter_str, value, apply_all=0):
+    def preference_edit(self, filter_str, value, apply_all=0, default=0):
         """ preference_edit
             MINIMUM_API_VERSION=5.0.0
 
             Returns preference based on the specified filter_str
 
             INPUTS
-            * filter_str  = (string) search the name of a preference
-            * value       = (string|integer) Preference value
-            * apply_all   = (boolean) apply to all users //optional
+            * filter_str = (string) search the name of a preference
+            * value      = (string|integer) Preference value
+            * apply_all  = (boolean) apply to all users //optional
+            * default    = (boolean) if true set as system default (New and public users) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'preference_edit'
@@ -3418,7 +4480,8 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'value': value,
-                'all': apply_all}
+                'all': apply_all,
+                'default': default}
         return self.get_request(ampache_url, data, api_method)
 
     def preference_delete(self, filter_str):
@@ -3496,7 +4559,7 @@ class API(object):
                 'filter': filter_id}
         return self.get_request(ampache_url, data, api_method)
 
-    def license_songs(self, filter_id: int, sort=False, cond=False):
+    def license_songs(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
         """ license_songs
             MINIMUM_API_VERSION=420000
 
@@ -3504,6 +4567,8 @@ class API(object):
 
             INPUTS
             * filter_id = (integer) $license_id
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
             * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
@@ -3512,6 +4577,8 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
+                'offset': str(offset),
+                'limit': str(limit),
                 'sort': sort,
                 'cond': cond}
         if not sort:
@@ -3521,7 +4588,7 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def live_streams(self, filter_str=False,
-                     exact=False, offset=0, limit=0, sort=False, cond=False):
+                     exact=False, offset=0, limit=0, sort=False, cond=False, add=False, update=False):
         """ live_streams
             MINIMUM_API_VERSION=5.1.0
 
@@ -3534,6 +4601,8 @@ class API(object):
             * limit      = (integer) //optional
             * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * add        = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
+            * update     = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'update' time newer than the specified date //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'live_streams'
@@ -3541,6 +4610,8 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'exact': exact,
                 'filter': filter_str,
+                'add': add,
+                'update': update,
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
@@ -3549,6 +4620,10 @@ class API(object):
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not add:
+            data.pop('add')
+        if not update:
+            data.pop('update')
         if not sort:
             data.pop('sort')
         if not cond:
@@ -3651,7 +4726,7 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def labels(self, filter_str=False,
-               exact=False, offset=0, limit=0, sort=False, cond=False):
+               exact=False, offset=0, limit=0, sort=False, cond=False, add=False, update=False):
         """ labels
             MINIMUM_API_VERSION=420000
 
@@ -3664,6 +4739,8 @@ class API(object):
             * limit      = (integer) //optional
             * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort       = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
+            * add        = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'add' date newer than the specified date //optional
+            * update     = (string) ISO 8601 Date Format (2020-09-16) find objects with an 'update' time newer than the specified date //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'labels'
@@ -3671,6 +4748,8 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
+                'add': add,
+                'update': update,
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
@@ -3679,6 +4758,10 @@ class API(object):
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not add:
+            data.pop('add')
+        if not update:
+            data.pop('update')
         if not sort:
             data.pop('sort')
         if not cond:
@@ -3701,7 +4784,7 @@ class API(object):
                 'filter': filter_id}
         return self.get_request(ampache_url, data, api_method)
 
-    def label_artists(self, filter_id: int, sort=False, cond=False):
+    def label_artists(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
         """ label_artists
             MINIMUM_API_VERSION=420000
 
@@ -3709,6 +4792,8 @@ class API(object):
 
             INPUTS
             * filter_id = (integer) $label_id
+            * offset    = (integer) //optional
+            * limit     = (integer) //optional
             * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
             * sort      = (string) sort name / comma separated key pair. Default 'ASC' (e.g. 'name,ASC' and 'name' are the same) //optional
         """
@@ -3717,6 +4802,8 @@ class API(object):
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
+                'offset': str(offset),
+                'limit': str(limit),
                 'sort': sort,
                 'cond': cond}
         if not sort:
@@ -3773,22 +4860,26 @@ class API(object):
             data.pop('include')
         return self.get_request(ampache_url, data, api_method)
 
-    def bookmark(self, filter_id: str, include=False):
+    def bookmark(self, filter_id: str, object_type=False, include=False):
         """ bookmark
             MINIMUM_API_VERSION=6.1.0
 
             Get information about bookmarked media this user is allowed to manage.
 
             INPUTS
-            * filter  = (string) bookmark_id
-            * include = (integer) 0,1, if true include the object in the bookmark //optional
+            * filter_id   = (string) bookmark_id if object_type is unset, otherwise object_id
+            * object_type = (string) object_type ('song', 'video', 'podcast_episode') //optional
+            * include     = (integer) 0,1, if true include the object in the bookmark //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'bookmark'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
+                'type': object_type,
                 'include': include}
+        if not object_type:
+            data.pop('type')
         if not include:
             data.pop('include')
         return self.get_request(ampache_url, data, api_method)
@@ -3857,7 +4948,7 @@ class API(object):
             data.pop('include')
         return self.get_request(ampache_url, data, api_method)
 
-    def bookmark_delete(self, filter_id: int, object_type=False):
+    def bookmark_delete(self, filter_id: int, object_type=False, client=False):
         """ bookmark_delete
             MINIMUM_API_VERSION=5.0.0
 
@@ -3866,13 +4957,17 @@ class API(object):
             INPUTS
             * filter_id   = (integer) object_id
             * object_type = (string) object_type ('bookmark', 'song', 'video', 'podcast_episode')
+            * client      = (string) Agent string of the bookmark to delete //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'bookmark_delete'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
-                'type': object_type}
+                'type': object_type,
+                'client': client}
+        if not client:
+            data.pop('client')
         return self.get_request(ampache_url, data, api_method)
 
     def deleted_songs(self, offset=0, limit=0):
@@ -3944,7 +5039,7 @@ class API(object):
             the rules can occur multiple times and are joined by the operator item.
 
             Refer to the wiki for further information
-            http://ampache.org/api/api-advanced-search
+            https://ampache.org/api/api-advanced-search
 
             INPUTS
             * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
@@ -3980,6 +5075,8 @@ class API(object):
         """ tags
             MINIMUM_API_VERSION=380001
 
+            DEPRECATED not part of the API8 method surface. Use genres instead.
+
             This returns the tags (Tags) based on the specified filter
 
             INPUTS
@@ -4014,6 +5111,8 @@ class API(object):
         """ tag
             MINIMUM_API_VERSION=380001
 
+            DEPRECATED not part of the API8 method surface. Use genre instead.
+
             This returns a single tag based on UID
 
             INPUTS
@@ -4029,6 +5128,8 @@ class API(object):
     def tag_artists(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
         """ tag_artists
             MINIMUM_API_VERSION=380001
+
+            DEPRECATED not part of the API8 method surface. Use genre_artists instead.
 
             This returns the artists associated with the tag in question as defined by the UID
 
@@ -4058,6 +5159,8 @@ class API(object):
         """ tag_albums
             MINIMUM_API_VERSION=380001
 
+            DEPRECATED not part of the API8 method surface. Use genre_albums instead.
+
             This returns the albums associated with the tag in question
 
             INPUTS
@@ -4085,6 +5188,8 @@ class API(object):
     def tag_songs(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
         """ tag_songs
             MINIMUM_API_VERSION=380001
+
+            DEPRECATED not part of the API8 method surface. Use genre_songs instead.
 
             returns the songs for this tag
 
@@ -4118,9 +5223,9 @@ class API(object):
 
             Update an existing user. Backcompat function for api6 (Use user_edit)
         """
-        return self.user_edit(username, password, fullname, email,
-                              website, state, city, disable, maxbitrate,
-                              fullname_public, reset_apikey, reset_streamtoken, clear_stats)
+        return self.user_edit(username=username, password=password, fullname=fullname, email=email,
+                              website=website, state=state, city=city, disable=disable, maxbitrate=maxbitrate,
+                              fullname_public=fullname_public, reset_apikey=reset_apikey, reset_streamtoken=reset_streamtoken, clear_stats=clear_stats)
 
     def execute(self, method: str, params=None):
         if params is None:
@@ -4240,7 +5345,35 @@ class API(object):
                 if not "cond" in params:
                     params["cond"] = False
                 return self.album_songs(params["filter_id"], params["offset"], params["limit"], params["exact"],
+                                        params["sort"], params["cond"], top50=params.get("top50", False))
+            case 'album_disk':
+                if not "include" in params:
+                    params["include"] = False
+                return self.album_disk(params["filter_id"], params["include"])
+            case 'album_disks':
+                if not "include" in params:
+                    params["include"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.album_disks(params["filter_id"], params["include"], params["offset"], params["limit"],
                                         params["sort"], params["cond"])
+            case 'album_disk_songs':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.album_disk_songs(params["filter_id"], params["offset"], params["limit"],
+                                             params["sort"], params["cond"])
             case 'artist':
                 if not "include" in params:
                     params["include"] = False
@@ -4277,11 +5410,9 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                if not "exact" in params:
-                    params["exact"] = False
-                return self.artists(params["filter_str"], params["add"], params["update"], params["offset"],
-                                    params["limit"], params["include"], params["album_artist"],
-                                    params["sort"], params["cond"], params["exact"])
+                return self.artists(filter_str=params["filter_str"], add=params["add"], update=params["update"], offset=params["offset"],
+                                    limit=params["limit"], include=params["include"], album_artist=params["album_artist"],
+                                    sort=params["sort"], cond=params["cond"], exact=params.get("exact", False))
             case 'artist_songs':
                 if not "offset" in params:
                     params["offset"] = 0
@@ -4291,12 +5422,13 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.artist_songs(params["filter_id"], params["offset"], params["limit"],
-                                         params["sort"], params["cond"])
+                return self.artist_songs(filter_id=params["filter_id"], offset=params["offset"], limit=params["limit"],
+                                         sort=params["sort"], cond=params["cond"], top50=params.get("top50", False))
             case 'bookmark':
                 if not "include" in params:
                     params["include"] = False
-                return self.bookmark(params["filter_id"], params["include"])
+                return self.bookmark(params["filter_id"], object_type=params.get("object_type", False),
+                                     include=params["include"])
             case 'bookmark_create':
                 if not "position" in params:
                     params["position"] = 0
@@ -4311,7 +5443,7 @@ class API(object):
             case 'bookmark_delete':
                 if not "filter_id" in params or not "object_type" in params:
                     return False
-                return self.bookmark_delete(params["filter_id"], params["object_type"])
+                return self.bookmark_delete(params["filter_id"], params["object_type"], client=params.get("client", False))
             case 'bookmark_edit':
                 if not "position" in params:
                     params["position"] = 0
@@ -4374,6 +5506,22 @@ class API(object):
                 return self.catalog_add(params["cat_name"], params["cat_path"], params["cat_type"],
                                         params["media_type"], params["file_pattern"], params["folder_pattern"],
                                         params["username"], params["password"])
+            case 'catalog_create':
+                if not "cat_type" in params:
+                    params["cat_type"] = False
+                if not "media_type" in params:
+                    params["media_type"] = False
+                if not "file_pattern" in params:
+                    params["file_pattern"] = False
+                if not "folder_pattern" in params:
+                    params["folder_pattern"] = False
+                if not "username" in params:
+                    params["username"] = False
+                if not "password" in params:
+                    params["password"] = False
+                return self.catalog_create(params["cat_name"], params["cat_path"], params["cat_type"],
+                                           params["media_type"], params["file_pattern"], params["folder_pattern"],
+                                           params["username"], params["password"])
             case 'catalog_delete':
                 if not "filter_id" in params:
                     return False
@@ -4399,6 +5547,57 @@ class API(object):
                     params["cond"] = False
                 return self.catalogs(params["filter_str"], params["offset"], params["limit"],
                                      params["sort"], params["cond"])
+            case 'collection':
+                if not "filter_id" in params:
+                    return False
+                return self.collection(params["filter_id"])
+            case 'collections':
+                for key, value in {"object_type": False, "offset": 0, "limit": 0}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.collections(params["object_type"], params["offset"], params["limit"])
+            case 'collection_items':
+                if not "filter_id" in params:
+                    return False
+                for key, value in {"offset": 0, "limit": 0}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.collection_items(params["filter_id"], params["offset"], params["limit"])
+            case 'collection_create':
+                if not "collection_name" in params:
+                    return False
+                for key, value in {"collection_type": False, "object_type": False}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.collection_create(params["collection_name"], params["collection_type"],
+                                              params["object_type"])
+            case 'collection_edit':
+                if not "filter_id" in params:
+                    return False
+                for key, value in {"collection_name": False, "collection_type": False,
+                                   "object_type": None, "collaborate": False, "items": False,
+                                   "tracks": False}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.collection_edit(params["filter_id"], params["collection_name"],
+                                            params["collection_type"], params["object_type"],
+                                            params["collaborate"], params["items"], params["tracks"])
+            case 'collection_delete':
+                if not "filter_id" in params:
+                    return False
+                return self.collection_delete(params["filter_id"])
+            case 'collection_add':
+                if not "filter_id" in params or not "object_id" in params or not "object_type" in params:
+                    return False
+                return self.collection_add(params["filter_id"], params["object_id"], params["object_type"])
+            case 'collection_remove':
+                if not "filter_id" in params:
+                    return False
+                for key, value in {"object_id": False, "object_type": False, "track": False}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.collection_remove(params["filter_id"], params["object_id"],
+                                              params["object_type"], params["track"])
             case 'deleted_podcast_episodes':
                 if not "offset" in params:
                     params["offset"] = 0
@@ -4428,17 +5627,31 @@ class API(object):
                     params["bitrate"] = False
                 if not "stats" in params:
                     params["stats"] = 1
-                return self.download(params["object_id"], params["object_type"], params["destination"], params["stats"])
+                return self.download(object_id=params["object_id"], object_type=params["object_type"], destination=params["destination"], transcode=params["stats"], zip_container=params.get("zip_container", False))
             case 'flag':
                 if not "date" in params:
                     params["date"] = False
                 return self.flag(params["object_type"], params["object_id"], params["flagbool"], params["date"])
+            case 'folder':
+                for key, value in {"filter_id": -1, "add": False, "update": False,
+                                   "offset": 0, "limit": 0, "sort": False, "cond": False}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.folder(params["filter_id"], params["add"], params["update"],
+                                   params["offset"], params["limit"], params["sort"], params["cond"])
+            case 'folders':
+                for key, value in {"filter_str": '/', "exact": False, "add": False, "update": False,
+                                   "offset": 0, "limit": 0, "sort": False, "cond": False}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.folders(params["filter_str"], params["exact"], params["add"], params["update"],
+                                    params["offset"], params["limit"], params["sort"], params["cond"])
             case 'followers':
                 if not "sort" in params:
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.followers(params["username"], params["sort"], params["cond"])
+                return self.followers(username=params["username"], sort=params["sort"], cond=params["cond"], offset=params.get("offset", 0), limit=params.get("limit", 0))
             case 'following':
                 if not "username" in params:
                     return False
@@ -4454,23 +5667,42 @@ class API(object):
                     return False
                 return self.genre(params["filter_id"])
             case 'genre_albums':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
                 if not "sort" in params:
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.genre_albums(params["filter_id"], params["sort"], params["cond"])
+                return self.genre_albums(params["filter_id"], params["offset"], params["limit"],
+                                         params["sort"], params["cond"])
             case 'genre_artists':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
                 if not "sort" in params:
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.genre_artists(params["username"], params["sort"], params["cond"])
+                return self.genre_artists(params["filter_id"], params["offset"], params["limit"],
+                                          params["sort"], params["cond"])
             case 'genres':
+                if not "filter_str" in params:
+                    params["filter_str"] = False
+                if not "exact" in params:
+                    params["exact"] = False
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
                 if not "sort" in params:
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.genres(params["username"], params["sort"], params["cond"])
+                return self.genres(params["filter_str"], params["exact"], params["offset"], params["limit"],
+                                   params["sort"], params["cond"])
             case 'genre_songs':
                 if not "offset" in params:
                     params["offset"] = 0
@@ -4485,7 +5717,7 @@ class API(object):
             case 'get_art':
                 if not "object_id" in params or not "object_type" in params or not "destination" in params:
                     return False
-                return self.get_art(params["object_id"], params["object_type"], params["destination"])
+                return self.get_art(params["object_id"], params["object_type"], params["destination"], size=params.get("size", False), fallback=params.get("fallback", False))
             case 'get_bookmark':
                 if not "include" in params:
                     params["include"] = False
@@ -4522,9 +5754,9 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.get_indexes(params["object_type"], params["filter_str"], params["exact"], params["add"],
-                                        params["update"], params["include"], params["offset"], params["limit"],
-                                        params["sort"], params["cond"])
+                return self.get_indexes(object_type=params["object_type"], filter_str=params["filter_str"], exact=params["exact"], add=params["add"],
+                                        update=params["update"], include=params["include"], offset=params["offset"], limit=params["limit"],
+                                        sort=params["sort"], cond=params["cond"], hide_search=params.get("hide_search", False))
             case 'get_similar':
                 if not "offset" in params:
                     params["offset"] = 0
@@ -4564,7 +5796,7 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.label_artists(params["filter_id"], params["sort"], params["cond"])
+                return self.label_artists(filter_id=params["filter_id"], sort=params["sort"], cond=params["cond"], offset=params.get("offset", 0), limit=params.get("limit", 0))
             case 'labels':
                 if not "filter_str" in params:
                     params["filter_str"] = False
@@ -4579,7 +5811,8 @@ class API(object):
                 if not "cond" in params:
                     params["cond"] = False
                 return self.labels(params["filter_str"], params["exact"], params["offset"], params["limit"],
-                                   params["sort"], params["cond"])
+                                   params["sort"], params["cond"], add=params.get("add", False),
+                                   update=params.get("update", False))
             case 'last_shouts':
                 if not "limit" in params:
                     params["limit"] = 0
@@ -4612,7 +5845,7 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.license_songs(params["filter_id"], params["sort"], params["cond"])
+                return self.license_songs(filter_id=params["filter_id"], sort=params["sort"], cond=params["cond"], offset=params.get("offset", 0), limit=params.get("limit", 0))
             case 'list':
                 if not "filter_str" in params:
                     params["filter_str"] = False
@@ -4630,11 +5863,8 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                if not "hide_search" in params:
-                    params["hide_search"] = False
-                return self.list(params["object_type"], params["filter_str"], params["exact"], params["add"],
-                                 params["update"], params["offset"], params["limit"], params["sort"], params["cond"],
-                                 params["hide_search"])
+                return self.list(object_type=params["object_type"], filter_str=params["filter_str"], exact=params["exact"], add=params["add"],
+                                 update=params["update"], offset=params["offset"], limit=params["limit"], sort=params["sort"], cond=params["cond"], hide_search=params.get("hide_search", False))
             case 'live_stream':
                 if not "filter_id" in params:
                     return False
@@ -4675,7 +5905,8 @@ class API(object):
                 if not "cond" in params:
                     params["cond"] = False
                 return self.live_streams(params["filter_str"], params["exact"], params["offset"], params["limit"],
-                                         params["sort"], params["cond"])
+                                         params["sort"], params["cond"], add=params.get("add", False),
+                                         update=params.get("update", False))
             case 'localplay':
                 if not "oid" in params:
                     params["oid"] = False
@@ -4683,7 +5914,8 @@ class API(object):
                     params["otype"] = False
                 if not "clear" in params:
                     params["clear"] = False
-                return self.localplay(params["command"])
+                return self.localplay(params["command"], oid=params["oid"], otype=params["otype"],
+                                      clear=params["clear"], track=params.get("track", False))
             case 'localplay_songs':
                 return self.localplay_songs()
             case 'now_playing':
@@ -4698,7 +5930,7 @@ class API(object):
                 if not "client" in params:
                     params["client"] = CLIENT_NAME
                 return self.player(params["filter_str"], params["object_type"], params["state"],
-                                   params["play_time"], params["client"])
+                                   params["play_time"], params["client"], offset=params.get("offset", 0), limit=params.get("limit", 0))
             case 'playlists':
                 if not "filter_str" in params:
                     params["filter_str"] = False
@@ -4720,7 +5952,8 @@ class API(object):
                     params["cond"] = False
                 return self.playlists(params["filter_str"], params["exact"], params["offset"], params["limit"],
                                       params["hide_search"], params["show_dupes"], params["include"],
-                                      params["sort"], params["cond"])
+                                      params["sort"], params["cond"], add=params.get("add", False),
+                                      update=params.get("update", False))
             case 'playlist':
                 if not "filter_id" in params:
                     return False
@@ -4786,6 +6019,15 @@ class API(object):
                 if not "filter_id" in params:
                     return False
                 return self.playlist_hash(params["filter_id"])
+            case 'playlist_remove':
+                if not "filter_id" in params:
+                    return False
+                for key, value in {"object_id": False, "object_type": 'song',
+                                   "track": False, "clear": False}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.playlist_remove(params["filter_id"], params["object_id"],
+                                            params["object_type"], params["track"], params["clear"])
             case 'playlist_remove_song':
                 if not "song_id" in params:
                     params["song_id"] = False
@@ -4849,19 +6091,20 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                if not "include" in params:
-                    params["include"] = False
-                return self.podcasts(params["filter_id"], params["exact"], params["offset"], params["limit"],
-                                     params["sort"], params["cond"], params["include"])
+                return self.podcasts(filter_str=params["filter_id"], exact=params["exact"], offset=params["offset"], limit=params["limit"],
+                                     sort=params["sort"], cond=params["cond"], include=params.get("include", False))
             case 'preference_create':
+                if not "default" in params:
+                    params["default"] = False
                 if not "description" in params:
                     params["description"] = False
                 if not "subcategory" in params:
                     params["subcategory"] = False
                 if not "level" in params:
                     params["level"] = 100
-                return self.preference_create(params["filter_str"], params["type_str"], params["category"],
-                                              params["description"], params["subcategory"], params["level"])
+                return self.preference_create(params["filter_str"], params["type_str"], params["default"],
+                                              params["category"], params["description"], params["subcategory"],
+                                              params["level"])
             case 'preference_delete':
                 if not "filter_str" in params:
                     return False
@@ -4870,6 +6113,16 @@ class API(object):
                 if not "apply_all" in params:
                     params["apply_all"] = 0
                 return self.preference_edit(params["filter_str"], params["value"], params["apply_all"])
+            case 'random':
+                if not "destination" in params:
+                    return False
+                for key, value in {"object_type": 'song', "filter_id": False, "stats": 1,
+                                   "transcode": False, "bitrate": False, "offset": 0}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.random(params["destination"], params["object_type"], params["filter_id"],
+                                   params["stats"], params["transcode"], params["bitrate"],
+                                   params["offset"])
             case 'rate':
                 if not "object_type" in params or not "object_id" in params or not "rating" in params:
                     return False
@@ -4967,7 +6220,8 @@ class API(object):
                 if not "cond" in params:
                     params["cond"] = False
                 return self.smartlists(params["filter_str"], params["exact"], params["offset"], params["limit"],
-                                      params["include"], params["sort"], params["cond"])
+                                      params["include"], params["sort"], params["cond"], add=params.get("add", False),
+                                      update=params.get("update", False))
             case 'smartlist':
                 if not "filter_id" in params:
                     return False
@@ -4996,6 +6250,13 @@ class API(object):
                 if not "filter_id" in params:
                     return False
                 return self.song_tags(params["filter_id"])
+            case 'sonic_match':
+                if not "filter_id" in params:
+                    return False
+                for key, value in {"offset": 0, "limit": 0}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.sonic_match(params["filter_id"], params["offset"], params["limit"])
             case 'songs':
                 if not "filter_str" in params:
                     params["filter_str"] = False
@@ -5036,7 +6297,7 @@ class API(object):
             case 'stream':
                 if not "stats" in params:
                     params["stats"] = 1
-                return self.stream(params["object_id"], params["object_type"], params["destination"], params["stats"])
+                return self.stream(object_id=params["object_id"], object_type=params["object_type"], destination=params["destination"], stats=params["stats"], bitrate=params.get("bitrate", False), transcode=params.get("transcode", False), offset=params.get("offset", 0), length=params.get("length", False))
             case 'system_preference':
                 if not "filter_str" in params:
                     return False
@@ -5123,6 +6384,17 @@ class API(object):
                 if not "filter_id" in params:
                     return False
                 return self.update_podcast(params["filter_id"])
+            case 'upload':
+                if not "file_path" in params:
+                    return False
+                for key, value in {"filename": False, "license_id": False, "artist_id": False,
+                                   "artist_name": False, "album_id": False, "album_name": False,
+                                   "raw_body": False, "content_type": False}.items():
+                    if key not in params:
+                        params[key] = value
+                return self.upload(params["file_path"], params["filename"], params["license_id"],
+                                   params["artist_id"], params["artist_name"], params["album_id"],
+                                   params["album_name"], params["raw_body"], params["content_type"])
             case 'url_to_song':
                 if not "url" in params:
                     return False
@@ -5137,7 +6409,7 @@ class API(object):
                 if not "disable" in params:
                     params["disable"] = False
                 return self.user_create(params["username"], params["password"], params["email"],
-                                        params["fullname"], params["disable"])
+                                        params["fullname"], params["disable"], group=params.get("group", False))
             case 'user_delete':
                 if not "username" in params:
                     return False
@@ -5167,10 +6439,10 @@ class API(object):
                     params["reset_streamtoken"] = False
                 if not "clear_stats" in params:
                     params["clear_stats"] = False
-                return self.user_edit(params["username"], params["password"], params["fullname"], params["email"],
-                                      params["website"], params["state"], params["city"], params["disable"],
-                                      params["maxbitrate"], params["fullname_public"], params["reset_apikey"],
-                                      params["reset_streamtoken"], params["clear_stats"])
+                return self.user_edit(username=params["username"], password=params["password"], fullname=params["fullname"], email=params["email"],
+                                      website=params["website"], state=params["state"], city=params["city"], disable=params["disable"],
+                                      maxbitrate=params["maxbitrate"], fullname_public=params["fullname_public"], reset_apikey=params["reset_apikey"],
+                                      reset_streamtoken=params["reset_streamtoken"], clear_stats=params["clear_stats"], group=params.get("group", False))
             case 'user_playlists':
                 if not "filter_str" in params:
                     params["filter_str"] = False
@@ -5186,7 +6458,9 @@ class API(object):
                     params["cond"] = False
                 return self.user_playlists(params["filter_str"], params["exact"],
                                            params["offset"], params["limit"],
-                                           params["sort"], params["cond"])
+                                           params["sort"], params["cond"],
+                                           include=params.get("include", False),
+                                           add=params.get("add", False), update=params.get("update", False))
             case 'user_preference':
                 if not "filter_str" in params:
                     return False
@@ -5194,15 +6468,15 @@ class API(object):
             case 'user_preferences':
                 return self.user_preferences()
             case 'users':
-                if not "sort" in params:
-                    params["sort"] = False
-                if not "cond" in params:
-                    params["cond"] = False
                 if not "offset" in params:
                     params["offset"] = 0
                 if not "limit" in params:
                     params["limit"] = 0
-                return self.users(params["sort"], params["cond"], params["offset"], params["limit"])
+                if not "sort" in params:
+                    params["sort"] = False
+                if not "cond" in params:
+                    params["cond"] = False
+                return self.users(params["offset"], params["limit"], params["sort"], params["cond"])
             case 'user_smartlists':
                 if not "filter_str" in params:
                     params["filter_str"] = False
@@ -5218,7 +6492,9 @@ class API(object):
                     params["cond"] = False
                 return self.user_smartlists(params["filter_str"], params["exact"],
                                             params["offset"], params["limit"],
-                                            params["sort"], params["cond"])
+                                            params["sort"], params["cond"],
+                                            include=params.get("include", False),
+                                            add=params.get("add", False), update=params.get("update", False))
             case 'user_update':
                 if not "password" in params:
                     params["password"] = False

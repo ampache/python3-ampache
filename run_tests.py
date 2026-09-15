@@ -256,28 +256,28 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     'song'|'album'|'artist'|'playlist'
     """
     
-    songs     = ampacheConnection.get_indexes('song', False, False, False, False, False, offset, limit)
+    songs     = ampacheConnection.get_indexes(object_type='song', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
     if api_format == 'xml':
         tmpcount = songs.findall('song')
         #if len(tmpcount) > int(limit):
         #    print(f"ampacheConnection.get_indexes: {FAIL}FAIL{ENDC}")
         #    sys.exit(f"\n{FAIL}ERROR:{ENDC} songs " + str(len(tmpcount)) + ' found more items than the limit ' + str(limit))
 
-    albums    = ampacheConnection.get_indexes('album', False, False, False, False, False, offset, limit)
+    albums    = ampacheConnection.get_indexes(object_type='album', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
     if api_format == 'xml':
         tmpcount = albums.findall('album')
         #if len(tmpcount) > int(limit):
         #    print(f"ampacheConnection.get_indexes: {FAIL}FAIL{ENDC}")
         #    sys.exit(f"\n{FAIL}ERROR:{ENDC} albums " + str(len(tmpcount)) + ' found more items than the limit ' + str(limit))
 
-    artists   = ampacheConnection.get_indexes('artist', False, False, False, False, False, offset, limit)
+    artists   = ampacheConnection.get_indexes(object_type='artist', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
     if api_format == 'xml':
         tmpcount = ampacheConnection.get_object_list(artists, 'artist')
         #if len(tmpcount) > int(limit):
         #    print(f"ampacheConnection.get_indexes: {FAIL}FAIL{ENDC}")
         #    sys.exit(f"\n{FAIL}ERROR:{ENDC} artists " + str(len(tmpcount)) + ' found more items than the limit ' + str(limit))
 
-    playlists = ampacheConnection.get_indexes('playlist', False, False, False, False, False, offset, limit)
+    playlists = ampacheConnection.get_indexes(object_type='playlist', filter_str=False, exact=False, add=False, update=False, include=False, offset=offset, limit=limit)
     if api_format == 'xml':
         tmpcount = playlists.findall('playlist')
         #if len(tmpcount) > int(limit):
@@ -497,7 +497,7 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     """ artist_songs
     def artist_songs(filter, offset = 0, limit = 0, api_format = 'xml'):
     """
-    artist_songs = ampacheConnection.artist_songs(single_artist, 0, 0)
+    artist_songs = ampacheConnection.artist_songs(filter_id=single_artist, offset=0, limit=0)
 
     if artist_songs:
         print(f"ampacheConnection.artist_songs: {OKGREEN}PASS{ENDC}")
@@ -507,7 +507,7 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     """ artists
     def artists(filter = False, add = False, update = False, offset = 0, limit = 0, include = False, api_format = 'xml'):
     """
-    myartists = ampacheConnection.artists(False, False, False, 0, 0, False)
+    myartists = ampacheConnection.artists(filter_str=False, add=False, update=False, offset=0, limit=0, include=False)
 
     if myartists:
         print(f"ampacheConnection.artists: {OKGREEN}PASS{ENDC}")
@@ -533,7 +533,7 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     """ followers
     def followers(username, api_format = 'xml'):
     """
-    followers = ampacheConnection.followers(ampache_user)
+    followers = ampacheConnection.followers(username=ampache_user)
 
     """ following
     def following(username, api_format = 'xml'):
@@ -746,7 +746,7 @@ def run_tests(ampache_url, ampache_api, ampache_user, api_format):
     def goodbye(api_format = 'xml'):
     """
     # Close your session when you're done
-    goodbye = ampacheConnection.goodbye(api_format)
+    goodbye = ampacheConnection.goodbye()
 
 
 run_tests(url, api, user, 'xml')

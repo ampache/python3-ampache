@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4702">
-    <errorAction><![CDATA[scrobble]]></errorAction>
-    <errorType><![CDATA[system]]></errorType>
-    <errorMessage><![CDATA[Generic error]]></errorMessage>
-  </error>
+  <success code="1">
+    <message><![CDATA[successfully scrobbled: 87]]></message>
+  </success>
 </root>

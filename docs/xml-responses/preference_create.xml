@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <preference id="251">
-    <name><![CDATA[temp_pref_xml]]></name>
-    <level>100</level>
-    <description><![CDATA[]]></description>
-    <value>0</value>
-    <type><![CDATA[boolean]]></type>
-    <category><![CDATA[interface]]></category>
-    <subcategory><![CDATA[]]></subcategory>
-  </preference>
+  <error errorCode="4704">
+    <errorAction><![CDATA[preference_create]]></errorAction>
+    <errorType><![CDATA[system]]></errorType>
+    <errorMessage><![CDATA[Not Found: temp_pref_xml]]></errorMessage>
+  </error>
 </root>

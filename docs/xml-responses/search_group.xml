@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <search>
+    <playlist id="123">
+      <name><![CDATA[100 random]]></name>
+      <items>123</items>
+      <owner><![CDATA[user]]></owner>
+      <type><![CDATA[public]]></type>
+    </playlist>
+    <playlist id="139">
+      <name><![CDATA[404 (demo)]]></name>
+      <items>42</items>
+      <owner><![CDATA[demo]]></owner>
+      <type><![CDATA[public]]></type>
+    </playlist>
+    <playlist id="127">
+      <name><![CDATA[bb1]]></name>
+      <items>28</items>
+      <owner><![CDATA[user]]></owner>
+      <type><![CDATA[public]]></type>
+    </playlist>
+    <playlist id="131">
+      <name><![CDATA[demo - 10/9/21, 8:37 AM (demo)]]></name>
+      <items>1</items>
+      <owner><![CDATA[demo]]></owner>
+      <type><![CDATA[public]]></type>
+    </playlist>
+    <song id="377">
+      <title><![CDATA[(#27) let's go let's bounce let's roll]]></title>
+      <name><![CDATA[(#27) let's go let's bounce let's roll]]></name>
+      <artist id="185">
+        <name><![CDATA[JFrank]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[JFrank]]></basename>
+      </artist>
+      <album id="48">
+        <name><![CDATA[Crazy Compilation #4]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Crazy Compilation #4]]></basename>
+      </album>
+      <albumartist id="43">
+        <name><![CDATA[Various Artists]]></name>
+        <prefix><![CDATA[]]></prefix>
+        <basename><![CDATA[Various Artists]]></basename>
+      </albumartist>
+      <disk><![CDATA[1]]></disk>
+      <track>7</track>
+    </song>
+  </search>
+</root>

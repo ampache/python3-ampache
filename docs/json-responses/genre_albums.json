@@ -10,14 +10,14 @@
             "artist": {
                 "id": "14",
                 "name": "Nofi\/found.",
-                "prefix": null,
+                "prefix": "",
                 "basename": "Nofi\/found."
             },
             "artists": [
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -25,7 +25,7 @@
                 {
                     "id": "14",
                     "name": "Nofi\/found.",
-                    "prefix": null,
+                    "prefix": "",
                     "basename": "Nofi\/found."
                 }
             ],
@@ -51,7 +51,8 @@
             "rating": 2,
             "averagerating": null,
             "mbid": null,
-            "mbid_group": null
+            "mbid_group": null,
+            "catalog": "1"
         }
     ]
 }

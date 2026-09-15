@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <success code="1">
-    <message><![CDATA[Deleted: temp_pref_xml]]></message>
-  </success>
+  <error errorCode="4704">
+    <errorAction><![CDATA[preference_delete]]></errorAction>
+    <errorType><![CDATA[filter]]></errorType>
+    <errorMessage><![CDATA[Not Found: temp_pref_xml]]></errorMessage>
+  </error>
 </root>

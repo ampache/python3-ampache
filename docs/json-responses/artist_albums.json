@@ -1,53 +1,58 @@
 {
     "total_count": 1,
-    "md5": "c4b66550e50f6ae8347c6592ebc1a4d1",
+    "md5": "60fda3b54003017dc64a0c492471bbfe",
     "album": [
         {
-            "id": "21",
-            "name": "Forget and Remember",
+            "id": "8",
+            "name": "Nofi Devices",
             "prefix": null,
-            "basename": "Forget and Remember",
+            "basename": "Nofi Devices",
             "artist": {
-                "id": "36",
-                "name": "Comfort Fit",
-                "prefix": null,
-                "basename": "Comfort Fit"
+                "id": "14",
+                "name": "Nofi\/found.",
+                "prefix": "",
+                "basename": "Nofi\/found."
             },
             "artists": [
                 {
-                    "id": "36",
-                    "name": "Comfort Fit",
-                    "prefix": null,
-                    "basename": "Comfort Fit"
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": "",
+                    "basename": "Nofi\/found."
                 }
             ],
             "songartists": [
                 {
-                    "id": "36",
-                    "name": "Comfort Fit",
-                    "prefix": null,
-                    "basename": "Comfort Fit"
+                    "id": "14",
+                    "name": "Nofi\/found.",
+                    "prefix": "",
+                    "basename": "Nofi\/found."
                 }
             ],
-            "time": 4248,
-            "year": 2005,
+            "time": 4423,
+            "year": 0,
             "tracks": [],
-            "songcount": 20,
+            "songcount": 11,
             "diskcount": 1,
-            "type": "album",
+            "type": null,
             "genre": [
                 {
-                    "id": "8",
-                    "name": "Hip-Hop"
+                    "id": "5",
+                    "name": "Electronica"
+                },
+                {
+                    "id": "6",
+                    "name": "Dance"
                 }
             ],
-            "art": "https:\/\/music.com.au\/image.php?object_id=21&object_type=album&id=435&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
-            "rating": null,
+            "rating": 2,
             "averagerating": null,
-            "mbid": "6e1d48f7-717c-416e-af35-5d2454a13af2",
-            "mbid_group": "1501fe8a-f060-3b6f-8cb0-7babfc65192a"
+            "mbid": null,
+            "mbid_group": null,
+            "catalog": "1"
         }
     ]
 }
