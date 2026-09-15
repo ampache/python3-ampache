@@ -14,6 +14,6 @@ ampache metadata
 """
 
 __author__ = "Lachlan de Waard (lachlan-00)"
-__version__ = "6.9.2"
+__version__ = "8.1.1"
 
 DEBUG = False

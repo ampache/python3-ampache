@@ -18,7 +18,7 @@ The class documentation has been extracted out into a markdown file for easier r
 
 `<https://raw.githubusercontent.com/ampache/python3-ampache/master/docs/MANUAL.md>`_
 
-This library supports connecting to any Ampache API release (3, 4, 5 and 6)
+This library supports connecting to any Ampache API release (3, 4, 5, 6 and 8)
 
 Once you connect with your passphrase or api key, the url and auth token are stored allowing you to call methods without them.
 
@@ -32,6 +32,8 @@ Once you connect with your passphrase or api key, the url and auth token are sto
     ampache_connection = ampache.API()
 
     # Set your server details
+    # AMPACHE_VERSION now defaults to 8.1.1, so if your server is on
+    # API6 (or older) call set_version() with your server's version
     ampache_connection.set_version('6.6.1')
     ampache_connection.set_url('https://music.com.au')
     ampache_connection.set_key('mypassword')
@@ -63,6 +65,22 @@ Once you connect with your passphrase or api key, the url and auth token are sto
 NEWS
 ====
 
+- 8.1.1 adds support for Ampache API8: folders, album disks, playlist
+  folders, collections, and a type-aware ``playlist_remove``. See
+  ``CHANGELOG.md`` for the full list.
+- 8.1.1 breaking changes affecting all callers regardless of server
+  API version:
+
+  - ``AMPACHE_VERSION`` now defaults to ``8.1.1`` instead of ``6.9.0``
+    — call ``set_version()`` explicitly if you're on an older API.
+  - HTTP error responses are returned instead of ``False``.
+  - ``users()``, ``stream()``, ``download()`` and ``get_indexes()``
+    changed parameter order — positional callers must update their
+    call sites, keyword callers are unaffected.
+
+- ``get_indexes``, ``playlist_add_song``, ``playlist_remove_song`` and
+  ``user_update`` are deprecated in favor of ``index``,
+  ``playlist_add``, ``playlist_remove`` and ``user_edit``.
 - Examples are being updated to support the latest execute method which can simplify your code
 - You can save and restore from a json config file using new methods
 
@@ -124,6 +142,7 @@ Here is a short code sample for python using version 6.x.x+ to scrobble a track 
     # load up previous config
     if not ampache_connection.get_config():
         # Set your details manually if we can't get anything
+        # use your server's own API version here (defaults to 8.1.1)
         ampache_connection.set_version('6.6.1')
         ampache_connection.set_url('https://music.server')
         ampache_connection.set_key('mysuperapikey')
