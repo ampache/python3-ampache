@@ -30,7 +30,8 @@ New methods, all requiring API8+ on the server:
   `False`. On `urllib.error.HTTPError` the request layer now returns
   the parsed error response instead of `False`. Code that checked
   `if not result:` to detect a failed call will now get a truthy
-  error object instead.
+  error object instead. Call `set_return_http_errors(False)` to
+  restore the old behavior.
 - **Breaking:** `users()` parameter order changed from
   `(sort, cond, offset, limit)` to `(offset, limit, sort, cond)`.
   Positional callers must update their call sites.
@@ -91,6 +92,8 @@ You do not need to switch servers to take this library update, but:
    Keyword-argument callers are unaffected by the reordering.
 3. **Review any code that treats a failed request as falsy**
    HTTP error responses are now returned as the parsed error object rather than `False`.
+   Call `set_return_http_errors(False)` to restore the old `False`-on-error behavior
+   without touching your call sites.
 4. All newly added methods (folders, album disks, playlist folders, collections, etc.)
    are additive and API8-only they won't work against an API6 server.
 5. No dependency or Python version floor changed

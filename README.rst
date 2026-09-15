@@ -73,7 +73,8 @@ NEWS
 
   - ``AMPACHE_VERSION`` now defaults to ``8.1.1`` instead of ``6.9.0``
     — call ``set_version()`` explicitly if you're on an older API.
-  - HTTP error responses are returned instead of ``False``.
+  - HTTP error responses are returned instead of ``False`` (call
+    ``set_return_http_errors(False)`` to restore the old behavior).
   - ``users()``, ``stream()``, ``download()`` and ``get_indexes()``
     changed parameter order — positional callers must update their
     call sites, keyword callers are unaffected.
