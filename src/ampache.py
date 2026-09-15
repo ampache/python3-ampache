@@ -40,7 +40,7 @@ class API(object):
 
     def __init__(self):
         self.AMPACHE_API = 'xml'
-        self.AMPACHE_VERSION = '8.0.0'
+        self.AMPACHE_VERSION = '8.1.1'
         self.AMPACHE_SERVER = ''
         # HTTP status of the last response. API8 sets real status codes where
         # API3-6 always returned 200: 404 for an empty result set, and
@@ -119,12 +119,12 @@ class API(object):
             api4 = '443000'
             api5 = '5.5.6'
             api6 = '6.6.0'
-            api8 = '8.0.0'
+            api8 = '8.1.1'
 
             NOTE api7 is unused/unsupported and is rejected by the server
 
             INPUTS
-            * myversion = (string) '8.0.0'|'390001'
+            * myversion = (string) '8.1.1'|'390001'
         """
         if self.AMPACHE_DEBUG:
             print('AMPACHE_VERSION set to ' + myversion)
@@ -649,7 +649,7 @@ class API(object):
     """
 
     def handshake(self, ampache_url: str, ampache_api: str, ampache_user=False,
-                  timestamp: int = 0, version: str = '8.0.0'):
+                  timestamp: int = 0, version: str = '8.1.1'):
         """ handshake
             MINIMUM_API_VERSION=380001
 
@@ -710,7 +710,7 @@ class API(object):
             self.AMPACHE_SESSION = token
             return token
 
-    def ping(self, ampache_url: str, ampache_api=False, version: str = '8.0.0'):
+    def ping(self, ampache_url: str, ampache_api=False, version: str = '8.1.1'):
         """ ping
             MINIMUM_API_VERSION=380001
 
@@ -2030,13 +2030,14 @@ class API(object):
     def playlist_add(self, filter_id: int, object_id: int, object_type: str):
         """ playlist_add
             MINIMUM_API_VERSION=6.3.0
+            CHANGED_IN_API_VERSION=8.0.1
 
             This adds a song to a playlist, allowing different song parent types
 
             INPUTS
-            * filter = (int) UID of playlist
-            * id     = (int) $object_id
-            * type   = (string) 'song', 'album', 'artist', 'playlist'
+            * filter      = (int) UID of playlist
+            * id          = (int) $object_id
+            * object_type = (string) 'song', 'album', 'artist', 'playlist'
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'playlist_add'
@@ -2044,7 +2045,7 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'id': object_id,
-                'type': object_type}
+                'object_type': object_type}
         return self.get_request(ampache_url, data, api_method)
 
     def playlist_add_song(self, filter_id: int, song_id, check=False):
@@ -2079,6 +2080,7 @@ class API(object):
                         object_id=False, object_type='song', track=False, clear=False):
         """ playlist_remove
             MINIMUM_API_VERSION=8.0.0
+            CHANGED_IN_API_VERSION=8.0.1
 
             Removes an object from a playlist by object id and type, or by track number.
             This replaces playlist_remove_song and is type aware.
@@ -2096,13 +2098,13 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'id': object_id,
-                'type': object_type,
+                'object_type': object_type,
                 'track': track,
                 'clear': clear}
         if not object_id:
             data.pop('id')
         if not object_type:
-            data.pop('type')
+            data.pop('object_type')
         if not track:
             data.pop('track')
         if not clear:
@@ -2981,11 +2983,13 @@ class API(object):
     def catalog_action(self, task, catalog_id):
         """ catalog_action
             MINIMUM_API_VERSION=400001
+            CHANGED_IN_API_VERSION=8.1.0
 
             Kick off a catalog update or clean for the selected catalog
 
             INPUTS
-            * task        = (string) 'add_to_catalog'|'clean_catalog'|'verify_catalog'|'gather_art'
+            * task        = (string) 'add_to_catalog'|'clean_catalog'|'verify_catalog'|'update_catalog'|
+                                      'gather_art'|'garbage_collect'|'scan_catalog_folders'
             * catalog_id  = (integer) $catalog_id
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
@@ -3313,6 +3317,22 @@ class API(object):
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'update_podcast'
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'filter': filter_id}
+        return self.get_request(ampache_url, data, api_method)
+
+    def podcast_update(self, filter_id: int):
+        """ podcast_update
+            MINIMUM_API_VERSION=420000
+
+            Sync and download new podcast episodes (alias of update_podcast)
+
+            INPUTS
+            * filter_id   = (integer) UID of Podcast
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'podcast_update'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id}
