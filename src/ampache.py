@@ -46,6 +46,10 @@ class API(object):
         # API3-6 always returned 200: 404 for an empty result set, and
         # Api::getHttpCode() mapped codes for errors (400/401/403/404/410/500)
         self.AMPACHE_HTTP_CODE = 0
+        # On since 8.0.0: an HTTPError's body is a valid API document (e.g. an <error> element
+        # or JSON error object), so fetch_url() reads and returns it instead of returning False.
+        # Set False to restore the pre-8.0.0 behavior of returning False on any HTTP error.
+        self.AMPACHE_RETURN_HTTP_ERRORS = True
         self.AMPACHE_DEBUG = False
         self.DOCS_PATH = 'docs/'
         self.CONFIG_FILE = 'ampache.json'
@@ -109,6 +113,25 @@ class API(object):
         * path_string = (string) folder path
         """
         self.DOCS_PATH = path_string
+
+    def set_return_http_errors(self, mybool: bool):
+        """ set_return_http_errors
+
+            Control how fetch_url() handles an HTTPError. Enabled (default since 8.0.0), the
+            response body is read and returned like any other response, since API8 returns a
+            valid API document (an <error> element or JSON error object) with its error status
+            codes. Disable to restore the pre-8.0.0 behavior of returning False on any HTTP
+            error instead.
+
+            INPUTS
+            * mybool = (boolean) Enable/disable returning HTTP error response bodies
+        """
+        if self.AMPACHE_DEBUG:
+            if mybool:
+                print('AMPACHE_RETURN_HTTP_ERRORS' + f": {self.OKGREEN}enabled{self.ENDC}")
+            else:
+                print('AMPACHE_RETURN_HTTP_ERRORS' + f": {self.WARNING}disabled{self.ENDC}")
+        self.AMPACHE_RETURN_HTTP_ERRORS = mybool
 
     def set_version(self, myversion: str):
         """ set_version
@@ -543,7 +566,11 @@ class API(object):
             result = urllib.request.urlopen(req)
         except urllib.error.HTTPError as error:
             # API8 returns 404 for empty results and mapped 4xx/5xx for errors.
-            # The body is still a valid API document, so keep reading it.
+            # The body is still a valid API document, so keep reading it
+            # unless the caller opted back into the pre-8.0.0 False-on-error behavior.
+            if not getattr(self, 'AMPACHE_RETURN_HTTP_ERRORS', True):
+                self.AMPACHE_HTTP_CODE = getattr(error, 'code', 0)
+                return False
             result = error
         except urllib.error.URLError:
             return False
