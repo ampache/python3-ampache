@@ -791,6 +791,81 @@ class API(object):
                 return False
             return ampache_api
 
+    def quickconnect_initiate(self, ampache_url: str, device_id=False, device_name=False,
+                               client=False, version=False):
+        """ quickconnect_initiate
+            MINIMUM_API_VERSION=800000
+
+            This can be called without being authenticated. Starts a QuickConnect pairing
+            request for a client with no session yet. Show the returned code to the user
+            approving the request, then poll quickconnect_status() with the returned
+            'secret' until it comes back authorized
+
+            INPUTS
+            * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+            * device_id   = (string) an id the caller makes up and keeps //optional
+            * device_name = (string) shown to the approving user alongside the code //optional
+            * client      = (string) the app name, shown to the approving user //optional
+            * version     = (string) the app version, shown to the approving user //optional
+        """
+        ampache_url = ampache_url + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'quickconnect_initiate'
+        data = {'action': api_method,
+                'device_id': device_id,
+                'device_name': device_name,
+                'client': client,
+                'version': version}
+        if not device_id:
+            data.pop('device_id')
+        if not device_name:
+            data.pop('device_name')
+        if not client:
+            data.pop('client')
+        if not version:
+            data.pop('version')
+        return self.get_request(ampache_url, data, api_method)
+
+    def quickconnect_status(self, ampache_url: str, secret: str):
+        """ quickconnect_status
+            MINIMUM_API_VERSION=800000
+
+            This can be called without being authenticated. Polls a QuickConnect pairing
+            request started by quickconnect_initiate(). Once the request is authorized
+            this mints a session the same way handshake() does
+
+            INPUTS
+            * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
+            * secret      = (string) the value quickconnect_initiate() returned
+        """
+        full_url = ampache_url + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'quickconnect_status'
+        data = {'action': api_method,
+                'secret': secret}
+        ampache_response = self.get_request(full_url, data, api_method)
+        if isinstance(ampache_response, bool):
+            return False
+        # json format
+        if self.AMPACHE_API == 'json':
+            json_data = ampache_response if isinstance(ampache_response, dict) else json.loads(ampache_response.decode('utf-8'))
+            if 'auth' in json_data:
+                self.AMPACHE_URL = ampache_url
+                self.AMPACHE_SESSION = json_data['auth']
+                return json_data['auth']
+            return False
+        # xml format
+        else:
+            try:
+                tree = ampache_response if isinstance(ampache_response, ElementTree.Element) else ElementTree.fromstring(ampache_response.decode('utf-8') if isinstance(ampache_response, bytes) else ampache_response)
+            except ElementTree.ParseError:
+                return False
+            try:
+                token = tree.find('auth').text
+            except AttributeError:
+                return False
+            self.AMPACHE_URL = ampache_url
+            self.AMPACHE_SESSION = token
+            return token
+
     def register(self, username, fullname, password, email):
         """ register
             MINIMUM_API_VERSION=6.0.0
@@ -4366,6 +4441,60 @@ class API(object):
             data.pop('clear_stats')
         return self.get_request(ampache_url, data, api_method)
 
+    def user_update(self, username, password=False, fullname=False, email=False,
+                     website=False, state=False, city=False, disable=False,
+                     maxbitrate=False):
+        """ user_update
+            MINIMUM_API_VERSION=400001
+
+            DEPRECATED API6 and newer use the `user_edit` action instead of `user_update`
+
+            Update an existing user. @param array $input
+
+            INPUTS
+            * username   = (string) $username
+            * password   = (string) hash('sha256', $password)) //optional
+            * fullname   = (string) $fullname //optional
+            * email      = (string) $email //optional
+            * website    = (string) $website //optional
+            * state      = (string) $state //optional
+            * city       = (string) $city //optional
+            * disable    = (integer) 0,1 true to disable, false to enable //optional
+            * maxbitrate = (integer) $maxbitrate in kbps //optional
+        """
+        ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
+        api_method = 'user_update'
+        if bool(disable):
+            disable = 1
+        data = {'action': api_method,
+                'auth': self.AMPACHE_SESSION,
+                'username': username,
+                'password': password,
+                'fullname': fullname,
+                'email': email,
+                'website': website,
+                'state': state,
+                'city': city,
+                'disable': disable,
+                'maxbitrate': maxbitrate}
+        if not password:
+            data.pop('password')
+        if not fullname:
+            data.pop('fullname')
+        if not email:
+            data.pop('email')
+        if not website:
+            data.pop('website')
+        if not state:
+            data.pop('state')
+        if not city:
+            data.pop('city')
+        if not disable:
+            data.pop('disable')
+        if not maxbitrate:
+            data.pop('maxbitrate')
+        return self.get_request(ampache_url, data, api_method)
+
     def user_delete(self, username: str):
         """ user_delete
             MINIMUM_API_VERSION=400001
@@ -5242,18 +5371,6 @@ class API(object):
             data.pop('cond')
         return self.get_request(ampache_url, data, api_method)
 
-    def user_update(self, username, password=False, fullname=False, email=False,
-                    website=False, state=False, city=False, disable=False, maxbitrate=False,
-                    fullname_public=False, reset_apikey=False, reset_streamtoken=False, clear_stats=False):
-        """ user_update
-            MINIMUM_API_VERSION=6.0.0
-
-            Update an existing user. Backcompat function for api6 (Use user_edit)
-        """
-        return self.user_edit(username=username, password=password, fullname=fullname, email=email,
-                              website=website, state=state, city=city, disable=disable, maxbitrate=maxbitrate,
-                              fullname_public=fullname_public, reset_apikey=reset_apikey, reset_streamtoken=reset_streamtoken, clear_stats=clear_stats)
-
     def execute(self, method: str, params=None):
         if params is None:
             params = {}
@@ -5286,6 +5403,25 @@ class API(object):
                 if not "ampache_api" in params:
                     params["ampache_api"] = self.AMPACHE_SESSION
                 return self.ping(params["ampache_url"], params["ampache_api"])
+            case 'quickconnect_initiate':
+                if not "ampache_url" in params:
+                    params["ampache_url"] = self.AMPACHE_URL
+                if not "device_id" in params:
+                    params["device_id"] = False
+                if not "device_name" in params:
+                    params["device_name"] = False
+                if not "client" in params:
+                    params["client"] = False
+                if not "version" in params:
+                    params["version"] = False
+                return self.quickconnect_initiate(params["ampache_url"], params["device_id"],
+                                                  params["device_name"], params["client"], params["version"])
+            case 'quickconnect_status':
+                if not "ampache_url" in params:
+                    params["ampache_url"] = self.AMPACHE_URL
+                if not "secret" in params:
+                    return False
+                return self.quickconnect_status(params["ampache_url"], params["secret"])
             case 'search_rules':
                 if not "filter_str" in params:
                     return False
@@ -6061,6 +6197,60 @@ class API(object):
                 if not "track" in params:
                     params["track"] = False
                 return self.playlist_remove_song(params["filter_id"])
+            case 'playlist_folders':
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.playlist_folders(params["offset"], params["limit"])
+            case 'playlist_folder':
+                if not "filter_str" in params:
+                    return False
+                return self.playlist_folder(params["filter_str"])
+            case 'playlist_folder_items':
+                if not "filter_str" in params:
+                    params["filter_str"] = '/'
+                if not "offset" in params:
+                    params["offset"] = 0
+                if not "limit" in params:
+                    params["limit"] = 0
+                return self.playlist_folder_items(params["filter_str"], params["offset"], params["limit"])
+            case 'playlist_folder_create':
+                if not "folder_name" in params:
+                    return False
+                if not "parent" in params:
+                    params["parent"] = None
+                if not "sort_order" in params:
+                    params["sort_order"] = None
+                return self.playlist_folder_create(params["folder_name"], params["parent"], params["sort_order"])
+            case 'playlist_folder_edit':
+                if not "filter_str" in params:
+                    return False
+                if not "folder_name" in params:
+                    params["folder_name"] = False
+                if not "parent" in params:
+                    params["parent"] = None
+                if not "sort_order" in params:
+                    params["sort_order"] = None
+                return self.playlist_folder_edit(params["filter_str"], params["folder_name"],
+                                                 params["parent"], params["sort_order"])
+            case 'playlist_folder_delete':
+                if not "filter_str" in params:
+                    return False
+                return self.playlist_folder_delete(params["filter_str"])
+            case 'playlist_folder_add':
+                if not "object_id" in params or not "object_type" in params:
+                    return False
+                if not "filter_str" in params:
+                    params["filter_str"] = '/'
+                if not "sort_order" in params:
+                    params["sort_order"] = None
+                return self.playlist_folder_add(params["object_id"], params["object_type"],
+                                                params["filter_str"], params["sort_order"])
+            case 'playlist_folder_remove':
+                if not "object_id" in params or not "object_type" in params:
+                    return False
+                return self.playlist_folder_remove(params["object_id"], params["object_type"])
             case 'podcast':
                 if not "include" in params:
                     params["include"] = False
@@ -6107,6 +6297,10 @@ class API(object):
                     params["cond"] = False
                 return self.podcast_episodes(params["filter_id"], params["offset"], params["limit"],
                                              params["sort"], params["cond"])
+            case 'podcast_update':
+                if not "filter_id" in params:
+                    return False
+                return self.podcast_update(params["filter_id"])
             case 'podcasts':
                 if not "exact" in params:
                     params["exact"] = 0
@@ -6539,18 +6733,9 @@ class API(object):
                     params["disable"] = False
                 if not "maxbitrate" in params:
                     params["maxbitrate"] = False
-                if not "fullname_public" in params:
-                    params["fullname_public"] = False
-                if not "reset_apikey" in params:
-                    params["reset_apikey"] = False
-                if not "reset_streamtoken" in params:
-                    params["reset_streamtoken"] = False
-                if not "clear_stats" in params:
-                    params["clear_stats"] = False
                 return self.user_update(params["username"], params["password"], params["fullname"], params["email"],
                                         params["website"], params["state"], params["city"], params["disable"],
-                                        params["maxbitrate"], params["fullname_public"], params["reset_apikey"],
-                                        params["reset_streamtoken"], params["clear_stats"])
+                                        params["maxbitrate"])
             case 'video':
                 if not "filter_id" in params:
                     return False

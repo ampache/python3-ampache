@@ -1,3 +1,16 @@
+# python3-ampache 8.2.0
+
+### Added
+
+- `quickconnect_initiate`, `quickconnect_status` — QuickConnect pairing (API8+).
+
+### Fixed
+
+- `user_update` was defined twice and just forwarded to `user_edit`, which doesn't exist on API4/5 servers
+- `execute()` was missing dispatcher cases for the playlist folder methods, `podcast_update`
+
+---
+
 # python3-ampache 8.1.1
 
 The library now targets Ampache API8. (Branch `api8`) We have diverged from the `6.9.2` release.
