@@ -5187,23 +5187,30 @@ class API(object):
     """
 
     def advanced_search(self, rules,
-                        operator='and', object_type='song', offset=0, limit=0, random=0):
+                        operator='and', object_type='song', offset=0, limit=0, random=0,
+                        group_operators=None):
         """ advanced_search
             MINIMUM_API_VERSION=380001
 
             Perform an advanced search given passed rules
             the rules can occur multiple times and are joined by the operator item.
 
+            A rule may optionally carry a 4th item (the metadata subtype, only used when
+            rule_1 is 'metadata') and/or a 5th item: an int group id. Rules sharing a group id
+            are combined under that group's own operator (group_operators[id]) instead of the
+            top-level operator -- exactly two levels, a group id cannot nest another group.
+
             Refer to the wiki for further information
             https://ampache.org/api/api-advanced-search
 
             INPUTS
-            * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
-            * operator    = (string) 'and'|'or' (whether to match one rule or all) //optional
-            * object_type = (string)  //optional
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
-            * random      = (integer) 0|1' //optional
+            * rules           = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
+            * operator        = (string) 'and'|'or' (whether to match one rule or all) //optional
+            * object_type     = (string)  //optional
+            * offset          = (integer) //optional
+            * limit           = (integer) //optional
+            * random          = (integer) 0|1' //optional
+            * group_operators = (dict) {group_id: 'and'|'or'} for each group id used in rules //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'advanced_search'
@@ -5224,6 +5231,12 @@ class API(object):
             data['rule_' + str(count) + '_input'] = item[2]
             if item[0] == 'metadata':
                 data['rule_' + str(count) + '_subtype'] = item[3]
+            # group id may legitimately be 0, so check identity rather than truthiness
+            if len(item) > 4 and item[4] is not None:
+                data['rule_' + str(count) + '_group'] = item[4]
+        if group_operators:
+            for group_id, group_operator in group_operators.items():
+                data['group_' + str(group_id) + '_operator'] = group_operator
         return self.get_request(ampache_url, data, api_method)
 
     def tags(self, filter_str=False,
