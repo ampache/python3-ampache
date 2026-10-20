@@ -676,7 +676,8 @@ class API(object):
     """
 
     def handshake(self, ampache_url: str, ampache_api: str, ampache_user=False,
-                  timestamp: int = 0, version: str = '8.1.1'):
+                  timestamp: int = 0, version: str = '8.1.1', client=CLIENT_NAME,
+                  geo_latitude=False, geo_longitude=False, geo_name=False):
         """ handshake
             MINIMUM_API_VERSION=380001
 
@@ -684,11 +685,15 @@ class API(object):
             Takes a timestamp, auth key, and username.
 
             INPUTS
-            * ampache_url = (string) Full Ampache URL e.g. 'https://music.com.au'
-            * ampache_api = (string) encrypted apikey OR password if using password auth
-            * user        = (string) username //optional
-            * timestamp   = (integer) UNIXTIME() //optional
-            * version     = (string) //optional
+            * ampache_url  = (string) Full Ampache URL e.g. 'https://music.com.au'
+            * ampache_api  = (string) encrypted apikey OR password if using password auth
+            * user         = (string) username //optional
+            * timestamp    = (integer) UNIXTIME() //optional
+            * version      = (string) //optional
+            * client       = (string) $agent //optional
+            * geo_latitude = (float) //optional
+            * geo_longitude = (float) //optional
+            * geo_name     = (string) //optional
         """
         self.AMPACHE_URL = ampache_url
         if timestamp == 0:
@@ -699,13 +704,25 @@ class API(object):
                 'auth': ampache_api,
                 'user': ampache_user,
                 'timestamp': str(timestamp),
-                'version': version}
+                'version': version,
+                'client': client,
+                'geo_latitude': geo_latitude,
+                'geo_longitude': geo_longitude,
+                'geo_name': geo_name}
         if not ampache_user:
             data.pop('user')
         if not timestamp or not ampache_user:
             data.pop('timestamp')
         if not version:
             data.pop('version')
+        if not client:
+            data.pop('client')
+        if not geo_latitude:
+            data.pop('geo_latitude')
+        if not geo_longitude:
+            data.pop('geo_longitude')
+        if not geo_name:
+            data.pop('geo_name')
         ampache_response = self.get_request(ampache_url, data, api_method)
         if isinstance(ampache_response, bool):
             return False
@@ -2077,9 +2094,10 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def playlist_edit(self, filter_id: int, playlist_name=False,
-                      playlist_type=False, owner=False, items=False, tracks=False):
+                      playlist_type=False, owner=False, items=False, tracks=False, sort=False):
         """ playlist_edit
             MINIMUM_API_VERSION=400001
+            CHANGED_IN_API_VERSION=400003
 
             This modifies name and type of a playlist
 
@@ -2090,6 +2108,7 @@ class API(object):
             * owner         = (string) Change playlist owner to the user id (-1 = System playlist) //optional
             * items         = (string) comma-separated song_id's (replaces existing items with a new id) //optional
             * tracks        = (string) comma-separated playlisttrack numbers matched to 'items' in order //optional
+            * sort          = (integer) 0,1 sort the playlist by 'Artist, Album, Song' //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'playlist_edit'
@@ -2100,11 +2119,14 @@ class API(object):
                 'type': playlist_type,
                 'owner': owner,
                 'items': items,
-                'tracks': tracks}
+                'tracks': tracks,
+                'sort': sort}
         if not playlist_name:
             data.pop('name')
         if not playlist_type:
             data.pop('type')
+        if not sort:
+            data.pop('sort')
         if not owner:
             data.pop('owner')
         if not items:
@@ -2214,7 +2236,7 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def playlist_remove_song(self, filter_id: int,
-                             song_id=False, track=False):
+                             song_id=False, track=False, clear=False):
         """ playlist_remove_song
             MINIMUM_API_VERSION=380001
             CHANGED_IN_API_VERSION=400001
@@ -2227,6 +2249,7 @@ class API(object):
             * filter_id   = (integer) $playlist_id
             * song_id     = (integer) $song_id //optional
             * track       = (integer) $playlist_track number //optional
+            * clear       = (integer) 0,1, if true remove all songs from the playlist //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'playlist_remove_song'
@@ -2234,11 +2257,14 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
                 'song': song_id,
-                'track': track}
+                'track': track,
+                'clear': clear}
         if not song_id:
             data.pop('song')
         if not track:
             data.pop('track')
+        if not clear:
+            data.pop('clear')
         return self.get_request(ampache_url, data, api_method)
 
     def playlist_generate(self, mode='random',
@@ -2451,7 +2477,7 @@ class API(object):
                 'limit': str(limit)}
         return self.get_request(ampache_url, data, api_method)
 
-    def playlist_folder_create(self, folder_name, parent=None, sort_order=None):
+    def playlist_folder_create(self, folder_name, parent=None, sort_order=None, folder_type=False):
         """ playlist_folder_create
             MINIMUM_API_VERSION=8.0.0
 
@@ -2461,6 +2487,7 @@ class API(object):
             * folder_name = (string) folder name; may not contain a '/' and must be unique among its siblings
             * parent      = (string) parent folder as a UID or a name path (Default: the root) //optional
             * sort_order  = (integer) position among its siblings (Default: appended) //optional
+            * folder_type = (string) 'private', 'public' (Default: private; public requires Content Manager) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'playlist_folder_create'
@@ -2468,21 +2495,25 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'name': folder_name,
                 'parent': parent,
-                'sort_order': sort_order}
+                'sort_order': sort_order,
+                'type': folder_type}
         # 0 is the root, so only an unset parent is dropped
         if parent is None or parent is False:
             data.pop('parent')
         # 0 is a valid position, so only an unset sort_order is dropped
         if sort_order is None or sort_order is False:
             data.pop('sort_order')
+        if not folder_type:
+            data.pop('type')
         return self.get_request(ampache_url, data, api_method)
 
-    def playlist_folder_edit(self, filter_str, folder_name=False, parent=None, sort_order=None):
+    def playlist_folder_edit(self, filter_str, folder_name=False, parent=None, sort_order=None,
+                             folder_type=False, hidden=None):
         """ playlist_folder_edit
             MINIMUM_API_VERSION=8.0.0
 
-            Change a folder's name, parent or position. Anything you don't send is left as it is,
-            so send at least one of folder_name, parent or sort_order.
+            Change a folder's name, parent, position or visibility. Anything you don't send is left
+            as it is, so send at least one of folder_name, parent, sort_order, folder_type or hidden.
 
             NOTE a rename onto a name a sibling already holds, or a move into the folder's own
             subtree, is refused
@@ -2492,6 +2523,8 @@ class API(object):
             * folder_name = (string) new folder name //optional
             * parent      = (string) new parent as a UID or a name path, or 0 for the root //optional
             * sort_order  = (integer) new position among its siblings //optional
+            * folder_type = (string) 'private', 'public' (public requires Content Manager) //optional
+            * hidden      = (boolean) true to mark the folder hidden in your own root, false to unhide //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'playlist_folder_edit'
@@ -2500,7 +2533,9 @@ class API(object):
                 'filter': filter_str,
                 'name': folder_name,
                 'parent': parent,
-                'sort_order': sort_order}
+                'sort_order': sort_order,
+                'type': folder_type,
+                'hidden': hidden}
         if not folder_name:
             data.pop('name')
         # 0 moves the folder to the root, so only an unset parent is dropped
@@ -2509,6 +2544,11 @@ class API(object):
         # 0 is a valid position, so only an unset sort_order is dropped
         if sort_order is None or sort_order is False:
             data.pop('sort_order')
+        if not folder_type:
+            data.pop('type')
+        # False is a valid (unhide) value, so only an unset hidden is dropped
+        if hidden is None:
+            data.pop('hidden')
         return self.get_request(ampache_url, data, api_method)
 
     def playlist_folder_delete(self, filter_str):
@@ -2808,13 +2848,15 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def shares(self, filter_str=False,
-               exact=False, offset=0, limit=0, sort=False, cond=False):
+               exact=False, add=False, update=False, offset=0, limit=0, sort=False, cond=False):
         """ shares
             MINIMUM_API_VERSION=420000
 
             INPUTS
             * filter_str = (string) search the name of a share //optional
             * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * add        = (integer) UNIXTIME() //optional
+            * update     = (integer) UNIXTIME() //optional
             * offset     = (integer) //optional
             * limit      = (integer) //optional
             * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
@@ -2826,6 +2868,8 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
+                'add': add,
+                'update': update,
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
@@ -2834,6 +2878,10 @@ class API(object):
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not add:
+            data.pop('add')
+        if not update:
+            data.pop('update')
         if not sort:
             data.pop('sort')
         if not cond:
@@ -2981,7 +3029,7 @@ class API(object):
         return self.get_request(ampache_url, data, api_method)
 
     def catalog_add(self, cat_name, cat_path, cat_type=False, media_type=False, file_pattern=False,
-                    folder_pattern=False, username=False, password=False):
+                    folder_pattern=False, username=False, password=False, beetsdb=False):
         """ catalog_add
             MINIMUM_API_VERSION=6.0.0
 
@@ -2996,6 +3044,7 @@ class API(object):
             * folder_pattern = (string) Pattern used identify tags from the folder name. Default '%a/%A' //optional
             * username       = (string) login to remote catalog ('remote', 'subsonic', 'seafile') //optional
             * password       = (string) password to remote catalog ('remote', 'subsonic', 'seafile', 'beetsremote') //optional
+            * beetsdb        = (string) path to the Beets database file ('beets', 'beetsremote') //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'catalog_add'
@@ -3008,7 +3057,8 @@ class API(object):
                 'file_pattern': file_pattern,
                 'folder_pattern': folder_pattern,
                 'username': username,
-                'password': password}
+                'password': password,
+                'beetsdb': beetsdb}
         if not cat_type:
             data.pop('type')
         if not media_type:
@@ -3021,10 +3071,12 @@ class API(object):
             data.pop('username')
         if not password:
             data.pop('password')
+        if not beetsdb:
+            data.pop('beetsdb')
         return self.get_request(ampache_url, data, api_method)
 
     def catalog_create(self, cat_name, cat_path, cat_type=False, media_type=False, file_pattern=False,
-                       folder_pattern=False, username=False, password=False):
+                       folder_pattern=False, username=False, password=False, beetsdb=False):
         """ catalog_create
             MINIMUM_API_VERSION=8.0.0
 
@@ -3039,6 +3091,7 @@ class API(object):
             * folder_pattern = (string) Pattern used identify tags from the folder name. Default '%a/%A' //optional
             * username       = (string) login to remote catalog ('remote', 'subsonic', 'seafile') //optional
             * password       = (string) password to remote catalog ('remote', 'subsonic', 'seafile', 'beetsremote') //optional
+            * beetsdb        = (string) path to the Beets database file ('beets', 'beetsremote') //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'catalog_create'
@@ -3051,7 +3104,8 @@ class API(object):
                 'file_pattern': file_pattern,
                 'folder_pattern': folder_pattern,
                 'username': username,
-                'password': password}
+                'password': password,
+                'beetsdb': beetsdb}
         if not cat_type:
             data.pop('type')
         if not media_type:
@@ -3064,6 +3118,8 @@ class API(object):
             data.pop('username')
         if not password:
             data.pop('password')
+        if not beetsdb:
+            data.pop('beetsdb')
         return self.get_request(ampache_url, data, api_method)
 
     def catalog_delete(self, filter_id: int):
@@ -3214,14 +3270,16 @@ class API(object):
             return self.post_request(ampache_url, data, api_method,
                                      files={'upl': (filename, media_file, content_type)})
 
-    def podcasts(self, filter_str=False, include=False,
-                 exact=False, offset=0, limit=0, sort=False, cond=False):
+    def podcasts(self, filter_str=False, include=False, exact=False, add=False, update=False,
+                 offset=0, limit=0, sort=False, cond=False):
         """ podcasts
             MINIMUM_API_VERSION=420000
 
             INPUTS
             * filter_str = (string) search the name of a podcast //optional
             * exact      = (integer) 0,1, if true filter is exact rather then fuzzy //optional
+            * add        = (integer) UNIXTIME() //optional
+            * update     = (integer) UNIXTIME() //optional
             * offset     = (integer) //optional
             * limit      = (integer) //optional
             * cond       = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
@@ -3236,6 +3294,8 @@ class API(object):
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_str,
                 'exact': exact,
+                'add': add,
+                'update': update,
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
@@ -3245,6 +3305,10 @@ class API(object):
             data.pop('filter')
         if not exact:
             data.pop('exact')
+        if not add:
+            data.pop('add')
+        if not update:
+            data.pop('update')
         if not include:
             data.pop('include')
         if not sort:
@@ -3476,23 +3540,30 @@ class API(object):
                 'filter': filter_str}
         return self.get_request(ampache_url, data, api_method)
 
-    def search(self, rules, operator='and', object_type='song', offset=0, limit=0, random=0):
+    def search(self, rules, operator='and', object_type='song', offset=0, limit=0, random=0,
+              group_operators=None):
         """ search
             MINIMUM_API_VERSION=380001
 
-            Perform an advanced search given passed rules
+            Perform an advanced search given passed rules (alias of advanced_search)
             the rules can occur multiple times and are joined by the operator item.
+
+            A rule may optionally carry a 4th item (the metadata subtype, only used when
+            rule_1 is 'metadata') and/or a 5th item: an int group id. Rules sharing a group id
+            are combined under that group's own operator (group_operators[id]) instead of the
+            top-level operator -- exactly two levels, a group id cannot nest another group.
 
             Refer to the wiki for further information
             https://ampache.org/api/api-advanced-search
 
             INPUTS
-            * rules       = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
-            * operator    = (string) 'and'|'or' (whether to match one rule or all) //optional
-            * object_type = (string)  //optional
-            * offset      = (integer) //optional
-            * limit       = (integer) //optional
-            * random      = (integer) 0|1' //optional
+            * rules           = (array) = [[rule_1,rule_1_operator,rule_1_input],[rule_2,rule_2_operator,rule_2_input],[etc]]
+            * operator        = (string) 'and'|'or' (whether to match one rule or all) //optional
+            * object_type     = (string)  //optional
+            * offset          = (integer) //optional
+            * limit           = (integer) //optional
+            * random          = (integer) 0|1' //optional
+            * group_operators = (dict) {group_id: 'and'|'or'} for each group id used in rules //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'search'
@@ -3513,6 +3584,12 @@ class API(object):
             data['rule_' + str(count) + '_input'] = item[2]
             if item[0] == 'metadata':
                 data['rule_' + str(count) + '_subtype'] = item[3]
+            # group id may legitimately be 0, so check identity rather than truthiness
+            if len(item) > 4 and item[4] is not None:
+                data['rule_' + str(count) + '_group'] = item[4]
+        if group_operators:
+            for group_id, group_operator in group_operators.items():
+                data['group_' + str(group_id) + '_operator'] = group_operator
         return self.get_request(ampache_url, data, api_method)
 
     def search_group(self, rules,
@@ -3865,16 +3942,22 @@ class API(object):
                 'limit': str(limit)}
         return self.get_request(ampache_url, data, api_method)
 
-    def now_playing(self):
+    def now_playing(self, offset=0, limit=0):
         """  now_playing
              MINIMUM_API_VERSION=6.3.1
 
              Get what is currently being played by all users.
+
+             INPUTS
+             * offset = (integer) //optional
+             * limit  = (integer) //optional
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'now_playing'
         data = {'action': api_method,
-                'auth': self.AMPACHE_SESSION}
+                'auth': self.AMPACHE_SESSION,
+                'offset': str(offset),
+                'limit': str(limit)}
         return self.get_request(ampache_url, data, api_method)
 
     def rate(self, object_type, object_id, rating):
@@ -4940,7 +5023,7 @@ class API(object):
                 'filter': filter_id}
         return self.get_request(ampache_url, data, api_method)
 
-    def label_artists(self, filter_id: int, offset=0, limit=0, sort=False, cond=False):
+    def label_artists(self, filter_id: int, include=False, offset=0, limit=0, sort=False, cond=False):
         """ label_artists
             MINIMUM_API_VERSION=420000
 
@@ -4948,6 +5031,7 @@ class API(object):
 
             INPUTS
             * filter_id = (integer) $label_id
+            * include   = (string) 'albums', 'songs' //optional
             * offset    = (integer) //optional
             * limit     = (integer) //optional
             * cond      = (string) Filter the browse using ';' separated comma string pairs (e.g. 'filter1,value1;filter2,value2') //optional
@@ -4955,13 +5039,18 @@ class API(object):
         """
         ampache_url = self.AMPACHE_URL + '/server/' + self.AMPACHE_API + '.server.php'
         api_method = 'label_artists'
+        if bool(include) and not isinstance(include, str):
+            include = 'albums,songs'
         data = {'action': api_method,
                 'auth': self.AMPACHE_SESSION,
                 'filter': filter_id,
+                'include': include,
                 'offset': str(offset),
                 'limit': str(limit),
                 'sort': sort,
                 'cond': cond}
+        if not include:
+            data.pop('include')
         if not sort:
             data.pop('sort')
         if not cond:
@@ -5397,13 +5486,25 @@ class API(object):
                     params["ampache_api"] = self.AMPACHE_KEY
                 if not "ampache_user" in params:
                     params["ampache_user"] = self.AMPACHE_USER
+                if not "client" in params:
+                    params["client"] = CLIENT_NAME
+                if not "geo_latitude" in params:
+                    params["geo_latitude"] = False
+                if not "geo_longitude" in params:
+                    params["geo_longitude"] = False
+                if not "geo_name" in params:
+                    params["geo_name"] = False
                 if "timestamp" in params and not params["timestamp"] == 0:
                     return self.handshake(params["ampache_url"],
                                           self.encrypt_password(params["ampache_api"], int(params["timestamp"])),
-                                          params["ampache_user"], int(params["timestamp"]), params["version"])
+                                          params["ampache_user"], int(params["timestamp"]), params["version"],
+                                          params["client"], params["geo_latitude"], params["geo_longitude"],
+                                          params["geo_name"])
                 return self.handshake(params["ampache_url"],
                                       self.encrypt_string(params["ampache_api"], params["ampache_user"]),
-                                      False, False, params["version"])
+                                      False, False, params["version"],
+                                      params["client"], params["geo_latitude"], params["geo_longitude"],
+                                      params["geo_name"])
             case 'goodbye':
                 return self.goodbye()
             case 'lost_password':
@@ -5452,8 +5553,11 @@ class API(object):
                     params["limit"] = 0
                 if not "random" in params:
                     params["random"] = 0
+                if not "group_operators" in params:
+                    params["group_operators"] = None
                 return self.advanced_search(params["rules"], params["operator"], params["object_type"],
-                                            params["offset"], params["limit"], params["random"])
+                                            params["offset"], params["limit"], params["random"],
+                                            params["group_operators"])
             case 'search':
                 if not "rules" in params:
                     params["rules"] = list()
@@ -5467,8 +5571,10 @@ class API(object):
                     params["limit"] = 0
                 if not "random" in params:
                     params["random"] = 0
+                if not "group_operators" in params:
+                    params["group_operators"] = None
                 return self.search(params["rules"], params["operator"], params["object_type"], params["offset"],
-                                   params["limit"], params["random"])
+                                   params["limit"], params["random"], params["group_operators"])
             case 'search_group':
                 if not "rules" in params:
                     params["rules"] = list()
@@ -5679,9 +5785,11 @@ class API(object):
                     params["username"] = False
                 if not "password" in params:
                     params["password"] = False
+                if not "beetsdb" in params:
+                    params["beetsdb"] = False
                 return self.catalog_add(params["cat_name"], params["cat_path"], params["cat_type"],
                                         params["media_type"], params["file_pattern"], params["folder_pattern"],
-                                        params["username"], params["password"])
+                                        params["username"], params["password"], params["beetsdb"])
             case 'catalog_create':
                 if not "cat_type" in params:
                     params["cat_type"] = False
@@ -5695,9 +5803,11 @@ class API(object):
                     params["username"] = False
                 if not "password" in params:
                     params["password"] = False
+                if not "beetsdb" in params:
+                    params["beetsdb"] = False
                 return self.catalog_create(params["cat_name"], params["cat_path"], params["cat_type"],
                                            params["media_type"], params["file_pattern"], params["folder_pattern"],
-                                           params["username"], params["password"])
+                                           params["username"], params["password"], params["beetsdb"])
             case 'catalog_delete':
                 if not "filter_id" in params:
                     return False
@@ -5972,7 +6082,7 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.label_artists(filter_id=params["filter_id"], sort=params["sort"], cond=params["cond"], offset=params.get("offset", 0), limit=params.get("limit", 0))
+                return self.label_artists(filter_id=params["filter_id"], include=params.get("include", False), sort=params["sort"], cond=params["cond"], offset=params.get("offset", 0), limit=params.get("limit", 0))
             case 'labels':
                 if not "filter_str" in params:
                     params["filter_str"] = False
@@ -6095,7 +6205,7 @@ class API(object):
             case 'localplay_songs':
                 return self.localplay_songs()
             case 'now_playing':
-                return self.now_playing()
+                return self.now_playing(offset=params.get("offset", 0), limit=params.get("limit", 0))
             case 'player':
                 if not "object_type" in params:
                     params["object_type"] = 'song'
@@ -6169,8 +6279,10 @@ class API(object):
                     params["items"] = False
                 if not "tracks" in params:
                     params["tracks"] = False
+                if not "sort" in params:
+                    params["sort"] = False
                 return self.playlist_edit(params["filter_id"], params["playlist_name"], params["playlist_type"],
-                                          params["owner"], params["items"], params["tracks"])
+                                          params["owner"], params["items"], params["tracks"], params["sort"])
             case 'playlist_generate':
                 if not "mode" in params:
                     params["mode"] = 'random'
@@ -6209,7 +6321,10 @@ class API(object):
                     params["song_id"] = False
                 if not "track" in params:
                     params["track"] = False
-                return self.playlist_remove_song(params["filter_id"])
+                if not "clear" in params:
+                    params["clear"] = False
+                return self.playlist_remove_song(params["filter_id"], params["song_id"], params["track"],
+                                                 params["clear"])
             case 'playlist_folders':
                 if not "offset" in params:
                     params["offset"] = 0
@@ -6235,7 +6350,10 @@ class API(object):
                     params["parent"] = None
                 if not "sort_order" in params:
                     params["sort_order"] = None
-                return self.playlist_folder_create(params["folder_name"], params["parent"], params["sort_order"])
+                if not "folder_type" in params:
+                    params["folder_type"] = False
+                return self.playlist_folder_create(params["folder_name"], params["parent"], params["sort_order"],
+                                                   params["folder_type"])
             case 'playlist_folder_edit':
                 if not "filter_str" in params:
                     return False
@@ -6245,8 +6363,13 @@ class API(object):
                     params["parent"] = None
                 if not "sort_order" in params:
                     params["sort_order"] = None
+                if not "folder_type" in params:
+                    params["folder_type"] = False
+                if not "hidden" in params:
+                    params["hidden"] = None
                 return self.playlist_folder_edit(params["filter_str"], params["folder_name"],
-                                                 params["parent"], params["sort_order"])
+                                                 params["parent"], params["sort_order"], params["folder_type"],
+                                                 params["hidden"])
             case 'playlist_folder_delete':
                 if not "filter_str" in params:
                     return False
@@ -6325,8 +6448,9 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.podcasts(filter_str=params["filter_id"], exact=params["exact"], offset=params["offset"], limit=params["limit"],
-                                     sort=params["sort"], cond=params["cond"], include=params.get("include", False))
+                return self.podcasts(filter_str=params.get("filter_str", False), exact=params["exact"], offset=params["offset"], limit=params["limit"],
+                                     sort=params["sort"], cond=params["cond"], include=params.get("include", False),
+                                     add=params.get("add", False), update=params.get("update", False))
             case 'preference_create':
                 if not "default" in params:
                     params["default"] = False
@@ -6432,8 +6556,10 @@ class API(object):
                     params["sort"] = False
                 if not "cond" in params:
                     params["cond"] = False
-                return self.shares(params["filter_str"], params["exact"], params["offset"], params["limit"],
-                                   params["sort"], params["cond"])
+                return self.shares(filter_str=params["filter_str"], exact=params["exact"],
+                                   add=params.get("add", False), update=params.get("update", False),
+                                   offset=params["offset"], limit=params["limit"],
+                                   sort=params["sort"], cond=params["cond"])
             case 'smartlists':
                 if not "filter_str" in params:
                     params["filter_str"] = False
