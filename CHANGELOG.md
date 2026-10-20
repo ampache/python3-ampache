@@ -1,3 +1,27 @@
+# python3-ampache 8.3.0
+
+### Changed
+
+Synced request parameters with the current server API spec:
+
+- `handshake()` gained `client`, `geo_latitude`, `geo_longitude`, `geo_name`
+- `catalog_add()`, `catalog_create()` gained `beetsdb` (for `type='beets'`/`'beetsremote'`)
+- `label_artists()` gained `include` ('albums', 'songs')
+- `now_playing()` gained `offset`, `limit`
+- `playlist_edit()` gained `sort`
+- `playlist_folder_create()` gained `folder_type`
+- `playlist_folder_edit()` gained `folder_type`, `hidden`
+- `playlist_remove_song()` gained `clear`
+- `podcasts()`, `shares()` gained `add`, `update` timestamp filters
+- `search()` gained rule grouping (`rule_N_group`/`group_operators`), matching `advanced_search()`
+
+### Fixed
+
+- `execute()` dispatcher for `playlist_remove_song` was dropping `song_id`, `track` (and now `clear`)
+- `execute()` dispatcher for `podcasts` read a non-existent `filter_id` param instead of `filter_str`
+
+---
+
 # python3-ampache 8.2.0
 
 ### Added
