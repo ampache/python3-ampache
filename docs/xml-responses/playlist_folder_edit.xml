@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <total_count>1</total_count>
-  <md5>adcb9b75260590ff6058773ddcb9ddd6</md5>
-  <playlist_folder id="4">
-    <name><![CDATA[Example Folder (edited)]]></name>
-    <parent>0</parent>
+  <md5>bad9df8a7c3fa92d28999d03f4ccb29e</md5>
+  <playlist_folder id="18">
+    <name><![CDATA[child_xml_edit]]></name>
+    <parent>17</parent>
     <sort_order>1</sort_order>
-    <items>1</items>
+    <type>private</type>
+    <hidden>0</hidden>
+    <items>0</items>
   </playlist_folder>
 </root>

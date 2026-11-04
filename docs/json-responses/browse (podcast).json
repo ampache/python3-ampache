@@ -1,28 +1,34 @@
 {
-    "total_count": 3,
-    "md5": "8467c1b7b44644e447396e82f11cc16b",
+    "total_count": 10,
+    "md5": "42630436a85d19a3a9fd56c3865b2579",
     "catalog_id": "3",
-    "parent_id": "2",
+    "parent_id": "1",
     "parent_type": "podcast",
     "child_type": "podcast_episode",
     "browse": [
         {
-            "id": "22",
-            "name": "What Do an Army of Ants and an Online Encyclopedia Have in Common?",
+            "id": "82745",
+            "name": "Ebola surge, AI math shocker and daylight saving time",
             "prefix": null,
-            "basename": "What Do an Army of Ants and an Online Encyclopedia Have in Common?"
+            "basename": "Ebola surge, AI math shocker and daylight saving time"
         },
         {
-            "id": "23",
-            "name": "I Laughed So Hard I Cried",
+            "id": "82753",
+            "name": "Cover Story: Escaping the Infinite Scroll",
             "prefix": null,
-            "basename": "I Laughed So Hard I Cried"
+            "basename": "Cover Story: Escaping the Infinite Scroll"
         },
         {
-            "id": "24",
-            "name": "Coming Soon",
+            "id": "82752",
+            "name": "Slime molds, Pompeii and alien consciousness with Annalee Newitz",
             "prefix": null,
-            "basename": "Coming Soon"
+            "basename": "Slime molds, Pompeii and alien consciousness with Annalee Newitz"
+        },
+        {
+            "id": "82751",
+            "name": "Why your brain hates uncertainty",
+            "prefix": null,
+            "basename": "Why your brain hates uncertainty"
         }
     ]
 }

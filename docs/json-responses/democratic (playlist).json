@@ -274,6 +274,41 @@
             "averagerating": null,
             "playcount": 0,
             "vote": 1
+        },
+        {
+            "id": "59",
+            "title": "YellowSmoke",
+            "artist": {
+                "id": "2",
+                "name": "Synthetic",
+                "prefix": "",
+                "basename": "Synthetic"
+            },
+            "album": {
+                "id": "2",
+                "name": "Colorsmoke EP",
+                "prefix": null,
+                "basename": "Colorsmoke EP"
+            },
+            "genre": [
+                {
+                    "id": "1",
+                    "name": "Electronic"
+                }
+            ],
+            "track": 2,
+            "time": 290,
+            "format": "mp3",
+            "bitrate": 64000,
+            "mime": "audio\/mpeg",
+            "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=59&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Synthetic%20-%20YellowSmoke.mp3",
+            "size": 2325568,
+            "art": "https:\/\/music.com.au\/image.php?object_id=2&object_type=album&id=84&name=art.png",
+            "has_art": true,
+            "rating": 5,
+            "averagerating": null,
+            "playcount": 1,
+            "vote": 1
         }
     ]
 }

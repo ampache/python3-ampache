@@ -1,8 +1,14 @@
 {
-    "error": {
-        "errorCode": "4710",
-        "errorAction": "player",
-        "errorType": "system",
-        "errorMessage": "Bad Request: filter"
-    }
+    "now_playing": [
+        {
+            "id": "99",
+            "type": "song",
+            "client": "",
+            "expire": 1793762470,
+            "user": {
+                "id": "4",
+                "username": "user"
+            }
+        }
+    ]
 }

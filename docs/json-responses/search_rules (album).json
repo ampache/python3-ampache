@@ -364,6 +364,66 @@
             "title": "Play History"
         },
         {
+            "name": "last_play_song",
+            "label": "My Last Play (Song)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_skip_song",
+            "label": "My Last Skip (Song)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_play_or_skip_song",
+            "label": "My Last Play or Skip (Song)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_play_artist",
+            "label": "My Last Play (Artist)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_skip_artist",
+            "label": "My Last Skip (Artist)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_play_or_skip_artist",
+            "label": "My Last Play or Skip (Artist)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
             "name": "played",
             "label": "Played",
             "type": "boolean",
@@ -436,6 +496,16 @@
         {
             "name": "genre",
             "label": "Genre",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Genre"
+        },
+        {
+            "name": "mood",
+            "label": "Mood",
             "type": "text",
             "widget": [
                 "input",
@@ -588,6 +658,16 @@
             "title": "File Data"
         },
         {
+            "name": "enabled",
+            "label": "Enabled",
+            "type": "boolean",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "File Data"
+        },
+        {
             "name": "image_width",
             "label": "Image Width",
             "type": "numeric",
@@ -620,6 +700,16 @@
         {
             "name": "days_added",
             "label": "Added",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "days_updated",
+            "label": "Updated",
             "type": "days",
             "widget": [
                 "input",

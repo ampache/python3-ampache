@@ -1,6 +1,6 @@
 {
     "playlist_folder": {
-        "id": "1",
+        "id": "15",
         "name": "folder_json",
         "parent": "0",
         "sort_order": 1,
@@ -10,16 +10,16 @@
                 "sort_order": 2,
                 "object_type": "playlist",
                 "playlist": {
-                    "id": "1",
-                    "name": "Example Playlist",
-                    "owner": "admin",
+                    "id": "65",
+                    "name": "Nofi",
+                    "owner": "user",
                     "user": {
-                        "id": "1",
-                        "username": "admin"
+                        "id": "4",
+                        "username": "user"
                     },
-                    "items": 0,
-                    "type": "private",
-                    "art": "https://music.com.au/client/images/blankalbum.png",
+                    "items": 11,
+                    "type": "public",
+                    "art": "https://music.com.au/images/blankalbum.png",
                     "has_access": true,
                     "has_collaborate": true,
                     "has_art": false,
@@ -27,9 +27,9 @@
                     "rating": null,
                     "averagerating": null,
                     "md5": null,
-                    "last_update": 1789095809,
-                    "time": 0,
-                    "playlist_folder_id": "1",
+                    "last_update": 1751265759,
+                    "time": 4423,
+                    "playlist_folder_id": "15",
                     "playlist_folder_sort_order": 2
                 }
             }

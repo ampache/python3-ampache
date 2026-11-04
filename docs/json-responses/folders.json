@@ -1,5 +1,66 @@
 {
-    "total_count": 0,
-    "md5": "40cd750bba9870f18aada2478b24840a",
-    "folder": []
+    "total_count": 4,
+    "md5": "9a23d4b46692af86b5960815097e1260",
+    "folder": {
+        "id": "-1",
+        "title": "Home",
+        "parent": null,
+        "path": "\/",
+        "catalog": "0",
+        "time": 0,
+        "items": [
+            {
+                "id": "1",
+                "object_type": "folder",
+                "title": "music",
+                "parent": "-1",
+                "path": "\/mnt\/files-music\/ampache-test\/music",
+                "time": 20702,
+                "art": "https:\/\/music.com.au\/images\/blankfolder.png",
+                "has_art": false,
+                "play_url": "",
+                "rating": null,
+                "averagerating": null
+            },
+            {
+                "id": "23",
+                "object_type": "folder",
+                "title": "podcast",
+                "parent": "-1",
+                "path": "\/mnt\/files-music\/ampache-test\/podcast",
+                "time": 3996,
+                "art": "https:\/\/music.com.au\/images\/blankfolder.png",
+                "has_art": false,
+                "play_url": "",
+                "rating": null,
+                "averagerating": null
+            },
+            {
+                "id": "19",
+                "object_type": "folder",
+                "title": "upload",
+                "parent": "-1",
+                "path": "\/mnt\/files-music\/ampache-test\/upload",
+                "time": 4248,
+                "art": "https:\/\/music.com.au\/images\/blankfolder.png",
+                "has_art": false,
+                "play_url": "",
+                "rating": null,
+                "averagerating": null
+            },
+            {
+                "id": "26",
+                "object_type": "folder",
+                "title": "video",
+                "parent": "-1",
+                "path": "\/mnt\/files-music\/ampache-test\/video",
+                "time": 225,
+                "art": "https:\/\/music.com.au\/images\/blankfolder.png",
+                "has_art": false,
+                "play_url": "",
+                "rating": null,
+                "averagerating": null
+            }
+        ]
+    }
 }

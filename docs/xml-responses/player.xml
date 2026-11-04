@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4710">
-    <errorAction><![CDATA[player]]></errorAction>
-    <errorType><![CDATA[system]]></errorType>
-    <errorMessage><![CDATA[Bad Request: filter]]></errorMessage>
-  </error>
+  <now_playing id="99">
+    <type><![CDATA[song]]></type>
+    <client><![CDATA[]]></client>
+    <expire>1793762496</expire>
+    <user id="4">
+      <username><![CDATA[user]]></username>
+    </user>
+  </now_playing>
 </root>

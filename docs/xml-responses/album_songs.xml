@@ -1,8 +1,241 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[album_songs]]></errorAction>
-    <errorType><![CDATA[filter]]></errorType>
-    <errorMessage><![CDATA[Not Found: 12]]></errorMessage>
-  </error>
+  <total_count>75</total_count>
+  <md5>ca1afdbb4c39a4b6f37a3d7fcc39d88c</md5>
+  <song id="106">
+    <name><![CDATA[Malkuth - Intro]]></name>
+    <title><![CDATA[Malkuth - Intro]]></title>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </artist>
+    <album id="10">
+      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+    </album>
+    <albumartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <bpm>160</bpm>
+    <track>1</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/01Intro.ogg]]></filename>
+    <playlisttrack>1</playlisttrack>
+    <time>91</time>
+    <year>1996</year>
+    <format>ogg</format>
+    <stream_format>mp3</stream_format>
+    <bitrate>81137</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[application/ogg]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=106&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20Malkuth%20-%20Intro.mp3]]></url>
+    <size>932235</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=419&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <playcount>1</playcount>
+    <last_played><![CDATA[2021-02-24T05:43:54+00:00]]></last_played>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels>2</channels>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[archive.org]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>1.98</replaygain_track_gain>
+    <replaygain_track_peak>0.861</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="100">
+    <name><![CDATA[The Prophecies Of The Horned One]]></name>
+    <title><![CDATA[The Prophecies Of The Horned One]]></title>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </artist>
+    <album id="10">
+      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+    </album>
+    <albumartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <bpm>114</bpm>
+    <track>2</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/02ThePropheciesOfTheHornedOne.ogg]]></filename>
+    <playlisttrack>2</playlisttrack>
+    <time>378</time>
+    <year>1996</year>
+    <format>ogg</format>
+    <stream_format>mp3</stream_format>
+    <bitrate>90078</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[application/ogg]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3]]></url>
+    <size>4271173</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=419&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <last_played><![CDATA[]]></last_played>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels>2</channels>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[archive.org]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>-10.51</replaygain_track_gain>
+    <replaygain_track_peak>1</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="98">
+    <name><![CDATA[In The Seven Woods]]></name>
+    <title><![CDATA[In The Seven Woods]]></title>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </artist>
+    <album id="10">
+      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+    </album>
+    <albumartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <bpm>71</bpm>
+    <track>3</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/03InTheSevenWoods.ogg]]></filename>
+    <playlisttrack>3</playlisttrack>
+    <time>420</time>
+    <year>1996</year>
+    <format>ogg</format>
+    <stream_format>mp3</stream_format>
+    <bitrate>84528</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[application/ogg]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3]]></url>
+    <size>4449963</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=419&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <playcount>0</playcount>
+    <last_played><![CDATA[]]></last_played>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels>2</channels>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[archive.org]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>-9.7</replaygain_track_gain>
+    <replaygain_track_peak>1</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
+  <song id="104">
+    <name><![CDATA[The Infernal Serpent]]></name>
+    <title><![CDATA[The Infernal Serpent]]></title>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </artist>
+    <album id="10">
+      <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+    </album>
+    <albumartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </albumartist>
+    <disk><![CDATA[1]]></disk>
+    <disksubtitle><![CDATA[]]></disksubtitle>
+    <bpm>101</bpm>
+    <track>4</track>
+    <filename><![CDATA[/mnt/files-music/ampache-test/music/Carnún/Malkuth (Demo1996)/04TheInfernalSerpent.ogg]]></filename>
+    <playlisttrack>4</playlisttrack>
+    <time>404</time>
+    <year>1996</year>
+    <format>ogg</format>
+    <stream_format>mp3</stream_format>
+    <bitrate>100174</bitrate>
+    <stream_bitrate>32000</stream_bitrate>
+    <rate>44100</rate>
+    <mode><![CDATA[vbr]]></mode>
+    <mime><![CDATA[application/ogg]]></mime>
+    <stream_mime><![CDATA[audio/mpeg]]></stream_mime>
+    <url><![CDATA[https://music.com.au/play/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=104&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Infernal%20Serpent.mp3]]></url>
+    <size>5072883</size>
+    <mbid><![CDATA[]]></mbid>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=419&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating>5</rating>
+    <averagerating>4.5</averagerating>
+    <playcount>1</playcount>
+    <last_played><![CDATA[2025-07-01T03:19:18+00:00]]></last_played>
+    <catalog>1</catalog>
+    <composer><![CDATA[]]></composer>
+    <channels>2</channels>
+    <comment><![CDATA[Visit http://irish-metal.bandcamp.com;http://archive.org/details/Carnn_-_Malkuth_Demo1996]]></comment>
+    <license><![CDATA[]]></license>
+    <publisher><![CDATA[archive.org]]></publisher>
+    <language/>
+    <lyrics><![CDATA[]]></lyrics>
+    <replaygain_album_gain/>
+    <replaygain_album_peak/>
+    <replaygain_track_gain>-11.26</replaygain_track_gain>
+    <replaygain_track_peak>1</replaygain_track_peak>
+    <r128_album_gain/>
+    <r128_track_gain/>
+  </song>
 </root>

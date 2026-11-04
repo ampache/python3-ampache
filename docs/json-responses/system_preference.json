@@ -1,8 +1,11 @@
 {
-    "error": {
-        "errorCode": "4704",
-        "errorAction": "system_preference",
-        "errorType": "filter",
-        "errorMessage": "Not Found: ajax_load"
-    }
+    "id": "176",
+    "name": "api_enable_6",
+    "level": 25,
+    "description": "Allow Ampache API6 responses",
+    "value": "1",
+    "type": "boolean",
+    "category": "options",
+    "subcategory": "api",
+    "has_access": true
 }

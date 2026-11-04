@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[browse]]></errorAction>
-    <errorType><![CDATA[filter]]></errorType>
-    <errorMessage><![CDATA[Not Found: 12]]></errorMessage>
-  </error>
+  <total_count>9</total_count>
+  <md5>1a2d3ef88c622199c3b1daaaa3b85065</md5>
+  <catalog_id>1</catalog_id>
+  <parent_id>10</parent_id>
+  <parent_type>album</parent_type>
+  <child_type>song</child_type>
+  <browse id="98">
+    <name><![CDATA[In The Seven Woods]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[In The Seven Woods]]></basename>
+  </browse>
+  <browse id="99">
+    <name><![CDATA[The Prophecies Of The Horned One (Instrumental Re-Recording)]]></name>
+    <prefix><![CDATA[The]]></prefix>
+    <basename><![CDATA[Prophecies Of The Horned One (Instrumental Re-Recording)]]></basename>
+  </browse>
+  <browse id="100">
+    <name><![CDATA[The Prophecies Of The Horned One]]></name>
+    <prefix><![CDATA[The]]></prefix>
+    <basename><![CDATA[Prophecies Of The Horned One]]></basename>
+  </browse>
+  <browse id="101">
+    <name><![CDATA[Rehearsal Tape (1996)]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Rehearsal Tape (1996)]]></basename>
+  </browse>
 </root>

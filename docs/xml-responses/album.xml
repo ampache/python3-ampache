@@ -1,8 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[album]]></errorAction>
-    <errorType><![CDATA[filter]]></errorType>
-    <errorMessage><![CDATA[Not Found: 12]]></errorMessage>
-  </error>
+  <total_count>9</total_count>
+  <md5>c8bde69a9f79ca24059e3807f9a3bcf8</md5>
+  <album id="10">
+    <name><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[CARNÚN - MALKUTH (Demo 1996)]]></basename>
+    <artist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </artist>
+    <songartist id="16">
+      <name><![CDATA[CARNÚN]]></name>
+      <prefix><![CDATA[]]></prefix>
+      <basename><![CDATA[CARNÚN]]></basename>
+    </songartist>
+    <time>3873</time>
+    <year>1996</year>
+    <tracks/>
+    <songcount>9</songcount>
+    <diskcount>1</diskcount>
+    <type/>
+    <art><![CDATA[https://music.com.au/image.php?object_id=10&object_type=album&id=419&name=art.jpg]]></art>
+    <has_art>1</has_art>
+    <flag>0</flag>
+    <rating/>
+    <averagerating/>
+    <mbid><![CDATA[]]></mbid>
+    <mbid_group><![CDATA[]]></mbid_group>
+    <catalog>1</catalog>
+  </album>
 </root>

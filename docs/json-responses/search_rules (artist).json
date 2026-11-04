@@ -314,6 +314,66 @@
             "title": "Play History"
         },
         {
+            "name": "last_play_song",
+            "label": "My Last Play (Song)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_skip_song",
+            "label": "My Last Skip (Song)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_play_or_skip_song",
+            "label": "My Last Play or Skip (Song)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_play_album",
+            "label": "My Last Play (Album)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_skip_album",
+            "label": "My Last Skip (Album)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_play_or_skip_album",
+            "label": "My Last Play or Skip (Album)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
             "name": "played",
             "label": "Played",
             "type": "boolean",
@@ -376,6 +436,16 @@
         {
             "name": "genre",
             "label": "Genre",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Genre"
+        },
+        {
+            "name": "mood",
+            "label": "Mood",
             "type": "text",
             "widget": [
                 "input",
@@ -471,6 +541,16 @@
         {
             "name": "has_image",
             "label": "Local Image",
+            "type": "boolean",
+            "widget": [
+                "input",
+                "hidden"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "enabled",
+            "label": "Enabled",
             "type": "boolean",
             "widget": [
                 "input",

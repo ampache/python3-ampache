@@ -8,90 +8,102 @@
         "contents": [
             {
                 "sort_order": 0,
-                "object_type": "collection",
-                "collection": {
-                    "id": "1",
-                    "name": "mixed collection",
-                    "owner": "user",
+                "object_type": "playlist",
+                "playlist": {
+                    "id": "2",
+                    "name": "random - admin - public (admin)",
+                    "owner": "admin",
+                    "user": {
+                        "id": "2",
+                        "username": "admin"
+                    },
+                    "items": 43,
                     "type": "public",
-                    "object_type": null,
-                    "items": 103,
-                    "has_art": true
+                    "art": "https://music.com.au/images/blankalbum.png",
+                    "has_access": true,
+                    "has_collaborate": true,
+                    "has_art": false,
+                    "flag": true,
+                    "rating": null,
+                    "averagerating": null,
+                    "md5": null,
+                    "last_update": 1614054896,
+                    "time": 17786
                 }
             },
             {
                 "sort_order": 0,
                 "object_type": "playlist",
                 "playlist": {
-                    "id": "1",
-                    "name": "some guys playlist",
+                    "id": "3",
+                    "name": "random - admin - private (admin)",
+                    "owner": "admin",
+                    "user": {
+                        "id": "2",
+                        "username": "admin"
+                    },
+                    "items": 43,
+                    "type": "private",
+                    "art": "https://music.com.au/images/blankalbum.png",
+                    "has_access": true,
+                    "has_collaborate": true,
+                    "has_art": false,
+                    "flag": false,
+                    "rating": null,
+                    "averagerating": null,
+                    "md5": null,
+                    "last_update": 1614054938,
+                    "time": 17875
+                }
+            },
+            {
+                "sort_order": 0,
+                "object_type": "playlist",
+                "playlist": {
+                    "id": "4",
+                    "name": "random - user - private",
                     "owner": "user",
                     "user": {
-                        "id": "1",
+                        "id": "4",
                         "username": "user"
                     },
-                    "items": 25,
-                    "type": "public",
-                    "art": "music.com.au/image.php?object_id=1&object_type=playlist&id=877&name=art.jpg",
+                    "items": 43,
+                    "type": "private",
+                    "art": "https://music.com.au/images/blankalbum.png",
                     "has_access": true,
                     "has_collaborate": true,
-                    "has_art": true,
-                    "flag": true,
-                    "rating": 5,
-                    "averagerating": 4,
-                    "md5": null,
-                    "last_update": 1623920450,
-                    "time": 5802
-                }
-            },
-            {
-                "sort_order": 0,
-                "object_type": "playlist",
-                "playlist": {
-                    "id": "113",
-                    "name": "my playlist is good (generic)",
-                    "owner": "generic",
-                    "user": {
-                        "id": "2",
-                        "username": "generic"
-                    },
-                    "items": 7,
-                    "type": "public",
-                    "art": "music.com.au/image.php?object_id=113&object_type=playlist&id=862&name=art.jpg",
-                    "has_access": true,
-                    "has_collaborate": true,
-                    "has_art": true,
+                    "has_art": false,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "md5": null,
-                    "last_update": 1622758760,
-                    "time": 2057
+                    "last_update": 1614054938,
+                    "time": 17875
                 }
             },
             {
                 "sort_order": 0,
-                "object_type": "playlist",
-                "playlist": {
-                    "id": "114",
-                    "name": "my second nice playlist (generic)",
-                    "owner": "generic",
+                "object_type": "smartlist",
+                "smartlist": {
+                    "id": "smart_5",
+                    "name": "Artist 5* (System)",
+                    "owner": "System",
                     "user": {
-                        "id": "2",
-                        "username": "generic"
+                        "id": "-1",
+                        "username": "System"
                     },
-                    "items": 16,
+                    "items": 0,
                     "type": "public",
-                    "art": "music.com.au/image.php?object_id=114&object_type=playlist&id=847&name=art.jpg",
+                    "art": "https://music.com.au/images/blankalbum.png",
                     "has_access": true,
                     "has_collaborate": true,
-                    "has_art": true,
+                    "has_art": false,
                     "flag": false,
                     "rating": null,
                     "averagerating": null,
                     "md5": null,
-                    "last_update": 1622759167,
-                    "time": 3132
+                    "last_update": 0,
+                    "time": 0
                 }
             }
         ]

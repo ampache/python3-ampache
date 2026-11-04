@@ -34,17 +34,6 @@
             "has_access": true
         },
         {
-            "id": "101",
-            "name": "stream_beautiful_url",
-            "level": 100,
-            "description": "Enable URL Rewriting",
-            "value": "1",
-            "type": "boolean",
-            "category": "streaming",
-            "subcategory": null,
-            "has_access": true
-        },
-        {
             "id": "24",
             "name": "force_http_play",
             "level": 100,
@@ -170,6 +159,17 @@
             "has_access": true
         },
         {
+            "id": "242",
+            "name": "show_composer",
+            "level": 25,
+            "description": "Show Composer column on playlist media rows",
+            "value": "0",
+            "type": "boolean",
+            "category": "playlist",
+            "subcategory": null,
+            "has_access": true
+        },
+        {
             "id": "111",
             "name": "show_donate",
             "level": 25,
@@ -189,17 +189,6 @@
             "type": "boolean",
             "category": "playlist",
             "subcategory": null,
-            "has_access": true
-        },
-        {
-            "id": "240",
-            "name": "temp_pref_json",
-            "level": 100,
-            "description": "",
-            "value": "0",
-            "type": "boolean",
-            "category": "interface",
-            "subcategory": "",
             "has_access": true
         },
         {
@@ -283,7 +272,8 @@
                 3,
                 4,
                 5,
-                6
+                6,
+                8
             ]
         },
         {
@@ -375,10 +365,43 @@
             "has_access": true
         },
         {
+            "id": "252",
+            "name": "quickconnect_enable",
+            "level": 100,
+            "description": "Enable QuickConnect service",
+            "value": "0",
+            "type": "boolean",
+            "category": "system",
+            "subcategory": "backend",
+            "has_access": true
+        },
+        {
+            "id": "101",
+            "name": "stream_beautiful_url",
+            "level": 100,
+            "description": "Enable URL Rewriting",
+            "value": "1",
+            "type": "boolean",
+            "category": "system",
+            "subcategory": "backend",
+            "has_access": true
+        },
+        {
             "id": "118",
             "name": "daap_backend",
             "level": 100,
             "description": "Use DAAP backend",
+            "value": "0",
+            "type": "boolean",
+            "category": "system",
+            "subcategory": "backend",
+            "has_access": true
+        },
+        {
+            "id": "251",
+            "name": "jellyfin_backend_enable",
+            "level": 100,
+            "description": "Use Jellyfin backend",
             "value": "0",
             "type": "boolean",
             "category": "system",
@@ -419,6 +442,94 @@
             "has_access": true
         },
         {
+            "id": "138",
+            "name": "custom_text_footer",
+            "level": 75,
+            "description": "Custom text footer",
+            "value": "",
+            "type": "string",
+            "category": "system",
+            "subcategory": "branding",
+            "has_access": true
+        },
+        {
+            "id": "137",
+            "name": "custom_favicon",
+            "level": 75,
+            "description": "Custom URL - Favicon (SVG, PNG or ICO)",
+            "value": "",
+            "type": "string",
+            "category": "system",
+            "subcategory": "branding",
+            "has_access": true
+        },
+        {
+            "id": "247",
+            "name": "custom_share_image",
+            "level": 100,
+            "description": "Custom URL - Image shown when a link to this server is shared (PNG or JPEG, 1200x630)",
+            "value": "",
+            "type": "string",
+            "category": "system",
+            "subcategory": "branding",
+            "has_access": true
+        },
+        {
+            "id": "159",
+            "name": "custom_login_background",
+            "level": 75,
+            "description": "Custom URL - Login page background",
+            "value": "",
+            "type": "string",
+            "category": "system",
+            "subcategory": "branding",
+            "has_access": true
+        },
+        {
+            "id": "136",
+            "name": "custom_login_logo",
+            "level": 75,
+            "description": "Custom URL - Login page logo",
+            "value": "",
+            "type": "string",
+            "category": "system",
+            "subcategory": "branding",
+            "has_access": true
+        },
+        {
+            "id": "246",
+            "name": "custom_apple_touch_icon",
+            "level": 100,
+            "description": "Custom URL - Touch icon for phone home screens (PNG, 180x180, no transparency)",
+            "value": "",
+            "type": "string",
+            "category": "system",
+            "subcategory": "branding",
+            "has_access": true
+        },
+        {
+            "id": "248",
+            "name": "site_description",
+            "level": 100,
+            "description": "Website Description - shown when a link to this server is shared",
+            "value": "",
+            "type": "string",
+            "category": "system",
+            "subcategory": "branding",
+            "has_access": true
+        },
+        {
+            "id": "22",
+            "name": "site_title",
+            "level": 100,
+            "description": "Website Title",
+            "value": "Ampache :: For the Love of Music",
+            "type": "string",
+            "category": "system",
+            "subcategory": "branding",
+            "has_access": true
+        },
+        {
             "id": "153",
             "name": "libitem_browse_alpha",
             "level": 75,
@@ -446,6 +557,17 @@
             "level": 25,
             "description": "Hide the Genre column in browse table rows",
             "value": "0",
+            "type": "boolean",
+            "category": "interface",
+            "subcategory": "browse",
+            "has_access": true
+        },
+        {
+            "id": "241",
+            "name": "hide_moods",
+            "level": 25,
+            "description": "Hide the Mood column in browse table rows",
+            "value": "1",
             "type": "boolean",
             "category": "interface",
             "subcategory": "browse",
@@ -727,14 +849,14 @@
             "has_access": true
         },
         {
-            "id": "22",
-            "name": "site_title",
+            "id": "253",
+            "name": "embed_player",
             "level": 100,
-            "description": "Website Title",
-            "value": "Ampache :: For the Love of Music",
-            "type": "string",
-            "category": "interface",
-            "subcategory": "custom",
+            "description": "Allow an embedded player when a link to this server is posted on another site",
+            "value": "0",
+            "type": "boolean",
+            "category": "options",
+            "subcategory": "feature",
             "has_access": true
         },
         {
@@ -878,50 +1000,6 @@
             "type": "boolean",
             "category": "interface",
             "subcategory": "home",
-            "has_access": true
-        },
-        {
-            "id": "138",
-            "name": "custom_text_footer",
-            "level": 75,
-            "description": "Custom text footer",
-            "value": "",
-            "type": "string",
-            "category": "system",
-            "subcategory": "interface",
-            "has_access": true
-        },
-        {
-            "id": "137",
-            "name": "custom_favicon",
-            "level": 75,
-            "description": "Custom URL - Favicon",
-            "value": "",
-            "type": "string",
-            "category": "system",
-            "subcategory": "interface",
-            "has_access": true
-        },
-        {
-            "id": "159",
-            "name": "custom_login_background",
-            "level": 75,
-            "description": "Custom URL - Login page background",
-            "value": "",
-            "type": "string",
-            "category": "system",
-            "subcategory": "interface",
-            "has_access": true
-        },
-        {
-            "id": "136",
-            "name": "custom_login_logo",
-            "level": 75,
-            "description": "Custom URL - Login page logo",
-            "value": "",
-            "type": "string",
-            "category": "system",
-            "subcategory": "interface",
             "has_access": true
         },
         {
@@ -1127,6 +1205,28 @@
             "has_access": true
         },
         {
+            "id": "250",
+            "name": "musicbrainz_throttle",
+            "level": 100,
+            "description": "Hundredths of a second to wait between MusicBrainz calls, 0 to disable for your own mirror",
+            "value": "100",
+            "type": "integer",
+            "category": "plugins",
+            "subcategory": "musicbrainz",
+            "has_access": true
+        },
+        {
+            "id": "249",
+            "name": "musicbrainz_server",
+            "level": 100,
+            "description": "MusicBrainz server URL, empty for musicbrainz.org",
+            "value": "",
+            "type": "string",
+            "category": "plugins",
+            "subcategory": "musicbrainz",
+            "has_access": true
+        },
+        {
             "id": "131",
             "name": "browser_notify",
             "level": 25,
@@ -1312,17 +1412,6 @@
             "has_access": true
         },
         {
-            "id": "93",
-            "name": "allow_personal_info_agent",
-            "level": 25,
-            "description": "Share Recently Played information - Allow access to streaming agent",
-            "value": "1",
-            "type": "boolean",
-            "category": "interface",
-            "subcategory": "privacy",
-            "has_access": true
-        },
-        {
             "id": "92",
             "name": "allow_personal_info_time",
             "level": 25,
@@ -1378,6 +1467,17 @@
             "has_access": true
         },
         {
+            "id": "254",
+            "name": "rightbar_always_show",
+            "level": 25,
+            "description": "Always show the rightbar",
+            "value": "0",
+            "type": "boolean",
+            "category": "interface",
+            "subcategory": "sidebar",
+            "has_access": true
+        },
+        {
             "id": "198",
             "name": "sidebar_order_browse",
             "level": 25,
@@ -1427,17 +1527,6 @@
             "level": 25,
             "description": "Custom CSS Order - Search",
             "value": "40",
-            "type": "integer",
-            "category": "interface",
-            "subcategory": "sidebar",
-            "has_access": true
-        },
-        {
-            "id": "200",
-            "name": "sidebar_order_video",
-            "level": 25,
-            "description": "Custom CSS Order - Video",
-            "value": "20",
             "type": "integer",
             "category": "interface",
             "subcategory": "sidebar",
@@ -1576,6 +1665,39 @@
             "has_access": true
         },
         {
+            "id": "240",
+            "name": "show_mood",
+            "level": 25,
+            "description": "Show 'Moods' link in the main sidebar",
+            "value": "1",
+            "type": "boolean",
+            "category": "interface",
+            "subcategory": "sidebar",
+            "has_access": true
+        },
+        {
+            "id": "244",
+            "name": "generated_art",
+            "level": 25,
+            "description": "Draw artwork for items that have no cover",
+            "value": "0",
+            "type": "boolean",
+            "category": "interface",
+            "subcategory": "theme",
+            "has_access": true
+        },
+        {
+            "id": "245",
+            "name": "generated_art_template",
+            "level": 25,
+            "description": "Drawn artwork template",
+            "value": "auto",
+            "type": "string",
+            "category": "interface",
+            "subcategory": "theme",
+            "has_access": true
+        },
+        {
             "id": "94",
             "name": "ui_fixed",
             "level": 25,
@@ -1591,6 +1713,17 @@
             "name": "mini_player",
             "level": 100,
             "description": "Lock this user into the mini player interface",
+            "value": "0",
+            "type": "boolean",
+            "category": "interface",
+            "subcategory": "theme",
+            "has_access": true
+        },
+        {
+            "id": "243",
+            "name": "page_title_icons",
+            "level": 25,
+            "description": "Show an icon for the page type in the browser tab title",
             "value": "0",
             "type": "boolean",
             "category": "interface",

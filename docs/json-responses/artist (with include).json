@@ -91,6 +91,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 1,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/01_Invo.mp3",
             "genre": [
@@ -103,6 +104,7 @@
                     "name": "Dance"
                 }
             ],
+            "mood": [],
             "playlisttrack": 1,
             "time": 47,
             "year": 0,
@@ -117,7 +119,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=90&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Invo.mp3",
             "size": 1140815,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -171,6 +173,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 2,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/02_Spirus_Falls.mp3",
             "genre": [
@@ -183,6 +186,7 @@
                     "name": "Dance"
                 }
             ],
+            "mood": [],
             "playlisttrack": 2,
             "time": 327,
             "year": 0,
@@ -197,7 +201,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=95&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Spirus%20Falls.mp3",
             "size": 7875775,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 5,
@@ -251,6 +255,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 3,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/03_Scribnus_3.mp3",
             "genre": [
@@ -263,6 +268,7 @@
                     "name": "Dance"
                 }
             ],
+            "mood": [],
             "playlisttrack": 3,
             "time": 641,
             "year": 0,
@@ -277,7 +283,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=93&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Scribnus%203.mp3",
             "size": 15400002,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -331,6 +337,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 4,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/04_Beq_Ultra_Fat.mp3",
             "genre": [
@@ -343,6 +350,7 @@
                     "name": "Dance"
                 }
             ],
+            "mood": [],
             "playlisttrack": 4,
             "time": 413,
             "year": 0,
@@ -357,7 +365,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=85&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Beq%20Ultra%20Fat.mp3",
             "size": 9935896,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -411,6 +419,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 5,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/05_Caloonashine.mp3",
             "genre": [
@@ -423,6 +432,7 @@
                     "name": "Dance"
                 }
             ],
+            "mood": [],
             "playlisttrack": 5,
             "time": 330,
             "year": 0,
@@ -437,7 +447,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=86&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Caloonashine.mp3",
             "size": 7929692,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 5,
@@ -491,6 +501,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 6,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/06_Wonders_of_Nando.mp3",
             "genre": [
@@ -503,6 +514,7 @@
                     "name": "Dance"
                 }
             ],
+            "mood": [],
             "playlisttrack": 6,
             "time": 319,
             "year": 0,
@@ -517,7 +529,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=87&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Wonders%20of%20Nando.mp3",
             "size": 7673901,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 5,
@@ -571,6 +583,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 7,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/07_Strangers_Query.mp3",
             "genre": [
@@ -583,6 +596,7 @@
                     "name": "Dance"
                 }
             ],
+            "mood": [],
             "playlisttrack": 7,
             "time": 279,
             "year": 0,
@@ -597,7 +611,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=94&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Strangers%20Query.mp3",
             "size": 6719700,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": 5,
@@ -651,6 +665,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 8,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/08_Stance.mp3",
             "genre": [
@@ -663,6 +678,7 @@
                     "name": "Dance"
                 }
             ],
+            "mood": [],
             "playlisttrack": 8,
             "time": 544,
             "year": 0,
@@ -677,7 +693,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=92&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stance.mp3",
             "size": 13078740,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -731,6 +747,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 9,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/09_Home_Capsules.mp3",
             "genre": [
@@ -743,6 +760,7 @@
                     "name": "Dance"
                 }
             ],
+            "mood": [],
             "playlisttrack": 9,
             "time": 294,
             "year": 0,
@@ -757,7 +775,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=91&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Home%20Capsules.mp3",
             "size": 7076428,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -811,6 +829,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 10,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/10_Netro.mp3",
             "genre": [
@@ -823,6 +842,7 @@
                     "name": "Dance"
                 }
             ],
+            "mood": [],
             "playlisttrack": 10,
             "time": 601,
             "year": 0,
@@ -837,7 +857,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=88&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Netro.mp3",
             "size": 14445467,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -891,6 +911,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 11,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/Nofi_found\/Nofi Devices LP\/11_Stolen.mp3",
             "genre": [
@@ -903,6 +924,7 @@
                     "name": "Dance"
                 }
             ],
+            "mood": [],
             "playlisttrack": 11,
             "time": 628,
             "year": 0,
@@ -917,7 +939,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=89&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=Nofi-found.%20-%20Stolen.mp3",
             "size": 15100325,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=8&object_type=album&id=70&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -951,7 +973,7 @@
             "name": "Dance"
         }
     ],
-    "art": "https:\/\/music.com.au\/images\/blankalbum_128x128.png",
+    "art": "https:\/\/music.com.au\/images\/blankalbum.png",
     "has_art": false,
     "flag": false,
     "rating": 2,

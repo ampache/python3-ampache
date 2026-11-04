@@ -1,3 +1,62 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
+  <total_count>4</total_count>
+  <md5>9a23d4b46692af86b5960815097e1260</md5>
+  <folder id="-1">
+    <title>Home</title>
+    <parent/>
+    <path>/</path>
+    <catalog>0</catalog>
+    <time>0</time>
+    <items>
+      <item id="1">
+        <object_type>folder</object_type>
+        <title>music</title>
+        <parent>-1</parent>
+        <path>/media/music</path>
+        <time>20702</time>
+        <art>https://music.com.au/images/blankfolder.png</art>
+        <has_art>0</has_art>
+        <play_url/>
+        <rating/>
+        <averagerating/>
+      </item>
+      <item id="23">
+        <object_type>folder</object_type>
+        <title>podcast</title>
+        <parent>-1</parent>
+        <path>/media/podcast</path>
+        <time>3996</time>
+        <art>https://music.com.au/images/blankfolder.png</art>
+        <has_art>0</has_art>
+        <play_url/>
+        <rating/>
+        <averagerating/>
+      </item>
+      <item id="19">
+        <object_type>folder</object_type>
+        <title>upload</title>
+        <parent>-1</parent>
+        <path>/media/upload</path>
+        <time>4248</time>
+        <art>https://music.com.au/images/blankfolder.png</art>
+        <has_art>0</has_art>
+        <play_url/>
+        <rating/>
+        <averagerating/>
+      </item>
+      <item id="26">
+        <object_type>folder</object_type>
+        <title>video</title>
+        <parent>-1</parent>
+        <path>/media/video</path>
+        <time>225</time>
+        <art>https://music.com.au/images/blankfolder.png</art>
+        <has_art>0</has_art>
+        <play_url/>
+        <rating/>
+        <averagerating/>
+      </item>
+    </items>
+  </folder>
 </root>

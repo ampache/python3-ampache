@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <total_count>3</total_count>
-  <md5>8467c1b7b44644e447396e82f11cc16b</md5>
+  <total_count>10</total_count>
+  <md5>42630436a85d19a3a9fd56c3865b2579</md5>
   <catalog_id>3</catalog_id>
-  <parent_id>2</parent_id>
+  <parent_id>1</parent_id>
   <parent_type>podcast</parent_type>
   <child_type>podcast_episode</child_type>
-  <browse id="22">
-    <name><![CDATA[What Do an Army of Ants and an Online Encyclopedia Have in Common?]]></name>
+  <browse id="82745">
+    <name><![CDATA[Ebola surge, AI math shocker and daylight saving time]]></name>
     <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[What Do an Army of Ants and an Online Encyclopedia Have in Common?]]></basename>
+    <basename><![CDATA[Ebola surge, AI math shocker and daylight saving time]]></basename>
   </browse>
-  <browse id="23">
-    <name><![CDATA[I Laughed So Hard I Cried]]></name>
+  <browse id="82753">
+    <name><![CDATA[Cover Story: Escaping the Infinite Scroll]]></name>
     <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[I Laughed So Hard I Cried]]></basename>
+    <basename><![CDATA[Cover Story: Escaping the Infinite Scroll]]></basename>
   </browse>
-  <browse id="24">
-    <name><![CDATA[Coming Soon]]></name>
+  <browse id="82752">
+    <name><![CDATA[Slime molds, Pompeii and alien consciousness with Annalee Newitz]]></name>
     <prefix><![CDATA[]]></prefix>
-    <basename><![CDATA[Coming Soon]]></basename>
+    <basename><![CDATA[Slime molds, Pompeii and alien consciousness with Annalee Newitz]]></basename>
+  </browse>
+  <browse id="82751">
+    <name><![CDATA[Why your brain hates uncertainty]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Why your brain hates uncertainty]]></basename>
   </browse>
 </root>

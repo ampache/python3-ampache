@@ -1,8 +1,56 @@
 {
-    "error": {
-        "errorCode": "4704",
-        "errorAction": "album_disks",
-        "errorType": "filter",
-        "errorMessage": "Not Found: 32"
-    }
+    "total_count": 1,
+    "md5": "d63aca0b7e6237c7964320bd7fc95644",
+    "album_disk": [
+        {
+            "id": "7",
+            "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "prefix": null,
+            "basename": "CARN\u00daN - MALKUTH (Demo 1996)",
+            "album": {
+                "id": "10",
+                "name": "CARN\u00daN - MALKUTH (Demo 1996)",
+                "prefix": null,
+                "basename": "CARN\u00daN - MALKUTH (Demo 1996)"
+            },
+            "artist": {
+                "id": "16",
+                "name": "CARN\u00daN",
+                "prefix": "",
+                "basename": "CARN\u00daN"
+            },
+            "artists": [
+                {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": "",
+                    "basename": "CARN\u00daN"
+                }
+            ],
+            "songartists": [
+                {
+                    "id": "16",
+                    "name": "CARN\u00daN",
+                    "prefix": "",
+                    "basename": "CARN\u00daN"
+                }
+            ],
+            "disk": 1,
+            "disksubtitle": null,
+            "time": 3873,
+            "year": 1996,
+            "tracks": [],
+            "songcount": 9,
+            "type": null,
+            "genre": [],
+            "art": "https:\/\/music.com.au\/images\/blankalbum.png",
+            "has_art": true,
+            "flag": false,
+            "rating": null,
+            "averagerating": null,
+            "mbid": null,
+            "mbid_group": null,
+            "catalog": "1"
+        }
+    ]
 }

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[user_preference]]></errorAction>
-    <errorType><![CDATA[filter]]></errorType>
-    <errorMessage><![CDATA[Not Found: ajax_load]]></errorMessage>
-  </error>
+  <preference id="176">
+    <name><![CDATA[api_enable_6]]></name>
+    <level>25</level>
+    <description><![CDATA[Allow Ampache API6 responses]]></description>
+    <value>1</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[options]]></category>
+    <subcategory><![CDATA[api]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
 </root>

@@ -34,34 +34,10 @@
                         "basename": "Tip-C (featuring Mike Beers)"
                     },
                     {
-                        "id": "34",
-                        "name": "Comedown Kid",
-                        "prefix": "",
-                        "basename": "Comedown Kid"
-                    },
-                    {
                         "id": "23",
                         "name": "Manic Notion",
                         "prefix": "",
                         "basename": "Manic Notion"
-                    },
-                    {
-                        "id": "35",
-                        "name": "Tip-C",
-                        "prefix": "",
-                        "basename": "Tip-C"
-                    },
-                    {
-                        "id": "33",
-                        "name": "MxBxCx",
-                        "prefix": "",
-                        "basename": "MxBxCx"
-                    },
-                    {
-                        "id": "32",
-                        "name": "Shorty Mac",
-                        "prefix": "",
-                        "basename": "Shorty Mac"
                     },
                     {
                         "id": "26",
@@ -74,6 +50,30 @@
                         "name": "Chi.Otic",
                         "prefix": "",
                         "basename": "Chi.Otic"
+                    },
+                    {
+                        "id": "32",
+                        "name": "Shorty Mac",
+                        "prefix": "",
+                        "basename": "Shorty Mac"
+                    },
+                    {
+                        "id": "33",
+                        "name": "MxBxCx",
+                        "prefix": "",
+                        "basename": "MxBxCx"
+                    },
+                    {
+                        "id": "34",
+                        "name": "Comedown Kid",
+                        "prefix": "",
+                        "basename": "Comedown Kid"
+                    },
+                    {
+                        "id": "35",
+                        "name": "Tip-C",
+                        "prefix": "",
+                        "basename": "Tip-C"
                     }
                 ],
                 "time": 1879,
@@ -282,7 +282,7 @@
                         "name": "Dance"
                     }
                 ],
-                "art": "https:\/\/music.com.au\/images\/blankalbum_128x128.png",
+                "art": "https:\/\/music.com.au\/images\/blankalbum.png",
                 "has_art": false,
                 "flag": false,
                 "rating": 2,
@@ -348,9 +348,11 @@
                 },
                 "disk": 1,
                 "disksubtitle": null,
+                "bpm": null,
                 "track": 2,
                 "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/02ThePropheciesOfTheHornedOne.ogg",
                 "genre": [],
+                "mood": [],
                 "playlisttrack": 1,
                 "time": 378,
                 "year": 1996,
@@ -365,7 +367,7 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=100&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One.mp3",
                 "size": 4265791,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
@@ -419,9 +421,11 @@
                 },
                 "disk": 1,
                 "disksubtitle": null,
+                "bpm": null,
                 "track": 3,
                 "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/03InTheSevenWoods.ogg",
                 "genre": [],
+                "mood": [],
                 "playlisttrack": 2,
                 "time": 420,
                 "year": 1996,
@@ -436,7 +440,7 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=98&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods.mp3",
                 "size": 4444403,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,
@@ -490,9 +494,11 @@
                 },
                 "disk": 1,
                 "disksubtitle": null,
+                "bpm": null,
                 "track": 6,
                 "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/06ThePropheciesOfTheHornedOne_InstrumentalReRecording.ogg",
                 "genre": [],
+                "mood": [],
                 "playlisttrack": 3,
                 "time": 427,
                 "year": 1996,
@@ -507,9 +513,9 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=99&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20The%20Prophecies%20Of%20The%20Horned%20One%20-Instrumental%20Re-Recording-.mp3",
                 "size": 7696008,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
                 "has_art": true,
-                "flag": false,
+                "flag": true,
                 "rating": 5,
                 "averagerating": null,
                 "playcount": 2,
@@ -561,9 +567,11 @@
                 },
                 "disk": 1,
                 "disksubtitle": null,
+                "bpm": null,
                 "track": 7,
                 "filename": "\/mnt\/files-music\/ampache-test\/music\/Carn\u00fan\/Malkuth (Demo1996)\/07InTheSevenWoods_InstrumentalReRecording.ogg",
                 "genre": [],
+                "mood": [],
                 "playlisttrack": 4,
                 "time": 452,
                 "year": 1996,
@@ -578,7 +586,7 @@
                 "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=103&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=CARN-N%20-%20In%20The%20Seven%20Woods%20-Instrumental%20Re-Recording-.mp3",
                 "size": 7826238,
                 "mbid": null,
-                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&name=art.jpg",
+                "art": "https:\/\/music.com.au\/image.php?object_id=10&object_type=album&id=63&name=art.jpg",
                 "has_art": true,
                 "flag": false,
                 "rating": null,

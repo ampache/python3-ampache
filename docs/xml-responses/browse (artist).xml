@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <error errorCode="4704">
-    <errorAction><![CDATA[browse]]></errorAction>
-    <errorType><![CDATA[filter]]></errorType>
-    <errorMessage><![CDATA[Not Found: 19]]></errorMessage>
-  </error>
+  <total_count>1</total_count>
+  <md5>f534c4f22dd13f22de0e42ec86b703b9</md5>
+  <catalog_id>1</catalog_id>
+  <parent_id>15</parent_id>
+  <parent_type>artist</parent_type>
+  <child_type>album</child_type>
+  <browse id="9">
+    <name><![CDATA[Creeping Lawler 2]]></name>
+    <prefix><![CDATA[]]></prefix>
+    <basename><![CDATA[Creeping Lawler 2]]></basename>
+  </browse>
 </root>

@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
-	<activity id="344">
-		<date>1785997519</date>
+	<activity id="347">
+		<date>1793762043</date>
 		<object_type><![CDATA[song]]></object_type>
-		<object_id>132</object_id>
-		<action><![CDATA[rating]]></action>
+		<object_id>99</object_id>
+		<action><![CDATA[play]]></action>
+		<user id="4">
+			<username><![CDATA[user]]></username>
+		</user>
+	</activity>
+	<activity id="346">
+		<date>1793762019</date>
+		<object_type><![CDATA[song]]></object_type>
+		<object_id>99</object_id>
+		<action><![CDATA[userflag]]></action>
+		<user id="4">
+			<username><![CDATA[user]]></username>
+		</user>
+	</activity>
+	<activity id="345">
+		<date>1793761952</date>
+		<object_type><![CDATA[user]]></object_type>
+		<object_id>4</object_id>
+		<action><![CDATA[follow]]></action>
+		<user id="4">
+			<username><![CDATA[user]]></username>
+		</user>
+	</activity>
+	<activity id="344">
+		<date>1793761944</date>
+		<object_type><![CDATA[song]]></object_type>
+		<object_id>59</object_id>
+		<action><![CDATA[play]]></action>
 		<user id="4">
 			<username><![CDATA[user]]></username>
 		</user>
 	</activity>
 	<activity id="343">
-		<date>1785997518</date>
+		<date>1793761924</date>
 		<object_type><![CDATA[song]]></object_type>
-		<object_id>132</object_id>
+		<object_id>59</object_id>
 		<action><![CDATA[userflag]]></action>
 		<user id="4">
 			<username><![CDATA[user]]></username>
@@ -59,33 +86,6 @@
 		<object_type><![CDATA[song]]></object_type>
 		<object_id>56</object_id>
 		<action><![CDATA[play]]></action>
-		<user id="4">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="336">
-		<date>1751343818</date>
-		<object_type><![CDATA[song]]></object_type>
-		<object_id>99</object_id>
-		<action><![CDATA[rating]]></action>
-		<user id="4">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="337">
-		<date>1751343818</date>
-		<object_type><![CDATA[song]]></object_type>
-		<object_id>99</object_id>
-		<action><![CDATA[userflag]]></action>
-		<user id="4">
-			<username><![CDATA[user]]></username>
-		</user>
-	</activity>
-	<activity id="334">
-		<date>1751343795</date>
-		<object_type><![CDATA[song]]></object_type>
-		<object_id>99</object_id>
-		<action><![CDATA[rating]]></action>
 		<user id="4">
 			<username><![CDATA[user]]></username>
 		</user>

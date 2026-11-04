@@ -30,16 +30,6 @@
     <subcategory><![CDATA[]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
-  <preference id="101">
-    <name><![CDATA[stream_beautiful_url]]></name>
-    <level>100</level>
-    <description><![CDATA[Enable URL Rewriting]]></description>
-    <value>1</value>
-    <type><![CDATA[boolean]]></type>
-    <category><![CDATA[streaming]]></category>
-    <subcategory><![CDATA[]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
   <preference id="24">
     <name><![CDATA[force_http_play]]></name>
     <level>100</level>
@@ -158,6 +148,16 @@
     <subcategory><![CDATA[]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
+  <preference id="242">
+    <name><![CDATA[show_composer]]></name>
+    <level>25</level>
+    <description><![CDATA[Show Composer column on playlist media rows]]></description>
+    <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[playlist]]></category>
+    <subcategory><![CDATA[]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
   <preference id="111">
     <name><![CDATA[show_donate]]></name>
     <level>25</level>
@@ -175,26 +175,6 @@
     <value>0</value>
     <type><![CDATA[boolean]]></type>
     <category><![CDATA[playlist]]></category>
-    <subcategory><![CDATA[]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
-  <preference id="240">
-    <name><![CDATA[temp_pref_json]]></name>
-    <level>100</level>
-    <description><![CDATA[]]></description>
-    <value>0</value>
-    <type><![CDATA[boolean]]></type>
-    <category><![CDATA[interface]]></category>
-    <subcategory><![CDATA[]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
-  <preference id="241">
-    <name><![CDATA[temp_pref_xml]]></name>
-    <level>100</level>
-    <description><![CDATA[]]></description>
-    <value>0</value>
-    <type><![CDATA[boolean]]></type>
-    <category><![CDATA[interface]]></category>
     <subcategory><![CDATA[]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
@@ -273,6 +253,7 @@
       <value id="2"><![CDATA[4]]></value>
       <value id="3"><![CDATA[5]]></value>
       <value id="4"><![CDATA[6]]></value>
+      <value id="5"><![CDATA[8]]></value>
     </values>
   </preference>
   <preference id="224">
@@ -355,10 +336,40 @@
     <subcategory><![CDATA[backend]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
+  <preference id="252">
+    <name><![CDATA[quickconnect_enable]]></name>
+    <level>100</level>
+    <description><![CDATA[Enable QuickConnect service]]></description>
+    <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[backend]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="101">
+    <name><![CDATA[stream_beautiful_url]]></name>
+    <level>100</level>
+    <description><![CDATA[Enable URL Rewriting]]></description>
+    <value>1</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[backend]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
   <preference id="118">
     <name><![CDATA[daap_backend]]></name>
     <level>100</level>
     <description><![CDATA[Use DAAP backend]]></description>
+    <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[backend]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="251">
+    <name><![CDATA[jellyfin_backend_enable]]></name>
+    <level>100</level>
+    <description><![CDATA[Use Jellyfin backend]]></description>
     <value>0</value>
     <type><![CDATA[boolean]]></type>
     <category><![CDATA[system]]></category>
@@ -395,6 +406,86 @@
     <subcategory><![CDATA[backend]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
+  <preference id="138">
+    <name><![CDATA[custom_text_footer]]></name>
+    <level>75</level>
+    <description><![CDATA[Custom text footer]]></description>
+    <value><![CDATA[]]></value>
+    <type><![CDATA[string]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[branding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="137">
+    <name><![CDATA[custom_favicon]]></name>
+    <level>75</level>
+    <description><![CDATA[Custom URL - Favicon (SVG, PNG or ICO)]]></description>
+    <value><![CDATA[]]></value>
+    <type><![CDATA[string]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[branding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="247">
+    <name><![CDATA[custom_share_image]]></name>
+    <level>100</level>
+    <description><![CDATA[Custom URL - Image shown when a link to this server is shared (PNG or JPEG, 1200x630)]]></description>
+    <value><![CDATA[]]></value>
+    <type><![CDATA[string]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[branding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="159">
+    <name><![CDATA[custom_login_background]]></name>
+    <level>75</level>
+    <description><![CDATA[Custom URL - Login page background]]></description>
+    <value><![CDATA[]]></value>
+    <type><![CDATA[string]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[branding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="136">
+    <name><![CDATA[custom_login_logo]]></name>
+    <level>75</level>
+    <description><![CDATA[Custom URL - Login page logo]]></description>
+    <value><![CDATA[]]></value>
+    <type><![CDATA[string]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[branding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="246">
+    <name><![CDATA[custom_apple_touch_icon]]></name>
+    <level>100</level>
+    <description><![CDATA[Custom URL - Touch icon for phone home screens (PNG, 180x180, no transparency)]]></description>
+    <value><![CDATA[]]></value>
+    <type><![CDATA[string]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[branding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="248">
+    <name><![CDATA[site_description]]></name>
+    <level>100</level>
+    <description><![CDATA[Website Description - shown when a link to this server is shared]]></description>
+    <value><![CDATA[]]></value>
+    <type><![CDATA[string]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[branding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="22">
+    <name><![CDATA[site_title]]></name>
+    <level>100</level>
+    <description><![CDATA[Website Title]]></description>
+    <value><![CDATA[Ampache :: For the Love of Music]]></value>
+    <type><![CDATA[string]]></type>
+    <category><![CDATA[system]]></category>
+    <subcategory><![CDATA[branding]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
   <preference id="153">
     <name><![CDATA[libitem_browse_alpha]]></name>
     <level>75</level>
@@ -420,6 +511,16 @@
     <level>25</level>
     <description><![CDATA[Hide the Genre column in browse table rows]]></description>
     <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[interface]]></category>
+    <subcategory><![CDATA[browse]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="241">
+    <name><![CDATA[hide_moods]]></name>
+    <level>25</level>
+    <description><![CDATA[Hide the Mood column in browse table rows]]></description>
+    <value>1</value>
     <type><![CDATA[boolean]]></type>
     <category><![CDATA[interface]]></category>
     <subcategory><![CDATA[browse]]></subcategory>
@@ -675,14 +776,14 @@
     <subcategory><![CDATA[custom]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
-  <preference id="22">
-    <name><![CDATA[site_title]]></name>
+  <preference id="253">
+    <name><![CDATA[embed_player]]></name>
     <level>100</level>
-    <description><![CDATA[Website Title]]></description>
-    <value><![CDATA[Ampache :: For the Love of Music]]></value>
-    <type><![CDATA[string]]></type>
-    <category><![CDATA[interface]]></category>
-    <subcategory><![CDATA[custom]]></subcategory>
+    <description><![CDATA[Allow an embedded player when a link to this server is posted on another site]]></description>
+    <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[options]]></category>
+    <subcategory><![CDATA[feature]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
   <preference id="45">
@@ -813,46 +914,6 @@
     <type><![CDATA[boolean]]></type>
     <category><![CDATA[interface]]></category>
     <subcategory><![CDATA[home]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
-  <preference id="138">
-    <name><![CDATA[custom_text_footer]]></name>
-    <level>75</level>
-    <description><![CDATA[Custom text footer]]></description>
-    <value><![CDATA[]]></value>
-    <type><![CDATA[string]]></type>
-    <category><![CDATA[system]]></category>
-    <subcategory><![CDATA[interface]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
-  <preference id="137">
-    <name><![CDATA[custom_favicon]]></name>
-    <level>75</level>
-    <description><![CDATA[Custom URL - Favicon]]></description>
-    <value><![CDATA[]]></value>
-    <type><![CDATA[string]]></type>
-    <category><![CDATA[system]]></category>
-    <subcategory><![CDATA[interface]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
-  <preference id="159">
-    <name><![CDATA[custom_login_background]]></name>
-    <level>75</level>
-    <description><![CDATA[Custom URL - Login page background]]></description>
-    <value><![CDATA[]]></value>
-    <type><![CDATA[string]]></type>
-    <category><![CDATA[system]]></category>
-    <subcategory><![CDATA[interface]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
-  <preference id="136">
-    <name><![CDATA[custom_login_logo]]></name>
-    <level>75</level>
-    <description><![CDATA[Custom URL - Login page logo]]></description>
-    <value><![CDATA[]]></value>
-    <type><![CDATA[string]]></type>
-    <category><![CDATA[system]]></category>
-    <subcategory><![CDATA[interface]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
   <preference id="180">
@@ -1040,6 +1101,26 @@
     <subcategory><![CDATA[metadata]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
+  <preference id="250">
+    <name><![CDATA[musicbrainz_throttle]]></name>
+    <level>100</level>
+    <description><![CDATA[Hundredths of a second to wait between MusicBrainz calls, 0 to disable for your own mirror]]></description>
+    <value>100</value>
+    <type><![CDATA[integer]]></type>
+    <category><![CDATA[plugins]]></category>
+    <subcategory><![CDATA[musicbrainz]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="249">
+    <name><![CDATA[musicbrainz_server]]></name>
+    <level>100</level>
+    <description><![CDATA[MusicBrainz server URL, empty for musicbrainz.org]]></description>
+    <value><![CDATA[]]></value>
+    <type><![CDATA[string]]></type>
+    <category><![CDATA[plugins]]></category>
+    <subcategory><![CDATA[musicbrainz]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
   <preference id="131">
     <name><![CDATA[browser_notify]]></name>
     <level>25</level>
@@ -1209,16 +1290,6 @@
     <subcategory><![CDATA[privacy]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
-  <preference id="93">
-    <name><![CDATA[allow_personal_info_agent]]></name>
-    <level>25</level>
-    <description><![CDATA[Share Recently Played information - Allow access to streaming agent]]></description>
-    <value>1</value>
-    <type><![CDATA[boolean]]></type>
-    <category><![CDATA[interface]]></category>
-    <subcategory><![CDATA[privacy]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
   <preference id="92">
     <name><![CDATA[allow_personal_info_time]]></name>
     <level>25</level>
@@ -1269,6 +1340,16 @@
     <subcategory><![CDATA[share]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
+  <preference id="254">
+    <name><![CDATA[rightbar_always_show]]></name>
+    <level>25</level>
+    <description><![CDATA[Always show the rightbar]]></description>
+    <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[interface]]></category>
+    <subcategory><![CDATA[sidebar]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
   <preference id="198">
     <name><![CDATA[sidebar_order_browse]]></name>
     <level>25</level>
@@ -1314,16 +1395,6 @@
     <level>25</level>
     <description><![CDATA[Custom CSS Order - Search]]></description>
     <value>40</value>
-    <type><![CDATA[integer]]></type>
-    <category><![CDATA[interface]]></category>
-    <subcategory><![CDATA[sidebar]]></subcategory>
-    <has_access><![CDATA[1]]></has_access>
-  </preference>
-  <preference id="200">
-    <name><![CDATA[sidebar_order_video]]></name>
-    <level>25</level>
-    <description><![CDATA[Custom CSS Order - Video]]></description>
-    <value>20</value>
     <type><![CDATA[integer]]></type>
     <category><![CDATA[interface]]></category>
     <subcategory><![CDATA[sidebar]]></subcategory>
@@ -1449,6 +1520,36 @@
     <subcategory><![CDATA[sidebar]]></subcategory>
     <has_access><![CDATA[1]]></has_access>
   </preference>
+  <preference id="240">
+    <name><![CDATA[show_mood]]></name>
+    <level>25</level>
+    <description><![CDATA[Show 'Moods' link in the main sidebar]]></description>
+    <value>1</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[interface]]></category>
+    <subcategory><![CDATA[sidebar]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="244">
+    <name><![CDATA[generated_art]]></name>
+    <level>25</level>
+    <description><![CDATA[Draw artwork for items that have no cover]]></description>
+    <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[interface]]></category>
+    <subcategory><![CDATA[theme]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="245">
+    <name><![CDATA[generated_art_template]]></name>
+    <level>25</level>
+    <description><![CDATA[Drawn artwork template]]></description>
+    <value><![CDATA[auto]]></value>
+    <type><![CDATA[string]]></type>
+    <category><![CDATA[interface]]></category>
+    <subcategory><![CDATA[theme]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
   <preference id="94">
     <name><![CDATA[ui_fixed]]></name>
     <level>25</level>
@@ -1463,6 +1564,16 @@
     <name><![CDATA[mini_player]]></name>
     <level>100</level>
     <description><![CDATA[Lock this user into the mini player interface]]></description>
+    <value>0</value>
+    <type><![CDATA[boolean]]></type>
+    <category><![CDATA[interface]]></category>
+    <subcategory><![CDATA[theme]]></subcategory>
+    <has_access><![CDATA[1]]></has_access>
+  </preference>
+  <preference id="243">
+    <name><![CDATA[page_title_icons]]></name>
+    <level>25</level>
+    <description><![CDATA[Show an icon for the page type in the browser tab title]]></description>
     <value>0</value>
     <type><![CDATA[boolean]]></type>
     <category><![CDATA[interface]]></category>

@@ -101,6 +101,16 @@
             "title": "Song Data"
         },
         {
+            "name": "bpm",
+            "label": "BPM",
+            "type": "numeric",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Song Data"
+        },
+        {
             "name": "label",
             "label": "Label",
             "type": "text",
@@ -414,6 +424,66 @@
             "title": "Play History"
         },
         {
+            "name": "last_play_album",
+            "label": "My Last Play (Album)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_skip_album",
+            "label": "My Last Skip (Album)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_play_or_skip_album",
+            "label": "My Last Play or Skip (Album)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_play_artist",
+            "label": "My Last Play (Artist)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_skip_artist",
+            "label": "My Last Skip (Artist)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
+            "name": "last_play_or_skip_artist",
+            "label": "My Last Play or Skip (Artist)",
+            "type": "days",
+            "widget": [
+                "input",
+                "number"
+            ],
+            "title": "Play History"
+        },
+        {
             "name": "played",
             "label": "Played",
             "type": "boolean",
@@ -496,6 +566,16 @@
         {
             "name": "genre",
             "label": "Genre",
+            "type": "text",
+            "widget": [
+                "input",
+                "text"
+            ],
+            "title": "Genre"
+        },
+        {
+            "name": "mood",
+            "label": "Mood",
             "type": "text",
             "widget": [
                 "input",
@@ -671,6 +751,16 @@
             "widget": [
                 "input",
                 "datetime-local"
+            ],
+            "title": "File Data"
+        },
+        {
+            "name": "enabled",
+            "label": "Enabled",
+            "type": "boolean",
+            "widget": [
+                "input",
+                "hidden"
             ],
             "title": "File Data"
         },

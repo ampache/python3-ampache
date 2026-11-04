@@ -275,6 +275,60 @@
     </widget>
     <title><![CDATA[Play History]]></title>
   </rule>
+  <rule id="last_play_song">
+    <name><![CDATA[last_play_song]]></name>
+    <label><![CDATA[My Last Play (Song)]]></label>
+    <type><![CDATA[days]]></type>
+    <widget>
+      <input><![CDATA[number]]></input>
+    </widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="last_skip_song">
+    <name><![CDATA[last_skip_song]]></name>
+    <label><![CDATA[My Last Skip (Song)]]></label>
+    <type><![CDATA[days]]></type>
+    <widget>
+      <input><![CDATA[number]]></input>
+    </widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="last_play_or_skip_song">
+    <name><![CDATA[last_play_or_skip_song]]></name>
+    <label><![CDATA[My Last Play or Skip (Song)]]></label>
+    <type><![CDATA[days]]></type>
+    <widget>
+      <input><![CDATA[number]]></input>
+    </widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="last_play_album">
+    <name><![CDATA[last_play_album]]></name>
+    <label><![CDATA[My Last Play (Album)]]></label>
+    <type><![CDATA[days]]></type>
+    <widget>
+      <input><![CDATA[number]]></input>
+    </widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="last_skip_album">
+    <name><![CDATA[last_skip_album]]></name>
+    <label><![CDATA[My Last Skip (Album)]]></label>
+    <type><![CDATA[days]]></type>
+    <widget>
+      <input><![CDATA[number]]></input>
+    </widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
+  <rule id="last_play_or_skip_album">
+    <name><![CDATA[last_play_or_skip_album]]></name>
+    <label><![CDATA[My Last Play or Skip (Album)]]></label>
+    <type><![CDATA[days]]></type>
+    <widget>
+      <input><![CDATA[number]]></input>
+    </widget>
+    <title><![CDATA[Play History]]></title>
+  </rule>
   <rule id="played">
     <name><![CDATA[played]]></name>
     <label><![CDATA[Played]]></label>
@@ -332,6 +386,15 @@
   <rule id="genre">
     <name><![CDATA[genre]]></name>
     <label><![CDATA[Genre]]></label>
+    <type><![CDATA[text]]></type>
+    <widget>
+      <input><![CDATA[text]]></input>
+    </widget>
+    <title><![CDATA[Genre]]></title>
+  </rule>
+  <rule id="mood">
+    <name><![CDATA[mood]]></name>
+    <label><![CDATA[Mood]]></label>
     <type><![CDATA[text]]></type>
     <widget>
       <input><![CDATA[text]]></input>
@@ -416,6 +479,15 @@
   <rule id="has_image">
     <name><![CDATA[has_image]]></name>
     <label><![CDATA[Local Image]]></label>
+    <type><![CDATA[boolean]]></type>
+    <widget>
+      <input><![CDATA[hidden]]></input>
+    </widget>
+    <title><![CDATA[File Data]]></title>
+  </rule>
+  <rule id="enabled">
+    <name><![CDATA[enabled]]></name>
+    <label><![CDATA[Enabled]]></label>
     <type><![CDATA[boolean]]></type>
     <widget>
       <input><![CDATA[hidden]]></input>

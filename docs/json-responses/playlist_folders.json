@@ -1,12 +1,23 @@
 {
-    "total_count": 1,
-    "md5": "84876a92125bf5a9eac9aeec5f7615f8",
+    "total_count": 2,
+    "md5": "46b1d7f96944414b036c52743bc10b5b",
     "playlist_folder": [
         {
-            "id": "3",
-            "name": "Example Folder",
+            "id": "15",
+            "name": "folder_json",
             "parent": "0",
             "sort_order": 1,
+            "type": "private",
+            "hidden": false,
+            "items": 0
+        },
+        {
+            "id": "16",
+            "name": "child_json",
+            "parent": "15",
+            "sort_order": 1,
+            "type": "private",
+            "hidden": false,
             "items": 0
         }
     ]

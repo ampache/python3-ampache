@@ -34,6 +34,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 1,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/01_-_IOK-1_-_Sensorisk_Deprivation.flac",
             "genre": [
@@ -42,6 +43,7 @@
                     "name": "Dark Ambient"
                 }
             ],
+            "mood": [],
             "playlisttrack": 1,
             "time": 818,
             "year": 2011,
@@ -56,7 +58,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=83&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Sensorisk%20Deprivation.mp3",
             "size": 39473388,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=3&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -110,6 +112,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 2,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/02_-_IOK-1_-_Vanvett.flac",
             "genre": [
@@ -118,6 +121,7 @@
                     "name": "Dark Ambient"
                 }
             ],
+            "mood": [],
             "playlisttrack": 2,
             "time": 825,
             "year": 2011,
@@ -132,7 +136,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=82&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vanvett.mp3",
             "size": 38389422,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=3&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -186,6 +190,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 3,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/03_-_IOK-1_-_Galenskap.flac",
             "genre": [
@@ -194,6 +199,7 @@
                     "name": "Dark Ambient"
                 }
             ],
+            "mood": [],
             "playlisttrack": 3,
             "time": 998,
             "year": 2011,
@@ -208,7 +214,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=81&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Galenskap.mp3",
             "size": 48633049,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=3&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
@@ -262,6 +268,7 @@
             },
             "disk": 1,
             "disksubtitle": null,
+            "bpm": null,
             "track": 4,
             "filename": "\/mnt\/files-music\/ampache-test\/music\/IOK-1\/Sensorisk Deprivation\/04_-_IOK-1_-_Vansinne.flac",
             "genre": [
@@ -270,6 +277,7 @@
                     "name": "Dark Ambient"
                 }
             ],
+            "mood": [],
             "playlisttrack": 4,
             "time": 787,
             "year": 2011,
@@ -284,7 +292,7 @@
             "url": "https:\/\/music.com.au\/play\/index.php?ssid=cfj3f237d563f479f5223k23189dbb34&type=song&oid=84&uid=4&transcode_to=mp3&bitrate=32000&player=api&name=IOK-1%20-%20Vansinne.mp3",
             "size": 70182824,
             "mbid": null,
-            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&name=art.jpg",
+            "art": "https:\/\/music.com.au\/image.php?object_id=7&object_type=album&id=3&name=art.jpg",
             "has_art": true,
             "flag": false,
             "rating": null,
